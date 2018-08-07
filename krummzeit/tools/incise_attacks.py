@@ -17,5 +17,6 @@ def incise_attacks():
                 talea_denominator=16,
                 fill_with_notes=False,
                 ),
+            tag='incise_attacks',
             ),
         )

@@ -17,5 +17,6 @@ def left_remainder_quarters(*, dmask=None):
             ),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask,
+            tag='left_remainder_quarters',
             ),
         )

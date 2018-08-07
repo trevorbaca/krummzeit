@@ -3,6 +3,6 @@ import baca
 
 def color_fingerings():
     """
-    Color fingerings.
+    Makes color fingerings.
     """
     return baca.color_fingerings([0, 1, 2, 1])

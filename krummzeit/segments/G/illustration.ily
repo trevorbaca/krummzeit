@@ -444,7 +444,7 @@ G_OboeMusicVoice = {
     
     % [G OboeMusicVoice measure 264 / measure 8]                                                   %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
         % [G OboeMusicVoice measure 265 / measure 9]                                               %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'7                                           %! OverrideCommand(1)
@@ -452,204 +452,204 @@ G_OboeMusicVoice = {
         \override DynamicLineSpanner.staff-padding = #'5                                           %! OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                                                 %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccato                                                                                %! IndicatorCommand
         ^ \markup { leggierissimo }                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        c''8
+        c''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!8
+        cs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''8
+        b''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b'8
+        b'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    c'''16.
+    c'''16.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    fs''!16.
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    d'''16.
+    fs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    bf''!16.
+    d'''16.                                                                                        %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    bf''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    bf''!4
+    bf''!4                                                                                         %! polyphony
     
     % [G OboeMusicVoice measure 266 / measure 10]                                                  %! _comment_measure_numbers
-    ef''!4.
+    ef''!4.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
-        ef''!8
-        [
+        ef''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        a''8
+        a''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!8
+        cs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''8
+        b''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''8
+        b''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e'''8
+        e'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 4/5 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
         % [G OboeMusicVoice measure 267 / measure 11]                                              %! _comment_measure_numbers
-        e'''8
-        [
+        e'''8                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''8
+        g''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''8
+        a''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    bf''!8
+    bf''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    b''8
+    b''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
+    ]                                                                                              %! polyphony
     
-    bf'!8
+    bf'!8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    b'8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    g'8
+    b'8                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    a'8
+    g'8                                                                                            %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    a'8                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    a'4
+    a'4                                                                                            %! polyphony
     
     % [G OboeMusicVoice measure 268 / measure 12]                                                  %! _comment_measure_numbers
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!4
+    fs''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    af''!8
+    af''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    af''!8
+    af''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    af''!16.
+    af''!16.                                                                                       %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! polyphony
     
-    c''16.
+    c''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    cs''!16.
+    cs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    b'16.
+    b'16.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    ]                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/8 {                                                                                   %! polyphony
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        a''8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        bf''!8
+        a''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e'''8
+        bf''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!8
+        e'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!8
+        d''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
+        
+        af''!8                                                                                     %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        ]                                                                                          %! polyphony
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! polyphony
     
     % [G OboeMusicVoice measure 269 / measure 13]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -671,10 +671,10 @@ G_OboeMusicVoice = {
     \override Stem.direction = #up                                                                 %! OverrideCommand(1)
     \override TupletBracket.staff-padding = #3                                                     %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'1.
+    c'1.                                                                                           %! hypermeter_tuplets
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     
-    c'1
+    c'1                                                                                            %! hypermeter_tuplets
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -682,11 +682,11 @@ G_OboeMusicVoice = {
                 \finger
                     1
         }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [G OboeMusicVoice measure 276 / measure 20]                                              %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -695,7 +695,7 @@ G_OboeMusicVoice = {
                         2
             }
         
-        c'1
+        c'1                                                                                        %! hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -703,14 +703,14 @@ G_OboeMusicVoice = {
                     \finger
                         1
             }
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [G OboeMusicVoice measure 278 / measure 22]                                              %! _comment_measure_numbers
-        c'2.
+        c'2.                                                                                       %! hypermeter_tuplets
         
-        c'2
+        c'2                                                                                        %! hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -721,7 +721,7 @@ G_OboeMusicVoice = {
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert Stem.direction                                                                     %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [G OboeMusicVoice measure 280 / measure 24]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -811,102 +811,102 @@ G_ClarinetMusicVoice = {
     % [G ClarinetMusicVoice measure 265 / measure 9]                                               %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'3                                               %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    f''4.
+    f''4.                                                                                          %! polyphony
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                                    %! IndicatorCommand
     ^ \markup { leggierissimo }                                                                    %! IndicatorCommand
     ^ \markup \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                                %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs'!4
+        cs'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ds''!4
+        ds''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    ds''!4
+    ds''!4                                                                                         %! polyphony
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     
     % [G ClarinetMusicVoice measure 266 / measure 10]                                              %! _comment_measure_numbers
-    gs''!8
+    gs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    fs''!8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    cs'!8
+    fs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    b''8
+    cs'!8                                                                                          %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    b''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    b''4.
+    b''4.                                                                                          %! polyphony
     ~
     
     % [G ClarinetMusicVoice measure 267 / measure 11]                                              %! _comment_measure_numbers
-    b''4
+    b''4                                                                                           %! polyphony
     
-    f''4
+    f''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    a''4
+    a''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    ds''!16.
+    ds''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    fs''!16.
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    cs'!16.
+    fs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    b'16.
+    cs'!16.                                                                                        %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    b'16.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    b'4.
-    \times 2/3 {
+    b'4.                                                                                           %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [G ClarinetMusicVoice measure 268 / measure 12]                                          %! _comment_measure_numbers
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'4
+        a'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs'!4
+        cs'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    cs'!4.
+    cs'!4.                                                                                         %! polyphony
     ~
     
-    cs'!8
-    [
+    cs'!8                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    c'''8
+    c'''8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    f''8
+    f''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    a''8
+    a''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
+    ]                                                                                              %! polyphony
     
-    ds''!4.
+    ds''!4.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     % [G ClarinetMusicVoice measure 269 / measure 13]                                              %! _comment_measure_numbers
@@ -923,21 +923,21 @@ G_ClarinetMusicVoice = {
     
     % [G ClarinetMusicVoice measure 273 / measure 17]                                              %! _comment_measure_numbers
     R1 * 5/8                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 5/4 {                                                                                   %! hypermeter_tuplets
         
         % [G ClarinetMusicVoice measure 274 / measure 18]                                          %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'10                                          %! OverrideCommand(1)
         \override Stem.direction = #up                                                             %! OverrideCommand(1)
         \override TupletBracket.staff-padding = #6                                                 %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        d2
+        d2                                                                                         %! hypermeter_tuplets
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup \baca-explicit-indicator-markup "(“BassClarinet”)"                               %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        d1.
+        d1.                                                                                        %! hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -945,12 +945,12 @@ G_ClarinetMusicVoice = {
                     \finger
                         1
             }
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 21/16 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 21/16 {                                                                                 %! hypermeter_tuplets
         
         % [G ClarinetMusicVoice measure 276 / measure 20]                                          %! _comment_measure_numbers
-        d1
+        d1                                                                                         %! hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -959,7 +959,7 @@ G_ClarinetMusicVoice = {
                         2
             }
         
-        d1
+        d1                                                                                         %! hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -967,15 +967,15 @@ G_ClarinetMusicVoice = {
                     \finger
                         1
             }
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/4 {                                                                                   %! hypermeter_tuplets
         
         % [G ClarinetMusicVoice measure 279 / measure 23]                                          %! _comment_measure_numbers
-        d8
+        d8                                                                                         %! hypermeter_tuplets
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        d4.
+        d4.                                                                                        %! hypermeter_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         ^ \markup {
             \override
@@ -987,7 +987,7 @@ G_ClarinetMusicVoice = {
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert Stem.direction                                                                     %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [G ClarinetMusicVoice measure 280 / measure 24]                                              %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -1037,7 +1037,7 @@ G_PianoMusicVoice = {
     
     % [G PianoMusicVoice measure 260 / measure 4]                                                  %! _comment_measure_numbers
     R1 * 1                                                                                         %! _make_measure_silences
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
         % [G PianoMusicVoice measure 261 / measure 5]                                              %! _comment_measure_numbers
         \override Beam.positions = #'(-4 . -4)                                                     %! OverrideCommand(1)
@@ -1048,246 +1048,246 @@ G_PianoMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccato                                                                                %! IndicatorCommand
         ^ \markup { leggierissimo }                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''8
+        d''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''8
+        a''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''8
+        c''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    ef'''!16.
+    ef'''!16.                                                                                      %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    bf''!16.
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    af''!16.
+    bf''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    b''16.
+    af''!16.                                                                                       %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    b''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    b''4.
+    b''4.                                                                                          %! polyphony
     
     % [G PianoMusicVoice measure 262 / measure 6]                                                  %! _comment_measure_numbers
-    c''4.
+    c''4.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
-    c''8
-    [
+    c''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    af''!8
+    af''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
-    ]
-    \times 4/5 {
+    ]                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
         % [G PianoMusicVoice measure 263 / measure 7]                                              %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!8
+        cs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''8
+        b''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    bf''!8
+    bf''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    af''!8
+    af''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
+    ]                                                                                              %! polyphony
     
     % [G PianoMusicVoice measure 264 / measure 8]                                                  %! _comment_measure_numbers
-    b''8
+    b''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    bf''!8
+    bf''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        bf''!4
+        bf''!4                                                                                     %! polyphony
         
-        af''!4
+        af''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d'''4
+        d'''4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [G PianoMusicVoice measure 265 / measure 9]                                              %! _comment_measure_numbers
-        a'4
+        a'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!4
+        ef''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!4
+        fs'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    fs'!8
-    [
+    fs'!8                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    g'8
+    g'8                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    af''!8
+    af''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    af''!8
-    [
+    af''!8                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    c''8
+    c''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
+    ]                                                                                              %! polyphony
     
     % [G PianoMusicVoice measure 266 / measure 10]                                                 %! _comment_measure_numbers
-    bf''!8
+    bf''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    b''8
+    b''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    ]
-    \times 4/5 {
+    ]                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! polyphony
         
-        bf'!8
+        bf'!8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef'''!8
+        ef'''!8                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c'''8
+        c'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [G PianoMusicVoice measure 267 / measure 11]                                                 %! _comment_measure_numbers
-    c'''4
+    c'''4                                                                                          %! polyphony
     
-    d'''4
+    d'''4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    cs''!4
+    cs''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
-        cs''!8
-        [
+        cs''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        bf''!8
-        [
+        bf''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        ef'''!8
+        ef'''!8                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
+        ]                                                                                          %! polyphony
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! polyphony
     
     % [G PianoMusicVoice measure 268 / measure 12]                                                 %! _comment_measure_numbers
     R1 * 7/4                                                                                       %! _make_measure_silences
@@ -1306,7 +1306,7 @@ G_PianoMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'2
+    c'2                                                                                            %! piano_harmonics
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     ^ \markup { "5th harmonic of F1" }                                                             %! IndicatorCommand
@@ -1314,66 +1314,66 @@ G_PianoMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! piano_harmonics
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     ~
     
     % [G PianoMusicVoice measure 271 / measure 15]                                                 %! _comment_measure_numbers
-    c'1
+    c'1                                                                                            %! piano_harmonics
     ~
     
-    c'4
+    c'4                                                                                            %! piano_harmonics
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'2
+    c'2                                                                                            %! piano_harmonics
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     ~
     
     % [G PianoMusicVoice measure 272 / measure 16]                                                 %! _comment_measure_numbers
-    c'2
+    c'2                                                                                            %! piano_harmonics
     
-    r4.
+    r4.                                                                                            %! piano_harmonics
     
-    r2
+    r2                                                                                             %! piano_harmonics
     
     % [G PianoMusicVoice measure 273 / measure 17]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4.
+    c'4.                                                                                           %! piano_harmonics
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     ~
     
-    c'4
+    c'4                                                                                            %! piano_harmonics
     
     % [G PianoMusicVoice measure 274 / measure 18]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'2.
+    c'2.                                                                                           %! piano_harmonics
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     ~
     
-    c'4
+    c'4                                                                                            %! piano_harmonics
     
     % [G PianoMusicVoice measure 275 / measure 19]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'2
+    c'2                                                                                            %! piano_harmonics
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r2
+    r2                                                                                             %! piano_harmonics
     
-    r2
+    r2                                                                                             %! piano_harmonics
     
     % [G PianoMusicVoice measure 276 / measure 20]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'2
+    c'2                                                                                            %! piano_harmonics
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4
+    c'4                                                                                            %! piano_harmonics
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     \revert NoteHead.style                                                                         %! OverrideCommand(2)
@@ -1580,273 +1580,273 @@ G_ViolinMusicVoice = {
     \override DynamicLineSpanner.staff-padding = #'5                                               %! OverrideCommand(1)
     \override TupletBracket.staff-padding = #3                                                     %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e''8
+    e''8                                                                                           %! polyphony
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                                    %! IndicatorCommand
     ^ \markup { "leggierissimo: off-string bowing on staccati" }                                   %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    g'''8
+    g'''8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    fs'''!8
+    fs'''!8                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
-    \times 4/5 {
+    ]                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
-        bf'''!8
+        bf'''!8                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        cs'''!8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        b'''8
+        cs'''!8                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!8
+        b'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'''8
+        fs''!8                                                                                     %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        a'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    a'''4.
+    a'''4.                                                                                         %! polyphony
     
     % [G ViolinMusicVoice measure 262 / measure 6]                                                 %! _comment_measure_numbers
-    bf'''!4
+    bf'''!4                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    e''''4
+    e''''4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
-        e''''8
-        [
+        e''''8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        g'''8
+        g'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d'''8
+        d'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [G ViolinMusicVoice measure 263 / measure 7]                                             %! _comment_measure_numbers
-        d'''8
-        [
+        d'''8                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        fs'''!8
+        fs'''!8                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'''8
+        a'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    c'''8
+    c'''8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    ef'''!8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    fs'''!8
+    ef'''!8                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    a'''8
+    fs'''!8                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
+    
+    a'''8                                                                                          %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    ]                                                                                              %! polyphony
     
     % [G ViolinMusicVoice measure 264 / measure 8]                                                 %! _comment_measure_numbers
-    c''''8
+    c''''8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    e''''8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    fs'''!8
+    e''''8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    g'''8
+    fs'''!8                                                                                        %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    g'''8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    g'''4
+    g'''4                                                                                          %! polyphony
     
     % [G ViolinMusicVoice measure 265 / measure 9]                                                 %! _comment_measure_numbers
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    bf'''!4.
+    bf'''!4.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    bf'''!8
+    bf'''!8                                                                                        %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    bf'''!8
+    bf'''!8                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
-    af''!8
+    af''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    a''8
+    a''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    a''8
-    [
+    a''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    cs'''!8
+    cs'''!8                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
-    \times 4/7 {
+    ]                                                                                              %! polyphony
+    \times 4/7 {                                                                                   %! polyphony
         
         % [G ViolinMusicVoice measure 266 / measure 10]                                            %! _comment_measure_numbers
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        af'''!8
-        - \staccato                                                                                %! IndicatorCommand
-        
-        c'''8
+        af'''!8                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'''!8
+        c'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g'''8
+        bf'''!8                                                                                    %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        g'''8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af'''!8
+        af'''!8                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af'''!8
+        af'''!8                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    c'''16.
+    c'''16.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    bf'''!16.
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    a'''16.
+    bf'''!16.                                                                                      %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    bf'''!16.
+    a'''16.                                                                                        %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    bf'''!16.                                                                                      %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     % [G ViolinMusicVoice measure 267 / measure 11]                                                %! _comment_measure_numbers
-    bf'''!4
+    bf'''!4                                                                                        %! polyphony
     
-    fs'''!4
+    fs'''!4                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    ef'''!4
-    - \staccato                                                                                    %! IndicatorCommand
-    ~
-    
-    ef'''!8
-    [
-    
-    c'''8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    af'''!8
+    ef'''!4                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
     
-    af'''!16.
-    [
+    ef'''!8                                                                                        %! polyphony
+    [                                                                                              %! polyphony
     
-    c'''16.
+    c'''8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    cs'''!16.
+    af'''!8                                                                                        %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    ~
+    ]                                                                                              %! polyphony
+    
+    af'''!16.                                                                                      %! polyphony
+    [                                                                                              %! polyphony
+    
+    c'''16.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    b'''16.
+    cs'''!16.                                                                                      %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
+    
+    b'''16.                                                                                        %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    ]                                                                                              %! polyphony
     
     % [G ViolinMusicVoice measure 268 / measure 12]                                                %! _comment_measure_numbers
-    a'''8
+    a'''8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    b'''8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    bf'''!8
+    b'''8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    g'''8
-    - \staccato                                                                                    %! IndicatorCommand
-    ]
-    
-    d''''16.
-    - \staccato                                                                                    %! IndicatorCommand
-    [
-    
-    fs'''!16.
+    bf'''!8                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    a'''16.
+    g'''8                                                                                          %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    ]                                                                                              %! polyphony
+    
+    d''''16.                                                                                       %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    [                                                                                              %! polyphony
+    
+    fs'''!16.                                                                                      %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    a'''16.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    bf''!16.
+    bf''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        bf''!4
+        bf''!4                                                                                     %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        bf''!4
+        bf''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        b''4
+        b''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    g''4.
+    g''4.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     \revert Beam.positions                                                                         %! OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
@@ -1854,166 +1854,166 @@ G_ViolinMusicVoice = {
     
     % [G ViolinMusicVoice measure 269 / measure 13]                                                %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [G ViolinMusicVoice measure 270 / measure 14]                                            %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af'!8
+        af'!8                                                                                      %! glissando_rhythm
         \baca_fff_poss                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "molto gridato" }                                                              %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af'!4
+        af'!4                                                                                      %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af'!8
+        af'!8                                                                                      %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         \glissando                                                                                 %! SpannerCommand
         
-        cs'!2
+        cs'!2                                                                                      %! glissando_rhythm
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 5/7 {                                                                                   %! glissando_rhythm
         
         % [G ViolinMusicVoice measure 271 / measure 15]                                            %! _comment_measure_numbers
-        cs'!1
+        cs'!1                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        c'2.
+        c'2.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        d'4
+        d'4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f2
+        f2                                                                                         %! glissando_rhythm
         ~
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [G ViolinMusicVoice measure 272 / measure 16]                                            %! _comment_measure_numbers
-        f8
+        f8                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        bf'!2
+        bf'!2                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
-        fs'!4
+        fs'!4                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b'8.
+        b'8.                                                                                       %! glissando_rhythm
         ~
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        b'4
+        b'4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        af'!2
+        af'!2                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [G ViolinMusicVoice measure 273 / measure 17]                                            %! _comment_measure_numbers
-        fs'!16
+        fs'!16                                                                                     %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b'4
+        b'4                                                                                        %! glissando_rhythm
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
-        b'4
+        b'4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a'8.
+        a'8.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [G ViolinMusicVoice measure 274 / measure 18]                                                %! _comment_measure_numbers
-    cs'!4
+    cs'!4                                                                                          %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d'2
+    d'2                                                                                            %! glissando_rhythm
     ~
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        d'16
+        d'16                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a'4
+        a'4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
         % [G ViolinMusicVoice measure 275 / measure 19]                                            %! _comment_measure_numbers
-        cs''!2
+        cs''!2                                                                                     %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        af'!4.
+        af'!4.                                                                                     %! glissando_rhythm
         ~
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        af'!4
+        af'!4                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        fs'!2
+        fs'!2                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        e''8
+        e''8                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        bf'!2
+        bf'!2                                                                                      %! glissando_rhythm
         ~
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
         % [G ViolinMusicVoice measure 276 / measure 20]                                            %! _comment_measure_numbers
-        bf'!4
+        bf'!4                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d''8.
+        d''8.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        c''4
+        c''4                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g2
+        g2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         \revert NoteHead.style                                                                     %! OverrideCommand(2)
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 11/10 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 11/10 {                                                                                 %! hypermeter_tuplets
         
         % [G ViolinMusicVoice measure 277 / measure 21]                                            %! _comment_measure_numbers
-        c'1.
+        c'1.                                                                                       %! hypermeter_tuplets
         :32                                                                                        %! IndicatorCommand
         ^ \markup { "subito ordinario" }                                                           %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        df'!1
+        df'!1                                                                                      %! hypermeter_tuplets
         :32                                                                                        %! IndicatorCommand
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [G ViolinMusicVoice measure 280 / measure 24]                                                %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -2043,7 +2043,7 @@ G_ViolaMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bf,!1..
+    bf,!1..                                                                                        %! fused_expanse
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"                                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"                                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -2061,21 +2061,21 @@ G_ViolaMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                                           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [G ViolaMusicVoice measure 259 / measure 3]                                                  %! _comment_measure_numbers
-    cqf!4
+    cqf!4                                                                                          %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    d4.
+    d4.                                                                                            %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     % [G ViolaMusicVoice measure 260 / measure 4]                                                  %! _comment_measure_numbers
-    eqs!1..
+    eqs!1..                                                                                        %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    fqs!1..
+    fqs!1..                                                                                        %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    g4
+    g4                                                                                             %! fused_expanse
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     
@@ -2087,14 +2087,14 @@ G_ViolaMusicVoice = {
     
     % [G ViolaMusicVoice measure 266 / measure 10]                                                 %! _comment_measure_numbers
     R1 * 7/8                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 13/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 13/10 {                                                                                 %! hypermeter_tuplets
         
         % [G ViolaMusicVoice measure 267 / measure 11]                                             %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'7                                           %! OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                                                 %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        g2
+        g2                                                                                         %! hypermeter_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup { "molto flautando" }                                                            %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2102,164 +2102,164 @@ G_ViolaMusicVoice = {
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        ftqs!\breve
+        ftqs!\breve                                                                                %! hypermeter_tuplets
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [G ViolaMusicVoice measure 269 / measure 13]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [G ViolaMusicVoice measure 270 / measure 14]                                             %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b4
+        b4                                                                                         %! glissando_rhythm
         \baca_fff_poss                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "molto gridato" }                                                              %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        c2
+        c2                                                                                         %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        c16
+        c16                                                                                        %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         \glissando                                                                                 %! SpannerCommand
         
-        e4
+        e4                                                                                         %! glissando_rhythm
         ~
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
         % [G ViolaMusicVoice measure 271 / measure 15]                                             %! _comment_measure_numbers
-        e2
+        e2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        fs!4.
+        fs!4.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
-    f4
+    f4                                                                                             %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    af!2
+    af!2                                                                                           %! glissando_rhythm
     ~
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        af!8
+        af!8                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        cs!2
+        cs!2                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
         % [G ViolaMusicVoice measure 272 / measure 16]                                             %! _comment_measure_numbers
-        e2
+        e2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g4.
+        g4.                                                                                        %! glissando_rhythm
         ~
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        g4..
+        g4..                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a2..
+        a2..                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [G ViolaMusicVoice measure 273 / measure 17]                                             %! _comment_measure_numbers
-        f16.
+        f16.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g4.
+        g4.                                                                                        %! glissando_rhythm
         ~
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
-        g4
+        g4                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        af!8.
+        af!8.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [G ViolaMusicVoice measure 274 / measure 18]                                             %! _comment_measure_numbers
-        c8
+        c8                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f4
+        f4                                                                                         %! glissando_rhythm
         ~
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        f8
+        f8                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        bf!2
+        bf!2                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
-        b4
+        b4                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d8.
+        d8.                                                                                        %! glissando_rhythm
         ~
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [G ViolaMusicVoice measure 275 / measure 19]                                             %! _comment_measure_numbers
-        d4
+        d4                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        c'2
+        c'2                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        g4
+        g4                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f1
+        f1                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         \revert NoteHead.style                                                                     %! OverrideCommand(2)
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [G ViolaMusicVoice measure 276 / measure 20]                                             %! _comment_measure_numbers
-        bqs,!4
+        bqs,!4                                                                                     %! hypermeter_tuplets
         :32                                                                                        %! IndicatorCommand
         ^ \markup { "subito ordinario" }                                                           %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        c1
+        c1                                                                                         %! hypermeter_tuplets
         :32                                                                                        %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [G ViolaMusicVoice measure 278 / measure 22]                                             %! _comment_measure_numbers
-        bqs,!4
+        bqs,!4                                                                                     %! hypermeter_tuplets
         :32                                                                                        %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        c1
+        c1                                                                                         %! hypermeter_tuplets
         :32                                                                                        %! IndicatorCommand
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [G ViolaMusicVoice measure 280 / measure 24]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -2289,7 +2289,7 @@ G_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    a,,2.
+    a,,2.                                                                                          %! fused_expanse
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"                                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“Cello”)"                                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -2306,46 +2306,46 @@ G_CelloMusicVoice = {
         }                                                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                                           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    bqf,,!1
+    bqf,,!1                                                                                        %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     % [G CelloMusicVoice measure 259 / measure 3]                                                  %! _comment_measure_numbers
-    c,4.
+    c,4.                                                                                           %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    dqs,!4
+    dqs,!4                                                                                         %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     % [G CelloMusicVoice measure 260 / measure 4]                                                  %! _comment_measure_numbers
-    eqs,!\breve
+    eqs,!\breve                                                                                    %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    f,1..
+    f,1..                                                                                          %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     % [G CelloMusicVoice measure 264 / measure 8]                                                  %! _comment_measure_numbers
-    gf,!2.
+    gf,!2.                                                                                         %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     % [G CelloMusicVoice measure 265 / measure 9]                                                  %! _comment_measure_numbers
-    aqf,!4.
+    aqf,!4.                                                                                        %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    b,2.
+    b,2.                                                                                           %! fused_expanse
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     
     % [G CelloMusicVoice measure 266 / measure 10]                                                 %! _comment_measure_numbers
     R1 * 7/8                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 13/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 13/10 {                                                                                 %! hypermeter_tuplets
         
         % [G CelloMusicVoice measure 267 / measure 11]                                             %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'7                                           %! OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                                                 %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b,1.
+        b,1.                                                                                       %! hypermeter_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup { "molto flautando" }                                                            %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2353,186 +2353,186 @@ G_CelloMusicVoice = {
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        atqs,!1
+        atqs,!1                                                                                    %! hypermeter_tuplets
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [G CelloMusicVoice measure 269 / measure 13]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [G CelloMusicVoice measure 270 / measure 14]                                             %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        a,8
+        a,8                                                                                        %! glissando_rhythm
         \baca_fff_poss                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "molto gridato" }                                                              %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        bf,!4
+        bf,!4                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        f,16
+        f,16                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        d,4
+        d,4                                                                                        %! glissando_rhythm
         ~
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
-        d,4
+        d,4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b,8.
+        b,8.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [G CelloMusicVoice measure 271 / measure 15]                                             %! _comment_measure_numbers
-        bf,!4
+        bf,!4                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g,2
+        g,2                                                                                        %! glissando_rhythm
         ~
-    }
+    }                                                                                              %! glissando_rhythm
     
-    g,4
+    g,4                                                                                            %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    f,1
+    f,1                                                                                            %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
     % [G CelloMusicVoice measure 272 / measure 16]                                                 %! _comment_measure_numbers
-    b,2
+    b,2                                                                                            %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    c4.
+    c4.                                                                                            %! glissando_rhythm
     ~
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        c4
+        c4                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        bf,!2
+        bf,!2                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [G CelloMusicVoice measure 273 / measure 17]                                             %! _comment_measure_numbers
-        e,16
+        e,16                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        bf,!4
+        bf,!4                                                                                      %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         ~
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        bf,!8
+        bf,!8                                                                                      %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! glissando_rhythm
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        bf,!16.
+        bf,!16.                                                                                    %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        ]
+        ]                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        c,8
+        c,8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b,4
+        b,4                                                                                        %! glissando_rhythm
         ~
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [G CelloMusicVoice measure 274 / measure 18]                                             %! _comment_measure_numbers
-        b,16
+        b,16                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af,!4
+        af,!4                                                                                      %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af,!2
+        af,!2                                                                                      %! glissando_rhythm
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         \glissando                                                                                 %! SpannerCommand
         
-        c4.
+        c4.                                                                                        %! glissando_rhythm
         ~
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [G CelloMusicVoice measure 275 / measure 19]                                             %! _comment_measure_numbers
-        c2
+        c2                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f,1
+        f,1                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        b,8
+        b,8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f,2
+        f,2                                                                                        %! glissando_rhythm
         ~
-    }
-    \times 4/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
         % [G CelloMusicVoice measure 276 / measure 20]                                             %! _comment_measure_numbers
-        f,4
+        f,4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b,,8.
+        b,,8.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        c,8
+        c,8                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        b,,4
+        b,,4                                                                                       %! glissando_rhythm
         ~
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        b,,16
+        b,,16                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        c,4
+        c,4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         \revert NoteHead.style                                                                     %! OverrideCommand(2)
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 11/10 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 11/10 {                                                                                 %! hypermeter_tuplets
         
         % [G CelloMusicVoice measure 277 / measure 21]                                             %! _comment_measure_numbers
-        b,,2
+        b,,2                                                                                       %! hypermeter_tuplets
         :32                                                                                        %! IndicatorCommand
         ^ \markup { "subito ordinario" }                                                           %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        c,\breve
+        c,\breve                                                                                   %! hypermeter_tuplets
         :32                                                                                        %! IndicatorCommand
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [G CelloMusicVoice measure 280 / measure 24]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences

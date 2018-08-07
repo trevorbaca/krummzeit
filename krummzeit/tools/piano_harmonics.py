@@ -19,6 +19,7 @@ def piano_harmonics(
             ),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask,
+            tag='piano_harmonics',
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions,
             ),

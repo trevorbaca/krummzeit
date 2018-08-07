@@ -1016,7 +1016,7 @@ C_ClarinetMusicStaff = {
 
 
 C_PianoMusicVoice = {
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! silver_points
         
         % [C PianoMusicVoice measure 133 / measure 1]                                              %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1032,7 +1032,7 @@ C_PianoMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e''''16
+        e''''16                                                                                    %! silver_points
         \ff                                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Pf.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -1048,83 +1048,83 @@ C_PianoMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        r16
+        r16                                                                                        %! silver_points
         
-        ef''''!16
+        ef''''!16                                                                                  %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        f''''8.
+        f''''8.                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \times 4/7 {
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        cs''''!8
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        r8
-        
-        d'''8
+        cs''''!8                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        e'''4
+        r8                                                                                         %! silver_points
+        
+        d'''8                                                                                      %! silver_points
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        e'''4                                                                                      %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        f''4
+        f''4                                                                                       %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
         \ottava #0                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! silver_points
     
     % [C PianoMusicVoice measure 134 / measure 2]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! silver_points
         
         % [C PianoMusicVoice measure 135 / measure 3]                                              %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        g''16
+        g''16                                                                                      %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs''!16
+        cs''!16                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        a'8.
+        a'8.                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 6/7 {                                                                                   %! silver_points
         
-        ef'!16
+        ef'!16                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        r16
+        r16                                                                                        %! silver_points
         
-        bf'!16
+        bf'!16                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        b8
+        b8                                                                                         %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'8
+        c'8                                                                                        %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
     
     % [C PianoMusicVoice measure 136 / measure 4]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! silver_points
         
         % [C PianoMusicVoice measure 137 / measure 5]                                              %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_137:SHIFTED_CLEF
@@ -1134,42 +1134,42 @@ C_PianoMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        af!8
+        af!8                                                                                       %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        r8
+        r8                                                                                         %! silver_points
         
-        g8
+        g8                                                                                         %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a4.
+        a4.                                                                                        %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 10/7 {
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 10/7 {                                                                                  %! silver_points
         
-        c16
+        c16                                                                                        %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        r16
+        r16                                                                                        %! silver_points
         
-        ef,!16
+        ef,!16                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        c8
+        c8                                                                                         %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        cs,!8
+        cs,!8                                                                                      %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
     
     % [C PianoMusicVoice measure 138 / measure 6]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -1716,150 +1716,150 @@ C_ViolinMusicVoice = {
     
     % [C ViolinMusicVoice measure 136 / measure 4]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 5/6 {                                                                                   %! silver_points
         
         % [C ViolinMusicVoice measure 137 / measure 5]                                             %! _comment_measure_numbers
         \override Beam.positions = #'(-4 . -4)                                                     %! OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                                                 %! OverrideCommand(1)
-        r8
+        r8                                                                                         %! silver_points
         
         \ottava #1                                                                                 %! SpannerCommand
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e''''8
+        e''''8                                                                                     %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        [
+        [                                                                                          %! silver_points
         
-        cs''''!8
+        cs''''!8                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        bf'''!4
+        bf'''!4                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \times 4/7 {
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        af'''!8
+        af'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        bf''!4
+        bf''!4                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        ef''!4
+        ef''!4                                                                                     %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
         \ottava #0                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! silver_points
     
     % [C ViolinMusicVoice measure 138 / measure 6]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 5/6 {                                                                                   %! silver_points
         
         % [C ViolinMusicVoice measure 139 / measure 7]                                             %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        a''8
+        a''8                                                                                       %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        [
+        [                                                                                          %! silver_points
         
-        e''8
+        e''8                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        g''4
+        g''4                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \times 4/7 {
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        d''8
+        d''8                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        ef'!8
+        ef'!8                                                                                      %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        cs''!4
+        cs''!4                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e'4
+        e'4                                                                                        %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [C ViolinMusicVoice measure 140 / measure 8]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 5/6 {                                                                                   %! silver_points
         
         % [C ViolinMusicVoice measure 141 / measure 9]                                             %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        g''8
+        g''8                                                                                       %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        [
+        [                                                                                          %! silver_points
         
-        c''8
+        c''8                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        bf'!4
+        bf'!4                                                                                      %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \times 4/7 {
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        ef'!8
+        ef'!8                                                                                      %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        e'8
+        e'8                                                                                        %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        f'4
+        f'4                                                                                        %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c'4
+        c'4                                                                                        %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! silver_points
     
     % [C ViolinMusicVoice measure 142 / measure 10]                                                %! _comment_measure_numbers
     R1 * 5/8                                                                                       %! _make_measure_silences
@@ -1946,7 +1946,7 @@ C_ViolaMusicVoice = {
     
     % [C ViolaMusicVoice measure 136 / measure 4]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! silver_points
         
         % [C ViolaMusicVoice measure 137 / measure 5]                                              %! _comment_measure_numbers
         \override Beam.positions = #'(-4 . -4)                                                     %! OverrideCommand(1)
@@ -1958,78 +1958,78 @@ C_ViolaMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        r8
+        r8                                                                                         %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \ottava #1                                                                                 %! SpannerCommand
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        ef'''!4
+        ef'''!4                                                                                    %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 7/4 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        af'''!8
+        af'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        r16
+        r16                                                                                        %! silver_points
         
-        f''8
+        f''8                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b''8
+        b''8                                                                                       %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         \ottava #0                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! silver_points
     
     % [C ViolaMusicVoice measure 138 / measure 6]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! silver_points
         
         % [C ViolaMusicVoice measure 139 / measure 7]                                              %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        f''4
+        f''4                                                                                       %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 7/4 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        f''8
+        f''8                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        a'8
+        a'8                                                                                        %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
     
     % [C ViolaMusicVoice measure 140 / measure 8]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! silver_points
         
         % [C ViolaMusicVoice measure 141 / measure 9]                                              %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_141:SHIFTED_CLEF
@@ -2038,39 +2038,39 @@ C_ViolaMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        r8
+        r8                                                                                         %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        f'4
+        f'4                                                                                        %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 7/4 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        af!8
+        af!8                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        r16
+        r16                                                                                        %! silver_points
         
-        a8
+        a8                                                                                         %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        bf,!8
+        bf,!8                                                                                      %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! silver_points
     
     % [C ViolaMusicVoice measure 142 / measure 10]                                                 %! _comment_measure_numbers
     R1 * 5/8                                                                                       %! _make_measure_silences
@@ -2160,8 +2160,8 @@ C_CelloMusicVoice = {
     
     % [C CelloMusicVoice measure 136 / measure 4]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 7/4 {                                                                                   %! silver_points
         
         % [C CelloMusicVoice measure 137 / measure 5]                                              %! _comment_measure_numbers
         \override Beam.positions = #'(-4 . -4)                                                     %! OverrideCommand(1)
@@ -2173,41 +2173,41 @@ C_CelloMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        r16
+        r16                                                                                        %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        f''8
+        f''8                                                                                       %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        r16
+        r16                                                                                        %! silver_points
         
-        b'8
+        b'8                                                                                        %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        d''8
+        d''8                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \times 2/3 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        d'4
+        d'4                                                                                        %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [C CelloMusicVoice measure 138 / measure 6]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 7/4 {                                                                                   %! silver_points
         
         % [C CelloMusicVoice measure 139 / measure 7]                                              %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_139:SHIFTED_CLEF
@@ -2216,73 +2216,73 @@ C_CelloMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        r16
+        r16                                                                                        %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        ef'!8
+        ef'!8                                                                                      %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs'!8
+        cs'!8                                                                                      %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        f8
+        f8                                                                                         %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \times 2/3 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        ef!4
+        ef!4                                                                                       %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [C CelloMusicVoice measure 140 / measure 8]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 7/4 {                                                                                   %! silver_points
         
         % [C CelloMusicVoice measure 141 / measure 9]                                              %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b8
+        b8                                                                                         %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
-        r16
+        r16                                                                                        %! silver_points
         
-        g8
+        g8                                                                                         %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs!8
+        cs!8                                                                                       %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \times 2/3 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b,4
+        b,4                                                                                        %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! silver_points
     
     % [C CelloMusicVoice measure 142 / measure 10]                                                 %! _comment_measure_numbers
     R1 * 5/8                                                                                       %! _make_measure_silences

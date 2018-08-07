@@ -1774,523 +1774,523 @@ A_OboeMusicVoice = {
     
     % [A OboeMusicVoice measure 36 / measure 23]                                                   %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    ef'!4.
+    ef'!4.                                                                                         %! polyphony
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #blue                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
-        e'4
+        e'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!4
+        af'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    c'4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    c'4                                                                                            %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 6/10 {                                                                                  %! polyphony
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        fs'!16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        g'16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef'!16
+        g'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''16
+        ef'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        af'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g'16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        g'16                                                                                       %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A OboeMusicVoice measure 37 / measure 24]                                               %! _comment_measure_numbers
-        bf'!4
+        bf'!4                                                                                      %! polyphony
         
-        a'4
+        a'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    c'4
+    c'4                                                                                            %! polyphony
     
     % [A OboeMusicVoice measure 38 / measure 25]                                                   %! _comment_measure_numbers
-    fs'!4
+    fs'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    \times 8/12 {
+    \times 8/12 {                                                                                  %! polyphony
         
-        b'16
+        b'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        e'16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        g'16
+        e'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''16
+        g'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e'16
+        a'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!16
+        e'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'16
+        af'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        a'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!16
+        fs'!16                                                                                     %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        af'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    af'!4
-    \times 2/3 {
+    af'!4                                                                                          %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A OboeMusicVoice measure 39 / measure 26]                                               %! _comment_measure_numbers
-        a'4
+        a'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef'!4
+        ef'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!4
+        af'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    af'!4.
+    af'!4.                                                                                         %! polyphony
     ~
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 6/10 {                                                                                  %! polyphony
         
         % [A OboeMusicVoice measure 40 / measure 27]                                               %! _comment_measure_numbers
-        af'!16
-        [
+        af'!16                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!16
+        af'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b'16
+        b'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'16
+        a'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!16
+        af'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef'!16
+        ef'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        cs''!4
-        - \staccato                                                                                %! IndicatorCommand
-        
-        e'4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g'4
+        e'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
-    \times 2/3 {
+        
+        g'4                                                                                        %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A OboeMusicVoice measure 41 / measure 28]                                               %! _comment_measure_numbers
-        bf'!4
+        bf'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''4
+        d''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''4
+        c''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    c''4
+    c''4                                                                                           %! polyphony
     
-    d''16
+    d''16                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    e''16
+    e''16                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    g''16
+    g''16                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    b'16
+    b'16                                                                                           %! polyphony
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     % [A OboeMusicVoice measure 42 / measure 29]                                                   %! _comment_measure_numbers
-    b'4
+    b'4                                                                                            %! polyphony
     ~
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
-        b'4
+        b'4                                                                                        %! polyphony
         
-        bf'!4
+        bf'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!4
+        fs'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    ef''!4.
+    ef''!4.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    \times 8/12 {
+    \times 8/12 {                                                                                  %! polyphony
         
-        a'16
+        a'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        cs''!16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        ef''!16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b'16
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        b'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b'16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!16
+        b'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g'16
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        g'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        af''!16                                                                                    %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    af''!4.
+    af''!4.                                                                                        %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A OboeMusicVoice measure 43 / measure 30]                                               %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af''!4
+        af''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    e''4
+    e''4                                                                                           %! polyphony
     ~
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 6/10 {                                                                                  %! polyphony
         
         % [A OboeMusicVoice measure 44 / measure 31]                                               %! _comment_measure_numbers
-        e''16
-        [
+        e''16                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        g''16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''16
+        e''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/6 {                                                                                   %! polyphony
         
-        a''4
-        - \staccato                                                                                %! IndicatorCommand
-        
-        af''!4
+        a''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!4
+        af''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+        
+        bf'!4                                                                                      %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+    }                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/6 {                                                                                   %! polyphony
         
         % [A OboeMusicVoice measure 45 / measure 32]                                               %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af''!4
+        af''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af''!4
+        af''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        bf'!4
+        bf'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
     % [A OboeMusicVoice measure 46 / measure 33]                                                   %! _comment_measure_numbers
-    bf'!4
-    \times 8/12 {
+    bf'!4                                                                                          %! polyphony
+    \times 8/12 {                                                                                  %! polyphony
         
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        af''!16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d''16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        b''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        af''!16                                                                                    %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    a''4.
+    a''4.                                                                                          %! polyphony
     ~
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A OboeMusicVoice measure 47 / measure 34]                                               %! _comment_measure_numbers
-        a''4
+        a''4                                                                                       %! polyphony
         
-        b''4
+        b''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!4
+        af''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    e''4.
+    e''4.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 6/10 {                                                                                  %! polyphony
         
-        a''16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        fs''!16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        g''16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        a''16                                                                                      %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A OboeMusicVoice measure 48 / measure 35]                                               %! _comment_measure_numbers
-        bf'!4
+        bf'!4                                                                                      %! polyphony
         
-        c''4
+        c''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A OboeMusicVoice measure 49 / measure 36]                                               %! _comment_measure_numbers
-        d''4
+        d''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''4
+        c''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    c''4
+    c''4                                                                                           %! polyphony
     ~
     
     % [A OboeMusicVoice measure 50 / measure 37]                                                   %! _comment_measure_numbers
-    c''16
-    [
+    c''16                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    d''16
+    d''16                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    bf''!16
+    bf''!16                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    bf''!16
+    bf''!16                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''4
+        a''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
     % [A OboeMusicVoice measure 51 / measure 38]                                                   %! _comment_measure_numbers
     R1 * 9/8                                                                                       %! _make_measure_silences
@@ -2475,7 +2475,7 @@ A_ClarinetMusicVoice = {
         }                                                                                          %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:IndicatorCommand:-PARTS
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)                                %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs''!4.
+    cs''!4.                                                                                        %! polyphony
     \mp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                                    %! IndicatorCommand
     ^ \markup {                                                                                    %! IndicatorCommand
@@ -2519,175 +2519,175 @@ A_ClarinetMusicVoice = {
                         }                                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
                 }                                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
         }                                                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''4
+        g''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        gs''!4
+        gs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    gs''!4
+    gs''!4                                                                                         %! polyphony
     
-    ds''!16.
+    ds''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    c''16.
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    d''16.
+    c''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    e''16.
+    d''16.                                                                                         %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    e''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ClarinetMusicVoice measure 19 / measure 6]                                            %! _comment_measure_numbers
-        e''4
+        e''4                                                                                       %! polyphony
         
-        ds''!4
+        ds''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''4
+        c''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    c''4
+    c''4                                                                                           %! polyphony
     
-    c''4
+    c''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    ds''!4
+    ds''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    g''8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    f''8
+    g''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    c''8
+    f''8                                                                                           %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    c''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 20 / measure 7]                                                %! _comment_measure_numbers
-    c''4
-    \times 2/3 {
+    c''4                                                                                           %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''4
+        a''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 21 / measure 8]                                                %! _comment_measure_numbers
-    a''4
+    a''4                                                                                           %! polyphony
     
-    e''4
+    e''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
-    e''16.
-    [
+    e''16.                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    as'!16.
+    as'!16.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    cs''!16.
+    cs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    gs''!16.
+    gs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        ds''!4
+        ds''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    c''4.
+    c''4.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
     % [A ClarinetMusicVoice measure 22 / measure 9]                                                %! _comment_measure_numbers
-    c''4.
+    c''4.                                                                                          %! polyphony
     
-    f''8
+    f''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    gs''!8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    as'!8
+    gs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    cs''!8
+    as'!8                                                                                          %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    cs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    cs''!4
+    cs''!4                                                                                         %! polyphony
     ~
     
-    cs''!4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    cs''!4                                                                                         %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/4 {                                                                                   %! polyphony
         
         % [A ClarinetMusicVoice measure 23 / measure 10]                                           %! _comment_measure_numbers
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 24 / measure 11]                                               %! _comment_measure_numbers
-    c''8
+    c''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    f''8
+    f''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        f''4
+        f''4                                                                                       %! polyphony
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''4
+        d''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    as'!4
+    as'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     % [A ClarinetMusicVoice measure 25 / measure 12]                                               %! _comment_measure_numbers
@@ -2704,194 +2704,194 @@ A_ClarinetMusicVoice = {
     
     % [A ClarinetMusicVoice measure 29 / measure 16]                                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    d''4.
+    d''4.                                                                                          %! polyphony
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                                    %! IndicatorCommand
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
-        g''4
+        g''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        gs''!4
+        gs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'4
+        a'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    a'4
+    a'4                                                                                            %! polyphony
     
-    e''16.
+    e''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    cs''!16.
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    ds''!16.
+    cs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    f''16.
+    ds''!16.                                                                                       %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    f''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ClarinetMusicVoice measure 30 / measure 17]                                           %! _comment_measure_numbers
-        f''4
+        f''4                                                                                       %! polyphony
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         ~
-    }
+    }                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    cs''!4
+    cs''!4                                                                                         %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    cs''!4
+    cs''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
-    e''4
+    e''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    g''8
+    g''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    gs''!8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    fs''!8
+    gs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    cs''!8
+    fs''!8                                                                                         %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    cs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 31 / measure 18]                                               %! _comment_measure_numbers
-    cs''!4
-    \times 2/3 {
+    cs''!4                                                                                         %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g'4
+        g'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        as'!4
+        as'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 32 / measure 19]                                               %! _comment_measure_numbers
-    as'!4
+    as'!4                                                                                          %! polyphony
     
-    f''4
+    f''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
-    f''16.
-    [
+    f''16.                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    b'16.
+    b'16.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    d''16.
+    d''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    a'16.
+    a'16.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    cs''!4.
+    cs''!4.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
     % [A ClarinetMusicVoice measure 33 / measure 20]                                               %! _comment_measure_numbers
-    cs''!4.
+    cs''!4.                                                                                        %! polyphony
     
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    a''8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    b'8
+    a''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    d''8
+    b'8                                                                                            %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    d''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    d''4
+    d''4                                                                                           %! polyphony
     ~
     
-    d''4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    d''4                                                                                           %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/4 {                                                                                   %! polyphony
         
         % [A ClarinetMusicVoice measure 34 / measure 21]                                           %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
+    }                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 35 / measure 22]                                               %! _comment_measure_numbers
-    cs''!8
+    cs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         
-        d''4
+        d''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''4
+        a''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    f''4
+    f''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
@@ -2900,7 +2900,7 @@ A_ClarinetMusicVoice = {
     % [A ClarinetMusicVoice measure 36 / measure 23]                                               %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    f''4
+    f''4                                                                                           %! polyphony
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
@@ -2908,359 +2908,359 @@ A_ClarinetMusicVoice = {
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    f'4
+    f'4                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    f'16.
+    f'16.                                                                                          %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    f'16.
+    f'16.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
-    fs'!16.
+    fs'!16.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    c'16.
+    c'16.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    ]                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/6 {                                                                                   %! polyphony
         
-        g'4
+        g'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        as!4
+        as!4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 37 / measure 24]                                               %! _comment_measure_numbers
-    ds'!4.
+    ds'!4.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
-    ds'!4.
+    ds'!4.                                                                                         %! polyphony
     
     % [A ClarinetMusicVoice measure 38 / measure 25]                                               %! _comment_measure_numbers
-    e'8
+    e'8                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    b8
+    b8                                                                                             %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    a'8
+    a'8                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    g'8
+    g'8                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    g'4
+    g'4                                                                                            %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    g'4
+    g'4                                                                                            %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     % [A ClarinetMusicVoice measure 39 / measure 26]                                               %! _comment_measure_numbers
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    g'4
+    g'4                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/9 {                                                                                   %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        g'8
+        g'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! polyphony
         
-        ds'!8
+        ds'!8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''8
+        c''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f'8
+        f'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!8
+        cs''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e'8
+        e'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!8
+        fs'!8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f'8
+        f'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs'!8
+        cs'!8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ClarinetMusicVoice measure 40 / measure 27]                                           %! _comment_measure_numbers
-        cs'!4
+        cs'!4                                                                                      %! polyphony
         
-        as'!4
+        as'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        gs'!4
+        gs'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    f'4.
+    f'4.                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
     % [A ClarinetMusicVoice measure 41 / measure 28]                                               %! _comment_measure_numbers
-    f'4.
+    f'4.                                                                                           %! polyphony
     ~
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/9 {                                                                                   %! polyphony
         
-        f'8
-        [
+        f'8                                                                                        %! polyphony
+        [                                                                                          %! polyphony
         
-        g'8
+        g'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f'8
+        f'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        gs'!8
+        gs'!8                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'8
+        a'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''8
+        c''8                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g'8
+        g'8                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ds''!8
+        ds''!8                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        c''8
+        c''8                                                                                       %! polyphony
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ClarinetMusicVoice measure 42 / measure 29]                                           %! _comment_measure_numbers
-        as'!4
+        as'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!4
+        fs'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        f'4
+        f'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
+    }                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    f''4
+    f''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    f''4
+    f''4                                                                                           %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    f''4
+    f''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
-    ds''!16.
+    ds''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    cs''!16.
+    cs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    cs''!16.
+    cs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
-    g'16.
+    g'16.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    g'4.
+    g'4.                                                                                           %! polyphony
     ~
     
     % [A ClarinetMusicVoice measure 43 / measure 30]                                               %! _comment_measure_numbers
-    g'4
+    g'4                                                                                            %! polyphony
     
-    a'4
+    a'4                                                                                            %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    as'!4
+    as'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     % [A ClarinetMusicVoice measure 44 / measure 31]                                               %! _comment_measure_numbers
-    cs''!8
+    cs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    g''8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    ds''!8
+    g''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    gs''!8
+    ds''!8                                                                                         %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    gs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        gs''!4
+        gs''!4                                                                                     %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        as'!4
+        as'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        as'!4
+        as'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
+    }                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 45 / measure 32]                                               %! _comment_measure_numbers
-    b'4.
+    b'4.                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
-    b'4
+    b'4                                                                                            %! polyphony
     ~
     
     % [A ClarinetMusicVoice measure 46 / measure 33]                                               %! _comment_measure_numbers
-    b'8
-    [
+    b'8                                                                                            %! polyphony
+    [                                                                                              %! polyphony
     
-    cs''!8
+    cs''!8                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    e''8
+    e''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    f''8
+    f''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
+    ]                                                                                              %! polyphony
     
-    as'!4
+    as'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    gs''!4.
+    gs''!4.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
     % [A ClarinetMusicVoice measure 47 / measure 34]                                               %! _comment_measure_numbers
-    gs''!4
+    gs''!4                                                                                         %! polyphony
     
-    as'!8
+    as'!8                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    g''8
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    ds''!8
+    g''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    e''8
+    ds''!8                                                                                         %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    e''8                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        e''4
+        e''4                                                                                       %! polyphony
         
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
-    \times 2/3 {
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ClarinetMusicVoice measure 48 / measure 35]                                           %! _comment_measure_numbers
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         
-        ds''!4
+        ds''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''4
+        c''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 49 / measure 36]                                               %! _comment_measure_numbers
-    g''4.
+    g''4.                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    c''16.
+    c''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    cs''!16.
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    e''16.
+    cs''!16.                                                                                       %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    f''16.
+    e''16.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    ]
+    
+    f''16.                                                                                         %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    ]                                                                                              %! polyphony
     
     % [A ClarinetMusicVoice measure 50 / measure 37]                                               %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
@@ -3359,60 +3359,60 @@ A_ClarinetMusicVoice = {
     R1 * 9/8                                                                                       %! _make_measure_silences
     
     % [A ClarinetMusicVoice measure 82 / measure 69]                                               %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! white_rhythm
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs''!4.
+    cs''!4.                                                                                        %! white_rhythm
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    btqs'!4.
+    btqs'!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d''4.
+    d''4.                                                                                          %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4.
+    ctqs''!4.                                                                                      %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    bqs'!4.
+    bqs'!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    a'4.
+    a'4.                                                                                           %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    bqs'!4.
+    bqs'!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    cs''!4.
+    cs''!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    btqs'!4.
+    btqs'!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d''4.
+    d''4.                                                                                          %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4.
+    ctqs''!4.                                                                                      %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
     % [A ClarinetMusicVoice measure 87 / measure 74]                                               %! _comment_measure_numbers
-    bqs'!4.
+    bqs'!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    a'4.
+    a'4.                                                                                           %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    bqs'!4.
+    bqs'!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    cs''!4.
+    cs''!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    btqs'!4.
+    btqs'!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d''4.
+    d''4.                                                                                          %! white_rhythm
     
 }
 
@@ -3424,7 +3424,7 @@ A_ClarinetMusicStaff = {
 
 
 A_PianoMusicVoice = {
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 14 / measure 1]                                               %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                                           %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:IndicatorCommand:-PARTS
@@ -3442,11 +3442,11 @@ A_PianoMusicVoice = {
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Voice.DynamicText.color = #(x11-color 'green4)                             %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
         \once \override Staff.InstrumentName.color = #(x11-color 'blue)                            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        g''8
+        g''8                                                                                       %! polyphony
         \fff                                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \markup \baca-explicit-indicator-markup "(“Harpsichord”)"                                %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-explicit-indicator-markup "[“Hpschd.”]"                                    %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
-        [
+        [                                                                                          %! polyphony
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set Staff.shortInstrumentName =                                                           %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
@@ -3456,610 +3456,610 @@ A_PianoMusicVoice = {
                 Hpschd.                                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
             }                                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
         
-        cs''!8
+        cs''!8                                                                                     %! polyphony
         
-        ef''!8
+        ef''!8                                                                                     %! polyphony
         
-        e'8
+        e'8                                                                                        %! polyphony
         
-        f'8
+        f'8                                                                                        %! polyphony
         
-        b''8
+        b''8                                                                                       %! polyphony
         
-        ef''!8
-        ]
-    }
-    \times 2/3 {
+        ef''!8                                                                                     %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        f'''8
-        [
+        f'''8                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         
-        g''8
+        g''8                                                                                       %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 15 / measure 2]                                                   %! _comment_measure_numbers
-    g''4.
+    g''4.                                                                                          %! polyphony
     
-    a''4.
+    a''4.                                                                                          %! polyphony
     ~
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 16 / measure 3]                                               %! _comment_measure_numbers
-        a''8
-        [
+        a''8                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         
-        c''8
+        c''8                                                                                       %! polyphony
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         
-        g''8
+        g''8                                                                                       %! polyphony
         
-        ef''!8
+        ef''!8                                                                                     %! polyphony
         
-        f'8
+        f'8                                                                                        %! polyphony
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        f'8
-        [
+        f'8                                                                                        %! polyphony
+        [                                                                                          %! polyphony
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         
-        af''!8
-        ]
-    }
+        af''!8                                                                                     %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    a''8
-    [
+    a''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    bf''!8
+    bf''!8                                                                                         %! polyphony
     
-    c'''8
-    ]
+    c'''8                                                                                          %! polyphony
+    ]                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 17 / measure 4]                                                   %! _comment_measure_numbers
-    b''8
-    [
+    b''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    g''8
+    g''8                                                                                           %! polyphony
     ~
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    ]                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/6 {                                                                                   %! polyphony
         
-        g''4
+        g''4                                                                                       %! polyphony
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         
-        ef''!4
-    }
-    \times 2/3 {
+        ef''!4                                                                                     %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 18 / measure 5]                                               %! _comment_measure_numbers
-        f'4
+        f'4                                                                                        %! polyphony
         
-        c''4
+        c''4                                                                                       %! polyphony
         
-        af''!4
+        af''!4                                                                                     %! polyphony
         ~
-    }
+    }                                                                                              %! polyphony
     
-    af''!8
-    [
+    af''!8                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    f'8
+    f'8                                                                                            %! polyphony
     
-    g''8
+    g''8                                                                                           %! polyphony
     ~
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    ]                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/9 {                                                                                   %! polyphony
         
-        g''8
-        [
+        g''8                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        cs''!8
+        cs''!8                                                                                     %! polyphony
         
-        ef''!8
+        ef''!8                                                                                     %! polyphony
         
-        e'8
+        e'8                                                                                        %! polyphony
         
-        g'8
+        g'8                                                                                        %! polyphony
         
-        f'''8
+        f'''8                                                                                      %! polyphony
         
-        e'''8
+        e'''8                                                                                      %! polyphony
         
-        b''8
+        b''8                                                                                       %! polyphony
         
-        cs'''!8
-        ]
-    }
+        cs'''!8                                                                                    %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 19 / measure 6]                                                   %! _comment_measure_numbers
-    ef''!8
-    [
+    ef''!8                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    f'8
+    f'8                                                                                            %! polyphony
     
-    g''8
-    ]
-    \times 4/5 {
+    g''8                                                                                           %! polyphony
+    ]                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
-        bf''!8
-        [
+        bf''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        c''8
+        c''8                                                                                       %! polyphony
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         
-        a''8
+        a''8                                                                                       %! polyphony
         
-        f'''8
+        f'''8                                                                                      %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    f'''4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    f'''4                                                                                          %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/4 {                                                                                   %! polyphony
         
-        g''4
+        g''4                                                                                       %! polyphony
         
-        c'''4
+        c'''4                                                                                      %! polyphony
         ~
-    }
-    \times 4/7 {
+    }                                                                                              %! polyphony
+    \times 4/7 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 20 / measure 7]                                               %! _comment_measure_numbers
-        c'''8
-        [
+        c'''8                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        e'''8
+        e'''8                                                                                      %! polyphony
         
-        f'''8
+        f'''8                                                                                      %! polyphony
         
-        b''8
+        b''8                                                                                       %! polyphony
         
-        cs''!8
+        cs''!8                                                                                     %! polyphony
         
-        af'!8
+        af'!8                                                                                      %! polyphony
         
-        bf'!8
+        bf'!8                                                                                      %! polyphony
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        bf'!8
-        [
+        bf'!8                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        cs''!8
+        cs''!8                                                                                     %! polyphony
         
-        ef''!8
-        ]
-    }
+        ef''!8                                                                                     %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 21 / measure 8]                                                   %! _comment_measure_numbers
-    e'8
-    [
+    e'8                                                                                            %! polyphony
+    [                                                                                              %! polyphony
     
-    b''8
-    ]
+    b''8                                                                                           %! polyphony
+    ]                                                                                              %! polyphony
     
-    g''8
-    [
+    g''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    ef''!8
+    ef''!8                                                                                         %! polyphony
     
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     
-    ef''!8
+    ef''!8                                                                                         %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    ef''!4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    ef''!4.                                                                                        %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/6 {                                                                                   %! polyphony
         
-        ef'''!4
+        ef'''!4                                                                                    %! polyphony
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         
-        b''4
+        b''4                                                                                       %! polyphony
         ~
-    }
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 22 / measure 9]                                                   %! _comment_measure_numbers
-    b''8
-    [
+    b''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    f'''8
+    f'''8                                                                                          %! polyphony
     
-    bf''!8
+    bf''!8                                                                                         %! polyphony
     
-    f'8
+    f'8                                                                                            %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    f'16.
-    [
+    f'16.                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    g''16.
+    g''16.                                                                                         %! polyphony
     
-    ef''!16.
+    ef''!16.                                                                                       %! polyphony
     
-    f'16.
-    ]
-    \times 4/7 {
+    f'16.                                                                                          %! polyphony
+    ]                                                                                              %! polyphony
+    \times 4/7 {                                                                                   %! polyphony
         
-        fs''!8
-        [
+        fs''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        g''8
+        g''8                                                                                       %! polyphony
         
-        e'''8
+        e'''8                                                                                      %! polyphony
         
-        b''8
+        b''8                                                                                       %! polyphony
         
-        g''8
+        g''8                                                                                       %! polyphony
         
-        cs'''!8
+        cs'''!8                                                                                    %! polyphony
         
-        ef'''!8
-        ]
-    }
+        ef'''!8                                                                                    %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 23 / measure 10]                                                  %! _comment_measure_numbers
-    ef'''!16.
-    [
+    ef'''!16.                                                                                      %! polyphony
+    [                                                                                              %! polyphony
     
-    af'!16.
+    af'!16.                                                                                        %! polyphony
     
-    bf'!16.
+    bf'!16.                                                                                        %! polyphony
     
-    fs'!16.
+    fs'!16.                                                                                        %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    fs'!4
+    fs'!4                                                                                          %! polyphony
     
     % [A PianoMusicVoice measure 24 / measure 11]                                                  %! _comment_measure_numbers
-    f'4
+    f'4                                                                                            %! polyphony
     
-    bf''!4
+    bf''!4                                                                                         %! polyphony
     ~
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
-        bf''!8
-        [
+        bf''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        b''8
+        b''8                                                                                       %! polyphony
         
-        g''8
+        g''8                                                                                       %! polyphony
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        g''8
-        [
+        g''8                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        c''8
+        c''8                                                                                       %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        ]
-    }
-    \times 4/7 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 4/7 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 25 / measure 12]                                              %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af''!8
+        af''!8                                                                                     %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! polyphony
         
-        d''8
+        d''8                                                                                       %! polyphony
         
-        e'''8
+        e'''8                                                                                      %! polyphony
         
-        f'''8
+        f'''8                                                                                      %! polyphony
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         
-        c'''8
+        c'''8                                                                                      %! polyphony
         
-        e'8
-        ]
-    }
-    \times 2/3 {
+        e'8                                                                                        %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        fs''!8
-        [
+        fs''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        g''8
+        g''8                                                                                       %! polyphony
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 26 / measure 13]                                                  %! _comment_measure_numbers
-    af''!4.
+    af''!4.                                                                                        %! polyphony
     
-    bf''!4.
+    bf''!4.                                                                                        %! polyphony
     ~
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 27 / measure 14]                                              %! _comment_measure_numbers
-        bf''!8
-        [
+        bf''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        b''8
+        b''8                                                                                       %! polyphony
         
-        cs'''!8
+        cs'''!8                                                                                    %! polyphony
         
-        a''8
+        a''8                                                                                       %! polyphony
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         
-        e'''8
+        e'''8                                                                                      %! polyphony
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        fs''!8
-        [
+        fs''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        g''8
+        g''8                                                                                       %! polyphony
         
-        a''8
-        ]
-    }
+        a''8                                                                                       %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    bf'!8
-    [
+    bf'!8                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    b'8
+    b'8                                                                                            %! polyphony
     
-    cs''!8
-    ]
+    cs''!8                                                                                         %! polyphony
+    ]                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 28 / measure 15]                                                  %! _comment_measure_numbers
-    c''8
-    [
+    c''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    af''!8
+    af''!8                                                                                         %! polyphony
     ~
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    ]                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/6 {                                                                                   %! polyphony
         
-        af''!4
+        af''!4                                                                                     %! polyphony
         
-        d''4
+        d''4                                                                                       %! polyphony
         
-        e'4
-    }
-    \times 2/3 {
+        e'4                                                                                        %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 29 / measure 16]                                              %! _comment_measure_numbers
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         
-        a''4
+        a''4                                                                                       %! polyphony
         ~
-    }
+    }                                                                                              %! polyphony
     
-    a''8
-    [
+    a''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    fs'!8
+    fs'!8                                                                                          %! polyphony
     
-    af''!8
+    af''!8                                                                                         %! polyphony
     ~
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    ]                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/9 {                                                                                   %! polyphony
         
-        af''!8
-        [
+        af''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        d'''8
+        d'''8                                                                                      %! polyphony
         
-        e'''8
+        e'''8                                                                                      %! polyphony
         
-        f'''8
+        f'''8                                                                                      %! polyphony
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         
-        f'8
+        f'8                                                                                        %! polyphony
         
-        c''8
+        c''8                                                                                       %! polyphony
         
-        d''8
-        ]
-    }
+        d''8                                                                                       %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 30 / measure 17]                                                  %! _comment_measure_numbers
-    e'8
-    [
+    e'8                                                                                            %! polyphony
+    [                                                                                              %! polyphony
     
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     
-    af''!8
-    ]
-    \times 4/5 {
+    af''!8                                                                                         %! polyphony
+    ]                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
-        b''8
-        [
+        b''8                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        cs'''!8
+        cs'''!8                                                                                    %! polyphony
         
-        a''8
+        a''8                                                                                       %! polyphony
         
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         
-        fs''!8
+        fs''!8                                                                                     %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    fs''!4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    fs''!4                                                                                         %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/4 {                                                                                   %! polyphony
         
-        af'!4
+        af'!4                                                                                      %! polyphony
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         ~
-    }
-    \times 4/7 {
+    }                                                                                              %! polyphony
+    \times 4/7 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 31 / measure 18]                                              %! _comment_measure_numbers
-        cs''!8
-        [
+        cs''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        f'8
+        f'8                                                                                        %! polyphony
         
-        fs'!8
+        fs'!8                                                                                      %! polyphony
         
-        c''8
+        c''8                                                                                       %! polyphony
         
-        d''8
+        d''8                                                                                       %! polyphony
         
-        a''8
+        a''8                                                                                       %! polyphony
         
-        b''8
+        b''8                                                                                       %! polyphony
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        b''8
-        [
+        b''8                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        d''8
+        d''8                                                                                       %! polyphony
         
-        e'8
-        ]
-    }
+        e'8                                                                                        %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 32 / measure 19]                                                  %! _comment_measure_numbers
-    f'8
-    [
+    f'8                                                                                            %! polyphony
+    [                                                                                              %! polyphony
     
-    c'''8
-    ]
+    c'''8                                                                                          %! polyphony
+    ]                                                                                              %! polyphony
     
-    af''!8
-    [
+    af''!8                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    e'''8
+    e'''8                                                                                          %! polyphony
     
-    g''8
+    g''8                                                                                           %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    e'8
+    e'8                                                                                            %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    e'4.
+    e'4.                                                                                           %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/6 {                                                                                   %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        e'4
+        e'4                                                                                        %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        g''4
+        g''4                                                                                       %! polyphony
         
-        c''4
+        c''4                                                                                       %! polyphony
         ~
-    }
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 33 / measure 20]                                                  %! _comment_measure_numbers
-    c''8
-    [
+    c''8                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     
-    b''8
+    b''8                                                                                           %! polyphony
     
-    fs''!8
+    fs''!8                                                                                         %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    fs''!16.
-    [
+    fs''!16.                                                                                       %! polyphony
+    [                                                                                              %! polyphony
     
-    af''!16.
+    af''!16.                                                                                       %! polyphony
     
-    e'''16.
+    e'''16.                                                                                        %! polyphony
     
-    fs''!16.
-    ]
-    \times 4/7 {
+    fs''!16.                                                                                       %! polyphony
+    ]                                                                                              %! polyphony
+    \times 4/7 {                                                                                   %! polyphony
         
-        g''8
-        [
+        g''8                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        af''!8
+        af''!8                                                                                     %! polyphony
         
-        f'''8
+        f'''8                                                                                      %! polyphony
         
-        c''8
+        c''8                                                                                       %! polyphony
         
-        af'!8
+        af'!8                                                                                      %! polyphony
         
-        d''8
+        d''8                                                                                       %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        e'8
+        e'8                                                                                        %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 34 / measure 21]                                                  %! _comment_measure_numbers
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    e'16.
+    e'16.                                                                                          %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! polyphony
     
-    a''16.
+    a''16.                                                                                         %! polyphony
     
-    b''16.
+    b''16.                                                                                         %! polyphony
     
-    g''16.
+    g''16.                                                                                         %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    g''4
+    g''4                                                                                           %! polyphony
     
     % [A PianoMusicVoice measure 35 / measure 22]                                                  %! _comment_measure_numbers
     fs''!4
@@ -4090,456 +4090,456 @@ A_PianoMusicVoice = {
     
     a8.
     
-    g8
-    [
+    g8                                                                                             %! polyphony
+    [                                                                                              %! polyphony
     
-    fs!8
-    ]
+    fs!8                                                                                           %! polyphony
+    ]                                                                                              %! polyphony
     
-    bf!8
+    bf!8                                                                                           %! polyphony
     ~
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
-        bf!16
-        [
+        bf!16                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        b16
+        b16                                                                                        %! polyphony
         
-        af!16
+        af!16                                                                                      %! polyphony
         
-        a16
+        a16                                                                                        %! polyphony
         
-        b16
+        b16                                                                                        %! polyphony
         
-        c'16
+        c'16                                                                                       %! polyphony
         
-        cs'!16
+        cs'!16                                                                                     %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    cs'!32.
-    [
+    cs'!32.                                                                                        %! polyphony
+    [                                                                                              %! polyphony
     
-    d'32.
+    d'32.                                                                                          %! polyphony
     
-    e32.
+    e32.                                                                                           %! polyphony
     
-    af!32.
-    ]
+    af!32.                                                                                         %! polyphony
+    ]                                                                                              %! polyphony
     
-    b16
-    [
+    b16                                                                                            %! polyphony
+    [                                                                                              %! polyphony
     
-    d16
+    d16                                                                                            %! polyphony
     
-    e16
+    e16                                                                                            %! polyphony
     
-    a16
-    ]
+    a16                                                                                            %! polyphony
+    ]                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 37 / measure 24]                                                  %! _comment_measure_numbers
-    af!32.
-    [
+    af!32.                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    d32.
+    d32.                                                                                           %! polyphony
     
-    e32.
+    e32.                                                                                           %! polyphony
     
-    af!32.
+    af!32.                                                                                         %! polyphony
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        af!8
-        [
+        af!8                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        ef!8
+        ef!8                                                                                       %! polyphony
         
-        af!8
-        ]
-    }
+        af!8                                                                                       %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    c'8
+    c'8                                                                                            %! polyphony
     ~
     
-    c'16
-    [
+    c'16                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    ef!16
+    ef!16                                                                                          %! polyphony
     
-    b16
+    b16                                                                                            %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 38 / measure 25]                                                  %! _comment_measure_numbers
-    b16
-    [
+    b16                                                                                            %! polyphony
+    [                                                                                              %! polyphony
     
-    af!16
+    af!16                                                                                          %! polyphony
     
-    bf!16
+    bf!16                                                                                          %! polyphony
     
-    e'16
-    ]
-    \times 2/3 {
+    e'16                                                                                           %! polyphony
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        cs'!16
-        [
+        cs'!16                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         
-        af!16
-        ]
-    }
-    \times 4/5 {
+        af!16                                                                                      %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
-        bf!16
-        [
+        bf!16                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        af!16
+        af!16                                                                                      %! polyphony
         
-        bf!16
+        bf!16                                                                                      %! polyphony
         
-        g16
+        g16                                                                                        %! polyphony
         
-        d'16
+        d'16                                                                                       %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    d'8.
+    d'8.                                                                                           %! polyphony
     
-    b8.
+    b8.                                                                                            %! polyphony
     ~
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 39 / measure 26]                                              %! _comment_measure_numbers
-        b16
-        [
+        b16                                                                                        %! polyphony
+        [                                                                                          %! polyphony
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         
-        cs'!16
+        cs'!16                                                                                     %! polyphony
         ~
-        ]
-    }
-    \times 4/5 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
-        cs'!16
-        [
+        cs'!16                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        c'16
+        c'16                                                                                       %! polyphony
         
-        d'16
+        d'16                                                                                       %! polyphony
         
-        e'16
+        e'16                                                                                       %! polyphony
         
-        g16
-        ]
-    }
+        g16                                                                                        %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    cs'!16
-    [
+    cs'!16                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    b16
+    b16                                                                                            %! polyphony
     
-    d'16
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    d'16                                                                                           %! polyphony
+    ]                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/9 {                                                                                   %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        af'!16
+        af'!16                                                                                     %! polyphony
         
-        bf!16
+        bf!16                                                                                      %! polyphony
         
-        g'16
+        g'16                                                                                       %! polyphony
         
-        d'16
+        d'16                                                                                       %! polyphony
         
-        bf!16
+        bf!16                                                                                      %! polyphony
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 40 / measure 27]                                              %! _comment_measure_numbers
-        bf'!8
-        [
+        bf'!8                                                                                      %! polyphony
+        [                                                                                          %! polyphony
         
-        a'8
+        a'8                                                                                        %! polyphony
         
-        ef'!8
-        ]
-    }
+        ef'!8                                                                                      %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    fs'!8.
+    fs'!8.                                                                                         %! polyphony
     ~
     
-    fs'!16
-    [
+    fs'!16                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    d'16
+    d'16                                                                                           %! polyphony
     
-    ef'!16
+    ef'!16                                                                                         %! polyphony
     
-    c'16
+    c'16                                                                                           %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    c'32.
-    [
+    c'32.                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    d'32.
+    d'32.                                                                                          %! polyphony
     
-    af'!32.
+    af'!32.                                                                                        %! polyphony
     
-    bf'!32.
-    ]
+    bf'!32.                                                                                        %! polyphony
+    ]                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 41 / measure 28]                                                  %! _comment_measure_numbers
-    e'16
-    [
+    e'16                                                                                           %! polyphony
+    [                                                                                              %! polyphony
     
-    g'16
+    g'16                                                                                           %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    af'!16
+    af'!16                                                                                         %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    ]
-    \times 4/5 {
+    ]                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af'!16
+        af'!16                                                                                     %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! polyphony
         
-        a'16
+        a'16                                                                                       %! polyphony
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         
-        ef'!16
+        ef'!16                                                                                     %! polyphony
         
-        b16
+        b16                                                                                        %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    b8
+    b8                                                                                             %! polyphony
     
-    a'8
-    [
+    a'8                                                                                            %! polyphony
+    [                                                                                              %! polyphony
     
-    cs'!8
+    cs'!8                                                                                          %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    cs'!16
-    [
+    cs'!16                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    af'!16
+    af'!16                                                                                         %! polyphony
     
-    c'16
+    c'16                                                                                           %! polyphony
     ~
-    ]
-    \times 4/5 {
+    ]                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
         % [A PianoMusicVoice measure 42 / measure 29]                                              %! _comment_measure_numbers
         \clef "treble"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        c'16
-        [
+        c'16                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        d'16
+        d'16                                                                                       %! polyphony
         
-        e'16
+        e'16                                                                                       %! polyphony
         
-        g'16
+        g'16                                                                                       %! polyphony
         
-        fs'!16
-        ]
-    }
+        fs'!16                                                                                     %! polyphony
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    af'!16
-    [
+    af'!16                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    g'16
-    ]
+    g'16                                                                                           %! polyphony
+    ]                                                                                              %! polyphony
     
-    d''16
-    [
+    d''16                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    fs'!16
+    fs'!16                                                                                         %! polyphony
     
-    a'16
+    a'16                                                                                           %! polyphony
     
-    bf'!16
+    bf'!16                                                                                         %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    bf'!8.
-    \times 2/3 {
+    bf'!8.                                                                                         %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        b'8
-        [
+        b'8                                                                                        %! polyphony
+        [                                                                                          %! polyphony
         
-        c''8
+        c''8                                                                                       %! polyphony
         
-        fs'!8
+        fs'!8                                                                                      %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    fs'!16
-    [
+    fs'!16                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    bf'!16
+    bf'!16                                                                                         %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    bf'!16
-    [
+    bf'!16                                                                                         %! polyphony
+    [                                                                                              %! polyphony
     
-    g'16
+    g'16                                                                                           %! polyphony
     
-    d''16
+    d''16                                                                                          %! polyphony
     
-    c''16
-    ]
+    c''16                                                                                          %! polyphony
+    ]                                                                                              %! polyphony
     
-    fs''!16
-    [
+    fs''!16                                                                                        %! polyphony
+    [                                                                                              %! polyphony
     
-    d''16
+    d''16                                                                                          %! polyphony
     
-    fs''!16
-    ]
-    \times 4/5 {
+    fs''!16                                                                                        %! polyphony
+    ]                                                                                              %! polyphony
+    \times 4/5 {                                                                                   %! polyphony
         
-        a'16
-        [
+        a'16                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         
-        af'!16
+        af'!16                                                                                     %! polyphony
         
-        a'16
+        a'16                                                                                       %! polyphony
         
-        af'!16
+        af'!16                                                                                     %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    af'!8
+    af'!8                                                                                          %! polyphony
     
     % [A PianoMusicVoice measure 43 / measure 30]                                                  %! _comment_measure_numbers
-    a'8
+    a'8                                                                                            %! polyphony
     ~
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! polyphony
         
-        a'16
-        [
+        a'16                                                                                       %! polyphony
+        [                                                                                          %! polyphony
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         
-        ef''!16
+        ef''!16                                                                                    %! polyphony
         
-        b'16
+        b'16                                                                                       %! polyphony
         
-        d''16
+        d''16                                                                                      %! polyphony
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         
-        g'16
+        g'16                                                                                       %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    g'32.
-    [
+    g'32.                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    af''!32.
+    af''!32.                                                                                       %! polyphony
     
-    c''32.
+    c''32.                                                                                         %! polyphony
     
-    b'32.
-    ]
+    b'32.                                                                                          %! polyphony
+    ]                                                                                              %! polyphony
     
-    af''!16
-    [
+    af''!16                                                                                        %! polyphony
+    [                                                                                              %! polyphony
     
-    d''16
+    d''16                                                                                          %! polyphony
     
-    bf'!16
-    ]
+    bf'!16                                                                                         %! polyphony
+    ]                                                                                              %! polyphony
     
     % [A PianoMusicVoice measure 44 / measure 31]                                                  %! _comment_measure_numbers
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!16
+    fs''!16                                                                                        %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!16
+    fs''!16                                                                                        %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
-    g''16
+    g''16                                                                                          %! polyphony
     
-    bf''!16
+    bf''!16                                                                                        %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    bf''!8.
-    \times 2/3 {
+    bf''!8.                                                                                        %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        cs''!8
-        [
+        cs''!8                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        bf''!8
+        bf''!8                                                                                     %! polyphony
         
-        b''8
+        b''8                                                                                       %! polyphony
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    b''16
-    [
+    b''16                                                                                          %! polyphony
+    [                                                                                              %! polyphony
     
-    af''!16
+    af''!16                                                                                        %! polyphony
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    af''!32.
-    [
+    af''!32.                                                                                       %! polyphony
+    [                                                                                              %! polyphony
     
-    ef''!32.
+    ef''!32.                                                                                       %! polyphony
     
-    c''32.
+    c''32.                                                                                         %! polyphony
     
-    fs''!32.
-    ]
+    fs''!32.                                                                                       %! polyphony
+    ]                                                                                              %! polyphony
     \revert Beam.positions                                                                         %! OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     \revert TupletBracket.staff-padding                                                            %! OverrideCommand(2)
@@ -4595,7 +4595,7 @@ A_PianoMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)                                %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r16
+    r16                                                                                            %! incise_attacks
     ^ \markup \baca-explicit-indicator-markup "(“Piano”)"                                          %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-explicit-indicator-markup "[“Pf.”]"                                            %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -4625,15 +4625,15 @@ A_PianoMusicVoice = {
                 }
         }
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r4.
+    r4.                                                                                            %! incise_attacks
     
     % [A PianoMusicVoice measure 59 / measure 46]                                                  %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! incise_attacks
     
     % [A PianoMusicVoice measure 60 / measure 47]                                                  %! _comment_measure_numbers
-    r4
+    r4                                                                                             %! incise_attacks
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4652,10 +4652,10 @@ A_PianoMusicVoice = {
                 }
         }
     
-    r8.
+    r8.                                                                                            %! incise_attacks
     
     % [A PianoMusicVoice measure 61 / measure 48]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4674,12 +4674,12 @@ A_PianoMusicVoice = {
                 }
         }
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r1.
+    r1.                                                                                            %! incise_attacks
     
     % [A PianoMusicVoice measure 62 / measure 49]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4698,17 +4698,17 @@ A_PianoMusicVoice = {
                 }
         }
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r2.
+    r2.                                                                                            %! incise_attacks
     
     % [A PianoMusicVoice measure 63 / measure 50]                                                  %! _comment_measure_numbers
-    r2..
+    r2..                                                                                           %! incise_attacks
     
     % [A PianoMusicVoice measure 64 / measure 51]                                                  %! _comment_measure_numbers
-    r2
+    r2                                                                                             %! incise_attacks
     
-    r8
+    r8                                                                                             %! incise_attacks
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4727,10 +4727,10 @@ A_PianoMusicVoice = {
                 }
         }
     
-    r8.
+    r8.                                                                                            %! incise_attacks
     
     % [A PianoMusicVoice measure 65 / measure 52]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4749,12 +4749,12 @@ A_PianoMusicVoice = {
                 }
         }
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r1..
+    r1..                                                                                           %! incise_attacks
     
     % [A PianoMusicVoice measure 66 / measure 53]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4773,15 +4773,15 @@ A_PianoMusicVoice = {
                 }
         }
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r2.
+    r2.                                                                                            %! incise_attacks
     
     % [A PianoMusicVoice measure 67 / measure 54]                                                  %! _comment_measure_numbers
-    r2.
+    r2.                                                                                            %! incise_attacks
     
     % [A PianoMusicVoice measure 68 / measure 55]                                                  %! _comment_measure_numbers
-    r2.
+    r2.                                                                                            %! incise_attacks
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4800,10 +4800,10 @@ A_PianoMusicVoice = {
                 }
         }
     
-    r8.
+    r8.                                                                                            %! incise_attacks
     
     % [A PianoMusicVoice measure 69 / measure 56]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4823,11 +4823,11 @@ A_PianoMusicVoice = {
         }
     \ottava #0                                                                                     %! SpannerCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    r4.                                                                                            %! incise_attacks
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
         % [A PianoMusicVoice measure 70 / measure 57]                                              %! _comment_measure_numbers
         \override Beam.positions = #'(-5 . -5)                                                     %! OverrideCommand(1)
@@ -4837,556 +4837,556 @@ A_PianoMusicVoice = {
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        g''16
+        g''16                                                                                      %! pizzicato_sixteenths
         \fff                                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        g''16
+        g''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        cs''!16
+        cs''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! pizzicato_sixteenths
         
-        a''4
+        a''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g''8
+        g''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_sixteenths
     
-    r2.
+    r2.                                                                                            %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 71 / measure 58]                                                  %! _comment_measure_numbers
-    r8.
+    r8.                                                                                            %! pizzicato_sixteenths
     
-    fs''!8.
+    fs''!8.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
-        c''16
+        c''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        a''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        f''8
+        a''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''8
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \times 4/7 {
-        
-        r16
-        
-        af''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        [
-        
-        f''16
+        f''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        ef''!16
+        a''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
+    \times 4/7 {                                                                                   %! pizzicato_sixteenths
         
-        a''4
+        r16                                                                                        %! pizzicato_sixteenths
+        
+        af''!16                                                                                    %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        [                                                                                          %! pizzicato_sixteenths
+        
+        f''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        b''4
+        ef''!16                                                                                    %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        a''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g''16
+        b''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
         
-        a''16
+        g''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        [                                                                                          %! pizzicato_sixteenths
+        
+        a''16                                                                                      %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 72 / measure 59]                                                  %! _comment_measure_numbers
-    r2
+    r2                                                                                             %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 73 / measure 60]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r16.
+    r16.                                                                                           %! pizzicato_sixteenths
     
-    cs''!8.
+    cs''!8.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    b''32.
+    b''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    c''32.
+    c''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    ]                                                                                              %! pizzicato_sixteenths
     
-    r4
-    \times 2/3 {
+    r4                                                                                             %! pizzicato_sixteenths
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
         % [A PianoMusicVoice measure 74 / measure 61]                                              %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         
-        af''!16
+        af''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        fs''!16
+        fs''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g''16
+        g''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! pizzicato_sixteenths
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        a''4
+        a''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        a''4
+        a''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        a''16
+        a''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        af''!16
+        af''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f''8
+        f''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g''8
+        g''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 75 / measure 62]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    r4                                                                                             %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 7/9 {                                                                                   %! pizzicato_sixteenths
         
         % [A PianoMusicVoice measure 76 / measure 63]                                              %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        bf''!16
+        bf''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        cs''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        c'''8
+        cs''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        e''8
+        c'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''16
+        e''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        bf''!16
+        c'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g''16
+        bf''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        cs''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-        
-        e''4
+        g''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''8
+        cs''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        e''4                                                                                       %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        a''8                                                                                       %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    e''16
+    e''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    ef''!16
+    ef''!16                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    c'''8
+    c'''8                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    ]                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 77 / measure 64]                                                  %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!16
+    fs''!16                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!16
+    fs''!16                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
-    f''16
+    f''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    fs''!16
+    fs''!16                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    ]                                                                                              %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 78 / measure 65]                                                  %! _comment_measure_numbers
-    r16.
+    r16.                                                                                           %! pizzicato_sixteenths
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    c'''8.
+    c'''8.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    c'''32.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    
-    \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    c'''32.
+    c'''32.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
-    f''16.
+    \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
+    c'''32.                                                                                        %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
+    
+    f''16.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    af''!16.
+    af''!16.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    e''8.
+    e''8.                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    ]                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 79 / measure 66]                                                  %! _comment_measure_numbers
-    r4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    r4                                                                                             %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        af''!4
+        af''!4                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        bf''!16
+        bf''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        g''16
+        g''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs'''!8
+        fs'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 80 / measure 67]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    cs'''!16
+    cs'''!16                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    c'''16
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    f''16
+    c'''16                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g''16
-    - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    
-    a''4
+    f''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g''4
+    g''16                                                                                          %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    
+    a''4                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    e''16
-    - \staccatissimo                                                                               %! IndicatorCommand
-    [
-    
-    c'''16
+    g''4                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    a''8
+    e''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    [                                                                                              %! pizzicato_sixteenths
+    
+    c'''16                                                                                         %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    
+    a''8                                                                                           %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 81 / measure 68]                                                  %! _comment_measure_numbers
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r16.
+    r16.                                                                                           %! pizzicato_sixteenths
     
-    f''8.
+    f''8.                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    fs'''!8.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    f''32.
+    fs'''!8.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    a''32.
+    f''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    af''!16.
+    a''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    a''16.
+    af''!16.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    
+    a''16.                                                                                         %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 82 / measure 69]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    e'''16
+    e'''16                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    f''16
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    c'''16
+    f''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g'''8
+    c'''16                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
-        
-        r8
-        
-        fs'''!4
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        ef'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        [
-        
-        f'''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        e'''8
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
     
-    r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    g'''8                                                                                          %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
+        
+        r8                                                                                         %! pizzicato_sixteenths
+        
+        fs'''!4                                                                                    %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        ef'''!16                                                                                   %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        [                                                                                          %! pizzicato_sixteenths
+        
+        f'''16                                                                                     %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        e'''8                                                                                      %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
+    
+    r4.                                                                                            %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 5/6 {                                                                                   %! pizzicato_sixteenths
         
         % [A PianoMusicVoice measure 83 / measure 70]                                              %! _comment_measure_numbers
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
-        a''4
+        a''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g'''4
+        g'''4                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 84 / measure 71]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    a''16
+    a''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    g'''16
+    g'''16                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    af'''!8
+    af'''!8                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    ]                                                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
         % [A PianoMusicVoice measure 85 / measure 72]                                              %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         
-        bf''!16
+        bf''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        g'''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        fs'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-        
-        cs'''!4
+        g'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''8
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        cs'''!4                                                                                    %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        c'''8                                                                                      %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    b''16
+    b''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    fs'''!16
+    fs'''!16                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    f'''8
+    f'''8                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    ]                                                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 6/7 {                                                                                   %! pizzicato_sixteenths
         
         % [A PianoMusicVoice measure 86 / measure 73]                                              %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        g'''2
+        g'''2                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a'''4
+        a'''4                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_sixteenths
     
-    r4
+    r4                                                                                             %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 87 / measure 74]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    af'''!16
+    af'''!16                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 7/9 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        b''8
+        b''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        bf'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        g'''16
+        bf'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs'''!16
+        g'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        cs'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-        
-        c'''4
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a'''4
+        cs'''!16                                                                                   %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        c'''4                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f'''16
+        a'''4                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
         
-        e'''16
+        f'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        [                                                                                          %! pizzicato_sixteenths
+        
+        e'''16                                                                                     %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A PianoMusicVoice measure 88 / measure 75]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    ef'''!8
+    ef'''!8                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    r4.                                                                                            %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 5/7 {                                                                                   %! pizzicato_sixteenths
         
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        c'''4
+        c'''4                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        c'''16
+        c'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        b'''16
+        b'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        bf'''!8
+        bf'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g'''8
+        g'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! pizzicato_sixteenths
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
         
-    }
+    }                                                                                              %! pizzicato_sixteenths
 }
 
 
@@ -5415,7 +5415,7 @@ A_PercussionMusicVoice = {
     \set Staff.forceClef = ##t                                                                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)                                 %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)                                 %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'4.
+    c'4.                                                                                           %! sponge_rhythm
     \baca_effort_ff                                                                                %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     - \accent                                                                                      %! IndicatorCommand
     ^ \markup \baca-reapplied-indicator-markup "[“Perc.”]"                                         %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -5430,27 +5430,27 @@ A_PercussionMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                                           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \override Staff.BarLine.bar-extent = #'(0 . 0)                                                 %! OverrideCommand(1):-PARTS
     
-    c'4.
+    c'4.                                                                                           %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 3/5 {                                                                                   %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 15 / measure 2]                                          %! _comment_measure_numbers
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         \repeatTie
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! sponge_rhythm
     
     % [A PercussionMusicVoice measure 16 / measure 3]                                              %! _comment_measure_numbers
-    c'2.
+    c'2.                                                                                           %! sponge_rhythm
     \repeatTie
     
-    c'4.
+    c'4.                                                                                           %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
     % [A PercussionMusicVoice measure 17 / measure 4]                                              %! _comment_measure_numbers
@@ -5509,196 +5509,196 @@ A_PercussionMusicVoice = {
     
     % [A PercussionMusicVoice measure 35 / measure 22]                                             %! _comment_measure_numbers
     R1 * 1                                                                                         %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 3/5 {                                                                                   %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 36 / measure 23]                                         %! _comment_measure_numbers
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    }                                                                                              %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 3/5 {                                                                                   %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 37 / measure 24]                                         %! _comment_measure_numbers
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         \repeatTie
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'4
+        c'4                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! sponge_rhythm
     
     % [A PercussionMusicVoice measure 38 / measure 25]                                             %! _comment_measure_numbers
-    c'2.
+    c'2.                                                                                           %! sponge_rhythm
     \repeatTie
     
-    c'4
+    c'4                                                                                            %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 7/8 {                                                                                   %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 39 / measure 26]                                         %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! sponge_rhythm
         \repeatTie
         
-        c'2.
+        c'2.                                                                                       %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/11 {
+    }                                                                                              %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 7/11 {                                                                                  %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 40 / measure 27]                                         %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! sponge_rhythm
         \repeatTie
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! sponge_rhythm
         \repeatTie
-    }
+    }                                                                                              %! sponge_rhythm
     
     % [A PercussionMusicVoice measure 41 / measure 28]                                             %! _comment_measure_numbers
     \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                         %! _shorten_long_repeat_ties
-    c'4.
+    c'4.                                                                                           %! sponge_rhythm
     \repeatTie
     
-    c'2
+    c'2                                                                                            %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
-    c'8
+    c'8                                                                                            %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 42 / measure 29]                                         %! _comment_measure_numbers
-        c'2..
+        c'2..                                                                                      %! sponge_rhythm
         \repeatTie
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'1
+        c'1                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'8
+        c'8                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    }                                                                                              %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 3/5 {                                                                                   %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 43 / measure 30]                                         %! _comment_measure_numbers
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        c'2..
+        c'2..                                                                                      %! sponge_rhythm
         \repeatTie
         
-        c'4.
+        c'4.                                                                                       %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! sponge_rhythm
     
     % [A PercussionMusicVoice measure 44 / measure 31]                                             %! _comment_measure_numbers
-    c'8
+    c'8                                                                                            %! sponge_rhythm
     \repeatTie
     
-    c'2..
+    c'2..                                                                                          %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 5/8 {                                                                                   %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 45 / measure 32]                                         %! _comment_measure_numbers
-        c'8
+        c'8                                                                                        %! sponge_rhythm
         \repeatTie
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'4.
+        c'4.                                                                                       %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/13 {
+    }                                                                                              %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 9/13 {                                                                                  %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 46 / measure 33]                                         %! _comment_measure_numbers
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         \repeatTie
         
-        c'8
+        c'8                                                                                        %! sponge_rhythm
         \repeatTie
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! sponge_rhythm
     
     % [A PercussionMusicVoice measure 47 / measure 34]                                             %! _comment_measure_numbers
-    c'2
+    c'2                                                                                            %! sponge_rhythm
     \repeatTie
     
-    c'2
+    c'2                                                                                            %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
-    c'4
+    c'4                                                                                            %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
     % [A PercussionMusicVoice measure 48 / measure 35]                                             %! _comment_measure_numbers
-    c'2
+    c'2                                                                                            %! sponge_rhythm
     \repeatTie
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 3/5 {                                                                                   %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 49 / measure 36]                                         %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! sponge_rhythm
         \repeatTie
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! sponge_rhythm
     
     % [A PercussionMusicVoice measure 50 / measure 37]                                             %! _comment_measure_numbers
-    c'2
+    c'2                                                                                            %! sponge_rhythm
     \repeatTie
     
-    c'4
+    c'4                                                                                            %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/17 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 9/17 {                                                                                  %! sponge_rhythm
         
         % [A PercussionMusicVoice measure 51 / measure 38]                                         %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! sponge_rhythm
         \repeatTie
         
-        c'1
+        c'1                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'4.
+        c'4.                                                                                       %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! sponge_rhythm
     
     % [A PercussionMusicVoice measure 52 / measure 39]                                             %! _comment_measure_numbers
     R1 * 7/8                                                                                       %! _make_measure_silences
@@ -5719,10 +5719,10 @@ A_PercussionMusicVoice = {
     R1 * 11/8                                                                                      %! _make_measure_silences
     
     % [A PercussionMusicVoice measure 58 / measure 45]                                             %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
@@ -5733,160 +5733,160 @@ A_PercussionMusicVoice = {
                 tam-tam                                                                            %! IndicatorCommand
         }                                                                                          %! IndicatorCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r4.
+    r4.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 59 / measure 46]                                             %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! incise_attacks
     
     % [A PercussionMusicVoice measure 60 / measure 47]                                             %! _comment_measure_numbers
-    r4
+    r4                                                                                             %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8.
+    r8.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 61 / measure 48]                                             %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r1.
+    r1.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 62 / measure 49]                                             %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r2.
+    r2.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 63 / measure 50]                                             %! _comment_measure_numbers
-    r2..
+    r2..                                                                                           %! incise_attacks
     
     % [A PercussionMusicVoice measure 64 / measure 51]                                             %! _comment_measure_numbers
-    r2
+    r2                                                                                             %! incise_attacks
     
-    r8
+    r8                                                                                             %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8.
+    r8.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 65 / measure 52]                                             %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r1..
+    r1..                                                                                           %! incise_attacks
     
     % [A PercussionMusicVoice measure 66 / measure 53]                                             %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r2.
+    r2.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 67 / measure 54]                                             %! _comment_measure_numbers
-    r2.
+    r2.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 68 / measure 55]                                             %! _comment_measure_numbers
-    r2.
+    r2.                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8.
+    r8.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 69 / measure 56]                                             %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r4.
+    r4.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 70 / measure 57]                                             %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r2..
+    r2..                                                                                           %! incise_attacks
     
     % [A PercussionMusicVoice measure 71 / measure 58]                                             %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! incise_attacks
     
-    r4
+    r4                                                                                             %! incise_attacks
     
     % [A PercussionMusicVoice measure 72 / measure 59]                                             %! _comment_measure_numbers
-    r4
+    r4                                                                                             %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8.
+    r8.                                                                                            %! incise_attacks
     
     % [A PercussionMusicVoice measure 73 / measure 60]                                             %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! incise_attacks
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    c'16
+    c'16                                                                                           %! incise_attacks
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                                      %! IndicatorCommand
     - \tenuto                                                                                      %! IndicatorCommand
     
-    r8
+    r8                                                                                             %! incise_attacks
     
-    r2
+    r2                                                                                             %! incise_attacks
     
     % [A PercussionMusicVoice measure 74 / measure 61]                                             %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
@@ -5992,130 +5992,130 @@ A_ViolinMusicVoice = {
     
     % [A ViolinMusicVoice measure 21 / measure 8]                                                  %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    f''4.
+    f''4.                                                                                          %! polyphony
     \mp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                                    %! IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                                                  %! IndicatorCommand
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''4
+        g''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    f''4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 10/14 {
+    f''4                                                                                           %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 10/14 {                                                                                 %! polyphony
         
-        f''16
+        f''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        c''16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        a''16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f''16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''16
+        f''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''16
+        ef''!16                                                                                    %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        e''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 22 / measure 9]                                              %! _comment_measure_numbers
-        e''4
+        e''4                                                                                       %! polyphony
         
-        a''4
+        a''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c'''4
+        c'''4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    c'''4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    c'''4                                                                                          %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/4 {                                                                                   %! polyphony
         
-        ef''!4
+        ef''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f''4
+        f''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
     % [A ViolinMusicVoice measure 23 / measure 10]                                                 %! _comment_measure_numbers
-    f''16
+    f''16                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    fs''!16
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    a''16
+    fs''!16                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    c''16
+    a''16                                                                                          %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    c''16                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
+    ]                                                                                              %! polyphony
     
-    c''4.
-    \times 2/3 {
+    c''4.                                                                                          %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 24 / measure 11]                                             %! _comment_measure_numbers
-        c''4
+        c''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''4
+        a''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!4
+        ef''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    ef''!4
+    ef''!4                                                                                         %! polyphony
     
-    bf''!4
+    bf''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     % [A ViolinMusicVoice measure 25 / measure 12]                                                 %! _comment_measure_numbers
@@ -6142,1407 +6142,1407 @@ A_ViolinMusicVoice = {
     % [A ViolinMusicVoice measure 32 / measure 19]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!4.
+    fs''!4.                                                                                        %! polyphony
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                                    %! IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                                                  %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        af''!4
+        af''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         ~
-    }
+    }                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!4
+    fs''!4                                                                                         %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 10/14 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 10/14 {                                                                                 %! polyphony
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        [
+        [                                                                                          %! polyphony
         
-        cs''!16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''16
+        b''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''16
+        b''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''16
+        e''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        f''16
+        f''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 33 / measure 20]                                             %! _comment_measure_numbers
-        f''4
+        f''4                                                                                       %! polyphony
         
-        bf''!4
+        bf''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    cs''!4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    cs''!4                                                                                         %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/4 {                                                                                   %! polyphony
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
+    }                                                                                              %! polyphony
     
     % [A ViolinMusicVoice measure 34 / measure 21]                                                 %! _comment_measure_numbers
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!16
+    fs''!16                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    [
+    [                                                                                              %! polyphony
     
-    g''16
+    g''16                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    bf'!16
+    bf'!16                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    cs''!16
+    cs''!16                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ~
-    ]
+    ]                                                                                              %! polyphony
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    cs''!4.
+    cs''!4.                                                                                        %! polyphony
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 35 / measure 22]                                             %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        bf''!4
+        bf''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    e''4
+    e''4                                                                                           %! polyphony
     
-    b''4
+    b''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 6/10 {                                                                                  %! polyphony
         
         % [A ViolinMusicVoice measure 36 / measure 23]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b''16
+        b''16                                                                                      %! polyphony
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        [
+        [                                                                                          %! polyphony
         
-        c'16
+        c'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e'16
+        e'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!16
+        af'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d'16
+        d'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        fs'!4
-        - \staccato                                                                                %! IndicatorCommand
-        
-        d'4
+        fs'!4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs'!4
+        d'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+        
+        cs'!4                                                                                      %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+    }                                                                                              %! polyphony
     
-    fs'!4
+    fs'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
-    fs'!4.
-    \times 8/12 {
+    fs'!4.                                                                                         %! polyphony
+    \times 8/12 {                                                                                  %! polyphony
         
         % [A ViolinMusicVoice measure 37 / measure 24]                                             %! _comment_measure_numbers
-        g'16
+        g'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        af'!16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        bf'!16
+        af'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b'16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!16
+        b'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        a'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs'!16
+        bf'!16                                                                                     %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        cs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
-    cs'!4
+    cs'!4                                                                                          %! polyphony
     ~
     
     % [A ViolinMusicVoice measure 38 / measure 25]                                                 %! _comment_measure_numbers
-    cs'!4
+    cs'!4                                                                                          %! polyphony
     
-    ef'!4
+    ef'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    fs'!4
+    fs'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    ef'!16
+    ef'!16                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    c''16
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    cs'!16
+    c''16                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    af'!16
+    cs'!16                                                                                         %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    af'!16                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 39 / measure 26]                                             %! _comment_measure_numbers
-        af'!4
+        af'!4                                                                                      %! polyphony
         
-        b'4
+        b'4                                                                                        %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''4
+        c''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    bf'!4.
+    bf'!4.                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
     % [A ViolinMusicVoice measure 40 / measure 27]                                                 %! _comment_measure_numbers
-    bf'!4.
+    bf'!4.                                                                                         %! polyphony
     ~
-    \times 8/12 {
+    \times 8/12 {                                                                                  %! polyphony
         
-        bf'!16
-        [
+        bf'!16                                                                                     %! polyphony
+        [                                                                                          %! polyphony
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g'16
+        g'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b'16
+        b'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e'16
+        e'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs'!16
+        fs'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af'!16
+        af'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a'16
+        a'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 41 / measure 28]                                             %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    fs'!4
+    fs'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    fs'!4
+    fs'!4                                                                                          %! polyphony
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     
     % [A ViolinMusicVoice measure 42 / measure 29]                                                 %! _comment_measure_numbers
-    af'!16
+    af'!16                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    [
+    [                                                                                              %! polyphony
     
-    bf'!16
-    - \staccato                                                                                    %! IndicatorCommand
-    
-    fs'!16
+    bf'!16                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    bf'!16
+    fs'!16                                                                                         %! polyphony
+    - \staccato                                                                                    %! IndicatorCommand
+    
+    bf'!16                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
-    ]
-    \times 2/3 {
+    ]                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
-        bf'!4
+        bf'!4                                                                                      %! polyphony
         
-        e''4
+        e''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    cs''!4.
+    cs''!4.                                                                                        %! polyphony
     
-    c''4
+    c''4                                                                                           %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     
-    cs''!4
+    cs''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 6/10 {                                                                                  %! polyphony
         
-        bf'!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        e''16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        g''16
+        e''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b'16
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''16
+        b'16                                                                                       %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        cs''!16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 43 / measure 30]                                             %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    ef''!4
+    ef''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
     % [A ViolinMusicVoice measure 44 / measure 31]                                                 %! _comment_measure_numbers
-    ef''!4.
+    ef''!4.                                                                                        %! polyphony
     ~
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 10/14 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 10/14 {                                                                                 %! polyphony
         
-        ef''!16
-        [
+        ef''!16                                                                                    %! polyphony
+        [                                                                                          %! polyphony
         
-        c''16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!16
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!16
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''16
+        e''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''16
+        b''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''16
+        e''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 5/6 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 45 / measure 32]                                             %! _comment_measure_numbers
-        bf''!4
+        bf''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''4
+        a''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!4
+        fs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
     % [A ViolinMusicVoice measure 46 / measure 33]                                                 %! _comment_measure_numbers
-    bf'!4
+    bf'!4                                                                                          %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
-    bf'!4
+    bf'!4                                                                                          %! polyphony
     
-    ef''!4
+    ef''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! polyphony
+    \times 6/10 {                                                                                  %! polyphony
         
-        c'''16
+        c'''16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        cs''!16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        ef''!16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''16
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        e''16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        e''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!16
+        af''!16                                                                                    %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 47 / measure 34]                                             %! _comment_measure_numbers
-        ef''!4
+        ef''!4                                                                                     %! polyphony
         
-        c'''4
+        c'''4                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''4
+        d''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! polyphony
     
-    d''4.
+    d''4.                                                                                          %! polyphony
     
-    bf''!4.
+    bf''!4.                                                                                        %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
-    \times 8/12 {
+    \times 8/12 {                                                                                  %! polyphony
         
         % [A ViolinMusicVoice measure 48 / measure 35]                                             %! _comment_measure_numbers
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        [
+        [                                                                                          %! polyphony
         
-        cs''!16
-        - \staccato                                                                                %! IndicatorCommand
-        
-        ef''!16
+        cs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b'16
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        b'16                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf'!16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        c''16
+        bf'!16                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        b''16
+        c''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        b''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        g''16                                                                                      %! polyphony
+        - \staccato                                                                                %! IndicatorCommand
+        
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         ~
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
+    \times 2/3 {                                                                                   %! polyphony
         
         % [A ViolinMusicVoice measure 49 / measure 36]                                             %! _comment_measure_numbers
-        af''!4
+        af''!4                                                                                     %! polyphony
         
-        b''4
+        b''4                                                                                       %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        cs''!4
+        cs''!4                                                                                     %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-    }
+    }                                                                                              %! polyphony
     
-    fs''!4
+    fs''!4                                                                                         %! polyphony
     - \staccato                                                                                    %! IndicatorCommand
     ~
     
     % [A ViolinMusicVoice measure 50 / measure 37]                                                 %! _comment_measure_numbers
-    fs''!4
+    fs''!4                                                                                         %! polyphony
     ~
-    \times 8/12 {
+    \times 8/12 {                                                                                  %! polyphony
         
-        fs''!16
-        [
+        fs''!16                                                                                    %! polyphony
+        [                                                                                          %! polyphony
         
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        a''16
+        a''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        g''16
+        g''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        d''16
+        d''16                                                                                      %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        bf''!16
+        bf''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        fs''!16
+        fs''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        af''!16
+        af''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
         
-        ef''!16
+        ef''!16                                                                                    %! polyphony
         - \staccato                                                                                %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! polyphony
+    }                                                                                              %! polyphony
     
     % [A ViolinMusicVoice measure 51 / measure 38]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    g''4.
+    g''4.                                                                                          %! white_rhythm
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \downbow                                                                                     %! IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                                          %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4.
+    fs''!4.                                                                                        %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    a''4.
+    a''4.                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A ViolinMusicVoice measure 52 / measure 39]                                                 %! _comment_measure_numbers
-    c''4
+    c''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e''4
+    e''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b''4
+    b''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    a''4
+    a''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    c''4
+    c''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    af''!4
+    af''!4                                                                                         %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    g''4
+    g''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e''4
+    e''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d''4
+    d''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4
+    fs''!4                                                                                         %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f''4
+    f''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b'4
+    b'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!4
+    fs''!4                                                                                         %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    fs''!4
+    fs''!4                                                                                         %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     \glissando                                                                                     %! SpannerCommand
     
-    f''4
+    f''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b'4
+    b'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4
+    fs''!4                                                                                         %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d''4
+    d''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4
+    fs''!4                                                                                         %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    c''4
+    c''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    a''4
+    a''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d''4
+    d''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f''4
+    f''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    af''!4
+    af''!4                                                                                         %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
-    af''!4
+    af''!4                                                                                         %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     \glissando                                                                                     %! SpannerCommand
     
-    ef''!4
+    ef''!4                                                                                         %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e''4
+    e''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    a'4
+    a'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    c''4
+    c''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    af'!4
+    af'!4                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e''4
+    e''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    a'4
+    a'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A ViolinMusicVoice measure 58 / measure 45]                                                 %! _comment_measure_numbers
-    f'4
+    f'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d''4
+    d''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e'4
+    e'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    bf'!4
+    bf'!4                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f'4
+    f'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b'4
+    b'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4
+    fs''!4                                                                                         %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f'4
+    f'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d''4
+    d''4                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    af'!4
+    af'!4                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs'!4
+    fs'!4                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f'4
+    f'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b'4
+    b'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    a'4
+    a'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f'4
+    f'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs'!4
+    fs'!4                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    g'4
+    g'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    c''4
+    c''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    bf'!4
+    bf'!4                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs'!4
+    fs'!4                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e'4
+    e'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d'4
+    d'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs'!4
+    fs'!4                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A ViolinMusicVoice measure 64 / measure 51]                                                 %! _comment_measure_numbers
-    c''4
+    c''4                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    bf'!4
+    bf'!4                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b'4
+    b'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    af'!4
+    af'!4                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e'4
+    e'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    ef'!4
+    ef'!4                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d'4
+    d'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    g'4
+    g'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f'4
+    f'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e'4
+    e'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs'!4
+    fs'!4                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    af'!4
+    af'!4                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d'4
+    d'4                                                                                            %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b'4
+    b'4                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    af'!4
+    af'!4                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e'8
+    e'8                                                                                            %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [A ViolinMusicVoice measure 67 / measure 54]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b''8
+        b''8                                                                                       %! pizzicato_rhythm
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         
-        a''4
+        a''4                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        e''8
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
-        
-        e''8
-        
-        ef''!4.
+        e''8                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
+        
+        e''8                                                                                       %! pizzicato_rhythm
+        
+        ef''!4.                                                                                    %! pizzicato_rhythm
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ~
+    }                                                                                              %! pizzicato_rhythm
     
     % [A ViolinMusicVoice measure 68 / measure 55]                                                 %! _comment_measure_numbers
-    ef''!8
+    ef''!8                                                                                         %! pizzicato_rhythm
     
-    g''4
+    g''4                                                                                           %! pizzicato_rhythm
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    c''4
+    c''4                                                                                           %! pizzicato_rhythm
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    ef''!8
+    ef''!8                                                                                         %! pizzicato_rhythm
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    r4
+    r4                                                                                             %! pizzicato_rhythm
     
     % [A ViolinMusicVoice measure 69 / measure 56]                                                 %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_rhythm
     
-    r2
+    r2                                                                                             %! pizzicato_rhythm
     
     % [A ViolinMusicVoice measure 70 / measure 57]                                                 %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    bf''!16
+    bf''!16                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    c''16
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    af''!16
+    c''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    f''8
-    - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    
-    r8
-    
-    bf''!4
+    af''!16                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    a''16
+    f''8                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    ]                                                                                              %! pizzicato_sixteenths
     
-    c''16
+    r8                                                                                             %! pizzicato_sixteenths
+    
+    bf''!4                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    b''8
+    a''16                                                                                          %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    [                                                                                              %! pizzicato_sixteenths
+    
+    c''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g''8
+    b''8                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    
+    g''8                                                                                           %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
         % [A ViolinMusicVoice measure 71 / measure 58]                                             %! _comment_measure_numbers
-        r2
+        r2                                                                                         %! pizzicato_sixteenths
         
-        cs''!8
+        cs''!8                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_sixteenths
     
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    c'''16
+    c'''16                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    a''16
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    cs''!16
+    a''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g''16
+    cs''!16                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    fs''!8
+    g''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    \times 4/5 {
+    
+    fs''!8                                                                                         %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    \times 4/5 {                                                                                   %! pizzicato_sixteenths
         
         % [A ViolinMusicVoice measure 72 / measure 59]                                             %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        fs''!4
+        fs''!4                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        e''16
+        e''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        c'''16
+        c'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs''!8
+        fs''!8                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 73 / measure 60]                                                 %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    e''8
+    e''8                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
     % [A ViolinMusicVoice measure 74 / measure 61]                                                 %! _comment_measure_numbers
-    r16.
+    r16.                                                                                           %! pizzicato_sixteenths
     
-    f''8.
+    f''8.                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    ef''!32.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    c'''32.
+    ef''!32.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    f''16.
+    c'''32.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    e''16.
+    f''16.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    fs''!32.
+    e''16.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g''32.
+    fs''!32.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    bf''!32.
+    g''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    fs''!32.
+    bf''!32.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    
+    fs''!32.                                                                                       %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 75 / measure 62]                                                 %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r4.
-    \times 2/3 {
+    r4.                                                                                            %! pizzicato_sixteenths
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        fs''!8
+        fs''!8                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        b''8
+        b''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 76 / measure 63]                                                 %! _comment_measure_numbers
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    f''4
+    f''4                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    a''4
+    a''4                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/11 {
+    r4.                                                                                            %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 9/11 {                                                                                  %! pizzicato_sixteenths
         
         % [A ViolinMusicVoice measure 77 / measure 64]                                             %! _comment_measure_numbers
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
-        f''4
+        f''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''16
+        a''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        af''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        cs'''!8
+        af''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''8
+        cs'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
         
-        b''2
+        c'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        b''2                                                                                       %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
-    r4
+    r4                                                                                             %! pizzicato_sixteenths
     
-    g'''8
+    g'''8                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    r8
-    \times 2/3 {
+    r8                                                                                             %! pizzicato_sixteenths
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
         % [A ViolinMusicVoice measure 78 / measure 65]                                             %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         
-        b''16
+        b''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        g'''8
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        ef'''!8
+        g'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs'''!16
+        ef'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        bf''!16
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''16
+        bf''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        e'''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-        
-        a''4
+        a''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''4
+        e'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        a''4                                                                                       %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        c'''4                                                                                      %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 79 / measure 66]                                                 %! _comment_measure_numbers
-    r4
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    r4                                                                                             %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        fs'''!2
+        fs'''!2                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/11 {
+    }                                                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 9/11 {                                                                                  %! pizzicato_sixteenths
         
         % [A ViolinMusicVoice measure 80 / measure 67]                                             %! _comment_measure_numbers
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
-        b''4
+        b''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        af'''!16
+        af'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        fs'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        b''8
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        bf''!8
+        b''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs'''!16
+        bf''!8                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        cs'''!16
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''16
+        cs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f'''16
+        c'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
         
-        ef'''!4
+        f'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        ef'''!4                                                                                    %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 81 / measure 68]                                                 %! _comment_measure_numbers
-    r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    r4.                                                                                            %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 6/7 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        e'''8
+        e'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        c'''2
+        c'''2                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        c'''8
+        c'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 82 / measure 69]                                                 %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    g'''4
+    g'''4                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    g'''16
+    g'''16                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    b''8
+    b''8                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    a'''8
+    a'''8                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    ]                                                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         
-        g'''16
+        g'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        cs'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        b''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-        
-        bf'''!4
+        cs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''8
+        b''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        bf'''!4                                                                                    %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        c'''8                                                                                      %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 83 / measure 70]                                                 %! _comment_measure_numbers
-    r2
+    r2                                                                                             %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 84 / measure 71]                                                 %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r8.
+    r8.                                                                                            %! pizzicato_sixteenths
     
-    e'''8.
+    e'''8.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    r4
+    r4                                                                                             %! pizzicato_sixteenths
     
     % [A ViolinMusicVoice measure 85 / measure 72]                                                 %! _comment_measure_numbers
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -7596,8 +7596,8 @@ A_ViolinMusicStaff = {
 
 
 A_ViolaMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 6/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 14 / measure 1]                                               %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -7612,7 +7612,7 @@ A_ViolaMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        d4
+        d4                                                                                         %! hypermeter_tuplets
         \mf                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"                                     %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -7627,141 +7627,141 @@ A_ViolaMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        ctqs!1
+        ctqs!1                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 16 / measure 3]                                               %! _comment_measure_numbers
-        e2
+        e2                                                                                         %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        dqs!\breve
+        dqs!\breve                                                                                 %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 19 / measure 6]                                               %! _comment_measure_numbers
-        cqs!4
+        cqs!4                                                                                      %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        b,1
+        b,1                                                                                        %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [A ViolaMusicVoice measure 20 / measure 7]                                                   %! _comment_measure_numbers
-    cqs!2
+    cqs!2                                                                                          %! hypermeter_tuplets
     \glissando                                                                                     %! SpannerCommand
     
-    d\breve
+    d\breve                                                                                        %! hypermeter_tuplets
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 6/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 22 / measure 9]                                               %! _comment_measure_numbers
-        ctqs!2
+        ctqs!2                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        e\breve
+        e\breve                                                                                    %! hypermeter_tuplets
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 6/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 25 / measure 12]                                              %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        e4
+        e4                                                                                         %! hypermeter_tuplets
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "non flautando" }                                                              %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         \glissando                                                                                 %! SpannerCommand
         
-        dtqs!1
+        dtqs!1                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 27 / measure 14]                                              %! _comment_measure_numbers
-        f2
+        f2                                                                                         %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        eqs!\breve
+        eqs!\breve                                                                                 %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 30 / measure 17]                                              %! _comment_measure_numbers
-        dqs!4
+        dqs!4                                                                                      %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        c1
+        c1                                                                                         %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [A ViolaMusicVoice measure 31 / measure 18]                                                  %! _comment_measure_numbers
-    dqs!2
+    dqs!2                                                                                          %! hypermeter_tuplets
     \glissando                                                                                     %! SpannerCommand
     
-    e\breve
+    e\breve                                                                                        %! hypermeter_tuplets
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 6/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 33 / measure 20]                                              %! _comment_measure_numbers
-        dtqs!2
+        dtqs!2                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        f\breve
+        f\breve                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 9/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 36 / measure 23]                                              %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        g4
+        g4                                                                                         %! hypermeter_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        ftqs!2.
+        ftqs!2.                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        a4
+        a4                                                                                         %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 11/10 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 11/10 {                                                                                 %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 38 / measure 25]                                              %! _comment_measure_numbers
-        gqs!2
+        gqs!2                                                                                      %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        fqs!1.
+        fqs!1.                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        e2
+        e2                                                                                         %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 8/5 {                                                                                   %! hypermeter_tuplets
         
         % [A ViolaMusicVoice measure 41 / measure 28]                                              %! _comment_measure_numbers
-        fqs!8
+        fqs!8                                                                                      %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        g4.
+        g4.                                                                                        %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        ftqs!8
-    }
+        ftqs!8                                                                                     %! hypermeter_tuplets
+    }                                                                                              %! hypermeter_tuplets
     
     % [A ViolaMusicVoice measure 42 / measure 29]                                                  %! _comment_measure_numbers
     R1 * 2                                                                                         %! _make_measure_silences
@@ -7783,274 +7783,274 @@ A_ViolaMusicVoice = {
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-    r4
+    r4                                                                                             %! white_rhythm
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    af''!4.
+    af''!4.                                                                                        %! white_rhythm
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \downbow                                                                                     %! IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                                          %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    ef''!4.
+    ef''!4.                                                                                        %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b''4.
+    b''4.                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    e''4.
+    e''4.                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A ViolaMusicVoice measure 49 / measure 36]                                                  %! _comment_measure_numbers
-    af''!4.
+    af''!4.                                                                                        %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    a''4.
+    a''4.                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A ViolaMusicVoice measure 50 / measure 37]                                                  %! _comment_measure_numbers
-    f''4.
+    f''4.                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    b'4.
+    b'4.                                                                                           %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A ViolaMusicVoice measure 51 / measure 38]                                                  %! _comment_measure_numbers
-    f'4.
+    f'4.                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    af'!4.
+    af'!4.                                                                                         %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4.
+    fs''!4.                                                                                        %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/8 {                                                                                   %! prolated_quarters
         
         % [A ViolaMusicVoice measure 52 / measure 39]                                              %! _comment_measure_numbers
         \clef "alto"                                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        b'4
+        b'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        af'!4
+        af'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        ef'!4
+        ef'!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        bf'!4
+        bf'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 6/5 {                                                                                   %! prolated_quarters
         
         % [A ViolaMusicVoice measure 53 / measure 40]                                              %! _comment_measure_numbers
-        fs'!4
+        fs'!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b'4
+        b'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        af'!4
+        af'!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        fs'!4
+        fs'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af'!4
+        af'!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/9 {                                                                                   %! prolated_quarters
         
         % [A ViolaMusicVoice measure 54 / measure 41]                                              %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af'!4
+        af'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         \glissando                                                                                 %! SpannerCommand
         
-        e'4
+        e'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        bf'!4
+        bf'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        a'4
+        a'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        e'4
+        e'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        af'!4
+        af'!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f'4
+        f'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        c'4
+        c'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        a'4
+        a'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/5 {                                                                                   %! prolated_quarters
         
         % [A ViolaMusicVoice measure 55 / measure 42]                                              %! _comment_measure_numbers
-        e'4
+        e'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        af'!4
+        af'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        bf!4
+        bf!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        e'4
+        e'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        e'4
+        e'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 3/4 {                                                                                   %! prolated_quarters
         
         % [A ViolaMusicVoice measure 56 / measure 43]                                              %! _comment_measure_numbers
-        g'4
+        g'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        e'4
+        e'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        d'4
+        d'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f4
+        f4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 11/8 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 11/8 {                                                                                  %! prolated_quarters
         
         % [A ViolaMusicVoice measure 57 / measure 44]                                              %! _comment_measure_numbers
-        fs'!4
+        fs'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f4
+        f4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        g4
+        g4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        bf!4
+        bf!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 5/4 {                                                                                   %! prolated_quarters
         
         % [A ViolaMusicVoice measure 58 / measure 45]                                              %! _comment_measure_numbers
-        c'4
+        c'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b4
+        b4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 4/4 {                                                                                   %! prolated_quarters
         
         % [A ViolaMusicVoice measure 59 / measure 46]                                              %! _comment_measure_numbers
-        ef!4
+        ef!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        fs!4
+        fs!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        ef!4
+        ef!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af!4
+        af!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
-    \times 2/3 {
+    }                                                                                              %! prolated_quarters
+    \times 2/3 {                                                                                   %! prolated_quarters
         
         % [A ViolaMusicVoice measure 60 / measure 47]                                              %! _comment_measure_numbers
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        af!4
+        af!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         \glissando                                                                                 %! SpannerCommand
         
-        e4
+        e4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        ef!4
+        ef!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [A ViolaMusicVoice measure 61 / measure 48]                                              %! _comment_measure_numbers
         \clef "treble"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
@@ -8058,470 +8058,470 @@ A_ViolaMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        b''8
+        b''8                                                                                       %! pizzicato_rhythm
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        bf''!4
+        bf''!4                                                                                     %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g''8
+        g''8                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    r1
+    r1                                                                                             %! pizzicato_rhythm
     
-    r8
+    r8                                                                                             %! pizzicato_rhythm
     
-    r4
+    r4                                                                                             %! pizzicato_rhythm
     
     % [A ViolaMusicVoice measure 62 / measure 49]                                                  %! _comment_measure_numbers
-    r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    r8                                                                                             %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 7/9 {                                                                                   %! pizzicato_rhythm
         
-        fs''!4
+        fs''!4                                                                                     %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f''2
+        f''2                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g''4.
+        g''4.                                                                                      %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         ~
-    }
-    \times 2/3 {
+    }                                                                                              %! pizzicato_rhythm
+    \times 2/3 {                                                                                   %! pizzicato_rhythm
         
         % [A ViolaMusicVoice measure 63 / measure 50]                                              %! _comment_measure_numbers
-        g''8
-        [
+        g''8                                                                                       %! pizzicato_rhythm
+        [                                                                                          %! pizzicato_rhythm
         
-        a''8
+        a''8                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        af''!8
+        af''!8                                                                                     %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         ~
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+        ]                                                                                          %! pizzicato_rhythm
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        af''!8
+        af''!8                                                                                     %! pizzicato_rhythm
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!4
+        fs''!4                                                                                     %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs''!8
+        fs''!8                                                                                     %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    r4
+    r4                                                                                             %! pizzicato_rhythm
     
     % [A ViolaMusicVoice measure 64 / measure 51]                                                  %! _comment_measure_numbers
-    r2..
+    r2..                                                                                           %! pizzicato_rhythm
     
     % [A ViolaMusicVoice measure 65 / measure 52]                                                  %! _comment_measure_numbers
-    r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/11 {
+    r4.                                                                                            %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 9/11 {                                                                                  %! pizzicato_rhythm
         
-        bf''!4.
+        bf''!4.                                                                                    %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f''2
+        f''2                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        ef''!8
+        ef''!8                                                                                     %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''4
+        a''4                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs''!8
+        fs''!8                                                                                     %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         ~
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    fs''!8
+    fs''!8                                                                                         %! pizzicato_rhythm
     
-    cs''!4
+    cs''!4                                                                                         %! pizzicato_rhythm
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    c'''8
+    c'''8                                                                                          %! pizzicato_rhythm
     - \staccatissimo                                                                               %! IndicatorCommand
     
     % [A ViolaMusicVoice measure 66 / measure 53]                                                  %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! pizzicato_rhythm
     
     % [A ViolaMusicVoice measure 67 / measure 54]                                                  %! _comment_measure_numbers
-    r4.
+    r4.                                                                                            %! pizzicato_rhythm
     
-    r4.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    r4.                                                                                            %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [A ViolaMusicVoice measure 68 / measure 55]                                              %! _comment_measure_numbers
-        fs''!4.
+        fs''!4.                                                                                    %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        a''8
+        a''8                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        a''4
+        a''4                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        e''4
+        e''4                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    f''4
+    f''4                                                                                           %! pizzicato_rhythm
     - \staccatissimo                                                                               %! IndicatorCommand
     ~
     
     % [A ViolaMusicVoice measure 69 / measure 56]                                                  %! _comment_measure_numbers
-    f''8
+    f''8                                                                                           %! pizzicato_rhythm
     
-    r2
+    r2                                                                                             %! pizzicato_rhythm
     
     % [A ViolaMusicVoice measure 70 / measure 57]                                                  %! _comment_measure_numbers
-    r32.
+    r32.                                                                                           %! pizzicato_sixteenths
     
-    a''32.
+    a''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    fs''!32.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    b''32.
+    fs''!32.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    fs''!8.
+    b''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    
+    fs''!8.                                                                                        %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 6/7 {                                                                                   %! pizzicato_sixteenths
         
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
-        cs'''!16
+        cs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        c'''16
+        c'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        c'''8
+        c'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
-        e''8
+        e''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! pizzicato_sixteenths
         
-        bf''!4
+        bf''!4                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 71 / measure 58]                                                  %! _comment_measure_numbers
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r4.
-    \times 2/3 {
+    r4.                                                                                            %! pizzicato_sixteenths
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        f''8
+        f''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        g''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        fs''!16
+        g''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''16
+        fs''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        bf''!16
+        c'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
         
-        fs'''!4
+        bf''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \times 4/7 {
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        fs'''!4                                                                                    %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
+    \times 4/7 {                                                                                   %! pizzicato_sixteenths
         
         % [A ViolaMusicVoice measure 72 / measure 59]                                              %! _comment_measure_numbers
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
-        c'''16
+        c'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        bf''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        g''8
+        bf''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f''8
+        g''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
         
-        g''4
+        f''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        g''4                                                                                       %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 73 / measure 60]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r16.
+    r16.                                                                                           %! pizzicato_sixteenths
     
-    c'''8.
+    c'''8.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    bf''!16.
+    bf''!16.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    ]                                                                                              %! pizzicato_sixteenths
     
-    r4
+    r4                                                                                             %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 74 / measure 61]                                                  %! _comment_measure_numbers
-    r2.
+    r2.                                                                                            %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 75 / measure 62]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    c'''16
+    c'''16                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    g'''8
+    g'''8                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    af''!8
+    af''!8                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    ]                                                                                              %! pizzicato_sixteenths
     
-    r4
+    r4                                                                                             %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 76 / measure 63]                                                  %! _comment_measure_numbers
-    r16..
+    r16..                                                                                          %! pizzicato_sixteenths
     
-    fs'''!8..
+    fs'''!8..                                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    c'''8..
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    f''32..
+    c'''8..                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    c'''32..
+    f''32..                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g'''16..
+    c'''32..                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    fs'''!16..
+    g'''16..                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
     
-    r4.
+    fs'''!16..                                                                                     %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    
+    r4.                                                                                            %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 77 / measure 64]                                                  %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! pizzicato_sixteenths
     
-    r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    r8                                                                                             %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
-        af'''!4
+        af'''!4                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''16
+        a''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        cs'''!16
+        cs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
-    r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    r8                                                                                             %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 6/7 {                                                                                   %! pizzicato_sixteenths
         
         % [A ViolaMusicVoice measure 78 / measure 65]                                              %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        f'''16
+        f'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        e'''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        g'''16
+        e'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        cs'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-        
-        ef'''!4
+        g'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g'''4
+        cs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \times 2/3 {
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        ef'''!4                                                                                    %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        g'''4                                                                                      %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
         % [A ViolaMusicVoice measure 79 / measure 66]                                              %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         
-        f'''16
+        f'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        g'''8
+        g'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a'''8
+        a'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 80 / measure 67]                                                  %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! pizzicato_sixteenths
     
-    r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    r8                                                                                             %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
         % [A ViolaMusicVoice measure 81 / measure 68]                                              %! _comment_measure_numbers
-        r4
+        r4                                                                                         %! pizzicato_sixteenths
         
-        c'''4
+        c'''4                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs'''!16
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        cs'''!16
+        cs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        a'''8
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        ef'''!2
+        a'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g'''4
+        ef'''!2                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f'''8
+        g'''4                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        
+        f'''8                                                                                      %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 82 / measure 69]                                                  %! _comment_measure_numbers
-    r16.
+    r16.                                                                                           %! pizzicato_sixteenths
     
-    af'''!32.
+    af'''!32.                                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    a'''32.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    b''16.
+    a'''32.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    fs'''!16.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    
-    r32.
-    
-    f'''32.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    [
-    
-    c'''32.
+    b''16.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    bf'''!32.
+    fs'''!16.                                                                                      %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    
+    r32.                                                                                           %! pizzicato_sixteenths
+    
+    f'''32.                                                                                        %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    [                                                                                              %! pizzicato_sixteenths
+    
+    c'''32.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g'''8.
+    bf'''!32.                                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
     
-    r4.
+    g'''8.                                                                                         %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    
+    r4.                                                                                            %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 83 / measure 70]                                                  %! _comment_measure_numbers
-    r2
+    r2                                                                                             %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 84 / measure 71]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    f'''4
+    f'''4                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         
-        f'''16
+        f'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        a'''8
+        a'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs'''!8
+        fs'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A ViolaMusicVoice measure 85 / measure 72]                                                  %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
@@ -8545,8 +8545,8 @@ A_ViolaMusicStaff = {
 
 
 A_CelloMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 6/5 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 14 / measure 1]                                               %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -8561,7 +8561,7 @@ A_CelloMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e,2.
+        e,2.                                                                                       %! hypermeter_tuplets
         \mf                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Vc.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Cello”)"                                     %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -8576,136 +8576,136 @@ A_CelloMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        dqs,!2
+        dqs,!2                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 16 / measure 3]                                               %! _comment_measure_numbers
-        cqs,!1.
+        cqs,!1.                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        b,,1
+        b,,1                                                                                       %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 19 / measure 6]                                               %! _comment_measure_numbers
-        cqs,!2.
+        cqs,!2.                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        d,2
+        d,2                                                                                        %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [A CelloMusicVoice measure 20 / measure 7]                                                   %! _comment_measure_numbers
-    ctqs,!1.
+    ctqs,!1.                                                                                       %! hypermeter_tuplets
     \glissando                                                                                     %! SpannerCommand
     
-    e,1
+    e,1                                                                                            %! hypermeter_tuplets
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 6/5 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 22 / measure 9]                                               %! _comment_measure_numbers
-        dqs,!1.
+        dqs,!1.                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        cqs,!1
+        cqs,!1                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 6/5 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 25 / measure 12]                                              %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        f,2.
+        f,2.                                                                                       %! hypermeter_tuplets
         \f                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "non flautando" }                                                              %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        eqs,!2
+        eqs,!2                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 27 / measure 14]                                              %! _comment_measure_numbers
-        dqs,!1.
+        dqs,!1.                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        c,1
+        c,1                                                                                        %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 7/5 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 30 / measure 17]                                              %! _comment_measure_numbers
-        dqs,!2.
+        dqs,!2.                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        e,2
+        e,2                                                                                        %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! hypermeter_tuplets
     
     % [A CelloMusicVoice measure 31 / measure 18]                                                  %! _comment_measure_numbers
-    dtqs,!1.
+    dtqs,!1.                                                                                       %! hypermeter_tuplets
     \glissando                                                                                     %! SpannerCommand
     
-    f,1
+    f,1                                                                                            %! hypermeter_tuplets
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 6/5 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 33 / measure 20]                                              %! _comment_measure_numbers
-        eqs,!1.
+        eqs,!1.                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        dqs,!1
+        dqs,!1                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/7 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 9/7 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 36 / measure 23]                                              %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        a,1
+        a,1                                                                                        %! hypermeter_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        gqs,!4
+        gqs,!4                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        fqs,!2
+        fqs,!2                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 11/7 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 11/7 {                                                                                  %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 38 / measure 25]                                              %! _comment_measure_numbers
-        e,1
+        e,1                                                                                        %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        fqs,!4
+        fqs,!4                                                                                     %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        g,2
+        g,2                                                                                        %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/7 {
+    }                                                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! hypermeter_tuplets
+    \times 8/7 {                                                                                   %! hypermeter_tuplets
         
         % [A CelloMusicVoice measure 41 / measure 28]                                              %! _comment_measure_numbers
-        ftqs,!2
+        ftqs,!2                                                                                    %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        a,8
+        a,8                                                                                        %! hypermeter_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        gqs,!4
-    }
+        gqs,!4                                                                                     %! hypermeter_tuplets
+    }                                                                                              %! hypermeter_tuplets
     
     % [A CelloMusicVoice measure 42 / measure 29]                                                  %! _comment_measure_numbers
     R1 * 2                                                                                         %! _make_measure_silences
@@ -8727,360 +8727,360 @@ A_CelloMusicVoice = {
     \once \override Staff.Clef.color = #(x11-color 'blue)                                          %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-    r4
+    r4                                                                                             %! white_rhythm
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    e''4.
+    e''4.                                                                                          %! white_rhythm
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \downbow                                                                                     %! IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                                          %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    d''4.
+    d''4.                                                                                          %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f''4.
+    f''4.                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4.
+    fs''!4.                                                                                        %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A CelloMusicVoice measure 49 / measure 36]                                                  %! _comment_measure_numbers
-    g''4.
+    g''4.                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4.
+    fs''!4.                                                                                        %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A CelloMusicVoice measure 50 / measure 37]                                                  %! _comment_measure_numbers
-    c''4.
+    c''4.                                                                                          %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    bf'!4.
+    bf'!4.                                                                                         %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [A CelloMusicVoice measure 51 / measure 38]                                                  %! _comment_measure_numbers
-    e'4.
+    e'4.                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    bf'!4.
+    bf'!4.                                                                                         %! white_rhythm
     - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    f'4.
+    f'4.                                                                                           %! white_rhythm
     - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/4 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 52 / measure 39]                                              %! _comment_measure_numbers
-        b'4
+        b'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        d'4
+        d'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/8 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 6/8 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 53 / measure 40]                                              %! _comment_measure_numbers
-        f'4
+        f'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        d'4
+        d'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        e'4
+        e'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        ef'!4
+        ef'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f'4
+        f'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        ef'!4
+        ef'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b'4
+        b'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        e'4
+        e'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/5 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 54 / measure 41]                                              %! _comment_measure_numbers
-        g'4
+        g'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        c'4
+        c'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f'4
+        f'4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        g'4
+        g'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        bf!4
+        bf!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/8 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 55 / measure 42]                                              %! _comment_measure_numbers
-        ef'!4
+        ef'!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b4
+        b4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f'4
+        f'4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b4
+        b4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        af!4
+        af!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        ef'!4
+        ef'!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b4
+        b4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        fs!4
+        fs!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/2 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 3/2 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 56 / measure 43]                                              %! _comment_measure_numbers
-        b4
+        b4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        g4
+        g4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 11/14 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 11/14 {                                                                                 %! prolated_quarters
         
         % [A CelloMusicVoice measure 57 / measure 44]                                              %! _comment_measure_numbers
-        af!4
+        af!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        fs!4
+        fs!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b4
+        b4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        bf!4
+        bf!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f4
+        f4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs!4
+        fs!4                                                                                       %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
-        fs!4
+        fs!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 5/4 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 58 / measure 45]                                              %! _comment_measure_numbers
         \clef "bass"                                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
-        b4
+        b4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        af!4
+        af!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! prolated_quarters
+    \times 4/5 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 59 / measure 46]                                              %! _comment_measure_numbers
-        b4
+        b4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        a4
+        a4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        c4
+        c4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        d4
+        d4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        e4
+        e4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 2/2 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 2/2 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 60 / measure 47]                                              %! _comment_measure_numbers
-        g4
+        g4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        e4
+        e4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/9 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 61 / measure 48]                                              %! _comment_measure_numbers
-        b,4
+        b,4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        e4
+        e4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        af!4
+        af!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        g4
+        g4                                                                                         %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        c4
+        c4                                                                                         %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        bf,!4
+        bf,!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        fs!4
+        fs!4                                                                                       %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f,4
+        f,4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        e,4
+        e,4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/4 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 4/4 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 62 / measure 49]                                              %! _comment_measure_numbers
-        af,!4
+        af,!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f,4
+        f,4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b,4
+        b,4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        a,4
+        a,4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/8 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 63 / measure 50]                                              %! _comment_measure_numbers
-        af,!4
+        af,!4                                                                                      %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        ef,!4
+        ef,!4                                                                                      %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        b,4
+        b,4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        f,4
+        f,4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/4 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! prolated_quarters
+    \times 7/4 {                                                                                   %! prolated_quarters
         
         % [A CelloMusicVoice measure 64 / measure 51]                                              %! _comment_measure_numbers
-        b,4
+        b,4                                                                                        %! prolated_quarters
         - \upbow                                                                                   %! IndicatorCommand
         \glissando                                                                                 %! SpannerCommand
         
-        a,4
+        a,4                                                                                        %! prolated_quarters
         - \downbow                                                                                 %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    }                                                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [A CelloMusicVoice measure 65 / measure 52]                                              %! _comment_measure_numbers
         \clef "treble"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
@@ -9088,425 +9088,425 @@ A_CelloMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        cs''!8
+        cs''!8                                                                                     %! pizzicato_rhythm
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        c''4
+        c''4                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        b''8
+        b''8                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 9/10 {                                                                                  %! pizzicato_rhythm
         
-        b''8
+        b''8                                                                                       %! pizzicato_rhythm
         
-        g''2
+        g''2                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        e''4
+        e''4                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c''4
+        c''4                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        g''8
+        g''8                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    r4.
+    r4.                                                                                            %! pizzicato_rhythm
     
-    r8
+    r8                                                                                             %! pizzicato_rhythm
     
     % [A CelloMusicVoice measure 66 / measure 53]                                                  %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! pizzicato_rhythm
     
     % [A CelloMusicVoice measure 67 / measure 54]                                                  %! _comment_measure_numbers
-    bf''!4
+    bf''!4                                                                                         %! pizzicato_rhythm
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    f''8
+    f''8                                                                                           %! pizzicato_rhythm
     - \staccatissimo                                                                               %! IndicatorCommand
     ~
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        f''8
+        f''8                                                                                       %! pizzicato_rhythm
         
-        c''4.
+        c''4.                                                                                      %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 6/7 {                                                                                   %! pizzicato_rhythm
         
         % [A CelloMusicVoice measure 68 / measure 55]                                              %! _comment_measure_numbers
-        c''8
+        c''8                                                                                       %! pizzicato_rhythm
         
-        f''4
+        f''4                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        af''!4
+        af''!4                                                                                     %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f''8
+        f''8                                                                                       %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_rhythm
         
-        af''!16
+        af''!16                                                                                    %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs''!16
+        fs''!16                                                                                    %! pizzicato_rhythm
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_rhythm
+    }                                                                                              %! pizzicato_rhythm
     
-    r4
+    r4                                                                                             %! pizzicato_rhythm
     
     % [A CelloMusicVoice measure 69 / measure 56]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_rhythm
     
-    r2
+    r2                                                                                             %! pizzicato_rhythm
     
     % [A CelloMusicVoice measure 70 / measure 57]                                                  %! _comment_measure_numbers
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r16.
+    r16.                                                                                           %! pizzicato_sixteenths
     
-    b''32.
+    b''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    g''32.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    fs''!16.
+    g''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    ef''!16.
+    fs''!16.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
     
-    f''4.
+    ef''!16.                                                                                       %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
+    
+    f''4.                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
     % [A CelloMusicVoice measure 71 / measure 58]                                                  %! _comment_measure_numbers
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    e''16
+    e''16                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    ef''!8
+    ef''!8                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g''8
+    g''8                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
-    \times 4/5 {
+    ]                                                                                              %! pizzicato_sixteenths
+    \times 4/5 {                                                                                   %! pizzicato_sixteenths
         
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         
-        fs''!16
+        fs''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        e''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        f''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-        
-        af''!4
+        e''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f''8
+        f''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \times 2/3 {
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        af''!4                                                                                     %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        
+        f''8                                                                                       %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
         % [A CelloMusicVoice measure 72 / measure 59]                                              %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        af''!16
+        af''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        cs'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        b''8
+        cs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''8
+        b''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
         
-        ef''!4
+        a''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+        
+        ef''!4                                                                                     %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A CelloMusicVoice measure 73 / measure 60]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    r4.
-    \times 2/3 {
+    r4.                                                                                            %! pizzicato_sixteenths
+    \times 2/3 {                                                                                   %! pizzicato_sixteenths
         
-        r16
+        r16                                                                                        %! pizzicato_sixteenths
         
-        a''16
+        a''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        f''8
+        f''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        ef''!8
+        ef''!8                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
     % [A CelloMusicVoice measure 74 / measure 61]                                                  %! _comment_measure_numbers
-    r2.
+    r2.                                                                                            %! pizzicato_sixteenths
     
     % [A CelloMusicVoice measure 75 / measure 62]                                                  %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    cs'''!16
+    cs'''!16                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        b''8
+        b''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''4.
+        a''4.                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    f''8
+    f''8                                                                                           %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/9 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 7/9 {                                                                                   %! pizzicato_sixteenths
         
         % [A CelloMusicVoice measure 76 / measure 63]                                              %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        g''4
+        g''4                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        ef'''!16
+        ef'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        a''16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        b''8
+        a''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        fs'''!8
+        b''8                                                                                       %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        ef'''!16
+        fs'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f''16
+        ef'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a''16
+        f''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        af''!16
+        a''16                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        f''8
+        af''!16                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        
+        f''8                                                                                       %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
     % [A CelloMusicVoice measure 77 / measure 64]                                                  %! _comment_measure_numbers
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
-    fs'''!8
+    fs'''!8                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g'''2
+    g'''2                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    bf''!4
+    bf''!4                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g'''8
+    g'''8                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    r16
+    r16                                                                                            %! pizzicato_sixteenths
     
-    c'''16
+    c'''16                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
     % [A CelloMusicVoice measure 78 / measure 65]                                                  %! _comment_measure_numbers
-    r32.
+    r32.                                                                                           %! pizzicato_sixteenths
     
-    bf''!32.
+    bf''!32.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    a''8.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    b''8.
+    a''8.                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    fs'''!32.
+    b''8.                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    f'''32.
+    fs'''!32.                                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    ef'''!16.
+    f'''32.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    a''16.
+    ef'''!16.                                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    
+    a''16.                                                                                         %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
     
     % [A CelloMusicVoice measure 79 / measure 66]                                                  %! _comment_measure_numbers
-    r4
+    r4                                                                                             %! pizzicato_sixteenths
     
-    r8.
+    r8.                                                                                            %! pizzicato_sixteenths
     
-    f'''8.
+    f'''8.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
     % [A CelloMusicVoice measure 80 / measure 67]                                                  %! _comment_measure_numbers
-    r1
+    r1                                                                                             %! pizzicato_sixteenths
     
-    r8
+    r8                                                                                             %! pizzicato_sixteenths
     
     % [A CelloMusicVoice measure 81 / measure 68]                                                  %! _comment_measure_numbers
-    r8.
+    r8.                                                                                            %! pizzicato_sixteenths
     
-    b''32.
+    b''32.                                                                                         %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    bf''!32.
+    bf''!32.                                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    g'''16.
+    g'''16.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    ]                                                                                              %! pizzicato_sixteenths
     
-    r2.
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    r2.                                                                                            %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
         % [A CelloMusicVoice measure 82 / measure 69]                                              %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        ef'''!16
+        ef'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        fs'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        cs'''!8
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        bf'''!8
+        cs'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a'''16
+        bf'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        af'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
-        
-        r16
-        
-        fs'''!16
+        a'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        cs'''!4
+        af'''!16                                                                                   %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
+        
+        r16                                                                                        %! pizzicato_sixteenths
+        
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''4
+        cs'''!4                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+        
+        c'''4                                                                                      %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+    }                                                                                              %! pizzicato_sixteenths
     
-    r32.
+    r32.                                                                                           %! pizzicato_sixteenths
     
-    fs'''!32.
+    fs'''!32.                                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! pizzicato_sixteenths
     
-    c'''16.
-    - \staccatissimo                                                                               %! IndicatorCommand
-    
-    e'''16.
+    c'''16.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    ef'''!16.
+    e'''16.                                                                                        %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    
+    ef'''!16.                                                                                      %! pizzicato_sixteenths
+    - \staccatissimo                                                                               %! IndicatorCommand
+    ]                                                                                              %! pizzicato_sixteenths
     
     % [A CelloMusicVoice measure 83 / measure 70]                                                  %! _comment_measure_numbers
-    r4.
+    r4.                                                                                            %! pizzicato_sixteenths
     
-    f'''4
+    f'''4                                                                                          %! pizzicato_sixteenths
     - \staccatissimo                                                                               %! IndicatorCommand
     
     % [A CelloMusicVoice measure 84 / measure 71]                                                  %! _comment_measure_numbers
-    r8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    r8                                                                                             %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_sixteenths
+    \times 3/5 {                                                                                   %! pizzicato_sixteenths
         
-        r8
+        r8                                                                                         %! pizzicato_sixteenths
         
-        af'''!16
+        af'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! pizzicato_sixteenths
         
-        fs'''!16
-        - \staccatissimo                                                                           %! IndicatorCommand
-        
-        f'''8
+        fs'''!16                                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        ef'''!8
+        f'''8                                                                                      %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        c'''16
+        ef'''!8                                                                                    %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        a'''16
+        c'''16                                                                                     %! pizzicato_sixteenths
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
+        
+        a'''16                                                                                     %! pizzicato_sixteenths
+        - \staccatissimo                                                                           %! IndicatorCommand
+        ]                                                                                          %! pizzicato_sixteenths
+    }                                                                                              %! pizzicato_sixteenths
     
-    r4
+    r4                                                                                             %! pizzicato_sixteenths
     
     % [A CelloMusicVoice measure 85 / measure 72]                                                  %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences

@@ -13,12 +13,13 @@ def closing_pizzicati(
     """
     return baca.rhythm(
         rhythm_maker=rmakers.TaleaRhythmMaker(
+            extra_counts_per_division=extra_counts_per_division,
+            rest_tied_notes=True,
+            split_divisions_by_counts=split_divisions_by_counts,
+            tag='closing_pizzicati',
             talea=rmakers.Talea(
                 counts=counts,
                 denominator=4,
                 ),
-            split_divisions_by_counts=split_divisions_by_counts,
-            extra_counts_per_division=extra_counts_per_division,
-            rest_tied_notes=True,
             ),
         )

@@ -497,7 +497,7 @@ i_PianoMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [_ PianoMusicVoice measure 4]                                                                %! _comment_measure_numbers
-    r16
+    r16                                                                                            %! single_cluster_piano_rhythm
     
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -517,9 +517,9 @@ i_PianoMusicVoice = {
                 }
         }
     
-    r8
+    r8                                                                                             %! single_cluster_piano_rhythm
     
-    r2
+    r2                                                                                             %! single_cluster_piano_rhythm
     
     % [_ PianoMusicVoice measure 5]                                                                %! _comment_measure_numbers
     R1 * 5/8                                                                                       %! _make_measure_silences
@@ -645,8 +645,8 @@ i_PercussionMusicVoice = {
     
     % [_ PercussionMusicVoice measure 9]                                                           %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 5/8 {                                                                                   %! sponge_rhythm
         
         % [_ PercussionMusicVoice measure 10]                                                      %! _comment_measure_numbers
         \stopStaff                                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -661,7 +661,7 @@ i_PercussionMusicVoice = {
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)                               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         \baca_effort_ff                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \accent                                                                                  %! IndicatorCommand
         ^ \markup {                                                                                %! IndicatorCommand
@@ -675,46 +675,46 @@ i_PercussionMusicVoice = {
         \override Staff.BarLine.bar-extent = #'(0 . 0)                                             %! OverrideCommand(1)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! sponge_rhythm
+    \times 2/3 {                                                                                   %! sponge_rhythm
         
         % [_ PercussionMusicVoice measure 11]                                                      %! _comment_measure_numbers
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         \repeatTie
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         
-        c'2
+        c'2                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-    }
+    }                                                                                              %! sponge_rhythm
     
     % [_ PercussionMusicVoice measure 12]                                                          %! _comment_measure_numbers
-    c'2
+    c'2                                                                                            %! sponge_rhythm
     \repeatTie
     
-    c'2
+    c'2                                                                                            %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
     
-    c'4
+    c'4                                                                                            %! sponge_rhythm
     - \accent                                                                                      %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! sponge_rhythm
+    \times 3/4 {                                                                                   %! sponge_rhythm
         
         % [_ PercussionMusicVoice measure 13]                                                      %! _comment_measure_numbers
-        c'2.
+        c'2.                                                                                       %! sponge_rhythm
         \repeatTie
         
-        c'4
+        c'4                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
         \revert Staff.BarLine.bar-extent                                                           %! OverrideCommand(2)
         \once \override Staff.BarLine.bar-extent = #'(0 . 0)                                       %! OverrideCommand(1)
         \revert DynamicLineSpanner.padding                                                         %! OverrideCommand(2)
         \revert TupletBracket.padding                                                              %! OverrideCommand(2)
         
-    }
+    }                                                                                              %! sponge_rhythm
 }
 
 
@@ -746,7 +746,7 @@ i_ViolinMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)                                %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r4
+    r4                                                                                             %! opening_triplets
     ^ \markup \baca-default-indicator-markup "(“Violin”)"                                          %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-explicit-indicator-markup "[“Vn.”]"                                            %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                                              %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -757,142 +757,142 @@ i_ViolinMusicVoice = {
             #16                                                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
             Vn.                                                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
         }                                                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! opening_triplets
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        ef''!8
+        ef''!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        [
+        [                                                                                          %! opening_triplets
         
-        ef''!8
+        ef''!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         
-        ef''!8
+        ef''!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
+    \times 2/3 {                                                                                   %! opening_triplets
         
-        ef''!8
+        ef''!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        [
+        [                                                                                          %! opening_triplets
         
-        ef''!8
-        :32                                                                                        %! IndicatorCommand
-        
-        ef''!8
-        :32                                                                                        %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
-        
-        ef''!8
-        :32                                                                                        %! IndicatorCommand
-        [
-        
-        ef''!8
+        ef''!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         
-        ef''!8
+        ef''!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
+    \times 2/3 {                                                                                   %! opening_triplets
+        
+        ef''!8                                                                                     %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        [                                                                                          %! opening_triplets
+        
+        ef''!8                                                                                     %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        
+        ef''!8                                                                                     %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
     
     % [_ ViolinMusicVoice measure 2]                                                               %! _comment_measure_numbers
     R1 * 9/8                                                                                       %! _make_measure_silences
     
     % [_ ViolinMusicVoice measure 3]                                                               %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [_ ViolinMusicVoice measure 4]                                                           %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        ef''!4
+        ef''!4                                                                                     %! glissando_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup { "molto flautando" }                                                            %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                                                 %! SpannerCommand
         
-        d''2
+        d''2                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        fs''!16
+        fs''!16                                                                                    %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        e''4
+        e''4                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
         % [_ ViolinMusicVoice measure 5]                                                           %! _comment_measure_numbers
-        d''4
+        d''4                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        c''8.
+        c''8.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        d''8
+        d''8                                                                                       %! glissando_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        d''4
+        d''4                                                                                       %! glissando_rhythm
         \repeatTie                                                                                 %! SpannerCommand
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [_ ViolinMusicVoice measure 6]                                                           %! _comment_measure_numbers
-        fs''!16.
+        fs''!16.                                                                                   %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g''4.
-    }
+        g''4.                                                                                      %! glissando_rhythm
+    }                                                                                              %! glissando_rhythm
     
-    r4.
+    r4.                                                                                            %! glissando_rhythm
     
-    r4.
-    \times 4/5 {
+    r4.                                                                                            %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [_ ViolinMusicVoice measure 7]                                                           %! _comment_measure_numbers
-        cs''!8.
+        cs''!8.                                                                                    %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a'2.
+        a'2.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
-        af'!4
+        af'!4                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a'8.
+        a'8.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [_ ViolinMusicVoice measure 8]                                                               %! _comment_measure_numbers
-    bf'!8
+    bf'!8                                                                                          %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    e'4
+    e'4                                                                                            %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        f'16
+        f'16                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        g'4
+        g'4                                                                                        %! glissando_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \revert NoteHead.style                                                                     %! OverrideCommand(2)
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [_ ViolinMusicVoice measure 9]                                                               %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -942,7 +942,7 @@ i_ViolaMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)                                %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r4
+    r4                                                                                             %! opening_triplets
     ^ \markup \baca-default-indicator-markup "(“Viola”)"                                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-explicit-indicator-markup "[“Va.”]"                                            %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                                              %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -953,47 +953,47 @@ i_ViolaMusicVoice = {
             #16                                                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
             Va.                                                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
         }                                                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! opening_triplets
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        a8
+        a8                                                                                         %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        [
+        [                                                                                          %! opening_triplets
         
-        a8
+        a8                                                                                         %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         
-        a8
+        a8                                                                                         %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
+    \times 2/3 {                                                                                   %! opening_triplets
         
-        a8
+        a8                                                                                         %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        [
+        [                                                                                          %! opening_triplets
         
-        a8
-        :32                                                                                        %! IndicatorCommand
-        
-        a8
-        :32                                                                                        %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
-        
-        a8
-        :32                                                                                        %! IndicatorCommand
-        [
-        
-        a8
+        a8                                                                                         %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         
-        a8
+        a8                                                                                         %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
+    \times 2/3 {                                                                                   %! opening_triplets
+        
+        a8                                                                                         %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        [                                                                                          %! opening_triplets
+        
+        a8                                                                                         %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        
+        a8                                                                                         %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
     
     % [_ ViolaMusicVoice measure 2]                                                                %! _comment_measure_numbers
     R1 * 9/8                                                                                       %! _make_measure_silences
@@ -1002,93 +1002,93 @@ i_ViolaMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [_ ViolaMusicVoice measure 4]                                                                %! _comment_measure_numbers
-    r2
+    r2                                                                                             %! glissando_rhythm
     
-    r4
-    \times 4/7 {
+    r4                                                                                             %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
         % [_ ViolaMusicVoice measure 5]                                                            %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        fs'!4
+        fs'!4                                                                                      %! glissando_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup { "molto flautando" }                                                            %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                                                 %! SpannerCommand
         
-        a'8.
+        a'8.                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
-        cs'!16
-        [
-        \glissando                                                                                 %! SpannerCommand
-        
-        e'8
-        ]
-        \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
-        
-        ef'!16
+        cs'!16                                                                                     %! glissando_rhythm
+        [                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        fs'!4
+        e'8                                                                                        %! glissando_rhythm
+        ]                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
+        
+        ef'!16                                                                                     %! glissando_rhythm
+        \glissando                                                                                 %! SpannerCommand
+        
+        fs'!4                                                                                      %! glissando_rhythm
+        \glissando                                                                                 %! SpannerCommand
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
         % [_ ViolaMusicVoice measure 6]                                                            %! _comment_measure_numbers
-        a'2
+        a'2                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        af!4.
+        af!4.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
-    bf!8
+    bf!8                                                                                           %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    e4
+    e4                                                                                             %! glissando_rhythm
     
     % [_ ViolaMusicVoice measure 7]                                                                %! _comment_measure_numbers
-    r2.
+    r2.                                                                                            %! glissando_rhythm
     
-    r4.
-    \times 2/3 {
+    r4.                                                                                            %! glissando_rhythm
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [_ ViolaMusicVoice measure 8]                                                            %! _comment_measure_numbers
-        ef!8
+        ef!8                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        fs!4
+        fs!4                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        d32
-        [
+        d32                                                                                        %! glissando_rhythm
+        [                                                                                          %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        ef!8
-        ]
-    }
-    \times 4/7 {
+        ef!8                                                                                       %! glissando_rhythm
+        ]                                                                                          %! glissando_rhythm
+    }                                                                                              %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
-        ef!4
+        ef!4                                                                                       %! glissando_rhythm
         \repeatTie                                                                                 %! SpannerCommand
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        af!8.
+        af!8.                                                                                      %! glissando_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \revert NoteHead.style                                                                     %! OverrideCommand(2)
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [_ ViolaMusicVoice measure 9]                                                                %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -1138,7 +1138,7 @@ i_CelloMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)                                %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r4
+    r4                                                                                             %! opening_triplets
     ^ \markup \baca-default-indicator-markup "(“Cello”)"                                           %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-explicit-indicator-markup "[“Vc.”]"                                            %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                                              %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1149,136 +1149,136 @@ i_CelloMusicVoice = {
             #16                                                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
             Vc.                                                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
         }                                                                                          %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):IndicatorCommand:-PARTS
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! opening_triplets
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        eqf,!8
+        eqf,!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        [
+        [                                                                                          %! opening_triplets
         
-        eqf,!8
+        eqf,!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         
-        eqf,!8
+        eqf,!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
+    \times 2/3 {                                                                                   %! opening_triplets
         
-        eqf,!8
+        eqf,!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        [
+        [                                                                                          %! opening_triplets
         
-        eqf,!8
-        :32                                                                                        %! IndicatorCommand
-        
-        eqf,!8
-        :32                                                                                        %! IndicatorCommand
-        ]
-    }
-    \times 2/3 {
-        
-        eqf,!8
-        :32                                                                                        %! IndicatorCommand
-        [
-        
-        eqf,!8
+        eqf,!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
         
-        eqf,!8
+        eqf,!8                                                                                     %! opening_triplets
         :32                                                                                        %! IndicatorCommand
-        ]
-    }
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
+    \times 2/3 {                                                                                   %! opening_triplets
+        
+        eqf,!8                                                                                     %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        [                                                                                          %! opening_triplets
+        
+        eqf,!8                                                                                     %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        
+        eqf,!8                                                                                     %! opening_triplets
+        :32                                                                                        %! IndicatorCommand
+        ]                                                                                          %! opening_triplets
+    }                                                                                              %! opening_triplets
     
     % [_ CelloMusicVoice measure 2]                                                                %! _comment_measure_numbers
     R1 * 9/8                                                                                       %! _make_measure_silences
     
     % [_ CelloMusicVoice measure 3]                                                                %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 2/3 {
+    \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [_ CelloMusicVoice measure 4]                                                            %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e'8
+        e'8                                                                                        %! glissando_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup { "molto flautando" }                                                            %! IndicatorCommand
         - \tweak color #blue                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                                                 %! SpannerCommand
         
-        g'4
+        g'4                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \times 4/5 {
+    }                                                                                              %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        ef'!16
+        ef'!16                                                                                     %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        f'4
-    }
+        f'4                                                                                        %! glissando_rhythm
+    }                                                                                              %! glissando_rhythm
     
-    r4
+    r4                                                                                             %! glissando_rhythm
     
     % [_ CelloMusicVoice measure 5]                                                                %! _comment_measure_numbers
-    r4.
-    \times 4/5 {
+    r4.                                                                                            %! glissando_rhythm
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
-        f'16
+        f'16                                                                                       %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        cs'!4
+        cs'!4                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
         % [_ CelloMusicVoice measure 6]                                                            %! _comment_measure_numbers
-        c'2
+        c'2                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        a4.
+        a4.                                                                                        %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
+    }                                                                                              %! glissando_rhythm
     
-    ef'!8
+    ef'!8                                                                                          %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    c'4
+    c'4                                                                                            %! glissando_rhythm
     \glissando                                                                                     %! SpannerCommand
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! glissando_rhythm
         
         % [_ CelloMusicVoice measure 7]                                                            %! _comment_measure_numbers
-        d'16.
+        d'16.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        fs!4.
+        fs!4.                                                                                      %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! glissando_rhythm
+    \times 6/7 {                                                                                   %! glissando_rhythm
         
-        e4
+        e4                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
-        g8.
-    }
+        g8.                                                                                        %! glissando_rhythm
+    }                                                                                              %! glissando_rhythm
     
-    r4.
+    r4.                                                                                            %! glissando_rhythm
     
     % [_ CelloMusicVoice measure 8]                                                                %! _comment_measure_numbers
-    r4.
-    \times 4/7 {
+    r4.                                                                                            %! glissando_rhythm
+    \times 4/7 {                                                                                   %! glissando_rhythm
         
-        e4
+        e4                                                                                         %! glissando_rhythm
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        a8.
+        a8.                                                                                        %! glissando_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \revert NoteHead.style                                                                     %! OverrideCommand(2)
-    }
+    }                                                                                              %! glissando_rhythm
     
     % [_ CelloMusicVoice measure 9]                                                                %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences

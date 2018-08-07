@@ -18,6 +18,7 @@ def silver_points(
             ),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
+            tag='silver_points',
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True,

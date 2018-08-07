@@ -31,5 +31,6 @@ def white_rhythm(
             ),
         rhythm_maker=rmakers.NoteRhythmMaker(
             burnish_specifier=burnish_specifier,
+            tag='white_rhythm',
             ),
         )

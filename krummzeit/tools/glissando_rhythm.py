@@ -20,6 +20,7 @@ def glissando_rhythm(
             ),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
+            tag='glissando_rhythm',
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions,
                 ),

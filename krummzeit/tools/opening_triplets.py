@@ -21,7 +21,8 @@ def opening_triplets(
                 ),
             ),
         rhythm_maker=rmakers.TupletRhythmMaker(
-            tuplet_ratios=[(1, 1, 1)],
             division_masks=dmask,
+            tag='opening_triplets',
+            tuplet_ratios=[(1, 1, 1)],
             ),
         )

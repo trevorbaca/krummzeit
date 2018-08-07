@@ -404,17 +404,17 @@ F_OboeMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     a'''4.
     \p                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     - \tweak color #blue                                                                           %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
         af'''!4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         c'''4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         bf'''!4
         ~
@@ -424,17 +424,17 @@ F_OboeMusicVoice = {
     bf'''!4
     
     af'''!4
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     d'''16
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     [
     
     cs'''!16
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     ef'''!16
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     f'''16
     ~
@@ -444,7 +444,7 @@ F_OboeMusicVoice = {
         f'''4
         
         d'''4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         b''4
         ~
@@ -454,46 +454,46 @@ F_OboeMusicVoice = {
     b''4
     
     fs''!4
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     g''4
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     \times 8/12 {
         
         % [F OboeMusicVoice measure 241 / measure 7]                                               %! _comment_measure_numbers
         a''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         [
         
         ef''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         f''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         af''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         a''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         c'''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         d''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         bf''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         f''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         g''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         a''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         b'16
         ~
@@ -515,48 +515,48 @@ F_OboeMusicVoice = {
         [
         
         ef''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         f''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         fs''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         cs''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
         a'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
         a'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         
         g''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         a'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         ef''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         f''16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         cs''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         ]
     }
     
     af'!4
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     f''4.
     ~
@@ -567,49 +567,49 @@ F_OboeMusicVoice = {
     \times 10/14 {
         
         g'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         [
         
         a'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         f'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         d'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         bf'!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         b'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         cs''!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         a'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         ef'!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         f'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         fs'!16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         g'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         b'16
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'16
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         ]
     }
     
@@ -703,16 +703,16 @@ F_ClarinetMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         ^ \markup \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                            %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         as!4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         d'4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
     }
     
     gs'!4
@@ -722,7 +722,7 @@ F_ClarinetMusicVoice = {
     
     % [F ClarinetMusicVoice measure 239 / measure 5]                                               %! _comment_measure_numbers
     fs'!8
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     [
     
     d'8
@@ -733,7 +733,7 @@ F_ClarinetMusicVoice = {
         d'4
         
         gs'!4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         fs'!4
         ~
@@ -743,21 +743,21 @@ F_ClarinetMusicVoice = {
         fs'!4
         
         g'4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         a'4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
     }
     
     % [F ClarinetMusicVoice measure 240 / measure 6]                                               %! _comment_measure_numbers
     as'!4
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     f''4
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     ds''!8
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     [
     
     as'!8
@@ -780,19 +780,19 @@ F_ClarinetMusicVoice = {
     [
     
     a''8
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     ]
     
     % [F ClarinetMusicVoice measure 243 / measure 9]                                               %! _comment_measure_numbers
     b''4
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     \times 2/3 {
         
         d'''4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         ds'''!4
-        -\staccato                                                                                 %! IndicatorCommand
+        - \staccato                                                                                %! IndicatorCommand
         
         fs''!4
         ~
@@ -802,14 +802,14 @@ F_ClarinetMusicVoice = {
     
     % [F ClarinetMusicVoice measure 244 / measure 10]                                              %! _comment_measure_numbers
     gs''!8
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     [
     
     a''8
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     f'''8
-    -\staccato                                                                                     %! IndicatorCommand
+    - \staccato                                                                                    %! IndicatorCommand
     
     a''8
     ~

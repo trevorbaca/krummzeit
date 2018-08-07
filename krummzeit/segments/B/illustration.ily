@@ -1974,14 +1974,14 @@ B_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs'''!16
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -1990,17 +1990,17 @@ B_PianoMusicVoice = {
         r16
         
         cs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [B PianoMusicVoice measure 103 / measure 15]                                                 %! _comment_measure_numbers
@@ -2010,30 +2010,30 @@ B_PianoMusicVoice = {
     r4
     
     cs'''!4
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     
     cs'''!4
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     
     cs'''!2
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         r8
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         cs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [B PianoMusicVoice measure 105 / measure 17]                                                 %! _comment_measure_numbers
@@ -2044,14 +2044,14 @@ B_PianoMusicVoice = {
         r16
         
         cs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2060,17 +2060,17 @@ B_PianoMusicVoice = {
         r8
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         cs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [B PianoMusicVoice measure 107 / measure 19]                                                 %! _comment_measure_numbers
@@ -2081,32 +2081,32 @@ B_PianoMusicVoice = {
         r8
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         cs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         cs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [B PianoMusicVoice measure 109 / measure 21]                                                 %! _comment_measure_numbers
@@ -2434,31 +2434,31 @@ B_PercussionMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     cs''!8
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     [
     
     cs''!8
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     ]
     
     cs''!4
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     \times 4/7 {
         
         r16
         
         cs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [B PercussionMusicVoice measure 103 / measure 15]                                            %! _comment_measure_numbers
@@ -2470,15 +2470,15 @@ B_PercussionMusicVoice = {
         r8
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         cs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 10/7 {
@@ -2486,17 +2486,17 @@ B_PercussionMusicVoice = {
         r8
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         cs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [B PercussionMusicVoice measure 105 / measure 17]                                            %! _comment_measure_numbers
@@ -2508,32 +2508,32 @@ B_PercussionMusicVoice = {
         r8
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         cs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         cs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [B PercussionMusicVoice measure 107 / measure 19]                                            %! _comment_measure_numbers
@@ -2544,14 +2544,14 @@ B_PercussionMusicVoice = {
         r16
         
         cs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 4/7 {
@@ -2559,17 +2559,17 @@ B_PercussionMusicVoice = {
         r8
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         cs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)

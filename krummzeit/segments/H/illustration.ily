@@ -2277,7 +2277,7 @@ H_PercussionMusicVoice = {
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     ^ \markup {                                                                                    %! IndicatorCommand
         \override                                                                                  %! IndicatorCommand
             #'(box-padding . 0.5)                                                                  %! IndicatorCommand
@@ -2289,43 +2289,43 @@ H_PercussionMusicVoice = {
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4
     \ff                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     
     % [H PercussionMusicVoice measure 287 / measure 7]                                             %! _comment_measure_numbers

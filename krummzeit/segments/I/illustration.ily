@@ -4083,7 +4083,7 @@ I_PercussionMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'16
     \f                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     ^ \markup {                                                                                    %! IndicatorCommand
         \override                                                                                  %! IndicatorCommand
             #'(box-padding . 0.5)                                                                  %! IndicatorCommand
@@ -4104,7 +4104,7 @@ I_PercussionMusicVoice = {
     r2..
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8.
     
@@ -4112,7 +4112,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4122,7 +4122,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4137,7 +4137,7 @@ I_PercussionMusicVoice = {
     r2.
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8.
     
@@ -4145,7 +4145,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4155,7 +4155,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4168,7 +4168,7 @@ I_PercussionMusicVoice = {
     r2.
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8.
     
@@ -4176,7 +4176,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4186,7 +4186,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4199,7 +4199,7 @@ I_PercussionMusicVoice = {
     r2
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8.
     
@@ -4207,7 +4207,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4217,7 +4217,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4230,7 +4230,7 @@ I_PercussionMusicVoice = {
     r2
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8.
     
@@ -4238,7 +4238,7 @@ I_PercussionMusicVoice = {
     r16
     
     c'16
-    -\laissezVibrer                                                                                %! IndicatorCommand
+    - \laissezVibrer                                                                               %! IndicatorCommand
     
     r8
     
@@ -4441,93 +4441,93 @@ I_ViolinMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g''4
     \baca_effort_f                                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     cs''!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     ef''!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     fs''!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     e''8
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I ViolinMusicVoice measure 296 / measure 6]                                                 %! _comment_measure_numbers
     a''4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     ef''!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     a'4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     e''4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     bf'!8
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I ViolinMusicVoice measure 297 / measure 7]                                                 %! _comment_measure_numbers
     d''4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     a'4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     e'8
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I ViolinMusicVoice measure 298 / measure 8]                                                 %! _comment_measure_numbers
     bf'!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     d'4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     e'8
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I ViolinMusicVoice measure 299 / measure 9]                                                 %! _comment_measure_numbers
     d'4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
     g'4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
     g'4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     \glissando                                                                                     %! SpannerCommand
     
     ef'!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     
     % [I ViolinMusicVoice measure 300 / measure 10]                                                %! _comment_measure_numbers
     R1 * 5/4                                                                                       %! _make_measure_silences
@@ -4571,14 +4571,14 @@ I_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e'''8
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         
         cs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ~
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -4587,13 +4587,13 @@ I_ViolinMusicVoice = {
         f'''8
         
         a'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         c'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [I ViolinMusicVoice measure 313 / measure 23]                                                %! _comment_measure_numbers
@@ -4791,94 +4791,94 @@ I_ViolaMusicVoice = {
     \set Staff.forceClef = ##t                                                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     ef''!4
     \baca_effort_f                                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     bf''!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     f''4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     af''!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     b'8
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I ViolaMusicVoice measure 296 / measure 6]                                                  %! _comment_measure_numbers
     fs''!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     f'4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     af'!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     b'4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     g'8
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I ViolaMusicVoice measure 297 / measure 7]                                                  %! _comment_measure_numbers
     cs'!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     af'!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     b8
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I ViolaMusicVoice measure 298 / measure 8]                                                  %! _comment_measure_numbers
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
     g'4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
     g'4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     \glissando                                                                                     %! SpannerCommand
     
     ef'!8
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I ViolaMusicVoice measure 299 / measure 9]                                                  %! _comment_measure_numbers
     cs'!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     ef!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     fs!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     b4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     
     % [I ViolaMusicVoice measure 300 / measure 10]                                                 %! _comment_measure_numbers
     R1 * 5/4                                                                                       %! _make_measure_silences
@@ -4921,27 +4921,27 @@ I_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         ef'''!8
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         
         d'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         g'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
         
         ef'''!2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         b'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     ef'''!8
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     
     % [I ViolaMusicVoice measure 313 / measure 23]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -5138,89 +5138,89 @@ I_CelloMusicVoice = {
     \set Staff.forceClef = ##t                                                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     d''4
     \baca_effort_f                                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     e''4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     g''4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     f''4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     bf'!8
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I CelloMusicVoice measure 296 / measure 6]                                                  %! _comment_measure_numbers
     e'4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     g'4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     f'4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     bf'!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     ef'!8
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I CelloMusicVoice measure 297 / measure 7]                                                  %! _comment_measure_numbers
     bf'!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     f'4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     cs'!8
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I CelloMusicVoice measure 298 / measure 8]                                                  %! _comment_measure_numbers
     ef'!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     fs'!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     f8
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     % [I CelloMusicVoice measure 299 / measure 9]                                                  %! _comment_measure_numbers
     bf!4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     f4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     e4
-    -\downbow                                                                                      %! IndicatorCommand
+    - \downbow                                                                                     %! IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
     bf!4
-    -\upbow                                                                                        %! IndicatorCommand
+    - \upbow                                                                                       %! IndicatorCommand
     
     % [I CelloMusicVoice measure 300 / measure 10]                                                 %! _comment_measure_numbers
     R1 * 5/4                                                                                       %! _make_measure_silences
@@ -5264,17 +5264,17 @@ I_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f'''8
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         
         e'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         cs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         bf'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ~
     }
     \times 4/5 {
@@ -5282,11 +5282,11 @@ I_CelloMusicVoice = {
         bf'''!4.
         
         af'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     e'''8
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     
     % [I CelloMusicVoice measure 313 / measure 23]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences

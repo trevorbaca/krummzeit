@@ -2142,14 +2142,14 @@ D_PianoMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4.
     \mp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     ^ \markup { "5th harmonic of F1" }                                                             %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepPink4)                                           %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     ~
     
     % [D PianoMusicVoice measure 160 / measure 9]                                                  %! _comment_measure_numbers
@@ -2161,7 +2161,7 @@ D_PianoMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     ~
     
     % [D PianoMusicVoice measure 161 / measure 10]                                                 %! _comment_measure_numbers
@@ -2177,7 +2177,7 @@ D_PianoMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     ~
     
     % [D PianoMusicVoice measure 163 / measure 12]                                                 %! _comment_measure_numbers
@@ -2186,7 +2186,7 @@ D_PianoMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     ~
     
     % [D PianoMusicVoice measure 164 / measure 13]                                                 %! _comment_measure_numbers
@@ -2195,7 +2195,7 @@ D_PianoMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     ~
     
     c'4
@@ -2250,14 +2250,14 @@ D_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs'''!16
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2266,17 +2266,17 @@ D_PianoMusicVoice = {
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -2285,32 +2285,32 @@ D_PianoMusicVoice = {
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
@@ -2326,101 +2326,101 @@ D_PianoMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2.
     \mp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     ^ \markup { "5th harmonic of F1" }                                                             %! IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [D PianoMusicVoice measure 179 / measure 28]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [D PianoMusicVoice measure 180 / measure 29]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [D PianoMusicVoice measure 181 / measure 30]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2.
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [D PianoMusicVoice measure 182 / measure 31]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2..
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [D PianoMusicVoice measure 183 / measure 32]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [D PianoMusicVoice measure 184 / measure 33]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4.
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     % [D PianoMusicVoice measure 185 / measure 34]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'2.
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     c'4.
     \mp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    -\tenuto                                                                                       %! IndicatorCommand
+    - \tenuto                                                                                      %! IndicatorCommand
     \revert NoteHead.style                                                                         %! OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     \tweak text #tuplet-number::calc-fraction-text
@@ -2440,14 +2440,14 @@ D_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs'''!16
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2456,17 +2456,17 @@ D_PianoMusicVoice = {
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [D PianoMusicVoice measure 187 / measure 36]                                                 %! _comment_measure_numbers
@@ -2478,17 +2478,17 @@ D_PianoMusicVoice = {
         r16
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -2497,14 +2497,14 @@ D_PianoMusicVoice = {
         r16
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2513,17 +2513,17 @@ D_PianoMusicVoice = {
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -2531,32 +2531,32 @@ D_PianoMusicVoice = {
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -2566,14 +2566,14 @@ D_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs'''!16
         \ff                                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     
@@ -2584,32 +2584,32 @@ D_PianoMusicVoice = {
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -2617,14 +2617,14 @@ D_PianoMusicVoice = {
         r16
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 4/7 {
@@ -2632,17 +2632,17 @@ D_PianoMusicVoice = {
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -2651,32 +2651,32 @@ D_PianoMusicVoice = {
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs'''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
@@ -2958,7 +2958,7 @@ D_PercussionMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'2
         \baca_effort_ff                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         ^ \markup {                                                                                %! IndicatorCommand
             \override                                                                              %! IndicatorCommand
                 #'(box-padding . 0.5)                                                              %! IndicatorCommand
@@ -2968,13 +2968,13 @@ D_PercussionMusicVoice = {
         ^ \markup { "accent changes of direction noticeably on each attack" }                      %! IndicatorCommand
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'8
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 9/13 {
@@ -2985,10 +2985,10 @@ D_PercussionMusicVoice = {
         \repeatTie
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [D PercussionMusicVoice measure 159 / measure 8]                                             %! _comment_measure_numbers
@@ -3006,10 +3006,10 @@ D_PercussionMusicVoice = {
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4.
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
@@ -3023,10 +3023,10 @@ D_PercussionMusicVoice = {
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'8
         \repeatTie
@@ -3038,7 +3038,7 @@ D_PercussionMusicVoice = {
     \repeatTie
     
     c'4.
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -3048,7 +3048,7 @@ D_PercussionMusicVoice = {
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
         c'2..
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -3059,10 +3059,10 @@ D_PercussionMusicVoice = {
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'8
         \repeatTie
@@ -3074,14 +3074,14 @@ D_PercussionMusicVoice = {
     \repeatTie
     
     c'4.
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     % [D PercussionMusicVoice measure 166 / measure 15]                                            %! _comment_measure_numbers
     c'8
     \repeatTie
     
     c'2..
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -3091,13 +3091,13 @@ D_PercussionMusicVoice = {
         
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                                     %! _shorten_long_repeat_ties
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'1
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'4.
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [D PercussionMusicVoice measure 168 / measure 17]                                            %! _comment_measure_numbers
@@ -3144,32 +3144,32 @@ D_PercussionMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs''!8
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3177,15 +3177,15 @@ D_PercussionMusicVoice = {
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -3193,17 +3193,17 @@ D_PercussionMusicVoice = {
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
@@ -3253,15 +3253,15 @@ D_PercussionMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs''!8
         \ff                                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -3269,17 +3269,17 @@ D_PercussionMusicVoice = {
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3287,14 +3287,14 @@ D_PercussionMusicVoice = {
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3303,17 +3303,17 @@ D_PercussionMusicVoice = {
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -3322,15 +3322,15 @@ D_PercussionMusicVoice = {
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     r4.
@@ -3340,14 +3340,14 @@ D_PercussionMusicVoice = {
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 4/7 {
@@ -3355,17 +3355,17 @@ D_PercussionMusicVoice = {
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3375,32 +3375,32 @@ D_PercussionMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs''!8
         \ff                                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3408,14 +3408,14 @@ D_PercussionMusicVoice = {
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 4/7 {
@@ -3423,17 +3423,17 @@ D_PercussionMusicVoice = {
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [D PercussionMusicVoice measure 192 / measure 41]                                            %! _comment_measure_numbers
@@ -3443,17 +3443,17 @@ D_PercussionMusicVoice = {
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3461,14 +3461,14 @@ D_PercussionMusicVoice = {
         r16
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3477,17 +3477,17 @@ D_PercussionMusicVoice = {
         r8
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         fs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         fs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)

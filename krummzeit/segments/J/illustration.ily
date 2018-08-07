@@ -1968,7 +1968,7 @@ J_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e'''2
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Vn.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Violin”)"                                    %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
@@ -1982,10 +1982,10 @@ J_ViolinMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         f'''1
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         cs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -1998,7 +1998,7 @@ J_ViolinMusicVoice = {
         r2
         
         e'''2.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 2/3 {
         
@@ -2008,7 +2008,7 @@ J_ViolinMusicVoice = {
         r4
         
         ef'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2023,10 +2023,10 @@ J_ViolinMusicVoice = {
         r4
         
         d'''1
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         e'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/5 {
@@ -2035,13 +2035,13 @@ J_ViolinMusicVoice = {
         r4
         
         f'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         g'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         e'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2054,7 +2054,7 @@ J_ViolinMusicVoice = {
         r1
         
         ef'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2071,7 +2071,7 @@ J_ViolinMusicVoice = {
         r4
         
         f'''1
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
@@ -2080,16 +2080,16 @@ J_ViolinMusicVoice = {
         r1
         
         cs'''!2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 2/3 {
         
         % [J ViolinMusicVoice measure 324 / measure 11]                                            %! _comment_measure_numbers
         d'''1
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         e'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2102,7 +2102,7 @@ J_ViolinMusicVoice = {
         
         % [J ViolinMusicVoice measure 326 / measure 13]                                            %! _comment_measure_numbers
         f'''1.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2116,7 +2116,7 @@ J_ViolinMusicVoice = {
         r4
         
         g'''2.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 2/3 {
         
@@ -2124,10 +2124,10 @@ J_ViolinMusicVoice = {
         r4
         
         e'''1
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         ef'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2136,17 +2136,17 @@ J_ViolinMusicVoice = {
         r4
         
         f'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
         
         % [J ViolinMusicVoice measure 330 / measure 17]                                            %! _comment_measure_numbers
         cs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         d'''1.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -2155,7 +2155,7 @@ J_ViolinMusicVoice = {
         r2
         
         e'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2173,7 +2173,7 @@ J_ViolinMusicVoice = {
         
         % [J ViolinMusicVoice measure 333 / measure 20]                                            %! _comment_measure_numbers
         f'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
@@ -2182,7 +2182,7 @@ J_ViolinMusicVoice = {
         r1.
         
         g'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
@@ -2191,10 +2191,10 @@ J_ViolinMusicVoice = {
         r4
         
         e'''1
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         ef'''!2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -2202,7 +2202,7 @@ J_ViolinMusicVoice = {
         r2
         
         f'''2.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2217,10 +2217,10 @@ J_ViolinMusicVoice = {
         r2.
         
         cs'''!1
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         d'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2233,16 +2233,16 @@ J_ViolinMusicVoice = {
         r4
         
         e'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         g'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         e'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 2/3 {
         
@@ -2255,7 +2255,7 @@ J_ViolinMusicVoice = {
         r4
         
         ef'''!2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
@@ -2264,7 +2264,7 @@ J_ViolinMusicVoice = {
         r1.
         
         f'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
@@ -2283,10 +2283,10 @@ J_ViolinMusicVoice = {
         r4
         
         cs'''!2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         d'''2.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2295,7 +2295,7 @@ J_ViolinMusicVoice = {
         r4
         
         e'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/6 {
@@ -2304,7 +2304,7 @@ J_ViolinMusicVoice = {
         r2.
         
         f'''2.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/7 {
@@ -2315,7 +2315,7 @@ J_ViolinMusicVoice = {
         r4
         
         g'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2324,7 +2324,7 @@ J_ViolinMusicVoice = {
         r2
         
         e'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2337,16 +2337,16 @@ J_ViolinMusicVoice = {
         
         % [J ViolinMusicVoice measure 350 / measure 37]                                            %! _comment_measure_numbers
         ef'''!2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         cs'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         d'''2.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2359,7 +2359,7 @@ J_ViolinMusicVoice = {
         r1
         
         e'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 2/3 {
         
@@ -2373,7 +2373,7 @@ J_ViolinMusicVoice = {
         r4
         
         f'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
     }
@@ -2432,7 +2432,7 @@ J_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         ef'''!\breve
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Va.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Viola”)"                                     %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
@@ -2450,7 +2450,7 @@ J_ViolaMusicVoice = {
         
         % [J ViolaMusicVoice measure 315 / measure 2]                                              %! _comment_measure_numbers
         d'''2.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 1/1 {
@@ -2458,7 +2458,7 @@ J_ViolaMusicVoice = {
         r4
         
         f'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
@@ -2466,19 +2466,19 @@ J_ViolaMusicVoice = {
         r2.
         
         g'''2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         e'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 2/3 {
         
         % [J ViolaMusicVoice measure 317 / measure 4]                                              %! _comment_measure_numbers
         cs'''!2.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [J ViolaMusicVoice measure 318 / measure 5]                                                  %! _comment_measure_numbers

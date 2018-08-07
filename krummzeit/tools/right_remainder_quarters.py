@@ -13,5 +13,6 @@ def right_remainder_quarters(*, dmask=None):
             ),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask,
+            tag='right_remainder_quarters',
             ),
         )

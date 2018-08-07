@@ -17,5 +17,6 @@ def single_cluster_piano_rhythm():
                 talea_denominator=16,
                 fill_with_notes=False,
                 ),
+            tag='single_cluster_piano_rhythm',
             ),
         )

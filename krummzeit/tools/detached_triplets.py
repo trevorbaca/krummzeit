@@ -16,9 +16,10 @@ def detached_triplets():
                 ),
             ),
         rhythm_maker=rmakers.TupletRhythmMaker(
-            tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)],
+            tag='detached_triplets',
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=[1, 0],
                 ),
+            tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)],
             ),
         )

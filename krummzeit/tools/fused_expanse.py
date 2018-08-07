@@ -14,5 +14,5 @@ def fused_expanse(durations):
                 durations=durations,
                 ),
             ),
-        rhythm_maker=rmakers.NoteRhythmMaker()
+        rhythm_maker=rmakers.NoteRhythmMaker(tag='fused_expanse')
         )

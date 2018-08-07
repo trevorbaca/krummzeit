@@ -17,6 +17,7 @@ def pizzicato_sixteenths(extra_counts, *, dmask=None):
             division_masks=dmask,
             extra_counts_per_division=extra_counts,
             split_divisions_by_counts=[6, 18],
+            tag='pizzicato_sixteenths',
             talea=rmakers.Talea(
                 counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
                 denominator=16,

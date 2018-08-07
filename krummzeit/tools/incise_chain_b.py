@@ -20,5 +20,6 @@ def incise_chain_b():
                 talea_denominator=16,
                 fill_with_notes=False,
                 ),
+            tag='incise_chain_b',
             ),
         )

@@ -815,8 +815,8 @@ B_GlobalSkips = {
 
 
 B_OboeMusicVoice = {
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 89 / measure 1]                                                %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -834,7 +834,7 @@ B_OboeMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e'8
+        e'8                                                                                        %! pizzicato_rhythm
         \ff                                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Ob.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Oboe”)"                                      %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -847,7 +847,7 @@ B_OboeMusicVoice = {
             }                                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        ef''!4
+        ef''!4                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -857,7 +857,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan
         
-        c''8
+        c''8                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -868,13 +868,13 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        c''8
+        c''8                                                                                       %! pizzicato_rhythm
         
-        b''4.
+        b''4.                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -885,16 +885,16 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 90 / measure 2]                                                    %! _comment_measure_numbers
-    b''8
+    b''8                                                                                           %! pizzicato_rhythm
     
-    ef''!4
+    ef''!4                                                                                         %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
     
-    ef''!4
+    ef''!4                                                                                         %! pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -905,7 +905,7 @@ B_OboeMusicVoice = {
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
     
-    ef''!8
+    ef''!8                                                                                         %! pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -914,10 +914,10 @@ B_OboeMusicVoice = {
                     2
         }
     \stopTrillSpan                                                                                 %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        ef'''!16
+        ef'''!16                                                                                   %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -925,12 +925,12 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        [
+        [                                                                                          %! pizzicato_rhythm
         
-        f'''16
-        ]
+        f'''16                                                                                     %! pizzicato_rhythm
+        ]                                                                                          %! pizzicato_rhythm
         
-        e'''4.
+        e'''4.                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -940,12 +940,12 @@ B_OboeMusicVoice = {
             }
         ~
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    e'''8
-    [
+    e'''8                                                                                          %! pizzicato_rhythm
+    [                                                                                              %! pizzicato_rhythm
     
-    d'''8
+    d'''8                                                                                          %! pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -954,16 +954,16 @@ B_OboeMusicVoice = {
                     2
         }
     ~
-    ]
+    ]                                                                                              %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 5/8 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 91 / measure 3]                                                %! _comment_measure_numbers
-        d'''4.
+        d'''4.                                                                                     %! pizzicato_rhythm
         
-        cs''!2
+        cs''!2                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -974,13 +974,13 @@ B_OboeMusicVoice = {
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        cs''!8
+        cs''!8                                                                                     %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
-    }
-    \times 2/3 {
+    }                                                                                              %! pizzicato_rhythm
+    \times 2/3 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 92 / measure 4]                                                %! _comment_measure_numbers
-        cs''!4
+        cs''!4                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -990,7 +990,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan
         
-        cs''!8
+        cs''!8                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1001,13 +1001,13 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        cs''!8
+        cs''!8                                                                                     %! pizzicato_rhythm
         
-        b''4.
+        b''4.                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1018,22 +1018,22 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    b''8
+    b''8                                                                                           %! pizzicato_rhythm
     
-    b''4
+    b''4                                                                                           %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
     
     % [B OboeMusicVoice measure 93 / measure 5]                                                    %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
     \stopTrillSpan                                                                                 %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 94 / measure 6]                                                %! _comment_measure_numbers
-        b''8
+        b''8                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1042,7 +1042,7 @@ B_OboeMusicVoice = {
                         1
             }
         
-        b''4
+        b''4                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1052,7 +1052,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan
         
-        bf''!8
+        bf''!8                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1063,9 +1063,9 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    bf''!8
+    bf''!8                                                                                         %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 95 / measure 7]                                                    %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -1118,15 +1118,15 @@ B_OboeMusicVoice = {
     
     % [B OboeMusicVoice measure 111 / measure 23]                                                  %! _comment_measure_numbers
     R1 * 5/8                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 112 / measure 24]                                              %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-        a''8
+        a''8                                                                                       %! pizzicato_rhythm
         \ff                                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         
-        e'''4
+        e'''4                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1136,7 +1136,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan
         
-        ef'''!8
+        ef'''!8                                                                                    %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1147,13 +1147,13 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 6/7 {                                                                                   %! pizzicato_rhythm
         
-        ef'''!8
+        ef'''!8                                                                                    %! pizzicato_rhythm
         
-        c'''2
+        c'''2                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1164,13 +1164,13 @@ B_OboeMusicVoice = {
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        c''4
+        c''4                                                                                       %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 113 / measure 25]                                                  %! _comment_measure_numbers
-    c''4
+    c''4                                                                                           %! pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1181,7 +1181,7 @@ B_OboeMusicVoice = {
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
     
-    c''8
+    c''8                                                                                           %! pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1190,10 +1190,10 @@ B_OboeMusicVoice = {
                     2
         }
     \stopTrillSpan                                                                                 %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        cs''!16
+        cs''!16                                                                                    %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1201,12 +1201,12 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        [
+        [                                                                                          %! pizzicato_rhythm
         
-        ef''!16
-        ]
+        ef''!16                                                                                    %! pizzicato_rhythm
+        ]                                                                                          %! pizzicato_rhythm
         
-        f'4.
+        f'4.                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1216,12 +1216,12 @@ B_OboeMusicVoice = {
             }
         ~
         \startTrillSpan
-    }
-    \times 2/3 {
+    }                                                                                              %! pizzicato_rhythm
+    \times 2/3 {                                                                                   %! pizzicato_rhythm
         
-        f'8
+        f'8                                                                                        %! pizzicato_rhythm
         
-        e'2
+        e'2                                                                                        %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1232,7 +1232,7 @@ B_OboeMusicVoice = {
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        e'8
+        e'8                                                                                        %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1243,16 +1243,16 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
-    \times 4/7 {
+    }                                                                                              %! pizzicato_rhythm
+    \times 4/7 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 114 / measure 26]                                              %! _comment_measure_numbers
-        e'4.
+        e'4.                                                                                       %! pizzicato_rhythm
         
-        e'8
+        e'8                                                                                        %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         
-        e'4
+        e'4                                                                                        %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1262,7 +1262,7 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan
         
-        d''8
+        d''8                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1273,14 +1273,14 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 115 / measure 27]                                                  %! _comment_measure_numbers
-    d''8
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    d''8                                                                                           %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        d'''2
+        d'''2                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1290,16 +1290,16 @@ B_OboeMusicVoice = {
             }
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    d'''4
+    d'''4                                                                                          %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 6/7 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 116 / measure 28]                                              %! _comment_measure_numbers
-        d'''4
+        d'''4                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1310,7 +1310,7 @@ B_OboeMusicVoice = {
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        g''8
+        g''8                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1319,9 +1319,9 @@ B_OboeMusicVoice = {
                         2
             }
         \stopTrillSpan                                                                             %! SpannerCommand
-        [
+        [                                                                                          %! pizzicato_rhythm
         
-        fs''!16
+        fs''!16                                                                                    %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1330,10 +1330,10 @@ B_OboeMusicVoice = {
                         1
             }
         
-        f'16
-        ]
+        f'16                                                                                       %! pizzicato_rhythm
+        ]                                                                                          %! pizzicato_rhythm
         
-        cs''!4.
+        cs''!4.                                                                                    %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1342,16 +1342,16 @@ B_OboeMusicVoice = {
                         1
             }
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 117 / measure 29]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
     \stopTrillSpan                                                                                 %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 118 / measure 30]                                              %! _comment_measure_numbers
-        bf''!8
+        bf''!8                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1360,7 +1360,7 @@ B_OboeMusicVoice = {
                         2
             }
         
-        bf''!4
+        bf''!4                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1370,17 +1370,17 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan
         
-        bf''!8
+        bf''!8                                                                                     %! pizzicato_rhythm
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        bf''!8
+        bf''!8                                                                                     %! pizzicato_rhythm
         
-        bf''!4.
+        bf''!4.                                                                                    %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1390,16 +1390,16 @@ B_OboeMusicVoice = {
             }
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 119 / measure 31]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
     \stopTrillSpan                                                                                 %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [B OboeMusicVoice measure 120 / measure 32]                                              %! _comment_measure_numbers
-        d'''8
+        d'''8                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1408,7 +1408,7 @@ B_OboeMusicVoice = {
                         2
             }
         
-        cs'''!4
+        cs'''!4                                                                                    %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1418,17 +1418,17 @@ B_OboeMusicVoice = {
             }
         \startTrillSpan
         
-        ef'''!8
+        ef'''!8                                                                                    %! pizzicato_rhythm
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 7/8 {                                                                                   %! pizzicato_rhythm
         
-        ef'''!8
+        ef'''!8                                                                                    %! pizzicato_rhythm
         
-        f'''2
+        f'''2                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1439,7 +1439,7 @@ B_OboeMusicVoice = {
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        f'''4
+        f'''4                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1450,7 +1450,7 @@ B_OboeMusicVoice = {
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        f'''8
+        f'''8                                                                                      %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1461,19 +1461,19 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 121 / measure 33]                                                  %! _comment_measure_numbers
-    f'''8
-    [
+    f'''8                                                                                          %! pizzicato_rhythm
+    [                                                                                              %! pizzicato_rhythm
     
-    f'8
-    ]
+    f'8                                                                                            %! pizzicato_rhythm
+    ]                                                                                              %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        e'16
+        e'16                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1481,9 +1481,9 @@ B_OboeMusicVoice = {
                     \finger
                         1
             }
-        [
+        [                                                                                          %! pizzicato_rhythm
         
-        e'16
+        e'16                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1491,9 +1491,9 @@ B_OboeMusicVoice = {
                     \finger
                         2
             }
-        ]
+        ]                                                                                          %! pizzicato_rhythm
         
-        e'4.
+        e'4.                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1503,16 +1503,16 @@ B_OboeMusicVoice = {
             }
         ~
         \startTrillSpan
-    }
-    \times 4/5 {
+    }                                                                                              %! pizzicato_rhythm
+    \times 4/5 {                                                                                   %! pizzicato_rhythm
         
-        e'8
+        e'8                                                                                        %! pizzicato_rhythm
         
-        e'2
+        e'2                                                                                        %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        bf''!2
+        bf''!2                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1523,7 +1523,7 @@ B_OboeMusicVoice = {
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        g''8
+        g''8                                                                                       %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1532,10 +1532,10 @@ B_OboeMusicVoice = {
                         2
             }
         \stopTrillSpan                                                                             %! SpannerCommand
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 122 / measure 34]                                                  %! _comment_measure_numbers
-    fs''!8
+    fs''!8                                                                                         %! pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1545,16 +1545,16 @@ B_OboeMusicVoice = {
         }
     ~
     \startTrillSpan
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        fs''!8
+        fs''!8                                                                                     %! pizzicato_rhythm
         
-        f'4
+        f'4                                                                                        %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        cs''!8
+        cs''!8                                                                                     %! pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1565,12 +1565,12 @@ B_OboeMusicVoice = {
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    cs''!4
+    cs''!4                                                                                         %! pizzicato_rhythm
     
     % [B OboeMusicVoice measure 123 / measure 35]                                                  %! _comment_measure_numbers
-    cs''!4
+    cs''!4                                                                                         %! pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1581,7 +1581,7 @@ B_OboeMusicVoice = {
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
     
-    cs'''!4
+    cs'''!4                                                                                        %! pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1592,7 +1592,7 @@ B_OboeMusicVoice = {
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
     
-    cs'''!8
+    cs'''!8                                                                                        %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
     
     % [B OboeMusicVoice measure 124 / measure 36]                                                  %! _comment_measure_numbers
@@ -1664,7 +1664,7 @@ B_ClarinetMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Voice.DynamicText.color = #(x11-color 'green4)                                 %! REAPPLIED_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs''!4.
+    cs''!4.                                                                                        %! white_rhythm
     \f                                                                                             %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \markup \baca-reapplied-indicator-markup "[“Cl. (Eb)”]"                                      %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \markup \baca-reapplied-indicator-markup "(“ClarinetInEFlat”)"                               %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
@@ -1692,32 +1692,32 @@ B_ClarinetMusicVoice = {
         }                                                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                                           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
-    btqs'!4.
+    btqs'!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
     % [B ClarinetMusicVoice measure 90 / measure 2]                                                %! _comment_measure_numbers
-    d''4.
+    d''4.                                                                                          %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4.
+    ctqs''!4.                                                                                      %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    bqs'!4.
+    bqs'!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    a'4.
+    a'4.                                                                                           %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    bqs'!4.
+    bqs'!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    cs''!4.
+    cs''!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    btqs'!4.
+    btqs'!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d''4.
+    d''4.                                                                                          %! white_rhythm
     
     % [B ClarinetMusicVoice measure 93 / measure 5]                                                %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -1778,90 +1778,90 @@ B_ClarinetMusicVoice = {
     
     % [B ClarinetMusicVoice measure 112 / measure 24]                                              %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                              %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    d''4.
+    d''4.                                                                                          %! white_rhythm
     \f                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4.
+    ctqs''!4.                                                                                      %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    e''4.
+    e''4.                                                                                          %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
     % [B ClarinetMusicVoice measure 113 / measure 25]                                              %! _comment_measure_numbers
-    dqs''!4.
+    dqs''!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4.
+    ctqs''!4.                                                                                      %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    b'4.
+    b'4.                                                                                           %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4.
+    ctqs''!4.                                                                                      %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    d''4.
+    d''4.                                                                                          %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4.
+    ctqs''!4.                                                                                      %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    e''4.
+    e''4.                                                                                          %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    dqs''!4.
+    dqs''!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4
+    ctqs''!4                                                                                       %! white_rhythm
     
     % [B ClarinetMusicVoice measure 117 / measure 29]                                              %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [B ClarinetMusicVoice measure 118 / measure 30]                                              %! _comment_measure_numbers
-    b'4.
+    b'4.                                                                                           %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    ctqs''!4.
+    ctqs''!4.                                                                                      %! white_rhythm
     
     % [B ClarinetMusicVoice measure 119 / measure 31]                                              %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [B ClarinetMusicVoice measure 120 / measure 32]                                              %! _comment_measure_numbers
-    e''4.
+    e''4.                                                                                          %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    btqs'!4.
+    btqs'!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4.
+    fs''!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    eqs''!4.
+    eqs''!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    dqs''!4.
+    dqs''!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    cs''!4.
+    cs''!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    dqs''!4.
+    dqs''!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    e''4.
+    e''4.                                                                                          %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    btqs'!4.
+    btqs'!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    fs''!4.
+    fs''!4.                                                                                        %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    eqs''!4.
+    eqs''!4.                                                                                       %! white_rhythm
     \glissando                                                                                     %! SpannerCommand
     
-    dqs''!8
+    dqs''!8                                                                                        %! white_rhythm
     
     % [B ClarinetMusicVoice measure 124 / measure 36]                                              %! _comment_measure_numbers
     R1 * 9/8                                                                                       %! _make_measure_silences
@@ -1963,151 +1963,151 @@ B_PianoMusicVoice = {
     
     % [B PianoMusicVoice measure 101 / measure 13]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 102 / measure 14]                                             %! _comment_measure_numbers
         \override Beam.positions = #'(-4 . -4)                                                     %! OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'6                                           %! OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                                                 %! OverrideCommand(1)
-        r16
+        r16                                                                                        %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 10/7 {
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 10/7 {                                                                                  %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [B PianoMusicVoice measure 103 / measure 15]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [B PianoMusicVoice measure 104 / measure 16]                                                 %! _comment_measure_numbers
-    r4
+    r4                                                                                             %! silver_points
     
-    cs'''!4
+    cs'''!4                                                                                        %! silver_points
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    cs'''!4
+    cs'''!4                                                                                        %! silver_points
     - \staccatissimo                                                                               %! IndicatorCommand
     
-    cs'''!2
+    cs'''!2                                                                                        %! silver_points
     - \staccatissimo                                                                               %! IndicatorCommand
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 6/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs'''!4
+        cs'''!4                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [B PianoMusicVoice measure 105 / measure 17]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 106 / measure 18]                                             %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 6/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs'''!4
+        cs'''!4                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [B PianoMusicVoice measure 107 / measure 19]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 108 / measure 20]                                             %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        cs'''!4
+        cs'''!4                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \times 4/7 {
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [B PianoMusicVoice measure 109 / measure 21]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -2129,182 +2129,182 @@ B_PianoMusicVoice = {
     
     % [B PianoMusicVoice measure 115 / measure 27]                                                 %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 116 / measure 28]                                             %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! silver_points
         
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         \ff                                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         
-        cs'''!8
-        ]
-    }
-    \times 4/7 {
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-        [
+        cs'''!8                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!8
-        ]
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs'''!4
-    }
+        cs'''!4                                                                                    %! silver_points
+    }                                                                                              %! silver_points
     
     % [B PianoMusicVoice measure 117 / measure 29]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 118 / measure 30]                                             %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-        [
+        cs'''!8                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!8
-        ]
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
         
-        cs'''!4
-    }
-    \times 4/7 {
+        cs'''!4                                                                                    %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs'''!16
-        [
+        cs'''!16                                                                                   %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!16
-        ]
+        cs'''!16                                                                                   %! silver_points
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-    }
+        cs'''!8                                                                                    %! silver_points
+    }                                                                                              %! silver_points
     
     % [B PianoMusicVoice measure 119 / measure 31]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 120 / measure 32]                                             %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-        [
+        cs'''!8                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!8
-        ]
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
         
-        cs'''!4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+        cs'''!4                                                                                    %! silver_points
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 6/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-        [
+        cs'''!8                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!8
-        ]
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs'''!4
-    }
-    \times 4/5 {
+        cs'''!4                                                                                    %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 121 / measure 33]                                             %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-        [
+        cs'''!8                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!8
-        ]
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
         
-        cs'''!4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/7 {
+        cs'''!4                                                                                    %! silver_points
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 9/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-        [
+        cs'''!8                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!8
-        ]
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs'''!4
-    }
-    \times 4/5 {
+        cs'''!4                                                                                    %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 122 / measure 34]                                             %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-        [
+        cs'''!8                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!8
-        ]
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
         
-        cs'''!4
-    }
-    \times 4/7 {
+        cs'''!4                                                                                    %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs'''!16
-        [
+        cs'''!16                                                                                   %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!16
-        ]
+        cs'''!16                                                                                   %! silver_points
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+        cs'''!8                                                                                    %! silver_points
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 6/5 {                                                                                   %! silver_points
         
         % [B PianoMusicVoice measure 123 / measure 35]                                             %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! silver_points
         
-        cs'''!16
-        [
+        cs'''!16                                                                                   %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!16
+        cs'''!16                                                                                   %! silver_points
         
-        cs'''!8
-        ]
-    }
-    \times 4/7 {
+        cs'''!8                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs'''!16
-        [
+        cs'''!16                                                                                   %! silver_points
+        [                                                                                          %! silver_points
         
-        cs'''!16
-        ]
+        cs'''!16                                                                                   %! silver_points
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs'''!8
+        cs'''!8                                                                                    %! silver_points
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! silver_points
     
     % [B PianoMusicVoice measure 124 / measure 36]                                                 %! _comment_measure_numbers
     R1 * 9/8                                                                                       %! _make_measure_silences
@@ -2427,153 +2427,153 @@ B_PercussionMusicVoice = {
 %@% \override Staff.Clef.color = ##f                                                               %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)                                   %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-    r8
+    r8                                                                                             %! silver_points
     ^ \markup \baca-explicit-indicator-markup "(“Xylophone”)"                                      %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cs''!8
+    cs''!8                                                                                         %! silver_points
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccatissimo                                                                               %! IndicatorCommand
-    [
+    [                                                                                              %! silver_points
     
-    cs''!8
+    cs''!8                                                                                         %! silver_points
     - \staccatissimo                                                                               %! IndicatorCommand
-    ]
+    ]                                                                                              %! silver_points
     
-    cs''!4
+    cs''!4                                                                                         %! silver_points
     - \staccatissimo                                                                               %! IndicatorCommand
-    \times 4/7 {
+    \times 4/7 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs''!16
+        cs''!16                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs''!16
+        cs''!16                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [B PercussionMusicVoice measure 103 / measure 15]                                            %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 6/5 {                                                                                   %! silver_points
         
         % [B PercussionMusicVoice measure 104 / measure 16]                                        %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        cs''!4
+        cs''!4                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 10/7 {
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 10/7 {                                                                                  %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs''!4
+        cs''!4                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [B PercussionMusicVoice measure 105 / measure 17]                                            %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 6/5 {                                                                                   %! silver_points
         
         % [B PercussionMusicVoice measure 106 / measure 18]                                        %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        cs''!4
+        cs''!4                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
-    \times 4/7 {
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs''!16
+        cs''!16                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs''!16
+        cs''!16                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-    }
+    }                                                                                              %! silver_points
     
     % [B PercussionMusicVoice measure 107 / measure 19]                                            %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PercussionMusicVoice measure 108 / measure 20]                                        %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! silver_points
         
-        cs''!16
+        cs''!16                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs''!16
+        cs''!16                                                                                    %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
-    }
-    \times 4/7 {
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
-        ]
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs''!4
+        cs''!4                                                                                     %! silver_points
         - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! silver_points
     
     % [B PercussionMusicVoice measure 109 / measure 21]                                            %! _comment_measure_numbers
     \stopStaff                                                                                     %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -2631,7 +2631,7 @@ B_PercussionMusicVoice = {
     R1 * 3/4                                                                                       %! _make_measure_silences
     \revert Staff.BarLine.bar-extent                                                               %! OverrideCommand(2):-PARTS
     \once \override Staff.BarLine.bar-extent = #'(0 . 0)                                           %! OverrideCommand(1):-PARTS
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PercussionMusicVoice measure 116 / measure 28]                                        %! _comment_measure_numbers
         \stopStaff                                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -2645,124 +2645,124 @@ B_PercussionMusicVoice = {
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)                               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-        r8
+        r8                                                                                         %! silver_points
         ^ \markup \baca-explicit-indicator-markup "(“Xylophone”)"                                  %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        cs''!8
+        cs''!8                                                                                     %! silver_points
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        [
+        [                                                                                          %! silver_points
         
-        cs''!8
-        ]
+        cs''!8                                                                                     %! silver_points
+        ]                                                                                          %! silver_points
         
-        cs''!4
-    }
-    \times 4/7 {
+        cs''!4                                                                                     %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r16
+        r16                                                                                        %! silver_points
         
-        cs''!16
-        [
+        cs''!16                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs''!16
-        ]
+        cs''!16                                                                                    %! silver_points
+        ]                                                                                          %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
-    }
+        cs''!8                                                                                     %! silver_points
+    }                                                                                              %! silver_points
     
     % [B PercussionMusicVoice measure 117 / measure 29]                                            %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! silver_points
         
         % [B PercussionMusicVoice measure 118 / measure 30]                                        %! _comment_measure_numbers
-        r16
+        r16                                                                                        %! silver_points
         
-        cs''!16
-        [
+        cs''!16                                                                                    %! silver_points
+        [                                                                                          %! silver_points
         
-        cs''!16
+        cs''!16                                                                                    %! silver_points
         
-        cs''!8
-        ]
-    }
-    \times 4/7 {
+        cs''!8                                                                                     %! silver_points
+        ]                                                                                          %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
-        [
+        cs''!8                                                                                     %! silver_points
+        [                                                                                          %! silver_points
         
-        cs''!8
-        ]
+        cs''!8                                                                                     %! silver_points
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs''!4
-    }
+        cs''!4                                                                                     %! silver_points
+    }                                                                                              %! silver_points
     
     % [B PercussionMusicVoice measure 119 / measure 31]                                            %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 6/5 {                                                                                   %! silver_points
         
         % [B PercussionMusicVoice measure 120 / measure 32]                                        %! _comment_measure_numbers
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
-        [
+        cs''!8                                                                                     %! silver_points
+        [                                                                                          %! silver_points
         
-        cs''!8
-        ]
+        cs''!8                                                                                     %! silver_points
+        ]                                                                                          %! silver_points
         
-        cs''!4
-    }
-    \times 4/7 {
+        cs''!4                                                                                     %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
-        [
+        cs''!8                                                                                     %! silver_points
+        [                                                                                          %! silver_points
         
-        cs''!8
-        ]
+        cs''!8                                                                                     %! silver_points
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs''!4
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 9/10 {
+        cs''!4                                                                                     %! silver_points
+    }                                                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! silver_points
+    \times 9/10 {                                                                                  %! silver_points
         
         % [B PercussionMusicVoice measure 121 / measure 33]                                        %! _comment_measure_numbers
-        r4
+        r4                                                                                         %! silver_points
         
-        cs''!4
+        cs''!4                                                                                     %! silver_points
         
-        cs''!4
+        cs''!4                                                                                     %! silver_points
         
-        cs''!2
-    }
-    \times 4/7 {
+        cs''!2                                                                                     %! silver_points
+    }                                                                                              %! silver_points
+    \times 4/7 {                                                                                   %! silver_points
         
-        r8
+        r8                                                                                         %! silver_points
         
-        cs''!8
-        [
+        cs''!8                                                                                     %! silver_points
+        [                                                                                          %! silver_points
         
-        cs''!8
-        ]
+        cs''!8                                                                                     %! silver_points
+        ]                                                                                          %! silver_points
         
-        r4
+        r4                                                                                         %! silver_points
         
-        cs''!4
+        cs''!4                                                                                     %! silver_points
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! silver_points
     
     % [B PercussionMusicVoice measure 122 / measure 34]                                            %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'5                                               %! OverrideCommand(1)
@@ -3011,8 +3011,8 @@ B_ViolinMusicVoice = {
     
     % [B ViolinMusicVoice measure 109 / measure 21]                                                %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
         % [B ViolinMusicVoice measure 110 / measure 22]                                            %! _comment_measure_numbers
         \stopStaff                                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
@@ -3029,154 +3029,154 @@ B_ViolinMusicVoice = {
         \set Staff.forceClef = ##t                                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)                               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        af''!8
+        af''!8                                                                                     %! pizzicato_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup \baca-explicit-indicator-markup "(“Violin”)"                                     %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
-        a''4
+        a''4                                                                                       %! pizzicato_rhythm
         \startTrillSpan
         
-        c''8
+        c''8                                                                                       %! pizzicato_rhythm
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 5/6 {                                                                                   %! pizzicato_rhythm
         
-        c''8
+        c''8                                                                                       %! pizzicato_rhythm
         
-        cs''!2
+        cs''!2                                                                                     %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        a''8
+        a''8                                                                                       %! pizzicato_rhythm
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B ViolinMusicVoice measure 111 / measure 23]                                                %! _comment_measure_numbers
-    a''8
+    a''8                                                                                           %! pizzicato_rhythm
     
-    aqf''!4
+    aqf''!4                                                                                        %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
     
-    a'8
+    a'8                                                                                            %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
     
-    aqs''!16
-    [
+    aqs''!16                                                                                       %! pizzicato_rhythm
+    [                                                                                              %! pizzicato_rhythm
     
-    g''16
-    ]
+    g''16                                                                                          %! pizzicato_rhythm
+    ]                                                                                              %! pizzicato_rhythm
     
     % [B ViolinMusicVoice measure 112 / measure 24]                                                %! _comment_measure_numbers
-    af''!4
+    af''!4                                                                                         %! pizzicato_rhythm
     ~
     \startTrillSpan
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/10 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 7/10 {                                                                                  %! pizzicato_rhythm
         
-        af''!4
+        af''!4                                                                                     %! pizzicato_rhythm
         
-        bf''!2
+        bf''!2                                                                                     %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        b''2
+        b''2                                                                                       %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
-    \times 2/3 {
+    }                                                                                              %! pizzicato_rhythm
+    \times 2/3 {                                                                                   %! pizzicato_rhythm
         
         % [B ViolinMusicVoice measure 113 / measure 25]                                            %! _comment_measure_numbers
-        bqs''!8
+        bqs''!8                                                                                    %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         
-        b''4
+        b''4                                                                                       %! pizzicato_rhythm
         \startTrillSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/4 {                                                                                   %! pizzicato_rhythm
         
-        bqf''!4
+        bqf''!4                                                                                    %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         
-        cs''!4
+        cs''!4                                                                                     %! pizzicato_rhythm
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    cs''!4
+    cs''!4                                                                                         %! pizzicato_rhythm
     
-    cqs''!4
+    cqs''!4                                                                                        %! pizzicato_rhythm
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
     
-    cs'''!8
+    cs'''!8                                                                                        %! pizzicato_rhythm
     ~
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
-    \times 4/5 {
+    \times 4/5 {                                                                                   %! pizzicato_rhythm
         
         % [B ViolinMusicVoice measure 114 / measure 26]                                            %! _comment_measure_numbers
-        cs'''!8
-        [
+        cs'''!8                                                                                    %! pizzicato_rhythm
+        [                                                                                          %! pizzicato_rhythm
         
-        ctqs'''!8
+        ctqs'''!8                                                                                  %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         
-        d'''16
+        d'''16                                                                                     %! pizzicato_rhythm
         
-        ef'''!16
-        ]
+        ef'''!16                                                                                   %! pizzicato_rhythm
+        ]                                                                                          %! pizzicato_rhythm
         
-        af''!4
+        af''!4                                                                                     %! pizzicato_rhythm
         ~
         \startTrillSpan
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    }                                                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 3/5 {                                                                                   %! pizzicato_rhythm
         
         % [B ViolinMusicVoice measure 115 / measure 27]                                            %! _comment_measure_numbers
-        af''!4
+        af''!4                                                                                     %! pizzicato_rhythm
         
-        a''4.
+        a''4.                                                                                      %! pizzicato_rhythm
         ~
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
-    }
+    }                                                                                              %! pizzicato_rhythm
     
-    a''8
+    a''8                                                                                           %! pizzicato_rhythm
     
-    c'''4
+    c'''4                                                                                          %! pizzicato_rhythm
     ~
     \stopTrillSpan                                                                                 %! SpannerCommand
     \startTrillSpan
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! pizzicato_rhythm
+    \times 6/7 {                                                                                   %! pizzicato_rhythm
         
         % [B ViolinMusicVoice measure 116 / measure 28]                                            %! _comment_measure_numbers
-        c'''4
+        c'''4                                                                                      %! pizzicato_rhythm
         
-        cqs''!8
+        cqs''!8                                                                                    %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         
-        c''4
+        c''4                                                                                       %! pizzicato_rhythm
         \startTrillSpan
         
-        cqf''!4
+        cqf''!4                                                                                    %! pizzicato_rhythm
         \stopTrillSpan                                                                             %! SpannerCommand
         \startTrillSpan
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! pizzicato_rhythm
     
     % [B ViolinMusicVoice measure 117 / measure 29]                                                %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
@@ -3203,7 +3203,7 @@ B_ViolinMusicVoice = {
     % [B ViolinMusicVoice measure 124 / measure 36]                                                %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    ftqs!1.
+    ftqs!1.                                                                                        %! fused_expanse
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup { "non flautando" }                                                                  %! IndicatorCommand
     ^ \markup { "allow bowing to convey accelerando" }                                             %! IndicatorCommand
@@ -3211,17 +3211,17 @@ B_ViolinMusicVoice = {
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \glissando                                                                                     %! SpannerCommand
     
-    g1
+    g1                                                                                             %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    ftqs!\breve
+    ftqs!\breve                                                                                    %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    g1.
+    g1.                                                                                            %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    ftqs!2
+    ftqs!2                                                                                         %! fused_expanse
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     
@@ -3279,157 +3279,157 @@ B_ViolaMusicVoice = {
     
     % [B ViolaMusicVoice measure 93 / measure 5]                                                   %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 4/3 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 94 / measure 6]                                               %! _comment_measure_numbers
         \override Beam.positions = #'(-5 . -5)                                                     %! OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'7                                           %! OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                                                 %! OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e4
+        e4                                                                                         %! single_division_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup { "molto flautando" }                                                            %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                                                 %! SpannerCommand
         
-        dtqs!8
-    }
+        dtqs!8                                                                                     %! single_division_tuplets
+    }                                                                                              %! single_division_tuplets
     
     % [B ViolaMusicVoice measure 95 / measure 7]                                                   %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 7/5 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 96 / measure 8]                                               %! _comment_measure_numbers
-        f4
+        f4                                                                                         %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        eqs!1
-    }
+        eqs!1                                                                                      %! single_division_tuplets
+    }                                                                                              %! single_division_tuplets
     
     % [B ViolaMusicVoice measure 97 / measure 9]                                                   %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 4/3 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 98 / measure 10]                                              %! _comment_measure_numbers
-        dqs!2
+        dqs!2                                                                                      %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        c4
-    }
+        c4                                                                                         %! single_division_tuplets
+    }                                                                                              %! single_division_tuplets
     
     % [B ViolaMusicVoice measure 99 / measure 11]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 7/5 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 100 / measure 12]                                             %! _comment_measure_numbers
-        dqs!8
+        dqs!8                                                                                      %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e2
+        e2                                                                                         %! single_division_tuplets
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    }
+    }                                                                                              %! single_division_tuplets
     
     % [B ViolaMusicVoice measure 101 / measure 13]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 7/6 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 102 / measure 14]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        dtqs!2
+        dtqs!2                                                                                     %! single_division_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        f4
+        f4                                                                                         %! single_division_tuplets
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 103 / measure 15]                                             %! _comment_measure_numbers
-        f4
+        f4                                                                                         %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 8/5 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 104 / measure 16]                                             %! _comment_measure_numbers
-        f4
+        f4                                                                                         %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        eqs!1
+        eqs!1                                                                                      %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 105 / measure 17]                                             %! _comment_measure_numbers
-        eqs!4
+        eqs!4                                                                                      %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 4/3 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 106 / measure 18]                                             %! _comment_measure_numbers
-        eqs!2
+        eqs!2                                                                                      %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        dqs!4
+        dqs!4                                                                                      %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 107 / measure 19]                                             %! _comment_measure_numbers
-        dqs!4
+        dqs!4                                                                                      %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 6/5 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 108 / measure 20]                                             %! _comment_measure_numbers
-        dqs!8
+        dqs!8                                                                                      %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        c2
+        c2                                                                                         %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 109 / measure 21]                                             %! _comment_measure_numbers
-        c4
+        c4                                                                                         %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 4/3 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 110 / measure 22]                                             %! _comment_measure_numbers
-        c2
+        c2                                                                                         %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        dqs!4
+        dqs!4                                                                                      %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 5/4 {                                                                                   %! single_division_tuplets
         
         % [B ViolaMusicVoice measure 111 / measure 23]                                             %! _comment_measure_numbers
-        dqs!2
+        dqs!2                                                                                      %! single_division_tuplets
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
-    }
+    }                                                                                              %! single_division_tuplets
     
     % [B ViolaMusicVoice measure 112 / measure 24]                                                 %! _comment_measure_numbers
     R1 * 9/8                                                                                       %! _make_measure_silences
@@ -3458,7 +3458,7 @@ B_ViolaMusicVoice = {
     % [B ViolaMusicVoice measure 120 / measure 32]                                                 %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'5                                               %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    btqs,!1
+    btqs,!1                                                                                        %! fused_expanse
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup { "non flautando" }                                                                  %! IndicatorCommand
     ^ \markup { "allow bowing to convey accelerando" }                                             %! IndicatorCommand
@@ -3466,27 +3466,27 @@ B_ViolaMusicVoice = {
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \glissando                                                                                     %! SpannerCommand
     
-    c\breve
+    c\breve                                                                                        %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    bqs,!1.
+    bqs,!1.                                                                                        %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    cqs!1
+    cqs!1                                                                                          %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    btqs,!\breve
+    btqs,!\breve                                                                                   %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    c1.
+    c1.                                                                                            %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     % [B ViolaMusicVoice measure 129 / measure 41]                                                 %! _comment_measure_numbers
-    bqs,!1
+    bqs,!1                                                                                         %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    cqs!2.
+    cqs!2.                                                                                         %! fused_expanse
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     
@@ -3544,151 +3544,151 @@ B_CelloMusicVoice = {
     
     % [B CelloMusicVoice measure 93 / measure 5]                                                   %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 8/5 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 94 / measure 6]                                               %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        d,16
+        d,16                                                                                       %! single_division_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         ^ \markup { "molto flautando" }                                                            %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                                                 %! SpannerCommand
         
-        ctqs,!4
-    }
+        ctqs,!4                                                                                    %! single_division_tuplets
+    }                                                                                              %! single_division_tuplets
     
     % [B CelloMusicVoice measure 95 / measure 7]                                                   %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 7/6 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 96 / measure 8]                                               %! _comment_measure_numbers
-        e,1
+        e,1                                                                                        %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        dqs,!2
-    }
+        dqs,!2                                                                                     %! single_division_tuplets
+    }                                                                                              %! single_division_tuplets
     
     % [B CelloMusicVoice measure 97 / measure 9]                                                   %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 8/5 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 98 / measure 10]                                              %! _comment_measure_numbers
-        cqs,!8
+        cqs,!8                                                                                     %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        b,,2
-    }
+        b,,2                                                                                       %! single_division_tuplets
+    }                                                                                              %! single_division_tuplets
     
     % [B CelloMusicVoice measure 99 / measure 11]                                                  %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/6 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 7/6 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 100 / measure 12]                                             %! _comment_measure_numbers
-        dqs,!2
+        dqs,!2                                                                                     %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        d,4
+        d,4                                                                                        %! single_division_tuplets
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    }
+    }                                                                                              %! single_division_tuplets
     
     % [B CelloMusicVoice measure 101 / measure 13]                                                 %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 7/5 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 102 / measure 14]                                             %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        ctqs,!8
+        ctqs,!8                                                                                    %! single_division_tuplets
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \glissando                                                                                 %! SpannerCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        e,2
+        e,2                                                                                        %! single_division_tuplets
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 103 / measure 15]                                             %! _comment_measure_numbers
-        e,4
+        e,4                                                                                        %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 4/3 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 4/3 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 104 / measure 16]                                             %! _comment_measure_numbers
-        e,1
+        e,1                                                                                        %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        dqs,!2
+        dqs,!2                                                                                     %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 105 / measure 17]                                             %! _comment_measure_numbers
-        dqs,!4
+        dqs,!4                                                                                     %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 8/5 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 106 / measure 18]                                             %! _comment_measure_numbers
-        dqs,!8
+        dqs,!8                                                                                     %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        cqs,!2
+        cqs,!2                                                                                     %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 107 / measure 19]                                             %! _comment_measure_numbers
-        cqs,!4
+        cqs,!4                                                                                     %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 108 / measure 20]                                             %! _comment_measure_numbers
-        cqs,!2
+        cqs,!2                                                                                     %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        b,,4
+        b,,4                                                                                       %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 1/1 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 1/1 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 109 / measure 21]                                             %! _comment_measure_numbers
-        b,,4
+        b,,4                                                                                       %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 8/5 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 110 / measure 22]                                             %! _comment_measure_numbers
-        b,,8
+        b,,8                                                                                       %! single_division_tuplets
         \glissando                                                                                 %! SpannerCommand
         
-        dqs,!2
+        dqs,!2                                                                                     %! single_division_tuplets
         ~
-    }
-    \tweak text #tuplet-number::calc-fraction-text
-    \times 5/4 {
+    }                                                                                              %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                                                 %! single_division_tuplets
+    \times 5/4 {                                                                                   %! single_division_tuplets
         
         % [B CelloMusicVoice measure 111 / measure 23]                                             %! _comment_measure_numbers
-        dqs,!2
-    }
+        dqs,!2                                                                                     %! single_division_tuplets
+    }                                                                                              %! single_division_tuplets
     
     % [B CelloMusicVoice measure 112 / measure 24]                                                 %! _comment_measure_numbers
     R1 * 9/8                                                                                       %! _make_measure_silences
@@ -3717,7 +3717,7 @@ B_CelloMusicVoice = {
     % [B CelloMusicVoice measure 120 / measure 32]                                                 %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'5                                               %! OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    b,,\breve
+    b,,\breve                                                                                      %! fused_expanse
     \pp                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     ^ \markup { "non flautando" }                                                                  %! IndicatorCommand
     ^ \markup { "allow bowing to convey accelerando" }                                             %! IndicatorCommand
@@ -3725,25 +3725,25 @@ B_CelloMusicVoice = {
     \<                                                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \glissando                                                                                     %! SpannerCommand
     
-    cqs,!1.
+    cqs,!1.                                                                                        %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    bqf,,!1
+    bqf,,!1                                                                                        %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    c,\breve
+    c,\breve                                                                                       %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     % [B CelloMusicVoice measure 126 / measure 38]                                                 %! _comment_measure_numbers
-    b,,1.
+    b,,1.                                                                                          %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
-    cqs,!1
+    cqs,!1                                                                                         %! fused_expanse
     \glissando                                                                                     %! SpannerCommand
     
     % [B CelloMusicVoice measure 129 / measure 41]                                                 %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    bqf,,!1..
+    bqf,,!1..                                                                                      %! fused_expanse
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
     

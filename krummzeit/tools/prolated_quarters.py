@@ -11,5 +11,6 @@ def prolated_quarters(extra_counts):
         rhythm_maker=rmakers.EvenDivisionRhythmMaker(
             denominators=[4],
             extra_counts_per_division=extra_counts,
+            tag='prolated_quarters',
             ),
         )

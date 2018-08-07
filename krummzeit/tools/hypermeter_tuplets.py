@@ -19,6 +19,7 @@ def hypermeter_tuplets(
         rhythm_maker=rmakers.TupletRhythmMaker(
             denominator=(1, 4),
             division_masks=dmask,
+            tag='hypermeter_tuplets',
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(
                 diminution=False,

@@ -656,7 +656,7 @@ F_OboeMusicVoice = {
 
 
 F_OboeMusicStaff = {
-    \context Voice = "OboeMusicVoice"
+    \context Voice = "OboeMusicVoice"                                                              %! ScoreTemplate
     \F_OboeMusicVoice                                                                              %! extern
 }
 
@@ -878,7 +878,7 @@ F_ClarinetMusicVoice = {
 
 
 F_ClarinetMusicStaff = {
-    \context Voice = "ClarinetMusicVoice"
+    \context Voice = "ClarinetMusicVoice"                                                          %! ScoreTemplate
     \F_ClarinetMusicVoice                                                                          %! extern
 }
 
@@ -1200,7 +1200,7 @@ F_PianoMusicVoice = {
 
 
 F_PianoMusicStaff = {
-    \context Voice = "PianoMusicVoice"
+    \context Voice = "PianoMusicVoice"                                                             %! ScoreTemplate
     \F_PianoMusicVoice                                                                             %! extern
 }
 
@@ -1394,7 +1394,7 @@ F_PercussionMusicVoice = {
 
 
 F_PercussionMusicStaff = {
-    \context Voice = "PercussionMusicVoice"
+    \context Voice = "PercussionMusicVoice"                                                        %! ScoreTemplate
     \F_PercussionMusicVoice                                                                        %! extern
 }
 
@@ -1518,7 +1518,7 @@ F_ViolinMusicVoice = {
 
 
 F_ViolinMusicStaff = {
-    \context Voice = "ViolinMusicVoice"
+    \context Voice = "ViolinMusicVoice"                                                            %! ScoreTemplate
     \F_ViolinMusicVoice                                                                            %! extern
 }
 
@@ -1693,7 +1693,7 @@ F_ViolaMusicVoice = {
 
 
 F_ViolaMusicStaff = {
-    \context Voice = "ViolaMusicVoice"
+    \context Voice = "ViolaMusicVoice"                                                             %! ScoreTemplate
     \F_ViolaMusicVoice                                                                             %! extern
 }
 
@@ -1868,6 +1868,6 @@ F_CelloMusicVoice = {
 
 
 F_CelloMusicStaff = {
-    \context Voice = "CelloMusicVoice"
+    \context Voice = "CelloMusicVoice"                                                             %! ScoreTemplate
     \F_CelloMusicVoice                                                                             %! extern
 }

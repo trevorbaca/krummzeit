@@ -730,7 +730,7 @@ G_OboeMusicVoice = {
 
 
 G_OboeMusicStaff = {
-    \context Voice = "OboeMusicVoice"
+    \context Voice = "OboeMusicVoice"                                                              %! ScoreTemplate
     \G_OboeMusicVoice                                                                              %! extern
 }
 
@@ -996,7 +996,7 @@ G_ClarinetMusicVoice = {
 
 
 G_ClarinetMusicStaff = {
-    \context Voice = "ClarinetMusicVoice"
+    \context Voice = "ClarinetMusicVoice"                                                          %! ScoreTemplate
     \G_ClarinetMusicVoice                                                                          %! extern
 }
 
@@ -1395,7 +1395,7 @@ G_PianoMusicVoice = {
 
 
 G_PianoMusicStaff = {
-    \context Voice = "PianoMusicVoice"
+    \context Voice = "PianoMusicVoice"                                                             %! ScoreTemplate
     \G_PianoMusicVoice                                                                             %! extern
 }
 
@@ -1529,7 +1529,7 @@ G_PercussionMusicVoice = {
 
 
 G_PercussionMusicStaff = {
-    \context Voice = "PercussionMusicVoice"
+    \context Voice = "PercussionMusicVoice"                                                        %! ScoreTemplate
     \G_PercussionMusicVoice                                                                        %! extern
 }
 
@@ -2022,7 +2022,7 @@ G_ViolinMusicVoice = {
 
 
 G_ViolinMusicStaff = {
-    \context Voice = "ViolinMusicVoice"
+    \context Voice = "ViolinMusicVoice"                                                            %! ScoreTemplate
     \G_ViolinMusicVoice                                                                            %! extern
 }
 
@@ -2268,7 +2268,7 @@ G_ViolaMusicVoice = {
 
 
 G_ViolaMusicStaff = {
-    \context Voice = "ViolaMusicVoice"
+    \context Voice = "ViolaMusicVoice"                                                             %! ScoreTemplate
     \G_ViolaMusicVoice                                                                             %! extern
 }
 
@@ -2541,6 +2541,6 @@ G_CelloMusicVoice = {
 
 
 G_CelloMusicStaff = {
-    \context Voice = "CelloMusicVoice"
+    \context Voice = "CelloMusicVoice"                                                             %! ScoreTemplate
     \G_CelloMusicVoice                                                                             %! extern
 }

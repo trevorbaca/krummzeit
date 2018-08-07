@@ -20,8 +20,8 @@ class ScoreTemplate(baca.ScoreTemplate):
         >>> abjad.show(lilypond_file, strict=79) # doctest: +SKIP
 
         >>> abjad.f(lilypond_file[abjad.Score], strict=79)
-        \context Score = "Score"
-        <<
+        \context Score = "Score"                                                       %! ScoreTemplate
+        <<                                                                             %! ScoreTemplate
             \context GlobalContext = "GlobalContext"                                   %! _make_global_context
             <<                                                                         %! _make_global_context
                 \context GlobalRests = "GlobalRests"                                   %! _make_global_context
@@ -31,82 +31,82 @@ class ScoreTemplate(baca.ScoreTemplate):
                 {                                                                      %! _make_global_context
                 }                                                                      %! _make_global_context
             >>                                                                         %! _make_global_context
-            \context MusicContext = "MusicContext"
-            <<
-                \context WindSectionStaffGroup = "WindSectionStaffGroup"
-                <<
+            \context MusicContext = "MusicContext"                                     %! ScoreTemplate
+            <<                                                                         %! ScoreTemplate
+                \context WindSectionStaffGroup = "WindSectionStaffGroup"               %! ScoreTemplate
+                <<                                                                     %! ScoreTemplate
                     \tag Oboe                                                          %! ScoreTemplate(5)
-                    \context Staff = "OboeMusicStaff"
-                    {
-                        \context Voice = "OboeMusicVoice"
-                        {
+                    \context Staff = "OboeMusicStaff"                                  %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \context Voice = "OboeMusicVoice"                              %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "treble"                                             %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    }
+                        }                                                              %! ScoreTemplate
+                    }                                                                  %! ScoreTemplate
                     \tag Clarinet                                                      %! ScoreTemplate(5)
-                    \context Staff = "ClarinetMusicStaff"
-                    {
-                        \context Voice = "ClarinetMusicVoice"
-                        {
+                    \context Staff = "ClarinetMusicStaff"                              %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \context Voice = "ClarinetMusicVoice"                          %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "treble"                                             %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    }
-                >>
-                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"
-                <<
+                        }                                                              %! ScoreTemplate
+                    }                                                                  %! ScoreTemplate
+                >>                                                                     %! ScoreTemplate
+                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup"   %! ScoreTemplate
+                <<                                                                     %! ScoreTemplate
                     \tag Piano                                                         %! ScoreTemplate(5)
-                    \context Staff = "PianoMusicStaff"
-                    {
-                        \context Voice = "PianoMusicVoice"
-                        {
+                    \context Staff = "PianoMusicStaff"                                 %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \context Voice = "PianoMusicVoice"                             %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "treble"                                             %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    }
+                        }                                                              %! ScoreTemplate
+                    }                                                                  %! ScoreTemplate
                     \tag Percussion                                                    %! ScoreTemplate(5)
-                    \context Staff = "PercussionMusicStaff"
-                    {
-                        \context Voice = "PercussionMusicVoice"
-                        {
+                    \context Staff = "PercussionMusicStaff"                            %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \context Voice = "PercussionMusicVoice"                        %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "treble"                                             %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    }
-                >>
-                \context StringSectionStaffGroup = "StringSectionStaffGroup"
-                <<
+                        }                                                              %! ScoreTemplate
+                    }                                                                  %! ScoreTemplate
+                >>                                                                     %! ScoreTemplate
+                \context StringSectionStaffGroup = "StringSectionStaffGroup"           %! ScoreTemplate
+                <<                                                                     %! ScoreTemplate
                     \tag Violin                                                        %! ScoreTemplate(5)
-                    \context Staff = "ViolinMusicStaff"
-                    {
-                        \context Voice = "ViolinMusicVoice"
-                        {
+                    \context Staff = "ViolinMusicStaff"                                %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \context Voice = "ViolinMusicVoice"                            %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "treble"                                             %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    }
+                        }                                                              %! ScoreTemplate
+                    }                                                                  %! ScoreTemplate
                     \tag Viola                                                         %! ScoreTemplate(5)
-                    \context Staff = "ViolaMusicStaff"
-                    {
-                        \context Voice = "ViolaMusicVoice"
-                        {
+                    \context Staff = "ViolaMusicStaff"                                 %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \context Voice = "ViolaMusicVoice"                             %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "alto"                                               %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    }
+                        }                                                              %! ScoreTemplate
+                    }                                                                  %! ScoreTemplate
                     \tag Cello                                                         %! ScoreTemplate(5)
-                    \context Staff = "CelloMusicStaff"
-                    {
-                        \context Voice = "CelloMusicVoice"
-                        {
+                    \context Staff = "CelloMusicStaff"                                 %! ScoreTemplate
+                    {                                                                  %! ScoreTemplate
+                        \context Voice = "CelloMusicVoice"                             %! ScoreTemplate
+                        {                                                              %! ScoreTemplate
                             \clef "bass"                                               %! attach_defaults
                             s1                                                         %! ScoreTemplate.__illustrate__
-                        }
-                    }
-                >>
-            >>
-        >>
+                        }                                                              %! ScoreTemplate
+                    }                                                                  %! ScoreTemplate
+                >>                                                                     %! ScoreTemplate
+            >>                                                                         %! ScoreTemplate
+        >>                                                                             %! ScoreTemplate
 
     """
 
@@ -136,13 +136,16 @@ class ScoreTemplate(baca.ScoreTemplate):
         """
         Calls score template.
         """
+        tag = 'ScoreTemplate'
+
         # GLOBAL CONTEXT
         global_context = self._make_global_context()
 
         # OBOE
         oboe_music_staff = abjad.Staff(
-            [abjad.Voice(name='OboeMusicVoice')],
+            [abjad.Voice(name='OboeMusicVoice', tag=tag)],
             name='OboeMusicStaff',
+            tag=tag,
             )
         self._attach_lilypond_tag('Oboe', oboe_music_staff)
         abjad.annotate(
@@ -158,8 +161,9 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # CLARINET
         clarinet_music_staff = abjad.Staff(
-            [abjad.Voice(name='ClarinetMusicVoice')],
+            [abjad.Voice(name='ClarinetMusicVoice', tag=tag)],
             name='ClarinetMusicStaff',
+            tag=tag,
             )
         self._attach_lilypond_tag('Clarinet', clarinet_music_staff)
         abjad.annotate(
@@ -178,12 +182,14 @@ class ScoreTemplate(baca.ScoreTemplate):
             [oboe_music_staff, clarinet_music_staff],
             lilypond_type='WindSectionStaffGroup',
             name='WindSectionStaffGroup',
+            tag=tag,
             )
 
         # PIANO
         piano_music_staff = abjad.Staff(
-            [abjad.Voice(name='PianoMusicVoice')],
+            [abjad.Voice(name='PianoMusicVoice', tag=tag)],
             name='PianoMusicStaff',
+            tag=tag,
             )
         self._attach_lilypond_tag('Piano', piano_music_staff)
         abjad.annotate(
@@ -199,8 +205,9 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # PERCUSSION
         percussion_music_staff = abjad.Staff(
-            [abjad.Voice(name='PercussionMusicVoice')],
+            [abjad.Voice(name='PercussionMusicVoice', tag=tag)],
             name='PercussionMusicStaff',
+            tag=tag,
             )
         self._attach_lilypond_tag('Percussion', percussion_music_staff)
         abjad.annotate(
@@ -219,12 +226,14 @@ class ScoreTemplate(baca.ScoreTemplate):
             [piano_music_staff, percussion_music_staff],
             lilypond_type='PercussionSectionStaffGroup',
             name='PercussionSectionStaffGroup',
+            tag=tag,
             )
 
         # VIOLIN
         violin_music_staff = abjad.Staff(
-            [abjad.Voice(name='ViolinMusicVoice')],
+            [abjad.Voice(name='ViolinMusicVoice', tag=tag)],
             name='ViolinMusicStaff',
+            tag=tag,
             )
         self._attach_lilypond_tag('Violin', violin_music_staff)
         abjad.annotate(
@@ -240,8 +249,9 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # VIOLA
         viola_music_staff = abjad.Staff(
-            [abjad.Voice(name='ViolaMusicVoice')],
+            [abjad.Voice(name='ViolaMusicVoice', tag=tag)],
             name='ViolaMusicStaff',
+            tag=tag,
             )
         self._attach_lilypond_tag('Viola', viola_music_staff)
         abjad.annotate(
@@ -257,8 +267,9 @@ class ScoreTemplate(baca.ScoreTemplate):
 
         # CELLO
         cello_music_staff = abjad.Staff(
-            [abjad.Voice(name='CelloMusicVoice')],
+            [abjad.Voice(name='CelloMusicVoice', tag=tag)],
             name='CelloMusicStaff',
+            tag=tag,
             )
         self._attach_lilypond_tag('Cello', cello_music_staff)
         abjad.annotate(
@@ -277,6 +288,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             [violin_music_staff, viola_music_staff, cello_music_staff],
             lilypond_type='StringSectionStaffGroup',
             name='StringSectionStaffGroup',
+            tag=tag,
             )
 
         # MUSIC CONTEXT
@@ -289,6 +301,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             lilypond_type='MusicContext',
             is_simultaneous=True,
             name='MusicContext',
+            tag=tag,
             )
 
         # SCORE
@@ -298,6 +311,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 music_context,
                 ],
             name='Score',
+            tag=tag,
             )
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)

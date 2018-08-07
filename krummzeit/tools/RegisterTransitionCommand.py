@@ -37,12 +37,12 @@ class RegisterTransitionCommand(baca.Command):
         ..  docs::
 
             >>> abjad.f(lilypond_file[abjad.Score], strict=79)
-            \context Score = "Score"
-            <<
-                \context GlobalContext = "GlobalContext"
-                <<
-                    \context GlobalSkips = "GlobalSkips"
-                    {
+            \context Score = "Score"                                                       %! SingleStaffScoreTemplate
+            <<                                                                             %! SingleStaffScoreTemplate
+                \context GlobalContext = "GlobalContext"                                   %! _make_global_context
+                <<                                                                         %! _make_global_context
+                    \context GlobalSkips = "GlobalSkips"                                   %! _make_global_context
+                    {                                                                      %! _make_global_context
             <BLANKLINE>
                         % [GlobalSkips measure 1]                                          %! _comment_measure_numbers
                         \time 4/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -66,14 +66,14 @@ class RegisterTransitionCommand(baca.Command):
                         \baca_bar_line_visible                                             %! _attach_final_bar_line
                         \bar "|"                                                           %! _attach_final_bar_line
             <BLANKLINE>
-                    }
-                >>
-                \context MusicContext = "MusicContext"
-                <<
-                    \context Staff = "MusicStaff"
-                    {
-                        \context Voice = "MusicVoice"
-                        {
+                    }                                                                      %! _make_global_context
+                >>                                                                         %! _make_global_context
+                \context MusicContext = "MusicContext"                                     %! SingleStaffScoreTemplate
+                <<                                                                         %! SingleStaffScoreTemplate
+                    \context Staff = "MusicStaff"                                          %! SingleStaffScoreTemplate
+                    {                                                                      %! SingleStaffScoreTemplate
+                        \context Voice = "MusicVoice"                                      %! SingleStaffScoreTemplate
+                        {                                                                  %! SingleStaffScoreTemplate
             <BLANKLINE>
                             % [MusicVoice measure 1]                                       %! _comment_measure_numbers
                             c'8                                                            %! baca_make_even_divisions
@@ -87,18 +87,18 @@ class RegisterTransitionCommand(baca.Command):
                             ]                                                              %! baca_make_even_divisions
             <BLANKLINE>
                             % [MusicVoice measure 2]                                       %! _comment_measure_numbers
-                            R1 * 3/8
+                            R1 * 3/8                                                       %! _make_measure_silences
             <BLANKLINE>
                             % [MusicVoice measure 3]                                       %! _comment_measure_numbers
-                            R1 * 1/2
+                            R1 * 1/2                                                       %! _make_measure_silences
             <BLANKLINE>
                             % [MusicVoice measure 4]                                       %! _comment_measure_numbers
-                            R1 * 3/8
+                            R1 * 3/8                                                       %! _make_measure_silences
             <BLANKLINE>
-                        }
-                    }
-                >>
-            >>
+                        }                                                                  %! SingleStaffScoreTemplate
+                    }                                                                      %! SingleStaffScoreTemplate
+                >>                                                                         %! SingleStaffScoreTemplate
+            >>                                                                             %! SingleStaffScoreTemplate
 
     """
 

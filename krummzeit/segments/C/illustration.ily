@@ -1034,7 +1034,7 @@ C_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)                          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
         e''''16
         \ff                                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup \baca-reapplied-indicator-markup "[“Pf.”]"                                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \markup \baca-reapplied-indicator-markup "(“Piano”)"                                     %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1051,30 +1051,30 @@ C_PianoMusicVoice = {
         r16
         
         ef''''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''''8.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 4/7 {
         
         cs''''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         r8
         
         d'''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         e'''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f''4
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \ottava #0                                                                                 %! SpannerCommand
     }
     
@@ -1086,39 +1086,39 @@ C_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         g''16
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         r16
         
         cs''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         a'8.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
         
         ef'!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         r16
         
         bf'!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         b8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'8
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     
@@ -1136,7 +1136,7 @@ C_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         af!8
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1144,30 +1144,30 @@ C_PianoMusicVoice = {
         r8
         
         g8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         a4.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 10/7 {
         
         c16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         r16
         
         ef,!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         c8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         cs,!8
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     
@@ -1729,40 +1729,40 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e''''8
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         [
         
         cs''''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         bf'''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r8
         
         cs'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         af'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         bf''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         ef''!4
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \ottava #0                                                                                 %! SpannerCommand
     }
     
@@ -1777,39 +1777,39 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         a''8
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         [
         
         e''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         g''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r8
         
         d''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         ef'!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         cs''!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e'4
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [C ViolinMusicVoice measure 140 / measure 8]                                                 %! _comment_measure_numbers
@@ -1823,39 +1823,39 @@ C_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         g''8
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         [
         
         c''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         bf'!4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r8
         
         ef'!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         e'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         f'4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'4
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
@@ -1965,7 +1965,7 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         ef'''!4
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1976,18 +1976,18 @@ C_ViolaMusicVoice = {
         r16
         
         af'''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         r16
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         b''8
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         \ottava #0                                                                                 %! SpannerCommand
     }
@@ -2002,7 +2002,7 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f''4
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     }
@@ -2012,18 +2012,18 @@ C_ViolaMusicVoice = {
         r16
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         r16
         
         cs''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         a'8
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     
@@ -2044,7 +2044,7 @@ C_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f'4
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     }
@@ -2054,18 +2054,18 @@ C_ViolaMusicVoice = {
         r16
         
         af!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         r16
         
         a8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         bf,!8
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
@@ -2179,7 +2179,7 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f''8
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ^ \markup { pizz. }                                                                        %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -2187,11 +2187,11 @@ C_CelloMusicVoice = {
         r16
         
         b'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         d''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 2/3 {
@@ -2201,7 +2201,7 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d'4
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [C CelloMusicVoice measure 138 / measure 6]                                                  %! _comment_measure_numbers
@@ -2222,18 +2222,18 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         ef'!8
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         r16
         
         cs'!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 2/3 {
@@ -2243,7 +2243,7 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         ef!4
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [C CelloMusicVoice measure 140 / measure 8]                                                  %! _comment_measure_numbers
@@ -2257,18 +2257,18 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         b8
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #blue                                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         
         r16
         
         g8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         cs!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 2/3 {
@@ -2278,7 +2278,7 @@ C_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         b,4
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)

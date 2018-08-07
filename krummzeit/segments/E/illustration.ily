@@ -2793,14 +2793,14 @@ E_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f''16
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2809,17 +2809,17 @@ E_PianoMusicVoice = {
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         f''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [E PianoMusicVoice measure 217 / measure 18]                                                 %! _comment_measure_numbers
@@ -2838,14 +2838,14 @@ E_PianoMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'DeepPink4)                                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2854,17 +2854,17 @@ E_PianoMusicVoice = {
         r16
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -2873,15 +2873,15 @@ E_PianoMusicVoice = {
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         f''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -2889,17 +2889,17 @@ E_PianoMusicVoice = {
         r16
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -2908,14 +2908,14 @@ E_PianoMusicVoice = {
         r16
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2924,48 +2924,48 @@ E_PianoMusicVoice = {
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         f''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [E PianoMusicVoice measure 222 / measure 23]                                                 %! _comment_measure_numbers
     r8
     
     f''8
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     [
     
     f''8
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     ]
     
     f''4
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     \times 4/7 {
         
         r16
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -2974,14 +2974,14 @@ E_PianoMusicVoice = {
         r16
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -2990,17 +2990,17 @@ E_PianoMusicVoice = {
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         f''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3008,32 +3008,32 @@ E_PianoMusicVoice = {
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         f''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3041,14 +3041,14 @@ E_PianoMusicVoice = {
         r16
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 4/7 {
@@ -3056,17 +3056,17 @@ E_PianoMusicVoice = {
         r8
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         f''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         \revert Beam.positions                                                                     %! OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
         \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
@@ -3141,16 +3141,16 @@ E_PianoMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c''''8
         \fff                                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         cs''''!2
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         d''''4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         e''''8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ~
     }
     
@@ -3160,7 +3160,7 @@ E_PianoMusicVoice = {
     
     \baca_repeat_pitch_class_warning                                                               %! _color_repeat_pitch_classes_
     c''''8
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     - \tweak color #red                                                                            %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                                                %! _color_repeat_pitch_classes_
     ]
@@ -3169,17 +3169,17 @@ E_PianoMusicVoice = {
         
         \baca_repeat_pitch_class_warning                                                           %! _color_repeat_pitch_classes_
         c''''16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         - \tweak color #red                                                                        %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                                            %! _color_repeat_pitch_classes_
         [
         
         af''''!16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         d''''4.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     r4.
@@ -3193,10 +3193,10 @@ E_PianoMusicVoice = {
     \times 3/4 {
         
         ef''''!8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         e''''4.
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ~
     }
     
@@ -3204,10 +3204,10 @@ E_PianoMusicVoice = {
     e''''8
     
     fs''''!4
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     
     g''''4
-    -\staccatissimo                                                                                %! IndicatorCommand
+    - \staccatissimo                                                                               %! IndicatorCommand
     \ottava #0                                                                                     %! SpannerCommand
     
     % [E PianoMusicVoice measure 234 / measure 35]                                                 %! _comment_measure_numbers
@@ -3508,32 +3508,32 @@ E_PercussionMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         f'8
         \p                                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         f'4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [E PercussionMusicVoice measure 217 / measure 18]                                            %! _comment_measure_numbers
@@ -3548,14 +3548,14 @@ E_PercussionMusicVoice = {
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 4/7 {
@@ -3563,17 +3563,17 @@ E_PercussionMusicVoice = {
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -3582,14 +3582,14 @@ E_PercussionMusicVoice = {
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3598,17 +3598,17 @@ E_PercussionMusicVoice = {
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         f'4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -3617,15 +3617,15 @@ E_PercussionMusicVoice = {
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         f'4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -3633,17 +3633,17 @@ E_PercussionMusicVoice = {
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3651,14 +3651,14 @@ E_PercussionMusicVoice = {
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \tweak text #tuplet-number::calc-fraction-text
@@ -3667,17 +3667,17 @@ E_PercussionMusicVoice = {
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5 {
@@ -3686,15 +3686,15 @@ E_PercussionMusicVoice = {
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         f'4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/7 {
@@ -3702,17 +3702,17 @@ E_PercussionMusicVoice = {
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3720,14 +3720,14 @@ E_PercussionMusicVoice = {
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
     }
     \times 4/7 {
@@ -3735,17 +3735,17 @@ E_PercussionMusicVoice = {
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r4
         
         f'4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/5 {
         
@@ -3753,32 +3753,32 @@ E_PercussionMusicVoice = {
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         f'4
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     \times 4/7 {
         
         r16
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         [
         
         f'16
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
         ]
         
         r8
         
         f'8
-        -\staccatissimo                                                                            %! IndicatorCommand
+        - \staccatissimo                                                                           %! IndicatorCommand
     }
     
     % [E PercussionMusicVoice measure 226 / measure 27]                                            %! _comment_measure_numbers

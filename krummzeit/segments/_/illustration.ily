@@ -663,7 +663,7 @@ i_PercussionMusicVoice = {
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)                               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         c'2
         \baca_effort_ff                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         ^ \markup {                                                                                %! IndicatorCommand
             \override                                                                              %! IndicatorCommand
                 #'(box-padding . 0.5)                                                              %! IndicatorCommand
@@ -676,7 +676,7 @@ i_PercussionMusicVoice = {
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     \times 2/3 {
         
@@ -685,10 +685,10 @@ i_PercussionMusicVoice = {
         \repeatTie
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         
         c'2
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
     }
     
     % [_ PercussionMusicVoice measure 12]                                                          %! _comment_measure_numbers
@@ -696,10 +696,10 @@ i_PercussionMusicVoice = {
     \repeatTie
     
     c'2
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     
     c'4
-    -\accent                                                                                       %! IndicatorCommand
+    - \accent                                                                                      %! IndicatorCommand
     \tweak text #tuplet-number::calc-fraction-text
     \times 3/4 {
         
@@ -708,7 +708,7 @@ i_PercussionMusicVoice = {
         \repeatTie
         
         c'4
-        -\accent                                                                                   %! IndicatorCommand
+        - \accent                                                                                  %! IndicatorCommand
         \revert Staff.BarLine.bar-extent                                                           %! OverrideCommand(2)
         \once \override Staff.BarLine.bar-extent = #'(0 . 0)                                       %! OverrideCommand(1)
         \revert DynamicLineSpanner.padding                                                         %! OverrideCommand(2)

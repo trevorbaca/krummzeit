@@ -372,9 +372,9 @@ F_OboeMusicVoice = {
             #16                                                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Ob.                                                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \override Beam.positions = #'(-5 . -5)                                                         %! OverrideCommand(1)
-    \override TupletBracket.staff-padding = #4                                                     %! OverrideCommand(1)
-    \override DynamicLineSpanner.staff-padding = #'8                                               %! OverrideCommand(1)
+    \override Beam.positions = #'(-5 . -5)                                                         %! baca_beam_positions:OverrideCommand(1)
+    \override TupletBracket.staff-padding = #4                                                     %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'8                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "treble"                                                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -648,9 +648,9 @@ F_OboeMusicVoice = {
     
     % [F OboeMusicVoice measure 256 / measure 22]                                                  %! _comment_measure_numbers
     R1 * 7/8                                                                                       %! _make_measure_silences
-    \revert Beam.positions                                                                         %! OverrideCommand(2)
-    \revert TupletBracket.staff-padding                                                            %! OverrideCommand(2)
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert Beam.positions                                                                         %! baca_beam_positions:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                                            %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
 }
 
@@ -670,9 +670,9 @@ F_ClarinetMusicVoice = {
             #16                                                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             "B. cl."                                                                               %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \override Beam.positions = #'(-5 . -5)                                                         %! OverrideCommand(1)
-    \override TupletBracket.staff-padding = #4                                                     %! OverrideCommand(1)
-    \override DynamicLineSpanner.staff-padding = #'8                                               %! OverrideCommand(1)
+    \override Beam.positions = #'(-5 . -5)                                                         %! baca_beam_positions:OverrideCommand(1)
+    \override TupletBracket.staff-padding = #4                                                     %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'8                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "treble"                                                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -818,12 +818,12 @@ F_ClarinetMusicVoice = {
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     a''4.                                                                                          %! polyphony
     \ff                                                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \revert Beam.positions                                                                         %! OverrideCommand(2)
-    \revert TupletBracket.staff-padding                                                            %! OverrideCommand(2)
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert Beam.positions                                                                         %! baca_beam_positions:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                                            %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [F ClarinetMusicVoice measure 245 / measure 11]                                              %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'8                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'8                                               %! baca_dls_staff_padding:OverrideCommand(1)
     R1 * 3/2                                                                                       %! _make_measure_silences
     
     % [F ClarinetMusicVoice measure 246 / measure 12]                                              %! _comment_measure_numbers
@@ -839,7 +839,7 @@ F_ClarinetMusicVoice = {
     R1 * 11/8                                                                                      %! _make_measure_silences
     
     % [F ClarinetMusicVoice measure 250 / measure 16]                                              %! _comment_measure_numbers
-    \override Stem.direction = #up                                                                 %! OverrideCommand(1)
+    \override Stem.direction = #up                                                                 %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     cs!4.
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -871,8 +871,8 @@ F_ClarinetMusicVoice = {
     % [F ClarinetMusicVoice measure 256 / measure 22]                                              %! _comment_measure_numbers
     cs!2..                                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert Stem.direction                                                                         %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert Stem.direction                                                                         %! baca_stem_up:OverrideCommand(2)
     
 }
 
@@ -892,8 +892,8 @@ F_PianoMusicVoice = {
             #16                                                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Pf.                                                                                    %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                                          %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \override Beam.positions = #'(-5 . -5)                                                         %! OverrideCommand(1)
-    \override TupletBracket.staff-padding = #4                                                     %! OverrideCommand(1)
+    \override Beam.positions = #'(-5 . -5)                                                         %! baca_beam_positions:OverrideCommand(1)
+    \override TupletBracket.staff-padding = #4                                                     %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     \clef "treble"                                                                                 %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'green4)                                        %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1108,8 +1108,8 @@ F_PianoMusicVoice = {
     
     % [F PianoMusicVoice measure 244 / measure 10]                                                 %! _comment_measure_numbers
     R1 * 7/8                                                                                       %! _make_measure_silences
-    \revert Beam.positions                                                                         %! OverrideCommand(2)
-    \revert TupletBracket.staff-padding                                                            %! OverrideCommand(2)
+    \revert Beam.positions                                                                         %! baca_beam_positions:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                                            %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     
     % [F PianoMusicVoice measure 245 / measure 11]                                                 %! _comment_measure_numbers
     R1 * 3/2                                                                                       %! _make_measure_silences
@@ -1217,7 +1217,7 @@ F_PercussionMusicVoice = {
     \stopStaff                                                                                     %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                                               %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                                    %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)                              %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)                                 %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
@@ -1388,7 +1388,7 @@ F_PercussionMusicVoice = {
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c2                                                                                             %! baca_make_repeated_duration_notes
     \p                                                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
 }
 
@@ -1552,7 +1552,7 @@ F_ViolaMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                                           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [F ViolaMusicVoice measure 236 / measure 2]                                                  %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs!8..                                                                                         %! rest_delimited_repeated_duration_notes
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1629,7 +1629,7 @@ F_ViolaMusicVoice = {
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     
     r32                                                                                            %! rest_delimited_repeated_duration_notes
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [F ViolaMusicVoice measure 241 / measure 7]                                                  %! _comment_measure_numbers
     r1.                                                                                            %! hypermeter_tuplets
@@ -1727,7 +1727,7 @@ F_CelloMusicVoice = {
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                                           %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     % [F CelloMusicVoice measure 236 / measure 2]                                                  %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c,8..                                                                                          %! rest_delimited_repeated_duration_notes
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1804,7 +1804,7 @@ F_CelloMusicVoice = {
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
     
     r32                                                                                            %! rest_delimited_repeated_duration_notes
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
     % [F CelloMusicVoice measure 241 / measure 7]                                                  %! _comment_measure_numbers
     r1.                                                                                            %! hypermeter_tuplets

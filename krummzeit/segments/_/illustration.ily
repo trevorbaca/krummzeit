@@ -590,8 +590,8 @@ i_PercussionMusicVoice = {
             #16                                                                                    %! IndicatorCommand:baca_start_markup:-PARTS
             Percussion                                                                             %! IndicatorCommand:baca_start_markup:-PARTS
         }                                                                                          %! IndicatorCommand:baca_start_markup:-PARTS
-    \override DynamicLineSpanner.padding = #'4                                                     %! OverrideCommand(1)
-    \override TupletBracket.padding = #2                                                           %! OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #'4                                                     %! baca_dls_padding:OverrideCommand(1)
+    \override TupletBracket.padding = #2                                                           %! baca_tuplet_bracket_down:OverrideCommand(1)
     \clef "treble"                                                                                 %! DEFAULT_CLEF:_set_status_tag:attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                                    %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                                               %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -652,9 +652,9 @@ i_PercussionMusicVoice = {
         \stopStaff                                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 1                                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
         \startStaff                                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                                      %! OverrideCommand(1)
-        \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_10:SHIFTED_CLEF
-        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! OverrideCommand(1):MEASURE_10:SHIFTED_CLEF
+        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                                      %! baca_bar_extent:OverrideCommand(1)
+        \once \override Staff.Clef.X-extent = ##f                                                  %! MEASURE_10:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! MEASURE_10:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "percussion"                                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -672,7 +672,7 @@ i_PercussionMusicVoice = {
             }                                                                                      %! IndicatorCommand
         ^ \markup { "accent changes of direction noticeably at each attack" }                      %! IndicatorCommand
         ^ \markup \baca-explicit-indicator-markup "(“Percussion”)"                                 %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        \override Staff.BarLine.bar-extent = #'(0 . 0)                                             %! OverrideCommand(1)
+        \override Staff.BarLine.bar-extent = #'(0 . 0)                                             %! baca_bar_extent:OverrideCommand(1)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         
         c'2                                                                                        %! sponge_rhythm
@@ -709,10 +709,10 @@ i_PercussionMusicVoice = {
         
         c'4                                                                                        %! sponge_rhythm
         - \accent                                                                                  %! IndicatorCommand
-        \revert Staff.BarLine.bar-extent                                                           %! OverrideCommand(2)
-        \once \override Staff.BarLine.bar-extent = #'(0 . 0)                                       %! OverrideCommand(1)
-        \revert DynamicLineSpanner.padding                                                         %! OverrideCommand(2)
-        \revert TupletBracket.padding                                                              %! OverrideCommand(2)
+        \revert Staff.BarLine.bar-extent                                                           %! baca_bar_extent:OverrideCommand(2)
+        \once \override Staff.BarLine.bar-extent = #'(0 . 0)                                       %! baca_bar_extent:OverrideCommand(1)
+        \revert DynamicLineSpanner.padding                                                         %! baca_dls_padding:OverrideCommand(2)
+        \revert TupletBracket.padding                                                              %! baca_tuplet_bracket_down:OverrideCommand(2)
         
     }                                                                                              %! sponge_rhythm
 }
@@ -739,8 +739,8 @@ i_ViolinMusicVoice = {
             #16                                                                                    %! IndicatorCommand:baca_start_markup:-PARTS
             Violin                                                                                 %! IndicatorCommand:baca_start_markup:-PARTS
         }                                                                                          %! IndicatorCommand:baca_start_markup:-PARTS
-    \override DynamicLineSpanner.padding = #'4                                                     %! OverrideCommand(1)
-    \override TupletBracket.padding = #2                                                           %! OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #'4                                                     %! baca_dls_padding:OverrideCommand(1)
+    \override TupletBracket.padding = #2                                                           %! baca_tuplet_bracket_down:OverrideCommand(1)
     \clef "treble"                                                                                 %! DEFAULT_CLEF:_set_status_tag:attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                                    %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                                               %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -807,7 +807,7 @@ i_ViolinMusicVoice = {
     \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [_ ViolinMusicVoice measure 4]                                                           %! _comment_measure_numbers
-        \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                                      %! baca_note_head_style_harmonic:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         ef''!4                                                                                     %! glissando_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -891,7 +891,7 @@ i_ViolinMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         g'4                                                                                        %! glissando_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \revert NoteHead.style                                                                     %! OverrideCommand(2)
+        \revert NoteHead.style                                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     }                                                                                              %! glissando_rhythm
     
     % [_ ViolinMusicVoice measure 9]                                                               %! _comment_measure_numbers
@@ -908,8 +908,8 @@ i_ViolinMusicVoice = {
     
     % [_ ViolinMusicVoice measure 13]                                                              %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.padding                                                             %! OverrideCommand(2)
-    \revert TupletBracket.padding                                                                  %! OverrideCommand(2)
+    \revert DynamicLineSpanner.padding                                                             %! baca_dls_padding:OverrideCommand(2)
+    \revert TupletBracket.padding                                                                  %! baca_tuplet_bracket_down:OverrideCommand(2)
     
 }
 
@@ -935,8 +935,8 @@ i_ViolaMusicVoice = {
             #16                                                                                    %! IndicatorCommand:baca_start_markup:-PARTS
             Viola                                                                                  %! IndicatorCommand:baca_start_markup:-PARTS
         }                                                                                          %! IndicatorCommand:baca_start_markup:-PARTS
-    \override DynamicLineSpanner.padding = #'4                                                     %! OverrideCommand(1)
-    \override TupletBracket.padding = #2                                                           %! OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #'4                                                     %! baca_dls_padding:OverrideCommand(1)
+    \override TupletBracket.padding = #2                                                           %! baca_tuplet_bracket_down:OverrideCommand(1)
     \clef "alto"                                                                                   %! DEFAULT_CLEF:_set_status_tag:attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                                    %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                                               %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1008,7 +1008,7 @@ i_ViolaMusicVoice = {
     \times 4/7 {                                                                                   %! glissando_rhythm
         
         % [_ ViolaMusicVoice measure 5]                                                            %! _comment_measure_numbers
-        \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                                      %! baca_note_head_style_harmonic:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         fs'!4                                                                                      %! glissando_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1087,7 +1087,7 @@ i_ViolaMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         af!8.                                                                                      %! glissando_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \revert NoteHead.style                                                                     %! OverrideCommand(2)
+        \revert NoteHead.style                                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     }                                                                                              %! glissando_rhythm
     
     % [_ ViolaMusicVoice measure 9]                                                                %! _comment_measure_numbers
@@ -1104,8 +1104,8 @@ i_ViolaMusicVoice = {
     
     % [_ ViolaMusicVoice measure 13]                                                               %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.padding                                                             %! OverrideCommand(2)
-    \revert TupletBracket.padding                                                                  %! OverrideCommand(2)
+    \revert DynamicLineSpanner.padding                                                             %! baca_dls_padding:OverrideCommand(2)
+    \revert TupletBracket.padding                                                                  %! baca_tuplet_bracket_down:OverrideCommand(2)
     
 }
 
@@ -1131,8 +1131,8 @@ i_CelloMusicVoice = {
             #16                                                                                    %! IndicatorCommand:baca_start_markup:-PARTS
             Cello                                                                                  %! IndicatorCommand:baca_start_markup:-PARTS
         }                                                                                          %! IndicatorCommand:baca_start_markup:-PARTS
-    \override DynamicLineSpanner.padding = #'4                                                     %! OverrideCommand(1)
-    \override TupletBracket.padding = #2                                                           %! OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #'4                                                     %! baca_dls_padding:OverrideCommand(1)
+    \override TupletBracket.padding = #2                                                           %! baca_tuplet_bracket_down:OverrideCommand(1)
     \clef "bass"                                                                                   %! DEFAULT_CLEF:_set_status_tag:attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                                    %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                                               %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1199,7 +1199,7 @@ i_CelloMusicVoice = {
     \times 2/3 {                                                                                   %! glissando_rhythm
         
         % [_ CelloMusicVoice measure 4]                                                            %! _comment_measure_numbers
-        \override NoteHead.style = #'harmonic                                                      %! OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                                      %! baca_note_head_style_harmonic:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e'8                                                                                        %! glissando_rhythm
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
@@ -1277,7 +1277,7 @@ i_CelloMusicVoice = {
         \once \override Voice.DynamicText.color = #(x11-color 'blue)                               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         a8.                                                                                        %! glissando_rhythm
         \ff                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \revert NoteHead.style                                                                     %! OverrideCommand(2)
+        \revert NoteHead.style                                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     }                                                                                              %! glissando_rhythm
     
     % [_ CelloMusicVoice measure 9]                                                                %! _comment_measure_numbers
@@ -1294,8 +1294,8 @@ i_CelloMusicVoice = {
     
     % [_ CelloMusicVoice measure 13]                                                               %! _comment_measure_numbers
     R1 * 3/4                                                                                       %! _make_measure_silences
-    \revert DynamicLineSpanner.padding                                                             %! OverrideCommand(2)
-    \revert TupletBracket.padding                                                                  %! OverrideCommand(2)
+    \revert DynamicLineSpanner.padding                                                             %! baca_dls_padding:OverrideCommand(2)
+    \revert TupletBracket.padding                                                                  %! baca_tuplet_bracket_down:OverrideCommand(2)
     
 }
 

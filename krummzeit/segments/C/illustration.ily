@@ -837,8 +837,8 @@ C_OboeMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [C OboeMusicVoice measure 146 / measure 14]                                                  %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'5                                               %! OverrideCommand(1)
-    \override Stem.direction = #up                                                                 %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'5                                               %! baca_dls_staff_padding:OverrideCommand(1)
+    \override Stem.direction = #up                                                                 %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     b1                                                                                             %! baca_make_repeat_tied_notes
     \fff                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -853,8 +853,8 @@ C_OboeMusicVoice = {
     
     b2
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
-    \revert Stem.direction                                                                         %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert Stem.direction                                                                         %! baca_stem_up:OverrideCommand(2)
     
     % [C OboeMusicVoice measure 149 / measure 17]                                                  %! _comment_measure_numbers
     R1 * 5/4                                                                                       %! _make_measure_silences
@@ -967,7 +967,7 @@ C_ClarinetMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [C ClarinetMusicVoice measure 146 / measure 14]                                              %! _comment_measure_numbers
-    \override Stem.direction = #up                                                                 %! OverrideCommand(1)
+    \override Stem.direction = #up                                                                 %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     cs!1                                                                                           %! baca_make_repeat_tied_notes
     \ppp                                                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -1004,7 +1004,7 @@ C_ClarinetMusicVoice = {
     
     cs!2
     \repeatTie
-    \revert Stem.direction                                                                         %! OverrideCommand(2)
+    \revert Stem.direction                                                                         %! baca_stem_up:OverrideCommand(2)
     
 }
 
@@ -1127,8 +1127,8 @@ C_PianoMusicVoice = {
     \times 2/3 {                                                                                   %! silver_points
         
         % [C PianoMusicVoice measure 137 / measure 5]                                              %! _comment_measure_numbers
-        \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_137:SHIFTED_CLEF
-        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                    %! OverrideCommand(1):MEASURE_137:SHIFTED_CLEF
+        \once \override Staff.Clef.X-extent = ##f                                                  %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                    %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "bass"                                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1181,7 +1181,7 @@ C_PianoMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [C PianoMusicVoice measure 141 / measure 9]                                                  %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'10                                              %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'10                                              %! baca_dls_staff_padding:OverrideCommand(1)
     \ottava #-1                                                                                    %! SpannerCommand
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -1372,7 +1372,7 @@ C_PianoMusicVoice = {
                     \flat
                 }
         }
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     \ottava #0                                                                                     %! SpannerCommand
     
     % [C PianoMusicVoice measure 149 / measure 17]                                                 %! _comment_measure_numbers
@@ -1514,7 +1514,7 @@ C_PercussionMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [C PercussionMusicVoice measure 146 / measure 14]                                            %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'6                                               %! OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #'6                                               %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4                                                                                             %! baca_make_repeated_duration_notes
@@ -1665,7 +1665,7 @@ C_PercussionMusicVoice = {
     \baca_unpitched_music_warning                                                                  %! _color_unpitched_notes
     c4                                                                                             %! baca_make_repeated_duration_notes
     \pp                                                                                            %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \revert DynamicLineSpanner.staff-padding                                                       %! OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                                       %! baca_dls_staff_padding:OverrideCommand(2)
     
 }
 
@@ -1720,9 +1720,9 @@ C_ViolinMusicVoice = {
     \times 5/6 {                                                                                   %! silver_points
         
         % [C ViolinMusicVoice measure 137 / measure 5]                                             %! _comment_measure_numbers
-        \override Beam.positions = #'(-4 . -4)                                                     %! OverrideCommand(1)
-        \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
-        \override TupletBracket.staff-padding = #4                                                 %! OverrideCommand(1)
+        \override Beam.positions = #'(-4 . -4)                                                     %! baca_beam_positions:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'8                                           %! baca_dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #4                                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         r8                                                                                         %! silver_points
         
         \ottava #1                                                                                 %! SpannerCommand
@@ -1856,9 +1856,9 @@ C_ViolinMusicVoice = {
         c'4                                                                                        %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-        \revert Beam.positions                                                                     %! OverrideCommand(2)
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
+        \revert Beam.positions                                                                     %! baca_beam_positions:OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     }                                                                                              %! silver_points
     
     % [C ViolinMusicVoice measure 142 / measure 10]                                                %! _comment_measure_numbers
@@ -1874,7 +1874,7 @@ C_ViolinMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [C ViolinMusicVoice measure 146 / measure 14]                                                %! _comment_measure_numbers
-    \override Stem.direction = #up                                                                 %! OverrideCommand(1)
+    \override Stem.direction = #up                                                                 %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs!1                                                                                           %! baca_make_repeat_tied_notes
     \baca_fff_poss                                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -1890,7 +1890,7 @@ C_ViolinMusicVoice = {
     
     fs!2
     \repeatTie
-    \revert Stem.direction                                                                         %! OverrideCommand(2)
+    \revert Stem.direction                                                                         %! baca_stem_up:OverrideCommand(2)
     
     % [C ViolinMusicVoice measure 149 / measure 17]                                                %! _comment_measure_numbers
     R1 * 5/4                                                                                       %! _make_measure_silences
@@ -1949,11 +1949,11 @@ C_ViolaMusicVoice = {
     \times 2/3 {                                                                                   %! silver_points
         
         % [C ViolaMusicVoice measure 137 / measure 5]                                              %! _comment_measure_numbers
-        \override Beam.positions = #'(-4 . -4)                                                     %! OverrideCommand(1)
-        \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
-        \override TupletBracket.staff-padding = #4                                                 %! OverrideCommand(1)
-        \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_137:SHIFTED_CLEF
-        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! OverrideCommand(1):MEASURE_137:SHIFTED_CLEF
+        \override Beam.positions = #'(-4 . -4)                                                     %! baca_beam_positions:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'8                                           %! baca_dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #4                                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \once \override Staff.Clef.X-extent = ##f                                                  %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "treble"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -2032,8 +2032,8 @@ C_ViolaMusicVoice = {
     \times 2/3 {                                                                                   %! silver_points
         
         % [C ViolaMusicVoice measure 141 / measure 9]                                              %! _comment_measure_numbers
-        \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_141:SHIFTED_CLEF
-        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                    %! OverrideCommand(1):MEASURE_141:SHIFTED_CLEF
+        \once \override Staff.Clef.X-extent = ##f                                                  %! MEASURE_141:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                    %! MEASURE_141:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "alto"                                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -2067,16 +2067,16 @@ C_ViolaMusicVoice = {
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
         ]                                                                                          %! silver_points
-        \revert Beam.positions                                                                     %! OverrideCommand(2)
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
+        \revert Beam.positions                                                                     %! baca_beam_positions:OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     }                                                                                              %! silver_points
     
     % [C ViolaMusicVoice measure 142 / measure 10]                                                 %! _comment_measure_numbers
     R1 * 5/8                                                                                       %! _make_measure_silences
     
     % [C ViolaMusicVoice measure 143 / measure 11]                                                 %! _comment_measure_numbers
-    \override Stem.direction = #up                                                                 %! OverrideCommand(1)
+    \override Stem.direction = #up                                                                 %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     bf,!2.                                                                                         %! baca_make_repeat_tied_notes
     \baca_fff_poss                                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -2104,7 +2104,7 @@ C_ViolaMusicVoice = {
     
     bf,!2
     \repeatTie
-    \revert Stem.direction                                                                         %! OverrideCommand(2)
+    \revert Stem.direction                                                                         %! baca_stem_up:OverrideCommand(2)
     
     % [C ViolaMusicVoice measure 149 / measure 17]                                                 %! _comment_measure_numbers
     R1 * 5/4                                                                                       %! _make_measure_silences
@@ -2164,11 +2164,11 @@ C_CelloMusicVoice = {
     \times 7/4 {                                                                                   %! silver_points
         
         % [C CelloMusicVoice measure 137 / measure 5]                                              %! _comment_measure_numbers
-        \override Beam.positions = #'(-4 . -4)                                                     %! OverrideCommand(1)
-        \override DynamicLineSpanner.staff-padding = #'8                                           %! OverrideCommand(1)
-        \override TupletBracket.staff-padding = #4                                                 %! OverrideCommand(1)
-        \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_137:SHIFTED_CLEF
-        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! OverrideCommand(1):MEASURE_137:SHIFTED_CLEF
+        \override Beam.positions = #'(-4 . -4)                                                     %! baca_beam_positions:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #'8                                           %! baca_dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #4                                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \once \override Staff.Clef.X-extent = ##f                                                  %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                                     %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "treble"                                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -2210,8 +2210,8 @@ C_CelloMusicVoice = {
     \times 7/4 {                                                                                   %! silver_points
         
         % [C CelloMusicVoice measure 139 / measure 7]                                              %! _comment_measure_numbers
-        \once \override Staff.Clef.X-extent = ##f                                                  %! OverrideCommand(1):MEASURE_139:SHIFTED_CLEF
-        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                    %! OverrideCommand(1):MEASURE_139:SHIFTED_CLEF
+        \once \override Staff.Clef.X-extent = ##f                                                  %! MEASURE_139:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                                    %! MEASURE_139:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "bass"                                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -2279,9 +2279,9 @@ C_CelloMusicVoice = {
         b,4                                                                                        %! silver_points
         \pp                                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                                           %! IndicatorCommand
-        \revert Beam.positions                                                                     %! OverrideCommand(2)
-        \revert DynamicLineSpanner.staff-padding                                                   %! OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                                        %! OverrideCommand(2)
+        \revert Beam.positions                                                                     %! baca_beam_positions:OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                                                   %! baca_dls_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     }                                                                                              %! silver_points
     
     % [C CelloMusicVoice measure 142 / measure 10]                                                 %! _comment_measure_numbers
@@ -2297,7 +2297,7 @@ C_CelloMusicVoice = {
     R1 * 1/4                                                                                       %! _make_measure_silences
     
     % [C CelloMusicVoice measure 146 / measure 14]                                                 %! _comment_measure_numbers
-    \override Stem.direction = #up                                                                 %! OverrideCommand(1)
+    \override Stem.direction = #up                                                                 %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     a,,1                                                                                           %! baca_make_repeat_tied_notes
     \baca_fff_poss                                                                                 %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -2313,7 +2313,7 @@ C_CelloMusicVoice = {
     
     a,,2
     \repeatTie
-    \revert Stem.direction                                                                         %! OverrideCommand(2)
+    \revert Stem.direction                                                                         %! baca_stem_up:OverrideCommand(2)
     
     % [C CelloMusicVoice measure 149 / measure 17]                                                 %! _comment_measure_numbers
     R1 * 5/4                                                                                       %! _make_measure_silences

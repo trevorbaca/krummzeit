@@ -4077,7 +4077,7 @@ I_PercussionMusicVoice = {
     \set Staff.forceClef = ##t                                                                     %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)                                   %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     r16                                                                                            %! incise_attacks
-    \override Staff.BarLine.bar-extent = #'(0 . 0)                                                 %! OverrideCommand(1):-PARTS
+    \override Staff.BarLine.bar-extent = #'(0 . 0)                                                 %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                                        %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     
     \once \override Voice.DynamicText.color = #(x11-color 'blue)                                   %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
@@ -4243,8 +4243,8 @@ I_PercussionMusicVoice = {
     r8                                                                                             %! incise_attacks
     
     r1                                                                                             %! incise_attacks
-    \revert Staff.BarLine.bar-extent                                                               %! OverrideCommand(2):-PARTS
-    \once \override Staff.BarLine.bar-extent = #'(0 . 0)                                           %! OverrideCommand(1):-PARTS
+    \revert Staff.BarLine.bar-extent                                                               %! -PARTS:baca_bar_extent_zero:OverrideCommand(2)
+    \once \override Staff.BarLine.bar-extent = #'(0 . 0)                                           %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
     
     % [I PercussionMusicVoice measure 313 / measure 23]                                            %! _comment_measure_numbers
     R1 * 1/4                                                                                       %! _make_measure_silences

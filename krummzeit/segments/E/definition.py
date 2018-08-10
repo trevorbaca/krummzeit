@@ -184,9 +184,9 @@ pcs = pcs.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 maker(
     ('ob', (1, 10)),
     baca.dynamic('p'),
-    baca.map(
-        baca.plts().filter_preprolated('>=', (1, 4)),
+    baca.new(
         baca.trill_spanner(),
+        map=baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     baca.suite(
         baca.pitches(pcs),
@@ -245,9 +245,9 @@ maker(
 maker(
     (['ob', 'cl'], (12, 21)),
     baca.dynamic('ff'),
-    baca.map(
-        baca.ntruns(),
+    baca.new(
         baca.glissando(),
+        map=baca.ntruns(),
         ),
     krummzeit.color_fingerings(),
     )
@@ -261,9 +261,9 @@ maker(
 
 maker(
     (strings, (12, 20)),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.hairpin(
         'p > ppp',
@@ -340,9 +340,9 @@ maker(
 maker(
     ('vn', (29, 34)),
     baca.dynamic('ppp'),
-    baca.map(
-        baca.qruns(),
+    baca.new(
         baca.trill_spanner('A5'),
+        map=baca.qruns(),
         ),
     )
 
@@ -354,9 +354,9 @@ maker(
 maker(
     ('ob', (29, 34)),
     baca.dynamic('ppp'),
-    baca.map(
-        baca.qruns(),
+    baca.new(
         baca.trill_spanner(),
+        map=baca.qruns(),
         ),
     )
 

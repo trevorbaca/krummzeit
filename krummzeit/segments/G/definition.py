@@ -228,9 +228,9 @@ maker(
     ('vc', (1, 9)),
     baca.dls_staff_padding(6),
     baca.hairpin('ff < fff'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.markup('subito ordinario'),
     baca.pitches('A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2'),
@@ -243,9 +243,9 @@ maker(
 
 maker(
     ('va', (1, 7)),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.dls_staff_padding(6),
     baca.hairpin('ff < fff'),
@@ -325,9 +325,9 @@ maker(
     (['va', 'vc'], (11, 12)),
     baca.dls_staff_padding(7),
     baca.hairpin('ff > pp'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.markup('molto flautando'),
     baca.tuplet_bracket_staff_padding(4),
@@ -336,10 +336,10 @@ maker(
 maker(
     ('pf', (14, 20)),
     baca.dls_staff_padding(4),
-    baca.map(
-        baca.pheads(),
+    baca.new(
         baca.dynamic('ff'),
         baca.tenuto(),
+        map=baca.pheads(),
         ),
     baca.note_head_style_harmonic(),
     baca.pitch('C4'),
@@ -375,9 +375,9 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (14, 23)),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     )
 

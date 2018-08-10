@@ -270,9 +270,9 @@ maker(
 maker(
     ('vc', (1, 13)),
     baca.dynamic('"mp"'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     krummzeit.register_narrow(2),
     baca.markup(
@@ -304,9 +304,9 @@ maker(
         ('va', (8, 34)),
         (['vn', 'vc'], (14, 34)),
         ],
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     krummzeit.register_narrow(5),
     baca.note_head_style_harmonic(),
@@ -373,10 +373,10 @@ maker(
 maker(
     ('pf', [(8, 24), (27, 34)]),
     baca.clef('bass'),
-    baca.map(
-        baca.pheads(),
+    baca.new(
         baca.dynamic('mp'),
         baca.tenuto(),
+        map=baca.pheads(),
         ),
     baca.note_head_style_harmonic(),
     baca.markup(

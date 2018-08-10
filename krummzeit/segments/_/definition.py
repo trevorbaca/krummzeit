@@ -232,9 +232,9 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (4, 8)),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.hairpin(
         'pp < ff',

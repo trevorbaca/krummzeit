@@ -480,9 +480,9 @@ maker(
 
 maker(
     (['va', 'vc'], (1, 28)),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     )
 
@@ -517,9 +517,9 @@ maker(
     baca.alternate_bow_strokes(),
     baca.clef('treble'),
     baca.dynamic('f'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.markup('OB + full bow strokes'),
     krummzeit.register_narrow(5, 3),
@@ -556,10 +556,10 @@ maker(
 
 maker(
     ('pf', (45, 56)),
-    baca.map(
-        baca.pheads(),
+    baca.new(
         baca.dynamic('fff'),
         baca.marcato(),
+        map=baca.pheads(),
         ),
     baca.ottava_bassa(),
     krummzeit.clusters('low'),
@@ -567,10 +567,10 @@ maker(
 
 maker(
     ('perc', (45, 60)),
-    baca.map(
-        baca.pheads(),
+    baca.new(
         baca.dynamic('p'),
         baca.tenuto(),
+        map=baca.pheads(),
         ),
     )
 

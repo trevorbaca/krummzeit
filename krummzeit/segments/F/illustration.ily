@@ -1471,7 +1471,7 @@ F_ViolinMusicVoice = {                                                         %
         fs!2.                                                                  %! hypermeter_tuplets
         - \abjad_dashed_line_with_arrow                                        %! PiecewiseIndicatorCommand(1)
         - \baca_text_spanner_left_text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_right_text "flaut. possibile"                     %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
         - \tweak staff-padding #5                                              %! PiecewiseIndicatorCommand(1)
@@ -1654,7 +1654,7 @@ F_ViolaMusicVoice = {                                                          %
         bf,!4                                                                  %! hypermeter_tuplets
         - \abjad_dashed_line_with_arrow                                        %! PiecewiseIndicatorCommand(1)
         - \baca_text_spanner_left_text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_right_text "flaut. possibile"                     %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
         - \tweak staff-padding #5                                              %! PiecewiseIndicatorCommand(1)
@@ -1829,7 +1829,7 @@ F_CelloMusicVoice = {                                                          %
         a,,1.                                                                  %! hypermeter_tuplets
         - \abjad_dashed_line_with_arrow                                        %! PiecewiseIndicatorCommand(1)
         - \baca_text_spanner_left_text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_right_text "flaut. possibile"                     %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
         - \tweak staff-padding #5                                              %! PiecewiseIndicatorCommand(1)

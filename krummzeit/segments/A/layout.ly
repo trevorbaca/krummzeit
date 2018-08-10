@@ -17,8 +17,8 @@
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \autoPageBreaksOff                                                           %! BreakMeasureMap(1):BREAK
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #13 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #13 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 3/4                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -49,8 +49,8 @@
             % [PageLayout measure 19]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 7/4                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -75,8 +75,8 @@
             % [PageLayout measure 23]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 5/8                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -113,8 +113,8 @@
             % [PageLayout measure 29]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 3/2                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -139,8 +139,8 @@
             % [PageLayout measure 33]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 11/8                                                                    %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -171,8 +171,8 @@
             % [PageLayout measure 38]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 1                                                                       %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -197,8 +197,8 @@
             % [PageLayout measure 42]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 2                                                                       %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -223,8 +223,8 @@
             % [PageLayout measure 46]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 9/8                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -255,8 +255,8 @@
             % [PageLayout measure 51]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 9/8                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -281,8 +281,8 @@
             % [PageLayout measure 55]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 7/4                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -313,8 +313,8 @@
             % [PageLayout measure 60]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 1/2                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -345,8 +345,8 @@
             % [PageLayout measure 65]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 2                                                                       %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -377,8 +377,8 @@
             % [PageLayout measure 70]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 9/8                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -415,8 +415,8 @@
             % [PageLayout measure 76]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 5/4                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -447,8 +447,8 @@
             % [PageLayout measure 81]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 9/8                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
@@ -473,8 +473,8 @@
             % [PageLayout measure 85]                                                    %! _comment_measure_numbers
             \baca_new_spacing_section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! IndicatorCommand:BREAK
-            \pageBreak                                                                   %! IndicatorCommand:BREAK
+            \baca_lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 3/4                                                                     %! _make_global_skips(1)
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 

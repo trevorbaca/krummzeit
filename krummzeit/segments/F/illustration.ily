@@ -1470,7 +1470,7 @@ F_ViolinMusicVoice = {                                                         %
         % [F ViolinMusicVoice measure 245 / measure 11]                        %! _comment_measure_numbers
         fs!2.                                                                  %! hypermeter_tuplets
         - \abjad_dashed_line_with_arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.left.text \markup \baca-left "grid. possibile"  %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_left_text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
@@ -1653,7 +1653,7 @@ F_ViolaMusicVoice = {                                                          %
         % [F ViolaMusicVoice measure 247 / measure 13]                         %! _comment_measure_numbers
         bf,!4                                                                  %! hypermeter_tuplets
         - \abjad_dashed_line_with_arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.left.text \markup \baca-left "grid. possibile"  %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_left_text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
@@ -1828,7 +1828,7 @@ F_CelloMusicVoice = {                                                          %
         % [F CelloMusicVoice measure 247 / measure 13]                         %! _comment_measure_numbers
         a,,1.                                                                  %! hypermeter_tuplets
         - \abjad_dashed_line_with_arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.left.text \markup \baca-left "grid. possibile"  %! PiecewiseIndicatorCommand(1)
+        - \baca_text_spanner_left_text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.text \markup \baca-right "flaut. possibile" %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
         - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)

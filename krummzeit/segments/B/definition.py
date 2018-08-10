@@ -241,9 +241,9 @@ maker(
 maker(
     ('ob', (1, 35)),
     baca.dynamic('ff'),
-    baca.map(
-        baca.plts().filter_preprolated('>=', (1, 4)),
+    baca.new(
         baca.trill_spanner(),
+        map=baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
@@ -278,9 +278,9 @@ maker(
 maker(
     ('cl', (24, 35)),
     baca.dynamic('f'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     )
 
@@ -292,9 +292,9 @@ maker(
 maker(
     ('va', (1, 23)),
     baca.clef('bass'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.markup('molto flautando'),
     )
@@ -320,9 +320,9 @@ maker(
 maker(
     ('vc', (1, 23)),
     baca.clef('bass'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.markup('molto flautando'),
     )
@@ -351,18 +351,18 @@ maker(
 maker(
     ('vn', (22, 28)),
     baca.dynamic('ff'),
-    baca.map(
-        baca.plts().filter_preprolated('>=', (1, 4)),
+    baca.new(
         baca.trill_spanner(),
+        map=baca.plts().filter_preprolated('>=', (1, 4)),
         ),
     baca.suite(
-        baca.map(
-            baca.ltqruns().filter_length('>', 1)[abjad.index([0], 2)],
+        baca.new(
             baca.deviation([0, -0.5, 0, 0.5]),
+            map=baca.ltqruns().filter_length('>', 1)[abjad.index([0], 2)],
             ),
-        baca.map(
-            baca.ltqruns().filter_length('>', 1),
+        baca.new(
             baca.deviation([0, 0.5, 0, -0.5]),
+            map=baca.ltqruns().filter_length('>', 1),
             ),
         krummzeit.displacement(),
         krummzeit.register_wide(5),
@@ -416,9 +416,9 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (32, 42)),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.hairpin(
         'pp < fff',

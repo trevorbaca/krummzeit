@@ -184,9 +184,9 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (3, 5)),
     baca.dynamic('ppp'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.note_head_style_harmonic(),
     )
@@ -257,9 +257,9 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (7, 10)),
     baca.dynamic('fff'),
-    baca.map(
-        baca.runs(),
+    baca.new(
         baca.glissando(),
+        map=baca.runs(),
         ),
     baca.stem_tremolo(selector=baca.plts()[1:]),
     )

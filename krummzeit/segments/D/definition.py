@@ -333,8 +333,7 @@ maker(
 
 maker(
     ('va', (11, 16)),
-    baca.apply(
-        baca.tleaves(),
+    baca.new(
         baca.hairpin(
             'pp < f',
             ),
@@ -342,13 +341,13 @@ maker(
             'molto flautando => molto gridato',
             abjad.tweak(6).staff_padding,
             ),
+        selector=baca.tleaves(),
         ),
     )
 
 maker(
     (['vn', 'vc'], (14, 16)),
-    baca.apply(
-        baca.tleaves(),
+    baca.new(
         baca.hairpin(
             'pp < f',
             ),
@@ -356,6 +355,7 @@ maker(
             'molto flautando => molto gridato',
             abjad.tweak(6).staff_padding,
             ),
+        selector=baca.tleaves(),
         ),
     )
 

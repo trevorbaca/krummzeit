@@ -522,6 +522,7 @@ E_GlobalSkips = {                                                              %
 
 
 E_OboeMusicVoice = {                                                           %! extern
+
     \times 4/5 {                                                               %! oboe_trills
 
         % [E OboeMusicVoice measure 200 / measure 1]                           %! _comment_measure_numbers
@@ -610,7 +611,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \times 8/9 {                                                               %! oboe_trills
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
@@ -649,7 +652,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \tweak text #tuplet-number::calc-fraction-text                             %! oboe_trills
     \times 3/5 {                                                               %! oboe_trills
 
@@ -717,6 +722,7 @@ E_OboeMusicVoice = {                                                           %
             }
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! oboe_trills
 
     r4                                                                         %! oboe_trills
@@ -724,6 +730,7 @@ E_OboeMusicVoice = {                                                           %
 
     % [E OboeMusicVoice measure 202 / measure 3]                               %! _comment_measure_numbers
     r2                                                                         %! oboe_trills
+
     \times 8/9 {                                                               %! oboe_trills
 
         af''!8.                                                                %! oboe_trills
@@ -761,7 +768,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \times 4/5 {                                                               %! oboe_trills
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
@@ -823,7 +832,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \times 2/3 {                                                               %! oboe_trills
 
         % [E OboeMusicVoice measure 203 / measure 4]                           %! _comment_measure_numbers
@@ -864,7 +875,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \tweak text #tuplet-number::calc-fraction-text                             %! oboe_trills
     \times 3/5 {                                                               %! oboe_trills
 
@@ -928,12 +941,14 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
 
     % [E OboeMusicVoice measure 204 / measure 5]                               %! _comment_measure_numbers
     r2                                                                         %! oboe_trills
 
     r4                                                                         %! oboe_trills
+
     \times 8/9 {                                                               %! oboe_trills
 
         % [E OboeMusicVoice measure 205 / measure 6]                           %! _comment_measure_numbers
@@ -973,7 +988,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \times 4/5 {                                                               %! oboe_trills
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
@@ -1035,7 +1052,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \times 8/9 {                                                               %! oboe_trills
 
         b''16.                                                                 %! oboe_trills
@@ -1068,7 +1087,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \tweak text #tuplet-number::calc-fraction-text                             %! oboe_trills
     \times 3/5 {                                                               %! oboe_trills
 
@@ -1136,6 +1157,7 @@ E_OboeMusicVoice = {                                                           %
             }
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! oboe_trills
 
     r4.                                                                        %! oboe_trills
@@ -1143,6 +1165,7 @@ E_OboeMusicVoice = {                                                           %
 
     % [E OboeMusicVoice measure 207 / measure 8]                               %! _comment_measure_numbers
     r2.                                                                        %! oboe_trills
+
     \times 2/3 {                                                               %! oboe_trills
 
         bf''!8.                                                                %! oboe_trills
@@ -1186,7 +1209,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \tweak text #tuplet-number::calc-fraction-text                             %! oboe_trills
     \times 3/5 {                                                               %! oboe_trills
 
@@ -1247,7 +1272,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \times 8/9 {                                                               %! oboe_trills
 
         b''16.                                                                 %! oboe_trills
@@ -1283,7 +1310,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
+
     \tweak text #tuplet-number::calc-fraction-text                             %! oboe_trills
     \times 3/5 {                                                               %! oboe_trills
 
@@ -1345,12 +1374,14 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ]                                                                      %! oboe_trills
+
     }                                                                          %! oboe_trills
 
     r4                                                                         %! oboe_trills
 
     % [E OboeMusicVoice measure 210 / measure 11]                              %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! color_tuplets
 
         % [E OboeMusicVoice measure 211 / measure 12]                          %! _comment_measure_numbers
@@ -1402,7 +1433,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 1/1 {                                                               %! color_tuplets
 
@@ -1417,7 +1450,9 @@ E_OboeMusicVoice = {                                                           %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 5/7 {                                                               %! color_tuplets
 
@@ -1437,7 +1472,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 3/5 {                                                               %! color_tuplets
 
@@ -1445,7 +1482,9 @@ E_OboeMusicVoice = {                                                           %
         a'2.                                                                   %! color_tuplets
 
         r2                                                                     %! color_tuplets
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 3/5 {                                                               %! color_tuplets
 
@@ -1481,7 +1520,9 @@ E_OboeMusicVoice = {                                                           %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
+
     }                                                                          %! color_tuplets
+
     \times 4/5 {                                                               %! color_tuplets
 
         % [E OboeMusicVoice measure 216 / measure 17]                          %! _comment_measure_numbers
@@ -1503,7 +1544,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 1/1 {                                                               %! color_tuplets
 
@@ -1537,7 +1580,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 3/5 {                                                               %! color_tuplets
 
@@ -1548,7 +1593,9 @@ E_OboeMusicVoice = {                                                           %
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         r2                                                                     %! color_tuplets
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 1/1 {                                                               %! color_tuplets
 
@@ -1599,7 +1646,9 @@ E_OboeMusicVoice = {                                                           %
                         1
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 9/5 {                                                               %! color_tuplets
 
@@ -1616,6 +1665,7 @@ E_OboeMusicVoice = {                                                           %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! color_tuplets
 
     % [E OboeMusicVoice measure 221 / measure 22]                              %! _comment_measure_numbers
@@ -1638,6 +1688,7 @@ E_OboeMusicVoice = {                                                           %
 
     % [E OboeMusicVoice measure 227 / measure 28]                              %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! detached_triplets
 
         % [E OboeMusicVoice measure 228 / measure 29]                          %! _comment_measure_numbers
@@ -1654,7 +1705,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1667,7 +1720,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1679,7 +1734,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1692,7 +1749,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         % [E OboeMusicVoice measure 229 / measure 30]                          %! _comment_measure_numbers
@@ -1705,7 +1764,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1718,7 +1779,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1730,7 +1793,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1743,7 +1808,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1755,7 +1822,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         % [E OboeMusicVoice measure 230 / measure 31]                          %! _comment_measure_numbers
@@ -1769,7 +1838,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1781,7 +1852,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1794,7 +1867,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1806,7 +1881,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         % [E OboeMusicVoice measure 231 / measure 32]                          %! _comment_measure_numbers
@@ -1820,7 +1897,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1832,7 +1911,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1845,7 +1926,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1857,7 +1940,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1870,7 +1955,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1882,7 +1969,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1895,7 +1984,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1908,7 +1999,9 @@ E_OboeMusicVoice = {                                                           %
         a''8                                                                   %! detached_triplets
         ~
         \startTrillSpan
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''16                                                                  %! detached_triplets
@@ -1921,7 +2014,9 @@ E_OboeMusicVoice = {                                                           %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         a''8.                                                                  %! detached_triplets
@@ -1934,6 +2029,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! detached_triplets
 
     % [E OboeMusicVoice measure 234 / measure 35]                              %! _comment_measure_numbers
@@ -1944,8 +2040,10 @@ E_OboeMusicVoice = {                                                           %
 
 
 E_OboeMusicStaff = {                                                           %! extern
+
     \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
     \E_OboeMusicVoice                                                          %! extern
+
 }                                                                              %! extern
 
 
@@ -2066,6 +2164,7 @@ E_ClarinetMusicVoice = {                                                       %
 
     % [E ClarinetMusicVoice measure 211 / measure 12]                          %! _comment_measure_numbers
     r1                                                                         %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 1/1 {                                                               %! color_tuplets
 
@@ -2078,7 +2177,9 @@ E_ClarinetMusicVoice = {                                                       %
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
 
         r2                                                                     %! color_tuplets
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 1/1 {                                                               %! color_tuplets
 
@@ -2129,7 +2230,9 @@ E_ClarinetMusicVoice = {                                                       %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 3/5 {                                                               %! color_tuplets
 
@@ -2152,7 +2255,9 @@ E_ClarinetMusicVoice = {                                                       %
                         1
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 6/7 {                                                               %! color_tuplets
 
@@ -2174,7 +2279,9 @@ E_ClarinetMusicVoice = {                                                       %
                         2
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \times 4/5 {                                                               %! color_tuplets
 
         % [E ClarinetMusicVoice measure 216 / measure 17]                      %! _comment_measure_numbers
@@ -2184,7 +2291,9 @@ E_ClarinetMusicVoice = {                                                       %
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         r2                                                                     %! color_tuplets
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 11/20 {                                                             %! color_tuplets
 
@@ -2221,7 +2330,9 @@ E_ClarinetMusicVoice = {                                                       %
                         1
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 3/5 {                                                               %! color_tuplets
 
@@ -2243,7 +2354,9 @@ E_ClarinetMusicVoice = {                                                       %
                         2
             }
         ~
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 10/11 {                                                             %! color_tuplets
 
@@ -2270,7 +2383,9 @@ E_ClarinetMusicVoice = {                                                       %
         dqs'!8.                                                                %! color_tuplets
         ~
         ]                                                                      %! color_tuplets
+
     }                                                                          %! color_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 9/5 {                                                               %! color_tuplets
 
@@ -2281,6 +2396,7 @@ E_ClarinetMusicVoice = {                                                       %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! color_tuplets
 
     % [E ClarinetMusicVoice measure 221 / measure 22]                          %! _comment_measure_numbers
@@ -2447,8 +2563,10 @@ E_ClarinetMusicVoice = {                                                       %
 
 
 E_ClarinetMusicStaff = {                                                       %! extern
+
     \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
     \E_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -2617,6 +2735,7 @@ E_PianoMusicVoice = {                                                          %
 
     % [E PianoMusicVoice measure 215 / measure 16]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [E PianoMusicVoice measure 216 / measure 17]                         %! _comment_measure_numbers
@@ -2642,7 +2761,9 @@ E_PianoMusicVoice = {                                                          %
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -2660,6 +2781,7 @@ E_PianoMusicVoice = {                                                          %
 
         f''4                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [E PianoMusicVoice measure 217 / measure 18]                             %! _comment_measure_numbers
@@ -2667,6 +2789,7 @@ E_PianoMusicVoice = {                                                          %
 
     % [E PianoMusicVoice measure 218 / measure 19]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [E PianoMusicVoice measure 219 / measure 20]                         %! _comment_measure_numbers
@@ -2687,7 +2810,9 @@ E_PianoMusicVoice = {                                                          %
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -2705,7 +2830,9 @@ E_PianoMusicVoice = {                                                          %
 
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -2722,7 +2849,9 @@ E_PianoMusicVoice = {                                                          %
 
         f''4                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -2740,7 +2869,9 @@ E_PianoMusicVoice = {                                                          %
 
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -2757,7 +2888,9 @@ E_PianoMusicVoice = {                                                          %
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -2775,6 +2908,7 @@ E_PianoMusicVoice = {                                                          %
 
         f''4                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [E PianoMusicVoice measure 222 / measure 23]                             %! _comment_measure_numbers
@@ -2790,6 +2924,7 @@ E_PianoMusicVoice = {                                                          %
 
     f''4                                                                       %! silver_points
     - \staccatissimo                                                           %! IndicatorCommand
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -2806,7 +2941,9 @@ E_PianoMusicVoice = {                                                          %
 
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -2823,7 +2960,9 @@ E_PianoMusicVoice = {                                                          %
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -2841,7 +2980,9 @@ E_PianoMusicVoice = {                                                          %
 
         f''4                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [E PianoMusicVoice measure 224 / measure 25]                         %! _comment_measure_numbers
@@ -2857,7 +2998,9 @@ E_PianoMusicVoice = {                                                          %
 
         f''4                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -2874,7 +3017,9 @@ E_PianoMusicVoice = {                                                          %
 
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [E PianoMusicVoice measure 225 / measure 26]                         %! _comment_measure_numbers
@@ -2890,7 +3035,9 @@ E_PianoMusicVoice = {                                                          %
         f''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2910,6 +3057,7 @@ E_PianoMusicVoice = {                                                          %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! silver_points
 
     % [E PianoMusicVoice measure 226 / measure 27]                             %! _comment_measure_numbers
@@ -2974,6 +3122,7 @@ E_PianoMusicVoice = {                                                          %
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     r4.                                                                        %! pizzicato_rhythm
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 7/8 {                                                               %! pizzicato_rhythm
 
@@ -2992,6 +3141,7 @@ E_PianoMusicVoice = {                                                          %
         e''''8                                                                 %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
 
     % [E PianoMusicVoice measure 230 / measure 31]                             %! _comment_measure_numbers
@@ -3004,6 +3154,7 @@ E_PianoMusicVoice = {                                                          %
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ]                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -3020,6 +3171,7 @@ E_PianoMusicVoice = {                                                          %
 
         d''''4.                                                                %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_rhythm
 
     r4.                                                                        %! pizzicato_rhythm
@@ -3029,6 +3181,7 @@ E_PianoMusicVoice = {                                                          %
 
     % [E PianoMusicVoice measure 232 / measure 33]                             %! _comment_measure_numbers
     r4.                                                                        %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -3038,6 +3191,7 @@ E_PianoMusicVoice = {                                                          %
         e''''4.                                                                %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
 
     % [E PianoMusicVoice measure 233 / measure 34]                             %! _comment_measure_numbers
@@ -3060,8 +3214,10 @@ E_PianoMusicVoice = {                                                          %
 
 
 E_PianoMusicStaff = {                                                          %! extern
+
     \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
     \E_PianoMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -3108,6 +3264,7 @@ E_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.                                                                        %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
+
     \times 2/3 {                                                               %! sponge_rhythm
 
         % [E PercussionMusicVoice measure 201 / measure 2]                     %! _comment_measure_numbers
@@ -3123,6 +3280,7 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2                                                                     %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [E PercussionMusicVoice measure 202 / measure 3]                         %! _comment_measure_numbers
@@ -3138,6 +3296,7 @@ E_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2                                                                         %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/17 {                                                              %! sponge_rhythm
 
@@ -3158,7 +3317,9 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c8                                                                     %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/5 {                                                               %! sponge_rhythm
 
@@ -3172,6 +3333,7 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2..                                                                   %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [E PercussionMusicVoice measure 205 / measure 6]                         %! _comment_measure_numbers
@@ -3183,6 +3345,7 @@ E_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2                                                                         %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/17 {                                                              %! sponge_rhythm
 
@@ -3203,7 +3366,9 @@ E_PercussionMusicVoice = {                                                     %
         c8                                                                     %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
         \repeatTie
+
     }                                                                          %! sponge_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/13 {                                                              %! sponge_rhythm
 
@@ -3221,6 +3386,7 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2.                                                                    %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [E PercussionMusicVoice measure 208 / measure 9]                         %! _comment_measure_numbers
@@ -3232,6 +3398,7 @@ E_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.                                                                        %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 5/8 {                                                               %! sponge_rhythm
 
@@ -3245,7 +3412,9 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2..                                                                   %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/5 {                                                               %! sponge_rhythm
 
@@ -3268,6 +3437,7 @@ E_PercussionMusicVoice = {                                                     %
         c8                                                                     %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
         \repeatTie
+
     }                                                                          %! sponge_rhythm
 
     % [E PercussionMusicVoice measure 211 / measure 12]                        %! _comment_measure_numbers
@@ -3284,6 +3454,7 @@ E_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c8                                                                         %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 5/9 {                                                               %! sponge_rhythm
 
@@ -3300,7 +3471,9 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2..                                                                   %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 5/7 {                                                               %! sponge_rhythm
 
@@ -3322,6 +3495,7 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c8                                                                     %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [E PercussionMusicVoice measure 214 / measure 15]                        %! _comment_measure_numbers
@@ -3329,6 +3503,7 @@ E_PercussionMusicVoice = {                                                     %
 
     % [E PercussionMusicVoice measure 215 / measure 16]                        %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -3357,7 +3532,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'4                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -3374,6 +3551,7 @@ E_PercussionMusicVoice = {                                                     %
 
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [E PercussionMusicVoice measure 217 / measure 18]                        %! _comment_measure_numbers
@@ -3381,6 +3559,7 @@ E_PercussionMusicVoice = {                                                     %
 
     % [E PercussionMusicVoice measure 218 / measure 19]                        %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -3397,7 +3576,9 @@ E_PercussionMusicVoice = {                                                     %
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -3414,7 +3595,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -3431,7 +3614,9 @@ E_PercussionMusicVoice = {                                                     %
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -3449,7 +3634,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'4                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -3466,7 +3653,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'4                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -3484,7 +3673,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [E PercussionMusicVoice measure 222 / measure 23]                    %! _comment_measure_numbers
@@ -3500,7 +3691,9 @@ E_PercussionMusicVoice = {                                                     %
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 10/7 {                                                              %! silver_points
 
@@ -3518,7 +3711,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -3535,7 +3730,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'4                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -3553,7 +3750,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [E PercussionMusicVoice measure 224 / measure 25]                    %! _comment_measure_numbers
@@ -3569,7 +3768,9 @@ E_PercussionMusicVoice = {                                                     %
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -3586,7 +3787,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'4                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [E PercussionMusicVoice measure 225 / measure 26]                    %! _comment_measure_numbers
@@ -3602,7 +3805,9 @@ E_PercussionMusicVoice = {                                                     %
 
         f'4                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -3619,6 +3824,7 @@ E_PercussionMusicVoice = {                                                     %
 
         f'8                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [E PercussionMusicVoice measure 226 / measure 27]                        %! _comment_measure_numbers
@@ -3640,6 +3846,7 @@ E_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.                                                                        %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
+
     \times 2/3 {                                                               %! sponge_rhythm
 
         % [E PercussionMusicVoice measure 228 / measure 29]                    %! _comment_measure_numbers
@@ -3655,6 +3862,7 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2                                                                     %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [E PercussionMusicVoice measure 229 / measure 30]                        %! _comment_measure_numbers
@@ -3680,6 +3888,7 @@ E_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/13 {                                                              %! sponge_rhythm
 
@@ -3696,6 +3905,7 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c4.                                                                    %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [E PercussionMusicVoice measure 232 / measure 33]                        %! _comment_measure_numbers
@@ -3712,6 +3922,7 @@ E_PercussionMusicVoice = {                                                     %
     c8                                                                         %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
     \repeatTie
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 5/8 {                                                               %! sponge_rhythm
 
@@ -3728,6 +3939,7 @@ E_PercussionMusicVoice = {                                                     %
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c8                                                                     %! sponge_rhythm
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [E PercussionMusicVoice measure 234 / measure 35]                        %! _comment_measure_numbers
@@ -3737,8 +3949,10 @@ E_PercussionMusicVoice = {                                                     %
 
 
 E_PercussionMusicStaff = {                                                     %! extern
+
     \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
     \E_PercussionMusicVoice                                                    %! extern
+
 }                                                                              %! extern
 
 
@@ -3843,6 +4057,7 @@ E_ViolinMusicVoice = {                                                         %
 
     e''2                                                                       %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         g''16                                                                  %! glissando_rhythm
@@ -3850,7 +4065,9 @@ E_ViolinMusicVoice = {                                                         %
 
         d''4                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/7 {                                                               %! glissando_rhythm
 
@@ -3860,7 +4077,9 @@ E_ViolinMusicVoice = {                                                         %
 
         f''4.                                                                  %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         fs''!4                                                                 %! glissando_rhythm
@@ -3868,7 +4087,9 @@ E_ViolinMusicVoice = {                                                         %
 
         e''2                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         % [E ViolinMusicVoice measure 213 / measure 14]                        %! _comment_measure_numbers
@@ -3876,11 +4097,13 @@ E_ViolinMusicVoice = {                                                         %
         \glissando                                                             %! SpannerCommand
 
         fs''!2                                                                 %! glissando_rhythm
+
     }                                                                          %! glissando_rhythm
 
     r4                                                                         %! glissando_rhythm
 
     r2                                                                         %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         % [E ViolinMusicVoice measure 214 / measure 15]                        %! _comment_measure_numbers
@@ -3889,7 +4112,9 @@ E_ViolinMusicVoice = {                                                         %
 
         c''2                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         cs''!4                                                                 %! glissando_rhythm
@@ -3897,7 +4122,9 @@ E_ViolinMusicVoice = {                                                         %
 
         e''8.                                                                  %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         % [E ViolinMusicVoice measure 215 / measure 16]                        %! _comment_measure_numbers
@@ -3906,7 +4133,9 @@ E_ViolinMusicVoice = {                                                         %
 
         ef''!2                                                                 %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         f'16                                                                   %! glissando_rhythm
@@ -3914,7 +4143,9 @@ E_ViolinMusicVoice = {                                                         %
 
         fs''!4                                                                 %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         % [E ViolinMusicVoice measure 216 / measure 17]                        %! _comment_measure_numbers
@@ -3922,6 +4153,7 @@ E_ViolinMusicVoice = {                                                         %
         \glissando                                                             %! SpannerCommand
 
         d''8.                                                                  %! glissando_rhythm
+
     }                                                                          %! glissando_rhythm
 
     r2                                                                         %! glissando_rhythm
@@ -3936,6 +4168,7 @@ E_ViolinMusicVoice = {                                                         %
 
     a'4.                                                                       %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         c''4                                                                   %! glissando_rhythm
@@ -3943,7 +4176,9 @@ E_ViolinMusicVoice = {                                                         %
 
         g'2                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         % [E ViolinMusicVoice measure 218 / measure 19]                        %! _comment_measure_numbers
@@ -3952,7 +4187,9 @@ E_ViolinMusicVoice = {                                                         %
 
         a'2                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         bf'!4                                                                  %! glissando_rhythm
@@ -3960,7 +4197,9 @@ E_ViolinMusicVoice = {                                                         %
 
         ef'!8.                                                                 %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         % [E ViolinMusicVoice measure 219 / measure 20]                        %! _comment_measure_numbers
@@ -3971,6 +4210,7 @@ E_ViolinMusicVoice = {                                                         %
         c'4                                                                    %! glissando_rhythm
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
+
     }                                                                          %! glissando_rhythm
 
     r8                                                                         %! glissando_rhythm
@@ -4000,6 +4240,7 @@ E_ViolinMusicVoice = {                                                         %
 
     % [E ViolinMusicVoice measure 227 / measure 28]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! detached_triplets
 
         % [E ViolinMusicVoice measure 228 / measure 29]                        %! _comment_measure_numbers
@@ -4018,7 +4259,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4032,7 +4275,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4046,7 +4291,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4060,7 +4307,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         % [E ViolinMusicVoice measure 229 / measure 30]                        %! _comment_measure_numbers
@@ -4075,7 +4324,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4089,7 +4340,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4103,7 +4356,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4117,7 +4372,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4131,7 +4388,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         % [E ViolinMusicVoice measure 230 / measure 31]                        %! _comment_measure_numbers
@@ -4146,7 +4405,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4160,7 +4421,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4174,7 +4437,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4188,7 +4453,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         % [E ViolinMusicVoice measure 231 / measure 32]                        %! _comment_measure_numbers
@@ -4203,7 +4470,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4217,7 +4486,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4231,7 +4502,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4245,7 +4518,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4259,7 +4534,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4273,7 +4550,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4287,7 +4566,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4302,7 +4583,9 @@ E_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         g''16                                                                  %! detached_triplets
@@ -4316,7 +4599,9 @@ E_ViolinMusicVoice = {                                                         %
 
         r16                                                                    %! detached_triplets
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! detached_triplets
+
     \times 2/3 {                                                               %! detached_triplets
 
         \pitchedTrill                                                          %! SpannerCommand
@@ -4331,6 +4616,7 @@ E_ViolinMusicVoice = {                                                         %
         \startTrillSpan a''
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! detached_triplets
 
     % [E ViolinMusicVoice measure 234 / measure 35]                            %! _comment_measure_numbers
@@ -4341,8 +4627,10 @@ E_ViolinMusicVoice = {                                                         %
 
 
 E_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \E_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -4435,6 +4723,7 @@ E_ViolaMusicVoice = {                                                          %
     r2.                                                                        %! glissando_rhythm
 
     r4                                                                         %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         % [E ViolaMusicVoice measure 212 / measure 13]                         %! _comment_measure_numbers
@@ -4449,7 +4738,9 @@ E_ViolaMusicVoice = {                                                          %
 
         e'4.                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         g'8                                                                    %! glissando_rhythm
@@ -4457,7 +4748,9 @@ E_ViolaMusicVoice = {                                                          %
 
         d'4                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         ef'!8                                                                  %! glissando_rhythm
@@ -4465,7 +4758,9 @@ E_ViolaMusicVoice = {                                                          %
 
         f'2                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/7 {                                                               %! glissando_rhythm
 
@@ -4475,19 +4770,23 @@ E_ViolaMusicVoice = {                                                          %
 
         e'4.                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         d'4                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
 
         fs'!2                                                                  %! glissando_rhythm
+
     }                                                                          %! glissando_rhythm
 
     % [E ViolaMusicVoice measure 214 / measure 15]                             %! _comment_measure_numbers
     r2                                                                         %! glissando_rhythm
 
     r4                                                                         %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         % [E ViolaMusicVoice measure 215 / measure 16]                         %! _comment_measure_numbers
@@ -4496,7 +4795,9 @@ E_ViolaMusicVoice = {                                                          %
 
         c'4                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         cs'!16                                                                 %! glissando_rhythm
@@ -4504,7 +4805,9 @@ E_ViolaMusicVoice = {                                                          %
 
         e4                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         d'4                                                                    %! glissando_rhythm
@@ -4512,6 +4815,7 @@ E_ViolaMusicVoice = {                                                          %
 
         ef'!8.                                                                 %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [E ViolaMusicVoice measure 216 / measure 17]                             %! _comment_measure_numbers
@@ -4520,6 +4824,7 @@ E_ViolaMusicVoice = {                                                          %
 
     fs!2                                                                       %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         cs'!16                                                                 %! glissando_rhythm
@@ -4528,12 +4833,14 @@ E_ViolaMusicVoice = {                                                          %
         d'4                                                                    %! glissando_rhythm
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! glissando_rhythm
 
     % [E ViolaMusicVoice measure 217 / measure 18]                             %! _comment_measure_numbers
     r2..                                                                       %! glissando_rhythm
 
     r2                                                                         %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         % [E ViolaMusicVoice measure 218 / measure 19]                         %! _comment_measure_numbers
@@ -4542,7 +4849,9 @@ E_ViolaMusicVoice = {                                                          %
 
         a4                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         c4                                                                     %! glissando_rhythm
@@ -4550,7 +4859,9 @@ E_ViolaMusicVoice = {                                                          %
 
         g8.                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         af!8                                                                   %! glissando_rhythm
@@ -4558,7 +4869,9 @@ E_ViolaMusicVoice = {                                                          %
 
         a4                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         % [E ViolaMusicVoice measure 219 / measure 20]                         %! _comment_measure_numbers
@@ -4567,7 +4880,9 @@ E_ViolaMusicVoice = {                                                          %
 
         ef!4.                                                                  %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         e4                                                                     %! glissando_rhythm
@@ -4577,6 +4892,7 @@ E_ViolaMusicVoice = {                                                          %
         c8.                                                                    %! glissando_rhythm
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
+
     }                                                                          %! glissando_rhythm
 
     % [E ViolaMusicVoice measure 220 / measure 21]                             %! _comment_measure_numbers
@@ -4728,8 +5044,10 @@ E_ViolaMusicVoice = {                                                          %
 
 
 E_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \E_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -4815,6 +5133,7 @@ E_CelloMusicVoice = {                                                          %
 
     % [E CelloMusicVoice measure 210 / measure 11]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         % [E CelloMusicVoice measure 211 / measure 12]                         %! _comment_measure_numbers
@@ -4831,19 +5150,23 @@ E_CelloMusicVoice = {                                                          %
 
         e'4                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         g'8                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
 
         d'2                                                                    %! glissando_rhythm
+
     }                                                                          %! glissando_rhythm
 
     r4                                                                         %! glissando_rhythm
 
     % [E CelloMusicVoice measure 212 / measure 13]                             %! _comment_measure_numbers
     r2.                                                                        %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         ef'!8                                                                  %! glissando_rhythm
@@ -4851,7 +5174,9 @@ E_CelloMusicVoice = {                                                          %
 
         f2                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 6/7 {                                                               %! glissando_rhythm
 
@@ -4861,7 +5186,9 @@ E_CelloMusicVoice = {                                                          %
 
         e4.                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         d4                                                                     %! glissando_rhythm
@@ -4869,7 +5196,9 @@ E_CelloMusicVoice = {                                                          %
 
         fs!2                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         % [E CelloMusicVoice measure 214 / measure 15]                         %! _comment_measure_numbers
@@ -4878,19 +5207,23 @@ E_CelloMusicVoice = {                                                          %
 
         c'4                                                                    %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         cs!4                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
 
         e8.                                                                    %! glissando_rhythm
+
     }                                                                          %! glissando_rhythm
 
     r4                                                                         %! glissando_rhythm
 
     % [E CelloMusicVoice measure 215 / measure 16]                             %! _comment_measure_numbers
     r2                                                                         %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         d4                                                                     %! glissando_rhythm
@@ -4898,6 +5231,7 @@ E_CelloMusicVoice = {                                                          %
 
         ef!8.                                                                  %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     % [E CelloMusicVoice measure 216 / measure 17]                             %! _comment_measure_numbers
@@ -4906,6 +5240,7 @@ E_CelloMusicVoice = {                                                          %
 
     fs!2                                                                       %! glissando_rhythm
     \glissando                                                                 %! SpannerCommand
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         cs!16                                                                  %! glissando_rhythm
@@ -4913,7 +5248,9 @@ E_CelloMusicVoice = {                                                          %
 
         d4                                                                     %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         % [E CelloMusicVoice measure 217 / measure 18]                         %! _comment_measure_numbers
@@ -4922,6 +5259,7 @@ E_CelloMusicVoice = {                                                          %
 
         a,4.                                                                   %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
 
     c8                                                                         %! glissando_rhythm
@@ -4933,6 +5271,7 @@ E_CelloMusicVoice = {                                                          %
 
     % [E CelloMusicVoice measure 218 / measure 19]                             %! _comment_measure_numbers
     r2                                                                         %! glissando_rhythm
+
     \times 2/3 {                                                               %! glissando_rhythm
 
         af,!8                                                                  %! glissando_rhythm
@@ -4942,7 +5281,9 @@ E_CelloMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! glissando_rhythm
+
     \times 4/5 {                                                               %! glissando_rhythm
 
         % [E CelloMusicVoice measure 219 / measure 20]                         %! _comment_measure_numbers
@@ -4951,7 +5292,9 @@ E_CelloMusicVoice = {                                                          %
 
         ef,!4.                                                                 %! glissando_rhythm
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! glissando_rhythm
+
     \times 4/7 {                                                               %! glissando_rhythm
 
         e,4                                                                    %! glissando_rhythm
@@ -4961,6 +5304,7 @@ E_CelloMusicVoice = {                                                          %
         c,8.                                                                   %! glissando_rhythm
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
+
     }                                                                          %! glissando_rhythm
 
     % [E CelloMusicVoice measure 220 / measure 21]                             %! _comment_measure_numbers
@@ -5112,6 +5456,8 @@ E_CelloMusicVoice = {                                                          %
 
 
 E_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \E_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

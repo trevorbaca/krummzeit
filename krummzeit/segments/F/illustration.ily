@@ -375,6 +375,7 @@ F_OboeMusicVoice = {                                                           %
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #blue                                                       %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -386,6 +387,7 @@ F_OboeMusicVoice = {                                                           %
 
         bf'''!4                                                                %! polyphony
         ~
+
     }                                                                          %! polyphony
 
     % [F OboeMusicVoice measure 239 / measure 5]                               %! _comment_measure_numbers
@@ -407,6 +409,7 @@ F_OboeMusicVoice = {                                                           %
     f'''16                                                                     %! polyphony
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         f'''4                                                                  %! polyphony
@@ -416,6 +419,7 @@ F_OboeMusicVoice = {                                                           %
 
         b''4                                                                   %! polyphony
         ~
+
     }                                                                          %! polyphony
 
     % [F OboeMusicVoice measure 240 / measure 6]                               %! _comment_measure_numbers
@@ -426,6 +430,7 @@ F_OboeMusicVoice = {                                                           %
 
     g''4                                                                       %! polyphony
     - \staccato                                                                %! IndicatorCommand
+
     \times 8/12 {                                                              %! polyphony
 
         % [F OboeMusicVoice measure 241 / measure 7]                           %! _comment_measure_numbers
@@ -466,6 +471,7 @@ F_OboeMusicVoice = {                                                           %
         b'16                                                                   %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     b'4                                                                        %! polyphony
@@ -476,6 +482,7 @@ F_OboeMusicVoice = {                                                           %
 
     f''4.                                                                      %! polyphony
     ~
+
     \times 8/12 {                                                              %! polyphony
 
         % [F OboeMusicVoice measure 243 / measure 9]                           %! _comment_measure_numbers
@@ -521,6 +528,7 @@ F_OboeMusicVoice = {                                                           %
         cs''!16                                                                %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     af'!4                                                                      %! polyphony
@@ -531,6 +539,7 @@ F_OboeMusicVoice = {                                                           %
 
     % [F OboeMusicVoice measure 244 / measure 10]                              %! _comment_measure_numbers
     f''4                                                                       %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 10/14 {                                                             %! polyphony
 
@@ -579,6 +588,7 @@ F_OboeMusicVoice = {                                                           %
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [F OboeMusicVoice measure 245 / measure 11]                              %! _comment_measure_numbers
@@ -624,8 +634,10 @@ F_OboeMusicVoice = {                                                           %
 
 
 F_OboeMusicStaff = {                                                           %! extern
+
     \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
     \F_OboeMusicVoice                                                          %! extern
+
 }                                                                              %! extern
 
 
@@ -665,6 +677,7 @@ F_ClarinetMusicVoice = {                                                       %
 
     % [F ClarinetMusicVoice measure 237 / measure 3]                           %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! polyphony
 
         % [F ClarinetMusicVoice measure 238 / measure 4]                       %! _comment_measure_numbers
@@ -681,6 +694,7 @@ F_ClarinetMusicVoice = {                                                       %
 
         d'4                                                                    %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     gs'!4                                                                      %! polyphony
@@ -696,6 +710,7 @@ F_ClarinetMusicVoice = {                                                       %
     d'8                                                                        %! polyphony
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         d'4                                                                    %! polyphony
@@ -705,7 +720,9 @@ F_ClarinetMusicVoice = {                                                       %
 
         fs'!4                                                                  %! polyphony
         ~
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         fs'!4                                                                  %! polyphony
@@ -715,6 +732,7 @@ F_ClarinetMusicVoice = {                                                       %
 
         a'4                                                                    %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     % [F ClarinetMusicVoice measure 240 / measure 6]                           %! _comment_measure_numbers
@@ -754,6 +772,7 @@ F_ClarinetMusicVoice = {                                                       %
     % [F ClarinetMusicVoice measure 243 / measure 9]                           %! _comment_measure_numbers
     b''4                                                                       %! polyphony
     - \staccato                                                                %! IndicatorCommand
+
     \times 2/3 {                                                               %! polyphony
 
         d'''4                                                                  %! polyphony
@@ -764,6 +783,7 @@ F_ClarinetMusicVoice = {                                                       %
 
         fs''!4                                                                 %! polyphony
         ~
+
     }                                                                          %! polyphony
 
     fs''!4.                                                                    %! polyphony
@@ -846,8 +866,10 @@ F_ClarinetMusicVoice = {                                                       %
 
 
 F_ClarinetMusicStaff = {                                                       %! extern
+
     \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
     \F_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -886,6 +908,7 @@ F_PianoMusicVoice = {                                                          %
 
     % [F PianoMusicVoice measure 237 / measure 3]                              %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [F PianoMusicVoice measure 238 / measure 4]                          %! _comment_measure_numbers
@@ -914,7 +937,9 @@ F_PianoMusicVoice = {                                                          %
 
         g''8                                                                   %! silver_points
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -929,7 +954,9 @@ F_PianoMusicVoice = {                                                          %
         r4                                                                     %! silver_points
 
         d''4                                                                   %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -943,7 +970,9 @@ F_PianoMusicVoice = {                                                          %
         ]                                                                      %! silver_points
 
         c''4                                                                   %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -957,7 +986,9 @@ F_PianoMusicVoice = {                                                          %
         r4                                                                     %! silver_points
 
         g'4                                                                    %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [F PianoMusicVoice measure 240 / measure 6]                          %! _comment_measure_numbers
@@ -970,7 +1001,9 @@ F_PianoMusicVoice = {                                                          %
 
         f'8                                                                    %! silver_points
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -984,7 +1017,9 @@ F_PianoMusicVoice = {                                                          %
         r4                                                                     %! silver_points
 
         g'4                                                                    %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [F PianoMusicVoice measure 241 / measure 7]                          %! _comment_measure_numbers
@@ -1002,7 +1037,9 @@ F_PianoMusicVoice = {                                                          %
         ]                                                                      %! silver_points
 
         b4                                                                     %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -1016,7 +1053,9 @@ F_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         bf!8                                                                   %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [F PianoMusicVoice measure 242 / measure 8]                          %! _comment_measure_numbers
@@ -1029,7 +1068,9 @@ F_PianoMusicVoice = {                                                          %
 
         cs'!8                                                                  %! silver_points
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -1043,7 +1084,9 @@ F_PianoMusicVoice = {                                                          %
         r4                                                                     %! silver_points
 
         b4                                                                     %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -1057,7 +1100,9 @@ F_PianoMusicVoice = {                                                          %
         ]                                                                      %! silver_points
 
         g4                                                                     %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -1072,6 +1117,7 @@ F_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         bf!8                                                                   %! silver_points
+
     }                                                                          %! silver_points
 
     % [F PianoMusicVoice measure 244 / measure 10]                             %! _comment_measure_numbers
@@ -1084,6 +1130,7 @@ F_PianoMusicVoice = {                                                          %
 
     % [F PianoMusicVoice measure 246 / measure 12]                             %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [F PianoMusicVoice measure 247 / measure 13]                         %! _comment_measure_numbers
@@ -1096,7 +1143,9 @@ F_PianoMusicVoice = {                                                          %
 
         g8                                                                     %! silver_points
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -1110,6 +1159,7 @@ F_PianoMusicVoice = {                                                          %
         r4                                                                     %! silver_points
 
         ef!4                                                                   %! silver_points
+
     }                                                                          %! silver_points
 
     % [F PianoMusicVoice measure 248 / measure 14]                             %! _comment_measure_numbers
@@ -1117,6 +1167,7 @@ F_PianoMusicVoice = {                                                          %
 
     % [F PianoMusicVoice measure 249 / measure 15]                             %! _comment_measure_numbers
     R1 * 11/8                                                                  %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [F PianoMusicVoice measure 250 / measure 16]                         %! _comment_measure_numbers
@@ -1129,7 +1180,9 @@ F_PianoMusicVoice = {                                                          %
 
         f,8                                                                    %! silver_points
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -1144,6 +1197,7 @@ F_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         a,8                                                                    %! silver_points
+
     }                                                                          %! silver_points
 
     % [F PianoMusicVoice measure 251 / measure 17]                             %! _comment_measure_numbers
@@ -1168,8 +1222,10 @@ F_PianoMusicVoice = {                                                          %
 
 
 F_PianoMusicStaff = {                                                          %! extern
+
     \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
     \F_PianoMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -1362,8 +1418,10 @@ F_PercussionMusicVoice = {                                                     %
 
 
 F_PercussionMusicStaff = {                                                     %! extern
+
     \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
     \F_PercussionMusicVoice                                                    %! extern
+
 }                                                                              %! extern
 
 
@@ -1413,6 +1471,7 @@ F_ViolinMusicVoice = {                                                         %
 
     % [F ViolinMusicVoice measure 240 / measure 6]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 12/7 {                                                              %! hypermeter_tuplets
 
@@ -1423,7 +1482,9 @@ F_ViolinMusicVoice = {                                                         %
         ^ \markup { "gridato possibile" }                                      %! baca_markup:IndicatorCommand
 
         fs!2                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/7 {                                                               %! hypermeter_tuplets
 
@@ -1431,7 +1492,9 @@ F_ViolinMusicVoice = {                                                         %
         fs!2.                                                                  %! hypermeter_tuplets
 
         fs!1                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 13/7 {                                                              %! hypermeter_tuplets
 
@@ -1446,7 +1509,9 @@ F_ViolinMusicVoice = {                                                         %
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
 
         fs!1                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 10/7 {                                                              %! hypermeter_tuplets
 
@@ -1454,7 +1519,9 @@ F_ViolinMusicVoice = {                                                         %
         fs!2.                                                                  %! hypermeter_tuplets
 
         fs!1                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/7 {                                                               %! hypermeter_tuplets
 
@@ -1463,7 +1530,9 @@ F_ViolinMusicVoice = {                                                         %
 
         fs!1                                                                   %! hypermeter_tuplets
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 13/7 {                                                              %! hypermeter_tuplets
 
@@ -1471,6 +1540,7 @@ F_ViolinMusicVoice = {                                                         %
         fs!2.                                                                  %! hypermeter_tuplets
 
         fs!1                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
 
     % [F ViolinMusicVoice measure 254 / measure 20]                            %! _comment_measure_numbers
@@ -1486,8 +1556,10 @@ F_ViolinMusicVoice = {                                                         %
 
 
 F_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \F_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -1604,6 +1676,7 @@ F_ViolaMusicVoice = {                                                          %
 
     % [F ViolaMusicVoice measure 243 / measure 9]                              %! _comment_measure_numbers
     r\breve                                                                    %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 13/7 {                                                              %! hypermeter_tuplets
 
@@ -1614,7 +1687,9 @@ F_ViolaMusicVoice = {                                                          %
         ^ \markup { "gridato possibile" }                                      %! baca_markup:IndicatorCommand
 
         bf,!1.                                                                 %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 10/7 {                                                              %! hypermeter_tuplets
 
@@ -1629,7 +1704,9 @@ F_ViolaMusicVoice = {                                                          %
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
 
         bf,!1.                                                                 %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/7 {                                                               %! hypermeter_tuplets
 
@@ -1638,7 +1715,9 @@ F_ViolaMusicVoice = {                                                          %
 
         bf,!1.                                                                 %! hypermeter_tuplets
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 13/7 {                                                              %! hypermeter_tuplets
 
@@ -1646,6 +1725,7 @@ F_ViolaMusicVoice = {                                                          %
         bf,!4                                                                  %! hypermeter_tuplets
 
         bf,!1.                                                                 %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
 
     % [F ViolaMusicVoice measure 254 / measure 20]                             %! _comment_measure_numbers
@@ -1661,8 +1741,10 @@ F_ViolaMusicVoice = {                                                          %
 
 
 F_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \F_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -1779,6 +1861,7 @@ F_CelloMusicVoice = {                                                          %
 
     % [F CelloMusicVoice measure 243 / measure 9]                              %! _comment_measure_numbers
     r\breve                                                                    %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 13/7 {                                                              %! hypermeter_tuplets
 
@@ -1789,7 +1872,9 @@ F_CelloMusicVoice = {                                                          %
         ^ \markup { "gridato possibile" }                                      %! baca_markup:IndicatorCommand
 
         a,,4                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 10/7 {                                                              %! hypermeter_tuplets
 
@@ -1804,7 +1889,9 @@ F_CelloMusicVoice = {                                                          %
         \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
 
         a,,4                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/7 {                                                               %! hypermeter_tuplets
 
@@ -1813,7 +1900,9 @@ F_CelloMusicVoice = {                                                          %
         \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
 
         a,,4                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 13/7 {                                                              %! hypermeter_tuplets
 
@@ -1821,6 +1910,7 @@ F_CelloMusicVoice = {                                                          %
         a,,1.                                                                  %! hypermeter_tuplets
 
         a,,4                                                                   %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
 
     % [F CelloMusicVoice measure 254 / measure 20]                             %! _comment_measure_numbers
@@ -1836,6 +1926,8 @@ F_CelloMusicVoice = {                                                          %
 
 
 F_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \F_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

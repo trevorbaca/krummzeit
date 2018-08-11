@@ -687,6 +687,7 @@ B_GlobalSkips = {                                                              %
 
 
 B_OboeMusicVoice = {                                                           %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -740,7 +741,9 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -757,6 +760,7 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     % [B OboeMusicVoice measure 90 / measure 2]                                %! _comment_measure_numbers
@@ -786,6 +790,7 @@ B_OboeMusicVoice = {                                                           %
                     2
         }
     \stopTrillSpan                                                             %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -812,6 +817,7 @@ B_OboeMusicVoice = {                                                           %
             }
         ~
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     e'''8                                                                      %! pizzicato_rhythm
@@ -829,6 +835,7 @@ B_OboeMusicVoice = {                                                           %
     ]                                                                          %! pizzicato_rhythm
     \stopTrillSpan                                                             %! SpannerCommand
     \startTrillSpan
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 5/8 {                                                               %! pizzicato_rhythm
 
@@ -848,7 +855,9 @@ B_OboeMusicVoice = {                                                           %
 
         cs''!8                                                                 %! pizzicato_rhythm
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! pizzicato_rhythm
+
     \times 2/3 {                                                               %! pizzicato_rhythm
 
         % [B OboeMusicVoice measure 92 / measure 4]                            %! _comment_measure_numbers
@@ -873,7 +882,9 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -890,6 +901,7 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     b''8                                                                       %! pizzicato_rhythm
@@ -901,6 +913,7 @@ B_OboeMusicVoice = {                                                           %
     % [B OboeMusicVoice measure 93 / measure 5]                                %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
     \stopTrillSpan                                                             %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -935,6 +948,7 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     bf''!8                                                                     %! pizzicato_rhythm
@@ -990,6 +1004,7 @@ B_OboeMusicVoice = {                                                           %
 
     % [B OboeMusicVoice measure 111 / measure 23]                              %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -1019,7 +1034,9 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 6/7 {                                                               %! pizzicato_rhythm
 
@@ -1039,6 +1056,7 @@ B_OboeMusicVoice = {                                                           %
         c''4                                                                   %! pizzicato_rhythm
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     % [B OboeMusicVoice measure 113 / measure 25]                              %! _comment_measure_numbers
@@ -1062,6 +1080,7 @@ B_OboeMusicVoice = {                                                           %
                     2
         }
     \stopTrillSpan                                                             %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -1088,7 +1107,9 @@ B_OboeMusicVoice = {                                                           %
             }
         ~
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \times 2/3 {                                                               %! pizzicato_rhythm
 
         f'8                                                                    %! pizzicato_rhythm
@@ -1115,7 +1136,9 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \times 4/7 {                                                               %! pizzicato_rhythm
 
         % [B OboeMusicVoice measure 114 / measure 26]                          %! _comment_measure_numbers
@@ -1145,10 +1168,12 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     % [B OboeMusicVoice measure 115 / measure 27]                              %! _comment_measure_numbers
     d''8                                                                       %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -1162,11 +1187,13 @@ B_OboeMusicVoice = {                                                           %
             }
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     d'''4                                                                      %! pizzicato_rhythm
     \stopTrillSpan                                                             %! SpannerCommand
     \startTrillSpan
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 6/7 {                                                               %! pizzicato_rhythm
 
@@ -1214,11 +1241,13 @@ B_OboeMusicVoice = {                                                           %
                         1
             }
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     % [B OboeMusicVoice measure 117 / measure 29]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
     \stopTrillSpan                                                             %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -1246,7 +1275,9 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -1262,11 +1293,13 @@ B_OboeMusicVoice = {                                                           %
             }
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     % [B OboeMusicVoice measure 119 / measure 31]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
     \stopTrillSpan                                                             %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -1294,7 +1327,9 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 7/8 {                                                               %! pizzicato_rhythm
 
@@ -1333,6 +1368,7 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     % [B OboeMusicVoice measure 121 / measure 33]                              %! _comment_measure_numbers
@@ -1342,6 +1378,7 @@ B_OboeMusicVoice = {                                                           %
     f'8                                                                        %! pizzicato_rhythm
     ]                                                                          %! pizzicato_rhythm
     \stopTrillSpan                                                             %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -1375,7 +1412,9 @@ B_OboeMusicVoice = {                                                           %
             }
         ~
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \times 4/5 {                                                               %! pizzicato_rhythm
 
         e'8                                                                    %! pizzicato_rhythm
@@ -1404,6 +1443,7 @@ B_OboeMusicVoice = {                                                           %
                         2
             }
         \stopTrillSpan                                                         %! SpannerCommand
+
     }                                                                          %! pizzicato_rhythm
 
     % [B OboeMusicVoice measure 122 / measure 34]                              %! _comment_measure_numbers
@@ -1417,6 +1457,7 @@ B_OboeMusicVoice = {                                                           %
         }
     ~
     \startTrillSpan
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -1437,6 +1478,7 @@ B_OboeMusicVoice = {                                                           %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     cs''!4                                                                     %! pizzicato_rhythm
@@ -1501,8 +1543,10 @@ B_OboeMusicVoice = {                                                           %
 
 
 B_OboeMusicStaff = {                                                           %! extern
+
     \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
     \B_OboeMusicVoice                                                          %! extern
+
 }                                                                              %! extern
 
 
@@ -1767,8 +1811,10 @@ B_ClarinetMusicVoice = {                                                       %
 
 
 B_ClarinetMusicStaff = {                                                       %! extern
+
     \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
     \B_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -1835,6 +1881,7 @@ B_PianoMusicVoice = {                                                          %
 
     % [B PianoMusicVoice measure 101 / measure 13]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PianoMusicVoice measure 102 / measure 14]                         %! _comment_measure_numbers
@@ -1855,7 +1902,9 @@ B_PianoMusicVoice = {                                                          %
         cs'''!8                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 10/7 {                                                              %! silver_points
 
@@ -1873,6 +1922,7 @@ B_PianoMusicVoice = {                                                          %
 
         cs'''!8                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [B PianoMusicVoice measure 103 / measure 15]                             %! _comment_measure_numbers
@@ -1889,6 +1939,7 @@ B_PianoMusicVoice = {                                                          %
 
     cs'''!2                                                                    %! silver_points
     - \staccatissimo                                                           %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -1906,10 +1957,12 @@ B_PianoMusicVoice = {                                                          %
 
         cs'''!4                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [B PianoMusicVoice measure 105 / measure 17]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PianoMusicVoice measure 106 / measure 18]                         %! _comment_measure_numbers
@@ -1925,7 +1978,9 @@ B_PianoMusicVoice = {                                                          %
         cs'''!8                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -1943,10 +1998,12 @@ B_PianoMusicVoice = {                                                          %
 
         cs'''!4                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [B PianoMusicVoice measure 107 / measure 19]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PianoMusicVoice measure 108 / measure 20]                         %! _comment_measure_numbers
@@ -1962,7 +2019,9 @@ B_PianoMusicVoice = {                                                          %
 
         cs'''!4                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -1979,6 +2038,7 @@ B_PianoMusicVoice = {                                                          %
 
         cs'''!8                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [B PianoMusicVoice measure 109 / measure 21]                             %! _comment_measure_numbers
@@ -2001,6 +2061,7 @@ B_PianoMusicVoice = {                                                          %
 
     % [B PianoMusicVoice measure 115 / measure 27]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PianoMusicVoice measure 116 / measure 28]                         %! _comment_measure_numbers
@@ -2015,7 +2076,9 @@ B_PianoMusicVoice = {                                                          %
 
         cs'''!8                                                                %! silver_points
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2029,10 +2092,12 @@ B_PianoMusicVoice = {                                                          %
         r4                                                                     %! silver_points
 
         cs'''!4                                                                %! silver_points
+
     }                                                                          %! silver_points
 
     % [B PianoMusicVoice measure 117 / measure 29]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PianoMusicVoice measure 118 / measure 30]                         %! _comment_measure_numbers
@@ -2045,7 +2110,9 @@ B_PianoMusicVoice = {                                                          %
         ]                                                                      %! silver_points
 
         cs'''!4                                                                %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -2059,10 +2126,12 @@ B_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         cs'''!8                                                                %! silver_points
+
     }                                                                          %! silver_points
 
     % [B PianoMusicVoice measure 119 / measure 31]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PianoMusicVoice measure 120 / measure 32]                         %! _comment_measure_numbers
@@ -2075,7 +2144,9 @@ B_PianoMusicVoice = {                                                          %
         ]                                                                      %! silver_points
 
         cs'''!4                                                                %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -2090,7 +2161,9 @@ B_PianoMusicVoice = {                                                          %
         r4                                                                     %! silver_points
 
         cs'''!4                                                                %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PianoMusicVoice measure 121 / measure 33]                         %! _comment_measure_numbers
@@ -2103,7 +2176,9 @@ B_PianoMusicVoice = {                                                          %
         ]                                                                      %! silver_points
 
         cs'''!4                                                                %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 9/7 {                                                               %! silver_points
 
@@ -2118,7 +2193,9 @@ B_PianoMusicVoice = {                                                          %
         r4                                                                     %! silver_points
 
         cs'''!4                                                                %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PianoMusicVoice measure 122 / measure 34]                         %! _comment_measure_numbers
@@ -2131,7 +2208,9 @@ B_PianoMusicVoice = {                                                          %
         ]                                                                      %! silver_points
 
         cs'''!4                                                                %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -2145,7 +2224,9 @@ B_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         cs'''!8                                                                %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -2159,7 +2240,9 @@ B_PianoMusicVoice = {                                                          %
 
         cs'''!8                                                                %! silver_points
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -2176,6 +2259,7 @@ B_PianoMusicVoice = {                                                          %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! silver_points
 
     % [B PianoMusicVoice measure 124 / measure 36]                             %! _comment_measure_numbers
@@ -2209,8 +2293,10 @@ B_PianoMusicVoice = {                                                          %
 
 
 B_PianoMusicStaff = {                                                          %! extern
+
     \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
     \B_PianoMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -2315,6 +2401,7 @@ B_PercussionMusicVoice = {                                                     %
 
     cs''!4                                                                     %! silver_points
     - \staccatissimo                                                           %! IndicatorCommand
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -2331,10 +2418,12 @@ B_PercussionMusicVoice = {                                                     %
 
         cs''!8                                                                 %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [B PercussionMusicVoice measure 103 / measure 15]                        %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -2351,7 +2440,9 @@ B_PercussionMusicVoice = {                                                     %
 
         cs''!4                                                                 %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 10/7 {                                                              %! silver_points
 
@@ -2369,10 +2460,12 @@ B_PercussionMusicVoice = {                                                     %
 
         cs''!4                                                                 %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [B PercussionMusicVoice measure 105 / measure 17]                        %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -2389,7 +2482,9 @@ B_PercussionMusicVoice = {                                                     %
 
         cs''!4                                                                 %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -2406,10 +2501,12 @@ B_PercussionMusicVoice = {                                                     %
 
         cs''!8                                                                 %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [B PercussionMusicVoice measure 107 / measure 19]                        %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PercussionMusicVoice measure 108 / measure 20]                    %! _comment_measure_numbers
@@ -2425,7 +2522,9 @@ B_PercussionMusicVoice = {                                                     %
         cs''!8                                                                 %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2445,6 +2544,7 @@ B_PercussionMusicVoice = {                                                     %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! silver_points
 
     % [B PercussionMusicVoice measure 109 / measure 21]                        %! _comment_measure_numbers
@@ -2503,6 +2603,7 @@ B_PercussionMusicVoice = {                                                     %
     R1 * 3/4                                                                   %! _make_measure_silences
     \revert Staff.BarLine.bar-extent                                           %! -PARTS:baca_bar_extent_zero:OverrideCommand(2)
     \once \override Staff.BarLine.bar-extent = #'(0 . 0)                       %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PercussionMusicVoice measure 116 / measure 28]                    %! _comment_measure_numbers
@@ -2530,7 +2631,9 @@ B_PercussionMusicVoice = {                                                     %
         ]                                                                      %! silver_points
 
         cs''!4                                                                 %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r16                                                                    %! silver_points
@@ -2544,10 +2647,12 @@ B_PercussionMusicVoice = {                                                     %
         r8                                                                     %! silver_points
 
         cs''!8                                                                 %! silver_points
+
     }                                                                          %! silver_points
 
     % [B PercussionMusicVoice measure 117 / measure 29]                        %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! silver_points
 
         % [B PercussionMusicVoice measure 118 / measure 30]                    %! _comment_measure_numbers
@@ -2560,7 +2665,9 @@ B_PercussionMusicVoice = {                                                     %
 
         cs''!8                                                                 %! silver_points
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2574,10 +2681,12 @@ B_PercussionMusicVoice = {                                                     %
         r4                                                                     %! silver_points
 
         cs''!4                                                                 %! silver_points
+
     }                                                                          %! silver_points
 
     % [B PercussionMusicVoice measure 119 / measure 31]                        %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/5 {                                                               %! silver_points
 
@@ -2591,7 +2700,9 @@ B_PercussionMusicVoice = {                                                     %
         ]                                                                      %! silver_points
 
         cs''!4                                                                 %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2605,7 +2716,9 @@ B_PercussionMusicVoice = {                                                     %
         r4                                                                     %! silver_points
 
         cs''!4                                                                 %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 9/10 {                                                              %! silver_points
 
@@ -2617,7 +2730,9 @@ B_PercussionMusicVoice = {                                                     %
         cs''!4                                                                 %! silver_points
 
         cs''!2                                                                 %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2634,6 +2749,7 @@ B_PercussionMusicVoice = {                                                     %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! silver_points
 
     % [B PercussionMusicVoice measure 122 / measure 34]                        %! _comment_measure_numbers
@@ -2751,8 +2867,10 @@ B_PercussionMusicVoice = {                                                     %
 
 
 B_PercussionMusicStaff = {                                                     %! extern
+
     \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
     \B_PercussionMusicVoice                                                    %! extern
+
 }                                                                              %! extern
 
 
@@ -2883,6 +3001,7 @@ B_ViolinMusicVoice = {                                                         %
 
     % [B ViolinMusicVoice measure 109 / measure 21]                            %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -2913,7 +3032,9 @@ B_ViolinMusicVoice = {                                                         %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 5/6 {                                                               %! pizzicato_rhythm
 
@@ -2927,6 +3048,7 @@ B_ViolinMusicVoice = {                                                         %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     % [B ViolinMusicVoice measure 111 / measure 23]                            %! _comment_measure_numbers
@@ -2949,6 +3071,7 @@ B_ViolinMusicVoice = {                                                         %
     af''!4                                                                     %! pizzicato_rhythm
     ~
     \startTrillSpan
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 7/10 {                                                              %! pizzicato_rhythm
 
@@ -2961,7 +3084,9 @@ B_ViolinMusicVoice = {                                                         %
         b''2                                                                   %! pizzicato_rhythm
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \times 2/3 {                                                               %! pizzicato_rhythm
 
         % [B ViolinMusicVoice measure 113 / measure 25]                        %! _comment_measure_numbers
@@ -2970,7 +3095,9 @@ B_ViolinMusicVoice = {                                                         %
 
         b''4                                                                   %! pizzicato_rhythm
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -2982,6 +3109,7 @@ B_ViolinMusicVoice = {                                                         %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     cs''!4                                                                     %! pizzicato_rhythm
@@ -2994,6 +3122,7 @@ B_ViolinMusicVoice = {                                                         %
     ~
     \stopTrillSpan                                                             %! SpannerCommand
     \startTrillSpan
+
     \times 4/5 {                                                               %! pizzicato_rhythm
 
         % [B ViolinMusicVoice measure 114 / measure 26]                        %! _comment_measure_numbers
@@ -3011,7 +3140,9 @@ B_ViolinMusicVoice = {                                                         %
         af''!4                                                                 %! pizzicato_rhythm
         ~
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/5 {                                                               %! pizzicato_rhythm
 
@@ -3022,6 +3153,7 @@ B_ViolinMusicVoice = {                                                         %
         ~
         \stopTrillSpan                                                         %! SpannerCommand
         \startTrillSpan
+
     }                                                                          %! pizzicato_rhythm
 
     a''8                                                                       %! pizzicato_rhythm
@@ -3030,6 +3162,7 @@ B_ViolinMusicVoice = {                                                         %
     ~
     \stopTrillSpan                                                             %! SpannerCommand
     \startTrillSpan
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 6/7 {                                                               %! pizzicato_rhythm
 
@@ -3048,6 +3181,7 @@ B_ViolinMusicVoice = {                                                         %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! pizzicato_rhythm
 
     % [B ViolinMusicVoice measure 117 / measure 29]                            %! _comment_measure_numbers
@@ -3107,8 +3241,10 @@ B_ViolinMusicVoice = {                                                         %
 
 
 B_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \B_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -3151,6 +3287,7 @@ B_ViolaMusicVoice = {                                                          %
 
     % [B ViolaMusicVoice measure 93 / measure 5]                               %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 4/3 {                                                               %! single_division_tuplets
 
@@ -3167,10 +3304,12 @@ B_ViolaMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         dtqs!8                                                                 %! single_division_tuplets
+
     }                                                                          %! single_division_tuplets
 
     % [B ViolaMusicVoice measure 95 / measure 7]                               %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 7/5 {                                                               %! single_division_tuplets
 
@@ -3179,10 +3318,12 @@ B_ViolaMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         eqs!1                                                                  %! single_division_tuplets
+
     }                                                                          %! single_division_tuplets
 
     % [B ViolaMusicVoice measure 97 / measure 9]                               %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 4/3 {                                                               %! single_division_tuplets
 
@@ -3191,10 +3332,12 @@ B_ViolaMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         c4                                                                     %! single_division_tuplets
+
     }                                                                          %! single_division_tuplets
 
     % [B ViolaMusicVoice measure 99 / measure 11]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 7/5 {                                                               %! single_division_tuplets
 
@@ -3205,10 +3348,12 @@ B_ViolaMusicVoice = {                                                          %
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         e2                                                                     %! single_division_tuplets
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+
     }                                                                          %! single_division_tuplets
 
     % [B ViolaMusicVoice measure 101 / measure 13]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 7/6 {                                                               %! single_division_tuplets
 
@@ -3224,14 +3369,18 @@ B_ViolaMusicVoice = {                                                          %
         f4                                                                     %! single_division_tuplets
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
         % [B ViolaMusicVoice measure 103 / measure 15]                         %! _comment_measure_numbers
         f4                                                                     %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 8/5 {                                                               %! single_division_tuplets
 
@@ -3241,14 +3390,18 @@ B_ViolaMusicVoice = {                                                          %
 
         eqs!1                                                                  %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
         % [B ViolaMusicVoice measure 105 / measure 17]                         %! _comment_measure_numbers
         eqs!4                                                                  %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 4/3 {                                                               %! single_division_tuplets
 
@@ -3258,14 +3411,18 @@ B_ViolaMusicVoice = {                                                          %
 
         dqs!4                                                                  %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
         % [B ViolaMusicVoice measure 107 / measure 19]                         %! _comment_measure_numbers
         dqs!4                                                                  %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 6/5 {                                                               %! single_division_tuplets
 
@@ -3275,14 +3432,18 @@ B_ViolaMusicVoice = {                                                          %
 
         c2                                                                     %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
         % [B ViolaMusicVoice measure 109 / measure 21]                         %! _comment_measure_numbers
         c4                                                                     %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 4/3 {                                                               %! single_division_tuplets
 
@@ -3292,7 +3453,9 @@ B_ViolaMusicVoice = {                                                          %
 
         dqs!4                                                                  %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 5/4 {                                                               %! single_division_tuplets
 
@@ -3301,6 +3464,7 @@ B_ViolaMusicVoice = {                                                          %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! single_division_tuplets
 
     % [B ViolaMusicVoice measure 112 / measure 24]                             %! _comment_measure_numbers
@@ -3372,8 +3536,10 @@ B_ViolaMusicVoice = {                                                          %
 
 
 B_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \B_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -3416,6 +3582,7 @@ B_CelloMusicVoice = {                                                          %
 
     % [B CelloMusicVoice measure 93 / measure 5]                               %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 8/5 {                                                               %! single_division_tuplets
 
@@ -3429,10 +3596,12 @@ B_CelloMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         ctqs,!4                                                                %! single_division_tuplets
+
     }                                                                          %! single_division_tuplets
 
     % [B CelloMusicVoice measure 95 / measure 7]                               %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 7/6 {                                                               %! single_division_tuplets
 
@@ -3441,10 +3610,12 @@ B_CelloMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         dqs,!2                                                                 %! single_division_tuplets
+
     }                                                                          %! single_division_tuplets
 
     % [B CelloMusicVoice measure 97 / measure 9]                               %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 8/5 {                                                               %! single_division_tuplets
 
@@ -3453,10 +3624,12 @@ B_CelloMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         b,,2                                                                   %! single_division_tuplets
+
     }                                                                          %! single_division_tuplets
 
     % [B CelloMusicVoice measure 99 / measure 11]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 7/6 {                                                               %! single_division_tuplets
 
@@ -3467,10 +3640,12 @@ B_CelloMusicVoice = {                                                          %
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         d,4                                                                    %! single_division_tuplets
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+
     }                                                                          %! single_division_tuplets
 
     % [B CelloMusicVoice measure 101 / measure 13]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 7/5 {                                                               %! single_division_tuplets
 
@@ -3486,14 +3661,18 @@ B_CelloMusicVoice = {                                                          %
         e,2                                                                    %! single_division_tuplets
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
         % [B CelloMusicVoice measure 103 / measure 15]                         %! _comment_measure_numbers
         e,4                                                                    %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 4/3 {                                                               %! single_division_tuplets
 
@@ -3503,14 +3682,18 @@ B_CelloMusicVoice = {                                                          %
 
         dqs,!2                                                                 %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
         % [B CelloMusicVoice measure 105 / measure 17]                         %! _comment_measure_numbers
         dqs,!4                                                                 %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 8/5 {                                                               %! single_division_tuplets
 
@@ -3520,14 +3703,18 @@ B_CelloMusicVoice = {                                                          %
 
         cqs,!2                                                                 %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
         % [B CelloMusicVoice measure 107 / measure 19]                         %! _comment_measure_numbers
         cqs,!4                                                                 %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
@@ -3537,14 +3724,18 @@ B_CelloMusicVoice = {                                                          %
 
         b,,4                                                                   %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 1/1 {                                                               %! single_division_tuplets
 
         % [B CelloMusicVoice measure 109 / measure 21]                         %! _comment_measure_numbers
         b,,4                                                                   %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 8/5 {                                                               %! single_division_tuplets
 
@@ -3554,12 +3745,15 @@ B_CelloMusicVoice = {                                                          %
 
         dqs,!2                                                                 %! single_division_tuplets
         ~
+
     }                                                                          %! single_division_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
     \times 5/4 {                                                               %! single_division_tuplets
 
         % [B CelloMusicVoice measure 111 / measure 23]                         %! _comment_measure_numbers
         dqs,!2                                                                 %! single_division_tuplets
+
     }                                                                          %! single_division_tuplets
 
     % [B CelloMusicVoice measure 112 / measure 24]                             %! _comment_measure_numbers
@@ -3629,6 +3823,8 @@ B_CelloMusicVoice = {                                                          %
 
 
 B_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \B_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

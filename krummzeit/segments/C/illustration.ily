@@ -737,8 +737,10 @@ C_OboeMusicVoice = {                                                           %
 
 
 C_OboeMusicStaff = {                                                           %! extern
+
     \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
     \C_OboeMusicVoice                                                          %! extern
+
 }                                                                              %! extern
 
 
@@ -878,12 +880,15 @@ C_ClarinetMusicVoice = {                                                       %
 
 
 C_ClarinetMusicStaff = {                                                       %! extern
+
     \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
     \C_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
 C_PianoMusicVoice = {                                                          %! extern
+
     \times 2/3 {                                                               %! silver_points
 
         % [C PianoMusicVoice measure 133 / measure 1]                          %! _comment_measure_numbers
@@ -925,7 +930,9 @@ C_PianoMusicVoice = {                                                          %
         f''''8.                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         cs''''!8                                                               %! silver_points
@@ -944,10 +951,12 @@ C_PianoMusicVoice = {                                                          %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                       %! IndicatorCommand
         \ottava #0                                                             %! SpannerCommand
+
     }                                                                          %! silver_points
 
     % [C PianoMusicVoice measure 134 / measure 2]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! silver_points
 
         % [C PianoMusicVoice measure 135 / measure 3]                          %! _comment_measure_numbers
@@ -967,7 +976,9 @@ C_PianoMusicVoice = {                                                          %
         a'8.                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 6/7 {                                                               %! silver_points
 
@@ -988,10 +999,12 @@ C_PianoMusicVoice = {                                                          %
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
 
     % [C PianoMusicVoice measure 136 / measure 4]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! silver_points
 
         % [C PianoMusicVoice measure 137 / measure 5]                          %! _comment_measure_numbers
@@ -1016,7 +1029,9 @@ C_PianoMusicVoice = {                                                          %
 
         a4.                                                                    %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 10/7 {                                                              %! silver_points
 
@@ -1037,6 +1052,7 @@ C_PianoMusicVoice = {                                                          %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
 
     % [C PianoMusicVoice measure 138 / measure 6]                              %! _comment_measure_numbers
@@ -1256,8 +1272,10 @@ C_PianoMusicVoice = {                                                          %
 
 
 C_PianoMusicStaff = {                                                          %! extern
+
     \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
     \C_PianoMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -1539,8 +1557,10 @@ C_PercussionMusicVoice = {                                                     %
 
 
 C_PercussionMusicStaff = {                                                     %! extern
+
     \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
     \C_PercussionMusicVoice                                                    %! extern
+
 }                                                                              %! extern
 
 
@@ -1584,6 +1604,7 @@ C_ViolinMusicVoice = {                                                         %
 
     % [C ViolinMusicVoice measure 136 / measure 4]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 5/6 {                                                               %! silver_points
 
@@ -1611,7 +1632,9 @@ C_ViolinMusicVoice = {                                                         %
 
         bf'''!4                                                                %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -1632,10 +1655,12 @@ C_ViolinMusicVoice = {                                                         %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                       %! IndicatorCommand
         \ottava #0                                                             %! SpannerCommand
+
     }                                                                          %! silver_points
 
     % [C ViolinMusicVoice measure 138 / measure 6]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 5/6 {                                                               %! silver_points
 
@@ -1658,7 +1683,9 @@ C_ViolinMusicVoice = {                                                         %
 
         g''4                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -1678,10 +1705,12 @@ C_ViolinMusicVoice = {                                                         %
         e'4                                                                    %! silver_points
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [C ViolinMusicVoice measure 140 / measure 8]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 5/6 {                                                               %! silver_points
 
@@ -1704,7 +1733,9 @@ C_ViolinMusicVoice = {                                                         %
 
         bf'!4                                                                  %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
+
     \times 4/7 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -1727,6 +1758,7 @@ C_ViolinMusicVoice = {                                                         %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! silver_points
 
     % [C ViolinMusicVoice measure 142 / measure 10]                            %! _comment_measure_numbers
@@ -1773,8 +1805,10 @@ C_ViolinMusicVoice = {                                                         %
 
 
 C_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \C_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
@@ -1814,6 +1848,7 @@ C_ViolaMusicVoice = {                                                          %
 
     % [C ViolaMusicVoice measure 136 / measure 4]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! silver_points
 
         % [C ViolaMusicVoice measure 137 / measure 5]                          %! _comment_measure_numbers
@@ -1837,7 +1872,9 @@ C_ViolaMusicVoice = {                                                          %
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         - \tweak color #blue                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 7/4 {                                                               %! silver_points
 
@@ -1858,10 +1895,12 @@ C_ViolaMusicVoice = {                                                          %
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
         \ottava #0                                                             %! SpannerCommand
+
     }                                                                          %! silver_points
 
     % [C ViolaMusicVoice measure 138 / measure 6]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! silver_points
 
         % [C ViolaMusicVoice measure 139 / measure 7]                          %! _comment_measure_numbers
@@ -1873,7 +1912,9 @@ C_ViolaMusicVoice = {                                                          %
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #blue                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 7/4 {                                                               %! silver_points
 
@@ -1893,10 +1934,12 @@ C_ViolaMusicVoice = {                                                          %
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
 
     % [C ViolaMusicVoice measure 140 / measure 8]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \times 2/3 {                                                               %! silver_points
 
         % [C ViolaMusicVoice measure 141 / measure 9]                          %! _comment_measure_numbers
@@ -1915,7 +1958,9 @@ C_ViolaMusicVoice = {                                                          %
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #blue                                                   %! _treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+
     }                                                                          %! silver_points
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 7/4 {                                                               %! silver_points
 
@@ -1938,6 +1983,7 @@ C_ViolaMusicVoice = {                                                          %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! silver_points
 
     % [C ViolaMusicVoice measure 142 / measure 10]                             %! _comment_measure_numbers
@@ -1987,8 +2033,10 @@ C_ViolaMusicVoice = {                                                          %
 
 
 C_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \C_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -2028,6 +2076,7 @@ C_CelloMusicVoice = {                                                          %
 
     % [C CelloMusicVoice measure 136 / measure 4]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 7/4 {                                                               %! silver_points
 
@@ -2061,7 +2110,9 @@ C_CelloMusicVoice = {                                                          %
         d''8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 2/3 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2070,10 +2121,12 @@ C_CelloMusicVoice = {                                                          %
         d'4                                                                    %! silver_points
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [C CelloMusicVoice measure 138 / measure 6]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 7/4 {                                                               %! silver_points
 
@@ -2103,7 +2156,9 @@ C_CelloMusicVoice = {                                                          %
         f8                                                                     %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 2/3 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2112,10 +2167,12 @@ C_CelloMusicVoice = {                                                          %
         ef!4                                                                   %! silver_points
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! silver_points
 
     % [C CelloMusicVoice measure 140 / measure 8]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
     \times 7/4 {                                                               %! silver_points
 
@@ -2138,7 +2195,9 @@ C_CelloMusicVoice = {                                                          %
         cs!8                                                                   %! silver_points
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! silver_points
+
     }                                                                          %! silver_points
+
     \times 2/3 {                                                               %! silver_points
 
         r8                                                                     %! silver_points
@@ -2150,6 +2209,7 @@ C_CelloMusicVoice = {                                                          %
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! silver_points
 
     % [C CelloMusicVoice measure 142 / measure 10]                             %! _comment_measure_numbers
@@ -2196,6 +2256,8 @@ C_CelloMusicVoice = {                                                          %
 
 
 C_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \C_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

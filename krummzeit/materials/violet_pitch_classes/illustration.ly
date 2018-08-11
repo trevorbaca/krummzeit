@@ -1,28 +1,28 @@
-\version "2.19.82"
-\language "english"
+\version "2.19.82"                                                                       %! LilyPondFile
+\language "english"                                                                      %! LilyPondFile
 
-\include "/Users/trevorbaca/baca/lilypond/baca.ily"
+\include "/Users/trevorbaca/baca/lilypond/baca.ily"                                      %! LilyPondFile
 
-#(set-global-staff-size 16)
+#(set-global-staff-size 16)                                                              %! LilyPondFile
 
-\header {
+\header {                                                                                %! LilyPondFile
     tagline = ##f
-}
+}                                                                                        %! LilyPondFile
 
-\layout {
+\layout {                                                                                %! LilyPondFile
     \accidentalStyle dodecaphonic
     indent = #0
     line-width = #287.5
     ragged-right = ##t
-}
+}                                                                                        %! LilyPondFile
 
-\paper {
+\paper {                                                                                 %! LilyPondFile
     markup-system-spacing.padding = 8
     system-system-spacing.padding = 10
     top-markup-spacing.padding = 4
-}
+}                                                                                        %! LilyPondFile
 
-\score {
+\score {                                                                                 %! LilyPondFile
     \new Score
     \with
     {
@@ -105,11 +105,11 @@
                 fs'8
                 f'8
                 c'8
-                \abjad-color-music "red"
+                \abjad-color-music #'red
                 b'8
                 \stopGroup
                 s8
-                \abjad-color-music "red"
+                \abjad-color-music #'red
                 b'8
                 ^ \markup { 6 }
                 \startGroup
@@ -221,11 +221,11 @@
                 fs'8
                 af'8
                 g'8
-                \abjad-color-music "blue"
+                \abjad-color-music #'blue
                 f'8
                 \stopGroup
                 s8
-                \abjad-color-music "blue"
+                \abjad-color-music #'blue
                 f'8
                 ^ \markup { 20 }
                 \startGroup
@@ -410,12 +410,12 @@
                 af'8
                 g'8
                 f'8
-                \abjad-color-music "red"
+                \abjad-color-music #'red
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad-color-music "red"
+                \abjad-color-music #'red
                 e'8
                 ^ \markup { 42 }
                 \startGroup
@@ -464,12 +464,12 @@
                 fs'8
                 ^ \markup { 48 }
                 \startGroup
-                \abjad-color-music "blue"
+                \abjad-color-music #'blue
                 f'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad-color-music "blue"
+                \abjad-color-music #'blue
                 f'8
                 ^ \markup { 49 }
                 \startGroup
@@ -1014,12 +1014,12 @@
                 af'8
                 g'8
                 f'8
-                \abjad-color-music "red"
+                \abjad-color-music #'red
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad-color-music "red"
+                \abjad-color-music #'red
                 e'8
                 ^ \markup { 112 }
                 \startGroup
@@ -1096,12 +1096,12 @@
                 ^ \markup { 120 }
                 \startGroup
                 \startGroup
-                \abjad-color-music "blue"
+                \abjad-color-music #'blue
                 b'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad-color-music "blue"
+                \abjad-color-music #'blue
                 b'8
                 ^ \markup { 121 }
                 \startGroup
@@ -1267,4 +1267,4 @@
             }
         }
     >>
-}
+}                                                                                        %! LilyPondFile

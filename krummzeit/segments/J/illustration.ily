@@ -893,8 +893,10 @@ J_OboeMusicVoice = {                                                           %
 
 
 J_OboeMusicStaff = {                                                           %! extern
+
     \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
     \J_OboeMusicVoice                                                          %! extern
+
 }                                                                              %! extern
 
 
@@ -1174,8 +1176,10 @@ J_ClarinetMusicVoice = {                                                       %
 
 
 J_ClarinetMusicStaff = {                                                       %! extern
+
     \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
     \J_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
@@ -1545,8 +1549,10 @@ J_PianoMusicVoice = {                                                          %
 
 
 J_PianoMusicStaff = {                                                          %! extern
+
     \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
     \J_PianoMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -1922,12 +1928,15 @@ J_PercussionMusicVoice = {                                                     %
 
 
 J_PercussionMusicStaff = {                                                     %! extern
+
     \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
     \J_PercussionMusicVoice                                                    %! extern
+
 }                                                                              %! extern
 
 
 J_ViolinMusicVoice = {                                                         %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
@@ -1970,20 +1979,26 @@ J_ViolinMusicVoice = {                                                         %
 
         cs'''!4                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 315 / measure 2]                         %! _comment_measure_numbers
         r4
+
     }                                                                          %! closing_pizzicati
+
     \times 4/5 {                                                               %! closing_pizzicati
 
         r2
 
         e'''2.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 316 / measure 3]                         %! _comment_measure_numbers
@@ -1993,13 +2008,17 @@ J_ViolinMusicVoice = {                                                         %
 
         ef'''!4                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 317 / measure 4]                         %! _comment_measure_numbers
         r2
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
 
@@ -2011,7 +2030,9 @@ J_ViolinMusicVoice = {                                                         %
 
         e'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 3/5 {                                                               %! closing_pizzicati
 
@@ -2026,12 +2047,16 @@ J_ViolinMusicVoice = {                                                         %
 
         e'''2                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         r2
+
     }                                                                          %! closing_pizzicati
+
     \times 4/5 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 320 / measure 7]                         %! _comment_measure_numbers
@@ -2039,13 +2064,17 @@ J_ViolinMusicVoice = {                                                         %
 
         ef'''!4                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 321 / measure 8]                         %! _comment_measure_numbers
         r2
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/9 {                                                               %! closing_pizzicati
 
@@ -2056,7 +2085,9 @@ J_ViolinMusicVoice = {                                                         %
 
         f'''1                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
 
@@ -2065,7 +2096,9 @@ J_ViolinMusicVoice = {                                                         %
 
         cs'''!2                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 324 / measure 11]                        %! _comment_measure_numbers
@@ -2074,26 +2107,34 @@ J_ViolinMusicVoice = {                                                         %
 
         e'''2                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 325 / measure 12]                        %! _comment_measure_numbers
         r2
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 326 / measure 13]                        %! _comment_measure_numbers
         f'''1.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 327 / measure 14]                        %! _comment_measure_numbers
         r4
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
@@ -2101,7 +2142,9 @@ J_ViolinMusicVoice = {                                                         %
 
         g'''2.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 328 / measure 15]                        %! _comment_measure_numbers
@@ -2112,7 +2155,9 @@ J_ViolinMusicVoice = {                                                         %
 
         ef'''!4                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
@@ -2121,7 +2166,9 @@ J_ViolinMusicVoice = {                                                         %
 
         f'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
@@ -2131,7 +2178,9 @@ J_ViolinMusicVoice = {                                                         %
 
         d'''1.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 3/4 {                                                               %! closing_pizzicati
 
@@ -2140,25 +2189,33 @@ J_ViolinMusicVoice = {                                                         %
 
         e'''2                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         r2
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 332 / measure 19]                        %! _comment_measure_numbers
         r1
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 333 / measure 20]                        %! _comment_measure_numbers
         f'''2                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
@@ -2167,7 +2224,9 @@ J_ViolinMusicVoice = {                                                         %
 
         g'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
@@ -2179,7 +2238,9 @@ J_ViolinMusicVoice = {                                                         %
 
         ef'''!2                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \times 4/5 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 336 / measure 23]                        %! _comment_measure_numbers
@@ -2187,13 +2248,17 @@ J_ViolinMusicVoice = {                                                         %
 
         f'''2.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 337 / measure 24]                        %! _comment_measure_numbers
         r2
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/9 {                                                               %! closing_pizzicati
 
@@ -2205,13 +2270,17 @@ J_ViolinMusicVoice = {                                                         %
 
         d'''2                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 339 / measure 26]                        %! _comment_measure_numbers
         r4
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         r4
@@ -2227,12 +2296,16 @@ J_ViolinMusicVoice = {                                                         %
 
         e'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 340 / measure 27]                        %! _comment_measure_numbers
         r1.
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 341 / measure 28]                        %! _comment_measure_numbers
@@ -2240,7 +2313,9 @@ J_ViolinMusicVoice = {                                                         %
 
         ef'''!2                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
@@ -2249,18 +2324,24 @@ J_ViolinMusicVoice = {                                                         %
 
         f'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 3/4 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 343 / measure 30]                        %! _comment_measure_numbers
         r1
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         r2
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 344 / measure 31]                        %! _comment_measure_numbers
@@ -2271,7 +2352,9 @@ J_ViolinMusicVoice = {                                                         %
 
         d'''2.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
@@ -2280,7 +2363,9 @@ J_ViolinMusicVoice = {                                                         %
 
         e'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
 
@@ -2289,7 +2374,9 @@ J_ViolinMusicVoice = {                                                         %
 
         f'''2.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
@@ -2300,7 +2387,9 @@ J_ViolinMusicVoice = {                                                         %
 
         g'''2                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
@@ -2309,13 +2398,17 @@ J_ViolinMusicVoice = {                                                         %
 
         e'''2                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 349 / measure 36]                        %! _comment_measure_numbers
         r2
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
@@ -2331,25 +2424,33 @@ J_ViolinMusicVoice = {                                                         %
 
         d'''2.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 351 / measure 38]                        %! _comment_measure_numbers
         r4
+
     }                                                                          %! closing_pizzicati
+
     \times 4/5 {                                                               %! closing_pizzicati
 
         r1
 
         e'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         % [J ViolinMusicVoice measure 352 / measure 39]                        %! _comment_measure_numbers
         r1.
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
@@ -2360,6 +2461,7 @@ J_ViolinMusicVoice = {                                                         %
         - \staccatissimo                                                       %! IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+
     }                                                                          %! closing_pizzicati
 
     % [J ViolinMusicVoice measure 354 / measure 41]                            %! _comment_measure_numbers
@@ -2390,12 +2492,15 @@ J_ViolinMusicVoice = {                                                         %
 
 
 J_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \J_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
 J_ViolaMusicVoice = {                                                          %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/8 {                                                               %! closing_pizzicati
 
@@ -2428,14 +2533,18 @@ J_ViolaMusicVoice = {                                                          %
                 Va.                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'DeepPink4)                   %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
         % [J ViolaMusicVoice measure 315 / measure 2]                          %! _comment_measure_numbers
         d'''2.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
@@ -2443,7 +2552,9 @@ J_ViolaMusicVoice = {                                                          %
 
         f'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \times 4/7 {                                                               %! closing_pizzicati
 
         % [J ViolaMusicVoice measure 316 / measure 3]                          %! _comment_measure_numbers
@@ -2457,12 +2568,15 @@ J_ViolaMusicVoice = {                                                          %
 
         f'''4                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
+
     \times 2/3 {                                                               %! closing_pizzicati
 
         % [J ViolaMusicVoice measure 317 / measure 4]                          %! _comment_measure_numbers
         cs'''!2.                                                               %! closing_pizzicati
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! closing_pizzicati
 
     % [J ViolaMusicVoice measure 318 / measure 5]                              %! _comment_measure_numbers
@@ -2603,8 +2717,10 @@ J_ViolaMusicVoice = {                                                          %
 
 
 J_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \J_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -2929,6 +3045,8 @@ J_CelloMusicVoice = {                                                          %
 
 
 J_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \J_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

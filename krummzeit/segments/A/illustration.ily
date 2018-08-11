@@ -1731,6 +1731,7 @@ A_OboeMusicVoice = {                                                           %
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+
     \times 2/3 {                                                               %! polyphony
 
         e'4                                                                    %! polyphony
@@ -1742,9 +1743,11 @@ A_OboeMusicVoice = {                                                           %
         c'4                                                                    %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     c'4                                                                        %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
@@ -1780,7 +1783,9 @@ A_OboeMusicVoice = {                                                           %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 37 / measure 24]                           %! _comment_measure_numbers
@@ -1792,6 +1797,7 @@ A_OboeMusicVoice = {                                                           %
         c'4                                                                    %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     c'4                                                                        %! polyphony
@@ -1799,6 +1805,7 @@ A_OboeMusicVoice = {                                                           %
     % [A OboeMusicVoice measure 38 / measure 25]                               %! _comment_measure_numbers
     fs'!4                                                                      %! polyphony
     - \staccato                                                                %! IndicatorCommand
+
     \times 8/12 {                                                              %! polyphony
 
         b'16                                                                   %! polyphony
@@ -1839,9 +1846,11 @@ A_OboeMusicVoice = {                                                           %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     af'!4                                                                      %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 39 / measure 26]                           %! _comment_measure_numbers
@@ -1854,10 +1863,12 @@ A_OboeMusicVoice = {                                                           %
         af'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     af'!4.                                                                     %! polyphony
     ~
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
@@ -1892,7 +1903,9 @@ A_OboeMusicVoice = {                                                           %
         c''16                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         cs''!4                                                                 %! polyphony
@@ -1903,7 +1916,9 @@ A_OboeMusicVoice = {                                                           %
 
         g'4                                                                    %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 41 / measure 28]                           %! _comment_measure_numbers
@@ -1916,6 +1931,7 @@ A_OboeMusicVoice = {                                                           %
         c''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     c''4                                                                       %! polyphony
@@ -1940,6 +1956,7 @@ A_OboeMusicVoice = {                                                           %
     % [A OboeMusicVoice measure 42 / measure 29]                               %! _comment_measure_numbers
     b'4                                                                        %! polyphony
     ~
+
     \times 2/3 {                                                               %! polyphony
 
         b'4                                                                    %! polyphony
@@ -1949,10 +1966,12 @@ A_OboeMusicVoice = {                                                           %
 
         fs'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     ef''!4.                                                                    %! polyphony
     - \staccato                                                                %! IndicatorCommand
+
     \times 8/12 {                                                              %! polyphony
 
         a'16                                                                   %! polyphony
@@ -1996,12 +2015,14 @@ A_OboeMusicVoice = {                                                           %
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!4.                                                                    %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+
     \times 2/3 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 43 / measure 30]                           %! _comment_measure_numbers
@@ -2017,10 +2038,12 @@ A_OboeMusicVoice = {                                                           %
         e''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     e''4                                                                       %! polyphony
     ~
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
@@ -2055,7 +2078,9 @@ A_OboeMusicVoice = {                                                           %
         af''!16                                                                %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -2067,7 +2092,9 @@ A_OboeMusicVoice = {                                                           %
 
         bf'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -2087,10 +2114,12 @@ A_OboeMusicVoice = {                                                           %
         bf'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     % [A OboeMusicVoice measure 46 / measure 33]                               %! _comment_measure_numbers
     bf'!4                                                                      %! polyphony
+
     \times 8/12 {                                                              %! polyphony
 
         fs''!16                                                                %! polyphony
@@ -2131,10 +2160,12 @@ A_OboeMusicVoice = {                                                           %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     a''4.                                                                      %! polyphony
     ~
+
     \times 2/3 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 47 / measure 34]                           %! _comment_measure_numbers
@@ -2145,10 +2176,12 @@ A_OboeMusicVoice = {                                                           %
 
         af''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     e''4.                                                                      %! polyphony
     - \staccato                                                                %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
@@ -2184,7 +2217,9 @@ A_OboeMusicVoice = {                                                           %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 48 / measure 35]                           %! _comment_measure_numbers
@@ -2195,7 +2230,9 @@ A_OboeMusicVoice = {                                                           %
 
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 49 / measure 36]                           %! _comment_measure_numbers
@@ -2208,6 +2245,7 @@ A_OboeMusicVoice = {                                                           %
         c''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     c''4                                                                       %! polyphony
@@ -2232,6 +2270,7 @@ A_OboeMusicVoice = {                                                           %
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         fs''!4                                                                 %! polyphony
@@ -2242,6 +2281,7 @@ A_OboeMusicVoice = {                                                           %
 
         a''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     % [A OboeMusicVoice measure 51 / measure 38]                               %! _comment_measure_numbers
@@ -2362,8 +2402,10 @@ A_OboeMusicVoice = {                                                           %
 
 
 A_OboeMusicStaff = {                                                           %! extern
+
     \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
     \A_OboeMusicVoice                                                          %! extern
+
 }                                                                              %! extern
 
 
@@ -2471,6 +2513,7 @@ A_ClarinetMusicVoice = {                                                       %
                         }                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
                 }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
+
     \times 2/3 {                                                               %! polyphony
 
         fs''!4                                                                 %! polyphony
@@ -2482,6 +2525,7 @@ A_ClarinetMusicVoice = {                                                       %
         gs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     gs''!4                                                                     %! polyphony
@@ -2500,6 +2544,7 @@ A_ClarinetMusicVoice = {                                                       %
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ClarinetMusicVoice measure 19 / measure 6]                        %! _comment_measure_numbers
@@ -2511,6 +2556,7 @@ A_ClarinetMusicVoice = {                                                       %
         c''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     c''4                                                                       %! polyphony
@@ -2538,6 +2584,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     % [A ClarinetMusicVoice measure 20 / measure 7]                            %! _comment_measure_numbers
     c''4                                                                       %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         e''4                                                                   %! polyphony
@@ -2549,6 +2596,7 @@ A_ClarinetMusicVoice = {                                                       %
         a''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 21 / measure 8]                            %! _comment_measure_numbers
@@ -2570,6 +2618,7 @@ A_ClarinetMusicVoice = {                                                       %
     gs''!16.                                                                   %! polyphony
     - \staccato                                                                %! IndicatorCommand
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         ds''!4                                                                 %! polyphony
@@ -2580,6 +2629,7 @@ A_ClarinetMusicVoice = {                                                       %
 
         f''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     c''4.                                                                      %! polyphony
@@ -2608,6 +2658,7 @@ A_ClarinetMusicVoice = {                                                       %
     ~
 
     cs''!4                                                                     %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/4 {                                                               %! polyphony
 
@@ -2617,6 +2668,7 @@ A_ClarinetMusicVoice = {                                                       %
 
         e''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 24 / measure 11]                           %! _comment_measure_numbers
@@ -2628,6 +2680,7 @@ A_ClarinetMusicVoice = {                                                       %
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         f''4                                                                   %! polyphony
@@ -2637,6 +2690,7 @@ A_ClarinetMusicVoice = {                                                       %
 
         d''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     as'!4                                                                      %! polyphony
@@ -2659,6 +2713,7 @@ A_ClarinetMusicVoice = {                                                       %
     d''4.                                                                      %! polyphony
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                %! IndicatorCommand
+
     \times 2/3 {                                                               %! polyphony
 
         g''4                                                                   %! polyphony
@@ -2670,6 +2725,7 @@ A_ClarinetMusicVoice = {                                                       %
         a'4                                                                    %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     a'4                                                                        %! polyphony
@@ -2688,6 +2744,7 @@ A_ClarinetMusicVoice = {                                                       %
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ClarinetMusicVoice measure 30 / measure 17]                       %! _comment_measure_numbers
@@ -2702,6 +2759,7 @@ A_ClarinetMusicVoice = {                                                       %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
+
     }                                                                          %! polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
@@ -2735,6 +2793,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     % [A ClarinetMusicVoice measure 31 / measure 18]                           %! _comment_measure_numbers
     cs''!4                                                                     %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         f''4                                                                   %! polyphony
@@ -2746,6 +2805,7 @@ A_ClarinetMusicVoice = {                                                       %
         as'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 32 / measure 19]                           %! _comment_measure_numbers
@@ -2767,6 +2827,7 @@ A_ClarinetMusicVoice = {                                                       %
     a'16.                                                                      %! polyphony
     - \staccato                                                                %! IndicatorCommand
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         e''4                                                                   %! polyphony
@@ -2777,6 +2838,7 @@ A_ClarinetMusicVoice = {                                                       %
 
         fs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     cs''!4.                                                                    %! polyphony
@@ -2805,6 +2867,7 @@ A_ClarinetMusicVoice = {                                                       %
     ~
 
     d''4                                                                       %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/4 {                                                               %! polyphony
 
@@ -2820,6 +2883,7 @@ A_ClarinetMusicVoice = {                                                       %
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 35 / measure 22]                           %! _comment_measure_numbers
@@ -2831,6 +2895,7 @@ A_ClarinetMusicVoice = {                                                       %
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         fs''!4                                                                 %! polyphony
@@ -2840,6 +2905,7 @@ A_ClarinetMusicVoice = {                                                       %
 
         a''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
@@ -2884,6 +2950,7 @@ A_ClarinetMusicVoice = {                                                       %
     c'16.                                                                      %! polyphony
     - \staccato                                                                %! IndicatorCommand
     ]                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -2895,6 +2962,7 @@ A_ClarinetMusicVoice = {                                                       %
 
         as!4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 37 / measure 24]                           %! _comment_measure_numbers
@@ -2940,6 +3008,7 @@ A_ClarinetMusicVoice = {                                                       %
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/9 {                                                               %! polyphony
 
@@ -2975,7 +3044,9 @@ A_ClarinetMusicVoice = {                                                       %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ClarinetMusicVoice measure 40 / measure 27]                       %! _comment_measure_numbers
@@ -2986,6 +3057,7 @@ A_ClarinetMusicVoice = {                                                       %
 
         gs'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     f'4.                                                                       %! polyphony
@@ -2995,6 +3067,7 @@ A_ClarinetMusicVoice = {                                                       %
     % [A ClarinetMusicVoice measure 41 / measure 28]                           %! _comment_measure_numbers
     f'4.                                                                       %! polyphony
     ~
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/9 {                                                               %! polyphony
 
@@ -3027,7 +3100,9 @@ A_ClarinetMusicVoice = {                                                       %
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ClarinetMusicVoice measure 42 / measure 29]                       %! _comment_measure_numbers
@@ -3042,6 +3117,7 @@ A_ClarinetMusicVoice = {                                                       %
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
@@ -3110,6 +3186,7 @@ A_ClarinetMusicVoice = {                                                       %
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         gs''!4                                                                 %! polyphony
@@ -3125,6 +3202,7 @@ A_ClarinetMusicVoice = {                                                       %
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 45 / measure 32]                           %! _comment_measure_numbers
@@ -3173,6 +3251,7 @@ A_ClarinetMusicVoice = {                                                       %
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         e''4                                                                   %! polyphony
@@ -3183,7 +3262,9 @@ A_ClarinetMusicVoice = {                                                       %
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ClarinetMusicVoice measure 48 / measure 35]                       %! _comment_measure_numbers
@@ -3194,6 +3275,7 @@ A_ClarinetMusicVoice = {                                                       %
 
         c''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 49 / measure 36]                           %! _comment_measure_numbers
@@ -3370,12 +3452,15 @@ A_ClarinetMusicVoice = {                                                       %
 
 
 A_ClarinetMusicStaff = {                                                       %! extern
+
     \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
     \A_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
 A_PianoMusicVoice = {                                                          %! extern
+
     \times 4/7 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 14 / measure 1]                           %! _comment_measure_numbers
@@ -3420,7 +3505,9 @@ A_PianoMusicVoice = {                                                          %
 
         ef''!8                                                                 %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         f'''8                                                                  %! polyphony
@@ -3431,6 +3518,7 @@ A_PianoMusicVoice = {                                                          %
         g''8                                                                   %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 15 / measure 2]                               %! _comment_measure_numbers
@@ -3438,6 +3526,7 @@ A_PianoMusicVoice = {                                                          %
 
     a''4.                                                                      %! polyphony
     ~
+
     \times 4/7 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 16 / measure 3]                           %! _comment_measure_numbers
@@ -3457,7 +3546,9 @@ A_PianoMusicVoice = {                                                          %
         f'8                                                                    %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         f'8                                                                    %! polyphony
@@ -3467,6 +3558,7 @@ A_PianoMusicVoice = {                                                          %
 
         af''!8                                                                 %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     a''8                                                                       %! polyphony
@@ -3484,6 +3576,7 @@ A_PianoMusicVoice = {                                                          %
     g''8                                                                       %! polyphony
     ~
     ]                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -3492,7 +3585,9 @@ A_PianoMusicVoice = {                                                          %
         cs''!4                                                                 %! polyphony
 
         ef''!4                                                                 %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 18 / measure 5]                           %! _comment_measure_numbers
@@ -3502,6 +3597,7 @@ A_PianoMusicVoice = {                                                          %
 
         af''!4                                                                 %! polyphony
         ~
+
     }                                                                          %! polyphony
 
     af''!8                                                                     %! polyphony
@@ -3512,6 +3608,7 @@ A_PianoMusicVoice = {                                                          %
     g''8                                                                       %! polyphony
     ~
     ]                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/9 {                                                               %! polyphony
 
@@ -3534,6 +3631,7 @@ A_PianoMusicVoice = {                                                          %
 
         cs'''!8                                                                %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 19 / measure 6]                               %! _comment_measure_numbers
@@ -3544,6 +3642,7 @@ A_PianoMusicVoice = {                                                          %
 
     g''8                                                                       %! polyphony
     ]                                                                          %! polyphony
+
     \times 4/5 {                                                               %! polyphony
 
         bf''!8                                                                 %! polyphony
@@ -3558,9 +3657,11 @@ A_PianoMusicVoice = {                                                          %
         f'''8                                                                  %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     f'''4                                                                      %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/4 {                                                               %! polyphony
 
@@ -3568,7 +3669,9 @@ A_PianoMusicVoice = {                                                          %
 
         c'''4                                                                  %! polyphony
         ~
+
     }                                                                          %! polyphony
+
     \times 4/7 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 20 / measure 7]                           %! _comment_measure_numbers
@@ -3588,7 +3691,9 @@ A_PianoMusicVoice = {                                                          %
         bf'!8                                                                  %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         bf'!8                                                                  %! polyphony
@@ -3598,6 +3703,7 @@ A_PianoMusicVoice = {                                                          %
 
         ef''!8                                                                 %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 21 / measure 8]                               %! _comment_measure_numbers
@@ -3619,6 +3725,7 @@ A_PianoMusicVoice = {                                                          %
     ]                                                                          %! polyphony
 
     ef''!4.                                                                    %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -3628,6 +3735,7 @@ A_PianoMusicVoice = {                                                          %
 
         b''4                                                                   %! polyphony
         ~
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 22 / measure 9]                               %! _comment_measure_numbers
@@ -3651,6 +3759,7 @@ A_PianoMusicVoice = {                                                          %
 
     f'16.                                                                      %! polyphony
     ]                                                                          %! polyphony
+
     \times 4/7 {                                                               %! polyphony
 
         fs''!8                                                                 %! polyphony
@@ -3668,6 +3777,7 @@ A_PianoMusicVoice = {                                                          %
 
         ef'''!8                                                                %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 23 / measure 10]                              %! _comment_measure_numbers
@@ -3689,6 +3799,7 @@ A_PianoMusicVoice = {                                                          %
 
     bf''!4                                                                     %! polyphony
     ~
+
     \times 2/3 {                                                               %! polyphony
 
         bf''!8                                                                 %! polyphony
@@ -3699,7 +3810,9 @@ A_PianoMusicVoice = {                                                          %
         g''8                                                                   %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         g''8                                                                   %! polyphony
@@ -3712,7 +3825,9 @@ A_PianoMusicVoice = {                                                          %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 4/7 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 25 / measure 12]                          %! _comment_measure_numbers
@@ -3734,7 +3849,9 @@ A_PianoMusicVoice = {                                                          %
 
         e'8                                                                    %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         fs''!8                                                                 %! polyphony
@@ -3745,6 +3862,7 @@ A_PianoMusicVoice = {                                                          %
         af''!8                                                                 %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 26 / measure 13]                              %! _comment_measure_numbers
@@ -3752,6 +3870,7 @@ A_PianoMusicVoice = {                                                          %
 
     bf''!4.                                                                    %! polyphony
     ~
+
     \times 4/7 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 27 / measure 14]                          %! _comment_measure_numbers
@@ -3771,7 +3890,9 @@ A_PianoMusicVoice = {                                                          %
         fs''!8                                                                 %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         fs''!8                                                                 %! polyphony
@@ -3781,6 +3902,7 @@ A_PianoMusicVoice = {                                                          %
 
         a''8                                                                   %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     bf'!8                                                                      %! polyphony
@@ -3798,6 +3920,7 @@ A_PianoMusicVoice = {                                                          %
     af''!8                                                                     %! polyphony
     ~
     ]                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -3806,7 +3929,9 @@ A_PianoMusicVoice = {                                                          %
         d''4                                                                   %! polyphony
 
         e'4                                                                    %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 29 / measure 16]                          %! _comment_measure_numbers
@@ -3816,6 +3941,7 @@ A_PianoMusicVoice = {                                                          %
 
         a''4                                                                   %! polyphony
         ~
+
     }                                                                          %! polyphony
 
     a''8                                                                       %! polyphony
@@ -3826,6 +3952,7 @@ A_PianoMusicVoice = {                                                          %
     af''!8                                                                     %! polyphony
     ~
     ]                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/9 {                                                               %! polyphony
 
@@ -3848,6 +3975,7 @@ A_PianoMusicVoice = {                                                          %
 
         d''8                                                                   %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 30 / measure 17]                              %! _comment_measure_numbers
@@ -3858,6 +3986,7 @@ A_PianoMusicVoice = {                                                          %
 
     af''!8                                                                     %! polyphony
     ]                                                                          %! polyphony
+
     \times 4/5 {                                                               %! polyphony
 
         b''8                                                                   %! polyphony
@@ -3872,9 +4001,11 @@ A_PianoMusicVoice = {                                                          %
         fs''!8                                                                 %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     fs''!4                                                                     %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/4 {                                                               %! polyphony
 
@@ -3882,7 +4013,9 @@ A_PianoMusicVoice = {                                                          %
 
         cs''!4                                                                 %! polyphony
         ~
+
     }                                                                          %! polyphony
+
     \times 4/7 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 31 / measure 18]                          %! _comment_measure_numbers
@@ -3902,7 +4035,9 @@ A_PianoMusicVoice = {                                                          %
         b''8                                                                   %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         b''8                                                                   %! polyphony
@@ -3912,6 +4047,7 @@ A_PianoMusicVoice = {                                                          %
 
         e'8                                                                    %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 32 / measure 19]                              %! _comment_measure_numbers
@@ -3939,6 +4075,7 @@ A_PianoMusicVoice = {                                                          %
     e'4.                                                                       %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -3951,6 +4088,7 @@ A_PianoMusicVoice = {                                                          %
 
         c''4                                                                   %! polyphony
         ~
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 33 / measure 20]                              %! _comment_measure_numbers
@@ -3974,6 +4112,7 @@ A_PianoMusicVoice = {                                                          %
 
     fs''!16.                                                                   %! polyphony
     ]                                                                          %! polyphony
+
     \times 4/7 {                                                               %! polyphony
 
         g''8                                                                   %! polyphony
@@ -3994,6 +4133,7 @@ A_PianoMusicVoice = {                                                          %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 34 / measure 21]                              %! _comment_measure_numbers
@@ -4050,6 +4190,7 @@ A_PianoMusicVoice = {                                                          %
 
     bf!8                                                                       %! polyphony
     ~
+
     \times 4/7 {                                                               %! polyphony
 
         bf!16                                                                  %! polyphony
@@ -4068,6 +4209,7 @@ A_PianoMusicVoice = {                                                          %
         cs'!16                                                                 %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     cs'!32.                                                                    %! polyphony
@@ -4101,6 +4243,7 @@ A_PianoMusicVoice = {                                                          %
     af!32.                                                                     %! polyphony
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         af!8                                                                   %! polyphony
@@ -4110,6 +4253,7 @@ A_PianoMusicVoice = {                                                          %
 
         af!8                                                                   %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     c'8                                                                        %! polyphony
@@ -4134,6 +4278,7 @@ A_PianoMusicVoice = {                                                          %
 
     e'16                                                                       %! polyphony
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         cs'!16                                                                 %! polyphony
@@ -4143,7 +4288,9 @@ A_PianoMusicVoice = {                                                          %
 
         af!16                                                                  %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 4/5 {                                                               %! polyphony
 
         bf!16                                                                  %! polyphony
@@ -4158,12 +4305,14 @@ A_PianoMusicVoice = {                                                          %
         d'16                                                                   %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     d'8.                                                                       %! polyphony
 
     b8.                                                                        %! polyphony
     ~
+
     \times 2/3 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 39 / measure 26]                          %! _comment_measure_numbers
@@ -4175,7 +4324,9 @@ A_PianoMusicVoice = {                                                          %
         cs'!16                                                                 %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 4/5 {                                                               %! polyphony
 
         cs'!16                                                                 %! polyphony
@@ -4189,6 +4340,7 @@ A_PianoMusicVoice = {                                                          %
 
         g16                                                                    %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     cs'!16                                                                     %! polyphony
@@ -4198,6 +4350,7 @@ A_PianoMusicVoice = {                                                          %
 
     d'16                                                                       %! polyphony
     ]                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/9 {                                                               %! polyphony
 
@@ -4227,7 +4380,9 @@ A_PianoMusicVoice = {                                                          %
         bf'!16                                                                 %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 40 / measure 27]                          %! _comment_measure_numbers
@@ -4238,6 +4393,7 @@ A_PianoMusicVoice = {                                                          %
 
         ef'!8                                                                  %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     fs'!8.                                                                     %! polyphony
@@ -4275,6 +4431,7 @@ A_PianoMusicVoice = {                                                          %
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ]                                                                          %! polyphony
+
     \times 4/5 {                                                               %! polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
@@ -4292,6 +4449,7 @@ A_PianoMusicVoice = {                                                          %
         b16                                                                    %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     b8                                                                         %! polyphony
@@ -4311,6 +4469,7 @@ A_PianoMusicVoice = {                                                          %
     c'16                                                                       %! polyphony
     ~
     ]                                                                          %! polyphony
+
     \times 4/5 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 42 / measure 29]                          %! _comment_measure_numbers
@@ -4330,6 +4489,7 @@ A_PianoMusicVoice = {                                                          %
 
         fs'!16                                                                 %! polyphony
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     af'!16                                                                     %! polyphony
@@ -4350,6 +4510,7 @@ A_PianoMusicVoice = {                                                          %
     ]                                                                          %! polyphony
 
     bf'!8.                                                                     %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         b'8                                                                    %! polyphony
@@ -4360,6 +4521,7 @@ A_PianoMusicVoice = {                                                          %
         fs'!8                                                                  %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     fs'!16                                                                     %! polyphony
@@ -4386,6 +4548,7 @@ A_PianoMusicVoice = {                                                          %
 
     fs''!16                                                                    %! polyphony
     ]                                                                          %! polyphony
+
     \times 4/5 {                                                               %! polyphony
 
         a'16                                                                   %! polyphony
@@ -4400,6 +4563,7 @@ A_PianoMusicVoice = {                                                          %
         af'!16                                                                 %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     af'!8                                                                      %! polyphony
@@ -4407,6 +4571,7 @@ A_PianoMusicVoice = {                                                          %
     % [A PianoMusicVoice measure 43 / measure 30]                              %! _comment_measure_numbers
     a'8                                                                        %! polyphony
     ~
+
     \times 4/7 {                                                               %! polyphony
 
         a'16                                                                   %! polyphony
@@ -4425,6 +4590,7 @@ A_PianoMusicVoice = {                                                          %
         g'16                                                                   %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     g'32.                                                                      %! polyphony
@@ -4464,6 +4630,7 @@ A_PianoMusicVoice = {                                                          %
     ]                                                                          %! polyphony
 
     bf''!8.                                                                    %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         cs''!8                                                                 %! polyphony
@@ -4474,6 +4641,7 @@ A_PianoMusicVoice = {                                                          %
         b''8                                                                   %! polyphony
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     b''16                                                                      %! polyphony
@@ -4778,6 +4946,7 @@ A_PianoMusicVoice = {                                                          %
     r8                                                                         %! incise_attacks
 
     r4.                                                                        %! incise_attacks
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -4816,6 +4985,7 @@ A_PianoMusicVoice = {                                                          %
 
         g''8                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     r2.                                                                        %! pizzicato_sixteenths
@@ -4825,6 +4995,7 @@ A_PianoMusicVoice = {                                                          %
 
     fs''!8.                                                                    %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -4843,7 +5014,9 @@ A_PianoMusicVoice = {                                                          %
         a''8                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
+
     \times 4/7 {                                                               %! pizzicato_sixteenths
 
         r16                                                                    %! pizzicato_sixteenths
@@ -4872,6 +5045,7 @@ A_PianoMusicVoice = {                                                          %
         a''16                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 72 / measure 59]                              %! _comment_measure_numbers
@@ -4894,6 +5068,7 @@ A_PianoMusicVoice = {                                                          %
     ]                                                                          %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         % [A PianoMusicVoice measure 74 / measure 61]                          %! _comment_measure_numbers
@@ -4938,6 +5113,7 @@ A_PianoMusicVoice = {                                                          %
         g''8                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 75 / measure 62]                              %! _comment_measure_numbers
@@ -4946,6 +5122,7 @@ A_PianoMusicVoice = {                                                          %
     r4.                                                                        %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 7/9 {                                                               %! pizzicato_sixteenths
 
@@ -4983,6 +5160,7 @@ A_PianoMusicVoice = {                                                          %
 
         a''8                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
@@ -5061,6 +5239,7 @@ A_PianoMusicVoice = {                                                          %
 
     % [A PianoMusicVoice measure 79 / measure 66]                              %! _comment_measure_numbers
     r4                                                                         %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -5079,6 +5258,7 @@ A_PianoMusicVoice = {                                                          %
         fs'''!8                                                                %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 80 / measure 67]                              %! _comment_measure_numbers
@@ -5156,6 +5336,7 @@ A_PianoMusicVoice = {                                                          %
     g'''8                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -5174,9 +5355,11 @@ A_PianoMusicVoice = {                                                          %
         e'''8                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 5/6 {                                                               %! pizzicato_sixteenths
 
@@ -5188,6 +5371,7 @@ A_PianoMusicVoice = {                                                          %
 
         g'''4                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 84 / measure 71]                              %! _comment_measure_numbers
@@ -5207,6 +5391,7 @@ A_PianoMusicVoice = {                                                          %
     af'''!8                                                                    %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -5229,6 +5414,7 @@ A_PianoMusicVoice = {                                                          %
 
         c'''8                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
@@ -5243,6 +5429,7 @@ A_PianoMusicVoice = {                                                          %
     f'''8                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 6/7 {                                                               %! pizzicato_sixteenths
 
@@ -5254,6 +5441,7 @@ A_PianoMusicVoice = {                                                          %
 
         a'''4                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
@@ -5263,6 +5451,7 @@ A_PianoMusicVoice = {                                                          %
 
     af'''!16                                                                   %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 7/9 {                                                               %! pizzicato_sixteenths
 
@@ -5298,6 +5487,7 @@ A_PianoMusicVoice = {                                                          %
         e'''16                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 88 / measure 75]                              %! _comment_measure_numbers
@@ -5307,6 +5497,7 @@ A_PianoMusicVoice = {                                                          %
     - \staccatissimo                                                           %! IndicatorCommand
 
     r4.                                                                        %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 5/7 {                                                               %! pizzicato_sixteenths
 
@@ -5339,12 +5530,15 @@ A_PianoMusicVoice = {                                                          %
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! pizzicato_sixteenths
+
 }                                                                              %! extern
 
 
 A_PianoMusicStaff = {                                                          %! extern
+
     \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
     \A_PianoMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
@@ -5384,6 +5578,7 @@ A_PercussionMusicVoice = {                                                     %
 
     c'4.                                                                       %! sponge_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/5 {                                                               %! sponge_rhythm
 
@@ -5396,6 +5591,7 @@ A_PercussionMusicVoice = {                                                     %
 
         c'4                                                                    %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [A PercussionMusicVoice measure 16 / measure 3]                          %! _comment_measure_numbers
@@ -5461,6 +5657,7 @@ A_PercussionMusicVoice = {                                                     %
 
     % [A PercussionMusicVoice measure 35 / measure 22]                         %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/5 {                                                               %! sponge_rhythm
 
@@ -5476,7 +5673,9 @@ A_PercussionMusicVoice = {                                                     %
 
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/5 {                                                               %! sponge_rhythm
 
@@ -5489,6 +5688,7 @@ A_PercussionMusicVoice = {                                                     %
 
         c'4                                                                    %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [A PercussionMusicVoice measure 38 / measure 25]                         %! _comment_measure_numbers
@@ -5497,6 +5697,7 @@ A_PercussionMusicVoice = {                                                     %
 
     c'4                                                                        %! sponge_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 7/8 {                                                               %! sponge_rhythm
 
@@ -5506,7 +5707,9 @@ A_PercussionMusicVoice = {                                                     %
 
         c'2.                                                                   %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 7/11 {                                                              %! sponge_rhythm
 
@@ -5522,6 +5725,7 @@ A_PercussionMusicVoice = {                                                     %
 
         c'8                                                                    %! sponge_rhythm
         \repeatTie
+
     }                                                                          %! sponge_rhythm
 
     % [A PercussionMusicVoice measure 41 / measure 28]                         %! _comment_measure_numbers
@@ -5534,6 +5738,7 @@ A_PercussionMusicVoice = {                                                     %
 
     c'8                                                                        %! sponge_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \times 2/3 {                                                               %! sponge_rhythm
 
         % [A PercussionMusicVoice measure 42 / measure 29]                     %! _comment_measure_numbers
@@ -5551,7 +5756,9 @@ A_PercussionMusicVoice = {                                                     %
 
         c'8                                                                    %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/5 {                                                               %! sponge_rhythm
 
@@ -5562,6 +5769,7 @@ A_PercussionMusicVoice = {                                                     %
 
         c'4.                                                                   %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [A PercussionMusicVoice measure 44 / measure 31]                         %! _comment_measure_numbers
@@ -5570,6 +5778,7 @@ A_PercussionMusicVoice = {                                                     %
 
     c'2..                                                                      %! sponge_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 5/8 {                                                               %! sponge_rhythm
 
@@ -5583,7 +5792,9 @@ A_PercussionMusicVoice = {                                                     %
 
         c'4.                                                                   %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/13 {                                                              %! sponge_rhythm
 
@@ -5600,6 +5811,7 @@ A_PercussionMusicVoice = {                                                     %
 
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [A PercussionMusicVoice measure 47 / measure 34]                         %! _comment_measure_numbers
@@ -5615,6 +5827,7 @@ A_PercussionMusicVoice = {                                                     %
     % [A PercussionMusicVoice measure 48 / measure 35]                         %! _comment_measure_numbers
     c'2                                                                        %! sponge_rhythm
     \repeatTie
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/5 {                                                               %! sponge_rhythm
 
@@ -5627,6 +5840,7 @@ A_PercussionMusicVoice = {                                                     %
 
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [A PercussionMusicVoice measure 50 / measure 37]                         %! _comment_measure_numbers
@@ -5635,6 +5849,7 @@ A_PercussionMusicVoice = {                                                     %
 
     c'4                                                                        %! sponge_rhythm
     - \accent                                                                  %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/17 {                                                              %! sponge_rhythm
 
@@ -5650,6 +5865,7 @@ A_PercussionMusicVoice = {                                                     %
 
         c'4.                                                                   %! sponge_rhythm
         - \accent                                                              %! IndicatorCommand
+
     }                                                                          %! sponge_rhythm
 
     % [A PercussionMusicVoice measure 52 / measure 39]                         %! _comment_measure_numbers
@@ -5891,8 +6107,10 @@ A_PercussionMusicVoice = {                                                     %
 
 
 A_PercussionMusicStaff = {                                                     %! extern
+
     \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
     \A_PercussionMusicVoice                                                    %! extern
+
 }                                                                              %! extern
 
 
@@ -5948,6 +6166,7 @@ A_ViolinMusicVoice = {                                                         %
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                %! IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                              %! baca_markup:IndicatorCommand
+
     \times 2/3 {                                                               %! polyphony
 
         f''4                                                                   %! polyphony
@@ -5959,9 +6178,11 @@ A_ViolinMusicVoice = {                                                         %
         f''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     f''4                                                                       %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 10/14 {                                                             %! polyphony
 
@@ -6009,7 +6230,9 @@ A_ViolinMusicVoice = {                                                         %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 22 / measure 9]                          %! _comment_measure_numbers
@@ -6021,9 +6244,11 @@ A_ViolinMusicVoice = {                                                         %
         c'''4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     c'''4                                                                      %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/4 {                                                               %! polyphony
 
@@ -6032,6 +6257,7 @@ A_ViolinMusicVoice = {                                                         %
 
         f''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     % [A ViolinMusicVoice measure 23 / measure 10]                             %! _comment_measure_numbers
@@ -6051,6 +6277,7 @@ A_ViolinMusicVoice = {                                                         %
     ]                                                                          %! polyphony
 
     c''4.                                                                      %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 24 / measure 11]                         %! _comment_measure_numbers
@@ -6063,6 +6290,7 @@ A_ViolinMusicVoice = {                                                         %
         ef''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     ef''!4                                                                     %! polyphony
@@ -6100,6 +6328,7 @@ A_ViolinMusicVoice = {                                                         %
     ^ \markup { "off-string bowing on staccati" }                              %! baca_markup:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+
     \times 2/3 {                                                               %! polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
@@ -6117,12 +6346,14 @@ A_ViolinMusicVoice = {                                                         %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
+
     }                                                                          %! polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 10/14 {                                                             %! polyphony
 
@@ -6173,7 +6404,9 @@ A_ViolinMusicVoice = {                                                         %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 33 / measure 20]                         %! _comment_measure_numbers
@@ -6185,9 +6418,11 @@ A_ViolinMusicVoice = {                                                         %
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     cs''!4                                                                     %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/4 {                                                               %! polyphony
 
@@ -6199,6 +6434,7 @@ A_ViolinMusicVoice = {                                                         %
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! polyphony
 
     % [A ViolinMusicVoice measure 34 / measure 21]                             %! _comment_measure_numbers
@@ -6227,6 +6463,7 @@ A_ViolinMusicVoice = {                                                         %
     cs''!4.                                                                    %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 35 / measure 22]                         %! _comment_measure_numbers
@@ -6242,6 +6479,7 @@ A_ViolinMusicVoice = {                                                         %
         e''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     e''4                                                                       %! polyphony
@@ -6249,6 +6487,7 @@ A_ViolinMusicVoice = {                                                         %
     b''4                                                                       %! polyphony
     - \staccato                                                                %! IndicatorCommand
     ~
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
@@ -6293,7 +6532,9 @@ A_ViolinMusicVoice = {                                                         %
         bf'!16                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         fs'!4                                                                  %! polyphony
@@ -6304,6 +6545,7 @@ A_ViolinMusicVoice = {                                                         %
 
         cs'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     fs'!4                                                                      %! polyphony
@@ -6311,6 +6553,7 @@ A_ViolinMusicVoice = {                                                         %
     ~
 
     fs'!4.                                                                     %! polyphony
+
     \times 8/12 {                                                              %! polyphony
 
         % [A ViolinMusicVoice measure 37 / measure 24]                         %! _comment_measure_numbers
@@ -6352,6 +6595,7 @@ A_ViolinMusicVoice = {                                                         %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     cs'!4                                                                      %! polyphony
@@ -6380,6 +6624,7 @@ A_ViolinMusicVoice = {                                                         %
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 39 / measure 26]                         %! _comment_measure_numbers
@@ -6390,6 +6635,7 @@ A_ViolinMusicVoice = {                                                         %
 
         c''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     bf'!4.                                                                     %! polyphony
@@ -6399,6 +6645,7 @@ A_ViolinMusicVoice = {                                                         %
     % [A ViolinMusicVoice measure 40 / measure 27]                             %! _comment_measure_numbers
     bf'!4.                                                                     %! polyphony
     ~
+
     \times 8/12 {                                                              %! polyphony
 
         bf'!16                                                                 %! polyphony
@@ -6440,7 +6687,9 @@ A_ViolinMusicVoice = {                                                         %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 41 / measure 28]                         %! _comment_measure_numbers
@@ -6458,6 +6707,7 @@ A_ViolinMusicVoice = {                                                         %
 
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     fs'!4                                                                      %! polyphony
@@ -6483,6 +6733,7 @@ A_ViolinMusicVoice = {                                                         %
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         bf'!4                                                                  %! polyphony
@@ -6493,6 +6744,7 @@ A_ViolinMusicVoice = {                                                         %
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     cs''!4.                                                                    %! polyphony
@@ -6502,6 +6754,7 @@ A_ViolinMusicVoice = {                                                         %
 
     cs''!4                                                                     %! polyphony
     - \staccato                                                                %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
@@ -6540,7 +6793,9 @@ A_ViolinMusicVoice = {                                                         %
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 43 / measure 30]                         %! _comment_measure_numbers
@@ -6557,6 +6812,7 @@ A_ViolinMusicVoice = {                                                         %
 
         fs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     ef''!4                                                                     %! polyphony
@@ -6566,6 +6822,7 @@ A_ViolinMusicVoice = {                                                         %
     % [A ViolinMusicVoice measure 44 / measure 31]                             %! _comment_measure_numbers
     ef''!4.                                                                    %! polyphony
     ~
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 10/14 {                                                             %! polyphony
 
@@ -6611,7 +6868,9 @@ A_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
@@ -6624,6 +6883,7 @@ A_ViolinMusicVoice = {                                                         %
 
         fs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     % [A ViolinMusicVoice measure 46 / measure 33]                             %! _comment_measure_numbers
@@ -6635,6 +6895,7 @@ A_ViolinMusicVoice = {                                                         %
 
     ef''!4                                                                     %! polyphony
     - \staccato                                                                %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
@@ -6670,7 +6931,9 @@ A_ViolinMusicVoice = {                                                         %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 47 / measure 34]                         %! _comment_measure_numbers
@@ -6682,12 +6945,14 @@ A_ViolinMusicVoice = {                                                         %
         d''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ~
+
     }                                                                          %! polyphony
 
     d''4.                                                                      %! polyphony
 
     bf''!4.                                                                    %! polyphony
     - \staccato                                                                %! IndicatorCommand
+
     \times 8/12 {                                                              %! polyphony
 
         % [A ViolinMusicVoice measure 48 / measure 35]                         %! _comment_measure_numbers
@@ -6729,7 +6994,9 @@ A_ViolinMusicVoice = {                                                         %
         - \staccato                                                            %! IndicatorCommand
         ~
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
+
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 49 / measure 36]                         %! _comment_measure_numbers
@@ -6740,6 +7007,7 @@ A_ViolinMusicVoice = {                                                         %
 
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
+
     }                                                                          %! polyphony
 
     fs''!4                                                                     %! polyphony
@@ -6749,6 +7017,7 @@ A_ViolinMusicVoice = {                                                         %
     % [A ViolinMusicVoice measure 50 / measure 37]                             %! _comment_measure_numbers
     fs''!4                                                                     %! polyphony
     ~
+
     \times 8/12 {                                                              %! polyphony
 
         fs''!16                                                                %! polyphony
@@ -6787,6 +7056,7 @@ A_ViolinMusicVoice = {                                                         %
         ef''!16                                                                %! polyphony
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
+
     }                                                                          %! polyphony
 
     % [A ViolinMusicVoice measure 51 / measure 38]                             %! _comment_measure_numbers
@@ -7100,6 +7370,7 @@ A_ViolinMusicVoice = {                                                         %
 
     e'8                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -7116,7 +7387,9 @@ A_ViolinMusicVoice = {                                                         %
         e''8                                                                   %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -7125,6 +7398,7 @@ A_ViolinMusicVoice = {                                                         %
         ef''!4.                                                                %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
 
     % [A ViolinMusicVoice measure 68 / measure 55]                             %! _comment_measure_numbers
@@ -7181,6 +7455,7 @@ A_ViolinMusicVoice = {                                                         %
     g''8                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -7189,6 +7464,7 @@ A_ViolinMusicVoice = {                                                         %
 
         cs''!8                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
@@ -7211,6 +7487,7 @@ A_ViolinMusicVoice = {                                                         %
     fs''!8                                                                     %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
+
     \times 4/5 {                                                               %! pizzicato_sixteenths
 
         % [A ViolinMusicVoice measure 72 / measure 59]                         %! _comment_measure_numbers
@@ -7229,6 +7506,7 @@ A_ViolinMusicVoice = {                                                         %
         fs''!8                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolinMusicVoice measure 73 / measure 60]                             %! _comment_measure_numbers
@@ -7277,6 +7555,7 @@ A_ViolinMusicVoice = {                                                         %
     r8                                                                         %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         r8                                                                     %! pizzicato_sixteenths
@@ -7288,6 +7567,7 @@ A_ViolinMusicVoice = {                                                         %
         b''8                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolinMusicVoice measure 76 / measure 63]                             %! _comment_measure_numbers
@@ -7300,6 +7580,7 @@ A_ViolinMusicVoice = {                                                         %
     - \staccatissimo                                                           %! IndicatorCommand
 
     r4.                                                                        %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 9/11 {                                                              %! pizzicato_sixteenths
 
@@ -7325,6 +7606,7 @@ A_ViolinMusicVoice = {                                                         %
 
         b''2                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
@@ -7333,6 +7615,7 @@ A_ViolinMusicVoice = {                                                         %
     - \staccatissimo                                                           %! IndicatorCommand
 
     r8                                                                         %! pizzicato_sixteenths
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         % [A ViolinMusicVoice measure 78 / measure 65]                         %! _comment_measure_numbers
@@ -7366,10 +7649,12 @@ A_ViolinMusicVoice = {                                                         %
 
         c'''4                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolinMusicVoice measure 79 / measure 66]                             %! _comment_measure_numbers
     r4                                                                         %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -7377,7 +7662,9 @@ A_ViolinMusicVoice = {                                                         %
 
         fs'''!2                                                                %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 9/11 {                                                              %! pizzicato_sixteenths
 
@@ -7415,10 +7702,12 @@ A_ViolinMusicVoice = {                                                         %
 
         ef'''!4                                                                %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolinMusicVoice measure 81 / measure 68]                             %! _comment_measure_numbers
     r4.                                                                        %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 6/7 {                                                               %! pizzicato_sixteenths
 
@@ -7438,6 +7727,7 @@ A_ViolinMusicVoice = {                                                         %
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolinMusicVoice measure 82 / measure 69]                             %! _comment_measure_numbers
@@ -7458,6 +7748,7 @@ A_ViolinMusicVoice = {                                                         %
     a'''8                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -7479,6 +7770,7 @@ A_ViolinMusicVoice = {                                                         %
 
         c'''8                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolinMusicVoice measure 83 / measure 70]                             %! _comment_measure_numbers
@@ -7542,12 +7834,15 @@ A_ViolinMusicVoice = {                                                         %
 
 
 A_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \A_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
 A_ViolaMusicVoice = {                                                          %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
@@ -7581,7 +7876,9 @@ A_ViolaMusicVoice = {                                                          %
 
         ctqs!1                                                                 %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
@@ -7591,7 +7888,9 @@ A_ViolaMusicVoice = {                                                          %
 
         dqs!\breve                                                             %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
@@ -7601,6 +7900,7 @@ A_ViolaMusicVoice = {                                                          %
 
         b,1                                                                    %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
 
     % [A ViolaMusicVoice measure 20 / measure 7]                               %! _comment_measure_numbers
@@ -7609,6 +7909,7 @@ A_ViolaMusicVoice = {                                                          %
 
     d\breve                                                                    %! hypermeter_tuplets
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
@@ -7620,7 +7921,9 @@ A_ViolaMusicVoice = {                                                          %
         e\breve                                                                %! hypermeter_tuplets
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
@@ -7636,7 +7939,9 @@ A_ViolaMusicVoice = {                                                          %
 
         dtqs!1                                                                 %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
@@ -7646,7 +7951,9 @@ A_ViolaMusicVoice = {                                                          %
 
         eqs!\breve                                                             %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
@@ -7656,6 +7963,7 @@ A_ViolaMusicVoice = {                                                          %
 
         c1                                                                     %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
 
     % [A ViolaMusicVoice measure 31 / measure 18]                              %! _comment_measure_numbers
@@ -7664,6 +7972,7 @@ A_ViolaMusicVoice = {                                                          %
 
     e\breve                                                                    %! hypermeter_tuplets
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
@@ -7673,7 +7982,9 @@ A_ViolaMusicVoice = {                                                          %
 
         f\breve                                                                %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 9/5 {                                                               %! hypermeter_tuplets
 
@@ -7688,7 +7999,9 @@ A_ViolaMusicVoice = {                                                          %
 
         a4                                                                     %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 11/10 {                                                             %! hypermeter_tuplets
 
@@ -7701,7 +8014,9 @@ A_ViolaMusicVoice = {                                                          %
 
         e2                                                                     %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/5 {                                                               %! hypermeter_tuplets
 
@@ -7713,6 +8028,7 @@ A_ViolaMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         ftqs!8                                                                 %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
 
     % [A ViolaMusicVoice measure 42 / measure 29]                              %! _comment_measure_numbers
@@ -7787,6 +8103,7 @@ A_ViolaMusicVoice = {                                                          %
     fs''!4.                                                                    %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/8 {                                                               %! prolated_quarters
 
@@ -7811,7 +8128,9 @@ A_ViolaMusicVoice = {                                                          %
         bf'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 6/5 {                                                               %! prolated_quarters
 
@@ -7837,7 +8156,9 @@ A_ViolaMusicVoice = {                                                          %
         - \upbow                                                               %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/9 {                                                               %! prolated_quarters
 
@@ -7880,7 +8201,9 @@ A_ViolaMusicVoice = {                                                          %
         a'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/5 {                                                               %! prolated_quarters
 
@@ -7909,7 +8232,9 @@ A_ViolaMusicVoice = {                                                          %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 3/4 {                                                               %! prolated_quarters
 
@@ -7929,7 +8254,9 @@ A_ViolaMusicVoice = {                                                          %
         f4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 11/8 {                                                              %! prolated_quarters
 
@@ -7949,7 +8276,9 @@ A_ViolaMusicVoice = {                                                          %
         bf!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 5/4 {                                                               %! prolated_quarters
 
@@ -7961,7 +8290,9 @@ A_ViolaMusicVoice = {                                                          %
         b4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 4/4 {                                                               %! prolated_quarters
 
@@ -7983,7 +8314,9 @@ A_ViolaMusicVoice = {                                                          %
         - \upbow                                                               %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! prolated_quarters
+
     \times 2/3 {                                                               %! prolated_quarters
 
         % [A ViolaMusicVoice measure 60 / measure 47]                          %! _comment_measure_numbers
@@ -8000,7 +8333,9 @@ A_ViolaMusicVoice = {                                                          %
 
         ef!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -8021,6 +8356,7 @@ A_ViolaMusicVoice = {                                                          %
 
         g''8                                                                   %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_rhythm
 
     r1                                                                         %! pizzicato_rhythm
@@ -8031,6 +8367,7 @@ A_ViolaMusicVoice = {                                                          %
 
     % [A ViolaMusicVoice measure 62 / measure 49]                              %! _comment_measure_numbers
     r8                                                                         %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 7/9 {                                                               %! pizzicato_rhythm
 
@@ -8043,7 +8380,9 @@ A_ViolaMusicVoice = {                                                          %
         g''4.                                                                  %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
+
     \times 2/3 {                                                               %! pizzicato_rhythm
 
         % [A ViolaMusicVoice measure 63 / measure 50]                          %! _comment_measure_numbers
@@ -8057,7 +8396,9 @@ A_ViolaMusicVoice = {                                                          %
         - \staccatissimo                                                       %! IndicatorCommand
         ~
         ]                                                                      %! pizzicato_rhythm
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -8074,6 +8415,7 @@ A_ViolaMusicVoice = {                                                          %
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+
     }                                                                          %! pizzicato_rhythm
 
     r4                                                                         %! pizzicato_rhythm
@@ -8083,6 +8425,7 @@ A_ViolaMusicVoice = {                                                          %
 
     % [A ViolaMusicVoice measure 65 / measure 52]                              %! _comment_measure_numbers
     r4.                                                                        %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 9/11 {                                                              %! pizzicato_rhythm
 
@@ -8101,6 +8444,7 @@ A_ViolaMusicVoice = {                                                          %
         fs''!8                                                                 %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
 
     fs''!8                                                                     %! pizzicato_rhythm
@@ -8118,6 +8462,7 @@ A_ViolaMusicVoice = {                                                          %
     r4.                                                                        %! pizzicato_rhythm
 
     r4.                                                                        %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -8139,6 +8484,7 @@ A_ViolaMusicVoice = {                                                          %
 
         e''4                                                                   %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_rhythm
 
     f''4                                                                       %! pizzicato_rhythm
@@ -8166,6 +8512,7 @@ A_ViolaMusicVoice = {                                                          %
     fs''!8.                                                                    %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 6/7 {                                                               %! pizzicato_sixteenths
 
@@ -8193,12 +8540,14 @@ A_ViolaMusicVoice = {                                                          %
 
         bf''!4                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolaMusicVoice measure 71 / measure 58]                              %! _comment_measure_numbers
     r4.                                                                        %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         r8                                                                     %! pizzicato_sixteenths
@@ -8222,7 +8571,9 @@ A_ViolaMusicVoice = {                                                          %
 
         fs'''!4                                                                %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
+
     \times 4/7 {                                                               %! pizzicato_sixteenths
 
         % [A ViolaMusicVoice measure 72 / measure 59]                          %! _comment_measure_numbers
@@ -8244,6 +8595,7 @@ A_ViolaMusicVoice = {                                                          %
 
         g''4                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolaMusicVoice measure 73 / measure 60]                              %! _comment_measure_numbers
@@ -8311,6 +8663,7 @@ A_ViolaMusicVoice = {                                                          %
     r1                                                                         %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -8326,9 +8679,11 @@ A_ViolaMusicVoice = {                                                          %
         cs'''!16                                                               %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 6/7 {                                                               %! pizzicato_sixteenths
 
@@ -8354,7 +8709,9 @@ A_ViolaMusicVoice = {                                                          %
 
         g'''4                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         % [A ViolaMusicVoice measure 79 / measure 66]                          %! _comment_measure_numbers
@@ -8370,6 +8727,7 @@ A_ViolaMusicVoice = {                                                          %
         a'''8                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
@@ -8378,6 +8736,7 @@ A_ViolaMusicVoice = {                                                          %
     r1                                                                         %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -8394,7 +8753,9 @@ A_ViolaMusicVoice = {                                                          %
         cs'''!16                                                               %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         r8                                                                     %! pizzicato_sixteenths
@@ -8410,6 +8771,7 @@ A_ViolaMusicVoice = {                                                          %
 
         f'''8                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolaMusicVoice measure 82 / measure 69]                              %! _comment_measure_numbers
@@ -8459,6 +8821,7 @@ A_ViolaMusicVoice = {                                                          %
 
     f'''4                                                                      %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         r16                                                                    %! pizzicato_sixteenths
@@ -8473,6 +8836,7 @@ A_ViolaMusicVoice = {                                                          %
         fs'''!8                                                                %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A ViolaMusicVoice measure 85 / measure 72]                              %! _comment_measure_numbers
@@ -8491,12 +8855,15 @@ A_ViolaMusicVoice = {                                                          %
 
 
 A_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \A_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
 A_CelloMusicVoice = {                                                          %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
@@ -8530,7 +8897,9 @@ A_CelloMusicVoice = {                                                          %
 
         dqs,!2                                                                 %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
@@ -8540,7 +8909,9 @@ A_CelloMusicVoice = {                                                          %
 
         b,,1                                                                   %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
@@ -8550,6 +8921,7 @@ A_CelloMusicVoice = {                                                          %
 
         d,2                                                                    %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
 
     % [A CelloMusicVoice measure 20 / measure 7]                               %! _comment_measure_numbers
@@ -8558,6 +8930,7 @@ A_CelloMusicVoice = {                                                          %
 
     e,1                                                                        %! hypermeter_tuplets
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
@@ -8567,7 +8940,9 @@ A_CelloMusicVoice = {                                                          %
 
         cqs,!1                                                                 %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
@@ -8580,7 +8955,9 @@ A_CelloMusicVoice = {                                                          %
 
         eqs,!2                                                                 %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
@@ -8590,7 +8967,9 @@ A_CelloMusicVoice = {                                                          %
 
         c,1                                                                    %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
@@ -8600,6 +8979,7 @@ A_CelloMusicVoice = {                                                          %
 
         e,2                                                                    %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
 
     % [A CelloMusicVoice measure 31 / measure 18]                              %! _comment_measure_numbers
@@ -8608,6 +8988,7 @@ A_CelloMusicVoice = {                                                          %
 
     f,1                                                                        %! hypermeter_tuplets
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
@@ -8617,7 +8998,9 @@ A_CelloMusicVoice = {                                                          %
 
         dqs,!1                                                                 %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 9/7 {                                                               %! hypermeter_tuplets
 
@@ -8632,7 +9015,9 @@ A_CelloMusicVoice = {                                                          %
 
         fqs,!2                                                                 %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 11/7 {                                                              %! hypermeter_tuplets
 
@@ -8645,7 +9030,9 @@ A_CelloMusicVoice = {                                                          %
 
         g,2                                                                    %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! hypermeter_tuplets
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/7 {                                                               %! hypermeter_tuplets
 
@@ -8657,6 +9044,7 @@ A_CelloMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         gqs,!4                                                                 %! hypermeter_tuplets
+
     }                                                                          %! hypermeter_tuplets
 
     % [A CelloMusicVoice measure 42 / measure 29]                              %! _comment_measure_numbers
@@ -8731,6 +9119,7 @@ A_CelloMusicVoice = {                                                          %
     f'4.                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
     \glissando                                                                 %! SpannerCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/4 {                                                               %! prolated_quarters
 
@@ -8742,7 +9131,9 @@ A_CelloMusicVoice = {                                                          %
         d'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 6/8 {                                                               %! prolated_quarters
 
@@ -8778,7 +9169,9 @@ A_CelloMusicVoice = {                                                          %
         e'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/5 {                                                               %! prolated_quarters
 
@@ -8802,7 +9195,9 @@ A_CelloMusicVoice = {                                                          %
         bf!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/8 {                                                               %! prolated_quarters
 
@@ -8838,7 +9233,9 @@ A_CelloMusicVoice = {                                                          %
         fs!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 3/2 {                                                               %! prolated_quarters
 
@@ -8850,7 +9247,9 @@ A_CelloMusicVoice = {                                                          %
         g4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 11/14 {                                                             %! prolated_quarters
 
@@ -8887,7 +9286,9 @@ A_CelloMusicVoice = {                                                          %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 5/4 {                                                               %! prolated_quarters
 
@@ -8904,7 +9305,9 @@ A_CelloMusicVoice = {                                                          %
         af!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \times 4/5 {                                                               %! prolated_quarters
 
         % [A CelloMusicVoice measure 59 / measure 46]                          %! _comment_measure_numbers
@@ -8927,7 +9330,9 @@ A_CelloMusicVoice = {                                                          %
         e4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 2/2 {                                                               %! prolated_quarters
 
@@ -8939,7 +9344,9 @@ A_CelloMusicVoice = {                                                          %
         e4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/9 {                                                               %! prolated_quarters
 
@@ -8979,7 +9386,9 @@ A_CelloMusicVoice = {                                                          %
         e,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 4/4 {                                                               %! prolated_quarters
 
@@ -8999,7 +9408,9 @@ A_CelloMusicVoice = {                                                          %
         a,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/8 {                                                               %! prolated_quarters
 
@@ -9019,7 +9430,9 @@ A_CelloMusicVoice = {                                                          %
         f,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/4 {                                                               %! prolated_quarters
 
@@ -9030,7 +9443,9 @@ A_CelloMusicVoice = {                                                          %
 
         a,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
+
     }                                                                          %! prolated_quarters
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -9052,7 +9467,9 @@ A_CelloMusicVoice = {                                                          %
         b''8                                                                   %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 9/10 {                                                              %! pizzicato_rhythm
 
@@ -9069,6 +9486,7 @@ A_CelloMusicVoice = {                                                          %
 
         g''8                                                                   %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_rhythm
 
     r4.                                                                        %! pizzicato_rhythm
@@ -9085,6 +9503,7 @@ A_CelloMusicVoice = {                                                          %
     f''8                                                                       %! pizzicato_rhythm
     - \staccatissimo                                                           %! IndicatorCommand
     ~
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -9093,7 +9512,9 @@ A_CelloMusicVoice = {                                                          %
         c''4.                                                                  %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 6/7 {                                                               %! pizzicato_rhythm
 
@@ -9116,6 +9537,7 @@ A_CelloMusicVoice = {                                                          %
         fs''!16                                                                %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_rhythm
+
     }                                                                          %! pizzicato_rhythm
 
     r4                                                                         %! pizzicato_rhythm
@@ -9162,6 +9584,7 @@ A_CelloMusicVoice = {                                                          %
     g''8                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
+
     \times 4/5 {                                                               %! pizzicato_sixteenths
 
         r16                                                                    %! pizzicato_sixteenths
@@ -9182,7 +9605,9 @@ A_CelloMusicVoice = {                                                          %
 
         f''8                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         % [A CelloMusicVoice measure 72 / measure 59]                          %! _comment_measure_numbers
@@ -9204,12 +9629,14 @@ A_CelloMusicVoice = {                                                          %
 
         ef''!4                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A CelloMusicVoice measure 73 / measure 60]                              %! _comment_measure_numbers
     r8                                                                         %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
+
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         r16                                                                    %! pizzicato_sixteenths
@@ -9224,6 +9651,7 @@ A_CelloMusicVoice = {                                                          %
         ef''!8                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     % [A CelloMusicVoice measure 74 / measure 61]                              %! _comment_measure_numbers
@@ -9234,6 +9662,7 @@ A_CelloMusicVoice = {                                                          %
 
     cs'''!16                                                                   %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -9244,12 +9673,14 @@ A_CelloMusicVoice = {                                                          %
 
         a''4.                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
 
     f''8                                                                       %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 7/9 {                                                               %! pizzicato_sixteenths
 
@@ -9287,6 +9718,7 @@ A_CelloMusicVoice = {                                                          %
         f''8                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
@@ -9367,6 +9799,7 @@ A_CelloMusicVoice = {                                                          %
     ]                                                                          %! pizzicato_sixteenths
 
     r2.                                                                        %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -9392,7 +9825,9 @@ A_CelloMusicVoice = {                                                          %
         af'''!16                                                               %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -9406,6 +9841,7 @@ A_CelloMusicVoice = {                                                          %
 
         c'''4                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_sixteenths
 
     r32.                                                                       %! pizzicato_sixteenths
@@ -9432,6 +9868,7 @@ A_CelloMusicVoice = {                                                          %
 
     % [A CelloMusicVoice measure 84 / measure 71]                              %! _comment_measure_numbers
     r8                                                                         %! pizzicato_sixteenths
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
 
@@ -9456,6 +9893,7 @@ A_CelloMusicVoice = {                                                          %
         a'''16                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
+
     }                                                                          %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
@@ -9476,6 +9914,8 @@ A_CelloMusicVoice = {                                                          %
 
 
 A_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \A_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

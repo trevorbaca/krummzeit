@@ -389,6 +389,7 @@ I_GlobalSkips = {                                                              %
 
 
 I_OboeMusicVoice = {                                                           %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/5 {                                                               %! hypermeter_tuplets
 
@@ -426,6 +427,7 @@ I_OboeMusicVoice = {                                                           %
                     \finger
                         1
             }
+
     }                                                                          %! hypermeter_tuplets
 
     % [I OboeMusicVoice measure 292 / measure 2]                               %! _comment_measure_numbers
@@ -498,12 +500,15 @@ I_OboeMusicVoice = {                                                           %
 
 
 I_OboeMusicStaff = {                                                           %! extern
+
     \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
     \I_OboeMusicVoice                                                          %! extern
+
 }                                                                              %! extern
 
 
 I_ClarinetMusicVoice = {                                                       %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/5 {                                                               %! hypermeter_tuplets
 
@@ -541,6 +546,7 @@ I_ClarinetMusicVoice = {                                                       %
                     \finger
                         1
             }
+
     }                                                                          %! hypermeter_tuplets
 
     % [I ClarinetMusicVoice measure 292 / measure 2]                           %! _comment_measure_numbers
@@ -658,12 +664,15 @@ I_ClarinetMusicVoice = {                                                       %
 
 
 I_ClarinetMusicStaff = {                                                       %! extern
+
     \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
     \I_ClarinetMusicVoice                                                      %! extern
+
 }                                                                              %! extern
 
 
 I_PianoMusicVoice = {                                                          %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/7 {                                                               %! hypermeter_tuplets
 
@@ -696,6 +705,7 @@ I_PianoMusicVoice = {                                                          %
 
         fs'''!2                                                                %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! hypermeter_tuplets
 
     % [I PianoMusicVoice measure 292 / measure 2]                              %! _comment_measure_numbers
@@ -704,6 +714,7 @@ I_PianoMusicVoice = {                                                          %
     % [I PianoMusicVoice measure 293 / measure 3]                              %! _comment_measure_numbers
     r8                                                                         %! opening_triplets
     ^ \baca-explicit-indicator-markup "(“Harpsichord”)"                        %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -758,7 +769,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -813,7 +826,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -868,7 +883,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -923,7 +940,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -978,6 +997,7 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
 
     % [I PianoMusicVoice measure 295 / measure 5]                              %! _comment_measure_numbers
@@ -997,6 +1017,7 @@ I_PianoMusicVoice = {                                                          %
     r8                                                                         %! opening_triplets
     ^ \baca-explicit-indicator-markup "(“Piano”)"                              %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+
     \times 2/3 {                                                               %! opening_triplets
 
         \ottava #-1                                                            %! SpannerCommand
@@ -1052,7 +1073,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1107,7 +1130,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 299 / measure 9]                          %! _comment_measure_numbers
@@ -1163,7 +1188,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1218,7 +1245,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1273,7 +1302,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1328,7 +1359,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 300 / measure 10]                         %! _comment_measure_numbers
@@ -1384,7 +1417,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1439,7 +1474,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1494,7 +1531,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1549,7 +1588,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1604,7 +1645,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 301 / measure 11]                         %! _comment_measure_numbers
@@ -1660,7 +1703,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1715,7 +1760,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1770,7 +1817,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1825,7 +1874,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 302 / measure 12]                         %! _comment_measure_numbers
@@ -1881,7 +1932,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1936,7 +1989,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -1991,7 +2046,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2046,7 +2103,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 303 / measure 13]                         %! _comment_measure_numbers
@@ -2102,7 +2161,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2157,7 +2218,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2212,7 +2275,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2267,7 +2332,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 304 / measure 14]                         %! _comment_measure_numbers
@@ -2323,7 +2390,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2378,7 +2447,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2433,7 +2504,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2488,7 +2561,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 305 / measure 15]                         %! _comment_measure_numbers
@@ -2544,7 +2619,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2599,7 +2676,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2654,7 +2733,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 306 / measure 16]                         %! _comment_measure_numbers
@@ -2710,7 +2791,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2765,7 +2848,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2820,7 +2905,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 307 / measure 17]                         %! _comment_measure_numbers
@@ -2876,7 +2963,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2931,7 +3020,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -2986,7 +3077,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 308 / measure 18]                         %! _comment_measure_numbers
@@ -3042,7 +3135,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3097,7 +3192,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3152,7 +3249,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 309 / measure 19]                         %! _comment_measure_numbers
@@ -3208,7 +3307,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3263,7 +3364,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3318,7 +3421,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 310 / measure 20]                         %! _comment_measure_numbers
@@ -3374,7 +3479,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3429,7 +3536,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3484,7 +3593,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 311 / measure 21]                         %! _comment_measure_numbers
@@ -3540,7 +3651,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3595,7 +3708,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3650,7 +3765,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I PianoMusicVoice measure 312 / measure 22]                         %! _comment_measure_numbers
@@ -3706,7 +3823,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3761,7 +3880,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3816,7 +3937,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3871,7 +3994,9 @@ I_PianoMusicVoice = {                                                          %
                     }
             }
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         \once \override Accidental.stencil = ##f
@@ -3927,6 +4052,7 @@ I_PianoMusicVoice = {                                                          %
             }
         ]                                                                      %! opening_triplets
         \ottava #0                                                             %! SpannerCommand
+
     }                                                                          %! opening_triplets
 
     % [I PianoMusicVoice measure 313 / measure 23]                             %! _comment_measure_numbers
@@ -3936,12 +4062,15 @@ I_PianoMusicVoice = {                                                          %
 
 
 I_PianoMusicStaff = {                                                          %! extern
+
     \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
     \I_PianoMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
 I_PercussionMusicVoice = {                                                     %! extern
+
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 8/7 {                                                               %! hypermeter_tuplets
 
@@ -3978,6 +4107,7 @@ I_PercussionMusicVoice = {                                                     %
 
         fs''!2.                                                                %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
+
     }                                                                          %! hypermeter_tuplets
 
     % [I PercussionMusicVoice measure 292 / measure 2]                         %! _comment_measure_numbers
@@ -4169,12 +4299,15 @@ I_PercussionMusicVoice = {                                                     %
 
 
 I_PercussionMusicStaff = {                                                     %! extern
+
     \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
     \I_PercussionMusicVoice                                                    %! extern
+
 }                                                                              %! extern
 
 
 I_ViolinMusicVoice = {                                                         %! extern
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I ViolinMusicVoice measure 291 / measure 1]                         %! _comment_measure_numbers
@@ -4215,7 +4348,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4228,7 +4363,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4241,7 +4378,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4254,7 +4393,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I ViolinMusicVoice measure 292 / measure 2]                         %! _comment_measure_numbers
@@ -4268,7 +4409,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4281,7 +4424,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4294,7 +4439,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4307,7 +4454,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4320,7 +4469,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4333,7 +4484,9 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
@@ -4346,6 +4499,7 @@ I_ViolinMusicVoice = {                                                         %
         ef''!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
 
     r8                                                                         %! opening_triplets
@@ -4480,6 +4634,7 @@ I_ViolinMusicVoice = {                                                         %
 
     % [I ViolinMusicVoice measure 311 / measure 21]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
 
@@ -4496,7 +4651,9 @@ I_ViolinMusicVoice = {                                                         %
         f'''8                                                                  %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 7/8 {                                                               %! pizzicato_rhythm
 
@@ -4510,6 +4667,7 @@ I_ViolinMusicVoice = {                                                         %
 
         f'''8                                                                  %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_rhythm
 
     % [I ViolinMusicVoice measure 313 / measure 23]                            %! _comment_measure_numbers
@@ -4519,12 +4677,15 @@ I_ViolinMusicVoice = {                                                         %
 
 
 I_ViolinMusicStaff = {                                                         %! extern
+
     \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
     \I_ViolinMusicVoice                                                        %! extern
+
 }                                                                              %! extern
 
 
 I_ViolaMusicVoice = {                                                          %! extern
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I ViolaMusicVoice measure 291 / measure 1]                          %! _comment_measure_numbers
@@ -4561,7 +4722,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4574,7 +4737,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4587,7 +4752,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4600,7 +4767,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I ViolaMusicVoice measure 292 / measure 2]                          %! _comment_measure_numbers
@@ -4614,7 +4783,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4627,7 +4798,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4640,7 +4813,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4653,7 +4828,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4666,7 +4843,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4679,7 +4858,9 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
@@ -4692,6 +4873,7 @@ I_ViolaMusicVoice = {                                                          %
         a8                                                                     %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
 
     r8                                                                         %! opening_triplets
@@ -4831,6 +5013,7 @@ I_ViolaMusicVoice = {                                                          %
 
     % [I ViolaMusicVoice measure 311 / measure 21]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \times 4/5 {                                                               %! pizzicato_rhythm
 
         % [I ViolaMusicVoice measure 312 / measure 22]                         %! _comment_measure_numbers
@@ -4845,7 +5028,9 @@ I_ViolaMusicVoice = {                                                          %
 
         g'''4                                                                  %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_rhythm
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 5/6 {                                                               %! pizzicato_rhythm
 
@@ -4854,6 +5039,7 @@ I_ViolaMusicVoice = {                                                          %
 
         b'''4                                                                  %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_rhythm
 
     ef'''!8                                                                    %! pizzicato_rhythm
@@ -4866,12 +5052,15 @@ I_ViolaMusicVoice = {                                                          %
 
 
 I_ViolaMusicStaff = {                                                          %! extern
+
     \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
     \I_ViolaMusicVoice                                                         %! extern
+
 }                                                                              %! extern
 
 
 I_CelloMusicVoice = {                                                          %! extern
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I CelloMusicVoice measure 291 / measure 1]                          %! _comment_measure_numbers
@@ -4908,7 +5097,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -4921,7 +5112,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -4934,7 +5127,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -4947,7 +5142,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         % [I CelloMusicVoice measure 292 / measure 2]                          %! _comment_measure_numbers
@@ -4961,7 +5158,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -4974,7 +5173,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -4987,7 +5188,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -5000,7 +5203,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -5013,7 +5218,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -5026,7 +5233,9 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
+
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
@@ -5039,6 +5248,7 @@ I_CelloMusicVoice = {                                                          %
         eqf,!8                                                                 %! opening_triplets
         :32                                                                    %! IndicatorCommand
         ]                                                                      %! opening_triplets
+
     }                                                                          %! opening_triplets
 
     r8                                                                         %! opening_triplets
@@ -5173,6 +5383,7 @@ I_CelloMusicVoice = {                                                          %
 
     % [I CelloMusicVoice measure 311 / measure 21]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
+
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 5/6 {                                                               %! pizzicato_rhythm
 
@@ -5192,13 +5403,16 @@ I_CelloMusicVoice = {                                                          %
         bf'''!8                                                                %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         ~
+
     }                                                                          %! pizzicato_rhythm
+
     \times 4/5 {                                                               %! pizzicato_rhythm
 
         bf'''!4.                                                               %! pizzicato_rhythm
 
         af'''!4                                                                %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
+
     }                                                                          %! pizzicato_rhythm
 
     e'''8                                                                      %! pizzicato_rhythm
@@ -5211,6 +5425,8 @@ I_CelloMusicVoice = {                                                          %
 
 
 I_CelloMusicStaff = {                                                          %! extern
+
     \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
     \I_CelloMusicVoice                                                         %! extern
+
 }                                                                              %! extern

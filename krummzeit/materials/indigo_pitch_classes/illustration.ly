@@ -270,12 +270,12 @@
                 e'8
                 f'8
                 b'8
-                \abjad_color_music "red"
+                \abjad-color-music "red"
                 g'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad_color_music "red"
+                \abjad-color-music "red"
                 g'8
                 ^ \markup { 27 }
                 \startGroup

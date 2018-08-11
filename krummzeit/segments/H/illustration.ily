@@ -39,23 +39,23 @@ H_GlobalSkips = {                                                              %
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \mark #8                                                                   %! IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (281)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <0>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-dark-cyan-markup ((1))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [H.1]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[13'04'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
-%@% - \abjad_dashed_line_with_arrow                                            %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "90"                        %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "90"                        %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "90" #'DeepPink1    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "90" #'DeepPink1    %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [H GlobalSkips measure 282 / measure 2]                                  %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (282)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <1>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -65,7 +65,7 @@ H_GlobalSkips = {                                                              %
 
     % [H GlobalSkips measure 283 / measure 3]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (283)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <2>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -83,7 +83,7 @@ H_GlobalSkips = {                                                              %
 
     % [H GlobalSkips measure 285 / measure 5]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (285)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <4>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -93,7 +93,7 @@ H_GlobalSkips = {                                                              %
 
     % [H GlobalSkips measure 286 / measure 6]                                  %! _comment_measure_numbers
     \time 11/8                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 11/8                                                                  %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (286)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <5>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -101,16 +101,16 @@ H_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [H.6]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[13'21'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [H GlobalSkips measure 287 / measure 7]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (287)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <6>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -120,7 +120,7 @@ H_GlobalSkips = {                                                              %
 
     % [H GlobalSkips measure 288 / measure 8]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (288)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <7>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -130,7 +130,7 @@ H_GlobalSkips = {                                                              %
 
     % [H GlobalSkips measure 289 / measure 9]                                  %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (289)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <8>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -140,7 +140,7 @@ H_GlobalSkips = {                                                              %
 
     % [H GlobalSkips measure 290 / measure 10]                                 %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (290)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <9>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -148,7 +148,7 @@ H_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [H.10]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[13'27'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(4)
-    \baca_bar_line_visible                                                     %! _attach_final_bar_line
+    \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
 }                                                                              %! extern
@@ -2242,7 +2242,7 @@ H_PercussionMusicVoice = {                                                     %
     \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! left_remainder_quarters
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
@@ -2254,43 +2254,43 @@ H_PercussionMusicVoice = {                                                     %
         }                                                                      %! baca_markup:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! left_remainder_quarters
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! left_remainder_quarters
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! left_remainder_quarters
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! left_remainder_quarters
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! left_remainder_quarters
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! left_remainder_quarters
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! left_remainder_quarters
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
@@ -2374,19 +2374,19 @@ H_ViolinMusicVoice = {                                                         %
         % [H ViolinMusicVoice measure 283 / measure 3]                         %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!4                                                                  %! glissando_rhythm
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!2                                                                  %! glissando_rhythm
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
     }                                                                          %! glissando_rhythm
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af'!4                                                                      %! glissando_rhythm
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
@@ -2451,7 +2451,7 @@ H_ViolinMusicVoice = {                                                         %
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2                                                                 %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2461,13 +2461,13 @@ H_ViolinMusicVoice = {                                                         %
     \times 9/5 {                                                               %! hypermeter_tuplets
 
         % [H ViolinMusicVoice measure 289 / measure 9]                         %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2.                                                                %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2                                                                 %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2529,14 +2529,14 @@ H_ViolaMusicVoice = {                                                          %
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c1.                                                                    %! glissando_rhythm
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
     }                                                                          %! glissando_rhythm
     \times 4/5 {                                                               %! glissando_rhythm
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c8                                                                     %! glissando_rhythm
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -2599,7 +2599,7 @@ H_ViolaMusicVoice = {                                                          %
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a1                                                                     %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2609,13 +2609,13 @@ H_ViolaMusicVoice = {                                                          %
     \times 9/5 {                                                               %! hypermeter_tuplets
 
         % [H ViolaMusicVoice measure 289 / measure 9]                          %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a4                                                                     %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a1                                                                     %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2741,7 +2741,7 @@ H_CelloMusicVoice = {                                                          %
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2.                                                                %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2751,13 +2751,13 @@ H_CelloMusicVoice = {                                                          %
     \times 9/5 {                                                               %! hypermeter_tuplets
 
         % [H CelloMusicVoice measure 289 / measure 9]                          %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2                                                                 %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2.                                                                %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_

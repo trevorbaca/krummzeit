@@ -6,7 +6,7 @@ C_GlobalRests = {                                                              %
     % [C GlobalRests measure 134 / measure 2]                                  %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca_short_fermata_markup                                               %! GlobalFermataCommand(1)
+    ^ \baca-short-fermata-markup                                               %! GlobalFermataCommand(1)
 
     % [C GlobalRests measure 135 / measure 3]                                  %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_global_rests
@@ -14,7 +14,7 @@ C_GlobalRests = {                                                              %
     % [C GlobalRests measure 136 / measure 4]                                  %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca_short_fermata_markup                                               %! GlobalFermataCommand(1)
+    ^ \baca-short-fermata-markup                                               %! GlobalFermataCommand(1)
 
     % [C GlobalRests measure 137 / measure 5]                                  %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_global_rests
@@ -22,7 +22,7 @@ C_GlobalRests = {                                                              %
     % [C GlobalRests measure 138 / measure 6]                                  %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca_short_fermata_markup                                               %! GlobalFermataCommand(1)
+    ^ \baca-short-fermata-markup                                               %! GlobalFermataCommand(1)
 
     % [C GlobalRests measure 139 / measure 7]                                  %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_global_rests
@@ -30,7 +30,7 @@ C_GlobalRests = {                                                              %
     % [C GlobalRests measure 140 / measure 8]                                  %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca_short_fermata_markup                                               %! GlobalFermataCommand(1)
+    ^ \baca-short-fermata-markup                                               %! GlobalFermataCommand(1)
 
     % [C GlobalRests measure 141 / measure 9]                                  %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_global_rests
@@ -47,7 +47,7 @@ C_GlobalRests = {                                                              %
     % [C GlobalRests measure 145 / measure 13]                                 %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
-    ^ \baca_long_fermata_markup                                                %! GlobalFermataCommand(1)
+    ^ \baca-long-fermata-markup                                                %! GlobalFermataCommand(1)
 
     % [C GlobalRests measure 146 / measure 14]                                 %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests
@@ -76,23 +76,23 @@ C_GlobalSkips = {                                                              %
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \mark #3                                                                   %! IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (133)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <0>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-dark-cyan-markup ((1))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [C.1]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'00'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-%@% - \abjad_dashed_line_with_arrow                                            %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "135"                       %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! REDUNDANT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "135" #'DeepPink1   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'DeepPink1   %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! REDUNDANT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [C GlobalSkips measure 134 / measure 2]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (134)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <1>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -100,16 +100,16 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.2]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'01'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "90"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "90"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "90" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "90" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [C GlobalSkips measure 135 / measure 3]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (135)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <2>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -117,7 +117,7 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.3]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'02'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -129,7 +129,7 @@ C_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -146,7 +146,7 @@ C_GlobalSkips = {                                                              %
 
     % [C GlobalSkips measure 136 / measure 4]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (136)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <3>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -154,16 +154,16 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.4]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'03'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [C GlobalSkips measure 137 / measure 5]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (137)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <4>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -171,7 +171,7 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.5]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'04'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -183,7 +183,7 @@ C_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -200,7 +200,7 @@ C_GlobalSkips = {                                                              %
 
     % [C GlobalSkips measure 138 / measure 6]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (138)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <5>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -208,16 +208,16 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.6]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'06'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "90"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "90"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "90" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "90" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [C GlobalSkips measure 139 / measure 7]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (139)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <6>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -225,7 +225,7 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.7]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'06'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -237,7 +237,7 @@ C_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -254,7 +254,7 @@ C_GlobalSkips = {                                                              %
 
     % [C GlobalSkips measure 140 / measure 8]                                  %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (140)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <7>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -262,16 +262,16 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.8]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'09'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [C GlobalSkips measure 141 / measure 9]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (141)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <8>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -281,7 +281,7 @@ C_GlobalSkips = {                                                              %
 
     % [C GlobalSkips measure 142 / measure 10]                                 %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (142)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <9>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -289,7 +289,7 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.10]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'12'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -386,7 +386,7 @@ C_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -488,7 +488,7 @@ C_GlobalSkips = {                                                              %
 
     % [C GlobalSkips measure 143 / measure 11]                                 %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (143)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <10>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -496,7 +496,7 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.11]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'13'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -508,7 +508,7 @@ C_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -533,7 +533,7 @@ C_GlobalSkips = {                                                              %
 
     % [C GlobalSkips measure 145 / measure 13]                                 %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (145)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <12>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -541,16 +541,16 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.13]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'17'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "45"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "45"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "45" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "45" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [C GlobalSkips measure 146 / measure 14]                                 %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (146)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <13>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -568,7 +568,7 @@ C_GlobalSkips = {                                                              %
 
     % [C GlobalSkips measure 148 / measure 16]                                 %! _comment_measure_numbers
     \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (148)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <15>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -576,7 +576,7 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.16]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'29'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -588,7 +588,7 @@ C_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -611,11 +611,11 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.17]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'36'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "36"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "36"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "36" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "36" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [C GlobalSkips measure 150 / measure 18]                                 %! _comment_measure_numbers
@@ -634,7 +634,7 @@ C_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [C.19]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[5'53'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(4)
-    \baca_bar_line_visible                                                     %! _attach_final_bar_line
+    \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
 }                                                                              %! extern
@@ -1280,7 +1280,7 @@ C_PercussionMusicVoice = {                                                     %
 %@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.                                                                        %! baca_make_repeat_tied_notes
     :32                                                                        %! IndicatorCommand
     \baca_ppp_ancora                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
@@ -1302,69 +1302,69 @@ C_PercussionMusicVoice = {                                                     %
     \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [C PercussionMusicVoice measure 134 / measure 2]                         %! _comment_measure_numbers
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeat_tied_notes
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 135 / measure 3]                         %! _comment_measure_numbers
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 136 / measure 4]                         %! _comment_measure_numbers
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeat_tied_notes
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 137 / measure 5]                         %! _comment_measure_numbers
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 138 / measure 6]                         %! _comment_measure_numbers
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeat_tied_notes
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 139 / measure 7]                         %! _comment_measure_numbers
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 140 / measure 8]                         %! _comment_measure_numbers
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeat_tied_notes
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 141 / measure 9]                         %! _comment_measure_numbers
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.
     :32                                                                        %! IndicatorCommand
     \repeatTie
 
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.
     :32                                                                        %! IndicatorCommand
     \repeatTie
@@ -1384,7 +1384,7 @@ C_PercussionMusicVoice = {                                                     %
     % [C PercussionMusicVoice measure 146 / measure 14]                        %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
@@ -1395,142 +1395,142 @@ C_PercussionMusicVoice = {                                                     %
         }                                                                      %! baca_markup:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     % [C PercussionMusicVoice measure 147 / measure 15]                        %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     % [C PercussionMusicVoice measure 148 / measure 16]                        %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     % [C PercussionMusicVoice measure 149 / measure 17]                        %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     % [C PercussionMusicVoice measure 150 / measure 18]                        %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     % [C PercussionMusicVoice measure 151 / measure 19]                        %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_unpitched_music_warning                                              %! _color_unpitched_notes
+    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)

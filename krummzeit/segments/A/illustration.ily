@@ -234,18 +234,18 @@ A_GlobalSkips = {                                                              %
     \time 3/4                                                                  %! REAPPLIED_TIME_SIGNATURE:_set_status_tag:_reapply_persistent_indicators(1):_make_global_skips(2)
     \mark #1                                                                   %! IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
-    \baca_time_signature_color #'green4                                        %! REAPPLIED_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'green4                                        %! REAPPLIED_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (14)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <0>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
 %@% ^ \baca-dark-cyan-markup ((1))                                             %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-dark-cyan-markup [A.1]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[0'27'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
-%@% - \abjad_invisible_line                                                    %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "135"                       %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! REAPPLIED_METRONOME_MARK:_set_status_tag:_reapply_persistent_indicators(2):_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "135" #'green4      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'green4      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [A GlobalSkips measure 15 / measure 2]                                   %! _comment_measure_numbers
@@ -258,7 +258,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 16 / measure 3]                                   %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (16)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <2>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -268,7 +268,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 17 / measure 4]                                   %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (17)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <3>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -278,7 +278,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 18 / measure 5]                                   %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (18)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <4>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -288,7 +288,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 19 / measure 6]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (19)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <5>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -298,7 +298,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 20 / measure 7]                                   %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (20)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <6>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -308,7 +308,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 21 / measure 8]                                   %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (21)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <7>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -318,7 +318,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 22 / measure 9]                                   %! _comment_measure_numbers
     \time 11/8                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 11/8                                                                  %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (22)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <8>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -328,7 +328,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 23 / measure 10]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (23)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <9>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -338,7 +338,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 24 / measure 11]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (24)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <10>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -348,7 +348,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 25 / measure 12]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (25)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <11>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -366,7 +366,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 27 / measure 14]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (27)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <13>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -376,7 +376,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 28 / measure 15]                                  %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (28)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <14>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -386,7 +386,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 29 / measure 16]                                  %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (29)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <15>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -396,7 +396,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 30 / measure 17]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (30)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <16>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -406,7 +406,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 31 / measure 18]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (31)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <17>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -416,7 +416,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 32 / measure 19]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (32)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <18>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -426,7 +426,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 33 / measure 20]                                  %! _comment_measure_numbers
     \time 11/8                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 11/8                                                                  %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (33)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <19>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -436,7 +436,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 34 / measure 21]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (34)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <20>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -446,7 +446,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 35 / measure 22]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (35)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <21>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -456,7 +456,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 36 / measure 23]                                  %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (36)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <22>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -464,7 +464,7 @@ A_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [A.23]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[1'10'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -561,7 +561,7 @@ A_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -663,7 +663,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 37 / measure 24]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (37)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <23>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -673,7 +673,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 38 / measure 25]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (38)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <24>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -683,7 +683,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 39 / measure 26]                                  %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (39)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <25>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -701,7 +701,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 41 / measure 28]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (41)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <27>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -711,7 +711,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 42 / measure 29]                                  %! _comment_measure_numbers
     \time 8/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 2                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (42)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <28>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -719,7 +719,7 @@ A_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [A.29]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[1'31'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -731,7 +731,7 @@ A_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -748,7 +748,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 43 / measure 30]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (43)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <29>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -758,7 +758,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 44 / measure 31]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (44)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <30>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -768,7 +768,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 45 / measure 32]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (45)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <31>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -778,7 +778,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 46 / measure 33]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (46)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <32>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -788,7 +788,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 47 / measure 34]                                  %! _comment_measure_numbers
     \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (47)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <33>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -796,16 +796,16 @@ A_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [A.34]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[1'51'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [A GlobalSkips measure 48 / measure 35]                                  %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (48)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <34>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -815,7 +815,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 49 / measure 36]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (49)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <35>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -833,7 +833,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 51 / measure 38]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (51)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <37>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -843,7 +843,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 52 / measure 39]                                  %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (52)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <38>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -851,7 +851,7 @@ A_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [A.39]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[1'59'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -948,7 +948,7 @@ A_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -1050,7 +1050,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 53 / measure 40]                                  %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (53)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <39>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1060,7 +1060,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 54 / measure 41]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (54)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <40>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1078,7 +1078,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 56 / measure 43]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (56)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <42>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1088,7 +1088,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 57 / measure 44]                                  %! _comment_measure_numbers
     \time 11/8                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 11/8                                                                  %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (57)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <43>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1098,7 +1098,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 58 / measure 45]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (58)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <44>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1106,7 +1106,7 @@ A_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [A.45]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[2'20'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -1118,7 +1118,7 @@ A_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_dashed_line_with_arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -1135,7 +1135,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 59 / measure 46]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (59)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <45>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1145,7 +1145,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 60 / measure 47]                                  %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (60)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <46>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1155,7 +1155,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 61 / measure 48]                                  %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (61)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <47>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1163,16 +1163,16 @@ A_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [A.48]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[2'26'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-%@% - \baca_metronome_mark_spanner_left_text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
-    - \baca_metronome_mark_spanner_colored_left_text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue        %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
     % [A GlobalSkips measure 62 / measure 49]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (62)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <48>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1182,7 +1182,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 63 / measure 50]                                  %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (63)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <49>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1200,7 +1200,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 65 / measure 52]                                  %! _comment_measure_numbers
     \time 8/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 2                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (65)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <51>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1210,7 +1210,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 66 / measure 53]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (66)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <52>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1220,7 +1220,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 67 / measure 54]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (67)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <53>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1230,7 +1230,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 68 / measure 55]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (68)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <54>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1240,7 +1240,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 69 / measure 56]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (69)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <55>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1250,7 +1250,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 70 / measure 57]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (70)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <56>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1258,7 +1258,7 @@ A_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [A.57]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[2'43'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(1)
-%@% - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
+%@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     \concat                                                                %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%         {                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -1358,7 +1358,7 @@ A_GlobalSkips = {                                                              %
 %@%         }                                                                  %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@%     }                                                                      %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
-    - \abjad_invisible_line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
+    - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     - \tweak bound-details.left.text \markup {                                 %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
         \concat                                                                %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
             {                                                                  %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
@@ -1463,7 +1463,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 71 / measure 58]                                  %! _comment_measure_numbers
     \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (71)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <57>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1473,7 +1473,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 72 / measure 59]                                  %! _comment_measure_numbers
     \time 2/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/2                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (72)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <58>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1483,7 +1483,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 73 / measure 60]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (73)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <59>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1509,7 +1509,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 76 / measure 63]                                  %! _comment_measure_numbers
     \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (76)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <62>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1519,7 +1519,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 77 / measure 64]                                  %! _comment_measure_numbers
     \time 13/8                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 13/8                                                                  %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (77)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <63>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1529,7 +1529,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 78 / measure 65]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (78)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <64>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1539,7 +1539,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 79 / measure 66]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (79)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <65>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1549,7 +1549,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 80 / measure 67]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (80)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <66>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1575,7 +1575,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 83 / measure 70]                                  %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (83)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <69>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1585,7 +1585,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 84 / measure 71]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (84)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <70>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1603,7 +1603,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 86 / measure 73]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (86)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <72>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1621,7 +1621,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 88 / measure 75]                                  %! _comment_measure_numbers
     \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \baca_time_signature_color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
+    \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (88)                                              %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <74>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -1629,7 +1629,7 @@ A_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [A.75]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[3'21'']"                                        %! CLOCK_TIME_MARKUP:_label_clock_time
     \stopTextSpan                                                              %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(4)
-    \baca_bar_line_visible                                                     %! _attach_final_bar_line
+    \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
 }                                                                              %! extern
@@ -1989,7 +1989,7 @@ A_OboeMusicVoice = {                                                           %
         bf'!16                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!16                                                                %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -1998,14 +1998,14 @@ A_OboeMusicVoice = {                                                           %
         ]                                                                      %! polyphony
     }                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!4.                                                                    %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \times 2/3 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 43 / measure 30]                           %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2072,13 +2072,13 @@ A_OboeMusicVoice = {                                                           %
     \times 5/6 {                                                               %! polyphony
 
         % [A OboeMusicVoice measure 45 / measure 32]                           %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2220,13 +2220,13 @@ A_OboeMusicVoice = {                                                           %
     d''16                                                                      %! polyphony
     - \staccato                                                                %! IndicatorCommand
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf''!16                                                                    %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf''!16                                                                    %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -2696,7 +2696,7 @@ A_ClarinetMusicVoice = {                                                       %
         e''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2704,12 +2704,12 @@ A_ClarinetMusicVoice = {                                                       %
         ~
     }                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!4                                                                     %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!4                                                                     %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -2809,13 +2809,13 @@ A_ClarinetMusicVoice = {                                                       %
     \times 5/4 {                                                               %! polyphony
 
         % [A ClarinetMusicVoice measure 34 / measure 21]                       %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -2842,7 +2842,7 @@ A_ClarinetMusicVoice = {                                                       %
         - \staccato                                                            %! IndicatorCommand
     }                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -2851,7 +2851,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     % [A ClarinetMusicVoice measure 36 / measure 23]                           %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -2859,20 +2859,20 @@ A_ClarinetMusicVoice = {                                                       %
     - \tweak color #blue                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f'4                                                                        %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f'16.                                                                      %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     [                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f'16.                                                                      %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -2915,7 +2915,7 @@ A_ClarinetMusicVoice = {                                                       %
     a'8                                                                        %! polyphony
     - \staccato                                                                %! IndicatorCommand
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'8                                                                        %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -2923,19 +2923,19 @@ A_ClarinetMusicVoice = {                                                       %
     ~
     ]                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     % [A ClarinetMusicVoice measure 39 / measure 26]                           %! _comment_measure_numbers
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -2943,7 +2943,7 @@ A_ClarinetMusicVoice = {                                                       %
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/9 {                                                               %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'8                                                                    %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -3037,26 +3037,26 @@ A_ClarinetMusicVoice = {                                                       %
         fs'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f'4                                                                    %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
     }                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -3066,13 +3066,13 @@ A_ClarinetMusicVoice = {                                                       %
     - \staccato                                                                %! IndicatorCommand
     [                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!16.                                                                   %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!16.                                                                   %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -3114,13 +3114,13 @@ A_ClarinetMusicVoice = {                                                       %
 
         gs''!4                                                                 %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         as'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         as'!4                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -3707,7 +3707,7 @@ A_PianoMusicVoice = {                                                          %
 
         c''8                                                                   %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!8                                                                 %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -3716,7 +3716,7 @@ A_PianoMusicVoice = {                                                          %
     \times 4/7 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 25 / measure 12]                          %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!8                                                                 %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -3928,21 +3928,21 @@ A_PianoMusicVoice = {                                                          %
 
     g''8                                                                       %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     e'8                                                                        %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
     ]                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     e'4.                                                                       %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e'4                                                                    %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -3989,7 +3989,7 @@ A_PianoMusicVoice = {                                                          %
 
         d''8                                                                   %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e'8                                                                    %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -3997,7 +3997,7 @@ A_PianoMusicVoice = {                                                          %
     }                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 34 / measure 21]                              %! _comment_measure_numbers
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     e'16.                                                                      %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
@@ -4201,13 +4201,13 @@ A_PianoMusicVoice = {                                                          %
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/9 {                                                               %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs'!16                                                                 %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         [                                                                      %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs'!16                                                                 %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -4270,14 +4270,14 @@ A_PianoMusicVoice = {                                                          %
 
     g'16                                                                       %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af'!16                                                                     %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ]                                                                          %! polyphony
     \times 4/5 {                                                               %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!16                                                                 %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -4446,13 +4446,13 @@ A_PianoMusicVoice = {                                                          %
     ]                                                                          %! polyphony
 
     % [A PianoMusicVoice measure 44 / measure 31]                              %! _comment_measure_numbers
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!16                                                                    %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     [                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!16                                                                    %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
@@ -4793,7 +4793,7 @@ A_PianoMusicVoice = {                                                          %
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)      %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g''16                                                                  %! pizzicato_sixteenths
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \staccatissimo                                                       %! IndicatorCommand
@@ -4801,7 +4801,7 @@ A_PianoMusicVoice = {                                                          %
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         [                                                                      %! pizzicato_sixteenths
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g''16                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -4910,19 +4910,19 @@ A_PianoMusicVoice = {                                                          %
         - \staccatissimo                                                       %! IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''16                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -5005,14 +5005,14 @@ A_PianoMusicVoice = {                                                          %
 
     r8                                                                         %! pizzicato_sixteenths
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!16                                                                    %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     [                                                                          %! pizzicato_sixteenths
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!16                                                                    %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -5030,20 +5030,20 @@ A_PianoMusicVoice = {                                                          %
     % [A PianoMusicVoice measure 78 / measure 65]                              %! _comment_measure_numbers
     r16.                                                                       %! pizzicato_sixteenths
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     c'''8.                                                                     %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     [                                                                          %! pizzicato_sixteenths
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     c'''32.                                                                    %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     c'''32.                                                                    %! pizzicato_sixteenths
     - \staccatissimo                                                           %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -5312,13 +5312,13 @@ A_PianoMusicVoice = {                                                          %
 
         r4                                                                     %! pizzicato_sixteenths
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''4                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''16                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6093,7 +6093,7 @@ A_ViolinMusicVoice = {                                                         %
 
     % [A ViolinMusicVoice measure 32 / measure 19]                             %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4.                                                                    %! polyphony
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \staccato                                                                %! IndicatorCommand
@@ -6102,7 +6102,7 @@ A_ViolinMusicVoice = {                                                         %
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \times 2/3 {                                                               %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6111,7 +6111,7 @@ A_ViolinMusicVoice = {                                                         %
         af''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6119,14 +6119,14 @@ A_ViolinMusicVoice = {                                                         %
         ~
     }                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 10/14 {                                                             %! polyphony
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!16                                                                %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6194,7 +6194,7 @@ A_ViolinMusicVoice = {                                                         %
         e''4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6202,7 +6202,7 @@ A_ViolinMusicVoice = {                                                         %
     }                                                                          %! polyphony
 
     % [A ViolinMusicVoice measure 34 / measure 21]                             %! _comment_measure_numbers
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!16                                                                    %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -6215,7 +6215,7 @@ A_ViolinMusicVoice = {                                                         %
     bf'!16                                                                     %! polyphony
     - \staccato                                                                %! IndicatorCommand
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!16                                                                    %! polyphony
     - \staccato                                                                %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -6223,14 +6223,14 @@ A_ViolinMusicVoice = {                                                         %
     ~
     ]                                                                          %! polyphony
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!4.                                                                    %! polyphony
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 35 / measure 22]                         %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6275,13 +6275,13 @@ A_ViolinMusicVoice = {                                                         %
         d'16                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bf'!16                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bf'!16                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6434,7 +6434,7 @@ A_ViolinMusicVoice = {                                                         %
         a'16                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!16                                                                %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6444,13 +6444,13 @@ A_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 41 / measure 28]                         %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6533,7 +6533,7 @@ A_ViolinMusicVoice = {                                                         %
         c''16                                                                  %! polyphony
         - \staccato                                                            %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!16                                                                %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6544,12 +6544,12 @@ A_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! polyphony
 
         % [A ViolinMusicVoice measure 43 / measure 30]                         %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!4                                                                 %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!4                                                                 %! polyphony
         - \staccato                                                            %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6854,13 +6854,13 @@ A_ViolinMusicVoice = {                                                         %
     - \downbow                                                                 %! IndicatorCommand
     \glissando                                                                 %! SpannerCommand
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -6903,13 +6903,13 @@ A_ViolinMusicVoice = {                                                         %
     - \upbow                                                                   %! IndicatorCommand
     \glissando                                                                 %! SpannerCommand
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!4                                                                     %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-    \baca_repeat_pitch_class_warning                                           %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!4                                                                     %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -7427,13 +7427,13 @@ A_ViolinMusicVoice = {                                                         %
         e'''8                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''2                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''8                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -7616,7 +7616,7 @@ A_ViolaMusicVoice = {                                                          %
         ctqs!2                                                                 %! hypermeter_tuplets
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e\breve                                                                %! hypermeter_tuplets
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -7626,7 +7626,7 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 25 / measure 12]                          %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e4                                                                     %! hypermeter_tuplets
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "non flautando" }                                          %! baca_markup:IndicatorCommand
@@ -7832,7 +7832,7 @@ A_ViolaMusicVoice = {                                                          %
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -7842,7 +7842,7 @@ A_ViolaMusicVoice = {                                                          %
     \times 7/9 {                                                               %! prolated_quarters
 
         % [A ViolaMusicVoice measure 54 / measure 41]                          %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -7897,13 +7897,13 @@ A_ViolaMusicVoice = {                                                          %
         - \upbow                                                               %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -7978,7 +7978,7 @@ A_ViolaMusicVoice = {                                                          %
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -7987,7 +7987,7 @@ A_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! prolated_quarters
 
         % [A ViolaMusicVoice measure 60 / measure 47]                          %! _comment_measure_numbers
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -8063,13 +8063,13 @@ A_ViolaMusicVoice = {                                                          %
 
         af''!8                                                                 %! pizzicato_rhythm
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!8                                                                 %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -8125,13 +8125,13 @@ A_ViolaMusicVoice = {                                                          %
         fs''!4.                                                                %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''8                                                                   %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! pizzicato_rhythm
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -8175,13 +8175,13 @@ A_ViolaMusicVoice = {                                                          %
         - \staccatissimo                                                       %! IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''16                                                                 %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''8                                                                  %! pizzicato_sixteenths
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -8875,13 +8875,13 @@ A_CelloMusicVoice = {                                                          %
         - \downbow                                                             %! IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
-        \baca_repeat_pitch_class_warning                                       %! _color_repeat_pitch_classes_
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_

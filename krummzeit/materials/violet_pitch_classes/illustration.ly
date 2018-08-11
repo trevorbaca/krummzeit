@@ -105,11 +105,11 @@
                 fs'8
                 f'8
                 c'8
-                \abjad_color_music "red"
+                \abjad-color-music "red"
                 b'8
                 \stopGroup
                 s8
-                \abjad_color_music "red"
+                \abjad-color-music "red"
                 b'8
                 ^ \markup { 6 }
                 \startGroup
@@ -221,11 +221,11 @@
                 fs'8
                 af'8
                 g'8
-                \abjad_color_music "blue"
+                \abjad-color-music "blue"
                 f'8
                 \stopGroup
                 s8
-                \abjad_color_music "blue"
+                \abjad-color-music "blue"
                 f'8
                 ^ \markup { 20 }
                 \startGroup
@@ -410,12 +410,12 @@
                 af'8
                 g'8
                 f'8
-                \abjad_color_music "red"
+                \abjad-color-music "red"
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad_color_music "red"
+                \abjad-color-music "red"
                 e'8
                 ^ \markup { 42 }
                 \startGroup
@@ -464,12 +464,12 @@
                 fs'8
                 ^ \markup { 48 }
                 \startGroup
-                \abjad_color_music "blue"
+                \abjad-color-music "blue"
                 f'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad_color_music "blue"
+                \abjad-color-music "blue"
                 f'8
                 ^ \markup { 49 }
                 \startGroup
@@ -1014,12 +1014,12 @@
                 af'8
                 g'8
                 f'8
-                \abjad_color_music "red"
+                \abjad-color-music "red"
                 e'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad_color_music "red"
+                \abjad-color-music "red"
                 e'8
                 ^ \markup { 112 }
                 \startGroup
@@ -1096,12 +1096,12 @@
                 ^ \markup { 120 }
                 \startGroup
                 \startGroup
-                \abjad_color_music "blue"
+                \abjad-color-music "blue"
                 b'8
                 \stopGroup
                 \stopGroup
                 s8
-                \abjad_color_music "blue"
+                \abjad-color-music "blue"
                 b'8
                 ^ \markup { 121 }
                 \startGroup

@@ -601,7 +601,7 @@ I_ClarinetMusicVoice = {                                                       %
     % [I ClarinetMusicVoice measure 299 / measure 9]                           %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs!1                                                                       %! baca_make_repeat_tied_notes
-    \baca_fff_poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-fff-poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \repeatTie
 
     % [I ClarinetMusicVoice measure 300 / measure 10]                          %! _comment_measure_numbers
@@ -4510,7 +4510,7 @@ I_ViolinMusicVoice = {                                                         %
     % [I ViolinMusicVoice measure 295 / measure 5]                             %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     g''4                                                                       %! right_remainder_quarters
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \downbow                                                                 %! IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
     \glissando                                                                 %! SpannerCommand
@@ -4888,7 +4888,7 @@ I_ViolaMusicVoice = {                                                          %
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     ef''!4                                                                     %! right_remainder_quarters
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \downbow                                                                 %! IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
     \glissando                                                                 %! SpannerCommand
@@ -5263,7 +5263,7 @@ I_CelloMusicVoice = {                                                          %
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     d''4                                                                       %! right_remainder_quarters
-    \baca_effort_f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     - \downbow                                                                 %! IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
     \glissando                                                                 %! SpannerCommand

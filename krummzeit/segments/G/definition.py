@@ -363,14 +363,14 @@ maker(
     (['vn', 'vc'], (14, 20)),
     baca.markup('molto gridato'),
     baca.note_head_style_harmonic(),
-    baca.dynamic('fff_poss'),
+    baca.dynamic('fff-poss'),
     )
 
 maker(
     ('va', (14, 19)),
     baca.markup('molto gridato'),
     baca.note_head_style_harmonic(),
-    baca.dynamic('fff_poss'),
+    baca.dynamic('fff-poss'),
     )
 
 maker(

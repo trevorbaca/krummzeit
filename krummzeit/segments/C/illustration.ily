@@ -1301,7 +1301,7 @@ C_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.                                                                        %! baca_make_repeat_tied_notes
     :32                                                                        %! IndicatorCommand
-    \baca_ppp_ancora                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-ppp-ancora                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Perc.”]"                             %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Xylophone”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
@@ -1777,7 +1777,7 @@ C_ViolinMusicVoice = {                                                         %
     \override Stem.direction = #up                                             %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     fs!1                                                                       %! baca_make_repeat_tied_notes
-    \baca_fff_poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-fff-poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { arco }                                                         %! baca_markup:IndicatorCommand
 
     % [C ViolinMusicVoice measure 147 / measure 15]                            %! _comment_measure_numbers
@@ -1993,7 +1993,7 @@ C_ViolaMusicVoice = {                                                          %
     \override Stem.direction = #up                                             %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     bf,!2.                                                                     %! baca_make_repeat_tied_notes
-    \baca_fff_poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-fff-poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { arco }                                                         %! baca_markup:IndicatorCommand
 
     % [C ViolaMusicVoice measure 144 / measure 12]                             %! _comment_measure_numbers
@@ -2006,7 +2006,7 @@ C_ViolaMusicVoice = {                                                          %
     % [C ViolaMusicVoice measure 146 / measure 14]                             %! _comment_measure_numbers
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     bf,!1                                                                      %! baca_make_repeat_tied_notes
-    \baca_fff_poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-fff-poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
 
     % [C ViolaMusicVoice measure 147 / measure 15]                             %! _comment_measure_numbers
     bf,!1                                                                      %! baca_make_repeat_tied_notes
@@ -2228,7 +2228,7 @@ C_CelloMusicVoice = {                                                          %
     \override Stem.direction = #up                                             %! baca_stem_up:OverrideCommand(1)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     a,,1                                                                       %! baca_make_repeat_tied_notes
-    \baca_fff_poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-fff-poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \markup { arco }                                                         %! baca_markup:IndicatorCommand
 
     % [C CelloMusicVoice measure 147 / measure 15]                             %! _comment_measure_numbers

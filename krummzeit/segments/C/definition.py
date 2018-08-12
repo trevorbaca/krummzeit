@@ -75,7 +75,7 @@ maker(
 maker(
     ('perc', (1, 9)),
     baca.clef('percussion'),
-    baca.dynamic('ppp_ancora'),
+    baca.dynamic('ppp-ancora'),
     baca.make_repeat_tied_notes(),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.markup('snare drum', boxed=True),
@@ -327,12 +327,12 @@ maker(
 maker(
     ('va', (11, 12)),
     baca.markup('arco'),
-    baca.dynamic('fff_poss'),
+    baca.dynamic('fff-poss'),
     )
 
 maker(
     (['vn', 'va', 'vc'], (14, 16)),
-    baca.dynamic('fff_poss'),
+    baca.dynamic('fff-poss'),
     )
 
 maker(

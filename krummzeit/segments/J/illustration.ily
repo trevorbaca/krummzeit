@@ -1379,7 +1379,7 @@ J_PianoMusicVoice = {                                                          %
     \once \override Voice.DynamicText.color = #(x11-color 'DeepPink1)          %! REDUNDANT_DYNAMIC_COLOR:_attach_color_literal(2)
     cs'''!2.
     :32                                                                        %! IndicatorCommand
-    \baca_fff_poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-fff-poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
     \repeatTie
 
     cs'''!2

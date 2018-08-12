@@ -585,7 +585,7 @@ i_PercussionMusicVoice = {                                                     %
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         c'2                                                                    %! sponge_rhythm
-        \baca_effort_ff                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        \baca-effort-ff                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \accent                                                              %! IndicatorCommand
         ^ \markup {                                                            %! baca_markup:IndicatorCommand
             \override                                                          %! baca_markup:IndicatorCommand

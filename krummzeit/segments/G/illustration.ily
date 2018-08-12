@@ -1876,7 +1876,7 @@ G_ViolinMusicVoice = {                                                         %
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!8                                                                  %! glissando_rhythm
-        \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -2167,7 +2167,7 @@ G_ViolaMusicVoice = {                                                          %
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         b4                                                                     %! glissando_rhythm
-        \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 
@@ -2452,7 +2452,7 @@ G_CelloMusicVoice = {                                                          %
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         a,8                                                                    %! glissando_rhythm
-        \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
         \glissando                                                             %! SpannerCommand
 

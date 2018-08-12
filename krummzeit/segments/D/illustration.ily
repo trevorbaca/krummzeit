@@ -3038,7 +3038,7 @@ D_PercussionMusicVoice = {                                                     %
         % [D PercussionMusicVoice measure 157 / measure 6]                     %! _comment_measure_numbers
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c'2                                                                    %! sponge_rhythm
-        \baca_effort_ff                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        \baca-effort-ff                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         - \accent                                                              %! IndicatorCommand
         ^ \markup {                                                            %! baca_markup:IndicatorCommand
             \override                                                          %! baca_markup:IndicatorCommand
@@ -3721,7 +3721,7 @@ D_ViolinMusicVoice = {                                                         %
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef'!4                                                                      %! right_remainder_quarters
-    \baca_effort_mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vn.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Violin”)"                            %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup { "directly on bridge: very slow bow, imperceptible bow changes" } %! baca_markup:IndicatorCommand
@@ -4515,7 +4515,7 @@ D_ViolaMusicVoice = {                                                          %
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     c4                                                                         %! right_remainder_quarters
-    \baca_effort_mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Va.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Viola”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup { "directly on bridge: very slow bow, imperceptible bow changes" } %! baca_markup:IndicatorCommand
@@ -5401,7 +5401,7 @@ D_CelloMusicVoice = {                                                          %
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Voice.DynamicText.color = #(x11-color 'blue)               %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
     d,4                                                                        %! right_remainder_quarters
-    \baca_effort_mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    \baca-effort-mp                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup { "directly on bridge: very slow bow, imperceptible bow changes" } %! baca_markup:IndicatorCommand

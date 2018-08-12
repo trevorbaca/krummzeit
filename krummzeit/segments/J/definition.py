@@ -102,7 +102,7 @@ maker(
 
 maker(
     ('pf', (25, 48)),
-    baca.dynamic('fff_poss', selector=baca.leaf(0)),
+    baca.dynamic('fff-poss', selector=baca.leaf(0)),
     )
 
 maker(

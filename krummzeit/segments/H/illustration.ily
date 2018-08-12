@@ -2439,7 +2439,7 @@ H_ViolinMusicVoice = {                                                         %
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         df'!2.                                                                 %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
-        \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Violin”)"                        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -2609,7 +2609,7 @@ H_ViolaMusicVoice = {                                                          %
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c4                                                                     %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
-        \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Viola”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -2777,7 +2777,7 @@ H_CelloMusicVoice = {                                                          %
         \once \override Voice.DynamicText.color = #(x11-color 'blue)           %! EXPLICIT_DYNAMIC_COLOR:_attach_color_literal(2)
         c,2                                                                    %! hypermeter_tuplets
         :32                                                                    %! IndicatorCommand
-        \baca_fff_poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vc.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)

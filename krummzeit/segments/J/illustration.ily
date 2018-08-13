@@ -151,7 +151,7 @@ J_GlobalSkips = {                                                              %
 
     % [J GlobalSkips measure 314 / measure 1]                                  %! _comment_measure_numbers
     \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \mark #10                                                                  %! IndicatorCommand
+    \mark #10                                                                  %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/4                                                                   %! _make_global_skips(1)
@@ -1198,7 +1198,7 @@ J_PianoMusicVoice = {                                                          %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \fff                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "[“Hpschd.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -1213,336 +1213,336 @@ J_PianoMusicVoice = {                                                          %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 315 / measure 2]                              %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 316 / measure 3]                              %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 317 / measure 4]                              %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 318 / measure 5]                              %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 319 / measure 6]                              %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 320 / measure 7]                              %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 321 / measure 8]                              %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 322 / measure 9]                              %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 323 / measure 10]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 324 / measure 11]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 325 / measure 12]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 326 / measure 13]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 327 / measure 14]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 328 / measure 15]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 329 / measure 16]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 330 / measure 17]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 331 / measure 18]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 332 / measure 19]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 333 / measure 20]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 334 / measure 21]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 335 / measure 22]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 336 / measure 23]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 337 / measure 24]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 338 / measure 25]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \baca-fff-poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 339 / measure 26]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 340 / measure 27]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 341 / measure 28]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 342 / measure 29]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 343 / measure 30]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 344 / measure 31]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 345 / measure 32]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 346 / measure 33]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 347 / measure 34]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 348 / measure 35]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 349 / measure 36]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 350 / measure 37]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 351 / measure 38]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 352 / measure 39]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 353 / measure 40]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 354 / measure 41]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 355 / measure 42]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 356 / measure 43]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 357 / measure 44]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 358 / measure 45]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 359 / measure 46]                             %! _comment_measure_numbers
     cs'''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs'''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 360 / measure 47]                             %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PianoMusicVoice measure 361 / measure 48]                             %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
 }                                                                              %! extern
@@ -1571,14 +1571,14 @@ J_PercussionMusicVoice = {                                                     %
     \override DynamicLineSpanner.staff-padding = #'4                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_314:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_314:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Perc.”]"                             %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -1593,334 +1593,334 @@ J_PercussionMusicVoice = {                                                     %
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 315 / measure 2]                         %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 316 / measure 3]                         %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 317 / measure 4]                         %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 318 / measure 5]                         %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 319 / measure 6]                         %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 320 / measure 7]                         %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 321 / measure 8]                         %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 322 / measure 9]                         %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 323 / measure 10]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 324 / measure 11]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 325 / measure 12]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 326 / measure 13]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 327 / measure 14]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 328 / measure 15]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 329 / measure 16]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 330 / measure 17]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 331 / measure 18]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 332 / measure 19]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 333 / measure 20]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 334 / measure 21]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 335 / measure 22]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 336 / measure 23]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 337 / measure 24]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 338 / measure 25]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 339 / measure 26]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 340 / measure 27]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 341 / measure 28]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 342 / measure 29]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 343 / measure 30]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 344 / measure 31]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 345 / measure 32]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 346 / measure 33]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 347 / measure 34]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 348 / measure 35]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 349 / measure 36]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 350 / measure 37]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 351 / measure 38]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 352 / measure 39]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 353 / measure 40]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 354 / measure 41]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 355 / measure 42]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 356 / measure 43]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 357 / measure 44]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 358 / measure 45]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 359 / measure 46]                        %! _comment_measure_numbers
     cs''!2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     cs''!2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 360 / measure 47]                        %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [J PercussionMusicVoice measure 361 / measure 48]                        %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
@@ -1961,7 +1961,7 @@ J_ViolinMusicVoice = {                                                         %
         e'''2                                                                  %! closing_pizzicati
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Violin”)"                        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
@@ -1975,10 +1975,10 @@ J_ViolinMusicVoice = {                                                         %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         f'''1                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!4                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -1995,7 +1995,7 @@ J_ViolinMusicVoice = {                                                         %
         r2
 
         e'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2007,7 +2007,7 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         ef'''!4                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2026,10 +2026,10 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         d'''1                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2040,13 +2040,13 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2063,7 +2063,7 @@ J_ViolinMusicVoice = {                                                         %
         r1
 
         ef'''!4                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2084,7 +2084,7 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         f'''1                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2095,7 +2095,7 @@ J_ViolinMusicVoice = {                                                         %
         r1
 
         cs'''!2                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2103,10 +2103,10 @@ J_ViolinMusicVoice = {                                                         %
 
         % [J ViolinMusicVoice measure 324 / measure 11]                        %! _comment_measure_numbers
         d'''1                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2123,7 +2123,7 @@ J_ViolinMusicVoice = {                                                         %
 
         % [J ViolinMusicVoice measure 326 / measure 13]                        %! _comment_measure_numbers
         f'''1.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2141,7 +2141,7 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         g'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2151,10 +2151,10 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         e'''1                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef'''!4                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2165,7 +2165,7 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2174,10 +2174,10 @@ J_ViolinMusicVoice = {                                                         %
 
         % [J ViolinMusicVoice measure 330 / measure 17]                        %! _comment_measure_numbers
         cs'''!4                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         d'''1.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2188,7 +2188,7 @@ J_ViolinMusicVoice = {                                                         %
         r2
 
         e'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2212,7 +2212,7 @@ J_ViolinMusicVoice = {                                                         %
 
         % [J ViolinMusicVoice measure 333 / measure 20]                        %! _comment_measure_numbers
         f'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2223,7 +2223,7 @@ J_ViolinMusicVoice = {                                                         %
         r1.
 
         g'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2234,10 +2234,10 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         e'''1                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef'''!2                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2247,7 +2247,7 @@ J_ViolinMusicVoice = {                                                         %
         r2
 
         f'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2266,10 +2266,10 @@ J_ViolinMusicVoice = {                                                         %
         r2.
 
         cs'''!1                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         d'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2286,16 +2286,16 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         e'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2312,7 +2312,7 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         ef'''!2                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2323,7 +2323,7 @@ J_ViolinMusicVoice = {                                                         %
         r1.
 
         f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2348,10 +2348,10 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         cs'''!2                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         d'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2362,7 +2362,7 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         e'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2373,7 +2373,7 @@ J_ViolinMusicVoice = {                                                         %
         r2.
 
         f'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2386,7 +2386,7 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         g'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2397,7 +2397,7 @@ J_ViolinMusicVoice = {                                                         %
         r2
 
         e'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2414,16 +2414,16 @@ J_ViolinMusicVoice = {                                                         %
 
         % [J ViolinMusicVoice measure 350 / measure 37]                        %! _comment_measure_numbers
         ef'''!2                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!4                                                                %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         d'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2440,7 +2440,7 @@ J_ViolinMusicVoice = {                                                         %
         r1
 
         e'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2458,7 +2458,7 @@ J_ViolinMusicVoice = {                                                         %
         r4
 
         f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
@@ -2513,15 +2513,15 @@ J_ViolaMusicVoice = {                                                          %
             }                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \override DynamicLineSpanner.staff-padding = #'5                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #2                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! REDUNDANT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'DeepPink1)             %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         ef'''!\breve                                                           %! closing_pizzicati
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Viola”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
@@ -2541,7 +2541,7 @@ J_ViolaMusicVoice = {                                                          %
 
         % [J ViolaMusicVoice measure 315 / measure 2]                          %! _comment_measure_numbers
         d'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2551,7 +2551,7 @@ J_ViolaMusicVoice = {                                                          %
         r4
 
         f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2561,13 +2561,13 @@ J_ViolaMusicVoice = {                                                          %
         r2.
 
         g'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
@@ -2575,7 +2575,7 @@ J_ViolaMusicVoice = {                                                          %
 
         % [J ViolaMusicVoice measure 317 / measure 4]                          %! _comment_measure_numbers
         cs'''!2.                                                               %! closing_pizzicati
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 

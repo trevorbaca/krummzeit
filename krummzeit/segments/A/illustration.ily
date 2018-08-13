@@ -232,7 +232,7 @@ A_GlobalSkips = {                                                              %
 
     % [A GlobalSkips measure 14 / measure 1]                                   %! _comment_measure_numbers
     \time 3/4                                                                  %! REAPPLIED_TIME_SIGNATURE:_set_status_tag:_reapply_persistent_indicators(1):_make_global_skips(2)
-    \mark #1                                                                   %! IndicatorCommand
+    \mark #1                                                                   %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'green4                                        %! REAPPLIED_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
@@ -1728,20 +1728,20 @@ A_OboeMusicVoice = {                                                           %
     ef'!4.                                                                     %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
     \times 2/3 {                                                               %! polyphony
 
         e'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -1752,35 +1752,35 @@ A_OboeMusicVoice = {                                                           %
     \times 6/10 {                                                              %! polyphony
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -1792,10 +1792,10 @@ A_OboeMusicVoice = {                                                           %
         bf'!4                                                                  %! polyphony
 
         a'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -1804,46 +1804,46 @@ A_OboeMusicVoice = {                                                           %
 
     % [A OboeMusicVoice measure 38 / measure 25]                               %! _comment_measure_numbers
     fs'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \times 8/12 {                                                              %! polyphony
 
         b'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         e'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -1855,13 +1855,13 @@ A_OboeMusicVoice = {                                                           %
 
         % [A OboeMusicVoice measure 39 / measure 26]                           %! _comment_measure_numbers
         a'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -1877,31 +1877,31 @@ A_OboeMusicVoice = {                                                           %
         [                                                                      %! polyphony
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
@@ -1909,13 +1909,13 @@ A_OboeMusicVoice = {                                                           %
     \times 2/3 {                                                               %! polyphony
 
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
@@ -1923,13 +1923,13 @@ A_OboeMusicVoice = {                                                           %
 
         % [A OboeMusicVoice measure 41 / measure 28]                           %! _comment_measure_numbers
         bf'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -1937,19 +1937,19 @@ A_OboeMusicVoice = {                                                           %
     c''4                                                                       %! polyphony
 
     d''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     e''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     g''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     b'16                                                                       %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -1962,55 +1962,55 @@ A_OboeMusicVoice = {                                                           %
         b'4                                                                    %! polyphony
 
         bf'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     ef''!4.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \times 8/12 {                                                              %! polyphony
 
         a'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
@@ -2028,15 +2028,15 @@ A_OboeMusicVoice = {                                                           %
         % [A OboeMusicVoice measure 43 / measure 30]                           %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -2052,31 +2052,31 @@ A_OboeMusicVoice = {                                                           %
         [                                                                      %! polyphony
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
@@ -2085,13 +2085,13 @@ A_OboeMusicVoice = {                                                           %
     \times 5/6 {                                                               %! polyphony
 
         a''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
@@ -2101,18 +2101,18 @@ A_OboeMusicVoice = {                                                           %
         % [A OboeMusicVoice measure 45 / measure 32]                           %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         bf'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -2123,41 +2123,41 @@ A_OboeMusicVoice = {                                                           %
     \times 8/12 {                                                              %! polyphony
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -2172,49 +2172,49 @@ A_OboeMusicVoice = {                                                           %
         a''4                                                                   %! polyphony
 
         b''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     e''4.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -2226,10 +2226,10 @@ A_OboeMusicVoice = {                                                           %
         bf'!4                                                                  %! polyphony
 
         c''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
@@ -2237,13 +2237,13 @@ A_OboeMusicVoice = {                                                           %
 
         % [A OboeMusicVoice measure 49 / measure 36]                           %! _comment_measure_numbers
         d''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -2256,17 +2256,17 @@ A_OboeMusicVoice = {                                                           %
     [                                                                          %! polyphony
 
     d''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf''!16                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf''!16                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ]                                                                          %! polyphony
@@ -2274,13 +2274,13 @@ A_OboeMusicVoice = {                                                           %
     \times 2/3 {                                                               %! polyphony
 
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
@@ -2447,31 +2447,31 @@ A_ClarinetMusicVoice = {                                                       %
     R1 * 7/8                                                                   %! _make_measure_silences
 
     % [A ClarinetMusicVoice measure 18 / measure 5]                            %! _comment_measure_numbers
-    \set Staff.shortInstrumentName =                                           %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-    \markup {                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-        \hcenter-in                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-            #16                                                                %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-            \center-column                                                     %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                {                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                    Cl.                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                    \concat                                                    %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                        {                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                            (                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                            E                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                            \raise                                             %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                                #0.5                                           %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                                \scale                                         %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                                    #'(0.65 . 0.65)                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                                    \flat                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                            )                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                        }                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                }                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-        }                                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
+    \set Staff.shortInstrumentName =                                           %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+    \markup {                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+        \hcenter-in                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+            #16                                                                %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+            \center-column                                                     %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                {                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                    Cl.                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                    \concat                                                    %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                        {                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                            (                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                            E                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                            \raise                                             %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                                #0.5                                           %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                                \scale                                         %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                                    #'(0.65 . 0.65)                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                                    \flat                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                            )                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                        }                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                }                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+        }                                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     cs''!4.                                                                    %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -2493,37 +2493,37 @@ A_ClarinetMusicVoice = {                                                       %
     ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                    %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Cl. (Eb)”]"                           %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)          %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set Staff.shortInstrumentName =                                           %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-    \markup {                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-        \hcenter-in                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-            #16                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-            \center-column                                                     %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                    Cl.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                    \concat                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                        {                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                            (                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                            E                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                            \raise                                             %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                                #0.5                                           %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                                \scale                                         %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                                    #'(0.65 . 0.65)                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                                    \flat                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                            )                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                        }                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-        }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
+    \set Staff.shortInstrumentName =                                           %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+    \markup {                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+        \hcenter-in                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+            #16                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+            \center-column                                                     %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                    Cl.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                    \concat                                                    %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                        {                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                            (                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                            E                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                            \raise                                             %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                                #0.5                                           %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                                \scale                                         %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                                    #'(0.65 . 0.65)                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                                    \flat                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                            )                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                        }                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+        }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
     \times 2/3 {                                                               %! polyphony
 
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         gs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -2531,17 +2531,17 @@ A_ClarinetMusicVoice = {                                                       %
     gs''!4                                                                     %! polyphony
 
     ds''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     c''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     d''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     e''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -2551,10 +2551,10 @@ A_ClarinetMusicVoice = {                                                       %
         e''4                                                                   %! polyphony
 
         ds''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -2562,23 +2562,23 @@ A_ClarinetMusicVoice = {                                                       %
     c''4                                                                       %! polyphony
 
     c''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     ds''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     fs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     g''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     f''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     c''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -2588,13 +2588,13 @@ A_ClarinetMusicVoice = {                                                       %
     \times 2/3 {                                                               %! polyphony
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -2603,54 +2603,54 @@ A_ClarinetMusicVoice = {                                                       %
     a''4                                                                       %! polyphony
 
     e''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     e''16.                                                                     %! polyphony
     [                                                                          %! polyphony
 
     as'!16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     gs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     \times 2/3 {                                                               %! polyphony
 
         ds''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     c''4.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A ClarinetMusicVoice measure 22 / measure 9]                            %! _comment_measure_numbers
     c''4.                                                                      %! polyphony
 
     f''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     gs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     as'!8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -2664,20 +2664,20 @@ A_ClarinetMusicVoice = {                                                       %
 
         % [A ClarinetMusicVoice measure 23 / measure 10]                       %! _comment_measure_numbers
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 24 / measure 11]                           %! _comment_measure_numbers
     c''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     f''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -2686,15 +2686,15 @@ A_ClarinetMusicVoice = {                                                       %
         f''4                                                                   %! polyphony
 
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     as'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     % [A ClarinetMusicVoice measure 25 / measure 12]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
@@ -2712,18 +2712,18 @@ A_ClarinetMusicVoice = {                                                       %
     d''4.                                                                      %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \times 2/3 {                                                               %! polyphony
 
         g''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         gs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -2731,17 +2731,17 @@ A_ClarinetMusicVoice = {                                                       %
     a'4                                                                        %! polyphony
 
     e''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     ds''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     f''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -2751,11 +2751,11 @@ A_ClarinetMusicVoice = {                                                       %
         f''4                                                                   %! polyphony
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
@@ -2769,25 +2769,25 @@ A_ClarinetMusicVoice = {                                                       %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     e''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     g''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     gs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     fs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -2797,13 +2797,13 @@ A_ClarinetMusicVoice = {                                                       %
     \times 2/3 {                                                               %! polyphony
 
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         as'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -2812,54 +2812,54 @@ A_ClarinetMusicVoice = {                                                       %
     as'!4                                                                      %! polyphony
 
     f''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     f''16.                                                                     %! polyphony
     [                                                                          %! polyphony
 
     b'16.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     d''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a'16.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     \times 2/3 {                                                               %! polyphony
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     cs''!4.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A ClarinetMusicVoice measure 33 / measure 20]                           %! _comment_measure_numbers
     cs''!4.                                                                    %! polyphony
 
     fs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     a''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     b'8                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     d''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -2874,13 +2874,13 @@ A_ClarinetMusicVoice = {                                                       %
         % [A ClarinetMusicVoice measure 34 / measure 21]                       %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -2888,11 +2888,11 @@ A_ClarinetMusicVoice = {                                                       %
 
     % [A ClarinetMusicVoice measure 35 / measure 22]                           %! _comment_measure_numbers
     cs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     fs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -2901,16 +2901,16 @@ A_ClarinetMusicVoice = {                                                       %
         fs''!4                                                                 %! polyphony
 
         d''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -2927,7 +2927,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f'4                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -2940,52 +2940,52 @@ A_ClarinetMusicVoice = {                                                       %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f'16.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     fs'!16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     c'16.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
 
         g'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         as!4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 37 / measure 24]                           %! _comment_measure_numbers
     ds'!4.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     ds'!4.                                                                     %! polyphony
 
     % [A ClarinetMusicVoice measure 38 / measure 25]                           %! _comment_measure_numbers
     e'8                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     b8                                                                         %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a'8                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'8                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -3005,7 +3005,7 @@ A_ClarinetMusicVoice = {                                                       %
     % [A ClarinetMusicVoice measure 39 / measure 26]                           %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
@@ -3014,34 +3014,34 @@ A_ClarinetMusicVoice = {                                                       %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         [                                                                      %! polyphony
 
         ds'!8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs'!8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -3053,15 +3053,15 @@ A_ClarinetMusicVoice = {                                                       %
         cs'!4                                                                  %! polyphony
 
         as'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         gs'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     f'4.                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A ClarinetMusicVoice measure 41 / measure 28]                           %! _comment_measure_numbers
@@ -3075,30 +3075,30 @@ A_ClarinetMusicVoice = {                                                       %
         [                                                                      %! polyphony
 
         g'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         gs'!8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ds''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''8                                                                   %! polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
@@ -3107,14 +3107,14 @@ A_ClarinetMusicVoice = {                                                       %
 
         % [A ClarinetMusicVoice measure 42 / measure 29]                       %! _comment_measure_numbers
         as'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -3122,7 +3122,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -3134,28 +3134,28 @@ A_ClarinetMusicVoice = {                                                       %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     ds''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     g'16.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -3166,24 +3166,24 @@ A_ClarinetMusicVoice = {                                                       %
     g'4                                                                        %! polyphony
 
     a'4                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     as'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     % [A ClarinetMusicVoice measure 44 / measure 31]                           %! _comment_measure_numbers
     cs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     g''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     ds''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     gs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -3193,13 +3193,13 @@ A_ClarinetMusicVoice = {                                                       %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         as'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         as'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -3207,7 +3207,7 @@ A_ClarinetMusicVoice = {                                                       %
 
     % [A ClarinetMusicVoice measure 45 / measure 32]                           %! _comment_measure_numbers
     b'4.                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     b'4                                                                        %! polyphony
@@ -3218,37 +3218,37 @@ A_ClarinetMusicVoice = {                                                       %
     [                                                                          %! polyphony
 
     cs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     e''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     f''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     as'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     gs''!4.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A ClarinetMusicVoice measure 47 / measure 34]                           %! _comment_measure_numbers
     gs''!4                                                                     %! polyphony
 
     as'!8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     g''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     ds''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     e''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -3257,10 +3257,10 @@ A_ClarinetMusicVoice = {                                                       %
         e''4                                                                   %! polyphony
 
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -3271,29 +3271,29 @@ A_ClarinetMusicVoice = {                                                       %
         cs''!4                                                                 %! polyphony
 
         ds''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 49 / measure 36]                           %! _comment_measure_numbers
     g''4.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     c''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     e''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     f''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     % [A ClarinetMusicVoice measure 50 / measure 37]                           %! _comment_measure_numbers
@@ -3464,12 +3464,12 @@ A_PianoMusicVoice = {                                                          %
     \times 4/7 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 14 / measure 1]                           %! _comment_measure_numbers
-        \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-        \markup {                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-            \hcenter-in                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                #16                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-                Hpschd.                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-            }                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
+        \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+        \markup {                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+            \hcenter-in                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                #16                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+                Hpschd.                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+            }                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'6                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
@@ -3486,12 +3486,12 @@ A_PianoMusicVoice = {                                                          %
         [                                                                      %! polyphony
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-        \markup {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-            \hcenter-in                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                #16                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-                Hpschd.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-            }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
+        \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+        \markup {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+            \hcenter-in                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                #16                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+                Hpschd.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+            }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
         cs''!8                                                                 %! polyphony
 
@@ -4169,10 +4169,10 @@ A_PianoMusicVoice = {                                                          %
     \override Beam.positions = #'(-5 . -5)                                     %! baca_beam_positions:OverrideCommand(1)
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     \override TupletBracket.staff-padding = #4                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     b8
     [
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -4473,10 +4473,10 @@ A_PianoMusicVoice = {                                                          %
     \times 4/5 {                                                               %! polyphony
 
         % [A PianoMusicVoice measure 42 / measure 29]                          %! _comment_measure_numbers
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         c'16                                                                   %! polyphony
         [                                                                      %! polyphony
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -4704,28 +4704,28 @@ A_PianoMusicVoice = {                                                          %
     R1 * 11/8                                                                  %! _make_measure_silences
 
     % [A PianoMusicVoice measure 58 / measure 45]                              %! _comment_measure_numbers
-    \set Staff.shortInstrumentName =                                           %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-    \markup {                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-        \hcenter-in                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-            #16                                                                %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-            Pf.                                                                %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-        }                                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \set Staff.shortInstrumentName =                                           %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+    \markup {                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+        \hcenter-in                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+            #16                                                                %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+            Pf.                                                                %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+        }                                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     r16                                                                        %! incise_attacks
     ^ \baca-explicit-indicator-markup "(“Piano”)"                              %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Pf.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)          %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \set Staff.shortInstrumentName =                                           %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-    \markup {                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-        \hcenter-in                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-            #16                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-            Pf.                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
-        }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
+    \set Staff.shortInstrumentName =                                           %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+    \markup {                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+        \hcenter-in                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+            #16                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+            Pf.                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+        }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
     \ottava #-1                                                                %! baca_ottava_bassa:SpannerCommand
     \once \override Accidental.stencil = ##f
@@ -4954,10 +4954,10 @@ A_PianoMusicVoice = {                                                          %
         \override Beam.positions = #'(-5 . -5)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'7                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         r16                                                                    %! pizzicato_sixteenths
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -4965,26 +4965,26 @@ A_PianoMusicVoice = {                                                          %
         g''16                                                                  %! pizzicato_sixteenths
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         [                                                                      %! pizzicato_sixteenths
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         cs''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         a''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -4994,7 +4994,7 @@ A_PianoMusicVoice = {                                                          %
     r8.                                                                        %! pizzicato_sixteenths
 
     fs''!8.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
@@ -5002,17 +5002,17 @@ A_PianoMusicVoice = {                                                          %
         r4                                                                     %! pizzicato_sixteenths
 
         c''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -5022,28 +5022,28 @@ A_PianoMusicVoice = {                                                          %
         r16                                                                    %! pizzicato_sixteenths
 
         af''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         f''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         a''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         b''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -5057,14 +5057,14 @@ A_PianoMusicVoice = {                                                          %
     r16.                                                                       %! pizzicato_sixteenths
 
     cs''!8.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     b''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     c''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
@@ -5075,43 +5075,43 @@ A_PianoMusicVoice = {                                                          %
         r16                                                                    %! pizzicato_sixteenths
 
         af''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         fs''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         [                                                                      %! pizzicato_sixteenths
 
         af''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -5130,50 +5130,50 @@ A_PianoMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         cs''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         e''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
 
     e''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     ef''!16                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     c'''8                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 77 / measure 64]                              %! _comment_measure_numbers
@@ -5185,22 +5185,22 @@ A_PianoMusicVoice = {                                                          %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!16                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     [                                                                          %! pizzicato_sixteenths
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!16                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     f''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs''!16                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
@@ -5210,31 +5210,31 @@ A_PianoMusicVoice = {                                                          %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     c'''8.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     [                                                                          %! pizzicato_sixteenths
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     c'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     c'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     f''16.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     af''!16.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     e''8.                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 79 / measure 66]                              %! _comment_measure_numbers
@@ -5246,17 +5246,17 @@ A_PianoMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         af''!4                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         g''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -5265,34 +5265,34 @@ A_PianoMusicVoice = {                                                          %
     r8                                                                         %! pizzicato_sixteenths
 
     cs'''!16                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     c'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     f''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     a''4                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g''4                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     e''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     c'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     a''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 81 / measure 68]                              %! _comment_measure_numbers
@@ -5301,40 +5301,40 @@ A_PianoMusicVoice = {                                                          %
     r16.                                                                       %! pizzicato_sixteenths
 
     f''8.                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     fs'''!8.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     f''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     a''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     af''!16.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     a''16.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     % [A PianoMusicVoice measure 82 / measure 69]                              %! _comment_measure_numbers
     r16                                                                        %! pizzicato_sixteenths
 
     e'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     f''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     c'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g'''8                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
@@ -5343,17 +5343,17 @@ A_PianoMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         fs'''!4                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         f'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -5367,10 +5367,10 @@ A_PianoMusicVoice = {                                                          %
         r4                                                                     %! pizzicato_sixteenths
 
         a''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -5378,18 +5378,18 @@ A_PianoMusicVoice = {                                                          %
     r16                                                                        %! pizzicato_sixteenths
 
     a''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     r4.                                                                        %! pizzicato_sixteenths
 
     r16                                                                        %! pizzicato_sixteenths
 
     g'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     af'''!8                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
@@ -5399,35 +5399,35 @@ A_PianoMusicVoice = {                                                          %
         r16                                                                    %! pizzicato_sixteenths
 
         bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         g'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         cs'''!4                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
 
     b''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     fs'''!16                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     f'''8                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
@@ -5437,10 +5437,10 @@ A_PianoMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         g'''2                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -5450,7 +5450,7 @@ A_PianoMusicVoice = {                                                          %
     r16                                                                        %! pizzicato_sixteenths
 
     af'''!16                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 7/9 {                                                               %! pizzicato_sixteenths
@@ -5458,34 +5458,34 @@ A_PianoMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         b''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         bf'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         c'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         e'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -5494,7 +5494,7 @@ A_PianoMusicVoice = {                                                          %
     r8                                                                         %! pizzicato_sixteenths
 
     ef'''!8                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     r4.                                                                        %! pizzicato_sixteenths
 
@@ -5505,25 +5505,25 @@ A_PianoMusicVoice = {                                                          %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         [                                                                      %! pizzicato_sixteenths
 
         b'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         bf'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
@@ -5563,7 +5563,7 @@ A_PercussionMusicVoice = {                                                     %
     c'4.                                                                       %! sponge_rhythm
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     \baca-effort-ff                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Perc.”]"                             %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Percussion”)"                        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -5577,7 +5577,7 @@ A_PercussionMusicVoice = {                                                     %
     \override Staff.BarLine.bar-extent = #'(0 . 0)                             %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
 
     c'4.                                                                       %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/5 {                                                               %! sponge_rhythm
@@ -5587,10 +5587,10 @@ A_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'4                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5599,7 +5599,7 @@ A_PercussionMusicVoice = {                                                     %
     \repeatTie
 
     c'4.                                                                       %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     % [A PercussionMusicVoice measure 17 / measure 4]                          %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_measure_silences
@@ -5663,16 +5663,16 @@ A_PercussionMusicVoice = {                                                     %
 
         % [A PercussionMusicVoice measure 36 / measure 23]                     %! _comment_measure_numbers
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'1                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5684,10 +5684,10 @@ A_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'4                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5696,7 +5696,7 @@ A_PercussionMusicVoice = {                                                     %
     \repeatTie
 
     c'4                                                                        %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 7/8 {                                                               %! sponge_rhythm
@@ -5706,7 +5706,7 @@ A_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'2.                                                                   %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5718,10 +5718,10 @@ A_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'8                                                                    %! sponge_rhythm
         \repeatTie
@@ -5734,10 +5734,10 @@ A_PercussionMusicVoice = {                                                     %
     \repeatTie
 
     c'2                                                                        %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     c'8                                                                        %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     \times 2/3 {                                                               %! sponge_rhythm
 
@@ -5746,16 +5746,16 @@ A_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'1                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'8                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5768,7 +5768,7 @@ A_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'4.                                                                   %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5777,7 +5777,7 @@ A_PercussionMusicVoice = {                                                     %
     \repeatTie
 
     c'2..                                                                      %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 5/8 {                                                               %! sponge_rhythm
@@ -5788,10 +5788,10 @@ A_PercussionMusicVoice = {                                                     %
 
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'4.                                                                   %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5807,10 +5807,10 @@ A_PercussionMusicVoice = {                                                     %
 
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5819,10 +5819,10 @@ A_PercussionMusicVoice = {                                                     %
     \repeatTie
 
     c'2                                                                        %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     c'4                                                                        %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     % [A PercussionMusicVoice measure 48 / measure 35]                         %! _comment_measure_numbers
     c'2                                                                        %! sponge_rhythm
@@ -5836,10 +5836,10 @@ A_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5848,7 +5848,7 @@ A_PercussionMusicVoice = {                                                     %
     \repeatTie
 
     c'4                                                                        %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/17 {                                                              %! sponge_rhythm
@@ -5858,13 +5858,13 @@ A_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'1                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'4.                                                                   %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -5892,8 +5892,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -5914,8 +5914,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -5925,8 +5925,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -5938,8 +5938,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -5956,8 +5956,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -5967,8 +5967,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -5980,8 +5980,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -5996,8 +5996,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -6007,8 +6007,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6020,8 +6020,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6038,8 +6038,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -6049,8 +6049,8 @@ A_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6164,19 +6164,19 @@ A_ViolinMusicVoice = {                                                         %
     f''4.                                                                      %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                              %! baca_markup:IndicatorCommand
 
     \times 2/3 {                                                               %! polyphony
 
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -6187,47 +6187,47 @@ A_ViolinMusicVoice = {                                                         %
     \times 10/14 {                                                             %! polyphony
 
         f''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -6239,10 +6239,10 @@ A_ViolinMusicVoice = {                                                         %
         e''4                                                                   %! polyphony
 
         a''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c'''4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -6253,26 +6253,26 @@ A_ViolinMusicVoice = {                                                         %
     \times 5/4 {                                                               %! polyphony
 
         ef''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     % [A ViolinMusicVoice measure 23 / measure 10]                             %! _comment_measure_numbers
     f''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     fs''!16                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     c''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -6282,13 +6282,13 @@ A_ViolinMusicVoice = {                                                         %
 
         % [A ViolinMusicVoice measure 24 / measure 11]                         %! _comment_measure_numbers
         c''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -6296,7 +6296,7 @@ A_ViolinMusicVoice = {                                                         %
     ef''!4                                                                     %! polyphony
 
     bf''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     % [A ViolinMusicVoice measure 25 / measure 12]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
@@ -6324,7 +6324,7 @@ A_ViolinMusicVoice = {                                                         %
     fs''!4.                                                                    %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                              %! baca_markup:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
@@ -6333,16 +6333,16 @@ A_ViolinMusicVoice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         af''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
@@ -6359,49 +6359,49 @@ A_ViolinMusicVoice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         [                                                                      %! polyphony
 
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         f''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -6413,10 +6413,10 @@ A_ViolinMusicVoice = {                                                         %
         f''4                                                                   %! polyphony
 
         bf''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -6427,11 +6427,11 @@ A_ViolinMusicVoice = {                                                         %
     \times 5/4 {                                                               %! polyphony
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -6440,20 +6440,20 @@ A_ViolinMusicVoice = {                                                         %
     % [A ViolinMusicVoice measure 34 / measure 21]                             %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!16                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     [                                                                          %! polyphony
 
     g''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     bf'!16                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     cs''!16                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -6469,15 +6469,15 @@ A_ViolinMusicVoice = {                                                         %
         % [A ViolinMusicVoice measure 35 / measure 22]                         %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         bf''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -6485,7 +6485,7 @@ A_ViolinMusicVoice = {                                                         %
     e''4                                                                       %! polyphony
 
     b''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
@@ -6500,37 +6500,37 @@ A_ViolinMusicVoice = {                                                         %
         [                                                                      %! polyphony
 
         c'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
@@ -6538,18 +6538,18 @@ A_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! polyphony
 
         fs'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     fs'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     fs'!4.                                                                     %! polyphony
@@ -6558,41 +6558,41 @@ A_ViolinMusicVoice = {                                                         %
 
         % [A ViolinMusicVoice measure 37 / measure 24]                         %! _comment_measure_numbers
         g'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         af'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -6605,23 +6605,23 @@ A_ViolinMusicVoice = {                                                         %
     cs'!4                                                                      %! polyphony
 
     ef'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     fs'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     ef'!16                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     c''16                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs'!16                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     af'!16                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -6631,15 +6631,15 @@ A_ViolinMusicVoice = {                                                         %
         af'!4                                                                  %! polyphony
 
         b'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     bf'!4.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A ViolinMusicVoice measure 40 / measure 27]                             %! _comment_measure_numbers
@@ -6652,38 +6652,38 @@ A_ViolinMusicVoice = {                                                         %
         [                                                                      %! polyphony
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ]                                                                      %! polyphony
@@ -6695,23 +6695,23 @@ A_ViolinMusicVoice = {                                                         %
         % [A ViolinMusicVoice measure 41 / measure 28]                         %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     fs'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     fs'!4                                                                      %! polyphony
@@ -6720,17 +6720,17 @@ A_ViolinMusicVoice = {                                                         %
 
     % [A ViolinMusicVoice measure 42 / measure 29]                             %! _comment_measure_numbers
     af'!16                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     bf'!16                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     fs'!16                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     bf'!16                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -6739,10 +6739,10 @@ A_ViolinMusicVoice = {                                                         %
         bf'!4                                                                  %! polyphony
 
         e''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -6750,45 +6750,45 @@ A_ViolinMusicVoice = {                                                         %
     cs''!4.                                                                    %! polyphony
 
     c''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         e''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
@@ -6806,17 +6806,17 @@ A_ViolinMusicVoice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     ef''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A ViolinMusicVoice measure 44 / measure 31]                             %! _comment_measure_numbers
@@ -6830,43 +6830,43 @@ A_ViolinMusicVoice = {                                                         %
         [                                                                      %! polyphony
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
@@ -6876,59 +6876,59 @@ A_ViolinMusicVoice = {                                                         %
 
         % [A ViolinMusicVoice measure 45 / measure 32]                         %! _comment_measure_numbers
         bf''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     % [A ViolinMusicVoice measure 46 / measure 33]                             %! _comment_measure_numbers
     bf'!4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     bf'!4                                                                      %! polyphony
 
     ef''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 6/10 {                                                              %! polyphony
 
         c'''16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -6940,10 +6940,10 @@ A_ViolinMusicVoice = {                                                         %
         ef''!4                                                                 %! polyphony
 
         c'''4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -6951,47 +6951,47 @@ A_ViolinMusicVoice = {                                                         %
     d''4.                                                                      %! polyphony
 
     bf''!4.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \times 8/12 {                                                              %! polyphony
 
         % [A ViolinMusicVoice measure 48 / measure 35]                         %! _comment_measure_numbers
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         cs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'16                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -7003,15 +7003,15 @@ A_ViolinMusicVoice = {                                                         %
         af''!4                                                                 %! polyphony
 
         b''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     fs''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A ViolinMusicVoice measure 50 / measure 37]                             %! _comment_measure_numbers
@@ -7024,37 +7024,37 @@ A_ViolinMusicVoice = {                                                         %
         [                                                                      %! polyphony
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''16                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!16                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
@@ -7063,313 +7063,313 @@ A_ViolinMusicVoice = {                                                         %
     g''4.                                                                      %! white_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4.                                                                    %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4.                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolinMusicVoice measure 52 / measure 39]                             %! _comment_measure_numbers
     c''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af''!4                                                                     %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!4                                                                     %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!4                                                                     %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef''!4                                                                     %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolinMusicVoice measure 58 / measure 45]                             %! _comment_measure_numbers
     f'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolinMusicVoice measure 64 / measure 51]                             %! _comment_measure_numbers
     c''4                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef'!4                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d'4                                                                        %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'8                                                                        %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm
@@ -7378,14 +7378,14 @@ A_ViolinMusicVoice = {                                                         %
         b''8                                                                   %! pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
         a''4                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e''8                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
     }                                                                          %! pizzicato_rhythm
@@ -7396,7 +7396,7 @@ A_ViolinMusicVoice = {                                                         %
         e''8                                                                   %! pizzicato_rhythm
 
         ef''!4.                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
     }                                                                          %! pizzicato_rhythm
@@ -7405,13 +7405,13 @@ A_ViolinMusicVoice = {                                                         %
     ef''!8                                                                     %! pizzicato_rhythm
 
     g''4                                                                       %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     c''4                                                                       %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     ef''!8                                                                     %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     r4                                                                         %! pizzicato_rhythm
 
@@ -7424,36 +7424,36 @@ A_ViolinMusicVoice = {                                                         %
     r16                                                                        %! pizzicato_sixteenths
 
     bf''!16                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     c''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     af''!16                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     f''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
 
     bf''!4                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     a''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     c''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     b''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
@@ -7463,7 +7463,7 @@ A_ViolinMusicVoice = {                                                         %
         r2                                                                     %! pizzicato_sixteenths
 
         cs''!8                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -7472,20 +7472,20 @@ A_ViolinMusicVoice = {                                                         %
     r8                                                                         %! pizzicato_sixteenths
 
     c'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     a''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     cs''!16                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs''!8                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     \times 4/5 {                                                               %! pizzicato_sixteenths
@@ -7494,17 +7494,17 @@ A_ViolinMusicVoice = {                                                         %
         r8                                                                     %! pizzicato_sixteenths
 
         fs''!4                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs''!8                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -7517,38 +7517,38 @@ A_ViolinMusicVoice = {                                                         %
     r8                                                                         %! pizzicato_sixteenths
 
     e''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A ViolinMusicVoice measure 74 / measure 61]                             %! _comment_measure_numbers
     r16.                                                                       %! pizzicato_sixteenths
 
     f''8.                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     ef''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     c'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     f''16.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     e''16.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     bf''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     % [A ViolinMusicVoice measure 75 / measure 62]                             %! _comment_measure_numbers
@@ -7561,11 +7561,11 @@ A_ViolinMusicVoice = {                                                         %
         r8                                                                     %! pizzicato_sixteenths
 
         fs''!8                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         b''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -7574,10 +7574,10 @@ A_ViolinMusicVoice = {                                                         %
     r4.                                                                        %! pizzicato_sixteenths
 
     f''4                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     a''4                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     r4.                                                                        %! pizzicato_sixteenths
 
@@ -7588,31 +7588,31 @@ A_ViolinMusicVoice = {                                                         %
         r4                                                                     %! pizzicato_sixteenths
 
         f''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         af''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         b''2                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
 
     g'''8                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     r8                                                                         %! pizzicato_sixteenths
 
@@ -7622,33 +7622,33 @@ A_ViolinMusicVoice = {                                                         %
         r16                                                                    %! pizzicato_sixteenths
 
         b''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         g'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         a''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -7661,7 +7661,7 @@ A_ViolinMusicVoice = {                                                         %
         r8                                                                     %! pizzicato_sixteenths
 
         fs'''!2                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -7672,36 +7672,36 @@ A_ViolinMusicVoice = {                                                         %
         r4                                                                     %! pizzicato_sixteenths
 
         b''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         af'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         b''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         bf''!8                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         ef'''!4                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -7714,17 +7714,17 @@ A_ViolinMusicVoice = {                                                         %
         r8                                                                     %! pizzicato_sixteenths
 
         e'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''2                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -7734,19 +7734,19 @@ A_ViolinMusicVoice = {                                                         %
     r8                                                                         %! pizzicato_sixteenths
 
     g'''4                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     r16                                                                        %! pizzicato_sixteenths
 
     g'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     b''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     a'''8                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
@@ -7755,21 +7755,21 @@ A_ViolinMusicVoice = {                                                         %
         r16                                                                    %! pizzicato_sixteenths
 
         g'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         b''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         bf'''!4                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -7784,19 +7784,19 @@ A_ViolinMusicVoice = {                                                         %
     r8.                                                                        %! pizzicato_sixteenths
 
     e'''8.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     r4                                                                         %! pizzicato_sixteenths
 
     % [A ViolinMusicVoice measure 85 / measure 72]                             %! _comment_measure_numbers
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                      %! baca_bar_extent:OverrideCommand(1)
-    \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     c'2.                                                                       %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -8047,86 +8047,86 @@ A_ViolaMusicVoice = {                                                          %
     R1 * 9/8                                                                   %! _make_measure_silences
 
     % [A ViolaMusicVoice measure 47 / measure 34]                              %! _comment_measure_numbers
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r4                                                                         %! white_rhythm
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     af''!4.                                                                    %! white_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef''!4.                                                                    %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b''4.                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4.                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolaMusicVoice measure 49 / measure 36]                              %! _comment_measure_numbers
     af''!4.                                                                    %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4.                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolaMusicVoice measure 50 / measure 37]                              %! _comment_measure_numbers
     f''4.                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4.                                                                       %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolaMusicVoice measure 51 / measure 38]                              %! _comment_measure_numbers
     f'4.                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4.                                                                     %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4.                                                                    %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/8 {                                                               %! prolated_quarters
 
         % [A ViolaMusicVoice measure 52 / measure 39]                          %! _comment_measure_numbers
-        \clef "alto"                                                           %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "alto"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         b'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         af'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -8136,24 +8136,24 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 53 / measure 40]                          %! _comment_measure_numbers
         fs'!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         af'!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -8165,41 +8165,41 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 54 / measure 41]                          %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         af'!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -8209,26 +8209,26 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 55 / measure 42]                          %! _comment_measure_numbers
         e'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         af'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando:SpannerCommand
@@ -8240,19 +8240,19 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 56 / measure 43]                          %! _comment_measure_numbers
         g'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -8262,19 +8262,19 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 57 / measure 44]                          %! _comment_measure_numbers
         fs'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         g4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -8284,11 +8284,11 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 58 / measure 45]                          %! _comment_measure_numbers
         c'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -8298,20 +8298,20 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 59 / measure 46]                          %! _comment_measure_numbers
         ef!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -8322,17 +8322,17 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 60 / measure 47]                          %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
 
     }                                                                          %! prolated_quarters
 
@@ -8340,22 +8340,22 @@ A_ViolaMusicVoice = {                                                          %
     \times 3/4 {                                                               %! pizzicato_rhythm
 
         % [A ViolaMusicVoice measure 61 / measure 48]                          %! _comment_measure_numbers
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         b''8                                                                   %! pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         bf''!4                                                                 %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''8                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_rhythm
 
@@ -8372,13 +8372,13 @@ A_ViolaMusicVoice = {                                                          %
     \times 7/9 {                                                               %! pizzicato_rhythm
 
         fs''!4                                                                 %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''2                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''4.                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
     }                                                                          %! pizzicato_rhythm
@@ -8390,10 +8390,10 @@ A_ViolaMusicVoice = {                                                          %
         [                                                                      %! pizzicato_rhythm
 
         a''8                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         af''!8                                                                 %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
         ]                                                                      %! pizzicato_rhythm
 
@@ -8406,13 +8406,13 @@ A_ViolaMusicVoice = {                                                          %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!8                                                                 %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -8430,19 +8430,19 @@ A_ViolaMusicVoice = {                                                          %
     \times 9/11 {                                                              %! pizzicato_rhythm
 
         bf''!4.                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''2                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef''!8                                                                 %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''4                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs''!8                                                                 %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
     }                                                                          %! pizzicato_rhythm
@@ -8450,10 +8450,10 @@ A_ViolaMusicVoice = {                                                          %
     fs''!8                                                                     %! pizzicato_rhythm
 
     cs''!4                                                                     %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     c'''8                                                                      %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A ViolaMusicVoice measure 66 / measure 53]                              %! _comment_measure_numbers
     r1                                                                         %! pizzicato_rhythm
@@ -8468,27 +8468,27 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 68 / measure 55]                          %! _comment_measure_numbers
         fs''!4.                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''8                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         e''4                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_rhythm
 
     f''4                                                                       %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ~
 
     % [A ViolaMusicVoice measure 69 / measure 56]                              %! _comment_measure_numbers
@@ -8500,17 +8500,17 @@ A_ViolaMusicVoice = {                                                          %
     r32.                                                                       %! pizzicato_sixteenths
 
     a''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     fs''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     b''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs''!8.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
@@ -8519,27 +8519,27 @@ A_ViolaMusicVoice = {                                                          %
         r4                                                                     %! pizzicato_sixteenths
 
         cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         e''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         bf''!4                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -8553,24 +8553,24 @@ A_ViolaMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         f''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         g''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         fs'''!4                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -8580,21 +8580,21 @@ A_ViolaMusicVoice = {                                                          %
         r4                                                                     %! pizzicato_sixteenths
 
         c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         g''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -8604,11 +8604,11 @@ A_ViolaMusicVoice = {                                                          %
     r16.                                                                       %! pizzicato_sixteenths
 
     c'''8.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     bf''!16.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
@@ -8622,14 +8622,14 @@ A_ViolaMusicVoice = {                                                          %
     r16                                                                        %! pizzicato_sixteenths
 
     c'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     g'''8                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     af''!8                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r4                                                                         %! pizzicato_sixteenths
@@ -8638,23 +8638,23 @@ A_ViolaMusicVoice = {                                                          %
     r16..                                                                      %! pizzicato_sixteenths
 
     fs'''!8..                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     c'''8..                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     f''32..                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     c'''32..                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g'''16..                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs'''!16..                                                                 %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
@@ -8670,14 +8670,14 @@ A_ViolaMusicVoice = {                                                          %
         r4                                                                     %! pizzicato_sixteenths
 
         af'''!4                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -8691,24 +8691,24 @@ A_ViolaMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         f'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         e'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         ef'''!4                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -8718,14 +8718,14 @@ A_ViolaMusicVoice = {                                                          %
         r16                                                                    %! pizzicato_sixteenths
 
         f'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         g'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -8744,14 +8744,14 @@ A_ViolaMusicVoice = {                                                          %
         r4                                                                     %! pizzicato_sixteenths
 
         c'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -8761,16 +8761,16 @@ A_ViolaMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         a'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef'''!2                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -8778,33 +8778,33 @@ A_ViolaMusicVoice = {                                                          %
     r16.                                                                       %! pizzicato_sixteenths
 
     af'''!32.                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     a'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     b''16.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs'''!16.                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r32.                                                                       %! pizzicato_sixteenths
 
     f'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     c'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     bf'''!32.                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g'''8.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r4.                                                                        %! pizzicato_sixteenths
@@ -8820,21 +8820,21 @@ A_ViolaMusicVoice = {                                                          %
     r8                                                                         %! pizzicato_sixteenths
 
     f'''4                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \times 2/3 {                                                               %! pizzicato_sixteenths
 
         r16                                                                    %! pizzicato_sixteenths
 
         f'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         a'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -9063,61 +9063,61 @@ A_CelloMusicVoice = {                                                          %
     R1 * 9/8                                                                   %! _make_measure_silences
 
     % [A CelloMusicVoice measure 47 / measure 34]                              %! _comment_measure_numbers
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r4                                                                         %! white_rhythm
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     e''4.                                                                      %! white_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4.                                                                      %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4.                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4.                                                                    %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A CelloMusicVoice measure 49 / measure 36]                              %! _comment_measure_numbers
     g''4.                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4.                                                                    %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A CelloMusicVoice measure 50 / measure 37]                              %! _comment_measure_numbers
     c''4.                                                                      %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4.                                                                     %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A CelloMusicVoice measure 51 / measure 38]                              %! _comment_measure_numbers
     e'4.                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4.                                                                     %! white_rhythm
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4.                                                                       %! white_rhythm
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
@@ -9125,11 +9125,11 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 52 / measure 39]                          %! _comment_measure_numbers
         b'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9139,35 +9139,35 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 53 / measure 40]                          %! _comment_measure_numbers
         f'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9177,23 +9177,23 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 54 / measure 41]                          %! _comment_measure_numbers
         g'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         g'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9203,35 +9203,35 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 55 / measure 42]                          %! _comment_measure_numbers
         ef'!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         af!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9241,11 +9241,11 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 56 / measure 43]                          %! _comment_measure_numbers
         b4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         g4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9255,34 +9255,34 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 57 / measure 44]                          %! _comment_measure_numbers
         af!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs!4                                                                   %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando:SpannerCommand
@@ -9293,17 +9293,17 @@ A_CelloMusicVoice = {                                                          %
     \times 5/4 {                                                               %! prolated_quarters
 
         % [A CelloMusicVoice measure 58 / measure 45]                          %! _comment_measure_numbers
-        \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         b4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         af!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9312,23 +9312,23 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 59 / measure 46]                          %! _comment_measure_numbers
         b4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         a4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         c4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         d4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9338,11 +9338,11 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 60 / measure 47]                          %! _comment_measure_numbers
         g4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9352,39 +9352,39 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 61 / measure 48]                          %! _comment_measure_numbers
         b,4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         af!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         g4                                                                     %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         c4                                                                     %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf,!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!4                                                                   %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f,4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         e,4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9394,19 +9394,19 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 62 / measure 49]                          %! _comment_measure_numbers
         af,!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f,4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b,4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         a,4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9416,19 +9416,19 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 63 / measure 50]                          %! _comment_measure_numbers
         af,!4                                                                  %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef,!4                                                                  %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         b,4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         f,4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
@@ -9438,11 +9438,11 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 64 / measure 51]                          %! _comment_measure_numbers
         b,4                                                                    %! prolated_quarters
-        - \upbow                                                               %! IndicatorCommand
+        - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         a,4                                                                    %! prolated_quarters
-        - \downbow                                                             %! IndicatorCommand
+        - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9450,22 +9450,22 @@ A_CelloMusicVoice = {                                                          %
     \times 3/4 {                                                               %! pizzicato_rhythm
 
         % [A CelloMusicVoice measure 65 / measure 52]                          %! _comment_measure_numbers
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         cs''!8                                                                 %! pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         c''4                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         b''8                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
     }                                                                          %! pizzicato_rhythm
@@ -9476,16 +9476,16 @@ A_CelloMusicVoice = {                                                          %
         b''8                                                                   %! pizzicato_rhythm
 
         g''2                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e''4                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c''4                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g''8                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_rhythm
 
@@ -9498,10 +9498,10 @@ A_CelloMusicVoice = {                                                          %
 
     % [A CelloMusicVoice measure 67 / measure 54]                              %! _comment_measure_numbers
     bf''!4                                                                     %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     f''8                                                                       %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
@@ -9510,7 +9510,7 @@ A_CelloMusicVoice = {                                                          %
         f''8                                                                   %! pizzicato_rhythm
 
         c''4.                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
     }                                                                          %! pizzicato_rhythm
@@ -9522,20 +9522,20 @@ A_CelloMusicVoice = {                                                          %
         c''8                                                                   %! pizzicato_rhythm
 
         f''4                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         af''!4                                                                 %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''8                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_rhythm
 
         af''!16                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs''!16                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_rhythm
 
     }                                                                          %! pizzicato_rhythm
@@ -9553,21 +9553,21 @@ A_CelloMusicVoice = {                                                          %
     r16.                                                                       %! pizzicato_sixteenths
 
     b''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     g''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs''!16.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     ef''!16.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     f''4.                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A CelloMusicVoice measure 71 / measure 58]                              %! _comment_measure_numbers
     r4.                                                                        %! pizzicato_sixteenths
@@ -9575,14 +9575,14 @@ A_CelloMusicVoice = {                                                          %
     r16                                                                        %! pizzicato_sixteenths
 
     e''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     ef''!8                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     \times 4/5 {                                                               %! pizzicato_sixteenths
@@ -9590,21 +9590,21 @@ A_CelloMusicVoice = {                                                          %
         r16                                                                    %! pizzicato_sixteenths
 
         fs''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         e''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         af''!4                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -9614,21 +9614,21 @@ A_CelloMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         af''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         b''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
         ef''!4                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
@@ -9642,14 +9642,14 @@ A_CelloMusicVoice = {                                                          %
         r16                                                                    %! pizzicato_sixteenths
 
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         f''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef''!8                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -9661,7 +9661,7 @@ A_CelloMusicVoice = {                                                          %
     r16                                                                        %! pizzicato_sixteenths
 
     cs'''!16                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 3/5 {                                                               %! pizzicato_sixteenths
@@ -9669,17 +9669,17 @@ A_CelloMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         b''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''4.                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
     r8                                                                         %! pizzicato_sixteenths
 
     f''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
     \times 7/9 {                                                               %! pizzicato_sixteenths
@@ -9688,35 +9688,35 @@ A_CelloMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         g''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         b''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         af''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -9727,48 +9727,48 @@ A_CelloMusicVoice = {                                                          %
     r8                                                                         %! pizzicato_sixteenths
 
     fs'''!8                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g'''2                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     bf''!4                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g'''8                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     r4.                                                                        %! pizzicato_sixteenths
 
     r16                                                                        %! pizzicato_sixteenths
 
     c'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A CelloMusicVoice measure 78 / measure 65]                              %! _comment_measure_numbers
     r32.                                                                       %! pizzicato_sixteenths
 
     bf''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     a''8.                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     b''8.                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     fs'''!32.                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     f'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     ef'''!16.                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     a''16.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     % [A CelloMusicVoice measure 79 / measure 66]                              %! _comment_measure_numbers
@@ -9777,7 +9777,7 @@ A_CelloMusicVoice = {                                                          %
     r8.                                                                        %! pizzicato_sixteenths
 
     f'''8.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A CelloMusicVoice measure 80 / measure 67]                              %! _comment_measure_numbers
     r1                                                                         %! pizzicato_sixteenths
@@ -9788,14 +9788,14 @@ A_CelloMusicVoice = {                                                          %
     r8.                                                                        %! pizzicato_sixteenths
 
     b''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     bf''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     g'''16.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     r2.                                                                        %! pizzicato_sixteenths
@@ -9807,23 +9807,23 @@ A_CelloMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         ef'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         bf'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         af'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths
@@ -9834,37 +9834,37 @@ A_CelloMusicVoice = {                                                          %
         r16                                                                    %! pizzicato_sixteenths
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!4                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_sixteenths
 
     r32.                                                                       %! pizzicato_sixteenths
 
     fs'''!32.                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     [                                                                          %! pizzicato_sixteenths
 
     c'''16.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     e'''16.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     ef'''!16.                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ]                                                                          %! pizzicato_sixteenths
 
     % [A CelloMusicVoice measure 83 / measure 70]                              %! _comment_measure_numbers
     r4.                                                                        %! pizzicato_sixteenths
 
     f'''4                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A CelloMusicVoice measure 84 / measure 71]                              %! _comment_measure_numbers
     r8                                                                         %! pizzicato_sixteenths
@@ -9875,23 +9875,23 @@ A_CelloMusicVoice = {                                                          %
         r8                                                                     %! pizzicato_sixteenths
 
         af'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! pizzicato_sixteenths
 
         fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef'''!8                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! pizzicato_sixteenths
 
     }                                                                          %! pizzicato_sixteenths

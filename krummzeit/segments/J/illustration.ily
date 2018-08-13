@@ -1378,8 +1378,8 @@ J_PianoMusicVoice = {                                                          %
     % [J PianoMusicVoice measure 338 / measure 25]                             %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-fff-poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \baca-fff-poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \repeatTie
 
     cs'''!2

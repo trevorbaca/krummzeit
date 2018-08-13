@@ -600,8 +600,8 @@ I_ClarinetMusicVoice = {                                                       %
 
     % [I ClarinetMusicVoice measure 299 / measure 9]                           %! _comment_measure_numbers
     fs!1                                                                       %! baca_make_repeat_tied_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-fff-poss                                                             %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \baca-fff-poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \repeatTie
 
     % [I ClarinetMusicVoice measure 300 / measure 10]                          %! _comment_measure_numbers

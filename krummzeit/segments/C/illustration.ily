@@ -74,7 +74,7 @@ C_GlobalSkips = {                                                              %
 
     % [C GlobalSkips measure 133 / measure 1]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \mark #3                                                                   %! IndicatorCommand
+    \mark #3                                                                   %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
@@ -907,7 +907,7 @@ C_PianoMusicVoice = {                                                          %
         e''''16                                                                %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Pf.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Piano”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -924,11 +924,11 @@ C_PianoMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         ef''''!16                                                              %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         f''''8.                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -936,20 +936,20 @@ C_PianoMusicVoice = {                                                          %
     \times 4/7 {                                                               %! silver_points
 
         cs''''!8                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         r8                                                                     %! silver_points
 
         d'''8                                                                  %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'''4                                                                  %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f''4                                                                   %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \ottava #0                                                             %! baca_ottava:SpannerCommand
 
     }                                                                          %! silver_points
@@ -963,18 +963,18 @@ C_PianoMusicVoice = {                                                          %
         g''16                                                                  %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
         r16                                                                    %! silver_points
 
         cs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         a'8.                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -983,21 +983,21 @@ C_PianoMusicVoice = {                                                          %
     \times 6/7 {                                                               %! silver_points
 
         ef'!16                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         r16                                                                    %! silver_points
 
         bf'!16                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         b8                                                                     %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'8                                                                    %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -1010,14 +1010,14 @@ C_PianoMusicVoice = {                                                          %
         % [C PianoMusicVoice measure 137 / measure 5]                          %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-        \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         af!8                                                                   %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1025,10 +1025,10 @@ C_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         g8                                                                     %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         a4.                                                                    %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -1036,21 +1036,21 @@ C_PianoMusicVoice = {                                                          %
     \times 10/7 {                                                              %! silver_points
 
         c16                                                                    %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         r16                                                                    %! silver_points
 
         ef,!16                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         c8                                                                     %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs,!8                                                                  %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -1291,15 +1291,15 @@ C_PercussionMusicVoice = {                                                     %
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                           %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \clef "percussion"                                                         %! REDUNDANT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "percussion"                                                         %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.                                                                        %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \baca-ppp-ancora                                                           %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Perc.”]"                             %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -1322,69 +1322,69 @@ C_PercussionMusicVoice = {                                                     %
     % [C PercussionMusicVoice measure 134 / measure 2]                         %! _comment_measure_numbers
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 135 / measure 3]                         %! _comment_measure_numbers
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 136 / measure 4]                         %! _comment_measure_numbers
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 137 / measure 5]                         %! _comment_measure_numbers
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 138 / measure 6]                         %! _comment_measure_numbers
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 139 / measure 7]                         %! _comment_measure_numbers
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 140 / measure 8]                         %! _comment_measure_numbers
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 141 / measure 9]                         %! _comment_measure_numbers
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C PercussionMusicVoice measure 142 / measure 10]                        %! _comment_measure_numbers
@@ -1618,20 +1618,20 @@ C_ViolinMusicVoice = {                                                         %
         e''''8                                                                 %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         [                                                                      %! silver_points
 
         cs''''!8                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         bf'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -1640,20 +1640,20 @@ C_ViolinMusicVoice = {                                                         %
         r8                                                                     %! silver_points
 
         cs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         af'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         bf''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         ef''!4                                                                 %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \ottava #0                                                             %! baca_ottava:SpannerCommand
 
     }                                                                          %! silver_points
@@ -1670,19 +1670,19 @@ C_ViolinMusicVoice = {                                                         %
         a''8                                                                   %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         [                                                                      %! silver_points
 
         e''8                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         g''4                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -1691,20 +1691,20 @@ C_ViolinMusicVoice = {                                                         %
         r8                                                                     %! silver_points
 
         d''8                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         ef'!8                                                                  %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         cs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         e'4                                                                    %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -1720,19 +1720,19 @@ C_ViolinMusicVoice = {                                                         %
         g''8                                                                   %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         [                                                                      %! silver_points
 
         c''8                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         bf'!4                                                                  %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -1741,20 +1741,20 @@ C_ViolinMusicVoice = {                                                         %
         r8                                                                     %! silver_points
 
         ef'!8                                                                  %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         e'8                                                                    %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         f'4                                                                    %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'4                                                                    %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -1857,10 +1857,10 @@ C_ViolaMusicVoice = {                                                          %
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         r8                                                                     %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -1868,7 +1868,7 @@ C_ViolaMusicVoice = {                                                          %
         ef'''!4                                                                %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -1881,18 +1881,18 @@ C_ViolaMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         af'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         r16                                                                    %! silver_points
 
         f''8                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         b''8                                                                   %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
         \ottava #0                                                             %! baca_ottava:SpannerCommand
 
@@ -1909,7 +1909,7 @@ C_ViolaMusicVoice = {                                                          %
         f''4                                                                   %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
@@ -1921,18 +1921,18 @@ C_ViolaMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         f''8                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         r16                                                                    %! silver_points
 
         cs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         a'8                                                                    %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -1945,17 +1945,17 @@ C_ViolaMusicVoice = {                                                          %
         % [C ViolaMusicVoice measure 141 / measure 9]                          %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_141:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_141:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-        \clef "alto"                                                           %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "alto"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         r8                                                                     %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         f'4                                                                    %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
@@ -1967,18 +1967,18 @@ C_ViolaMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         af!8                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         r16                                                                    %! silver_points
 
         a8                                                                     %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         bf,!8                                                                  %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
@@ -2086,17 +2086,17 @@ C_CelloMusicVoice = {                                                          %
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         r16                                                                    %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         f''8                                                                   %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -2104,11 +2104,11 @@ C_CelloMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         b'8                                                                    %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         d''8                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -2120,7 +2120,7 @@ C_CelloMusicVoice = {                                                          %
         d'4                                                                    %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2133,28 +2133,28 @@ C_CelloMusicVoice = {                                                          %
         % [C CelloMusicVoice measure 139 / measure 7]                          %! _comment_measure_numbers
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_139:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_139:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-        \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         r16                                                                    %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         ef'!8                                                                  %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
         r16                                                                    %! silver_points
 
         cs'!8                                                                  %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         f8                                                                     %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -2166,7 +2166,7 @@ C_CelloMusicVoice = {                                                          %
         ef!4                                                                   %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2182,18 +2182,18 @@ C_CelloMusicVoice = {                                                          %
         b8                                                                     %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
         r16                                                                    %! silver_points
 
         g8                                                                     %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         cs!8                                                                   %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -2205,7 +2205,7 @@ C_CelloMusicVoice = {                                                          %
         b,4                                                                    %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)

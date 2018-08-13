@@ -151,7 +151,7 @@ D_GlobalSkips = {                                                              %
 
     % [D GlobalSkips measure 152 / measure 1]                                  %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \mark #4                                                                   %! IndicatorCommand
+    \mark #4                                                                   %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
@@ -2177,21 +2177,21 @@ D_PianoMusicVoice = {                                                          %
 
     % [D PianoMusicVoice measure 159 / measure 8]                              %! _comment_measure_numbers
     \override NoteHead.style = #'harmonic                                      %! baca_note_head_style_harmonic:OverrideCommand(1)
-    \clef "bass"                                                               %! REDUNDANT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     c'4.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ^ \markup { "5th harmonic of F1" }                                         %! baca_markup:IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     % [D PianoMusicVoice measure 160 / measure 9]                              %! _comment_measure_numbers
@@ -2203,7 +2203,7 @@ D_PianoMusicVoice = {                                                          %
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     % [D PianoMusicVoice measure 161 / measure 10]                             %! _comment_measure_numbers
@@ -2219,7 +2219,7 @@ D_PianoMusicVoice = {                                                          %
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     % [D PianoMusicVoice measure 163 / measure 12]                             %! _comment_measure_numbers
@@ -2228,7 +2228,7 @@ D_PianoMusicVoice = {                                                          %
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     % [D PianoMusicVoice measure 164 / measure 13]                             %! _comment_measure_numbers
@@ -2237,7 +2237,7 @@ D_PianoMusicVoice = {                                                          %
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     c'4                                                                        %! piano_harmonics
@@ -2283,24 +2283,24 @@ D_PianoMusicVoice = {                                                          %
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'6                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         r16                                                                    %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         fs'''!16                                                               %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -2311,17 +2311,17 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2332,15 +2332,15 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2349,17 +2349,17 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -2369,108 +2369,108 @@ D_PianoMusicVoice = {                                                          %
     % [D PianoMusicVoice measure 178 / measure 27]                             %! _comment_measure_numbers
     \override NoteHead.style = #'harmonic                                      %! baca_note_head_style_harmonic:OverrideCommand(1)
     \override DynamicLineSpanner.staff-padding = #'3                           %! baca_dls_staff_padding:OverrideCommand(1)
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     c'2.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ^ \markup { "5th harmonic of F1" }                                         %! baca_markup:IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D PianoMusicVoice measure 179 / measure 28]                             %! _comment_measure_numbers
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D PianoMusicVoice measure 180 / measure 29]                             %! _comment_measure_numbers
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D PianoMusicVoice measure 181 / measure 30]                             %! _comment_measure_numbers
     c'2.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D PianoMusicVoice measure 182 / measure 31]                             %! _comment_measure_numbers
     c'2..                                                                      %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D PianoMusicVoice measure 183 / measure 32]                             %! _comment_measure_numbers
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D PianoMusicVoice measure 184 / measure 33]                             %! _comment_measure_numbers
     c'4.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D PianoMusicVoice measure 185 / measure 34]                             %! _comment_measure_numbers
     c'2.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
@@ -2481,24 +2481,24 @@ D_PianoMusicVoice = {                                                          %
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'6                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         r16                                                                    %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         fs'''!16                                                               %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -2509,17 +2509,17 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2533,17 +2533,17 @@ D_PianoMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2554,14 +2554,14 @@ D_PianoMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -2572,17 +2572,17 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2592,15 +2592,15 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2609,17 +2609,17 @@ D_PianoMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2631,14 +2631,14 @@ D_PianoMusicVoice = {                                                          %
         fs'''!16                                                               %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -2651,15 +2651,15 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2668,17 +2668,17 @@ D_PianoMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2688,14 +2688,14 @@ D_PianoMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -2705,17 +2705,17 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2726,15 +2726,15 @@ D_PianoMusicVoice = {                                                          %
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -2743,17 +2743,17 @@ D_PianoMusicVoice = {                                                          %
         r16                                                                    %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -2768,10 +2768,10 @@ D_PianoMusicVoice = {                                                          %
 
     % [D PianoMusicVoice measure 196 / measure 45]                             %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r8                                                                         %! incise_chain_b
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -2975,9 +2975,9 @@ D_PercussionMusicVoice = {                                                     %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Perc.                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -3039,7 +3039,7 @@ D_PercussionMusicVoice = {                                                     %
         c'2                                                                    %! sponge_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \baca-effort-ff                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
         ^ \markup {                                                            %! baca_markup:IndicatorCommand
             \override                                                          %! baca_markup:IndicatorCommand
                 #'(box-padding . 0.5)                                          %! baca_markup:IndicatorCommand
@@ -3049,13 +3049,13 @@ D_PercussionMusicVoice = {                                                     %
         ^ \markup { "accent changes of direction noticeably on each attack" }  %! baca_markup:IndicatorCommand
 
         c'1                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'8                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -3068,10 +3068,10 @@ D_PercussionMusicVoice = {                                                     %
         \repeatTie
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'4                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -3091,10 +3091,10 @@ D_PercussionMusicVoice = {                                                     %
 
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'4.                                                                   %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -3110,10 +3110,10 @@ D_PercussionMusicVoice = {                                                     %
 
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'8                                                                    %! sponge_rhythm
         \repeatTie
@@ -3126,7 +3126,7 @@ D_PercussionMusicVoice = {                                                     %
     \repeatTie
 
     c'4.                                                                       %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/4 {                                                               %! sponge_rhythm
@@ -3137,7 +3137,7 @@ D_PercussionMusicVoice = {                                                     %
 
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2..                                                                  %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -3150,10 +3150,10 @@ D_PercussionMusicVoice = {                                                     %
 
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'8                                                                    %! sponge_rhythm
         \repeatTie
@@ -3166,14 +3166,14 @@ D_PercussionMusicVoice = {                                                     %
     \repeatTie
 
     c'4.                                                                       %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     % [D PercussionMusicVoice measure 166 / measure 15]                        %! _comment_measure_numbers
     c'8                                                                        %! sponge_rhythm
     \repeatTie
 
     c'2..                                                                      %! sponge_rhythm
-    - \accent                                                                  %! IndicatorCommand
+    - \accent                                                                  %! baca_accent:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 3/4 {                                                               %! sponge_rhythm
@@ -3184,13 +3184,13 @@ D_PercussionMusicVoice = {                                                     %
 
         \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'1                                                                    %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
         c'4.                                                                   %! sponge_rhythm
-        - \accent                                                              %! IndicatorCommand
+        - \accent                                                              %! baca_accent:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
@@ -3222,16 +3222,16 @@ D_PercussionMusicVoice = {                                                     %
     \times 6/5 {                                                               %! silver_points
 
         % [D PercussionMusicVoice measure 176 / measure 25]                    %! _comment_measure_numbers
-        \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-        \once \override Staff.StaffSymbol.line-count = 5                       %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-        \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+        \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+        \once \override Staff.StaffSymbol.line-count = 5                       %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+        \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'6                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         r8                                                                     %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -3239,15 +3239,15 @@ D_PercussionMusicVoice = {                                                     %
         fs''!8                                                                 %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3256,17 +3256,17 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3276,15 +3276,15 @@ D_PercussionMusicVoice = {                                                     %
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3294,17 +3294,17 @@ D_PercussionMusicVoice = {                                                     %
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -3339,16 +3339,16 @@ D_PercussionMusicVoice = {                                                     %
     \times 6/5 {                                                               %! silver_points
 
         % [D PercussionMusicVoice measure 186 / measure 35]                    %! _comment_measure_numbers
-        \stopStaff                                                             %! REDUNDANT_STAFF_LINES:_set_status_tag:IndicatorCommand
-        \once \override Staff.StaffSymbol.line-count = 5                       %! REDUNDANT_STAFF_LINES:_set_status_tag:IndicatorCommand
-        \startStaff                                                            %! REDUNDANT_STAFF_LINES:_set_status_tag:IndicatorCommand
+        \stopStaff                                                             %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+        \once \override Staff.StaffSymbol.line-count = 5                       %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+        \startStaff                                                            %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'6                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! REDUNDANT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'DeepPink1)             %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         \once \override Staff.StaffSymbol.color = #(x11-color 'DeepPink1)      %! REDUNDANT_STAFF_LINES_COLOR:_attach_color_literal(2)
         r8                                                                     %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepPink4)                   %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -3356,15 +3356,15 @@ D_PercussionMusicVoice = {                                                     %
         fs''!8                                                                 %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3374,17 +3374,17 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3394,14 +3394,14 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -3412,17 +3412,17 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3433,15 +3433,15 @@ D_PercussionMusicVoice = {                                                     %
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3453,14 +3453,14 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -3470,17 +3470,17 @@ D_PercussionMusicVoice = {                                                     %
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3492,15 +3492,15 @@ D_PercussionMusicVoice = {                                                     %
         fs''!8                                                                 %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3509,17 +3509,17 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3529,14 +3529,14 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -3546,17 +3546,17 @@ D_PercussionMusicVoice = {                                                     %
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3568,17 +3568,17 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! silver_points
 
@@ -3588,14 +3588,14 @@ D_PercussionMusicVoice = {                                                     %
         r16                                                                    %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
     }                                                                          %! silver_points
@@ -3606,17 +3606,17 @@ D_PercussionMusicVoice = {                                                     %
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
 
         r4                                                                     %! silver_points
 
         fs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -3624,17 +3624,17 @@ D_PercussionMusicVoice = {                                                     %
     }                                                                          %! silver_points
 
     % [D PercussionMusicVoice measure 194 / measure 43]                        %! _comment_measure_numbers
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
-    \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     c'2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup { "attackless roll with very soft yarn mallets" }                %! baca_markup:IndicatorCommand
@@ -3647,45 +3647,45 @@ D_PercussionMusicVoice = {                                                     %
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'2
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [D PercussionMusicVoice measure 195 / measure 44]                        %! _comment_measure_numbers
     c'1                                                                        %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak direction #up
     \repeatTie
 
     % [D PercussionMusicVoice measure 196 / measure 45]                        %! _comment_measure_numbers
     c'2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     c'4.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [D PercussionMusicVoice measure 197 / measure 46]                        %! _comment_measure_numbers
     c'2.                                                                       %! baca_make_repeat_tied_notes
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [D PercussionMusicVoice measure 198 / measure 47]                        %! _comment_measure_numbers
     c'4.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     c'4
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [D PercussionMusicVoice measure 199 / measure 48]                        %! _comment_measure_numbers
     c'2.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     c'4.
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
@@ -4397,7 +4397,7 @@ D_ViolinMusicVoice = {                                                         %
     r8                                                                         %! incise_chain
 
     aqs!8                                                                      %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup { ordinario }                                                    %! baca_markup:IndicatorCommand
@@ -4408,12 +4408,12 @@ D_ViolinMusicVoice = {                                                         %
     r8                                                                         %! incise_chain
 
     aqs!8                                                                      %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4                                                                         %! incise_chain
 
     aqs!8                                                                      %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain
 
@@ -4424,7 +4424,7 @@ D_ViolinMusicVoice = {                                                         %
     r2.                                                                        %! incise_chain
 
     aqs!8                                                                      %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain
 
@@ -4438,15 +4438,15 @@ D_ViolinMusicVoice = {                                                         %
     r8                                                                         %! incise_chain_b
 
     aqs!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     aqs!8.                                                                     %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4..                                                                       %! incise_chain_b
 
     aqs!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain_b
 
@@ -4454,12 +4454,12 @@ D_ViolinMusicVoice = {                                                         %
     r8                                                                         %! incise_chain_b
 
     aqs!8.                                                                     %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8.                                                                        %! incise_chain_b
 
     aqs!8.                                                                     %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r16                                                                        %! incise_chain_b
 
@@ -4467,7 +4467,7 @@ D_ViolinMusicVoice = {                                                         %
     r8                                                                         %! incise_chain_b
 
     aqs!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4.                                                                        %! incise_chain_b
 
@@ -4475,15 +4475,15 @@ D_ViolinMusicVoice = {                                                         %
     r8                                                                         %! incise_chain_b
 
     aqs!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     aqs!8.                                                                     %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4..                                                                       %! incise_chain_b
 
     aqs!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain_b
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -4639,10 +4639,10 @@ D_ViolaMusicVoice = {                                                          %
     \override Beam.positions = #'(-4 . -4)                                     %! baca_beam_positions:OverrideCommand(1)
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     \override TupletBracket.staff-padding = #3                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     a''8                                                                       %! glissando_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -5270,15 +5270,15 @@ D_ViolaMusicVoice = {                                                          %
 
     % [D ViolaMusicVoice measure 190 / measure 39]                             %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'8                           %! baca_dls_staff_padding:OverrideCommand(1)
-    \clef "alto"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "alto"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r8                                                                         %! incise_chain
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     bf,!8                                                                      %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup { ordinario }                                                    %! baca_markup:IndicatorCommand
@@ -5289,12 +5289,12 @@ D_ViolaMusicVoice = {                                                          %
     r8                                                                         %! incise_chain
 
     bf,!8                                                                      %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4                                                                         %! incise_chain
 
     bf,!8                                                                      %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain
 
@@ -5305,7 +5305,7 @@ D_ViolaMusicVoice = {                                                          %
     r2.                                                                        %! incise_chain
 
     bf,!8                                                                      %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain
 
@@ -5316,23 +5316,23 @@ D_ViolaMusicVoice = {                                                          %
     R1 * 1                                                                     %! _make_measure_silences
 
     % [D ViolaMusicVoice measure 196 / measure 45]                             %! _comment_measure_numbers
-    \clef "alto"                                                               %! REDUNDANT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "alto"                                                               %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r8                                                                         %! incise_chain_b
     \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     bf,!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     bf,!8.                                                                     %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4..                                                                       %! incise_chain_b
 
     bf,!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain_b
 
@@ -5340,12 +5340,12 @@ D_ViolaMusicVoice = {                                                          %
     r8                                                                         %! incise_chain_b
 
     bf,!8.                                                                     %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8.                                                                        %! incise_chain_b
 
     bf,!8.                                                                     %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r16                                                                        %! incise_chain_b
 
@@ -5353,7 +5353,7 @@ D_ViolaMusicVoice = {                                                          %
     r8                                                                         %! incise_chain_b
 
     bf,!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4.                                                                        %! incise_chain_b
 
@@ -5361,15 +5361,15 @@ D_ViolaMusicVoice = {                                                          %
     r8                                                                         %! incise_chain_b
 
     bf,!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     bf,!8.                                                                     %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4..                                                                       %! incise_chain_b
 
     bf,!8                                                                      %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain_b
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -5574,10 +5574,10 @@ D_CelloMusicVoice = {                                                          %
     \override Beam.positions = #'(-4 . -4)                                     %! baca_beam_positions:OverrideCommand(1)
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     \override TupletBracket.staff-padding = #3                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r2                                                                         %! glissando_rhythm
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -6043,15 +6043,15 @@ D_CelloMusicVoice = {                                                          %
 
     % [D CelloMusicVoice measure 190 / measure 39]                             %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r8                                                                         %! incise_chain
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     a,8                                                                        %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup { ordinario }                                                    %! baca_markup:IndicatorCommand
@@ -6062,12 +6062,12 @@ D_CelloMusicVoice = {                                                          %
     r8                                                                         %! incise_chain
 
     a,8                                                                        %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4                                                                         %! incise_chain
 
     a,8                                                                        %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain
 
@@ -6078,7 +6078,7 @@ D_CelloMusicVoice = {                                                          %
     r2.                                                                        %! incise_chain
 
     a,8                                                                        %! incise_chain
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain
 
@@ -6089,23 +6089,23 @@ D_CelloMusicVoice = {                                                          %
     R1 * 1                                                                     %! _make_measure_silences
 
     % [D CelloMusicVoice measure 196 / measure 45]                             %! _comment_measure_numbers
-    \clef "bass"                                                               %! REDUNDANT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r8                                                                         %! incise_chain_b
     \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     a,8                                                                        %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     a,8.                                                                       %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4..                                                                       %! incise_chain_b
 
     a,8                                                                        %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain_b
 
@@ -6113,12 +6113,12 @@ D_CelloMusicVoice = {                                                          %
     r8                                                                         %! incise_chain_b
 
     a,8.                                                                       %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8.                                                                        %! incise_chain_b
 
     a,8.                                                                       %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r16                                                                        %! incise_chain_b
 
@@ -6126,7 +6126,7 @@ D_CelloMusicVoice = {                                                          %
     r8                                                                         %! incise_chain_b
 
     a,8                                                                        %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4.                                                                        %! incise_chain_b
 
@@ -6134,15 +6134,15 @@ D_CelloMusicVoice = {                                                          %
     r8                                                                         %! incise_chain_b
 
     a,8                                                                        %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     a,8.                                                                       %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r4..                                                                       %! incise_chain_b
 
     a,8                                                                        %! incise_chain_b
-    :32                                                                        %! IndicatorCommand
+    :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     r8                                                                         %! incise_chain_b
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)

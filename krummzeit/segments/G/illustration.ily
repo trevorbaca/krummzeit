@@ -83,7 +83,7 @@ G_GlobalSkips = {                                                              %
 
     % [G GlobalSkips measure 257 / measure 1]                                  %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \mark #7                                                                   %! IndicatorCommand
+    \mark #7                                                                   %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
@@ -415,43 +415,43 @@ G_OboeMusicVoice = {                                                           %
         fs''!8                                                                 %! polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ^ \markup { leggierissimo }                                            %! baca_markup:IndicatorCommand
         [                                                                      %! polyphony
 
         c''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'8                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
 
     c'''16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     fs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     d'''16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     bf''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -459,7 +459,7 @@ G_OboeMusicVoice = {                                                           %
 
     % [G OboeMusicVoice measure 266 / measure 10]                              %! _comment_measure_numbers
     ef''!4.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     \times 4/7 {                                                               %! polyphony
@@ -468,22 +468,22 @@ G_OboeMusicVoice = {                                                           %
         [                                                                      %! polyphony
 
         a''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -496,40 +496,40 @@ G_OboeMusicVoice = {                                                           %
         [                                                                      %! polyphony
 
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
 
     bf''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     b''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     bf'!8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     b'8                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     g'8                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a'8                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -538,7 +538,7 @@ G_OboeMusicVoice = {                                                           %
     % [G OboeMusicVoice measure 268 / measure 12]                              %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -551,19 +551,19 @@ G_OboeMusicVoice = {                                                           %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -576,42 +576,42 @@ G_OboeMusicVoice = {                                                           %
     [                                                                          %! polyphony
 
     c''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     b'16.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/8 {                                                               %! polyphony
 
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         a''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         e'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
@@ -787,20 +787,20 @@ G_ClarinetMusicVoice = {                                                       %
     f''4.                                                                      %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ^ \markup { leggierissimo }                                                %! baca_markup:IndicatorCommand
     ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                    %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
 
     \times 2/3 {                                                               %! polyphony
 
         fs''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ds''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -810,17 +810,17 @@ G_ClarinetMusicVoice = {                                                       %
 
     % [G ClarinetMusicVoice measure 266 / measure 10]                          %! _comment_measure_numbers
     gs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     fs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs'!8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     b''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -831,23 +831,23 @@ G_ClarinetMusicVoice = {                                                       %
     b''4                                                                       %! polyphony
 
     f''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a''4                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     ds''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     fs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs'!16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     b'16.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -857,13 +857,13 @@ G_ClarinetMusicVoice = {                                                       %
 
         % [G ClarinetMusicVoice measure 268 / measure 12]                      %! _comment_measure_numbers
         f''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -875,17 +875,17 @@ G_ClarinetMusicVoice = {                                                       %
     [                                                                          %! polyphony
 
     c'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     f''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     ds''!4.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     % [G ClarinetMusicVoice measure 269 / measure 13]                          %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
@@ -1030,51 +1030,51 @@ G_PianoMusicVoice = {                                                          %
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #'7                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         bf''!8                                                                 %! polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ^ \markup { leggierissimo }                                            %! baca_markup:IndicatorCommand
         [                                                                      %! polyphony
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
 
     ef'''!16.                                                                  %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     bf''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     af''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     b''16.                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -1082,18 +1082,18 @@ G_PianoMusicVoice = {                                                          %
 
     % [G PianoMusicVoice measure 262 / measure 6]                              %! _comment_measure_numbers
     c''4.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     c''8                                                                       %! polyphony
     [                                                                          %! polyphony
 
     fs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -1110,37 +1110,37 @@ G_PianoMusicVoice = {                                                          %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         bf''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         cs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b''8                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
 
     bf''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     af''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     % [G PianoMusicVoice measure 264 / measure 8]                              %! _comment_measure_numbers
     b''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     bf''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -1149,10 +1149,10 @@ G_PianoMusicVoice = {                                                          %
         bf''!4                                                                 %! polyphony
 
         af''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d'''4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
@@ -1160,13 +1160,13 @@ G_PianoMusicVoice = {                                                          %
 
         % [G PianoMusicVoice measure 265 / measure 9]                          %! _comment_measure_numbers
         a'4                                                                    %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs'!4                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
     }                                                                          %! polyphony
@@ -1175,10 +1175,10 @@ G_PianoMusicVoice = {                                                          %
     [                                                                          %! polyphony
 
     g'8                                                                        %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     af''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -1186,20 +1186,20 @@ G_PianoMusicVoice = {                                                          %
     [                                                                          %! polyphony
 
     c''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     % [G PianoMusicVoice measure 266 / measure 10]                             %! _comment_measure_numbers
     bf''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     b''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ]                                                                          %! polyphony
@@ -1208,22 +1208,22 @@ G_PianoMusicVoice = {                                                          %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         [                                                                      %! polyphony
 
         bf'!8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         ef'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -1233,10 +1233,10 @@ G_PianoMusicVoice = {                                                          %
     c'''4                                                                      %! polyphony
 
     d'''4                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs''!4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     \times 4/7 {                                                               %! polyphony
@@ -1245,28 +1245,28 @@ G_PianoMusicVoice = {                                                          %
         [                                                                      %! polyphony
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         af''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -1278,10 +1278,10 @@ G_PianoMusicVoice = {                                                          %
         [                                                                      %! polyphony
 
         ef'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
         \revert Beam.positions                                                 %! baca_beam_positions:OverrideCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
@@ -1301,14 +1301,14 @@ G_PianoMusicVoice = {                                                          %
     \override DynamicLineSpanner.staff-padding = #'3                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_270:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_270:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ^ \markup { "5th harmonic of F1" }                                         %! baca_markup:IndicatorCommand
     ^ \baca-explicit-indicator-markup "(“Piano”)"                              %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1316,7 +1316,7 @@ G_PianoMusicVoice = {                                                          %
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     % [G PianoMusicVoice measure 271 / measure 15]                             %! _comment_measure_numbers
@@ -1328,7 +1328,7 @@ G_PianoMusicVoice = {                                                          %
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     % [G PianoMusicVoice measure 272 / measure 16]                             %! _comment_measure_numbers
@@ -1342,7 +1342,7 @@ G_PianoMusicVoice = {                                                          %
     c'4.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     c'4                                                                        %! piano_harmonics
@@ -1351,7 +1351,7 @@ G_PianoMusicVoice = {                                                          %
     c'2.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
     c'4                                                                        %! piano_harmonics
@@ -1360,7 +1360,7 @@ G_PianoMusicVoice = {                                                          %
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     r2                                                                         %! piano_harmonics
 
@@ -1370,12 +1370,12 @@ G_PianoMusicVoice = {                                                          %
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tenuto                                                                  %! IndicatorCommand
+    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
@@ -1586,34 +1586,34 @@ G_ViolinMusicVoice = {                                                         %
     e''8                                                                       %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ^ \markup { "leggierissimo: off-string bowing on staccati" }               %! baca_markup:IndicatorCommand
     [                                                                          %! polyphony
 
     g'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     fs'''!8                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     \times 4/5 {                                                               %! polyphony
 
         bf'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         cs'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         b'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -1623,10 +1623,10 @@ G_ViolinMusicVoice = {                                                         %
 
     % [G ViolinMusicVoice measure 262 / measure 6]                             %! _comment_measure_numbers
     bf'''!4                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     e''''4                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     \times 2/3 {                                                               %! polyphony
@@ -1635,10 +1635,10 @@ G_ViolinMusicVoice = {                                                         %
         [                                                                      %! polyphony
 
         g'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         d'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
         ]                                                                      %! polyphony
 
@@ -1651,41 +1651,41 @@ G_ViolinMusicVoice = {                                                         %
         [                                                                      %! polyphony
 
         fs'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         a'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
 
     }                                                                          %! polyphony
 
     c'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     ef'''!8                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     fs'''!8                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     % [G ViolinMusicVoice measure 264 / measure 8]                             %! _comment_measure_numbers
     c''''8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     e''''8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     fs'''!8                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     g'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -1694,7 +1694,7 @@ G_ViolinMusicVoice = {                                                         %
     % [G ViolinMusicVoice measure 265 / measure 9]                             %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf'''!4.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -1707,15 +1707,15 @@ G_ViolinMusicVoice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf'''!8                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     af''!8                                                                     %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a''8                                                                       %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -1723,37 +1723,37 @@ G_ViolinMusicVoice = {                                                         %
     [                                                                          %! polyphony
 
     cs'''!8                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     \times 4/7 {                                                               %! polyphony
 
         % [G ViolinMusicVoice measure 266 / measure 10]                        %! _comment_measure_numbers
         fs''!8                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
 
         af'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         c'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         bf'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         g'''8                                                                  %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'''!8                                                                %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ]                                                                      %! polyphony
@@ -1761,17 +1761,17 @@ G_ViolinMusicVoice = {                                                         %
     }                                                                          %! polyphony
 
     c'''16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     bf'''!16.                                                                  %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a'''16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     bf'''!16.                                                                  %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -1779,20 +1779,20 @@ G_ViolinMusicVoice = {                                                         %
     bf'''!4                                                                    %! polyphony
 
     fs'''!4                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     ef'''!4                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     ef'''!8                                                                    %! polyphony
     [                                                                          %! polyphony
 
     c'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     af'''!8                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
     ]                                                                          %! polyphony
 
@@ -1800,43 +1800,43 @@ G_ViolinMusicVoice = {                                                         %
     [                                                                          %! polyphony
 
     c'''16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     cs'''!16.                                                                  %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     b'''16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     % [G ViolinMusicVoice measure 268 / measure 12]                            %! _comment_measure_numbers
     a'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     b'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     bf'''!8                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     g'''8                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
     d''''16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
 
     fs'''!16.                                                                  %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     a'''16.                                                                    %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf''!16.                                                                   %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
@@ -1851,17 +1851,17 @@ G_ViolinMusicVoice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bf''!4                                                                 %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         b''4                                                                   %! polyphony
-        - \staccato                                                            %! IndicatorCommand
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
     }                                                                          %! polyphony
 
     g''4.                                                                      %! polyphony
-    - \staccato                                                                %! IndicatorCommand
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
     \revert Beam.positions                                                     %! baca_beam_positions:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -2052,12 +2052,12 @@ G_ViolinMusicVoice = {                                                         %
 
         % [G ViolinMusicVoice measure 277 / measure 21]                        %! _comment_measure_numbers
         c'1.                                                                   %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         df'!1                                                                  %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -2318,12 +2318,12 @@ G_ViolaMusicVoice = {                                                          %
 
         % [G ViolaMusicVoice measure 276 / measure 20]                         %! _comment_measure_numbers
         bqs,!4                                                                 %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         c1                                                                     %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
@@ -2333,11 +2333,11 @@ G_ViolaMusicVoice = {                                                          %
 
         % [G ViolaMusicVoice measure 278 / measure 22]                         %! _comment_measure_numbers
         bqs,!4                                                                 %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         c1                                                                     %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -2641,12 +2641,12 @@ G_CelloMusicVoice = {                                                          %
 
         % [G CelloMusicVoice measure 277 / measure 21]                         %! _comment_measure_numbers
         b,,2                                                                   %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
 
         c,\breve                                                               %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! hypermeter_tuplets
 

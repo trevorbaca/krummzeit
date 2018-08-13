@@ -78,7 +78,7 @@ I_GlobalSkips = {                                                              %
 
     % [I GlobalSkips measure 291 / measure 1]                                  %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \mark #9                                                                   %! IndicatorCommand
+    \mark #9                                                                   %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
@@ -689,7 +689,7 @@ I_PianoMusicVoice = {                                                          %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         fs'''!4.                                                               %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Hpschd.”]"                       %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -704,7 +704,7 @@ I_PianoMusicVoice = {                                                          %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         fs'''!2                                                                %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -1010,10 +1010,10 @@ I_PianoMusicVoice = {                                                          %
     R1 * 5/8                                                                   %! _make_measure_silences
 
     % [I PianoMusicVoice measure 298 / measure 8]                              %! _comment_measure_numbers
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r8                                                                         %! opening_triplets
     ^ \baca-explicit-indicator-markup "(“Piano”)"                              %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -4091,7 +4091,7 @@ I_PercussionMusicVoice = {                                                     %
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         fs''!8                                                                 %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Perc.”]"                         %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -4106,7 +4106,7 @@ I_PercussionMusicVoice = {                                                     %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         fs''!2.                                                                %! hypermeter_tuplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -4114,13 +4114,13 @@ I_PercussionMusicVoice = {                                                     %
     R1 * 9/8                                                                   %! _make_measure_silences
 
     % [I PercussionMusicVoice measure 293 / measure 3]                         %! _comment_measure_numbers
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:IndicatorCommand
-    \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     r16                                                                        %! incise_attacks
     \override Staff.BarLine.bar-extent = #'(0 . 0)                             %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
@@ -4129,7 +4129,7 @@ I_PercussionMusicVoice = {                                                     %
     c'16                                                                       %! incise_attacks
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -4150,7 +4150,7 @@ I_PercussionMusicVoice = {                                                     %
     r2..                                                                       %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -4158,7 +4158,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4168,7 +4168,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4183,7 +4183,7 @@ I_PercussionMusicVoice = {                                                     %
     r2.                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -4191,7 +4191,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4201,7 +4201,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4214,7 +4214,7 @@ I_PercussionMusicVoice = {                                                     %
     r2.                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -4222,7 +4222,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4232,7 +4232,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4245,7 +4245,7 @@ I_PercussionMusicVoice = {                                                     %
     r2                                                                         %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -4253,7 +4253,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4263,7 +4263,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4276,7 +4276,7 @@ I_PercussionMusicVoice = {                                                     %
     r2                                                                         %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -4284,7 +4284,7 @@ I_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \laissezVibrer                                                           %! IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4327,7 +4327,7 @@ I_ViolinMusicVoice = {                                                         %
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -4343,10 +4343,10 @@ I_ViolinMusicVoice = {                                                         %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4354,14 +4354,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4369,14 +4369,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4384,14 +4384,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4400,14 +4400,14 @@ I_ViolinMusicVoice = {                                                         %
 
         % [I ViolinMusicVoice measure 292 / measure 2]                         %! _comment_measure_numbers
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4415,14 +4415,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4430,14 +4430,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4445,14 +4445,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4460,14 +4460,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4475,14 +4475,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4490,14 +4490,14 @@ I_ViolinMusicVoice = {                                                         %
     \times 2/3 {                                                               %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4511,93 +4511,93 @@ I_ViolinMusicVoice = {                                                         %
     g''4                                                                       %! right_remainder_quarters
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     cs''!4                                                                     %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef''!4                                                                     %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''8                                                                       %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I ViolinMusicVoice measure 296 / measure 6]                             %! _comment_measure_numbers
     a''4                                                                       %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef''!4                                                                     %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!8                                                                      %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I ViolinMusicVoice measure 297 / measure 7]                             %! _comment_measure_numbers
     d''4                                                                       %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'8                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I ViolinMusicVoice measure 298 / measure 8]                             %! _comment_measure_numbers
     bf'!4                                                                      %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d'4                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'8                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I ViolinMusicVoice measure 299 / measure 9]                             %! _comment_measure_numbers
     d'4                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef'!4                                                                      %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     % [I ViolinMusicVoice measure 300 / measure 10]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
@@ -4642,14 +4642,14 @@ I_ViolinMusicVoice = {                                                         %
         e'''8                                                                  %! pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
         cs'''!4                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''8                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
     }                                                                          %! pizzicato_rhythm
@@ -4660,13 +4660,13 @@ I_ViolinMusicVoice = {                                                         %
         f'''8                                                                  %! pizzicato_rhythm
 
         a'''2                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         c'''4                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         f'''8                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_rhythm
 
@@ -4701,7 +4701,7 @@ I_ViolaMusicVoice = {                                                          %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -4717,10 +4717,10 @@ I_ViolaMusicVoice = {                                                          %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4728,14 +4728,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4743,14 +4743,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4758,14 +4758,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4774,14 +4774,14 @@ I_ViolaMusicVoice = {                                                          %
 
         % [I ViolaMusicVoice measure 292 / measure 2]                          %! _comment_measure_numbers
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4789,14 +4789,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4804,14 +4804,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4819,14 +4819,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4834,14 +4834,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4849,14 +4849,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4864,14 +4864,14 @@ I_ViolaMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         a8                                                                     %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -4882,101 +4882,101 @@ I_ViolaMusicVoice = {                                                          %
     R1 * 5/8                                                                   %! _make_measure_silences
 
     % [I ViolaMusicVoice measure 295 / measure 5]                              %! _comment_measure_numbers
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     ef''!4                                                                     %! right_remainder_quarters
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     bf''!4                                                                     %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af''!4                                                                     %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'8                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I ViolaMusicVoice measure 296 / measure 6]                              %! _comment_measure_numbers
     fs''!4                                                                     %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g'8                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I ViolaMusicVoice measure 297 / measure 7]                              %! _comment_measure_numbers
     cs'!4                                                                      %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b8                                                                         %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I ViolaMusicVoice measure 298 / measure 8]                              %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef'!8                                                                      %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I ViolaMusicVoice measure 299 / measure 9]                              %! _comment_measure_numbers
     cs'!4                                                                      %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef!4                                                                       %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs!4                                                                       %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b4                                                                         %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     % [I ViolaMusicVoice measure 300 / measure 10]                             %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
@@ -5020,14 +5020,14 @@ I_ViolaMusicVoice = {                                                          %
         ef'''!8                                                                %! pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
         d'''4                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         g'''4                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_rhythm
 
@@ -5035,15 +5035,15 @@ I_ViolaMusicVoice = {                                                          %
     \times 5/6 {                                                               %! pizzicato_rhythm
 
         ef'''!2                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         b'''4                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_rhythm
 
     ef'''!8                                                                    %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [I ViolaMusicVoice measure 313 / measure 23]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
@@ -5076,7 +5076,7 @@ I_CelloMusicVoice = {                                                          %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vc.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -5092,10 +5092,10 @@ I_CelloMusicVoice = {                                                          %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5103,14 +5103,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5118,14 +5118,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5133,14 +5133,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5149,14 +5149,14 @@ I_CelloMusicVoice = {                                                          %
 
         % [I CelloMusicVoice measure 292 / measure 2]                          %! _comment_measure_numbers
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5164,14 +5164,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5179,14 +5179,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5194,14 +5194,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5209,14 +5209,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5224,14 +5224,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5239,14 +5239,14 @@ I_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         [                                                                      %! opening_triplets
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! IndicatorCommand
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ]                                                                      %! opening_triplets
 
     }                                                                          %! opening_triplets
@@ -5257,96 +5257,96 @@ I_CelloMusicVoice = {                                                          %
     R1 * 5/8                                                                   %! _make_measure_silences
 
     % [I CelloMusicVoice measure 295 / measure 5]                              %! _comment_measure_numbers
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     d''4                                                                       %! right_remainder_quarters
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     e''4                                                                       %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g''4                                                                       %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!8                                                                      %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I CelloMusicVoice measure 296 / measure 6]                              %! _comment_measure_numbers
     e'4                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g'4                                                                        %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4                                                                      %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef'!8                                                                      %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I CelloMusicVoice measure 297 / measure 7]                              %! _comment_measure_numbers
     bf'!4                                                                      %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     cs'!8                                                                      %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I CelloMusicVoice measure 298 / measure 8]                              %! _comment_measure_numbers
     ef'!4                                                                      %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f8                                                                         %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [I CelloMusicVoice measure 299 / measure 9]                              %! _comment_measure_numbers
     bf!4                                                                       %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f4                                                                         %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e4                                                                         %! right_remainder_quarters
-    - \downbow                                                                 %! IndicatorCommand
+    - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf!4                                                                       %! right_remainder_quarters
-    - \upbow                                                                   %! IndicatorCommand
+    - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     % [I CelloMusicVoice measure 300 / measure 10]                             %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
@@ -5391,17 +5391,17 @@ I_CelloMusicVoice = {                                                          %
         f'''8                                                                  %! pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
         e'''4                                                                  %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         cs'''!4                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         bf'''!8                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
     }                                                                          %! pizzicato_rhythm
@@ -5411,12 +5411,12 @@ I_CelloMusicVoice = {                                                          %
         bf'''!4.                                                               %! pizzicato_rhythm
 
         af'''!4                                                                %! pizzicato_rhythm
-        - \staccatissimo                                                       %! IndicatorCommand
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! pizzicato_rhythm
 
     e'''8                                                                      %! pizzicato_rhythm
-    - \staccatissimo                                                           %! IndicatorCommand
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [I CelloMusicVoice measure 313 / measure 23]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences

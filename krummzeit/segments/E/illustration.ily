@@ -542,8 +542,8 @@ E_OboeMusicVoice = {                                                           %
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bf''!16                                                                %! oboe_trills
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Ob.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Oboe”)"                          %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -720,13 +720,13 @@ E_OboeMusicVoice = {                                                           %
                     \finger
                         1
             }
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
         \startTrillSpan
 
     }                                                                          %! oboe_trills
 
     r4                                                                         %! oboe_trills
-    \stopTrillSpan                                                             %! SpannerCommand
+    \stopTrillSpan                                                             %! baca_trill_spanner:SpannerCommand
 
     % [E OboeMusicVoice measure 202 / measure 3]                               %! _comment_measure_numbers
     r2                                                                         %! oboe_trills
@@ -753,7 +753,7 @@ E_OboeMusicVoice = {                                                           %
                     \finger
                         2
             }
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
         [                                                                      %! oboe_trills
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
@@ -859,11 +859,11 @@ E_OboeMusicVoice = {                                                           %
                     \finger
                         1
             }
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
         \startTrillSpan
 
         a''8                                                                   %! oboe_trills
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
         [                                                                      %! oboe_trills
 
         fs''!8                                                                 %! oboe_trills
@@ -1155,13 +1155,13 @@ E_OboeMusicVoice = {                                                           %
                     \finger
                         1
             }
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
         \startTrillSpan
 
     }                                                                          %! oboe_trills
 
     r4.                                                                        %! oboe_trills
-    \stopTrillSpan                                                             %! SpannerCommand
+    \stopTrillSpan                                                             %! baca_trill_spanner:SpannerCommand
 
     % [E OboeMusicVoice measure 207 / measure 8]                               %! _comment_measure_numbers
     r2.                                                                        %! oboe_trills
@@ -1194,7 +1194,7 @@ E_OboeMusicVoice = {                                                           %
                     \finger
                         2
             }
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
         [                                                                      %! oboe_trills
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
@@ -1389,8 +1389,8 @@ E_OboeMusicVoice = {                                                           %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c'4                                                                    %! color_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
@@ -1419,7 +1419,7 @@ E_OboeMusicVoice = {                                                           %
                         2
             }
         ]                                                                      %! color_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bqs'!2.                                                                %! color_tuplets
@@ -1461,7 +1461,7 @@ E_OboeMusicVoice = {                                                           %
         bqs'!1                                                                 %! color_tuplets
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'2.                                                                   %! color_tuplets
         ^ \markup {
@@ -1530,7 +1530,7 @@ E_OboeMusicVoice = {                                                           %
         a'2.                                                                   %! color_tuplets
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         gqs'!2                                                                 %! color_tuplets
@@ -1619,7 +1619,7 @@ E_OboeMusicVoice = {                                                           %
                     \finger
                         1
             }
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf'!32                                                                %! color_tuplets
@@ -1695,12 +1695,12 @@ E_OboeMusicVoice = {                                                           %
         \override DynamicLineSpanner.staff-padding = #'4                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #2                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         a''8.                                                                  %! detached_triplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1713,13 +1713,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1729,7 +1729,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1742,13 +1742,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1759,7 +1759,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1772,13 +1772,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1788,7 +1788,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1801,13 +1801,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1817,7 +1817,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1831,13 +1831,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1847,7 +1847,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1860,13 +1860,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1876,7 +1876,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1890,13 +1890,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1906,7 +1906,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1919,13 +1919,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1935,7 +1935,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1948,13 +1948,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1964,7 +1964,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -1977,13 +1977,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -1994,7 +1994,7 @@ E_OboeMusicVoice = {                                                           %
 
         % [E OboeMusicVoice measure 233 / measure 34]                          %! _comment_measure_numbers
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         ~
@@ -2007,13 +2007,13 @@ E_OboeMusicVoice = {                                                           %
         a''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8.                                                                  %! detached_triplets
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
@@ -2023,7 +2023,7 @@ E_OboeMusicVoice = {                                                           %
         \startTrillSpan
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
         a''8                                                                   %! detached_triplets
         \startTrillSpan
@@ -2034,7 +2034,7 @@ E_OboeMusicVoice = {                                                           %
 
     % [E OboeMusicVoice measure 234 / measure 35]                              %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_measure_silences
-    \stopTrillSpan                                                             %! SpannerCommand
+    \stopTrillSpan                                                             %! baca_trill_spanner:SpannerCommand
 
 }                                                                              %! extern
 
@@ -2078,8 +2078,8 @@ E_ClarinetMusicVoice = {                                                       %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     gs!2.
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Cl. (Eb)”]"                          %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                    %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -2173,8 +2173,8 @@ E_ClarinetMusicVoice = {                                                       %
         \override DynamicLineSpanner.staff-padding = #'5                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         a2.                                                                    %! color_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
         r2                                                                     %! color_tuplets
 
@@ -2210,7 +2210,7 @@ E_ClarinetMusicVoice = {                                                       %
                         2
             }
         [                                                                      %! color_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         gtqs'!16                                                               %! color_tuplets
@@ -2241,7 +2241,7 @@ E_ClarinetMusicVoice = {                                                       %
         gtqs'!2.                                                               %! color_tuplets
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs'!2                                                                  %! color_tuplets
@@ -2316,7 +2316,7 @@ E_ClarinetMusicVoice = {                                                       %
         fs'!8                                                                  %! color_tuplets
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqs'!1.                                                                %! color_tuplets
@@ -2378,7 +2378,7 @@ E_ClarinetMusicVoice = {                                                       %
                         1
             }
         [                                                                      %! color_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         dqs'!8.                                                                %! color_tuplets
         ~
@@ -2413,8 +2413,8 @@ E_ClarinetMusicVoice = {                                                       %
     \override DynamicLineSpanner.staff-padding = #'7                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     c4..                                                                       %! rest_delimited_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \baca-explicit-indicator-markup "(“BassClarinet”)"                       %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“B. cl.”]"                             %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)          %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -2750,8 +2750,8 @@ E_PianoMusicVoice = {                                                          %
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         f''16                                                                  %! silver_points
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! IndicatorCommand
         [                                                                      %! silver_points
 
@@ -3061,14 +3061,14 @@ E_PianoMusicVoice = {                                                          %
     }                                                                          %! silver_points
 
     % [E PianoMusicVoice measure 226 / measure 27]                             %! _comment_measure_numbers
-    \ottava #-1                                                                %! SpannerCommand
+    \ottava #-1                                                                %! baca_ottava_bassa:SpannerCommand
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     bf,,,!8..                                                                  %! rest_delimited_repeated_duration_notes
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     r32                                                                        %! rest_delimited_repeated_duration_notes
@@ -3108,7 +3108,7 @@ E_PianoMusicVoice = {                                                          %
     r32                                                                        %! rest_delimited_repeated_duration_notes
 
     bf,,,!8..                                                                  %! rest_delimited_repeated_duration_notes
-    \ottava #0                                                                 %! SpannerCommand
+    \ottava #0                                                                 %! baca_ottava_bassa:SpannerCommand
 
     r32                                                                        %! rest_delimited_repeated_duration_notes
 
@@ -3126,10 +3126,10 @@ E_PianoMusicVoice = {                                                          %
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 7/8 {                                                               %! pizzicato_rhythm
 
-        \ottava #1                                                             %! SpannerCommand
+        \ottava #1                                                             %! baca_ottava:SpannerCommand
         c''''8                                                                 %! pizzicato_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! IndicatorCommand
 
         cs''''!2                                                               %! pizzicato_rhythm
@@ -3202,7 +3202,7 @@ E_PianoMusicVoice = {                                                          %
 
     g''''4                                                                     %! pizzicato_rhythm
     - \staccatissimo                                                           %! IndicatorCommand
-    \ottava #0                                                                 %! SpannerCommand
+    \ottava #0                                                                 %! baca_ottava:SpannerCommand
 
     % [E PianoMusicVoice measure 234 / measure 35]                             %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_measure_silences
@@ -3521,8 +3521,8 @@ E_PercussionMusicVoice = {                                                     %
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         f'8                                                                    %! silver_points
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! IndicatorCommand
         [                                                                      %! silver_points
 
@@ -3834,8 +3834,8 @@ E_PercussionMusicVoice = {                                                     %
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.                                                                        %! sponge_rhythm
     :32                                                                        %! IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -4015,8 +4015,8 @@ E_ViolinMusicVoice = {                                                         %
 
     aqs!8                                                                      %! incise_chain_b
     :32                                                                        %! IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     aqs!8.                                                                     %! incise_chain_b
     :32                                                                        %! IndicatorCommand
@@ -4048,23 +4048,23 @@ E_ViolinMusicVoice = {                                                         %
     \override DynamicLineSpanner.staff-padding = #'8                           %! baca_dls_staff_padding:OverrideCommand(1)
     \override TupletBracket.staff-padding = #4                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     ef''!4                                                                     %! glissando_rhythm
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     ^ \markup { "molto flautando" }                                            %! baca_markup:IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \glissando                                                                 %! SpannerCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''2                                                                       %! glissando_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         g''16                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d''4                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -4073,20 +4073,20 @@ E_ViolinMusicVoice = {                                                         %
 
         % [E ViolinMusicVoice measure 212 / measure 13]                        %! _comment_measure_numbers
         ef''!2                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f''4.                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         fs''!4                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e''2                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -4094,7 +4094,7 @@ E_ViolinMusicVoice = {                                                         %
 
         % [E ViolinMusicVoice measure 213 / measure 14]                        %! _comment_measure_numbers
         d''8                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs''!2                                                                 %! glissando_rhythm
 
@@ -4108,20 +4108,20 @@ E_ViolinMusicVoice = {                                                         %
 
         % [E ViolinMusicVoice measure 214 / measure 15]                        %! _comment_measure_numbers
         a'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c''2                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/7 {                                                               %! glissando_rhythm
 
         cs''!4                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e''8.                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -4129,20 +4129,20 @@ E_ViolinMusicVoice = {                                                         %
 
         % [E ViolinMusicVoice measure 215 / measure 16]                        %! _comment_measure_numbers
         d''4                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef''!2                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         f'16                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs''!4                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -4150,7 +4150,7 @@ E_ViolinMusicVoice = {                                                         %
 
         % [E ViolinMusicVoice measure 216 / measure 17]                        %! _comment_measure_numbers
         cs''!4                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d''8.                                                                  %! glissando_rhythm
 
@@ -4164,18 +4164,18 @@ E_ViolinMusicVoice = {                                                         %
 
     % [E ViolinMusicVoice measure 217 / measure 18]                            %! _comment_measure_numbers
     fs'!2                                                                      %! glissando_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4.                                                                       %! glissando_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         c''4                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g'2                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -4183,20 +4183,20 @@ E_ViolinMusicVoice = {                                                         %
 
         % [E ViolinMusicVoice measure 218 / measure 19]                        %! _comment_measure_numbers
         af'!8                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'2                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/7 {                                                               %! glissando_rhythm
 
         bf'!4                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!8.                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -4204,11 +4204,11 @@ E_ViolinMusicVoice = {                                                         %
 
         % [E ViolinMusicVoice measure 219 / measure 20]                        %! _comment_measure_numbers
         e'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'4                                                                    %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! glissando_rhythm
@@ -4246,16 +4246,16 @@ E_ViolinMusicVoice = {                                                         %
         % [E ViolinMusicVoice measure 228 / measure 29]                        %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'4                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #2                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \ppp                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \ppp                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4267,27 +4267,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4299,28 +4299,28 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
         % [E ViolinMusicVoice measure 229 / measure 30]                        %! _comment_measure_numbers
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4332,27 +4332,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4364,27 +4364,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4397,27 +4397,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4429,27 +4429,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4462,27 +4462,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4494,27 +4494,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4526,27 +4526,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4558,28 +4558,28 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         % [E ViolinMusicVoice measure 233 / measure 34]                        %! _comment_measure_numbers
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         ~
         \startTrillSpan a''
@@ -4591,27 +4591,27 @@ E_ViolinMusicVoice = {                                                         %
         g''16                                                                  %! detached_triplets
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
     }                                                                          %! detached_triplets
 
     \times 2/3 {                                                               %! detached_triplets
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8.                                                                  %! detached_triplets
         \startTrillSpan a''
 
         r16                                                                    %! detached_triplets
-        \stopTrillSpan                                                         %! SpannerCommand
+        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerCommand
 
-        \pitchedTrill                                                          %! SpannerCommand
+        \pitchedTrill                                                          %! baca_trill_spanner:SpannerCommand
         g''8                                                                   %! detached_triplets
         \startTrillSpan a''
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
@@ -4621,7 +4621,7 @@ E_ViolinMusicVoice = {                                                         %
 
     % [E ViolinMusicVoice measure 234 / measure 35]                            %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_measure_silences
-    \stopTrillSpan                                                             %! SpannerCommand
+    \stopTrillSpan                                                             %! baca_trill_spanner:SpannerCommand
 
 }                                                                              %! extern
 
@@ -4689,8 +4689,8 @@ E_ViolaMusicVoice = {                                                          %
 
     bf,!8                                                                      %! incise_chain_b
     :32                                                                        %! IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     bf,!8.                                                                     %! incise_chain_b
     :32                                                                        %! IndicatorCommand
@@ -4729,35 +4729,35 @@ E_ViolaMusicVoice = {                                                          %
         % [E ViolaMusicVoice measure 212 / measure 13]                         %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         ef'!2                                                                  %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \glissando                                                             %! SpannerCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4.                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         g'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         ef'!8                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'2                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -4766,17 +4766,17 @@ E_ViolaMusicVoice = {                                                          %
 
         % [E ViolaMusicVoice measure 213 / measure 14]                         %! _comment_measure_numbers
         fs'!2                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4.                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         d'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs'!2                                                                  %! glissando_rhythm
 
@@ -4791,44 +4791,44 @@ E_ViolaMusicVoice = {                                                          %
 
         % [E ViolaMusicVoice measure 215 / measure 16]                         %! _comment_measure_numbers
         a8                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         cs'!16                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/7 {                                                               %! glissando_rhythm
 
         d'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!8.                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     % [E ViolaMusicVoice measure 216 / measure 17]                             %! _comment_measure_numbers
     f4                                                                         %! glissando_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs!2                                                                       %! glissando_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         cs'!16                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'4                                                                    %! glissando_rhythm
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
@@ -4845,30 +4845,30 @@ E_ViolaMusicVoice = {                                                          %
 
         % [E ViolaMusicVoice measure 218 / measure 19]                         %! _comment_measure_numbers
         fs!16                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a4                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/7 {                                                               %! glissando_rhythm
 
         c4                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g8.                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         af!8                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a4                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -4876,21 +4876,21 @@ E_ViolaMusicVoice = {                                                          %
 
         % [E ViolaMusicVoice measure 219 / measure 20]                         %! _comment_measure_numbers
         bf!16.                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef!4.                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/7 {                                                               %! glissando_rhythm
 
         e4                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c8.                                                                    %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! glissando_rhythm
@@ -4904,8 +4904,8 @@ E_ViolaMusicVoice = {                                                          %
     % [E ViolaMusicVoice measure 222 / measure 23]                             %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     fs!4..                                                                     %! rest_delimited_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \ppp                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ppp                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     r16                                                                        %! rest_delimited_repeated_duration_notes
 
@@ -5106,8 +5106,8 @@ E_CelloMusicVoice = {                                                          %
 
     a,8                                                                        %! incise_chain_b
     :32                                                                        %! IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     a,8.                                                                       %! incise_chain_b
     :32                                                                        %! IndicatorCommand
@@ -5141,22 +5141,22 @@ E_CelloMusicVoice = {                                                          %
         \override DynamicLineSpanner.staff-padding = #'8                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         ef'!8                                                                  %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \glissando                                                             %! SpannerCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         g'8                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'2                                                                    %! glissando_rhythm
 
@@ -5170,10 +5170,10 @@ E_CelloMusicVoice = {                                                          %
     \times 4/5 {                                                               %! glissando_rhythm
 
         ef'!8                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f2                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -5182,20 +5182,20 @@ E_CelloMusicVoice = {                                                          %
 
         % [E CelloMusicVoice measure 213 / measure 14]                         %! _comment_measure_numbers
         fs'!2                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4.                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         d4                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!2                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -5203,17 +5203,17 @@ E_CelloMusicVoice = {                                                          %
 
         % [E CelloMusicVoice measure 214 / measure 15]                         %! _comment_measure_numbers
         a16                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/7 {                                                               %! glissando_rhythm
 
         cs!4                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e8.                                                                    %! glissando_rhythm
 
@@ -5227,27 +5227,27 @@ E_CelloMusicVoice = {                                                          %
     \times 4/7 {                                                               %! glissando_rhythm
 
         d4                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef!8.                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     % [E CelloMusicVoice measure 216 / measure 17]                             %! _comment_measure_numbers
     f4                                                                         %! glissando_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs!2                                                                       %! glissando_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         cs!16                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d4                                                                     %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
@@ -5255,15 +5255,15 @@ E_CelloMusicVoice = {                                                          %
 
         % [E CelloMusicVoice measure 217 / measure 18]                         %! _comment_measure_numbers
         fs!2                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a,4.                                                                   %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     c8                                                                         %! glissando_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g,4                                                                        %! glissando_rhythm
 
@@ -5275,10 +5275,10 @@ E_CelloMusicVoice = {                                                          %
     \times 2/3 {                                                               %! glissando_rhythm
 
         af,!8                                                                  %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a,4                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
@@ -5288,21 +5288,21 @@ E_CelloMusicVoice = {                                                          %
 
         % [E CelloMusicVoice measure 219 / measure 20]                         %! _comment_measure_numbers
         bf,!16.                                                                %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef,!4.                                                                 %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! glissando_rhythm
 
     \times 4/7 {                                                               %! glissando_rhythm
 
         e,4                                                                    %! glissando_rhythm
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c,8.                                                                   %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! glissando_rhythm
@@ -5316,8 +5316,8 @@ E_CelloMusicVoice = {                                                          %
     % [E CelloMusicVoice measure 222 / measure 23]                             %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     c,4..                                                                      %! rest_delimited_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \ppp                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ppp                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     r16                                                                        %! rest_delimited_repeated_duration_notes
 

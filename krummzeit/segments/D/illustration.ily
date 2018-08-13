@@ -3909,17 +3909,17 @@ D_ViolinMusicVoice = {                                                         %
         \override DynamicLineSpanner.staff-padding = #'6                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         fs''!4                                                                 %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \abjad-dashed-line-with-arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "molto flautando"                       %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-right-text "molto gridato"                        %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
-        - \tweak staff-padding #6                                              %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "molto flautando"                       %! PiecewiseCommand(1)
+        - \baca-text-spanner-right-text "molto gridato"                        %! PiecewiseCommand(1)
+        - \tweak bound-details.right.padding #0.5                              %! PiecewiseCommand(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseCommand(1)
+        - \tweak staff-padding #6                                              %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
         \glissando                                                             %! SpannerCommand
 
         b''2                                                                   %! glissando_rhythm
@@ -3971,9 +3971,9 @@ D_ViolinMusicVoice = {                                                         %
         \glissando                                                             %! SpannerCommand
 
         cs''!2                                                                 %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \stopTextSpan                                                          %! PiecewiseCommand(2)
 
     }                                                                          %! glissando_rhythm
 
@@ -4644,11 +4644,11 @@ D_ViolaMusicVoice = {                                                          %
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     a''8                                                                       %! glissando_rhythm
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     ^ \markup { "molto flautando e pont." }                                    %! baca_markup:IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \glissando                                                                 %! SpannerCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -4694,8 +4694,8 @@ D_ViolaMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         d''2                                                                   %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
 
     }                                                                          %! glissando_rhythm
 
@@ -4709,17 +4709,17 @@ D_ViolaMusicVoice = {                                                          %
     \times 4/5 {                                                               %! glissando_rhythm
 
         cs''!16                                                                %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \abjad-dashed-line-with-arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "molto flautando"                       %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-right-text "molto gridato"                        %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
-        - \tweak staff-padding #6                                              %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "molto flautando"                       %! PiecewiseCommand(1)
+        - \baca-text-spanner-right-text "molto gridato"                        %! PiecewiseCommand(1)
+        - \tweak bound-details.right.padding #0.5                              %! PiecewiseCommand(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseCommand(1)
+        - \tweak staff-padding #6                                              %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
         \glissando                                                             %! SpannerCommand
 
         f''4                                                                   %! glissando_rhythm
@@ -4862,9 +4862,9 @@ D_ViolaMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         c''2                                                                   %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \stopTextSpan                                                          %! PiecewiseCommand(2)
         \glissando                                                             %! SpannerCommand
 
     }                                                                          %! glissando_rhythm
@@ -5590,17 +5590,17 @@ D_CelloMusicVoice = {                                                          %
 
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         g''4                                                                   %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \abjad-dashed-line-with-arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "molto flautando"                       %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-right-text "molto gridato"                        %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
-        - \tweak staff-padding #6                                              %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "molto flautando"                       %! PiecewiseCommand(1)
+        - \baca-text-spanner-right-text "molto gridato"                        %! PiecewiseCommand(1)
+        - \tweak bound-details.right.padding #0.5                              %! PiecewiseCommand(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseCommand(1)
+        - \tweak staff-padding #6                                              %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
         \glissando                                                             %! SpannerCommand
 
         fs''!2                                                                 %! glissando_rhythm
@@ -5635,9 +5635,9 @@ D_CelloMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         bf''!2                                                                 %! glissando_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \stopTextSpan                                                          %! PiecewiseCommand(2)
 
     }                                                                          %! glissando_rhythm
 

@@ -3209,12 +3209,12 @@ B_ViolinMusicVoice = {                                                         %
     % [B ViolinMusicVoice measure 124 / measure 36]                            %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     ftqs!1.                                                                    %! fused_expanse
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     ^ \markup { "non flautando" }                                              %! baca_markup:IndicatorCommand
     ^ \markup { "allow bowing to convey accelerando" }                         %! baca_markup:IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \glissando                                                                 %! SpannerCommand
 
     g1                                                                         %! fused_expanse
@@ -3227,8 +3227,8 @@ B_ViolinMusicVoice = {                                                         %
     \glissando                                                                 %! SpannerCommand
 
     ftqs!2                                                                     %! fused_expanse
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
     % [B ViolinMusicVoice measure 131 / measure 43]                            %! _comment_measure_numbers
@@ -3296,11 +3296,11 @@ B_ViolaMusicVoice = {                                                          %
         \override DynamicLineSpanner.staff-padding = #'7                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         e4                                                                     %! single_division_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \glissando                                                             %! SpannerCommand
 
         dtqs!8                                                                 %! single_division_tuplets
@@ -3346,8 +3346,8 @@ B_ViolaMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         e2                                                                     %! single_division_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
 
     }                                                                          %! single_division_tuplets
 
@@ -3359,15 +3359,15 @@ B_ViolaMusicVoice = {                                                          %
 
         % [B ViolaMusicVoice measure 102 / measure 14]                         %! _comment_measure_numbers
         dtqs!2                                                                 %! single_division_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \glissando                                                             %! SpannerCommand
 
         f4                                                                     %! single_division_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         ~
 
     }                                                                          %! single_division_tuplets
@@ -3494,12 +3494,12 @@ B_ViolaMusicVoice = {                                                          %
     % [B ViolaMusicVoice measure 120 / measure 32]                             %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'5                           %! baca_dls_staff_padding:OverrideCommand(1)
     btqs,!1                                                                    %! fused_expanse
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     ^ \markup { "non flautando" }                                              %! baca_markup:IndicatorCommand
     ^ \markup { "allow bowing to convey accelerando" }                         %! baca_markup:IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \glissando                                                                 %! SpannerCommand
 
     c\breve                                                                    %! fused_expanse
@@ -3522,8 +3522,8 @@ B_ViolaMusicVoice = {                                                          %
     \glissando                                                                 %! SpannerCommand
 
     cqs!2.                                                                     %! fused_expanse
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
     % [B ViolaMusicVoice measure 131 / measure 43]                             %! _comment_measure_numbers
@@ -3588,11 +3588,11 @@ B_CelloMusicVoice = {                                                          %
 
         % [B CelloMusicVoice measure 94 / measure 6]                           %! _comment_measure_numbers
         d,16                                                                   %! single_division_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \glissando                                                             %! SpannerCommand
 
         ctqs,!4                                                                %! single_division_tuplets
@@ -3638,8 +3638,8 @@ B_CelloMusicVoice = {                                                          %
         \glissando                                                             %! SpannerCommand
 
         d,4                                                                    %! single_division_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
 
     }                                                                          %! single_division_tuplets
 
@@ -3651,15 +3651,15 @@ B_CelloMusicVoice = {                                                          %
 
         % [B CelloMusicVoice measure 102 / measure 14]                         %! _comment_measure_numbers
         ctqs,!8                                                                %! single_division_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         \glissando                                                             %! SpannerCommand
 
         e,2                                                                    %! single_division_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         ~
 
     }                                                                          %! single_division_tuplets
@@ -3783,12 +3783,12 @@ B_CelloMusicVoice = {                                                          %
     % [B CelloMusicVoice measure 120 / measure 32]                             %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'5                           %! baca_dls_staff_padding:OverrideCommand(1)
     b,,\breve                                                                  %! fused_expanse
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     ^ \markup { "non flautando" }                                              %! baca_markup:IndicatorCommand
     ^ \markup { "allow bowing to convey accelerando" }                         %! baca_markup:IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     \glissando                                                                 %! SpannerCommand
 
     cqs,!1.                                                                    %! fused_expanse
@@ -3809,8 +3809,8 @@ B_CelloMusicVoice = {                                                          %
 
     % [B CelloMusicVoice measure 129 / measure 41]                             %! _comment_measure_numbers
     bqf,,!1..                                                                  %! fused_expanse
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
     % [B CelloMusicVoice measure 131 / measure 43]                             %! _comment_measure_numbers

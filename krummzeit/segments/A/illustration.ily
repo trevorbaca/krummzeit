@@ -1726,11 +1726,11 @@ A_OboeMusicVoice = {                                                           %
 
     % [A OboeMusicVoice measure 36 / measure 23]                               %! _comment_measure_numbers
     ef'!4.                                                                     %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \staccato                                                                %! IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
 
     \times 2/3 {                                                               %! polyphony
 
@@ -1947,8 +1947,8 @@ A_OboeMusicVoice = {                                                           %
     - \staccato                                                                %! IndicatorCommand
 
     b'16                                                                       %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
@@ -2918,12 +2918,12 @@ A_ClarinetMusicVoice = {                                                       %
     % [A ClarinetMusicVoice measure 36 / measure 23]                           %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f'4                                                                        %! polyphony
@@ -3096,8 +3096,8 @@ A_ClarinetMusicVoice = {                                                       %
         - \staccato                                                            %! IndicatorCommand
 
         c''8                                                                   %! polyphony
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
 
@@ -6493,10 +6493,10 @@ A_ViolinMusicVoice = {                                                         %
 
         % [A ViolinMusicVoice measure 36 / measure 23]                         %! _comment_measure_numbers
         b''16                                                                  %! polyphony
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         [                                                                      %! polyphony
 
         c'16                                                                   %! polyphony
@@ -6715,8 +6715,8 @@ A_ViolinMusicVoice = {                                                         %
     ~
 
     fs'!4                                                                      %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
 
     % [A ViolinMusicVoice measure 42 / measure 29]                             %! _comment_measure_numbers
     af'!16                                                                     %! polyphony

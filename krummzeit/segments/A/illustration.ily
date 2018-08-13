@@ -1726,11 +1726,11 @@ A_OboeMusicVoice = {                                                           %
 
     % [A OboeMusicVoice measure 36 / measure 23]                               %! _comment_measure_numbers
     ef'!4.                                                                     %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \staccato                                                                %! IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
     \times 2/3 {                                                               %! polyphony
 
@@ -1947,8 +1947,8 @@ A_OboeMusicVoice = {                                                           %
     - \staccato                                                                %! IndicatorCommand
 
     b'16                                                                       %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     - \staccato                                                                %! IndicatorCommand
     ~
     ]                                                                          %! polyphony
@@ -2469,8 +2469,8 @@ A_ClarinetMusicVoice = {                                                       %
         }                                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:-PARTS:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     cs''!4.                                                                    %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccato                                                                %! IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
@@ -2710,8 +2710,8 @@ A_ClarinetMusicVoice = {                                                       %
 
     % [A ClarinetMusicVoice measure 29 / measure 16]                           %! _comment_measure_numbers
     d''4.                                                                      %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccato                                                                %! IndicatorCommand
 
     \times 2/3 {                                                               %! polyphony
@@ -2918,12 +2918,12 @@ A_ClarinetMusicVoice = {                                                       %
     % [A ClarinetMusicVoice measure 36 / measure 23]                           %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''4                                                                       %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f'4                                                                        %! polyphony
@@ -3096,8 +3096,8 @@ A_ClarinetMusicVoice = {                                                       %
         - \staccato                                                            %! IndicatorCommand
 
         c''8                                                                   %! polyphony
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
 
@@ -3396,55 +3396,55 @@ A_ClarinetMusicVoice = {                                                       %
     r8                                                                         %! white_rhythm
 
     cs''!4.                                                                    %! white_rhythm
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     btqs'!4.                                                                   %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4.                                                                      %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ctqs''!4.                                                                  %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bqs'!4.                                                                    %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4.                                                                       %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bqs'!4.                                                                    %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     cs''!4.                                                                    %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     btqs'!4.                                                                   %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4.                                                                      %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ctqs''!4.                                                                  %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ClarinetMusicVoice measure 87 / measure 74]                           %! _comment_measure_numbers
     bqs'!4.                                                                    %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4.                                                                       %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bqs'!4.                                                                    %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     cs''!4.                                                                    %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     btqs'!4.                                                                   %! white_rhythm
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4.                                                                      %! white_rhythm
 
@@ -4727,7 +4727,7 @@ A_PianoMusicVoice = {                                                          %
             Pf.                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:IndicatorCommand
 
-    \ottava #-1                                                                %! SpannerCommand
+    \ottava #-1                                                                %! baca_ottava_bassa:SpannerCommand
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
@@ -4941,7 +4941,7 @@ A_PianoMusicVoice = {                                                          %
                     \flat
                 }
         }
-    \ottava #0                                                                 %! SpannerCommand
+    \ottava #0                                                                 %! baca_ottava_bassa:SpannerCommand
 
     r8                                                                         %! incise_attacks
 
@@ -4963,8 +4963,8 @@ A_PianoMusicVoice = {                                                          %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g''16                                                                  %! pizzicato_sixteenths
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -5890,8 +5890,8 @@ A_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
@@ -5912,8 +5912,8 @@ A_PercussionMusicVoice = {                                                     %
     r4                                                                         %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -5923,8 +5923,8 @@ A_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -5936,8 +5936,8 @@ A_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -5954,8 +5954,8 @@ A_PercussionMusicVoice = {                                                     %
     r8                                                                         %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -5965,8 +5965,8 @@ A_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -5978,8 +5978,8 @@ A_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -5994,8 +5994,8 @@ A_PercussionMusicVoice = {                                                     %
     r2.                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -6005,8 +6005,8 @@ A_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -6018,8 +6018,8 @@ A_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -6036,8 +6036,8 @@ A_PercussionMusicVoice = {                                                     %
     r4                                                                         %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -6047,8 +6047,8 @@ A_PercussionMusicVoice = {                                                     %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! IndicatorCommand
     - \tenuto                                                                  %! IndicatorCommand
 
@@ -6162,8 +6162,8 @@ A_ViolinMusicVoice = {                                                         %
 
     % [A ViolinMusicVoice measure 21 / measure 8]                              %! _comment_measure_numbers
     f''4.                                                                      %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccato                                                                %! IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                              %! baca_markup:IndicatorCommand
 
@@ -6322,8 +6322,8 @@ A_ViolinMusicVoice = {                                                         %
     % [A ViolinMusicVoice measure 32 / measure 19]                             %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4.                                                                    %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccato                                                                %! IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                              %! baca_markup:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
@@ -6493,10 +6493,10 @@ A_ViolinMusicVoice = {                                                         %
 
         % [A ViolinMusicVoice measure 36 / measure 23]                         %! _comment_measure_numbers
         b''16                                                                  %! polyphony
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         [                                                                      %! polyphony
 
         c'16                                                                   %! polyphony
@@ -6715,8 +6715,8 @@ A_ViolinMusicVoice = {                                                         %
     ~
 
     fs'!4                                                                      %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
     % [A ViolinMusicVoice measure 42 / measure 29]                             %! _comment_measure_numbers
     af'!16                                                                     %! polyphony
@@ -7061,68 +7061,68 @@ A_ViolinMusicVoice = {                                                         %
 
     % [A ViolinMusicVoice measure 51 / measure 38]                             %! _comment_measure_numbers
     g''4.                                                                      %! white_rhythm
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4.                                                                    %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4.                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolinMusicVoice measure 52 / measure 39]                             %! _comment_measure_numbers
     c''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af''!4                                                                     %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! white_rhythm
@@ -7135,43 +7135,43 @@ A_ViolinMusicVoice = {                                                         %
     - \downbow                                                                 %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!4                                                                     %! white_rhythm
@@ -7184,189 +7184,189 @@ A_ViolinMusicVoice = {                                                         %
     - \upbow                                                                   %! IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef''!4                                                                     %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolinMusicVoice measure 58 / measure 45]                             %! _comment_measure_numbers
     f'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4                                                                     %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     c''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolinMusicVoice measure 64 / measure 51]                             %! _comment_measure_numbers
     c''4                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef'!4                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     g'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs'!4                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d'4                                                                        %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e'8                                                                        %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
@@ -7376,8 +7376,8 @@ A_ViolinMusicVoice = {                                                         %
 
         % [A ViolinMusicVoice measure 67 / measure 54]                         %! _comment_measure_numbers
         b''8                                                                   %! pizzicato_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
@@ -7799,8 +7799,8 @@ A_ViolinMusicVoice = {                                                         %
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     c'2.                                                                       %! baca_make_repeat_tied_notes
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -7859,12 +7859,12 @@ A_ViolaMusicVoice = {                                                          %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         d4                                                                     %! hypermeter_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Viola”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -7875,7 +7875,7 @@ A_ViolaMusicVoice = {                                                          %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         ctqs!1                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -7884,10 +7884,10 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 16 / measure 3]                           %! _comment_measure_numbers
         e2                                                                     %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         dqs!\breve                                                             %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -7896,26 +7896,26 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 19 / measure 6]                           %! _comment_measure_numbers
         cqs!4                                                                  %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b,1                                                                    %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
     % [A ViolaMusicVoice measure 20 / measure 7]                               %! _comment_measure_numbers
     cqs!2                                                                      %! hypermeter_tuplets
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d\breve                                                                    %! hypermeter_tuplets
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
         % [A ViolaMusicVoice measure 22 / measure 9]                           %! _comment_measure_numbers
         ctqs!2                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e\breve                                                                %! hypermeter_tuplets
@@ -7930,15 +7930,15 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 25 / measure 12]                          %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e4                                                                     %! hypermeter_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "non flautando" }                                          %! baca_markup:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         dtqs!1                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -7947,10 +7947,10 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 27 / measure 14]                          %! _comment_measure_numbers
         f2                                                                     %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         eqs!\breve                                                             %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -7959,29 +7959,29 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 30 / measure 17]                          %! _comment_measure_numbers
         dqs!4                                                                  %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c1                                                                     %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
     % [A ViolaMusicVoice measure 31 / measure 18]                              %! _comment_measure_numbers
     dqs!2                                                                      %! hypermeter_tuplets
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e\breve                                                                    %! hypermeter_tuplets
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
         % [A ViolaMusicVoice measure 33 / measure 20]                          %! _comment_measure_numbers
         dtqs!2                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f\breve                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -7990,15 +7990,15 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 36 / measure 23]                          %! _comment_measure_numbers
         g4                                                                     %! hypermeter_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ftqs!2.                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a4                                                                     %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -8007,13 +8007,13 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 38 / measure 25]                          %! _comment_measure_numbers
         gqs!2                                                                  %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fqs!1.                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e2                                                                     %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -8022,10 +8022,10 @@ A_ViolaMusicVoice = {                                                          %
 
         % [A ViolaMusicVoice measure 41 / measure 28]                          %! _comment_measure_numbers
         fqs!8                                                                  %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g4.                                                                    %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ftqs!8                                                                 %! hypermeter_tuplets
 
@@ -8055,54 +8055,54 @@ A_ViolaMusicVoice = {                                                          %
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     af''!4.                                                                    %! white_rhythm
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     ef''!4.                                                                    %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b''4.                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e''4.                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolaMusicVoice measure 49 / measure 36]                              %! _comment_measure_numbers
     af''!4.                                                                    %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     a''4.                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolaMusicVoice measure 50 / measure 37]                              %! _comment_measure_numbers
     f''4.                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b'4.                                                                       %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A ViolaMusicVoice measure 51 / measure 38]                              %! _comment_measure_numbers
     f'4.                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     af'!4.                                                                     %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4.                                                                    %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/8 {                                                               %! prolated_quarters
@@ -8114,20 +8114,20 @@ A_ViolaMusicVoice = {                                                          %
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         b'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         af'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -8137,19 +8137,19 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 53 / measure 40]                          %! _comment_measure_numbers
         fs'!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         af'!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!4                                                                  %! prolated_quarters
@@ -8168,39 +8168,39 @@ A_ViolaMusicVoice = {                                                          %
         - \downbow                                                             %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         af'!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -8210,15 +8210,15 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 55 / measure 42]                          %! _comment_measure_numbers
         e'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         af'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         e'4                                                                    %! prolated_quarters
@@ -8231,7 +8231,7 @@ A_ViolaMusicVoice = {                                                          %
         - \upbow                                                               %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -8241,19 +8241,19 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 56 / measure 43]                          %! _comment_measure_numbers
         g'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -8263,19 +8263,19 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 57 / measure 44]                          %! _comment_measure_numbers
         fs'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -8285,11 +8285,11 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 58 / measure 45]                          %! _comment_measure_numbers
         c'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -8299,15 +8299,15 @@ A_ViolaMusicVoice = {                                                          %
         % [A ViolaMusicVoice measure 59 / measure 46]                          %! _comment_measure_numbers
         ef!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af!4                                                                   %! prolated_quarters
@@ -8325,11 +8325,11 @@ A_ViolaMusicVoice = {                                                          %
         - \downbow                                                             %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
@@ -8345,8 +8345,8 @@ A_ViolaMusicVoice = {                                                          %
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         b''8                                                                   %! pizzicato_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -8880,12 +8880,12 @@ A_CelloMusicVoice = {                                                          %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         e,2.                                                                   %! hypermeter_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vc.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -8896,7 +8896,7 @@ A_CelloMusicVoice = {                                                          %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         dqs,!2                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -8905,10 +8905,10 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 16 / measure 3]                           %! _comment_measure_numbers
         cqs,!1.                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b,,1                                                                   %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -8917,29 +8917,29 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 19 / measure 6]                           %! _comment_measure_numbers
         cqs,!2.                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d,2                                                                    %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
     % [A CelloMusicVoice measure 20 / measure 7]                               %! _comment_measure_numbers
     ctqs,!1.                                                                   %! hypermeter_tuplets
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     e,1                                                                        %! hypermeter_tuplets
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
         % [A CelloMusicVoice measure 22 / measure 9]                           %! _comment_measure_numbers
         dqs,!1.                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         cqs,!1                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -8948,13 +8948,13 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 25 / measure 12]                          %! _comment_measure_numbers
         f,2.                                                                   %! hypermeter_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "non flautando" }                                          %! baca_markup:IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         eqs,!2                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -8963,10 +8963,10 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 27 / measure 14]                          %! _comment_measure_numbers
         dqs,!1.                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c,1                                                                    %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -8975,29 +8975,29 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 30 / measure 17]                          %! _comment_measure_numbers
         dqs,!2.                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e,2                                                                    %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
     % [A CelloMusicVoice measure 31 / measure 18]                              %! _comment_measure_numbers
     dtqs,!1.                                                                   %! hypermeter_tuplets
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f,1                                                                        %! hypermeter_tuplets
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 6/5 {                                                               %! hypermeter_tuplets
 
         % [A CelloMusicVoice measure 33 / measure 20]                          %! _comment_measure_numbers
         eqs,!1.                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         dqs,!1                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -9006,15 +9006,15 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 36 / measure 23]                          %! _comment_measure_numbers
         a,1                                                                    %! hypermeter_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         gqs,!4                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fqs,!2                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -9023,13 +9023,13 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 38 / measure 25]                          %! _comment_measure_numbers
         e,1                                                                    %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fqs,!4                                                                 %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g,2                                                                    %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -9038,10 +9038,10 @@ A_CelloMusicVoice = {                                                          %
 
         % [A CelloMusicVoice measure 41 / measure 28]                          %! _comment_measure_numbers
         ftqs,!2                                                                %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a,8                                                                    %! hypermeter_tuplets
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         gqs,!4                                                                 %! hypermeter_tuplets
 
@@ -9071,54 +9071,54 @@ A_CelloMusicVoice = {                                                          %
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     e''4.                                                                      %! white_rhythm
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d''4.                                                                      %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f''4.                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4.                                                                    %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A CelloMusicVoice measure 49 / measure 36]                              %! _comment_measure_numbers
     g''4.                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     fs''!4.                                                                    %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A CelloMusicVoice measure 50 / measure 37]                              %! _comment_measure_numbers
     c''4.                                                                      %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4.                                                                     %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [A CelloMusicVoice measure 51 / measure 38]                              %! _comment_measure_numbers
     e'4.                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     bf'!4.                                                                     %! white_rhythm
     - \upbow                                                                   %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f'4.                                                                       %! white_rhythm
     - \downbow                                                                 %! IndicatorCommand
-    \glissando                                                                 %! SpannerCommand
+    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
     \times 7/4 {                                                               %! prolated_quarters
@@ -9126,11 +9126,11 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 52 / measure 39]                          %! _comment_measure_numbers
         b'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9140,35 +9140,35 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 53 / measure 40]                          %! _comment_measure_numbers
         f'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9178,23 +9178,23 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 54 / measure 41]                          %! _comment_measure_numbers
         g'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9204,35 +9204,35 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 55 / measure 42]                          %! _comment_measure_numbers
         ef'!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f'4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         af!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef'!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9242,11 +9242,11 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 56 / measure 43]                          %! _comment_measure_numbers
         b4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9256,23 +9256,23 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 57 / measure 44]                          %! _comment_measure_numbers
         af!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf!4                                                                   %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs!4                                                                   %! prolated_quarters
@@ -9285,7 +9285,7 @@ A_CelloMusicVoice = {                                                          %
         - \downbow                                                             %! IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9299,12 +9299,12 @@ A_CelloMusicVoice = {                                                          %
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         b4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         af!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9313,23 +9313,23 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 59 / measure 46]                          %! _comment_measure_numbers
         b4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         d4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9339,11 +9339,11 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 60 / measure 47]                          %! _comment_measure_numbers
         g4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9353,39 +9353,39 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 61 / measure 48]                          %! _comment_measure_numbers
         b,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         af!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         g4                                                                     %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c4                                                                     %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         bf,!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         fs!4                                                                   %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f,4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         e,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9395,19 +9395,19 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 62 / measure 49]                          %! _comment_measure_numbers
         af,!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b,4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9417,19 +9417,19 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 63 / measure 50]                          %! _comment_measure_numbers
         af,!4                                                                  %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         ef,!4                                                                  %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         b,4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         f,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! prolated_quarters
 
@@ -9439,7 +9439,7 @@ A_CelloMusicVoice = {                                                          %
         % [A CelloMusicVoice measure 64 / measure 51]                          %! _comment_measure_numbers
         b,4                                                                    %! prolated_quarters
         - \upbow                                                               %! IndicatorCommand
-        \glissando                                                             %! SpannerCommand
+        \glissando                                                             %! baca_glissando:SpannerCommand
 
         a,4                                                                    %! prolated_quarters
         - \downbow                                                             %! IndicatorCommand
@@ -9455,8 +9455,8 @@ A_CelloMusicVoice = {                                                          %
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):IndicatorCommand
         cs''!8                                                                 %! pizzicato_rhythm
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)

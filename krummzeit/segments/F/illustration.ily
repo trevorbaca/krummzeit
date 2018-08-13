@@ -370,11 +370,11 @@ F_OboeMusicVoice = {                                                           %
 
     % [F OboeMusicVoice measure 238 / measure 4]                               %! _comment_measure_numbers
     a'''4.                                                                     %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
     - \staccato                                                                %! IndicatorCommand
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
     \times 5/6 {                                                               %! polyphony
@@ -584,8 +584,8 @@ F_OboeMusicVoice = {                                                           %
         - \staccato                                                            %! IndicatorCommand
 
         c'16                                                                   %! polyphony
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
         - \staccato                                                            %! IndicatorCommand
         ]                                                                      %! polyphony
 
@@ -682,12 +682,12 @@ F_ClarinetMusicVoice = {                                                       %
 
         % [F ClarinetMusicVoice measure 238 / measure 4]                       %! _comment_measure_numbers
         c'4                                                                    %! polyphony
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
         - \staccato                                                            %! IndicatorCommand
         ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
 
         as!4                                                                   %! polyphony
         - \staccato                                                            %! IndicatorCommand
@@ -804,8 +804,8 @@ F_ClarinetMusicVoice = {                                                       %
     ]                                                                          %! polyphony
 
     a''4.                                                                      %! polyphony
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
     \revert Beam.positions                                                     %! baca_beam_positions:OverrideCommand(2)
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -1500,13 +1500,13 @@ F_ViolinMusicVoice = {                                                         %
 
         % [F ViolinMusicVoice measure 245 / measure 11]                        %! _comment_measure_numbers
         fs!2.                                                                  %! hypermeter_tuplets
-        - \abjad-dashed-line-with-arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-right-text "flaut. possibile"                     %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
-        - \tweak staff-padding #5                                              %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "grid. possibile"                       %! PiecewiseCommand(1)
+        - \baca-text-spanner-right-text "flaut. possibile"                     %! PiecewiseCommand(1)
+        - \tweak bound-details.right.padding #0.5                              %! PiecewiseCommand(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseCommand(1)
+        - \tweak staff-padding #5                                              %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
 
         fs!1                                                                   %! hypermeter_tuplets
 
@@ -1529,7 +1529,7 @@ F_ViolinMusicVoice = {                                                         %
         fs!2.                                                                  %! hypermeter_tuplets
 
         fs!1                                                                   %! hypermeter_tuplets
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
+        \stopTextSpan                                                          %! PiecewiseCommand(2)
 
     }                                                                          %! hypermeter_tuplets
 
@@ -1594,10 +1594,10 @@ F_ViolaMusicVoice = {                                                          %
     % [F ViolaMusicVoice measure 236 / measure 2]                              %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     fs!8..                                                                     %! rest_delimited_repeated_duration_notes
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
 
     r32                                                                        %! rest_delimited_repeated_duration_notes
 
@@ -1665,8 +1665,8 @@ F_ViolaMusicVoice = {                                                          %
     r32                                                                        %! rest_delimited_repeated_duration_notes
 
     fs!8..                                                                     %! rest_delimited_repeated_duration_notes
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
 
     r32                                                                        %! rest_delimited_repeated_duration_notes
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -1695,13 +1695,13 @@ F_ViolaMusicVoice = {                                                          %
 
         % [F ViolaMusicVoice measure 247 / measure 13]                         %! _comment_measure_numbers
         bf,!4                                                                  %! hypermeter_tuplets
-        - \abjad-dashed-line-with-arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-right-text "flaut. possibile"                     %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
-        - \tweak staff-padding #5                                              %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "grid. possibile"                       %! PiecewiseCommand(1)
+        - \baca-text-spanner-right-text "flaut. possibile"                     %! PiecewiseCommand(1)
+        - \tweak bound-details.right.padding #0.5                              %! PiecewiseCommand(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseCommand(1)
+        - \tweak staff-padding #5                                              %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
 
         bf,!1.                                                                 %! hypermeter_tuplets
 
@@ -1714,7 +1714,7 @@ F_ViolaMusicVoice = {                                                          %
         bf,!4                                                                  %! hypermeter_tuplets
 
         bf,!1.                                                                 %! hypermeter_tuplets
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
+        \stopTextSpan                                                          %! PiecewiseCommand(2)
 
     }                                                                          %! hypermeter_tuplets
 
@@ -1779,10 +1779,10 @@ F_CelloMusicVoice = {                                                          %
     % [F CelloMusicVoice measure 236 / measure 2]                              %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
     c,8..                                                                      %! rest_delimited_repeated_duration_notes
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(1)
 
     r32                                                                        %! rest_delimited_repeated_duration_notes
 
@@ -1850,8 +1850,8 @@ F_CelloMusicVoice = {                                                          %
     r32                                                                        %! rest_delimited_repeated_duration_notes
 
     c,8..                                                                      %! rest_delimited_repeated_duration_notes
-    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseIndicatorCommand(2)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1) %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
+    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:PiecewiseCommand(2)
 
     r32                                                                        %! rest_delimited_repeated_duration_notes
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -1880,13 +1880,13 @@ F_CelloMusicVoice = {                                                          %
 
         % [F CelloMusicVoice measure 247 / measure 13]                         %! _comment_measure_numbers
         a,,1.                                                                  %! hypermeter_tuplets
-        - \abjad-dashed-line-with-arrow                                        %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-left-text "grid. possibile"                       %! PiecewiseIndicatorCommand(1)
-        - \baca-text-spanner-right-text "flaut. possibile"                     %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! PiecewiseIndicatorCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseIndicatorCommand(1)
-        - \tweak staff-padding #5                                              %! PiecewiseIndicatorCommand(1)
-        \startTextSpan                                                         %! PiecewiseIndicatorCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! PiecewiseCommand(1)
+        - \baca-text-spanner-left-text "grid. possibile"                       %! PiecewiseCommand(1)
+        - \baca-text-spanner-right-text "flaut. possibile"                     %! PiecewiseCommand(1)
+        - \tweak bound-details.right.padding #0.5                              %! PiecewiseCommand(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! PiecewiseCommand(1)
+        - \tweak staff-padding #5                                              %! PiecewiseCommand(1)
+        \startTextSpan                                                         %! PiecewiseCommand(1)
 
         a,,4                                                                   %! hypermeter_tuplets
 
@@ -1897,7 +1897,7 @@ F_CelloMusicVoice = {                                                          %
 
         % [F CelloMusicVoice measure 249 / measure 15]                         %! _comment_measure_numbers
         a,,1.                                                                  %! hypermeter_tuplets
-        \stopTextSpan                                                          %! PiecewiseIndicatorCommand(2)
+        \stopTextSpan                                                          %! PiecewiseCommand(2)
 
         a,,4                                                                   %! hypermeter_tuplets
 

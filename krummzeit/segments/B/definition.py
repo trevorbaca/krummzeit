@@ -291,7 +291,7 @@ maker(
 
 maker(
     ('va', (1, 23)),
-    baca.clef('bass'),
+    baca.clef('alto'),
     baca.new(
         baca.glissando(),
         map=baca.runs(),

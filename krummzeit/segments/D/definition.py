@@ -201,7 +201,6 @@ maker(
 
 maker(
     ('pf', (8, 10)),
-    baca.clef('bass'),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
         dmask=abjad.index([5, 6], 7),

@@ -633,21 +633,18 @@ maker(
 
 maker(
     ('pf', (1, 22)),
-    baca.beam_positions(-4),
     baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
     ('pf', (23, 31)),
-    baca.beam_positions(-5),
     baca.dls_staff_padding(7),
     baca.tuplet_bracket_staff_padding(4),
     )
 
 maker(
     ('pf', (57, 75)),
-    baca.beam_positions(-5),
     baca.dls_staff_padding(7),
     baca.tuplet_bracket_staff_padding(4),
     )

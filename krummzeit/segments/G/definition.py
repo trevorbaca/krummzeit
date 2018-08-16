@@ -454,12 +454,10 @@ maker(
 maker(
     ('ob', (1, 7)),
     baca.dls_staff_padding(5),
-    baca.stem_up(),
     )
 
 maker(
     ('ob', (9, 12)),
-    baca.beam_positions(-4),
     baca.dls_staff_padding(7),
     baca.tuplet_bracket_staff_padding(3),
     )
@@ -467,13 +465,11 @@ maker(
 maker(
     ('ob', (18, 23)),
     baca.dls_staff_padding(5),
-    baca.stem_up(),
     baca.tuplet_bracket_staff_padding(3),
     )
 
 maker(
     ('ob', (9, 12)),
-    baca.beam_positions(-4),
     baca.dls_staff_padding(5),
     baca.tuplet_bracket_staff_padding(3),
     )
@@ -481,7 +477,6 @@ maker(
 maker(
     ('cl', (1, 5)),
     baca.dls_staff_padding(8),
-    baca.stem_up(),
     )
 
 maker(
@@ -492,13 +487,11 @@ maker(
 maker(
     ('cl', (18, 23)),
     baca.dls_staff_padding(10),
-    baca.stem_up(),
     baca.tuplet_bracket_staff_padding(6),
     )
 
 maker(
     ('pf', (5, 11)),
-    baca.beam_positions(-4),
     baca.dls_staff_padding(7),
     baca.tuplet_bracket_staff_padding(3),
     )
@@ -510,7 +503,6 @@ maker(
 
 maker(
     ('vn', (5, 12)),
-    baca.beam_positions(-4),
     baca.dls_staff_padding(5),
     baca.tuplet_bracket_staff_padding(3),
     )

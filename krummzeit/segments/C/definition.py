@@ -342,7 +342,7 @@ maker(
 
 maker(
     ('perc', (14, 19)),
-    baca.dynamic('pp', selector=baca.pheads()),
+    baca.dynamic('pp-sempre'),
     )
 
 maker(
@@ -396,7 +396,6 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (5, 9)),
-    baca.beam_positions(-4),
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
     )

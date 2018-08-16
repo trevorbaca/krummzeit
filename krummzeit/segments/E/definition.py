@@ -379,7 +379,6 @@ maker(
 
 maker(
     ('ob', (1, 21)),
-    baca.beam_positions(-5),
     baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(4),
     )
@@ -398,7 +397,6 @@ maker(
 
 maker(
     ('cl', (13, 21)),
-    baca.beam_positions(-4),
     baca.dls_staff_padding(5),
     baca.tuplet_bracket_staff_padding(3),
     )

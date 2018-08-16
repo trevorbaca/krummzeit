@@ -35,7 +35,7 @@ metronome_marks = abjad.OrderedDict(
             '72/108',
             abjad.MetronomeMark(
                 reference_duration=(1, 4),
-                units_per_minute=73,
+                units_per_minute=108,
                 custom_markup=custom_72_108_markup,
                 ),
             ),

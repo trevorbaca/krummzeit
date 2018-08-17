@@ -35,7 +35,7 @@ def polyphony(
     if final_quarter_notes:
         quarters = rmakers.NoteRhythmMaker(
             duration_specifier=rmakers.DurationSpecifier(
-                forbidden_duration=(1, 2),
+                forbidden_note_duration=(1, 2),
                 ),
             tie_specifier=rmakers.TieSpecifier(
                 strip_ties=True,

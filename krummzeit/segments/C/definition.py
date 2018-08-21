@@ -374,12 +374,6 @@ maker(
     )
 
 maker(
-    ('ob', (14, 16)),
-    baca.dls_staff_padding(5),
-    baca.stem_up(),
-    )
-
-maker(
     ('cl', (14, 19)),
     baca.stem_up(),
     )

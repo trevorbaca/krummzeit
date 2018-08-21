@@ -452,25 +452,12 @@ maker(
 ### VERTICAL ALIGNMENT ###
 
 maker(
-    ('ob', (1, 7)),
+    'ob',
     baca.dls_staff_padding(5),
     )
 
 maker(
-    ('ob', (9, 12)),
-    baca.dls_staff_padding(7),
-    baca.tuplet_bracket_staff_padding(3),
-    )
-
-maker(
-    ('ob', (18, 23)),
-    baca.dls_staff_padding(5),
-    baca.tuplet_bracket_staff_padding(3),
-    )
-
-maker(
-    ('ob', (9, 12)),
-    baca.dls_staff_padding(5),
+    ('ob', [(9, 12), (18, 23)]),
     baca.tuplet_bracket_staff_padding(3),
     )
 

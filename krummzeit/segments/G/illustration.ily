@@ -398,7 +398,6 @@ G_OboeMusicVoice = {                                                           %
     % [G OboeMusicVoice measure 263 / measure 7]                               %! _comment_measure_numbers
     b2.                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
     % [G OboeMusicVoice measure 264 / measure 8]                               %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
@@ -406,8 +405,6 @@ G_OboeMusicVoice = {                                                           %
     \times 4/7 {                                                               %! polyphony
 
         % [G OboeMusicVoice measure 265 / measure 9]                           %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'7                       %! baca_dls_staff_padding:OverrideCommand(1)
-        \override DynamicLineSpanner.staff-padding = #'5                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         fs''!8                                                                 %! polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -610,7 +607,6 @@ G_OboeMusicVoice = {                                                           %
         af''!8                                                                 %! polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ]                                                                      %! polyphony
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! polyphony
@@ -631,7 +627,6 @@ G_OboeMusicVoice = {                                                           %
     R1 * 5/8                                                                   %! _make_measure_silences
 
     % [G OboeMusicVoice measure 274 / measure 18]                              %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'5                           %! baca_dls_staff_padding:OverrideCommand(1)
     \override TupletBracket.staff-padding = #3                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     c'1.                                                                       %! hypermeter_tuplets
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -684,13 +679,13 @@ G_OboeMusicVoice = {                                                           %
                     \finger
                         1
             }
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! hypermeter_tuplets
 
     % [G OboeMusicVoice measure 280 / measure 24]                              %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
+    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
 }                                                                              %! extern
 
@@ -1364,6 +1359,7 @@ G_PianoMusicVoice = {                                                          %
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 

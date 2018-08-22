@@ -334,9 +334,9 @@ G_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-G_OboeMusicVoice = {                                                           %! extern
+G_Oboe_Music_Voice = {                                                         %! extern
 
-    % [G OboeMusicVoice measure 257 / measure 1]                               %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 257 / measure 1]                             %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -366,45 +366,45 @@ G_OboeMusicVoice = {                                                           %
     b4.
     \repeatTie
 
-    % [G OboeMusicVoice measure 258 / measure 2]                               %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 258 / measure 2]                             %! _comment_measure_numbers
     b4.
     \repeatTie
 
     b4
     \repeatTie
 
-    % [G OboeMusicVoice measure 259 / measure 3]                               %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 259 / measure 3]                             %! _comment_measure_numbers
     b4.
     \repeatTie
 
     b4
     \repeatTie
 
-    % [G OboeMusicVoice measure 260 / measure 4]                               %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 260 / measure 4]                             %! _comment_measure_numbers
     b1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [G OboeMusicVoice measure 261 / measure 5]                               %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 261 / measure 5]                             %! _comment_measure_numbers
     b2.
     \repeatTie
 
     b2
     \repeatTie
 
-    % [G OboeMusicVoice measure 262 / measure 6]                               %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 262 / measure 6]                             %! _comment_measure_numbers
     b2.                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [G OboeMusicVoice measure 263 / measure 7]                               %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 263 / measure 7]                             %! _comment_measure_numbers
     b2.                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [G OboeMusicVoice measure 264 / measure 8]                               %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 264 / measure 8]                             %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
     \times 4/7 {                                                               %! polyphony
 
-        % [G OboeMusicVoice measure 265 / measure 9]                           %! _comment_measure_numbers
+        % [G Oboe_Music_Voice measure 265 / measure 9]                         %! _comment_measure_numbers
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         fs''!8                                                                 %! polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -451,7 +451,7 @@ G_OboeMusicVoice = {                                                           %
 
     bf''!4                                                                     %! polyphony
 
-    % [G OboeMusicVoice measure 266 / measure 10]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 266 / measure 10]                            %! _comment_measure_numbers
     ef''!4.                                                                    %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
@@ -485,7 +485,7 @@ G_OboeMusicVoice = {                                                           %
 
     \times 4/5 {                                                               %! polyphony
 
-        % [G OboeMusicVoice measure 267 / measure 11]                          %! _comment_measure_numbers
+        % [G Oboe_Music_Voice measure 267 / measure 11]                        %! _comment_measure_numbers
         e'''8                                                                  %! polyphony
         [                                                                      %! polyphony
 
@@ -529,7 +529,7 @@ G_OboeMusicVoice = {                                                           %
 
     a'4                                                                        %! polyphony
 
-    % [G OboeMusicVoice measure 268 / measure 12]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 268 / measure 12]                            %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
@@ -611,22 +611,22 @@ G_OboeMusicVoice = {                                                           %
 
     }                                                                          %! polyphony
 
-    % [G OboeMusicVoice measure 269 / measure 13]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 269 / measure 13]                            %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    % [G OboeMusicVoice measure 270 / measure 14]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 270 / measure 14]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G OboeMusicVoice measure 271 / measure 15]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 271 / measure 15]                            %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
 
-    % [G OboeMusicVoice measure 272 / measure 16]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 272 / measure 16]                            %! _comment_measure_numbers
     R1 * 11/8                                                                  %! _make_measure_silences
 
-    % [G OboeMusicVoice measure 273 / measure 17]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 273 / measure 17]                            %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    % [G OboeMusicVoice measure 274 / measure 18]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 274 / measure 18]                            %! _comment_measure_numbers
     \override TupletBracket.staff-padding = #3                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     c'1.                                                                       %! hypermeter_tuplets
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -644,7 +644,7 @@ G_OboeMusicVoice = {                                                           %
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
-        % [G OboeMusicVoice measure 276 / measure 20]                          %! _comment_measure_numbers
+        % [G Oboe_Music_Voice measure 276 / measure 20]                        %! _comment_measure_numbers
         c'4                                                                    %! hypermeter_tuplets
         ^ \markup {
             \override
@@ -668,7 +668,7 @@ G_OboeMusicVoice = {                                                           %
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
-        % [G OboeMusicVoice measure 278 / measure 22]                          %! _comment_measure_numbers
+        % [G Oboe_Music_Voice measure 278 / measure 22]                        %! _comment_measure_numbers
         c'2.                                                                   %! hypermeter_tuplets
 
         c'2                                                                    %! hypermeter_tuplets
@@ -683,24 +683,24 @@ G_OboeMusicVoice = {                                                           %
 
     }                                                                          %! hypermeter_tuplets
 
-    % [G OboeMusicVoice measure 280 / measure 24]                              %! _comment_measure_numbers
+    % [G Oboe_Music_Voice measure 280 / measure 24]                            %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
 }                                                                              %! extern
 
 
-G_OboeMusicStaff = {                                                           %! extern
+G_Oboe_Music_Staff = {                                                         %! extern
 
-    \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
-    \G_OboeMusicVoice                                                          %! extern
+    \context Voice = "Oboe_Music_Voice"                                        %! ScoreTemplate
+    \G_Oboe_Music_Voice                                                        %! extern
 
 }                                                                              %! extern
 
 
-G_ClarinetMusicVoice = {                                                       %! extern
+G_Clarinet_Music_Voice = {                                                     %! extern
 
-    % [G ClarinetMusicVoice measure 257 / measure 1]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 257 / measure 1]                         %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -732,25 +732,25 @@ G_ClarinetMusicVoice = {                                                       %
     cs!4.
     \repeatTie
 
-    % [G ClarinetMusicVoice measure 258 / measure 2]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 258 / measure 2]                         %! _comment_measure_numbers
     cs!4.
     \repeatTie
 
     cs!4
     \repeatTie
 
-    % [G ClarinetMusicVoice measure 259 / measure 3]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 259 / measure 3]                         %! _comment_measure_numbers
     cs!4.
     \repeatTie
 
     cs!4
     \repeatTie
 
-    % [G ClarinetMusicVoice measure 260 / measure 4]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 260 / measure 4]                         %! _comment_measure_numbers
     cs!1                                                                       %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [G ClarinetMusicVoice measure 261 / measure 5]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 261 / measure 5]                         %! _comment_measure_numbers
     cs!2.
     \repeatTie
 
@@ -760,16 +760,16 @@ G_ClarinetMusicVoice = {                                                       %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G ClarinetMusicVoice measure 262 / measure 6]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 262 / measure 6]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G ClarinetMusicVoice measure 263 / measure 7]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 263 / measure 7]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G ClarinetMusicVoice measure 264 / measure 8]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 264 / measure 8]                         %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G ClarinetMusicVoice measure 265 / measure 9]                           %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 265 / measure 9]                         %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'3                           %! baca_dls_staff_padding:OverrideCommand(1)
     f''4.                                                                      %! polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -795,7 +795,7 @@ G_ClarinetMusicVoice = {                                                       %
     ds''!4                                                                     %! polyphony
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G ClarinetMusicVoice measure 266 / measure 10]                          %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 266 / measure 10]                        %! _comment_measure_numbers
     gs''!8                                                                     %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
@@ -814,7 +814,7 @@ G_ClarinetMusicVoice = {                                                       %
     b''4.                                                                      %! polyphony
     ~
 
-    % [G ClarinetMusicVoice measure 267 / measure 11]                          %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 267 / measure 11]                        %! _comment_measure_numbers
     b''4                                                                       %! polyphony
 
     f''4                                                                       %! polyphony
@@ -842,7 +842,7 @@ G_ClarinetMusicVoice = {                                                       %
 
     \times 2/3 {                                                               %! polyphony
 
-        % [G ClarinetMusicVoice measure 268 / measure 12]                      %! _comment_measure_numbers
+        % [G Clarinet_Music_Voice measure 268 / measure 12]                    %! _comment_measure_numbers
         f''4                                                                   %! polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
@@ -874,25 +874,25 @@ G_ClarinetMusicVoice = {                                                       %
     ds''!4.                                                                    %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    % [G ClarinetMusicVoice measure 269 / measure 13]                          %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 269 / measure 13]                        %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    % [G ClarinetMusicVoice measure 270 / measure 14]                          %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 270 / measure 14]                        %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G ClarinetMusicVoice measure 271 / measure 15]                          %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 271 / measure 15]                        %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
 
-    % [G ClarinetMusicVoice measure 272 / measure 16]                          %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 272 / measure 16]                        %! _comment_measure_numbers
     R1 * 11/8                                                                  %! _make_measure_silences
 
-    % [G ClarinetMusicVoice measure 273 / measure 17]                          %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 273 / measure 17]                        %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 5/4 {                                                               %! hypermeter_tuplets
 
-        % [G ClarinetMusicVoice measure 274 / measure 18]                      %! _comment_measure_numbers
+        % [G Clarinet_Music_Voice measure 274 / measure 18]                    %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'10                      %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #6                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         d2                                                                     %! hypermeter_tuplets
@@ -916,7 +916,7 @@ G_ClarinetMusicVoice = {                                                       %
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 21/16 {                                                             %! hypermeter_tuplets
 
-        % [G ClarinetMusicVoice measure 276 / measure 20]                      %! _comment_measure_numbers
+        % [G Clarinet_Music_Voice measure 276 / measure 20]                    %! _comment_measure_numbers
         d1                                                                     %! hypermeter_tuplets
         ^ \markup {
             \override
@@ -940,7 +940,7 @@ G_ClarinetMusicVoice = {                                                       %
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/4 {                                                               %! hypermeter_tuplets
 
-        % [G ClarinetMusicVoice measure 279 / measure 23]                      %! _comment_measure_numbers
+        % [G Clarinet_Music_Voice measure 279 / measure 23]                    %! _comment_measure_numbers
         d8                                                                     %! hypermeter_tuplets
 
         d4.                                                                    %! hypermeter_tuplets
@@ -958,23 +958,23 @@ G_ClarinetMusicVoice = {                                                       %
 
     }                                                                          %! hypermeter_tuplets
 
-    % [G ClarinetMusicVoice measure 280 / measure 24]                          %! _comment_measure_numbers
+    % [G Clarinet_Music_Voice measure 280 / measure 24]                        %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-G_ClarinetMusicStaff = {                                                       %! extern
+G_Clarinet_Music_Staff = {                                                     %! extern
 
-    \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
-    \G_ClarinetMusicVoice                                                      %! extern
+    \context Voice = "Clarinet_Music_Voice"                                    %! ScoreTemplate
+    \G_Clarinet_Music_Voice                                                    %! extern
 
 }                                                                              %! extern
 
 
-G_PianoMusicVoice = {                                                          %! extern
+G_Piano_Music_Voice = {                                                        %! extern
 
-    % [G PianoMusicVoice measure 257 / measure 1]                              %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 257 / measure 1]                            %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1000,18 +1000,18 @@ G_PianoMusicVoice = {                                                          %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    % [G PianoMusicVoice measure 258 / measure 2]                              %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 258 / measure 2]                            %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    % [G PianoMusicVoice measure 259 / measure 3]                              %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 259 / measure 3]                            %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    % [G PianoMusicVoice measure 260 / measure 4]                              %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 260 / measure 4]                            %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
     \times 4/7 {                                                               %! polyphony
 
-        % [G PianoMusicVoice measure 261 / measure 5]                          %! _comment_measure_numbers
+        % [G Piano_Music_Voice measure 261 / measure 5]                        %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'7                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
@@ -1064,7 +1064,7 @@ G_PianoMusicVoice = {                                                          %
 
     b''4.                                                                      %! polyphony
 
-    % [G PianoMusicVoice measure 262 / measure 6]                              %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 262 / measure 6]                            %! _comment_measure_numbers
     c''4.                                                                      %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
@@ -1085,7 +1085,7 @@ G_PianoMusicVoice = {                                                          %
 
     \times 4/5 {                                                               %! polyphony
 
-        % [G PianoMusicVoice measure 263 / measure 7]                          %! _comment_measure_numbers
+        % [G Piano_Music_Voice measure 263 / measure 7]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af''!8                                                                 %! polyphony
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -1118,7 +1118,7 @@ G_PianoMusicVoice = {                                                          %
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
-    % [G PianoMusicVoice measure 264 / measure 8]                              %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 264 / measure 8]                            %! _comment_measure_numbers
     b''8                                                                       %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
@@ -1142,7 +1142,7 @@ G_PianoMusicVoice = {                                                          %
 
     \times 2/3 {                                                               %! polyphony
 
-        % [G PianoMusicVoice measure 265 / measure 9]                          %! _comment_measure_numbers
+        % [G Piano_Music_Voice measure 265 / measure 9]                        %! _comment_measure_numbers
         a'4                                                                    %! polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
@@ -1173,7 +1173,7 @@ G_PianoMusicVoice = {                                                          %
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
-    % [G PianoMusicVoice measure 266 / measure 10]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 266 / measure 10]                           %! _comment_measure_numbers
     bf''!8                                                                     %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
@@ -1213,7 +1213,7 @@ G_PianoMusicVoice = {                                                          %
 
     }                                                                          %! polyphony
 
-    % [G PianoMusicVoice measure 267 / measure 11]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 267 / measure 11]                           %! _comment_measure_numbers
     c'''4                                                                      %! polyphony
 
     d'''4                                                                      %! polyphony
@@ -1272,13 +1272,13 @@ G_PianoMusicVoice = {                                                          %
 
     }                                                                          %! polyphony
 
-    % [G PianoMusicVoice measure 268 / measure 12]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 268 / measure 12]                           %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
 
-    % [G PianoMusicVoice measure 269 / measure 13]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 269 / measure 13]                           %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    % [G PianoMusicVoice measure 270 / measure 14]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 270 / measure 14]                           %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'4                           %! baca_dls_staff_padding:OverrideCommand(1)
     \override NoteHead.style = #'harmonic                                      %! baca_note_head_style_harmonic:OverrideCommand(1)
     \override DynamicLineSpanner.staff-padding = #'3                           %! baca_dls_staff_padding:OverrideCommand(1)
@@ -1302,7 +1302,7 @@ G_PianoMusicVoice = {                                                          %
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
-    % [G PianoMusicVoice measure 271 / measure 15]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 271 / measure 15]                           %! _comment_measure_numbers
     c'1                                                                        %! piano_harmonics
     ~
 
@@ -1314,14 +1314,14 @@ G_PianoMusicVoice = {                                                          %
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
-    % [G PianoMusicVoice measure 272 / measure 16]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 272 / measure 16]                           %! _comment_measure_numbers
     c'2                                                                        %! piano_harmonics
 
     r4.                                                                        %! piano_harmonics
 
     r2                                                                         %! piano_harmonics
 
-    % [G PianoMusicVoice measure 273 / measure 17]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 273 / measure 17]                           %! _comment_measure_numbers
     c'4.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1330,7 +1330,7 @@ G_PianoMusicVoice = {                                                          %
 
     c'4                                                                        %! piano_harmonics
 
-    % [G PianoMusicVoice measure 274 / measure 18]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 274 / measure 18]                           %! _comment_measure_numbers
     c'2.                                                                       %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1339,7 +1339,7 @@ G_PianoMusicVoice = {                                                          %
 
     c'4                                                                        %! piano_harmonics
 
-    % [G PianoMusicVoice measure 275 / measure 19]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 275 / measure 19]                           %! _comment_measure_numbers
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1349,7 +1349,7 @@ G_PianoMusicVoice = {                                                          %
 
     r2                                                                         %! piano_harmonics
 
-    % [G PianoMusicVoice measure 276 / measure 20]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 276 / measure 20]                           %! _comment_measure_numbers
     c'2                                                                        %! piano_harmonics
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1363,32 +1363,32 @@ G_PianoMusicVoice = {                                                          %
     \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G PianoMusicVoice measure 277 / measure 21]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 277 / measure 21]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [G PianoMusicVoice measure 278 / measure 22]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 278 / measure 22]                           %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_measure_silences
 
-    % [G PianoMusicVoice measure 279 / measure 23]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 279 / measure 23]                           %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_measure_silences
 
-    % [G PianoMusicVoice measure 280 / measure 24]                             %! _comment_measure_numbers
+    % [G Piano_Music_Voice measure 280 / measure 24]                           %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-G_PianoMusicStaff = {                                                          %! extern
+G_Piano_Music_Staff = {                                                        %! extern
 
-    \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
-    \G_PianoMusicVoice                                                         %! extern
+    \context Voice = "Piano_Music_Voice"                                       %! ScoreTemplate
+    \G_Piano_Music_Voice                                                       %! extern
 
 }                                                                              %! extern
 
 
-G_PercussionMusicVoice = {                                                     %! extern
+G_Percussion_Music_Voice = {                                                   %! extern
 
-    % [G PercussionMusicVoice measure 257 / measure 1]                         %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 257 / measure 1]                       %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1460,71 +1460,71 @@ G_PercussionMusicVoice = {                                                     %
 
     r8                                                                         %! baca_make_repeated_duration_notes
 
-    % [G PercussionMusicVoice measure 264 / measure 8]                         %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 264 / measure 8]                       %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 265 / measure 9]                         %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 265 / measure 9]                       %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 266 / measure 10]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 266 / measure 10]                      %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 267 / measure 11]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 267 / measure 11]                      %! _comment_measure_numbers
     R1 * 3/2                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 268 / measure 12]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 268 / measure 12]                      %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 269 / measure 13]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 269 / measure 13]                      %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 270 / measure 14]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 270 / measure 14]                      %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 271 / measure 15]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 271 / measure 15]                      %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 272 / measure 16]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 272 / measure 16]                      %! _comment_measure_numbers
     R1 * 11/8                                                                  %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 273 / measure 17]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 273 / measure 17]                      %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 274 / measure 18]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 274 / measure 18]                      %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 275 / measure 19]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 275 / measure 19]                      %! _comment_measure_numbers
     R1 * 3/2                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 276 / measure 20]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 276 / measure 20]                      %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 277 / measure 21]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 277 / measure 21]                      %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 278 / measure 22]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 278 / measure 22]                      %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 279 / measure 23]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 279 / measure 23]                      %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_measure_silences
 
-    % [G PercussionMusicVoice measure 280 / measure 24]                        %! _comment_measure_numbers
+    % [G Percussion_Music_Voice measure 280 / measure 24]                      %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-G_PercussionMusicStaff = {                                                     %! extern
+G_Percussion_Music_Staff = {                                                   %! extern
 
-    \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
-    \G_PercussionMusicVoice                                                    %! extern
+    \context Voice = "Percussion_Music_Voice"                                  %! ScoreTemplate
+    \G_Percussion_Music_Voice                                                  %! extern
 
 }                                                                              %! extern
 
 
-G_ViolinMusicVoice = {                                                         %! extern
+G_Violin_Music_Voice = {                                                       %! extern
 
-    % [G ViolinMusicVoice measure 257 / measure 1]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 257 / measure 1]                           %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1554,16 +1554,16 @@ G_ViolinMusicVoice = {                                                         %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    % [G ViolinMusicVoice measure 258 / measure 2]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 258 / measure 2]                           %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    % [G ViolinMusicVoice measure 259 / measure 3]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 259 / measure 3]                           %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    % [G ViolinMusicVoice measure 260 / measure 4]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 260 / measure 4]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [G ViolinMusicVoice measure 261 / measure 5]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 261 / measure 5]                           %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #'5                           %! baca_dls_staff_padding:OverrideCommand(1)
     \override TupletBracket.staff-padding = #3                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     e''8                                                                       %! polyphony
@@ -1604,7 +1604,7 @@ G_ViolinMusicVoice = {                                                         %
 
     a'''4.                                                                     %! polyphony
 
-    % [G ViolinMusicVoice measure 262 / measure 6]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 262 / measure 6]                           %! _comment_measure_numbers
     bf'''!4                                                                    %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
@@ -1629,7 +1629,7 @@ G_ViolinMusicVoice = {                                                         %
 
     \times 2/3 {                                                               %! polyphony
 
-        % [G ViolinMusicVoice measure 263 / measure 7]                         %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 263 / measure 7]                       %! _comment_measure_numbers
         d'''8                                                                  %! polyphony
         [                                                                      %! polyphony
 
@@ -1656,7 +1656,7 @@ G_ViolinMusicVoice = {                                                         %
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
-    % [G ViolinMusicVoice measure 264 / measure 8]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 264 / measure 8]                           %! _comment_measure_numbers
     c''''8                                                                     %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
@@ -1674,7 +1674,7 @@ G_ViolinMusicVoice = {                                                         %
 
     g'''4                                                                      %! polyphony
 
-    % [G ViolinMusicVoice measure 265 / measure 9]                             %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 265 / measure 9]                           %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf'''!4.                                                                   %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
@@ -1711,7 +1711,7 @@ G_ViolinMusicVoice = {                                                         %
 
     \times 4/7 {                                                               %! polyphony
 
-        % [G ViolinMusicVoice measure 266 / measure 10]                        %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 266 / measure 10]                      %! _comment_measure_numbers
         fs''!8                                                                 %! polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         [                                                                      %! polyphony
@@ -1758,7 +1758,7 @@ G_ViolinMusicVoice = {                                                         %
     ~
     ]                                                                          %! polyphony
 
-    % [G ViolinMusicVoice measure 267 / measure 11]                            %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 267 / measure 11]                          %! _comment_measure_numbers
     bf'''!4                                                                    %! polyphony
 
     fs'''!4                                                                    %! polyphony
@@ -1792,7 +1792,7 @@ G_ViolinMusicVoice = {                                                         %
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ]                                                                          %! polyphony
 
-    % [G ViolinMusicVoice measure 268 / measure 12]                            %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 268 / measure 12]                          %! _comment_measure_numbers
     a'''8                                                                      %! polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     [                                                                          %! polyphony
@@ -1848,12 +1848,12 @@ G_ViolinMusicVoice = {                                                         %
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    % [G ViolinMusicVoice measure 269 / measure 13]                            %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 269 / measure 13]                          %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
     \times 2/3 {                                                               %! glissando_rhythm
 
-        % [G ViolinMusicVoice measure 270 / measure 14]                        %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 270 / measure 14]                      %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!8                                                                  %! glissando_rhythm
@@ -1886,7 +1886,7 @@ G_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
     \times 5/7 {                                                               %! glissando_rhythm
 
-        % [G ViolinMusicVoice measure 271 / measure 15]                        %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 271 / measure 15]                      %! _comment_measure_numbers
         cs'!1                                                                  %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -1907,7 +1907,7 @@ G_ViolinMusicVoice = {                                                         %
 
     \times 4/5 {                                                               %! glissando_rhythm
 
-        % [G ViolinMusicVoice measure 272 / measure 16]                        %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 272 / measure 16]                      %! _comment_measure_numbers
         f8                                                                     %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -1939,7 +1939,7 @@ G_ViolinMusicVoice = {                                                         %
 
     \times 4/5 {                                                               %! glissando_rhythm
 
-        % [G ViolinMusicVoice measure 273 / measure 17]                        %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 273 / measure 17]                      %! _comment_measure_numbers
         fs'!16                                                                 %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -1959,7 +1959,7 @@ G_ViolinMusicVoice = {                                                         %
 
     }                                                                          %! glissando_rhythm
 
-    % [G ViolinMusicVoice measure 274 / measure 18]                            %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 274 / measure 18]                          %! _comment_measure_numbers
     cs'!4                                                                      %! glissando_rhythm
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -1978,7 +1978,7 @@ G_ViolinMusicVoice = {                                                         %
 
     \times 4/7 {                                                               %! glissando_rhythm
 
-        % [G ViolinMusicVoice measure 275 / measure 19]                        %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 275 / measure 19]                      %! _comment_measure_numbers
         cs''!2                                                                 %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2009,7 +2009,7 @@ G_ViolinMusicVoice = {                                                         %
 
     \times 4/7 {                                                               %! glissando_rhythm
 
-        % [G ViolinMusicVoice measure 276 / measure 20]                        %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 276 / measure 20]                      %! _comment_measure_numbers
         bf'!4                                                                  %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2032,7 +2032,7 @@ G_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 11/10 {                                                             %! hypermeter_tuplets
 
-        % [G ViolinMusicVoice measure 277 / measure 21]                        %! _comment_measure_numbers
+        % [G Violin_Music_Voice measure 277 / measure 21]                      %! _comment_measure_numbers
         c'1.                                                                   %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
@@ -2043,23 +2043,23 @@ G_ViolinMusicVoice = {                                                         %
 
     }                                                                          %! hypermeter_tuplets
 
-    % [G ViolinMusicVoice measure 280 / measure 24]                            %! _comment_measure_numbers
+    % [G Violin_Music_Voice measure 280 / measure 24]                          %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-G_ViolinMusicStaff = {                                                         %! extern
+G_Violin_Music_Staff = {                                                       %! extern
 
-    \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
-    \G_ViolinMusicVoice                                                        %! extern
+    \context Voice = "Violin_Music_Voice"                                      %! ScoreTemplate
+    \G_Violin_Music_Voice                                                      %! extern
 
 }                                                                              %! extern
 
 
-G_ViolaMusicVoice = {                                                          %! extern
+G_Viola_Music_Voice = {                                                        %! extern
 
-    % [G ViolaMusicVoice measure 257 / measure 1]                              %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 257 / measure 1]                            %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -2090,14 +2090,14 @@ G_ViolaMusicVoice = {                                                          %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    % [G ViolaMusicVoice measure 259 / measure 3]                              %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 259 / measure 3]                            %! _comment_measure_numbers
     cqf!4                                                                      %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     d4.                                                                        %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [G ViolaMusicVoice measure 260 / measure 4]                              %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 260 / measure 4]                            %! _comment_measure_numbers
     eqs!1..                                                                    %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -2109,19 +2109,19 @@ G_ViolaMusicVoice = {                                                          %
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G ViolaMusicVoice measure 264 / measure 8]                              %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 264 / measure 8]                            %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    % [G ViolaMusicVoice measure 265 / measure 9]                              %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 265 / measure 9]                            %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_measure_silences
 
-    % [G ViolaMusicVoice measure 266 / measure 10]                             %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 266 / measure 10]                           %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_measure_silences
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 13/10 {                                                             %! hypermeter_tuplets
 
-        % [G ViolaMusicVoice measure 267 / measure 11]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 267 / measure 11]                       %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'7                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         g2                                                                     %! hypermeter_tuplets
@@ -2140,12 +2140,12 @@ G_ViolaMusicVoice = {                                                          %
 
     }                                                                          %! hypermeter_tuplets
 
-    % [G ViolaMusicVoice measure 269 / measure 13]                             %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 269 / measure 13]                           %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
     \times 2/3 {                                                               %! glissando_rhythm
 
-        % [G ViolaMusicVoice measure 270 / measure 14]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 270 / measure 14]                       %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         b4                                                                     %! glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2175,7 +2175,7 @@ G_ViolaMusicVoice = {                                                          %
 
     \times 4/7 {                                                               %! glissando_rhythm
 
-        % [G ViolaMusicVoice measure 271 / measure 15]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 271 / measure 15]                       %! _comment_measure_numbers
         e2                                                                     %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2202,7 +2202,7 @@ G_ViolaMusicVoice = {                                                          %
 
     \times 4/7 {                                                               %! glissando_rhythm
 
-        % [G ViolaMusicVoice measure 272 / measure 16]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 272 / measure 16]                       %! _comment_measure_numbers
         e2                                                                     %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2223,7 +2223,7 @@ G_ViolaMusicVoice = {                                                          %
 
     \times 4/5 {                                                               %! glissando_rhythm
 
-        % [G ViolaMusicVoice measure 273 / measure 17]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 273 / measure 17]                       %! _comment_measure_numbers
         f16.                                                                   %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2244,7 +2244,7 @@ G_ViolaMusicVoice = {                                                          %
 
     \times 2/3 {                                                               %! glissando_rhythm
 
-        % [G ViolaMusicVoice measure 274 / measure 18]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 274 / measure 18]                       %! _comment_measure_numbers
         c8                                                                     %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2275,7 +2275,7 @@ G_ViolaMusicVoice = {                                                          %
 
     \times 2/3 {                                                               %! glissando_rhythm
 
-        % [G ViolaMusicVoice measure 275 / measure 19]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 275 / measure 19]                       %! _comment_measure_numbers
         d4                                                                     %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2298,7 +2298,7 @@ G_ViolaMusicVoice = {                                                          %
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
-        % [G ViolaMusicVoice measure 276 / measure 20]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 276 / measure 20]                       %! _comment_measure_numbers
         bqs,!4                                                                 %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
@@ -2313,7 +2313,7 @@ G_ViolaMusicVoice = {                                                          %
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 7/5 {                                                               %! hypermeter_tuplets
 
-        % [G ViolaMusicVoice measure 278 / measure 22]                         %! _comment_measure_numbers
+        % [G Viola_Music_Voice measure 278 / measure 22]                       %! _comment_measure_numbers
         bqs,!4                                                                 %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \glissando                                                             %! baca_glissando:SpannerCommand
@@ -2323,23 +2323,23 @@ G_ViolaMusicVoice = {                                                          %
 
     }                                                                          %! hypermeter_tuplets
 
-    % [G ViolaMusicVoice measure 280 / measure 24]                             %! _comment_measure_numbers
+    % [G Viola_Music_Voice measure 280 / measure 24]                           %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-G_ViolaMusicStaff = {                                                          %! extern
+G_Viola_Music_Staff = {                                                        %! extern
 
-    \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
-    \G_ViolaMusicVoice                                                         %! extern
+    \context Voice = "Viola_Music_Voice"                                       %! ScoreTemplate
+    \G_Viola_Music_Voice                                                       %! extern
 
 }                                                                              %! extern
 
 
-G_CelloMusicVoice = {                                                          %! extern
+G_Cello_Music_Voice = {                                                        %! extern
 
-    % [G CelloMusicVoice measure 257 / measure 1]                              %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 257 / measure 1]                            %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -2373,25 +2373,25 @@ G_CelloMusicVoice = {                                                          %
     bqf,,!1                                                                    %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [G CelloMusicVoice measure 259 / measure 3]                              %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 259 / measure 3]                            %! _comment_measure_numbers
     c,4.                                                                       %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     dqs,!4                                                                     %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [G CelloMusicVoice measure 260 / measure 4]                              %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 260 / measure 4]                            %! _comment_measure_numbers
     eqs,!\breve                                                                %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f,1..                                                                      %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [G CelloMusicVoice measure 264 / measure 8]                              %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 264 / measure 8]                            %! _comment_measure_numbers
     gf,!2.                                                                     %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [G CelloMusicVoice measure 265 / measure 9]                              %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 265 / measure 9]                            %! _comment_measure_numbers
     aqf,!4.                                                                    %! fused_expanse
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -2400,13 +2400,13 @@ G_CelloMusicVoice = {                                                          %
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [G CelloMusicVoice measure 266 / measure 10]                             %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 266 / measure 10]                           %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_measure_silences
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 13/10 {                                                             %! hypermeter_tuplets
 
-        % [G CelloMusicVoice measure 267 / measure 11]                         %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 267 / measure 11]                       %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #'7                       %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         b,1.                                                                   %! hypermeter_tuplets
@@ -2425,12 +2425,12 @@ G_CelloMusicVoice = {                                                          %
 
     }                                                                          %! hypermeter_tuplets
 
-    % [G CelloMusicVoice measure 269 / measure 13]                             %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 269 / measure 13]                           %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
     \times 2/3 {                                                               %! glissando_rhythm
 
-        % [G CelloMusicVoice measure 270 / measure 14]                         %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 270 / measure 14]                       %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         a,8                                                                    %! glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2465,7 +2465,7 @@ G_CelloMusicVoice = {                                                          %
 
     \times 2/3 {                                                               %! glissando_rhythm
 
-        % [G CelloMusicVoice measure 271 / measure 15]                         %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 271 / measure 15]                       %! _comment_measure_numbers
         bf,!4                                                                  %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2480,7 +2480,7 @@ G_CelloMusicVoice = {                                                          %
     f,1                                                                        %! glissando_rhythm
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
-    % [G CelloMusicVoice measure 272 / measure 16]                             %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 272 / measure 16]                           %! _comment_measure_numbers
     b,2                                                                        %! glissando_rhythm
     \glissando                                                                 %! baca_glissando:SpannerCommand
 
@@ -2499,7 +2499,7 @@ G_CelloMusicVoice = {                                                          %
 
     \times 4/5 {                                                               %! glissando_rhythm
 
-        % [G CelloMusicVoice measure 273 / measure 17]                         %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 273 / measure 17]                       %! _comment_measure_numbers
         e,16                                                                   %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2540,7 +2540,7 @@ G_CelloMusicVoice = {                                                          %
 
     \times 4/5 {                                                               %! glissando_rhythm
 
-        % [G CelloMusicVoice measure 274 / measure 18]                         %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 274 / measure 18]                       %! _comment_measure_numbers
         b,16                                                                   %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2567,7 +2567,7 @@ G_CelloMusicVoice = {                                                          %
 
     \times 2/3 {                                                               %! glissando_rhythm
 
-        % [G CelloMusicVoice measure 275 / measure 19]                         %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 275 / measure 19]                       %! _comment_measure_numbers
         c2                                                                     %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2588,7 +2588,7 @@ G_CelloMusicVoice = {                                                          %
 
     \times 4/7 {                                                               %! glissando_rhythm
 
-        % [G CelloMusicVoice measure 276 / measure 20]                         %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 276 / measure 20]                       %! _comment_measure_numbers
         f,4                                                                    %! glissando_rhythm
         \glissando                                                             %! baca_glissando:SpannerCommand
 
@@ -2621,7 +2621,7 @@ G_CelloMusicVoice = {                                                          %
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 11/10 {                                                             %! hypermeter_tuplets
 
-        % [G CelloMusicVoice measure 277 / measure 21]                         %! _comment_measure_numbers
+        % [G Cello_Music_Voice measure 277 / measure 21]                       %! _comment_measure_numbers
         b,,2                                                                   %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
@@ -2632,15 +2632,15 @@ G_CelloMusicVoice = {                                                          %
 
     }                                                                          %! hypermeter_tuplets
 
-    % [G CelloMusicVoice measure 280 / measure 24]                             %! _comment_measure_numbers
+    % [G Cello_Music_Voice measure 280 / measure 24]                           %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-G_CelloMusicStaff = {                                                          %! extern
+G_Cello_Music_Staff = {                                                        %! extern
 
-    \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
-    \G_CelloMusicVoice                                                         %! extern
+    \context Voice = "Cello_Music_Voice"                                       %! ScoreTemplate
+    \G_Cello_Music_Voice                                                       %! extern
 
 }                                                                              %! extern

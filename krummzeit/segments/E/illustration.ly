@@ -31,46 +31,46 @@
             \context MusicContext = "MusicContext"                             %! ScoreTemplate
             <<                                                                 %! ScoreTemplate
 
-                \context WindSectionStaffGroup = "WindSectionStaffGroup"       %! ScoreTemplate
+                \context WindSectionStaffGroup = "Wind_Section_Staff_Group"    %! ScoreTemplate
                 <<                                                             %! ScoreTemplate
 
                     \tag Oboe                                                  %! ScoreTemplate(5)
-                    \context Staff = "OboeMusicStaff"                          %! ScoreTemplate
-                    \E_OboeMusicStaff                                          %! extern
+                    \context Staff = "Oboe_Music_Staff"                        %! ScoreTemplate
+                    \E_Oboe_Music_Staff                                        %! extern
 
                     \tag Clarinet                                              %! ScoreTemplate(5)
-                    \context Staff = "ClarinetMusicStaff"                      %! ScoreTemplate
-                    \E_ClarinetMusicStaff                                      %! extern
+                    \context Staff = "Clarinet_Music_Staff"                    %! ScoreTemplate
+                    \E_Clarinet_Music_Staff                                    %! extern
 
                 >>                                                             %! ScoreTemplate
 
-                \context PercussionSectionStaffGroup = "PercussionSectionStaffGroup" %! ScoreTemplate
+                \context PercussionSectionStaffGroup = "Percussion_Section_Staff_Group" %! ScoreTemplate
                 <<                                                             %! ScoreTemplate
 
                     \tag Piano                                                 %! ScoreTemplate(5)
-                    \context Staff = "PianoMusicStaff"                         %! ScoreTemplate
-                    \E_PianoMusicStaff                                         %! extern
+                    \context Staff = "Piano_Music_Staff"                       %! ScoreTemplate
+                    \E_Piano_Music_Staff                                       %! extern
 
                     \tag Percussion                                            %! ScoreTemplate(5)
-                    \context Staff = "PercussionMusicStaff"                    %! ScoreTemplate
-                    \E_PercussionMusicStaff                                    %! extern
+                    \context Staff = "Percussion_Music_Staff"                  %! ScoreTemplate
+                    \E_Percussion_Music_Staff                                  %! extern
 
                 >>                                                             %! ScoreTemplate
 
-                \context StringSectionStaffGroup = "StringSectionStaffGroup"   %! ScoreTemplate
+                \context StringSectionStaffGroup = "String_Section_Staff_Group" %! ScoreTemplate
                 <<                                                             %! ScoreTemplate
 
                     \tag Violin                                                %! ScoreTemplate(5)
-                    \context Staff = "ViolinMusicStaff"                        %! ScoreTemplate
-                    \E_ViolinMusicStaff                                        %! extern
+                    \context Staff = "Violin_Music_Staff"                      %! ScoreTemplate
+                    \E_Violin_Music_Staff                                      %! extern
 
                     \tag Viola                                                 %! ScoreTemplate(5)
-                    \context Staff = "ViolaMusicStaff"                         %! ScoreTemplate
-                    \E_ViolaMusicStaff                                         %! extern
+                    \context Staff = "Viola_Music_Staff"                       %! ScoreTemplate
+                    \E_Viola_Music_Staff                                       %! extern
 
                     \tag Cello                                                 %! ScoreTemplate(5)
-                    \context Staff = "CelloMusicStaff"                         %! ScoreTemplate
-                    \E_CelloMusicStaff                                         %! extern
+                    \context Staff = "Cello_Music_Staff"                       %! ScoreTemplate
+                    \E_Cello_Music_Staff                                       %! extern
 
                 >>                                                             %! ScoreTemplate
 

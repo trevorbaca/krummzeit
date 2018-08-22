@@ -619,9 +619,9 @@ J_GlobalSkips = {                                                              %
 }                                                                              %! extern
 
 
-J_OboeMusicVoice = {                                                           %! extern
+J_Oboe_Music_Voice = {                                                         %! extern
 
-    % [J OboeMusicVoice measure 314 / measure 1]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 314 / measure 1]                             %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -651,258 +651,258 @@ J_OboeMusicVoice = {                                                           %
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 315 / measure 2]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 315 / measure 2]                             %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 316 / measure 3]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 316 / measure 3]                             %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 317 / measure 4]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 317 / measure 4]                             %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 318 / measure 5]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 318 / measure 5]                             %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 319 / measure 6]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 319 / measure 6]                             %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 320 / measure 7]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 320 / measure 7]                             %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 321 / measure 8]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 321 / measure 8]                             %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 322 / measure 9]                               %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 322 / measure 9]                             %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 323 / measure 10]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 323 / measure 10]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 324 / measure 11]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 324 / measure 11]                            %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 325 / measure 12]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 325 / measure 12]                            %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 326 / measure 13]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 326 / measure 13]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 327 / measure 14]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 327 / measure 14]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 328 / measure 15]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 328 / measure 15]                            %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 329 / measure 16]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 329 / measure 16]                            %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 330 / measure 17]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 330 / measure 17]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 331 / measure 18]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 331 / measure 18]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 332 / measure 19]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 332 / measure 19]                            %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 333 / measure 20]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 333 / measure 20]                            %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 334 / measure 21]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 334 / measure 21]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 335 / measure 22]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 335 / measure 22]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 336 / measure 23]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 336 / measure 23]                            %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 337 / measure 24]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 337 / measure 24]                            %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 338 / measure 25]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 338 / measure 25]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 339 / measure 26]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 339 / measure 26]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 340 / measure 27]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 340 / measure 27]                            %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 341 / measure 28]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 341 / measure 28]                            %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 342 / measure 29]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 342 / measure 29]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 343 / measure 30]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 343 / measure 30]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 344 / measure 31]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 344 / measure 31]                            %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 345 / measure 32]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 345 / measure 32]                            %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 346 / measure 33]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 346 / measure 33]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 347 / measure 34]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 347 / measure 34]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 348 / measure 35]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 348 / measure 35]                            %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 349 / measure 36]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 349 / measure 36]                            %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 350 / measure 37]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 350 / measure 37]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 351 / measure 38]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 351 / measure 38]                            %! _comment_measure_numbers
     cs'!2.
     \repeatTie
 
     cs'!2
     \repeatTie
 
-    % [J OboeMusicVoice measure 352 / measure 39]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 352 / measure 39]                            %! _comment_measure_numbers
     cs'!1                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 353 / measure 40]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 353 / measure 40]                            %! _comment_measure_numbers
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J OboeMusicVoice measure 354 / measure 41]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 354 / measure 41]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J OboeMusicVoice measure 355 / measure 42]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 355 / measure 42]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J OboeMusicVoice measure 356 / measure 43]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 356 / measure 43]                            %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J OboeMusicVoice measure 357 / measure 44]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 357 / measure 44]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J OboeMusicVoice measure 358 / measure 45]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 358 / measure 45]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J OboeMusicVoice measure 359 / measure 46]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 359 / measure 46]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J OboeMusicVoice measure 360 / measure 47]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 360 / measure 47]                            %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J OboeMusicVoice measure 361 / measure 48]                              %! _comment_measure_numbers
+    % [J Oboe_Music_Voice measure 361 / measure 48]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
 }                                                                              %! extern
 
 
-J_OboeMusicStaff = {                                                           %! extern
+J_Oboe_Music_Staff = {                                                         %! extern
 
-    \context Voice = "OboeMusicVoice"                                          %! ScoreTemplate
-    \J_OboeMusicVoice                                                          %! extern
+    \context Voice = "Oboe_Music_Voice"                                        %! ScoreTemplate
+    \J_Oboe_Music_Voice                                                        %! extern
 
 }                                                                              %! extern
 
 
-J_ClarinetMusicVoice = {                                                       %! extern
+J_Clarinet_Music_Voice = {                                                     %! extern
 
-    % [J ClarinetMusicVoice measure 314 / measure 1]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 314 / measure 1]                         %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -933,259 +933,259 @@ J_ClarinetMusicVoice = {                                                       %
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 315 / measure 2]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 315 / measure 2]                         %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 316 / measure 3]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 316 / measure 3]                         %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 317 / measure 4]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 317 / measure 4]                         %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 318 / measure 5]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 318 / measure 5]                         %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 319 / measure 6]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 319 / measure 6]                         %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 320 / measure 7]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 320 / measure 7]                         %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 321 / measure 8]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 321 / measure 8]                         %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 322 / measure 9]                           %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 322 / measure 9]                         %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 323 / measure 10]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 323 / measure 10]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 324 / measure 11]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 324 / measure 11]                        %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 325 / measure 12]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 325 / measure 12]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 326 / measure 13]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 326 / measure 13]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 327 / measure 14]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 327 / measure 14]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 328 / measure 15]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 328 / measure 15]                        %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 329 / measure 16]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 329 / measure 16]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 330 / measure 17]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 330 / measure 17]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 331 / measure 18]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 331 / measure 18]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 332 / measure 19]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 332 / measure 19]                        %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 333 / measure 20]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 333 / measure 20]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 334 / measure 21]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 334 / measure 21]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 335 / measure 22]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 335 / measure 22]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 336 / measure 23]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 336 / measure 23]                        %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 337 / measure 24]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 337 / measure 24]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 338 / measure 25]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 338 / measure 25]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 339 / measure 26]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 339 / measure 26]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 340 / measure 27]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 340 / measure 27]                        %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 341 / measure 28]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 341 / measure 28]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 342 / measure 29]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 342 / measure 29]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 343 / measure 30]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 343 / measure 30]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 344 / measure 31]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 344 / measure 31]                        %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 345 / measure 32]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 345 / measure 32]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 346 / measure 33]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 346 / measure 33]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 347 / measure 34]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 347 / measure 34]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 348 / measure 35]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 348 / measure 35]                        %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 349 / measure 36]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 349 / measure 36]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 350 / measure 37]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 350 / measure 37]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 351 / measure 38]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 351 / measure 38]                        %! _comment_measure_numbers
     e2.
     \repeatTie
 
     e2
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 352 / measure 39]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 352 / measure 39]                        %! _comment_measure_numbers
     e1                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J ClarinetMusicVoice measure 353 / measure 40]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 353 / measure 40]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
     \revert Stem.direction                                                     %! baca_stem_up:OverrideCommand(2)
 
-    % [J ClarinetMusicVoice measure 354 / measure 41]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 354 / measure 41]                        %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ClarinetMusicVoice measure 355 / measure 42]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 355 / measure 42]                        %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ClarinetMusicVoice measure 356 / measure 43]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 356 / measure 43]                        %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ClarinetMusicVoice measure 357 / measure 44]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 357 / measure 44]                        %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ClarinetMusicVoice measure 358 / measure 45]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 358 / measure 45]                        %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ClarinetMusicVoice measure 359 / measure 46]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 359 / measure 46]                        %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ClarinetMusicVoice measure 360 / measure 47]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 360 / measure 47]                        %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ClarinetMusicVoice measure 361 / measure 48]                          %! _comment_measure_numbers
+    % [J Clarinet_Music_Voice measure 361 / measure 48]                        %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
 }                                                                              %! extern
 
 
-J_ClarinetMusicStaff = {                                                       %! extern
+J_Clarinet_Music_Staff = {                                                     %! extern
 
-    \context Voice = "ClarinetMusicVoice"                                      %! ScoreTemplate
-    \J_ClarinetMusicVoice                                                      %! extern
+    \context Voice = "Clarinet_Music_Voice"                                    %! ScoreTemplate
+    \J_Clarinet_Music_Voice                                                    %! extern
 
 }                                                                              %! extern
 
 
-J_PianoMusicVoice = {                                                          %! extern
+J_Piano_Music_Voice = {                                                        %! extern
 
-    % [J PianoMusicVoice measure 314 / measure 1]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 314 / measure 1]                            %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1216,7 +1216,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 315 / measure 2]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 315 / measure 2]                            %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1225,17 +1225,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 316 / measure 3]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 316 / measure 3]                            %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 317 / measure 4]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 317 / measure 4]                            %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 318 / measure 5]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 318 / measure 5]                            %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1244,7 +1244,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 319 / measure 6]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 319 / measure 6]                            %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1253,17 +1253,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 320 / measure 7]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 320 / measure 7]                            %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 321 / measure 8]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 321 / measure 8]                            %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 322 / measure 9]                              %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 322 / measure 9]                            %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1272,7 +1272,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 323 / measure 10]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 323 / measure 10]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1281,17 +1281,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 324 / measure 11]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 324 / measure 11]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 325 / measure 12]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 325 / measure 12]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 326 / measure 13]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 326 / measure 13]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1300,7 +1300,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 327 / measure 14]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 327 / measure 14]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1309,17 +1309,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 328 / measure 15]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 328 / measure 15]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 329 / measure 16]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 329 / measure 16]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 330 / measure 17]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 330 / measure 17]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1328,7 +1328,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 331 / measure 18]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 331 / measure 18]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1337,17 +1337,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 332 / measure 19]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 332 / measure 19]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 333 / measure 20]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 333 / measure 20]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 334 / measure 21]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 334 / measure 21]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1356,7 +1356,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 335 / measure 22]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 335 / measure 22]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1365,17 +1365,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 336 / measure 23]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 336 / measure 23]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 337 / measure 24]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 337 / measure 24]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 338 / measure 25]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 338 / measure 25]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1386,7 +1386,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 339 / measure 26]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 339 / measure 26]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1395,17 +1395,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 340 / measure 27]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 340 / measure 27]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 341 / measure 28]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 341 / measure 28]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 342 / measure 29]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 342 / measure 29]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1414,7 +1414,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 343 / measure 30]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 343 / measure 30]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1423,17 +1423,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 344 / measure 31]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 344 / measure 31]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 345 / measure 32]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 345 / measure 32]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 346 / measure 33]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 346 / measure 33]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1442,7 +1442,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 347 / measure 34]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 347 / measure 34]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1451,17 +1451,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 348 / measure 35]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 348 / measure 35]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 349 / measure 36]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 349 / measure 36]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 350 / measure 37]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 350 / measure 37]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1470,7 +1470,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 351 / measure 38]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 351 / measure 38]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1479,17 +1479,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 352 / measure 39]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 352 / measure 39]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 353 / measure 40]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 353 / measure 40]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 354 / measure 41]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 354 / measure 41]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1498,7 +1498,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 355 / measure 42]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 355 / measure 42]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1507,17 +1507,17 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 356 / measure 43]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 356 / measure 43]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 357 / measure 44]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 357 / measure 44]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 358 / measure 45]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 358 / measure 45]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1526,7 +1526,7 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 359 / measure 46]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 359 / measure 46]                           %! _comment_measure_numbers
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1535,12 +1535,12 @@ J_PianoMusicVoice = {                                                          %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 360 / measure 47]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 360 / measure 47]                           %! _comment_measure_numbers
     cs'''!1                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PianoMusicVoice measure 361 / measure 48]                             %! _comment_measure_numbers
+    % [J Piano_Music_Voice measure 361 / measure 48]                           %! _comment_measure_numbers
     cs'''!2                                                                    %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1548,17 +1548,17 @@ J_PianoMusicVoice = {                                                          %
 }                                                                              %! extern
 
 
-J_PianoMusicStaff = {                                                          %! extern
+J_Piano_Music_Staff = {                                                        %! extern
 
-    \context Voice = "PianoMusicVoice"                                         %! ScoreTemplate
-    \J_PianoMusicVoice                                                         %! extern
+    \context Voice = "Piano_Music_Voice"                                       %! ScoreTemplate
+    \J_Piano_Music_Voice                                                       %! extern
 
 }                                                                              %! extern
 
 
-J_PercussionMusicVoice = {                                                     %! extern
+J_Percussion_Music_Voice = {                                                   %! extern
 
-    % [J PercussionMusicVoice measure 314 / measure 1]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 314 / measure 1]                       %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1596,7 +1596,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 315 / measure 2]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 315 / measure 2]                       %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1605,17 +1605,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 316 / measure 3]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 316 / measure 3]                       %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 317 / measure 4]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 317 / measure 4]                       %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 318 / measure 5]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 318 / measure 5]                       %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1624,7 +1624,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 319 / measure 6]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 319 / measure 6]                       %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1633,17 +1633,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 320 / measure 7]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 320 / measure 7]                       %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 321 / measure 8]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 321 / measure 8]                       %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 322 / measure 9]                         %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 322 / measure 9]                       %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1652,7 +1652,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 323 / measure 10]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 323 / measure 10]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1661,17 +1661,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 324 / measure 11]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 324 / measure 11]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 325 / measure 12]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 325 / measure 12]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 326 / measure 13]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 326 / measure 13]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1680,7 +1680,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 327 / measure 14]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 327 / measure 14]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1689,17 +1689,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 328 / measure 15]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 328 / measure 15]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 329 / measure 16]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 329 / measure 16]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 330 / measure 17]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 330 / measure 17]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1708,7 +1708,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 331 / measure 18]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 331 / measure 18]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1717,17 +1717,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 332 / measure 19]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 332 / measure 19]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 333 / measure 20]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 333 / measure 20]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 334 / measure 21]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 334 / measure 21]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1736,7 +1736,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 335 / measure 22]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 335 / measure 22]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1745,17 +1745,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 336 / measure 23]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 336 / measure 23]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 337 / measure 24]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 337 / measure 24]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 338 / measure 25]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 338 / measure 25]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1764,7 +1764,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 339 / measure 26]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 339 / measure 26]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1773,17 +1773,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 340 / measure 27]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 340 / measure 27]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 341 / measure 28]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 341 / measure 28]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 342 / measure 29]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 342 / measure 29]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1792,7 +1792,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 343 / measure 30]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 343 / measure 30]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1801,17 +1801,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 344 / measure 31]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 344 / measure 31]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 345 / measure 32]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 345 / measure 32]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 346 / measure 33]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 346 / measure 33]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1820,7 +1820,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 347 / measure 34]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 347 / measure 34]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1829,17 +1829,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 348 / measure 35]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 348 / measure 35]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 349 / measure 36]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 349 / measure 36]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 350 / measure 37]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 350 / measure 37]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1848,7 +1848,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 351 / measure 38]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 351 / measure 38]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1857,17 +1857,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 352 / measure 39]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 352 / measure 39]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 353 / measure 40]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 353 / measure 40]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 354 / measure 41]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 354 / measure 41]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1876,7 +1876,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 355 / measure 42]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 355 / measure 42]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1885,17 +1885,17 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 356 / measure 43]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 356 / measure 43]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 357 / measure 44]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 357 / measure 44]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 358 / measure 45]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 358 / measure 45]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1904,7 +1904,7 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 359 / measure 46]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 359 / measure 46]                      %! _comment_measure_numbers
     cs''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1913,12 +1913,12 @@ J_PercussionMusicVoice = {                                                     %
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 360 / measure 47]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 360 / measure 47]                      %! _comment_measure_numbers
     cs''!1                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    % [J PercussionMusicVoice measure 361 / measure 48]                        %! _comment_measure_numbers
+    % [J Percussion_Music_Voice measure 361 / measure 48]                      %! _comment_measure_numbers
     cs''!2                                                                     %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
@@ -1927,20 +1927,20 @@ J_PercussionMusicVoice = {                                                     %
 }                                                                              %! extern
 
 
-J_PercussionMusicStaff = {                                                     %! extern
+J_Percussion_Music_Staff = {                                                   %! extern
 
-    \context Voice = "PercussionMusicVoice"                                    %! ScoreTemplate
-    \J_PercussionMusicVoice                                                    %! extern
+    \context Voice = "Percussion_Music_Voice"                                  %! ScoreTemplate
+    \J_Percussion_Music_Voice                                                  %! extern
 
 }                                                                              %! extern
 
 
-J_ViolinMusicVoice = {                                                         %! extern
+J_Violin_Music_Voice = {                                                       %! extern
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 314 / measure 1]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 314 / measure 1]                       %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             \hcenter-in                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -1985,7 +1985,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 315 / measure 2]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 315 / measure 2]                       %! _comment_measure_numbers
         r4
 
     }                                                                          %! closing_pizzicati
@@ -2001,7 +2001,7 @@ J_ViolinMusicVoice = {                                                         %
 
     \times 2/3 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 316 / measure 3]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 316 / measure 3]                       %! _comment_measure_numbers
         r1
 
         r4
@@ -2014,7 +2014,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 317 / measure 4]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 317 / measure 4]                       %! _comment_measure_numbers
         r2
 
     }                                                                          %! closing_pizzicati
@@ -2022,7 +2022,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 318 / measure 5]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 318 / measure 5]                       %! _comment_measure_numbers
         r4
 
         d'''1                                                                  %! closing_pizzicati
@@ -2036,7 +2036,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 3/5 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 319 / measure 6]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 319 / measure 6]                       %! _comment_measure_numbers
         r4
 
         f'''4                                                                  %! closing_pizzicati
@@ -2059,7 +2059,7 @@ J_ViolinMusicVoice = {                                                         %
 
     \times 4/5 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 320 / measure 7]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 320 / measure 7]                       %! _comment_measure_numbers
         r1
 
         ef'''!4                                                                %! closing_pizzicati
@@ -2070,7 +2070,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 321 / measure 8]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 321 / measure 8]                       %! _comment_measure_numbers
         r2
 
     }                                                                          %! closing_pizzicati
@@ -2078,7 +2078,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/9 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 322 / measure 9]                         %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 322 / measure 9]                       %! _comment_measure_numbers
         r1
 
         r4
@@ -2091,7 +2091,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 323 / measure 10]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 323 / measure 10]                      %! _comment_measure_numbers
         r1
 
         cs'''!2                                                                %! closing_pizzicati
@@ -2101,7 +2101,7 @@ J_ViolinMusicVoice = {                                                         %
 
     \times 2/3 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 324 / measure 11]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 324 / measure 11]                      %! _comment_measure_numbers
         d'''1                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
@@ -2113,7 +2113,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 325 / measure 12]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 325 / measure 12]                      %! _comment_measure_numbers
         r2
 
     }                                                                          %! closing_pizzicati
@@ -2121,7 +2121,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 326 / measure 13]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 326 / measure 13]                      %! _comment_measure_numbers
         f'''1.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
@@ -2130,7 +2130,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 327 / measure 14]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 327 / measure 14]                      %! _comment_measure_numbers
         r4
 
     }                                                                          %! closing_pizzicati
@@ -2147,7 +2147,7 @@ J_ViolinMusicVoice = {                                                         %
 
     \times 2/3 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 328 / measure 15]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 328 / measure 15]                      %! _comment_measure_numbers
         r4
 
         e'''1                                                                  %! closing_pizzicati
@@ -2161,7 +2161,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 329 / measure 16]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 329 / measure 16]                      %! _comment_measure_numbers
         r4
 
         f'''4                                                                  %! closing_pizzicati
@@ -2172,7 +2172,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 330 / measure 17]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 330 / measure 17]                      %! _comment_measure_numbers
         cs'''!4                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
@@ -2184,7 +2184,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 3/4 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 331 / measure 18]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 331 / measure 18]                      %! _comment_measure_numbers
         r2
 
         e'''2                                                                  %! closing_pizzicati
@@ -2202,7 +2202,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 332 / measure 19]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 332 / measure 19]                      %! _comment_measure_numbers
         r1
 
     }                                                                          %! closing_pizzicati
@@ -2210,7 +2210,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 333 / measure 20]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 333 / measure 20]                      %! _comment_measure_numbers
         f'''2                                                                  %! closing_pizzicati
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
@@ -2219,7 +2219,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 334 / measure 21]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 334 / measure 21]                      %! _comment_measure_numbers
         r1.
 
         g'''4                                                                  %! closing_pizzicati
@@ -2230,7 +2230,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 335 / measure 22]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 335 / measure 22]                      %! _comment_measure_numbers
         r4
 
         e'''1                                                                  %! closing_pizzicati
@@ -2243,7 +2243,7 @@ J_ViolinMusicVoice = {                                                         %
 
     \times 4/5 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 336 / measure 23]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 336 / measure 23]                      %! _comment_measure_numbers
         r2
 
         f'''2.                                                                 %! closing_pizzicati
@@ -2254,7 +2254,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 337 / measure 24]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 337 / measure 24]                      %! _comment_measure_numbers
         r2
 
     }                                                                          %! closing_pizzicati
@@ -2262,7 +2262,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/9 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 338 / measure 25]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 338 / measure 25]                      %! _comment_measure_numbers
         r2.
 
         cs'''!1                                                                %! closing_pizzicati
@@ -2276,7 +2276,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 339 / measure 26]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 339 / measure 26]                      %! _comment_measure_numbers
         r4
 
     }                                                                          %! closing_pizzicati
@@ -2301,14 +2301,14 @@ J_ViolinMusicVoice = {                                                         %
 
     \times 2/3 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 340 / measure 27]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 340 / measure 27]                      %! _comment_measure_numbers
         r1.
 
     }                                                                          %! closing_pizzicati
 
     \times 2/3 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 341 / measure 28]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 341 / measure 28]                      %! _comment_measure_numbers
         r4
 
         ef'''!2                                                                %! closing_pizzicati
@@ -2319,7 +2319,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 342 / measure 29]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 342 / measure 29]                      %! _comment_measure_numbers
         r1.
 
         f'''4                                                                  %! closing_pizzicati
@@ -2330,7 +2330,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 3/4 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 343 / measure 30]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 343 / measure 30]                      %! _comment_measure_numbers
         r1
 
     }                                                                          %! closing_pizzicati
@@ -2344,7 +2344,7 @@ J_ViolinMusicVoice = {                                                         %
 
     \times 2/3 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 344 / measure 31]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 344 / measure 31]                      %! _comment_measure_numbers
         r4
 
         cs'''!2                                                                %! closing_pizzicati
@@ -2358,7 +2358,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 345 / measure 32]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 345 / measure 32]                      %! _comment_measure_numbers
         r4
 
         e'''4                                                                  %! closing_pizzicati
@@ -2369,7 +2369,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 346 / measure 33]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 346 / measure 33]                      %! _comment_measure_numbers
         r2.
 
         f'''2.                                                                 %! closing_pizzicati
@@ -2380,7 +2380,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 347 / measure 34]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 347 / measure 34]                      %! _comment_measure_numbers
         r1
 
         r4
@@ -2393,7 +2393,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 348 / measure 35]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 348 / measure 35]                      %! _comment_measure_numbers
         r2
 
         e'''2                                                                  %! closing_pizzicati
@@ -2404,7 +2404,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 349 / measure 36]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 349 / measure 36]                      %! _comment_measure_numbers
         r2
 
     }                                                                          %! closing_pizzicati
@@ -2412,7 +2412,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 350 / measure 37]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 350 / measure 37]                      %! _comment_measure_numbers
         ef'''!2                                                                %! closing_pizzicati
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
@@ -2430,7 +2430,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 351 / measure 38]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 351 / measure 38]                      %! _comment_measure_numbers
         r4
 
     }                                                                          %! closing_pizzicati
@@ -2446,7 +2446,7 @@ J_ViolinMusicVoice = {                                                         %
 
     \times 2/3 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 352 / measure 39]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 352 / measure 39]                      %! _comment_measure_numbers
         r1.
 
     }                                                                          %! closing_pizzicati
@@ -2454,7 +2454,7 @@ J_ViolinMusicVoice = {                                                         %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolinMusicVoice measure 353 / measure 40]                        %! _comment_measure_numbers
+        % [J Violin_Music_Voice measure 353 / measure 40]                      %! _comment_measure_numbers
         r4
 
         f'''4                                                                  %! closing_pizzicati
@@ -2464,47 +2464,47 @@ J_ViolinMusicVoice = {                                                         %
 
     }                                                                          %! closing_pizzicati
 
-    % [J ViolinMusicVoice measure 354 / measure 41]                            %! _comment_measure_numbers
+    % [J Violin_Music_Voice measure 354 / measure 41]                          %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolinMusicVoice measure 355 / measure 42]                            %! _comment_measure_numbers
+    % [J Violin_Music_Voice measure 355 / measure 42]                          %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolinMusicVoice measure 356 / measure 43]                            %! _comment_measure_numbers
+    % [J Violin_Music_Voice measure 356 / measure 43]                          %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolinMusicVoice measure 357 / measure 44]                            %! _comment_measure_numbers
+    % [J Violin_Music_Voice measure 357 / measure 44]                          %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolinMusicVoice measure 358 / measure 45]                            %! _comment_measure_numbers
+    % [J Violin_Music_Voice measure 358 / measure 45]                          %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolinMusicVoice measure 359 / measure 46]                            %! _comment_measure_numbers
+    % [J Violin_Music_Voice measure 359 / measure 46]                          %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolinMusicVoice measure 360 / measure 47]                            %! _comment_measure_numbers
+    % [J Violin_Music_Voice measure 360 / measure 47]                          %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolinMusicVoice measure 361 / measure 48]                            %! _comment_measure_numbers
+    % [J Violin_Music_Voice measure 361 / measure 48]                          %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-J_ViolinMusicStaff = {                                                         %! extern
+J_Violin_Music_Staff = {                                                       %! extern
 
-    \context Voice = "ViolinMusicVoice"                                        %! ScoreTemplate
-    \J_ViolinMusicVoice                                                        %! extern
+    \context Voice = "Violin_Music_Voice"                                      %! ScoreTemplate
+    \J_Violin_Music_Voice                                                      %! extern
 
 }                                                                              %! extern
 
 
-J_ViolaMusicVoice = {                                                          %! extern
+J_Viola_Music_Voice = {                                                        %! extern
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/8 {                                                               %! closing_pizzicati
 
-        % [J ViolaMusicVoice measure 314 / measure 1]                          %! _comment_measure_numbers
+        % [J Viola_Music_Voice measure 314 / measure 1]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             \hcenter-in                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -2539,7 +2539,7 @@ J_ViolaMusicVoice = {                                                          %
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 1/1 {                                                               %! closing_pizzicati
 
-        % [J ViolaMusicVoice measure 315 / measure 2]                          %! _comment_measure_numbers
+        % [J Viola_Music_Voice measure 315 / measure 2]                        %! _comment_measure_numbers
         d'''2.                                                                 %! closing_pizzicati
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
@@ -2557,7 +2557,7 @@ J_ViolaMusicVoice = {                                                          %
 
     \times 4/7 {                                                               %! closing_pizzicati
 
-        % [J ViolaMusicVoice measure 316 / measure 3]                          %! _comment_measure_numbers
+        % [J Viola_Music_Voice measure 316 / measure 3]                        %! _comment_measure_numbers
         r2.
 
         g'''2                                                                  %! closing_pizzicati
@@ -2573,160 +2573,160 @@ J_ViolaMusicVoice = {                                                          %
 
     \times 2/3 {                                                               %! closing_pizzicati
 
-        % [J ViolaMusicVoice measure 317 / measure 4]                          %! _comment_measure_numbers
+        % [J Viola_Music_Voice measure 317 / measure 4]                        %! _comment_measure_numbers
         cs'''!2.                                                               %! closing_pizzicati
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
     }                                                                          %! closing_pizzicati
 
-    % [J ViolaMusicVoice measure 318 / measure 5]                              %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 318 / measure 5]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 319 / measure 6]                              %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 319 / measure 6]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 320 / measure 7]                              %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 320 / measure 7]                            %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 321 / measure 8]                              %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 321 / measure 8]                            %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 322 / measure 9]                              %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 322 / measure 9]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 323 / measure 10]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 323 / measure 10]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 324 / measure 11]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 324 / measure 11]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 325 / measure 12]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 325 / measure 12]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 326 / measure 13]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 326 / measure 13]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 327 / measure 14]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 327 / measure 14]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 328 / measure 15]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 328 / measure 15]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 329 / measure 16]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 329 / measure 16]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 330 / measure 17]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 330 / measure 17]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 331 / measure 18]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 331 / measure 18]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 332 / measure 19]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 332 / measure 19]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 333 / measure 20]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 333 / measure 20]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 334 / measure 21]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 334 / measure 21]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 335 / measure 22]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 335 / measure 22]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 336 / measure 23]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 336 / measure 23]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 337 / measure 24]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 337 / measure 24]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 338 / measure 25]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 338 / measure 25]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 339 / measure 26]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 339 / measure 26]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 340 / measure 27]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 340 / measure 27]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 341 / measure 28]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 341 / measure 28]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 342 / measure 29]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 342 / measure 29]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 343 / measure 30]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 343 / measure 30]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 344 / measure 31]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 344 / measure 31]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 345 / measure 32]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 345 / measure 32]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 346 / measure 33]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 346 / measure 33]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 347 / measure 34]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 347 / measure 34]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 348 / measure 35]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 348 / measure 35]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 349 / measure 36]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 349 / measure 36]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 350 / measure 37]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 350 / measure 37]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 351 / measure 38]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 351 / measure 38]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 352 / measure 39]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 352 / measure 39]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 353 / measure 40]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 353 / measure 40]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    % [J ViolaMusicVoice measure 354 / measure 41]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 354 / measure 41]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 355 / measure 42]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 355 / measure 42]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 356 / measure 43]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 356 / measure 43]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 357 / measure 44]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 357 / measure 44]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 358 / measure 45]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 358 / measure 45]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 359 / measure 46]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 359 / measure 46]                           %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 360 / measure 47]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 360 / measure 47]                           %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    % [J ViolaMusicVoice measure 361 / measure 48]                             %! _comment_measure_numbers
+    % [J Viola_Music_Voice measure 361 / measure 48]                           %! _comment_measure_numbers
     R1 * 1/2                                                                   %! _make_measure_silences
 
 }                                                                              %! extern
 
 
-J_ViolaMusicStaff = {                                                          %! extern
+J_Viola_Music_Staff = {                                                        %! extern
 
-    \context Voice = "ViolaMusicVoice"                                         %! ScoreTemplate
-    \J_ViolaMusicVoice                                                         %! extern
+    \context Voice = "Viola_Music_Voice"                                       %! ScoreTemplate
+    \J_Viola_Music_Voice                                                       %! extern
 
 }                                                                              %! extern
 
 
-J_CelloMusicVoice = {                                                          %! extern
+J_Cello_Music_Voice = {                                                        %! extern
 
-    % [J CelloMusicVoice measure 314 / measure 1]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 314 / measure 1]                            %! _comment_measure_numbers
     \set Staff.shortInstrumentName =                                           %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -2757,133 +2757,133 @@ J_CelloMusicVoice = {                                                          %
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 315 / measure 2]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 315 / measure 2]                            %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 316 / measure 3]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 316 / measure 3]                            %! _comment_measure_numbers
     d'1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 317 / measure 4]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 317 / measure 4]                            %! _comment_measure_numbers
     d'2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 318 / measure 5]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 318 / measure 5]                            %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 319 / measure 6]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 319 / measure 6]                            %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 320 / measure 7]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 320 / measure 7]                            %! _comment_measure_numbers
     d'1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 321 / measure 8]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 321 / measure 8]                            %! _comment_measure_numbers
     d'2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 322 / measure 9]                              %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 322 / measure 9]                            %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 323 / measure 10]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 323 / measure 10]                           %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 324 / measure 11]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 324 / measure 11]                           %! _comment_measure_numbers
     d'1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 325 / measure 12]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 325 / measure 12]                           %! _comment_measure_numbers
     d'2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 326 / measure 13]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 326 / measure 13]                           %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 327 / measure 14]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 327 / measure 14]                           %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 328 / measure 15]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 328 / measure 15]                           %! _comment_measure_numbers
     d'1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 329 / measure 16]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 329 / measure 16]                           %! _comment_measure_numbers
     d'2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 330 / measure 17]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 330 / measure 17]                           %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 331 / measure 18]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 331 / measure 18]                           %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 332 / measure 19]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 332 / measure 19]                           %! _comment_measure_numbers
     d'1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 333 / measure 20]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 333 / measure 20]                           %! _comment_measure_numbers
     d'2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 334 / measure 21]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 334 / measure 21]                           %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 335 / measure 22]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 335 / measure 22]                           %! _comment_measure_numbers
     d'2.
     \repeatTie
 
     d'2
     \repeatTie
 
-    % [J CelloMusicVoice measure 336 / measure 23]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 336 / measure 23]                           %! _comment_measure_numbers
     d'1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 337 / measure 24]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 337 / measure 24]                           %! _comment_measure_numbers
     d'2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    % [J CelloMusicVoice measure 338 / measure 25]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 338 / measure 25]                           %! _comment_measure_numbers
     d,2.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2892,128 +2892,128 @@ J_CelloMusicVoice = {                                                          %
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 339 / measure 26]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 339 / measure 26]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 340 / measure 27]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 340 / measure 27]                           %! _comment_measure_numbers
     d,1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 341 / measure 28]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 341 / measure 28]                           %! _comment_measure_numbers
     d,2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 342 / measure 29]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 342 / measure 29]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 343 / measure 30]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 343 / measure 30]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 344 / measure 31]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 344 / measure 31]                           %! _comment_measure_numbers
     d,1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 345 / measure 32]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 345 / measure 32]                           %! _comment_measure_numbers
     d,2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 346 / measure 33]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 346 / measure 33]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 347 / measure 34]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 347 / measure 34]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 348 / measure 35]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 348 / measure 35]                           %! _comment_measure_numbers
     d,1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 349 / measure 36]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 349 / measure 36]                           %! _comment_measure_numbers
     d,2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 350 / measure 37]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 350 / measure 37]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 351 / measure 38]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 351 / measure 38]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 352 / measure 39]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 352 / measure 39]                           %! _comment_measure_numbers
     d,1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 353 / measure 40]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 353 / measure 40]                           %! _comment_measure_numbers
     d,2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 354 / measure 41]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 354 / measure 41]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 355 / measure 42]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 355 / measure 42]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 356 / measure 43]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 356 / measure 43]                           %! _comment_measure_numbers
     d,1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 357 / measure 44]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 357 / measure 44]                           %! _comment_measure_numbers
     d,2                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 358 / measure 45]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 358 / measure 45]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 359 / measure 46]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 359 / measure 46]                           %! _comment_measure_numbers
     d,2.
     \repeatTie
 
     d,2
     \repeatTie
 
-    % [J CelloMusicVoice measure 360 / measure 47]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 360 / measure 47]                           %! _comment_measure_numbers
     d,1                                                                        %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J CelloMusicVoice measure 361 / measure 48]                             %! _comment_measure_numbers
+    % [J Cello_Music_Voice measure 361 / measure 48]                           %! _comment_measure_numbers
     d,2                                                                        %! baca_make_repeat_tied_notes
     _ \markup {                                                                %! SCORE_2
         \override                                                              %! SCORE_2
@@ -3044,9 +3044,9 @@ J_CelloMusicVoice = {                                                          %
 }                                                                              %! extern
 
 
-J_CelloMusicStaff = {                                                          %! extern
+J_Cello_Music_Staff = {                                                        %! extern
 
-    \context Voice = "CelloMusicVoice"                                         %! ScoreTemplate
-    \J_CelloMusicVoice                                                         %! extern
+    \context Voice = "Cello_Music_Voice"                                       %! ScoreTemplate
+    \J_Cello_Music_Voice                                                       %! extern
 
 }                                                                              %! extern

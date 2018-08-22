@@ -28,10 +28,10 @@
         %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
             % [PageLayout measure 3]                                                     %! _comment_measure_numbers
-            \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
+            \baca-new-spacing-section #1 #4                                              %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
             s1 * 1/4                                                                     %! _make_global_skips(1)
-        %@% ^ \markup { \baca-forest-green-markup "[1/32]" }                             %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
+        %@% ^ \markup { \baca-forest-green-markup "[1/4]" }                              %! HorizontalSpacingSpecifier(2):SPACING_MARKUP
 
             % [PageLayout measure 4]                                                     %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING

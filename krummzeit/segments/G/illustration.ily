@@ -1,77 +1,77 @@
-G_GlobalRests = {                                                              %! extern
+G_Global_Rests = {                                                             %! extern
 
-    % [G GlobalRests measure 257 / measure 1]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 257 / measure 1]                                 %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 258 / measure 2]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 258 / measure 2]                                 %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 259 / measure 3]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 259 / measure 3]                                 %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 260 / measure 4]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 260 / measure 4]                                 %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests
 
-    % [G GlobalRests measure 261 / measure 5]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 261 / measure 5]                                 %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 262 / measure 6]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 262 / measure 6]                                 %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 263 / measure 7]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 263 / measure 7]                                 %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 264 / measure 8]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 264 / measure 8]                                 %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 265 / measure 9]                                  %! _comment_measure_numbers
+    % [G Global_Rests measure 265 / measure 9]                                 %! _comment_measure_numbers
     R1 * 9/8                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 266 / measure 10]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 266 / measure 10]                                %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 267 / measure 11]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 267 / measure 11]                                %! _comment_measure_numbers
     R1 * 3/2                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 268 / measure 12]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 268 / measure 12]                                %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 269 / measure 13]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 269 / measure 13]                                %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! baca_global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
     ^ \baca-short-fermata-markup                                               %! baca_global_fermata:GlobalFermataCommand(1)
 
-    % [G GlobalRests measure 270 / measure 14]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 270 / measure 14]                                %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 271 / measure 15]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 271 / measure 15]                                %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 272 / measure 16]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 272 / measure 16]                                %! _comment_measure_numbers
     R1 * 11/8                                                                  %! _make_global_rests
 
-    % [G GlobalRests measure 273 / measure 17]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 273 / measure 17]                                %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 274 / measure 18]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 274 / measure 18]                                %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests
 
-    % [G GlobalRests measure 275 / measure 19]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 275 / measure 19]                                %! _comment_measure_numbers
     R1 * 3/2                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 276 / measure 20]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 276 / measure 20]                                %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 277 / measure 21]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 277 / measure 21]                                %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_global_rests
 
-    % [G GlobalRests measure 278 / measure 22]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 278 / measure 22]                                %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 279 / measure 23]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 279 / measure 23]                                %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_global_rests
 
-    % [G GlobalRests measure 280 / measure 24]                                 %! _comment_measure_numbers
+    % [G Global_Rests measure 280 / measure 24]                                %! _comment_measure_numbers
     \once \override Score.TimeSignature.stencil = ##f                          %! baca_global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
     ^ \baca-very-long-fermata-markup                                           %! baca_global_fermata:GlobalFermataCommand(1)
@@ -79,9 +79,9 @@ G_GlobalRests = {                                                              %
 }                                                                              %! extern
 
 
-G_GlobalSkips = {                                                              %! extern
+G_Global_Skips = {                                                             %! extern
 
-    % [G GlobalSkips measure 257 / measure 1]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 257 / measure 1]                                 %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \mark #7                                                                   %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
@@ -99,7 +99,7 @@ G_GlobalSkips = {                                                              %
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "144" #'green4      %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! REAPPLIED_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
-    % [G GlobalSkips measure 258 / measure 2]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 258 / measure 2]                                 %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
@@ -109,7 +109,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.2]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'16'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 259 / measure 3]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 259 / measure 3]                                 %! _comment_measure_numbers
     s1 * 5/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (259)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <2>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -117,7 +117,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.3]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'17'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 260 / measure 4]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 260 / measure 4]                                 %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
@@ -127,7 +127,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.4]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'18'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 261 / measure 5]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 261 / measure 5]                                 %! _comment_measure_numbers
     \time 5/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/4                                                                   %! _make_global_skips(1)
@@ -137,7 +137,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.5]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'20'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 262 / measure 6]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 262 / measure 6]                                 %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
@@ -147,7 +147,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.6]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'22'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 263 / measure 7]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 263 / measure 7]                                 %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (263)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <6>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -155,7 +155,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.7]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'23'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 264 / measure 8]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 264 / measure 8]                                 %! _comment_measure_numbers
     s1 * 3/4                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (264)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <7>                                               %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -163,7 +163,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.8]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'25'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 265 / measure 9]                                  %! _comment_measure_numbers
+    % [G Global_Skips measure 265 / measure 9]                                 %! _comment_measure_numbers
     \time 9/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 9/8                                                                   %! _make_global_skips(1)
@@ -173,7 +173,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.9]                                             %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'26'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 266 / measure 10]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 266 / measure 10]                                %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
@@ -183,7 +183,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.10]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'28'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 267 / measure 11]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 267 / measure 11]                                %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
@@ -193,7 +193,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.11]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'29'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 268 / measure 12]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 268 / measure 12]                                %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
@@ -203,7 +203,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.12]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'32'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 269 / measure 13]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 269 / measure 13]                                %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)
@@ -213,7 +213,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.13]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'35'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 270 / measure 14]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 270 / measure 14]                                %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
@@ -230,7 +230,7 @@ G_GlobalSkips = {                                                              %
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "90" #'blue         %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
     \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK_WITH_COLOR:_attach_metronome_marks(3)
 
-    % [G GlobalSkips measure 271 / measure 15]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 271 / measure 15]                                %! _comment_measure_numbers
     \time 7/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/4                                                                   %! _make_global_skips(1)
@@ -240,7 +240,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.15]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'37'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 272 / measure 16]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 272 / measure 16]                                %! _comment_measure_numbers
     \time 11/8                                                                 %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 11/8                                                                  %! _make_global_skips(1)
@@ -250,7 +250,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.16]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'42'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 273 / measure 17]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 273 / measure 17]                                %! _comment_measure_numbers
     \time 5/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 5/8                                                                   %! _make_global_skips(1)
@@ -260,7 +260,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.17]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'45'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 274 / measure 18]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 274 / measure 18]                                %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
@@ -270,7 +270,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.18]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'47'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 275 / measure 19]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 275 / measure 19]                                %! _comment_measure_numbers
     \time 6/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/2                                                                   %! _make_global_skips(1)
@@ -280,7 +280,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.19]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'50'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 276 / measure 20]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 276 / measure 20]                                %! _comment_measure_numbers
     \time 3/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 3/4                                                                   %! _make_global_skips(1)
@@ -290,7 +290,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.20]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'54'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 277 / measure 21]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 277 / measure 21]                                %! _comment_measure_numbers
     \time 4/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1                                                                     %! _make_global_skips(1)
@@ -300,7 +300,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.21]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'56'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 278 / measure 22]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 278 / measure 22]                                %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
@@ -310,7 +310,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.22]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[12'58'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 279 / measure 23]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 279 / measure 23]                                %! _comment_measure_numbers
     s1 * 7/8                                                                   %! _make_global_skips(1)
 %@% ^ \baca-dark-cyan-markup (279)                                             %! MEASURE_NUMBER_MARKUP:_label_measure_indices(1)
 %@% ^ \baca-dark-cyan-markup <22>                                              %! MEASURE_INDEX_MARKUP:_label_measure_indices(2)
@@ -318,7 +318,7 @@ G_GlobalSkips = {                                                              %
 %@% ^ \baca-dark-cyan-markup [G.23]                                            %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-dark-cyan-markup "[13'01'']"                                       %! CLOCK_TIME_MARKUP:_label_clock_time
 
-    % [G GlobalSkips measure 280 / measure 24]                                 %! _comment_measure_numbers
+    % [G Global_Skips measure 280 / measure 24]                                %! _comment_measure_numbers
     \time 1/4                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 1/4                                                                   %! _make_global_skips(1)

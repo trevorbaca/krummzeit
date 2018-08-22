@@ -18,7 +18,7 @@ class RegisterTransitionCommand(baca.Command):
         ...     )
 
         >>> maker(
-        ...     ('MusicVoice', 1),
+        ...     ('Music_Voice', 1),
         ...     baca.pitches('C4 D4 E4 F4'),
         ...     baca.make_even_divisions(),
         ...     krummzeit.RegisterTransitionCommand(
@@ -41,28 +41,28 @@ class RegisterTransitionCommand(baca.Command):
             \context Score = "Score"                                                       %! SingleStaffScoreTemplate
             <<                                                                             %! SingleStaffScoreTemplate
             <BLANKLINE>
-                \context GlobalContext = "GlobalContext"                                   %! _make_global_context
+                \context GlobalContext = "Global_Context"                                  %! _make_global_context
                 <<                                                                         %! _make_global_context
             <BLANKLINE>
-                    \context GlobalSkips = "GlobalSkips"                                   %! _make_global_context
+                    \context GlobalSkips = "Global_Skips"                                  %! _make_global_context
                     {                                                                      %! _make_global_context
             <BLANKLINE>
-                        % [GlobalSkips measure 1]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 1]                                         %! _comment_measure_numbers
                         \time 4/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 1/2                                                           %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 2]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 2]                                         %! _comment_measure_numbers
                         \time 3/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 3/8                                                           %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 3]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 3]                                         %! _comment_measure_numbers
                         \time 4/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 1/2                                                           %! _make_global_skips(1)
             <BLANKLINE>
-                        % [GlobalSkips measure 4]                                          %! _comment_measure_numbers
+                        % [Global_Skips measure 4]                                         %! _comment_measure_numbers
                         \time 3/8                                                          %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
                         \baca-time-signature-color #'blue                                  %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
                         s1 * 3/8                                                           %! _make_global_skips(1)
@@ -73,16 +73,16 @@ class RegisterTransitionCommand(baca.Command):
             <BLANKLINE>
                 >>                                                                         %! _make_global_context
             <BLANKLINE>
-                \context MusicContext = "MusicContext"                                     %! SingleStaffScoreTemplate
+                \context MusicContext = "Music_Context"                                    %! SingleStaffScoreTemplate
                 <<                                                                         %! SingleStaffScoreTemplate
             <BLANKLINE>
-                    \context Staff = "MusicStaff"                                          %! SingleStaffScoreTemplate
+                    \context Staff = "Music_Staff"                                         %! SingleStaffScoreTemplate
                     {                                                                      %! SingleStaffScoreTemplate
             <BLANKLINE>
-                        \context Voice = "MusicVoice"                                      %! SingleStaffScoreTemplate
+                        \context Voice = "Music_Voice"                                     %! SingleStaffScoreTemplate
                         {                                                                  %! SingleStaffScoreTemplate
             <BLANKLINE>
-                            % [MusicVoice measure 1]                                       %! _comment_measure_numbers
+                            % [Music_Voice measure 1]                                      %! _comment_measure_numbers
                             c'8                                                            %! baca_make_even_divisions
                             [                                                              %! baca_make_even_divisions
             <BLANKLINE>
@@ -93,13 +93,13 @@ class RegisterTransitionCommand(baca.Command):
                             f''8                                                           %! baca_make_even_divisions
                             ]                                                              %! baca_make_even_divisions
             <BLANKLINE>
-                            % [MusicVoice measure 2]                                       %! _comment_measure_numbers
+                            % [Music_Voice measure 2]                                      %! _comment_measure_numbers
                             R1 * 3/8                                                       %! _make_measure_silences
             <BLANKLINE>
-                            % [MusicVoice measure 3]                                       %! _comment_measure_numbers
+                            % [Music_Voice measure 3]                                      %! _comment_measure_numbers
                             R1 * 1/2                                                       %! _make_measure_silences
             <BLANKLINE>
-                            % [MusicVoice measure 4]                                       %! _comment_measure_numbers
+                            % [Music_Voice measure 4]                                      %! _comment_measure_numbers
                             R1 * 3/8                                                       %! _make_measure_silences
             <BLANKLINE>
                         }                                                                  %! SingleStaffScoreTemplate

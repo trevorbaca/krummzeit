@@ -12,31 +12,37 @@ def register_narrow(start, stop=None):
         registration=baca.Registration(
             [('[A0, F#4)', -26), ('[F#4, C8]', -23)],
             ),
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
         )
     narrow_third_octave = baca.RegisterCommand(
         registration=baca.Registration(
             [('[A0, F#4)', -14), ('[F#4, C8]', -11)],
             ),
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
         )
     narrow_fourth_octave = baca.RegisterCommand(
         registration=baca.Registration(
             [('[A0, F#4)', -2), ('[F#4, C8]', 1)],
             ),
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
         )
     narrow_fifth_octave = baca.RegisterCommand(
         registration=baca.Registration(
             [('[A0, F#4)', 10), ('[F#4, C8]', 13)],
             ),
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
         )
     narrow_sixth_octave = baca.RegisterCommand(
         registration=baca.Registration(
             [('[A0, F#4)', 22), ('[F#4, C8]', 25)],
             ),
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
         )
     narrow_seventh_octave = baca.RegisterCommand(
         registration=baca.Registration(
             [('[A0, F#4)', 34), ('[F#4, C8]', 37)],
             ),
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
         )
 
     if stop is None:

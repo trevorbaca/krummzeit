@@ -232,7 +232,10 @@ maker(
 
 maker(
     ('perc', (1, 5)),
-    baca.dynamic('pp', selector=baca.pheads()),
+    baca.dynamic(
+        'pp',
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -243,7 +246,10 @@ maker(
         ('va', (1, 7)),
         ('vc', (1, 13)),
         ]),
-    baca.pitches(pcs)
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        )
     )
 
 maker(
@@ -271,7 +277,7 @@ maker(
     baca.dynamic('"mp"'),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
         ),
     krummzeit.register_narrow(2),
     baca.markup(
@@ -295,7 +301,10 @@ maker(
         ('vn', (14, 34)),
         ('vc', (14, 34)),
         ]),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -305,7 +314,7 @@ maker(
         ],
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
         ),
     krummzeit.register_narrow(5),
     baca.note_head_style_harmonic(),
@@ -375,9 +384,11 @@ maker(
     baca.new(
         baca.dynamic('mp'),
         baca.tenuto(),
-        map=baca.pheads(),
+        map=baca.pheads(exclude=baca.enums.HIDDEN),
         ),
-    baca.note_head_style_harmonic(),
+    baca.note_head_style_harmonic(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     baca.markup(
         krummzeit.markup.fifth_harmonic_of_F1(),
         ),
@@ -385,12 +396,18 @@ maker(
 
 maker(
     ('ob', (11, 24)),
-    baca.pitches('D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5'),
+    baca.pitches(
+        'D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('cl', (11, 24)),
-    baca.pitches('E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5'),
+    baca.pitches(
+        'E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -431,24 +448,35 @@ maker(
 
 maker(
     ('vn', (39, 48)),
-    baca.pitch('A+3'),
+    baca.pitch(
+        'A+3',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('va', (39, 48)),
-    baca.pitch('Bb2'),
+    baca.pitch(
+        'Bb2',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('vc', (39, 48)),
-    baca.pitch('A2'),
+    baca.pitch(
+        'A2',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     (['vn', 'va', 'vc'], (39, 48)),
     baca.dynamic('mp'),
     baca.markup('ordinario'),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(

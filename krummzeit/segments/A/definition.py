@@ -119,7 +119,9 @@ maker(
 
 maker(
     'perc',
-    baca.accent(selector=baca.pheads()),
+    baca.accent(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     baca.not_parts(baca.bar_extent_zero()),
     baca.staff_position(0),
     )
@@ -350,6 +352,7 @@ maker(
     baca.pitches(
         krummzeit.indigo_pitch_classes.get_payload(),
         allow_repeats=True,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
         )
     )
 
@@ -361,7 +364,10 @@ maker(
         ('vn', (12, 22)),
         ('cl', (12, 22)),
         ]),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
@@ -373,7 +379,10 @@ maker(
         ('ob', (23, 37)),
         ('cl', (23, 37)),
         ]),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -445,7 +454,9 @@ maker(
 
 maker(
     (['vn', 'ob', 'cl'], (1, 37)),
-    baca.staccato(selector=baca.pheads()),
+    baca.staccato(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(

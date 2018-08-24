@@ -267,14 +267,19 @@ maker(
         ('ob', (9, 12)),
         ('cl', (9, 12)),
         ]),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('pf', (5, 12)),
     baca.dynamic('pp'),
     baca.markup('leggierissimo'),
-    baca.staccato(selector=baca.pheads()),
+    baca.staccato(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     baca.suite(
         krummzeit.displacement(),
         krummzeit.register_wide(5),
@@ -301,14 +306,18 @@ maker(
     (['ob', 'cl'], (9, 12)),
     baca.dynamic('pp'),
     baca.markup('leggierissimo'),
-    baca.staccato(selector=baca.pheads()),
+    baca.staccato(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('vn', (5, 12)),
     baca.dynamic('pp'),
     baca.markup('leggierissimo: off-string bowing on staccati'),
-    baca.staccato(selector=baca.pheads()),
+    baca.staccato(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -356,7 +365,10 @@ maker(
         ('vc', (14, 20)),
         ('va', (14, 19)),
         ]),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -406,7 +418,7 @@ maker(
     )
 
 maker(
-    ('cl', (18, 24)),
+    ('cl', (18, 23)),
     baca.hairpin(
         'f < ff',
         selector=baca.tleaves(),

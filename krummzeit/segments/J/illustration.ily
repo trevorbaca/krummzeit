@@ -864,8 +864,26 @@ J_Oboe_Music_Voice = {                                                         %
     cs'!2                                                                      %! baca_make_repeat_tied_notes
     \repeatTie
 
-    % [J Oboe_Music_Voice measure 354 / measure 41]                            %! _comment_measure_numbers
-    R1 * 5/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Oboe_Music_Voice"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [J Oboe_Music_Voice measure 354 / measure 41]                    %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 5/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Oboe_Rest_Voice"                                     %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [J Oboe_Rest_Voice measure 354 / measure 41]                     %! _comment_measure_numbers
+            R1 * 5/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [J Oboe_Music_Voice measure 355 / measure 42]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
@@ -1145,10 +1163,28 @@ J_Clarinet_Music_Voice = {                                                     %
     % [J Clarinet_Music_Voice measure 353 / measure 40]                        %! _comment_measure_numbers
     e2                                                                         %! baca_make_repeat_tied_notes
     \repeatTie
-    \revert Stem.direction                                                     %! baca_stem_up:OverrideCommand(2)
 
-    % [J Clarinet_Music_Voice measure 354 / measure 41]                        %! _comment_measure_numbers
-    R1 * 5/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Clarinet_Music_Voice"                                %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [J Clarinet_Music_Voice measure 354 / measure 41]                %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            d''1 * 5/4                                                         %! _make_multimeasure_rest_container
+            \revert Stem.direction                                             %! baca_stem_up:OverrideCommand(2)
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Clarinet_Rest_Voice"                                 %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [J Clarinet_Rest_Voice measure 354 / measure 41]                 %! _comment_measure_numbers
+            R1 * 5/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [J Clarinet_Music_Voice measure 355 / measure 42]                        %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
@@ -2464,8 +2500,26 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    % [J Violin_Music_Voice measure 354 / measure 41]                          %! _comment_measure_numbers
-    R1 * 5/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Violin_Music_Voice"                                  %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [J Violin_Music_Voice measure 354 / measure 41]                  %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 5/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Violin_Rest_Voice"                                   %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [J Violin_Rest_Voice measure 354 / measure 41]                   %! _comment_measure_numbers
+            R1 * 5/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [J Violin_Music_Voice measure 355 / measure 42]                          %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
@@ -2579,8 +2633,26 @@ J_Viola_Music_Voice = {                                                        %
 
     }                                                                          %! closing_pizzicati
 
-    % [J Viola_Music_Voice measure 318 / measure 5]                            %! _comment_measure_numbers
-    R1 * 5/4                                                                   %! _make_measure_silences
+    <<                                                                         %! _make_multimeasure_rest_container
+
+        \context Voice = "Viola_Music_Voice"                                   %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [J Viola_Music_Voice measure 318 / measure 5]                    %! _comment_measure_numbers
+            \baca-invisible-music                                              %! _make_multimeasure_rest_container
+            c'1 * 5/4                                                          %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+        \context Voice = "Viola_Rest_Voice"                                    %! _make_multimeasure_rest_container
+        {                                                                      %! _make_multimeasure_rest_container
+
+            % [J Viola_Rest_Voice measure 318 / measure 5]                     %! _comment_measure_numbers
+            R1 * 5/4                                                           %! _make_multimeasure_rest_container
+
+        }                                                                      %! _make_multimeasure_rest_container
+
+    >>                                                                         %! _make_multimeasure_rest_container
 
     % [J Viola_Music_Voice measure 319 / measure 6]                            %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences

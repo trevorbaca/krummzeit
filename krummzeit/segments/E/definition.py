@@ -186,10 +186,13 @@ maker(
     baca.dynamic('p'),
     baca.new(
         baca.trill_spanner(),
-        map=baca.plts().filter_preprolated('>=', (1, 4)),
+        map=baca.plts(exclude=baca.enums.HIDDEN).filter_preprolated('>=', (1, 4)),
         ),
     baca.suite(
-        baca.pitches(pcs),
+        baca.pitches(
+            pcs,
+            selector=baca.plts(exclude=baca.enums.HIDDEN),
+            ),
         krummzeit.displacement(),
         krummzeit.register_wide(5),
         krummzeit.color_fingerings(),
@@ -232,14 +235,20 @@ pcs = baca.PitchClassSegment('C6 B+5 A5 G+5 F+5 E~5')
 pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
 maker(
     ('ob', (12, 21)),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 pcs = baca.PitchClassSegment('C6 B+5 A5 G+5 F+5 E~5')
 pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
 maker(
     ('cl', (12, 21)),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -256,7 +265,10 @@ pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-301).retrograde().transpose(10)
 maker(
     (strings, (12, 20)),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -291,18 +303,29 @@ maker(
 maker(
     (['pf', 'perc'], (17, 26)),
     baca.dynamic('p'),
-    baca.pitch('F5'),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.pitch(
+        'F5',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
+    baca.staccatissimo(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('va', (23, 35)),
-    baca.pitch('F#3'),
+    baca.pitch(
+        'F#3',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('vc', (23, 35)),
-    baca.pitch('C2'),
+    baca.pitch(
+        'C2',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -367,9 +390,14 @@ maker(
     baca.clef('treble'),
     baca.dynamic('fff'),
     baca.ottava(),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     baca.suite(
-        baca.pitches(pcs),
+        baca.pitches(
+            pcs,
+            selector=baca.plts(exclude=baca.enums.HIDDEN),
+            ),
         krummzeit.displacement(),
         krummzeit.register_narrow(7),
         ),

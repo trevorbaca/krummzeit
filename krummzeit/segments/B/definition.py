@@ -235,7 +235,11 @@ pcs = pcs.rotate(-121).retrograde().transpose(3).invert().sequence()
 pcs = pcs.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 maker(
     ('ob', (1, 35)),
-    baca.pitches(pcs, allow_repeats=True),
+    baca.pitches(
+        pcs,
+        allow_repeats=True,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -243,7 +247,8 @@ maker(
     baca.dynamic('ff'),
     baca.new(
         baca.trill_spanner(),
-        map=baca.plts().filter_preprolated('>=', (1, 4)),
+        map=baca.plts(
+            exclude=baca.enums.HIDDEN).filter_preprolated('>=', (1, 4)),
         ),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
@@ -280,13 +285,16 @@ maker(
     baca.dynamic('f'),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
         ),
     )
 
 maker(
     ('va', (1, 23)),
-    baca.pitches("e dtqs f eqs dqs c dqs"),
+    baca.pitches(
+        "e dtqs f eqs dqs c dqs",
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -294,27 +302,31 @@ maker(
     baca.clef('alto'),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
         ),
-    baca.markup('molto flautando'),
-    )
-
-maker(
-    ('va', (1, 12)),
-    baca.hairpin(
-        'ff > pp',
-        selector=baca.tleaves(),
+    baca.new(
+        baca.markup('molto flautando'),
+        measures=6,
         ),
     )
 
 maker(
-    ('va', (13, 23)),
-    baca.hairpin('ff > pp', selector=baca.tleaves()[:2]),
+    (['va', 'vc'], (1, 23)),
+    baca.new(
+        baca.hairpin(
+            'ff > pp',
+            selector=baca.tleaves()[:2],
+            ),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('vc', (1, 23)),
-    baca.pitches("d, ctqs, e, dqs, cqs, b,, dqs,"),
+    baca.pitches(
+        "d, ctqs, e, dqs, cqs, b,, dqs,",
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -322,22 +334,12 @@ maker(
     baca.clef('bass'),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
         ),
-    baca.markup('molto flautando'),
-    )
-
-maker(
-    ('vc', (1, 12)),
-    baca.hairpin(
-        'ff > pp',
-        selector=baca.tleaves(),
+    baca.new(
+        baca.markup('molto flautando'),
+        measures=6,
         ),
-    )
-
-maker(
-    ('vc', (13, 23)),
-    baca.hairpin('ff > pp', selector=baca.tleaves()[:2]),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -345,7 +347,10 @@ pcs = pcs.rotate(-121).retrograde().transpose(3).sequence()
 pcs = pcs.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 maker(
     ('vn', (22, 28)),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -371,18 +376,26 @@ maker(
 
 maker(
     ('pf', [(14, 20), (28, 35)]),
-    baca.pitch('C#6'),
+    baca.pitch(
+        'C#6',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     ('perc', [(14, 20), (28, 33)]),
-    baca.pitch('C#6'),
+    baca.pitch(
+        'C#6',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
     (['pf', 'perc'], (14, 20)),
     baca.dynamic('ff'),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(
+        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -418,7 +431,7 @@ maker(
     (['vn', 'va', 'vc'], (32, 42)),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.runs(exclude=baca.enums.HIDDEN),
         ),
     baca.hairpin(
         'pp < fff',

@@ -122,7 +122,10 @@ maker(
         ('va', (1, 9)),
         ('vc', (1, 9)),
         ]),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(
@@ -311,7 +314,10 @@ maker(
 
 maker(
     ('va', (11, 16)),
-    baca.pitch('bf,'),
+    baca.pitch(
+        'bf,',
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(

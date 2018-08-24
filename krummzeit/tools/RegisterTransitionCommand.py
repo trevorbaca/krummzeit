@@ -93,8 +93,26 @@ class RegisterTransitionCommand(baca.Command):
                             f''8                                                           %! baca_make_even_divisions
                             ]                                                              %! baca_make_even_divisions
             <BLANKLINE>
-                            % [Music_Voice measure 2]                                      %! _comment_measure_numbers
-                            R1 * 3/8                                                       %! _make_measure_silences
+                            <<                                                             %! _make_multimeasure_rest_container
+            <BLANKLINE>
+                                \context Voice = "Music_Voice"                             %! _make_multimeasure_rest_container
+                                {                                                          %! _make_multimeasure_rest_container
+            <BLANKLINE>
+                                    % [Music_Voice measure 2]                              %! _comment_measure_numbers
+                                    \baca-invisible-music                                  %! _make_multimeasure_rest_container
+                                    c'1 * 3/8                                              %! _make_multimeasure_rest_container
+            <BLANKLINE>
+                                }                                                          %! _make_multimeasure_rest_container
+            <BLANKLINE>
+                                \context Voice = "Rest_Voice"                              %! _make_multimeasure_rest_container
+                                {                                                          %! _make_multimeasure_rest_container
+            <BLANKLINE>
+                                    % [Rest_Voice measure 2]                               %! _comment_measure_numbers
+                                    R1 * 3/8                                               %! _make_multimeasure_rest_container
+            <BLANKLINE>
+                                }                                                          %! _make_multimeasure_rest_container
+            <BLANKLINE>
+                            >>                                                             %! _make_multimeasure_rest_container
             <BLANKLINE>
                             % [Music_Voice measure 3]                                      %! _comment_measure_numbers
                             R1 * 1/2                                                       %! _make_measure_silences

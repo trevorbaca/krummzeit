@@ -33,6 +33,7 @@ maker = baca.TimeSignatureMaker(
 time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
+    do_not_check_wellformedness=True,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     time_signatures=time_signatures,
@@ -159,7 +160,9 @@ maker(
 maker(
     ('perc', (2, 16)),
     baca.dynamic('ppp'),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     baca.markup(
         krummzeit.markup.fingertips(),
         ),
@@ -222,7 +225,10 @@ maker(
         ('ob', (1, 12)),
         ('cl', (1, 12)),
         ]),
-    baca.pitches(pcs),
+    baca.pitches(
+        pcs,
+        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 maker(

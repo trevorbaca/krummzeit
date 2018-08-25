@@ -37,7 +37,6 @@ H_Global_Skips = {                                                             %
 
     % [H Global_Skips measure 281 / measure 1]                                 %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
-    \mark #8                                                                   %! baca_rehearsal_mark:IndicatorCommand
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
@@ -46,6 +45,7 @@ H_Global_Skips = {                                                             %
 %@% ^ \baca-local-measure-number-markup "((1))"                                %! LOCAL_MEASURE_NUMBER_MARKUP:_label_measure_indices(3)
 %@% ^ \baca-stage-number-markup "[H.1]"                                        %! STAGE_NUMBER_MARKUP:_label_stage_numbers
 %@% ^ \baca-clock-time-markup "[13'04'']"                                      %! CLOCK_TIME_MARKUP:_label_clock_time
+    - \baca-rehearsal-mark-markup "H"                                          %! baca_rehearsal_mark:IndicatorCommand
 %@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "90"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \startTextSpan                                                             %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)

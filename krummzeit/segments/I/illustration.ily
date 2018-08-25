@@ -67,7 +67,7 @@ I_Global_Rests = {                                                             %
     R1 * 5/4                                                                   %! _make_global_rests
 
     % [I Global_Rests measure 313 / measure 23]                                %! _comment_measure_numbers
-    \once \override Score.TimeSignature.stencil = ##f                          %! baca_global_fermata:GlobalFermataCommand(2)
+    \baca-fermata-measure                                                      %! baca_global_fermata:GlobalFermataCommand(2)
     R1 * 1/4                                                                   %! _make_global_rests
     ^ \baca-very-long-fermata-markup                                           %! baca_global_fermata:GlobalFermataCommand(1)
 

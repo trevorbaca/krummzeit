@@ -170,12 +170,13 @@ class RegisterTransitionCommand(baca.Command):
 
     ### SPECIAL METHODS ###
 
-    def __call__(self, argument=None):
+    def __call__(self, argument=None, runtime=None):
         """
         Calls command on ``argument``.
 
         Returns none.
         """
+        self._runtime = runtime
         if argument is None:
             return
         if self.selector:

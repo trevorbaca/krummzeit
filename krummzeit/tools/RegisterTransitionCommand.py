@@ -143,11 +143,21 @@ class RegisterTransitionCommand(baca.Command):
 
     def __init__(
         self,
+        *,
+        match=None,
+        measures=None,
+        scope=None,
         selector='baca.leaves()',
         start_registration=None,
         stop_registration=None,
         ):
-        baca.Command.__init__(self, selector=selector)
+        baca.Command.__init__(
+            self,
+            match=match,
+            measures=measures,
+            scope=scope,
+            selector=selector,
+            )
         if start_registration is not None:
             assert isinstance(start_registration, baca.Registration)
         self._start_registration = start_registration

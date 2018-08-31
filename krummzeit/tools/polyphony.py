@@ -59,6 +59,7 @@ def polyphony(
 
     return baca.rhythm(
         division_maker=baca.SplitByDurationsDivisionCallback(
+            cyclic=True,
             durations=durations,
             pattern_rotation_index=rotation,
             remainder_fuse_threshold=fuse,

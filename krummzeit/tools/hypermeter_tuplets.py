@@ -15,6 +15,7 @@ def hypermeter_tuplets(
     return baca.rhythm(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=counts,
+            cyclic=True,
             ),
         rhythm_maker=rmakers.TupletRhythmMaker(
             denominator=(1, 4),

@@ -11,6 +11,7 @@ def detached_triplets():
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
+                cyclic=True,
                 durations=[(1, 4)],
                 remainder=abjad.Right,
                 ),

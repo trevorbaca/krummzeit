@@ -9,6 +9,7 @@ def right_remainder_quarters(*, dmask=None):
     """
     return baca.rhythm(
         division_maker=baca.SplitByDurationsDivisionCallback(
+            cyclic=True,
             durations=[(1, 4)],
             ),
         rhythm_maker=rmakers.NoteRhythmMaker(

@@ -25,6 +25,7 @@ def white_rhythm(
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
+                cyclic=True,
                 durations=durations,
                 remainder=remainder,
                 ),

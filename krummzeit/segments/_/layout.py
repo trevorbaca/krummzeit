@@ -2,8 +2,8 @@ import baca
 
 
 breaks = baca.breaks(
-    baca.page([1, 45, (15, (15, 20), (15, 20), (20, 20, 20),)]),
-    baca.page([7, 10, (15, (20, 25), (20, 25), (20, 20, 25),)]),
+    baca.page([1, 45, (20, (15, 20), (15, 20), (20, 20, 20),)]),
+    baca.page([7, 20, (20, (20, 25), (20, 25), (20, 20, 25),)]),
     )
 
 spacing = baca.scorewide_spacing(

@@ -20,7 +20,7 @@
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \autoPageBreaksOff                                                           %! BreakMeasureMap(1):BREAK
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #13 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 3/4                                                                     %! _make_global_skips(1)
         %@% - \baca-start-spm-left-only "[1/32]"                                         %! SPACING_MARKUP
@@ -61,7 +61,7 @@
             % [Page_Layout measure 19]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 7/4                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -95,7 +95,7 @@
             % [Page_Layout measure 23]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 5/8                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -145,7 +145,7 @@
             % [Page_Layout measure 29]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 3/2                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -179,7 +179,7 @@
             % [Page_Layout measure 33]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 11/8                                                                    %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -221,7 +221,7 @@
             % [Page_Layout measure 38]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 1                                                                       %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -255,7 +255,7 @@
             % [Page_Layout measure 42]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 2                                                                       %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -289,7 +289,7 @@
             % [Page_Layout measure 46]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 9/8                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -331,7 +331,7 @@
             % [Page_Layout measure 51]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 9/8                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -365,7 +365,7 @@
             % [Page_Layout measure 55]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 7/4                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -407,7 +407,7 @@
             % [Page_Layout measure 60]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 1/2                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -449,7 +449,7 @@
             % [Page_Layout measure 65]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 2                                                                       %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -491,7 +491,7 @@
             % [Page_Layout measure 70]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 9/8                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -541,7 +541,7 @@
             % [Page_Layout measure 76]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 5/4                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -583,7 +583,7 @@
             % [Page_Layout measure 81]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 9/8                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP
@@ -617,7 +617,7 @@
             % [Page_Layout measure 85]                                                   %! _comment_measure_numbers
             \baca-new-spacing-section #1 #32                                             %! HorizontalSpacingSpecifier(1):SPACING
             \noBreak                                                                     %! BreakMeasureMap(2):BREAK
-            \baca-lbsd #20 #'(10 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
+            \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)                                   %! BREAK:IndicatorCommand
             \pageBreak                                                                   %! BREAK:IndicatorCommand
             s1 * 3/4                                                                     %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                                         %! SPACING_MARKUP

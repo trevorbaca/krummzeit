@@ -197,7 +197,7 @@ metadata = abjad.OrderedDict(
                             abjad.Momento(
                                 context='Piano_Music_Voice',
                                 prototype='abjad.Dynamic',
-                                value='fff',
+                                value='\\baca-fff-poss',
                                 ),
                             ],
                         ),

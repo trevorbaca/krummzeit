@@ -1127,8 +1127,8 @@ B_Oboe_Music_Voice = {                                                         %
                     2
         }
     ~
-    ]                                                                          %! pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerCommand
+    ]                                                                          %! pizzicato_rhythm
     \startTrillSpan
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
@@ -1743,8 +1743,8 @@ B_Oboe_Music_Voice = {                                                         %
     [                                                                          %! pizzicato_rhythm
 
     f'8                                                                        %! pizzicato_rhythm
-    ]                                                                          %! pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerCommand
+    ]                                                                          %! pizzicato_rhythm
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 3/4 {                                                               %! pizzicato_rhythm

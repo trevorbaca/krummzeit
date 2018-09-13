@@ -147,18 +147,17 @@ maker(
 maker(
     ('pf', 4),
     baca.dynamic('fff'),
-    # TODO: release need for markup to happen after clusters:
-    krummzeit.clusters('tenor'),
     baca.markup(
         krummzeit.markup.catch_resonance(),
         ),
+    krummzeit.clusters('tenor'),
     krummzeit.single_cluster_piano_rhythm(),
     )
 
 maker(
     ('pf', 7),
     baca.clef('treble'),
-    baca.dynamic('fff'),
+    baca.dynamic('fff-poss'),
     baca.make_repeat_tied_notes(),
     baca.pitch('C#5'),
     baca.stem_tremolo(selector=baca.pleaves()),
@@ -174,7 +173,7 @@ maker(
 
 maker(
     ('perc', 7),
-    baca.dynamic('fff'),
+    baca.dynamic('fff-poss'),
     baca.make_repeat_tied_notes(),
     baca.markup('xylophone', boxed=True),
     baca.pitch('C#5'),

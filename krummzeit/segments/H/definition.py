@@ -132,7 +132,7 @@ maker(
 
 maker(
     ('pf', (1, 6)),
-    baca.clef('treble'),
+    #baca.clef('treble'),
     krummzeit.clusters('harpsichord'),
     )
 

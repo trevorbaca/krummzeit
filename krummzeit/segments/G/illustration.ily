@@ -2248,7 +2248,7 @@ G_Violin_Music_Voice = {                                                       %
         af'!8                                                                  %! glissando_rhythm
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         cs'!2                                                                  %! glissando_rhythm
         ~
@@ -2260,17 +2260,17 @@ G_Violin_Music_Voice = {                                                       %
 
         % [G Violin_Music_Voice measure 271 / measure 15]                      %! _comment_measure_numbers
         cs'!1                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         c'2.                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         d'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         f2                                                                     %! glissando_rhythm
         ~
@@ -2281,10 +2281,10 @@ G_Violin_Music_Voice = {                                                       %
 
         % [G Violin_Music_Voice measure 272 / measure 16]                      %! _comment_measure_numbers
         f8                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         bf'!2                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
@@ -2292,7 +2292,7 @@ G_Violin_Music_Voice = {                                                       %
     \times 6/7 {                                                               %! glissando_rhythm
 
         fs'!4                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         b'8.                                                                   %! glissando_rhythm
         ~
@@ -2302,10 +2302,10 @@ G_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! glissando_rhythm
 
         b'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         af'!2                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
@@ -2313,7 +2313,7 @@ G_Violin_Music_Voice = {                                                       %
 
         % [G Violin_Music_Voice measure 273 / measure 17]                      %! _comment_measure_numbers
         fs'!16                                                                 %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         b'4                                                                    %! glissando_rhythm
         ~
@@ -2324,16 +2324,16 @@ G_Violin_Music_Voice = {                                                       %
     \times 6/7 {                                                               %! glissando_rhythm
 
         b'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         a'8.                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     % [G Violin_Music_Voice measure 274 / measure 18]                          %! _comment_measure_numbers
     cs'!4                                                                      %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     d'2                                                                        %! glissando_rhythm
     ~
@@ -2341,10 +2341,10 @@ G_Violin_Music_Voice = {                                                       %
     \times 4/5 {                                                               %! glissando_rhythm
 
         d'16                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         a'4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
@@ -2352,7 +2352,7 @@ G_Violin_Music_Voice = {                                                       %
 
         % [G Violin_Music_Voice measure 275 / measure 19]                      %! _comment_measure_numbers
         cs''!2                                                                 %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         af'!4.                                                                 %! glissando_rhythm
         ~
@@ -2362,17 +2362,17 @@ G_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! glissando_rhythm
 
         af'!4                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         fs'!2                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         e''8                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         bf'!2                                                                  %! glissando_rhythm
         ~
@@ -2383,20 +2383,20 @@ G_Violin_Music_Voice = {                                                       %
 
         % [G Violin_Music_Voice measure 276 / measure 20]                      %! _comment_measure_numbers
         bf'!4                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         d''8.                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         c''4                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         g2                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! glissando_rhythm
@@ -2408,7 +2408,6 @@ G_Violin_Music_Voice = {                                                       %
         c'1.                                                                   %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         df'!1                                                                  %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
@@ -2470,7 +2469,7 @@ G_Viola_Music_Voice = {                                                        %
     ^ \markup { "subito ordinario" }                                           %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -2482,17 +2481,17 @@ G_Viola_Music_Voice = {                                                        %
 
     % [G Viola_Music_Voice measure 259 / measure 3]                            %! _comment_measure_numbers
     cqf!4                                                                      %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     d4.                                                                        %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Viola_Music_Voice measure 260 / measure 4]                            %! _comment_measure_numbers
     eqs!1..                                                                    %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     fqs!1..                                                                    %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     g4                                                                         %! fused_expanse
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2538,7 +2537,7 @@ G_Viola_Music_Voice = {                                                        %
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         ftqs!\breve                                                            %! hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2577,7 +2576,7 @@ G_Viola_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c2                                                                     %! glissando_rhythm
@@ -2592,7 +2591,7 @@ G_Viola_Music_Voice = {                                                        %
         c16                                                                    %! glissando_rhythm
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         e4                                                                     %! glissando_rhythm
         ~
@@ -2603,15 +2602,15 @@ G_Viola_Music_Voice = {                                                        %
 
         % [G Viola_Music_Voice measure 271 / measure 15]                       %! _comment_measure_numbers
         e2                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         fs!4.                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     f4                                                                         %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     af!2                                                                       %! glissando_rhythm
     ~
@@ -2619,10 +2618,10 @@ G_Viola_Music_Voice = {                                                        %
     \times 4/5 {                                                               %! glissando_rhythm
 
         af!8                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         cs!2                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
@@ -2630,7 +2629,7 @@ G_Viola_Music_Voice = {                                                        %
 
         % [G Viola_Music_Voice measure 272 / measure 16]                       %! _comment_measure_numbers
         e2                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         g4.                                                                    %! glissando_rhythm
         ~
@@ -2640,10 +2639,10 @@ G_Viola_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! glissando_rhythm
 
         g4..                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         a2..                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
@@ -2651,7 +2650,7 @@ G_Viola_Music_Voice = {                                                        %
 
         % [G Viola_Music_Voice measure 273 / measure 17]                       %! _comment_measure_numbers
         f16.                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         g4.                                                                    %! glissando_rhythm
         ~
@@ -2661,10 +2660,10 @@ G_Viola_Music_Voice = {                                                        %
     \times 4/7 {                                                               %! glissando_rhythm
 
         g4                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         af!8.                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
@@ -2672,7 +2671,7 @@ G_Viola_Music_Voice = {                                                        %
 
         % [G Viola_Music_Voice measure 274 / measure 18]                       %! _comment_measure_numbers
         c8                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         f4                                                                     %! glissando_rhythm
         ~
@@ -2682,17 +2681,17 @@ G_Viola_Music_Voice = {                                                        %
     \times 4/5 {                                                               %! glissando_rhythm
 
         f8                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         bf!2                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 4/7 {                                                               %! glissando_rhythm
 
         b4                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         d8.                                                                    %! glissando_rhythm
         ~
@@ -2703,20 +2702,20 @@ G_Viola_Music_Voice = {                                                        %
 
         % [G Viola_Music_Voice measure 275 / measure 19]                       %! _comment_measure_numbers
         d4                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         c'2                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         g4                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         f1                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! glissando_rhythm
@@ -2728,11 +2727,9 @@ G_Viola_Music_Voice = {                                                        %
         bqs,!4                                                                 %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c1                                                                     %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
     }                                                                          %! hypermeter_tuplets
 
@@ -2742,7 +2739,6 @@ G_Viola_Music_Voice = {                                                        %
         % [G Viola_Music_Voice measure 278 / measure 22]                       %! _comment_measure_numbers
         bqs,!4                                                                 %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c1                                                                     %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
@@ -2804,7 +2800,6 @@ G_Cello_Music_Voice = {                                                        %
     ^ \markup { "subito ordinario" }                                           %! baca_markup:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-    \glissando                                                                 %! baca_glissando:SpannerCommand
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -2815,29 +2810,22 @@ G_Cello_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     bqf,,!1                                                                    %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [G Cello_Music_Voice measure 259 / measure 3]                            %! _comment_measure_numbers
     c,4.                                                                       %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     dqs,!4                                                                     %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [G Cello_Music_Voice measure 260 / measure 4]                            %! _comment_measure_numbers
     eqs,!\breve                                                                %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     f,1..                                                                      %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [G Cello_Music_Voice measure 264 / measure 8]                            %! _comment_measure_numbers
     gf,!2.                                                                     %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     % [G Cello_Music_Voice measure 265 / measure 9]                            %! _comment_measure_numbers
     aqf,!4.                                                                    %! fused_expanse
-    \glissando                                                                 %! baca_glissando:SpannerCommand
 
     b,2.                                                                       %! fused_expanse
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2877,7 +2865,7 @@ G_Cello_Music_Voice = {                                                        %
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         atqs,!1                                                                %! hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2916,17 +2904,17 @@ G_Cello_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         bf,!4                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         f,16                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         d,4                                                                    %! glissando_rhythm
         ~
@@ -2936,10 +2924,10 @@ G_Cello_Music_Voice = {                                                        %
     \times 4/7 {                                                               %! glissando_rhythm
 
         d,4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         b,8.                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
@@ -2947,7 +2935,7 @@ G_Cello_Music_Voice = {                                                        %
 
         % [G Cello_Music_Voice measure 271 / measure 15]                       %! _comment_measure_numbers
         bf,!4                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         g,2                                                                    %! glissando_rhythm
         ~
@@ -2955,14 +2943,14 @@ G_Cello_Music_Voice = {                                                        %
     }                                                                          %! glissando_rhythm
 
     g,4                                                                        %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f,1                                                                        %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [G Cello_Music_Voice measure 272 / measure 16]                           %! _comment_measure_numbers
     b,2                                                                        %! glissando_rhythm
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     c4.                                                                        %! glissando_rhythm
     ~
@@ -2970,10 +2958,10 @@ G_Cello_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! glissando_rhythm
 
         c4                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         bf,!2                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
@@ -2981,7 +2969,7 @@ G_Cello_Music_Voice = {                                                        %
 
         % [G Cello_Music_Voice measure 273 / measure 17]                       %! _comment_measure_numbers
         e,16                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bf,!4                                                                  %! glissando_rhythm
@@ -3004,14 +2992,14 @@ G_Cello_Music_Voice = {                                                        %
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ]                                                                      %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         c,8                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         b,4                                                                    %! glissando_rhythm
         ~
@@ -3022,7 +3010,7 @@ G_Cello_Music_Voice = {                                                        %
 
         % [G Cello_Music_Voice measure 274 / measure 18]                       %! _comment_measure_numbers
         b,16                                                                   %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af,!4                                                                  %! glissando_rhythm
@@ -3038,7 +3026,7 @@ G_Cello_Music_Voice = {                                                        %
         af,!2                                                                  %! glissando_rhythm
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         c4.                                                                    %! glissando_rhythm
         ~
@@ -3049,17 +3037,17 @@ G_Cello_Music_Voice = {                                                        %
 
         % [G Cello_Music_Voice measure 275 / measure 19]                       %! _comment_measure_numbers
         c2                                                                     %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         f,1                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         b,8                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         f,2                                                                    %! glissando_rhythm
         ~
@@ -3070,17 +3058,17 @@ G_Cello_Music_Voice = {                                                        %
 
         % [G Cello_Music_Voice measure 276 / measure 20]                       %! _comment_measure_numbers
         f,4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         b,,8.                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
 
     \times 2/3 {                                                               %! glissando_rhythm
 
         c,8                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         b,,4                                                                   %! glissando_rhythm
         ~
@@ -3090,10 +3078,10 @@ G_Cello_Music_Voice = {                                                        %
     \times 4/5 {                                                               %! glissando_rhythm
 
         b,,16                                                                  %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
 
         c,4                                                                    %! glissando_rhythm
-        \glissando                                                             %! baca_glissando:SpannerCommand
+        \glissando                                                             %! baca_glissando
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! glissando_rhythm
@@ -3105,7 +3093,6 @@ G_Cello_Music_Voice = {                                                        %
         b,,2                                                                   %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         ^ \markup { "subito ordinario" }                                       %! baca_markup:IndicatorCommand
-        \glissando                                                             %! baca_glissando:SpannerCommand
 
         c,\breve                                                               %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand

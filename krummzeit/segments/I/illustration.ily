@@ -4826,75 +4826,75 @@ I_Violin_Music_Voice = {                                                       %
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     cs''!4                                                                     %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     ef''!4                                                                     %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     fs''!4                                                                     %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     e''8                                                                       %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Violin_Music_Voice measure 296 / measure 6]                           %! _comment_measure_numbers
     a''4                                                                       %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     ef''!4                                                                     %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     a'4                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     e''4                                                                       %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     bf'!8                                                                      %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Violin_Music_Voice measure 297 / measure 7]                           %! _comment_measure_numbers
     d''4                                                                       %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     a'4                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     e'8                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Violin_Music_Voice measure 298 / measure 8]                           %! _comment_measure_numbers
     bf'!4                                                                      %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     d'4                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     e'8                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Violin_Music_Voice measure 299 / measure 9]                           %! _comment_measure_numbers
     d'4                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
@@ -4907,7 +4907,7 @@ I_Violin_Music_Voice = {                                                       %
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     ef'!4                                                                      %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
@@ -5258,58 +5258,58 @@ I_Viola_Music_Voice = {                                                        %
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     bf''!4                                                                     %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f''4                                                                       %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     af''!4                                                                     %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     b'8                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Viola_Music_Voice measure 296 / measure 6]                            %! _comment_measure_numbers
     fs''!4                                                                     %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f'4                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     af'!4                                                                      %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     b'4                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     g'8                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Viola_Music_Voice measure 297 / measure 7]                            %! _comment_measure_numbers
     cs'!4                                                                      %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     af'!4                                                                      %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     b8                                                                         %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Viola_Music_Voice measure 298 / measure 8]                            %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
@@ -5323,24 +5323,24 @@ I_Viola_Music_Voice = {                                                        %
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     - \tweak color #red                                                        %! _color_repeat_pitch_classes_
     ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     ef'!8                                                                      %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Viola_Music_Voice measure 299 / measure 9]                            %! _comment_measure_numbers
     cs'!4                                                                      %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     ef!4                                                                       %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     fs!4                                                                       %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     b4                                                                         %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
@@ -5687,84 +5687,84 @@ I_Cello_Music_Voice = {                                                        %
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     e''4                                                                       %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     g''4                                                                       %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f''4                                                                       %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     bf'!8                                                                      %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Cello_Music_Voice measure 296 / measure 6]                            %! _comment_measure_numbers
     e'4                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     g'4                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f'4                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     bf'!4                                                                      %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     ef'!8                                                                      %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Cello_Music_Voice measure 297 / measure 7]                            %! _comment_measure_numbers
     bf'!4                                                                      %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f'4                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     cs'!8                                                                      %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Cello_Music_Voice measure 298 / measure 8]                            %! _comment_measure_numbers
     ef'!4                                                                      %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     fs'!4                                                                      %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f8                                                                         %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     % [I Cello_Music_Voice measure 299 / measure 9]                            %! _comment_measure_numbers
     bf!4                                                                       %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     f4                                                                         %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     e4                                                                         %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    \glissando                                                                 %! baca_glissando:SpannerCommand
+    \glissando                                                                 %! baca_glissando
 
     bf!4                                                                       %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand

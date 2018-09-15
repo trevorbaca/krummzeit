@@ -1259,7 +1259,7 @@ I_Piano_Music_Voice = {                                                        %
 
     \times 2/3 {                                                               %! opening_triplets
 
-        \ottava #-1                                                            %! baca_ottava_bassa:SpannerCommand
+        \ottava -1                                                             %! baca_ottava_bassa:SpannerIndicatorCommand(1)
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -4292,7 +4292,7 @@ I_Piano_Music_Voice = {                                                        %
                     }
             }
         ]                                                                      %! opening_triplets
-        \ottava #0                                                             %! baca_ottava_bassa:SpannerCommand
+        \ottava 0                                                              %! baca_ottava_bassa:SpannerIndicatorCommand(2)
 
     }                                                                          %! opening_triplets
 

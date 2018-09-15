@@ -3472,7 +3472,7 @@ E_Piano_Music_Voice = {                                                        %
     }                                                                          %! silver_points
 
     % [E Piano_Music_Voice measure 226 / measure 27]                           %! _comment_measure_numbers
-    \ottava #-1                                                                %! baca_ottava_bassa:SpannerCommand
+    \ottava -1                                                                 %! baca_ottava_bassa:SpannerIndicatorCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -3519,7 +3519,7 @@ E_Piano_Music_Voice = {                                                        %
     r32                                                                        %! rest_delimited_repeated_duration_notes
 
     bf,,,!8..                                                                  %! rest_delimited_repeated_duration_notes
-    \ottava #0                                                                 %! baca_ottava_bassa:SpannerCommand
+    \ottava 0                                                                  %! baca_ottava_bassa:SpannerIndicatorCommand(2)
 
     r32                                                                        %! rest_delimited_repeated_duration_notes
 
@@ -3537,7 +3537,7 @@ E_Piano_Music_Voice = {                                                        %
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
     \times 7/8 {                                                               %! pizzicato_rhythm
 
-        \ottava #1                                                             %! baca_ottava:SpannerCommand
+        \ottava 1                                                              %! baca_ottava:SpannerIndicatorCommand(1)
         c''''8                                                                 %! pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -3631,7 +3631,7 @@ E_Piano_Music_Voice = {                                                        %
 
     g''''4                                                                     %! pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    \ottava #0                                                                 %! baca_ottava:SpannerCommand
+    \ottava 0                                                                  %! baca_ottava:SpannerIndicatorCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 

@@ -1073,7 +1073,7 @@ C_Piano_Music_Voice = {                                                        %
                 #16                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                 Pf.                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             }                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-        \ottava #1                                                             %! baca_ottava:SpannerCommand
+        \ottava 1                                                              %! baca_ottava:SpannerIndicatorCommand(1)
         \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
@@ -1125,7 +1125,7 @@ C_Piano_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        \ottava #0                                                             %! baca_ottava:SpannerCommand
+        \ottava 0                                                              %! baca_ottava:SpannerIndicatorCommand(2)
 
     }                                                                          %! silver_points
 
@@ -1294,8 +1294,8 @@ C_Piano_Music_Voice = {                                                        %
     R1 * 1/4                                                                   %! _make_measure_silences
 
     % [C Piano_Music_Voice measure 141 / measure 9]                            %! _comment_measure_numbers
+    \ottava -1                                                                 %! baca_ottava_bassa:SpannerIndicatorCommand(1)
     \override DynamicLineSpanner.staff-padding = #'10                          %! baca_dls_staff_padding:OverrideCommand(1)
-    \ottava #-1                                                                %! baca_ottava_bassa:SpannerCommand
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
@@ -1413,7 +1413,7 @@ C_Piano_Music_Voice = {                                                        %
                     \flat
                 }
         }
-    \ottava #0                                                                 %! baca_ottava_bassa:SpannerCommand
+    \ottava 0                                                                  %! baca_ottava_bassa:SpannerIndicatorCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1437,7 +1437,7 @@ C_Piano_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [C Piano_Music_Voice measure 146 / measure 14]                           %! _comment_measure_numbers
-    \ottava #-1                                                                %! baca_ottava_bassa:SpannerCommand
+    \ottava -1                                                                 %! baca_ottava_bassa:SpannerIndicatorCommand(1)
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
@@ -1512,8 +1512,8 @@ C_Piano_Music_Voice = {                                                        %
                     \flat
                 }
         }
+    \ottava 0                                                                  %! baca_ottava_bassa:SpannerIndicatorCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
-    \ottava #0                                                                 %! baca_ottava_bassa:SpannerCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1869,7 +1869,7 @@ C_Violin_Music_Voice = {                                                       %
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         r8                                                                     %! silver_points
 
-        \ottava #1                                                             %! baca_ottava:SpannerCommand
+        \ottava 1                                                              %! baca_ottava:SpannerIndicatorCommand(1)
         e''''8                                                                 %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -1909,7 +1909,7 @@ C_Violin_Music_Voice = {                                                       %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        \ottava #0                                                             %! baca_ottava:SpannerCommand
+        \ottava 0                                                              %! baca_ottava:SpannerIndicatorCommand(2)
 
     }                                                                          %! silver_points
 
@@ -2207,7 +2207,7 @@ C_Viola_Music_Voice = {                                                        %
         r8                                                                     %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        \ottava #1                                                             %! baca_ottava:SpannerCommand
+        \ottava 1                                                              %! baca_ottava:SpannerIndicatorCommand(1)
         ef'''!4                                                                %! silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
@@ -2237,7 +2237,7 @@ C_Viola_Music_Voice = {                                                        %
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ]                                                                      %! silver_points
-        \ottava #0                                                             %! baca_ottava:SpannerCommand
+        \ottava 0                                                              %! baca_ottava:SpannerIndicatorCommand(2)
 
     }                                                                          %! silver_points
 

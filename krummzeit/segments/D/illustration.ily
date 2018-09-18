@@ -3567,7 +3567,6 @@ D_Percussion_Music_Voice = {                                                   %
     \times 9/13 {                                                              %! sponge_rhythm
 
         % [D Percussion_Music_Voice measure 158 / measure 7]                   %! _comment_measure_numbers
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2..                                                                  %! sponge_rhythm
         \repeatTie
 
@@ -3593,7 +3592,6 @@ D_Percussion_Music_Voice = {                                                   %
         c'8                                                                    %! sponge_rhythm
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -3612,7 +3610,6 @@ D_Percussion_Music_Voice = {                                                   %
         c'8                                                                    %! sponge_rhythm
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -3625,7 +3622,6 @@ D_Percussion_Music_Voice = {                                                   %
     }                                                                          %! sponge_rhythm
 
     % [D Percussion_Music_Voice measure 162 / measure 11]                      %! _comment_measure_numbers
-    \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                     %! _shorten_long_repeat_ties
     c'4.                                                                       %! sponge_rhythm
     \repeatTie
 
@@ -3639,7 +3635,6 @@ D_Percussion_Music_Voice = {                                                   %
         c'8                                                                    %! sponge_rhythm
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2..                                                                  %! sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -3652,7 +3647,6 @@ D_Percussion_Music_Voice = {                                                   %
         c'8                                                                    %! sponge_rhythm
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -3665,7 +3659,6 @@ D_Percussion_Music_Voice = {                                                   %
     }                                                                          %! sponge_rhythm
 
     % [D Percussion_Music_Voice measure 165 / measure 14]                      %! _comment_measure_numbers
-    \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                     %! _shorten_long_repeat_ties
     c'4.                                                                       %! sponge_rhythm
     \repeatTie
 
@@ -3686,7 +3679,6 @@ D_Percussion_Music_Voice = {                                                   %
         c'8                                                                    %! sponge_rhythm
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 

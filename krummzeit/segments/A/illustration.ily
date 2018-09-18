@@ -6389,7 +6389,6 @@ A_Percussion_Music_Voice = {                                                   %
     }                                                                          %! sponge_rhythm
 
     % [A Percussion_Music_Voice measure 41 / measure 28]                       %! _comment_measure_numbers
-    \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                     %! _shorten_long_repeat_ties
     c'4.                                                                       %! sponge_rhythm
     \repeatTie
 
@@ -6423,7 +6422,6 @@ A_Percussion_Music_Voice = {                                                   %
     \times 3/5 {                                                               %! sponge_rhythm
 
         % [A Percussion_Music_Voice measure 43 / measure 30]                   %! _comment_measure_numbers
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2..                                                                  %! sponge_rhythm
         \repeatTie
 
@@ -6446,7 +6444,6 @@ A_Percussion_Music_Voice = {                                                   %
         c'8                                                                    %! sponge_rhythm
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
@@ -6465,7 +6462,6 @@ A_Percussion_Music_Voice = {                                                   %
         c'8                                                                    %! sponge_rhythm
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         c'2                                                                    %! sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 

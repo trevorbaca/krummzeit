@@ -1006,9 +1006,8 @@ i_Violin_Music_Voice = {                                                       %
 
         d''8                                                                   %! glissando_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         d''4                                                                   %! glissando_rhythm
-        \repeatTie                                                             %! baca_repeat_tie_repeat_pitches:SpannerCommand
+        \repeatTie                                                             %! baca_repeat_tie_repeat_pitches
         \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
@@ -1303,7 +1302,6 @@ i_Viola_Music_Voice = {                                                        %
         [                                                                      %! glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         ef!8                                                                   %! glissando_rhythm
         ]                                                                      %! glissando_rhythm
 
@@ -1311,9 +1309,8 @@ i_Viola_Music_Voice = {                                                        %
 
     \times 4/7 {                                                               %! glissando_rhythm
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         ef!4                                                                   %! glissando_rhythm
-        \repeatTie                                                             %! baca_repeat_tie_repeat_pitches:SpannerCommand
+        \repeatTie                                                             %! baca_repeat_tie_repeat_pitches
         \glissando                                                             %! baca_glissando
 
         af!8.                                                                  %! glissando_rhythm

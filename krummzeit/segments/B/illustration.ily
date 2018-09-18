@@ -1033,8 +1033,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1052,8 +1052,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1126,8 +1126,8 @@ B_Oboe_Music_Voice = {                                                         %
                 \finger
                     2
         }
-    ~
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
+    ~
     ]                                                                          %! pizzicato_rhythm
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
@@ -1174,8 +1174,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1193,8 +1193,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1258,8 +1258,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1362,8 +1362,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1464,8 +1464,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1496,8 +1496,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1621,8 +1621,8 @@ B_Oboe_Music_Voice = {                                                         %
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
         bf''!8                                                                 %! pizzicato_rhythm
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1691,8 +1691,8 @@ B_Oboe_Music_Voice = {                                                         %
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
         ef'''!8                                                                %! pizzicato_rhythm
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1732,8 +1732,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -1842,8 +1842,8 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -3766,8 +3766,8 @@ B_Violin_Music_Voice = {                                                       %
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
         c''8                                                                   %! pizzicato_rhythm
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -3782,8 +3782,8 @@ B_Violin_Music_Voice = {                                                       %
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
         a''8                                                                   %! pizzicato_rhythm
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -3843,8 +3843,8 @@ B_Violin_Music_Voice = {                                                       %
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
         cs''!4                                                                 %! pizzicato_rhythm
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -3856,8 +3856,8 @@ B_Violin_Music_Voice = {                                                       %
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     cs'''!8                                                                    %! pizzicato_rhythm
-    ~
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
+    ~
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     \times 4/5 {                                                               %! pizzicato_rhythm
@@ -3887,8 +3887,8 @@ B_Violin_Music_Voice = {                                                       %
         af''!4                                                                 %! pizzicato_rhythm
 
         a''4.                                                                  %! pizzicato_rhythm
-        ~
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     }                                                                          %! pizzicato_rhythm
@@ -3896,8 +3896,8 @@ B_Violin_Music_Voice = {                                                       %
     a''8                                                                       %! pizzicato_rhythm
 
     c'''4                                                                      %! pizzicato_rhythm
-    ~
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
+    ~
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm

@@ -3771,7 +3771,6 @@ E_Percussion_Music_Voice = {                                                   %
     \times 3/5 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 204 / measure 5]                   %! _comment_measure_numbers
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c4.                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
@@ -3820,7 +3819,6 @@ E_Percussion_Music_Voice = {                                                   %
     \times 9/13 {                                                              %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 207 / measure 8]                   %! _comment_measure_numbers
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c4.                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
@@ -3855,7 +3853,6 @@ E_Percussion_Music_Voice = {                                                   %
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2..                                                                   %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
@@ -3871,7 +3868,6 @@ E_Percussion_Music_Voice = {                                                   %
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2                                                                     %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
@@ -3888,7 +3884,6 @@ E_Percussion_Music_Voice = {                                                   %
     }                                                                          %! sponge_rhythm
 
     % [E Percussion_Music_Voice measure 211 / measure 12]                      %! _comment_measure_numbers
-    \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                     %! _shorten_long_repeat_ties
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4.                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
@@ -3930,7 +3925,6 @@ E_Percussion_Music_Voice = {                                                   %
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \shape #'((2 . 0) (1 . 0) (0.5 . 0) (0 . 0)) RepeatTie                 %! _shorten_long_repeat_ties
         \baca-unpitched-music-warning                                          %! _color_unpitched_notes
         c2                                                                     %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand

@@ -37,7 +37,7 @@ metadata = abjad.OrderedDict(
                 'Cello_Rest_Voice',
                 ],
             ),
-        ('duration', "3'25''"),
+        ('duration', "3'22''"),
         ('first_measure_number', 152),
         ('last_measure_number', 199),
         (
@@ -313,7 +313,7 @@ metadata = abjad.OrderedDict(
                 ),
             ),
         ('start_clock_time', "6'01''"),
-        ('stop_clock_time', "9'26''"),
+        ('stop_clock_time', "9'23''"),
         (
             'time_signatures',
             [

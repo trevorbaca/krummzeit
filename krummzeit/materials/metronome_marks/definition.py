@@ -1,14 +1,6 @@
 import abjad
 
 
-markups = []
-markups.append(abjad.Markup.abjad_metronome_mark(2, 0, 1, 72))
-markups.append(abjad.Markup.hspace(-1))
-markups.append(abjad.Markup('!').upright())
-markups.append(abjad.Markup.hspace(1.5))
-markups.append(abjad.Markup.abjad_metronome_mark(2, 0, 1, 108))
-custom_72_108_markup = abjad.Markup.line(markups)
-
 metronome_marks = abjad.OrderedDict(
     [
         (
@@ -36,7 +28,10 @@ metronome_marks = abjad.OrderedDict(
             abjad.MetronomeMark(
                 reference_duration=(1, 4),
                 units_per_minute=108,
-                custom_markup=custom_72_108_markup,
+                custom_markup=abjad.Markup.from_literal(
+                    r'\krummzeit-seventy-two-subito-one-hundred-eight-markup',
+                    literal=True,
+                    ),
                 ),
             ),
         (

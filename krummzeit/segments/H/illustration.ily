@@ -1,34 +1,34 @@
 H_Global_Rests = {                                                             %! extern
 
     % [H Global_Rests measure 281 / measure 1]                                 %! _comment_measure_numbers
-    R1 * 7/8                                                                   %! _make_global_rests
+    R1 * 7/8                                                                   %! _make_global_rests(1)
 
     % [H Global_Rests measure 282 / measure 2]                                 %! _comment_measure_numbers
-    R1 * 3/2                                                                   %! _make_global_rests
+    R1 * 3/2                                                                   %! _make_global_rests(1)
 
     % [H Global_Rests measure 283 / measure 3]                                 %! _comment_measure_numbers
-    R1 * 7/4                                                                   %! _make_global_rests
+    R1 * 7/4                                                                   %! _make_global_rests(1)
 
     % [H Global_Rests measure 284 / measure 4]                                 %! _comment_measure_numbers
-    R1 * 7/4                                                                   %! _make_global_rests
+    R1 * 7/4                                                                   %! _make_global_rests(1)
 
     % [H Global_Rests measure 285 / measure 5]                                 %! _comment_measure_numbers
-    R1 * 3/4                                                                   %! _make_global_rests
+    R1 * 3/4                                                                   %! _make_global_rests(1)
 
     % [H Global_Rests measure 286 / measure 6]                                 %! _comment_measure_numbers
-    R1 * 11/8                                                                  %! _make_global_rests
+    R1 * 11/8                                                                  %! _make_global_rests(1)
 
     % [H Global_Rests measure 287 / measure 7]                                 %! _comment_measure_numbers
-    R1 * 5/8                                                                   %! _make_global_rests
+    R1 * 5/8                                                                   %! _make_global_rests(1)
 
     % [H Global_Rests measure 288 / measure 8]                                 %! _comment_measure_numbers
-    R1 * 1                                                                     %! _make_global_rests
+    R1 * 1                                                                     %! _make_global_rests(1)
 
     % [H Global_Rests measure 289 / measure 9]                                 %! _comment_measure_numbers
-    R1 * 1/2                                                                   %! _make_global_rests
+    R1 * 1/2                                                                   %! _make_global_rests(1)
 
     % [H Global_Rests measure 290 / measure 10]                                %! _comment_measure_numbers
-    R1 * 7/4                                                                   %! _make_global_rests
+    R1 * 7/4                                                                   %! _make_global_rests(1)
 
 }                                                                              %! extern
 

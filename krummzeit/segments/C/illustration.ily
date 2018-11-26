@@ -844,7 +844,7 @@ C_Oboe_Music_Voice = {                                                         %
     R1 * 1/4                                                                   %! _make_measure_silences
 
     % [C Oboe_Music_Voice measure 146 / measure 14]                            %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'5                           %! baca_dls_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #5                            %! baca_dls_staff_padding:OverrideCommand(1)
     \override Stem.direction = #up                                             %! baca_stem_up:OverrideCommand(1)
     b1                                                                         %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1295,7 +1295,7 @@ C_Piano_Music_Voice = {                                                        %
 
     % [C Piano_Music_Voice measure 141 / measure 9]                            %! _comment_measure_numbers
     \ottava -1                                                                 %! baca_ottava_bassa:SpannerIndicatorCommand(1)
-    \override DynamicLineSpanner.staff-padding = #'10                          %! baca_dls_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #10                           %! baca_dls_staff_padding:OverrideCommand(1)
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
@@ -1692,7 +1692,7 @@ C_Percussion_Music_Voice = {                                                   %
     R1 * 1/4                                                                   %! _make_measure_silences
 
     % [C Percussion_Music_Voice measure 146 / measure 14]                      %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #'6                           %! baca_dls_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
     \baca-unpitched-music-warning                                              %! _color_unpitched_notes
     c4                                                                         %! baca_make_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -1865,7 +1865,7 @@ C_Violin_Music_Voice = {                                                       %
     \times 5/6 {                                                               %! silver_points
 
         % [C Violin_Music_Voice measure 137 / measure 5]                       %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                       %! baca_dls_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         r8                                                                     %! silver_points
 
@@ -2196,7 +2196,7 @@ C_Viola_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! silver_points
 
         % [C Viola_Music_Voice measure 137 / measure 5]                        %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                       %! baca_dls_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
@@ -2531,7 +2531,7 @@ C_Cello_Music_Voice = {                                                        %
     \times 7/4 {                                                               %! silver_points
 
         % [C Cello_Music_Voice measure 137 / measure 5]                        %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #'8                       %! baca_dls_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #8                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_137:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)

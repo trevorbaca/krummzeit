@@ -684,7 +684,7 @@ i_Percussion_Music_Voice = {                                                   %
                     #16                                                        %! baca_start_markup:-PARTS:IndicatorCommand
                     Percussion                                                 %! baca_start_markup:-PARTS:IndicatorCommand
                 }                                                              %! baca_start_markup:-PARTS:IndicatorCommand
-            \override DynamicLineSpanner.padding = #'4                         %! baca_dls_padding:OverrideCommand(1)
+            \override DynamicLineSpanner.padding = #4                          %! baca_dls_padding:OverrideCommand(1)
             \override TupletBracket.padding = #2                               %! baca_tuplet_bracket_down:OverrideCommand(1)
             \clef "treble"                                                     %! DEFAULT_CLEF:_set_status_tag:attach_defaults
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
@@ -872,7 +872,7 @@ i_Violin_Music_Voice = {                                                       %
             #16                                                                %! baca_start_markup:-PARTS:IndicatorCommand
             Violin                                                             %! baca_start_markup:-PARTS:IndicatorCommand
         }                                                                      %! baca_start_markup:-PARTS:IndicatorCommand
-    \override DynamicLineSpanner.padding = #'4                                 %! baca_dls_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #4                                  %! baca_dls_padding:OverrideCommand(1)
     \override TupletBracket.padding = #2                                       %! baca_tuplet_bracket_down:OverrideCommand(1)
     \clef "treble"                                                             %! DEFAULT_CLEF:_set_status_tag:attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
@@ -1128,7 +1128,7 @@ i_Viola_Music_Voice = {                                                        %
             #16                                                                %! baca_start_markup:-PARTS:IndicatorCommand
             Viola                                                              %! baca_start_markup:-PARTS:IndicatorCommand
         }                                                                      %! baca_start_markup:-PARTS:IndicatorCommand
-    \override DynamicLineSpanner.padding = #'4                                 %! baca_dls_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #4                                  %! baca_dls_padding:OverrideCommand(1)
     \override TupletBracket.padding = #2                                       %! baca_tuplet_bracket_down:OverrideCommand(1)
     \clef "alto"                                                               %! DEFAULT_CLEF:_set_status_tag:attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)
@@ -1381,7 +1381,7 @@ i_Cello_Music_Voice = {                                                        %
             #16                                                                %! baca_start_markup:-PARTS:IndicatorCommand
             Cello                                                              %! baca_start_markup:-PARTS:IndicatorCommand
         }                                                                      %! baca_start_markup:-PARTS:IndicatorCommand
-    \override DynamicLineSpanner.padding = #'4                                 %! baca_dls_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #4                                  %! baca_dls_padding:OverrideCommand(1)
     \override TupletBracket.padding = #2                                       %! baca_tuplet_bracket_down:OverrideCommand(1)
     \clef "bass"                                                               %! DEFAULT_CLEF:_set_status_tag:attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:_attach_color_literal(2)

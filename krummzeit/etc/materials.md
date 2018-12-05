@@ -1,4 +1,5 @@
-APPENDIX I: MATERIALS SUMMARY
+MATERIALS
+=========
 
     (1°)
     1.1 "modulated oboe"
@@ -115,3 +116,21 @@ APPENDIX I: MATERIALS SUMMARY
     14.1 "violin reiteration storm"
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
+
+MATERIALS BY SEGMENT
+====================
+
+    (1)  "piano clusters"               [A], [C], [E]
+    (2)  "magic oboe melodrama"         [A], [D], [H] 
+    (3)  "myrkr"                        [B], [E], [J]
+    (4)  "third octave interweave"      [F], [F], [K]
+    (5)  "glissando thicket"            [E], [F], [H]
+    (6)  "ornamented oboe writing"      [A], [C], [C], [F]
+    (7)  "piano+xylophone points"       [C], [E], [F]
+    (8)  "piano cluster sea storm"      [A], [D], [J]
+    (9)  "pointillism"                  [B], [D], [F], [J]
+    (10) "unrestrained open strings"    [C], [D], [G]
+    (11) "harpsichord clusters"         [A], [I], [J]
+    (12) "fifth octave interweave"      [B], [G], [H] 
+    (13) "grace / sustain lines"        n/a
+    (14) "reiteration storm"            [A], [H], [I], [K]

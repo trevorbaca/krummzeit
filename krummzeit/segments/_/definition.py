@@ -216,7 +216,9 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (1, 2)),
     baca.dynamic('fff'),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(
+        selector=baca.pleaves(exclude=baca.enums.HIDDEN),
+        ),
     )
 
 pcs = krummzeit.violet_pitch_classes.get_payload()

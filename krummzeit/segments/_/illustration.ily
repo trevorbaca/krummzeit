@@ -946,7 +946,6 @@ i_Violin_Music_Voice = {                                                       %
             % [_ Violin_Music_Voice measure 2]                                 %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 9/8                                                          %! _make_multimeasure_rest_container
-            :32                                                                %! baca_stem_tremolo:IndicatorCommand
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -1202,7 +1201,6 @@ i_Viola_Music_Voice = {                                                        %
             % [_ Viola_Music_Voice measure 2]                                  %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 9/8                                                          %! _make_multimeasure_rest_container
-            :32                                                                %! baca_stem_tremolo:IndicatorCommand
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -1455,7 +1453,6 @@ i_Cello_Music_Voice = {                                                        %
             % [_ Cello_Music_Voice measure 2]                                  %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             c'1 * 9/8                                                          %! _make_multimeasure_rest_container
-            :32                                                                %! baca_stem_tremolo:IndicatorCommand
 
         }                                                                      %! _make_multimeasure_rest_container
 

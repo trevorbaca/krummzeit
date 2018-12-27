@@ -3483,7 +3483,7 @@ D_Percussion_Music_Voice = {                                                   %
 
             % [D Percussion_Music_Voice measure 155 / measure 4]               %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c'1 * 3/4                                                          %! _make_multimeasure_rest_container
+            c1 * 3/4                                                           %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -3661,7 +3661,7 @@ D_Percussion_Music_Voice = {                                                   %
 
             % [D Percussion_Music_Voice measure 168 / measure 17]              %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c'1 * 9/8                                                          %! _make_multimeasure_rest_container
+            c1 * 9/8                                                           %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 

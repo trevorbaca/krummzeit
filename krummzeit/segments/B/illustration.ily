@@ -2140,7 +2140,7 @@ B_Clarinet_Music_Voice = {                                                     %
 
             % [B Clarinet_Music_Voice measure 117 / measure 29]                %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            b'1 * 1/4                                                          %! _make_multimeasure_rest_container
+            a1 * 1/4                                                           %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -2155,10 +2155,10 @@ B_Clarinet_Music_Voice = {                                                     %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [B Clarinet_Music_Voice measure 118 / measure 30]                        %! _comment_measure_numbers
-    ctqs''!4.                                                                  %! white_rhythm
+    b'4.                                                                       %! white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    d''4.                                                                      %! white_rhythm
+    ctqs''!4.                                                                  %! white_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 

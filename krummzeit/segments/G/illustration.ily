@@ -2505,7 +2505,7 @@ G_Viola_Music_Voice = {                                                        %
 
             % [G Viola_Music_Voice measure 264 / measure 8]                    %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            bf,!1 * 3/4                                                        %! _make_multimeasure_rest_container
+            c'1 * 3/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 

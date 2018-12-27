@@ -418,7 +418,7 @@ H_Clarinet_Music_Voice = {                                                     %
 
             % [H Clarinet_Music_Voice measure 286 / measure 6]                 %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            b'1 * 11/8                                                         %! _make_multimeasure_rest_container
+            a1 * 11/8                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 

@@ -2765,7 +2765,7 @@ E_Clarinet_Music_Voice = {                                                     %
 
             % [E Clarinet_Music_Voice measure 224 / measure 25]                %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c1 * 3/4                                                           %! _make_multimeasure_rest_container
+            d''1 * 3/4                                                         %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
@@ -2853,7 +2853,7 @@ E_Clarinet_Music_Voice = {                                                     %
 
             % [E Clarinet_Music_Voice measure 230 / measure 31]                %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c1 * 1                                                             %! _make_multimeasure_rest_container
+            d''1 * 1                                                           %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 

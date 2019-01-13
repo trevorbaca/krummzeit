@@ -11,5 +11,5 @@ def displacement():
             0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
             -1, -1, -1, -1,
             ],
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         )

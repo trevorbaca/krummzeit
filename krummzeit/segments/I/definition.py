@@ -201,7 +201,7 @@ maker(
         ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         ),
     )
 
@@ -274,7 +274,7 @@ maker(
         ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         ),
     )
 

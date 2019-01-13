@@ -120,7 +120,7 @@ maker(
 maker(
     'perc',
     baca.accent(
-        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
         ),
     baca.not_parts(baca.bar_extent_zero()),
     baca.staff_position(0),
@@ -352,7 +352,7 @@ maker(
     baca.pitches(
         krummzeit.indigo_pitch_classes.get_payload(),
         allow_repeats=True,
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         )
     )
 
@@ -366,7 +366,7 @@ maker(
         ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         ),
     )
 
@@ -381,7 +381,7 @@ maker(
         ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.enums.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
         ),
     )
 
@@ -455,7 +455,7 @@ maker(
 maker(
     (['vn', 'ob', 'cl'], (1, 37)),
     baca.staccato(
-        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
         ),
     )
 

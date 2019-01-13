@@ -7,5 +7,5 @@ def color_fingerings():
     """
     return baca.color_fingerings(
         [0, 1, 2, 1],
-        selector=baca.pheads(exclude=baca.enums.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
         )

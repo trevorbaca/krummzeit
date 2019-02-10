@@ -28,7 +28,7 @@ metronome_marks = abjad.OrderedDict(
             abjad.MetronomeMark(
                 reference_duration=(1, 4),
                 units_per_minute=108,
-                custom_markup=abjad.Markup.from_literal(
+                custom_markup=abjad.Markup(
                     r'\krummzeit-seventy-two-subito-one-hundred-eight-markup',
                     literal=True,
                     ),

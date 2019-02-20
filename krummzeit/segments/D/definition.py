@@ -234,7 +234,7 @@ maker(
     ('perc', (1, 5)),
     baca.dynamic(
         'pp',
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.pheads(exclude=abjad.const.HIDDEN),
         ),
     )
 
@@ -248,7 +248,7 @@ maker(
         ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         )
     )
 
@@ -277,7 +277,7 @@ maker(
     baca.dynamic('"mp"'),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.runs(exclude=abjad.const.HIDDEN),
         ),
     krummzeit.register_narrow(2),
     baca.markup(
@@ -303,7 +303,7 @@ maker(
         ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )
 
@@ -314,7 +314,7 @@ maker(
         ],
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.runs(exclude=abjad.const.HIDDEN),
         ),
     krummzeit.register_narrow(5),
     baca.note_head_style_harmonic(),
@@ -384,10 +384,10 @@ maker(
     baca.new(
         baca.dynamic('mp'),
         baca.tenuto(),
-        map=baca.pheads(exclude=baca.const.HIDDEN),
+        map=baca.pheads(exclude=abjad.const.HIDDEN),
         ),
     baca.note_head_style_harmonic(
-        selector=baca.pleaves(exclude=baca.const.HIDDEN),
+        selector=baca.pleaves(exclude=abjad.const.HIDDEN),
         ),
     baca.markup(
         krummzeit.markup.fifth_harmonic_of_F1(),
@@ -398,7 +398,7 @@ maker(
     ('ob', (11, 24)),
     baca.pitches(
         'D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5',
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )
 
@@ -406,7 +406,7 @@ maker(
     ('cl', (11, 24)),
     baca.pitches(
         'E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5',
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )
 
@@ -450,7 +450,7 @@ maker(
     ('vn', (39, 48)),
     baca.pitch(
         'A+3',
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )
 
@@ -458,7 +458,7 @@ maker(
     ('va', (39, 48)),
     baca.pitch(
         'Bb2',
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )
 
@@ -466,7 +466,7 @@ maker(
     ('vc', (39, 48)),
     baca.pitch(
         'A2',
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )
 
@@ -475,7 +475,7 @@ maker(
     baca.dynamic('mp'),
     baca.markup('ordinario'),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=baca.const.HIDDEN),
+        selector=baca.pleaves(exclude=abjad.const.HIDDEN),
         ),
     )
 

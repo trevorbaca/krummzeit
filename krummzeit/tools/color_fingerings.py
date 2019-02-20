@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 
@@ -7,5 +8,5 @@ def color_fingerings():
     """
     return baca.color_fingerings(
         [0, 1, 2, 1],
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.pheads(exclude=abjad.const.HIDDEN),
         )

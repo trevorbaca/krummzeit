@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 
@@ -11,5 +12,5 @@ def displacement():
             0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1,
             -1, -1, -1, -1,
             ],
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         )

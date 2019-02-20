@@ -124,7 +124,7 @@ maker(
         ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )
 
@@ -316,7 +316,7 @@ maker(
     ('va', (11, 16)),
     baca.pitch(
         'bf,',
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )
 

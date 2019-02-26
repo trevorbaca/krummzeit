@@ -1934,7 +1934,7 @@ B_Oboe_Music_Voice = {                                                         %
 
 B_Oboe_Music_Staff = {                                                         %! abjad.Path.extern
 
-    \context Voice = "Oboe_Music_Voice"                                        %! ScoreTemplate
+    \context Voice = "Oboe_Music_Voice"                                        %! krummzeit.ScoreTemplate.__call__
     \B_Oboe_Music_Voice                                                        %! abjad.Path.extern
 
 }                                                                              %! abjad.Path.extern
@@ -2294,7 +2294,7 @@ B_Clarinet_Music_Voice = {                                                     %
 
 B_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
 
-    \context Voice = "Clarinet_Music_Voice"                                    %! ScoreTemplate
+    \context Voice = "Clarinet_Music_Voice"                                    %! krummzeit.ScoreTemplate.__call__
     \B_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
 }                                                                              %! abjad.Path.extern
@@ -2924,7 +2924,7 @@ B_Piano_Music_Voice = {                                                        %
 
 B_Piano_Music_Staff = {                                                        %! abjad.Path.extern
 
-    \context Voice = "Piano_Music_Voice"                                       %! ScoreTemplate
+    \context Voice = "Piano_Music_Voice"                                       %! krummzeit.ScoreTemplate.__call__
     \B_Piano_Music_Voice                                                       %! abjad.Path.extern
 
 }                                                                              %! abjad.Path.extern
@@ -3626,7 +3626,7 @@ B_Percussion_Music_Voice = {                                                   %
 
 B_Percussion_Music_Staff = {                                                   %! abjad.Path.extern
 
-    \context Voice = "Percussion_Music_Voice"                                  %! ScoreTemplate
+    \context Voice = "Percussion_Music_Voice"                                  %! krummzeit.ScoreTemplate.__call__
     \B_Percussion_Music_Voice                                                  %! abjad.Path.extern
 
 }                                                                              %! abjad.Path.extern
@@ -4058,7 +4058,7 @@ B_Violin_Music_Voice = {                                                       %
 
 B_Violin_Music_Staff = {                                                       %! abjad.Path.extern
 
-    \context Voice = "Violin_Music_Voice"                                      %! ScoreTemplate
+    \context Voice = "Violin_Music_Voice"                                      %! krummzeit.ScoreTemplate.__call__
     \B_Violin_Music_Voice                                                      %! abjad.Path.extern
 
 }                                                                              %! abjad.Path.extern
@@ -4501,7 +4501,7 @@ B_Viola_Music_Voice = {                                                        %
 
 B_Viola_Music_Staff = {                                                        %! abjad.Path.extern
 
-    \context Voice = "Viola_Music_Voice"                                       %! ScoreTemplate
+    \context Voice = "Viola_Music_Voice"                                       %! krummzeit.ScoreTemplate.__call__
     \B_Viola_Music_Voice                                                       %! abjad.Path.extern
 
 }                                                                              %! abjad.Path.extern
@@ -4938,7 +4938,7 @@ B_Cello_Music_Voice = {                                                        %
 
 B_Cello_Music_Staff = {                                                        %! abjad.Path.extern
 
-    \context Voice = "Cello_Music_Voice"                                       %! ScoreTemplate
+    \context Voice = "Cello_Music_Voice"                                       %! krummzeit.ScoreTemplate.__call__
     \B_Cello_Music_Voice                                                       %! abjad.Path.extern
 
 }                                                                              %! abjad.Path.extern

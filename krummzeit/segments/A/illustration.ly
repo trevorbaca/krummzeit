@@ -15,8 +15,8 @@
             \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file
         }                                                                      %! baca.SegmentMaker._make_lilypond_file
 
-        \context Score = "Score"                                               %! ScoreTemplate
-        <<                                                                     %! ScoreTemplate
+        \context Score = "Score"                                               %! krummzeit.ScoreTemplate.__call__
+        <<                                                                     %! krummzeit.ScoreTemplate.__call__
 
             \context GlobalContext = "Global_Context"                          %! abjad.ScoreTemplate._make_global_context
             <<                                                                 %! abjad.ScoreTemplate._make_global_context
@@ -29,55 +29,55 @@
 
             >>                                                                 %! abjad.ScoreTemplate._make_global_context
 
-            \context MusicContext = "Music_Context"                            %! ScoreTemplate
-            <<                                                                 %! ScoreTemplate
+            \context MusicContext = "Music_Context"                            %! krummzeit.ScoreTemplate.__call__
+            <<                                                                 %! krummzeit.ScoreTemplate.__call__
 
-                \context WindSectionStaffGroup = "Wind_Section_Staff_Group"    %! ScoreTemplate
-                <<                                                             %! ScoreTemplate
+                \context WindSectionStaffGroup = "Wind_Section_Staff_Group"    %! krummzeit.ScoreTemplate.__call__
+                <<                                                             %! krummzeit.ScoreTemplate.__call__
 
                     \tag Oboe                                                  %! baca.ScoreTemplate._attach_liypond_tag
-                    \context Staff = "Oboe_Music_Staff"                        %! ScoreTemplate
+                    \context Staff = "Oboe_Music_Staff"                        %! krummzeit.ScoreTemplate.__call__
                     \A_Oboe_Music_Staff                                        %! abjad.Path.extern
 
                     \tag Clarinet                                              %! baca.ScoreTemplate._attach_liypond_tag
-                    \context Staff = "Clarinet_Music_Staff"                    %! ScoreTemplate
+                    \context Staff = "Clarinet_Music_Staff"                    %! krummzeit.ScoreTemplate.__call__
                     \A_Clarinet_Music_Staff                                    %! abjad.Path.extern
 
-                >>                                                             %! ScoreTemplate
+                >>                                                             %! krummzeit.ScoreTemplate.__call__
 
-                \context PercussionSectionStaffGroup = "Percussion_Section_Staff_Group" %! ScoreTemplate
-                <<                                                             %! ScoreTemplate
+                \context PercussionSectionStaffGroup = "Percussion_Section_Staff_Group" %! krummzeit.ScoreTemplate.__call__
+                <<                                                             %! krummzeit.ScoreTemplate.__call__
 
                     \tag Piano                                                 %! baca.ScoreTemplate._attach_liypond_tag
-                    \context Staff = "Piano_Music_Staff"                       %! ScoreTemplate
+                    \context Staff = "Piano_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__
                     \A_Piano_Music_Staff                                       %! abjad.Path.extern
 
                     \tag Percussion                                            %! baca.ScoreTemplate._attach_liypond_tag
-                    \context Staff = "Percussion_Music_Staff"                  %! ScoreTemplate
+                    \context Staff = "Percussion_Music_Staff"                  %! krummzeit.ScoreTemplate.__call__
                     \A_Percussion_Music_Staff                                  %! abjad.Path.extern
 
-                >>                                                             %! ScoreTemplate
+                >>                                                             %! krummzeit.ScoreTemplate.__call__
 
-                \context StringSectionStaffGroup = "String_Section_Staff_Group" %! ScoreTemplate
-                <<                                                             %! ScoreTemplate
+                \context StringSectionStaffGroup = "String_Section_Staff_Group" %! krummzeit.ScoreTemplate.__call__
+                <<                                                             %! krummzeit.ScoreTemplate.__call__
 
                     \tag Violin                                                %! baca.ScoreTemplate._attach_liypond_tag
-                    \context Staff = "Violin_Music_Staff"                      %! ScoreTemplate
+                    \context Staff = "Violin_Music_Staff"                      %! krummzeit.ScoreTemplate.__call__
                     \A_Violin_Music_Staff                                      %! abjad.Path.extern
 
                     \tag Viola                                                 %! baca.ScoreTemplate._attach_liypond_tag
-                    \context Staff = "Viola_Music_Staff"                       %! ScoreTemplate
+                    \context Staff = "Viola_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__
                     \A_Viola_Music_Staff                                       %! abjad.Path.extern
 
                     \tag Cello                                                 %! baca.ScoreTemplate._attach_liypond_tag
-                    \context Staff = "Cello_Music_Staff"                       %! ScoreTemplate
+                    \context Staff = "Cello_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__
                     \A_Cello_Music_Staff                                       %! abjad.Path.extern
 
-                >>                                                             %! ScoreTemplate
+                >>                                                             %! krummzeit.ScoreTemplate.__call__
 
-            >>                                                                 %! ScoreTemplate
+            >>                                                                 %! krummzeit.ScoreTemplate.__call__
 
-        >>                                                                     %! ScoreTemplate
+        >>                                                                     %! krummzeit.ScoreTemplate.__call__
 
     >>                                                                         %! baca.SegmentMaker._make_lilypond_file
     

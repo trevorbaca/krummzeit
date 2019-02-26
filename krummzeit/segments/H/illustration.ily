@@ -1,4 +1,4 @@
-H_Global_Rests = {                                                             %! extern
+H_Global_Rests = {                                                             %! abjad.Path.extern
 
     % [H Global_Rests measure 281 / measure 1]                                 %! _comment_measure_numbers
     R1 * 7/8                                                                   %! _make_global_rests(1)
@@ -30,10 +30,10 @@ H_Global_Rests = {                                                             %
     % [H Global_Rests measure 290 / measure 10]                                %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_global_rests(1)
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Global_Skips = {                                                             %! extern
+H_Global_Skips = {                                                             %! abjad.Path.extern
 
     % [H Global_Skips measure 281 / measure 1]                                 %! _comment_measure_numbers
     \time 7/8                                                                  %! EXPLICIT_TIME_SIGNATURE:_set_status_tag:_make_global_skips(2)
@@ -209,10 +209,10 @@ H_Global_Skips = {                                                             %
     \baca-bar-line-visible                                                     %! _attach_final_bar_line
     \bar "|"                                                                   %! _attach_final_bar_line
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Oboe_Music_Voice = {                                                         %! extern
+H_Oboe_Music_Voice = {                                                         %! abjad.Path.extern
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -343,18 +343,18 @@ H_Oboe_Music_Voice = {                                                         %
 
     }                                                                          %! hypermeter_tuplets
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Oboe_Music_Staff = {                                                         %! extern
+H_Oboe_Music_Staff = {                                                         %! abjad.Path.extern
 
     \context Voice = "Oboe_Music_Voice"                                        %! ScoreTemplate
-    \H_Oboe_Music_Voice                                                        %! extern
+    \H_Oboe_Music_Voice                                                        %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Clarinet_Music_Voice = {                                                     %! extern
+H_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -498,18 +498,18 @@ H_Clarinet_Music_Voice = {                                                     %
 
     }                                                                          %! hypermeter_tuplets
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Clarinet_Music_Staff = {                                                     %! extern
+H_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern
 
     \context Voice = "Clarinet_Music_Voice"                                    %! ScoreTemplate
-    \H_Clarinet_Music_Voice                                                    %! extern
+    \H_Clarinet_Music_Voice                                                    %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Piano_Music_Voice = {                                                        %! extern
+H_Piano_Music_Voice = {                                                        %! abjad.Path.extern
 
     \times 2/3 {                                                               %! opening_triplets
 
@@ -2410,18 +2410,18 @@ H_Piano_Music_Voice = {                                                        %
 
     }                                                                          %! hypermeter_tuplets
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Piano_Music_Staff = {                                                        %! extern
+H_Piano_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Piano_Music_Voice"                                       %! ScoreTemplate
-    \H_Piano_Music_Voice                                                       %! extern
+    \H_Piano_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Percussion_Music_Voice = {                                                   %! extern
+H_Percussion_Music_Voice = {                                                   %! abjad.Path.extern
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2596,18 +2596,18 @@ H_Percussion_Music_Voice = {                                                   %
 
     }                                                                          %! hypermeter_tuplets
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Percussion_Music_Staff = {                                                   %! extern
+H_Percussion_Music_Staff = {                                                   %! abjad.Path.extern
 
     \context Voice = "Percussion_Music_Voice"                                  %! ScoreTemplate
-    \H_Percussion_Music_Voice                                                  %! extern
+    \H_Percussion_Music_Voice                                                  %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Violin_Music_Voice = {                                                       %! extern
+H_Violin_Music_Voice = {                                                       %! abjad.Path.extern
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 19/10 {                                                             %! hypermeter_tuplets
@@ -2794,18 +2794,18 @@ H_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! hypermeter_tuplets
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Violin_Music_Staff = {                                                       %! extern
+H_Violin_Music_Staff = {                                                       %! abjad.Path.extern
 
     \context Voice = "Violin_Music_Voice"                                      %! ScoreTemplate
-    \H_Violin_Music_Voice                                                      %! extern
+    \H_Violin_Music_Voice                                                      %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Viola_Music_Voice = {                                                        %! extern
+H_Viola_Music_Voice = {                                                        %! abjad.Path.extern
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 19/10 {                                                             %! hypermeter_tuplets
@@ -2986,18 +2986,18 @@ H_Viola_Music_Voice = {                                                        %
 
     }                                                                          %! hypermeter_tuplets
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Viola_Music_Staff = {                                                        %! extern
+H_Viola_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Viola_Music_Voice"                                       %! ScoreTemplate
-    \H_Viola_Music_Voice                                                       %! extern
+    \H_Viola_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Cello_Music_Voice = {                                                        %! extern
+H_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
     \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
     \times 19/10 {                                                             %! hypermeter_tuplets
@@ -3172,12 +3172,12 @@ H_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! hypermeter_tuplets
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern
 
 
-H_Cello_Music_Staff = {                                                        %! extern
+H_Cello_Music_Staff = {                                                        %! abjad.Path.extern
 
     \context Voice = "Cello_Music_Voice"                                       %! ScoreTemplate
-    \H_Cello_Music_Voice                                                       %! extern
+    \H_Cello_Music_Voice                                                       %! abjad.Path.extern
 
-}                                                                              %! extern
+}                                                                              %! abjad.Path.extern

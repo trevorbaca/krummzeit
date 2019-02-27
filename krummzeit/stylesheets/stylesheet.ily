@@ -34,7 +34,7 @@
     oddHeaderMarkup = \markup \fill-line { " " }
     print-first-page-number = ##f
     print-page-number = ##t
-    right-margin = 5\mm
+    right-margin = 20\mm
     top-markup-spacing.minimum-distance = 4
     top-margin = 10\mm
 }
@@ -43,7 +43,6 @@
     composer = \markup {
         \override #'(font-name . "Palatino")
         \fontsize #5 "Trevor Bača"
-        \hspace #20
     }
     tagline = \markup { "" }
     title = \markup \column {

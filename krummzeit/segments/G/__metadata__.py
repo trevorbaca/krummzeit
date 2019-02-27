@@ -3,6 +3,10 @@ import abjad
 
 metadata = abjad.OrderedDict(
     [
+        (
+            'bol_measure_numbers',
+            [257, 261, 265, 268, 271, 274, 278],
+            ),
         ('duration', "0'57''"),
         (
             'fermata_measure_numbers',
@@ -13,8 +17,8 @@ metadata = abjad.OrderedDict(
         ('first_measure_number', 257),
         ('segment_name', 'G'),
         ('segment_number', 8),
-        ('start_clock_time', "12'22''"),
-        ('stop_clock_time', "13'19''"),
+        ('start_clock_time', "12'23''"),
+        ('stop_clock_time', "13'20''"),
         (
             'time_signatures',
             [

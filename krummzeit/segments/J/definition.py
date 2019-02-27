@@ -31,6 +31,9 @@ maker = baca.TimeSignatureMaker(
 time_signatures = maker.run()
 
 maker = baca.SegmentMaker(
+    activate=[
+        abjad.const.LOCAL_MEASURE_NUMBER,
+        ],
     final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),
     ignore_repeat_pitch_classes=True,
     final_segment=True,

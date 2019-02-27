@@ -3,13 +3,17 @@ import abjad
 
 metadata = abjad.OrderedDict(
     [
+        (
+            'bol_measure_numbers',
+            [200, 204, 208, 213, 217, 221, 225, 229, 233],
+            ),
         ('duration', "1'40''"),
         ('final_measure_number', 234),
         ('first_measure_number', 200),
         ('segment_name', 'E'),
         ('segment_number', 6),
-        ('start_clock_time', "9'33''"),
-        ('stop_clock_time', "11'13''"),
+        ('start_clock_time', "9'34''"),
+        ('stop_clock_time', "11'14''"),
         (
             'time_signatures',
             [

@@ -7,17 +7,18 @@ metadata = abjad.OrderedDict(
             'bol_measure_numbers',
             [133, 141, 146, 150],
             ),
-        ('duration', "1'06''"),
+        ('duration', "1'07''"),
         (
             'fermata_measure_numbers',
             [134, 136, 138, 140, 145],
             ),
         ('final_measure_number', 151),
         ('first_measure_number', 133),
+        ('phantom', True),
         ('segment_name', 'C'),
         ('segment_number', 4),
-        ('start_clock_time', "5'06''"),
-        ('stop_clock_time', "6'12''"),
+        ('start_clock_time', "5'07''"),
+        ('stop_clock_time', "6'14''"),
         (
             'time_signatures',
             [

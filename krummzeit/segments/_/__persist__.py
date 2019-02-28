@@ -14,6 +14,7 @@ persist = abjad.OrderedDict(
                 'Wind_Section_Staff_Group',
                 'Oboe_Music_Staff',
                 'Oboe_Music_Voice',
+                'Oboe_Rest_Voice',
                 'Clarinet_Music_Staff',
                 'Clarinet_Music_Voice',
                 'Clarinet_Rest_Voice',

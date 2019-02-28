@@ -21,8 +21,10 @@ persist = abjad.OrderedDict(
                 'Percussion_Section_Staff_Group',
                 'Piano_Music_Staff',
                 'Piano_Music_Voice',
+                'Piano_Rest_Voice',
                 'Percussion_Music_Staff',
                 'Percussion_Music_Voice',
+                'Percussion_Rest_Voice',
                 'String_Section_Staff_Group',
                 'Violin_Music_Staff',
                 'Violin_Music_Voice',
@@ -32,6 +34,7 @@ persist = abjad.OrderedDict(
                 'Viola_Rest_Voice',
                 'Cello_Music_Staff',
                 'Cello_Music_Voice',
+                'Cello_Rest_Voice',
                 ],
             ),
         (

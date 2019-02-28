@@ -19,13 +19,14 @@ metadata = abjad.OrderedDict(
                 196,
                 ],
             ),
-        ('duration', "3'22''"),
+        ('duration', "3'23''"),
         ('final_measure_number', 199),
         ('first_measure_number', 152),
+        ('phantom', True),
         ('segment_name', 'D'),
         ('segment_number', 5),
-        ('start_clock_time', "6'12''"),
-        ('stop_clock_time', "9'34''"),
+        ('start_clock_time', "6'14''"),
+        ('stop_clock_time', "9'37''"),
         (
             'time_signatures',
             [

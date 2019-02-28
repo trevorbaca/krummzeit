@@ -1,5 +1,5 @@
 % page_count = 2
-% measure_count = 13
+% measure_count = 13 + 1
 % time_signatures = [
 % '4/4', '9/8', '1/4', '3/4', '5/8', '9/8', '9/8', '5/8', '1/4', '5/8', '4/4',
 %  '5/4', '3/4'
@@ -116,15 +116,15 @@
         %@% \bacaStartTextSpanSPM                                              %! SPACING
 
             % [Page_Layout measure 13]                                         %! _comment_measure_numbers
-            \baca-new-spacing-section #35 #576                                 %! HorizontalSpacingSpecifier(1):SPACING_COMMAND
+            \baca-new-spacing-section #1 #24                                   %! HorizontalSpacingSpecifier(1):SPACING_COMMAND
             \noBreak                                                           %! BreakMeasureMap(2):BREAK
             s1 * 3/4                                                           %! _make_global_skips(1)
         %@% \bacaStopTextSpanSPM                                               %! SPACING
-        %@% - \baca-start-spm-both "[[1/24 * 35/24]]" "[1]"                    %! SPACING
+        %@% - \baca-start-spm-left-only "[1/24]"                               %! SPACING
         %@% \bacaStartTextSpanSPM                                              %! SPACING
 
             % [Page_Layout measure 14]                                         %! PHANTOM:_style_phantom_measures(1):_comment_measure_numbers
-            \baca-new-spacing-section #1 #1                                    %! PHANTOM:_style_phantom_measures(1):HorizontalSpacingSpecifier(1):SPACING_COMMAND
+            \baca-new-spacing-section #1 #4                                    %! PHANTOM:_style_phantom_measures(1):HorizontalSpacingSpecifier(1):SPACING_COMMAND
             \noBreak                                                           %! PHANTOM:_style_phantom_measures(1):BreakMeasureMap(2):BREAK
             \baca-time-signature-transparent                                   %! PHANTOM:_style_phantom_measures(2)
             s1 * 1/4                                                           %! PHANTOM:_make_global_skips(3)

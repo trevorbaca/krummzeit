@@ -8,17 +8,16 @@ import os
 ##################################### [H] #####################################
 ###############################################################################
 
-def stage(n):
-    return {
-        1: (1, 2),
-        2: (3, 3),
-        3: (4, 4),
-        4: (5, 5),
-        5: (6, 6),
-        6: (7, 7),
-        7: (8, 8),
-        8: (9, 10),
-        }[n]
+stage_markup = (
+    ('[H.1]', 1),
+    ('[H.2]', 3),
+    ('[H.3]', 4),
+    ('[H.4]', 5),
+    ('[H.5]', 6),
+    ('[H.6]', 7),
+    ('[H.7]', 8),
+    ('[H.8]', 9),
+    )
 
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['I'],
@@ -32,6 +31,7 @@ maker = baca.SegmentMaker(
         ],
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=10,

@@ -61,6 +61,8 @@ i_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "1"                                             %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-snm-left-only "[_.1]"                                        %! STAGE_NUMBER
+%@% \bacaStartTextSpanSNM                                                      %! STAGE_NUMBER
 %@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -111,6 +113,7 @@ i_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanSNM                                                       %! STAGE_NUMBER
     \bacaStopTextSpanMM                                                        %! _attach_metronome_marks(1)
 %@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 %@% - \baca-start-lmi-left-only "3"                                            %! LOCAL_MEASURE_INDEX
@@ -119,6 +122,8 @@ i_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "4"                                             %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-snm-left-only "[_.3]"                                        %! STAGE_NUMBER
+%@% \bacaStartTextSpanSNM                                                      %! STAGE_NUMBER
 %@% - \abjad-dashed-line-with-arrow                                            %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "45"                        %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -135,6 +140,7 @@ i_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanSNM                                                       %! STAGE_NUMBER
 %@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 %@% - \baca-start-lmi-left-only "4"                                            %! LOCAL_MEASURE_INDEX
 %@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
@@ -142,6 +148,8 @@ i_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "5"                                             %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-snm-left-only "[_.4]"                                        %! STAGE_NUMBER
+%@% \bacaStartTextSpanSNM                                                      %! STAGE_NUMBER
 %@% - \baca-start-ct-left-only "[0'08'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
@@ -152,6 +160,7 @@ i_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanSNM                                                       %! STAGE_NUMBER
 %@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 %@% - \baca-start-lmi-left-only "5"                                            %! LOCAL_MEASURE_INDEX
 %@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
@@ -159,6 +168,8 @@ i_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "6"                                             %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-snm-left-only "[_.5]"                                        %! STAGE_NUMBER
+%@% \bacaStartTextSpanSNM                                                      %! STAGE_NUMBER
 %@% - \baca-start-ct-left-only "[0'12'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
@@ -167,6 +178,7 @@ i_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanSNM                                                       %! STAGE_NUMBER
     \bacaStopTextSpanMM                                                        %! _attach_metronome_marks(1)
 %@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 %@% - \baca-start-lmi-left-only "6"                                            %! LOCAL_MEASURE_INDEX
@@ -175,6 +187,8 @@ i_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "7"                                             %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-snm-left-only "[_.6]"                                        %! STAGE_NUMBER
+%@% \bacaStartTextSpanSNM                                                      %! STAGE_NUMBER
 %@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "144"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -191,6 +205,7 @@ i_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanSNM                                                       %! STAGE_NUMBER
     \bacaStopTextSpanMM                                                        %! _attach_metronome_marks(1)
 %@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 %@% - \baca-start-lmi-left-only "7"                                            %! LOCAL_MEASURE_INDEX
@@ -199,6 +214,8 @@ i_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "8"                                             %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-snm-left-only "[_.7]"                                        %! STAGE_NUMBER
+%@% \bacaStartTextSpanSNM                                                      %! STAGE_NUMBER
 %@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "108"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -232,6 +249,7 @@ i_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanSNM                                                       %! STAGE_NUMBER
     \bacaStopTextSpanMM                                                        %! _attach_metronome_marks(1)
 %@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 %@% - \baca-start-lmi-left-only "9"                                            %! LOCAL_MEASURE_INDEX
@@ -240,6 +258,8 @@ i_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "10"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-snm-left-only "[_.9]"                                        %! STAGE_NUMBER
+%@% \bacaStartTextSpanSNM                                                      %! STAGE_NUMBER
 %@% - \abjad-invisible-line                                                    %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
 %@% \bacaStartTextSpanMM                                                       %! EXPLICIT_METRONOME_MARK:_set_status_tag:_attach_metronome_marks(2)
@@ -256,6 +276,7 @@ i_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanLMI                                                       %! LOCAL_MEASURE_INDEX
     \bacaStopTextSpanLMN                                                       %! LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! MEASURE_NUMBER
+%@% \bacaStopTextSpanSNM                                                       %! STAGE_NUMBER
 %@% \bacaStopTextSpanCT                                                        %! CLOCK_TIME
 %@% - \baca-start-lmi-left-only "10"                                           %! LOCAL_MEASURE_INDEX
 %@% \bacaStartTextSpanLMI                                                      %! LOCAL_MEASURE_INDEX
@@ -263,6 +284,8 @@ i_Global_Skips = {                                                             %
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "11"                                            %! MEASURE_NUMBER
 %@% \bacaStartTextSpanMN                                                       %! MEASURE_NUMBER
+%@% - \baca-start-snm-left-only "[_.10]"                                       %! STAGE_NUMBER
+%@% \bacaStartTextSpanSNM                                                      %! STAGE_NUMBER
 %@% - \baca-start-ct-left-only "[0'23'']"                                      %! CLOCK_TIME
 %@% \bacaStartTextSpanCT                                                       %! CLOCK_TIME
 
@@ -309,6 +332,7 @@ i_Global_Skips = {                                                             %
 %@% \bacaStopTextSpanLMI                                                       %! PHANTOM:_style_phantom_measures(1):LOCAL_MEASURE_INDEX
     \bacaStopTextSpanLMN                                                       %! PHANTOM:_style_phantom_measures(1):LOCAL_MEASURE_NUMBER
 %@% \bacaStopTextSpanMN                                                        %! PHANTOM:_style_phantom_measures(1):MEASURE_NUMBER
+%@% \bacaStopTextSpanSNM                                                       %! PHANTOM:_style_phantom_measures(1):STAGE_NUMBER
     \bacaStopTextSpanMM                                                        %! PHANTOM:_style_phantom_measures(1):SEGMENT_FINAL_STOP_MM_SPANNER:_attach_metronome_marks(4)
 %@% \bacaStopTextSpanCT                                                        %! PHANTOM:_style_phantom_measures(1):CLOCK_TIME
     \once \override Score.BarLine.transparent = ##t                            %! PHANTOM:_style_phantom_measures(3)
@@ -1011,7 +1035,7 @@ i_Violin_Music_Voice = {                                                       %
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r4                                                                         %! opening_triplets
+    r8                                                                         %! opening_triplets
     ^ \baca-default-indicator-markup "(“Violin”)"                              %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Vn.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1070,29 +1094,101 @@ i_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! opening_triplets
 
+    \times 2/3 {                                                               %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
     <<                                                                         %! _make_multimeasure_rest_container
 
         \context Voice = "Violin_Music_Voice"                                  %! _make_multimeasure_rest_container
         {                                                                      %! _make_multimeasure_rest_container
 
-            % [_ Violin_Music_Voice measure 2]                                 %! _comment_measure_numbers
+            % [_ Violin_Music_Voice measure 3]                                 %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c'1 * 9/8                                                          %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
         \context Voice = "Violin_Rest_Voice"                                   %! _make_multimeasure_rest_container
         {                                                                      %! _make_multimeasure_rest_container
 
-            % [_ Violin_Rest_Voice measure 2]                                  %! _comment_measure_numbers
-            R1 * 9/8                                                           %! _make_multimeasure_rest_container
+            % [_ Violin_Rest_Voice measure 3]                                  %! _comment_measure_numbers
+            R1 * 1/4                                                           %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
     >>                                                                         %! _make_multimeasure_rest_container
-
-    % [_ Violin_Music_Voice measure 3]                                         %! _comment_measure_numbers
-    R1 * 1/4                                                                   %! _make_measure_silences
 
     \times 2/3 {                                                               %! glissando_rhythm
 
@@ -1292,7 +1388,7 @@ i_Viola_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r4                                                                         %! opening_triplets
+    r8                                                                         %! opening_triplets
     ^ \baca-default-indicator-markup "(“Viola”)"                               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Va.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1351,29 +1447,101 @@ i_Viola_Music_Voice = {                                                        %
 
     }                                                                          %! opening_triplets
 
+    \times 2/3 {                                                               %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
     <<                                                                         %! _make_multimeasure_rest_container
 
         \context Voice = "Viola_Music_Voice"                                   %! _make_multimeasure_rest_container
         {                                                                      %! _make_multimeasure_rest_container
 
-            % [_ Viola_Music_Voice measure 2]                                  %! _comment_measure_numbers
+            % [_ Viola_Music_Voice measure 3]                                  %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c'1 * 9/8                                                          %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
         \context Voice = "Viola_Rest_Voice"                                    %! _make_multimeasure_rest_container
         {                                                                      %! _make_multimeasure_rest_container
 
-            % [_ Viola_Rest_Voice measure 2]                                   %! _comment_measure_numbers
-            R1 * 9/8                                                           %! _make_multimeasure_rest_container
+            % [_ Viola_Rest_Voice measure 3]                                   %! _comment_measure_numbers
+            R1 * 1/4                                                           %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
     >>                                                                         %! _make_multimeasure_rest_container
-
-    % [_ Viola_Music_Voice measure 3]                                          %! _comment_measure_numbers
-    R1 * 1/4                                                                   %! _make_measure_silences
 
     % [_ Viola_Music_Voice measure 4]                                          %! _comment_measure_numbers
     r2                                                                         %! glissando_rhythm
@@ -1570,7 +1738,7 @@ i_Cello_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r4                                                                         %! opening_triplets
+    r8                                                                         %! opening_triplets
     ^ \baca-default-indicator-markup "(“Cello”)"                               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Vc.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1629,29 +1797,101 @@ i_Cello_Music_Voice = {                                                        %
 
     }                                                                          %! opening_triplets
 
+    \times 2/3 {                                                               %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
+    \times 2/3 {                                                               %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! opening_triplets
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! opening_triplets
+
+    }                                                                          %! opening_triplets
+
     <<                                                                         %! _make_multimeasure_rest_container
 
         \context Voice = "Cello_Music_Voice"                                   %! _make_multimeasure_rest_container
         {                                                                      %! _make_multimeasure_rest_container
 
-            % [_ Cello_Music_Voice measure 2]                                  %! _comment_measure_numbers
+            % [_ Cello_Music_Voice measure 3]                                  %! _comment_measure_numbers
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
-            c'1 * 9/8                                                          %! _make_multimeasure_rest_container
+            c'1 * 1/4                                                          %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
         \context Voice = "Cello_Rest_Voice"                                    %! _make_multimeasure_rest_container
         {                                                                      %! _make_multimeasure_rest_container
 
-            % [_ Cello_Rest_Voice measure 2]                                   %! _comment_measure_numbers
-            R1 * 9/8                                                           %! _make_multimeasure_rest_container
+            % [_ Cello_Rest_Voice measure 3]                                   %! _comment_measure_numbers
+            R1 * 1/4                                                           %! _make_multimeasure_rest_container
 
         }                                                                      %! _make_multimeasure_rest_container
 
     >>                                                                         %! _make_multimeasure_rest_container
-
-    % [_ Cello_Music_Voice measure 3]                                          %! _comment_measure_numbers
-    R1 * 1/4                                                                   %! _make_measure_silences
 
     \times 2/3 {                                                               %! glissando_rhythm
 

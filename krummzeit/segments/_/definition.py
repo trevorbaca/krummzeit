@@ -8,19 +8,16 @@ import os
 ##################################### [_] #####################################
 ###############################################################################
 
-def stage(n):
-    return {
-        1: (1, 2),
-        2: (3, 3),
-        3: (4, 4),
-        4: (5, 5),
-        5: (6, 6),
-        6: (7, 7),
-        7: (8, 8),
-        8: (9, 9),
-        9: (10, 10),
-        10: (11, 13),
-        }[n]
+stage_markup = (
+    ('[_.1]', 1),
+    ('[_.3]', 4),
+    ('[_.4]', 5),
+    ('[_.5]', 6),
+    ('[_.6]', 7),
+    ('[_.7]', 8),
+    ('[_.9]', 10),
+    ('[_.10]', 11),
+    )
 
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['A'],
@@ -33,6 +30,7 @@ maker = baca.SegmentMaker(
         abjad.const.LOCAL_MEASURE_NUMBER,
         ],
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=13,
@@ -112,7 +110,7 @@ maker(
     )
 
 maker(
-    (['vn', 'va', 'vc'], 1),
+    (['vn', 'va', 'vc'], (1, 2)),
     krummzeit.opening_triplets(dmask=abjad.index([0])),
     )
 

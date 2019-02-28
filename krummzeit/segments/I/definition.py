@@ -8,25 +8,23 @@ import os
 ##################################### [I] #####################################
 ###############################################################################
 
-def stage(n):
-    return {
-        1: (1, 1),
-        2: (2, 2),
-        3: (3, 3),
-        4: (4, 4),
-        5: (5, 5),
-        6: (6, 6),
-        7: (7, 7),
-        8: (8, 8),
-        9: (9, 9),
-        10: (10, 10),
-        11: (11, 14),
-        12: (15, 18),
-        13: (19, 19),
-        14: (20, 21),
-        15: (22, 22),
-        16: (23, 23),
-        }[n]
+stage_markup = (
+    ('[I.1]', 1),
+    ('[I.2]', 2),
+    ('[I.3]', 3),
+    ('[I.4]', 4),
+    ('[I.5]', 5),
+    ('[I.6]', 6),
+    ('[I.7]', 7),
+    ('[I.8]', 8),
+    ('[I.9]', 9),
+    ('[I.10]', 10),
+    ('[I.11]', 11),
+    ('[I.12]', 15),
+    ('[I.13]', 19),
+    ('[I.14]', 20),
+    ('[I.15]', 22),
+    )
 
 maker = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['J'],
@@ -40,6 +38,7 @@ maker = baca.SegmentMaker(
         ],
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
+    stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=23,

@@ -21,5 +21,8 @@ def closing_pizzicati(
                 counts=counts,
                 denominator=4,
                 ),
+            tuplet_specifier=rmakers.TupletSpecifier(
+                extract_trivial=True,
+                ),
             ),
         )

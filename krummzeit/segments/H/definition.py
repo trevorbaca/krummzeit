@@ -91,8 +91,16 @@ maker(
 
 maker(
     ('perc', (5, 6)),
-    baca.clef('percussion'),
-    baca.markup('crotales', boxed=True),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (-2, 2),
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(5),
+        ),
+    baca.clef('treble'),
+    baca.markup('crotale', boxed=True),
+    baca.pitch('D5'),
     krummzeit.left_remainder_quarters(dmask=abjad.index([0])),
     )
 
@@ -124,18 +132,17 @@ maker(
     ('pf', (9, 10)),
     baca.instrument(krummzeit.instruments['Piano']),
     krummzeit.hypermeter_tuplets([(3, 4)], counts=[2]),
+    krummzeit.margin_markup('Pf.'),
     )
 
 maker(
     ('perc', (9, 10)),
-    baca.clef('treble'),
     baca.instrument(krummzeit.instruments['Xylophone']),
     krummzeit.hypermeter_tuplets([(1, 6)], counts=[2]),
     )
 
 maker(
     ('pf', (1, 6)),
-    #baca.clef('treble'),
     krummzeit.clusters('harpsichord'),
     )
 
@@ -169,8 +176,8 @@ maker(
 
 maker(
     ('perc', (5, 6)),
+    baca.dynamic('ff-sempre'),
     baca.accent(selector=baca.pheads()),
-    baca.dynamic('ff', selector=baca.pheads()),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())

@@ -1208,57 +1208,52 @@ D_Oboe_Music_Voice = {                                                         %
 
     }                                                                          %! color_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    % [D Oboe_Music_Voice measure 170 / measure 19]                            %! _comment_measure_numbers
+    r16                                                                        %! color_tuplets
 
-        % [D Oboe_Music_Voice measure 170 / measure 19]                        %! _comment_measure_numbers
-        r16                                                                    %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    ef''!8                                                                     %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    [                                                                          %! color_tuplets
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        ef''!8                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        [                                                                      %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    ef''!32                                                                    %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        ef''!32                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    ef''!32                                                                    %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    ]                                                                          %! color_tuplets
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        ef''!32                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        ]                                                                      %! color_tuplets
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        ef''!4.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        ~
-
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    ef''!4.                                                                    %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 9/5 {                                                               %! color_tuplets
@@ -1301,58 +1296,48 @@ D_Oboe_Music_Voice = {                                                         %
 
     }                                                                          %! color_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    % [D Oboe_Music_Voice measure 173 / measure 22]                            %! _comment_measure_numbers
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    d''4.                                                                      %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-        % [D Oboe_Music_Voice measure 173 / measure 22]                        %! _comment_measure_numbers
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        d''4.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+    r4                                                                         %! color_tuplets
 
-        r4                                                                     %! color_tuplets
+    % [D Oboe_Music_Voice measure 174 / measure 23]                            %! _comment_measure_numbers
+    r16.                                                                       %! color_tuplets
 
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    d''8                                                                       %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    [                                                                          %! color_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    d''32                                                                      %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    ]                                                                          %! color_tuplets
 
-        % [D Oboe_Music_Voice measure 174 / measure 23]                        %! _comment_measure_numbers
-        r16.                                                                   %! color_tuplets
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        d''8                                                                   %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        [                                                                      %! color_tuplets
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        d''32                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        ]                                                                      %! color_tuplets
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        d''4.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ~
-
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    d''4.                                                                      %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 3/5 {                                                               %! color_tuplets
@@ -1638,59 +1623,54 @@ D_Oboe_Music_Voice = {                                                         %
 
     }                                                                          %! color_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    % [D Oboe_Music_Voice measure 194 / measure 43]                            %! _comment_measure_numbers
+    r8                                                                         %! color_tuplets
 
-        % [D Oboe_Music_Voice measure 194 / measure 43]                        %! _comment_measure_numbers
-        r8                                                                     %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    f''4                                                                       %! color_tuplets
+    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \mf                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        f''4                                                                   %! color_tuplets
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \mf                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    f''16                                                                      %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    [                                                                          %! color_tuplets
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        f''16                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        [                                                                      %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    f''16                                                                      %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    ]                                                                          %! color_tuplets
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        f''16                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        ]                                                                      %! color_tuplets
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        f''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        ~
-
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    f''2.                                                                      %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    ~
 
     \times 4/5 {                                                               %! color_tuplets
 
@@ -2402,20 +2382,13 @@ D_Piano_Music_Voice = {                                                        %
 
     % [D Piano_Music_Voice measure 159 / measure 8]                            %! _comment_measure_numbers
     \override NoteHead.style = #'harmonic                                      %! baca_note_head_style_harmonic:OverrideCommand(1)
-    \clef "bass"                                                               %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
-    \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     c'4.                                                                       %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ^ \markup { "5th harmonic of F1" }                                         %! baca_markup:IndicatorCommand
-    \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
@@ -2426,8 +2399,6 @@ D_Piano_Music_Voice = {                                                        %
     c'8                                                                        %! piano_harmonics
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
@@ -2442,8 +2413,6 @@ D_Piano_Music_Voice = {                                                        %
     r2                                                                         %! piano_harmonics
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
@@ -2451,8 +2420,6 @@ D_Piano_Music_Voice = {                                                        %
     c'2                                                                        %! piano_harmonics
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
@@ -2460,8 +2427,6 @@ D_Piano_Music_Voice = {                                                        %
     c'4                                                                        %! piano_harmonics
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ~
 
@@ -2523,6 +2488,8 @@ D_Piano_Music_Voice = {                                                        %
     \times 4/5 {                                                               %! silver_points
 
         % [D Piano_Music_Voice measure 176 / measure 25]                       %! _comment_measure_numbers
+        \once \override Staff.Clef.X-extent = ##f                              %! -PARTS:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! -PARTS:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #6                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
@@ -2612,107 +2579,68 @@ D_Piano_Music_Voice = {                                                        %
     % [D Piano_Music_Voice measure 178 / measure 27]                           %! _comment_measure_numbers
     \override NoteHead.style = #'harmonic                                      %! baca_note_head_style_harmonic:OverrideCommand(1)
     \override DynamicLineSpanner.staff-padding = #3                            %! baca_dls_staff_padding:OverrideCommand(1)
-    \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
-    \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     c'2.                                                                       %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     ^ \markup { "5th harmonic of F1" }                                         %! baca_markup:IndicatorCommand
-    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'2                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D Piano_Music_Voice measure 179 / measure 28]                           %! _comment_measure_numbers
     c'2                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D Piano_Music_Voice measure 180 / measure 29]                           %! _comment_measure_numbers
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D Piano_Music_Voice measure 181 / measure 30]                           %! _comment_measure_numbers
     c'2.                                                                       %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D Piano_Music_Voice measure 182 / measure 31]                           %! _comment_measure_numbers
     c'2..                                                                      %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'2                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D Piano_Music_Voice measure 183 / measure 32]                           %! _comment_measure_numbers
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D Piano_Music_Voice measure 184 / measure 33]                           %! _comment_measure_numbers
     c'4.                                                                       %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4                                                                        %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     % [D Piano_Music_Voice measure 185 / measure 34]                           %! _comment_measure_numbers
     c'2.                                                                       %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
 
     c'4.                                                                       %! piano_harmonics
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \mp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
     \revert NoteHead.style                                                     %! baca_note_head_style_harmonic:OverrideCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -2724,12 +2652,7 @@ D_Piano_Music_Voice = {                                                        %
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #6                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
-        \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
-    %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         r16                                                                    %! silver_points
-        \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         fs'''!16                                                               %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2872,8 +2795,6 @@ D_Piano_Music_Voice = {                                                        %
         r16                                                                    %! silver_points
 
         fs'''!16                                                               %! silver_points
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
@@ -3262,9 +3183,9 @@ D_Percussion_Music_Voice = {                                                   %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Perc.                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \stopStaff                                                                 %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \startStaff                                                                %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \set Staff.instrumentName =                                                %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
         \hcenter-in                                                            %! _clone_segment_initial_short_instrument_name
@@ -3277,12 +3198,13 @@ D_Percussion_Music_Voice = {                                                   %
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
+    \once \override Staff.StaffSymbol.color = #(x11-color 'DeepPink1)          %! REDUNDANT_STAFF_LINES_COLOR:_attach_color_literal(2)
     r16                                                                        %! incise_attacks
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-pp-sempre                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "[“Perc.”]"                             %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Xylophone”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! REDUNDANT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -3293,8 +3215,8 @@ D_Percussion_Music_Voice = {                                                   %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \baca-pp-ancora                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -3313,8 +3235,6 @@ D_Percussion_Music_Voice = {                                                   %
     r2..                                                                       %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \pp                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -3543,17 +3463,20 @@ D_Percussion_Music_Voice = {                                                   %
     \times 6/5 {                                                               %! silver_points
 
         % [D Percussion_Music_Voice measure 176 / measure 25]                  %! _comment_measure_numbers
+        \override Staff.BarLine.bar-extent = #'(-2 . 2)                        %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
         \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 5                       %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+        \once \override Staff.Clef.X-extent = ##f                              %! -PARTS:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! -PARTS:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #6                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         r8                                                                     %! silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
@@ -3678,19 +3601,10 @@ D_Percussion_Music_Voice = {                                                   %
     \times 6/5 {                                                               %! silver_points
 
         % [D Percussion_Music_Voice measure 186 / measure 35]                  %! _comment_measure_numbers
-        \stopStaff                                                             %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-        \once \override Staff.StaffSymbol.line-count = 5                       %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-        \startStaff                                                            %! REDUNDANT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \override Beam.positions = #'(-4 . -4)                                 %! baca_beam_positions:OverrideCommand(1)
         \override DynamicLineSpanner.staff-padding = #6                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
-        \once \override Staff.Clef.color = #(x11-color 'DeepPink1)             %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
-    %@% \override Staff.Clef.color = ##f                                       %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        \once \override Staff.StaffSymbol.color = #(x11-color 'DeepPink1)      %! REDUNDANT_STAFF_LINES_COLOR:_attach_color_literal(2)
         r8                                                                     %! silver_points
-        \override Staff.Clef.color = #(x11-color 'DeepPink4)                   %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         fs''!8                                                                 %! silver_points
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -3829,8 +3743,6 @@ D_Percussion_Music_Voice = {                                                   %
         r8                                                                     %! silver_points
 
         fs''!8                                                                 %! silver_points
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         [                                                                      %! silver_points
 
@@ -3968,10 +3880,10 @@ D_Percussion_Music_Voice = {                                                   %
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
     \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     c'2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -3983,6 +3895,7 @@ D_Percussion_Music_Voice = {                                                   %
             \box                                                               %! baca_markup:IndicatorCommand
                 "suspended cymbal"                                             %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     c'2
@@ -4074,6 +3987,7 @@ D_Violin_Music_Voice = {                                                       %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Vn.                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+    \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.line-count = 5                           %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -4358,7 +4272,7 @@ D_Violin_Music_Voice = {                                                       %
     \times 4/5 {                                                               %! glissando_rhythm
 
         cs''!16.                                                               %! glissando_rhythm
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
@@ -4564,8 +4478,8 @@ D_Violin_Music_Voice = {                                                       %
 
         % [D Violin_Music_Voice measure 178 / measure 27]                      %! _comment_measure_numbers
         f''4                                                                   %! glissando_rhythm
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+        \baca-ff-ancora                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
@@ -5331,7 +5245,7 @@ D_Viola_Music_Voice = {                                                        %
 
         % [D Viola_Music_Voice measure 168 / measure 17]                       %! _comment_measure_numbers
         ef''!2                                                                 %! glissando_rhythm
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
@@ -5536,8 +5450,8 @@ D_Viola_Music_Voice = {                                                        %
 
     % [D Viola_Music_Voice measure 178 / measure 27]                           %! _comment_measure_numbers
     c''4                                                                       %! glissando_rhythm
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \baca-ff-ancora                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup { "molto gridato" }                                              %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
@@ -5827,12 +5741,7 @@ D_Viola_Music_Voice = {                                                        %
     R1 * 1                                                                     %! _make_measure_silences
 
     % [D Viola_Music_Voice measure 196 / measure 45]                           %! _comment_measure_numbers
-    \clef "alto"                                                               %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
-    \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r8                                                                         %! incise_chain_b
-    \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     bf,!8                                                                      %! incise_chain_b
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
@@ -6192,7 +6101,7 @@ D_Cello_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! glissando_rhythm
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
@@ -6403,8 +6312,8 @@ D_Cello_Music_Voice = {                                                        %
 
         % [D Cello_Music_Voice measure 178 / measure 27]                       %! _comment_measure_numbers
         b''4                                                                   %! glissando_rhythm
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+        \baca-ff-ancora                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
@@ -6686,12 +6595,7 @@ D_Cello_Music_Voice = {                                                        %
     R1 * 1                                                                     %! _make_measure_silences
 
     % [D Cello_Music_Voice measure 196 / measure 45]                           %! _comment_measure_numbers
-    \clef "bass"                                                               %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
-    \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     r8                                                                         %! incise_chain_b
-    \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     a,8                                                                        %! incise_chain_b
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand

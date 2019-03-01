@@ -135,6 +135,18 @@ persist = abjad.OrderedDict(
                                 ),
                             abjad.Momento(
                                 context='Percussion_Music_Voice',
+                                edition=abjad.Tag('-PARTS'),
+                                prototype='abjad.PersistentOverride',
+                                value=abjad.PersistentOverride(
+                                    after=True,
+                                    attribute='bar_extent',
+                                    context='Staff',
+                                    grob='bar_line',
+                                    value=(0, 2),
+                                    ),
+                                ),
+                            abjad.Momento(
+                                context='Percussion_Music_Voice',
                                 manifest='instruments',
                                 value='Percussion',
                                 ),

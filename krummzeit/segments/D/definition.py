@@ -55,6 +55,14 @@ maker(
 
 maker(
     ('perc', (1, 3)),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (0, 2),
+            after=True,
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(1),
+        ),
     baca.markup('tam-tam', boxed=True),
     krummzeit.incise_attacks(),
     )
@@ -151,8 +159,19 @@ maker(
 
 maker(
     ('perc', (25, 26)),
-    baca.clef('treble'),
-    baca.staff_lines(5),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (-2, 2),
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(5),
+        ),
+    baca.chunk(
+        baca.clef('treble'),
+        baca.not_parts(
+            baca.clef_shift('treble'),
+            ),
+        ),
     krummzeit.silver_points([(2, 1), (1, 2)]),
     )
 
@@ -166,8 +185,6 @@ maker(
 
 maker(
     ('perc', (35, 42)),
-    baca.clef('treble'),
-    baca.staff_lines(5),
     krummzeit.silver_points(
         [(2, 1), (1, 2)],
         dmask=abjad.index([5], 7),
@@ -229,16 +246,12 @@ maker(
 
 maker(
     ('perc', (1, 24)),
-    baca.staff_lines(1),
     baca.staff_position(0),
     )
 
 maker(
     ('perc', (1, 5)),
-    baca.dynamic(
-        'pp',
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
-        ),
+    baca.dynamic('pp-ancora'),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -371,8 +384,14 @@ maker(
     )
 
 maker(
-    (['vn', 'va', 'vc'], [(17, 24), (27, 34)]),
+    (['vn', 'va', 'vc'], 17),
     baca.dynamic('ff'),
+    baca.markup('molto gridato'),
+    )
+
+maker(
+    (['vn', 'va', 'vc'], 27),
+    baca.dynamic('ff-ancora'),
     baca.markup('molto gridato'),
     )
 
@@ -383,9 +402,8 @@ maker(
 
 maker(
     ('pf', [(8, 24), (27, 34)]),
-    baca.clef('bass'),
+    baca.dynamic('mp'),
     baca.new(
-        baca.dynamic('mp'),
         baca.tenuto(),
         map=baca.pheads(exclude=abjad.const.HIDDEN),
         ),
@@ -422,13 +440,22 @@ maker(
 maker(
     (['pf', 'perc'], [(25, 26), (35, 38), (39, 42)]),
     baca.pitch('F#6'),
-    baca.dynamic('ff'),
     baca.staccatissimo(selector=baca.pheads()),
     )
 
 maker(
-    ('pf', [(25, 26), (35, 38)]),
-    baca.clef('treble'),
+    (['pf', 'perc'], [25, 35]),
+    baca.dynamic('ff'),
+    )
+
+maker(
+    ('pf', 25),
+    baca.chunk(
+        baca.clef('treble'),
+        baca.not_parts(
+            baca.clef_shift('treble'),
+            ),
+        ),
     )
 
 maker(
@@ -483,22 +510,29 @@ maker(
     )
 
 maker(
-    ('va', [(39, 42), (45, 48)]),
+    ('va', 39),
     baca.clef('alto'),
     )
 
 maker(
-    ('vc', [(39, 42), (45, 48)]),
+    ('vc', 39),
     baca.clef('bass'),
     )
 
 maker(
     ('perc', (43, 48)),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (0, 2),
+            after=True,
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(1),
+        ),
     baca.clef('percussion'),
     baca.dynamic('ppp'),
     baca.dls_staff_padding(6),
     baca.make_repeat_tied_notes(),
-    baca.staff_lines(1),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.markup(

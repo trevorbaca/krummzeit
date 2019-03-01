@@ -21,7 +21,7 @@ metadata = abjad.OrderedDict(
                 70,
                 76,
                 81,
-                85,
+                86,
                 ],
             ),
         ('duration', "2'57''"),

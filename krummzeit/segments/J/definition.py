@@ -60,11 +60,19 @@ maker(
 
 maker(
     'pf',
+    baca.clef('treble'),
     baca.make_repeat_tied_notes(),
     )
 
 maker(
     'perc',
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (-2, 2),
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(5),
+        ),
     baca.clef('treble'),
     baca.make_repeat_tied_notes(),
     )
@@ -80,7 +88,6 @@ maker(
 
 maker(
     ('va', (1, 4)),
-    baca.clef('treble'),
     krummzeit.closing_pizzicati(
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
         extra_counts_per_division=[3, 3, 2, 3, 5, 7],
@@ -158,13 +165,13 @@ maker(
 
 maker(
     ('vc', (1, 24)),
-    baca.dynamic('fff'),
+    baca.dynamic('fff-ancora'),
     baca.dls_staff_padding(3),
+    baca.markup('gridato possibile'),
     baca.new(
         baca.glissando(),
         map=baca.runs(),
         ),
-    baca.markup('gridato possibile'),
     )
 
 maker(

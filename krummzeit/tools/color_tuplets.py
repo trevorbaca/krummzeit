@@ -29,6 +29,7 @@ def color_tuplets(*, dmask=None, rotation=0):
                 ),
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(
+                extract_trivial=True,
                 rewrite_dots=True,
                 ),
             ),

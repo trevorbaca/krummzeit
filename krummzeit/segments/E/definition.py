@@ -87,7 +87,20 @@ maker(
 maker(
     ('perc', [(1, 14), (28, 34)]),
     baca.markup('suspended cymbal', boxed=True),
+    baca.staff_position(0),
     krummzeit.sponge_rhythm(),
+    )
+
+maker(
+    ('perc', 28),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (0, 2),
+            after=True,
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(1),
+        ),
     )
 
 maker(
@@ -137,9 +150,15 @@ maker(
 
 maker(
     ('perc', 17),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (-2, 2),
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(5),
+        ),
     baca.clef('treble'),
     baca.instrument(krummzeit.instruments['Xylophone']),
-    baca.staff_lines(5),
     )
 
 maker(

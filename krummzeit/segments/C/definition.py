@@ -72,11 +72,11 @@ maker(
 
 maker(
     ('perc', (1, 9)),
-    baca.clef('percussion'),
     baca.dynamic('ppp-ancora'),
     baca.make_repeat_tied_notes(),
-    baca.stem_tremolo(selector=baca.pleaves()),
     baca.markup('snare drum', boxed=True),
+    baca.staff_position(0),
+    baca.stem_tremolo(selector=baca.pleaves()),
     )
 
 maker(
@@ -250,11 +250,6 @@ maker(
     )
 
 maker(
-    ('pf', 9),
-    baca.clef('bass'),
-    )
-
-maker(
     ('pf', [(9, 12), (14, 16)]),
     baca.make_tied_notes(),
     )
@@ -282,6 +277,7 @@ maker(
     ('perc', (14, 19)),
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.markup('tam-tam', boxed=True),
+    baca.staff_position(0),
     )
 
 maker(

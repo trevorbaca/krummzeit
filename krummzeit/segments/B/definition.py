@@ -83,7 +83,6 @@ maker(
 
 maker(
     'Global_Rests',
-    #baca.global_fermata('short', selector=baca.leaf(1 - 1)),
     baca.global_fermata(
         'short',
         selector=baca.leaf(5 - 1),
@@ -143,21 +142,27 @@ maker(
 maker(
     ('vn', (1, 20)),
     baca.make_repeat_tied_notes(),
-    baca.not_parts(baca.bar_extent_zero()),
     baca.staff_position(0),
     )
 
 maker(
     ('perc', (21, 27)),
+    baca.chunk(
+        baca.bar_extent((-2, 2)),
+        baca.bar_extent_persistent(
+            (0, 2),
+            after=True,
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(1),
+        ),
     baca.clef('percussion'),
     baca.dynamic('f'),
     baca.instrument(krummzeit.instruments['Percussion']),
-    baca.not_parts(baca.bar_extent_zero()),
-    baca.staff_lines(1),
-    baca.staff_position(0),
     baca.markup(
         krummzeit.markup.scraped_slate(),
         ),
+    baca.staff_position(0),
     )
 
 maker(
@@ -226,8 +231,14 @@ maker(
     )
 
 maker(
-    ('perc', (1, 13)),
-    baca.not_parts(baca.bar_extent_zero()),
+    ('perc', 14),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (-2, 2),
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(5),
+        ),
     )
 
 maker(
@@ -239,7 +250,6 @@ maker(
     ('perc', [14, 28]),
     baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
-    baca.staff_lines(5),
     )
 
 maker(
@@ -249,16 +259,32 @@ maker(
 
 maker(
     ('perc', (34, 44)),
+    baca.chunk(
+        baca.bar_extent((-2, 2)),
+        baca.bar_extent_persistent(
+            (0, 2),
+            after=True,
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(1),
+        ),
     baca.clef('percussion'),
     baca.make_repeat_tied_notes(),
     baca.markup('snare drum', boxed=True),
+    baca.staff_position(0),
     )
 
 maker(
     ('vn', (22, 28)),
-    baca.instrument(krummzeit.instruments['Violin']),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (-2, 2),
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(5),
+        ),
     baca.clef('treble'),
-    baca.staff_lines(5),
+    baca.instrument(krummzeit.instruments['Violin']),
     krummzeit.pizzicato_rhythm(),
     )
 
@@ -448,6 +474,17 @@ maker(
 maker(
     (['pf', 'perc'], 28),
     baca.dynamic('ff'),
+    )
+
+maker(
+    ('perc', 28),
+    baca.chunk(
+        baca.bar_extent_persistent(
+            (-2, 2),
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(5),
+        ),
     )
 
 maker(

@@ -69,12 +69,17 @@ maker(
 maker(
     ('perc', [(2, 3), (5, 9), 13, 16]),
     baca.make_repeat_tied_notes(),
+    baca.staff_position(0),
     )
 
 maker(
     ('perc', (19, 22)),
-    baca.make_repeated_duration_notes([(1, 2)], do_not_rewrite_meter=True),
+    baca.make_repeated_duration_notes(
+        [(1, 2)],
+        do_not_rewrite_meter=True,
+        ),
     baca.markup('tam-tam', boxed=True),
+    baca.staff_position(0),
     )
 
 maker(
@@ -210,8 +215,11 @@ maker(
 
 maker(
     ('perc', (19, 22)),
+    baca.dynamic('p-sempre'),
+    baca.laissez_vibrer(
+        selector=baca.pheads(),
+        ),
     baca.markup('attackless'),
-    baca.dynamic('p', selector=baca.pheads()),
     )
 
 maker(

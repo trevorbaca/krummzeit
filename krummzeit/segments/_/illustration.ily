@@ -873,10 +873,10 @@ i_Percussion_Music_Voice = {                                                   %
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_10:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_10:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
         \clef "percussion"                                                     %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         c'2                                                                    %! sponge_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-effort-ff                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -889,7 +889,7 @@ i_Percussion_Music_Voice = {                                                   %
             }                                                                  %! baca_markup:IndicatorCommand
         ^ \markup { "accent changes of direction noticeably at each attack" }  %! baca_markup:IndicatorCommand
         ^ \baca-explicit-indicator-markup "(“Percussion”)"                     %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        \override Staff.BarLine.bar-extent = #'(0 . 0)                         %! baca_bar_extent:OverrideCommand(1)
+        \override Staff.BarLine.bar-extent = #'(0 . 2)                         %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         c'2                                                                    %! sponge_rhythm
@@ -930,8 +930,6 @@ i_Percussion_Music_Voice = {                                                   %
 
         c'4                                                                    %! sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
-        \revert Staff.BarLine.bar-extent                                       %! baca_bar_extent:OverrideCommand(2)
-        \once \override Staff.BarLine.bar-extent = #'(0 . 0)                   %! baca_bar_extent:OverrideCommand(1)
         \revert DynamicLineSpanner.padding                                     %! baca_dls_padding:OverrideCommand(2)
         \revert TupletBracket.padding                                          %! baca_tuplet_bracket_down:OverrideCommand(2)
 

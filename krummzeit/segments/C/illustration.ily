@@ -1198,10 +1198,6 @@ C_Piano_Music_Voice = {                                                        %
     \once \override NoteHead.text = \markup {
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
-    \clef "bass"                                                               %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
-    \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     <c,, e,, g,, b,, d, f, a,>2.
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1215,7 +1211,6 @@ C_Piano_Music_Voice = {                                                        %
                 }
         }
     ~
-    \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -1484,7 +1479,7 @@ C_Percussion_Music_Voice = {                                                   %
             Perc.                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \once \override Staff.StaffSymbol.line-count = 5                           %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \once \override Staff.StaffSymbol.line-count = 1                           %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
     \set Staff.instrumentName =                                                %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
@@ -1492,14 +1487,13 @@ C_Percussion_Music_Voice = {                                                   %
             #16                                                                %! _clone_segment_initial_short_instrument_name
             Perc.                                                              %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-    \clef "percussion"                                                         %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+    \clef "percussion"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
+    \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+%@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    \once \override Staff.Clef.color = #(x11-color 'DeepPink1)                 %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.                                                                        %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-ppp-ancora                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -1511,6 +1505,7 @@ C_Percussion_Music_Voice = {                                                   %
             \box                                                               %! baca_markup:IndicatorCommand
                 "snare drum"                                                   %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1518,73 +1513,61 @@ C_Percussion_Music_Voice = {                                                   %
             #16                                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
             Perc.                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
-    \override Staff.Clef.color = #(x11-color 'DeepPink4)                       %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [C Percussion_Music_Voice measure 134 / measure 2]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeat_tied_notes
+    c'4                                                                        %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C Percussion_Music_Voice measure 135 / measure 3]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.
+    c'4.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4
+    c'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C Percussion_Music_Voice measure 136 / measure 4]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeat_tied_notes
+    c'4                                                                        %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C Percussion_Music_Voice measure 137 / measure 5]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.
+    c'2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.
+    c'4.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C Percussion_Music_Voice measure 138 / measure 6]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeat_tied_notes
+    c'4                                                                        %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C Percussion_Music_Voice measure 139 / measure 7]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.
+    c'2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.
+    c'4.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C Percussion_Music_Voice measure 140 / measure 8]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeat_tied_notes
+    c'4                                                                        %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [C Percussion_Music_Voice measure 141 / measure 9]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.
+    c'2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.
+    c'4.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
@@ -1620,8 +1603,7 @@ C_Percussion_Music_Voice = {                                                   %
 
     % [C Percussion_Music_Voice measure 146 / measure 14]                      %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-pp-sempre                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
@@ -1631,91 +1613,64 @@ C_Percussion_Music_Voice = {                                                   %
                 tam-tam                                                        %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
     % [C Percussion_Music_Voice measure 147 / measure 15]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
     % [C Percussion_Music_Voice measure 148 / measure 16]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
     % [C Percussion_Music_Voice measure 149 / measure 17]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
     % [C Percussion_Music_Voice measure 150 / measure 18]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
     % [C Percussion_Music_Voice measure 151 / measure 19]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! baca_make_repeated_duration_notes
+    c'4                                                                        %! baca_make_repeated_duration_notes
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
@@ -1769,6 +1724,7 @@ C_Violin_Music_Voice = {                                                       %
                     #16                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                     Vn.                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                 }                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            \override Staff.BarLine.bar-extent = #'(-2 . 2)                    %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             \stopStaff                                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
             \once \override Staff.StaffSymbol.line-count = 5                   %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
             \startStaff                                                        %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)

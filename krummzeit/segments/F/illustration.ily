@@ -1618,7 +1618,7 @@ F_Percussion_Music_Voice = {                                                   %
                     Perc.                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                 }                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             \stopStaff                                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-            \once \override Staff.StaffSymbol.line-count = 5                   %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+            \once \override Staff.StaffSymbol.line-count = 1                   %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
             \startStaff                                                        %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
             \set Staff.instrumentName =                                        %! _clone_segment_initial_short_instrument_name
             \markup {                                                          %! _clone_segment_initial_short_instrument_name
@@ -1645,6 +1645,7 @@ F_Percussion_Music_Voice = {                                                   %
                     \box                                                       %! baca_markup:IndicatorCommand
                         "snare drum"                                           %! baca_markup:IndicatorCommand
                 }                                                              %! baca_markup:IndicatorCommand
+            \override Staff.BarLine.bar-extent = #'(0 . 2)                     %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)     %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
             \set Staff.shortInstrumentName =                                   %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
             \markup {                                                          %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -1667,26 +1668,22 @@ F_Percussion_Music_Voice = {                                                   %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [F Percussion_Music_Voice measure 236 / measure 2]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.
+    c'4.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \markup { "rapid roll with fingertips: keep speed constant during accelerando" } %! baca_markup:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4
+    c'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [F Percussion_Music_Voice measure 237 / measure 3]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.
+    c'4.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4
+    c'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
@@ -1712,41 +1709,34 @@ F_Percussion_Music_Voice = {                                                   %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [F Percussion_Music_Voice measure 239 / measure 5]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.
+    c'2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2
+    c'2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [F Percussion_Music_Voice measure 240 / measure 6]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.                                                                        %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [F Percussion_Music_Voice measure 241 / measure 7]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.                                                                        %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [F Percussion_Music_Voice measure 242 / measure 8]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.                                                                        %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [F Percussion_Music_Voice measure 243 / measure 9]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.
+    c'2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.
+    c'4.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
@@ -1778,8 +1768,7 @@ F_Percussion_Music_Voice = {                                                   %
     R1 * 7/4                                                                   %! _make_measure_silences
 
     % [F Percussion_Music_Voice measure 247 / measure 13]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.                                                                        %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca_make_repeat_tied_notes
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -1807,12 +1796,10 @@ F_Percussion_Music_Voice = {                                                   %
     R1 * 11/8                                                                  %! _make_measure_silences
 
     % [F Percussion_Music_Voice measure 250 / measure 16]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.
+    c'4.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4
+    c'4
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
@@ -1841,10 +1828,10 @@ F_Percussion_Music_Voice = {                                                   %
     R1 * 3/2                                                                   %! _make_measure_silences
 
     % [F Percussion_Music_Voice measure 253 / measure 19]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! baca_make_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    c'2                                                                        %! baca_make_repeated_duration_notes
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \baca-p-sempre                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -1853,35 +1840,23 @@ F_Percussion_Music_Voice = {                                                   %
         }                                                                      %! baca_markup:IndicatorCommand
     ^ \markup { attackless }                                                   %! baca_markup:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! baca_make_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    c'2                                                                        %! baca_make_repeated_duration_notes
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! baca_make_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    c'2                                                                        %! baca_make_repeated_duration_notes
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! baca_make_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    c'2                                                                        %! baca_make_repeated_duration_notes
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! baca_make_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    c'2                                                                        %! baca_make_repeated_duration_notes
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! baca_make_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    c'2                                                                        %! baca_make_repeated_duration_notes
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! baca_make_repeated_duration_notes
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    c'2                                                                        %! baca_make_repeated_duration_notes
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
@@ -1935,6 +1910,7 @@ F_Violin_Music_Voice = {                                                       %
                     #16                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                     Vn.                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                 }                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            \override Staff.BarLine.bar-extent = #'(-2 . 2)                    %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             \stopStaff                                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
             \once \override Staff.StaffSymbol.line-count = 5                   %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
             \startStaff                                                        %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)

@@ -125,7 +125,6 @@ maker(
     baca.accent(
         selector=baca.pheads(exclude=abjad.const.HIDDEN),
         ),
-    baca.not_parts(baca.bar_extent_zero()),
     baca.staff_position(0),
     )
 
@@ -332,18 +331,24 @@ maker(
 
 maker(
     ('vn', (72, 75)),
-    baca.bar_extent((-2, 2)),
+    baca.chunk(
+        baca.bar_extent((-2, 2)),
+        baca.bar_extent_persistent(
+            (-2, 0),
+            after=True,
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(1),
+        ),
     baca.clef('percussion'),
     baca.dynamic('mf'),
     baca.instrument(krummzeit.instruments['Percussion']),
     baca.make_repeat_tied_notes(),
-    baca.not_parts(baca.bar_extent_zero()),
-    baca.staff_lines(1),
-    baca.staff_position(0),
     baca.markup(
         krummzeit.markup.stonecircle_scrape_at_moderate_speed(),
         boxed=True,
         ),
+    baca.staff_position(0),
     )
 
 maker(
@@ -570,8 +575,8 @@ maker(
 
 maker(
     ('pf', (45, 56)),
+    baca.dynamic('fff-sempre'),
     baca.new(
-        baca.dynamic('fff'),
         baca.marcato(),
         map=baca.pheads(),
         ),
@@ -581,9 +586,9 @@ maker(
 
 maker(
     ('perc', (45, 60)),
+    baca.dynamic('p-sempre'),
     baca.new(
-        baca.dynamic('p'),
-        baca.tenuto(),
+        baca.laissez_vibrer(),
         map=baca.pheads(),
         ),
     )

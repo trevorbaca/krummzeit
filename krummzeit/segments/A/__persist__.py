@@ -145,6 +145,18 @@ persist = abjad.OrderedDict(
                                 ),
                             abjad.Momento(
                                 context='Percussion_Music_Voice',
+                                edition=abjad.Tag('-PARTS'),
+                                prototype='abjad.PersistentOverride',
+                                value=abjad.PersistentOverride(
+                                    after=True,
+                                    attribute='bar_extent',
+                                    context='Staff',
+                                    grob='bar_line',
+                                    value=(0, 2),
+                                    ),
+                                ),
+                            abjad.Momento(
+                                context='Percussion_Music_Voice',
                                 manifest='instruments',
                                 value='Percussion',
                                 ),
@@ -166,7 +178,7 @@ persist = abjad.OrderedDict(
                             abjad.Momento(
                                 context='Percussion_Music_Voice',
                                 prototype='abjad.Dynamic',
-                                value='p',
+                                value='\\baca-p-sempre',
                                 ),
                             ],
                         ),
@@ -255,6 +267,18 @@ persist = abjad.OrderedDict(
                                 edition=abjad.Tag('-PARTS'),
                                 manifest='margin_markups',
                                 value='Vn.',
+                                ),
+                            abjad.Momento(
+                                context='Violin_Music_Voice',
+                                edition=abjad.Tag('-PARTS'),
+                                prototype='abjad.PersistentOverride',
+                                value=abjad.PersistentOverride(
+                                    after=True,
+                                    attribute='bar_extent',
+                                    context='Staff',
+                                    grob='bar_line',
+                                    value=(-2, 0),
+                                    ),
                                 ),
                             abjad.Momento(
                                 context='Violin_Music_Voice',

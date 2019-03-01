@@ -1678,22 +1678,17 @@ E_Oboe_Music_Voice = {                                                         %
 
     }                                                                          %! color_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    % [E Oboe_Music_Voice measure 212 / measure 13]                            %! _comment_measure_numbers
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    bqs'!2.                                                                    %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-        % [E Oboe_Music_Voice measure 212 / measure 13]                        %! _comment_measure_numbers
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        bqs'!2.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        bqs'!2                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ~
-
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    bqs'!2                                                                     %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 5/7 {                                                               %! color_tuplets
@@ -1789,41 +1784,36 @@ E_Oboe_Music_Voice = {                                                         %
 
     }                                                                          %! color_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    % [E Oboe_Music_Voice measure 217 / measure 18]                            %! _comment_measure_numbers
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    gqs'!2..                                                                   %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
-        % [E Oboe_Music_Voice measure 217 / measure 18]                        %! _comment_measure_numbers
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        gqs'!2..                                                               %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    gqs'!8                                                                     %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        gqs'!8                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        gqs'!4.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        ~
-
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    gqs'!4.                                                                    %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 3/5 {                                                               %! color_tuplets
@@ -1838,58 +1828,53 @@ E_Oboe_Music_Voice = {                                                         %
 
     }                                                                          %! color_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    % [E Oboe_Music_Voice measure 219 / measure 20]                            %! _comment_measure_numbers
+    r16                                                                        %! color_tuplets
 
-        % [E Oboe_Music_Voice measure 219 / measure 20]                        %! _comment_measure_numbers
-        r16                                                                    %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    fqs'!8                                                                     %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    [                                                                          %! color_tuplets
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fqs'!8                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        [                                                                      %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    fqs'!32                                                                    %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    \glissando                                                                 %! baca_glissando
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fqs'!32                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        \glissando                                                             %! baca_glissando
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    eqf'!32                                                                    %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    ]                                                                          %! color_tuplets
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        eqf'!32                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        ]                                                                      %! color_tuplets
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        eqf'!4.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        ~
-
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    eqf'!4.                                                                    %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 9/5 {                                                               %! color_tuplets
@@ -2506,72 +2491,62 @@ E_Clarinet_Music_Voice = {                                                     %
     % [E Clarinet_Music_Voice measure 211 / measure 12]                        %! _comment_measure_numbers
     r1                                                                         %! color_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    % [E Clarinet_Music_Voice measure 212 / measure 13]                        %! _comment_measure_numbers
+    \override DynamicLineSpanner.staff-padding = #5                            %! baca_dls_staff_padding:OverrideCommand(1)
+    \override TupletBracket.staff-padding = #3                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+    a2.                                                                        %! color_tuplets
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
-        % [E Clarinet_Music_Voice measure 212 / measure 13]                    %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #5                        %! baca_dls_staff_padding:OverrideCommand(1)
-        \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        a2.                                                                    %! color_tuplets
-        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    r2                                                                         %! color_tuplets
 
-        r2                                                                     %! color_tuplets
+    % [E Clarinet_Music_Voice measure 213 / measure 14]                        %! _comment_measure_numbers
+    r8                                                                         %! color_tuplets
 
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    a4                                                                         %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
-    \times 1/1 {                                                               %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    a16                                                                        %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    2
+        }
+    [                                                                          %! color_tuplets
+    \glissando                                                                 %! baca_glissando
 
-        % [E Clarinet_Music_Voice measure 213 / measure 14]                    %! _comment_measure_numbers
-        r8                                                                     %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    gtqs'!16                                                                   %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ^ \markup {
+        \override
+            #'(circle-padding . 0.25)
+            \circle
+                \finger
+                    1
+        }
+    ]                                                                          %! color_tuplets
 
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a4                                                                     %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a16                                                                    %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
-        [                                                                      %! color_tuplets
-        \glissando                                                             %! baca_glissando
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        gtqs'!16                                                               %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
-        ]                                                                      %! color_tuplets
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        gtqs'!2.                                                               %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
-        ~
-
-    }                                                                          %! color_tuplets
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    gtqs'!2.                                                                   %! color_tuplets
+    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
+    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
+    ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
     \times 3/5 {                                                               %! color_tuplets
@@ -3788,8 +3763,7 @@ E_Percussion_Music_Voice = {                                                   %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.                                                                        %! sponge_rhythm
+    c'4.                                                                       %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -3801,6 +3775,7 @@ E_Percussion_Music_Voice = {                                                   %
             \box                                                               %! baca_markup:IndicatorCommand
                 "suspended cymbal"                                             %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -3810,61 +3785,50 @@ E_Percussion_Music_Voice = {                                                   %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.                                                                        %! sponge_rhythm
+    c'4.                                                                       %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     \times 2/3 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 201 / measure 2]                   %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
     % [E Percussion_Music_Voice measure 202 / measure 3]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! sponge_rhythm
+    c'2                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! sponge_rhythm
+    c'2                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! sponge_rhythm
+    c'2                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/17 {                                                              %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 203 / measure 4]                   %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c1                                                                     %! sponge_rhythm
+        c'1                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c8                                                                     %! sponge_rhythm
+        c'8                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
@@ -3873,45 +3837,37 @@ E_Percussion_Music_Voice = {                                                   %
     \times 3/5 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 204 / measure 5]                   %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c4.                                                                    %! sponge_rhythm
+        c'4.                                                                   %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2..                                                                   %! sponge_rhythm
+        c'2..                                                                  %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
     % [E Percussion_Music_Voice measure 205 / measure 6]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c8                                                                         %! sponge_rhythm
+    c'8                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! sponge_rhythm
+    c'2                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/17 {                                                              %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 206 / measure 7]                   %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c1                                                                     %! sponge_rhythm
+        c'1                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c8                                                                     %! sponge_rhythm
+        c'8                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
@@ -3921,42 +3877,35 @@ E_Percussion_Music_Voice = {                                                   %
     \times 9/13 {                                                              %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 207 / measure 8]                   %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c4.                                                                    %! sponge_rhythm
+        c'4.                                                                   %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2.                                                                    %! sponge_rhythm
+        c'2.                                                                   %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
     % [E Percussion_Music_Voice measure 208 / measure 9]                       %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! sponge_rhythm
+    c'4                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.                                                                        %! sponge_rhythm
+    c'4.                                                                       %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 5/8 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 209 / measure 10]                  %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c8                                                                     %! sponge_rhythm
+        c'8                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2..                                                                   %! sponge_rhythm
+        c'2..                                                                  %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
@@ -3965,55 +3914,45 @@ E_Percussion_Music_Voice = {                                                   %
     \times 3/5 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 210 / measure 11]                  %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c8                                                                     %! sponge_rhythm
+        c'8                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c8                                                                     %! sponge_rhythm
+        c'8                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
     }                                                                          %! sponge_rhythm
 
     % [E Percussion_Music_Voice measure 211 / measure 12]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.                                                                        %! sponge_rhythm
+    c'4.                                                                       %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! sponge_rhythm
+    c'2                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c8                                                                         %! sponge_rhythm
+    c'8                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 5/9 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 212 / measure 13]                  %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2..                                                                   %! sponge_rhythm
+        c'2..                                                                  %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2..                                                                   %! sponge_rhythm
+        c'2..                                                                  %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
@@ -4022,21 +3961,17 @@ E_Percussion_Music_Voice = {                                                   %
     \times 5/7 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 213 / measure 14]                  %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c8                                                                     %! sponge_rhythm
+        c'8                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c1                                                                     %! sponge_rhythm
+        c'1                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c8                                                                     %! sponge_rhythm
+        c'8                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
@@ -4069,14 +4004,15 @@ E_Percussion_Music_Voice = {                                                   %
     \times 6/5 {                                                               %! silver_points
 
         % [E Percussion_Music_Voice measure 216 / measure 17]                  %! _comment_measure_numbers
+        \override Staff.BarLine.bar-extent = #'(-2 . 2)                        %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
         \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 5                       %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
         r8                                                                     %! silver_points
         ^ \baca-redundant-indicator-markup "(“Xylophone”)"                     %! REDUNDANT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -4428,8 +4364,11 @@ E_Percussion_Music_Voice = {                                                   %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [E Percussion_Music_Voice measure 227 / measure 28]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.                                                                        %! sponge_rhythm
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
+    c'4.                                                                       %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -4439,84 +4378,70 @@ E_Percussion_Music_Voice = {                                                   %
             \box                                                               %! baca_markup:IndicatorCommand
                 "suspended cymbal"                                             %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4.                                                                        %! sponge_rhythm
+    c'4.                                                                       %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     \times 2/3 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 228 / measure 29]                  %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
     % [E Percussion_Music_Voice measure 229 / measure 30]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! sponge_rhythm
+    c'2                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! sponge_rhythm
+    c'2                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! sponge_rhythm
+    c'4                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     % [E Percussion_Music_Voice measure 230 / measure 31]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2.                                                                        %! sponge_rhythm
+    c'2.                                                                       %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c4                                                                         %! sponge_rhythm
+    c'4                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
     \times 9/13 {                                                              %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 231 / measure 32]                  %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c4                                                                     %! sponge_rhythm
+        c'4                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c1                                                                     %! sponge_rhythm
+        c'1                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c4.                                                                    %! sponge_rhythm
+        c'4.                                                                   %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
 
     % [E Percussion_Music_Voice measure 232 / measure 33]                      %! _comment_measure_numbers
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c8                                                                         %! sponge_rhythm
+    c'8                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c2                                                                         %! sponge_rhythm
+    c'2                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
 
-    \baca-unpitched-music-warning                                              %! _color_unpitched_notes
-    c8                                                                         %! sponge_rhythm
+    c'8                                                                        %! sponge_rhythm
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     \repeatTie
 
@@ -4524,17 +4449,14 @@ E_Percussion_Music_Voice = {                                                   %
     \times 5/8 {                                                               %! sponge_rhythm
 
         % [E Percussion_Music_Voice measure 233 / measure 34]                  %! _comment_measure_numbers
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c4.                                                                    %! sponge_rhythm
+        c'4.                                                                   %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \repeatTie
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c2                                                                     %! sponge_rhythm
+        c'2                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        \baca-unpitched-music-warning                                          %! _color_unpitched_notes
-        c8                                                                     %! sponge_rhythm
+        c'8                                                                    %! sponge_rhythm
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
     }                                                                          %! sponge_rhythm
@@ -4611,6 +4533,7 @@ E_Violin_Music_Voice = {                                                       %
                     #16                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                     Vn.                                                        %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                 }                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            \override Staff.BarLine.bar-extent = #'(-2 . 2)                    %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             \stopStaff                                                         %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
             \once \override Staff.StaffSymbol.line-count = 5                   %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
             \startStaff                                                        %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)

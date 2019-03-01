@@ -4759,8 +4759,8 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \baca-fff-sempre                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -4789,8 +4789,6 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -4814,8 +4812,6 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -4841,8 +4837,6 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -4873,8 +4867,6 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -4898,8 +4890,6 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -4925,8 +4915,6 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -4955,8 +4943,6 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -4980,8 +4966,6 @@ A_Piano_Music_Voice = {                                                        %
     	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     }
     <c,, e,, g,, b,, d, f, a,>16
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \marcato                                                                 %! baca_marcato:IndicatorCommand
     ^ \markup {
         \center-align
@@ -5012,8 +4996,8 @@ A_Piano_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g''16                                                                  %! pizzicato_sixteenths
-        - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         - \tweak color #red                                                    %! _color_repeat_pitch_classes_
         ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
@@ -5646,6 +5630,7 @@ A_Percussion_Music_Voice = {                                                   %
     - \accent                                                                  %! baca_accent:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Perc.”]"                             %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Percussion”)"                        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
+    \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -5654,7 +5639,6 @@ A_Percussion_Music_Voice = {                                                   %
             Perc.                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
-    \override Staff.BarLine.bar-extent = #'(0 . 0)                             %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
 
     c'4.                                                                       %! sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
@@ -6002,10 +5986,10 @@ A_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \baca-p-sempre                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
     ^ \markup {                                                                %! baca_markup:IndicatorCommand
         \override                                                              %! baca_markup:IndicatorCommand
             #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
@@ -6024,10 +6008,8 @@ A_Percussion_Music_Voice = {                                                   %
     r4                                                                         %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -6035,10 +6017,8 @@ A_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6048,10 +6028,8 @@ A_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6066,10 +6044,8 @@ A_Percussion_Music_Voice = {                                                   %
     r8                                                                         %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -6077,10 +6053,8 @@ A_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6090,10 +6064,8 @@ A_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6106,10 +6078,8 @@ A_Percussion_Music_Voice = {                                                   %
     r2.                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -6117,10 +6087,8 @@ A_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6130,10 +6098,8 @@ A_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6148,10 +6114,8 @@ A_Percussion_Music_Voice = {                                                   %
     r4                                                                         %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8.                                                                        %! incise_attacks
 
@@ -6159,10 +6123,8 @@ A_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! incise_attacks
 
     c'16                                                                       %! incise_attacks
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
-    - \tenuto                                                                  %! baca_tenuto:IndicatorCommand
+    - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
     r8                                                                         %! incise_attacks
 
@@ -6230,8 +6192,6 @@ A_Percussion_Music_Voice = {                                                   %
 
     % [A Percussion_Music_Voice measure 88 / measure 75]                       %! _comment_measure_numbers
     R1 * 5/4                                                                   %! _make_measure_silences
-    \revert Staff.BarLine.bar-extent                                           %! -PARTS:baca_bar_extent_zero:OverrideCommand(2)
-    \once \override Staff.BarLine.bar-extent = #'(0 . 0)                       %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -7992,10 +7952,10 @@ A_Violin_Music_Voice = {                                                       %
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                      %! baca_bar_extent:OverrideCommand(1)
     \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     c'2.                                                                       %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -8006,7 +7966,7 @@ A_Violin_Music_Voice = {                                                       %
                 "stonecircle: scrape at moderate speed"                        %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
     ^ \baca-explicit-indicator-markup "(“Percussion”)"                         %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-    \override Staff.BarLine.bar-extent = #'(0 . 0)                             %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
+    \override Staff.BarLine.bar-extent = #'(-2 . 0)                            %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [A Violin_Music_Voice measure 86 / measure 73]                           %! _comment_measure_numbers
@@ -8025,8 +7985,6 @@ A_Violin_Music_Voice = {                                                       %
 
     c'2
     \repeatTie
-    \revert Staff.BarLine.bar-extent                                           %! -PARTS:baca_bar_extent_zero:OverrideCommand(2)
-    \once \override Staff.BarLine.bar-extent = #'(0 . 0)                       %! -PARTS:baca_bar_extent_zero:OverrideCommand(1)
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 

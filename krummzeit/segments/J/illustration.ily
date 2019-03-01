@@ -1528,33 +1528,35 @@ J_Piano_Music_Voice = {                                                        %
     \markup {                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-            Hpschd.                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+            Pf.                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
     \set Staff.instrumentName =                                                %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
         \hcenter-in                                                            %! _clone_segment_initial_short_instrument_name
             #16                                                                %! _clone_segment_initial_short_instrument_name
-            Hpschd.                                                            %! _clone_segment_initial_short_instrument_name
+            Pf.                                                                %! _clone_segment_initial_short_instrument_name
         }                                                                      %! _clone_segment_initial_short_instrument_name
-    \clef "bass"                                                               %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
+%%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_314:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_314:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
-%@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
+    \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
+%@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     cs'''!2.
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-fff-poss                                                             %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
-    ^ \baca-reapplied-indicator-markup "[“Hpschd.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
+    ^ \baca-reapplied-indicator-markup "[“Pf.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Piano”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \hcenter-in                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
             #16                                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
-            Hpschd.                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
+            Pf.                                                                %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
-    \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+    \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     cs'''!2
     :32                                                                        %! baca_stem_tremolo:IndicatorCommand
@@ -1935,9 +1937,10 @@ J_Percussion_Music_Voice = {                                                   %
             #16                                                                %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             Perc.                                                              %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         }                                                                      %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
-    \stopStaff                                                                 %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \once \override Staff.StaffSymbol.line-count = 1                           %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
-    \startStaff                                                                %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
+    \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 5                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
     \set Staff.instrumentName =                                                %! _clone_segment_initial_short_instrument_name
     \markup {                                                                  %! _clone_segment_initial_short_instrument_name
         \hcenter-in                                                            %! _clone_segment_initial_short_instrument_name
@@ -1949,7 +1952,7 @@ J_Percussion_Music_Voice = {                                                   %
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_314:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
+    \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
@@ -2349,6 +2352,7 @@ J_Violin_Music_Voice = {                                                       %
                 #16                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
                 Vn.                                                            %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
             }                                                                  %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
+        \override Staff.BarLine.bar-extent = #'(-2 . 2)                        %! REAPPLIED_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
         \stopStaff                                                             %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.line-count = 5                       %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
         \startStaff                                                            %! REAPPLIED_STAFF_LINES:_set_status_tag:_reapply_persistent_indicators(3)
@@ -2390,13 +2394,8 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 315 / measure 2]                       %! _comment_measure_numbers
-        r4
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 315 / measure 2]                           %! _comment_measure_numbers
+    r4
 
     \times 4/5 {                                                               %! closing_pizzicati
 
@@ -2419,13 +2418,8 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 317 / measure 4]                       %! _comment_measure_numbers
-        r2
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 317 / measure 4]                           %! _comment_measure_numbers
+    r2
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
@@ -2458,12 +2452,7 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        r2
-
-    }                                                                          %! closing_pizzicati
+    r2
 
     \times 4/5 {                                                               %! closing_pizzicati
 
@@ -2475,13 +2464,8 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 321 / measure 8]                       %! _comment_measure_numbers
-        r2
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 321 / measure 8]                           %! _comment_measure_numbers
+    r2
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/9 {                                                               %! closing_pizzicati
@@ -2518,13 +2502,8 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 325 / measure 12]                      %! _comment_measure_numbers
-        r2
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 325 / measure 12]                          %! _comment_measure_numbers
+    r2
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
@@ -2535,23 +2514,13 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
+    % [J Violin_Music_Voice measure 327 / measure 14]                          %! _comment_measure_numbers
+    r4
 
-        % [J Violin_Music_Voice measure 327 / measure 14]                      %! _comment_measure_numbers
-        r4
+    r4
 
-    }                                                                          %! closing_pizzicati
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        r4
-
-        g'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! closing_pizzicati
+    g'''2.                                                                     %! closing_pizzicati
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \times 2/3 {                                                               %! closing_pizzicati
 
@@ -2566,16 +2535,11 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
+    % [J Violin_Music_Voice measure 329 / measure 16]                          %! _comment_measure_numbers
+    r4
 
-        % [J Violin_Music_Voice measure 329 / measure 16]                      %! _comment_measure_numbers
-        r4
-
-        f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! closing_pizzicati
+    f'''4                                                                      %! closing_pizzicati
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
@@ -2600,29 +2564,14 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
+    r2
 
-        r2
+    % [J Violin_Music_Voice measure 332 / measure 19]                          %! _comment_measure_numbers
+    r1
 
-    }                                                                          %! closing_pizzicati
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 332 / measure 19]                      %! _comment_measure_numbers
-        r1
-
-    }                                                                          %! closing_pizzicati
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 333 / measure 20]                      %! _comment_measure_numbers
-        f'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 333 / measure 20]                          %! _comment_measure_numbers
+    f'''2                                                                      %! closing_pizzicati
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
@@ -2659,13 +2608,8 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 337 / measure 24]                      %! _comment_measure_numbers
-        r2
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 337 / measure 24]                          %! _comment_measure_numbers
+    r2
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/9 {                                                               %! closing_pizzicati
@@ -2681,13 +2625,8 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 339 / measure 26]                      %! _comment_measure_numbers
-        r4
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 339 / measure 26]                          %! _comment_measure_numbers
+    r4
 
     \times 2/3 {                                                               %! closing_pizzicati
 
@@ -2743,12 +2682,7 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        r2
-
-    }                                                                          %! closing_pizzicati
+    r2
 
     \times 2/3 {                                                               %! closing_pizzicati
 
@@ -2763,16 +2697,11 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
+    % [J Violin_Music_Voice measure 345 / measure 32]                          %! _comment_measure_numbers
+    r4
 
-        % [J Violin_Music_Voice measure 345 / measure 32]                      %! _comment_measure_numbers
-        r4
-
-        e'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! closing_pizzicati
+    e'''4                                                                      %! closing_pizzicati
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/6 {                                                               %! closing_pizzicati
@@ -2798,24 +2727,14 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
+    % [J Violin_Music_Voice measure 348 / measure 35]                          %! _comment_measure_numbers
+    r2
 
-        % [J Violin_Music_Voice measure 348 / measure 35]                      %! _comment_measure_numbers
-        r2
+    e'''2                                                                      %! closing_pizzicati
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-        e'''2                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! closing_pizzicati
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 349 / measure 36]                      %! _comment_measure_numbers
-        r2
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 349 / measure 36]                          %! _comment_measure_numbers
+    r2
 
     \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
     \times 5/7 {                                                               %! closing_pizzicati
@@ -2835,13 +2754,8 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        % [J Violin_Music_Voice measure 351 / measure 38]                      %! _comment_measure_numbers
-        r4
-
-    }                                                                          %! closing_pizzicati
+    % [J Violin_Music_Voice measure 351 / measure 38]                          %! _comment_measure_numbers
+    r4
 
     \times 4/5 {                                                               %! closing_pizzicati
 
@@ -2859,18 +2773,13 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
+    % [J Violin_Music_Voice measure 353 / measure 40]                          %! _comment_measure_numbers
+    r4
 
-        % [J Violin_Music_Voice measure 353 / measure 40]                      %! _comment_measure_numbers
-        r4
-
-        f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
-
-    }                                                                          %! closing_pizzicati
+    f'''4                                                                      %! closing_pizzicati
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2971,11 +2880,11 @@ J_Viola_Music_Voice = {                                                        %
             }                                                                  %! _clone_segment_initial_short_instrument_name
         \override DynamicLineSpanner.staff-padding = #5                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #2                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        \clef "treble"                                                         %! REDUNDANT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+        \clef "treble"                                                         %! REAPPLIED_CLEF:_set_status_tag:_reapply_persistent_indicators(3)
         \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        \once \override Staff.Clef.color = #(x11-color 'DeepPink1)             %! REDUNDANT_CLEF_COLOR:_attach_color_literal(2)
-    %@% \override Staff.Clef.color = ##f                                       %! REDUNDANT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! REDUNDANT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
+        \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
+    %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
+        \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         ef'''!\breve                                                           %! closing_pizzicati
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2990,28 +2899,18 @@ J_Viola_Music_Voice = {                                                        %
                 #16                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
                 Va.                                                            %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
-        \override Staff.Clef.color = #(x11-color 'DeepPink4)                   %! REDUNDANT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
+        \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     }                                                                          %! closing_pizzicati
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
+    % [J Viola_Music_Voice measure 315 / measure 2]                            %! _comment_measure_numbers
+    d'''2.                                                                     %! closing_pizzicati
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-        % [J Viola_Music_Voice measure 315 / measure 2]                        %! _comment_measure_numbers
-        d'''2.                                                                 %! closing_pizzicati
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+    r4
 
-    }                                                                          %! closing_pizzicati
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! closing_pizzicati
-    \times 1/1 {                                                               %! closing_pizzicati
-
-        r4
-
-        f'''4                                                                  %! closing_pizzicati
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! closing_pizzicati
+    f'''4                                                                      %! closing_pizzicati
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \times 4/7 {                                                               %! closing_pizzicati
 
@@ -3248,8 +3147,8 @@ J_Cello_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     d'2.
-    - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
+    \baca-fff-ancora                                                           %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Cello”)"                             %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup { "gridato possibile" }                                          %! baca_markup:IndicatorCommand

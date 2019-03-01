@@ -184,13 +184,18 @@ maker(
 maker(
     ('perc', (10, 13)),
     baca.accent(selector=baca.pheads()),
-    baca.bar_extent((-2, 2)),
-    baca.bar_extent((0, 0), after=True, selector=baca.leaves()),
-    baca.bar_extent((0, 0), after=True, selector=baca.leaf(-1)),
+    baca.chunk(
+        baca.bar_extent((-2, 2)),
+        baca.bar_extent_persistent(
+            (0, 2),
+            after=True,
+            tag=baca.const.NOT_PARTS,
+            ),
+        baca.staff_lines(1),
+        ),
     baca.clef('percussion'),
     baca.dynamic('"ff"'),
     baca.markup('sponges', boxed=True),
-    baca.staff_lines(1),
     baca.staff_position(0),
     krummzeit.instrument('Percussion'),
     baca.markup(

@@ -36,11 +36,11 @@ stage_markup = (
     ('[E.23]', 35),
     )
 
-maker = baca.TimeSignatureMaker(
+maker_ = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['F'],
     count=35,
     )
-time_signatures = maker.run()
+time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     activate=[
@@ -201,8 +201,9 @@ maker(
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
-pcs = pcs.rotate(-121).retrograde().transpose(9).invert().sequence()
-pcs = pcs.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
+pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
+pcs_ = baca.sequence(pcs)
+pcs_ = pcs_.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 maker(
     ('ob', (1, 10)),
     baca.dynamic('p'),
@@ -212,7 +213,7 @@ maker(
         ),
     baca.suite(
         baca.pitches(
-            pcs,
+            pcs_,
             selector=baca.plts(exclude=abjad.const.HIDDEN),
             ),
         krummzeit.displacement(),

@@ -30,11 +30,11 @@ stage_markup = (
     ('[B.30]', 43),
     )
 
-maker = baca.TimeSignatureMaker(
+maker_ = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['C'],
     count=44,
     )
-time_signatures = maker.run()
+time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     activate=[
@@ -304,12 +304,13 @@ maker(
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
-pcs = pcs.rotate(-121).retrograde().transpose(3).invert().sequence()
-pcs = pcs.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
+pcs_ = baca.sequence(pcs)
+pcs_ = pcs_.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 maker(
     ('ob', (1, 35)),
     baca.pitches(
-        pcs,
+        pcs_,
         allow_repeats=True,
         selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
@@ -416,12 +417,13 @@ maker(
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
-pcs = pcs.rotate(-121).retrograde().transpose(3).sequence()
-pcs = pcs.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+pcs = pcs.rotate(-121).retrograde().transpose(3)
+pcs_ = baca.sequence(pcs)
+pcs_ = pcs_.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 maker(
     ('vn', (22, 28)),
     baca.pitches(
-        pcs,
+        pcs_,
         selector=baca.plts(exclude=abjad.const.HIDDEN),
         ),
     )

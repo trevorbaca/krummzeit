@@ -35,11 +35,11 @@ stage_markup = (
     ('[A.23]', 72),
     )
 
-maker = baca.TimeSignatureMaker(
+maker_ = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['B'],
     count=75,
     )
-time_signatures = maker.run()
+time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     activate=[

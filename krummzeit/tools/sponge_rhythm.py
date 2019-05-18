@@ -10,14 +10,11 @@ def sponge_rhythm():
     return baca.rhythm(
         rhythm_maker=rmakers.TaleaRhythmMaker(
             extra_counts_per_division=[2, 1, 0],
-            tag='sponge_rhythm',
+            tag="sponge_rhythm",
             talea=rmakers.Talea(counts=[1, 2], denominator=2),
-            tie_specifier=rmakers.TieSpecifier(
-                repeat_ties=True,
-                ),
+            tie_specifier=rmakers.TieSpecifier(repeat_ties=True),
             tuplet_specifier=rmakers.TupletSpecifier(
-                extract_trivial=True,
-                trivialize=True,
-                ),
+                extract_trivial=True, trivialize=True
             ),
         )
+    )

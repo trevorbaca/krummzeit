@@ -17,7 +17,7 @@ def incise_chain():
                 suffix_counts=[1, 2, 1, 2],
                 talea_denominator=16,
                 fill_with_notes=False,
-                ),
-            tag='incise_chain',
             ),
+            tag="incise_chain",
         )
+    )

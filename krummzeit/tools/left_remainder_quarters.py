@@ -11,13 +11,10 @@ def left_remainder_quarters(*, dmask=None):
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                cyclic=True,
-                durations=[(1, 4)],
-                remainder=abjad.Left,
-                ),
+                cyclic=True, durations=[(1, 4)], remainder=abjad.Left
             ),
+        ),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            division_masks=dmask,
-            tag='left_remainder_quarters',
-            ),
-        )
+            division_masks=dmask, tag="left_remainder_quarters"
+        ),
+    )

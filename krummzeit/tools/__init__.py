@@ -8,7 +8,7 @@ from .color_tuplets import color_tuplets
 from .detached_triplets import detached_triplets
 from .displacement import displacement
 from .e_flat_clarinet_markup import e_flat_clarinet_markup
-from .fused_expanse  import fused_expanse
+from .fused_expanse import fused_expanse
 from .glissando_rhythm import glissando_rhythm
 from .hypermeter_tuplets import hypermeter_tuplets
 from .incise_attacks import incise_attacks
@@ -26,8 +26,9 @@ from .polyphony import polyphony
 from .prolated_quarters import prolated_quarters
 from .register_narrow import register_narrow
 from .register_wide import register_wide
-from .rest_delimited_repeated_duration_notes import \
-    rest_delimited_repeated_duration_notes
+from .rest_delimited_repeated_duration_notes import (
+    rest_delimited_repeated_duration_notes,
+)
 from .right_remainder_quarters import right_remainder_quarters
 from .single_cluster_piano_rhythm import single_cluster_piano_rhythm
 from .single_division_tuplets import single_division_tuplets

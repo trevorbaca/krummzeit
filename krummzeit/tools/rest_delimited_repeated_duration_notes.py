@@ -11,17 +11,15 @@ def rest_delimited_repeated_duration_notes(duration, suffix_denominator):
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                cyclic=True,
-                durations=[duration],
-                remainder=abjad.Right,
-                ),
+                cyclic=True, durations=[duration], remainder=abjad.Right
             ),
+        ),
         rhythm_maker=rmakers.IncisedRhythmMaker(
             incise_specifier=rmakers.InciseSpecifier(
                 suffix_talea=[-1],
                 suffix_counts=[1],
                 talea_denominator=suffix_denominator,
-                ),
-            tag='rest_delimited_repeated_duration_notes',
             ),
-        )
+            tag="rest_delimited_repeated_duration_notes",
+        ),
+    )

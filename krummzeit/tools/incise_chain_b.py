@@ -9,9 +9,7 @@ def incise_chain_b():
     """
     return baca.rhythm(
         rhythm_maker=rmakers.IncisedRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(
-                beam_each_division=False,
-                ),
+            beam_specifier=rmakers.BeamSpecifier(beam_each_division=False),
             incise_specifier=rmakers.InciseSpecifier(
                 prefix_talea=[-2, 2, 3, -2, 3, -2, 2],
                 prefix_counts=[3, 2, 2],
@@ -19,7 +17,7 @@ def incise_chain_b():
                 suffix_counts=[2, 2, 1, 2],
                 talea_denominator=16,
                 fill_with_notes=False,
-                ),
-            tag='incise_chain_b',
             ),
+            tag="incise_chain_b",
         )
+    )

@@ -167,10 +167,7 @@ class RegisterTransitionCommand(baca.Command):
 
     __documentation_section__ = None
 
-    __slots__ = (
-        '_start_registration',
-        '_stop_registration',
-        )
+    __slots__ = ("_start_registration", "_stop_registration")
 
     ### INITIALIZER ###
 
@@ -180,17 +177,17 @@ class RegisterTransitionCommand(baca.Command):
         match=None,
         measures=None,
         scope=None,
-        selector='baca.leaves()',
+        selector="baca.leaves()",
         start_registration=None,
         stop_registration=None,
-        ):
+    ):
         baca.Command.__init__(
             self,
             match=match,
             measures=measures,
             scope=scope,
             selector=selector,
-            )
+        )
         if start_registration is not None:
             assert isinstance(start_registration, baca.Registration)
         self._start_registration = start_registration
@@ -220,9 +217,8 @@ class RegisterTransitionCommand(baca.Command):
         for plt in plts:
             timespan = abjad.inspect(plt).timespan()
             registration = self._make_registration(
-                timespan.start_offset,
-                leaves_timespan,
-                )
+                timespan.start_offset, leaves_timespan
+            )
             for pleaf in plt:
                 pitches = registration([pleaf.written_pitch])
                 self._set_pitch(pleaf, pitches[0])
@@ -231,9 +227,8 @@ class RegisterTransitionCommand(baca.Command):
 
     def _make_registration(self, offset, timespan):
         assert abjad.timespans.offset_happens_during_timespan(
-            timespan=timespan,
-            offset=offset,
-            ), repr((timespan, offset))
+            timespan=timespan, offset=offset
+        ), repr((timespan, offset))
         fraction = (offset - timespan.start_offset) / timespan.duration
         components = []
         start_components = self.start_registration.components
@@ -249,22 +244,21 @@ class RegisterTransitionCommand(baca.Command):
             start_pitch = abjad.NumberedPitch(start_pitch)
             stop_pitch = stop_component.source_pitch_range.stop_pitch
             upper_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
-            range_string = '[{}, {})'
+            range_string = "[{}, {})"
             range_string = range_string.format(
-                lower_range_pitch.get_name(locale='us'),
-                upper_range_pitch.get_name(locale='us'),
-                )
+                lower_range_pitch.get_name(locale="us"),
+                upper_range_pitch.get_name(locale="us"),
+            )
             start_pitch = start_component.target_octave_start_pitch
             start_pitch = abjad.NumberedPitch(start_pitch)
             stop_pitch = stop_component.target_octave_start_pitch
             target_octave_start_pitch = start_pitch.interpolate(
-                stop_pitch,
-                fraction,
-                )
+                stop_pitch, fraction
+            )
             component = baca.RegistrationComponent(
                 source_pitch_range=range_string,
                 target_octave_start_pitch=target_octave_start_pitch,
-                )
+            )
             components.append(component)
         registration = baca.Registration(components)
         return registration
@@ -272,7 +266,7 @@ class RegisterTransitionCommand(baca.Command):
     @staticmethod
     def _set_pitch(pleaf, pitch):
         pleaf.written_pitch = pitch
-        abjad.detach('not yet registered', pleaf)
+        abjad.detach("not yet registered", pleaf)
 
     ### PUBLIC PROPERTIES ###
 

@@ -11,9 +11,8 @@ def fused_expanse(durations):
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                cyclic=True,
-                durations=durations,
-                ),
+                cyclic=True, durations=durations
             ),
-        rhythm_maker=rmakers.NoteRhythmMaker(tag='fused_expanse')
-        )
+        ),
+        rhythm_maker=rmakers.NoteRhythmMaker(tag="fused_expanse"),
+    )

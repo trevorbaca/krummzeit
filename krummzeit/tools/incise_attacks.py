@@ -16,7 +16,7 @@ def incise_attacks():
                 suffix_counts=[1, 1, 2, 1],
                 talea_denominator=16,
                 fill_with_notes=False,
-                ),
-            tag='incise_attacks',
             ),
+            tag="incise_attacks",
         )
+    )

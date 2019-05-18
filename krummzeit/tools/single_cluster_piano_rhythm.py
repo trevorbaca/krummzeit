@@ -16,7 +16,7 @@ def single_cluster_piano_rhythm():
                 suffix_counts=[1, 1, 2, 1],
                 talea_denominator=16,
                 fill_with_notes=False,
-                ),
-            tag='single_cluster_piano_rhythm',
             ),
+            tag="single_cluster_piano_rhythm",
         )
+    )

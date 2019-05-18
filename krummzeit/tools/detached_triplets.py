@@ -11,16 +11,12 @@ def detached_triplets():
         division_maker=baca.FuseByCountsDivisionCallback(
             counts=abjad.Infinity,
             secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                cyclic=True,
-                durations=[(1, 4)],
-                remainder=abjad.Right,
-                ),
+                cyclic=True, durations=[(1, 4)], remainder=abjad.Right
             ),
+        ),
         rhythm_maker=rmakers.TupletRhythmMaker(
-            tag='detached_triplets',
-            tie_specifier=rmakers.TieSpecifier(
-                tie_across_divisions=[1, 0],
-                ),
+            tag="detached_triplets",
+            tie_specifier=rmakers.TieSpecifier(tie_across_divisions=[1, 0]),
             tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)],
-            ),
-        )
+        ),
+    )

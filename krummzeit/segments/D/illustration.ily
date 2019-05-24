@@ -1000,13 +1000,9 @@ D_Oboe_Music_Voice = {                                                         %
         d''4                                                                   %! color_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''16                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1018,8 +1014,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''16                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1031,8 +1025,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1050,13 +1042,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 163 / measure 12]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2                                                                   %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
 
     }                                                                          %! color_tuplets
@@ -1067,13 +1055,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 164 / measure 13]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2                                                                   %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''4.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1091,8 +1075,6 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 165 / measure 14]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         r2                                                                     %! color_tuplets
 
@@ -1105,8 +1087,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''4                                                                   %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1117,8 +1097,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''16                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1129,8 +1107,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
 
     }                                                                          %! color_tuplets
@@ -1141,13 +1117,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 167 / measure 16]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!1.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!1                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1165,13 +1137,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 168 / measure 17]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2..                                                               %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!8                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1182,8 +1150,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!4.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1201,8 +1167,6 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 169 / measure 18]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         r2                                                                     %! color_tuplets
 
@@ -1213,14 +1177,10 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef''!8                                                                     %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     [                                                                          %! color_tuplets
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef''!32                                                                    %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1231,8 +1191,6 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef''!32                                                                    %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1244,8 +1202,6 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef''!4.                                                                    %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1261,13 +1217,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 171 / measure 20]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!4.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''4                                                                   %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
 
     }                                                                          %! color_tuplets
@@ -1278,13 +1230,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 172 / measure 21]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2                                                                   %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''4.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1299,8 +1247,6 @@ D_Oboe_Music_Voice = {                                                         %
     % [D Oboe_Music_Voice measure 173 / measure 22]                            %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     d''4.                                                                      %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     r4                                                                         %! color_tuplets
 
@@ -1309,8 +1255,6 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     d''8                                                                       %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1322,8 +1266,6 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     d''32                                                                      %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1335,8 +1277,6 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     d''4.                                                                      %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ~
 
     \tweak text #tuplet-number::calc-fraction-text                             %! color_tuplets
@@ -1345,13 +1285,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 175 / measure 24]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2                                                                   %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1420,13 +1356,9 @@ D_Oboe_Music_Voice = {                                                         %
         f''4                                                                   %! color_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''16                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1438,8 +1370,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''16                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1451,8 +1381,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1470,13 +1398,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 187 / measure 36]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''4.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
 
     }                                                                          %! color_tuplets
@@ -1487,13 +1411,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 188 / measure 37]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!2                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1511,8 +1431,6 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 189 / measure 38]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!2.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         r2                                                                     %! color_tuplets
 
@@ -1528,13 +1446,9 @@ D_Oboe_Music_Voice = {                                                         %
         f''4                                                                   %! color_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''16                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1545,8 +1459,6 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1564,13 +1476,9 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 191 / measure 40]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''2                                                                   %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1588,18 +1496,12 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 192 / measure 41]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''2..                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!8                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1616,8 +1518,6 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 193 / measure 42]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!2.                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         r2                                                                     %! color_tuplets
 
@@ -1630,13 +1530,9 @@ D_Oboe_Music_Voice = {                                                         %
     f''4                                                                       %! color_tuplets
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''16                                                                      %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1648,8 +1544,6 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''16                                                                      %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1661,8 +1555,6 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     f''2.                                                                      %! color_tuplets
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1677,8 +1569,6 @@ D_Oboe_Music_Voice = {                                                         %
         % [D Oboe_Music_Voice measure 195 / measure 44]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         f''2.                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         fs''!2                                                                 %! color_tuplets
 
@@ -1901,8 +1791,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs'''!4                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1913,8 +1801,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs'''!16                                                               %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1926,8 +1812,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs'''!16                                                               %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2047,8 +1931,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''4                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2059,8 +1941,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''16                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2072,8 +1952,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''16                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2085,8 +1963,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         gs'''!2.                                                               %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ~
 
     }                                                                          %! color_tuplets
@@ -2097,13 +1973,9 @@ D_Clarinet_Music_Voice = {                                                     %
         % [D Clarinet_Music_Voice measure 189 / measure 38]                    %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         gs'''!2.                                                               %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         gs'''!2                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2121,8 +1993,6 @@ D_Clarinet_Music_Voice = {                                                     %
         % [D Clarinet_Music_Voice measure 190 / measure 39]                    %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         gs'''!2                                                                %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         g'''4.                                                                 %! color_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -2149,8 +2019,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''4                                                                  %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2161,8 +2029,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''16                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2173,8 +2039,6 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''2.                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2191,8 +2055,6 @@ D_Clarinet_Music_Voice = {                                                     %
         % [D Clarinet_Music_Voice measure 193 / measure 42]                    %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''2.                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         gs'''!2                                                                %! color_tuplets
         ~
@@ -2209,13 +2071,9 @@ D_Clarinet_Music_Voice = {                                                     %
         g'''8                                                                  %! color_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''4.                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -2232,8 +2090,6 @@ D_Clarinet_Music_Voice = {                                                     %
         % [D Clarinet_Music_Voice measure 195 / measure 44]                    %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         g'''2.                                                                 %! color_tuplets
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         r2                                                                     %! color_tuplets
 
@@ -4010,8 +3866,6 @@ D_Violin_Music_Voice = {                                                       %
     ^ \baca-reapplied-indicator-markup "[“Vn.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     ^ \baca-reapplied-indicator-markup "(“Violin”)"                            %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \markup { "directly on bridge: very slow bow, imperceptible bow changes" } %! baca_markup:IndicatorCommand
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
     \set Staff.shortInstrumentName =                                           %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \markup {                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -4023,13 +3877,9 @@ D_Violin_Music_Voice = {                                                       %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef'!4                                                                      %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef'!4                                                                      %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     % [D Violin_Music_Voice measure 153 / measure 2]                           %! _comment_measure_numbers
@@ -4168,13 +4018,9 @@ D_Violin_Music_Voice = {                                                       %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs'!4                                                                      %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs'!4                                                                      %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     % [D Violin_Music_Voice measure 164 / measure 13]                          %! _comment_measure_numbers
@@ -4238,13 +4084,9 @@ D_Violin_Music_Voice = {                                                       %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c''8                                                                   %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c''4                                                                   %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
@@ -4505,8 +4347,6 @@ D_Violin_Music_Voice = {                                                       %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c''4.                                                                  %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! glissando_rhythm
 
@@ -4515,8 +4355,6 @@ D_Violin_Music_Voice = {                                                       %
         % [D Violin_Music_Voice measure 179 / measure 28]                      %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c''8                                                                   %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando
 
         b''4                                                                   %! glissando_rhythm
@@ -4552,8 +4390,6 @@ D_Violin_Music_Voice = {                                                       %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! glissando_rhythm
 
@@ -4562,8 +4398,6 @@ D_Violin_Music_Voice = {                                                       %
         % [D Violin_Music_Voice measure 181 / measure 30]                      %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''16                                                                  %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando
 
         f''4                                                                   %! glissando_rhythm
@@ -4915,19 +4749,13 @@ D_Viola_Music_Voice = {                                                        %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs!4                                                                       %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs!4                                                                       %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     % [D Viola_Music_Voice measure 154 / measure 3]                            %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs!4                                                                       %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     cs!4                                                                       %! right_remainder_quarters
@@ -4951,19 +4779,13 @@ D_Viola_Music_Voice = {                                                        %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef!4                                                                       %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     % [D Viola_Music_Voice measure 156 / measure 5]                            %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef!4                                                                       %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     ef!4                                                                       %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     c8                                                                         %! right_remainder_quarters
@@ -4975,13 +4797,9 @@ D_Viola_Music_Voice = {                                                        %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs!4                                                                       %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs!4                                                                       %! right_remainder_quarters
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     cs!4                                                                       %! right_remainder_quarters
@@ -5183,20 +5001,14 @@ D_Viola_Music_Voice = {                                                        %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     b''2                                                                       %! glissando_rhythm
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \times 4/5 {                                                               %! glissando_rhythm
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         b''16                                                                  %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         b''4                                                                   %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
@@ -5206,13 +5018,9 @@ D_Viola_Music_Voice = {                                                        %
         % [D Viola_Music_Voice measure 167 / measure 16]                       %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''2                                                                   %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4.                                                                  %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
@@ -5590,8 +5398,6 @@ D_Viola_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! glissando_rhythm
 
@@ -5601,8 +5407,6 @@ D_Viola_Music_Voice = {                                                        %
         % [D Viola_Music_Voice measure 184 / measure 33]                       %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a''4                                                                   %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando
 
         fs''!8.                                                                %! glissando_rhythm
@@ -6104,13 +5908,9 @@ D_Cello_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "molto gridato" }                                          %! baca_markup:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!8.                                                                %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando
 
     }                                                                          %! glissando_rhythm
@@ -6239,16 +6039,12 @@ D_Cello_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         b''8.                                                                  %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! glissando_rhythm
 
     % [D Cello_Music_Voice measure 174 / measure 23]                           %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     b''8                                                                       %! glissando_rhythm
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     c''4                                                                       %! glissando_rhythm

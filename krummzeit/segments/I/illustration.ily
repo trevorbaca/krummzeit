@@ -5059,14 +5059,10 @@ I_Violin_Music_Voice = {                                                       %
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     ef'!4                                                                      %! right_remainder_quarters
@@ -5507,14 +5503,10 @@ I_Viola_Music_Voice = {                                                        %
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     g'4                                                                        %! right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     ef'!8                                                                      %! right_remainder_quarters

@@ -2777,20 +2777,14 @@ H_Violin_Music_Voice = {                                                       %
         af'!4                                                                  %! glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!2                                                                  %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! glissando_rhythm
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af'!4                                                                      %! glissando_rhythm
-    - \tweak color #red                                                        %! _color_repeat_pitch_classes_
-    ^ \markup { @ }                                                            %! _color_repeat_pitch_classes_
     \glissando                                                                 %! baca_glissando
 
     cs'!1                                                                      %! glissando_rhythm
@@ -2884,8 +2878,6 @@ H_Violin_Music_Voice = {                                                       %
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2                                                                 %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! hypermeter_tuplets
 
@@ -2896,14 +2888,10 @@ H_Violin_Music_Voice = {                                                       %
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2.                                                                %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2                                                                 %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
@@ -3001,8 +2989,6 @@ H_Viola_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c1.                                                                    %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! glissando_rhythm
 
@@ -3010,8 +2996,6 @@ H_Viola_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c8                                                                     %! glissando_rhythm
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \glissando                                                             %! baca_glissando
 
         e2                                                                     %! glissando_rhythm
@@ -3102,8 +3086,6 @@ H_Viola_Music_Voice = {                                                        %
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a1                                                                     %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! hypermeter_tuplets
 
@@ -3114,14 +3096,10 @@ H_Viola_Music_Voice = {                                                        %
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a4                                                                     %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a1                                                                     %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
@@ -3314,8 +3292,6 @@ H_Cello_Music_Voice = {                                                        %
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2.                                                                %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
     }                                                                          %! hypermeter_tuplets
 
@@ -3326,14 +3302,10 @@ H_Cello_Music_Voice = {                                                        %
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2                                                                 %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2.                                                                %! hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 

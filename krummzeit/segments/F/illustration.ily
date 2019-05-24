@@ -667,14 +667,10 @@ F_Oboe_Music_Voice = {                                                         %
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a'16                                                                   %! polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a'16                                                                   %! polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        - \tweak color #red                                                    %! _color_repeat_pitch_classes_
-        ^ \markup { @ }                                                        %! _color_repeat_pitch_classes_
 
         g''16                                                                  %! polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand

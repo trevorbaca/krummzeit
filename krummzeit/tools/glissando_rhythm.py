@@ -15,9 +15,7 @@ def glissando_rhythm(
     """
     assert isinstance(division_ratios, list), repr(division_ratios)
     return baca.rhythm(
-        division_maker=baca.SplitByRoundedRatiosDivisionCallback(
-            ratios=division_ratios
-        ),
+        division_expression=baca.split_by_rounded_ratios(division_ratios),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
             tag="glissando_rhythm",

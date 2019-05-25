@@ -3,12 +3,7 @@ import baca
 from abjadext import rmakers
 
 
-def opening_triplets(
-    *,
-    # dmask=abjad.index([0]),
-    dmask=None,
-    remainder=abjad.Left,
-):
+def opening_triplets(*, dmask=None, remainder=abjad.Left):
     """
     Makes opening triplets.
     """

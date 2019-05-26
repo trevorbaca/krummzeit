@@ -8,11 +8,8 @@ def opening_triplets(*, dmask=None, remainder=abjad.Left):
     Makes opening triplets.
     """
     return baca.rhythm(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                cyclic=True, durations=[(1, 4)], remainder=remainder
-            ),
+        division_expression=baca.split_by_durations(
+            [(1, 4)], remainder=remainder
         ),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,

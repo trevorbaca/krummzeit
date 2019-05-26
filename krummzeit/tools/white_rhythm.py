@@ -7,7 +7,6 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
     """
     Makes white rhythm.
     """
-
     if do_not_burnish:
         burnish_specifier = None
     else:
@@ -16,13 +15,9 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
             left_counts=[1],
             outer_divisions_only=True,
         )
-
     return baca.rhythm(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                cyclic=True, durations=durations, remainder=remainder
-            ),
+        division_expression=baca.split_by_durations(
+            durations, remainder=remainder
         ),
         rhythm_maker=rmakers.NoteRhythmMaker(
             burnish_specifier=burnish_specifier, tag="white_rhythm"

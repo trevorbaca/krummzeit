@@ -7,12 +7,10 @@ def left_remainder_quarters(*, dmask=None):
     """
     Makes left-remainder quarter rhythm.
     """
+
     return baca.rhythm(
-        division_maker=baca.FuseByCountsDivisionCallback(
-            counts=abjad.Infinity,
-            secondary_division_maker=baca.SplitByDurationsDivisionCallback(
-                cyclic=True, durations=[(1, 4)], remainder=abjad.Left
-            ),
+        division_expression=baca.split_by_durations(
+            [(1, 4)], remainder=abjad.Left
         ),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask, tag="left_remainder_quarters"

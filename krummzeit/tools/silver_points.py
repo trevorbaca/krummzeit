@@ -10,7 +10,7 @@ def silver_points(
     Makes silver point rhythm.
     """
     return baca.rhythm(
-        division_expression=baca.split_by_rounded_ratios(ratios),
+        divisions=baca.split_by_rounded_ratios(ratios),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
             tag="silver_points",

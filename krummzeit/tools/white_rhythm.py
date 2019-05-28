@@ -16,7 +16,9 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
             outer_divisions_only=True,
         )
     return baca.rhythm(
-        divisions=baca.split_by_durations(durations, remainder=remainder),
+        divisions=baca.split_expanse(
+            durations, cyclic=True, remainder=remainder
+        ),
         rhythm_maker=rmakers.NoteRhythmMaker(
             burnish_specifier=burnish_specifier, tag="white_rhythm"
         ),

@@ -13,6 +13,6 @@ def left_remainder_quarters(*, dmask=None):
             [(1, 4)], cyclic=True, remainder=abjad.Left
         ),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            division_masks=dmask, tag="left_remainder_quarters"
+            division_masks=dmask, tag="krummzeit.left_remainder_quarters"
         ),
     )

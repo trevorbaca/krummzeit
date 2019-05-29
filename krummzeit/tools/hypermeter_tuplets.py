@@ -13,7 +13,7 @@ def hypermeter_tuplets(tuplet_ratios, counts=(2, 3, 1), dmask=None):
         rhythm_maker=rmakers.TupletRhythmMaker(
             denominator=(1, 4),
             division_masks=dmask,
-            tag="hypermeter_tuplets",
+            tag="krummzeit.hypermeter_tuplets",
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(
                 diminution=False,

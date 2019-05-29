@@ -13,7 +13,7 @@ def silver_points(
         divisions=baca.split_each_by_rounded_ratios(ratios),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
-            tag="silver_points",
+            tag="krummzeit.silver_points",
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True, rewrite_dots=True

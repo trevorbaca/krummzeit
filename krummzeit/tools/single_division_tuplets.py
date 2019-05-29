@@ -9,7 +9,7 @@ def single_division_tuplets(ratios):
     """
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
-            tag="single_division_tuplets",
+            tag="krummzeit.single_division_tuplets",
             tie_specifier=rmakers.TieSpecifier(tie_across_divisions=True),
             tuplet_ratios=ratios,
             tuplet_specifier=rmakers.TupletSpecifier(

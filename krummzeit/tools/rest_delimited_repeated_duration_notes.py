@@ -15,6 +15,6 @@ def rest_delimited_repeated_duration_notes(duration, suffix_denominator):
                 suffix_counts=[1],
                 talea_denominator=suffix_denominator,
             ),
-            tag="rest_delimited_repeated_duration_notes",
+            tag="krummzeit.rest_delimited_repeated_duration_notes",
         ),
     )

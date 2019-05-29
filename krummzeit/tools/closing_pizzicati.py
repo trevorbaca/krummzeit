@@ -14,7 +14,7 @@ def closing_pizzicati(
             extra_counts_per_division=extra_counts_per_division,
             rest_tied_notes=True,
             split_divisions_by_counts=split_divisions_by_counts,
-            tag="closing_pizzicati",
+            tag="krummzeit.closing_pizzicati",
             talea=rmakers.Talea(counts=counts, denominator=4),
             tuplet_specifier=rmakers.TupletSpecifier(extract_trivial=True),
         )

@@ -24,7 +24,7 @@ def polyphony(
     rhythm_maker = rmakers.EvenDivisionRhythmMaker(
         denominators=denominators,
         extra_counts_per_division=extra_counts,
-        tag="polyphony",
+        tag="krummzeit.polyphony",
         tie_specifier=rmakers.TieSpecifier(tie_across_divisions=ties),
         tuplet_specifier=tuplet_specifier,
     )

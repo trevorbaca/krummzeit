@@ -9,5 +9,5 @@ def fused_expanse(durations):
     """
     return baca.rhythm(
         divisions=baca.split_expanse(durations, cyclic=True),
-        rhythm_maker=rmakers.NoteRhythmMaker(tag="fused_expanse"),
+        rhythm_maker=rmakers.NoteRhythmMaker(tag="krummzeit.fused_expanse"),
     )

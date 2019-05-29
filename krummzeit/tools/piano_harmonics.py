@@ -12,7 +12,7 @@ def piano_harmonics(division_ratios, *, dmask=None, tie_across_divisions=None):
         divisions=baca.split_each_by_rounded_ratios(division_ratios),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask,
-            tag="piano_harmonics",
+            tag="krummzeit.piano_harmonics",
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions
             ),

@@ -17,6 +17,6 @@ def incise_attacks():
                 suffix_counts=[1, 1, 2, 1],
                 talea_denominator=16,
             ),
-            tag="incise_attacks",
+            tag="krummzeit.incise_attacks",
         )
     )

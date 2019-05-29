@@ -611,7 +611,7 @@ i_Piano_Music_Voice = {                                                        %
     R1 * 1/4                                                                   %! _make_measure_silences
 
     % [_ Piano_Music_Voice measure 4]                                          %! _comment_measure_numbers
-    r16                                                                        %! single_cluster_piano_rhythm
+    r16                                                                        %! krummzeit.single_cluster_piano_rhythm
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -633,9 +633,9 @@ i_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8                                                                         %! single_cluster_piano_rhythm
+    r8                                                                         %! krummzeit.single_cluster_piano_rhythm
 
-    r2                                                                         %! single_cluster_piano_rhythm
+    r2                                                                         %! krummzeit.single_cluster_piano_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -862,8 +862,8 @@ i_Percussion_Music_Voice = {                                                   %
     % [_ Percussion_Music_Voice measure 9]                                     %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 5/8 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 5/8 {                                                               %! krummzeit.sponge_rhythm
 
         % [_ Percussion_Music_Voice measure 10]                                %! _comment_measure_numbers
         \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
@@ -877,7 +877,7 @@ i_Percussion_Music_Voice = {                                                   %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-effort-ff                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \accent                                                              %! baca_accent:IndicatorCommand
@@ -892,48 +892,48 @@ i_Percussion_Music_Voice = {                                                   %
         \override Staff.BarLine.bar-extent = #'(0 . 2)                         %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
-    \times 2/3 {                                                               %! sponge_rhythm
+    \times 2/3 {                                                               %! krummzeit.sponge_rhythm
 
         % [_ Percussion_Music_Voice measure 11]                                %! _comment_measure_numbers
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     % [_ Percussion_Music_Voice measure 12]                                    %! _comment_measure_numbers
-    c'2                                                                        %! sponge_rhythm
+    c'2                                                                        %! krummzeit.sponge_rhythm
     \repeatTie
 
-    c'2                                                                        %! sponge_rhythm
+    c'2                                                                        %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'4                                                                        %! sponge_rhythm
+    c'4                                                                        %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 3/4 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 3/4 {                                                               %! krummzeit.sponge_rhythm
 
         % [_ Percussion_Music_Voice measure 13]                                %! _comment_measure_numbers
-        c'2.                                                                   %! sponge_rhythm
+        c'2.                                                                   %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'4                                                                    %! sponge_rhythm
+        c'4                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
         \revert DynamicLineSpanner.padding                                     %! baca_dls_padding:OverrideCommand(2)
         \revert TupletBracket.padding                                          %! baca_tuplet_bracket_down:OverrideCommand(2)
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -994,7 +994,7 @@ i_Violin_Music_Voice = {                                                       %
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r8                                                                         %! opening_triplets
+    r8                                                                         %! krummzeit.opening_triplets
     ^ \baca-default-indicator-markup "(“Violin”)"                              %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Vn.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1006,127 +1006,127 @@ i_Violin_Music_Voice = {                                                       %
             Vn.                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1149,11 +1149,11 @@ i_Violin_Music_Voice = {                                                       %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Violin_Music_Voice measure 4]                                     %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
-        ef''!4                                                                 %! glissando_rhythm
+        ef''!4                                                                 %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
@@ -1161,97 +1161,97 @@ i_Violin_Music_Voice = {                                                       %
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        d''2                                                                   %! glissando_rhythm
+        d''2                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        fs''!16                                                                %! glissando_rhythm
+        fs''!16                                                                %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        e''4                                                                   %! glissando_rhythm
+        e''4                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
-    \times 6/7 {                                                               %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
+    \times 6/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Violin_Music_Voice measure 5]                                     %! _comment_measure_numbers
-        d''4                                                                   %! glissando_rhythm
+        d''4                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        c''8.                                                                  %! glissando_rhythm
+        c''8.                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
-        d''8                                                                   %! glissando_rhythm
+        d''8                                                                   %! krummzeit.glissando_rhythm
 
-        d''4                                                                   %! glissando_rhythm
+        d''4                                                                   %! krummzeit.glissando_rhythm
         \repeatTie                                                             %! baca_repeat_tie_repeat_pitches
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Violin_Music_Voice measure 6]                                     %! _comment_measure_numbers
-        fs''!16.                                                               %! glissando_rhythm
+        fs''!16.                                                               %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        g''4.                                                                  %! glissando_rhythm
+        g''4.                                                                  %! krummzeit.glissando_rhythm
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    r4.                                                                        %! glissando_rhythm
+    r4.                                                                        %! krummzeit.glissando_rhythm
 
-    r4.                                                                        %! glissando_rhythm
+    r4.                                                                        %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Violin_Music_Voice measure 7]                                     %! _comment_measure_numbers
-        cs''!8.                                                                %! glissando_rhythm
+        cs''!8.                                                                %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        a'2.                                                                   %! glissando_rhythm
+        a'2.                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
-    \times 6/7 {                                                               %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
+    \times 6/7 {                                                               %! krummzeit.glissando_rhythm
 
-        af'!4                                                                  %! glissando_rhythm
+        af'!4                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        a'8.                                                                   %! glissando_rhythm
+        a'8.                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
     % [_ Violin_Music_Voice measure 8]                                         %! _comment_measure_numbers
-    bf'!8                                                                      %! glissando_rhythm
+    bf'!8                                                                      %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    e'4                                                                        %! glissando_rhythm
+    e'4                                                                        %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        f'16                                                                   %! glissando_rhythm
+        f'16                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        g'4                                                                    %! glissando_rhythm
+        g'4                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1347,7 +1347,7 @@ i_Viola_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r8                                                                         %! opening_triplets
+    r8                                                                         %! krummzeit.opening_triplets
     ^ \baca-default-indicator-markup "(“Viola”)"                               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Va.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1359,127 +1359,127 @@ i_Viola_Music_Voice = {                                                        %
             Va.                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1503,15 +1503,15 @@ i_Viola_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [_ Viola_Music_Voice measure 4]                                          %! _comment_measure_numbers
-    r2                                                                         %! glissando_rhythm
+    r2                                                                         %! krummzeit.glissando_rhythm
 
-    r4                                                                         %! glissando_rhythm
+    r4                                                                         %! krummzeit.glissando_rhythm
 
-    \times 4/7 {                                                               %! glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Viola_Music_Voice measure 5]                                      %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
-        fs'!4                                                                  %! glissando_rhythm
+        fs'!4                                                                  %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
@@ -1519,89 +1519,89 @@ i_Viola_Music_Voice = {                                                        %
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        a'8.                                                                   %! glissando_rhythm
+        a'8.                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
-        cs'!16                                                                 %! glissando_rhythm
-        [                                                                      %! glissando_rhythm
+        cs'!16                                                                 %! krummzeit.glissando_rhythm
+        [                                                                      %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        e'8                                                                    %! glissando_rhythm
-        ]                                                                      %! glissando_rhythm
+        e'8                                                                    %! krummzeit.glissando_rhythm
+        ]                                                                      %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        ef'!16                                                                 %! glissando_rhythm
+        ef'!16                                                                 %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        fs'!4                                                                  %! glissando_rhythm
+        fs'!4                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
-    \times 6/7 {                                                               %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
+    \times 6/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Viola_Music_Voice measure 6]                                      %! _comment_measure_numbers
-        a'2                                                                    %! glissando_rhythm
+        a'2                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        af!4.                                                                  %! glissando_rhythm
+        af!4.                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    bf!8                                                                       %! glissando_rhythm
+    bf!8                                                                       %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    e4                                                                         %! glissando_rhythm
+    e4                                                                         %! krummzeit.glissando_rhythm
 
     % [_ Viola_Music_Voice measure 7]                                          %! _comment_measure_numbers
-    r2.                                                                        %! glissando_rhythm
+    r2.                                                                        %! krummzeit.glissando_rhythm
 
-    r4.                                                                        %! glissando_rhythm
+    r4.                                                                        %! krummzeit.glissando_rhythm
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Viola_Music_Voice measure 8]                                      %! _comment_measure_numbers
-        ef!8                                                                   %! glissando_rhythm
+        ef!8                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        fs!4                                                                   %! glissando_rhythm
+        fs!4                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        d32                                                                    %! glissando_rhythm
-        [                                                                      %! glissando_rhythm
+        d32                                                                    %! krummzeit.glissando_rhythm
+        [                                                                      %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        ef!8                                                                   %! glissando_rhythm
-        ]                                                                      %! glissando_rhythm
+        ef!8                                                                   %! krummzeit.glissando_rhythm
+        ]                                                                      %! krummzeit.glissando_rhythm
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/7 {                                                               %! glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
-        ef!4                                                                   %! glissando_rhythm
+        ef!4                                                                   %! krummzeit.glissando_rhythm
         \repeatTie                                                             %! baca_repeat_tie_repeat_pitches
         \glissando                                                             %! baca_glissando
 
-        af!8.                                                                  %! glissando_rhythm
+        af!8.                                                                  %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1697,7 +1697,7 @@ i_Cello_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! DEFAULT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):abjad.ScoreTemplate.attach_defaults
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r8                                                                         %! opening_triplets
+    r8                                                                         %! krummzeit.opening_triplets
     ^ \baca-default-indicator-markup "(“Cello”)"                               %! DEFAULT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Vc.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'violet)                          %! DEFAULT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -1709,127 +1709,127 @@ i_Cello_Music_Voice = {                                                        %
             Vc.                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1852,11 +1852,11 @@ i_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Cello_Music_Voice measure 4]                                      %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
-        e'8                                                                    %! glissando_rhythm
+        e'8                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
@@ -1864,90 +1864,90 @@ i_Cello_Music_Voice = {                                                        %
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        g'4                                                                    %! glissando_rhythm
+        g'4                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        ef'!16                                                                 %! glissando_rhythm
+        ef'!16                                                                 %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        f'4                                                                    %! glissando_rhythm
+        f'4                                                                    %! krummzeit.glissando_rhythm
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    r4                                                                         %! glissando_rhythm
+    r4                                                                         %! krummzeit.glissando_rhythm
 
     % [_ Cello_Music_Voice measure 5]                                          %! _comment_measure_numbers
-    r4.                                                                        %! glissando_rhythm
+    r4.                                                                        %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        f'16                                                                   %! glissando_rhythm
+        f'16                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        cs'!4                                                                  %! glissando_rhythm
+        cs'!4                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
-    \times 6/7 {                                                               %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
+    \times 6/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Cello_Music_Voice measure 6]                                      %! _comment_measure_numbers
-        c'2                                                                    %! glissando_rhythm
+        c'2                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        a4.                                                                    %! glissando_rhythm
+        a4.                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    ef'!8                                                                      %! glissando_rhythm
+    ef'!8                                                                      %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    c'4                                                                        %! glissando_rhythm
+    c'4                                                                        %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Cello_Music_Voice measure 7]                                      %! _comment_measure_numbers
-        d'16.                                                                  %! glissando_rhythm
+        d'16.                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        fs!4.                                                                  %! glissando_rhythm
+        fs!4.                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
-    \times 6/7 {                                                               %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
+    \times 6/7 {                                                               %! krummzeit.glissando_rhythm
 
-        e4                                                                     %! glissando_rhythm
+        e4                                                                     %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        g8.                                                                    %! glissando_rhythm
+        g8.                                                                    %! krummzeit.glissando_rhythm
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    r4.                                                                        %! glissando_rhythm
+    r4.                                                                        %! krummzeit.glissando_rhythm
 
     % [_ Cello_Music_Voice measure 8]                                          %! _comment_measure_numbers
-    r4.                                                                        %! glissando_rhythm
+    r4.                                                                        %! krummzeit.glissando_rhythm
 
-    \times 4/7 {                                                               %! glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
-        e4                                                                     %! glissando_rhythm
+        e4                                                                     %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        a8.                                                                    %! glissando_rhythm
+        a8.                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 

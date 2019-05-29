@@ -1598,550 +1598,550 @@ A_Oboe_Music_Voice = {                                                         %
     R1 * 1                                                                     %! _make_measure_silences
 
     % [A Oboe_Music_Voice measure 36 / measure 23]                             %! _comment_measure_numbers
-    ef'!4.                                                                     %! polyphony
+    ef'!4.                                                                     %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        e'4                                                                    %! polyphony
+        e'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af'!4                                                                  %! polyphony
+        af'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'4                                                                    %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ~
-
-    }                                                                          %! polyphony
-
-    c'4                                                                        %! polyphony
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 6/10 {                                                              %! polyphony
-
-        bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
-
-        fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        g'16                                                                   %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        ef'!16                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        c''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        af'!16                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        fs'!16                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        g'16                                                                   %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        bf'!16                                                                 %! polyphony
+        c'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    c'4                                                                        %! krummzeit.polyphony
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 6/10 {                                                              %! krummzeit.polyphony
+
+        bf'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        [                                                                      %! krummzeit.polyphony
+
+        fs'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        g'16                                                                   %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        ef'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        c''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        af'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        bf'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        fs'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        g'16                                                                   %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        bf'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ~
+        ]                                                                      %! krummzeit.polyphony
+
+    }                                                                          %! krummzeit.polyphony
+
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 37 / measure 24]                         %! _comment_measure_numbers
-        bf'!4                                                                  %! polyphony
+        bf'!4                                                                  %! krummzeit.polyphony
 
-        a'4                                                                    %! polyphony
+        a'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'4                                                                    %! polyphony
+        c'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    c'4                                                                        %! polyphony
+    c'4                                                                        %! krummzeit.polyphony
 
     % [A Oboe_Music_Voice measure 38 / measure 25]                             %! _comment_measure_numbers
-    fs'!4                                                                      %! polyphony
+    fs'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
-        b'16                                                                   %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        e'16                                                                   %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        g'16                                                                   %! polyphony
+        e'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'16                                                                   %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e'16                                                                   %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af'!16                                                                 %! polyphony
+        e'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'16                                                                   %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        af'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    af'!4                                                                      %! polyphony
+    af'!4                                                                      %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 39 / measure 26]                         %! _comment_measure_numbers
-        a'4                                                                    %! polyphony
+        a'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef'!4                                                                  %! polyphony
+        ef'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af'!4                                                                  %! polyphony
+        af'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    af'!4.                                                                     %! polyphony
+    af'!4.                                                                     %! krummzeit.polyphony
     ~
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 6/10 {                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 6/10 {                                                              %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 40 / measure 27]                         %! _comment_measure_numbers
-        af'!16                                                                 %! polyphony
-        [                                                                      %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af'!16                                                                 %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''16                                                                  %! polyphony
+        c''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'16                                                                   %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af'!16                                                                 %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef'!16                                                                 %! polyphony
+        ef'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''16                                                                  %! polyphony
+        c''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        cs''!4                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        e'4                                                                    %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g'4                                                                    %! polyphony
+        e'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+        g'4                                                                    %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    \times 2/3 {                                                               %! polyphony
+    }                                                                          %! krummzeit.polyphony
+
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 41 / measure 28]                         %! _comment_measure_numbers
-        bf'!4                                                                  %! polyphony
+        bf'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''4                                                                   %! polyphony
+        d''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    c''4                                                                       %! polyphony
+    c''4                                                                       %! krummzeit.polyphony
 
-    d''16                                                                      %! polyphony
+    d''16                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    e''16                                                                      %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    g''16                                                                      %! polyphony
+    e''16                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    b'16                                                                       %! polyphony
+    g''16                                                                      %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    b'16                                                                       %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Oboe_Music_Voice measure 42 / measure 29]                             %! _comment_measure_numbers
-    b'4                                                                        %! polyphony
+    b'4                                                                        %! krummzeit.polyphony
     ~
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        b'4                                                                    %! polyphony
+        b'4                                                                    %! krummzeit.polyphony
 
-        bf'!4                                                                  %! polyphony
+        bf'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!4                                                                  %! polyphony
+        fs'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    ef''!4.                                                                    %! polyphony
+    ef''!4.                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
-        a'16                                                                   %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        cs''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        ef''!16                                                                %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef''!16                                                                %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g'16                                                                   %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af''!16                                                                %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    af''!4.                                                                    %! polyphony
+    af''!4.                                                                    %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 43 / measure 30]                         %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af''!4                                                                 %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    e''4                                                                       %! polyphony
+    e''4                                                                       %! krummzeit.polyphony
     ~
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 6/10 {                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 6/10 {                                                              %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 44 / measure 31]                         %! _comment_measure_numbers
-        e''16                                                                  %! polyphony
-        [                                                                      %! polyphony
+        e''16                                                                  %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        g''16                                                                  %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''16                                                                  %! polyphony
+        e''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
-        a''4                                                                   %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        af''!4                                                                 %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!4                                                                  %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+        bf'!4                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    }                                                                          %! krummzeit.polyphony
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 45 / measure 32]                         %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af''!4                                                                 %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af''!4                                                                 %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!4                                                                  %! polyphony
+        bf'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Oboe_Music_Voice measure 46 / measure 33]                             %! _comment_measure_numbers
-    bf'!4                                                                      %! polyphony
+    bf'!4                                                                      %! krummzeit.polyphony
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        af''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        d''16                                                                  %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''16                                                                  %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b''16                                                                  %! polyphony
+        c''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        b''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    a''4.                                                                      %! polyphony
+    a''4.                                                                      %! krummzeit.polyphony
     ~
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 47 / measure 34]                         %! _comment_measure_numbers
-        a''4                                                                   %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
 
-        b''4                                                                   %! polyphony
+        b''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!4                                                                 %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    e''4.                                                                      %! polyphony
+    e''4.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 6/10 {                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 6/10 {                                                              %! krummzeit.polyphony
 
-        a''16                                                                  %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        fs''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        g''16                                                                  %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 48 / measure 35]                         %! _comment_measure_numbers
-        bf'!4                                                                  %! polyphony
+        bf'!4                                                                  %! krummzeit.polyphony
 
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 49 / measure 36]                         %! _comment_measure_numbers
-        d''4                                                                   %! polyphony
+        d''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    c''4                                                                       %! polyphony
+    c''4                                                                       %! krummzeit.polyphony
     ~
 
     % [A Oboe_Music_Voice measure 50 / measure 37]                             %! _comment_measure_numbers
-    c''16                                                                      %! polyphony
-    [                                                                          %! polyphony
+    c''16                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d''16                                                                      %! polyphony
+    d''16                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    bf''!16                                                                    %! polyphony
+    bf''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    bf''!16                                                                    %! polyphony
+    bf''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''4                                                                   %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2395,7 +2395,7 @@ A_Clarinet_Music_Voice = {                                                     %
                 }                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
         }                                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    cs''!4.                                                                    %! polyphony
+    cs''!4.                                                                    %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccato                                                                %! baca_staccato:IndicatorCommand
@@ -2441,186 +2441,186 @@ A_Clarinet_Music_Voice = {                                                     %
                 }                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''4                                                                   %! polyphony
+        g''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        gs''!4                                                                 %! polyphony
+        gs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    gs''!4                                                                     %! polyphony
+    gs''!4                                                                     %! krummzeit.polyphony
 
-    ds''!16.                                                                   %! polyphony
+    ds''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    c''16.                                                                     %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    d''16.                                                                     %! polyphony
+    c''16.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    e''16.                                                                     %! polyphony
+    d''16.                                                                     %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    e''16.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Clarinet_Music_Voice measure 19 / measure 6]                      %! _comment_measure_numbers
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
 
-        ds''!4                                                                 %! polyphony
+        ds''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    c''4                                                                       %! polyphony
+    c''4                                                                       %! krummzeit.polyphony
 
-    c''4                                                                       %! polyphony
+    c''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    ds''!4                                                                     %! polyphony
+    ds''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    fs''!8                                                                     %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g''8                                                                       %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    f''8                                                                       %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    c''8                                                                       %! polyphony
+    f''8                                                                       %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    c''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 20 / measure 7]                          %! _comment_measure_numbers
-    c''4                                                                       %! polyphony
+    c''4                                                                       %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''4                                                                   %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 21 / measure 8]                          %! _comment_measure_numbers
-    a''4                                                                       %! polyphony
+    a''4                                                                       %! krummzeit.polyphony
 
-    e''4                                                                       %! polyphony
+    e''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
-    e''16.                                                                     %! polyphony
-    [                                                                          %! polyphony
+    e''16.                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    as'!16.                                                                    %! polyphony
+    as'!16.                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    cs''!16.                                                                   %! polyphony
+    cs''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    gs''!16.                                                                   %! polyphony
+    gs''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        ds''!4                                                                 %! polyphony
+        ds''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    c''4.                                                                      %! polyphony
+    c''4.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A Clarinet_Music_Voice measure 22 / measure 9]                          %! _comment_measure_numbers
-    c''4.                                                                      %! polyphony
+    c''4.                                                                      %! krummzeit.polyphony
 
-    f''8                                                                       %! polyphony
+    f''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    gs''!8                                                                     %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    as'!8                                                                      %! polyphony
+    gs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    cs''!8                                                                     %! polyphony
+    as'!8                                                                      %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    cs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    cs''!4                                                                     %! polyphony
+    cs''!4                                                                     %! krummzeit.polyphony
     ~
 
-    cs''!4                                                                     %! polyphony
+    cs''!4                                                                     %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/4 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/4 {                                                               %! krummzeit.polyphony
 
         % [A Clarinet_Music_Voice measure 23 / measure 10]                     %! _comment_measure_numbers
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 24 / measure 11]                         %! _comment_measure_numbers
-    c''8                                                                       %! polyphony
+    c''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    f''8                                                                       %! polyphony
+    f''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''4                                                                   %! polyphony
+        d''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    as'!4                                                                      %! polyphony
+    as'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -2654,546 +2654,546 @@ A_Clarinet_Music_Voice = {                                                     %
     R1 * 7/8                                                                   %! _make_measure_silences
 
     % [A Clarinet_Music_Voice measure 29 / measure 16]                         %! _comment_measure_numbers
-    d''4.                                                                      %! polyphony
+    d''4.                                                                      %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        g''4                                                                   %! polyphony
+        g''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        gs''!4                                                                 %! polyphony
+        gs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'4                                                                    %! polyphony
+        a'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    a'4                                                                        %! polyphony
+    a'4                                                                        %! krummzeit.polyphony
 
-    e''16.                                                                     %! polyphony
+    e''16.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    ds''!16.                                                                   %! polyphony
+    cs''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    f''16.                                                                     %! polyphony
+    ds''!16.                                                                   %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    f''16.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Clarinet_Music_Voice measure 30 / measure 17]                     %! _comment_measure_numbers
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    cs''!4                                                                     %! polyphony
+    cs''!4                                                                     %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    cs''!4                                                                     %! polyphony
+    cs''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    e''4                                                                       %! polyphony
+    e''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    g''8                                                                       %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    gs''!8                                                                     %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    fs''!8                                                                     %! polyphony
+    gs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    cs''!8                                                                     %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    cs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 31 / measure 18]                         %! _comment_measure_numbers
-    cs''!4                                                                     %! polyphony
+    cs''!4                                                                     %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g'4                                                                    %! polyphony
+        g'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        as'!4                                                                  %! polyphony
+        as'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 32 / measure 19]                         %! _comment_measure_numbers
-    as'!4                                                                      %! polyphony
+    as'!4                                                                      %! krummzeit.polyphony
 
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
-    f''16.                                                                     %! polyphony
-    [                                                                          %! polyphony
+    f''16.                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    b'16.                                                                      %! polyphony
+    b'16.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    d''16.                                                                     %! polyphony
+    d''16.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    a'16.                                                                      %! polyphony
+    a'16.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    cs''!4.                                                                    %! polyphony
+    cs''!4.                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A Clarinet_Music_Voice measure 33 / measure 20]                         %! _comment_measure_numbers
-    cs''!4.                                                                    %! polyphony
+    cs''!4.                                                                    %! krummzeit.polyphony
 
-    fs''!8                                                                     %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    a''8                                                                       %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    b'8                                                                        %! polyphony
+    a''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    d''8                                                                       %! polyphony
+    b'8                                                                        %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    d''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    d''4                                                                       %! polyphony
+    d''4                                                                       %! krummzeit.polyphony
     ~
 
-    d''4                                                                       %! polyphony
+    d''4                                                                       %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/4 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/4 {                                                               %! krummzeit.polyphony
 
         % [A Clarinet_Music_Voice measure 34 / measure 21]                     %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 35 / measure 22]                         %! _comment_measure_numbers
-    cs''!8                                                                     %! polyphony
+    cs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    fs''!8                                                                     %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
 
-        d''4                                                                   %! polyphony
+        d''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''4                                                                   %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A Clarinet_Music_Voice measure 36 / measure 23]                         %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    f'4                                                                        %! polyphony
+    f'4                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    f'16.                                                                      %! polyphony
-    [                                                                          %! polyphony
+    f'16.                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    f'16.                                                                      %! polyphony
+    f'16.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    fs'!16.                                                                    %! polyphony
+    fs'!16.                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    c'16.                                                                      %! polyphony
+    c'16.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
-        g'4                                                                    %! polyphony
+        g'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'4                                                                    %! polyphony
+        c'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        as!4                                                                   %! polyphony
+        as!4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 37 / measure 24]                         %! _comment_measure_numbers
-    ds'!4.                                                                     %! polyphony
+    ds'!4.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
-    ds'!4.                                                                     %! polyphony
+    ds'!4.                                                                     %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 38 / measure 25]                         %! _comment_measure_numbers
-    e'8                                                                        %! polyphony
+    e'8                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    b8                                                                         %! polyphony
+    b8                                                                         %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    a'8                                                                        %! polyphony
+    a'8                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    g'8                                                                        %! polyphony
+    g'8                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    g'4                                                                        %! polyphony
+    g'4                                                                        %! krummzeit.polyphony
     ~
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    g'4                                                                        %! polyphony
+    g'4                                                                        %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 39 / measure 26]                         %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    g'4                                                                        %! polyphony
+    g'4                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/9 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/9 {                                                               %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        g'8                                                                    %! polyphony
+        g'8                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        ds'!8                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        c''8                                                                   %! polyphony
+        ds'!8                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f'8                                                                    %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!8                                                                 %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e'8                                                                    %! polyphony
+        cs''!8                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!8                                                                  %! polyphony
+        e'8                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f'8                                                                    %! polyphony
+        fs'!8                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs'!8                                                                  %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        cs'!8                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Clarinet_Music_Voice measure 40 / measure 27]                     %! _comment_measure_numbers
-        cs'!4                                                                  %! polyphony
+        cs'!4                                                                  %! krummzeit.polyphony
 
-        as'!4                                                                  %! polyphony
+        as'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        gs'!4                                                                  %! polyphony
+        gs'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    f'4.                                                                       %! polyphony
+    f'4.                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A Clarinet_Music_Voice measure 41 / measure 28]                         %! _comment_measure_numbers
-    f'4.                                                                       %! polyphony
+    f'4.                                                                       %! krummzeit.polyphony
     ~
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/9 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/9 {                                                               %! krummzeit.polyphony
 
-        f'8                                                                    %! polyphony
-        [                                                                      %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        g'8                                                                    %! polyphony
+        g'8                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f'8                                                                    %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        gs'!8                                                                  %! polyphony
+        gs'!8                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'8                                                                    %! polyphony
+        a'8                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g'8                                                                    %! polyphony
+        g'8                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ds''!8                                                                 %! polyphony
+        ds''!8                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Clarinet_Music_Voice measure 42 / measure 29]                     %! _comment_measure_numbers
-        as'!4                                                                  %! polyphony
+        as'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!4                                                                  %! polyphony
+        fs'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        f'4                                                                    %! polyphony
+        f'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    ds''!16.                                                                   %! polyphony
+    ds''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
-
-    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    [                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    cs''!16.                                                                   %! polyphony
+    cs''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    g'16.                                                                      %! polyphony
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    cs''!16.                                                                   %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    g'16.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    g'4.                                                                       %! polyphony
+    g'4.                                                                       %! krummzeit.polyphony
     ~
 
     % [A Clarinet_Music_Voice measure 43 / measure 30]                         %! _comment_measure_numbers
-    g'4                                                                        %! polyphony
+    g'4                                                                        %! krummzeit.polyphony
 
-    a'4                                                                        %! polyphony
+    a'4                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    as'!4                                                                      %! polyphony
+    as'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     % [A Clarinet_Music_Voice measure 44 / measure 31]                         %! _comment_measure_numbers
-    cs''!8                                                                     %! polyphony
+    cs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g''8                                                                       %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    ds''!8                                                                     %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    gs''!8                                                                     %! polyphony
+    ds''!8                                                                     %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    gs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        gs''!4                                                                 %! polyphony
+        gs''!4                                                                 %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        as'!4                                                                  %! polyphony
+        as'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        as'!4                                                                  %! polyphony
+        as'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 45 / measure 32]                         %! _comment_measure_numbers
-    b'4.                                                                       %! polyphony
+    b'4.                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
-    b'4                                                                        %! polyphony
+    b'4                                                                        %! krummzeit.polyphony
     ~
 
     % [A Clarinet_Music_Voice measure 46 / measure 33]                         %! _comment_measure_numbers
-    b'8                                                                        %! polyphony
-    [                                                                          %! polyphony
+    b'8                                                                        %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    cs''!8                                                                     %! polyphony
+    cs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    e''8                                                                       %! polyphony
+    e''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    f''8                                                                       %! polyphony
+    f''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    as'!4                                                                      %! polyphony
+    as'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    gs''!4.                                                                    %! polyphony
+    gs''!4.                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A Clarinet_Music_Voice measure 47 / measure 34]                         %! _comment_measure_numbers
-    gs''!4                                                                     %! polyphony
+    gs''!4                                                                     %! krummzeit.polyphony
 
-    as'!8                                                                      %! polyphony
+    as'!8                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g''8                                                                       %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    ds''!8                                                                     %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    e''8                                                                       %! polyphony
+    ds''!8                                                                     %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    e''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
 
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Clarinet_Music_Voice measure 48 / measure 35]                     %! _comment_measure_numbers
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
 
-        ds''!4                                                                 %! polyphony
+        ds''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 49 / measure 36]                         %! _comment_measure_numbers
-    g''4.                                                                      %! polyphony
+    g''4.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    c''16.                                                                     %! polyphony
+    c''16.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    cs''!16.                                                                   %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    e''16.                                                                     %! polyphony
+    cs''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    f''16.                                                                     %! polyphony
+    e''16.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    ]                                                                          %! polyphony
+
+    f''16.                                                                     %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+    ]                                                                          %! krummzeit.polyphony
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3310,60 +3310,60 @@ A_Clarinet_Music_Voice = {                                                     %
     R1 * 9/8                                                                   %! _make_measure_silences
 
     % [A Clarinet_Music_Voice measure 82 / measure 69]                         %! _comment_measure_numbers
-    r8                                                                         %! white_rhythm
+    r8                                                                         %! krummzeit.white_rhythm
 
-    cs''!4.                                                                    %! white_rhythm
+    cs''!4.                                                                    %! krummzeit.white_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    btqs'!4.                                                                   %! white_rhythm
+    btqs'!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    d''4.                                                                      %! white_rhythm
+    d''4.                                                                      %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4.                                                                  %! white_rhythm
+    ctqs''!4.                                                                  %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    bqs'!4.                                                                    %! white_rhythm
+    bqs'!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    a'4.                                                                       %! white_rhythm
+    a'4.                                                                       %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    bqs'!4.                                                                    %! white_rhythm
+    bqs'!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    cs''!4.                                                                    %! white_rhythm
+    cs''!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    btqs'!4.                                                                   %! white_rhythm
+    btqs'!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    d''4.                                                                      %! white_rhythm
+    d''4.                                                                      %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4.                                                                  %! white_rhythm
+    ctqs''!4.                                                                  %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
     % [A Clarinet_Music_Voice measure 87 / measure 74]                         %! _comment_measure_numbers
-    bqs'!4.                                                                    %! white_rhythm
+    bqs'!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    a'4.                                                                       %! white_rhythm
+    a'4.                                                                       %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    bqs'!4.                                                                    %! white_rhythm
+    bqs'!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    cs''!4.                                                                    %! white_rhythm
+    cs''!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    btqs'!4.                                                                   %! white_rhythm
+    btqs'!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    d''4.                                                                      %! white_rhythm
+    d''4.                                                                      %! krummzeit.white_rhythm
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -3404,7 +3404,7 @@ A_Clarinet_Music_Staff = {                                                     %
 
 A_Piano_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 14 / measure 1]                         %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
@@ -3426,12 +3426,12 @@ A_Piano_Music_Voice = {                                                        %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        g''8                                                                   %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
         ^ \baca-explicit-indicator-markup "(“Harpsichord”)"                    %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \baca-explicit-indicator-markup "[“Hpschd.”]"                        %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
@@ -3441,651 +3441,651 @@ A_Piano_Music_Voice = {                                                        %
                 Hpschd.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
             }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
-        cs''!8                                                                 %! polyphony
+        cs''!8                                                                 %! krummzeit.polyphony
 
-        ef''!8                                                                 %! polyphony
+        ef''!8                                                                 %! krummzeit.polyphony
 
-        e'8                                                                    %! polyphony
+        e'8                                                                    %! krummzeit.polyphony
 
-        f'8                                                                    %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
 
-        ef''!8                                                                 %! polyphony
-        ]                                                                      %! polyphony
+        ef''!8                                                                 %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        f'''8                                                                  %! polyphony
-        [                                                                      %! polyphony
+        f'''8                                                                  %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 15 / measure 2]                             %! _comment_measure_numbers
-    g''4.                                                                      %! polyphony
+    g''4.                                                                      %! krummzeit.polyphony
 
-    a''4.                                                                      %! polyphony
+    a''4.                                                                      %! krummzeit.polyphony
     ~
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 16 / measure 3]                         %! _comment_measure_numbers
-        a''8                                                                   %! polyphony
-        [                                                                      %! polyphony
+        a''8                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        bf''!8                                                                 %! polyphony
+        bf''!8                                                                 %! krummzeit.polyphony
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
 
-        af''!8                                                                 %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
 
-        ef''!8                                                                 %! polyphony
+        ef''!8                                                                 %! krummzeit.polyphony
 
-        f'8                                                                    %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        f'8                                                                    %! polyphony
-        [                                                                      %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
 
-        af''!8                                                                 %! polyphony
-        ]                                                                      %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    a''8                                                                       %! polyphony
-    [                                                                          %! polyphony
+    a''8                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    bf''!8                                                                     %! polyphony
+    bf''!8                                                                     %! krummzeit.polyphony
 
-    c'''8                                                                      %! polyphony
-    ]                                                                          %! polyphony
+    c'''8                                                                      %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 17 / measure 4]                             %! _comment_measure_numbers
-    b''8                                                                       %! polyphony
-    [                                                                          %! polyphony
+    b''8                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g''8                                                                       %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
-        g''4                                                                   %! polyphony
+        g''4                                                                   %! krummzeit.polyphony
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
 
-        ef''!4                                                                 %! polyphony
+        ef''!4                                                                 %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 18 / measure 5]                         %! _comment_measure_numbers
-        f'4                                                                    %! polyphony
+        f'4                                                                    %! krummzeit.polyphony
 
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
 
-        af''!4                                                                 %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    af''!8                                                                     %! polyphony
-    [                                                                          %! polyphony
+    af''!8                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    f'8                                                                        %! polyphony
+    f'8                                                                        %! krummzeit.polyphony
 
-    g''8                                                                       %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/9 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/9 {                                                               %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
-        [                                                                      %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        cs''!8                                                                 %! polyphony
+        cs''!8                                                                 %! krummzeit.polyphony
 
-        ef''!8                                                                 %! polyphony
+        ef''!8                                                                 %! krummzeit.polyphony
 
-        e'8                                                                    %! polyphony
+        e'8                                                                    %! krummzeit.polyphony
 
-        g'8                                                                    %! polyphony
+        g'8                                                                    %! krummzeit.polyphony
 
-        f'''8                                                                  %! polyphony
+        f'''8                                                                  %! krummzeit.polyphony
 
-        e'''8                                                                  %! polyphony
+        e'''8                                                                  %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
 
-        cs'''!8                                                                %! polyphony
-        ]                                                                      %! polyphony
+        cs'''!8                                                                %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 19 / measure 6]                             %! _comment_measure_numbers
-    ef''!8                                                                     %! polyphony
-    [                                                                          %! polyphony
+    ef''!8                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    f'8                                                                        %! polyphony
+    f'8                                                                        %! krummzeit.polyphony
 
-    g''8                                                                       %! polyphony
-    ]                                                                          %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 4/5 {                                                               %! polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony
 
-        bf''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        bf''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
 
-        af''!8                                                                 %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
 
-        a''8                                                                   %! polyphony
+        a''8                                                                   %! krummzeit.polyphony
 
-        f'''8                                                                  %! polyphony
+        f'''8                                                                  %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    f'''4                                                                      %! polyphony
+    f'''4                                                                      %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/4 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/4 {                                                               %! krummzeit.polyphony
 
-        g''4                                                                   %! polyphony
+        g''4                                                                   %! krummzeit.polyphony
 
-        c'''4                                                                  %! polyphony
+        c'''4                                                                  %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 20 / measure 7]                         %! _comment_measure_numbers
-        c'''8                                                                  %! polyphony
-        [                                                                      %! polyphony
+        c'''8                                                                  %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        e'''8                                                                  %! polyphony
+        e'''8                                                                  %! krummzeit.polyphony
 
-        f'''8                                                                  %! polyphony
+        f'''8                                                                  %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
 
-        cs''!8                                                                 %! polyphony
+        cs''!8                                                                 %! krummzeit.polyphony
 
-        af'!8                                                                  %! polyphony
+        af'!8                                                                  %! krummzeit.polyphony
 
-        bf'!8                                                                  %! polyphony
+        bf'!8                                                                  %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        bf'!8                                                                  %! polyphony
-        [                                                                      %! polyphony
+        bf'!8                                                                  %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        cs''!8                                                                 %! polyphony
+        cs''!8                                                                 %! krummzeit.polyphony
 
-        ef''!8                                                                 %! polyphony
-        ]                                                                      %! polyphony
+        ef''!8                                                                 %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 21 / measure 8]                             %! _comment_measure_numbers
-    e'8                                                                        %! polyphony
-    [                                                                          %! polyphony
+    e'8                                                                        %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    b''8                                                                       %! polyphony
-    ]                                                                          %! polyphony
+    b''8                                                                       %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    g''8                                                                       %! polyphony
-    [                                                                          %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    ef''!8                                                                     %! polyphony
+    ef''!8                                                                     %! krummzeit.polyphony
 
-    fs''!8                                                                     %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
 
-    ef''!8                                                                     %! polyphony
+    ef''!8                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    ef''!4.                                                                    %! polyphony
+    ef''!4.                                                                    %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
-        ef'''!4                                                                %! polyphony
+        ef'''!4                                                                %! krummzeit.polyphony
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
 
-        b''4                                                                   %! polyphony
+        b''4                                                                   %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 22 / measure 9]                             %! _comment_measure_numbers
-    b''8                                                                       %! polyphony
-    [                                                                          %! polyphony
+    b''8                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    f'''8                                                                      %! polyphony
+    f'''8                                                                      %! krummzeit.polyphony
 
-    bf''!8                                                                     %! polyphony
+    bf''!8                                                                     %! krummzeit.polyphony
 
-    f'8                                                                        %! polyphony
+    f'8                                                                        %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    f'16.                                                                      %! polyphony
-    [                                                                          %! polyphony
+    f'16.                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g''16.                                                                     %! polyphony
+    g''16.                                                                     %! krummzeit.polyphony
 
-    ef''!16.                                                                   %! polyphony
+    ef''!16.                                                                   %! krummzeit.polyphony
 
-    f'16.                                                                      %! polyphony
-    ]                                                                          %! polyphony
+    f'16.                                                                      %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
 
-        e'''8                                                                  %! polyphony
+        e'''8                                                                  %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
 
-        cs'''!8                                                                %! polyphony
+        cs'''!8                                                                %! krummzeit.polyphony
 
-        ef'''!8                                                                %! polyphony
-        ]                                                                      %! polyphony
+        ef'''!8                                                                %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 23 / measure 10]                            %! _comment_measure_numbers
-    ef'''!16.                                                                  %! polyphony
-    [                                                                          %! polyphony
+    ef'''!16.                                                                  %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    af'!16.                                                                    %! polyphony
+    af'!16.                                                                    %! krummzeit.polyphony
 
-    bf'!16.                                                                    %! polyphony
+    bf'!16.                                                                    %! krummzeit.polyphony
 
-    fs'!16.                                                                    %! polyphony
+    fs'!16.                                                                    %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    fs'!4                                                                      %! polyphony
+    fs'!4                                                                      %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 24 / measure 11]                            %! _comment_measure_numbers
-    f'4                                                                        %! polyphony
+    f'4                                                                        %! krummzeit.polyphony
 
-    bf''!4                                                                     %! polyphony
+    bf''!4                                                                     %! krummzeit.polyphony
     ~
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        bf''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        bf''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
-        [                                                                      %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af''!8                                                                 %! polyphony
-        ]                                                                      %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 25 / measure 12]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        d''8                                                                   %! polyphony
+        d''8                                                                   %! krummzeit.polyphony
 
-        e'''8                                                                  %! polyphony
+        e'''8                                                                  %! krummzeit.polyphony
 
-        f'''8                                                                  %! polyphony
+        f'''8                                                                  %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
 
-        c'''8                                                                  %! polyphony
+        c'''8                                                                  %! krummzeit.polyphony
 
-        e'8                                                                    %! polyphony
-        ]                                                                      %! polyphony
+        e'8                                                                    %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
 
-        af''!8                                                                 %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 26 / measure 13]                            %! _comment_measure_numbers
-    af''!4.                                                                    %! polyphony
+    af''!4.                                                                    %! krummzeit.polyphony
 
-    bf''!4.                                                                    %! polyphony
+    bf''!4.                                                                    %! krummzeit.polyphony
     ~
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 27 / measure 14]                        %! _comment_measure_numbers
-        bf''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        bf''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
 
-        cs'''!8                                                                %! polyphony
+        cs'''!8                                                                %! krummzeit.polyphony
 
-        a''8                                                                   %! polyphony
+        a''8                                                                   %! krummzeit.polyphony
 
-        af''!8                                                                 %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
 
-        e'''8                                                                  %! polyphony
+        e'''8                                                                  %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
 
-        a''8                                                                   %! polyphony
-        ]                                                                      %! polyphony
+        a''8                                                                   %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    bf'!8                                                                      %! polyphony
-    [                                                                          %! polyphony
+    bf'!8                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    b'8                                                                        %! polyphony
+    b'8                                                                        %! krummzeit.polyphony
 
-    cs''!8                                                                     %! polyphony
-    ]                                                                          %! polyphony
+    cs''!8                                                                     %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 28 / measure 15]                            %! _comment_measure_numbers
-    c''8                                                                       %! polyphony
-    [                                                                          %! polyphony
+    c''8                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    af''!8                                                                     %! polyphony
+    af''!8                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
-        af''!4                                                                 %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
 
-        d''4                                                                   %! polyphony
+        d''4                                                                   %! krummzeit.polyphony
 
-        e'4                                                                    %! polyphony
+        e'4                                                                    %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 29 / measure 16]                        %! _comment_measure_numbers
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
 
-        a''4                                                                   %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    a''8                                                                       %! polyphony
-    [                                                                          %! polyphony
+    a''8                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    fs'!8                                                                      %! polyphony
+    fs'!8                                                                      %! krummzeit.polyphony
 
-    af''!8                                                                     %! polyphony
+    af''!8                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/9 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/9 {                                                               %! krummzeit.polyphony
 
-        af''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        d'''8                                                                  %! polyphony
+        d'''8                                                                  %! krummzeit.polyphony
 
-        e'''8                                                                  %! polyphony
+        e'''8                                                                  %! krummzeit.polyphony
 
-        f'''8                                                                  %! polyphony
+        f'''8                                                                  %! krummzeit.polyphony
 
-        af''!8                                                                 %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
 
-        f'8                                                                    %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
 
-        d''8                                                                   %! polyphony
-        ]                                                                      %! polyphony
+        d''8                                                                   %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 30 / measure 17]                            %! _comment_measure_numbers
-    e'8                                                                        %! polyphony
-    [                                                                          %! polyphony
+    e'8                                                                        %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    fs''!8                                                                     %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
 
-    af''!8                                                                     %! polyphony
-    ]                                                                          %! polyphony
+    af''!8                                                                     %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 4/5 {                                                               %! polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
-        [                                                                      %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        cs'''!8                                                                %! polyphony
+        cs'''!8                                                                %! krummzeit.polyphony
 
-        a''8                                                                   %! polyphony
+        a''8                                                                   %! krummzeit.polyphony
 
-        bf''!8                                                                 %! polyphony
+        bf''!8                                                                 %! krummzeit.polyphony
 
-        fs''!8                                                                 %! polyphony
+        fs''!8                                                                 %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    fs''!4                                                                     %! polyphony
+    fs''!4                                                                     %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/4 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/4 {                                                               %! krummzeit.polyphony
 
-        af'!4                                                                  %! polyphony
+        af'!4                                                                  %! krummzeit.polyphony
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 31 / measure 18]                        %! _comment_measure_numbers
-        cs''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        cs''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        f'8                                                                    %! polyphony
+        f'8                                                                    %! krummzeit.polyphony
 
-        fs'!8                                                                  %! polyphony
+        fs'!8                                                                  %! krummzeit.polyphony
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
 
-        d''8                                                                   %! polyphony
+        d''8                                                                   %! krummzeit.polyphony
 
-        a''8                                                                   %! polyphony
+        a''8                                                                   %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
-        [                                                                      %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        d''8                                                                   %! polyphony
+        d''8                                                                   %! krummzeit.polyphony
 
-        e'8                                                                    %! polyphony
-        ]                                                                      %! polyphony
+        e'8                                                                    %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 32 / measure 19]                            %! _comment_measure_numbers
-    f'8                                                                        %! polyphony
-    [                                                                          %! polyphony
+    f'8                                                                        %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    c'''8                                                                      %! polyphony
-    ]                                                                          %! polyphony
+    c'''8                                                                      %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    af''!8                                                                     %! polyphony
-    [                                                                          %! polyphony
+    af''!8                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    e'''8                                                                      %! polyphony
+    e'''8                                                                      %! krummzeit.polyphony
 
-    g''8                                                                       %! polyphony
+    g''8                                                                       %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    e'8                                                                        %! polyphony
+    e'8                                                                        %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    e'4.                                                                       %! polyphony
+    e'4.                                                                       %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        e'4                                                                    %! polyphony
+        e'4                                                                    %! krummzeit.polyphony
 
-        g''4                                                                   %! polyphony
+        g''4                                                                   %! krummzeit.polyphony
 
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 33 / measure 20]                            %! _comment_measure_numbers
-    c''8                                                                       %! polyphony
-    [                                                                          %! polyphony
+    c''8                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    fs''!8                                                                     %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
 
-    b''8                                                                       %! polyphony
+    b''8                                                                       %! krummzeit.polyphony
 
-    fs''!8                                                                     %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    fs''!16.                                                                   %! polyphony
-    [                                                                          %! polyphony
+    fs''!16.                                                                   %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    af''!16.                                                                   %! polyphony
+    af''!16.                                                                   %! krummzeit.polyphony
 
-    e'''16.                                                                    %! polyphony
+    e'''16.                                                                    %! krummzeit.polyphony
 
-    fs''!16.                                                                   %! polyphony
-    ]                                                                          %! polyphony
+    fs''!16.                                                                   %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
-        g''8                                                                   %! polyphony
-        [                                                                      %! polyphony
+        g''8                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        af''!8                                                                 %! polyphony
+        af''!8                                                                 %! krummzeit.polyphony
 
-        f'''8                                                                  %! polyphony
+        f'''8                                                                  %! krummzeit.polyphony
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
 
-        af'!8                                                                  %! polyphony
+        af'!8                                                                  %! krummzeit.polyphony
 
-        d''8                                                                   %! polyphony
+        d''8                                                                   %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        e'8                                                                    %! polyphony
-        ]                                                                      %! polyphony
+        e'8                                                                    %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 34 / measure 21]                            %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    e'16.                                                                      %! polyphony
-    [                                                                          %! polyphony
+    e'16.                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    a''16.                                                                     %! polyphony
+    a''16.                                                                     %! krummzeit.polyphony
 
-    b''16.                                                                     %! polyphony
+    b''16.                                                                     %! krummzeit.polyphony
 
-    g''16.                                                                     %! polyphony
+    g''16.                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    g''4                                                                       %! polyphony
+    g''4                                                                       %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 35 / measure 22]                            %! _comment_measure_numbers
     fs''!4
@@ -4114,472 +4114,472 @@ A_Piano_Music_Voice = {                                                        %
 
     a8.
 
-    g8                                                                         %! polyphony
-    [                                                                          %! polyphony
+    g8                                                                         %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    fs!8                                                                       %! polyphony
-    ]                                                                          %! polyphony
+    fs!8                                                                       %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    bf!8                                                                       %! polyphony
+    bf!8                                                                       %! krummzeit.polyphony
     ~
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
-        bf!16                                                                  %! polyphony
-        [                                                                      %! polyphony
+        bf!16                                                                  %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        b16                                                                    %! polyphony
+        b16                                                                    %! krummzeit.polyphony
 
-        af!16                                                                  %! polyphony
+        af!16                                                                  %! krummzeit.polyphony
 
-        a16                                                                    %! polyphony
+        a16                                                                    %! krummzeit.polyphony
 
-        b16                                                                    %! polyphony
+        b16                                                                    %! krummzeit.polyphony
 
-        c'16                                                                   %! polyphony
+        c'16                                                                   %! krummzeit.polyphony
 
-        cs'!16                                                                 %! polyphony
+        cs'!16                                                                 %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    cs'!32.                                                                    %! polyphony
-    [                                                                          %! polyphony
+    cs'!32.                                                                    %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d'32.                                                                      %! polyphony
+    d'32.                                                                      %! krummzeit.polyphony
 
-    e32.                                                                       %! polyphony
+    e32.                                                                       %! krummzeit.polyphony
 
-    af!32.                                                                     %! polyphony
-    ]                                                                          %! polyphony
+    af!32.                                                                     %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    b16                                                                        %! polyphony
-    [                                                                          %! polyphony
+    b16                                                                        %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d16                                                                        %! polyphony
+    d16                                                                        %! krummzeit.polyphony
 
-    e16                                                                        %! polyphony
+    e16                                                                        %! krummzeit.polyphony
 
-    a16                                                                        %! polyphony
-    ]                                                                          %! polyphony
+    a16                                                                        %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 37 / measure 24]                            %! _comment_measure_numbers
-    af!32.                                                                     %! polyphony
-    [                                                                          %! polyphony
+    af!32.                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d32.                                                                       %! polyphony
+    d32.                                                                       %! krummzeit.polyphony
 
-    e32.                                                                       %! polyphony
+    e32.                                                                       %! krummzeit.polyphony
 
-    af!32.                                                                     %! polyphony
+    af!32.                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        af!8                                                                   %! polyphony
-        [                                                                      %! polyphony
+        af!8                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        ef!8                                                                   %! polyphony
+        ef!8                                                                   %! krummzeit.polyphony
 
-        af!8                                                                   %! polyphony
-        ]                                                                      %! polyphony
+        af!8                                                                   %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    c'8                                                                        %! polyphony
+    c'8                                                                        %! krummzeit.polyphony
     ~
 
-    c'16                                                                       %! polyphony
-    [                                                                          %! polyphony
+    c'16                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    ef!16                                                                      %! polyphony
+    ef!16                                                                      %! krummzeit.polyphony
 
-    b16                                                                        %! polyphony
+    b16                                                                        %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 38 / measure 25]                            %! _comment_measure_numbers
-    b16                                                                        %! polyphony
-    [                                                                          %! polyphony
+    b16                                                                        %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    af!16                                                                      %! polyphony
+    af!16                                                                      %! krummzeit.polyphony
 
-    bf!16                                                                      %! polyphony
+    bf!16                                                                      %! krummzeit.polyphony
 
-    e'16                                                                       %! polyphony
-    ]                                                                          %! polyphony
+    e'16                                                                       %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        cs'!16                                                                 %! polyphony
-        [                                                                      %! polyphony
+        cs'!16                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
 
-        af!16                                                                  %! polyphony
-        ]                                                                      %! polyphony
+        af!16                                                                  %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 4/5 {                                                               %! polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony
 
-        bf!16                                                                  %! polyphony
-        [                                                                      %! polyphony
+        bf!16                                                                  %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        af!16                                                                  %! polyphony
+        af!16                                                                  %! krummzeit.polyphony
 
-        bf!16                                                                  %! polyphony
+        bf!16                                                                  %! krummzeit.polyphony
 
-        g16                                                                    %! polyphony
+        g16                                                                    %! krummzeit.polyphony
 
-        d'16                                                                   %! polyphony
+        d'16                                                                   %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    d'8.                                                                       %! polyphony
+    d'8.                                                                       %! krummzeit.polyphony
 
-    b8.                                                                        %! polyphony
+    b8.                                                                        %! krummzeit.polyphony
     ~
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 39 / measure 26]                        %! _comment_measure_numbers
-        b16                                                                    %! polyphony
-        [                                                                      %! polyphony
+        b16                                                                    %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
 
-        cs'!16                                                                 %! polyphony
+        cs'!16                                                                 %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 4/5 {                                                               %! polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony
 
-        cs'!16                                                                 %! polyphony
-        [                                                                      %! polyphony
+        cs'!16                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        c'16                                                                   %! polyphony
+        c'16                                                                   %! krummzeit.polyphony
 
-        d'16                                                                   %! polyphony
+        d'16                                                                   %! krummzeit.polyphony
 
-        e'16                                                                   %! polyphony
+        e'16                                                                   %! krummzeit.polyphony
 
-        g16                                                                    %! polyphony
-        ]                                                                      %! polyphony
+        g16                                                                    %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    cs'!16                                                                     %! polyphony
-    [                                                                          %! polyphony
+    cs'!16                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    b16                                                                        %! polyphony
+    b16                                                                        %! krummzeit.polyphony
 
-    d'16                                                                       %! polyphony
-    ]                                                                          %! polyphony
+    d'16                                                                       %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/9 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/9 {                                                               %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs'!16                                                                 %! polyphony
-        [                                                                      %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
 
-        af'!16                                                                 %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
 
-        bf!16                                                                  %! polyphony
+        bf!16                                                                  %! krummzeit.polyphony
 
-        g'16                                                                   %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
 
-        d'16                                                                   %! polyphony
+        d'16                                                                   %! krummzeit.polyphony
 
-        bf!16                                                                  %! polyphony
+        bf!16                                                                  %! krummzeit.polyphony
 
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
 
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 40 / measure 27]                        %! _comment_measure_numbers
-        bf'!8                                                                  %! polyphony
-        [                                                                      %! polyphony
+        bf'!8                                                                  %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        a'8                                                                    %! polyphony
+        a'8                                                                    %! krummzeit.polyphony
 
-        ef'!8                                                                  %! polyphony
-        ]                                                                      %! polyphony
+        ef'!8                                                                  %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    fs'!8.                                                                     %! polyphony
+    fs'!8.                                                                     %! krummzeit.polyphony
     ~
 
-    fs'!16                                                                     %! polyphony
-    [                                                                          %! polyphony
+    fs'!16                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d'16                                                                       %! polyphony
+    d'16                                                                       %! krummzeit.polyphony
 
-    ef'!16                                                                     %! polyphony
+    ef'!16                                                                     %! krummzeit.polyphony
 
-    c'16                                                                       %! polyphony
+    c'16                                                                       %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    c'32.                                                                      %! polyphony
-    [                                                                          %! polyphony
+    c'32.                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d'32.                                                                      %! polyphony
+    d'32.                                                                      %! krummzeit.polyphony
 
-    af'!32.                                                                    %! polyphony
+    af'!32.                                                                    %! krummzeit.polyphony
 
-    bf'!32.                                                                    %! polyphony
-    ]                                                                          %! polyphony
+    bf'!32.                                                                    %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 41 / measure 28]                            %! _comment_measure_numbers
-    e'16                                                                       %! polyphony
-    [                                                                          %! polyphony
+    e'16                                                                       %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g'16                                                                       %! polyphony
+    g'16                                                                       %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    af'!16                                                                     %! polyphony
-    ]                                                                          %! polyphony
+    af'!16                                                                     %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 4/5 {                                                               %! polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af'!16                                                                 %! polyphony
-        [                                                                      %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        a'16                                                                   %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
 
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
 
-        ef'!16                                                                 %! polyphony
+        ef'!16                                                                 %! krummzeit.polyphony
 
-        b16                                                                    %! polyphony
+        b16                                                                    %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    b8                                                                         %! polyphony
+    b8                                                                         %! krummzeit.polyphony
 
-    a'8                                                                        %! polyphony
-    [                                                                          %! polyphony
+    a'8                                                                        %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    cs'!8                                                                      %! polyphony
+    cs'!8                                                                      %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    cs'!16                                                                     %! polyphony
-    [                                                                          %! polyphony
+    cs'!16                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    af'!16                                                                     %! polyphony
+    af'!16                                                                     %! krummzeit.polyphony
 
-    c'16                                                                       %! polyphony
+    c'16                                                                       %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 4/5 {                                                               %! polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 42 / measure 29]                        %! _comment_measure_numbers
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        c'16                                                                   %! polyphony
-        [                                                                      %! polyphony
+        c'16                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        d'16                                                                   %! polyphony
+        d'16                                                                   %! krummzeit.polyphony
 
-        e'16                                                                   %! polyphony
+        e'16                                                                   %! krummzeit.polyphony
 
-        g'16                                                                   %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
 
-        fs'!16                                                                 %! polyphony
-        ]                                                                      %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    af'!16                                                                     %! polyphony
-    [                                                                          %! polyphony
+    af'!16                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g'16                                                                       %! polyphony
-    ]                                                                          %! polyphony
+    g'16                                                                       %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    d''16                                                                      %! polyphony
-    [                                                                          %! polyphony
+    d''16                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    fs'!16                                                                     %! polyphony
+    fs'!16                                                                     %! krummzeit.polyphony
 
-    a'16                                                                       %! polyphony
+    a'16                                                                       %! krummzeit.polyphony
 
-    bf'!16                                                                     %! polyphony
+    bf'!16                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    bf'!8.                                                                     %! polyphony
+    bf'!8.                                                                     %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        b'8                                                                    %! polyphony
-        [                                                                      %! polyphony
+        b'8                                                                    %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        c''8                                                                   %! polyphony
+        c''8                                                                   %! krummzeit.polyphony
 
-        fs'!8                                                                  %! polyphony
+        fs'!8                                                                  %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    fs'!16                                                                     %! polyphony
-    [                                                                          %! polyphony
+    fs'!16                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    bf'!16                                                                     %! polyphony
+    bf'!16                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    bf'!16                                                                     %! polyphony
-    [                                                                          %! polyphony
+    bf'!16                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g'16                                                                       %! polyphony
+    g'16                                                                       %! krummzeit.polyphony
 
-    d''16                                                                      %! polyphony
+    d''16                                                                      %! krummzeit.polyphony
 
-    c''16                                                                      %! polyphony
-    ]                                                                          %! polyphony
+    c''16                                                                      %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    fs''!16                                                                    %! polyphony
-    [                                                                          %! polyphony
+    fs''!16                                                                    %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d''16                                                                      %! polyphony
+    d''16                                                                      %! krummzeit.polyphony
 
-    fs''!16                                                                    %! polyphony
-    ]                                                                          %! polyphony
+    fs''!16                                                                    %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 4/5 {                                                               %! polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony
 
-        a'16                                                                   %! polyphony
-        [                                                                      %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
 
-        af'!16                                                                 %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
 
-        a'16                                                                   %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
 
-        af'!16                                                                 %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    af'!8                                                                      %! polyphony
+    af'!8                                                                      %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 43 / measure 30]                            %! _comment_measure_numbers
-    a'8                                                                        %! polyphony
+    a'8                                                                        %! krummzeit.polyphony
     ~
 
-    \times 4/7 {                                                               %! polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony
 
-        a'16                                                                   %! polyphony
-        [                                                                      %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
 
-        ef''!16                                                                %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
 
-        b'16                                                                   %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
 
-        d''16                                                                  %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
 
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
 
-        g'16                                                                   %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    g'32.                                                                      %! polyphony
-    [                                                                          %! polyphony
+    g'32.                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    af''!32.                                                                   %! polyphony
+    af''!32.                                                                   %! krummzeit.polyphony
 
-    c''32.                                                                     %! polyphony
+    c''32.                                                                     %! krummzeit.polyphony
 
-    b'32.                                                                      %! polyphony
-    ]                                                                          %! polyphony
+    b'32.                                                                      %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    af''!16                                                                    %! polyphony
-    [                                                                          %! polyphony
+    af''!16                                                                    %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d''16                                                                      %! polyphony
+    d''16                                                                      %! krummzeit.polyphony
 
-    bf'!16                                                                     %! polyphony
-    ]                                                                          %! polyphony
+    bf'!16                                                                     %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 44 / measure 31]                            %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!16                                                                    %! polyphony
-    [                                                                          %! polyphony
+    fs''!16                                                                    %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!16                                                                    %! polyphony
+    fs''!16                                                                    %! krummzeit.polyphony
 
-    g''16                                                                      %! polyphony
+    g''16                                                                      %! krummzeit.polyphony
 
-    bf''!16                                                                    %! polyphony
+    bf''!16                                                                    %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    bf''!8.                                                                    %! polyphony
+    bf''!8.                                                                    %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        cs''!8                                                                 %! polyphony
-        [                                                                      %! polyphony
+        cs''!8                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        bf''!8                                                                 %! polyphony
+        bf''!8                                                                 %! krummzeit.polyphony
 
-        b''8                                                                   %! polyphony
+        b''8                                                                   %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    b''16                                                                      %! polyphony
-    [                                                                          %! polyphony
+    b''16                                                                      %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    af''!16                                                                    %! polyphony
+    af''!16                                                                    %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    af''!32.                                                                   %! polyphony
-    [                                                                          %! polyphony
+    af''!32.                                                                   %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    ef''!32.                                                                   %! polyphony
+    ef''!32.                                                                   %! krummzeit.polyphony
 
-    c''32.                                                                     %! polyphony
+    c''32.                                                                     %! krummzeit.polyphony
 
-    fs''!32.                                                                   %! polyphony
-    ]                                                                          %! polyphony
+    fs''!32.                                                                   %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
@@ -4652,7 +4652,7 @@ A_Piano_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
     ^ \baca-explicit-indicator-markup "(“Piano”)"                              %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Pf.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
@@ -4685,15 +4685,15 @@ A_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r4.                                                                        %! incise_attacks
+    r4.                                                                        %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 59 / measure 46]                            %! _comment_measure_numbers
-    r1                                                                         %! incise_attacks
+    r1                                                                         %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 60 / measure 47]                            %! _comment_measure_numbers
-    r4                                                                         %! incise_attacks
+    r4                                                                         %! krummzeit.incise_attacks
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4713,10 +4713,10 @@ A_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 61 / measure 48]                            %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4736,12 +4736,12 @@ A_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r1.                                                                        %! incise_attacks
+    r1.                                                                        %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 62 / measure 49]                            %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4761,17 +4761,17 @@ A_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 63 / measure 50]                            %! _comment_measure_numbers
-    r2..                                                                       %! incise_attacks
+    r2..                                                                       %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 64 / measure 51]                            %! _comment_measure_numbers
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4791,10 +4791,10 @@ A_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 65 / measure 52]                            %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4814,12 +4814,12 @@ A_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r1..                                                                       %! incise_attacks
+    r1..                                                                       %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 66 / measure 53]                            %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4839,15 +4839,15 @@ A_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 67 / measure 54]                            %! _comment_measure_numbers
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 68 / measure 55]                            %! _comment_measure_numbers
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4867,10 +4867,10 @@ A_Piano_Music_Voice = {                                                        %
                 }
         }
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [A Piano_Music_Voice measure 69 / measure 56]                            %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -4891,12 +4891,12 @@ A_Piano_Music_Voice = {                                                        %
         }
     \ottava 0                                                                  %! baca_ottava_bassa:SpannerIndicatorCommand(2)
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r4.                                                                        %! incise_attacks
+    r4.                                                                        %! krummzeit.incise_attacks
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Piano_Music_Voice measure 70 / measure 57]                        %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #7                        %! baca_dls_staff_padding:OverrideCommand(1)
@@ -4905,553 +4905,553 @@ A_Piano_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        g''16                                                                  %! pizzicato_sixteenths
+        g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        g''16                                                                  %! pizzicato_sixteenths
+        g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs''!16                                                                %! pizzicato_sixteenths
+        cs''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-        a''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        g''8                                                                   %! pizzicato_sixteenths
+        a''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        g''8                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    r2.                                                                        %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    r2.                                                                        %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 71 / measure 58]                            %! _comment_measure_numbers
-    r8.                                                                        %! pizzicato_sixteenths
+    r8.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    fs''!8.                                                                    %! pizzicato_sixteenths
+    fs''!8.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r4                                                                     %! pizzicato_sixteenths
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
 
-        c''16                                                                  %! pizzicato_sixteenths
+        c''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        f''8                                                                   %! pizzicato_sixteenths
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-    }                                                                          %! pizzicato_sixteenths
-
-    \times 4/7 {                                                               %! pizzicato_sixteenths
-
-        r16                                                                    %! pizzicato_sixteenths
-
-        af''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
-
-        f''16                                                                  %! pizzicato_sixteenths
+        f''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        ef''!16                                                                %! pizzicato_sixteenths
+        a''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-        a''4                                                                   %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    \times 4/7 {                                                               %! krummzeit.pizzicato_sixteenths
+
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
+
+        af''!16                                                                %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        [                                                                      %! krummzeit.pizzicato_sixteenths
+
+        f''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        b''4                                                                   %! pizzicato_sixteenths
+        ef''!16                                                                %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        a''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g''16                                                                  %! pizzicato_sixteenths
+        b''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
 
-        a''16                                                                  %! pizzicato_sixteenths
+        g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 72 / measure 59]                            %! _comment_measure_numbers
-    r2                                                                         %! pizzicato_sixteenths
+    r2                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 73 / measure 60]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r16.                                                                       %! pizzicato_sixteenths
+    r16.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    cs''!8.                                                                    %! pizzicato_sixteenths
+    cs''!8.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    b''32.                                                                     %! pizzicato_sixteenths
+    b''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    c''32.                                                                     %! pizzicato_sixteenths
+    c''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Piano_Music_Voice measure 74 / measure 61]                        %! _comment_measure_numbers
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
 
-        af''!16                                                                %! pizzicato_sixteenths
+        af''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        fs''!16                                                                %! pizzicato_sixteenths
+        fs''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g''16                                                                  %! pizzicato_sixteenths
+        g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a''4                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a''4                                                                   %! pizzicato_sixteenths
+        a''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
-
-        af''!16                                                                %! pizzicato_sixteenths
+        a''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f''8                                                                   %! pizzicato_sixteenths
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        [                                                                      %! krummzeit.pizzicato_sixteenths
+
+        af''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g''8                                                                   %! pizzicato_sixteenths
+        f''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+        g''8                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 75 / measure 62]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 7/9 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 7/9 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Piano_Music_Voice measure 76 / measure 63]                        %! _comment_measure_numbers
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        bf''!16                                                                %! pizzicato_sixteenths
+        bf''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        cs''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        c'''8                                                                  %! pizzicato_sixteenths
+        cs''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        e''8                                                                   %! pizzicato_sixteenths
+        c'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''16                                                                 %! pizzicato_sixteenths
+        e''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        bf''!16                                                                %! pizzicato_sixteenths
+        c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g''16                                                                  %! pizzicato_sixteenths
+        bf''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        e''4                                                                   %! pizzicato_sixteenths
+        g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''8                                                                   %! pizzicato_sixteenths
+        cs''!16                                                                %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        e''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        a''8                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    r8                                                                         %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    e''16                                                                      %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
+
+    e''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    ef''!16                                                                    %! pizzicato_sixteenths
+    ef''!16                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    c'''8                                                                      %! pizzicato_sixteenths
+    c'''8                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 77 / measure 64]                            %! _comment_measure_numbers
-    r1                                                                         %! pizzicato_sixteenths
+    r1                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
-
-    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!16                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!16                                                                    %! pizzicato_sixteenths
+    fs''!16                                                                    %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    [                                                                          %! krummzeit.pizzicato_sixteenths
+
+    \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
+    fs''!16                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    f''16                                                                      %! pizzicato_sixteenths
+    f''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    fs''!16                                                                    %! pizzicato_sixteenths
+    fs''!16                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 78 / measure 65]                            %! _comment_measure_numbers
-    r16.                                                                       %! pizzicato_sixteenths
+    r16.                                                                       %! krummzeit.pizzicato_sixteenths
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    c'''8.                                                                     %! pizzicato_sixteenths
+    c'''8.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    c'''32.                                                                    %! pizzicato_sixteenths
+    c'''32.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    c'''32.                                                                    %! pizzicato_sixteenths
+    c'''32.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    f''16.                                                                     %! pizzicato_sixteenths
+    f''16.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    af''!16.                                                                   %! pizzicato_sixteenths
+    af''!16.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    e''8.                                                                      %! pizzicato_sixteenths
+    e''8.                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 79 / measure 66]                            %! _comment_measure_numbers
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        af''!4                                                                 %! pizzicato_sixteenths
+        af''!4                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        bf''!16                                                                %! pizzicato_sixteenths
+        bf''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        g''16                                                                  %! pizzicato_sixteenths
+        g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs'''!8                                                                %! pizzicato_sixteenths
+        fs'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 80 / measure 67]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    cs'''!16                                                                   %! pizzicato_sixteenths
+    cs'''!16                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    c'''16                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    f''16                                                                      %! pizzicato_sixteenths
+    c'''16                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
-
-    a''4                                                                       %! pizzicato_sixteenths
+    f''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g''4                                                                       %! pizzicato_sixteenths
+    g''16                                                                      %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
+
+    a''4                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    e''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
-
-    c'''16                                                                     %! pizzicato_sixteenths
+    g''4                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    a''8                                                                       %! pizzicato_sixteenths
+    e''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
+
+    c'''16                                                                     %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+
+    a''8                                                                       %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 81 / measure 68]                            %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r16.                                                                       %! pizzicato_sixteenths
+    r16.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    f''8.                                                                      %! pizzicato_sixteenths
+    f''8.                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    fs'''!8.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    f''32.                                                                     %! pizzicato_sixteenths
+    fs'''!8.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    a''32.                                                                     %! pizzicato_sixteenths
+    f''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    af''!16.                                                                   %! pizzicato_sixteenths
+    a''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    a''16.                                                                     %! pizzicato_sixteenths
+    af''!16.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+
+    a''16.                                                                     %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 82 / measure 69]                            %! _comment_measure_numbers
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    e'''16                                                                     %! pizzicato_sixteenths
+    e'''16                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    f''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    c'''16                                                                     %! pizzicato_sixteenths
+    f''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g'''8                                                                      %! pizzicato_sixteenths
+    c'''16                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    g'''8                                                                      %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        fs'''!4                                                                %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
+
+        fs'''!4                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        ef'''!16                                                               %! pizzicato_sixteenths
+        ef'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        f'''16                                                                 %! pizzicato_sixteenths
+        f'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        e'''8                                                                  %! pizzicato_sixteenths
+        e'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 5/6 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 5/6 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Piano_Music_Voice measure 83 / measure 70]                        %! _comment_measure_numbers
-        r4                                                                     %! pizzicato_sixteenths
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
 
-        a''4                                                                   %! pizzicato_sixteenths
+        a''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g'''4                                                                  %! pizzicato_sixteenths
+        g'''4                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 84 / measure 71]                            %! _comment_measure_numbers
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    a''16                                                                      %! pizzicato_sixteenths
+    a''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    g'''16                                                                     %! pizzicato_sixteenths
+    g'''16                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    af'''!8                                                                    %! pizzicato_sixteenths
+    af'''!8                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Piano_Music_Voice measure 85 / measure 72]                        %! _comment_measure_numbers
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
 
-        bf''!16                                                                %! pizzicato_sixteenths
+        bf''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        g'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        cs'''!4                                                                %! pizzicato_sixteenths
+        g'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''8                                                                  %! pizzicato_sixteenths
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        cs'''!4                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        c'''8                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    r8                                                                         %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    b''16                                                                      %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
+
+    b''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    fs'''!16                                                                   %! pizzicato_sixteenths
+    fs'''!16                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    f'''8                                                                      %! pizzicato_sixteenths
+    f'''8                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 6/7 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 6/7 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Piano_Music_Voice measure 86 / measure 73]                        %! _comment_measure_numbers
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        g'''2                                                                  %! pizzicato_sixteenths
+        g'''2                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a'''4                                                                  %! pizzicato_sixteenths
+        a'''4                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 87 / measure 74]                            %! _comment_measure_numbers
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    af'''!16                                                                   %! pizzicato_sixteenths
+    af'''!16                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 7/9 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 7/9 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        b''8                                                                   %! pizzicato_sixteenths
+        b''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        bf'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        g'''16                                                                 %! pizzicato_sixteenths
+        bf'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs'''!16                                                               %! pizzicato_sixteenths
+        g'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        c'''4                                                                  %! pizzicato_sixteenths
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a'''4                                                                  %! pizzicato_sixteenths
+        cs'''!16                                                               %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        c'''4                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f'''16                                                                 %! pizzicato_sixteenths
+        a'''4                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
 
-        e'''16                                                                 %! pizzicato_sixteenths
+        f'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+        e'''16                                                                 %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Piano_Music_Voice measure 88 / measure 75]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    ef'''!8                                                                    %! pizzicato_sixteenths
+    ef'''!8                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 5/7 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 5/7 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r4                                                                     %! pizzicato_sixteenths
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        c'''4                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        c'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
-
-        b'''16                                                                 %! pizzicato_sixteenths
+        c'''4                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        bf'''!8                                                                %! pizzicato_sixteenths
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        c'''16                                                                 %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        [                                                                      %! krummzeit.pizzicato_sixteenths
+
+        b'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g'''8                                                                  %! pizzicato_sixteenths
+        bf'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+
+        g'''8                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -5514,7 +5514,7 @@ A_Percussion_Music_Voice = {                                                   %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'4.                                                                       %! sponge_rhythm
+    c'4.                                                                       %! krummzeit.sponge_rhythm
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-ff                                                            %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     - \accent                                                                  %! baca_accent:IndicatorCommand
@@ -5530,29 +5530,29 @@ A_Percussion_Music_Voice = {                                                   %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    c'4.                                                                       %! sponge_rhythm
+    c'4.                                                                       %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 3/5 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 3/5 {                                                               %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 15 / measure 2]                    %! _comment_measure_numbers
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! sponge_rhythm
+        c'4                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     % [A Percussion_Music_Voice measure 16 / measure 3]                        %! _comment_measure_numbers
-    c'2.                                                                       %! sponge_rhythm
+    c'2.                                                                       %! krummzeit.sponge_rhythm
     \repeatTie
 
-    c'4.                                                                       %! sponge_rhythm
+    c'4.                                                                       %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -5630,211 +5630,211 @@ A_Percussion_Music_Voice = {                                                   %
     % [A Percussion_Music_Voice measure 35 / measure 22]                       %! _comment_measure_numbers
     R1 * 1                                                                     %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 3/5 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 3/5 {                                                               %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 36 / measure 23]                   %! _comment_measure_numbers
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'1                                                                    %! sponge_rhythm
+        c'1                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 3/5 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 3/5 {                                                               %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 37 / measure 24]                   %! _comment_measure_numbers
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4                                                                    %! sponge_rhythm
+        c'4                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     % [A Percussion_Music_Voice measure 38 / measure 25]                       %! _comment_measure_numbers
-    c'2.                                                                       %! sponge_rhythm
+    c'2.                                                                       %! krummzeit.sponge_rhythm
     \repeatTie
 
-    c'4                                                                        %! sponge_rhythm
+    c'4                                                                        %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 7/8 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 7/8 {                                                               %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 39 / measure 26]                   %! _comment_measure_numbers
-        c'4                                                                    %! sponge_rhythm
+        c'4                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2.                                                                   %! sponge_rhythm
+        c'2.                                                                   %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 7/11 {                                                              %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 7/11 {                                                              %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 40 / measure 27]                   %! _comment_measure_numbers
-        c'4                                                                    %! sponge_rhythm
+        c'4                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'8                                                                    %! sponge_rhythm
+        c'8                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     % [A Percussion_Music_Voice measure 41 / measure 28]                       %! _comment_measure_numbers
-    c'4.                                                                       %! sponge_rhythm
+    c'4.                                                                       %! krummzeit.sponge_rhythm
     \repeatTie
 
-    c'2                                                                        %! sponge_rhythm
+    c'2                                                                        %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'8                                                                        %! sponge_rhythm
+    c'8                                                                        %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    \times 2/3 {                                                               %! sponge_rhythm
+    \times 2/3 {                                                               %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 42 / measure 29]                   %! _comment_measure_numbers
-        c'2..                                                                  %! sponge_rhythm
+        c'2..                                                                  %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'1                                                                    %! sponge_rhythm
+        c'1                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'8                                                                    %! sponge_rhythm
+        c'8                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 3/5 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 3/5 {                                                               %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 43 / measure 30]                   %! _comment_measure_numbers
-        c'2..                                                                  %! sponge_rhythm
+        c'2..                                                                  %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'4.                                                                   %! sponge_rhythm
+        c'4.                                                                   %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     % [A Percussion_Music_Voice measure 44 / measure 31]                       %! _comment_measure_numbers
-    c'8                                                                        %! sponge_rhythm
+    c'8                                                                        %! krummzeit.sponge_rhythm
     \repeatTie
 
-    c'2..                                                                      %! sponge_rhythm
+    c'2..                                                                      %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 5/8 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 5/8 {                                                               %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 45 / measure 32]                   %! _comment_measure_numbers
-        c'8                                                                    %! sponge_rhythm
+        c'8                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4.                                                                   %! sponge_rhythm
+        c'4.                                                                   %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 9/13 {                                                              %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 9/13 {                                                              %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 46 / measure 33]                   %! _comment_measure_numbers
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'8                                                                    %! sponge_rhythm
+        c'8                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     % [A Percussion_Music_Voice measure 47 / measure 34]                       %! _comment_measure_numbers
-    c'2                                                                        %! sponge_rhythm
+    c'2                                                                        %! krummzeit.sponge_rhythm
     \repeatTie
 
-    c'2                                                                        %! sponge_rhythm
+    c'2                                                                        %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    c'4                                                                        %! sponge_rhythm
+    c'4                                                                        %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
     % [A Percussion_Music_Voice measure 48 / measure 35]                       %! _comment_measure_numbers
-    c'2                                                                        %! sponge_rhythm
+    c'2                                                                        %! krummzeit.sponge_rhythm
     \repeatTie
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 3/5 {                                                               %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 3/5 {                                                               %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 49 / measure 36]                   %! _comment_measure_numbers
-        c'4                                                                    %! sponge_rhythm
+        c'4                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     % [A Percussion_Music_Voice measure 50 / measure 37]                       %! _comment_measure_numbers
-    c'2                                                                        %! sponge_rhythm
+    c'2                                                                        %! krummzeit.sponge_rhythm
     \repeatTie
 
-    c'4                                                                        %! sponge_rhythm
+    c'4                                                                        %! krummzeit.sponge_rhythm
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! sponge_rhythm
-    \times 9/17 {                                                              %! sponge_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.sponge_rhythm
+    \times 9/17 {                                                              %! krummzeit.sponge_rhythm
 
         % [A Percussion_Music_Voice measure 51 / measure 38]                   %! _comment_measure_numbers
-        c'4                                                                    %! sponge_rhythm
+        c'4                                                                    %! krummzeit.sponge_rhythm
         \repeatTie
 
-        c'1                                                                    %! sponge_rhythm
+        c'1                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'2                                                                    %! sponge_rhythm
+        c'2                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-        c'4.                                                                   %! sponge_rhythm
+        c'4.                                                                   %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca_accent:IndicatorCommand
 
-    }                                                                          %! sponge_rhythm
+    }                                                                          %! krummzeit.sponge_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -5873,9 +5873,9 @@ A_Percussion_Music_Voice = {                                                   %
     R1 * 11/8                                                                  %! _make_measure_silences
 
     % [A Percussion_Music_Voice measure 58 / measure 45]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-p-sempre                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
@@ -5887,138 +5887,138 @@ A_Percussion_Music_Voice = {                                                   %
                 tam-tam                                                        %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r4.                                                                        %! incise_attacks
+    r4.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 59 / measure 46]                       %! _comment_measure_numbers
-    r1                                                                         %! incise_attacks
+    r1                                                                         %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 60 / measure 47]                       %! _comment_measure_numbers
-    r4                                                                         %! incise_attacks
+    r4                                                                         %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 61 / measure 48]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r1.                                                                        %! incise_attacks
+    r1.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 62 / measure 49]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 63 / measure 50]                       %! _comment_measure_numbers
-    r2..                                                                       %! incise_attacks
+    r2..                                                                       %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 64 / measure 51]                       %! _comment_measure_numbers
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 65 / measure 52]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r1..                                                                       %! incise_attacks
+    r1..                                                                       %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 66 / measure 53]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 67 / measure 54]                       %! _comment_measure_numbers
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 68 / measure 55]                       %! _comment_measure_numbers
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 69 / measure 56]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r4.                                                                        %! incise_attacks
+    r4.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 70 / measure 57]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2..                                                                       %! incise_attacks
+    r2..                                                                       %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 71 / measure 58]                       %! _comment_measure_numbers
-    r1                                                                         %! incise_attacks
+    r1                                                                         %! krummzeit.incise_attacks
 
-    r4                                                                         %! incise_attacks
+    r4                                                                         %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 72 / measure 59]                       %! _comment_measure_numbers
-    r4                                                                         %! incise_attacks
+    r4                                                                         %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [A Percussion_Music_Voice measure 73 / measure 60]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \accent                                                                  %! baca_accent:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -6191,141 +6191,141 @@ A_Violin_Music_Voice = {                                                       %
     R1 * 3/4                                                                   %! _make_measure_silences
 
     % [A Violin_Music_Voice measure 21 / measure 8]                            %! _comment_measure_numbers
-    f''4.                                                                      %! polyphony
+    f''4.                                                                      %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                              %! baca_markup:IndicatorCommand
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''4                                                                   %! polyphony
+        g''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f''4                                                                   %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ~
-
-    }                                                                          %! polyphony
-
-    f''4                                                                       %! polyphony
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 10/14 {                                                             %! polyphony
-
-        f''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
-
-        c''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        a''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        bf''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        f''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        g''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        bf''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        c''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        af''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        a''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        g''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        cs''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        ef''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        e''16                                                                  %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 10/14 {                                                             %! krummzeit.polyphony
+
+        f''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        [                                                                      %! krummzeit.polyphony
+
+        c''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        a''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        bf''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        f''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        g''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        bf''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        c''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        af''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        a''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        g''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        cs''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        ef''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        e''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ~
+        ]                                                                      %! krummzeit.polyphony
+
+    }                                                                          %! krummzeit.polyphony
+
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 22 / measure 9]                        %! _comment_measure_numbers
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
 
-        a''4                                                                   %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'''4                                                                  %! polyphony
+        c'''4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    c'''4                                                                      %! polyphony
+    c'''4                                                                      %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/4 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/4 {                                                               %! krummzeit.polyphony
 
-        ef''!4                                                                 %! polyphony
+        ef''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Violin_Music_Voice measure 23 / measure 10]                           %! _comment_measure_numbers
-    f''16                                                                      %! polyphony
+    f''16                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    fs''!16                                                                    %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    a''16                                                                      %! polyphony
+    fs''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    c''16                                                                      %! polyphony
+    a''16                                                                      %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    c''16                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    c''4.                                                                      %! polyphony
+    c''4.                                                                      %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 24 / measure 11]                       %! _comment_measure_numbers
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''4                                                                   %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef''!4                                                                 %! polyphony
+        ef''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    ef''!4                                                                     %! polyphony
+    ef''!4                                                                     %! krummzeit.polyphony
 
-    bf''!4                                                                     %! polyphony
+    bf''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -6369,1424 +6369,1424 @@ A_Violin_Music_Voice = {                                                       %
 
     % [A Violin_Music_Voice measure 32 / measure 19]                           %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!4.                                                                    %! polyphony
+    fs''!4.                                                                    %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ^ \markup { "off-string bowing on staccati" }                              %! baca_markup:IndicatorCommand
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!4                                                                 %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!4                                                                     %! polyphony
+    fs''!4                                                                     %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 10/14 {                                                             %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 10/14 {                                                             %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        cs''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        bf''!16                                                                %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b''16                                                                  %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        b''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b''16                                                                  %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!16                                                                %! polyphony
+        b''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''16                                                                  %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f''16                                                                  %! polyphony
+        e''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        f''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 33 / measure 20]                       %! _comment_measure_numbers
-        f''4                                                                   %! polyphony
+        f''4                                                                   %! krummzeit.polyphony
 
-        bf''!4                                                                 %! polyphony
+        bf''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    cs''!4                                                                     %! polyphony
+    cs''!4                                                                     %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/4 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/4 {                                                               %! krummzeit.polyphony
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Violin_Music_Voice measure 34 / measure 21]                           %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!16                                                                    %! polyphony
+    fs''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    g''16                                                                      %! polyphony
+    g''16                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    bf'!16                                                                     %! polyphony
+    bf'!16                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    cs''!16                                                                    %! polyphony
+    cs''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    cs''!4.                                                                    %! polyphony
+    cs''!4.                                                                    %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 35 / measure 22]                       %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!4                                                                 %! polyphony
+        bf''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    e''4                                                                       %! polyphony
+    e''4                                                                       %! krummzeit.polyphony
 
-    b''4                                                                       %! polyphony
+    b''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 6/10 {                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 6/10 {                                                              %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 36 / measure 23]                       %! _comment_measure_numbers
-        b''16                                                                  %! polyphony
+        b''16                                                                  %! krummzeit.polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        c'16                                                                   %! polyphony
+        c'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e'16                                                                   %! polyphony
+        e'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af'!16                                                                 %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'16                                                                   %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        bf'!16                                                                 %! polyphony
+        d'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
-
-    }                                                                          %! polyphony
-
-    \times 2/3 {                                                               %! polyphony
-
-        fs'!4                                                                  %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'4                                                                    %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ]                                                                      %! krummzeit.polyphony
+
+    }                                                                          %! krummzeit.polyphony
+
+    \times 2/3 {                                                               %! krummzeit.polyphony
+
+        fs'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs'!4                                                                  %! polyphony
+        d'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+        cs'!4                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    fs'!4                                                                      %! polyphony
+    }                                                                          %! krummzeit.polyphony
+
+    fs'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
-    fs'!4.                                                                     %! polyphony
+    fs'!4.                                                                     %! krummzeit.polyphony
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 37 / measure 24]                       %! _comment_measure_numbers
-        g'16                                                                   %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        af'!16                                                                 %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        bf'!16                                                                 %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!16                                                                %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'16                                                                   %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        cs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    cs'!4                                                                      %! polyphony
+    cs'!4                                                                      %! krummzeit.polyphony
     ~
 
     % [A Violin_Music_Voice measure 38 / measure 25]                           %! _comment_measure_numbers
-    cs'!4                                                                      %! polyphony
+    cs'!4                                                                      %! krummzeit.polyphony
 
-    ef'!4                                                                      %! polyphony
+    ef'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    fs'!4                                                                      %! polyphony
+    fs'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    ef'!16                                                                     %! polyphony
+    ef'!16                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    c''16                                                                      %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    cs'!16                                                                     %! polyphony
+    c''16                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    af'!16                                                                     %! polyphony
+    cs'!16                                                                     %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    af'!16                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 39 / measure 26]                       %! _comment_measure_numbers
-        af'!4                                                                  %! polyphony
+        af'!4                                                                  %! krummzeit.polyphony
 
-        b'4                                                                    %! polyphony
+        b'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''4                                                                   %! polyphony
+        c''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    bf'!4.                                                                     %! polyphony
+    bf'!4.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A Violin_Music_Voice measure 40 / measure 27]                           %! _comment_measure_numbers
-    bf'!4.                                                                     %! polyphony
+    bf'!4.                                                                     %! krummzeit.polyphony
     ~
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
-        bf'!16                                                                 %! polyphony
-        [                                                                      %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g'16                                                                   %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!16                                                                %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e'16                                                                   %! polyphony
+        e'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af'!16                                                                 %! polyphony
+        af'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'16                                                                   %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 41 / measure 28]                       %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    fs'!4                                                                      %! polyphony
+    fs'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
-    fs'!4                                                                      %! polyphony
+    fs'!4                                                                      %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
     % [A Violin_Music_Voice measure 42 / measure 29]                           %! _comment_measure_numbers
-    af'!16                                                                     %! polyphony
+    af'!16                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    bf'!16                                                                     %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    fs'!16                                                                     %! polyphony
+    bf'!16                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    bf'!16                                                                     %! polyphony
+    fs'!16                                                                     %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    bf'!16                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        bf'!4                                                                  %! polyphony
+        bf'!4                                                                  %! krummzeit.polyphony
 
-        e''4                                                                   %! polyphony
+        e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    cs''!4.                                                                    %! polyphony
+    cs''!4.                                                                    %! krummzeit.polyphony
 
-    c''4                                                                       %! polyphony
+    c''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    cs''!4                                                                     %! polyphony
+    cs''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 6/10 {                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 6/10 {                                                              %! krummzeit.polyphony
 
-        bf'!16                                                                 %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        e''16                                                                  %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        g''16                                                                  %! polyphony
+        e''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''16                                                                  %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        c''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        cs''!16                                                                %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 43 / measure 30]                       %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    ef''!4                                                                     %! polyphony
+    ef''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A Violin_Music_Voice measure 44 / measure 31]                           %! _comment_measure_numbers
-    ef''!4.                                                                    %! polyphony
+    ef''!4.                                                                    %! krummzeit.polyphony
     ~
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 10/14 {                                                             %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 10/14 {                                                             %! krummzeit.polyphony
 
-        ef''!16                                                                %! polyphony
-        [                                                                      %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        c''16                                                                  %! polyphony
+        c''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef''!16                                                                %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef''!16                                                                %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''16                                                                  %! polyphony
+        c''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''16                                                                  %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''16                                                                  %! polyphony
+        e''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b''16                                                                  %! polyphony
+        b''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''16                                                                  %! polyphony
+        e''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''16                                                                  %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 45 / measure 32]                       %! _comment_measure_numbers
-        bf''!4                                                                 %! polyphony
+        bf''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''4                                                                   %! polyphony
+        a''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Violin_Music_Voice measure 46 / measure 33]                           %! _comment_measure_numbers
-    bf'!4                                                                      %! polyphony
+    bf'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
-    bf'!4                                                                      %! polyphony
+    bf'!4                                                                      %! krummzeit.polyphony
 
-    ef''!4                                                                     %! polyphony
+    ef''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 6/10 {                                                              %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 6/10 {                                                              %! krummzeit.polyphony
 
-        c'''16                                                                 %! polyphony
+        c'''16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        cs''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        ef''!16                                                                %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        e''16                                                                  %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        e''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''16                                                                  %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef''!16                                                                %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 47 / measure 34]                       %! _comment_measure_numbers
-        ef''!4                                                                 %! polyphony
+        ef''!4                                                                 %! krummzeit.polyphony
 
-        c'''4                                                                  %! polyphony
+        c'''4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''4                                                                   %! polyphony
+        d''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    d''4.                                                                      %! polyphony
+    d''4.                                                                      %! krummzeit.polyphony
 
-    bf''!4.                                                                    %! polyphony
+    bf''!4.                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 48 / measure 35]                       %! _comment_measure_numbers
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        cs''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        ef''!16                                                                %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c''16                                                                  %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b''16                                                                  %! polyphony
+        c''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        b''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''16                                                                  %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 49 / measure 36]                       %! _comment_measure_numbers
-        af''!4                                                                 %! polyphony
+        af''!4                                                                 %! krummzeit.polyphony
 
-        b''4                                                                   %! polyphony
+        b''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!4                                                                 %! polyphony
+        cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    fs''!4                                                                     %! polyphony
+    fs''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     ~
 
     % [A Violin_Music_Voice measure 50 / measure 37]                           %! _comment_measure_numbers
-    fs''!4                                                                     %! polyphony
+    fs''!4                                                                     %! krummzeit.polyphony
     ~
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
-        fs''!16                                                                %! polyphony
-        [                                                                      %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        af''!16                                                                %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''16                                                                  %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef''!16                                                                %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [A Violin_Music_Voice measure 51 / measure 38]                           %! _comment_measure_numbers
-    g''4.                                                                      %! white_rhythm
+    g''4.                                                                      %! krummzeit.white_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4.                                                                    %! white_rhythm
+    fs''!4.                                                                    %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a''4.                                                                      %! white_rhythm
+    a''4.                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Violin_Music_Voice measure 52 / measure 39]                           %! _comment_measure_numbers
-    c''4                                                                       %! white_rhythm
+    c''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e''4                                                                       %! white_rhythm
+    e''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b''4                                                                       %! white_rhythm
+    b''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a''4                                                                       %! white_rhythm
+    a''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    c''4                                                                       %! white_rhythm
+    c''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af''!4                                                                     %! white_rhythm
+    af''!4                                                                     %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    g''4                                                                       %! white_rhythm
+    g''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e''4                                                                       %! white_rhythm
+    e''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d''4                                                                       %! white_rhythm
+    d''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4                                                                     %! white_rhythm
+    fs''!4                                                                     %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f''4                                                                       %! white_rhythm
+    f''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'4                                                                        %! white_rhythm
+    b'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!4                                                                     %! white_rhythm
+    fs''!4                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    fs''!4                                                                     %! white_rhythm
+    fs''!4                                                                     %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f''4                                                                       %! white_rhythm
+    f''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'4                                                                        %! white_rhythm
+    b'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4                                                                     %! white_rhythm
+    fs''!4                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d''4                                                                       %! white_rhythm
+    d''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4                                                                     %! white_rhythm
+    fs''!4                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    c''4                                                                       %! white_rhythm
+    c''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a''4                                                                       %! white_rhythm
+    a''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d''4                                                                       %! white_rhythm
+    d''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f''4                                                                       %! white_rhythm
+    f''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    af''!4                                                                     %! white_rhythm
+    af''!4                                                                     %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    af''!4                                                                     %! white_rhythm
+    af''!4                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef''!4                                                                     %! white_rhythm
+    ef''!4                                                                     %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e''4                                                                       %! white_rhythm
+    e''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a'4                                                                        %! white_rhythm
+    a'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    c''4                                                                       %! white_rhythm
+    c''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af'!4                                                                      %! white_rhythm
+    af'!4                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e''4                                                                       %! white_rhythm
+    e''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a'4                                                                        %! white_rhythm
+    a'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Violin_Music_Voice measure 58 / measure 45]                           %! _comment_measure_numbers
-    f'4                                                                        %! white_rhythm
+    f'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d''4                                                                       %! white_rhythm
+    d''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e'4                                                                        %! white_rhythm
+    e'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf'!4                                                                      %! white_rhythm
+    bf'!4                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4                                                                        %! white_rhythm
+    f'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'4                                                                        %! white_rhythm
+    b'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4                                                                     %! white_rhythm
+    fs''!4                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4                                                                        %! white_rhythm
+    f'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d''4                                                                       %! white_rhythm
+    d''4                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af'!4                                                                      %! white_rhythm
+    af'!4                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs'!4                                                                      %! white_rhythm
+    fs'!4                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4                                                                        %! white_rhythm
+    f'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'4                                                                        %! white_rhythm
+    b'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a'4                                                                        %! white_rhythm
+    a'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4                                                                        %! white_rhythm
+    f'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs'!4                                                                      %! white_rhythm
+    fs'!4                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    g'4                                                                        %! white_rhythm
+    g'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    c''4                                                                       %! white_rhythm
+    c''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf'!4                                                                      %! white_rhythm
+    bf'!4                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs'!4                                                                      %! white_rhythm
+    fs'!4                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e'4                                                                        %! white_rhythm
+    e'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d'4                                                                        %! white_rhythm
+    d'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs'!4                                                                      %! white_rhythm
+    fs'!4                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Violin_Music_Voice measure 64 / measure 51]                           %! _comment_measure_numbers
-    c''4                                                                       %! white_rhythm
+    c''4                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf'!4                                                                      %! white_rhythm
+    bf'!4                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'4                                                                        %! white_rhythm
+    b'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af'!4                                                                      %! white_rhythm
+    af'!4                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e'4                                                                        %! white_rhythm
+    e'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef'!4                                                                      %! white_rhythm
+    ef'!4                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d'4                                                                        %! white_rhythm
+    d'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    g'4                                                                        %! white_rhythm
+    g'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4                                                                        %! white_rhythm
+    f'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e'4                                                                        %! white_rhythm
+    e'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs'!4                                                                      %! white_rhythm
+    fs'!4                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af'!4                                                                      %! white_rhythm
+    af'!4                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d'4                                                                        %! white_rhythm
+    d'4                                                                        %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'4                                                                        %! white_rhythm
+    b'4                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af'!4                                                                      %! white_rhythm
+    af'!4                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e'8                                                                        %! white_rhythm
+    e'8                                                                        %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [A Violin_Music_Voice measure 67 / measure 54]                       %! _comment_measure_numbers
-        b''8                                                                   %! pizzicato_rhythm
+        b''8                                                                   %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
-        a''4                                                                   %! pizzicato_rhythm
+        a''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        e''8                                                                   %! pizzicato_rhythm
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ~
-
-    }                                                                          %! pizzicato_rhythm
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
-
-        e''8                                                                   %! pizzicato_rhythm
-
-        ef''!4.                                                                %! pizzicato_rhythm
+        e''8                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
+
+        e''8                                                                   %! krummzeit.pizzicato_rhythm
+
+        ef''!4.                                                                %! krummzeit.pizzicato_rhythm
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ~
+
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     % [A Violin_Music_Voice measure 68 / measure 55]                           %! _comment_measure_numbers
-    ef''!8                                                                     %! pizzicato_rhythm
+    ef''!8                                                                     %! krummzeit.pizzicato_rhythm
 
-    g''4                                                                       %! pizzicato_rhythm
+    g''4                                                                       %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    c''4                                                                       %! pizzicato_rhythm
+    c''4                                                                       %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    ef''!8                                                                     %! pizzicato_rhythm
+    ef''!8                                                                     %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    r4                                                                         %! pizzicato_rhythm
+    r4                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Violin_Music_Voice measure 69 / measure 56]                           %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_rhythm
+    r8                                                                         %! krummzeit.pizzicato_rhythm
 
-    r2                                                                         %! pizzicato_rhythm
+    r2                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Violin_Music_Voice measure 70 / measure 57]                           %! _comment_measure_numbers
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    bf''!16                                                                    %! pizzicato_sixteenths
+    bf''!16                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    c''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    af''!16                                                                    %! pizzicato_sixteenths
+    c''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    f''8                                                                       %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
-
-    r8                                                                         %! pizzicato_sixteenths
-
-    bf''!4                                                                     %! pizzicato_sixteenths
+    af''!16                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    a''16                                                                      %! pizzicato_sixteenths
+    f''8                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    c''16                                                                      %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
+
+    bf''!4                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    b''8                                                                       %! pizzicato_sixteenths
+    a''16                                                                      %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    [                                                                          %! krummzeit.pizzicato_sixteenths
+
+    c''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g''8                                                                       %! pizzicato_sixteenths
+    b''8                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    g''8                                                                       %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Violin_Music_Voice measure 71 / measure 58]                       %! _comment_measure_numbers
-        r2                                                                     %! pizzicato_sixteenths
+        r2                                                                     %! krummzeit.pizzicato_sixteenths
 
-        cs''!8                                                                 %! pizzicato_sixteenths
+        cs''!8                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    c'''16                                                                     %! pizzicato_sixteenths
+    c'''16                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    a''16                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    cs''!16                                                                    %! pizzicato_sixteenths
+    a''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g''16                                                                      %! pizzicato_sixteenths
+    cs''!16                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    fs''!8                                                                     %! pizzicato_sixteenths
+    g''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
 
-    \times 4/5 {                                                               %! pizzicato_sixteenths
+    fs''!8                                                                     %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
+
+    \times 4/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Violin_Music_Voice measure 72 / measure 59]                       %! _comment_measure_numbers
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        fs''!4                                                                 %! pizzicato_sixteenths
+        fs''!4                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        e''16                                                                  %! pizzicato_sixteenths
+        e''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        c'''16                                                                 %! pizzicato_sixteenths
+        c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs''!8                                                                 %! pizzicato_sixteenths
+        fs''!8                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 73 / measure 60]                           %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    e''8                                                                       %! pizzicato_sixteenths
+    e''8                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A Violin_Music_Voice measure 74 / measure 61]                           %! _comment_measure_numbers
-    r16.                                                                       %! pizzicato_sixteenths
+    r16.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    f''8.                                                                      %! pizzicato_sixteenths
+    f''8.                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    ef''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    c'''32.                                                                    %! pizzicato_sixteenths
+    ef''!32.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    f''16.                                                                     %! pizzicato_sixteenths
+    c'''32.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    e''16.                                                                     %! pizzicato_sixteenths
+    f''16.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    fs''!32.                                                                   %! pizzicato_sixteenths
+    e''16.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g''32.                                                                     %! pizzicato_sixteenths
+    fs''!32.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    bf''!32.                                                                   %! pizzicato_sixteenths
+    g''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    fs''!32.                                                                   %! pizzicato_sixteenths
+    bf''!32.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+
+    fs''!32.                                                                   %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 75 / measure 62]                           %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        fs''!8                                                                 %! pizzicato_sixteenths
+        fs''!8                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        b''8                                                                   %! pizzicato_sixteenths
+        b''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 76 / measure 63]                           %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    f''4                                                                       %! pizzicato_sixteenths
+    f''4                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    a''4                                                                       %! pizzicato_sixteenths
+    a''4                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 9/11 {                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 9/11 {                                                              %! krummzeit.pizzicato_sixteenths
 
         % [A Violin_Music_Voice measure 77 / measure 64]                       %! _comment_measure_numbers
-        r4                                                                     %! pizzicato_sixteenths
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
 
-        f''4                                                                   %! pizzicato_sixteenths
+        f''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''16                                                                  %! pizzicato_sixteenths
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        af''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        cs'''!8                                                                %! pizzicato_sixteenths
+        af''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        b''2                                                                   %! pizzicato_sixteenths
+        cs'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        c'''8                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    r4                                                                         %! pizzicato_sixteenths
+        b''2                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    g'''8                                                                      %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
+
+    g'''8                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Violin_Music_Voice measure 78 / measure 65]                       %! _comment_measure_numbers
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
 
-        b''16                                                                  %! pizzicato_sixteenths
+        b''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        g'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        ef'''!8                                                                %! pizzicato_sixteenths
+        g'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs'''!16                                                               %! pizzicato_sixteenths
+        ef'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        bf''!16                                                                %! pizzicato_sixteenths
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''16                                                                  %! pizzicato_sixteenths
+        bf''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        e'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        a''4                                                                   %! pizzicato_sixteenths
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''4                                                                  %! pizzicato_sixteenths
+        e'''16                                                                 %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        a''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        c'''4                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 79 / measure 66]                           %! _comment_measure_numbers
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        fs'''!2                                                                %! pizzicato_sixteenths
+        fs'''!2                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 9/11 {                                                              %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 9/11 {                                                              %! krummzeit.pizzicato_sixteenths
 
         % [A Violin_Music_Voice measure 80 / measure 67]                       %! _comment_measure_numbers
-        r4                                                                     %! pizzicato_sixteenths
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
 
-        b''4                                                                   %! pizzicato_sixteenths
+        b''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        af'''!16                                                               %! pizzicato_sixteenths
+        af'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        b''8                                                                   %! pizzicato_sixteenths
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        bf''!8                                                                 %! pizzicato_sixteenths
+        b''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs'''!16                                                               %! pizzicato_sixteenths
+        bf''!8                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs'''!16                                                               %! pizzicato_sixteenths
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''16                                                                 %! pizzicato_sixteenths
+        cs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        ef'''!4                                                                %! pizzicato_sixteenths
+        c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        f'''16                                                                 %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        ef'''!4                                                                %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 81 / measure 68]                           %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 6/7 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 6/7 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        e'''8                                                                  %! pizzicato_sixteenths
+        e'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        c'''2                                                                  %! pizzicato_sixteenths
+        c'''2                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        c'''8                                                                  %! pizzicato_sixteenths
+        c'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 82 / measure 69]                           %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    g'''4                                                                      %! pizzicato_sixteenths
+    g'''4                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    g'''16                                                                     %! pizzicato_sixteenths
+    g'''16                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    b''8                                                                       %! pizzicato_sixteenths
+    b''8                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    a'''8                                                                      %! pizzicato_sixteenths
+    a'''8                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
 
-        g'''16                                                                 %! pizzicato_sixteenths
+        g'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        b''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        bf'''!4                                                                %! pizzicato_sixteenths
+        cs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''8                                                                  %! pizzicato_sixteenths
+        b''16                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        bf'''!4                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        c'''8                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 83 / measure 70]                           %! _comment_measure_numbers
-    r2                                                                         %! pizzicato_sixteenths
+    r2                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 84 / measure 71]                           %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8.                                                                        %! pizzicato_sixteenths
+    r8.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    e'''8.                                                                     %! pizzicato_sixteenths
+    e'''8.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Violin_Music_Voice measure 85 / measure 72]                           %! _comment_measure_numbers
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
@@ -7867,8 +7867,8 @@ A_Violin_Music_Staff = {                                                       %
 
 A_Viola_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 14 / measure 1]                         %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -7888,7 +7888,7 @@ A_Viola_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        d4                                                                     %! hypermeter_tuplets
+        d4                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -7904,158 +7904,158 @@ A_Viola_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        ctqs!1                                                                 %! hypermeter_tuplets
+        ctqs!1                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 16 / measure 3]                         %! _comment_measure_numbers
-        e2                                                                     %! hypermeter_tuplets
+        e2                                                                     %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        dqs!\breve                                                             %! hypermeter_tuplets
+        dqs!\breve                                                             %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 19 / measure 6]                         %! _comment_measure_numbers
-        cqs!4                                                                  %! hypermeter_tuplets
+        cqs!4                                                                  %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        b,1                                                                    %! hypermeter_tuplets
+        b,1                                                                    %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     % [A Viola_Music_Voice measure 20 / measure 7]                             %! _comment_measure_numbers
-    cqs!2                                                                      %! hypermeter_tuplets
+    cqs!2                                                                      %! krummzeit.hypermeter_tuplets
     \glissando                                                                 %! baca_glissando
 
-    d\breve                                                                    %! hypermeter_tuplets
+    d\breve                                                                    %! krummzeit.hypermeter_tuplets
     \glissando                                                                 %! baca_glissando
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 22 / measure 9]                         %! _comment_measure_numbers
-        ctqs!2                                                                 %! hypermeter_tuplets
+        ctqs!2                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        e\breve                                                                %! hypermeter_tuplets
+        e\breve                                                                %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 25 / measure 12]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        e4                                                                     %! hypermeter_tuplets
+        e4                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "non flautando" }                                          %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        dtqs!1                                                                 %! hypermeter_tuplets
+        dtqs!1                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 27 / measure 14]                        %! _comment_measure_numbers
-        f2                                                                     %! hypermeter_tuplets
+        f2                                                                     %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        eqs!\breve                                                             %! hypermeter_tuplets
+        eqs!\breve                                                             %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 30 / measure 17]                        %! _comment_measure_numbers
-        dqs!4                                                                  %! hypermeter_tuplets
+        dqs!4                                                                  %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        c1                                                                     %! hypermeter_tuplets
+        c1                                                                     %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     % [A Viola_Music_Voice measure 31 / measure 18]                            %! _comment_measure_numbers
-    dqs!2                                                                      %! hypermeter_tuplets
+    dqs!2                                                                      %! krummzeit.hypermeter_tuplets
     \glissando                                                                 %! baca_glissando
 
-    e\breve                                                                    %! hypermeter_tuplets
+    e\breve                                                                    %! krummzeit.hypermeter_tuplets
     \glissando                                                                 %! baca_glissando
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 33 / measure 20]                        %! _comment_measure_numbers
-        dtqs!2                                                                 %! hypermeter_tuplets
+        dtqs!2                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        f\breve                                                                %! hypermeter_tuplets
+        f\breve                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 9/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 9/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 36 / measure 23]                        %! _comment_measure_numbers
-        g4                                                                     %! hypermeter_tuplets
+        g4                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        ftqs!2.                                                                %! hypermeter_tuplets
+        ftqs!2.                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        a4                                                                     %! hypermeter_tuplets
+        a4                                                                     %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 11/10 {                                                             %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 11/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 38 / measure 25]                        %! _comment_measure_numbers
-        gqs!2                                                                  %! hypermeter_tuplets
+        gqs!2                                                                  %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        fqs!1.                                                                 %! hypermeter_tuplets
+        fqs!1.                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        e2                                                                     %! hypermeter_tuplets
+        e2                                                                     %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 41 / measure 28]                        %! _comment_measure_numbers
-        fqs!8                                                                  %! hypermeter_tuplets
+        fqs!8                                                                  %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        g4.                                                                    %! hypermeter_tuplets
+        g4.                                                                    %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        ftqs!8                                                                 %! hypermeter_tuplets
+        ftqs!8                                                                 %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -8095,769 +8095,769 @@ A_Viola_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    r4                                                                         %! white_rhythm
+    r4                                                                         %! krummzeit.white_rhythm
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    af''!4.                                                                    %! white_rhythm
+    af''!4.                                                                    %! krummzeit.white_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef''!4.                                                                    %! white_rhythm
+    ef''!4.                                                                    %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b''4.                                                                      %! white_rhythm
+    b''4.                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e''4.                                                                      %! white_rhythm
+    e''4.                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Viola_Music_Voice measure 49 / measure 36]                            %! _comment_measure_numbers
-    af''!4.                                                                    %! white_rhythm
+    af''!4.                                                                    %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a''4.                                                                      %! white_rhythm
+    a''4.                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Viola_Music_Voice measure 50 / measure 37]                            %! _comment_measure_numbers
-    f''4.                                                                      %! white_rhythm
+    f''4.                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'4.                                                                       %! white_rhythm
+    b'4.                                                                       %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Viola_Music_Voice measure 51 / measure 38]                            %! _comment_measure_numbers
-    f'4.                                                                       %! white_rhythm
+    f'4.                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af'!4.                                                                     %! white_rhythm
+    af'!4.                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4.                                                                    %! white_rhythm
+    fs''!4.                                                                    %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/8 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/8 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 52 / measure 39]                        %! _comment_measure_numbers
         \clef "alto"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        b'4                                                                    %! prolated_quarters
+        b'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        af'!4                                                                  %! prolated_quarters
+        af'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        ef'!4                                                                  %! prolated_quarters
+        ef'!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        bf'!4                                                                  %! prolated_quarters
+        bf'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 6/5 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 6/5 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 53 / measure 40]                        %! _comment_measure_numbers
-        fs'!4                                                                  %! prolated_quarters
+        fs'!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b'4                                                                    %! prolated_quarters
+        b'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        af'!4                                                                  %! prolated_quarters
+        af'!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        fs'!4                                                                  %! prolated_quarters
+        fs'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af'!4                                                                  %! prolated_quarters
+        af'!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/9 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/9 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 54 / measure 41]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af'!4                                                                  %! prolated_quarters
+        af'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e'4                                                                    %! prolated_quarters
+        e'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        bf'!4                                                                  %! prolated_quarters
+        bf'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        a'4                                                                    %! prolated_quarters
+        a'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e'4                                                                    %! prolated_quarters
+        e'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        af'!4                                                                  %! prolated_quarters
+        af'!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f'4                                                                    %! prolated_quarters
+        f'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        c'4                                                                    %! prolated_quarters
+        c'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        a'4                                                                    %! prolated_quarters
+        a'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/5 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/5 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 55 / measure 42]                        %! _comment_measure_numbers
-        e'4                                                                    %! prolated_quarters
+        e'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        af'!4                                                                  %! prolated_quarters
+        af'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        bf!4                                                                   %! prolated_quarters
+        bf!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        e'4                                                                    %! prolated_quarters
+        e'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        e'4                                                                    %! prolated_quarters
+        e'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 3/4 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 3/4 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 56 / measure 43]                        %! _comment_measure_numbers
-        g'4                                                                    %! prolated_quarters
+        g'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e'4                                                                    %! prolated_quarters
+        e'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        d'4                                                                    %! prolated_quarters
+        d'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f4                                                                     %! prolated_quarters
+        f4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 11/8 {                                                              %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 11/8 {                                                              %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 57 / measure 44]                        %! _comment_measure_numbers
-        fs'!4                                                                  %! prolated_quarters
+        fs'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f4                                                                     %! prolated_quarters
+        f4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        g4                                                                     %! prolated_quarters
+        g4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        bf!4                                                                   %! prolated_quarters
+        bf!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 5/4 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 5/4 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 58 / measure 45]                        %! _comment_measure_numbers
-        c'4                                                                    %! prolated_quarters
+        c'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b4                                                                     %! prolated_quarters
+        b4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 4/4 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 4/4 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 59 / measure 46]                        %! _comment_measure_numbers
-        ef!4                                                                   %! prolated_quarters
+        ef!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        fs!4                                                                   %! prolated_quarters
+        fs!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        ef!4                                                                   %! prolated_quarters
+        ef!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af!4                                                                   %! prolated_quarters
+        af!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \times 2/3 {                                                               %! prolated_quarters
+    \times 2/3 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 60 / measure 47]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af!4                                                                   %! prolated_quarters
+        af!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e4                                                                     %! prolated_quarters
+        e4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        ef!4                                                                   %! prolated_quarters
+        ef!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [A Viola_Music_Voice measure 61 / measure 48]                        %! _comment_measure_numbers
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        b''8                                                                   %! pizzicato_rhythm
+        b''8                                                                   %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        bf''!4                                                                 %! pizzicato_rhythm
+        bf''!4                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g''8                                                                   %! pizzicato_rhythm
+        g''8                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    r1                                                                         %! pizzicato_rhythm
+    r1                                                                         %! krummzeit.pizzicato_rhythm
 
-    r8                                                                         %! pizzicato_rhythm
+    r8                                                                         %! krummzeit.pizzicato_rhythm
 
-    r4                                                                         %! pizzicato_rhythm
+    r4                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Viola_Music_Voice measure 62 / measure 49]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_rhythm
+    r8                                                                         %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 7/9 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 7/9 {                                                               %! krummzeit.pizzicato_rhythm
 
-        fs''!4                                                                 %! pizzicato_rhythm
+        fs''!4                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f''2                                                                   %! pizzicato_rhythm
+        f''2                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g''4.                                                                  %! pizzicato_rhythm
+        g''4.                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \times 2/3 {                                                               %! pizzicato_rhythm
+    \times 2/3 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [A Viola_Music_Voice measure 63 / measure 50]                        %! _comment_measure_numbers
-        g''8                                                                   %! pizzicato_rhythm
-        [                                                                      %! pizzicato_rhythm
+        g''8                                                                   %! krummzeit.pizzicato_rhythm
+        [                                                                      %! krummzeit.pizzicato_rhythm
 
-        a''8                                                                   %! pizzicato_rhythm
+        a''8                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        af''!8                                                                 %! pizzicato_rhythm
+        af''!8                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
-        ]                                                                      %! pizzicato_rhythm
+        ]                                                                      %! krummzeit.pizzicato_rhythm
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        af''!8                                                                 %! pizzicato_rhythm
+        af''!8                                                                 %! krummzeit.pizzicato_rhythm
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!4                                                                 %! pizzicato_rhythm
+        fs''!4                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs''!8                                                                 %! pizzicato_rhythm
+        fs''!8                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    r4                                                                         %! pizzicato_rhythm
+    r4                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Viola_Music_Voice measure 64 / measure 51]                            %! _comment_measure_numbers
-    r2..                                                                       %! pizzicato_rhythm
+    r2..                                                                       %! krummzeit.pizzicato_rhythm
 
     % [A Viola_Music_Voice measure 65 / measure 52]                            %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_rhythm
+    r4.                                                                        %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 9/11 {                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 9/11 {                                                              %! krummzeit.pizzicato_rhythm
 
-        bf''!4.                                                                %! pizzicato_rhythm
+        bf''!4.                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f''2                                                                   %! pizzicato_rhythm
+        f''2                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        ef''!8                                                                 %! pizzicato_rhythm
+        ef''!8                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''4                                                                   %! pizzicato_rhythm
+        a''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs''!8                                                                 %! pizzicato_rhythm
+        fs''!8                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    fs''!8                                                                     %! pizzicato_rhythm
+    fs''!8                                                                     %! krummzeit.pizzicato_rhythm
 
-    cs''!4                                                                     %! pizzicato_rhythm
+    cs''!4                                                                     %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    c'''8                                                                      %! pizzicato_rhythm
+    c'''8                                                                      %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A Viola_Music_Voice measure 66 / measure 53]                            %! _comment_measure_numbers
-    r1                                                                         %! pizzicato_rhythm
+    r1                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Viola_Music_Voice measure 67 / measure 54]                            %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_rhythm
+    r4.                                                                        %! krummzeit.pizzicato_rhythm
 
-    r4.                                                                        %! pizzicato_rhythm
+    r4.                                                                        %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [A Viola_Music_Voice measure 68 / measure 55]                        %! _comment_measure_numbers
-        fs''!4.                                                                %! pizzicato_rhythm
+        fs''!4.                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a''8                                                                   %! pizzicato_rhythm
+        a''8                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a''4                                                                   %! pizzicato_rhythm
+        a''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        e''4                                                                   %! pizzicato_rhythm
+        e''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    f''4                                                                       %! pizzicato_rhythm
+    f''4                                                                       %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ~
 
     % [A Viola_Music_Voice measure 69 / measure 56]                            %! _comment_measure_numbers
-    f''8                                                                       %! pizzicato_rhythm
+    f''8                                                                       %! krummzeit.pizzicato_rhythm
 
-    r2                                                                         %! pizzicato_rhythm
+    r2                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Viola_Music_Voice measure 70 / measure 57]                            %! _comment_measure_numbers
-    r32.                                                                       %! pizzicato_sixteenths
+    r32.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    a''32.                                                                     %! pizzicato_sixteenths
+    a''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    fs''!32.                                                                   %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    b''32.                                                                     %! pizzicato_sixteenths
+    fs''!32.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    fs''!8.                                                                    %! pizzicato_sixteenths
+    b''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 6/7 {                                                               %! pizzicato_sixteenths
+    fs''!8.                                                                    %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-        r4                                                                     %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 6/7 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        cs'''!16                                                               %! pizzicato_sixteenths
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
+
+        cs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        c'''16                                                                 %! pizzicato_sixteenths
+        c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        c'''8                                                                  %! pizzicato_sixteenths
+        c'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        e''8                                                                   %! pizzicato_sixteenths
+        e''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-        bf''!4                                                                 %! pizzicato_sixteenths
+        bf''!4                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 71 / measure 58]                            %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        f''8                                                                   %! pizzicato_sixteenths
+        f''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        g''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        fs''!16                                                                %! pizzicato_sixteenths
+        g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''16                                                                 %! pizzicato_sixteenths
+        fs''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        fs'''!4                                                                %! pizzicato_sixteenths
+        c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        bf''!16                                                                %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    \times 4/7 {                                                               %! pizzicato_sixteenths
+        fs'''!4                                                                %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    \times 4/7 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Viola_Music_Voice measure 72 / measure 59]                        %! _comment_measure_numbers
-        r4                                                                     %! pizzicato_sixteenths
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
 
-        c'''16                                                                 %! pizzicato_sixteenths
+        c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        bf''!16                                                                %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        g''8                                                                   %! pizzicato_sixteenths
+        bf''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        g''4                                                                   %! pizzicato_sixteenths
+        g''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        f''8                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        g''4                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 73 / measure 60]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r16.                                                                       %! pizzicato_sixteenths
+    r16.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    c'''8.                                                                     %! pizzicato_sixteenths
+    c'''8.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    bf''!16.                                                                   %! pizzicato_sixteenths
+    bf''!16.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 74 / measure 61]                            %! _comment_measure_numbers
-    r2.                                                                        %! pizzicato_sixteenths
+    r2.                                                                        %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 75 / measure 62]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    c'''16                                                                     %! pizzicato_sixteenths
+    c'''16                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    g'''8                                                                      %! pizzicato_sixteenths
+    g'''8                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    af''!8                                                                     %! pizzicato_sixteenths
+    af''!8                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 76 / measure 63]                            %! _comment_measure_numbers
-    r16..                                                                      %! pizzicato_sixteenths
+    r16..                                                                      %! krummzeit.pizzicato_sixteenths
 
-    fs'''!8..                                                                  %! pizzicato_sixteenths
+    fs'''!8..                                                                  %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    c'''8..                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    f''32..                                                                    %! pizzicato_sixteenths
+    c'''8..                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    c'''32..                                                                   %! pizzicato_sixteenths
+    f''32..                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g'''16..                                                                   %! pizzicato_sixteenths
+    c'''32..                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    fs'''!16..                                                                 %! pizzicato_sixteenths
+    g'''16..                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    fs'''!16..                                                                 %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
+
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 77 / measure 64]                            %! _comment_measure_numbers
-    r1                                                                         %! pizzicato_sixteenths
+    r1                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r4                                                                     %! pizzicato_sixteenths
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
 
-        af'''!4                                                                %! pizzicato_sixteenths
+        af'''!4                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''16                                                                  %! pizzicato_sixteenths
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        cs'''!16                                                               %! pizzicato_sixteenths
+        cs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 6/7 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 6/7 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Viola_Music_Voice measure 78 / measure 65]                        %! _comment_measure_numbers
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        f'''16                                                                 %! pizzicato_sixteenths
+        f'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        e'''16                                                                 %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        g'''16                                                                 %! pizzicato_sixteenths
+        e'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        ef'''!4                                                                %! pizzicato_sixteenths
+        g'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g'''4                                                                  %! pizzicato_sixteenths
+        cs'''!16                                                               %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        ef'''!4                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        g'''4                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Viola_Music_Voice measure 79 / measure 66]                        %! _comment_measure_numbers
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
 
-        f'''16                                                                 %! pizzicato_sixteenths
+        f'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        g'''8                                                                  %! pizzicato_sixteenths
+        g'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a'''8                                                                  %! pizzicato_sixteenths
+        a'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 80 / measure 67]                            %! _comment_measure_numbers
-    r1                                                                         %! pizzicato_sixteenths
+    r1                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Viola_Music_Voice measure 81 / measure 68]                        %! _comment_measure_numbers
-        r4                                                                     %! pizzicato_sixteenths
+        r4                                                                     %! krummzeit.pizzicato_sixteenths
 
-        c'''4                                                                  %! pizzicato_sixteenths
+        c'''4                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs'''!16                                                               %! pizzicato_sixteenths
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        cs'''!16                                                               %! pizzicato_sixteenths
+        cs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        a'''8                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        ef'''!2                                                                %! pizzicato_sixteenths
+        a'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g'''4                                                                  %! pizzicato_sixteenths
+        ef'''!2                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f'''8                                                                  %! pizzicato_sixteenths
+        g'''4                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        f'''8                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 82 / measure 69]                            %! _comment_measure_numbers
-    r16.                                                                       %! pizzicato_sixteenths
+    r16.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    af'''!32.                                                                  %! pizzicato_sixteenths
+    af'''!32.                                                                  %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    a'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    b''16.                                                                     %! pizzicato_sixteenths
+    a'''32.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    fs'''!16.                                                                  %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
-
-    r32.                                                                       %! pizzicato_sixteenths
-
-    f'''32.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
-
-    c'''32.                                                                    %! pizzicato_sixteenths
+    b''16.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    bf'''!32.                                                                  %! pizzicato_sixteenths
+    fs'''!16.                                                                  %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
+
+    r32.                                                                       %! krummzeit.pizzicato_sixteenths
+
+    f'''32.                                                                    %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    [                                                                          %! krummzeit.pizzicato_sixteenths
+
+    c'''32.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g'''8.                                                                     %! pizzicato_sixteenths
+    bf'''!32.                                                                  %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    g'''8.                                                                     %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
+
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 83 / measure 70]                            %! _comment_measure_numbers
-    r2                                                                         %! pizzicato_sixteenths
+    r2                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Viola_Music_Voice measure 84 / measure 71]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    f'''4                                                                      %! pizzicato_sixteenths
+    f'''4                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
 
-        f'''16                                                                 %! pizzicato_sixteenths
+        f'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        a'''8                                                                  %! pizzicato_sixteenths
+        a'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs'''!8                                                                %! pizzicato_sixteenths
+        fs'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -8928,8 +8928,8 @@ A_Viola_Music_Staff = {                                                        %
 
 A_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 14 / measure 1]                         %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -8949,7 +8949,7 @@ A_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        e,2.                                                                   %! hypermeter_tuplets
+        e,2.                                                                   %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vc.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -8965,157 +8965,157 @@ A_Cello_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        dqs,!2                                                                 %! hypermeter_tuplets
+        dqs,!2                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 16 / measure 3]                         %! _comment_measure_numbers
-        cqs,!1.                                                                %! hypermeter_tuplets
+        cqs,!1.                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        b,,1                                                                   %! hypermeter_tuplets
+        b,,1                                                                   %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 19 / measure 6]                         %! _comment_measure_numbers
-        cqs,!2.                                                                %! hypermeter_tuplets
+        cqs,!2.                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        d,2                                                                    %! hypermeter_tuplets
+        d,2                                                                    %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     % [A Cello_Music_Voice measure 20 / measure 7]                             %! _comment_measure_numbers
-    ctqs,!1.                                                                   %! hypermeter_tuplets
+    ctqs,!1.                                                                   %! krummzeit.hypermeter_tuplets
     \glissando                                                                 %! baca_glissando
 
-    e,1                                                                        %! hypermeter_tuplets
+    e,1                                                                        %! krummzeit.hypermeter_tuplets
     \glissando                                                                 %! baca_glissando
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 22 / measure 9]                         %! _comment_measure_numbers
-        dqs,!1.                                                                %! hypermeter_tuplets
+        dqs,!1.                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        cqs,!1                                                                 %! hypermeter_tuplets
+        cqs,!1                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 25 / measure 12]                        %! _comment_measure_numbers
-        f,2.                                                                   %! hypermeter_tuplets
+        f,2.                                                                   %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "non flautando" }                                          %! baca_markup:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        eqs,!2                                                                 %! hypermeter_tuplets
+        eqs,!2                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 27 / measure 14]                        %! _comment_measure_numbers
-        dqs,!1.                                                                %! hypermeter_tuplets
+        dqs,!1.                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        c,1                                                                    %! hypermeter_tuplets
+        c,1                                                                    %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 30 / measure 17]                        %! _comment_measure_numbers
-        dqs,!2.                                                                %! hypermeter_tuplets
+        dqs,!2.                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        e,2                                                                    %! hypermeter_tuplets
+        e,2                                                                    %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     % [A Cello_Music_Voice measure 31 / measure 18]                            %! _comment_measure_numbers
-    dtqs,!1.                                                                   %! hypermeter_tuplets
+    dtqs,!1.                                                                   %! krummzeit.hypermeter_tuplets
     \glissando                                                                 %! baca_glissando
 
-    f,1                                                                        %! hypermeter_tuplets
+    f,1                                                                        %! krummzeit.hypermeter_tuplets
     \glissando                                                                 %! baca_glissando
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 33 / measure 20]                        %! _comment_measure_numbers
-        eqs,!1.                                                                %! hypermeter_tuplets
+        eqs,!1.                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        dqs,!1                                                                 %! hypermeter_tuplets
+        dqs,!1                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 9/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 9/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 36 / measure 23]                        %! _comment_measure_numbers
-        a,1                                                                    %! hypermeter_tuplets
+        a,1                                                                    %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        gqs,!4                                                                 %! hypermeter_tuplets
+        gqs,!4                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        fqs,!2                                                                 %! hypermeter_tuplets
+        fqs,!2                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 11/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 11/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 38 / measure 25]                        %! _comment_measure_numbers
-        e,1                                                                    %! hypermeter_tuplets
+        e,1                                                                    %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        fqs,!4                                                                 %! hypermeter_tuplets
+        fqs,!4                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        g,2                                                                    %! hypermeter_tuplets
+        g,2                                                                    %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Cello_Music_Voice measure 41 / measure 28]                        %! _comment_measure_numbers
-        ftqs,!2                                                                %! hypermeter_tuplets
+        ftqs,!2                                                                %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        a,8                                                                    %! hypermeter_tuplets
+        a,8                                                                    %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca_glissando
 
-        gqs,!4                                                                 %! hypermeter_tuplets
+        gqs,!4                                                                 %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -9155,832 +9155,832 @@ A_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    r4                                                                         %! white_rhythm
+    r4                                                                         %! krummzeit.white_rhythm
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    e''4.                                                                      %! white_rhythm
+    e''4.                                                                      %! krummzeit.white_rhythm
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "OB + full bow strokes" }                                      %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d''4.                                                                      %! white_rhythm
+    d''4.                                                                      %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f''4.                                                                      %! white_rhythm
+    f''4.                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4.                                                                    %! white_rhythm
+    fs''!4.                                                                    %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Cello_Music_Voice measure 49 / measure 36]                            %! _comment_measure_numbers
-    g''4.                                                                      %! white_rhythm
+    g''4.                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4.                                                                    %! white_rhythm
+    fs''!4.                                                                    %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Cello_Music_Voice measure 50 / measure 37]                            %! _comment_measure_numbers
-    c''4.                                                                      %! white_rhythm
+    c''4.                                                                      %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf'!4.                                                                     %! white_rhythm
+    bf'!4.                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [A Cello_Music_Voice measure 51 / measure 38]                            %! _comment_measure_numbers
-    e'4.                                                                       %! white_rhythm
+    e'4.                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf'!4.                                                                     %! white_rhythm
+    bf'!4.                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4.                                                                       %! white_rhythm
+    f'4.                                                                       %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/4 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/4 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 52 / measure 39]                        %! _comment_measure_numbers
-        b'4                                                                    %! prolated_quarters
+        b'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        d'4                                                                    %! prolated_quarters
+        d'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 6/8 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 6/8 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 53 / measure 40]                        %! _comment_measure_numbers
-        f'4                                                                    %! prolated_quarters
+        f'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        d'4                                                                    %! prolated_quarters
+        d'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e'4                                                                    %! prolated_quarters
+        e'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        ef'!4                                                                  %! prolated_quarters
+        ef'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f'4                                                                    %! prolated_quarters
+        f'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        ef'!4                                                                  %! prolated_quarters
+        ef'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b'4                                                                    %! prolated_quarters
+        b'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e'4                                                                    %! prolated_quarters
+        e'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/5 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/5 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 54 / measure 41]                        %! _comment_measure_numbers
-        g'4                                                                    %! prolated_quarters
+        g'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        c'4                                                                    %! prolated_quarters
+        c'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f'4                                                                    %! prolated_quarters
+        f'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        g'4                                                                    %! prolated_quarters
+        g'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        bf!4                                                                   %! prolated_quarters
+        bf!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/8 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/8 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 55 / measure 42]                        %! _comment_measure_numbers
-        ef'!4                                                                  %! prolated_quarters
+        ef'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b4                                                                     %! prolated_quarters
+        b4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f'4                                                                    %! prolated_quarters
+        f'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b4                                                                     %! prolated_quarters
+        b4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        af!4                                                                   %! prolated_quarters
+        af!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        ef'!4                                                                  %! prolated_quarters
+        ef'!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b4                                                                     %! prolated_quarters
+        b4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        fs!4                                                                   %! prolated_quarters
+        fs!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 3/2 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 3/2 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 56 / measure 43]                        %! _comment_measure_numbers
-        b4                                                                     %! prolated_quarters
+        b4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        g4                                                                     %! prolated_quarters
+        g4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 11/14 {                                                             %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 11/14 {                                                             %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 57 / measure 44]                        %! _comment_measure_numbers
-        af!4                                                                   %! prolated_quarters
+        af!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        fs!4                                                                   %! prolated_quarters
+        fs!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b4                                                                     %! prolated_quarters
+        b4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        bf!4                                                                   %! prolated_quarters
+        bf!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f4                                                                     %! prolated_quarters
+        f4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs!4                                                                   %! prolated_quarters
+        fs!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        fs!4                                                                   %! prolated_quarters
+        fs!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 5/4 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 5/4 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 58 / measure 45]                        %! _comment_measure_numbers
         \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        b4                                                                     %! prolated_quarters
+        b4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        af!4                                                                   %! prolated_quarters
+        af!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \times 4/5 {                                                               %! prolated_quarters
+    \times 4/5 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 59 / measure 46]                        %! _comment_measure_numbers
-        b4                                                                     %! prolated_quarters
+        b4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        a4                                                                     %! prolated_quarters
+        a4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        c4                                                                     %! prolated_quarters
+        c4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        d4                                                                     %! prolated_quarters
+        d4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e4                                                                     %! prolated_quarters
+        e4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 2/2 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 2/2 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 60 / measure 47]                        %! _comment_measure_numbers
-        g4                                                                     %! prolated_quarters
+        g4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e4                                                                     %! prolated_quarters
+        e4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/9 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/9 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 61 / measure 48]                        %! _comment_measure_numbers
-        b,4                                                                    %! prolated_quarters
+        b,4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e4                                                                     %! prolated_quarters
+        e4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        af!4                                                                   %! prolated_quarters
+        af!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        g4                                                                     %! prolated_quarters
+        g4                                                                     %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        c4                                                                     %! prolated_quarters
+        c4                                                                     %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        bf,!4                                                                  %! prolated_quarters
+        bf,!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        fs!4                                                                   %! prolated_quarters
+        fs!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f,4                                                                    %! prolated_quarters
+        f,4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        e,4                                                                    %! prolated_quarters
+        e,4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 4/4 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 4/4 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 62 / measure 49]                        %! _comment_measure_numbers
-        af,!4                                                                  %! prolated_quarters
+        af,!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f,4                                                                    %! prolated_quarters
+        f,4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b,4                                                                    %! prolated_quarters
+        b,4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        a,4                                                                    %! prolated_quarters
+        a,4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/8 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/8 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 63 / measure 50]                        %! _comment_measure_numbers
-        af,!4                                                                  %! prolated_quarters
+        af,!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        ef,!4                                                                  %! prolated_quarters
+        ef,!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        b,4                                                                    %! prolated_quarters
+        b,4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        f,4                                                                    %! prolated_quarters
+        f,4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! prolated_quarters
-    \times 7/4 {                                                               %! prolated_quarters
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.prolated_quarters
+    \times 7/4 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 64 / measure 51]                        %! _comment_measure_numbers
-        b,4                                                                    %! prolated_quarters
+        b,4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca_alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        a,4                                                                    %! prolated_quarters
+        a,4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca_alternate_bow_strokes:IndicatorCommand
 
-    }                                                                          %! prolated_quarters
+    }                                                                          %! krummzeit.prolated_quarters
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [A Cello_Music_Voice measure 65 / measure 52]                        %! _comment_measure_numbers
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        cs''!8                                                                 %! pizzicato_rhythm
+        cs''!8                                                                 %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        c''4                                                                   %! pizzicato_rhythm
+        c''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        b''8                                                                   %! pizzicato_rhythm
+        b''8                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 9/10 {                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 9/10 {                                                              %! krummzeit.pizzicato_rhythm
 
-        b''8                                                                   %! pizzicato_rhythm
+        b''8                                                                   %! krummzeit.pizzicato_rhythm
 
-        g''2                                                                   %! pizzicato_rhythm
+        g''2                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        e''4                                                                   %! pizzicato_rhythm
+        e''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c''4                                                                   %! pizzicato_rhythm
+        c''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g''8                                                                   %! pizzicato_rhythm
+        g''8                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    r4.                                                                        %! pizzicato_rhythm
+    r4.                                                                        %! krummzeit.pizzicato_rhythm
 
-    r8                                                                         %! pizzicato_rhythm
+    r8                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Cello_Music_Voice measure 66 / measure 53]                            %! _comment_measure_numbers
-    r1                                                                         %! pizzicato_rhythm
+    r1                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Cello_Music_Voice measure 67 / measure 54]                            %! _comment_measure_numbers
-    bf''!4                                                                     %! pizzicato_rhythm
+    bf''!4                                                                     %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    f''8                                                                       %! pizzicato_rhythm
+    f''8                                                                       %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
     ~
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        f''8                                                                   %! pizzicato_rhythm
+        f''8                                                                   %! krummzeit.pizzicato_rhythm
 
-        c''4.                                                                  %! pizzicato_rhythm
+        c''4.                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 6/7 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 6/7 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [A Cello_Music_Voice measure 68 / measure 55]                        %! _comment_measure_numbers
-        c''8                                                                   %! pizzicato_rhythm
+        c''8                                                                   %! krummzeit.pizzicato_rhythm
 
-        f''4                                                                   %! pizzicato_rhythm
+        f''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        af''!4                                                                 %! pizzicato_rhythm
+        af''!4                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f''8                                                                   %! pizzicato_rhythm
+        f''8                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_rhythm
+        [                                                                      %! krummzeit.pizzicato_rhythm
 
-        af''!16                                                                %! pizzicato_rhythm
+        af''!16                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs''!16                                                                %! pizzicato_rhythm
+        fs''!16                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_rhythm
+        ]                                                                      %! krummzeit.pizzicato_rhythm
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    r4                                                                         %! pizzicato_rhythm
+    r4                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Cello_Music_Voice measure 69 / measure 56]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_rhythm
+    r8                                                                         %! krummzeit.pizzicato_rhythm
 
-    r2                                                                         %! pizzicato_rhythm
+    r2                                                                         %! krummzeit.pizzicato_rhythm
 
     % [A Cello_Music_Voice measure 70 / measure 57]                            %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r16.                                                                       %! pizzicato_sixteenths
+    r16.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    b''32.                                                                     %! pizzicato_sixteenths
+    b''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    g''32.                                                                     %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    fs''!16.                                                                   %! pizzicato_sixteenths
+    g''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    ef''!16.                                                                   %! pizzicato_sixteenths
+    fs''!16.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
 
-    f''4.                                                                      %! pizzicato_sixteenths
+    ef''!16.                                                                   %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
+
+    f''4.                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A Cello_Music_Voice measure 71 / measure 58]                            %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    e''16                                                                      %! pizzicato_sixteenths
+    e''16                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    ef''!8                                                                     %! pizzicato_sixteenths
+    ef''!8                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g''8                                                                       %! pizzicato_sixteenths
+    g''8                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    \times 4/5 {                                                               %! pizzicato_sixteenths
+    \times 4/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
 
-        fs''!16                                                                %! pizzicato_sixteenths
+        fs''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        e''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        f''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        af''!4                                                                 %! pizzicato_sixteenths
+        e''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f''8                                                                   %! pizzicato_sixteenths
+        f''16                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        af''!4                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        f''8                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Cello_Music_Voice measure 72 / measure 59]                        %! _comment_measure_numbers
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        af''!16                                                                %! pizzicato_sixteenths
+        af''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        cs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        b''8                                                                   %! pizzicato_sixteenths
+        cs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''8                                                                   %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-        ef''!4                                                                 %! pizzicato_sixteenths
+        b''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        a''8                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+        ef''!4                                                                 %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Cello_Music_Voice measure 73 / measure 60]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    \times 2/3 {                                                               %! pizzicato_sixteenths
+    \times 2/3 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r16                                                                    %! pizzicato_sixteenths
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
 
-        a''16                                                                  %! pizzicato_sixteenths
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        f''8                                                                   %! pizzicato_sixteenths
+        f''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        ef''!8                                                                 %! pizzicato_sixteenths
+        ef''!8                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Cello_Music_Voice measure 74 / measure 61]                            %! _comment_measure_numbers
-    r2.                                                                        %! pizzicato_sixteenths
+    r2.                                                                        %! krummzeit.pizzicato_sixteenths
 
     % [A Cello_Music_Voice measure 75 / measure 62]                            %! _comment_measure_numbers
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    cs'''!16                                                                   %! pizzicato_sixteenths
+    cs'''!16                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        b''8                                                                   %! pizzicato_sixteenths
+        b''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''4.                                                                  %! pizzicato_sixteenths
+        a''4.                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    f''8                                                                       %! pizzicato_sixteenths
+    f''8                                                                       %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 7/9 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 7/9 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Cello_Music_Voice measure 76 / measure 63]                        %! _comment_measure_numbers
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        g''4                                                                   %! pizzicato_sixteenths
+        g''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        ef'''!16                                                               %! pizzicato_sixteenths
+        ef'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        a''16                                                                  %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        b''8                                                                   %! pizzicato_sixteenths
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        fs'''!8                                                                %! pizzicato_sixteenths
+        b''8                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        ef'''!16                                                               %! pizzicato_sixteenths
+        fs'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f''16                                                                  %! pizzicato_sixteenths
+        ef'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a''16                                                                  %! pizzicato_sixteenths
+        f''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        af''!16                                                                %! pizzicato_sixteenths
+        a''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f''8                                                                   %! pizzicato_sixteenths
+        af''!16                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+        f''8                                                                   %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    r4.                                                                        %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
     % [A Cello_Music_Voice measure 77 / measure 64]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    fs'''!8                                                                    %! pizzicato_sixteenths
+    fs'''!8                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g'''2                                                                      %! pizzicato_sixteenths
+    g'''2                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    bf''!4                                                                     %! pizzicato_sixteenths
+    bf''!4                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g'''8                                                                      %! pizzicato_sixteenths
+    g'''8                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    r16                                                                        %! pizzicato_sixteenths
+    r16                                                                        %! krummzeit.pizzicato_sixteenths
 
-    c'''16                                                                     %! pizzicato_sixteenths
+    c'''16                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A Cello_Music_Voice measure 78 / measure 65]                            %! _comment_measure_numbers
-    r32.                                                                       %! pizzicato_sixteenths
+    r32.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    bf''!32.                                                                   %! pizzicato_sixteenths
+    bf''!32.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    a''8.                                                                      %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    b''8.                                                                      %! pizzicato_sixteenths
+    a''8.                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    fs'''!32.                                                                  %! pizzicato_sixteenths
+    b''8.                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    f'''32.                                                                    %! pizzicato_sixteenths
+    fs'''!32.                                                                  %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    ef'''!16.                                                                  %! pizzicato_sixteenths
+    f'''32.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    a''16.                                                                     %! pizzicato_sixteenths
+    ef'''!16.                                                                  %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+
+    a''16.                                                                     %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Cello_Music_Voice measure 79 / measure 66]                            %! _comment_measure_numbers
-    r4                                                                         %! pizzicato_sixteenths
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8.                                                                        %! pizzicato_sixteenths
+    r8.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    f'''8.                                                                     %! pizzicato_sixteenths
+    f'''8.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A Cello_Music_Voice measure 80 / measure 67]                            %! _comment_measure_numbers
-    r1                                                                         %! pizzicato_sixteenths
+    r1                                                                         %! krummzeit.pizzicato_sixteenths
 
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
     % [A Cello_Music_Voice measure 81 / measure 68]                            %! _comment_measure_numbers
-    r8.                                                                        %! pizzicato_sixteenths
+    r8.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    b''32.                                                                     %! pizzicato_sixteenths
+    b''32.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    bf''!32.                                                                   %! pizzicato_sixteenths
+    bf''!32.                                                                   %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    g'''16.                                                                    %! pizzicato_sixteenths
+    g'''16.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
-    r2.                                                                        %! pizzicato_sixteenths
+    r2.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
         % [A Cello_Music_Voice measure 82 / measure 69]                        %! _comment_measure_numbers
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        ef'''!16                                                               %! pizzicato_sixteenths
+        ef'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        cs'''!8                                                                %! pizzicato_sixteenths
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        bf'''!8                                                                %! pizzicato_sixteenths
+        cs'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a'''16                                                                 %! pizzicato_sixteenths
+        bf'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        af'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
-
-    }                                                                          %! pizzicato_sixteenths
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
-
-        r16                                                                    %! pizzicato_sixteenths
-
-        fs'''!16                                                               %! pizzicato_sixteenths
+        a'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs'''!4                                                                %! pizzicato_sixteenths
+        af'''!16                                                               %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
+
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
+
+        r16                                                                    %! krummzeit.pizzicato_sixteenths
+
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''4                                                                  %! pizzicato_sixteenths
+        cs'''!4                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_sixteenths
+        c'''4                                                                  %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    r32.                                                                       %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
 
-    fs'''!32.                                                                  %! pizzicato_sixteenths
+    r32.                                                                       %! krummzeit.pizzicato_sixteenths
+
+    fs'''!32.                                                                  %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! pizzicato_sixteenths
+    [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    c'''16.                                                                    %! pizzicato_sixteenths
-    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-
-    e'''16.                                                                    %! pizzicato_sixteenths
+    c'''16.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    ef'''!16.                                                                  %! pizzicato_sixteenths
+    e'''16.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! pizzicato_sixteenths
+
+    ef'''!16.                                                                  %! krummzeit.pizzicato_sixteenths
+    - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
+    ]                                                                          %! krummzeit.pizzicato_sixteenths
 
     % [A Cello_Music_Voice measure 83 / measure 70]                            %! _comment_measure_numbers
-    r4.                                                                        %! pizzicato_sixteenths
+    r4.                                                                        %! krummzeit.pizzicato_sixteenths
 
-    f'''4                                                                      %! pizzicato_sixteenths
+    f'''4                                                                      %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     % [A Cello_Music_Voice measure 84 / measure 71]                            %! _comment_measure_numbers
-    r8                                                                         %! pizzicato_sixteenths
+    r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_sixteenths
-    \times 3/5 {                                                               %! pizzicato_sixteenths
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_sixteenths
+    \times 3/5 {                                                               %! krummzeit.pizzicato_sixteenths
 
-        r8                                                                     %! pizzicato_sixteenths
+        r8                                                                     %! krummzeit.pizzicato_sixteenths
 
-        af'''!16                                                               %! pizzicato_sixteenths
+        af'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! pizzicato_sixteenths
+        [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        fs'''!16                                                               %! pizzicato_sixteenths
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        f'''8                                                                  %! pizzicato_sixteenths
+        fs'''!16                                                               %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        ef'''!8                                                                %! pizzicato_sixteenths
+        f'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''16                                                                 %! pizzicato_sixteenths
+        ef'''!8                                                                %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        a'''16                                                                 %! pizzicato_sixteenths
+        c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! pizzicato_sixteenths
 
-    }                                                                          %! pizzicato_sixteenths
+        a'''16                                                                 %! krummzeit.pizzicato_sixteenths
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-    r4                                                                         %! pizzicato_sixteenths
+    }                                                                          %! krummzeit.pizzicato_sixteenths
+
+    r4                                                                         %! krummzeit.pizzicato_sixteenths
 
     <<                                                                         %! _make_multimeasure_rest_container
 

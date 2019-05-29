@@ -13,7 +13,7 @@ def opening_triplets(*, dmask=None, remainder=abjad.Left):
         ),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
-            tag="opening_triplets",
+            tag="krummzeit.opening_triplets",
             tuplet_ratios=[(1, 1, 1)],
         ),
     )

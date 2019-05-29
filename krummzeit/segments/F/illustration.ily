@@ -532,223 +532,223 @@ F_Oboe_Music_Voice = {                                                         %
     R1 * 5/8                                                                   %! _make_measure_silences
 
     % [F Oboe_Music_Voice measure 238 / measure 4]                             %! _comment_measure_numbers
-    a'''4.                                                                     %! polyphony
+    a'''4.                                                                     %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \staccato                                                                %! baca_staccato:IndicatorCommand
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 5/6 {                                                               %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 5/6 {                                                               %! krummzeit.polyphony
 
-        af'''!4                                                                %! polyphony
+        af'''!4                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'''4                                                                  %! polyphony
+        c'''4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'''!4                                                                %! polyphony
+        bf'''!4                                                                %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [F Oboe_Music_Voice measure 239 / measure 5]                             %! _comment_measure_numbers
-    bf'''!4                                                                    %! polyphony
+    bf'''!4                                                                    %! krummzeit.polyphony
 
-    af'''!4                                                                    %! polyphony
+    af'''!4                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    d'''16                                                                     %! polyphony
+    d'''16                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    cs'''!16                                                                   %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    ef'''!16                                                                   %! polyphony
+    cs'''!16                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    f'''16                                                                     %! polyphony
+    ef'''!16                                                                   %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    f'''16                                                                     %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        f'''4                                                                  %! polyphony
+        f'''4                                                                  %! krummzeit.polyphony
 
-        d'''4                                                                  %! polyphony
+        d'''4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b''4                                                                   %! polyphony
+        b''4                                                                   %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [F Oboe_Music_Voice measure 240 / measure 6]                             %! _comment_measure_numbers
-    b''4                                                                       %! polyphony
+    b''4                                                                       %! krummzeit.polyphony
 
-    fs''!4                                                                     %! polyphony
+    fs''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    g''4                                                                       %! polyphony
+    g''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
         % [F Oboe_Music_Voice measure 241 / measure 7]                         %! _comment_measure_numbers
-        a''16                                                                  %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        ef''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        f''16                                                                  %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        af''!16                                                                %! polyphony
+        f''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'''16                                                                 %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d''16                                                                  %! polyphony
+        c'''16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf''!16                                                                %! polyphony
+        d''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f''16                                                                  %! polyphony
+        bf''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''16                                                                  %! polyphony
+        f''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a''16                                                                  %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        a''16                                                                  %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        b'16                                                                   %! krummzeit.polyphony
         ~
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    b'4                                                                        %! polyphony
+    b'4                                                                        %! krummzeit.polyphony
 
     % [F Oboe_Music_Voice measure 242 / measure 8]                             %! _comment_measure_numbers
-    f''4.                                                                      %! polyphony
+    f''4.                                                                      %! krummzeit.polyphony
     ~
 
-    f''4.                                                                      %! polyphony
+    f''4.                                                                      %! krummzeit.polyphony
     ~
 
-    \times 8/12 {                                                              %! polyphony
+    \times 8/12 {                                                              %! krummzeit.polyphony
 
         % [F Oboe_Music_Voice measure 243 / measure 9]                         %! _comment_measure_numbers
-        f''16                                                                  %! polyphony
-        [                                                                      %! polyphony
+        f''16                                                                  %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        ef''!16                                                                %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f''16                                                                  %! polyphony
+        f''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!16                                                                %! polyphony
+        fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!16                                                                %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a'16                                                                   %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a'16                                                                   %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g''16                                                                  %! polyphony
+        \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'16                                                                   %! polyphony
+        g''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef''!16                                                                %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f''16                                                                  %! polyphony
+        ef''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!16                                                                %! polyphony
+        f''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
 
-    }                                                                          %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+        ]                                                                      %! krummzeit.polyphony
 
-    af'!4                                                                      %! polyphony
+    }                                                                          %! krummzeit.polyphony
+
+    af'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    f''4.                                                                      %! polyphony
+    f''4.                                                                      %! krummzeit.polyphony
     ~
 
     % [F Oboe_Music_Voice measure 244 / measure 10]                            %! _comment_measure_numbers
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! polyphony
-    \times 10/14 {                                                             %! polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
+    \times 10/14 {                                                             %! krummzeit.polyphony
 
-        g'16                                                                   %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        [                                                                      %! polyphony
+        [                                                                      %! krummzeit.polyphony
 
-        a'16                                                                   %! polyphony
-        - \staccato                                                            %! baca_staccato:IndicatorCommand
-
-        f'16                                                                   %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'16                                                                   %! polyphony
+        f'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        bf'!16                                                                 %! polyphony
+        d'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        cs''!16                                                                %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'16                                                                   %! polyphony
+        cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ef'!16                                                                 %! polyphony
+        a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        f'16                                                                   %! polyphony
+        ef'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!16                                                                 %! polyphony
+        f'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        g'16                                                                   %! polyphony
+        fs'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        b'16                                                                   %! polyphony
+        g'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        c'16                                                                   %! polyphony
+        b'16                                                                   %! krummzeit.polyphony
+        - \staccato                                                            %! baca_staccato:IndicatorCommand
+
+        c'16                                                                   %! krummzeit.polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         - \staccato                                                            %! baca_staccato:IndicatorCommand
-        ]                                                                      %! polyphony
+        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -903,10 +903,10 @@ F_Clarinet_Music_Voice = {                                                     %
     % [F Clarinet_Music_Voice measure 237 / measure 3]                         %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [F Clarinet_Music_Voice measure 238 / measure 4]                     %! _comment_measure_numbers
-        c'4                                                                    %! polyphony
+        c'4                                                                    %! krummzeit.polyphony
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \staccato                                                            %! baca_staccato:IndicatorCommand
@@ -914,121 +914,121 @@ F_Clarinet_Music_Voice = {                                                     %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-        as!4                                                                   %! polyphony
+        as!4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        d'4                                                                    %! polyphony
+        d'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    gs'!4                                                                      %! polyphony
+    gs'!4                                                                      %! krummzeit.polyphony
     ~
 
-    gs'!4                                                                      %! polyphony
+    gs'!4                                                                      %! krummzeit.polyphony
 
     % [F Clarinet_Music_Voice measure 239 / measure 5]                         %! _comment_measure_numbers
-    fs'!8                                                                      %! polyphony
+    fs'!8                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    d'8                                                                        %! polyphony
+    d'8                                                                        %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        d'4                                                                    %! polyphony
+        d'4                                                                    %! krummzeit.polyphony
 
-        gs'!4                                                                  %! polyphony
+        gs'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs'!4                                                                  %! polyphony
+        fs'!4                                                                  %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        fs'!4                                                                  %! polyphony
+        fs'!4                                                                  %! krummzeit.polyphony
 
-        g'4                                                                    %! polyphony
+        g'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        a'4                                                                    %! polyphony
+        a'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
     % [F Clarinet_Music_Voice measure 240 / measure 6]                         %! _comment_measure_numbers
-    as'!4                                                                      %! polyphony
+    as'!4                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    ds''!8                                                                     %! polyphony
+    ds''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    as'!8                                                                      %! polyphony
+    as'!8                                                                      %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [F Clarinet_Music_Voice measure 241 / measure 7]                         %! _comment_measure_numbers
-    as'!4.                                                                     %! polyphony
+    as'!4.                                                                     %! krummzeit.polyphony
 
-    f''4.                                                                      %! polyphony
+    f''4.                                                                      %! krummzeit.polyphony
     ~
 
     % [F Clarinet_Music_Voice measure 242 / measure 8]                         %! _comment_measure_numbers
-    f''4                                                                       %! polyphony
+    f''4                                                                       %! krummzeit.polyphony
 
-    fs''!4                                                                     %! polyphony
+    fs''!4                                                                     %! krummzeit.polyphony
     ~
 
-    fs''!8                                                                     %! polyphony
-    [                                                                          %! polyphony
+    fs''!8                                                                     %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    a''8                                                                       %! polyphony
+    a''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
     % [F Clarinet_Music_Voice measure 243 / measure 9]                         %! _comment_measure_numbers
-    b''4                                                                       %! polyphony
+    b''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    \times 2/3 {                                                               %! polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony
 
-        d'''4                                                                  %! polyphony
+        d'''4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        ds'''!4                                                                %! polyphony
+        ds'''!4                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca_staccato:IndicatorCommand
 
-        fs''!4                                                                 %! polyphony
+        fs''!4                                                                 %! krummzeit.polyphony
         ~
 
-    }                                                                          %! polyphony
+    }                                                                          %! krummzeit.polyphony
 
-    fs''!4.                                                                    %! polyphony
+    fs''!4.                                                                    %! krummzeit.polyphony
 
     % [F Clarinet_Music_Voice measure 244 / measure 10]                        %! _comment_measure_numbers
-    gs''!8                                                                     %! polyphony
+    gs''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
-    [                                                                          %! polyphony
+    [                                                                          %! krummzeit.polyphony
 
-    a''8                                                                       %! polyphony
-    - \staccato                                                                %! baca_staccato:IndicatorCommand
-
-    f'''8                                                                      %! polyphony
+    a''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca_staccato:IndicatorCommand
 
-    a''8                                                                       %! polyphony
+    f'''8                                                                      %! krummzeit.polyphony
+    - \staccato                                                                %! baca_staccato:IndicatorCommand
+
+    a''8                                                                       %! krummzeit.polyphony
     ~
-    ]                                                                          %! polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    a''4.                                                                      %! polyphony
+    a''4.                                                                      %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     \revert TupletBracket.staff-padding                                        %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
@@ -1200,7 +1200,7 @@ F_Piano_Music_Voice = {                                                        %
     % [F Piano_Music_Voice measure 237 / measure 3]                            %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 238 / measure 4]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
@@ -1210,7 +1210,7 @@ F_Piano_Music_Voice = {                                                        %
                 Hpschd.                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
             }                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
         \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
         ^ \baca-explicit-indicator-markup "(“Harpsichord”)"                    %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \baca-explicit-indicator-markup "[“Hpschd.”]"                        %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -1221,195 +1221,195 @@ F_Piano_Music_Voice = {                                                        %
                 Hpschd.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
             }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
-        f''16                                                                  %! silver_points
-        [                                                                      %! silver_points
+        f''16                                                                  %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        fs''!16                                                                %! silver_points
+        fs''!16                                                                %! krummzeit.silver_points
 
-        g''8                                                                   %! silver_points
-        ]                                                                      %! silver_points
+        g''8                                                                   %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/7 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        g''8                                                                   %! silver_points
-        [                                                                      %! silver_points
+        g''8                                                                   %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        a''8                                                                   %! silver_points
-        ]                                                                      %! silver_points
+        a''8                                                                   %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        d''4                                                                   %! silver_points
+        d''4                                                                   %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/5 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 239 / measure 5]                        %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        g'8                                                                    %! silver_points
-        [                                                                      %! silver_points
+        g'8                                                                    %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        bf'!8                                                                  %! silver_points
-        ]                                                                      %! silver_points
+        bf'!8                                                                  %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        c''4                                                                   %! silver_points
+        c''4                                                                   %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        fs'!8                                                                  %! silver_points
-        [                                                                      %! silver_points
+        fs'!8                                                                  %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        g'8                                                                    %! silver_points
-        ]                                                                      %! silver_points
+        g'8                                                                    %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        g'4                                                                    %! silver_points
+        g'4                                                                    %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 240 / measure 6]                        %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        a'16                                                                   %! silver_points
-        [                                                                      %! silver_points
+        a'16                                                                   %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        ef'!16                                                                 %! silver_points
+        ef'!16                                                                 %! krummzeit.silver_points
 
-        f'8                                                                    %! silver_points
-        ]                                                                      %! silver_points
+        f'8                                                                    %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        a'8                                                                    %! silver_points
-        [                                                                      %! silver_points
+        a'8                                                                    %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        f'8                                                                    %! silver_points
-        ]                                                                      %! silver_points
+        f'8                                                                    %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        g'4                                                                    %! silver_points
+        g'4                                                                    %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 241 / measure 7]                        %! _comment_measure_numbers
         \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        g'8                                                                    %! silver_points
-        [                                                                      %! silver_points
+        g'8                                                                    %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        f'8                                                                    %! silver_points
-        ]                                                                      %! silver_points
+        f'8                                                                    %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        b4                                                                     %! silver_points
+        b4                                                                     %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        c'16                                                                   %! silver_points
-        [                                                                      %! silver_points
+        c'16                                                                   %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        d'16                                                                   %! silver_points
-        ]                                                                      %! silver_points
+        d'16                                                                   %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        bf!8                                                                   %! silver_points
+        bf!8                                                                   %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 242 / measure 8]                        %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        fs!16                                                                  %! silver_points
-        [                                                                      %! silver_points
+        fs!16                                                                  %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        g16                                                                    %! silver_points
+        g16                                                                    %! krummzeit.silver_points
 
-        cs'!8                                                                  %! silver_points
-        ]                                                                      %! silver_points
+        cs'!8                                                                  %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        ef'!8                                                                  %! silver_points
-        [                                                                      %! silver_points
+        ef'!8                                                                  %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        bf!8                                                                   %! silver_points
-        ]                                                                      %! silver_points
+        bf!8                                                                   %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        b4                                                                     %! silver_points
+        b4                                                                     %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/5 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 243 / measure 9]                        %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        g8                                                                     %! silver_points
-        [                                                                      %! silver_points
+        g8                                                                     %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        af!8                                                                   %! silver_points
-        ]                                                                      %! silver_points
+        af!8                                                                   %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        g4                                                                     %! silver_points
+        g4                                                                     %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/7 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/7 {                                                               %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        g16                                                                    %! silver_points
-        [                                                                      %! silver_points
+        g16                                                                    %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        d16                                                                    %! silver_points
-        ]                                                                      %! silver_points
+        d16                                                                    %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        bf!8                                                                   %! silver_points
+        bf!8                                                                   %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1439,36 +1439,36 @@ F_Piano_Music_Voice = {                                                        %
     % [F Piano_Music_Voice measure 246 / measure 12]                           %! _comment_measure_numbers
     R1 * 7/4                                                                   %! _make_measure_silences
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 247 / measure 13]                       %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        d16                                                                    %! silver_points
-        [                                                                      %! silver_points
+        d16                                                                    %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        bf!16                                                                  %! silver_points
+        bf!16                                                                  %! krummzeit.silver_points
 
-        g8                                                                     %! silver_points
-        ]                                                                      %! silver_points
+        g8                                                                     %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs!8                                                                   %! silver_points
-        [                                                                      %! silver_points
+        cs!8                                                                   %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        a8                                                                     %! silver_points
-        ]                                                                      %! silver_points
+        a8                                                                     %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        ef!4                                                                   %! silver_points
+        ef!4                                                                   %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1494,37 +1494,37 @@ F_Piano_Music_Voice = {                                                        %
     % [F Piano_Music_Voice measure 249 / measure 15]                           %! _comment_measure_numbers
     R1 * 11/8                                                                  %! _make_measure_silences
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 250 / measure 16]                       %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        f,16                                                                   %! silver_points
-        [                                                                      %! silver_points
+        f,16                                                                   %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        fs,!16                                                                 %! silver_points
+        fs,!16                                                                 %! krummzeit.silver_points
 
-        f,8                                                                    %! silver_points
-        ]                                                                      %! silver_points
+        f,8                                                                    %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/7 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/7 {                                                               %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        g,16                                                                   %! silver_points
-        [                                                                      %! silver_points
+        g,16                                                                   %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        af,!16                                                                 %! silver_points
-        ]                                                                      %! silver_points
+        af,!16                                                                 %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        a,8                                                                    %! silver_points
+        a,8                                                                    %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1964,34 +1964,34 @@ F_Violin_Music_Voice = {                                                       %
     % [F Violin_Music_Voice measure 240 / measure 6]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 12/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 12/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Violin_Music_Voice measure 241 / measure 7]                       %! _comment_measure_numbers
-        fs!4.                                                                  %! hypermeter_tuplets
+        fs!4.                                                                  %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "gridato possibile" }                                      %! baca_markup:IndicatorCommand
 
-        fs!2                                                                   %! hypermeter_tuplets
+        fs!2                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [F Violin_Music_Voice measure 243 / measure 9]                       %! _comment_measure_numbers
-        fs!2.                                                                  %! hypermeter_tuplets
+        fs!2.                                                                  %! krummzeit.hypermeter_tuplets
 
-        fs!1                                                                   %! hypermeter_tuplets
+        fs!1                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Violin_Music_Voice measure 245 / measure 11]                      %! _comment_measure_numbers
-        fs!2.                                                                  %! hypermeter_tuplets
+        fs!2.                                                                  %! krummzeit.hypermeter_tuplets
         - \abjad-dashed-line-with-arrow                                        %! baca_text_spanner:PiecewiseCommand(1)
         - \baca-text-spanner-left-text "grid. possibile"                       %! baca_text_spanner:PiecewiseCommand(1)
         - \baca-text-spanner-right-text "flaut. possibile"                     %! baca_text_spanner:PiecewiseCommand(1)
@@ -2000,40 +2000,40 @@ F_Violin_Music_Voice = {                                                       %
         - \tweak staff-padding #5                                              %! baca_text_spanner:PiecewiseCommand(1)
         \startTextSpan                                                         %! baca_text_spanner:PiecewiseCommand(1)
 
-        fs!1                                                                   %! hypermeter_tuplets
+        fs!1                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 10/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 10/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Violin_Music_Voice measure 247 / measure 13]                      %! _comment_measure_numbers
-        fs!2.                                                                  %! hypermeter_tuplets
+        fs!2.                                                                  %! krummzeit.hypermeter_tuplets
 
-        fs!1                                                                   %! hypermeter_tuplets
+        fs!1                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [F Violin_Music_Voice measure 249 / measure 15]                      %! _comment_measure_numbers
-        fs!2.                                                                  %! hypermeter_tuplets
+        fs!2.                                                                  %! krummzeit.hypermeter_tuplets
 
-        fs!1                                                                   %! hypermeter_tuplets
+        fs!1                                                                   %! krummzeit.hypermeter_tuplets
         \stopTextSpan                                                          %! baca_text_spanner:PiecewiseCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Violin_Music_Voice measure 251 / measure 17]                      %! _comment_measure_numbers
-        fs!2.                                                                  %! hypermeter_tuplets
+        fs!2.                                                                  %! krummzeit.hypermeter_tuplets
 
-        fs!1                                                                   %! hypermeter_tuplets
+        fs!1                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2153,108 +2153,108 @@ F_Viola_Music_Voice = {                                                        %
 
     % [F Viola_Music_Voice measure 236 / measure 2]                            %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
     % [F Viola_Music_Voice measure 238 / measure 4]                            %! _comment_measure_numbers
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
     % [F Viola_Music_Voice measure 239 / measure 5]                            %! _comment_measure_numbers
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
     % [F Viola_Music_Voice measure 240 / measure 6]                            %! _comment_measure_numbers
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    fs!8..                                                                     %! rest_delimited_repeated_duration_notes
+    fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
     % [F Viola_Music_Voice measure 241 / measure 7]                            %! _comment_measure_numbers
-    r1.                                                                        %! hypermeter_tuplets
+    r1.                                                                        %! krummzeit.hypermeter_tuplets
 
     % [F Viola_Music_Voice measure 243 / measure 9]                            %! _comment_measure_numbers
-    r\breve                                                                    %! hypermeter_tuplets
+    r\breve                                                                    %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Viola_Music_Voice measure 245 / measure 11]                       %! _comment_measure_numbers
-        bf,!4                                                                  %! hypermeter_tuplets
+        bf,!4                                                                  %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "gridato possibile" }                                      %! baca_markup:IndicatorCommand
 
-        bf,!1.                                                                 %! hypermeter_tuplets
+        bf,!1.                                                                 %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 10/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 10/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Viola_Music_Voice measure 247 / measure 13]                       %! _comment_measure_numbers
-        bf,!4                                                                  %! hypermeter_tuplets
+        bf,!4                                                                  %! krummzeit.hypermeter_tuplets
         - \abjad-dashed-line-with-arrow                                        %! baca_text_spanner:PiecewiseCommand(1)
         - \baca-text-spanner-left-text "grid. possibile"                       %! baca_text_spanner:PiecewiseCommand(1)
         - \baca-text-spanner-right-text "flaut. possibile"                     %! baca_text_spanner:PiecewiseCommand(1)
@@ -2263,30 +2263,30 @@ F_Viola_Music_Voice = {                                                        %
         - \tweak staff-padding #5                                              %! baca_text_spanner:PiecewiseCommand(1)
         \startTextSpan                                                         %! baca_text_spanner:PiecewiseCommand(1)
 
-        bf,!1.                                                                 %! hypermeter_tuplets
+        bf,!1.                                                                 %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [F Viola_Music_Voice measure 249 / measure 15]                       %! _comment_measure_numbers
-        bf,!4                                                                  %! hypermeter_tuplets
+        bf,!4                                                                  %! krummzeit.hypermeter_tuplets
 
-        bf,!1.                                                                 %! hypermeter_tuplets
+        bf,!1.                                                                 %! krummzeit.hypermeter_tuplets
         \stopTextSpan                                                          %! baca_text_spanner:PiecewiseCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Viola_Music_Voice measure 251 / measure 17]                       %! _comment_measure_numbers
-        bf,!4                                                                  %! hypermeter_tuplets
+        bf,!4                                                                  %! krummzeit.hypermeter_tuplets
 
-        bf,!1.                                                                 %! hypermeter_tuplets
+        bf,!1.                                                                 %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2406,108 +2406,108 @@ F_Cello_Music_Voice = {                                                        %
 
     % [F Cello_Music_Voice measure 236 / measure 2]                            %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
     % [F Cello_Music_Voice measure 238 / measure 4]                            %! _comment_measure_numbers
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
     % [F Cello_Music_Voice measure 239 / measure 5]                            %! _comment_measure_numbers
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
     % [F Cello_Music_Voice measure 240 / measure 6]                            %! _comment_measure_numbers
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
 
-    c,8..                                                                      %! rest_delimited_repeated_duration_notes
+    c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    r32                                                                        %! rest_delimited_repeated_duration_notes
+    r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
     % [F Cello_Music_Voice measure 241 / measure 7]                            %! _comment_measure_numbers
-    r1.                                                                        %! hypermeter_tuplets
+    r1.                                                                        %! krummzeit.hypermeter_tuplets
 
     % [F Cello_Music_Voice measure 243 / measure 9]                            %! _comment_measure_numbers
-    r\breve                                                                    %! hypermeter_tuplets
+    r\breve                                                                    %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Cello_Music_Voice measure 245 / measure 11]                       %! _comment_measure_numbers
-        a,,1.                                                                  %! hypermeter_tuplets
+        a,,1.                                                                  %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \markup { "gridato possibile" }                                      %! baca_markup:IndicatorCommand
 
-        a,,4                                                                   %! hypermeter_tuplets
+        a,,4                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 10/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 10/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Cello_Music_Voice measure 247 / measure 13]                       %! _comment_measure_numbers
-        a,,1.                                                                  %! hypermeter_tuplets
+        a,,1.                                                                  %! krummzeit.hypermeter_tuplets
         - \abjad-dashed-line-with-arrow                                        %! baca_text_spanner:PiecewiseCommand(1)
         - \baca-text-spanner-left-text "grid. possibile"                       %! baca_text_spanner:PiecewiseCommand(1)
         - \baca-text-spanner-right-text "flaut. possibile"                     %! baca_text_spanner:PiecewiseCommand(1)
@@ -2516,30 +2516,30 @@ F_Cello_Music_Voice = {                                                        %
         - \tweak staff-padding #5                                              %! baca_text_spanner:PiecewiseCommand(1)
         \startTextSpan                                                         %! baca_text_spanner:PiecewiseCommand(1)
 
-        a,,4                                                                   %! hypermeter_tuplets
+        a,,4                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [F Cello_Music_Voice measure 249 / measure 15]                       %! _comment_measure_numbers
-        a,,1.                                                                  %! hypermeter_tuplets
+        a,,1.                                                                  %! krummzeit.hypermeter_tuplets
         \stopTextSpan                                                          %! baca_text_spanner:PiecewiseCommand(2)
 
-        a,,4                                                                   %! hypermeter_tuplets
+        a,,4                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/7 {                                                              %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/7 {                                                              %! krummzeit.hypermeter_tuplets
 
         % [F Cello_Music_Voice measure 251 / measure 17]                       %! _comment_measure_numbers
-        a,,1.                                                                  %! hypermeter_tuplets
+        a,,1.                                                                  %! krummzeit.hypermeter_tuplets
 
-        a,,4                                                                   %! hypermeter_tuplets
+        a,,4                                                                   %! krummzeit.hypermeter_tuplets
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 

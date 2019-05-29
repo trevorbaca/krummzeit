@@ -535,8 +535,8 @@ I_Global_Skips = {                                                             %
 
 I_Oboe_Music_Voice = {                                                         %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [I Oboe_Music_Voice measure 291 / measure 1]                         %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -556,7 +556,7 @@ I_Oboe_Music_Voice = {                                                         %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        ef''!4.                                                                %! hypermeter_tuplets
+        ef''!4.                                                                %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Ob.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -570,7 +570,7 @@ I_Oboe_Music_Voice = {                                                         %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        ef''!4                                                                 %! hypermeter_tuplets
+        ef''!4                                                                 %! krummzeit.hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -579,7 +579,7 @@ I_Oboe_Music_Voice = {                                                         %
                         1
             }
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -704,8 +704,8 @@ I_Oboe_Music_Staff = {                                                         %
 
 I_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [I Clarinet_Music_Voice measure 291 / measure 1]                     %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -725,7 +725,7 @@ I_Clarinet_Music_Voice = {                                                     %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        f8                                                                     %! hypermeter_tuplets
+        f8                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“B. cl.”]"                        %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -739,7 +739,7 @@ I_Clarinet_Music_Voice = {                                                     %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        f2                                                                     %! hypermeter_tuplets
+        f2                                                                     %! krummzeit.hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -748,7 +748,7 @@ I_Clarinet_Music_Voice = {                                                     %
                         1
             }
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -936,8 +936,8 @@ I_Clarinet_Music_Staff = {                                                     %
 
 I_Piano_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [I Piano_Music_Voice measure 291 / measure 1]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -957,7 +957,7 @@ I_Piano_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        fs'''!4.                                                               %! hypermeter_tuplets
+        fs'''!4.                                                               %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -972,10 +972,10 @@ I_Piano_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        fs'''!2                                                                %! hypermeter_tuplets
+        fs'''!2                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1006,7 +1006,7 @@ I_Piano_Music_Voice = {                                                        %
             Hpschd.                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
         }                                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-    r8                                                                         %! opening_triplets
+    r8                                                                         %! krummzeit.opening_triplets
     ^ \baca-explicit-indicator-markup "(“Harpsichord”)"                        %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Hpschd.”]"                            %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)          %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -1017,7 +1017,7 @@ I_Piano_Music_Voice = {                                                        %
             Hpschd.                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1035,64 +1035,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1127,29 +1070,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1167,46 +1092,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1241,29 +1127,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1281,6 +1149,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1298,9 +1167,140 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
 
-    }                                                                          %! opening_triplets
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <d' f' a' c''>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1341,7 +1341,7 @@ I_Piano_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    r8                                                                         %! opening_triplets
+    r8                                                                         %! krummzeit.opening_triplets
     ^ \baca-explicit-indicator-markup "(“Piano”)"                              %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     ^ \baca-explicit-indicator-markup "[“Pf.”]"                                %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)          %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -1353,7 +1353,7 @@ I_Piano_Music_Voice = {                                                        %
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \ottava -1                                                             %! baca_ottava_bassa:SpannerIndicatorCommand(1)
         \once \override Accidental.stencil = ##f
@@ -1374,7 +1374,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1409,29 +1409,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1449,6 +1431,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1466,11 +1449,28 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
 
-    }                                                                          %! opening_triplets
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 299 / measure 9]                        %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -1489,7 +1489,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1524,29 +1524,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1564,46 +1546,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1638,29 +1581,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1678,6 +1603,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1695,11 +1621,85 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
 
-    }                                                                          %! opening_triplets
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 300 / measure 10]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -1718,7 +1718,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1753,29 +1753,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1793,46 +1775,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1867,29 +1810,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1907,46 +1832,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1981,11 +1867,125 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 301 / measure 11]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -2004,7 +2004,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2039,29 +2039,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2079,46 +2061,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2153,29 +2096,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2193,6 +2118,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2210,11 +2136,85 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
 
-    }                                                                          %! opening_triplets
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 302 / measure 12]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -2233,7 +2233,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2268,29 +2268,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2308,46 +2290,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2382,29 +2325,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2422,6 +2347,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2439,11 +2365,85 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
 
-    }                                                                          %! opening_triplets
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 303 / measure 13]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -2462,7 +2462,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2497,29 +2497,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2537,46 +2519,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2611,29 +2554,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2651,6 +2576,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2668,11 +2594,85 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
 
-    }                                                                          %! opening_triplets
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 304 / measure 14]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -2691,7 +2691,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2726,29 +2726,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2766,46 +2748,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2840,29 +2783,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2880,6 +2805,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2897,11 +2823,85 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
 
-    }                                                                          %! opening_triplets
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 305 / measure 15]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -2920,7 +2920,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2955,29 +2955,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2995,46 +2977,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3069,11 +3012,68 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 306 / measure 16]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -3092,7 +3092,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3127,29 +3127,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3167,46 +3149,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3241,11 +3184,68 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 307 / measure 17]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -3264,7 +3264,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3299,29 +3299,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3339,46 +3321,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3413,11 +3356,68 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 308 / measure 18]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -3436,7 +3436,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3471,29 +3471,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3511,46 +3493,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3585,11 +3528,68 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 309 / measure 19]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -3608,7 +3608,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3643,29 +3643,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3683,46 +3665,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3757,11 +3700,68 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 310 / measure 20]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -3780,7 +3780,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3815,29 +3815,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3855,46 +3837,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3929,11 +3872,68 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 311 / measure 21]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -3952,7 +3952,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3987,29 +3987,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4027,46 +4009,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4101,11 +4044,68 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Piano_Music_Voice measure 312 / measure 22]                       %! _comment_measure_numbers
         \once \override Accidental.stencil = ##f
@@ -4124,7 +4124,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4159,29 +4159,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4199,46 +4181,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4273,29 +4216,11 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4313,46 +4238,7 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        \once \override Accidental.stencil = ##f
-        \once \override AccidentalCautionary.stencil = ##f
-        \once \override Arpeggio.X-offset = #-2
-        \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
-        <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4387,10 +4273,124 @@ I_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        [                                                                      %! krummzeit.opening_triplets
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+
+        \once \override Accidental.stencil = ##f
+        \once \override AccidentalCautionary.stencil = ##f
+        \once \override Arpeggio.X-offset = #-2
+        \once \override NoteHead.stencil = #ly:text-interface::print
+        \once \override NoteHead.text = \markup {
+        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
+        }
+        <c,, e,, g,, b,, d, f, a,>8
+        ^ \markup {
+            \center-align
+                \concat
+                    {
+                        \natural
+                        \flat
+                    }
+            }
+        ]                                                                      %! krummzeit.opening_triplets
         \ottava 0                                                              %! baca_ottava_bassa:SpannerIndicatorCommand(2)
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4452,8 +4452,8 @@ I_Piano_Music_Staff = {                                                        %
 
 I_Percussion_Music_Voice = {                                                   %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 8/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [I Percussion_Music_Voice measure 291 / measure 1]                   %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -4478,7 +4478,7 @@ I_Percussion_Music_Voice = {                                                   %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-        fs''!8                                                                 %! hypermeter_tuplets
+        fs''!8                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
@@ -4493,10 +4493,10 @@ I_Percussion_Music_Voice = {                                                   %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        fs''!2.                                                                %! hypermeter_tuplets
+        fs''!2.                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4528,11 +4528,11 @@ I_Percussion_Music_Voice = {                                                   %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
     \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
@@ -4543,158 +4543,158 @@ I_Percussion_Music_Voice = {                                                   %
                 tam-tam                                                        %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 294 / measure 4]                       %! _comment_measure_numbers
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 295 / measure 5]                       %! _comment_measure_numbers
-    r2..                                                                       %! incise_attacks
+    r2..                                                                       %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 296 / measure 6]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2..                                                                       %! incise_attacks
+    r2..                                                                       %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 297 / measure 7]                       %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r4.                                                                        %! incise_attacks
+    r4.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 298 / measure 8]                       %! _comment_measure_numbers
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 299 / measure 9]                       %! _comment_measure_numbers
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 300 / measure 10]                      %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r1                                                                         %! incise_attacks
+    r1                                                                         %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 301 / measure 11]                      %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 302 / measure 12]                      %! _comment_measure_numbers
-    r1                                                                         %! incise_attacks
+    r1                                                                         %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 303 / measure 13]                      %! _comment_measure_numbers
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 304 / measure 14]                      %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 305 / measure 15]                      %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 306 / measure 16]                      %! _comment_measure_numbers
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 307 / measure 17]                      %! _comment_measure_numbers
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 308 / measure 18]                      %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 309 / measure 19]                      %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 310 / measure 20]                      %! _comment_measure_numbers
-    r2.                                                                        %! incise_attacks
+    r2.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 311 / measure 21]                      %! _comment_measure_numbers
-    r2                                                                         %! incise_attacks
+    r2                                                                         %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8.                                                                        %! incise_attacks
+    r8.                                                                        %! krummzeit.incise_attacks
 
     % [I Percussion_Music_Voice measure 312 / measure 22]                      %! _comment_measure_numbers
-    r16                                                                        %! incise_attacks
+    r16                                                                        %! krummzeit.incise_attacks
 
-    c'16                                                                       %! incise_attacks
+    c'16                                                                       %! krummzeit.incise_attacks
     - \laissezVibrer                                                           %! baca_laissez_vibrer:IndicatorCommand
 
-    r8                                                                         %! incise_attacks
+    r8                                                                         %! krummzeit.incise_attacks
 
-    r1                                                                         %! incise_attacks
+    r1                                                                         %! krummzeit.incise_attacks
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4756,7 +4756,7 @@ I_Percussion_Music_Staff = {                                                   %
 
 I_Violin_Music_Voice = {                                                       %! abjad.Path.extern
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Violin_Music_Voice measure 291 / measure 1]                       %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -4781,13 +4781,13 @@ I_Violin_Music_Voice = {                                                       %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Violin”)"                        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -4797,167 +4797,167 @@ I_Violin_Music_Voice = {                                                       %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Violin_Music_Voice measure 292 / measure 2]                       %! _comment_measure_numbers
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        ef''!8                                                                 %! opening_triplets
+        ef''!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    r8                                                                         %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        ef''!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    r8                                                                         %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4981,91 +4981,91 @@ I_Violin_Music_Voice = {                                                       %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [I Violin_Music_Voice measure 295 / measure 5]                           %! _comment_measure_numbers
-    g''4                                                                       %! right_remainder_quarters
+    g''4                                                                       %! krummzeit.right_remainder_quarters
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     ^ \markup { "directly on bridge: full bow each stroke" }                   %! baca_markup:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    cs''!4                                                                     %! right_remainder_quarters
+    cs''!4                                                                     %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef''!4                                                                     %! right_remainder_quarters
+    ef''!4                                                                     %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs''!4                                                                     %! right_remainder_quarters
+    fs''!4                                                                     %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e''8                                                                       %! right_remainder_quarters
+    e''8                                                                       %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Violin_Music_Voice measure 296 / measure 6]                           %! _comment_measure_numbers
-    a''4                                                                       %! right_remainder_quarters
+    a''4                                                                       %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef''!4                                                                     %! right_remainder_quarters
+    ef''!4                                                                     %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a'4                                                                        %! right_remainder_quarters
+    a'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e''4                                                                       %! right_remainder_quarters
+    e''4                                                                       %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf'!8                                                                      %! right_remainder_quarters
+    bf'!8                                                                      %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Violin_Music_Voice measure 297 / measure 7]                           %! _comment_measure_numbers
-    d''4                                                                       %! right_remainder_quarters
+    d''4                                                                       %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    a'4                                                                        %! right_remainder_quarters
+    a'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e'8                                                                        %! right_remainder_quarters
+    e'8                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Violin_Music_Voice measure 298 / measure 8]                           %! _comment_measure_numbers
-    bf'!4                                                                      %! right_remainder_quarters
+    bf'!4                                                                      %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    d'4                                                                        %! right_remainder_quarters
+    d'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e'8                                                                        %! right_remainder_quarters
+    e'8                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Violin_Music_Voice measure 299 / measure 9]                           %! _comment_measure_numbers
-    d'4                                                                        %! right_remainder_quarters
+    d'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    g'4                                                                        %! right_remainder_quarters
+    g'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    g'4                                                                        %! right_remainder_quarters
+    g'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef'!4                                                                      %! right_remainder_quarters
+    ef'!4                                                                      %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -5122,40 +5122,40 @@ I_Violin_Music_Voice = {                                                       %
     % [I Violin_Music_Voice measure 311 / measure 21]                          %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [I Violin_Music_Voice measure 312 / measure 22]                      %! _comment_measure_numbers
-        e'''8                                                                  %! pizzicato_rhythm
+        e'''8                                                                  %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
-        cs'''!4                                                                %! pizzicato_rhythm
+        cs'''!4                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f'''8                                                                  %! pizzicato_rhythm
+        f'''8                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 7/8 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 7/8 {                                                               %! krummzeit.pizzicato_rhythm
 
-        f'''8                                                                  %! pizzicato_rhythm
+        f'''8                                                                  %! krummzeit.pizzicato_rhythm
 
-        a'''2                                                                  %! pizzicato_rhythm
+        a'''2                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        c'''4                                                                  %! pizzicato_rhythm
+        c'''4                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        f'''8                                                                  %! pizzicato_rhythm
+        f'''8                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -5217,7 +5217,7 @@ I_Violin_Music_Staff = {                                                       %
 
 I_Viola_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Viola_Music_Voice measure 291 / measure 1]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -5237,13 +5237,13 @@ I_Viola_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Viola”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -5253,167 +5253,167 @@ I_Viola_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Viola_Music_Voice measure 292 / measure 2]                        %! _comment_measure_numbers
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        a8                                                                     %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        a8                                                                     %! opening_triplets
+        a8                                                                     %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    r8                                                                         %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        a8                                                                     %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    r8                                                                         %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -5441,7 +5441,7 @@ I_Viola_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    ef''!4                                                                     %! right_remainder_quarters
+    ef''!4                                                                     %! krummzeit.right_remainder_quarters
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
@@ -5449,84 +5449,84 @@ I_Viola_Music_Voice = {                                                        %
     \glissando                                                                 %! baca_glissando
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    bf''!4                                                                     %! right_remainder_quarters
+    bf''!4                                                                     %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f''4                                                                       %! right_remainder_quarters
+    f''4                                                                       %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af''!4                                                                     %! right_remainder_quarters
+    af''!4                                                                     %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'8                                                                        %! right_remainder_quarters
+    b'8                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Viola_Music_Voice measure 296 / measure 6]                            %! _comment_measure_numbers
-    fs''!4                                                                     %! right_remainder_quarters
+    fs''!4                                                                     %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4                                                                        %! right_remainder_quarters
+    f'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af'!4                                                                      %! right_remainder_quarters
+    af'!4                                                                      %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b'4                                                                        %! right_remainder_quarters
+    b'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    g'8                                                                        %! right_remainder_quarters
+    g'8                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Viola_Music_Voice measure 297 / measure 7]                            %! _comment_measure_numbers
-    cs'!4                                                                      %! right_remainder_quarters
+    cs'!4                                                                      %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    af'!4                                                                      %! right_remainder_quarters
+    af'!4                                                                      %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b8                                                                         %! right_remainder_quarters
+    b8                                                                         %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Viola_Music_Voice measure 298 / measure 8]                            %! _comment_measure_numbers
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    g'4                                                                        %! right_remainder_quarters
+    g'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    g'4                                                                        %! right_remainder_quarters
+    g'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef'!8                                                                      %! right_remainder_quarters
+    ef'!8                                                                      %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Viola_Music_Voice measure 299 / measure 9]                            %! _comment_measure_numbers
-    cs'!4                                                                      %! right_remainder_quarters
+    cs'!4                                                                      %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef!4                                                                       %! right_remainder_quarters
+    ef!4                                                                       %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs!4                                                                       %! right_remainder_quarters
+    fs!4                                                                       %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    b4                                                                         %! right_remainder_quarters
+    b4                                                                         %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -5583,35 +5583,35 @@ I_Viola_Music_Voice = {                                                        %
     % [I Viola_Music_Voice measure 311 / measure 21]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    \times 4/5 {                                                               %! pizzicato_rhythm
+    \times 4/5 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [I Viola_Music_Voice measure 312 / measure 22]                       %! _comment_measure_numbers
-        ef'''!8                                                                %! pizzicato_rhythm
+        ef'''!8                                                                %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
-        d'''4                                                                  %! pizzicato_rhythm
+        d'''4                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        g'''4                                                                  %! pizzicato_rhythm
+        g'''4                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 5/6 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 5/6 {                                                               %! krummzeit.pizzicato_rhythm
 
-        ef'''!2                                                                %! pizzicato_rhythm
+        ef'''!2                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        b'''4                                                                  %! pizzicato_rhythm
+        b'''4                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    ef'''!8                                                                    %! pizzicato_rhythm
+    ef'''!8                                                                    %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -5674,7 +5674,7 @@ I_Viola_Music_Staff = {                                                        %
 
 I_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Cello_Music_Voice measure 291 / measure 1]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -5694,13 +5694,13 @@ I_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vc.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set Staff.shortInstrumentName =                                       %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \markup {                                                              %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
@@ -5710,167 +5710,167 @@ I_Cello_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [I Cello_Music_Voice measure 292 / measure 2]                        %! _comment_measure_numbers
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
-
-    }                                                                          %! opening_triplets
-
-    \times 2/3 {                                                               %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
-
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-        eqf,!8                                                                 %! opening_triplets
+        eqf,!8                                                                 %! krummzeit.opening_triplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    r8                                                                         %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        [                                                                      %! krummzeit.opening_triplets
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+
+        eqf,!8                                                                 %! krummzeit.opening_triplets
+        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        ]                                                                      %! krummzeit.opening_triplets
+
+    }                                                                          %! krummzeit.opening_triplets
+
+    r8                                                                         %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -5898,7 +5898,7 @@ I_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    d''4                                                                       %! right_remainder_quarters
+    d''4                                                                       %! krummzeit.right_remainder_quarters
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-f                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
@@ -5906,83 +5906,83 @@ I_Cello_Music_Voice = {                                                        %
     \glissando                                                                 %! baca_glissando
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    e''4                                                                       %! right_remainder_quarters
+    e''4                                                                       %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    g''4                                                                       %! right_remainder_quarters
+    g''4                                                                       %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f''4                                                                       %! right_remainder_quarters
+    f''4                                                                       %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf'!8                                                                      %! right_remainder_quarters
+    bf'!8                                                                      %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Cello_Music_Voice measure 296 / measure 6]                            %! _comment_measure_numbers
-    e'4                                                                        %! right_remainder_quarters
+    e'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    g'4                                                                        %! right_remainder_quarters
+    g'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4                                                                        %! right_remainder_quarters
+    f'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf'!4                                                                      %! right_remainder_quarters
+    bf'!4                                                                      %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ef'!8                                                                      %! right_remainder_quarters
+    ef'!8                                                                      %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Cello_Music_Voice measure 297 / measure 7]                            %! _comment_measure_numbers
-    bf'!4                                                                      %! right_remainder_quarters
+    bf'!4                                                                      %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f'4                                                                        %! right_remainder_quarters
+    f'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    cs'!8                                                                      %! right_remainder_quarters
+    cs'!8                                                                      %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Cello_Music_Voice measure 298 / measure 8]                            %! _comment_measure_numbers
-    ef'!4                                                                      %! right_remainder_quarters
+    ef'!4                                                                      %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    fs'!4                                                                      %! right_remainder_quarters
+    fs'!4                                                                      %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f8                                                                         %! right_remainder_quarters
+    f8                                                                         %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
     % [I Cello_Music_Voice measure 299 / measure 9]                            %! _comment_measure_numbers
-    bf!4                                                                       %! right_remainder_quarters
+    bf!4                                                                       %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    f4                                                                         %! right_remainder_quarters
+    f4                                                                         %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    e4                                                                         %! right_remainder_quarters
+    e4                                                                         %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca_alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    bf!4                                                                       %! right_remainder_quarters
+    bf!4                                                                       %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca_alternate_bow_strokes:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -6039,38 +6039,38 @@ I_Cello_Music_Voice = {                                                        %
     % [I Cello_Music_Voice measure 311 / measure 21]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 5/6 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 5/6 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [I Cello_Music_Voice measure 312 / measure 22]                       %! _comment_measure_numbers
-        f'''8                                                                  %! pizzicato_rhythm
+        f'''8                                                                  %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ^ \markup { pizz. }                                                    %! baca_markup:IndicatorCommand
 
-        e'''4                                                                  %! pizzicato_rhythm
+        e'''4                                                                  %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs'''!4                                                                %! pizzicato_rhythm
+        cs'''!4                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        bf'''!8                                                                %! pizzicato_rhythm
+        bf'''!8                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         ~
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \times 4/5 {                                                               %! pizzicato_rhythm
+    \times 4/5 {                                                               %! krummzeit.pizzicato_rhythm
 
-        bf'''!4.                                                               %! pizzicato_rhythm
+        bf'''!4.                                                               %! krummzeit.pizzicato_rhythm
 
-        af'''!4                                                                %! pizzicato_rhythm
+        af'''!4                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    e'''8                                                                      %! pizzicato_rhythm
+    e'''8                                                                      %! krummzeit.pizzicato_rhythm
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container

@@ -11,6 +11,6 @@ def right_remainder_quarters(*, dmask=None):
     return baca.rhythm(
         divisions=baca.split_expanse([(1, 4)], cyclic=True, do_not_join=True),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            division_masks=dmask, tag="right_remainder_quarters"
+            division_masks=dmask, tag="krummzeit.right_remainder_quarters"
         ),
     )

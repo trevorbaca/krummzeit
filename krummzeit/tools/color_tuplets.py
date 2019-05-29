@@ -25,7 +25,7 @@ def color_tuplets(*, dmask=None, rotation=0):
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
-            tag="color_tuplets",
+            tag="krummzeit.color_tuplets",
             tie_specifier=rmakers.TieSpecifier(tie_across_divisions=True),
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(

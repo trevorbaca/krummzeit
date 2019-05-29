@@ -315,15 +315,15 @@ H_Oboe_Music_Voice = {                                                         %
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Oboe_Music_Voice measure 288 / measure 8]                         %! _comment_measure_numbers
         \override TupletBracket.staff-padding = #2                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        ef''!2.                                                                %! hypermeter_tuplets
+        ef''!2.                                                                %! krummzeit.hypermeter_tuplets
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-        ef''!2                                                                 %! hypermeter_tuplets
+        ef''!2                                                                 %! krummzeit.hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -332,13 +332,13 @@ H_Oboe_Music_Voice = {                                                         %
                         1
             }
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Oboe_Music_Voice measure 290 / measure 10]                        %! _comment_measure_numbers
-        ef''!2.                                                                %! hypermeter_tuplets
+        ef''!2.                                                                %! krummzeit.hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -347,7 +347,7 @@ H_Oboe_Music_Voice = {                                                         %
                         2
             }
 
-        ef''!2                                                                 %! hypermeter_tuplets
+        ef''!2                                                                 %! krummzeit.hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -357,7 +357,7 @@ H_Oboe_Music_Voice = {                                                         %
             }
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -490,19 +490,19 @@ H_Clarinet_Music_Voice = {                                                     %
     R1 * 5/8                                                                   %! _make_measure_silences
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 6/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Clarinet_Music_Voice measure 288 / measure 8]                     %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #9                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override Stem.direction = #up                                         %! baca_stem_up:OverrideCommand(1)
         \override TupletBracket.staff-padding = #5                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        f4                                                                     %! hypermeter_tuplets
+        f4                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-explicit-indicator-markup "(“BassClarinet”)"                   %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
 
-        f1                                                                     %! hypermeter_tuplets
+        f1                                                                     %! krummzeit.hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -511,13 +511,13 @@ H_Clarinet_Music_Voice = {                                                     %
                         1
             }
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 7/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Clarinet_Music_Voice measure 290 / measure 10]                    %! _comment_measure_numbers
-        f4                                                                     %! hypermeter_tuplets
+        f4                                                                     %! krummzeit.hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -526,7 +526,7 @@ H_Clarinet_Music_Voice = {                                                     %
                         2
             }
 
-        f1                                                                     %! hypermeter_tuplets
+        f1                                                                     %! krummzeit.hypermeter_tuplets
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -538,7 +538,7 @@ H_Clarinet_Music_Voice = {                                                     %
         \revert Stem.direction                                                 %! baca_stem_up:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -579,7 +579,7 @@ H_Clarinet_Music_Staff = {                                                     %
 
 H_Piano_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [H Piano_Music_Voice measure 281 / measure 1]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
@@ -621,7 +621,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
@@ -664,11 +664,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -686,7 +686,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -721,11 +721,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -743,7 +743,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -778,11 +778,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -800,7 +800,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -835,11 +835,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -857,7 +857,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -892,11 +892,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -914,7 +914,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -949,11 +949,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -971,7 +971,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1006,11 +1006,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1028,7 +1028,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1063,11 +1063,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1085,7 +1085,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1120,11 +1120,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1142,7 +1142,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1177,11 +1177,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1199,7 +1199,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1234,11 +1234,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1256,7 +1256,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1291,11 +1291,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1313,7 +1313,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1348,11 +1348,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1370,7 +1370,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1405,11 +1405,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1427,7 +1427,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1462,11 +1462,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1484,7 +1484,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1519,11 +1519,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1541,7 +1541,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1576,11 +1576,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1598,7 +1598,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1633,11 +1633,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1655,7 +1655,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1690,11 +1690,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1712,7 +1712,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1747,11 +1747,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1769,7 +1769,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1804,11 +1804,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1826,7 +1826,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1861,11 +1861,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1883,7 +1883,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1918,11 +1918,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1940,7 +1940,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1975,11 +1975,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1997,7 +1997,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2032,11 +2032,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2054,7 +2054,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2089,11 +2089,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2111,7 +2111,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2146,11 +2146,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2168,7 +2168,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2203,11 +2203,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2225,7 +2225,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2260,11 +2260,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2282,7 +2282,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2317,11 +2317,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2339,7 +2339,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2374,11 +2374,11 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
-    \times 2/3 {                                                               %! opening_triplets
+    \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2396,7 +2396,7 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        [                                                                      %! opening_triplets
+        [                                                                      %! krummzeit.opening_triplets
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2431,9 +2431,9 @@ H_Piano_Music_Voice = {                                                        %
                         \flat
                     }
             }
-        ]                                                                      %! opening_triplets
+        ]                                                                      %! krummzeit.opening_triplets
 
-    }                                                                          %! opening_triplets
+    }                                                                          %! krummzeit.opening_triplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2461,8 +2461,8 @@ H_Piano_Music_Voice = {                                                        %
     \override TupletBracket.staff-padding = #2                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     R1 * 1                                                                     %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 9/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 9/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Piano_Music_Voice measure 289 / measure 9]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
@@ -2472,7 +2472,7 @@ H_Piano_Music_Voice = {                                                        %
                 Pf.                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
             }                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
         \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        fs'''!2.                                                               %! hypermeter_tuplets
+        fs'''!2.                                                               %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2486,12 +2486,12 @@ H_Piano_Music_Voice = {                                                        %
                 Pf.                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
             }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
 
-        fs'''!1                                                                %! hypermeter_tuplets
+        fs'''!1                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2607,10 +2607,10 @@ H_Percussion_Music_Voice = {                                                   %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    r8                                                                         %! left_remainder_quarters
+    r8                                                                         %! krummzeit.left_remainder_quarters
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    d'4                                                                        %! left_remainder_quarters
+    d'4                                                                        %! krummzeit.left_remainder_quarters
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-ff-sempre                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \accent                                                                  %! baca_accent:IndicatorCommand
@@ -2621,25 +2621,25 @@ H_Percussion_Music_Voice = {                                                   %
                 crotale                                                        %! baca_markup:IndicatorCommand
         }                                                                      %! baca_markup:IndicatorCommand
 
-    d'4                                                                        %! left_remainder_quarters
+    d'4                                                                        %! krummzeit.left_remainder_quarters
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    d'4                                                                        %! left_remainder_quarters
+    d'4                                                                        %! krummzeit.left_remainder_quarters
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    d'4                                                                        %! left_remainder_quarters
+    d'4                                                                        %! krummzeit.left_remainder_quarters
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    d'4                                                                        %! left_remainder_quarters
+    d'4                                                                        %! krummzeit.left_remainder_quarters
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    d'4                                                                        %! left_remainder_quarters
+    d'4                                                                        %! krummzeit.left_remainder_quarters
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    d'4                                                                        %! left_remainder_quarters
+    d'4                                                                        %! krummzeit.left_remainder_quarters
     - \accent                                                                  %! baca_accent:IndicatorCommand
 
-    d'4                                                                        %! left_remainder_quarters
+    d'4                                                                        %! krummzeit.left_remainder_quarters
     - \accent                                                                  %! baca_accent:IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
 
@@ -2668,21 +2668,21 @@ H_Percussion_Music_Voice = {                                                   %
     \override TupletBracket.staff-padding = #3                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
     R1 * 1                                                                     %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 9/7 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 9/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Percussion_Music_Voice measure 289 / measure 9]                   %! _comment_measure_numbers
-        fs''!4                                                                 %! hypermeter_tuplets
+        fs''!4                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-redundant-indicator-markup "(“Xylophone”)"                     %! REDUNDANT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
 
-        fs''!1.                                                                %! hypermeter_tuplets
+        fs''!1.                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2723,8 +2723,8 @@ H_Percussion_Music_Staff = {                                                   %
 
 H_Violin_Music_Voice = {                                                       %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 19/10 {                                                             %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 19/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Violin_Music_Voice measure 281 / measure 1]                       %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -2749,7 +2749,7 @@ H_Violin_Music_Voice = {                                                       %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-        df'!2.                                                                 %! hypermeter_tuplets
+        df'!2.                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2764,84 +2764,84 @@ H_Violin_Music_Voice = {                                                       %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        df'!2                                                                  %! hypermeter_tuplets
+        df'!2                                                                  %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Violin_Music_Voice measure 283 / measure 3]                       %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af'!4                                                                  %! glissando_rhythm
+        af'!4                                                                  %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        af'!2                                                                  %! glissando_rhythm
+        af'!2                                                                  %! krummzeit.glissando_rhythm
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
-    af'!4                                                                      %! glissando_rhythm
+    af'!4                                                                      %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    cs'!1                                                                      %! glissando_rhythm
+    cs'!1                                                                      %! krummzeit.glissando_rhythm
     ~
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
-    \times 5/7 {                                                               %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
+    \times 5/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Violin_Music_Voice measure 284 / measure 4]                       %! _comment_measure_numbers
-        cs'!1                                                                  %! glissando_rhythm
+        cs'!1                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        c'2.                                                                   %! glissando_rhythm
+        c'2.                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
-        d'4                                                                    %! glissando_rhythm
+        d'4                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        f2                                                                     %! glissando_rhythm
+        f2                                                                     %! krummzeit.glissando_rhythm
         ~
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Violin_Music_Voice measure 285 / measure 5]                       %! _comment_measure_numbers
-        f16                                                                    %! glissando_rhythm
+        f16                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        bf'!4                                                                  %! glissando_rhythm
+        bf'!4                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/7 {                                                               %! glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
-        fs'!4                                                                  %! glissando_rhythm
+        fs'!4                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        b'8.                                                                   %! glissando_rhythm
+        b'8.                                                                   %! krummzeit.glissando_rhythm
         ~
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
-        b'8                                                                    %! glissando_rhythm
+        b'8                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        af'!4                                                                  %! glissando_rhythm
+        af'!4                                                                  %! krummzeit.glissando_rhythm
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2864,38 +2864,38 @@ H_Violin_Music_Voice = {                                                       %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/10 {                                                             %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Violin_Music_Voice measure 287 / measure 7]                       %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #7                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        d''2.                                                                  %! hypermeter_tuplets
+        d''2.                                                                  %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        ef''!2                                                                 %! hypermeter_tuplets
+        ef''!2                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 9/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 9/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Violin_Music_Voice measure 289 / measure 9]                       %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        ef''!2.                                                                %! hypermeter_tuplets
+        ef''!2.                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        ef''!2                                                                 %! hypermeter_tuplets
+        ef''!2                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -2936,8 +2936,8 @@ H_Violin_Music_Staff = {                                                       %
 
 H_Viola_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 19/10 {                                                             %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 19/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Viola_Music_Voice measure 281 / measure 1]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -2957,7 +2957,7 @@ H_Viola_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        c4                                                                     %! hypermeter_tuplets
+        c4                                                                     %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -2972,84 +2972,84 @@ H_Viola_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        c1                                                                     %! hypermeter_tuplets
+        c1                                                                     %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! glissando_rhythm
-    \times 5/9 {                                                               %! glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
+    \times 5/9 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Viola_Music_Voice measure 283 / measure 3]                        %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
-        b2.                                                                    %! glissando_rhythm
+        b2.                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        c1.                                                                    %! glissando_rhythm
+        c1.                                                                    %! krummzeit.glissando_rhythm
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        c8                                                                     %! glissando_rhythm
+        c8                                                                     %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        e2                                                                     %! glissando_rhythm
+        e2                                                                     %! krummzeit.glissando_rhythm
         ~
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/7 {                                                               %! glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Viola_Music_Voice measure 284 / measure 4]                        %! _comment_measure_numbers
-        e2                                                                     %! glissando_rhythm
+        e2                                                                     %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        fs!4.                                                                  %! glissando_rhythm
+        fs!4.                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    f4                                                                         %! glissando_rhythm
+    f4                                                                         %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    af!2                                                                       %! glissando_rhythm
+    af!2                                                                       %! krummzeit.glissando_rhythm
     ~
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        af!8                                                                   %! glissando_rhythm
+        af!8                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        cs!2                                                                   %! glissando_rhythm
+        cs!2                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/7 {                                                               %! glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Viola_Music_Voice measure 285 / measure 5]                        %! _comment_measure_numbers
-        e4                                                                     %! glissando_rhythm
+        e4                                                                     %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        g8.                                                                    %! glissando_rhythm
+        g8.                                                                    %! krummzeit.glissando_rhythm
         ~
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
-        g4                                                                     %! glissando_rhythm
+        g4                                                                     %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        a2                                                                     %! glissando_rhythm
+        a2                                                                     %! krummzeit.glissando_rhythm
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3072,38 +3072,38 @@ H_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/10 {                                                             %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Viola_Music_Voice measure 287 / measure 7]                        %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #9                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #5                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        d4                                                                     %! hypermeter_tuplets
+        d4                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a1                                                                     %! hypermeter_tuplets
+        a1                                                                     %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 9/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 9/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Viola_Music_Voice measure 289 / measure 9]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a4                                                                     %! hypermeter_tuplets
+        a4                                                                     %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        a1                                                                     %! hypermeter_tuplets
+        a1                                                                     %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 
@@ -3144,8 +3144,8 @@ H_Viola_Music_Staff = {                                                        %
 
 H_Cello_Music_Voice = {                                                        %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 19/10 {                                                             %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 19/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Cello_Music_Voice measure 281 / measure 1]                        %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -3165,7 +3165,7 @@ H_Cello_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        c,2                                                                    %! hypermeter_tuplets
+        c,2                                                                    %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
@@ -3180,82 +3180,82 @@ H_Cello_Music_Voice = {                                                        %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        c,2.                                                                   %! hypermeter_tuplets
+        c,2.                                                                   %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Cello_Music_Voice measure 283 / measure 3]                        %! _comment_measure_numbers
         \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
-        a,4                                                                    %! glissando_rhythm
+        a,4                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
-        bf,!2                                                                  %! glissando_rhythm
+        bf,!2                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/5 {                                                               %! glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        f,8.                                                                   %! glissando_rhythm
+        f,8.                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        d,2.                                                                   %! glissando_rhythm
+        d,2.                                                                   %! krummzeit.glissando_rhythm
         ~
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 4/7 {                                                               %! glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
-        d,2                                                                    %! glissando_rhythm
+        d,2                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        b,4.                                                                   %! glissando_rhythm
+        b,4.                                                                   %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Cello_Music_Voice measure 284 / measure 4]                        %! _comment_measure_numbers
-        bf,!4                                                                  %! glissando_rhythm
+        bf,!4                                                                  %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        g,2                                                                    %! glissando_rhythm
+        g,2                                                                    %! krummzeit.glissando_rhythm
         ~
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    g,4                                                                        %! glissando_rhythm
+    g,4                                                                        %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    f,1                                                                        %! glissando_rhythm
+    f,1                                                                        %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca_glissando
 
-    \times 4/7 {                                                               %! glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Cello_Music_Voice measure 285 / measure 5]                        %! _comment_measure_numbers
-        b,2                                                                    %! glissando_rhythm
+        b,2                                                                    %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        c4.                                                                    %! glissando_rhythm
+        c4.                                                                    %! krummzeit.glissando_rhythm
         ~
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
-    \times 2/3 {                                                               %! glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
-        c8                                                                     %! glissando_rhythm
+        c8                                                                     %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca_glissando
 
-        bf,!4                                                                  %! glissando_rhythm
+        bf,!4                                                                  %! krummzeit.glissando_rhythm
         \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
 
-    }                                                                          %! glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3278,38 +3278,38 @@ H_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 13/10 {                                                             %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Cello_Music_Voice measure 287 / measure 7]                        %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #9                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #5                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        d2                                                                     %! hypermeter_tuplets
+        d2                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         \glissando                                                             %! baca_glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        eqf,!2.                                                                %! hypermeter_tuplets
+        eqf,!2.                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! hypermeter_tuplets
-    \times 9/5 {                                                               %! hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
+    \times 9/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Cello_Music_Voice measure 289 / measure 9]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        eqf,!2                                                                 %! hypermeter_tuplets
+        eqf,!2                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
-        eqf,!2.                                                                %! hypermeter_tuplets
+        eqf,!2.                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca_stem_tremolo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets
 
     <<                                                                         %! PHANTOM:_make_multimeasure_rest_container
 

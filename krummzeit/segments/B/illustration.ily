@@ -929,8 +929,8 @@ B_Global_Skips = {                                                             %
 
 B_Oboe_Music_Voice = {                                                         %! abjad.Path.extern
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 89 / measure 1]                          %! _comment_measure_numbers
         \set Staff.shortInstrumentName =                                       %! REAPPLIED_MARGIN_MARKUP:_set_status_tag:-PARTS:_reapply_persistent_indicators(3)
@@ -952,7 +952,7 @@ B_Oboe_Music_Voice = {                                                         %
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-        e'8                                                                    %! pizzicato_rhythm
+        e'8                                                                    %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Ob.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -966,7 +966,7 @@ B_Oboe_Music_Voice = {                                                         %
             }                                                                  %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        ef''!4                                                                 %! pizzicato_rhythm
+        ef''!4                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -976,7 +976,7 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        c''8                                                                   %! pizzicato_rhythm
+        c''8                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -988,14 +988,14 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        c''8                                                                   %! pizzicato_rhythm
+        c''8                                                                   %! krummzeit.pizzicato_rhythm
 
-        b''4.                                                                  %! pizzicato_rhythm
+        b''4.                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1007,16 +1007,16 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     % [B Oboe_Music_Voice measure 90 / measure 2]                              %! _comment_measure_numbers
-    b''8                                                                       %! pizzicato_rhythm
+    b''8                                                                       %! krummzeit.pizzicato_rhythm
 
-    ef''!4                                                                     %! pizzicato_rhythm
+    ef''!4                                                                     %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    ef''!4                                                                     %! pizzicato_rhythm
+    ef''!4                                                                     %! krummzeit.pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1027,7 +1027,7 @@ B_Oboe_Music_Voice = {                                                         %
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    ef''!8                                                                     %! pizzicato_rhythm
+    ef''!8                                                                     %! krummzeit.pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1037,10 +1037,10 @@ B_Oboe_Music_Voice = {                                                         %
         }
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        ef'''!16                                                               %! pizzicato_rhythm
+        ef'''!16                                                               %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1048,12 +1048,12 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        [                                                                      %! pizzicato_rhythm
+        [                                                                      %! krummzeit.pizzicato_rhythm
 
-        f'''16                                                                 %! pizzicato_rhythm
-        ]                                                                      %! pizzicato_rhythm
+        f'''16                                                                 %! krummzeit.pizzicato_rhythm
+        ]                                                                      %! krummzeit.pizzicato_rhythm
 
-        e'''4.                                                                 %! pizzicato_rhythm
+        e'''4.                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1064,12 +1064,12 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    e'''8                                                                      %! pizzicato_rhythm
-    [                                                                          %! pizzicato_rhythm
+    e'''8                                                                      %! krummzeit.pizzicato_rhythm
+    [                                                                          %! krummzeit.pizzicato_rhythm
 
-    d'''8                                                                      %! pizzicato_rhythm
+    d'''8                                                                      %! krummzeit.pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1079,16 +1079,16 @@ B_Oboe_Music_Voice = {                                                         %
         }
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     ~
-    ]                                                                          %! pizzicato_rhythm
+    ]                                                                          %! krummzeit.pizzicato_rhythm
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 5/8 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 5/8 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 91 / measure 3]                          %! _comment_measure_numbers
-        d'''4.                                                                 %! pizzicato_rhythm
+        d'''4.                                                                 %! krummzeit.pizzicato_rhythm
 
-        cs''!2                                                                 %! pizzicato_rhythm
+        cs''!2                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1099,15 +1099,15 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        cs''!8                                                                 %! pizzicato_rhythm
+        cs''!8                                                                 %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \times 2/3 {                                                               %! pizzicato_rhythm
+    \times 2/3 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 92 / measure 4]                          %! _comment_measure_numbers
-        cs''!4                                                                 %! pizzicato_rhythm
+        cs''!4                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1117,7 +1117,7 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        cs''!8                                                                 %! pizzicato_rhythm
+        cs''!8                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1129,14 +1129,14 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        cs''!8                                                                 %! pizzicato_rhythm
+        cs''!8                                                                 %! krummzeit.pizzicato_rhythm
 
-        b''4.                                                                  %! pizzicato_rhythm
+        b''4.                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1148,11 +1148,11 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    b''8                                                                       %! pizzicato_rhythm
+    b''8                                                                       %! krummzeit.pizzicato_rhythm
 
-    b''4                                                                       %! pizzicato_rhythm
+    b''4                                                                       %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
@@ -1178,11 +1178,11 @@ B_Oboe_Music_Voice = {                                                         %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 94 / measure 6]                          %! _comment_measure_numbers
-        b''8                                                                   %! pizzicato_rhythm
+        b''8                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1191,7 +1191,7 @@ B_Oboe_Music_Voice = {                                                         %
                         1
             }
 
-        b''4                                                                   %! pizzicato_rhythm
+        b''4                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1201,7 +1201,7 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        bf''!8                                                                 %! pizzicato_rhythm
+        bf''!8                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1213,9 +1213,9 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    bf''!8                                                                     %! pizzicato_rhythm
+    bf''!8                                                                     %! krummzeit.pizzicato_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1287,15 +1287,15 @@ B_Oboe_Music_Voice = {                                                         %
     % [B Oboe_Music_Voice measure 111 / measure 23]                            %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 112 / measure 24]                        %! _comment_measure_numbers
-        a''8                                                                   %! pizzicato_rhythm
+        a''8                                                                   %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
 
-        e'''4                                                                  %! pizzicato_rhythm
+        e'''4                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1305,7 +1305,7 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        ef'''!8                                                                %! pizzicato_rhythm
+        ef'''!8                                                                %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1317,14 +1317,14 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 6/7 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 6/7 {                                                               %! krummzeit.pizzicato_rhythm
 
-        ef'''!8                                                                %! pizzicato_rhythm
+        ef'''!8                                                                %! krummzeit.pizzicato_rhythm
 
-        c'''2                                                                  %! pizzicato_rhythm
+        c'''2                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1335,14 +1335,14 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        c''4                                                                   %! pizzicato_rhythm
+        c''4                                                                   %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     % [B Oboe_Music_Voice measure 113 / measure 25]                            %! _comment_measure_numbers
-    c''4                                                                       %! pizzicato_rhythm
+    c''4                                                                       %! krummzeit.pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1353,7 +1353,7 @@ B_Oboe_Music_Voice = {                                                         %
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    c''8                                                                       %! pizzicato_rhythm
+    c''8                                                                       %! krummzeit.pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1363,10 +1363,10 @@ B_Oboe_Music_Voice = {                                                         %
         }
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        cs''!16                                                                %! pizzicato_rhythm
+        cs''!16                                                                %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1374,12 +1374,12 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        [                                                                      %! pizzicato_rhythm
+        [                                                                      %! krummzeit.pizzicato_rhythm
 
-        ef''!16                                                                %! pizzicato_rhythm
-        ]                                                                      %! pizzicato_rhythm
+        ef''!16                                                                %! krummzeit.pizzicato_rhythm
+        ]                                                                      %! krummzeit.pizzicato_rhythm
 
-        f'4.                                                                   %! pizzicato_rhythm
+        f'4.                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1390,13 +1390,13 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \times 2/3 {                                                               %! pizzicato_rhythm
+    \times 2/3 {                                                               %! krummzeit.pizzicato_rhythm
 
-        f'8                                                                    %! pizzicato_rhythm
+        f'8                                                                    %! krummzeit.pizzicato_rhythm
 
-        e'2                                                                    %! pizzicato_rhythm
+        e'2                                                                    %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1407,7 +1407,7 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        e'8                                                                    %! pizzicato_rhythm
+        e'8                                                                    %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1419,17 +1419,17 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \times 4/7 {                                                               %! pizzicato_rhythm
+    \times 4/7 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 114 / measure 26]                        %! _comment_measure_numbers
-        e'4.                                                                   %! pizzicato_rhythm
+        e'4.                                                                   %! krummzeit.pizzicato_rhythm
 
-        e'8                                                                    %! pizzicato_rhythm
+        e'8                                                                    %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-        e'4                                                                    %! pizzicato_rhythm
+        e'4                                                                    %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1439,7 +1439,7 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        d''8                                                                   %! pizzicato_rhythm
+        d''8                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1451,15 +1451,15 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     % [B Oboe_Music_Voice measure 115 / measure 27]                            %! _comment_measure_numbers
-    d''8                                                                       %! pizzicato_rhythm
+    d''8                                                                       %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        d'''2                                                                  %! pizzicato_rhythm
+        d'''2                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1470,17 +1470,17 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    d'''4                                                                      %! pizzicato_rhythm
+    d'''4                                                                      %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 6/7 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 6/7 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 116 / measure 28]                        %! _comment_measure_numbers
-        d'''4                                                                  %! pizzicato_rhythm
+        d'''4                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1491,7 +1491,7 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        g''8                                                                   %! pizzicato_rhythm
+        g''8                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1500,9 +1500,9 @@ B_Oboe_Music_Voice = {                                                         %
                         2
             }
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
-        [                                                                      %! pizzicato_rhythm
+        [                                                                      %! krummzeit.pizzicato_rhythm
 
-        fs''!16                                                                %! pizzicato_rhythm
+        fs''!16                                                                %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1511,10 +1511,10 @@ B_Oboe_Music_Voice = {                                                         %
                         1
             }
 
-        f'16                                                                   %! pizzicato_rhythm
-        ]                                                                      %! pizzicato_rhythm
+        f'16                                                                   %! krummzeit.pizzicato_rhythm
+        ]                                                                      %! krummzeit.pizzicato_rhythm
 
-        cs''!4.                                                                %! pizzicato_rhythm
+        cs''!4.                                                                %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1524,7 +1524,7 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1548,11 +1548,11 @@ B_Oboe_Music_Voice = {                                                         %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 118 / measure 30]                        %! _comment_measure_numbers
-        bf''!8                                                                 %! pizzicato_rhythm
+        bf''!8                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1561,7 +1561,7 @@ B_Oboe_Music_Voice = {                                                         %
                         2
             }
 
-        bf''!4                                                                 %! pizzicato_rhythm
+        bf''!4                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1571,19 +1571,19 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        bf''!8                                                                 %! pizzicato_rhythm
+        bf''!8                                                                 %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        bf''!8                                                                 %! pizzicato_rhythm
+        bf''!8                                                                 %! krummzeit.pizzicato_rhythm
 
-        bf''!4.                                                                %! pizzicato_rhythm
+        bf''!4.                                                                %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1594,7 +1594,7 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -1618,11 +1618,11 @@ B_Oboe_Music_Voice = {                                                         %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Oboe_Music_Voice measure 120 / measure 32]                        %! _comment_measure_numbers
-        d'''8                                                                  %! pizzicato_rhythm
+        d'''8                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1631,7 +1631,7 @@ B_Oboe_Music_Voice = {                                                         %
                         2
             }
 
-        cs'''!4                                                                %! pizzicato_rhythm
+        cs'''!4                                                                %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1641,19 +1641,19 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        ef'''!8                                                                %! pizzicato_rhythm
+        ef'''!8                                                                %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 7/8 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 7/8 {                                                               %! krummzeit.pizzicato_rhythm
 
-        ef'''!8                                                                %! pizzicato_rhythm
+        ef'''!8                                                                %! krummzeit.pizzicato_rhythm
 
-        f'''2                                                                  %! pizzicato_rhythm
+        f'''2                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1664,7 +1664,7 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        f'''4                                                                  %! pizzicato_rhythm
+        f'''4                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1675,7 +1675,7 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        f'''8                                                                  %! pizzicato_rhythm
+        f'''8                                                                  %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1687,20 +1687,20 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     % [B Oboe_Music_Voice measure 121 / measure 33]                            %! _comment_measure_numbers
-    f'''8                                                                      %! pizzicato_rhythm
-    [                                                                          %! pizzicato_rhythm
+    f'''8                                                                      %! krummzeit.pizzicato_rhythm
+    [                                                                          %! krummzeit.pizzicato_rhythm
 
-    f'8                                                                        %! pizzicato_rhythm
+    f'8                                                                        %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
-    ]                                                                          %! pizzicato_rhythm
+    ]                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        e'16                                                                   %! pizzicato_rhythm
+        e'16                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1708,9 +1708,9 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        [                                                                      %! pizzicato_rhythm
+        [                                                                      %! krummzeit.pizzicato_rhythm
 
-        e'16                                                                   %! pizzicato_rhythm
+        e'16                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1718,9 +1718,9 @@ B_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        ]                                                                      %! pizzicato_rhythm
+        ]                                                                      %! krummzeit.pizzicato_rhythm
 
-        e'4.                                                                   %! pizzicato_rhythm
+        e'4.                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1731,17 +1731,17 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \times 4/5 {                                                               %! pizzicato_rhythm
+    \times 4/5 {                                                               %! krummzeit.pizzicato_rhythm
 
-        e'8                                                                    %! pizzicato_rhythm
+        e'8                                                                    %! krummzeit.pizzicato_rhythm
 
-        e'2                                                                    %! pizzicato_rhythm
+        e'2                                                                    %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        bf''!2                                                                 %! pizzicato_rhythm
+        bf''!2                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1752,7 +1752,7 @@ B_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        g''8                                                                   %! pizzicato_rhythm
+        g''8                                                                   %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1762,10 +1762,10 @@ B_Oboe_Music_Voice = {                                                         %
             }
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     % [B Oboe_Music_Voice measure 122 / measure 34]                            %! _comment_measure_numbers
-    fs''!8                                                                     %! pizzicato_rhythm
+    fs''!8                                                                     %! krummzeit.pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1776,16 +1776,16 @@ B_Oboe_Music_Voice = {                                                         %
     ~
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        fs''!8                                                                 %! pizzicato_rhythm
+        fs''!8                                                                 %! krummzeit.pizzicato_rhythm
 
-        f'4                                                                    %! pizzicato_rhythm
+        f'4                                                                    %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        cs''!8                                                                 %! pizzicato_rhythm
+        cs''!8                                                                 %! krummzeit.pizzicato_rhythm
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1797,12 +1797,12 @@ B_Oboe_Music_Voice = {                                                         %
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    cs''!4                                                                     %! pizzicato_rhythm
+    cs''!4                                                                     %! krummzeit.pizzicato_rhythm
 
     % [B Oboe_Music_Voice measure 123 / measure 35]                            %! _comment_measure_numbers
-    cs''!4                                                                     %! pizzicato_rhythm
+    cs''!4                                                                     %! krummzeit.pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1813,7 +1813,7 @@ B_Oboe_Music_Voice = {                                                         %
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    cs'''!4                                                                    %! pizzicato_rhythm
+    cs'''!4                                                                    %! krummzeit.pizzicato_rhythm
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -1824,7 +1824,7 @@ B_Oboe_Music_Voice = {                                                         %
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    cs'''!8                                                                    %! pizzicato_rhythm
+    cs'''!8                                                                    %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -1960,7 +1960,7 @@ B_Clarinet_Music_Voice = {                                                     %
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
-    cs''!4.                                                                    %! white_rhythm
+    cs''!4.                                                                    %! krummzeit.white_rhythm
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "[“Cl. (Eb)”]"                          %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -1989,32 +1989,32 @@ B_Clarinet_Music_Voice = {                                                     %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    btqs'!4.                                                                   %! white_rhythm
+    btqs'!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
     % [B Clarinet_Music_Voice measure 90 / measure 2]                          %! _comment_measure_numbers
-    d''4.                                                                      %! white_rhythm
+    d''4.                                                                      %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4.                                                                  %! white_rhythm
+    ctqs''!4.                                                                  %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    bqs'!4.                                                                    %! white_rhythm
+    bqs'!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    a'4.                                                                       %! white_rhythm
+    a'4.                                                                       %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    bqs'!4.                                                                    %! white_rhythm
+    bqs'!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    cs''!4.                                                                    %! white_rhythm
+    cs''!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    btqs'!4.                                                                   %! white_rhythm
+    btqs'!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    d''4.                                                                      %! white_rhythm
+    d''4.                                                                      %! krummzeit.white_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2092,43 +2092,43 @@ B_Clarinet_Music_Voice = {                                                     %
     R1 * 5/8                                                                   %! _make_measure_silences
 
     % [B Clarinet_Music_Voice measure 112 / measure 24]                        %! _comment_measure_numbers
-    d''4.                                                                      %! white_rhythm
+    d''4.                                                                      %! krummzeit.white_rhythm
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4.                                                                  %! white_rhythm
+    ctqs''!4.                                                                  %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    e''4.                                                                      %! white_rhythm
+    e''4.                                                                      %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
     % [B Clarinet_Music_Voice measure 113 / measure 25]                        %! _comment_measure_numbers
-    dqs''!4.                                                                   %! white_rhythm
+    dqs''!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4.                                                                  %! white_rhythm
+    ctqs''!4.                                                                  %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    b'4.                                                                       %! white_rhythm
+    b'4.                                                                       %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4.                                                                  %! white_rhythm
+    ctqs''!4.                                                                  %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    d''4.                                                                      %! white_rhythm
+    d''4.                                                                      %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4.                                                                  %! white_rhythm
+    ctqs''!4.                                                                  %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    e''4.                                                                      %! white_rhythm
+    e''4.                                                                      %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    dqs''!4.                                                                   %! white_rhythm
+    dqs''!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4                                                                   %! white_rhythm
+    ctqs''!4                                                                   %! krummzeit.white_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2152,10 +2152,10 @@ B_Clarinet_Music_Voice = {                                                     %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [B Clarinet_Music_Voice measure 118 / measure 30]                        %! _comment_measure_numbers
-    b'4.                                                                       %! white_rhythm
+    b'4.                                                                       %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    ctqs''!4.                                                                  %! white_rhythm
+    ctqs''!4.                                                                  %! krummzeit.white_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2179,40 +2179,40 @@ B_Clarinet_Music_Voice = {                                                     %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [B Clarinet_Music_Voice measure 120 / measure 32]                        %! _comment_measure_numbers
-    e''4.                                                                      %! white_rhythm
+    e''4.                                                                      %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    btqs'!4.                                                                   %! white_rhythm
+    btqs'!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    fs''!4.                                                                    %! white_rhythm
+    fs''!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    eqs''!4.                                                                   %! white_rhythm
+    eqs''!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    dqs''!4.                                                                   %! white_rhythm
+    dqs''!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    cs''!4.                                                                    %! white_rhythm
+    cs''!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    dqs''!4.                                                                   %! white_rhythm
+    dqs''!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    e''4.                                                                      %! white_rhythm
+    e''4.                                                                      %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    btqs'!4.                                                                   %! white_rhythm
+    btqs'!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    fs''!4.                                                                    %! white_rhythm
+    fs''!4.                                                                    %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    eqs''!4.                                                                   %! white_rhythm
+    eqs''!4.                                                                   %! krummzeit.white_rhythm
     \glissando                                                                 %! baca_glissando
 
-    dqs''!8                                                                    %! white_rhythm
+    dqs''!8                                                                    %! krummzeit.white_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2385,47 +2385,47 @@ B_Piano_Music_Voice = {                                                        %
     % [B Piano_Music_Voice measure 101 / measure 13]                           %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 102 / measure 14]                       %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #6                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 10/7 {                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 10/7 {                                                              %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2449,36 +2449,36 @@ B_Piano_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [B Piano_Music_Voice measure 104 / measure 16]                           %! _comment_measure_numbers
-    r4                                                                         %! silver_points
+    r4                                                                         %! krummzeit.silver_points
 
-    cs'''!4                                                                    %! silver_points
+    cs'''!4                                                                    %! krummzeit.silver_points
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    cs'''!4                                                                    %! silver_points
+    cs'''!4                                                                    %! krummzeit.silver_points
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    cs'''!2                                                                    %! silver_points
+    cs'''!2                                                                    %! krummzeit.silver_points
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/7 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2501,43 +2501,43 @@ B_Piano_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 106 / measure 18]                       %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-        cs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
-
-    }                                                                          %! silver_points
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/7 {                                                               %! silver_points
-
-        r8                                                                     %! silver_points
-
-        cs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
-
-        cs'''!8                                                                %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
-
-        r4                                                                     %! silver_points
-
-        cs'''!4                                                                %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.silver_points
+
+    }                                                                          %! krummzeit.silver_points
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/7 {                                                               %! krummzeit.silver_points
+
+        r8                                                                     %! krummzeit.silver_points
+
+        cs'''!8                                                                %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        [                                                                      %! krummzeit.silver_points
+
+        cs'''!8                                                                %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.silver_points
+
+        r4                                                                     %! krummzeit.silver_points
+
+        cs'''!4                                                                %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2560,42 +2560,42 @@ B_Piano_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 108 / measure 20]                       %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! silver_points
-
-    \times 4/7 {                                                               %! silver_points
-
-        r16                                                                    %! silver_points
-
-        cs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
-
-        cs'''!16                                                               %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
-
-        r8                                                                     %! silver_points
-
-        cs'''!8                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
+
+    \times 4/7 {                                                               %! krummzeit.silver_points
+
+        r16                                                                    %! krummzeit.silver_points
+
+        cs'''!16                                                               %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        [                                                                      %! krummzeit.silver_points
+
+        cs'''!16                                                               %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.silver_points
+
+        r8                                                                     %! krummzeit.silver_points
+
+        cs'''!8                                                                %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2636,38 +2636,38 @@ B_Piano_Music_Voice = {                                                        %
     % [B Piano_Music_Voice measure 115 / measure 27]                           %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 116 / measure 28]                       %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2690,36 +2690,36 @@ B_Piano_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 118 / measure 30]                       %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
-        [                                                                      %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2742,134 +2742,134 @@ B_Piano_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 120 / measure 32]                       %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/7 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 121 / measure 33]                       %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 9/7 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 9/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 122 / measure 34]                       %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs'''!4                                                                %! silver_points
+        cs'''!4                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
-        [                                                                      %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/5 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/5 {                                                               %! krummzeit.silver_points
 
         % [B Piano_Music_Voice measure 123 / measure 35]                       %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
-        [                                                                      %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
-        [                                                                      %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs'''!16                                                               %! silver_points
-        ]                                                                      %! silver_points
+        cs'''!16                                                               %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs'''!8                                                                %! silver_points
+        cs'''!8                                                                %! krummzeit.silver_points
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3060,41 +3060,41 @@ B_Percussion_Music_Voice = {                                                   %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-    r8                                                                         %! silver_points
+    r8                                                                         %! krummzeit.silver_points
     ^ \baca-explicit-indicator-markup "(“Xylophone”)"                          %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    cs''!8                                                                     %! silver_points
+    cs''!8                                                                     %! krummzeit.silver_points
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    [                                                                          %! silver_points
+    [                                                                          %! krummzeit.silver_points
 
-    cs''!8                                                                     %! silver_points
+    cs''!8                                                                     %! krummzeit.silver_points
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
-    ]                                                                          %! silver_points
+    ]                                                                          %! krummzeit.silver_points
 
-    cs''!4                                                                     %! silver_points
+    cs''!4                                                                     %! krummzeit.silver_points
     - \staccatissimo                                                           %! baca_staccatissimo:IndicatorCommand
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs''!16                                                                %! silver_points
+        cs''!16                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!16                                                                %! silver_points
+        cs''!16                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3117,44 +3117,44 @@ B_Percussion_Music_Voice = {                                                   %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/5 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/5 {                                                               %! krummzeit.silver_points
 
         % [B Percussion_Music_Voice measure 104 / measure 16]                  %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! silver_points
-
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 10/7 {                                                              %! silver_points
-
-        r8                                                                     %! silver_points
-
-        cs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
-
-        cs''!8                                                                 %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
-
-        r4                                                                     %! silver_points
-
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
+
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 10/7 {                                                              %! krummzeit.silver_points
+
+        r8                                                                     %! krummzeit.silver_points
+
+        cs''!8                                                                 %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        [                                                                      %! krummzeit.silver_points
+
+        cs''!8                                                                 %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.silver_points
+
+        r4                                                                     %! krummzeit.silver_points
+
+        cs''!4                                                                 %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3177,43 +3177,43 @@ B_Percussion_Music_Voice = {                                                   %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/5 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/5 {                                                               %! krummzeit.silver_points
 
         % [B Percussion_Music_Voice measure 106 / measure 18]                  %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-
-    }                                                                          %! silver_points
-
-    \times 4/7 {                                                               %! silver_points
-
-        r16                                                                    %! silver_points
-
-        cs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
-
-        cs''!16                                                                %! silver_points
-        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
-
-        r8                                                                     %! silver_points
-
-        cs''!8                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
+
+    \times 4/7 {                                                               %! krummzeit.silver_points
+
+        r16                                                                    %! krummzeit.silver_points
+
+        cs''!16                                                                %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        [                                                                      %! krummzeit.silver_points
+
+        cs''!16                                                                %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+        ]                                                                      %! krummzeit.silver_points
+
+        r8                                                                     %! krummzeit.silver_points
+
+        cs''!8                                                                 %! krummzeit.silver_points
+        - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
+
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3236,44 +3236,44 @@ B_Percussion_Music_Voice = {                                                   %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Percussion_Music_Voice measure 108 / measure 20]                  %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs''!16                                                                %! silver_points
+        cs''!16                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!16                                                                %! silver_points
+        cs''!16                                                                %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
-        ]                                                                      %! silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
         - \staccatissimo                                                       %! baca_staccatissimo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     % [B Percussion_Music_Voice measure 109 / measure 21]                      %! _comment_measure_numbers
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
@@ -3349,7 +3349,7 @@ B_Percussion_Music_Voice = {                                                   %
     % [B Percussion_Music_Voice measure 115 / measure 27]                      %! _comment_measure_numbers
     R1 * 3/4                                                                   %! _make_measure_silences
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Percussion_Music_Voice measure 116 / measure 28]                  %! _comment_measure_numbers
         \override Staff.BarLine.bar-extent = #'(-2 . 2)                        %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
@@ -3363,37 +3363,37 @@ B_Percussion_Music_Voice = {                                                   %
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
         ^ \baca-explicit-indicator-markup "(“Xylophone”)"                      %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        [                                                                      %! silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        ]                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs''!16                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs''!16                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!16                                                                %! silver_points
-        ]                                                                      %! silver_points
+        cs''!16                                                                %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3416,36 +3416,36 @@ B_Percussion_Music_Voice = {                                                   %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \times 4/5 {                                                               %! silver_points
+    \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [B Percussion_Music_Voice measure 118 / measure 30]                  %! _comment_measure_numbers
-        r16                                                                    %! silver_points
+        r16                                                                    %! krummzeit.silver_points
 
-        cs''!16                                                                %! silver_points
-        [                                                                      %! silver_points
+        cs''!16                                                                %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!16                                                                %! silver_points
+        cs''!16                                                                %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        ]                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        [                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        ]                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -3468,69 +3468,69 @@ B_Percussion_Music_Voice = {                                                   %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 6/5 {                                                               %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 6/5 {                                                               %! krummzeit.silver_points
 
         % [B Percussion_Music_Voice measure 120 / measure 32]                  %! _comment_measure_numbers
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        [                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        ]                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        [                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        ]                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! silver_points
-    \times 9/10 {                                                              %! silver_points
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.silver_points
+    \times 9/10 {                                                              %! krummzeit.silver_points
 
         % [B Percussion_Music_Voice measure 121 / measure 33]                  %! _comment_measure_numbers
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
 
-        cs''!2                                                                 %! silver_points
+        cs''!2                                                                 %! krummzeit.silver_points
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
-    \times 4/7 {                                                               %! silver_points
+    \times 4/7 {                                                               %! krummzeit.silver_points
 
-        r8                                                                     %! silver_points
+        r8                                                                     %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        [                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        [                                                                      %! krummzeit.silver_points
 
-        cs''!8                                                                 %! silver_points
-        ]                                                                      %! silver_points
+        cs''!8                                                                 %! krummzeit.silver_points
+        ]                                                                      %! krummzeit.silver_points
 
-        r4                                                                     %! silver_points
+        r4                                                                     %! krummzeit.silver_points
 
-        cs''!4                                                                 %! silver_points
+        cs''!4                                                                 %! krummzeit.silver_points
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! silver_points
+    }                                                                          %! krummzeit.silver_points
 
     % [B Percussion_Music_Voice measure 122 / measure 34]                      %! _comment_measure_numbers
     \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
@@ -3821,8 +3821,8 @@ B_Violin_Music_Voice = {                                                       %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Violin_Music_Voice measure 110 / measure 22]                      %! _comment_measure_numbers
         \override Staff.BarLine.bar-extent = #'(-2 . 2)                        %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
@@ -3838,169 +3838,169 @@ B_Violin_Music_Voice = {                                                       %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
-        af''!8                                                                 %! pizzicato_rhythm
+        af''!8                                                                 %! krummzeit.pizzicato_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
         ^ \baca-explicit-indicator-markup "(“Violin”)"                         %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-        a''4                                                                   %! pizzicato_rhythm
+        a''4                                                                   %! krummzeit.pizzicato_rhythm
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        c''8                                                                   %! pizzicato_rhythm
+        c''8                                                                   %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 5/6 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 5/6 {                                                               %! krummzeit.pizzicato_rhythm
 
-        c''8                                                                   %! pizzicato_rhythm
+        c''8                                                                   %! krummzeit.pizzicato_rhythm
 
-        cs''!2                                                                 %! pizzicato_rhythm
+        cs''!2                                                                 %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        a''8                                                                   %! pizzicato_rhythm
+        a''8                                                                   %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     % [B Violin_Music_Voice measure 111 / measure 23]                          %! _comment_measure_numbers
-    a''8                                                                       %! pizzicato_rhythm
+    a''8                                                                       %! krummzeit.pizzicato_rhythm
 
-    aqf''!4                                                                    %! pizzicato_rhythm
+    aqf''!4                                                                    %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    a'8                                                                        %! pizzicato_rhythm
+    a'8                                                                        %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-    aqs''!16                                                                   %! pizzicato_rhythm
-    [                                                                          %! pizzicato_rhythm
+    aqs''!16                                                                   %! krummzeit.pizzicato_rhythm
+    [                                                                          %! krummzeit.pizzicato_rhythm
 
-    g''16                                                                      %! pizzicato_rhythm
-    ]                                                                          %! pizzicato_rhythm
+    g''16                                                                      %! krummzeit.pizzicato_rhythm
+    ]                                                                          %! krummzeit.pizzicato_rhythm
 
     % [B Violin_Music_Voice measure 112 / measure 24]                          %! _comment_measure_numbers
-    af''!4                                                                     %! pizzicato_rhythm
+    af''!4                                                                     %! krummzeit.pizzicato_rhythm
     ~
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 7/10 {                                                              %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 7/10 {                                                              %! krummzeit.pizzicato_rhythm
 
-        af''!4                                                                 %! pizzicato_rhythm
+        af''!4                                                                 %! krummzeit.pizzicato_rhythm
 
-        bf''!2                                                                 %! pizzicato_rhythm
+        bf''!2                                                                 %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        b''2                                                                   %! pizzicato_rhythm
+        b''2                                                                   %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \times 2/3 {                                                               %! pizzicato_rhythm
+    \times 2/3 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Violin_Music_Voice measure 113 / measure 25]                      %! _comment_measure_numbers
-        bqs''!8                                                                %! pizzicato_rhythm
+        bqs''!8                                                                %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-        b''4                                                                   %! pizzicato_rhythm
+        b''4                                                                   %! krummzeit.pizzicato_rhythm
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/4 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
-        bqf''!4                                                                %! pizzicato_rhythm
+        bqf''!4                                                                %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        cs''!4                                                                 %! pizzicato_rhythm
+        cs''!4                                                                 %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    cs''!4                                                                     %! pizzicato_rhythm
+    cs''!4                                                                     %! krummzeit.pizzicato_rhythm
 
-    cqs''!4                                                                    %! pizzicato_rhythm
+    cqs''!4                                                                    %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    cs'''!8                                                                    %! pizzicato_rhythm
+    cs'''!8                                                                    %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     ~
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    \times 4/5 {                                                               %! pizzicato_rhythm
+    \times 4/5 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Violin_Music_Voice measure 114 / measure 26]                      %! _comment_measure_numbers
-        cs'''!8                                                                %! pizzicato_rhythm
-        [                                                                      %! pizzicato_rhythm
+        cs'''!8                                                                %! krummzeit.pizzicato_rhythm
+        [                                                                      %! krummzeit.pizzicato_rhythm
 
-        ctqs'''!8                                                              %! pizzicato_rhythm
+        ctqs'''!8                                                              %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-        d'''16                                                                 %! pizzicato_rhythm
+        d'''16                                                                 %! krummzeit.pizzicato_rhythm
 
-        ef'''!16                                                               %! pizzicato_rhythm
-        ]                                                                      %! pizzicato_rhythm
+        ef'''!16                                                               %! krummzeit.pizzicato_rhythm
+        ]                                                                      %! krummzeit.pizzicato_rhythm
 
-        af''!4                                                                 %! pizzicato_rhythm
+        af''!4                                                                 %! krummzeit.pizzicato_rhythm
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 3/5 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 3/5 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Violin_Music_Voice measure 115 / measure 27]                      %! _comment_measure_numbers
-        af''!4                                                                 %! pizzicato_rhythm
+        af''!4                                                                 %! krummzeit.pizzicato_rhythm
 
-        a''4.                                                                  %! pizzicato_rhythm
+        a''4.                                                                  %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         ~
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
-    a''8                                                                       %! pizzicato_rhythm
+    a''8                                                                       %! krummzeit.pizzicato_rhythm
 
-    c'''4                                                                      %! pizzicato_rhythm
+    c'''4                                                                      %! krummzeit.pizzicato_rhythm
     \stopTrillSpan                                                             %! baca_trill_spanner:SpannerIndicatorCommand(2)
     ~
     \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! pizzicato_rhythm
-    \times 6/7 {                                                               %! pizzicato_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm
+    \times 6/7 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [B Violin_Music_Voice measure 116 / measure 28]                      %! _comment_measure_numbers
-        c'''4                                                                  %! pizzicato_rhythm
+        c'''4                                                                  %! krummzeit.pizzicato_rhythm
 
-        cqs''!8                                                                %! pizzicato_rhythm
+        cqs''!8                                                                %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
 
-        c''4                                                                   %! pizzicato_rhythm
+        c''4                                                                   %! krummzeit.pizzicato_rhythm
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
 
-        cqf''!4                                                                %! pizzicato_rhythm
+        cqf''!4                                                                %! krummzeit.pizzicato_rhythm
         \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
         \startTrillSpan                                                        %! baca_trill_spanner:SpannerIndicatorCommand(1)
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! pizzicato_rhythm
+    }                                                                          %! krummzeit.pizzicato_rhythm
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4044,7 +4044,7 @@ B_Violin_Music_Voice = {                                                       %
 
     % [B Violin_Music_Voice measure 124 / measure 36]                          %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
-    ftqs!1.                                                                    %! fused_expanse
+    ftqs!1.                                                                    %! krummzeit.fused_expanse
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     ^ \markup { "non flautando" }                                              %! baca_markup:IndicatorCommand
@@ -4053,16 +4053,16 @@ B_Violin_Music_Voice = {                                                       %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \glissando                                                                 %! baca_glissando
 
-    g1                                                                         %! fused_expanse
+    g1                                                                         %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    ftqs!\breve                                                                %! fused_expanse
+    ftqs!\breve                                                                %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    g1.                                                                        %! fused_expanse
+    g1.                                                                        %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    ftqs!2                                                                     %! fused_expanse
+    ftqs!2                                                                     %! krummzeit.fused_expanse
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -4192,13 +4192,13 @@ B_Viola_Music_Voice = {                                                        %
     % [B Viola_Music_Voice measure 93 / measure 5]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 4/3 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 4/3 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 94 / measure 6]                         %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #7                        %! baca_dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
-        e4                                                                     %! single_division_tuplets
+        e4                                                                     %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
@@ -4206,11 +4206,11 @@ B_Viola_Music_Voice = {                                                        %
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        dtqs!8                                                                 %! single_division_tuplets
+        dtqs!8                                                                 %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4233,22 +4233,22 @@ B_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 7/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 7/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 96 / measure 8]                         %! _comment_measure_numbers
-        f4                                                                     %! single_division_tuplets
+        f4                                                                     %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        eqs!1                                                                  %! single_division_tuplets
+        eqs!1                                                                  %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4271,22 +4271,22 @@ B_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 4/3 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 4/3 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 98 / measure 10]                        %! _comment_measure_numbers
-        dqs!2                                                                  %! single_division_tuplets
+        dqs!2                                                                  %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        c4                                                                     %! single_division_tuplets
+        c4                                                                     %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4309,22 +4309,22 @@ B_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 7/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 7/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 100 / measure 12]                       %! _comment_measure_numbers
-        dqs!8                                                                  %! single_division_tuplets
+        dqs!8                                                                  %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        e2                                                                     %! single_division_tuplets
+        e2                                                                     %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4347,117 +4347,117 @@ B_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 7/6 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 7/6 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 102 / measure 14]                       %! _comment_measure_numbers
-        dtqs!2                                                                 %! single_division_tuplets
+        dtqs!2                                                                 %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        f4                                                                     %! single_division_tuplets
+        f4                                                                     %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 103 / measure 15]                       %! _comment_measure_numbers
-        f4                                                                     %! single_division_tuplets
+        f4                                                                     %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 8/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 8/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 104 / measure 16]                       %! _comment_measure_numbers
-        f4                                                                     %! single_division_tuplets
+        f4                                                                     %! krummzeit.single_division_tuplets
         \glissando                                                             %! baca_glissando
 
-        eqs!1                                                                  %! single_division_tuplets
+        eqs!1                                                                  %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 105 / measure 17]                       %! _comment_measure_numbers
-        eqs!4                                                                  %! single_division_tuplets
+        eqs!4                                                                  %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 4/3 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 4/3 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 106 / measure 18]                       %! _comment_measure_numbers
-        eqs!2                                                                  %! single_division_tuplets
+        eqs!2                                                                  %! krummzeit.single_division_tuplets
         \glissando                                                             %! baca_glissando
 
-        dqs!4                                                                  %! single_division_tuplets
+        dqs!4                                                                  %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 107 / measure 19]                       %! _comment_measure_numbers
-        dqs!4                                                                  %! single_division_tuplets
+        dqs!4                                                                  %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 6/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 6/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 108 / measure 20]                       %! _comment_measure_numbers
-        dqs!8                                                                  %! single_division_tuplets
+        dqs!8                                                                  %! krummzeit.single_division_tuplets
         \glissando                                                             %! baca_glissando
 
-        c2                                                                     %! single_division_tuplets
+        c2                                                                     %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 109 / measure 21]                       %! _comment_measure_numbers
-        c4                                                                     %! single_division_tuplets
+        c4                                                                     %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 4/3 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 4/3 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 110 / measure 22]                       %! _comment_measure_numbers
-        c2                                                                     %! single_division_tuplets
+        c2                                                                     %! krummzeit.single_division_tuplets
         \glissando                                                             %! baca_glissando
 
-        dqs!4                                                                  %! single_division_tuplets
+        dqs!4                                                                  %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 5/4 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 5/4 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Viola_Music_Voice measure 111 / measure 23]                       %! _comment_measure_numbers
-        dqs!2                                                                  %! single_division_tuplets
+        dqs!2                                                                  %! krummzeit.single_division_tuplets
         \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
         \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4503,7 +4503,7 @@ B_Viola_Music_Voice = {                                                        %
 
     % [B Viola_Music_Voice measure 120 / measure 32]                           %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #5                            %! baca_dls_staff_padding:OverrideCommand(1)
-    btqs,!1                                                                    %! fused_expanse
+    btqs,!1                                                                    %! krummzeit.fused_expanse
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     ^ \markup { "non flautando" }                                              %! baca_markup:IndicatorCommand
@@ -4512,26 +4512,26 @@ B_Viola_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \glissando                                                                 %! baca_glissando
 
-    c\breve                                                                    %! fused_expanse
+    c\breve                                                                    %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    bqs,!1.                                                                    %! fused_expanse
+    bqs,!1.                                                                    %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    cqs!1                                                                      %! fused_expanse
+    cqs!1                                                                      %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    btqs,!\breve                                                               %! fused_expanse
+    btqs,!\breve                                                               %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    c1.                                                                        %! fused_expanse
+    c1.                                                                        %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
     % [B Viola_Music_Voice measure 129 / measure 41]                           %! _comment_measure_numbers
-    bqs,!1                                                                     %! fused_expanse
+    bqs,!1                                                                     %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    cqs!2.                                                                     %! fused_expanse
+    cqs!2.                                                                     %! krummzeit.fused_expanse
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
@@ -4661,11 +4661,11 @@ B_Cello_Music_Voice = {                                                        %
     % [B Cello_Music_Voice measure 93 / measure 5]                             %! _comment_measure_numbers
     R1 * 1/4                                                                   %! _make_measure_silences
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 8/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 8/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 94 / measure 6]                         %! _comment_measure_numbers
-        d,16                                                                   %! single_division_tuplets
+        d,16                                                                   %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca_markup:IndicatorCommand
@@ -4673,11 +4673,11 @@ B_Cello_Music_Voice = {                                                        %
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        ctqs,!4                                                                %! single_division_tuplets
+        ctqs,!4                                                                %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4700,22 +4700,22 @@ B_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 7/6 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 7/6 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 96 / measure 8]                         %! _comment_measure_numbers
-        e,1                                                                    %! single_division_tuplets
+        e,1                                                                    %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        dqs,!2                                                                 %! single_division_tuplets
+        dqs,!2                                                                 %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4738,22 +4738,22 @@ B_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 8/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 8/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 98 / measure 10]                        %! _comment_measure_numbers
-        cqs,!8                                                                 %! single_division_tuplets
+        cqs,!8                                                                 %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        b,,2                                                                   %! single_division_tuplets
+        b,,2                                                                   %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4776,22 +4776,22 @@ B_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 7/6 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 7/6 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 100 / measure 12]                       %! _comment_measure_numbers
-        dqs,!2                                                                 %! single_division_tuplets
+        dqs,!2                                                                 %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        d,4                                                                    %! single_division_tuplets
+        d,4                                                                    %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4814,115 +4814,115 @@ B_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! _make_multimeasure_rest_container
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 7/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 7/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 102 / measure 14]                       %! _comment_measure_numbers
-        ctqs,!8                                                                %! single_division_tuplets
+        ctqs,!8                                                                %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
         \glissando                                                             %! baca_glissando
 
-        e,2                                                                    %! single_division_tuplets
+        e,2                                                                    %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 103 / measure 15]                       %! _comment_measure_numbers
-        e,4                                                                    %! single_division_tuplets
+        e,4                                                                    %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 4/3 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 4/3 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 104 / measure 16]                       %! _comment_measure_numbers
-        e,1                                                                    %! single_division_tuplets
+        e,1                                                                    %! krummzeit.single_division_tuplets
         \glissando                                                             %! baca_glissando
 
-        dqs,!2                                                                 %! single_division_tuplets
+        dqs,!2                                                                 %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 105 / measure 17]                       %! _comment_measure_numbers
-        dqs,!4                                                                 %! single_division_tuplets
+        dqs,!4                                                                 %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 8/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 8/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 106 / measure 18]                       %! _comment_measure_numbers
-        dqs,!8                                                                 %! single_division_tuplets
+        dqs,!8                                                                 %! krummzeit.single_division_tuplets
         \glissando                                                             %! baca_glissando
 
-        cqs,!2                                                                 %! single_division_tuplets
+        cqs,!2                                                                 %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 107 / measure 19]                       %! _comment_measure_numbers
-        cqs,!4                                                                 %! single_division_tuplets
+        cqs,!4                                                                 %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 108 / measure 20]                       %! _comment_measure_numbers
-        cqs,!2                                                                 %! single_division_tuplets
+        cqs,!2                                                                 %! krummzeit.single_division_tuplets
         \glissando                                                             %! baca_glissando
 
-        b,,4                                                                   %! single_division_tuplets
+        b,,4                                                                   %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 1/1 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 1/1 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 109 / measure 21]                       %! _comment_measure_numbers
-        b,,4                                                                   %! single_division_tuplets
+        b,,4                                                                   %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 8/5 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 8/5 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 110 / measure 22]                       %! _comment_measure_numbers
-        b,,8                                                                   %! single_division_tuplets
+        b,,8                                                                   %! krummzeit.single_division_tuplets
         \glissando                                                             %! baca_glissando
 
-        dqs,!2                                                                 %! single_division_tuplets
+        dqs,!2                                                                 %! krummzeit.single_division_tuplets
         ~
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! single_division_tuplets
-    \times 5/4 {                                                               %! single_division_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.single_division_tuplets
+    \times 5/4 {                                                               %! krummzeit.single_division_tuplets
 
         % [B Cello_Music_Voice measure 111 / measure 23]                       %! _comment_measure_numbers
-        dqs,!2                                                                 %! single_division_tuplets
+        dqs,!2                                                                 %! krummzeit.single_division_tuplets
 
-    }                                                                          %! single_division_tuplets
+    }                                                                          %! krummzeit.single_division_tuplets
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4968,7 +4968,7 @@ B_Cello_Music_Voice = {                                                        %
 
     % [B Cello_Music_Voice measure 120 / measure 32]                           %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #5                            %! baca_dls_staff_padding:OverrideCommand(1)
-    b,,\breve                                                                  %! fused_expanse
+    b,,\breve                                                                  %! krummzeit.fused_expanse
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     ^ \markup { "non flautando" }                                              %! baca_markup:IndicatorCommand
@@ -4977,24 +4977,24 @@ B_Cello_Music_Voice = {                                                        %
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(1)
     \glissando                                                                 %! baca_glissando
 
-    cqs,!1.                                                                    %! fused_expanse
+    cqs,!1.                                                                    %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    bqf,,!1                                                                    %! fused_expanse
+    bqf,,!1                                                                    %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    c,\breve                                                                   %! fused_expanse
+    c,\breve                                                                   %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
     % [B Cello_Music_Voice measure 126 / measure 38]                           %! _comment_measure_numbers
-    b,,1.                                                                      %! fused_expanse
+    b,,1.                                                                      %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
-    cqs,!1                                                                     %! fused_expanse
+    cqs,!1                                                                     %! krummzeit.fused_expanse
     \glissando                                                                 %! baca_glissando
 
     % [B Cello_Music_Voice measure 129 / measure 41]                           %! _comment_measure_numbers
-    bqf,,!1..                                                                  %! fused_expanse
+    bqf,,!1..                                                                  %! krummzeit.fused_expanse
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca_hairpin:PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)

@@ -20,6 +20,6 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
             durations, cyclic=True, remainder=remainder
         ),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            burnish_specifier=burnish_specifier, tag="white_rhythm"
+            burnish_specifier=burnish_specifier, tag="krummzeit.white_rhythm"
         ),
     )

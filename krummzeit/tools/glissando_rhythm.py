@@ -18,7 +18,7 @@ def glissando_rhythm(
         divisions=baca.split_each_by_rounded_ratios(division_ratios),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
-            tag="glissando_rhythm",
+            tag="krummzeit.glissando_rhythm",
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions
             ),

@@ -9,7 +9,9 @@ def piano_harmonics(division_ratios, *, dmask=None, tie_across_divisions=None):
     """
     assert isinstance(division_ratios, list), repr(division_ratios)
     return baca.rhythm(
-        divisions=baca.split_each_by_rounded_ratios(division_ratios),
+        divisions=baca.divisions().split_each_by_rounded_ratios(
+            division_ratios
+        ),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask,
             tag="krummzeit.piano_harmonics",

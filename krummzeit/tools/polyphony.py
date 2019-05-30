@@ -56,8 +56,8 @@ def polyphony(
             durations,
             cyclic=True,
             do_not_join=True,
-            pattern_rotation_index=rotation,
             remainder_fuse_threshold=fuse,
+            rotate_each_division=rotation,
         ),
         rhythm_maker=rhythm_maker,
     )

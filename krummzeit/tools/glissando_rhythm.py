@@ -1,10 +1,11 @@
 import abjad
 import baca
+import typing
 from abjadext import rmakers
 
 
 def glissando_rhythm(
-    division_ratios,
+    division_ratios: typing.Sequence[abjad.DurationTyping],
     *,
     dmask=None,
     tuplet_ratios=[(1, 2), (1, 4), (4, 3)],
@@ -15,7 +16,9 @@ def glissando_rhythm(
     """
     assert isinstance(division_ratios, list), repr(division_ratios)
     return baca.rhythm(
-        divisions=baca.split_each_by_rounded_ratios(division_ratios),
+        divisions=baca.divisions().split_each_by_rounded_ratios(
+            division_ratios
+        ),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
             tag="krummzeit.glissando_rhythm",

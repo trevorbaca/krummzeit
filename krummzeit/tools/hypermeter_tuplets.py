@@ -9,7 +9,7 @@ def hypermeter_tuplets(tuplet_ratios, counts=(2, 3, 1), dmask=None):
     """
 
     return baca.rhythm(
-        divisions=baca.fuse_divisions(counts, cyclic=True),
+        divisions=baca.divisions().fuse(counts, cyclic=True),
         rhythm_maker=rmakers.TupletRhythmMaker(
             denominator=(1, 4),
             division_masks=dmask,

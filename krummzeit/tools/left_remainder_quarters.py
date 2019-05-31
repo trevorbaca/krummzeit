@@ -9,9 +9,7 @@ def left_remainder_quarters(*, dmask=None):
     """
 
     return baca.rhythm(
-        divisions=baca.split_expanse(
-            [(1, 4)], cyclic=True, remainder=abjad.Left
-        ),
+        divisions=baca.divisions().fuse().quarters_each(remainder=abjad.Left),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask, tag="krummzeit.left_remainder_quarters"
         ),

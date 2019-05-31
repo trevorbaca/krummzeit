@@ -18,7 +18,7 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
     divisions = (
         baca.divisions()
         .fuse()
-        .split_each(durations, cyclic=True, remainder=remainder)
+        .split(durations, cyclic=True, remainder=remainder)
     )
     return baca.rhythm(
         divisions=divisions,

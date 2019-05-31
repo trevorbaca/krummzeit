@@ -9,7 +9,7 @@ def right_remainder_quarters(*, dmask=None):
     """
 
     return baca.rhythm(
-        divisions=baca.divisions().quarters_each(),
+        divisions=baca.divisions().map(baca.divisions().quarters()),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask, tag="krummzeit.right_remainder_quarters"
         ),

@@ -8,7 +8,7 @@ def detached_triplets():
     Makes detached triplets.
     """
     return baca.rhythm(
-        divisions=baca.divisions().fuse().quarters_each(),
+        divisions=baca.divisions().fuse().quarters(),
         rhythm_maker=rmakers.TupletRhythmMaker(
             tag="krummzeit.detached_triplets",
             tie_specifier=rmakers.TieSpecifier(tie_across_divisions=[1, 0]),

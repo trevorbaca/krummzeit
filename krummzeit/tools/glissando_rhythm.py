@@ -5,7 +5,7 @@ from abjadext import rmakers
 
 
 def glissando_rhythm(
-    division_ratios: typing.Sequence[abjad.DurationTyping],
+    division_ratios: typing.Sequence[abjad.RatioTyping],
     *,
     dmask=None,
     tuplet_ratios=[(1, 2), (1, 4), (4, 3)],

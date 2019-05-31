@@ -8,7 +8,7 @@ def rest_delimited_repeated_duration_notes(duration, suffix_denominator):
     Makes rest-delimited repeated duration notes.
     """
     return baca.rhythm(
-        divisions=baca.split_expanse([duration], cyclic=True),
+        divisions=baca.divisions().fuse().split_each([duration], cyclic=True),
         rhythm_maker=rmakers.IncisedRhythmMaker(
             incise_specifier=rmakers.InciseSpecifier(
                 suffix_talea=[-1],

@@ -15,10 +15,13 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
             left_counts=[1],
             outer_divisions_only=True,
         )
+    divisions = (
+        baca.divisions()
+        .fuse()
+        .split_each(durations, cyclic=True, remainder=remainder)
+    )
     return baca.rhythm(
-        divisions=baca.split_expanse(
-            durations, cyclic=True, remainder=remainder
-        ),
+        divisions=divisions,
         rhythm_maker=rmakers.NoteRhythmMaker(
             burnish_specifier=burnish_specifier, tag="krummzeit.white_rhythm"
         ),

@@ -51,12 +51,13 @@ def polyphony(
             (eighths, abjad.index(indices)),
         ]
 
+    split = baca.divisions().split(
+        durations,
+        cyclic=True,
+        remainder_fuse_threshold=fuse,
+        rotate_indexed=rotation,
+    )
+
     return baca.rhythm(
-        divisions=baca.divisions().split_each(
-            durations,
-            cyclic=True,
-            remainder_fuse_threshold=fuse,
-            rotate_indexed=rotation,
-        ),
-        rhythm_maker=rhythm_maker,
+        divisions=baca.divisions().map(split), rhythm_maker=rhythm_maker
     )

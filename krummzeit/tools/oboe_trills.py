@@ -7,8 +7,9 @@ def oboe_trills():
     """
     Makes oboe trill rhythm.
     """
+    split = baca.divisions().ratios([(2, 1), (2, 1), (1, 1, 1)], rounded=True)
     return baca.rhythm(
-        divisions=baca.divisions().ratios_each([(2, 1), (2, 1), (1, 1, 1)]),
+        divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=[abjad.index([3, 4], 6)],
             tag="krummzeit.oboe_trills",

@@ -15,8 +15,9 @@ def glissando_rhythm(
     Makes glissando rhythm.
     """
     assert isinstance(division_ratios, list), repr(division_ratios)
+    split = baca.divisions().ratios(division_ratios, rounded=True)
     return baca.rhythm(
-        divisions=baca.divisions().ratios_each(division_ratios),
+        divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
             tag="krummzeit.glissando_rhythm",

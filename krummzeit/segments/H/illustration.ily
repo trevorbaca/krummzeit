@@ -43,7 +43,7 @@ H_Global_Skips = {                                                             %
     \bar ""                                                                    %! _make_global_skips(3):+SEGMENT:EMPTY_START_BAR
     \baca-time-signature-color #'blue                                          %! EXPLICIT_TIME_SIGNATURE_COLOR:_attach_color_literal(2)
     s1 * 7/8                                                                   %! _make_global_skips(1)
-    - \baca-rehearsal-mark-markup "H"                                          %! baca_rehearsal_mark:IndicatorCommand
+    - \baca-rehearsal-mark-markup "H"                                          %! baca.rehearsal_mark:IndicatorCommand
     - \baca-start-lmn-left-only "1"                                            %! LOCAL_MEASURE_NUMBER
     \bacaStartTextSpanLMN                                                      %! LOCAL_MEASURE_NUMBER
 %@% - \baca-start-mn-left-only "281"                                           %! MEASURE_NUMBER
@@ -287,11 +287,11 @@ H_Oboe_Music_Voice = {                                                         %
     R1 * 7/4                                                                   %! _make_measure_silences
 
     % [H Oboe_Music_Voice measure 284 / measure 4]                             %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #3                            %! baca_dls_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #3                            %! baca.dls_staff_padding:OverrideCommand(1)
     d''1..                                                                     %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    \startTrillSpan                                                            %! baca_trill_spanner:SpannerIndicatorCommand(1)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+    \startTrillSpan                                                            %! baca.trill_spanner:SpannerIndicatorCommand(1)
 
     % [H Oboe_Music_Voice measure 285 / measure 5]                             %! _comment_measure_numbers
     d''2.                                                                      %! baca_make_repeat_tied_notes
@@ -313,15 +313,15 @@ H_Oboe_Music_Voice = {                                                         %
 
     d''4
     \repeatTie
-    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
     \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Oboe_Music_Voice measure 288 / measure 8]                         %! _comment_measure_numbers
-        \override TupletBracket.staff-padding = #2                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #2                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
         ef''!2.                                                                %! krummzeit.hypermeter_tuplets
-        \stopTrillSpan                                                         %! baca_trill_spanner:SpannerIndicatorCommand(2)
+        \stopTrillSpan                                                         %! baca.trill_spanner:SpannerIndicatorCommand(2)
 
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets
         ^ \markup {
@@ -355,7 +355,7 @@ H_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -455,10 +455,10 @@ H_Clarinet_Music_Voice = {                                                     %
     R1 * 7/4                                                                   %! _make_measure_silences
 
     % [H Clarinet_Music_Voice measure 284 / measure 4]                         %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #3                            %! baca_dls_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #3                            %! baca.dls_staff_padding:OverrideCommand(1)
     b'1..                                                                      %! baca_make_repeat_tied_notes
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+    \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                    %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
 
     % [H Clarinet_Music_Voice measure 285 / measure 5]                         %! _comment_measure_numbers
@@ -488,18 +488,18 @@ H_Clarinet_Music_Voice = {                                                     %
 
     % [H Clarinet_Music_Voice measure 287 / measure 7]                         %! _comment_measure_numbers
     R1 * 5/8                                                                   %! _make_measure_silences
-    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
+    \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
     \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Clarinet_Music_Voice measure 288 / measure 8]                     %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #9                        %! baca_dls_staff_padding:OverrideCommand(1)
-        \override Stem.direction = #up                                         %! baca_stem_up:OverrideCommand(1)
-        \override TupletBracket.staff-padding = #5                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #9                        %! baca.dls_staff_padding:OverrideCommand(1)
+        \override Stem.direction = #up                                         %! baca.stem_up:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #5                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
         f4                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \ff                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \baca-explicit-indicator-markup "(“BassClarinet”)"                   %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
 
         f1                                                                     %! krummzeit.hypermeter_tuplets
@@ -534,9 +534,9 @@ H_Clarinet_Music_Voice = {                                                     %
                     \finger
                         1
             }
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
-        \revert Stem.direction                                                 %! baca_stem_up:OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
+        \revert Stem.direction                                                 %! baca.stem_up:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -582,20 +582,20 @@ H_Piano_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! krummzeit.opening_triplets
 
         % [H Piano_Music_Voice measure 281 / measure 1]                        %! _comment_measure_numbers
-        \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-        \markup {                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-            \hcenter-in                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-                #16                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-                Hpschd.                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-            }                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+        \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+        \markup {                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+            \hcenter-in                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+                #16                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+                Hpschd.                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+            }                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
         \set Staff.instrumentName =                                            %! _clone_segment_initial_short_instrument_name
         \markup {                                                              %! _clone_segment_initial_short_instrument_name
             \hcenter-in                                                        %! _clone_segment_initial_short_instrument_name
                 #16                                                            %! _clone_segment_initial_short_instrument_name
                 Hpschd.                                                        %! _clone_segment_initial_short_instrument_name
             }                                                                  %! _clone_segment_initial_short_instrument_name
-    %%% \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_281:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
-    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_281:SHIFTED_CLEF:baca_clef_shift:OverrideCommand(1)
+    %%% \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_281:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_281:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
@@ -603,10 +603,10 @@ H_Piano_Music_Voice = {                                                        %
         \once \override NoteHead.text = \markup {
         	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         }
-        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+        \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
+        \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
         \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         <d' f' a' c''>8
         - \tweak color #(x11-color 'green4)                                    %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -624,12 +624,12 @@ H_Piano_Music_Voice = {                                                        %
         [                                                                      %! krummzeit.opening_triplets
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
         \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-        \markup {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-            \hcenter-in                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-                #16                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-                Hpschd.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-            }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+        \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+        \markup {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+            \hcenter-in                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+                #16                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+                Hpschd.                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+            }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2457,39 +2457,39 @@ H_Piano_Music_Voice = {                                                        %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [H Piano_Music_Voice measure 288 / measure 8]                            %! _comment_measure_numbers
-    \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
-    \override TupletBracket.staff-padding = #2                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+    \override DynamicLineSpanner.staff-padding = #6                            %! baca.dls_staff_padding:OverrideCommand(1)
+    \override TupletBracket.staff-padding = #2                                 %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
     R1 * 1                                                                     %! _make_measure_silences
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
     \times 9/7 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Piano_Music_Voice measure 289 / measure 9]                        %! _comment_measure_numbers
-        \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-        \markup {                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-            \hcenter-in                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-                #16                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-                Pf.                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
-            }                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca_margin_markup:-PARTS:IndicatorCommand
+        \set Staff.shortInstrumentName =                                       %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+        \markup {                                                              %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+            \hcenter-in                                                        %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+                #16                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+                Pf.                                                            %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+            }                                                                  %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
         \once \override Staff.InstrumentName.color = #(x11-color 'blue)        %! EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
         fs'''!2.                                                               %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \baca-explicit-indicator-markup "(“Piano”)"                          %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         ^ \baca-explicit-indicator-markup "[“Pf.”]"                            %! EXPLICIT_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)      %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
-        \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-        \markup {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-            \hcenter-in                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-                #16                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-                Pf.                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
-            }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca_margin_markup:-PARTS:IndicatorCommand
+        \set Staff.shortInstrumentName =                                       %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+        \markup {                                                              %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+            \hcenter-in                                                        %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+                #16                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+                Pf.                                                            %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
+            }                                                                  %! REDRAWN_EXPLICIT_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):baca.margin_markup:-PARTS:IndicatorCommand
 
         fs'''!1                                                                %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -2598,50 +2598,50 @@ H_Percussion_Music_Voice = {                                                   %
 
     % [H Percussion_Music_Voice measure 285 / measure 5]                       %! _comment_measure_numbers
     \override Staff.BarLine.bar-extent = #'(-2 . 2)                            %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
-    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \once \override Staff.StaffSymbol.line-count = 5                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca_staff_lines:IndicatorCommand
-    \override DynamicLineSpanner.staff-padding = #6                            %! baca_dls_staff_padding:OverrideCommand(1)
-    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca_clef:IndicatorCommand
+    \stopStaff                                                                 %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \once \override Staff.StaffSymbol.line-count = 5                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
+    \override DynamicLineSpanner.staff-padding = #6                            %! baca.dls_staff_padding:OverrideCommand(1)
+    \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
-    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca_clef:IndicatorCommand
+    \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
     r8                                                                         %! krummzeit.left_remainder_quarters
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     d'4                                                                        %! krummzeit.left_remainder_quarters
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \baca-ff-sempre                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-    - \accent                                                                  %! baca_accent:IndicatorCommand
-    ^ \markup {                                                                %! baca_markup:IndicatorCommand
-        \override                                                              %! baca_markup:IndicatorCommand
-            #'(box-padding . 0.5)                                              %! baca_markup:IndicatorCommand
-            \box                                                               %! baca_markup:IndicatorCommand
-                crotale                                                        %! baca_markup:IndicatorCommand
-        }                                                                      %! baca_markup:IndicatorCommand
+    \baca-ff-sempre                                                            %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    ^ \markup {                                                                %! baca.markup:IndicatorCommand
+        \override                                                              %! baca.markup:IndicatorCommand
+            #'(box-padding . 0.5)                                              %! baca.markup:IndicatorCommand
+            \box                                                               %! baca.markup:IndicatorCommand
+                crotale                                                        %! baca.markup:IndicatorCommand
+        }                                                                      %! baca.markup:IndicatorCommand
 
     d'4                                                                        %! krummzeit.left_remainder_quarters
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     d'4                                                                        %! krummzeit.left_remainder_quarters
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     d'4                                                                        %! krummzeit.left_remainder_quarters
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     d'4                                                                        %! krummzeit.left_remainder_quarters
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     d'4                                                                        %! krummzeit.left_remainder_quarters
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     d'4                                                                        %! krummzeit.left_remainder_quarters
-    - \accent                                                                  %! baca_accent:IndicatorCommand
+    - \accent                                                                  %! baca.accent:IndicatorCommand
 
     d'4                                                                        %! krummzeit.left_remainder_quarters
-    - \accent                                                                  %! baca_accent:IndicatorCommand
-    \revert DynamicLineSpanner.staff-padding                                   %! baca_dls_staff_padding:OverrideCommand(2)
+    - \accent                                                                  %! baca.accent:IndicatorCommand
+    \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2665,7 +2665,7 @@ H_Percussion_Music_Voice = {                                                   %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [H Percussion_Music_Voice measure 288 / measure 8]                       %! _comment_measure_numbers
-    \override TupletBracket.staff-padding = #3                                 %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+    \override TupletBracket.staff-padding = #3                                 %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
     R1 * 1                                                                     %! _make_measure_silences
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
@@ -2673,14 +2673,14 @@ H_Percussion_Music_Voice = {                                                   %
 
         % [H Percussion_Music_Voice measure 289 / measure 9]                   %! _comment_measure_numbers
         fs''!4                                                                 %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \baca-redundant-indicator-markup "(“Xylophone”)"                     %! REDUNDANT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
 
         fs''!1.                                                                %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -2750,9 +2750,9 @@ H_Violin_Music_Voice = {                                                       %
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         \once \override Staff.StaffSymbol.color = #(x11-color 'green4)         %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
         df'!2.                                                                 %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Violin”)"                        %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -2765,18 +2765,18 @@ H_Violin_Music_Voice = {                                                       %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         df'!2                                                                  %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Violin_Music_Voice measure 283 / measure 3]                       %! _comment_measure_numbers
-        \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic:OverrideCommand(1)
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!4                                                                  %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         af'!2                                                                  %! krummzeit.glissando_rhythm
@@ -2785,7 +2785,7 @@ H_Violin_Music_Voice = {                                                       %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af'!4                                                                      %! krummzeit.glissando_rhythm
-    \glissando                                                                 %! baca_glissando
+    \glissando                                                                 %! baca.glissando
 
     cs'!1                                                                      %! krummzeit.glissando_rhythm
     ~
@@ -2795,17 +2795,17 @@ H_Violin_Music_Voice = {                                                       %
 
         % [H Violin_Music_Voice measure 284 / measure 4]                       %! _comment_measure_numbers
         cs'!1                                                                  %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         c'2.                                                                   %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
     }                                                                          %! krummzeit.glissando_rhythm
 
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         d'4                                                                    %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         f2                                                                     %! krummzeit.glissando_rhythm
         ~
@@ -2816,17 +2816,17 @@ H_Violin_Music_Voice = {                                                       %
 
         % [H Violin_Music_Voice measure 285 / measure 5]                       %! _comment_measure_numbers
         f16                                                                    %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         bf'!4                                                                  %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
     }                                                                          %! krummzeit.glissando_rhythm
 
     \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         fs'!4                                                                  %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         b'8.                                                                   %! krummzeit.glissando_rhythm
         ~
@@ -2836,10 +2836,10 @@ H_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         b'8                                                                    %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         af'!4                                                                  %! krummzeit.glissando_rhythm
-        \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
+        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2868,16 +2868,16 @@ H_Violin_Music_Voice = {                                                       %
     \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Violin_Music_Voice measure 287 / measure 7]                       %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #7                        %! baca_dls_staff_padding:OverrideCommand(1)
-        \override TupletBracket.staff-padding = #3                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #7                        %! baca.dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #3                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
         d''2.                                                                  %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \glissando                                                             %! baca_glissando
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+        \glissando                                                             %! baca.glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -2887,13 +2887,13 @@ H_Violin_Music_Voice = {                                                       %
         % [H Violin_Music_Voice measure 289 / measure 9]                       %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2.                                                                %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -2958,9 +2958,9 @@ H_Viola_Music_Voice = {                                                        %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         c4                                                                     %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Va.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Viola”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -2973,7 +2973,7 @@ H_Viola_Music_Voice = {                                                        %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         c1                                                                     %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -2981,11 +2981,11 @@ H_Viola_Music_Voice = {                                                        %
     \times 5/9 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Viola_Music_Voice measure 283 / measure 3]                        %! _comment_measure_numbers
-        \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic:OverrideCommand(1)
         b2.                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \glissando                                                             %! baca_glissando
+        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+        \glissando                                                             %! baca.glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c1.                                                                    %! krummzeit.glissando_rhythm
@@ -2996,7 +2996,7 @@ H_Viola_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         c8                                                                     %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         e2                                                                     %! krummzeit.glissando_rhythm
         ~
@@ -3007,15 +3007,15 @@ H_Viola_Music_Voice = {                                                        %
 
         % [H Viola_Music_Voice measure 284 / measure 4]                        %! _comment_measure_numbers
         e2                                                                     %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         fs!4.                                                                  %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
     }                                                                          %! krummzeit.glissando_rhythm
 
     f4                                                                         %! krummzeit.glissando_rhythm
-    \glissando                                                                 %! baca_glissando
+    \glissando                                                                 %! baca.glissando
 
     af!2                                                                       %! krummzeit.glissando_rhythm
     ~
@@ -3023,10 +3023,10 @@ H_Viola_Music_Voice = {                                                        %
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
         af!8                                                                   %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         cs!2                                                                   %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3034,7 +3034,7 @@ H_Viola_Music_Voice = {                                                        %
 
         % [H Viola_Music_Voice measure 285 / measure 5]                        %! _comment_measure_numbers
         e4                                                                     %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         g8.                                                                    %! krummzeit.glissando_rhythm
         ~
@@ -3044,10 +3044,10 @@ H_Viola_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         g4                                                                     %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         a2                                                                     %! krummzeit.glissando_rhythm
-        \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
+        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3076,16 +3076,16 @@ H_Viola_Music_Voice = {                                                        %
     \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Viola_Music_Voice measure 287 / measure 7]                        %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #9                        %! baca_dls_staff_padding:OverrideCommand(1)
-        \override TupletBracket.staff-padding = #5                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #9                        %! baca.dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #5                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
         d4                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \glissando                                                             %! baca_glissando
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+        \glissando                                                             %! baca.glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a1                                                                     %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -3095,13 +3095,13 @@ H_Viola_Music_Voice = {                                                        %
         % [H Viola_Music_Voice measure 289 / measure 9]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a4                                                                     %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         a1                                                                     %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -3166,9 +3166,9 @@ H_Cello_Music_Voice = {                                                        %
     %@% \override Staff.Clef.color = ##f                                       %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
         c,2                                                                    %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
+        \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         ^ \baca-reapplied-indicator-markup "[“Vc.”]"                           %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
         ^ \baca-reapplied-indicator-markup "(“Cello”)"                         %! REAPPLIED_INSTRUMENT_ALERT:_attach_latent_indicator_alert
         \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)         %! REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)
@@ -3181,28 +3181,28 @@ H_Cello_Music_Voice = {                                                        %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         c,2.                                                                   %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Cello_Music_Voice measure 283 / measure 3]                        %! _comment_measure_numbers
-        \override NoteHead.style = #'harmonic                                  %! baca_note_head_style_harmonic:OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic:OverrideCommand(1)
         a,4                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \glissando                                                             %! baca_glissando
+        \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+        \glissando                                                             %! baca.glissando
 
         bf,!2                                                                  %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
     }                                                                          %! krummzeit.glissando_rhythm
 
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
         f,8.                                                                   %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         d,2.                                                                   %! krummzeit.glissando_rhythm
         ~
@@ -3212,10 +3212,10 @@ H_Cello_Music_Voice = {                                                        %
     \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         d,2                                                                    %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         b,4.                                                                   %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3223,7 +3223,7 @@ H_Cello_Music_Voice = {                                                        %
 
         % [H Cello_Music_Voice measure 284 / measure 4]                        %! _comment_measure_numbers
         bf,!4                                                                  %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         g,2                                                                    %! krummzeit.glissando_rhythm
         ~
@@ -3231,16 +3231,16 @@ H_Cello_Music_Voice = {                                                        %
     }                                                                          %! krummzeit.glissando_rhythm
 
     g,4                                                                        %! krummzeit.glissando_rhythm
-    \glissando                                                                 %! baca_glissando
+    \glissando                                                                 %! baca.glissando
 
     f,1                                                                        %! krummzeit.glissando_rhythm
-    \glissando                                                                 %! baca_glissando
+    \glissando                                                                 %! baca.glissando
 
     \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [H Cello_Music_Voice measure 285 / measure 5]                        %! _comment_measure_numbers
         b,2                                                                    %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         c4.                                                                    %! krummzeit.glissando_rhythm
         ~
@@ -3250,10 +3250,10 @@ H_Cello_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         c8                                                                     %! krummzeit.glissando_rhythm
-        \glissando                                                             %! baca_glissando
+        \glissando                                                             %! baca.glissando
 
         bf,!4                                                                  %! krummzeit.glissando_rhythm
-        \revert NoteHead.style                                                 %! baca_note_head_style_harmonic:OverrideCommand(2)
+        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic:OverrideCommand(2)
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3282,16 +3282,16 @@ H_Cello_Music_Voice = {                                                        %
     \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets
 
         % [H Cello_Music_Voice measure 287 / measure 7]                        %! _comment_measure_numbers
-        \override DynamicLineSpanner.staff-padding = #9                        %! baca_dls_staff_padding:OverrideCommand(1)
-        \override TupletBracket.staff-padding = #5                             %! baca_tuplet_bracket_staff_padding:OverrideCommand(1)
+        \override DynamicLineSpanner.staff-padding = #9                        %! baca.dls_staff_padding:OverrideCommand(1)
+        \override TupletBracket.staff-padding = #5                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
         d2                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca_dynamic:IndicatorCommand
-        \glissando                                                             %! baca_glissando
+        \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
+        \glissando                                                             %! baca.glissando
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2.                                                                %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -3301,13 +3301,13 @@ H_Cello_Music_Voice = {                                                        %
         % [H Cello_Music_Voice measure 289 / measure 9]                        %! _comment_measure_numbers
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2                                                                 %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         eqf,!2.                                                                %! krummzeit.hypermeter_tuplets
-        :32                                                                    %! baca_stem_tremolo:IndicatorCommand
-        \revert DynamicLineSpanner.staff-padding                               %! baca_dls_staff_padding:OverrideCommand(2)
-        \revert TupletBracket.staff-padding                                    %! baca_tuplet_bracket_staff_padding:OverrideCommand(2)
+        :32                                                                    %! baca.stem_tremolo:IndicatorCommand
+        \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding:OverrideCommand(2)
+        \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 

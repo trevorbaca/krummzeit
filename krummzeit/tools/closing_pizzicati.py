@@ -4,18 +4,22 @@ from abjadext import rmakers
 
 
 def closing_pizzicati(
-    counts, extra_counts_per_division, split_divisions_by_counts
-):
+    counts: abjad.IntegerSequence,
+    extra_counts: abjad.IntegerSequence,
+    split: abjad.IntegerSequence,
+) -> baca.RhythmCommand:
     """
     Makes closing pizzicati rhythm.
     """
+    durations = [(_, 4) for _ in split]
+    divisions = baca.divisions().split(durations, cyclic=True)
     return baca.rhythm(
+        divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
-            extra_counts_per_division=extra_counts_per_division,
+            extra_counts_per_division=extra_counts,
             rest_tied_notes=True,
-            split_divisions_by_counts=split_divisions_by_counts,
             tag="krummzeit.closing_pizzicati",
             talea=rmakers.Talea(counts=counts, denominator=4),
             tuplet_specifier=rmakers.TupletSpecifier(extract_trivial=True),
-        )
+        ),
     )

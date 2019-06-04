@@ -3,19 +3,23 @@ import baca
 from abjadext import rmakers
 
 
-def pizzicato_sixteenths(extra_counts, *, dmask=None):
+def pizzicato_sixteenths(
+    *,
+    dmask: rmakers.MasksTyping = None,
+    extra_counts: abjad.IntegerSequence = None,
+) -> baca.RhythmCommand:
     """
     Makes pizzicato sixteenths rhythm.
     """
-
+    divisions = baca.divisions().split([(6, 16), (18, 16)], cyclic=True)
     return baca.rhythm(
+        divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
             burnish_specifier=rmakers.BurnishSpecifier(
                 left_classes=[abjad.Rest], left_counts=[1]
             ),
             division_masks=dmask,
             extra_counts_per_division=extra_counts,
-            split_divisions_by_counts=[6, 18],
             tag="krummzeit.pizzicato_sixteenths",
             talea=rmakers.Talea(
                 counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
@@ -24,5 +28,5 @@ def pizzicato_sixteenths(extra_counts, *, dmask=None):
             tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True, trivialize=True
             ),
-        )
+        ),
     )

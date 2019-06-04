@@ -81,8 +81,8 @@ maker(
     ('vn', (1, 40)),
     krummzeit.closing_pizzicati(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
-        extra_counts_per_division=[2, 2, 1, 2, 4, 6],
-        split_divisions_by_counts=[6, 18],
+        extra_counts=[2, 2, 1, 2, 4, 6],
+        split=[6, 18],
         )
     )
 
@@ -90,8 +90,8 @@ maker(
     ('va', (1, 4)),
     krummzeit.closing_pizzicati(
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
-        extra_counts_per_division=[3, 3, 2, 3, 5, 7],
-        split_divisions_by_counts=[8, 10],
+        extra_counts=[3, 3, 2, 3, 5, 7],
+        split=[8, 10],
         ),
     )
 

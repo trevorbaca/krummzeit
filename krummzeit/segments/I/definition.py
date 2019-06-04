@@ -132,17 +132,17 @@ maker(
 
 maker(
     ('vn', 22),
-    krummzeit.pizzicato_rhythm(split_divisions_by_counts=[6, 18]),
+    krummzeit.pizzicato_rhythm(split=[6, 18]),
     )
 
 maker(
     ('va', 22),
-    krummzeit.pizzicato_rhythm(split_divisions_by_counts=[8, 10]),
+    krummzeit.pizzicato_rhythm(split=[8, 10]),
     )
 
 maker(
     ('vc', 22),
-    krummzeit.pizzicato_rhythm(split_divisions_by_counts=[10, 8]),
+    krummzeit.pizzicato_rhythm(split=[10, 8]),
     )
 
 maker(

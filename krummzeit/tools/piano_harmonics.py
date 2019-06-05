@@ -1,9 +1,15 @@
 import abjad
 import baca
+import typing
 from abjadext import rmakers
 
 
-def piano_harmonics(division_ratios, *, dmask=None, tie_across_divisions=None):
+def piano_harmonics(
+    division_ratios: abjad.RatioSequenceTyping,
+    *,
+    dmask: rmakers.MasksTyping = None,
+    tie_across_divisions: typing.Union[bool, abjad.IntegerSequence] = None,
+) -> baca.RhythmCommand:
     """
     Makes piano harmonics rhythm.
     """
@@ -13,9 +19,9 @@ def piano_harmonics(division_ratios, *, dmask=None, tie_across_divisions=None):
         divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.NoteRhythmMaker(
             division_masks=dmask,
-            tag="krummzeit.piano_harmonics",
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions
             ),
         ),
+        tag="krummzeit.piano_harmonics",
     )

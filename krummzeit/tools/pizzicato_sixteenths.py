@@ -20,7 +20,6 @@ def pizzicato_sixteenths(
             ),
             division_masks=dmask,
             extra_counts_per_division=extra_counts,
-            tag="krummzeit.pizzicato_sixteenths",
             talea=rmakers.Talea(
                 counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
                 denominator=16,
@@ -28,5 +27,6 @@ def pizzicato_sixteenths(
             tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True, trivialize=True
             ),
+            tag="krummzeit.pizzicato_sixteenths",
         ),
     )

@@ -18,8 +18,8 @@ def closing_pizzicati(
         rhythm_maker=rmakers.TaleaRhythmMaker(
             extra_counts_per_division=extra_counts,
             rest_tied_notes=True,
-            tag="krummzeit.closing_pizzicati",
             talea=rmakers.Talea(counts=counts, denominator=4),
             tuplet_specifier=rmakers.TupletSpecifier(extract_trivial=True),
         ),
+        tag="krummzeit.closing_pizzicati",
     )

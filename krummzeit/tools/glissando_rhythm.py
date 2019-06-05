@@ -5,12 +5,12 @@ from abjadext import rmakers
 
 
 def glissando_rhythm(
-    division_ratios: typing.Sequence[abjad.RatioTyping],
+    division_ratios: abjad.RatioSequenceTyping,
     *,
-    dmask=None,
-    tuplet_ratios=[(1, 2), (1, 4), (4, 3)],
-    tie_across_divisions=None,
-):
+    dmask: rmakers.MasksTyping = None,
+    tuplet_ratios: abjad.RatioSequenceTyping = [(1, 2), (1, 4), (4, 3)],
+    tie_across_divisions: typing.Union[bool, abjad.IntegerSequence] = None,
+) -> baca.RhythmCommand:
     """
     Makes glissando rhythm.
     """

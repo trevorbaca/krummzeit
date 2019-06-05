@@ -3,7 +3,11 @@ import baca
 from abjadext import rmakers
 
 
-def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
+def white_rhythm(
+    durations: abjad.DurationSequenceTyping = None,
+    remainder: abjad.HorizontalAlignment = abjad.Left,
+    do_not_burnish: bool = None,
+) -> baca.RhythmCommand:
     """
     Makes white rhythm.
     """
@@ -23,6 +27,7 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
     return baca.rhythm(
         divisions=divisions,
         rhythm_maker=rmakers.NoteRhythmMaker(
-            burnish_specifier=burnish_specifier, tag="krummzeit.white_rhythm"
+            burnish_specifier=burnish_specifier
         ),
+        tag="krummzeit.white_rhythm",
     )

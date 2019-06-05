@@ -3,7 +3,7 @@ import baca
 from abjadext import rmakers
 
 
-def oboe_trills():
+def oboe_trills() -> baca.RhythmCommand:
     """
     Makes oboe trill rhythm.
     """
@@ -12,7 +12,7 @@ def oboe_trills():
         divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=[abjad.index([3, 4], 6)],
-            tag="krummzeit.oboe_trills",
             tuplet_ratios=[(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)],
         ),
+        tag="krummzeit.oboe_trills",
     )

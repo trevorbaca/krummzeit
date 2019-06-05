@@ -3,9 +3,9 @@ import baca
 from abjadext import rmakers
 
 
-def incise_chain_b():
+def incise_chain_b() -> baca.RhythmCommand:
     """
-    Makes incise chain B.
+    Makes incise chain B rhythm.
     """
     return baca.rhythm(
         rhythm_maker=rmakers.IncisedRhythmMaker(
@@ -18,6 +18,6 @@ def incise_chain_b():
                 suffix_counts=[2, 2, 1, 2],
                 talea_denominator=16,
             ),
-            tag="krummzeit.incise_chain_b",
-        )
+        ),
+        tag="krummzeit.incise_chain_b",
     )

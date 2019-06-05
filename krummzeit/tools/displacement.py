@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def displacement():
+def displacement() -> baca.OctaveDisplacementCommand:
     """
     Makes displacement.
     """

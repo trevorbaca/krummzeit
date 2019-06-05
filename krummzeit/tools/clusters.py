@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def clusters(flavor):
+def clusters(flavor: str) -> baca.ClusterCommand:
     """
     Makes cluster.
 

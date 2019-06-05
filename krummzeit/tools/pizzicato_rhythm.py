@@ -19,12 +19,12 @@ def pizzicato_rhythm(
             curtail_ties=True,
             division_masks=dmask,
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],
-            tag="krummzeit.pizzicato_rhythm",
             talea=rmakers.Talea(
                 counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], denominator=16
             ),
             tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True, rewrite_dots=True
             ),
+            tag="krummzeit.pizzicato_rhythm",
         ),
     )

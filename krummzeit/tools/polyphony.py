@@ -1,18 +1,20 @@
 import abjad
 import baca
+import typing
 from abjadext import rmakers
 
 
 def polyphony(
-    durations=None,
-    rotation=None,
-    fuse=None,
-    denominators=None,
-    extra_counts=None,
-    final_quarter_notes=None,
-    initial_eighth_notes=None,
-    ties=None,
-):
+    *,
+    durations: abjad.DurationSequenceTyping = None,
+    rotation: int = None,
+    fuse: abjad.DurationTyping = None,
+    denominators: abjad.IntegerSequence = (),
+    extra_counts: abjad.IntegerSequence = None,
+    final_quarter_notes: bool = None,
+    initial_eighth_notes: bool = None,
+    ties: typing.Union[bool, abjad.IntegerSequence] = None,
+) -> baca.RhythmCommand:
     """
     Makes polyphony rhythm.
     """
@@ -21,6 +23,7 @@ def polyphony(
         extract_trivial=True, trivialize=True
     )
 
+    rhythm_maker: baca.RhythmMakerTyping
     rhythm_maker = rmakers.EvenDivisionRhythmMaker(
         denominators=denominators,
         extra_counts_per_division=extra_counts,

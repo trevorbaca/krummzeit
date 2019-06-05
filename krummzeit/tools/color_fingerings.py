@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def color_fingerings():
+def color_fingerings() -> baca.ColorFingeringCommand:
     """
     Makes color fingerings.
     """

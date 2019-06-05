@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def e_flat_clarinet_markup():
+def e_flat_clarinet_markup() -> baca.Markup:
     r"""
     Makes e-flat clarinet markup.
 

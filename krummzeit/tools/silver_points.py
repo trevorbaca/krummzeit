@@ -4,20 +4,26 @@ from abjadext import rmakers
 
 
 def silver_points(
-    ratios, *, dmask=None, tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2, 2)]
+    ratios: abjad.RatioSequenceTyping,
+    *,
+    dmask: rmakers.MasksTyping = None,
+    tuplet_ratios: abjad.RatioSequenceTyping = [
+        (-1, 1, 1, 2),
+        (-1, 1, 1, -2, 2),
+    ],
 ):
     """
-    Makes silver point rhythm.
+    Makes silver points rhythm.
     """
     split = baca.divisions().ratios(ratios, rounded=True)
     return baca.rhythm(
         divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.TupletRhythmMaker(
             division_masks=dmask,
-            tag="krummzeit.silver_points",
             tuplet_ratios=tuplet_ratios,
             tuplet_specifier=rmakers.TupletSpecifier(
                 extract_trivial=True, rewrite_dots=True
             ),
         ),
+        tag="krummzeit.silver_points",
     )

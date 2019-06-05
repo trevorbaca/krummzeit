@@ -5,7 +5,7 @@ from abjadext import rmakers
 
 def rest_delimited_repeated_duration_notes(
     duration: abjad.DurationTyping, denominator: int
-):
+) -> baca.RhythmCommand:
     """
     Makes rest-delimited repeated duration notes.
     """
@@ -16,7 +16,7 @@ def rest_delimited_repeated_duration_notes(
                 suffix_talea=[-1],
                 suffix_counts=[1],
                 talea_denominator=denominator,
-            ),
-            tag="krummzeit.rest_delimited_repeated_duration_notes",
+            )
         ),
+        tag="krummzeit.rest_delimited_repeated_duration_notes",
     )

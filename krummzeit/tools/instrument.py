@@ -2,7 +2,7 @@ import baca
 import krummzeit
 
 
-def instrument(key):
+def instrument(key) -> baca.InstrumentChangeCommand:
     """
     Makes instrument indicator command.
     """

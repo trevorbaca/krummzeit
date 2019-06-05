@@ -2,7 +2,7 @@ import abjad
 import baca
 
 
-def register_wide(start):
+def register_wide(start: int) -> baca.RegisterCommand:
     """
     Registers wide.
     """

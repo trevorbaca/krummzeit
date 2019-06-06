@@ -16,7 +16,7 @@ def incise_chain_b() -> baca.RhythmCommand:
                 suffix_talea=[2, -2, 3, -1, 0, 2, -2],
                 suffix_counts=[2, 2, 1, 2],
                 talea_denominator=16,
-            ),
+            )
         ),
         tag="krummzeit.incise_chain_b",
     )

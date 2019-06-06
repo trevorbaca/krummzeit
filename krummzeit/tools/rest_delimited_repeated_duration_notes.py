@@ -12,14 +12,12 @@ def rest_delimited_repeated_duration_notes(
     return baca.rhythm(
         divisions=baca.divisions().fuse().split([duration], cyclic=True),
         rhythm_maker=rmakers.IncisedRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(
-                beam_each_division=True,
-            ),
+            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             incise_specifier=rmakers.InciseSpecifier(
                 suffix_talea=[-1],
                 suffix_counts=[1],
                 talea_denominator=denominator,
-            )
+            ),
         ),
         tag="krummzeit.rest_delimited_repeated_duration_notes",
     )

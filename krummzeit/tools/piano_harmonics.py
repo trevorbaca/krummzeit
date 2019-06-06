@@ -18,6 +18,9 @@ def piano_harmonics(
     return baca.rhythm(
         divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.NoteRhythmMaker(
+            beam_specifier=rmakers.BeamSpecifier(
+                beam_each_division=True,
+            ),
             division_masks=dmask,
             tie_specifier=rmakers.TieSpecifier(
                 tie_across_divisions=tie_across_divisions

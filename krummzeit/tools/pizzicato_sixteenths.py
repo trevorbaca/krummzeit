@@ -15,9 +15,7 @@ def pizzicato_sixteenths(
     return baca.rhythm(
         divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(
-                beam_each_division=True,
-            ),
+            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             burnish_specifier=rmakers.BurnishSpecifier(
                 left_classes=[abjad.Rest], left_counts=[1]
             ),

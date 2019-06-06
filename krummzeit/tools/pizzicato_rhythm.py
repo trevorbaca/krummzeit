@@ -16,9 +16,7 @@ def pizzicato_rhythm(
     return baca.rhythm(
         divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(
-                beam_each_division=True,
-            ),
+            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             curtail_ties=True,
             division_masks=dmask,
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],

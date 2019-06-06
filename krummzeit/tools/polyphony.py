@@ -25,9 +25,7 @@ def polyphony(
 
     rhythm_maker: baca.RhythmMakerTyping
     rhythm_maker = rmakers.EvenDivisionRhythmMaker(
-        beam_specifier=rmakers.BeamSpecifier(
-            beam_each_division=True,
-        ),
+        beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
         denominators=denominators,
         extra_counts_per_division=extra_counts,
         tag="krummzeit.polyphony",
@@ -37,9 +35,7 @@ def polyphony(
 
     if final_quarter_notes:
         quarters = rmakers.NoteRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(
-                beam_each_division=True,
-            ),
+            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             duration_specifier=rmakers.DurationSpecifier(
                 forbidden_note_duration=(1, 2)
             ),
@@ -52,10 +48,9 @@ def polyphony(
         ]
     elif initial_eighth_notes:
         eighths = rmakers.EvenDivisionRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(
-                beam_each_division=True,
-            ),
-            denominators=[8], tuplet_specifier=tuplet_specifier
+            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
+            denominators=[8],
+            tuplet_specifier=tuplet_specifier,
         )
         indices = [0, 1]
         rhythm_maker = [

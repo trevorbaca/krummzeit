@@ -35,11 +35,11 @@ def polyphony(
 
     if final_quarter_notes:
         quarters = rmakers.NoteRhythmMaker(
+            rmakers.TieSpecifier(detach_ties=True, selector=baca.notes()),
             beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
             duration_specifier=rmakers.DurationSpecifier(
                 forbidden_note_duration=(1, 2)
             ),
-            tie_specifier=rmakers.TieSpecifier(strip_ties=True),
         )
         indices = [-3, -2, -1]
         rhythm_maker = [

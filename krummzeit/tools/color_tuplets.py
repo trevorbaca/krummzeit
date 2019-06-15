@@ -24,7 +24,7 @@ def color_tuplets(
     tuplet_ratios = tuplet_ratios.rotate(n=rotation)
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
+            rmakers.BeamSpecifier(beam_each_division=True),
             division_masks=dmask,
             tie_specifier=rmakers.TieSpecifier(tie_across_divisions=True),
             tuplet_ratios=tuplet_ratios,

@@ -27,7 +27,7 @@ def white_rhythm(
     return baca.rhythm(
         divisions=divisions,
         rhythm_maker=rmakers.NoteRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
+            rmakers.BeamSpecifier(beam_each_division=True),
             burnish_specifier=burnish_specifier,
         ),
         tag="krummzeit.white_rhythm",

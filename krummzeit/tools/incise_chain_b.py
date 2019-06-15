@@ -9,6 +9,7 @@ def incise_chain_b() -> baca.RhythmCommand:
     """
     return baca.rhythm(
         rhythm_maker=rmakers.IncisedRhythmMaker(
+            rmakers.TupletSpecifier(extract_trivial=True),
             incise_specifier=rmakers.InciseSpecifier(
                 fill_with_rests=True,
                 prefix_talea=[-2, 2, 3, -2, 3, -2, 2],
@@ -16,7 +17,7 @@ def incise_chain_b() -> baca.RhythmCommand:
                 suffix_talea=[2, -2, 3, -1, 0, 2, -2],
                 suffix_counts=[2, 2, 1, 2],
                 talea_denominator=16,
-            )
+            ),
         ),
         tag="krummzeit.incise_chain_b",
     )

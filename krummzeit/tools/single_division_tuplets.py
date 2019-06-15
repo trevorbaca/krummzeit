@@ -11,7 +11,7 @@ def single_division_tuplets(
     """
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
+            rmakers.BeamSpecifier(beam_each_division=True),
             tie_specifier=rmakers.TieSpecifier(tie_across_divisions=True),
             tuplet_ratios=ratios,
             tuplet_specifier=rmakers.TupletSpecifier(

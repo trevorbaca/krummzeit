@@ -11,7 +11,7 @@ def prolated_quarters(
     """
     return baca.rhythm(
         rhythm_maker=rmakers.EvenDivisionRhythmMaker(
-            beam_specifier=rmakers.BeamSpecifier(beam_each_division=True),
+            rmakers.BeamSpecifier(beam_each_division=True),
             denominators=[4],
             extra_counts_per_division=extra_counts,
         ),

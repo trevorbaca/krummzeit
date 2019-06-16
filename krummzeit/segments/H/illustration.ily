@@ -288,13 +288,13 @@ H_Oboe_Music_Voice = {                                                         %
 
     % [H Oboe_Music_Voice measure 284 / measure 4]                             %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #3                            %! baca.dls_staff_padding:OverrideCommand(1)
-    d''1..                                                                     %! baca_make_repeat_tied_notes
+    d''1..                                                                     %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     \startTrillSpan                                                            %! baca.trill_spanner:SpannerIndicatorCommand(1)
 
     % [H Oboe_Music_Voice measure 285 / measure 5]                             %! _comment_measure_numbers
-    d''2.                                                                      %! baca_make_repeat_tied_notes
+    d''2.                                                                      %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [H Oboe_Music_Voice measure 286 / measure 6]                             %! _comment_measure_numbers
@@ -456,13 +456,13 @@ H_Clarinet_Music_Voice = {                                                     %
 
     % [H Clarinet_Music_Voice measure 284 / measure 4]                         %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #3                            %! baca.dls_staff_padding:OverrideCommand(1)
-    b'1..                                                                      %! baca_make_repeat_tied_notes
+    b'1..                                                                      %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                    %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
 
     % [H Clarinet_Music_Voice measure 285 / measure 5]                         %! _comment_measure_numbers
-    b'2.                                                                       %! baca_make_repeat_tied_notes
+    b'2.                                                                       %! baca.make_repeat_tied_notes
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container

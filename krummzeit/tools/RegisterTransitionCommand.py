@@ -90,15 +90,15 @@ class RegisterTransitionCommand(baca.Command):
                         {                                                                  %! baca.SingleStaffScoreTemplate.__call__
             <BLANKLINE>
                             % [Music_Voice measure 1]                                      %! _comment_measure_numbers
-                            c'8                                                            %! baca_make_even_divisions
-                            [                                                              %! baca_make_even_divisions
+                            c'8                                                            %! baca.make_even_divisions
+                            [                                                              %! baca.make_even_divisions
             <BLANKLINE>
-                            d''8                                                           %! baca_make_even_divisions
+                            d''8                                                           %! baca.make_even_divisions
             <BLANKLINE>
-                            e''8                                                           %! baca_make_even_divisions
+                            e''8                                                           %! baca.make_even_divisions
             <BLANKLINE>
-                            f''8                                                           %! baca_make_even_divisions
-                            ]                                                              %! baca_make_even_divisions
+                            f''8                                                           %! baca.make_even_divisions
+                            ]                                                              %! baca.make_even_divisions
             <BLANKLINE>
                             <<                                                             %! _make_multimeasure_rest_container
             <BLANKLINE>

@@ -464,7 +464,7 @@ i_Clarinet_Music_Voice = {                                                     %
     R1 * 1/4                                                                   %! _make_measure_silences
 
     % [_ Clarinet_Music_Voice measure 4]                                       %! _comment_measure_numbers
-    cs!2.                                                                      %! baca_make_repeat_tied_notes
+    cs!2.                                                                      %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 

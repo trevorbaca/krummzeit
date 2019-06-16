@@ -3759,7 +3759,7 @@ D_Percussion_Music_Voice = {                                                   %
     \repeatTie
 
     % [D Percussion_Music_Voice measure 195 / measure 44]                      %! _comment_measure_numbers
-    c'1                                                                        %! baca_make_repeat_tied_notes
+    c'1                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     - \tweak direction #up
     \repeatTie
@@ -3774,7 +3774,7 @@ D_Percussion_Music_Voice = {                                                   %
     \repeatTie
 
     % [D Percussion_Music_Voice measure 197 / measure 46]                      %! _comment_measure_numbers
-    c'2.                                                                       %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     \repeatTie
 

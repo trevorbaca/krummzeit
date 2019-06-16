@@ -7798,7 +7798,7 @@ A_Violin_Music_Voice = {                                                       %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-    c'2.                                                                       %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     ^ \markup {                                                                %! baca.markup:IndicatorCommand
@@ -7812,12 +7812,12 @@ A_Violin_Music_Voice = {                                                       %
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
     % [A Violin_Music_Voice measure 86 / measure 73]                           %! _comment_measure_numbers
-    c'1                                                                        %! baca_make_repeat_tied_notes
+    c'1                                                                        %! baca.make_repeat_tied_notes
     - \tweak direction #up
     \repeatTie
 
     % [A Violin_Music_Voice measure 87 / measure 74]                           %! _comment_measure_numbers
-    c'1                                                                        %! baca_make_repeat_tied_notes
+    c'1                                                                        %! baca.make_repeat_tied_notes
     - \tweak direction #up
     \repeatTie
 

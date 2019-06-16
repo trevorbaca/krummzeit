@@ -25,11 +25,11 @@ def polyphony(
 
     rhythm_maker: baca.RhythmMakerTyping
     rhythm_maker = rmakers.EvenDivisionRhythmMaker(
+        rmakers.TieSpecifier(tie_across_divisions=ties),
         rmakers.BeamSpecifier(beam_each_division=True),
         denominators=denominators,
         extra_counts_per_division=extra_counts,
         tag="krummzeit.polyphony",
-        tie_specifier=rmakers.TieSpecifier(tie_across_divisions=ties),
         tuplet_specifier=tuplet_specifier,
     )
 

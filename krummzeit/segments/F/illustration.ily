@@ -570,8 +570,8 @@ F_Oboe_Music_Voice = {                                                         %
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
     f'''16                                                                     %! krummzeit.polyphony
-    ]                                                                          %! krummzeit.polyphony
     ~
+    ]                                                                          %! krummzeit.polyphony
 
     \times 2/3 {                                                               %! krummzeit.polyphony
 
@@ -632,8 +632,8 @@ F_Oboe_Music_Voice = {                                                         %
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         b'16                                                                   %! krummzeit.polyphony
-        ]                                                                      %! krummzeit.polyphony
         ~
+        ]                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
@@ -933,8 +933,8 @@ F_Clarinet_Music_Voice = {                                                     %
     [                                                                          %! krummzeit.polyphony
 
     d'8                                                                        %! krummzeit.polyphony
-    ]                                                                          %! krummzeit.polyphony
     ~
+    ]                                                                          %! krummzeit.polyphony
 
     \times 2/3 {                                                               %! krummzeit.polyphony
 
@@ -972,8 +972,8 @@ F_Clarinet_Music_Voice = {                                                     %
     [                                                                          %! krummzeit.polyphony
 
     as'!8                                                                      %! krummzeit.polyphony
-    ]                                                                          %! krummzeit.polyphony
     ~
+    ]                                                                          %! krummzeit.polyphony
 
     % [F Clarinet_Music_Voice measure 241 / measure 7]                         %! _comment_measure_numbers
     as'!4.                                                                     %! krummzeit.polyphony
@@ -1025,8 +1025,8 @@ F_Clarinet_Music_Voice = {                                                     %
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
     a''8                                                                       %! krummzeit.polyphony
-    ]                                                                          %! krummzeit.polyphony
     ~
+    ]                                                                          %! krummzeit.polyphony
 
     a''4.                                                                      %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)

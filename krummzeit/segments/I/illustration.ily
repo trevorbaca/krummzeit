@@ -772,7 +772,7 @@ I_Clarinet_Music_Voice = {                                                     %
     >>                                                                         %! _make_multimeasure_rest_container
 
     % [I Clarinet_Music_Voice measure 293 / measure 3]                         %! _comment_measure_numbers
-    fs!2.                                                                      %! baca_make_repeat_tied_notes
+    fs!2.                                                                      %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
@@ -818,7 +818,7 @@ I_Clarinet_Music_Voice = {                                                     %
     \repeatTie
 
     % [I Clarinet_Music_Voice measure 299 / measure 9]                         %! _comment_measure_numbers
-    fs!1                                                                       %! baca_make_repeat_tied_notes
+    fs!1                                                                       %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-fff-poss                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     \repeatTie
@@ -831,7 +831,7 @@ I_Clarinet_Music_Voice = {                                                     %
     \repeatTie
 
     % [I Clarinet_Music_Voice measure 301 / measure 11]                        %! _comment_measure_numbers
-    fs!1                                                                       %! baca_make_repeat_tied_notes
+    fs!1                                                                       %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
     \repeatTie
@@ -839,15 +839,15 @@ I_Clarinet_Music_Voice = {                                                     %
     \>                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
     % [I Clarinet_Music_Voice measure 302 / measure 12]                        %! _comment_measure_numbers
-    fs!1                                                                       %! baca_make_repeat_tied_notes
+    fs!1                                                                       %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [I Clarinet_Music_Voice measure 303 / measure 13]                        %! _comment_measure_numbers
-    fs!1                                                                       %! baca_make_repeat_tied_notes
+    fs!1                                                                       %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [I Clarinet_Music_Voice measure 304 / measure 14]                        %! _comment_measure_numbers
-    fs!1                                                                       %! baca_make_repeat_tied_notes
+    fs!1                                                                       %! baca.make_repeat_tied_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
     \repeatTie

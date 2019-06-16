@@ -1079,27 +1079,27 @@ F_Clarinet_Music_Voice = {                                                     %
     \repeatTie
 
     % [F Clarinet_Music_Voice measure 251 / measure 17]                        %! _comment_measure_numbers
-    cs!1                                                                       %! baca_make_repeat_tied_notes
+    cs!1                                                                       %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [F Clarinet_Music_Voice measure 252 / measure 18]                        %! _comment_measure_numbers
-    cs!1.                                                                      %! baca_make_repeat_tied_notes
+    cs!1.                                                                      %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [F Clarinet_Music_Voice measure 253 / measure 19]                        %! _comment_measure_numbers
-    cs!2.                                                                      %! baca_make_repeat_tied_notes
+    cs!2.                                                                      %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [F Clarinet_Music_Voice measure 254 / measure 20]                        %! _comment_measure_numbers
-    cs!1                                                                       %! baca_make_repeat_tied_notes
+    cs!1                                                                       %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [F Clarinet_Music_Voice measure 255 / measure 21]                        %! _comment_measure_numbers
-    cs!2..                                                                     %! baca_make_repeat_tied_notes
+    cs!2..                                                                     %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [F Clarinet_Music_Voice measure 256 / measure 22]                        %! _comment_measure_numbers
-    cs!2..                                                                     %! baca_make_repeat_tied_notes
+    cs!2..                                                                     %! baca.make_repeat_tied_notes
     \repeatTie
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
     \revert Stem.direction                                                     %! baca.stem_up:OverrideCommand(2)
@@ -1713,17 +1713,17 @@ F_Percussion_Music_Voice = {                                                   %
     \repeatTie
 
     % [F Percussion_Music_Voice measure 240 / measure 6]                       %! _comment_measure_numbers
-    c'2.                                                                       %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [F Percussion_Music_Voice measure 241 / measure 7]                       %! _comment_measure_numbers
-    c'2.                                                                       %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     \repeatTie
 
     % [F Percussion_Music_Voice measure 242 / measure 8]                       %! _comment_measure_numbers
-    c'2.                                                                       %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
     \repeatTie
 
@@ -1764,7 +1764,7 @@ F_Percussion_Music_Voice = {                                                   %
     R1 * 7/4                                                                   %! _make_measure_silences
 
     % [F Percussion_Music_Voice measure 247 / measure 13]                      %! _comment_measure_numbers
-    c'2.                                                                       %! baca_make_repeat_tied_notes
+    c'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -1824,7 +1824,7 @@ F_Percussion_Music_Voice = {                                                   %
     R1 * 3/2                                                                   %! _make_measure_silences
 
     % [F Percussion_Music_Voice measure 253 / measure 19]                      %! _comment_measure_numbers
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-p-sempre                                                             %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
     - \laissezVibrer                                                           %! baca.laissez_vibrer:IndicatorCommand
@@ -1836,22 +1836,22 @@ F_Percussion_Music_Voice = {                                                   %
         }                                                                      %! baca.markup:IndicatorCommand
     ^ \markup { attackless }                                                   %! baca.markup:IndicatorCommand
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
     - \laissezVibrer                                                           %! baca.laissez_vibrer:IndicatorCommand
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
     - \laissezVibrer                                                           %! baca.laissez_vibrer:IndicatorCommand
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
     - \laissezVibrer                                                           %! baca.laissez_vibrer:IndicatorCommand
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
     - \laissezVibrer                                                           %! baca.laissez_vibrer:IndicatorCommand
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
     - \laissezVibrer                                                           %! baca.laissez_vibrer:IndicatorCommand
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
     - \laissezVibrer                                                           %! baca.laissez_vibrer:IndicatorCommand
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
 

@@ -552,7 +552,7 @@ G_Oboe_Music_Voice = {                                                         %
     \repeatTie
 
     % [G Oboe_Music_Voice measure 260 / measure 4]                             %! _comment_measure_numbers
-    b1                                                                         %! baca_make_repeat_tied_notes
+    b1                                                                         %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [G Oboe_Music_Voice measure 261 / measure 5]                             %! _comment_measure_numbers
@@ -563,11 +563,11 @@ G_Oboe_Music_Voice = {                                                         %
     \repeatTie
 
     % [G Oboe_Music_Voice measure 262 / measure 6]                             %! _comment_measure_numbers
-    b2.                                                                        %! baca_make_repeat_tied_notes
+    b2.                                                                        %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [G Oboe_Music_Voice measure 263 / measure 7]                             %! _comment_measure_numbers
-    b2.                                                                        %! baca_make_repeat_tied_notes
+    b2.                                                                        %! baca.make_repeat_tied_notes
     \repeatTie
 
     <<                                                                         %! _make_multimeasure_rest_container
@@ -992,7 +992,7 @@ G_Clarinet_Music_Voice = {                                                     %
     \repeatTie
 
     % [G Clarinet_Music_Voice measure 260 / measure 4]                         %! _comment_measure_numbers
-    cs!1                                                                       %! baca_make_repeat_tied_notes
+    cs!1                                                                       %! baca.make_repeat_tied_notes
     \repeatTie
 
     % [G Clarinet_Music_Voice measure 261 / measure 5]                         %! _comment_measure_numbers
@@ -1808,7 +1808,7 @@ G_Percussion_Music_Voice = {                                                   %
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:_set_status_tag:_treat_persistent_wrapper(2):_reapply_persistent_indicators(3)
     \once \override Staff.StaffSymbol.color = #(x11-color 'green4)             %! REAPPLIED_STAFF_LINES_COLOR:_attach_color_literal(2)
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
     - \tweak color #(x11-color 'green4)                                        %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-p-sempre                                                             %! REAPPLIED_DYNAMIC:_set_status_tag:_reapply_persistent_indicators(3)
     ^ \baca-reapplied-indicator-markup "[“Perc.”]"                             %! REAPPLIED_MARGIN_MARKUP_ALERT:_attach_latent_indicator_alert
@@ -1829,29 +1829,29 @@ G_Percussion_Music_Voice = {                                                   %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:_set_status_tag:_treat_persistent_wrapper(3):-PARTS:_reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    c'2                                                                        %! baca_make_repeated_duration_notes
+    c'2                                                                        %! baca.make_repeated_duration_notes
 
-    r8                                                                         %! baca_make_repeated_duration_notes
+    r8                                                                         %! baca.make_repeated_duration_notes
 
     <<                                                                         %! _make_multimeasure_rest_container
 

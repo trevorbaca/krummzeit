@@ -19,12 +19,10 @@ def silver_points(
     return baca.rhythm(
         divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.TupletRhythmMaker(
+            rmakers.TupletSpecifier(extract_trivial=True, rewrite_dots=True),
             rmakers.BeamSpecifier(beam_each_division=True),
             division_masks=dmask,
             tuplet_ratios=tuplet_ratios,
-            tuplet_specifier=rmakers.TupletSpecifier(
-                extract_trivial=True, rewrite_dots=True
-            ),
         ),
         tag="krummzeit.silver_points",
     )

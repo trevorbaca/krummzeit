@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def pizzicato_rhythm(
-    *,
+    *specifiers: rmakers.SpecifierTyping,
     dmask: rmakers.MasksTyping = None,
     split: abjad.IntegerSequence = (6, 18),
 ) -> baca.RhythmCommand:
@@ -16,7 +16,10 @@ def pizzicato_rhythm(
     return baca.rhythm(
         divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
-            rmakers.TupletSpecifier(extract_trivial=True, rewrite_dots=True),
+            *specifiers,
+            rmakers.TupletSpecifier(extract_trivial=True, rewrite_dots=True,
+                rewrite_rest_filled=True,
+                ),
             rmakers.BeamSpecifier(beam_each_division=True),
             curtail_ties=True,
             division_masks=dmask,

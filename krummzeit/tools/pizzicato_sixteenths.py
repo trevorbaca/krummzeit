@@ -16,9 +16,9 @@ def pizzicato_sixteenths(
         divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
             *specifiers,
-            rmakers.TupletSpecifier(extract_trivial=True,
-                rewrite_rest_filled=True,
-                trivialize=True),
+            rmakers.TupletSpecifier(
+                extract_trivial=True, rewrite_rest_filled=True, trivialize=True
+            ),
             rmakers.BeamSpecifier(beam_each_division=True),
             burnish_specifier=rmakers.BurnishSpecifier(
                 left_classes=[abjad.Rest], left_counts=[1]

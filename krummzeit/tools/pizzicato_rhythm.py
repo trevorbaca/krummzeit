@@ -17,9 +17,11 @@ def pizzicato_rhythm(
         divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
             *specifiers,
-            rmakers.TupletSpecifier(extract_trivial=True, rewrite_dots=True,
+            rmakers.TupletSpecifier(
+                extract_trivial=True,
+                rewrite_dots=True,
                 rewrite_rest_filled=True,
-                ),
+            ),
             rmakers.BeamSpecifier(beam_each_division=True),
             curtail_ties=True,
             division_masks=dmask,

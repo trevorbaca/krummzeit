@@ -2395,11 +2395,11 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 315 / measure 2]                           %! _comment_measure_numbers
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
     \times 4/5 {                                                               %! krummzeit.closing_pizzicati
 
-        r2
+        r2                                                                     %! krummzeit.closing_pizzicati
 
         e'''2.                                                                 %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2409,9 +2409,9 @@ J_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 316 / measure 3]                       %! _comment_measure_numbers
-        r1
+        r1                                                                     %! krummzeit.closing_pizzicati
 
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         ef'''!4                                                                %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2419,13 +2419,13 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 317 / measure 4]                           %! _comment_measure_numbers
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati
     \times 5/6 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 318 / measure 5]                       %! _comment_measure_numbers
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         d'''1                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2439,7 +2439,7 @@ J_Violin_Music_Voice = {                                                       %
     \times 3/5 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 319 / measure 6]                       %! _comment_measure_numbers
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         f'''4                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2452,12 +2452,12 @@ J_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! krummzeit.closing_pizzicati
 
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     \times 4/5 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 320 / measure 7]                       %! _comment_measure_numbers
-        r1
+        r1                                                                     %! krummzeit.closing_pizzicati
 
         ef'''!4                                                                %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2465,15 +2465,15 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 321 / measure 8]                           %! _comment_measure_numbers
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati
     \times 5/9 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 322 / measure 9]                       %! _comment_measure_numbers
-        r1
+        r1                                                                     %! krummzeit.closing_pizzicati
 
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         f'''1                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2484,7 +2484,7 @@ J_Violin_Music_Voice = {                                                       %
     \times 5/6 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 323 / measure 10]                      %! _comment_measure_numbers
-        r1
+        r1                                                                     %! krummzeit.closing_pizzicati
 
         cs'''!2                                                                %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2503,7 +2503,7 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 325 / measure 12]                          %! _comment_measure_numbers
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati
     \times 5/6 {                                                               %! krummzeit.closing_pizzicati
@@ -2515,9 +2515,9 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 327 / measure 14]                          %! _comment_measure_numbers
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
     g'''2.                                                                     %! krummzeit.closing_pizzicati
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
@@ -2525,7 +2525,7 @@ J_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 328 / measure 15]                      %! _comment_measure_numbers
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         e'''1                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2536,7 +2536,7 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 329 / measure 16]                          %! _comment_measure_numbers
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
     f'''4                                                                      %! krummzeit.closing_pizzicati
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
@@ -2557,17 +2557,17 @@ J_Violin_Music_Voice = {                                                       %
     \times 3/4 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 331 / measure 18]                      %! _comment_measure_numbers
-        r2
+        r2                                                                     %! krummzeit.closing_pizzicati
 
         e'''2                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
     }                                                                          %! krummzeit.closing_pizzicati
 
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 332 / measure 19]                          %! _comment_measure_numbers
-    r1
+    r1                                                                         %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 333 / measure 20]                          %! _comment_measure_numbers
     f'''2                                                                      %! krummzeit.closing_pizzicati
@@ -2577,7 +2577,7 @@ J_Violin_Music_Voice = {                                                       %
     \times 5/7 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 334 / measure 21]                      %! _comment_measure_numbers
-        r1.
+        r1.                                                                    %! krummzeit.closing_pizzicati
 
         g'''4                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2588,7 +2588,7 @@ J_Violin_Music_Voice = {                                                       %
     \times 5/7 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 335 / measure 22]                      %! _comment_measure_numbers
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         e'''1                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2601,7 +2601,7 @@ J_Violin_Music_Voice = {                                                       %
     \times 4/5 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 336 / measure 23]                      %! _comment_measure_numbers
-        r2
+        r2                                                                     %! krummzeit.closing_pizzicati
 
         f'''2.                                                                 %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2609,13 +2609,13 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 337 / measure 24]                          %! _comment_measure_numbers
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati
     \times 5/9 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 338 / measure 25]                      %! _comment_measure_numbers
-        r2.
+        r2.                                                                    %! krummzeit.closing_pizzicati
 
         cs'''!1                                                                %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2626,11 +2626,11 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 339 / measure 26]                          %! _comment_measure_numbers
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
     \times 2/3 {                                                               %! krummzeit.closing_pizzicati
 
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         e'''2                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2649,14 +2649,14 @@ J_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 340 / measure 27]                      %! _comment_measure_numbers
-        r1.
+        r1.                                                                    %! krummzeit.closing_pizzicati
 
     }                                                                          %! krummzeit.closing_pizzicati
 
     \times 2/3 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 341 / measure 28]                      %! _comment_measure_numbers
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         ef'''!2                                                                %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2667,7 +2667,7 @@ J_Violin_Music_Voice = {                                                       %
     \times 5/7 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 342 / measure 29]                      %! _comment_measure_numbers
-        r1.
+        r1.                                                                    %! krummzeit.closing_pizzicati
 
         f'''4                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2678,16 +2678,16 @@ J_Violin_Music_Voice = {                                                       %
     \times 3/4 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 343 / measure 30]                      %! _comment_measure_numbers
-        r1
+        r1                                                                     %! krummzeit.closing_pizzicati
 
     }                                                                          %! krummzeit.closing_pizzicati
 
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     \times 2/3 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 344 / measure 31]                      %! _comment_measure_numbers
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         cs'''!2                                                                %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2698,7 +2698,7 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 345 / measure 32]                          %! _comment_measure_numbers
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
     e'''4                                                                      %! krummzeit.closing_pizzicati
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
@@ -2707,7 +2707,7 @@ J_Violin_Music_Voice = {                                                       %
     \times 5/6 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 346 / measure 33]                      %! _comment_measure_numbers
-        r2.
+        r2.                                                                    %! krummzeit.closing_pizzicati
 
         f'''2.                                                                 %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2718,9 +2718,9 @@ J_Violin_Music_Voice = {                                                       %
     \times 5/7 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 347 / measure 34]                      %! _comment_measure_numbers
-        r1
+        r1                                                                     %! krummzeit.closing_pizzicati
 
-        r4
+        r4                                                                     %! krummzeit.closing_pizzicati
 
         g'''2                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2728,13 +2728,13 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 348 / measure 35]                          %! _comment_measure_numbers
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     e'''2                                                                      %! krummzeit.closing_pizzicati
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
 
     % [J Violin_Music_Voice measure 349 / measure 36]                          %! _comment_measure_numbers
-    r2
+    r2                                                                         %! krummzeit.closing_pizzicati
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati
     \times 5/7 {                                                               %! krummzeit.closing_pizzicati
@@ -2755,11 +2755,11 @@ J_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 351 / measure 38]                          %! _comment_measure_numbers
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
     \times 4/5 {                                                               %! krummzeit.closing_pizzicati
 
-        r1
+        r1                                                                     %! krummzeit.closing_pizzicati
 
         e'''4                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
@@ -2769,12 +2769,12 @@ J_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Violin_Music_Voice measure 352 / measure 39]                      %! _comment_measure_numbers
-        r1.
+        r1.                                                                    %! krummzeit.closing_pizzicati
 
     }                                                                          %! krummzeit.closing_pizzicati
 
     % [J Violin_Music_Voice measure 353 / measure 40]                          %! _comment_measure_numbers
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
     f'''4                                                                      %! krummzeit.closing_pizzicati
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
@@ -2907,7 +2907,7 @@ J_Viola_Music_Voice = {                                                        %
     d'''2.                                                                     %! krummzeit.closing_pizzicati
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
 
-    r4
+    r4                                                                         %! krummzeit.closing_pizzicati
 
     f'''4                                                                      %! krummzeit.closing_pizzicati
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
@@ -2915,7 +2915,7 @@ J_Viola_Music_Voice = {                                                        %
     \times 4/7 {                                                               %! krummzeit.closing_pizzicati
 
         % [J Viola_Music_Voice measure 316 / measure 3]                        %! _comment_measure_numbers
-        r2.
+        r2.                                                                    %! krummzeit.closing_pizzicati
 
         g'''2                                                                  %! krummzeit.closing_pizzicati
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand

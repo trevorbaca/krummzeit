@@ -17,12 +17,12 @@ def pizzicato_rhythm(
         divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
             *specifiers,
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
                 extract_trivial=True,
                 rewrite_dots=True,
                 rewrite_rest_filled=True,
             ),
-            rmakers.BeamSpecifier(beam_each_division=True),
             curtail_ties=True,
             division_masks=dmask,
             extra_counts_per_division=[2, 2, 0, 2, 4, 6],

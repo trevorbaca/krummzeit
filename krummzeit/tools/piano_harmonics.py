@@ -19,7 +19,7 @@ def piano_harmonics(
         divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.NoteRhythmMaker(
             rmakers.TieSpecifier(tie_across_divisions=tie_across_divisions),
-            rmakers.BeamSpecifier(beam_each_division=True),
+            rmakers.BeamSpecifier(selector=baca.plts()),
             division_masks=dmask,
         ),
         tag="krummzeit.piano_harmonics",

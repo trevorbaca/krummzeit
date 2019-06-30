@@ -17,8 +17,8 @@ def closing_pizzicati(
         divisions=divisions,
         rhythm_maker=rmakers.TaleaRhythmMaker(
             rmakers.SilenceMask(selector=baca.lts().map(baca.leaves()[1:])),
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
-            rmakers.BeamSpecifier(beam_each_division=True),
             extra_counts_per_division=extra_counts,
             talea=rmakers.Talea(counts=counts, denominator=4),
         ),

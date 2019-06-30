@@ -15,13 +15,13 @@ def hypermeter_tuplets(
     return baca.rhythm(
         divisions=baca.divisions().fuse(counts, cyclic=True),
         rhythm_maker=rmakers.TupletRhythmMaker(
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
                 diminution=False,
                 extract_trivial=True,
                 rewrite_dots=True,
                 trivialize=True,
             ),
-            rmakers.BeamSpecifier(beam_each_division=True),
             denominator=(1, 4),
             division_masks=dmask,
             tuplet_ratios=tuplet_ratios,

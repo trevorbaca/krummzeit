@@ -9,8 +9,8 @@ def incise_chain() -> baca.RhythmCommand:
     """
     return baca.rhythm(
         rhythm_maker=rmakers.IncisedRhythmMaker(
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
-            rmakers.BeamSpecifier(beam_each_division=True),
             division_masks=[abjad.index([2], 5)],
             incise_specifier=rmakers.InciseSpecifier(
                 fill_with_rests=True,

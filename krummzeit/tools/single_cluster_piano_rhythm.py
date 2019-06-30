@@ -9,8 +9,8 @@ def single_cluster_piano_rhythm() -> baca.RhythmCommand:
     """
     return baca.rhythm(
         rhythm_maker=rmakers.IncisedRhythmMaker(
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
-            rmakers.BeamSpecifier(beam_each_division=True),
             incise_specifier=rmakers.InciseSpecifier(
                 fill_with_rests=True,
                 prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],

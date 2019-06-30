@@ -19,9 +19,9 @@ def glissando_rhythm(
     return baca.rhythm(
         divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.TupletRhythmMaker(
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
             rmakers.TieSpecifier(tie_across_divisions=tie_across_divisions),
-            rmakers.BeamSpecifier(beam_each_division=True),
             division_masks=dmask,
             tag="krummzeit.glissando_rhythm",
             tuplet_ratios=tuplet_ratios,

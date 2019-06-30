@@ -14,7 +14,7 @@ def opening_triplets(
     return baca.rhythm(
         divisions=baca.divisions().fuse().quarters(remainder=remainder),
         rhythm_maker=rmakers.TupletRhythmMaker(
-            rmakers.BeamSpecifier(beam_each_division=True),
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             division_masks=dmask,
             tuplet_ratios=[(1, 1, 1)],
         ),

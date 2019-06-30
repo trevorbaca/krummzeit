@@ -12,8 +12,8 @@ def rest_delimited_repeated_duration_notes(
     return baca.rhythm(
         divisions=baca.divisions().fuse().split([duration], cyclic=True),
         rhythm_maker=rmakers.IncisedRhythmMaker(
+            rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
-            rmakers.BeamSpecifier(beam_each_division=True),
             incise_specifier=rmakers.InciseSpecifier(
                 suffix_talea=[-1],
                 suffix_counts=[1],

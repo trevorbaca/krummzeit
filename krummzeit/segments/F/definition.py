@@ -124,7 +124,8 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
-        ties=[0, 1, 0, 1, 1, 0],
+        ###ties=[0, 1, 0, 1, 1, 0],
+        ties=abjad.index([1, 3, 4], 6),
         ),
     )
 
@@ -137,7 +138,8 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 8],
         extra_counts=[3, 1, 0, 4],
-        ties=[0, 1, 0, 1, 1, 0],
+        ###ties=[0, 1, 0, 1, 1, 0],
+        ties=abjad.index([1, 3, 4], 6),
         ),
     )
 

@@ -98,7 +98,8 @@ maker(
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
-        ties=[0, 1, 0, 1, 1, 0],
+        ###ties=[0, 1, 0, 1, 1, 0],
+        ties=abjad.index([1, 3, 4], 6),
         ),
     )
 
@@ -111,7 +112,8 @@ maker(
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
         final_quarter_notes=True,
-        ties=[0, 1, 0, 1, 1, 0],
+        ###ties=[0, 1, 0, 1, 1, 0],
+        ties=abjad.index([1, 3, 4], 6),
         ),
     )
 
@@ -147,7 +149,8 @@ maker(
         denominators=[8, 8, 16, 16, 16, 16],
         extra_counts=[0, 4, 3, 1],
         initial_eighth_notes=True,
-        ties=[0, 1, 1, 0, 0, 1],
+        ##ties=[0, 1, 1, 0, 0, 1],
+        ties=abjad.index([1, 2, 5], 6),
         ),
     )
 
@@ -169,7 +172,8 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 8],
         extra_counts=[3, 1, 0, 4],
-        ties=[0, 1, 0, 1, 1, 0],
+        ###ties=[0, 1, 0, 1, 1, 0],
+        ties=abjad.index([1, 3, 4], 6),
         ),
     )
 
@@ -181,7 +185,8 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
-        ties=[0, 1, 0, 1, 1, 0],
+        ###ties=[0, 1, 0, 1, 1, 0],
+        ties=abjad.index([1, 3, 4], 6),
         ),
     )
 
@@ -193,7 +198,8 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
-        ties=[0, 1, 0, 1, 1, 0],
+        ###ties=[0, 1, 0, 1, 1, 0],
+        ties=abjad.index([1, 3, 4], 6),
         ),
     )
 
@@ -205,7 +211,8 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
-        ties=[0, 1, 0, 1, 1, 0],
+        ###ties=[0, 1, 0, 1, 1, 0],
+        ties=abjad.index([1, 3, 4], 6),
         ),
     )
 

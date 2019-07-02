@@ -23,11 +23,17 @@ def polyphony(
         extract_trivial=True, trivialize=True
     )
 
+    assert isinstance(ties, abjad.Pattern), repr(ties)
+    tie_specifier = rmakers.TieSpecifier(
+        attach_ties=True,
+        selector=baca.tuplets()[:-1][ties].map(baca.pleaf(-1)),
+    )
+
     rhythm_maker: baca.RhythmMakerTyping
     rhythm_maker = rmakers.EvenDivisionRhythmMaker(
         rmakers.BeamSpecifier(selector=baca.tuplets()),
+        tie_specifier,
         tuplet_specifier,
-        rmakers.TieSpecifier(tie_across_divisions=ties),
         denominators=denominators,
         extra_counts_per_division=extra_counts,
         tag="krummzeit.polyphony",

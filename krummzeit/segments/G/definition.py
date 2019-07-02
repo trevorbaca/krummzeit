@@ -2,6 +2,7 @@ import abjad
 import baca
 import krummzeit
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -127,10 +128,12 @@ maker(
     krummzeit.margin_markup('Pf.'),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([5, 6], 7),
-        tie_across_divisions=[0, 1],
+        rmakers.SilenceMask(
+            selector=baca.plts()[abjad.index([5, 6], 7)],
         ),
-    )
+        tie_across_divisions=abjad.index([1], 2),
+    ),
+)
 
 maker(
     ('perc', (1, 7)),

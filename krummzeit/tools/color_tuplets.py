@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def color_tuplets(
-    *, dmask: rmakers.MasksTyping = None, rotation: int = 0
+    *specifiers: rmakers.SpecifierTyping, rotation: int = 0
 ) -> baca.RhythmCommand:
     """
     Makes color tuplets.
@@ -22,12 +22,24 @@ def color_tuplets(
         ]
     )
     tuplet_ratios = tuplet_ratios.rotate(n=rotation)
+
+    # TODO: complex but useful selector;
+    #       externalize in baca.rhythmcommands for reuse
+    nonlast_tuplets = baca.tuplets()[:-1]
+    span_pleaves = baca.leaves()[-1:].rleak().pleaves()
+    span_pleaves = nonlast_tuplets.map(span_pleaves)
+    span_pairs = span_pleaves.filter_length("==", 2)
+    selector = span_pairs.map(baca.leaf(0))
+
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
+            rmakers.TieSpecifier(attach_ties=True, selector=selector),
+            *specifiers,
+            rmakers.TupletSpecifier(
+                rewrite_dots=True, rewrite_rest_filled=True
+            ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(extract_trivial=True, rewrite_dots=True),
-            rmakers.TieSpecifier(tie_across_divisions=True),
-            division_masks=dmask,
+            rmakers.TupletSpecifier(extract_trivial=True),
             tuplet_ratios=tuplet_ratios,
         ),
         tag="krummzeit.color_tuplets",

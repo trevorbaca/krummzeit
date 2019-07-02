@@ -2,6 +2,7 @@ import abjad
 import baca
 import krummzeit
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -107,25 +108,34 @@ maker(
     ('vn', (12, 20)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([5, 6], 7),
+        #dmask=abjad.index([5, 6], 7),
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([5, 6], 7)],
         ),
-    )
+    ),
+)
 
 maker(
     ('va', (12, 20)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        dmask=abjad.index([0, 1], 7),
+        ###dmask=abjad.index([0, 1], 7),
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([0, 1], 7)],
         ),
-    )
+    ),
+)
 
 maker(
     ('vc', (12, 20)),
     krummzeit.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
-        dmask=abjad.index([2, 3], 7),
+        ###dmask=abjad.index([2, 3], 7),
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([2, 3], 7)],
         ),
-    )
+    ),
+)
 
 maker(
     ('ob', (12, 21)),
@@ -134,8 +144,11 @@ maker(
 
 maker(
     ('cl', (12, 21)),
-    krummzeit.color_tuplets(dmask=abjad.index([0]), rotation=2),
-    )
+    krummzeit.color_tuplets(
+        rmakers.SilenceMask(selector=baca.tuplet(0)),
+        rotation=2,
+    ),
+)
 
 maker(
     ('pf', [17, (20, 26)]),

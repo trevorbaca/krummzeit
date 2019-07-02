@@ -159,15 +159,15 @@ maker(
     ('vn', (14, 20)),
     krummzeit.glissando_rhythm(
         [(1, 2), (2, 1), (1, 1, 1)],
-        tie_across_divisions=[0, 1],
-        ),
-    )
+        tie_across_divisions=abjad.index([1], 2),
+    ),
+)
 
 maker(
     ('va', (14, 19)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (1, 2)],
-        tie_across_divisions=[0, 1],
+        tie_across_divisions=abjad.index([1], 2),
         ),
     )
 
@@ -175,7 +175,7 @@ maker(
     ('vc', (14, 20)),
     krummzeit.glissando_rhythm(
         [(1, 1, 1), (1, 2), (2, 1)],
-        tie_across_divisions=[0, 1],
+        tie_across_divisions=abjad.index([1], 2),
         ),
     )
 

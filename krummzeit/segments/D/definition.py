@@ -2,6 +2,7 @@ import abjad
 import baca
 import krummzeit
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -86,50 +87,62 @@ maker(
     ('va', (8, 10)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([5, 6], 7),
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([5, 6], 7)],
         ),
-    )
+    ),
+)
 
 maker(
     ('va', (11, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([0]),
+        rmakers.SilenceMask(
+            selector=baca.tuplet(0),
         ),
-    )
+    ),
+)
 
 maker(
     ('vn', (14, 16)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([5, 6], 7),
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([5, 6], 7)],
         ),
-    )
+    ),
+)
 
 maker(
     ('vc', (14, 16)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        dmask=abjad.index([0, 1, 2]),
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([0, 1, 2])],
         ),
-    )
+    ),
+)
 
 maker(
     ('vn', (17, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([0]),
+        rmakers.SilenceMask(
+            selector=baca.tuplet(0),
         ),
-    )
+    ),
+)
 
 maker(
     ('vc', (17, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([0]),
-        tuplet_ratios=[(1, 4), (4, 3), (1, 2)],
+        rmakers.SilenceMask(
+            selector=baca.tuplet(0),
         ),
-    )
+        tuplet_ratios=[(1, 4), (4, 3), (1, 2)],
+    ),
+)
 
 maker(
     ('va', (27, 34)),
@@ -199,7 +212,9 @@ maker(
 maker(
     ('cl', [(11, 13), (35, 44)]),
     krummzeit.color_tuplets(
-        dmask=abjad.index([0]),
+        rmakers.SilenceMask(
+            selector=baca.tuplet(0),
+        ),
         rotation=2,
         ),
     )

@@ -2,6 +2,7 @@ import abjad
 import baca
 import krummzeit
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -118,25 +119,31 @@ maker(
     ('vn', (4, 8)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([5, 6], 7),
-        )
-    )
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([5, 6], 7)],
+        ),
+    ),
+)
 
 maker(
     ('va', (4, 8)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        dmask=abjad.index([0, 1], 7),
-        )
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([0, 1], 7)],
+        ),
     )
+)
 
 maker(
     ('vc', (4, 8)),
     krummzeit.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
-        dmask=abjad.index([2, 3], 7),
+        rmakers.SilenceMask(
+            selector=baca.tuplets()[abjad.index([2, 3], 7)],
         ),
-    )
+    ),
+)
 
 maker(
     ('cl', (4, 5)),

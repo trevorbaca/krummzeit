@@ -238,19 +238,23 @@ maker(
     ('pf', (8, 10)),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([5, 6], 7),
-        tie_across_divisions=[0, 1],
+        rmakers.SilenceMask(
+            selector=baca.plts()[abjad.index([5, 6], 7)],
         ),
-    )
+        tie_across_divisions=abjad.index([1], 2),
+    ),
+)
 
 maker(
     ('pf', (11, 13)),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        dmask=abjad.index([0]),
-        tie_across_divisions=[0, 1],
+        rmakers.SilenceMask(
+            selector=baca.plt(0),
         ),
-    )
+        tie_across_divisions=abjad.index([1], 2),
+    ),
+)
 
 maker(
     ('pf', (27, 34)),

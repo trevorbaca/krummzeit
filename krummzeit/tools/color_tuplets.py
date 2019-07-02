@@ -24,7 +24,8 @@ def color_tuplets(
     tuplet_ratios = tuplet_ratios.rotate(n=rotation)
 
     # TODO: complex but useful selector;
-    #       externalize in baca.rhythmcommands for reuse
+    #       externalize in baca.rhythmcommands for reuse;
+    #       or, implement group_by_division()
     nonlast_tuplets = baca.tuplets()[:-1]
     span_pleaves = baca.leaves()[-1:].rleak().pleaves()
     span_pleaves = nonlast_tuplets.map(span_pleaves)

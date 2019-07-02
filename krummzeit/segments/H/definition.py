@@ -64,15 +64,15 @@ maker(
     ('vn', (3, 5)),
     krummzeit.glissando_rhythm(
         [(1, 2), (2, 1), (1, 1, 1)],
-        tie_across_divisions=[0, 1],
-        ),
-    )
+        tie_across_divisions=abjad.index([1], 2)
+    ),
+)
 
 maker(
     ('va', (3, 5)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (1, 2)],
-        tie_across_divisions=[0, 1],
+        tie_across_divisions=abjad.index([1], 2)
         ),
     )
 
@@ -80,7 +80,7 @@ maker(
     ('vc', (3, 5)),
     krummzeit.glissando_rhythm(
         [(1, 1, 1), (1, 2), (2, 1)],
-        tie_across_divisions=[0, 1],
+        tie_across_divisions=abjad.index([1], 2)
         ),
     )
 

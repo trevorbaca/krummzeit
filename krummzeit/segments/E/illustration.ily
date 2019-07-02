@@ -2524,8 +2524,8 @@ E_Clarinet_Music_Voice = {                                                     %
         \glissando                                                             %! baca.glissando
 
         dqs'!8.                                                                %! krummzeit.color_tuplets
-        ]                                                                      %! krummzeit.color_tuplets
         ~
+        ]                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 

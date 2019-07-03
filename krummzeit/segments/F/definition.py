@@ -2,6 +2,7 @@ import abjad
 import baca
 import krummzeit
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -102,8 +103,8 @@ maker(
     ('va', (7, 19)),
     krummzeit.hypermeter_tuplets(
         [(1, 6)],
-        counts=[2, 2, 2, 2, 2, 3],
-        dmask=abjad.index([0, 1]),
+        [2, 2, 2, 2, 2, 3],
+        rmakers.SilenceMask(selector=baca.tuplets()[:2]),
         ),
     )
 
@@ -111,8 +112,8 @@ maker(
     ('vc', (7, 19)),
     krummzeit.hypermeter_tuplets(
         [(6, 1)],
-        counts=[2, 2, 2, 2, 2, 3],
-        dmask=abjad.index([0, 1]),
+        [2, 2, 2, 2, 2, 3],
+        rmakers.SilenceMask(selector=baca.tuplets()[:2]),
         ),
     )
 
@@ -124,7 +125,6 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -138,7 +138,6 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 8],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )

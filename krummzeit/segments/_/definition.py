@@ -112,8 +112,10 @@ maker(
 
 maker(
     (['vn', 'va', 'vc'], (1, 2)),
-    krummzeit.opening_triplets(dmask=abjad.index([0])),
-    )
+    krummzeit.opening_triplets(
+        rmakers.SilenceMask(selector=baca.tuplet(0)),
+    ),
+)
 
 maker(
     ('vn', (4, 8)),

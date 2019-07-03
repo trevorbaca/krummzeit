@@ -2,6 +2,7 @@ import abjad
 import baca
 import krummzeit
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -84,7 +85,7 @@ maker(
 maker(
     (['vn', 'va', 'vc'], (1, 3)),
     krummzeit.opening_triplets(
-        dmask=abjad.index([-1]),
+        rmakers.SilenceMask(selector=baca.tuplet(-1)),
         remainder=abjad.Right,
         ),
     )
@@ -94,8 +95,10 @@ maker(
     baca.instrument(krummzeit.instruments['Harpsichord']),
     krummzeit.clusters('harpsichord'),
     krummzeit.margin_markup('Hpschd.'),
-    krummzeit.opening_triplets(dmask=abjad.index([0])),
-    )
+    krummzeit.opening_triplets(
+        rmakers.SilenceMask(selector=baca.tuplet(0)),
+    ),
+)
 
 maker(
     (['vn', 'va', 'vc'], (5, 9)),
@@ -122,8 +125,10 @@ maker(
     ('pf', (8, 22)),
     baca.instrument(krummzeit.instruments['Piano']),
     krummzeit.margin_markup('Pf.'),
-    krummzeit.opening_triplets(dmask=abjad.index([0])),
-    )
+    krummzeit.opening_triplets(
+        rmakers.SilenceMask(selector=baca.tuplet(0)),
+    ),
+)
 
 maker(
     ('cl', (3, 14)),

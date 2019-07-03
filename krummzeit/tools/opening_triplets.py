@@ -4,8 +4,7 @@ from abjadext import rmakers
 
 
 def opening_triplets(
-    *,
-    dmask: rmakers.MasksTyping = None,
+    *specifiers: rmakers.SpecifierTyping,
     remainder: abjad.HorizontalAlignment = abjad.Left,
 ) -> baca.RhythmCommand:
     """
@@ -14,8 +13,11 @@ def opening_triplets(
     return baca.rhythm(
         divisions=baca.divisions().fuse().quarters(remainder=remainder),
         rhythm_maker=rmakers.TupletRhythmMaker(
+            *specifiers,
             rmakers.BeamSpecifier(selector=baca.tuplets()),
-            division_masks=dmask,
+            rmakers.TupletSpecifier(
+                rewrite_rest_filled=True, extract_trivial=True
+            ),
             tuplet_ratios=[(1, 1, 1)],
         ),
         tag="krummzeit.opening_triplets",

@@ -9,10 +9,15 @@ def oboe_trills() -> baca.RhythmCommand:
     """
     split = baca.divisions().ratios([(2, 1), (2, 1), (1, 1, 1)], rounded=True)
     return baca.rhythm(
-        divisions=baca.divisions().map(split),
         rhythm_maker=rmakers.TupletRhythmMaker(
+            rmakers.SilenceMask(
+                selector=baca.tuplets()[abjad.index([3, 4], 6)]
+            ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
-            division_masks=[abjad.index([3, 4], 6)],
+            rmakers.TupletSpecifier(
+                rewrite_rest_filled=True, extract_trivial=True
+            ),
+            divisions=baca.divisions().map(split).flatten(depth=-1),
             tuplet_ratios=[(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)],
         ),
         tag="krummzeit.oboe_trills",

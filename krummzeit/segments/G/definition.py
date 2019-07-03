@@ -75,7 +75,6 @@ maker(
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -99,7 +98,6 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 8],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -119,7 +117,6 @@ maker(
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -142,7 +139,7 @@ maker(
     ('perc', (1, 7)),
     baca.make_repeated_duration_notes(
         [(1, 2)],
-        dmask=abjad.index([-1]),
+        rmakers.SilenceMask(selector=baca.lt(-1)),
         do_not_rewrite_meter=True,
         ),
     baca.markup('tam-tam', boxed=True),
@@ -157,7 +154,6 @@ maker(
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )

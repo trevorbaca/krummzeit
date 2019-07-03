@@ -192,17 +192,17 @@ maker(
     ('pf', (35, 42)),
     krummzeit.silver_points(
         [(1, 2), (2, 1)],
-        dmask=abjad.index([2], 7),
-        ),
-    )
+        rmakers.SilenceMask(selector=baca.tuplets()[abjad.index([2], 7)]),
+    ),
+)
 
 maker(
     ('perc', (35, 42)),
     krummzeit.silver_points(
         [(2, 1), (1, 2)],
-        dmask=abjad.index([5], 7),
-        ),
-    )
+        rmakers.SilenceMask(selector=baca.tuplets()[abjad.index([5], 7)]),
+    ),
+)
 
 maker(
     ('ob', [(11, 24), (35, 44)]),

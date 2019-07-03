@@ -2,6 +2,7 @@ import abjad
 import baca
 import krummzeit
 import os
+from abjadext import rmakers
 
 
 ###############################################################################
@@ -101,8 +102,10 @@ maker(
     baca.clef('treble'),
     baca.markup('crotale', boxed=True),
     baca.pitch('D5'),
-    krummzeit.left_remainder_quarters(dmask=abjad.index([0])),
-    )
+    krummzeit.left_remainder_quarters(
+        rmakers.SilenceMask(selector=baca.lt(0))
+    ),
+)
 
 maker(
     [

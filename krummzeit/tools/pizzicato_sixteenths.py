@@ -5,7 +5,6 @@ from abjadext import rmakers
 
 def pizzicato_sixteenths(
     *specifiers: rmakers.SpecifierTyping,
-    dmask: rmakers.MasksTyping = None,
     extra_counts: abjad.IntegerSequence = None,
 ) -> baca.RhythmCommand:
     """
@@ -23,7 +22,6 @@ def pizzicato_sixteenths(
             burnish_specifier=rmakers.BurnishSpecifier(
                 left_classes=[abjad.Rest], left_counts=[1]
             ),
-            division_masks=dmask,
             extra_counts_per_division=extra_counts,
             talea=rmakers.Talea(
                 counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],

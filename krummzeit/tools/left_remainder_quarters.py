@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def left_remainder_quarters(
-    *, dmask: rmakers.MasksTyping = None
+    *specifiers: rmakers.SpecifierTyping,
 ) -> baca.RhythmCommand:
     """
     Makes left-remainder quarter rhythm.
@@ -12,7 +12,7 @@ def left_remainder_quarters(
     return baca.rhythm(
         divisions=baca.divisions().fuse().quarters(remainder=abjad.Left),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            rmakers.BeamSpecifier(selector=baca.plts()), division_masks=dmask
+            *specifiers, rmakers.BeamSpecifier(selector=baca.plts())
         ),
         tag="krummzeit.left_remainder_quarters",
     )

@@ -14,6 +14,6 @@ def prolated_quarters(
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             denominators=[4],
             extra_counts_per_division=extra_counts,
-        ),
-        tag="krummzeit.prolated_quarters",
+            tag="krummzeit.prolated_quarters",
+        )
     )

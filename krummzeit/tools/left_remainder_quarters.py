@@ -10,9 +10,10 @@ def left_remainder_quarters(
     Makes left-remainder quarter rhythm.
     """
     return baca.rhythm(
-        divisions=baca.divisions().fuse().quarters(remainder=abjad.Left),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            *specifiers, rmakers.BeamSpecifier(selector=baca.plts())
-        ),
-        tag="krummzeit.left_remainder_quarters",
+            *specifiers,
+            rmakers.BeamSpecifier(selector=baca.plts()),
+            divisions=baca.divisions().fuse().quarters(remainder=abjad.Left),
+            tag="krummzeit.left_remainder_quarters",
+        )
     )

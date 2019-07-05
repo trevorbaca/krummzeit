@@ -41,7 +41,7 @@ def color_tuplets(
             ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
+            tag="krummzeit.color_tuplets",
             tuplet_ratios=tuplet_ratios,
-        ),
-        tag="krummzeit.color_tuplets",
+        )
     )

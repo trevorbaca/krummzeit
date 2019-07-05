@@ -11,7 +11,6 @@ def hypermeter_tuplets(
     """
     Makes hypermeter tuplets.
     """
-    divisions = baca.divisions().fuse(counts, cyclic=True)
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
             *specifiers,
@@ -24,8 +23,8 @@ def hypermeter_tuplets(
                 trivialize=True,
             ),
             denominator=(1, 4),
-            divisions=divisions.flatten(depth=-1),
+            divisions=baca.divisions().fuse(counts, cyclic=True),
+            tag="krummzeit.hypermeter_tuplets",
             tuplet_ratios=tuplet_ratios,
-        ),
-        tag="krummzeit.hypermeter_tuplets",
+        )
     )

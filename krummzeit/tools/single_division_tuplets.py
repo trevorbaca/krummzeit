@@ -17,7 +17,7 @@ def single_division_tuplets(
             ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(diminution=False, rewrite_dots=True),
+            tag="krummzeit.single_division_tuplets",
             tuplet_ratios=ratios,
-        ),
-        tag="krummzeit.single_division_tuplets",
+        )
     )

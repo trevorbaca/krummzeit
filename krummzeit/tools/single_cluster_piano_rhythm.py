@@ -19,6 +19,6 @@ def single_cluster_piano_rhythm() -> baca.RhythmCommand:
                 suffix_counts=[1, 1, 2, 1],
                 talea_denominator=16,
             ),
-        ),
-        tag="krummzeit.single_cluster_piano_rhythm",
+            tag="krummzeit.single_cluster_piano_rhythm",
+        )
     )

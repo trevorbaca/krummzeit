@@ -19,6 +19,6 @@ def incise_attacks() -> baca.RhythmCommand:
                 suffix_counts=[1, 1, 2, 1],
                 talea_denominator=16,
             ),
-        ),
-        tag="krummzeit.incise_attacks",
+            tag="krummzeit.incise_attacks",
+        )
     )

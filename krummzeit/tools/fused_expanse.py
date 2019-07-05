@@ -11,9 +11,9 @@ def fused_expanse(
     Makes fused expanse rhythm.
     """
     return baca.rhythm(
-        divisions=baca.divisions().fuse().split(divisions, cyclic=True),
         rhythm_maker=rmakers.NoteRhythmMaker(
-            rmakers.BeamSpecifier(selector=baca.plts())
-        ),
-        tag="krummzeit.fused_expanse",
+            rmakers.BeamSpecifier(selector=baca.plts()),
+            tag="krummzeit.fused_expanse",
+            divisions=baca.divisions().fuse().split(divisions, cyclic=True),
+        )
     )

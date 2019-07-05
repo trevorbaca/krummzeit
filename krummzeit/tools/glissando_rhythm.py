@@ -33,6 +33,7 @@ def glissando_rhythm(
     specifiers_.extend(specifiers)
 
     split = baca.divisions().ratios(division_ratios, rounded=True)
+
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
             *specifiers_,

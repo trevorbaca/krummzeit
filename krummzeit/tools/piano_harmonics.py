@@ -26,6 +26,7 @@ def piano_harmonics(
         specifier = rmakers.TieSpecifier(attach_ties=True, selector=selector)
         specifiers_.append(specifier)
     split = baca.divisions().ratios(division_ratios, rounded=True)
+
     return baca.rhythm(
         rhythm_maker=rmakers.NoteRhythmMaker(
             *specifiers_,

@@ -24,6 +24,7 @@ def white_rhythm(
         .fuse()
         .split(durations, cyclic=True, remainder=remainder)
     )
+
     return baca.rhythm(
         rhythm_maker=rmakers.NoteRhythmMaker(
             rmakers.BeamSpecifier(selector=baca.plts()),

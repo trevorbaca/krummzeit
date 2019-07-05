@@ -8,6 +8,7 @@ def oboe_trills() -> baca.RhythmCommand:
     Makes oboe trill rhythm.
     """
     split = baca.divisions().ratios([(2, 1), (2, 1), (1, 1, 1)], rounded=True)
+
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
             rmakers.SilenceMask(

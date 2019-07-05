@@ -4088,13 +4088,13 @@ A_Piano_Music_Voice = {                                                        %
     g''4                                                                       %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 35 / measure 22]                            %! _comment_measure_numbers
-    fs''!4
+    fs''!4                                                                     %! krummzeit.polyphony
 
-    b''4
+    b''4                                                                       %! krummzeit.polyphony
 
-    fs'!4
+    fs'!4                                                                      %! krummzeit.polyphony
 
-    d'''4
+    d'''4                                                                      %! krummzeit.polyphony
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding:OverrideCommand(2)
     \revert TupletBracket.staff-padding                                        %! baca.tuplet_bracket_staff_padding:OverrideCommand(2)
 
@@ -4105,14 +4105,14 @@ A_Piano_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:_set_status_tag:_treat_persistent_wrapper(2):baca.clef:IndicatorCommand
-    b8
-    [
+    b8                                                                         %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
-    g8
-    ]
+    g8                                                                         %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony
 
-    a8.
+    a8.                                                                        %! krummzeit.polyphony
 
     g8                                                                         %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony

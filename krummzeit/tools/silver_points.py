@@ -15,6 +15,7 @@ def silver_points(
     Makes silver points rhythm.
     """
     split = baca.divisions().ratios(ratios, rounded=True)
+
     return baca.rhythm(
         rhythm_maker=rmakers.TupletRhythmMaker(
             *specifiers,

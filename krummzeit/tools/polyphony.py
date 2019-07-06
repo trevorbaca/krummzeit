@@ -20,6 +20,7 @@ def polyphony(
     """
 
     tag = "krummzeit.polyphony"
+
     tuplet_specifier = rmakers.TupletSpecifier(
         extract_trivial=True, trivialize=True
     )
@@ -30,8 +31,14 @@ def polyphony(
         selector=baca.tuplets()[:-1][ties].map(baca.pleaf(-1)),
     )
 
-    rhythm_maker: baca.RhythmMakerTyping
-    rhythm_maker = rmakers.EvenDivisionRhythmMaker(
+    eighths = rmakers.EvenDivisionRhythmMaker(
+        rmakers.BeamSpecifier(selector=baca.tuplets()),
+        tuplet_specifier,
+        denominators=[8],
+        tag=tag,
+    )
+
+    even_divisions = rmakers.EvenDivisionRhythmMaker(
         rmakers.BeamSpecifier(selector=baca.tuplets()),
         tie_specifier,
         tuplet_specifier,
@@ -40,32 +47,29 @@ def polyphony(
         tag=tag,
     )
 
+    quarters = rmakers.NoteRhythmMaker(
+        rmakers.TieSpecifier(detach_ties=True, selector=baca.notes()),
+        rmakers.BeamSpecifier(selector=baca.plts()),
+        duration_specifier=rmakers.DurationSpecifier(
+            forbidden_note_duration=(1, 2)
+        ),
+        tag=tag,
+    )
+
     if final_quarter_notes:
-        quarters = rmakers.NoteRhythmMaker(
-            rmakers.TieSpecifier(detach_ties=True, selector=baca.notes()),
-            rmakers.BeamSpecifier(selector=baca.plts()),
-            duration_specifier=rmakers.DurationSpecifier(
-                forbidden_note_duration=(1, 2)
-            ),
-            tag=tag,
-        )
         indices = [-3, -2, -1]
         rhythm_maker = [
-            (rhythm_maker, ~abjad.index(indices)),
-            (quarters, abjad.index(indices)),
+            baca.DivisionAssignment(~abjad.index(indices), even_divisions),
+            baca.DivisionAssignment(abjad.index(indices), quarters),
         ]
     elif initial_eighth_notes:
-        eighths = rmakers.EvenDivisionRhythmMaker(
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            tuplet_specifier,
-            denominators=[8],
-            tag=tag,
-        )
         indices = [0, 1]
         rhythm_maker = [
-            (rhythm_maker, ~abjad.index(indices)),
-            (eighths, abjad.index(indices)),
+            baca.DivisionAssignment(~abjad.index(indices), even_divisions),
+            baca.DivisionAssignment(abjad.index(indices), eighths),
         ]
+    else:
+        rhythm_maker = even_divisions
 
     split = baca.divisions().split(
         durations,
@@ -73,7 +77,6 @@ def polyphony(
         remainder_fuse_threshold=fuse,
         rotate_indexed=rotation,
     )
+    divisions = baca.divisions().map(split)
 
-    return baca.rhythm(
-        divisions=baca.divisions().map(split), rhythm_maker=rhythm_maker
-    )
+    return baca.rhythm(divisions=divisions, rhythm_maker=rhythm_maker)

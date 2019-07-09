@@ -58,15 +58,15 @@ def polyphony(
 
     if final_quarter_notes:
         indices = [-3, -2, -1]
-        rhythm_maker = baca.DivisionAssignments(
-            baca.DivisionAssignment(~abjad.index(indices), even_divisions),
-            baca.DivisionAssignment(abjad.index(indices), quarters),
+        rhythm_maker = rmakers.DivisionAssignments(
+            rmakers.DivisionAssignment(~abjad.index(indices), even_divisions),
+            rmakers.DivisionAssignment(abjad.index(indices), quarters),
         )
     elif initial_eighth_notes:
         indices = [0, 1]
-        rhythm_maker = baca.DivisionAssignments(
-            baca.DivisionAssignment(~abjad.index(indices), even_divisions),
-            baca.DivisionAssignment(abjad.index(indices), eighths),
+        rhythm_maker = rmakers.DivisionAssignments(
+            rmakers.DivisionAssignment(~abjad.index(indices), even_divisions),
+            rmakers.DivisionAssignment(abjad.index(indices), eighths),
         )
     else:
         rhythm_maker = even_divisions

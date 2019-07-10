@@ -11,21 +11,24 @@ def pizzicato_sixteenths(
     Makes pizzicato sixteenths rhythm.
     """
     return baca.rhythm(
-        rhythm_maker=rmakers.TaleaRhythmMaker(
+        rmakers.RhythmCommand(
+            rmakers.TaleaRhythmMaker(
+                burnish_specifier=rmakers.BurnishSpecifier(
+                    left_classes=[abjad.Rest], left_counts=[1]
+                ),
+                extra_counts_per_division=extra_counts,
+                tag="krummzeit.pizzicato_sixteenths",
+                talea=rmakers.Talea(
+                    counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
+                    denominator=16,
+                ),
+            ),
             *specifiers,
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
                 extract_trivial=True, rewrite_rest_filled=True, trivialize=True
             ),
-            burnish_specifier=rmakers.BurnishSpecifier(
-                left_classes=[abjad.Rest], left_counts=[1]
-            ),
             divisions=baca.divisions().split([(6, 16), (18, 16)], cyclic=True),
-            extra_counts_per_division=extra_counts,
             tag="krummzeit.pizzicato_sixteenths",
-            talea=rmakers.Talea(
-                counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
-                denominator=16,
-            ),
         )
     )

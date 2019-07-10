@@ -10,10 +10,13 @@ def prolated_quarters(
     Makes prolated quarters.
     """
     return baca.rhythm(
-        rhythm_maker=rmakers.EvenDivisionRhythmMaker(
+        rmakers.RhythmCommand(
+            rmakers.EvenDivisionRhythmMaker(
+                denominators=[4],
+                extra_counts_per_division=extra_counts,
+                tag="krummzeit.prolated_quarters",
+            ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
-            denominators=[4],
-            extra_counts_per_division=extra_counts,
             tag="krummzeit.prolated_quarters",
         )
     )

@@ -11,7 +11,10 @@ def opening_triplets(
     Makes opening triplets.
     """
     return baca.rhythm(
-        rhythm_maker=rmakers.TupletRhythmMaker(
+        rmakers.RhythmCommand(
+            rmakers.TupletRhythmMaker(
+                tag="krummzeit.opening_triplets", tuplet_ratios=[(1, 1, 1)]
+            ),
             *specifiers,
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
@@ -19,6 +22,5 @@ def opening_triplets(
             ),
             divisions=baca.divisions().fuse().quarters(remainder=remainder),
             tag="krummzeit.opening_triplets",
-            tuplet_ratios=[(1, 1, 1)],
         )
     )

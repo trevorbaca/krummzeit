@@ -26,10 +26,13 @@ def white_rhythm(
     )
 
     return baca.rhythm(
-        rhythm_maker=rmakers.NoteRhythmMaker(
+        rmakers.RhythmCommand(
+            rmakers.NoteRhythmMaker(
+                burnish_specifier=burnish_specifier,
+                divisions=divisions,
+                tag="krummzeit.white_rhythm",
+            ),
             rmakers.BeamSpecifier(selector=baca.plts()),
-            burnish_specifier=burnish_specifier,
-            divisions=divisions,
             tag="krummzeit.white_rhythm",
         )
     )

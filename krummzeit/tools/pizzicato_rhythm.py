@@ -14,7 +14,15 @@ def pizzicato_rhythm(
     divisions = baca.divisions().split(durations, cyclic=True)
 
     return baca.rhythm(
-        rhythm_maker=rmakers.TaleaRhythmMaker(
+        rmakers.RhythmCommand(
+            rmakers.TaleaRhythmMaker(
+                curtail_ties=True,
+                extra_counts_per_division=[2, 2, 0, 2, 4, 6],
+                tag="krummzeit.pizzicato_rhythm",
+                talea=rmakers.Talea(
+                    counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], denominator=16
+                ),
+            ),
             *specifiers,
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
@@ -22,12 +30,7 @@ def pizzicato_rhythm(
                 rewrite_dots=True,
                 rewrite_rest_filled=True,
             ),
-            curtail_ties=True,
             divisions=divisions,
-            extra_counts_per_division=[2, 2, 0, 2, 4, 6],
             tag="krummzeit.pizzicato_rhythm",
-            talea=rmakers.Talea(
-                counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], denominator=16
-            ),
         )
     )

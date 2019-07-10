@@ -79,4 +79,8 @@ def polyphony(
     )
     divisions = baca.divisions().map(split)
 
-    return baca.rhythm(divisions=divisions, rhythm_maker=rhythm_maker)
+    return baca.rhythm(
+        ###divisions=divisions,
+        ###rhythm_maker=rhythm_maker,
+        rmakers.RhythmCommand(rhythm_maker, divisions=divisions)
+    )

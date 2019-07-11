@@ -1193,7 +1193,7 @@ i_Violin_Music_Voice = {                                                       %
         d''8                                                                   %! krummzeit.glissando_rhythm
 
         d''4                                                                   %! krummzeit.glissando_rhythm
-        \repeatTie                                                             %! baca.repeat_tie_repeat_pitches
+        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
     }                                                                          %! krummzeit.glissando_rhythm
@@ -1593,7 +1593,7 @@ i_Viola_Music_Voice = {                                                        %
     \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         ef!4                                                                   %! krummzeit.glissando_rhythm
-        \repeatTie                                                             %! baca.repeat_tie_repeat_pitches
+        \repeatTie                                                             %! baca.repeat_tie:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
         af!8.                                                                  %! krummzeit.glissando_rhythm

@@ -260,7 +260,7 @@ maker(
     baca.markup('molto flautando'),
     baca.note_head_style_harmonic(),
     baca.new(
-        baca.repeat_tie(selector=baca.pheads()[1:]),
+        baca.repeat_tie(baca.pheads()[1:]),
         map=baca.qruns(),
     ),
 )

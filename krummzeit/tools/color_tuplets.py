@@ -34,9 +34,7 @@ def color_tuplets(
 
     return baca.rhythm(
         rmakers.RhythmCommand(
-            rmakers.TupletRhythmMaker(
-                tag="krummzeit.color_tuplets", tuplet_ratios=tuplet_ratios
-            ),
+            rmakers.TupletRhythmMaker(tuplet_ratios=tuplet_ratios),
             rmakers.TieSpecifier(attach_ties=True, selector=selector),
             *specifiers,
             rmakers.TupletSpecifier(
@@ -44,6 +42,6 @@ def color_tuplets(
             ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
-            tag="krummzeit.color_tuplets",
-        )
+        ),
+        tag="krummzeit.color_tuplets",
     )

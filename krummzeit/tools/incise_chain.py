@@ -17,14 +17,13 @@ def incise_chain() -> baca.RhythmCommand:
                     suffix_talea=[0, 2, -2, 0, 2, -2],
                     suffix_counts=[1, 2, 1, 2],
                     talea_denominator=16,
-                ),
-                tag="krummzeit.incise_chain",
+                )
             ),
             rmakers.SilenceMask(selector=baca.tuplets()[abjad.index([2], 5)]),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
                 extract_trivial=True, rewrite_rest_filled=True
             ),
-            tag="krummzeit.incise_chain",
-        )
+        ),
+        tag="krummzeit.incise_chain",
     )

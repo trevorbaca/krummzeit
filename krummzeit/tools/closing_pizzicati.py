@@ -19,12 +19,11 @@ def closing_pizzicati(
             rmakers.TaleaRhythmMaker(
                 extra_counts_per_division=extra_counts,
                 divisions=divisions,
-                tag="krummzeit.closing_pizzicati",
                 talea=rmakers.Talea(counts=counts, denominator=4),
             ),
             rmakers.SilenceMask(selector=baca.lts().map(baca.leaves()[1:])),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
-            tag="krummzeit.closing_pizzicati",
-        )
+        ),
+        tag="krummzeit.closing_pizzicati",
     )

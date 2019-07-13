@@ -17,11 +17,10 @@ def incise_attacks() -> baca.RhythmCommand:
                     suffix_talea=[0, 0, 1, -3, 0],
                     suffix_counts=[1, 1, 2, 1],
                     talea_denominator=16,
-                ),
-                tag="krummzeit.incise_attacks",
+                )
             ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
-            tag="krummzeit.incise_attacks",
-        )
+        ),
+        tag="krummzeit.incise_attacks",
     )

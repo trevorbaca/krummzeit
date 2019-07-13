@@ -1,11 +1,12 @@
 import abjad
 import baca
+import typing
 from abjadext import rmakers
 
 
 def white_rhythm(
     durations: abjad.DurationSequenceTyping = None,
-    remainder: abjad.HorizontalAlignment = abjad.Left,
+    remainder: typing.Union[int, abjad.HorizontalAlignment] = abjad.Left,
     do_not_burnish: bool = None,
 ) -> baca.RhythmCommand:
     """

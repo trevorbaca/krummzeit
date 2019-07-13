@@ -1,11 +1,12 @@
 import abjad
 import baca
+import typing
 from abjadext import rmakers
 
 
 def opening_triplets(
     *specifiers: rmakers.SpecifierTyping,
-    remainder: abjad.HorizontalAlignment = abjad.Left,
+    remainder: typing.Union[int, abjad.HorizontalAlignment] = abjad.Left,
 ) -> baca.RhythmCommand:
     """
     Makes opening triplets.

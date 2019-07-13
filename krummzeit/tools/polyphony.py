@@ -19,8 +19,6 @@ def polyphony(
     Makes polyphony rhythm.
     """
 
-    tag = "krummzeit.polyphony"
-
     tuplet_specifier = rmakers.TupletSpecifier(
         extract_trivial=True, trivialize=True
     )
@@ -35,7 +33,6 @@ def polyphony(
         rmakers.BeamSpecifier(selector=baca.tuplets()),
         tuplet_specifier,
         denominators=[8],
-        tag=tag,
     )
 
     even_divisions = rmakers.EvenDivisionRhythmMaker(
@@ -44,7 +41,6 @@ def polyphony(
         tuplet_specifier,
         denominators=denominators,
         extra_counts_per_division=extra_counts,
-        tag=tag,
     )
 
     quarters = rmakers.NoteRhythmMaker(
@@ -53,7 +49,6 @@ def polyphony(
         duration_specifier=rmakers.DurationSpecifier(
             forbidden_note_duration=(1, 2)
         ),
-        tag=tag,
     )
 
     if final_quarter_notes:
@@ -80,7 +75,6 @@ def polyphony(
     divisions = baca.divisions().map(split)
 
     return baca.rhythm(
-        ###divisions=divisions,
-        ###rhythm_maker=rhythm_maker,
-        rmakers.RhythmCommand(rhythm_maker, divisions=divisions)
+        rmakers.RhythmCommand(rhythm_maker, divisions=divisions),
+        tag="krummzeit.polyphony",
     )

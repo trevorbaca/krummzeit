@@ -29,10 +29,10 @@ def piano_harmonics(
 
     return baca.rhythm(
         rmakers.RhythmCommand(
-            rmakers.NoteRhythmMaker(tag="krummzeit.piano_harmonics"),
+            rmakers.NoteRhythmMaker(),
             *specifiers_,
             rmakers.BeamSpecifier(selector=baca.plts()),
             divisions=baca.divisions().map(split),
-            tag="krummzeit.piano_harmonics",
-        )
+        ),
+        tag="krummzeit.piano_harmonics",
     )

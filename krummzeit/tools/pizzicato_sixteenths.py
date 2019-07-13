@@ -17,7 +17,6 @@ def pizzicato_sixteenths(
                     left_classes=[abjad.Rest], left_counts=[1]
                 ),
                 extra_counts_per_division=extra_counts,
-                tag="krummzeit.pizzicato_sixteenths",
                 talea=rmakers.Talea(
                     counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
                     denominator=16,
@@ -29,6 +28,6 @@ def pizzicato_sixteenths(
                 extract_trivial=True, rewrite_rest_filled=True, trivialize=True
             ),
             divisions=baca.divisions().split([(6, 16), (18, 16)], cyclic=True),
-            tag="krummzeit.pizzicato_sixteenths",
-        )
+        ),
+        tag="krummzeit.pizzicato_sixteenths",
     )

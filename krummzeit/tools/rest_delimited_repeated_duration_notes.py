@@ -16,12 +16,11 @@ def rest_delimited_repeated_duration_notes(
                     suffix_talea=[-1],
                     suffix_counts=[1],
                     talea_denominator=denominator,
-                ),
-                tag="krummzeit.rest_delimited_repeated_duration_notes",
+                )
             ),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
             divisions=baca.divisions().fuse().split([duration], cyclic=True),
-            tag="krummzeit.rest_delimited_repeated_duration_notes",
-        )
+        ),
+        tag="krummzeit.rest_delimited_repeated_duration_notes",
     )

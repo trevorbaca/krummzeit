@@ -12,15 +12,13 @@ def opening_triplets(
     """
     return baca.rhythm(
         rmakers.RhythmCommand(
-            rmakers.TupletRhythmMaker(
-                tag="krummzeit.opening_triplets", tuplet_ratios=[(1, 1, 1)]
-            ),
+            rmakers.TupletRhythmMaker(tuplet_ratios=[(1, 1, 1)]),
             *specifiers,
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
                 rewrite_rest_filled=True, extract_trivial=True
             ),
             divisions=baca.divisions().fuse().quarters(remainder=remainder),
-            tag="krummzeit.opening_triplets",
-        )
+        ),
+        tag="krummzeit.opening_triplets",
     )

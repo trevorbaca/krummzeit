@@ -16,7 +16,6 @@ def hypermeter_tuplets(
             rmakers.TupletRhythmMaker(
                 denominator=(1, 4),
                 divisions=baca.divisions().fuse(counts, cyclic=True),
-                tag="krummzeit.hypermeter_tuplets",
                 tuplet_ratios=tuplet_ratios,
             ),
             *specifiers,
@@ -28,6 +27,6 @@ def hypermeter_tuplets(
                 rewrite_rest_filled=True,
                 trivialize=True,
             ),
-            tag="krummzeit.hypermeter_tuplets",
-        )
+        ),
+        tag="krummzeit.hypermeter_tuplets",
     )

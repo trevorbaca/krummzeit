@@ -11,10 +11,10 @@ def right_remainder_quarters(
     """
     return baca.rhythm(
         rmakers.RhythmCommand(
-            rmakers.NoteRhythmMaker(tag="krummzeit.right_remainder_quarters"),
+            rmakers.NoteRhythmMaker(),
             *specifiers,
             rmakers.BeamSpecifier(selector=baca.plts()),
             divisions=baca.divisions().map(baca.divisions().quarters()),
-            tag="krummzeit.right_remainder_quarters",
-        )
+        ),
+        tag="krummzeit.right_remainder_quarters",
     )

@@ -19,7 +19,7 @@ def incise_chain() -> baca.RhythmCommand:
                     talea_denominator=16,
                 )
             ),
-            rmakers.SilenceMask(baca.tuplets().get([2], 5)),
+            rmakers.rest(baca.tuplets().get([2], 5)),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(
                 extract_trivial=True, rewrite_rest_filled=True

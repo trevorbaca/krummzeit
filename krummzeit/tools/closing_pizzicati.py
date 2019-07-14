@@ -21,7 +21,7 @@ def closing_pizzicati(
                 divisions=divisions,
                 talea=rmakers.Talea(counts=counts, denominator=4),
             ),
-            rmakers.SilenceMask(baca.lts().map(baca.leaves()[1:])),
+            rmakers.rest(baca.lts().map(baca.leaves()[1:])),
             rmakers.BeamSpecifier(selector=baca.tuplets()),
             rmakers.TupletSpecifier(extract_trivial=True),
         ),

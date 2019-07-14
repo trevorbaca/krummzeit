@@ -108,7 +108,7 @@ maker(
     ('vn', (12, 20)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([5, 6], 7)]),
+        rmakers.SilenceMask(baca.tuplets().get([5, 6], 7)),
     ),
 )
 
@@ -116,7 +116,7 @@ maker(
     ('va', (12, 20)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([0, 1], 7)]),
+        rmakers.SilenceMask(baca.tuplets().get([0, 1], 7)),
     ),
 )
 
@@ -124,7 +124,7 @@ maker(
     ('vc', (12, 20)),
     krummzeit.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([2, 3], 7)]),
+        rmakers.SilenceMask(baca.tuplets().get([2, 3], 7)),
     ),
 )
 
@@ -194,7 +194,7 @@ maker(
 maker(
     ('pf', [(30, 31), (33, 34)]),
     krummzeit.pizzicato_rhythm(
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([0, 4, 5], 6)]),
+        rmakers.SilenceMask(baca.tuplets().get([0, 4, 5], 6)),
     ),
 )
 

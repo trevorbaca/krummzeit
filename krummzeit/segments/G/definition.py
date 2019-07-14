@@ -128,7 +128,7 @@ maker(
     krummzeit.margin_markup('Pf.'),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(baca.plts()[abjad.index([5, 6], 7)]),
+        rmakers.SilenceMask(baca.plts().get([5, 6], 7)),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )

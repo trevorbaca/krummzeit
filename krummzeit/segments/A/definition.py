@@ -98,7 +98,6 @@ maker(
         fuse=(1, 8),
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -112,7 +111,6 @@ maker(
         denominators=[8, 8, 4, 4, 8, 8],
         extra_counts=[3, 1, 0, 4],
         final_quarter_notes=True,
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -149,7 +147,6 @@ maker(
         denominators=[8, 8, 16, 16, 16, 16],
         extra_counts=[0, 4, 3, 1],
         initial_eighth_notes=True,
-        ##ties=[0, 1, 1, 0, 0, 1],
         ties=abjad.index([1, 2, 5], 6),
         ),
     )
@@ -172,7 +169,6 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 8],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -185,7 +181,6 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -198,7 +193,6 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -211,7 +205,6 @@ maker(
         fuse=(1, 8),
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
-        ###ties=[0, 1, 0, 1, 1, 0],
         ties=abjad.index([1, 3, 4], 6),
         ),
     )
@@ -274,28 +267,28 @@ maker(
 maker(
     ('va', (48, 56)),
     krummzeit.pizzicato_rhythm(
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([1, 2, 3], 6)]),
+        rmakers.SilenceMask(baca.tuplets().get([1, 2, 3], 6)),
         ),
     )
 
 maker(
     ('vc', (52, 56)),
     krummzeit.pizzicato_rhythm(
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([2, 3, 4], 6)]),
+        rmakers.SilenceMask(baca.tuplets().get([2, 3, 4], 6)),
         ),
     )
 
 maker(
     ('vn', (54, 56)),
     krummzeit.pizzicato_rhythm(
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([3, 4, 5], 6)]),
+        rmakers.SilenceMask(baca.tuplets().get([3, 4, 5], 6)),
         ),
     )
 
 maker(
     ('va', (57, 71)),
     krummzeit.pizzicato_sixteenths(
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([2, 3], 6)]),
+        rmakers.SilenceMask(baca.tuplets().get([2, 3], 6)),
         extra_counts=[2, 2, 0, 2, 4, 6],
         ),
     )
@@ -303,7 +296,7 @@ maker(
 maker(
     ('vc', (57, 71)),
     krummzeit.pizzicato_sixteenths(
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([0, 2], 7)]),
+        rmakers.SilenceMask(baca.tuplets().get([0, 2], 7)),
         extra_counts=[4, 4, 2, 0, 2, 4],
         ),
     )
@@ -311,7 +304,7 @@ maker(
 maker(
     ('vn', (57, 71)),
     krummzeit.pizzicato_sixteenths(
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([3, 6], 8)]),
+        rmakers.SilenceMask(baca.tuplets().get([3, 6], 8)),
         extra_counts=[6, 0, 4, 4, 0, 2],
         ),
     )
@@ -319,7 +312,7 @@ maker(
 maker(
     ('pf', (57, 71)),
     krummzeit.pizzicato_sixteenths(
-        rmakers.SilenceMask(baca.tuplets()[abjad.index([1, 5], 7)]),
+        rmakers.SilenceMask(baca.tuplets().get([1, 5], 7)),
         extra_counts=[4, 0, 2, 4, 6],
         ),
     )

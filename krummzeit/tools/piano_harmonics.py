@@ -18,7 +18,7 @@ def piano_harmonics(
         # TODO: complex but useful selector;
         #       externalize in baca.rhythmcommands for reuse;
         #       or, allow for group_by_division()
-        lts = baca.lts()[:-1][tie_across_divisions]
+        lts = baca.lts()[:-1].get(tie_across_divisions)
         span_pleaves = baca.leaves()[-1:].rleak().pleaves()
         span_pleaves = lts.map(span_pleaves)
         span_pairs = span_pleaves.filter_length("==", 2)

@@ -25,9 +25,9 @@ def glissando_rhythm(
     elif isinstance(tie_across_divisions, abjad.Pattern):
         specifier = rmakers.TieSpecifier(
             attach_ties=True,
-            selector=baca.tuplets()[:-1][tie_across_divisions].map(
-                baca.pleaf(-1)
-            ),
+            selector=baca.tuplets()[:-1]
+            .get(tie_across_divisions)
+            .map(baca.pleaf(-1)),
         )
         specifiers_.append(specifier)
     specifiers_.extend(specifiers)

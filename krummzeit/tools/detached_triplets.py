@@ -7,7 +7,7 @@ def detached_triplets() -> baca.RhythmCommand:
     """
     Makes detached triplets.
     """
-    tuplets = baca.tuplets()[:-1][abjad.index([0], 2)]
+    tuplets = baca.tuplets()[:-1].get([0], 2)
 
     return baca.rhythm(
         rmakers.RhythmCommand(

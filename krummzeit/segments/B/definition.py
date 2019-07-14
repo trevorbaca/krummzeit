@@ -438,7 +438,7 @@ maker(
     baca.suite(
         baca.new(
             baca.deviation([0, -0.5, 0, 0.5]),
-            map=baca.ltqruns().filter_length('>', 1)[abjad.index([0], 2)],
+            map=baca.ltqruns().filter_length('>', 1).get([0], 2),
             ),
         baca.new(
             baca.deviation([0, 0.5, 0, -0.5]),

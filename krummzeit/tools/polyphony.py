@@ -26,7 +26,7 @@ def polyphony(
     assert isinstance(ties, abjad.Pattern), repr(ties)
     tie_specifier = rmakers.TieSpecifier(
         attach_ties=True,
-        selector=baca.tuplets()[:-1][ties].map(baca.pleaf(-1)),
+        selector=baca.tuplets()[:-1].get(ties).map(baca.pleaf(-1)),
     )
 
     eighths = rmakers.EvenDivisionRhythmMaker(

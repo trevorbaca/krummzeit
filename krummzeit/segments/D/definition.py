@@ -87,9 +87,7 @@ maker(
     ('va', (8, 10)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(
-            selector=baca.tuplets()[abjad.index([5, 6], 7)],
-        ),
+        rmakers.SilenceMask(baca.tuplets()[abjad.index([5, 6], 7)]),
     ),
 )
 
@@ -97,9 +95,7 @@ maker(
     ('va', (11, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(
-            selector=baca.tuplet(0),
-        ),
+        rmakers.SilenceMask(baca.tuplet(0)),
     ),
 )
 
@@ -107,9 +103,7 @@ maker(
     ('vn', (14, 16)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(
-            selector=baca.tuplets()[abjad.index([5, 6], 7)],
-        ),
+        rmakers.SilenceMask(baca.tuplets()[abjad.index([5, 6], 7)]),
     ),
 )
 
@@ -117,9 +111,7 @@ maker(
     ('vc', (14, 16)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.SilenceMask(
-            selector=baca.tuplets()[abjad.index([0, 1, 2])],
-        ),
+        rmakers.SilenceMask(baca.tuplets()[abjad.index([0, 1, 2])]),
     ),
 )
 
@@ -127,9 +119,7 @@ maker(
     ('vn', (17, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(
-            selector=baca.tuplet(0),
-        ),
+        rmakers.SilenceMask(baca.tuplet(0)),
     ),
 )
 
@@ -137,9 +127,7 @@ maker(
     ('vc', (17, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(
-            selector=baca.tuplet(0),
-        ),
+        rmakers.SilenceMask(baca.tuplet(0)),
         tuplet_ratios=[(1, 4), (4, 3), (1, 2)],
     ),
 )
@@ -192,7 +180,7 @@ maker(
     ('pf', (35, 42)),
     krummzeit.silver_points(
         [(1, 2), (2, 1)],
-        rmakers.SilenceMask(selector=baca.tuplets()[abjad.index([2], 7)]),
+        rmakers.SilenceMask(baca.tuplets()[abjad.index([2], 7)]),
     ),
 )
 
@@ -200,7 +188,7 @@ maker(
     ('perc', (35, 42)),
     krummzeit.silver_points(
         [(2, 1), (1, 2)],
-        rmakers.SilenceMask(selector=baca.tuplets()[abjad.index([5], 7)]),
+        rmakers.SilenceMask(baca.tuplets()[abjad.index([5], 7)]),
     ),
 )
 
@@ -212,9 +200,7 @@ maker(
 maker(
     ('cl', [(11, 13), (35, 44)]),
     krummzeit.color_tuplets(
-        rmakers.SilenceMask(
-            selector=baca.tuplet(0),
-        ),
+        rmakers.SilenceMask(baca.tuplet(0)),
         rotation=2,
         ),
     )
@@ -238,9 +224,7 @@ maker(
     ('pf', (8, 10)),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(
-            selector=baca.plts()[abjad.index([5, 6], 7)],
-        ),
+        rmakers.SilenceMask(baca.plts()[abjad.index([5, 6], 7)]),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )
@@ -249,9 +233,7 @@ maker(
     ('pf', (11, 13)),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.SilenceMask(
-            selector=baca.plt(0),
-        ),
+        rmakers.SilenceMask(baca.plt(0)),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )

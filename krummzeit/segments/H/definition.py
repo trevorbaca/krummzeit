@@ -103,7 +103,7 @@ maker(
     baca.markup('crotale', boxed=True),
     baca.pitch('D5'),
     krummzeit.left_remainder_quarters(
-        rmakers.SilenceMask(selector=baca.lt(0))
+        rmakers.SilenceMask(baca.lt(0))
     ),
 )
 

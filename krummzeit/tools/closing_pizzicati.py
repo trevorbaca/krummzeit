@@ -22,8 +22,8 @@ def closing_pizzicati(
                 talea=rmakers.Talea(counts=counts, denominator=4),
             ),
             rmakers.rest(baca.lts().map(baca.leaves()[1:])),
-            rmakers.BeamCommand(selector=baca.tuplets()),
-            rmakers.TupletCommand(extract_trivial=True),
+            rmakers.beam(),
+            rmakers.extract_trivial(),
         ),
         tag="krummzeit.closing_pizzicati",
     )

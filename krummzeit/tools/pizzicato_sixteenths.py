@@ -23,10 +23,10 @@ def pizzicato_sixteenths(
                 ),
             ),
             *specifiers,
-            rmakers.BeamCommand(selector=baca.tuplets()),
-            rmakers.TupletCommand(
-                extract_trivial=True, rewrite_rest_filled=True, trivialize=True
-            ),
+            rmakers.beam(),
+            rmakers.rewrite_rest_filled(),
+            rmakers.trivialize(),
+            rmakers.extract_trivial(),
             divisions=baca.divisions().split([(6, 16), (18, 16)], cyclic=True),
         ),
         tag="krummzeit.pizzicato_sixteenths",

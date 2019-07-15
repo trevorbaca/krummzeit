@@ -19,7 +19,7 @@ def incise_chain_b() -> baca.RhythmCommand:
                     talea_denominator=16,
                 )
             ),
-            rmakers.TupletCommand(extract_trivial=True),
+            rmakers.extract_trivial(),
         ),
         tag="krummzeit.incise_chain_b",
     )

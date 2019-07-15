@@ -20,10 +20,9 @@ def incise_chain() -> baca.RhythmCommand:
                 )
             ),
             rmakers.rest(baca.tuplets().get([2], 5)),
-            rmakers.BeamCommand(selector=baca.tuplets()),
-            rmakers.TupletCommand(
-                extract_trivial=True, rewrite_rest_filled=True
-            ),
+            rmakers.beam(),
+            rmakers.rewrite_rest_filled(),
+            rmakers.extract_trivial(),
         ),
         tag="krummzeit.incise_chain",
     )

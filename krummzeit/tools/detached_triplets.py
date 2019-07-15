@@ -14,9 +14,7 @@ def detached_triplets() -> baca.RhythmCommand:
             rmakers.TupletRhythmMaker(
                 tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)]
             ),
-            rmakers.TieCommand(
-                attach_ties=True, selector=tuplets.map(baca.pleaf(-1))
-            ),
+            rmakers.tie(tuplets.map(baca.pleaf(-1))),
             divisions=baca.divisions().fuse().quarters(),
         ),
         tag="krummzeit.detached_triplets",

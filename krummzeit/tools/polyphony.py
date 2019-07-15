@@ -19,24 +19,24 @@ def polyphony(
     Makes polyphony rhythm.
     """
 
-    tuplet_specifier = rmakers.TupletSpecifier(
+    tuplet_specifier = rmakers.TupletCommand(
         extract_trivial=True, trivialize=True
     )
 
     assert isinstance(ties, abjad.Pattern), repr(ties)
-    tie_specifier = rmakers.TieSpecifier(
+    tie_specifier = rmakers.TieCommand(
         attach_ties=True,
         selector=baca.tuplets()[:-1].get(ties).map(baca.pleaf(-1)),
     )
 
     eighths = rmakers.EvenDivisionRhythmMaker(
-        rmakers.BeamSpecifier(selector=baca.tuplets()),
+        rmakers.BeamCommand(selector=baca.tuplets()),
         tuplet_specifier,
         denominators=[8],
     )
 
     even_divisions = rmakers.EvenDivisionRhythmMaker(
-        rmakers.BeamSpecifier(selector=baca.tuplets()),
+        rmakers.BeamCommand(selector=baca.tuplets()),
         tie_specifier,
         tuplet_specifier,
         denominators=denominators,
@@ -44,8 +44,8 @@ def polyphony(
     )
 
     quarters = rmakers.NoteRhythmMaker(
-        rmakers.TieSpecifier(detach_ties=True, selector=baca.notes()),
-        rmakers.BeamSpecifier(selector=baca.plts()),
+        rmakers.TieCommand(detach_ties=True, selector=baca.notes()),
+        rmakers.BeamCommand(selector=baca.plts()),
         duration_specifier=rmakers.DurationSpecifier(
             forbidden_note_duration=(1, 2)
         ),

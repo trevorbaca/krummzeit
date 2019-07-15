@@ -12,12 +12,12 @@ def single_division_tuplets(
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.TupletRhythmMaker(tuplet_ratios=ratios),
-            rmakers.TieSpecifier(
+            rmakers.TieCommand(
                 attach_ties=True,
                 selector=baca.tuplets()[:-1].map(baca.pleaf(-1)),
             ),
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(diminution=False, rewrite_dots=True),
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(diminution=False, rewrite_dots=True),
         ),
         tag="krummzeit.single_division_tuplets",
     )

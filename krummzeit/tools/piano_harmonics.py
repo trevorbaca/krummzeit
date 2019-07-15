@@ -23,7 +23,7 @@ def piano_harmonics(
         span_pleaves = lts.map(span_pleaves)
         span_pairs = span_pleaves.filter_length("==", 2)
         selector = span_pairs.map(baca.leaf(0))
-        specifier = rmakers.TieSpecifier(attach_ties=True, selector=selector)
+        specifier = rmakers.TieCommand(attach_ties=True, selector=selector)
         specifiers_.append(specifier)
     split = baca.divisions().ratios(division_ratios, rounded=True)
 
@@ -31,7 +31,7 @@ def piano_harmonics(
         rmakers.RhythmCommand(
             rmakers.NoteRhythmMaker(),
             *specifiers_,
-            rmakers.BeamSpecifier(selector=baca.plts()),
+            rmakers.BeamCommand(selector=baca.plts()),
             divisions=baca.divisions().map(split),
         ),
         tag="krummzeit.piano_harmonics",

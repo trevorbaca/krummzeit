@@ -20,8 +20,8 @@ def incise_chain() -> baca.RhythmCommand:
                 )
             ),
             rmakers.rest(baca.tuplets().get([2], 5)),
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(
                 extract_trivial=True, rewrite_rest_filled=True
             ),
         ),

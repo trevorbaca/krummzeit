@@ -18,12 +18,12 @@ def glissando_rhythm(
 
     specifiers_: typing.List[rmakers.SpecifierTyping] = []
     if tie_across_divisions is True:
-        specifier = rmakers.TieSpecifier(
+        specifier = rmakers.TieCommand(
             attach_ties=True, selector=baca.tuplets()[:-1].map(baca.pleaf(-1))
         )
         specifiers_.append(specifier)
     elif isinstance(tie_across_divisions, abjad.Pattern):
-        specifier = rmakers.TieSpecifier(
+        specifier = rmakers.TieCommand(
             attach_ties=True,
             selector=baca.tuplets()[:-1]
             .get(tie_across_divisions)
@@ -38,9 +38,9 @@ def glissando_rhythm(
         rmakers.RhythmCommand(
             rmakers.TupletRhythmMaker(tuplet_ratios=tuplet_ratios),
             *specifiers_,
-            rmakers.TupletSpecifier(rewrite_rest_filled=True),
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(extract_trivial=True),
+            rmakers.TupletCommand(rewrite_rest_filled=True),
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(extract_trivial=True),
             divisions=baca.divisions().map(split),
         ),
         tag="krummzeit.glissando_rhythm",

@@ -23,8 +23,8 @@ def pizzicato_sixteenths(
                 ),
             ),
             *specifiers,
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(
                 extract_trivial=True, rewrite_rest_filled=True, trivialize=True
             ),
             divisions=baca.divisions().split([(6, 16), (18, 16)], cyclic=True),

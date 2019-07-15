@@ -13,9 +13,9 @@ def sponge_rhythm() -> baca.RhythmCommand:
                 extra_counts_per_division=[2, 1, 0],
                 talea=rmakers.Talea(counts=[1, 2], denominator=2),
             ),
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(extract_trivial=True, trivialize=True),
-            rmakers.TieSpecifier(repeat_ties=True),
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(extract_trivial=True, trivialize=True),
+            rmakers.TieCommand(repeat_ties=True),
         ),
         tag="krummzeit.sponge_rhythm",
     )

@@ -18,8 +18,8 @@ def rest_delimited_repeated_duration_notes(
                     talea_denominator=denominator,
                 )
             ),
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(extract_trivial=True),
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(extract_trivial=True),
             divisions=baca.divisions().fuse().split([duration], cyclic=True),
         ),
         tag="krummzeit.rest_delimited_repeated_duration_notes",

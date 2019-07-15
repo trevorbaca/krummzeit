@@ -23,8 +23,8 @@ def pizzicato_rhythm(
                 ),
             ),
             *specifiers,
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(
                 extract_trivial=True,
                 rewrite_dots=True,
                 rewrite_rest_filled=True,

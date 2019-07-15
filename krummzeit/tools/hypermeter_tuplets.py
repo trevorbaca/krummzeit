@@ -19,8 +19,8 @@ def hypermeter_tuplets(
                 tuplet_ratios=tuplet_ratios,
             ),
             *specifiers,
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(
                 diminution=False,
                 extract_trivial=True,
                 rewrite_dots=True,

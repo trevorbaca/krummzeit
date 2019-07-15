@@ -19,8 +19,8 @@ def single_cluster_piano_rhythm() -> baca.RhythmCommand:
                     talea_denominator=16,
                 )
             ),
-            rmakers.BeamSpecifier(selector=baca.tuplets()),
-            rmakers.TupletSpecifier(extract_trivial=True),
+            rmakers.BeamCommand(selector=baca.tuplets()),
+            rmakers.TupletCommand(extract_trivial=True),
         ),
         tag="krummzeit.single_cluster_piano_rhythm",
     )

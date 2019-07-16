@@ -18,7 +18,7 @@ def rest_delimited_repeated_duration_notes(
                     talea_denominator=denominator,
                 )
             ),
-            rmakers.beam(),
+            rmakers.simple_beam(),
             rmakers.extract_trivial(),
             divisions=baca.divisions().fuse().split([duration], cyclic=True),
         ),

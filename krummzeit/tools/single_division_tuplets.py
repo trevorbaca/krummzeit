@@ -13,7 +13,7 @@ def single_division_tuplets(
         rmakers.RhythmCommand(
             rmakers.TupletRhythmMaker(tuplet_ratios=ratios),
             rmakers.tie(baca.tuplets()[:-1].map(baca.pleaf(-1))),
-            rmakers.beam(),
+            rmakers.simple_beam(),
             rmakers.rewrite_dots(),
             rmakers.force_augmentation(),
         ),

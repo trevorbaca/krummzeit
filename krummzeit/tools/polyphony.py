@@ -25,14 +25,14 @@ def polyphony(
     )
 
     eighths = rmakers.EvenDivisionRhythmMaker(
-        rmakers.beam(),
+        rmakers.simple_beam(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         denominators=[8],
     )
 
     even_divisions = rmakers.EvenDivisionRhythmMaker(
-        rmakers.beam(),
+        rmakers.simple_beam(),
         tie_specifier,
         rmakers.trivialize(),
         rmakers.extract_trivial(),
@@ -42,7 +42,7 @@ def polyphony(
 
     quarters = rmakers.NoteRhythmMaker(
         rmakers.untie(),
-        rmakers.beam(baca.plts()),
+        rmakers.simple_beam(baca.plts()),
         duration_specifier=rmakers.DurationSpecifier(
             forbidden_note_duration=(1, 2)
         ),

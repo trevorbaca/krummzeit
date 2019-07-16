@@ -19,7 +19,7 @@ def incise_attacks() -> baca.RhythmCommand:
                     talea_denominator=16,
                 )
             ),
-            rmakers.beam(),
+            rmakers.simple_beam(),
             rmakers.extract_trivial(),
         ),
         tag="krummzeit.incise_attacks",

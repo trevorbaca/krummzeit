@@ -295,7 +295,7 @@ H_Oboe_Music_Voice = {                                                         %
 
     % [H Oboe_Music_Voice measure 285 / measure 5]                             %! _comment_measure_numbers
     d''2.                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [H Oboe_Music_Voice measure 286 / measure 6]                             %! _comment_measure_numbers
     d''2..
@@ -463,7 +463,7 @@ H_Clarinet_Music_Voice = {                                                     %
 
     % [H Clarinet_Music_Voice measure 285 / measure 5]                         %! _comment_measure_numbers
     b'2.                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2788,7 +2788,7 @@ H_Violin_Music_Voice = {                                                       %
     \glissando                                                                 %! baca.glissando
 
     cs'!1                                                                      %! krummzeit.glissando_rhythm
-    ~
+    ~                                                                          %! krummzeit.glissando_rhythm
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
     \times 5/7 {                                                               %! krummzeit.glissando_rhythm
@@ -2808,7 +2808,7 @@ H_Violin_Music_Voice = {                                                       %
         \glissando                                                             %! baca.glissando
 
         f2                                                                     %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2829,7 +2829,7 @@ H_Violin_Music_Voice = {                                                       %
         \glissando                                                             %! baca.glissando
 
         b'8.                                                                   %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2999,7 +2999,7 @@ H_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         e2                                                                     %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3018,7 +3018,7 @@ H_Viola_Music_Voice = {                                                        %
     \glissando                                                                 %! baca.glissando
 
     af!2                                                                       %! krummzeit.glissando_rhythm
-    ~
+    ~                                                                          %! krummzeit.glissando_rhythm
 
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
@@ -3037,7 +3037,7 @@ H_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         g8.                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3205,7 +3205,7 @@ H_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         d,2.                                                                   %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3226,7 +3226,7 @@ H_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         g,2                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3243,7 +3243,7 @@ H_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         c4.                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 

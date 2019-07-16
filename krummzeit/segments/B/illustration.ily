@@ -3301,8 +3301,8 @@ B_Percussion_Music_Voice = {                                                   %
 
     % [B Percussion_Music_Voice measure 110 / measure 22]                      %! _comment_measure_numbers
     c'1                                                                        %! baca.make_repeat_tied_notes
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Percussion_Music_Voice measure 111 / measure 23]                      %! _comment_measure_numbers
     c'4.
@@ -3605,24 +3605,24 @@ B_Percussion_Music_Voice = {                                                   %
     % [B Percussion_Music_Voice measure 128 / measure 40]                      %! _comment_measure_numbers
     c'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Percussion_Music_Voice measure 129 / measure 41]                      %! _comment_measure_numbers
     c'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Percussion_Music_Voice measure 130 / measure 42]                      %! _comment_measure_numbers
     c'1                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Percussion_Music_Voice measure 131 / measure 43]                      %! _comment_measure_numbers
     c'1                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Percussion_Music_Voice measure 132 / measure 44]                      %! _comment_measure_numbers
     c'2.
@@ -3729,76 +3729,76 @@ B_Violin_Music_Voice = {                                                       %
 
     % [B Violin_Music_Voice measure 92 / measure 4]                            %! _comment_measure_numbers
     c'1                                                                        %! baca.make_repeat_tied_notes
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 93 / measure 5]                            %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 94 / measure 6]                            %! _comment_measure_numbers
     c'2                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 95 / measure 7]                            %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 96 / measure 8]                            %! _comment_measure_numbers
     c'1..                                                                      %! baca.make_repeat_tied_notes
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 97 / measure 9]                            %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 98 / measure 10]                           %! _comment_measure_numbers
     c'1                                                                        %! baca.make_repeat_tied_notes
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 99 / measure 11]                           %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 100 / measure 12]                          %! _comment_measure_numbers
     c'2..                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 101 / measure 13]                          %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 102 / measure 14]                          %! _comment_measure_numbers
     c'2..                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 103 / measure 15]                          %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 104 / measure 16]                          %! _comment_measure_numbers
     c'\breve                                                                   %! baca.make_repeat_tied_notes
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 105 / measure 17]                          %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 106 / measure 18]                          %! _comment_measure_numbers
     c'1                                                                        %! baca.make_repeat_tied_notes
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 107 / measure 19]                          %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [B Violin_Music_Voice measure 108 / measure 20]                          %! _comment_measure_numbers
     c'2.                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -4361,7 +4361,7 @@ B_Viola_Music_Voice = {                                                        %
         f4                                                                     %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4370,7 +4370,7 @@ B_Viola_Music_Voice = {                                                        %
 
         % [B Viola_Music_Voice measure 103 / measure 15]                       %! _comment_measure_numbers
         f4                                                                     %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4382,7 +4382,7 @@ B_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         eqs!1                                                                  %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4391,7 +4391,7 @@ B_Viola_Music_Voice = {                                                        %
 
         % [B Viola_Music_Voice measure 105 / measure 17]                       %! _comment_measure_numbers
         eqs!4                                                                  %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4403,7 +4403,7 @@ B_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         dqs!4                                                                  %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4412,7 +4412,7 @@ B_Viola_Music_Voice = {                                                        %
 
         % [B Viola_Music_Voice measure 107 / measure 19]                       %! _comment_measure_numbers
         dqs!4                                                                  %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4424,7 +4424,7 @@ B_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         c2                                                                     %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4433,7 +4433,7 @@ B_Viola_Music_Voice = {                                                        %
 
         % [B Viola_Music_Voice measure 109 / measure 21]                       %! _comment_measure_numbers
         c4                                                                     %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4445,7 +4445,7 @@ B_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         dqs!4                                                                  %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4828,7 +4828,7 @@ B_Cello_Music_Voice = {                                                        %
         e,2                                                                    %! krummzeit.single_division_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(2)
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4837,7 +4837,7 @@ B_Cello_Music_Voice = {                                                        %
 
         % [B Cello_Music_Voice measure 103 / measure 15]                       %! _comment_measure_numbers
         e,4                                                                    %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4849,7 +4849,7 @@ B_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         dqs,!2                                                                 %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4858,7 +4858,7 @@ B_Cello_Music_Voice = {                                                        %
 
         % [B Cello_Music_Voice measure 105 / measure 17]                       %! _comment_measure_numbers
         dqs,!4                                                                 %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4870,7 +4870,7 @@ B_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         cqs,!2                                                                 %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4879,7 +4879,7 @@ B_Cello_Music_Voice = {                                                        %
 
         % [B Cello_Music_Voice measure 107 / measure 19]                       %! _comment_measure_numbers
         cqs,!4                                                                 %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4891,7 +4891,7 @@ B_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         b,,4                                                                   %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4900,7 +4900,7 @@ B_Cello_Music_Voice = {                                                        %
 
         % [B Cello_Music_Voice measure 109 / measure 21]                       %! _comment_measure_numbers
         b,,4                                                                   %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 
@@ -4912,7 +4912,7 @@ B_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         dqs,!2                                                                 %! krummzeit.single_division_tuplets
-        ~
+        ~                                                                      %! krummzeit.single_division_tuplets
 
     }                                                                          %! krummzeit.single_division_tuplets
 

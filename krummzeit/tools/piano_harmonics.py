@@ -23,7 +23,7 @@ def piano_harmonics(
         span_pleaves = lts.map(span_pleaves)
         span_pairs = span_pleaves.filter_length("==", 2)
         selector = span_pairs.map(baca.leaf(0))
-        specifier = rmakers.TieCommand(attach_ties=True, selector=selector)
+        specifier = rmakers.tie(selector)
         specifiers_.append(specifier)
     split = baca.divisions().ratios(division_ratios, rounded=True)
 

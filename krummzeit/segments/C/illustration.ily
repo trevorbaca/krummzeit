@@ -669,7 +669,7 @@ C_Oboe_Music_Voice = {                                                         %
 
     % [C Oboe_Music_Voice measure 147 / measure 15]                            %! _comment_measure_numbers
     b1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Oboe_Music_Voice measure 148 / measure 16]                            %! _comment_measure_numbers
     b2.
@@ -883,7 +883,7 @@ C_Clarinet_Music_Voice = {                                                     %
 
     % [C Clarinet_Music_Voice measure 147 / measure 15]                        %! _comment_measure_numbers
     cs!1                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Clarinet_Music_Voice measure 148 / measure 16]                        %! _comment_measure_numbers
     cs!2.
@@ -1284,7 +1284,7 @@ C_Piano_Music_Voice = {                                                        %
                     \flat
                 }
         }
-    ~
+    ~                                                                          %! baca.make_tied_notes
 
     % [C Piano_Music_Voice measure 144 / measure 12]                           %! _comment_measure_numbers
     \once \override Accidental.stencil = ##f
@@ -1346,7 +1346,7 @@ C_Piano_Music_Voice = {                                                        %
                     \flat
                 }
         }
-    ~
+    ~                                                                          %! baca.make_tied_notes
 
     % [C Piano_Music_Voice measure 147 / measure 15]                           %! _comment_measure_numbers
     \once \override Accidental.stencil = ##f
@@ -1365,7 +1365,7 @@ C_Piano_Music_Voice = {                                                        %
                     \flat
                 }
         }
-    ~
+    ~                                                                          %! baca.make_tied_notes
 
     % [C Piano_Music_Voice measure 148 / measure 16]                           %! _comment_measure_numbers
     \once \override Accidental.stencil = ##f
@@ -1518,7 +1518,7 @@ C_Percussion_Music_Voice = {                                                   %
     % [C Percussion_Music_Voice measure 134 / measure 2]                       %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Percussion_Music_Voice measure 135 / measure 3]                       %! _comment_measure_numbers
     c'4.
@@ -1532,7 +1532,7 @@ C_Percussion_Music_Voice = {                                                   %
     % [C Percussion_Music_Voice measure 136 / measure 4]                       %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Percussion_Music_Voice measure 137 / measure 5]                       %! _comment_measure_numbers
     c'2.
@@ -1546,7 +1546,7 @@ C_Percussion_Music_Voice = {                                                   %
     % [C Percussion_Music_Voice measure 138 / measure 6]                       %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Percussion_Music_Voice measure 139 / measure 7]                       %! _comment_measure_numbers
     c'2.
@@ -1560,7 +1560,7 @@ C_Percussion_Music_Voice = {                                                   %
     % [C Percussion_Music_Voice measure 140 / measure 8]                       %! _comment_measure_numbers
     c'4                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Percussion_Music_Voice measure 141 / measure 9]                       %! _comment_measure_numbers
     c'2.
@@ -2005,7 +2005,7 @@ C_Violin_Music_Voice = {                                                       %
 
     % [C Violin_Music_Voice measure 147 / measure 15]                          %! _comment_measure_numbers
     fs!1                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Violin_Music_Voice measure 148 / measure 16]                          %! _comment_measure_numbers
     fs!2.
@@ -2341,7 +2341,7 @@ C_Viola_Music_Voice = {                                                        %
 
     % [C Viola_Music_Voice measure 144 / measure 12]                           %! _comment_measure_numbers
     bf,!2.                                                                     %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -2371,7 +2371,7 @@ C_Viola_Music_Voice = {                                                        %
 
     % [C Viola_Music_Voice measure 147 / measure 15]                           %! _comment_measure_numbers
     bf,!1                                                                      %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Viola_Music_Voice measure 148 / measure 16]                           %! _comment_measure_numbers
     bf,!2.
@@ -2714,7 +2714,7 @@ C_Cello_Music_Voice = {                                                        %
 
     % [C Cello_Music_Voice measure 147 / measure 15]                           %! _comment_measure_numbers
     a,,1                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [C Cello_Music_Voice measure 148 / measure 16]                           %! _comment_measure_numbers
     a,,2.

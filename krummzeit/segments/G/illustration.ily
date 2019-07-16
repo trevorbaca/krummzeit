@@ -553,7 +553,7 @@ G_Oboe_Music_Voice = {                                                         %
 
     % [G Oboe_Music_Voice measure 260 / measure 4]                             %! _comment_measure_numbers
     b1                                                                         %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [G Oboe_Music_Voice measure 261 / measure 5]                             %! _comment_measure_numbers
     b2.
@@ -564,11 +564,11 @@ G_Oboe_Music_Voice = {                                                         %
 
     % [G Oboe_Music_Voice measure 262 / measure 6]                             %! _comment_measure_numbers
     b2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [G Oboe_Music_Voice measure 263 / measure 7]                             %! _comment_measure_numbers
     b2.                                                                        %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     <<                                                                         %! _make_multimeasure_rest_container
 
@@ -636,14 +636,14 @@ G_Oboe_Music_Voice = {                                                         %
     bf''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     bf''!4                                                                     %! krummzeit.polyphony
 
     % [G Oboe_Music_Voice measure 266 / measure 10]                            %! _comment_measure_numbers
     ef''!4.                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \times 4/7 {                                                               %! krummzeit.polyphony
 
@@ -668,7 +668,7 @@ G_Oboe_Music_Voice = {                                                         %
         e'''8                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! krummzeit.polyphony
-        ~
+        ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
@@ -714,7 +714,7 @@ G_Oboe_Music_Voice = {                                                         %
     a'8                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     a'4                                                                        %! krummzeit.polyphony
 
@@ -722,7 +722,7 @@ G_Oboe_Music_Voice = {                                                         %
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     fs''!8                                                                     %! krummzeit.polyphony
@@ -740,7 +740,7 @@ G_Oboe_Music_Voice = {                                                         %
     af''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     af''!16.                                                                   %! krummzeit.polyphony
@@ -993,7 +993,7 @@ G_Clarinet_Music_Voice = {                                                     %
 
     % [G Clarinet_Music_Voice measure 260 / measure 4]                         %! _comment_measure_numbers
     cs!1                                                                       %! baca.make_repeat_tied_notes
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [G Clarinet_Music_Voice measure 261 / measure 5]                         %! _comment_measure_numbers
     cs!2.
@@ -1051,7 +1051,7 @@ G_Clarinet_Music_Voice = {                                                     %
 
         ds''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
-        ~
+        ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
@@ -1072,10 +1072,10 @@ G_Clarinet_Music_Voice = {                                                     %
     b''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     b''4.                                                                      %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     % [G Clarinet_Music_Voice measure 267 / measure 11]                        %! _comment_measure_numbers
     b''4                                                                       %! krummzeit.polyphony
@@ -1099,7 +1099,7 @@ G_Clarinet_Music_Voice = {                                                     %
     b'16.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     b'4.                                                                       %! krummzeit.polyphony
 
@@ -1114,12 +1114,12 @@ G_Clarinet_Music_Voice = {                                                     %
 
         cs'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
-        ~
+        ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
     cs'!4.                                                                     %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     cs'!8                                                                      %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
@@ -1409,14 +1409,14 @@ G_Piano_Music_Voice = {                                                        %
     b''16.                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     b''4.                                                                      %! krummzeit.polyphony
 
     % [G Piano_Music_Voice measure 262 / measure 6]                            %! _comment_measure_numbers
     c''4.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     c''8                                                                       %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
@@ -1428,7 +1428,7 @@ G_Piano_Music_Voice = {                                                        %
     af''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \times 4/5 {                                                               %! krummzeit.polyphony
 
@@ -1469,7 +1469,7 @@ G_Piano_Music_Voice = {                                                        %
     bf''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \times 2/3 {                                                               %! krummzeit.polyphony
 
@@ -1494,7 +1494,7 @@ G_Piano_Music_Voice = {                                                        %
 
         fs'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
-        ~
+        ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
@@ -1507,7 +1507,7 @@ G_Piano_Music_Voice = {                                                        %
     af''!8                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     af''!8                                                                     %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
@@ -1548,7 +1548,7 @@ G_Piano_Music_Voice = {                                                        %
         c'''8                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! krummzeit.polyphony
-        ~
+        ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
@@ -1560,7 +1560,7 @@ G_Piano_Music_Voice = {                                                        %
 
     cs''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \times 4/7 {                                                               %! krummzeit.polyphony
 
@@ -1587,7 +1587,7 @@ G_Piano_Music_Voice = {                                                        %
         bf''!8                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! krummzeit.polyphony
-        ~
+        ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
@@ -1666,7 +1666,7 @@ G_Piano_Music_Voice = {                                                        %
 
     c'4                                                                        %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     % [G Piano_Music_Voice measure 271 / measure 15]                           %! _comment_measure_numbers
     c'1                                                                        %! krummzeit.piano_harmonics
@@ -1676,7 +1676,7 @@ G_Piano_Music_Voice = {                                                        %
 
     c'2                                                                        %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     % [G Piano_Music_Voice measure 272 / measure 16]                           %! _comment_measure_numbers
     c'2                                                                        %! krummzeit.piano_harmonics
@@ -1688,14 +1688,14 @@ G_Piano_Music_Voice = {                                                        %
     % [G Piano_Music_Voice measure 273 / measure 17]                           %! _comment_measure_numbers
     c'4.                                                                       %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     c'4                                                                        %! krummzeit.piano_harmonics
 
     % [G Piano_Music_Voice measure 274 / measure 18]                           %! _comment_measure_numbers
     c'2.                                                                       %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     c'4                                                                        %! krummzeit.piano_harmonics
 
@@ -2060,7 +2060,7 @@ G_Violin_Music_Voice = {                                                       %
         a'''8                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! krummzeit.polyphony
-        ~
+        ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
@@ -2072,7 +2072,7 @@ G_Violin_Music_Voice = {                                                       %
 
     e''''4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \times 2/3 {                                                               %! krummzeit.polyphony
 
@@ -2085,7 +2085,7 @@ G_Violin_Music_Voice = {                                                       %
         d'''8                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! krummzeit.polyphony
-        ~
+        ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
@@ -2132,7 +2132,7 @@ G_Violin_Music_Voice = {                                                       %
     g'''8                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     g'''4                                                                      %! krummzeit.polyphony
 
@@ -2140,7 +2140,7 @@ G_Violin_Music_Voice = {                                                       %
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf'''!4.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     bf'''!8                                                                    %! krummzeit.polyphony
@@ -2156,7 +2156,7 @@ G_Violin_Music_Voice = {                                                       %
     a''8                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     a''8                                                                       %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
@@ -2208,7 +2208,7 @@ G_Violin_Music_Voice = {                                                       %
     bf'''!16.                                                                  %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     % [G Violin_Music_Voice measure 267 / measure 11]                          %! _comment_measure_numbers
     bf'''!4                                                                    %! krummzeit.polyphony
@@ -2218,7 +2218,7 @@ G_Violin_Music_Voice = {                                                       %
 
     ef'''!4                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     ef'''!8                                                                    %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
@@ -2229,7 +2229,7 @@ G_Violin_Music_Voice = {                                                       %
     af'''!8                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     af'''!16.                                                                  %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
@@ -2273,7 +2273,7 @@ G_Violin_Music_Voice = {                                                       %
     bf''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
-    ~
+    ~                                                                          %! krummzeit.polyphony
 
     \times 2/3 {                                                               %! krummzeit.polyphony
 
@@ -2337,7 +2337,7 @@ G_Violin_Music_Voice = {                                                       %
         \glissando                                                             %! baca.glissando
 
         cs'!2                                                                  %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2359,7 +2359,7 @@ G_Violin_Music_Voice = {                                                       %
         \glissando                                                             %! baca.glissando
 
         f2                                                                     %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2381,7 +2381,7 @@ G_Violin_Music_Voice = {                                                       %
         \glissando                                                             %! baca.glissando
 
         b'8.                                                                   %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2402,7 +2402,7 @@ G_Violin_Music_Voice = {                                                       %
         \glissando                                                             %! baca.glissando
 
         b'4                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2422,7 +2422,7 @@ G_Violin_Music_Voice = {                                                       %
     \glissando                                                                 %! baca.glissando
 
     d'2                                                                        %! krummzeit.glissando_rhythm
-    ~
+    ~                                                                          %! krummzeit.glissando_rhythm
 
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
@@ -2441,7 +2441,7 @@ G_Violin_Music_Voice = {                                                       %
         \glissando                                                             %! baca.glissando
 
         af'!4.                                                                 %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2461,7 +2461,7 @@ G_Violin_Music_Voice = {                                                       %
         \glissando                                                             %! baca.glissando
 
         bf'!2                                                                  %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2708,7 +2708,7 @@ G_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         e4                                                                     %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2727,7 +2727,7 @@ G_Viola_Music_Voice = {                                                        %
     \glissando                                                                 %! baca.glissando
 
     af!2                                                                       %! krummzeit.glissando_rhythm
-    ~
+    ~                                                                          %! krummzeit.glissando_rhythm
 
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
@@ -2746,7 +2746,7 @@ G_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         g4.                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2767,7 +2767,7 @@ G_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         g4.                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2788,7 +2788,7 @@ G_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         f4                                                                     %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -2808,7 +2808,7 @@ G_Viola_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         d8.                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3063,7 +3063,7 @@ G_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         d,4                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3084,7 +3084,7 @@ G_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         g,2                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3099,7 +3099,7 @@ G_Cello_Music_Voice = {                                                        %
     \glissando                                                                 %! baca.glissando
 
     c4.                                                                        %! krummzeit.glissando_rhythm
-    ~
+    ~                                                                          %! krummzeit.glissando_rhythm
 
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
@@ -3119,7 +3119,7 @@ G_Cello_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         bf,!4                                                                  %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3142,7 +3142,7 @@ G_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         b,4                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3165,7 +3165,7 @@ G_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         c4.                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3186,7 +3186,7 @@ G_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         f,2                                                                    %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -3207,7 +3207,7 @@ G_Cello_Music_Voice = {                                                        %
         \glissando                                                             %! baca.glissando
 
         b,,4                                                                   %! krummzeit.glissando_rhythm
-        ~
+        ~                                                                      %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 

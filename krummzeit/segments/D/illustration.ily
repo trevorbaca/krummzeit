@@ -1032,7 +1032,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1045,7 +1045,7 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''2                                                                   %! krummzeit.color_tuplets
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1065,7 +1065,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1107,7 +1107,7 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         ef''!2.                                                                %! krummzeit.color_tuplets
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1127,7 +1127,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1157,7 +1157,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1209,7 +1209,7 @@ D_Oboe_Music_Voice = {                                                         %
                 \finger
                     1
         }
-    ~
+    ~                                                                          %! krummzeit.color_tuplets
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.color_tuplets
     \times 9/5 {                                                               %! krummzeit.color_tuplets
@@ -1220,7 +1220,7 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         d''4                                                                   %! krummzeit.color_tuplets
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1240,7 +1240,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1277,7 +1277,7 @@ D_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-warning                                           %! _color_repeat_pitch_classes_
     d''4.                                                                      %! krummzeit.color_tuplets
-    ~
+    ~                                                                          %! krummzeit.color_tuplets
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.color_tuplets
     \times 3/5 {                                                               %! krummzeit.color_tuplets
@@ -1388,7 +1388,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1401,7 +1401,7 @@ D_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         fs''!4                                                                 %! krummzeit.color_tuplets
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1421,7 +1421,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1466,7 +1466,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1486,7 +1486,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1509,7 +1509,7 @@ D_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1562,7 +1562,7 @@ D_Oboe_Music_Voice = {                                                         %
                 \finger
                     1
         }
-    ~
+    ~                                                                          %! krummzeit.color_tuplets
 
     \times 4/5 {                                                               %! krummzeit.color_tuplets
 
@@ -1963,7 +1963,7 @@ D_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-warning                                       %! _color_repeat_pitch_classes_
         gs'''!2.                                                               %! krummzeit.color_tuplets
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1983,7 +1983,7 @@ D_Clarinet_Music_Voice = {                                                     %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -1997,7 +1997,7 @@ D_Clarinet_Music_Voice = {                                                     %
         g'''4.                                                                 %! krummzeit.color_tuplets
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \mf                                                                    %! REDUNDANT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -2046,7 +2046,7 @@ D_Clarinet_Music_Voice = {                                                     %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -2057,7 +2057,7 @@ D_Clarinet_Music_Voice = {                                                     %
         g'''2.                                                                 %! krummzeit.color_tuplets
 
         gs'''!2                                                                %! krummzeit.color_tuplets
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -2081,7 +2081,7 @@ D_Clarinet_Music_Voice = {                                                     %
                     \finger
                         1
             }
-        ~
+        ~                                                                      %! krummzeit.color_tuplets
 
     }                                                                          %! krummzeit.color_tuplets
 
@@ -2246,7 +2246,7 @@ D_Piano_Music_Voice = {                                                        %
 
     c'4                                                                        %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     % [D Piano_Music_Voice measure 160 / measure 9]                            %! _comment_measure_numbers
     c'2                                                                        %! krummzeit.piano_harmonics
@@ -2256,7 +2256,7 @@ D_Piano_Music_Voice = {                                                        %
 
     c'4                                                                        %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     % [D Piano_Music_Voice measure 161 / measure 10]                           %! _comment_measure_numbers
     c'2                                                                        %! krummzeit.piano_harmonics
@@ -2270,21 +2270,21 @@ D_Piano_Music_Voice = {                                                        %
 
     c'4                                                                        %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     % [D Piano_Music_Voice measure 163 / measure 12]                           %! _comment_measure_numbers
     c'2                                                                        %! krummzeit.piano_harmonics
 
     c'4                                                                        %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     % [D Piano_Music_Voice measure 164 / measure 13]                           %! _comment_measure_numbers
     c'4                                                                        %! krummzeit.piano_harmonics
 
     c'4                                                                        %! krummzeit.piano_harmonics
     - \tenuto                                                                  %! baca.tenuto:IndicatorCommand
-    ~
+    ~                                                                          %! krummzeit.piano_harmonics
 
     c'4                                                                        %! krummzeit.piano_harmonics
     \revert NoteHead.style                                                     %! baca.note_head_style_harmonic:OverrideCommand(2)
@@ -3761,8 +3761,8 @@ D_Percussion_Music_Voice = {                                                   %
     % [D Percussion_Music_Voice measure 195 / measure 44]                      %! _comment_measure_numbers
     c'1                                                                        %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    - \tweak direction #up
-    \repeatTie
+    - \tweak direction #up                                                     %! baca.make_repeat_tied_notes
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [D Percussion_Music_Voice measure 196 / measure 45]                      %! _comment_measure_numbers
     c'2.
@@ -3776,7 +3776,7 @@ D_Percussion_Music_Voice = {                                                   %
     % [D Percussion_Music_Voice measure 197 / measure 46]                      %! _comment_measure_numbers
     c'2.                                                                       %! baca.make_repeat_tied_notes
     :32                                                                        %! baca.stem_tremolo:IndicatorCommand
-    \repeatTie
+    \repeatTie                                                                 %! baca.make_repeat_tied_notes
 
     % [D Percussion_Music_Voice measure 198 / measure 47]                      %! _comment_measure_numbers
     c'4.

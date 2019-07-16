@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def left_remainder_quarters(
-    *specifiers: rmakers.SpecifierTyping,
+    *specifiers: rmakers.Command,
 ) -> baca.RhythmCommand:
     """
     Makes left-remainder quarter rhythm.

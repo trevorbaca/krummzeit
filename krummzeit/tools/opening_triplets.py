@@ -5,7 +5,7 @@ from abjadext import rmakers
 
 
 def opening_triplets(
-    *specifiers: rmakers.SpecifierTyping,
+    *specifiers: rmakers.Command,
     remainder: typing.Union[int, abjad.HorizontalAlignment] = abjad.Left,
 ) -> baca.RhythmCommand:
     """

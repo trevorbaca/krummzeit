@@ -6,7 +6,7 @@ from abjadext import rmakers
 
 def glissando_rhythm(
     division_ratios: abjad.RatioSequenceTyping,
-    *specifiers: rmakers.SpecifierTyping,
+    *specifiers: rmakers.Command,
     tuplet_ratios: abjad.RatioSequenceTyping = [(1, 2), (1, 4), (4, 3)],
     tie_across_divisions: typing.Union[bool, abjad.Pattern] = None,
 ) -> baca.RhythmCommand:
@@ -16,7 +16,7 @@ def glissando_rhythm(
     assert isinstance(division_ratios, list), repr(division_ratios)
     assert not isinstance(tie_across_divisions, list)
 
-    specifiers_: typing.List[rmakers.SpecifierTyping] = []
+    specifiers_: typing.List[rmakers.Command] = []
     if tie_across_divisions is True:
         specifier = rmakers.tie(baca.tuplets()[:-1].map(baca.pleaf(-1)))
         specifiers_.append(specifier)

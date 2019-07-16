@@ -14,7 +14,7 @@ def single_division_tuplets(
             rmakers.TupletRhythmMaker(tuplet_ratios=ratios),
             rmakers.tie(baca.tuplets()[:-1].map(baca.pleaf(-1))),
             rmakers.beam(),
-            rmakers.rewrite_tuplet_dots(),
+            rmakers.rewrite_dots(),
             rmakers.force_augmentation(),
         ),
         tag="krummzeit.single_division_tuplets",

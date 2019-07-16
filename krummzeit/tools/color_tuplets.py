@@ -37,7 +37,7 @@ def color_tuplets(
             rmakers.TupletRhythmMaker(tuplet_ratios=tuplet_ratios),
             rmakers.tie(selector),
             *specifiers,
-            rmakers.rewrite_tuplet_dots(),
+            rmakers.rewrite_dots(),
             rmakers.rewrite_rest_filled(),
             rmakers.beam(),
             rmakers.extract_trivial(),

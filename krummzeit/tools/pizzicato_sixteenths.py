@@ -4,8 +4,7 @@ from abjadext import rmakers
 
 
 def pizzicato_sixteenths(
-    *specifiers: rmakers.SpecifierTyping,
-    extra_counts: abjad.IntegerSequence = None,
+    *specifiers: rmakers.Command, extra_counts: abjad.IntegerSequence = None
 ) -> baca.RhythmCommand:
     """
     Makes pizzicato sixteenths rhythm.

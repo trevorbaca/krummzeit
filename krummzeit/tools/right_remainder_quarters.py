@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def right_remainder_quarters(
-    *specifiers: rmakers.SpecifierTyping,
+    *specifiers: rmakers.Command,
 ) -> baca.RhythmCommand:
     """
     Makes right-remainder quarter-note-filled measures.

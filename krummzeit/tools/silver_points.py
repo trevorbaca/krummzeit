@@ -5,7 +5,7 @@ from abjadext import rmakers
 
 def silver_points(
     ratios: abjad.RatioSequenceTyping,
-    *specifiers: rmakers.SpecifierTyping,
+    *specifiers: rmakers.Command,
     tuplet_ratios: abjad.RatioSequenceTyping = [
         (-1, 1, 1, 2),
         (-1, 1, 1, -2, 2),

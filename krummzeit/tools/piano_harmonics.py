@@ -6,7 +6,7 @@ from abjadext import rmakers
 
 def piano_harmonics(
     division_ratios: abjad.RatioSequenceTyping,
-    *specifiers: rmakers.SpecifierTyping,
+    *specifiers: rmakers.Command,
     tie_across_divisions: abjad.Pattern = None,
 ) -> baca.RhythmCommand:
     """

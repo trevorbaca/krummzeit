@@ -20,7 +20,7 @@ def incise_chain() -> baca.RhythmCommand:
                 )
             ),
             rmakers.rest(baca.tuplets().get([2], 5)),
-            rmakers.beam(),
+            rmakers.simple_beam(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),
         ),

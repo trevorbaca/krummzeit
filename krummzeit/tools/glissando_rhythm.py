@@ -34,7 +34,7 @@ def glissando_rhythm(
             rmakers.TupletRhythmMaker(tuplet_ratios=tuplet_ratios),
             *specifiers_,
             rmakers.rewrite_rest_filled(),
-            rmakers.beam(),
+            rmakers.simple_beam(),
             rmakers.extract_trivial(),
             divisions=baca.divisions().map(split),
         ),

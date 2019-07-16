@@ -13,7 +13,7 @@ def fused_expanse(
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.NoteRhythmMaker(),
-            rmakers.beam(baca.plts()),
+            rmakers.simple_beam(baca.plts()),
             divisions=baca.divisions().fuse().split(divisions, cyclic=True),
         ),
         tag="krummzeit.fused_expanse",

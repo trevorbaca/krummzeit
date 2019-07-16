@@ -20,7 +20,7 @@ def hypermeter_tuplets(
             ),
             *specifiers,
             rmakers.beam(),
-            rmakers.rewrite_tuplet_dots(),
+            rmakers.rewrite_dots(),
             rmakers.rewrite_rest_filled(),
             rmakers.force_augmentation(),
             rmakers.trivialize(),

@@ -14,7 +14,7 @@ def prolated_quarters(
             rmakers.EvenDivisionRhythmMaker(
                 denominators=[4], extra_counts_per_division=extra_counts
             ),
-            rmakers.simple_beam(),
+            rmakers.beam(),
         ),
         tag="krummzeit.prolated_quarters",
     )

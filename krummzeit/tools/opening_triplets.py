@@ -15,7 +15,7 @@ def opening_triplets(
         rmakers.RhythmCommand(
             rmakers.TupletRhythmMaker(tuplet_ratios=[(1, 1, 1)]),
             *specifiers,
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),
             divisions=baca.divisions().fuse().quarters(remainder=remainder),

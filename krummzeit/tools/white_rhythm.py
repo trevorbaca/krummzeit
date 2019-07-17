@@ -31,7 +31,7 @@ def white_rhythm(
             rmakers.NoteRhythmMaker(
                 burnish_specifier=burnish_specifier, divisions=divisions
             ),
-            rmakers.simple_beam(baca.plts()),
+            rmakers.beam(baca.plts()),
         ),
         tag="krummzeit.white_rhythm",
     )

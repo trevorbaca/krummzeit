@@ -19,7 +19,7 @@ def hypermeter_tuplets(
                 tuplet_ratios=tuplet_ratios,
             ),
             *specifiers,
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.rewrite_dots(),
             rmakers.rewrite_rest_filled(),
             rmakers.force_augmentation(),

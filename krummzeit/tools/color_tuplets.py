@@ -39,7 +39,7 @@ def color_tuplets(
             *specifiers,
             rmakers.rewrite_dots(),
             rmakers.rewrite_rest_filled(),
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.extract_trivial(),
         ),
         tag="krummzeit.color_tuplets",

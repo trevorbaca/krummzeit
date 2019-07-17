@@ -20,7 +20,7 @@ def silver_points(
         rmakers.RhythmCommand(
             rmakers.TupletRhythmMaker(tuplet_ratios=tuplet_ratios),
             *specifiers,
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.rewrite_dots(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),

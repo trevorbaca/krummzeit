@@ -22,7 +22,7 @@ def pizzicato_sixteenths(
                 ),
             ),
             *specifiers,
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.rewrite_rest_filled(),
             rmakers.trivialize(),
             rmakers.extract_trivial(),

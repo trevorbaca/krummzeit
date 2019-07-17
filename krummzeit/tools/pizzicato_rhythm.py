@@ -22,7 +22,7 @@ def pizzicato_rhythm(
                 ),
             ),
             *specifiers,
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.rewrite_dots(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),

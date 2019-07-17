@@ -19,7 +19,7 @@ def single_cluster_piano_rhythm() -> baca.RhythmCommand:
                     talea_denominator=16,
                 )
             ),
-            rmakers.simple_beam(),
+            rmakers.beam(),
             rmakers.extract_trivial(),
         ),
         tag="krummzeit.single_cluster_piano_rhythm",

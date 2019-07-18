@@ -128,7 +128,7 @@ maker(
     krummzeit.margin_markup('Pf.'),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.rest(baca.plts().get([5, 6], 7)),
+        rmakers.force_rest(baca.plts().get([5, 6], 7)),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )
@@ -137,7 +137,7 @@ maker(
     ('perc', (1, 7)),
     baca.make_repeated_duration_notes(
         [(1, 2)],
-        rmakers.rest(baca.lt(-1)),
+        rmakers.force_rest(baca.lt(-1)),
         do_not_rewrite_meter=True,
         ),
     baca.markup('tam-tam', boxed=True),

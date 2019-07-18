@@ -267,28 +267,28 @@ maker(
 maker(
     ('va', (48, 56)),
     krummzeit.pizzicato_rhythm(
-        rmakers.rest(baca.tuplets().get([1, 2, 3], 6)),
+        rmakers.force_rest(baca.tuplets().get([1, 2, 3], 6)),
         ),
     )
 
 maker(
     ('vc', (52, 56)),
     krummzeit.pizzicato_rhythm(
-        rmakers.rest(baca.tuplets().get([2, 3, 4], 6)),
+        rmakers.force_rest(baca.tuplets().get([2, 3, 4], 6)),
         ),
     )
 
 maker(
     ('vn', (54, 56)),
     krummzeit.pizzicato_rhythm(
-        rmakers.rest(baca.tuplets().get([3, 4, 5], 6)),
+        rmakers.force_rest(baca.tuplets().get([3, 4, 5], 6)),
         ),
     )
 
 maker(
     ('va', (57, 71)),
     krummzeit.pizzicato_sixteenths(
-        rmakers.rest(baca.tuplets().get([2, 3], 6)),
+        rmakers.force_rest(baca.tuplets().get([2, 3], 6)),
         extra_counts=[2, 2, 0, 2, 4, 6],
         ),
     )
@@ -296,7 +296,7 @@ maker(
 maker(
     ('vc', (57, 71)),
     krummzeit.pizzicato_sixteenths(
-        rmakers.rest(baca.tuplets().get([0, 2], 7)),
+        rmakers.force_rest(baca.tuplets().get([0, 2], 7)),
         extra_counts=[4, 4, 2, 0, 2, 4],
         ),
     )
@@ -304,7 +304,7 @@ maker(
 maker(
     ('vn', (57, 71)),
     krummzeit.pizzicato_sixteenths(
-        rmakers.rest(baca.tuplets().get([3, 6], 8)),
+        rmakers.force_rest(baca.tuplets().get([3, 6], 8)),
         extra_counts=[6, 0, 4, 4, 0, 2],
         ),
     )
@@ -312,7 +312,7 @@ maker(
 maker(
     ('pf', (57, 71)),
     krummzeit.pizzicato_sixteenths(
-        rmakers.rest(baca.tuplets().get([1, 5], 7)),
+        rmakers.force_rest(baca.tuplets().get([1, 5], 7)),
         extra_counts=[4, 0, 2, 4, 6],
         ),
     )

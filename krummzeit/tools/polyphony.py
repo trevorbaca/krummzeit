@@ -43,9 +43,7 @@ def polyphony(
     quarters = rmakers.NoteRhythmMaker(
         rmakers.untie(),
         rmakers.beam(baca.plts()),
-        duration_specifier=rmakers.DurationSpecifier(
-            forbidden_note_duration=(1, 2)
-        ),
+        duration_specifier=rmakers.Duration(forbidden_note_duration=(1, 2)),
     )
 
     if final_quarter_notes:

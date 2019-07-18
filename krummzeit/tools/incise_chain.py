@@ -10,7 +10,7 @@ def incise_chain() -> baca.RhythmCommand:
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.IncisedRhythmMaker(
-                incise_specifier=rmakers.InciseSpecifier(
+                incise_specifier=rmakers.Incise(
                     fill_with_rests=True,
                     prefix_talea=[-2, 2, -2, 2, -2, 2, 0],
                     prefix_counts=[2, 2, 2, 1],
@@ -19,7 +19,7 @@ def incise_chain() -> baca.RhythmCommand:
                     talea_denominator=16,
                 )
             ),
-            rmakers.rest(baca.tuplets().get([2], 5)),
+            rmakers.force_rest(baca.tuplets().get([2], 5)),
             rmakers.beam(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),

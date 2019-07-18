@@ -12,15 +12,13 @@ def pizzicato_sixteenths(
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.TaleaRhythmMaker(
-                burnish_specifier=rmakers.Burnish(
-                    left_classes=[abjad.Rest], left_counts=[1]
-                ),
                 extra_counts_per_division=extra_counts,
                 talea=rmakers.Talea(
                     counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
                     denominator=16,
                 ),
             ),
+            rmakers.force_rest(baca.tuplets().map(baca.leaf(0))),
             *specifiers,
             rmakers.beam(),
             rmakers.rewrite_rest_filled(),

@@ -12,14 +12,11 @@ def white_rhythm(
     """
     Makes white rhythm.
     """
-    if do_not_burnish:
-        burnish_specifier = None
-    else:
-        burnish_specifier = rmakers.Burnish(
-            left_classes=[abjad.Rest],
-            left_counts=[1],
-            outer_divisions_only=True,
-        )
+    force_rest = []
+    if not do_not_burnish:
+        command = rmakers.force_rest(baca.leaf(0))
+        force_rest.append(command)
+
     divisions = (
         baca.divisions()
         .fuse()
@@ -28,9 +25,8 @@ def white_rhythm(
 
     return baca.rhythm(
         rmakers.RhythmCommand(
-            rmakers.NoteRhythmMaker(
-                burnish_specifier=burnish_specifier, divisions=divisions
-            ),
+            rmakers.NoteRhythmMaker(divisions=divisions),
+            *force_rest,
             rmakers.beam(baca.plts()),
         ),
         tag="krummzeit.white_rhythm",

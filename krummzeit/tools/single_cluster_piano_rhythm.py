@@ -10,7 +10,7 @@ def single_cluster_piano_rhythm() -> baca.RhythmCommand:
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.IncisedRhythmMaker(
-                incise_specifier=rmakers.InciseSpecifier(
+                incise_specifier=rmakers.Incise(
                     fill_with_rests=True,
                     prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
                     prefix_counts=[3, 1, 1, 3],

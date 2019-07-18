@@ -21,7 +21,7 @@ def closing_pizzicati(
                 divisions=divisions,
                 talea=rmakers.Talea(counts=counts, denominator=4),
             ),
-            rmakers.rest(baca.lts().map(baca.leaves()[1:])),
+            rmakers.force_rest(baca.lts().map(baca.leaves()[1:])),
             rmakers.beam(),
             rmakers.extract_trivial(),
         ),

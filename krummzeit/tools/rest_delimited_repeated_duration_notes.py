@@ -12,7 +12,7 @@ def rest_delimited_repeated_duration_notes(
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.IncisedRhythmMaker(
-                incise_specifier=rmakers.InciseSpecifier(
+                incise_specifier=rmakers.Incise(
                     suffix_talea=[-1],
                     suffix_counts=[1],
                     talea_denominator=denominator,

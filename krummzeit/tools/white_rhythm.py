@@ -15,7 +15,7 @@ def white_rhythm(
     if do_not_burnish:
         burnish_specifier = None
     else:
-        burnish_specifier = rmakers.BurnishSpecifier(
+        burnish_specifier = rmakers.Burnish(
             left_classes=[abjad.Rest],
             left_counts=[1],
             outer_divisions_only=True,

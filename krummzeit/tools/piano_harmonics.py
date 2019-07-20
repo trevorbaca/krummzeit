@@ -28,8 +28,8 @@ def piano_harmonics(
     split = baca.divisions().ratios(division_ratios, rounded=True)
 
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.NoteRhythmMaker(),
+        rmakers.rhythm(
+            rmakers.note(),
             *specifiers_,
             rmakers.beam(baca.plts()),
             preprocessor=baca.divisions().map(split),

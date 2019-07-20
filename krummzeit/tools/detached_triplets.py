@@ -10,10 +10,8 @@ def detached_triplets() -> baca.RhythmCommand:
     tuplets = baca.tuplets()[:-1].get([0], 2)
 
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.TupletRhythmMaker(
-                tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)]
-            ),
+        rmakers.rhythm(
+            rmakers.tuplet(tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)]),
             rmakers.tie(tuplets.map(baca.pleaf(-1))),
             preprocessor=baca.divisions().fuse().quarters(),
         ),

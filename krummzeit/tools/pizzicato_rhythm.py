@@ -13,8 +13,8 @@ def pizzicato_rhythm(
     divisions = baca.divisions().split(durations, cyclic=True)
 
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.TaleaRhythmMaker(
+        rmakers.rhythm(
+            rmakers.talea(
                 curtail_ties=True,
                 extra_counts=[2, 2, 0, 2, 4, 6],
                 talea=rmakers.Talea(

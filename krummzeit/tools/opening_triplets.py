@@ -12,8 +12,8 @@ def opening_triplets(
     Makes opening triplets.
     """
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.TupletRhythmMaker(tuplet_ratios=[(1, 1, 1)]),
+        rmakers.rhythm(
+            rmakers.tuplet(tuplet_ratios=[(1, 1, 1)]),
             *specifiers,
             rmakers.beam(),
             rmakers.rewrite_rest_filled(),

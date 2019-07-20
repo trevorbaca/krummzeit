@@ -24,14 +24,14 @@ def polyphony(
         baca.tuplets()[:-1].get(ties).map(baca.pleaf(-1))
     )
 
-    eighths = rmakers.EvenDivisionRhythmMaker(
+    eighths = rmakers.even_division(
         rmakers.beam(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         denominators=[8],
     )
 
-    even_divisions = rmakers.EvenDivisionRhythmMaker(
+    even_divisions = rmakers.even_division(
         rmakers.beam(),
         tie_specifier,
         rmakers.trivialize(),
@@ -40,7 +40,7 @@ def polyphony(
         extra_counts=extra_counts,
     )
 
-    quarters = rmakers.NoteRhythmMaker(
+    quarters = rmakers.note(
         rmakers.untie(),
         rmakers.beam(baca.plts()),
         spelling=rmakers.Spelling(forbidden_note_duration=(1, 2)),
@@ -70,6 +70,6 @@ def polyphony(
     divisions = baca.divisions().map(split)
 
     return baca.rhythm(
-        rmakers.RhythmCommand(rhythm_maker, preprocessor=divisions),
+        rmakers.rhythm(rhythm_maker, preprocessor=divisions),
         tag="krummzeit.polyphony",
     )

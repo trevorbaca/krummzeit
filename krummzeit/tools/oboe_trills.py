@@ -10,10 +10,8 @@ def oboe_trills() -> baca.RhythmCommand:
     split = baca.divisions().ratios([(2, 1), (2, 1), (1, 1, 1)], rounded=True)
 
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.TupletRhythmMaker(
-                tuplet_ratios=[(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)]
-            ),
+        rmakers.rhythm(
+            rmakers.tuplet(tuplet_ratios=[(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)]),
             rmakers.force_rest(baca.tuplets().get([3, 4], 6)),
             rmakers.beam(),
             rmakers.rewrite_rest_filled(),

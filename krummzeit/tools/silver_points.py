@@ -24,7 +24,7 @@ def silver_points(
             rmakers.rewrite_dots(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),
-            divisions=baca.divisions().map(split),
+            preprocessor=baca.divisions().map(split),
         ),
         tag="krummzeit.silver_points",
     )

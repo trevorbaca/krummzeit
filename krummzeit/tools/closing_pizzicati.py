@@ -18,7 +18,7 @@ def closing_pizzicati(
         rmakers.RhythmCommand(
             rmakers.TaleaRhythmMaker(
                 extra_counts=extra_counts,
-                divisions=divisions,
+                preprocessor=divisions,
                 talea=rmakers.Talea(counts=counts, denominator=4),
             ),
             rmakers.force_rest(baca.lts().map(baca.leaves()[1:])),

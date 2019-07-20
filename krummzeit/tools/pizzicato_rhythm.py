@@ -26,7 +26,7 @@ def pizzicato_rhythm(
             rmakers.rewrite_dots(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),
-            divisions=divisions,
+            preprocessor=divisions,
         ),
         tag="krummzeit.pizzicato_rhythm",
     )

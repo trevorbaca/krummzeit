@@ -70,6 +70,6 @@ def polyphony(
     divisions = baca.divisions().map(split)
 
     return baca.rhythm(
-        rmakers.RhythmCommand(rhythm_maker, divisions=divisions),
+        rmakers.RhythmCommand(rhythm_maker, preprocessor=divisions),
         tag="krummzeit.polyphony",
     )

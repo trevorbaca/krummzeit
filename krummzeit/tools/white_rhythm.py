@@ -25,7 +25,7 @@ def white_rhythm(
 
     return baca.rhythm(
         rmakers.RhythmCommand(
-            rmakers.NoteRhythmMaker(divisions=divisions),
+            rmakers.NoteRhythmMaker(preprocessor=divisions),
             *force_rest,
             rmakers.beam(baca.plts()),
         ),

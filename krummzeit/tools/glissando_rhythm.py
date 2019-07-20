@@ -36,7 +36,7 @@ def glissando_rhythm(
             rmakers.rewrite_rest_filled(),
             rmakers.beam(),
             rmakers.extract_trivial(),
-            divisions=baca.divisions().map(split),
+            preprocessor=baca.divisions().map(split),
         ),
         tag="krummzeit.glissando_rhythm",
     )

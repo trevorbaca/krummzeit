@@ -18,7 +18,7 @@ def oboe_trills() -> baca.RhythmCommand:
             rmakers.beam(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),
-            divisions=baca.divisions().map(split),
+            preprocessor=baca.divisions().map(split),
         ),
         tag="krummzeit.oboe_trills",
     )

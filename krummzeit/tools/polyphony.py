@@ -37,7 +37,7 @@ def polyphony(
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         denominators=denominators,
-        extra_counts_per_division=extra_counts,
+        extra_counts=extra_counts,
     )
 
     quarters = rmakers.NoteRhythmMaker(

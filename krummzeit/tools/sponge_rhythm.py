@@ -10,7 +10,7 @@ def sponge_rhythm() -> baca.RhythmCommand:
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.TaleaRhythmMaker(
-                extra_counts_per_division=[2, 1, 0],
+                extra_counts=[2, 1, 0],
                 talea=rmakers.Talea(counts=[1, 2], denominator=2),
             ),
             rmakers.beam(),

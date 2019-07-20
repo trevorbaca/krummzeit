@@ -12,7 +12,7 @@ def prolated_quarters(
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.EvenDivisionRhythmMaker(
-                denominators=[4], extra_counts_per_division=extra_counts
+                denominators=[4], extra_counts=extra_counts
             ),
             rmakers.beam(),
         ),

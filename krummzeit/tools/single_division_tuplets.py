@@ -10,8 +10,8 @@ def single_division_tuplets(
     Makes single-division tuplet rhythm.
     """
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.TupletRhythmMaker(tuplet_ratios=ratios),
+        rmakers.rhythm(
+            rmakers.tuplet(tuplet_ratios=ratios),
             rmakers.tie(baca.tuplets()[:-1].map(baca.pleaf(-1))),
             rmakers.beam(),
             rmakers.rewrite_dots(),

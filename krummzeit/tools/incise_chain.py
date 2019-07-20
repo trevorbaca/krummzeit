@@ -8,8 +8,8 @@ def incise_chain() -> baca.RhythmCommand:
     Makes incise chain rhythm.
     """
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.IncisedRhythmMaker(
+        rmakers.rhythm(
+            rmakers.incised(
                 incise=rmakers.Incise(
                     fill_with_rests=True,
                     prefix_talea=[-2, 2, -2, 2, -2, 2, 0],

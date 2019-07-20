@@ -10,8 +10,8 @@ def right_remainder_quarters(
     Makes right-remainder quarter-note-filled measures.
     """
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.NoteRhythmMaker(),
+        rmakers.rhythm(
+            rmakers.note(),
             *specifiers,
             rmakers.beam(baca.plts()),
             preprocessor=baca.divisions().map(baca.divisions().quarters()),

@@ -10,8 +10,8 @@ def left_remainder_quarters(
     Makes left-remainder quarter rhythm.
     """
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.NoteRhythmMaker(),
+        rmakers.rhythm(
+            rmakers.note(),
             *specifiers,
             rmakers.beam(baca.plts()),
             preprocessor=baca.divisions()

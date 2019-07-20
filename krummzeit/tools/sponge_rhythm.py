@@ -8,8 +8,8 @@ def sponge_rhythm() -> baca.RhythmCommand:
     Makes sponge rhythm.
     """
     return baca.rhythm(
-        rmakers.RhythmCommand(
-            rmakers.TaleaRhythmMaker(
+        rmakers.rhythm(
+            rmakers.talea(
                 extra_counts=[2, 1, 0],
                 talea=rmakers.Talea(counts=[1, 2], denominator=2),
             ),

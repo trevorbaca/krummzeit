@@ -17,7 +17,7 @@ def closing_pizzicati(
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.TaleaRhythmMaker(
-                extra_counts_per_division=extra_counts,
+                extra_counts=extra_counts,
                 divisions=divisions,
                 talea=rmakers.Talea(counts=counts, denominator=4),
             ),

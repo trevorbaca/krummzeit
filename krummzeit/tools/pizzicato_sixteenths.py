@@ -12,7 +12,7 @@ def pizzicato_sixteenths(
     return baca.rhythm(
         rmakers.RhythmCommand(
             rmakers.TaleaRhythmMaker(
-                extra_counts_per_division=extra_counts,
+                extra_counts=extra_counts,
                 talea=rmakers.Talea(
                     counts=[1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
                     denominator=16,

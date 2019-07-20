@@ -14,7 +14,7 @@ def fused_expanse(
         rmakers.RhythmCommand(
             rmakers.NoteRhythmMaker(),
             rmakers.beam(baca.plts()),
-            divisions=baca.divisions().fuse().split(divisions, cyclic=True),
+            preprocessor=baca.divisions().fuse().split(divisions, cyclic=True),
         ),
         tag="krummzeit.fused_expanse",
     )

@@ -15,7 +15,7 @@ def hypermeter_tuplets(
         rmakers.RhythmCommand(
             rmakers.TupletRhythmMaker(
                 denominator=(1, 4),
-                divisions=baca.divisions().fuse(counts, cyclic=True),
+                preprocessor=baca.divisions().fuse(counts, cyclic=True),
                 tuplet_ratios=tuplet_ratios,
             ),
             *specifiers,

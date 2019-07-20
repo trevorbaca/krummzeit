@@ -18,7 +18,7 @@ def opening_triplets(
             rmakers.beam(),
             rmakers.rewrite_rest_filled(),
             rmakers.extract_trivial(),
-            divisions=baca.divisions().fuse().quarters(remainder=remainder),
+            preprocessor=baca.divisions().fuse().quarters(remainder=remainder),
         ),
         tag="krummzeit.opening_triplets",
     )

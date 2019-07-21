@@ -266,10 +266,16 @@ maker(
 
 maker(
     ('va', (48, 56)),
-    krummzeit.pizzicato_rhythm(
-        rmakers.force_rest(baca.tuplets().get([1, 2, 3], 6)),
+    baca.chunk(
+        krummzeit.pizzicato_rhythm(
+            rmakers.force_rest(baca.tuplets().get([1, 2, 3], 6)),
         ),
-    )
+        abjad.new(
+            baca.untie(baca.leaf(-2)),
+            measures=52,
+        ),
+    ),
+)
 
 maker(
     ('vc', (52, 56)),

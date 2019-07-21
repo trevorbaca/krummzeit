@@ -15,7 +15,6 @@ def pizzicato_rhythm(
     return baca.rhythm(
         rmakers.rhythm(
             rmakers.talea(
-                curtail_ties=True,
                 extra_counts=[2, 2, 0, 2, 4, 6],
                 talea=rmakers.Talea(
                     counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8], denominator=16

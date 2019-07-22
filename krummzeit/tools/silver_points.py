@@ -17,14 +17,12 @@ def silver_points(
     split = baca.divisions().ratios(ratios, rounded=True)
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios),
-            *specifiers,
-            rmakers.beam(),
-            rmakers.rewrite_dots(),
-            rmakers.rewrite_rest_filled(),
-            rmakers.extract_trivial(),
-            preprocessor=baca.divisions().map(split),
-        ),
+        rmakers.tuplet(tuplet_ratios),
+        *specifiers,
+        rmakers.beam(),
+        rmakers.rewrite_dots(),
+        rmakers.rewrite_rest_filled(),
+        rmakers.extract_trivial(),
+        preprocessor=baca.divisions().map(split),
         tag="krummzeit.silver_points",
     )

@@ -15,12 +15,10 @@ def closing_pizzicati(
     divisions = baca.divisions().split(durations, cyclic=True)
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.talea(counts, 4, extra_counts=extra_counts),
-            rmakers.force_rest(baca.lts().map(baca.leaves()[1:])),
-            rmakers.beam(),
-            rmakers.extract_trivial(),
-            preprocessor=divisions,
-        ),
+        rmakers.talea(counts, 4, extra_counts=extra_counts),
+        rmakers.force_rest(baca.lts().map(baca.leaves()[1:])),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        preprocessor=divisions,
         tag="krummzeit.closing_pizzicati",
     )

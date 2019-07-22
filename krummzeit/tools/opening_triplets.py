@@ -12,13 +12,11 @@ def opening_triplets(
     Makes opening triplets.
     """
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.tuplet([(1, 1, 1)]),
-            *specifiers,
-            rmakers.beam(),
-            rmakers.rewrite_rest_filled(),
-            rmakers.extract_trivial(),
-            preprocessor=baca.divisions().fuse().quarters(remainder=remainder),
-        ),
+        rmakers.tuplet([(1, 1, 1)]),
+        *specifiers,
+        rmakers.beam(),
+        rmakers.rewrite_rest_filled(),
+        rmakers.extract_trivial(),
+        preprocessor=baca.divisions().fuse().quarters(remainder=remainder),
         tag="krummzeit.opening_triplets",
     )

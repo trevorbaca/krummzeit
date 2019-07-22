@@ -28,11 +28,9 @@ def piano_harmonics(
     split = baca.divisions().ratios(division_ratios, rounded=True)
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.note(),
-            *specifiers_,
-            rmakers.beam(baca.plts()),
-            preprocessor=baca.divisions().map(split),
-        ),
+        rmakers.note(),
+        *specifiers_,
+        rmakers.beam(baca.plts()),
+        preprocessor=baca.divisions().map(split),
         tag="krummzeit.piano_harmonics",
     )

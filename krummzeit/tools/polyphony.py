@@ -24,26 +24,29 @@ def polyphony(
         baca.tuplets()[:-1].get(ties).map(baca.pleaf(-1))
     )
 
-    eighths = rmakers.even_division(
+    eighths = rmakers.rhythm(
+        rmakers.even_division(denominators=[8]),
         rmakers.beam(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
-        denominators=[8],
     )
 
-    even_divisions = rmakers.even_division(
+    even_divisions = rmakers.rhythm(
+        rmakers.even_division(
+            denominators=denominators, extra_counts=extra_counts
+        ),
         rmakers.beam(),
         tie_specifier,
         rmakers.trivialize(),
         rmakers.extract_trivial(),
-        denominators=denominators,
-        extra_counts=extra_counts,
     )
 
-    quarters = rmakers.note(
+    quarters = rmakers.rhythm(
+        rmakers.note(
+            spelling=rmakers.Spelling(forbidden_note_duration=(1, 2))
+        ),
         rmakers.untie(),
         rmakers.beam(baca.plts()),
-        spelling=rmakers.Spelling(forbidden_note_duration=(1, 2)),
     )
 
     if final_quarter_notes:

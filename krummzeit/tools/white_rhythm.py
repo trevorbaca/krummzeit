@@ -25,9 +25,10 @@ def white_rhythm(
 
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.note(preprocessor=divisions),
+            rmakers.note(),
             *force_rest,
             rmakers.beam(baca.plts()),
+            preprocessor=divisions,
         ),
         tag="krummzeit.white_rhythm",
     )

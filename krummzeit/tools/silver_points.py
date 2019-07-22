@@ -18,7 +18,7 @@ def silver_points(
 
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios=tuplet_ratios),
+            rmakers.tuplet(tuplet_ratios),
             *specifiers,
             rmakers.beam(),
             rmakers.rewrite_dots(),

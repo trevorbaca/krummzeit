@@ -11,7 +11,7 @@ def detached_triplets() -> baca.RhythmCommand:
 
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios=[(3, -1, 2), (1, -1, 3, -1)]),
+            rmakers.tuplet([(3, -1, 2), (1, -1, 3, -1)]),
             rmakers.tie(tuplets.map(baca.pleaf(-1))),
             preprocessor=baca.divisions().fuse().quarters(),
         ),

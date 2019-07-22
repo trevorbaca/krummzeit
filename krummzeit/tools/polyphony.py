@@ -25,16 +25,14 @@ def polyphony(
     )
 
     eighths = rmakers.rhythm(
-        rmakers.even_division(denominators=[8]),
+        rmakers.even_division([8]),
         rmakers.beam(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
     )
 
     even_divisions = rmakers.rhythm(
-        rmakers.even_division(
-            denominators=denominators, extra_counts=extra_counts
-        ),
+        rmakers.even_division(denominators, extra_counts=extra_counts),
         rmakers.beam(),
         tie_specifier,
         rmakers.trivialize(),

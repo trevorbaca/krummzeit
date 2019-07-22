@@ -30,13 +30,11 @@ def glissando_rhythm(
     split = baca.divisions().ratios(division_ratios, rounded=True)
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios),
-            *specifiers_,
-            rmakers.rewrite_rest_filled(),
-            rmakers.beam(),
-            rmakers.extract_trivial(),
-            preprocessor=baca.divisions().map(split),
-        ),
+        rmakers.tuplet(tuplet_ratios),
+        *specifiers_,
+        rmakers.rewrite_rest_filled(),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        preprocessor=baca.divisions().map(split),
         tag="krummzeit.glissando_rhythm",
     )

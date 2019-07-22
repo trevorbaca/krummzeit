@@ -12,16 +12,14 @@ def hypermeter_tuplets(
     Makes hypermeter tuplets.
     """
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios, denominator=(1, 4)),
-            *specifiers,
-            rmakers.beam(),
-            rmakers.rewrite_dots(),
-            rmakers.rewrite_rest_filled(),
-            rmakers.force_augmentation(),
-            rmakers.trivialize(),
-            rmakers.extract_trivial(),
-            preprocessor=baca.divisions().fuse(counts, cyclic=True),
-        ),
+        rmakers.tuplet(tuplet_ratios, denominator=(1, 4)),
+        *specifiers,
+        rmakers.beam(),
+        rmakers.rewrite_dots(),
+        rmakers.rewrite_rest_filled(),
+        rmakers.force_augmentation(),
+        rmakers.trivialize(),
+        rmakers.extract_trivial(),
+        preprocessor=baca.divisions().fuse(counts, cyclic=True),
         tag="krummzeit.hypermeter_tuplets",
     )

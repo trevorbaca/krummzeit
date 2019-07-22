@@ -11,10 +11,8 @@ def fused_expanse(
     Makes fused expanse rhythm.
     """
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.note(),
-            rmakers.beam(baca.plts()),
-            preprocessor=baca.divisions().fuse().split(divisions, cyclic=True),
-        ),
+        rmakers.note(),
+        rmakers.beam(baca.plts()),
+        preprocessor=baca.divisions().fuse().split(divisions, cyclic=True),
         tag="krummzeit.fused_expanse",
     )

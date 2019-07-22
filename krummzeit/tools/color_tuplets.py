@@ -33,14 +33,12 @@ def color_tuplets(
     selector = span_pairs.map(baca.leaf(0))
 
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios),
-            rmakers.tie(selector),
-            *specifiers,
-            rmakers.rewrite_dots(),
-            rmakers.rewrite_rest_filled(),
-            rmakers.beam(),
-            rmakers.extract_trivial(),
-        ),
+        rmakers.tuplet(tuplet_ratios),
+        rmakers.tie(selector),
+        *specifiers,
+        rmakers.rewrite_dots(),
+        rmakers.rewrite_rest_filled(),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
         tag="krummzeit.color_tuplets",
     )

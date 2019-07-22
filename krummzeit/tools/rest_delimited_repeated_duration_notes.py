@@ -10,17 +10,11 @@ def rest_delimited_repeated_duration_notes(
     Makes rest-delimited repeated duration notes.
     """
     return baca.rhythm(
-        rmakers.rhythm(
-            rmakers.incised(
-                suffix_talea=[-1],
-                suffix_counts=[1],
-                talea_denominator=denominator,
-            ),
-            rmakers.beam(),
-            rmakers.extract_trivial(),
-            preprocessor=baca.divisions()
-            .fuse()
-            .split([duration], cyclic=True),
+        rmakers.incised(
+            suffix_talea=[-1], suffix_counts=[1], talea_denominator=denominator
         ),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        preprocessor=baca.divisions().fuse().split([duration], cyclic=True),
         tag="krummzeit.rest_delimited_repeated_duration_notes",
     )

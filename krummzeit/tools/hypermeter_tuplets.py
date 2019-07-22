@@ -13,7 +13,7 @@ def hypermeter_tuplets(
     """
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.tuplet(denominator=(1, 4), tuplet_ratios=tuplet_ratios),
+            rmakers.tuplet(tuplet_ratios, denominator=(1, 4)),
             *specifiers,
             rmakers.beam(),
             rmakers.rewrite_dots(),

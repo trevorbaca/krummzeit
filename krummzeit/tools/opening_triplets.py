@@ -13,7 +13,7 @@ def opening_triplets(
     """
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios=[(1, 1, 1)]),
+            rmakers.tuplet([(1, 1, 1)]),
             *specifiers,
             rmakers.beam(),
             rmakers.rewrite_rest_filled(),

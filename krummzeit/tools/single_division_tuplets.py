@@ -11,7 +11,7 @@ def single_division_tuplets(
     """
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios=ratios),
+            rmakers.tuplet(ratios),
             rmakers.tie(baca.tuplets()[:-1].map(baca.pleaf(-1))),
             rmakers.beam(),
             rmakers.rewrite_dots(),

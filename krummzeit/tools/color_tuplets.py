@@ -34,7 +34,7 @@ def color_tuplets(
 
     return baca.rhythm(
         rmakers.rhythm(
-            rmakers.tuplet(tuplet_ratios=tuplet_ratios),
+            rmakers.tuplet(tuplet_ratios),
             rmakers.tie(selector),
             *specifiers,
             rmakers.rewrite_dots(),

@@ -5,7 +5,7 @@ from abjadext import rmakers
 
 
 def opening_triplets(
-    *specifiers: rmakers.Command,
+    *commands: rmakers.Command,
     remainder: typing.Union[int, abjad.HorizontalAlignment] = abjad.Left,
 ) -> baca.RhythmCommand:
     """
@@ -13,7 +13,7 @@ def opening_triplets(
     """
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1)]),
-        *specifiers,
+        *commands,
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),

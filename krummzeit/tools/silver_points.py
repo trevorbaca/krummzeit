@@ -5,7 +5,7 @@ from abjadext import rmakers
 
 def silver_points(
     ratios: abjad.RatioSequenceTyping,
-    *specifiers: rmakers.Command,
+    *commands: rmakers.Command,
     tuplet_ratios: abjad.RatioSequenceTyping = [
         (-1, 1, 1, 2),
         (-1, 1, 1, -2, 2),
@@ -18,7 +18,7 @@ def silver_points(
 
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
-        *specifiers,
+        *commands,
         rmakers.beam(),
         rmakers.rewrite_dots(),
         rmakers.rewrite_rest_filled(),

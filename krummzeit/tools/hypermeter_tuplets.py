@@ -6,14 +6,14 @@ from abjadext import rmakers
 def hypermeter_tuplets(
     tuplet_ratios: abjad.RatioSequenceTyping,
     counts: abjad.IntegerSequence = (2, 3, 1),
-    *specifiers: rmakers.Command,
+    *commands: rmakers.Command,
 ) -> baca.RhythmCommand:
     """
     Makes hypermeter tuplets.
     """
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios, denominator=(1, 4)),
-        *specifiers,
+        *commands,
         rmakers.beam(),
         rmakers.rewrite_dots(),
         rmakers.rewrite_rest_filled(),

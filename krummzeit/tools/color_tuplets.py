@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def color_tuplets(
-    *specifiers: rmakers.Command, rotation: int = 0
+    *commands: rmakers.Command, rotation: int = 0
 ) -> baca.RhythmCommand:
     """
     Makes color tuplets.
@@ -35,7 +35,7 @@ def color_tuplets(
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
         rmakers.tie(selector),
-        *specifiers,
+        *commands,
         rmakers.rewrite_dots(),
         rmakers.rewrite_rest_filled(),
         rmakers.beam(),

@@ -20,6 +20,5 @@ def closing_pizzicati(
         rmakers.beam(),
         rmakers.extract_trivial(),
         preprocessor=divisions,
-        stack=True,
         tag="krummzeit.closing_pizzicati",
     )

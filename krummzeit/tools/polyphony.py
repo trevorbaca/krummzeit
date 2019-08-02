@@ -71,8 +71,5 @@ def polyphony(
     divisions = baca.divisions().map(split)
 
     return baca.rhythm(
-        rhythm_maker,
-        preprocessor=divisions,
-        stack=True,
-        tag="krummzeit.polyphony",
+        rhythm_maker, preprocessor=divisions, tag="krummzeit.polyphony"
     )

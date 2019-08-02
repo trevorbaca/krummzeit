@@ -20,6 +20,5 @@ def incise_chain() -> baca.RhythmCommand:
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
-        stack=True,
         tag="krummzeit.incise_chain",
     )

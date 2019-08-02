@@ -28,6 +28,5 @@ def white_rhythm(
         *force_rest,
         rmakers.beam(baca.plts()),
         preprocessor=divisions,
-        stack=True,
         tag="krummzeit.white_rhythm",
     )

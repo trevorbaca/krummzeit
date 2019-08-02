@@ -49,13 +49,13 @@ def polyphony(
 
     if final_quarter_notes:
         indices = [-3, -2, -1]
-        rhythm_maker = rmakers.tesselate(
+        rhythm_maker = rmakers.bind(
             rmakers.assign(even_divisions, ~abjad.index(indices)),
             rmakers.assign(quarters, abjad.index(indices)),
         )
     elif initial_eighth_notes:
         indices = [0, 1]
-        rhythm_maker = rmakers.tesselate(
+        rhythm_maker = rmakers.bind(
             rmakers.assign(even_divisions, ~abjad.index(indices)),
             rmakers.assign(eighths, abjad.index(indices)),
         )

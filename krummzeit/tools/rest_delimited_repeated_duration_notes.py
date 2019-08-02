@@ -16,5 +16,6 @@ def rest_delimited_repeated_duration_notes(
         rmakers.beam(),
         rmakers.extract_trivial(),
         preprocessor=baca.divisions().fuse().split([duration], cyclic=True),
+        stack=True,
         tag="krummzeit.rest_delimited_repeated_duration_notes",
     )

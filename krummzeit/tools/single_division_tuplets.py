@@ -15,5 +15,6 @@ def single_division_tuplets(
         rmakers.beam(),
         rmakers.rewrite_dots(),
         rmakers.force_augmentation(),
+        stack=True,
         tag="krummzeit.single_division_tuplets",
     )

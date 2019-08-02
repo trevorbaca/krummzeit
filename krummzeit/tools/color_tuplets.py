@@ -40,5 +40,6 @@ def color_tuplets(
         rmakers.rewrite_rest_filled(),
         rmakers.beam(),
         rmakers.extract_trivial(),
+        stack=True,
         tag="krummzeit.color_tuplets",
     )

@@ -13,5 +13,6 @@ def sponge_rhythm() -> baca.RhythmCommand:
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         rmakers.force_repeat_tie(),
+        stack=True,
         tag="krummzeit.sponge_rhythm",
     )

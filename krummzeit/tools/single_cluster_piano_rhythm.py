@@ -18,5 +18,6 @@ def single_cluster_piano_rhythm() -> baca.RhythmCommand:
         ),
         rmakers.beam(),
         rmakers.extract_trivial(),
+        stack=True,
         tag="krummzeit.single_cluster_piano_rhythm",
     )

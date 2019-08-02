@@ -49,13 +49,13 @@ def polyphony(
 
     if final_quarter_notes:
         indices = [-3, -2, -1]
-        rhythm_maker = rmakers.RhythmAssignments(
+        rhythm_maker = rmakers.tesselate(
             rmakers.assign(even_divisions, ~abjad.index(indices)),
             rmakers.assign(quarters, abjad.index(indices)),
         )
     elif initial_eighth_notes:
         indices = [0, 1]
-        rhythm_maker = rmakers.RhythmAssignments(
+        rhythm_maker = rmakers.tesselate(
             rmakers.assign(even_divisions, ~abjad.index(indices)),
             rmakers.assign(eighths, abjad.index(indices)),
         )
@@ -71,5 +71,8 @@ def polyphony(
     divisions = baca.divisions().map(split)
 
     return baca.rhythm(
-        rhythm_maker, preprocessor=divisions, tag="krummzeit.polyphony"
+        rhythm_maker,
+        preprocessor=divisions,
+        stack=True,
+        tag="krummzeit.polyphony",
     )

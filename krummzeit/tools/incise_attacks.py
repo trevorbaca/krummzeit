@@ -18,5 +18,6 @@ def incise_attacks() -> baca.RhythmCommand:
         ),
         rmakers.beam(),
         rmakers.extract_trivial(),
+        stack=True,
         tag="krummzeit.incise_attacks",
     )

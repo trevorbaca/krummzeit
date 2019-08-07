@@ -276,7 +276,7 @@ class ScoreTemplate(baca.ScoreTemplate):
                 string_section_staff_group,
             ],
             lilypond_type="MusicContext",
-            is_simultaneous=True,
+            simultaneous=True,
             name="Music_Context",
             tag=tag,
         )

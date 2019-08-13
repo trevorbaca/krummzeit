@@ -62,13 +62,13 @@ def polyphony(
     else:
         rhythm_maker = even_divisions
 
-    split = baca.divisions().split(
+    split = baca.sequence().split_divisions(
         durations,
         cyclic=True,
         remainder_fuse_threshold=fuse,
         rotate_indexed=rotation,
     )
-    divisions = baca.divisions().map(split)
+    divisions = baca.sequence().map(split)
 
     return baca.rhythm(
         rhythm_maker, preprocessor=divisions, tag="krummzeit.polyphony"

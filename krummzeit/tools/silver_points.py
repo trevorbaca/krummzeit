@@ -14,7 +14,7 @@ def silver_points(
     """
     Makes silver points rhythm.
     """
-    split = baca.divisions().ratios(ratios, rounded=True)
+    split = baca.sequence().ratios(ratios, rounded=True)
 
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
@@ -23,6 +23,6 @@ def silver_points(
         rmakers.rewrite_dots(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
-        preprocessor=baca.divisions().map(split),
+        preprocessor=baca.sequence().map(split),
         tag="krummzeit.silver_points",
     )

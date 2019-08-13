@@ -10,7 +10,7 @@ def pizzicato_rhythm(
     Makes pizzicato rhythm.
     """
     durations = [(_, 16) for _ in split]
-    divisions = baca.divisions().split(durations, cyclic=True)
+    divisions = baca.sequence().split_divisions(durations, cyclic=True)
 
     return baca.rhythm(
         rmakers.talea(

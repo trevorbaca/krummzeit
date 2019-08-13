@@ -25,12 +25,12 @@ def piano_harmonics(
         selector = span_pairs.map(baca.leaf(0))
         specifier = rmakers.tie(selector)
         commands_.append(specifier)
-    split = baca.divisions().ratios(division_ratios, rounded=True)
+    split = baca.sequence().ratios(division_ratios, rounded=True)
 
     return baca.rhythm(
         rmakers.note(),
         *commands_,
         rmakers.beam(baca.plts()),
-        preprocessor=baca.divisions().map(split),
+        preprocessor=baca.sequence().map(split),
         tag="krummzeit.piano_harmonics",
     )

@@ -21,6 +21,8 @@ def pizzicato_sixteenths(
         rmakers.rewrite_rest_filled(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
-        preprocessor=baca.divisions().split([(6, 16), (18, 16)], cyclic=True),
+        preprocessor=baca.sequence().split_divisions(
+            [(6, 16), (18, 16)], cyclic=True
+        ),
         tag="krummzeit.pizzicato_sixteenths",
     )

@@ -20,6 +20,6 @@ def hypermeter_tuplets(
         rmakers.force_augmentation(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
-        preprocessor=baca.divisions().fuse(counts, cyclic=True),
+        preprocessor=baca.sequence().fuse(counts, cyclic=True),
         tag="krummzeit.hypermeter_tuplets",
     )

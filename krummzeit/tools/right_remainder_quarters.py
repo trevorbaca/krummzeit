@@ -13,6 +13,6 @@ def right_remainder_quarters(
         rmakers.note(),
         *commands,
         rmakers.beam(baca.plts()),
-        preprocessor=baca.divisions().map(baca.divisions().quarters()),
+        preprocessor=baca.sequence().map(baca.sequence().quarters()),
         tag="krummzeit.right_remainder_quarters",
     )

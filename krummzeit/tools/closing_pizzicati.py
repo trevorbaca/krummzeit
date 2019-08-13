@@ -12,7 +12,7 @@ def closing_pizzicati(
     Makes closing pizzicati rhythm.
     """
     durations = [(_, 4) for _ in split]
-    divisions = baca.divisions().split(durations, cyclic=True)
+    divisions = baca.sequence().split_divisions(durations, cyclic=True)
 
     return baca.rhythm(
         rmakers.talea(counts, 4, extra_counts=extra_counts),

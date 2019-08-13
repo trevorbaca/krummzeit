@@ -7,7 +7,7 @@ def oboe_trills() -> baca.RhythmCommand:
     """
     Makes oboe trill rhythm.
     """
-    split = baca.divisions().ratios([(2, 1), (2, 1), (1, 1, 1)], rounded=True)
+    split = baca.sequence().ratios([(2, 1), (2, 1), (1, 1, 1)], rounded=True)
 
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)]),
@@ -15,6 +15,6 @@ def oboe_trills() -> baca.RhythmCommand:
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
-        preprocessor=baca.divisions().map(split),
+        preprocessor=baca.sequence().map(split),
         tag="krummzeit.oboe_trills",
     )

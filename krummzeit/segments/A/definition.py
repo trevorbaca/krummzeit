@@ -64,7 +64,7 @@ maker(
     baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(45 - 1)),
     baca.metronome_mark('135', selector=baca.leaf(48 - 1)),
     baca.metronome_mark('108', selector=baca.leaf(57 - 1)),
-    baca.metronome_mark('4=4:5(4)', selector=baca.leaf(57 - 1)),
+    baca.metronome_mark('4:5(4)=4', selector=baca.leaf(57 - 1)),
     baca.rehearsal_mark('A'),
     )
 

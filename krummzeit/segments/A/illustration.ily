@@ -4101,6 +4101,8 @@ A_Piano_Music_Voice = {                                                        %
     % [A Piano_Music_Voice measure 36 / measure 23]                            %! _comment_measure_numbers
     \override DynamicLineSpanner.staff-padding = #7                            %! baca.dls_staff_padding:OverrideCommand(1)
     \override TupletBracket.staff-padding = #4                                 %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_36:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_36:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -4397,6 +4399,8 @@ A_Piano_Music_Voice = {                                                        %
     \times 4/5 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 42 / measure 29]                        %! _comment_measure_numbers
+    %%% \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_42:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_42:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -4647,6 +4651,8 @@ A_Piano_Music_Voice = {                                                        %
             #16                                                                %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
             Pf.                                                                %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
         }                                                                      %! EXPLICIT_MARGIN_MARKUP:_set_status_tag:baca.margin_markup:-PARTS:IndicatorCommand
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_58:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! MEASURE_58:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "bass"                                                               %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -4901,6 +4907,8 @@ A_Piano_Music_Voice = {                                                        %
         % [A Piano_Music_Voice measure 70 / measure 57]                        %! _comment_measure_numbers
         \override DynamicLineSpanner.staff-padding = #7                        %! baca.dls_staff_padding:OverrideCommand(1)
         \override TupletBracket.staff-padding = #4                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
+    %%% \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_70:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_70:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -7793,6 +7801,8 @@ A_Violin_Music_Voice = {                                                       %
     \once \override Staff.StaffSymbol.line-count = 1                           %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \startStaff                                                                %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
     \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                      %! baca.bar_extent:OverrideCommand(1)
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_85:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_85:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "percussion"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.StaffSymbol.color = #(x11-color 'blue)               %! EXPLICIT_STAFF_LINES_COLOR:_attach_color_literal(2)
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -8091,6 +8101,8 @@ A_Viola_Music_Voice = {                                                        %
     R1 * 9/8                                                                   %! _make_measure_silences
 
     % [A Viola_Music_Voice measure 47 / measure 34]                            %! _comment_measure_numbers
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_47:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_47:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -8152,6 +8164,8 @@ A_Viola_Music_Voice = {                                                        %
     \times 7/8 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 52 / measure 39]                        %! _comment_measure_numbers
+        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_52:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_52:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "alto"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -8372,6 +8386,8 @@ A_Viola_Music_Voice = {                                                        %
     \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [A Viola_Music_Voice measure 61 / measure 48]                        %! _comment_measure_numbers
+        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_61:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_61:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -9149,6 +9165,8 @@ A_Cello_Music_Voice = {                                                        %
     R1 * 9/8                                                                   %! _make_measure_silences
 
     % [A Cello_Music_Voice measure 47 / measure 34]                            %! _comment_measure_numbers
+    \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_47:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_47:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -9375,6 +9393,8 @@ A_Cello_Music_Voice = {                                                        %
     \times 5/4 {                                                               %! krummzeit.prolated_quarters
 
         % [A Cello_Music_Voice measure 58 / measure 45]                        %! _comment_measure_numbers
+        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_58:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_58:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -9532,6 +9552,8 @@ A_Cello_Music_Voice = {                                                        %
     \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm
 
         % [A Cello_Music_Voice measure 65 / measure 52]                        %! _comment_measure_numbers
+    %%% \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_65:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+    %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_65:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "treble"                                                         %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)

@@ -167,12 +167,7 @@ maker(
             ),
         baca.staff_lines(5),
         ),
-    baca.chunk(
-        baca.clef('treble'),
-        baca.not_parts(
-            baca.clef_shift('treble'),
-            ),
-        ),
+    baca.clef('treble'),
     krummzeit.silver_points([(2, 1), (1, 2)]),
     )
 
@@ -451,12 +446,7 @@ maker(
 
 maker(
     ('pf', 25),
-    baca.chunk(
-        baca.clef('treble'),
-        baca.not_parts(
-            baca.clef_shift('treble'),
-            ),
-        ),
+    baca.clef('treble'),
     )
 
 maker(

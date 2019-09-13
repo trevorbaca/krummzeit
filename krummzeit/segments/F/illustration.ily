@@ -1314,6 +1314,8 @@ F_Piano_Music_Voice = {                                                        %
     \times 4/5 {                                                               %! krummzeit.silver_points
 
         % [F Piano_Music_Voice measure 241 / measure 7]                        %! _comment_measure_numbers
+        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_241:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                %! MEASURE_241:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "bass"                                                           %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)
@@ -1623,6 +1625,8 @@ F_Percussion_Music_Voice = {                                                   %
                     Perc.                                                      %! _clone_segment_initial_short_instrument_name
                 }                                                              %! _clone_segment_initial_short_instrument_name
             \override DynamicLineSpanner.staff-padding = #6                    %! baca.dls_staff_padding:OverrideCommand(1)
+        %%% \once \override Staff.Clef.X-extent = ##f                          %! MEASURE_235:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)             %! MEASURE_235:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
             \clef "percussion"                                                 %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \once \override Staff.InstrumentName.color = #(x11-color 'green4)  %! REAPPLIED_MARGIN_MARKUP_COLOR:_attach_color_literal(2)

@@ -574,6 +574,8 @@ i_Piano_Music_Voice = {                                                        %
                     #16                                                        %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
                     Piano                                                      %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
                 }                                                              %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
+        %%% \once \override Staff.Clef.X-extent = ##f                          %! MEASURE_1:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)            %! MEASURE_1:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
             \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
             \baca-invisible-music                                              %! _make_multimeasure_rest_container
             \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
@@ -662,6 +664,8 @@ i_Piano_Music_Voice = {                                                        %
     R1 * 9/8                                                                   %! _make_measure_silences
 
     % [_ Piano_Music_Voice measure 7]                                          %! _comment_measure_numbers
+%%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_7:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_7:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:_attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:_attach_color_literal(1)

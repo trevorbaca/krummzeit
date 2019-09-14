@@ -56,14 +56,7 @@ maker(
 
 maker(
     ('perc', (1, 3)),
-    baca.chunk(
-        baca.bar_extent_persistent(
-            (0, 2),
-            after=True,
-            tag=baca.const.NOT_PARTS,
-            ),
-        baca.staff_lines(1),
-        ),
+    baca.staff_lines(1),
     baca.markup('tam-tam', boxed=True),
     krummzeit.incise_attacks(),
     )
@@ -160,13 +153,7 @@ maker(
 
 maker(
     ('perc', (25, 26)),
-    baca.chunk(
-        baca.bar_extent_persistent(
-            (-2, 2),
-            tag=baca.const.NOT_PARTS,
-            ),
-        baca.staff_lines(5),
-        ),
+    baca.staff_lines(5),
     baca.clef('treble'),
     krummzeit.silver_points([(2, 1), (1, 2)]),
     )
@@ -512,14 +499,7 @@ maker(
 
 maker(
     ('perc', (43, 48)),
-    baca.chunk(
-        baca.bar_extent_persistent(
-            (0, 2),
-            after=True,
-            tag=baca.const.NOT_PARTS,
-            ),
-        baca.staff_lines(1),
-        ),
+    baca.staff_lines(1),
     baca.clef('percussion'),
     baca.dynamic('ppp'),
     baca.dls_staff_padding(6),

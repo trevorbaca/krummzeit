@@ -870,10 +870,10 @@ i_Percussion_Music_Voice = {                                                   %
     \times 5/8 {                                                               %! krummzeit.sponge_rhythm
 
         % [_ Percussion_Music_Voice measure 10]                                %! _comment_measure_numbers
+        \override Staff.BarLine.bar-extent = #'(0 . 2)                         %! EXPLICIT_BAR_EXTENT:_set_status_tag:-PARTS:IndicatorCommand
         \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 1                       %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
         \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-        \once \override Staff.BarLine.bar-extent = #'(-2 . 2)                  %! baca.bar_extent:OverrideCommand(1)
         \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_10:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_10:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
         \clef "percussion"                                                     %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
@@ -893,7 +893,6 @@ i_Percussion_Music_Voice = {                                                   %
             }                                                                  %! baca.markup:IndicatorCommand
         ^ \markup { "accent changes of direction noticeably at each attack" }  %! baca.markup:IndicatorCommand
         ^ \baca-explicit-indicator-markup "(“Percussion”)"                     %! EXPLICIT_INSTRUMENT_ALERT:_attach_latent_indicator_alert
-        \override Staff.BarLine.bar-extent = #'(0 . 2)                         %! EXPLICIT_PERSISTENT_OVERRIDE:_set_status_tag:-PARTS:IndicatorCommand
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:_attach_color_literal(2)
 
         c'2                                                                    %! krummzeit.sponge_rhythm

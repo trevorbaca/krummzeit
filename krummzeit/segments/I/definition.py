@@ -107,14 +107,7 @@ maker(
 
 maker(
     ('perc', (3, 22)),
-    baca.chunk(
-        baca.bar_extent_persistent(
-            (0, 2),
-            after=True,
-            tag=baca.const.NOT_PARTS,
-            ),
-        baca.staff_lines(1),
-        ),
+    baca.staff_lines(1),
     baca.clef('percussion'),
     baca.markup('tam-tam', boxed=True),
     baca.staff_position(0),

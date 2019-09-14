@@ -337,15 +337,7 @@ maker(
 
 maker(
     ('vn', (72, 75)),
-    baca.chunk(
-        baca.bar_extent((-2, 2)),
-        baca.bar_extent_persistent(
-            (-2, 0),
-            after=True,
-            tag=baca.const.NOT_PARTS,
-            ),
-        baca.staff_lines(1),
-        ),
+    baca.staff_lines(1),
     baca.clef('percussion'),
     baca.dynamic('mf'),
     baca.instrument(krummzeit.instruments['Percussion']),

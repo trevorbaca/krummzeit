@@ -92,13 +92,7 @@ maker(
 
 maker(
     ('perc', (5, 6)),
-    baca.chunk(
-        baca.bar_extent_persistent(
-            (-2, 2),
-            tag=baca.const.NOT_PARTS,
-            ),
-        baca.staff_lines(5),
-        ),
+    baca.staff_lines(5),
     baca.clef('treble'),
     baca.markup('crotale', boxed=True),
     baca.pitch('D5'),

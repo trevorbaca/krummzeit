@@ -2025,7 +2025,7 @@ F_Violin_Music_Voice = {                                                       %
         fs!2.                                                                  %! krummzeit.hypermeter_tuplets
 
         fs!1                                                                   %! krummzeit.hypermeter_tuplets
-        \stopTextSpan                                                          %! baca.text_spanner:PiecewiseCommand(2)
+        \stopTextSpan                                                          %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -2278,7 +2278,7 @@ F_Viola_Music_Voice = {                                                        %
         bf,!4                                                                  %! krummzeit.hypermeter_tuplets
 
         bf,!1.                                                                 %! krummzeit.hypermeter_tuplets
-        \stopTextSpan                                                          %! baca.text_spanner:PiecewiseCommand(2)
+        \stopTextSpan                                                          %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets
 
@@ -2529,7 +2529,7 @@ F_Cello_Music_Voice = {                                                        %
 
         % [F Cello_Music_Voice measure 249 / measure 15]                       %! baca.SegmentMaker._comment_measure_numbers()
         a,,1.                                                                  %! krummzeit.hypermeter_tuplets
-        \stopTextSpan                                                          %! baca.text_spanner:PiecewiseCommand(2)
+        \stopTextSpan                                                          %! STOP_TEXT_SPAN:baca.text_spanner:PiecewiseCommand(2)
 
         a,,4                                                                   %! krummzeit.hypermeter_tuplets
 

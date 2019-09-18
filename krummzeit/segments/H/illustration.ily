@@ -321,7 +321,7 @@ H_Oboe_Music_Voice = {                                                         %
         % [H Oboe_Music_Voice measure 288 / measure 8]                         %! baca.SegmentMaker._comment_measure_numbers()
         \override TupletBracket.staff-padding = #2                             %! baca.tuplet_bracket_staff_padding:OverrideCommand(1)
         ef''!2.                                                                %! krummzeit.hypermeter_tuplets
-        \stopTrillSpan                                                         %! baca.trill_spanner:SpannerIndicatorCommand(2)
+        \stopTrillSpan                                                         %! SPANNER_STOP:baca.trill_spanner:SpannerIndicatorCommand(2)
 
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets
         ^ \markup {

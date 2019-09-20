@@ -574,8 +574,8 @@ i_Piano_Music_Voice = {                                                        %
                     #16                                                        %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
                     Piano                                                      %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
                 }                                                              %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-        %%% \once \override Staff.Clef.X-extent = ##f                          %! MEASURE_1:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
-        %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)            %! MEASURE_1:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        %%% \once \override Staff.Clef.X-extent = ##f                          %! MEASURE_1:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
+        %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)            %! MEASURE_1:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
             \clef "bass"                                                       %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             \once \override Staff.Clef.color = #(x11-color 'blue)              %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -664,8 +664,8 @@ i_Piano_Music_Voice = {                                                        %
     R1 * 9/8                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [_ Piano_Music_Voice measure 7]                                          %! baca.SegmentMaker._comment_measure_numbers()
-%%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_7:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
-%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_7:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+%%% \once \override Staff.Clef.X-extent = ##f                                  %! MEASURE_7:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
+%%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                     %! MEASURE_7:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
     \clef "treble"                                                             %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
     \once \override Staff.Clef.color = #(x11-color 'blue)                      %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -779,8 +779,8 @@ i_Percussion_Music_Voice = {                                                   %
                     #16                                                        %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
                     Percussion                                                 %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
                 }                                                              %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-            \override DynamicLineSpanner.padding = #4                          %! baca.dls_padding:OverrideCommand(1)
-            \override TupletBracket.padding = #2                               %! baca.tuplet_bracket_down:OverrideCommand(1)
+            \override DynamicLineSpanner.padding = #4                          %! baca.dls_padding():OverrideCommand(1)
+            \override TupletBracket.padding = #2                               %! baca.tuplet_bracket_padding():OverrideCommand(1)
             \clef "treble"                                                     %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
             \once \override Staff.Clef.color = #(x11-color 'DarkViolet)        %! DEFAULT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -874,8 +874,8 @@ i_Percussion_Music_Voice = {                                                   %
         \stopStaff                                                             %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
         \once \override Staff.StaffSymbol.line-count = 1                       %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
         \startStaff                                                            %! EXPLICIT_STAFF_LINES:_set_status_tag:baca.staff_lines:IndicatorCommand
-        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_10:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
-        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_10:SHIFTED_CLEF:baca.clef_shift:OverrideCommand(1)
+        \once \override Staff.Clef.X-extent = ##f                              %! MEASURE_10:SHIFTED_CLEF:baca.clef_shift():baca.clef_x_extent_false():OverrideCommand(1)
+        \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)                 %! MEASURE_10:SHIFTED_CLEF:baca.clef_extra_offset():baca.clef_shift():OverrideCommand(1)
         \clef "percussion"                                                     %! EXPLICIT_CLEF:_set_status_tag:baca.clef:IndicatorCommand
         \once \override Staff.StaffSymbol.color = #(x11-color 'blue)           %! EXPLICIT_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
@@ -933,8 +933,8 @@ i_Percussion_Music_Voice = {                                                   %
 
         c'4                                                                    %! krummzeit.sponge_rhythm
         - \accent                                                              %! baca.accent:IndicatorCommand
-        \revert DynamicLineSpanner.padding                                     %! baca.dls_padding:OverrideCommand(2)
-        \revert TupletBracket.padding                                          %! baca.tuplet_bracket_down:OverrideCommand(2)
+        \revert DynamicLineSpanner.padding                                     %! baca.dls_padding():OverrideCommand(2)
+        \revert TupletBracket.padding                                          %! baca.tuplet_bracket_padding():OverrideCommand(2)
 
     }                                                                          %! krummzeit.sponge_rhythm
 
@@ -990,8 +990,8 @@ i_Violin_Music_Voice = {                                                       %
             #16                                                                %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
             Violin                                                             %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
         }                                                                      %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-    \override DynamicLineSpanner.padding = #4                                  %! baca.dls_padding:OverrideCommand(1)
-    \override TupletBracket.padding = #2                                       %! baca.tuplet_bracket_down:OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #4                                  %! baca.dls_padding():OverrideCommand(1)
+    \override TupletBracket.padding = #2                                       %! baca.tuplet_bracket_padding():OverrideCommand(1)
     \clef "treble"                                                             %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -1155,7 +1155,7 @@ i_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Violin_Music_Voice measure 4]                                     %! baca.SegmentMaker._comment_measure_numbers()
-        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic:OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic():OverrideCommand(1)
         ef''!4                                                                 %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
@@ -1252,7 +1252,7 @@ i_Violin_Music_Voice = {                                                       %
         g'4                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic:OverrideCommand(2)
+        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():OverrideCommand(2)
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -1288,8 +1288,8 @@ i_Violin_Music_Voice = {                                                       %
 
     % [_ Violin_Music_Voice measure 13]                                        %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert DynamicLineSpanner.padding                                         %! baca.dls_padding:OverrideCommand(2)
-    \revert TupletBracket.padding                                              %! baca.tuplet_bracket_down:OverrideCommand(2)
+    \revert DynamicLineSpanner.padding                                         %! baca.dls_padding():OverrideCommand(2)
+    \revert TupletBracket.padding                                              %! baca.tuplet_bracket_padding():OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1343,8 +1343,8 @@ i_Viola_Music_Voice = {                                                        %
             #16                                                                %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
             Viola                                                              %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
         }                                                                      %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-    \override DynamicLineSpanner.padding = #4                                  %! baca.dls_padding:OverrideCommand(1)
-    \override TupletBracket.padding = #2                                       %! baca.tuplet_bracket_down:OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #4                                  %! baca.dls_padding():OverrideCommand(1)
+    \override TupletBracket.padding = #2                                       %! baca.tuplet_bracket_padding():OverrideCommand(1)
     \clef "alto"                                                               %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -1513,7 +1513,7 @@ i_Viola_Music_Voice = {                                                        %
     \times 4/7 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Viola_Music_Voice measure 5]                                      %! baca.SegmentMaker._comment_measure_numbers()
-        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic:OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic():OverrideCommand(1)
         fs'!4                                                                  %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
@@ -1602,7 +1602,7 @@ i_Viola_Music_Voice = {                                                        %
         af!8.                                                                  %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic:OverrideCommand(2)
+        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():OverrideCommand(2)
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -1638,8 +1638,8 @@ i_Viola_Music_Voice = {                                                        %
 
     % [_ Viola_Music_Voice measure 13]                                         %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert DynamicLineSpanner.padding                                         %! baca.dls_padding:OverrideCommand(2)
-    \revert TupletBracket.padding                                              %! baca.tuplet_bracket_down:OverrideCommand(2)
+    \revert DynamicLineSpanner.padding                                         %! baca.dls_padding():OverrideCommand(2)
+    \revert TupletBracket.padding                                              %! baca.tuplet_bracket_padding():OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1693,8 +1693,8 @@ i_Cello_Music_Voice = {                                                        %
             #16                                                                %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
             Cello                                                              %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
         }                                                                      %! baca.start_markup:baca_start_markup:-PARTS:IndicatorCommand
-    \override DynamicLineSpanner.padding = #4                                  %! baca.dls_padding:OverrideCommand(1)
-    \override TupletBracket.padding = #2                                       %! baca.tuplet_bracket_down:OverrideCommand(1)
+    \override DynamicLineSpanner.padding = #4                                  %! baca.dls_padding():OverrideCommand(1)
+    \override TupletBracket.padding = #2                                       %! baca.tuplet_bracket_padding():OverrideCommand(1)
     \clef "bass"                                                               %! DEFAULT_CLEF:_set_status_tag:abjad.ScoreTemplate.attach_defaults
     \once \override Staff.Clef.color = #(x11-color 'DarkViolet)                %! DEFAULT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! DEFAULT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
@@ -1858,7 +1858,7 @@ i_Cello_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm
 
         % [_ Cello_Music_Voice measure 4]                                      %! baca.SegmentMaker._comment_measure_numbers()
-        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic:OverrideCommand(1)
+        \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic():OverrideCommand(1)
         e'8                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
@@ -1948,7 +1948,7 @@ i_Cello_Music_Voice = {                                                        %
         a8.                                                                    %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(2)
-        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic:OverrideCommand(2)
+        \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():OverrideCommand(2)
 
     }                                                                          %! krummzeit.glissando_rhythm
 
@@ -1984,8 +1984,8 @@ i_Cello_Music_Voice = {                                                        %
 
     % [_ Cello_Music_Voice measure 13]                                         %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_measure_silences()
-    \revert DynamicLineSpanner.padding                                         %! baca.dls_padding:OverrideCommand(2)
-    \revert TupletBracket.padding                                              %! baca.tuplet_bracket_down:OverrideCommand(2)
+    \revert DynamicLineSpanner.padding                                         %! baca.dls_padding():OverrideCommand(2)
+    \revert TupletBracket.padding                                              %! baca.tuplet_bracket_padding():OverrideCommand(2)
 
     <<                                                                         %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
 

@@ -33,6 +33,7 @@ maker = baca.SegmentMaker(
     activate=[
         abjad.const.LOCAL_MEASURE_NUMBER,
         ],
+    check_all_are_pitched=True,
     final_markup=(['Cambridge, MA.'], ['May', 'August 2014.']),
     ignore_repeat_pitch_classes=True,
     final_segment=True,

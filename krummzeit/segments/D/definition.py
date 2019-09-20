@@ -35,6 +35,7 @@ maker = baca.SegmentMaker(
     activate=[
         abjad.const.LOCAL_MEASURE_NUMBER,
         ],
+    check_all_are_pitched=True,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     stage_markup=stage_markup,
@@ -289,7 +290,6 @@ maker(
     baca.accent(selector=baca.pheads()),
     baca.dynamic('"ff"'),
     baca.markup('accent changes of direction noticeably on each attack'),
-    baca.staff_position(0),
     )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())

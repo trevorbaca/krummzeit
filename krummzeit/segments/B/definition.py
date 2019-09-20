@@ -28,12 +28,12 @@ stage_markup = (
     ('[B.28]', 36),
     ('[B.29]', 40),
     ('[B.30]', 43),
-    )
+)
 
 maker_ = baca.TimeSignatureMaker(
     krummzeit.segment_time_signatures['C'],
     count=44,
-    )
+)
 time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
@@ -47,7 +47,7 @@ maker = baca.SegmentMaker(
     time_signatures=time_signatures,
     transpose_score=True,
     validate_measure_count=44,
-    )
+)
 
 maker(
     'Global_Skips',
@@ -55,96 +55,96 @@ maker(
         '108',
         selector=baca.leaf(1 - 1),
         redundant=True,
-        ),
+    ),
     baca.metronome_mark(
         baca.Accelerando(),
         selector=baca.leaf(22 - 1),
-        ),
+    ),
     baca.metronome_mark(
         '144',
         selector=baca.leaf(26 - 1),
-        ),
+    ),
     baca.metronome_mark(
         '108',
         selector=baca.leaf(28 - 1),
-        ),
+    ),
     baca.metronome_mark(
         '45',
         selector=baca.leaf(36 - 1),
-        ),
+    ),
     baca.metronome_mark(
         baca.Accelerando(),
         selector=baca.leaf(40 - 1),
-        ),
+    ),
     baca.metronome_mark(
         '135',
         selector=baca.leaf(43 - 1),
-        ),
-    )
+    ),
+)
 
 maker(
     'Global_Rests',
     baca.global_fermata(
         'short',
         selector=baca.leaf(5 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(7 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(9 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(11 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(13 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(15 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(17 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(19 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(21 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(29 - 1),
-        ),
+    ),
     baca.global_fermata(
         'short',
         selector=baca.leaf(31 - 1),
-        ),
-    )
+    ),
+)
 
 maker(
     ('ob', [(1, 4), 6, (24, 28), 30, (32, 35)]),
     krummzeit.pizzicato_rhythm(),
-    )
+)
 
 maker(
     ('cl', [(1, 4), (24, 28), 30, (32, 35)]),
     krummzeit.white_rhythm([(3, 8)], abjad.Right, do_not_burnish=True),
-    )
+)
 
 maker(
     ('vn', (1, 20)),
     baca.make_repeat_tied_notes(),
     baca.staff_position(0),
-    )
+)
 
 maker(
     ('perc', (21, 27)),
@@ -154,95 +154,95 @@ maker(
     baca.instrument(krummzeit.instruments['Percussion']),
     baca.markup(
         krummzeit.markup.scraped_slate(),
-        ),
+    ),
     baca.staff_position(0),
-    )
+)
 
 maker(
     ('perc', (21, 25)),
     baca.make_repeat_tied_notes(),
-    )
+)
 
 maker(
     ('va', 6),
     krummzeit.single_division_tuplets([(2, 1)]),
-    )
+)
 
 maker(
     ('va', 8),
     krummzeit.single_division_tuplets([(1, 4)]),
-    )
+)
 
 maker(
     ('va', 10),
     krummzeit.single_division_tuplets([(2, 1)]),
-    )
+)
 
 maker(
     ('va', 12),
     krummzeit.single_division_tuplets([(1, 4)]),
-    )
+)
 
 maker(
     ('va', (14, 23)),
     krummzeit.single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
-    )
+)
 
 maker(
     ('vc', 6),
     krummzeit.single_division_tuplets([(1, 4)]),
-    )
+)
 
 maker(
     ('vc', 8),
     krummzeit.single_division_tuplets([(2, 1)]),
-    )
+)
 
 maker(
     ('vc', 10),
     krummzeit.single_division_tuplets([(1, 4)]),
-    )
+)
 
 maker(
     ('vc', 12),
     krummzeit.single_division_tuplets([(2, 1)]),
-    )
+)
 
 maker(
     ('vc', (14, 23)),
     krummzeit.single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
-    )
+)
 
 maker(
     ('pf', [14, 18, 28, (32, 33)]),
     krummzeit.silver_points([(1, 2)]),
-    )
+)
 
 maker(
     ('pf', [16, 20, 30, (34, 35)]),
     krummzeit.silver_points([(2, 1)]),
-    )
+)
 
 maker(
     ('perc', 14),
     baca.staff_lines(5),
-    )
+)
 
 maker(
     ('perc', [14, 18, 28, (32, 33)]),
     krummzeit.silver_points([(2, 1)]),
-    )
+)
 
 maker(
     ('perc', [14, 28]),
     baca.instrument(krummzeit.instruments['Xylophone']),
     baca.clef('treble'),
-    )
+)
 
 maker(
     ('perc', [16, 20, 30]),
     krummzeit.silver_points([(1, 2)]),
-    )
+)
 
 maker(
     ('perc', (34, 44)),
@@ -251,7 +251,7 @@ maker(
     baca.make_repeat_tied_notes(),
     baca.markup('snare drum', boxed=True),
     baca.staff_position(0),
-    )
+)
 
 maker(
     ('vn', (22, 28)),
@@ -259,22 +259,22 @@ maker(
     baca.clef('treble'),
     baca.instrument(krummzeit.instruments['Violin']),
     krummzeit.pizzicato_rhythm(),
-    )
+)
 
 maker(
     ('va', (32, 42)),
     krummzeit.fused_expanse([(1, 1), (2, 1), (3, 2)]),
-    )
+)
 
 maker(
     ('vc', (32, 42)),
     krummzeit.fused_expanse([(2, 1), (3, 2), (1, 1)]),
-    )
+)
 
 maker(
     ('vn', (36, 42)),
     krummzeit.fused_expanse([(3, 2), (1, 1), (2, 1)]),
-    )
+)
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
@@ -286,8 +286,8 @@ maker(
         pcs_,
         allow_repeats=True,
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('ob', (1, 35)),
@@ -296,36 +296,36 @@ maker(
         baca.trill_spanner(),
         map=baca.plts(
             exclude=abjad.const.HIDDEN).filter_preprolated('>=', (1, 4)),
-        ),
+    ),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
     krummzeit.register_wide(5),
-    )
+)
 
 maker(
     ('ob', (24, 25)),
     baca.dynamic('ff'),
-    )
+)
 
 maker(
     ('cl', (1, 4)),
     baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
-    )
+)
 
 maker(
     ('cl', (1, 4)),
     baca.glissando(),
-    )
+)
 
 maker(
     ('cl', (24, 30)),
     baca.pitches("f'' eqs'' g'' fqs'' eqs'' d'' eqs''"),
-    )
+)
 
 maker(
     ('cl', (32, 35)),
     baca.pitches("g'' dtqs'' a'' gqs'' fqs'' e'' fqs''"),
-    )
+)
 
 maker(
     ('cl', (24, 35)),
@@ -333,16 +333,16 @@ maker(
     baca.new(
         baca.glissando(),
         map=baca.runs(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('va', (1, 23)),
     baca.pitches(
         "e dtqs f eqs dqs c dqs",
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('va', (1, 23)),
@@ -350,12 +350,12 @@ maker(
     baca.new(
         baca.glissando(),
         map=baca.runs(exclude=abjad.const.HIDDEN),
-        ),
+    ),
     baca.new(
         baca.markup('molto flautando'),
         measures=6,
-        ),
-    )
+    ),
+)
 
 maker(
     (['va', 'vc'], (1, 23)),
@@ -363,18 +363,18 @@ maker(
         baca.hairpin(
             'ff > pp',
             selector=baca.tleaves()[:2],
-            ),
-        map=baca.runs(exclude=abjad.const.HIDDEN),
         ),
-    )
+        map=baca.runs(exclude=abjad.const.HIDDEN),
+    ),
+)
 
 maker(
     ('vc', (1, 23)),
     baca.pitches(
         "d, ctqs, e, dqs, cqs, b,, dqs,",
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('vc', (1, 23)),
@@ -382,12 +382,12 @@ maker(
     baca.new(
         baca.glissando(),
         map=baca.runs(exclude=abjad.const.HIDDEN),
-        ),
+    ),
     baca.new(
         baca.markup('molto flautando'),
         measures=6,
-        ),
-    )
+    ),
+)
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(3)
@@ -398,8 +398,8 @@ maker(
     baca.pitches(
         pcs_,
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('vn', (22, 28)),
@@ -407,54 +407,54 @@ maker(
     baca.new(
         baca.trill_spanner(),
         map=baca.plts().filter_preprolated('>=', (1, 4)),
-        ),
+    ),
     baca.suite(
         baca.new(
             baca.deviation([0, -0.5, 0, 0.5]),
             map=baca.ltqruns().filter_length('>', 1).get([0], 2),
-            ),
+        ),
         baca.new(
             baca.deviation([0, 0.5, 0, -0.5]),
             map=baca.ltqruns().filter_length('>', 1),
-            ),
+        ),
         krummzeit.displacement(),
         krummzeit.register_wide(5),
-        ),
-    )
+    ),
+)
 
 maker(
     ('pf', [(14, 20), (28, 35)]),
     baca.pitch(
         'C#6',
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     ('perc', [(14, 20), (28, 33)]),
     baca.pitch(
         'C#6',
         selector=baca.plts(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     (['pf', 'perc'], (14, 20)),
     baca.dynamic('ff'),
     baca.staccatissimo(
         selector=baca.pheads(exclude=abjad.const.HIDDEN),
-        ),
-    )
+    ),
+)
 
 maker(
     (['pf', 'perc'], 28),
     baca.dynamic('ff'),
-    )
+)
 
 maker(
     ('perc', 28),
     baca.staff_lines(5),
-    )
+)
 
 maker(
     ('perc', (34, 44)),
@@ -462,39 +462,39 @@ maker(
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.markup(
         krummzeit.markup.fingertips(),
-        ),
-    )
+    ),
+)
 
 maker(
     ('vn', (36, 42)),
     baca.pitches("ftqs g"),
-    )
+)
 
 maker(
     ('va', (32, 42)),
     baca.pitches("btqs, c bqs, cqs"),
-    )
+)
 
 maker(
     ('vc', (32, 42)),
     baca.pitches("b,, cqs, bqf,, c,"),
-    )
+)
 
 maker(
     (['vn', 'va', 'vc'], (32, 42)),
     baca.new(
         baca.glissando(),
         map=baca.runs(exclude=abjad.const.HIDDEN),
-        ),
+    ),
     baca.hairpin(
         'pp < fff',
         selector=baca.tleaves(),
-        ),
+    ),
     baca.markup('non flautando'),
     baca.markup(
         krummzeit.markup.show_tempo(),
-        ),
-    )
+    ),
+)
 
 ### VERTICAL ALIGNMENT ###
 
@@ -502,53 +502,53 @@ maker(
     'ob',
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
-    )
+)
 
 maker(
     'cl',
     baca.dls_staff_padding(3),
-    )
+)
 
 maker(
     ('pf', (14, 35)),
     baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
-    )
+)
 
 maker(
     ('perc', [(14, 20), (28, 33)]),
     baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
-    )
+)
 
 maker(
     ('perc', 21),
     baca.dls_staff_padding(3),
-    )
+)
 
 maker(
     ('perc', (34, 44)),
     baca.dls_staff_padding(5),
-    )
+)
 
 maker(
     ('vn', (22, 28)),
     baca.dls_staff_padding(7),
     baca.tuplet_bracket_staff_padding(4),
-    )
+)
 
 maker(
     ('vn', (36, 42)),
     baca.dls_staff_padding(6),
-    )
+)
 
 maker(
     ('va', (6, 23)),
     baca.dls_staff_padding(7),
     baca.tuplet_bracket_staff_padding(4),
-    )
+)
 
 maker(
     (['va', 'vc'], (32, 42)),
     baca.dls_staff_padding(5),
-    )
+)

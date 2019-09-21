@@ -1881,7 +1881,7 @@ A_Oboe_Music_Voice = {                                                         %
         bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! krummzeit.polyphony
@@ -1889,13 +1889,13 @@ A_Oboe_Music_Voice = {                                                         %
 
     }                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     af''!4.                                                                    %! krummzeit.polyphony
 
     \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 43 / measure 30]                         %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
@@ -1966,11 +1966,11 @@ A_Oboe_Music_Voice = {                                                         %
     \times 5/6 {                                                               %! krummzeit.polyphony
 
         % [A Oboe_Music_Voice measure 45 / measure 32]                         %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
@@ -2121,11 +2121,11 @@ A_Oboe_Music_Voice = {                                                         %
     d''16                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     bf''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     bf''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
@@ -2698,17 +2698,17 @@ A_Clarinet_Music_Voice = {                                                     %
         e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     cs''!4                                                                     %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     cs''!4                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
@@ -2811,11 +2811,11 @@ A_Clarinet_Music_Voice = {                                                     %
     \times 5/4 {                                                               %! krummzeit.polyphony
 
         % [A Clarinet_Music_Voice measure 34 / measure 21]                     %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         f''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
@@ -2843,29 +2843,29 @@ A_Clarinet_Music_Voice = {                                                     %
 
     }                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     f''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ~                                                                          %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 36 / measure 23]                         %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     f''4                                                                       %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:SPANNER_STOP:baca.hairpin:PiecewiseCommand(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.hairpin:PiecewiseCommand(1)
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     f'4                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ~                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     f'16.                                                                      %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     f'16.                                                                      %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
@@ -2908,28 +2908,28 @@ A_Clarinet_Music_Voice = {                                                     %
     a'8                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     g'8                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
     ~                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     g'4                                                                        %! krummzeit.polyphony
     ~                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     g'4                                                                        %! krummzeit.polyphony
 
     % [A Clarinet_Music_Voice measure 39 / measure 26]                         %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     g'4                                                                        %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
     \times 5/9 {                                                               %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         g'8                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! krummzeit.polyphony
@@ -3027,21 +3027,21 @@ A_Clarinet_Music_Voice = {                                                     %
         fs'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         f'4                                                                    %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
     }                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     f''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ~                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     f''4                                                                       %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     f''4                                                                       %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
@@ -3049,11 +3049,11 @@ A_Clarinet_Music_Voice = {                                                     %
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     [                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     cs''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     cs''!16.                                                                   %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
@@ -3094,11 +3094,11 @@ A_Clarinet_Music_Voice = {                                                     %
 
         gs''!4                                                                 %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         as'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         as'!4                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
@@ -3768,7 +3768,7 @@ A_Piano_Music_Voice = {                                                        %
 
         c''8                                                                   %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af''!8                                                                 %! krummzeit.polyphony
         ]                                                                      %! krummzeit.polyphony
 
@@ -3777,7 +3777,7 @@ A_Piano_Music_Voice = {                                                        %
     \times 4/7 {                                                               %! krummzeit.polyphony
 
         % [A Piano_Music_Voice measure 25 / measure 12]                        %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af''!8                                                                 %! krummzeit.polyphony
         [                                                                      %! krummzeit.polyphony
 
@@ -4008,18 +4008,18 @@ A_Piano_Music_Voice = {                                                        %
 
     g''8                                                                       %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     e'8                                                                        %! krummzeit.polyphony
     ]                                                                          %! krummzeit.polyphony
     ~                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     e'4.                                                                       %! krummzeit.polyphony
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
     \times 5/6 {                                                               %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         e'4                                                                    %! krummzeit.polyphony
 
         g''4                                                                   %! krummzeit.polyphony
@@ -4066,14 +4066,14 @@ A_Piano_Music_Voice = {                                                        %
 
         d''8                                                                   %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         e'8                                                                    %! krummzeit.polyphony
         ]                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 34 / measure 21]                            %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     e'16.                                                                      %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
 
@@ -4288,11 +4288,11 @@ A_Piano_Music_Voice = {                                                        %
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
     \times 5/9 {                                                               %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs'!16                                                                 %! krummzeit.polyphony
         [                                                                      %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs'!16                                                                 %! krummzeit.polyphony
 
         af'!16                                                                 %! krummzeit.polyphony
@@ -4356,13 +4356,13 @@ A_Piano_Music_Voice = {                                                        %
 
     g'16                                                                       %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     af'!16                                                                     %! krummzeit.polyphony
     ]                                                                          %! krummzeit.polyphony
 
     \times 4/5 {                                                               %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af'!16                                                                 %! krummzeit.polyphony
         [                                                                      %! krummzeit.polyphony
 
@@ -4540,11 +4540,11 @@ A_Piano_Music_Voice = {                                                        %
     ]                                                                          %! krummzeit.polyphony
 
     % [A Piano_Music_Voice measure 44 / measure 31]                            %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!16                                                                    %! krummzeit.polyphony
     [                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!16                                                                    %! krummzeit.polyphony
 
     g''16                                                                      %! krummzeit.polyphony
@@ -4916,14 +4916,14 @@ A_Piano_Music_Voice = {                                                        %
         r16                                                                    %! krummzeit.pizzicato_sixteenths
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
         [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         g''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
@@ -5036,15 +5036,15 @@ A_Piano_Music_Voice = {                                                        %
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
         ]                                                                      %! krummzeit.pizzicato_sixteenths
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a''4                                                                   %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a''16                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
         [                                                                      %! krummzeit.pizzicato_sixteenths
@@ -5128,12 +5128,12 @@ A_Piano_Music_Voice = {                                                        %
 
     r8                                                                         %! krummzeit.pizzicato_sixteenths
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!16                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
     [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!16                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
 
@@ -5149,16 +5149,16 @@ A_Piano_Music_Voice = {                                                        %
     % [A Piano_Music_Voice measure 78 / measure 65]                            %! baca.SegmentMaker._comment_measure_numbers()
     r16.                                                                       %! krummzeit.pizzicato_sixteenths
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     c'''8.                                                                     %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     c'''32.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
     [                                                                          %! krummzeit.pizzicato_sixteenths
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     c'''32.                                                                    %! krummzeit.pizzicato_sixteenths
     - \staccatissimo                                                           %! baca.staccatissimo:IndicatorCommand
 
@@ -5438,11 +5438,11 @@ A_Piano_Music_Voice = {                                                        %
 
         r4                                                                     %! krummzeit.pizzicato_sixteenths
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         c'''4                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
         [                                                                      %! krummzeit.pizzicato_sixteenths
@@ -6376,7 +6376,7 @@ A_Violin_Music_Voice = {                                                       %
     R1 * 3/4                                                                   %! baca.SegmentMaker._make_measure_silences()
 
     % [A Violin_Music_Voice measure 32 / measure 19]                           %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!4.                                                                    %! krummzeit.polyphony
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -6385,27 +6385,27 @@ A_Violin_Music_Voice = {                                                       %
 
     \times 2/3 {                                                               %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
         af''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ~                                                                      %! krummzeit.polyphony
 
     }                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!4                                                                     %! krummzeit.polyphony
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
     \times 10/14 {                                                             %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         [                                                                      %! krummzeit.polyphony
@@ -6475,14 +6475,14 @@ A_Violin_Music_Voice = {                                                       %
         e''4                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
     }                                                                          %! krummzeit.polyphony
 
     % [A Violin_Music_Voice measure 34 / measure 21]                           %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     [                                                                          %! krummzeit.polyphony
@@ -6493,19 +6493,19 @@ A_Violin_Music_Voice = {                                                       %
     bf'!16                                                                     %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     cs''!16                                                                    %! krummzeit.polyphony
     - \staccato                                                                %! baca.staccato:IndicatorCommand
     ]                                                                          %! krummzeit.polyphony
     ~                                                                          %! krummzeit.polyphony
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     cs''!4.                                                                    %! krummzeit.polyphony
 
     \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 35 / measure 22]                       %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
@@ -6550,11 +6550,11 @@ A_Violin_Music_Voice = {                                                       %
         d'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         bf'!16                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
@@ -6713,7 +6713,7 @@ A_Violin_Music_Voice = {                                                       %
         a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! krummzeit.polyphony
@@ -6723,11 +6723,11 @@ A_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 41 / measure 28]                       %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
@@ -6812,7 +6812,7 @@ A_Violin_Music_Voice = {                                                       %
         c''16                                                                  %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
         ]                                                                      %! krummzeit.polyphony
@@ -6823,10 +6823,10 @@ A_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.polyphony
 
         % [A Violin_Music_Voice measure 43 / measure 30]                       %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         cs''!4                                                                 %! krummzeit.polyphony
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         cs''!4                                                                 %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
@@ -7144,11 +7144,11 @@ A_Violin_Music_Voice = {                                                       %
     - \downbow                                                                 %! baca.alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!4                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca.alternate_bow_strokes:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     fs''!4                                                                     %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca.alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca.glissando
@@ -7189,11 +7189,11 @@ A_Violin_Music_Voice = {                                                       %
     - \upbow                                                                   %! baca.alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     af''!4                                                                     %! krummzeit.white_rhythm
     - \downbow                                                                 %! baca.alternate_bow_strokes:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     af''!4                                                                     %! krummzeit.white_rhythm
     - \upbow                                                                   %! baca.alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca.glissando
@@ -7728,11 +7728,11 @@ A_Violin_Music_Voice = {                                                       %
         e'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         c'''2                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         c'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
@@ -7956,7 +7956,7 @@ A_Viola_Music_Voice = {                                                        %
         ctqs!2                                                                 %! krummzeit.hypermeter_tuplets
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         e\breve                                                                %! krummzeit.hypermeter_tuplets
 
     }                                                                          %! krummzeit.hypermeter_tuplets
@@ -7965,7 +7965,7 @@ A_Viola_Music_Voice = {                                                        %
     \times 6/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [A Viola_Music_Voice measure 25 / measure 12]                        %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         e4                                                                     %! krummzeit.hypermeter_tuplets
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
@@ -8208,7 +8208,7 @@ A_Viola_Music_Voice = {                                                        %
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af'!4                                                                  %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
@@ -8218,7 +8218,7 @@ A_Viola_Music_Voice = {                                                        %
     \times 7/9 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 54 / measure 41]                        %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af'!4                                                                  %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca.glissando
@@ -8273,11 +8273,11 @@ A_Viola_Music_Voice = {                                                        %
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         e'4                                                                    %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         e'4                                                                    %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca.glissando
@@ -8358,7 +8358,7 @@ A_Viola_Music_Voice = {                                                        %
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
@@ -8367,7 +8367,7 @@ A_Viola_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! krummzeit.prolated_quarters
 
         % [A Viola_Music_Voice measure 60 / measure 47]                        %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca.glissando
@@ -8451,11 +8451,11 @@ A_Viola_Music_Voice = {                                                        %
 
         af''!8                                                                 %! krummzeit.pizzicato_rhythm
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!4                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs''!8                                                                 %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
@@ -8513,11 +8513,11 @@ A_Viola_Music_Voice = {                                                        %
         fs''!4.                                                                %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a''8                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a''4                                                                   %! krummzeit.pizzicato_rhythm
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
@@ -8561,11 +8561,11 @@ A_Viola_Music_Voice = {                                                        %
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
         [                                                                      %! krummzeit.pizzicato_sixteenths
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         c'''16                                                                 %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         c'''8                                                                  %! krummzeit.pizzicato_sixteenths
         - \staccatissimo                                                       %! baca.staccatissimo:IndicatorCommand
 
@@ -9377,11 +9377,11 @@ A_Cello_Music_Voice = {                                                        %
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs!4                                                                   %! krummzeit.prolated_quarters
         - \upbow                                                               %! baca.alternate_bow_strokes:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         fs!4                                                                   %! krummzeit.prolated_quarters
         - \downbow                                                             %! baca.alternate_bow_strokes:IndicatorCommand
         \glissando                                                             %! baca.glissando

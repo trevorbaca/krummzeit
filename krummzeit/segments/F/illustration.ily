@@ -664,11 +664,11 @@ F_Oboe_Music_Voice = {                                                         %
         cs''!16                                                                %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a'16                                                                   %! krummzeit.polyphony
         - \staccato                                                            %! baca.staccato:IndicatorCommand
 

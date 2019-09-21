@@ -5060,11 +5060,11 @@ I_Violin_Music_Voice = {                                                       %
     - \downbow                                                                 %! baca.alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca.glissando
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     g'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca.alternate_bow_strokes:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     g'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca.alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca.glissando
@@ -5506,11 +5506,11 @@ I_Viola_Music_Voice = {                                                        %
     \glissando                                                                 %! baca.glissando
 
     % [I Viola_Music_Voice measure 298 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     g'4                                                                        %! krummzeit.right_remainder_quarters
     - \upbow                                                                   %! baca.alternate_bow_strokes:IndicatorCommand
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     g'4                                                                        %! krummzeit.right_remainder_quarters
     - \downbow                                                                 %! baca.alternate_bow_strokes:IndicatorCommand
     \glissando                                                                 %! baca.glissando

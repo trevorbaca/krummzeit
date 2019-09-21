@@ -2775,17 +2775,17 @@ H_Violin_Music_Voice = {                                                       %
 
         % [H Violin_Music_Voice measure 283 / measure 3]                       %! baca.SegmentMaker._comment_measure_numbers()
         \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic():OverrideCommand(1)
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af'!4                                                                  %! krummzeit.glissando_rhythm
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         af'!2                                                                  %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
-    \baca-repeat-pitch-class-warning                                           %! baca.SegmentMaker._color_repeat_pitch_classes_()
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
     af'!4                                                                      %! krummzeit.glissando_rhythm
     \glissando                                                                 %! baca.glissando
 
@@ -2877,7 +2877,7 @@ H_Violin_Music_Voice = {                                                       %
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
@@ -2887,11 +2887,11 @@ H_Violin_Music_Voice = {                                                       %
     \times 9/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Violin_Music_Voice measure 289 / measure 9]                       %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         ef''!2.                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():OverrideCommand(2)
@@ -2989,14 +2989,14 @@ H_Viola_Music_Voice = {                                                        %
         \ppp                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         c1.                                                                    %! krummzeit.glissando_rhythm
 
     }                                                                          %! krummzeit.glissando_rhythm
 
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         c8                                                                     %! krummzeit.glissando_rhythm
         \glissando                                                             %! baca.glissando
 
@@ -3085,7 +3085,7 @@ H_Viola_Music_Voice = {                                                        %
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a1                                                                     %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
@@ -3095,11 +3095,11 @@ H_Viola_Music_Voice = {                                                        %
     \times 9/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Viola_Music_Voice measure 289 / measure 9]                        %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a4                                                                     %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         a1                                                                     %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():OverrideCommand(2)
@@ -3291,7 +3291,7 @@ H_Cello_Music_Voice = {                                                        %
         \fff                                                                   %! EXPLICIT_DYNAMIC:_set_status_tag:baca.dynamic:IndicatorCommand
         \glissando                                                             %! baca.glissando
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         eqf,!2.                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
@@ -3301,11 +3301,11 @@ H_Cello_Music_Voice = {                                                        %
     \times 9/5 {                                                               %! krummzeit.hypermeter_tuplets
 
         % [H Cello_Music_Voice measure 289 / measure 9]                        %! baca.SegmentMaker._comment_measure_numbers()
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         eqf,!2                                                                 %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
 
-        \baca-repeat-pitch-class-warning                                       %! baca.SegmentMaker._color_repeat_pitch_classes_()
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
         eqf,!2.                                                                %! krummzeit.hypermeter_tuplets
         :32                                                                    %! baca.stem_tremolo:IndicatorCommand
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():OverrideCommand(2)

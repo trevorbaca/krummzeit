@@ -44,7 +44,7 @@ class MarkupLibrary(object):
         return baca.Markup(string)
 
     @staticmethod
-    def on_bridge_full_bow(selector="baca.pleaf(0)"):
+    def on_bridge_full_bow(selector=baca.pleaf(0)):
         string = "directly on bridge: full bow each stroke"
         return baca.markup(string, selector=selector)
 

@@ -177,7 +177,7 @@ class RegisterTransitionCommand(baca.Command):
         match=None,
         measures=None,
         scope=None,
-        selector="baca.leaves()",
+        selector=baca.leaves(),
         start_registration=None,
         stop_registration=None,
     ):

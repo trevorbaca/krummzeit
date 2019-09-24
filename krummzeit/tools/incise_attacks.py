@@ -18,5 +18,5 @@ def incise_attacks() -> baca.RhythmCommand:
         ),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        tag="krummzeit.incise_attacks",
+        tag=abjad.Tag("krummzeit.incise_attacks"),
     )

@@ -36,5 +36,5 @@ def glissando_rhythm(
         rmakers.beam(),
         rmakers.extract_trivial(),
         preprocessor=baca.sequence().map(split),
-        tag="krummzeit.glissando_rhythm",
+        tag=abjad.Tag("krummzeit.glissando_rhythm"),
     )

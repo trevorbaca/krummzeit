@@ -24,5 +24,5 @@ def pizzicato_sixteenths(
         preprocessor=baca.sequence().split_divisions(
             [(6, 16), (18, 16)], cyclic=True
         ),
-        tag="krummzeit.pizzicato_sixteenths",
+        tag=abjad.Tag("krummzeit.pizzicato_sixteenths"),
     )

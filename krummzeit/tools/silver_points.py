@@ -24,5 +24,5 @@ def silver_points(
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
         preprocessor=baca.sequence().map(split),
-        tag="krummzeit.silver_points",
+        tag=abjad.Tag("krummzeit.silver_points"),
     )

@@ -13,5 +13,5 @@ def detached_triplets() -> baca.RhythmCommand:
         rmakers.tuplet([(3, -1, 2), (1, -1, 3, -1)]),
         rmakers.tie(tuplets.map(baca.pleaf(-1))),
         preprocessor=baca.sequence().fuse().quarters(),
-        tag="krummzeit.detached_triplets",
+        tag=abjad.Tag("krummzeit.detached_triplets"),
     )

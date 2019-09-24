@@ -28,5 +28,5 @@ def white_rhythm(
         *force_rest,
         rmakers.beam(baca.plts()),
         preprocessor=divisions,
-        tag="krummzeit.white_rhythm",
+        tag=abjad.Tag("krummzeit.white_rhythm"),
     )

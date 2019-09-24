@@ -20,5 +20,5 @@ def closing_pizzicati(
         rmakers.beam(),
         rmakers.extract_trivial(),
         preprocessor=divisions,
-        tag="krummzeit.closing_pizzicati",
+        tag=abjad.Tag("krummzeit.closing_pizzicati"),
     )

@@ -40,5 +40,5 @@ def color_tuplets(
         rmakers.rewrite_rest_filled(),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        tag="krummzeit.color_tuplets",
+        tag=abjad.Tag("krummzeit.color_tuplets"),
     )

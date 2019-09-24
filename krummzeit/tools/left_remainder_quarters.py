@@ -12,5 +12,5 @@ def left_remainder_quarters(*commands: rmakers.Command,) -> baca.RhythmCommand:
         *commands,
         rmakers.beam(baca.plts()),
         preprocessor=baca.sequence().fuse().quarters(remainder=abjad.Left),
-        tag="krummzeit.left_remainder_quarters",
+        tag=abjad.Tag("krummzeit.left_remainder_quarters"),
     )

@@ -16,5 +16,5 @@ def fused_expanse(
         preprocessor=baca.sequence()
         .fuse()
         .split_divisions(divisions, cyclic=True),
-        tag="krummzeit.fused_expanse",
+        tag=abjad.Tag("krummzeit.fused_expanse"),
     )

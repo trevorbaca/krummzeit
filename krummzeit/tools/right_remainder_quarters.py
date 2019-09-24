@@ -14,5 +14,5 @@ def right_remainder_quarters(
         *commands,
         rmakers.beam(baca.plts()),
         preprocessor=baca.sequence().map(baca.sequence().quarters()),
-        tag="krummzeit.right_remainder_quarters",
+        tag=abjad.Tag("krummzeit.right_remainder_quarters"),
     )

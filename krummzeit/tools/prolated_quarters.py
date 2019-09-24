@@ -12,5 +12,5 @@ def prolated_quarters(
     return baca.rhythm(
         rmakers.even_division([4], extra_counts=extra_counts),
         rmakers.beam(),
-        tag="krummzeit.prolated_quarters",
+        tag=abjad.Tag("krummzeit.prolated_quarters"),
     )

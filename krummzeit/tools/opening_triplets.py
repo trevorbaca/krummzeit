@@ -18,5 +18,5 @@ def opening_triplets(
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
         preprocessor=baca.sequence().fuse().quarters(remainder=remainder),
-        tag=abjad.Tag("krummzeit.opening_triplets"),
+        tag=abjad.Tag("krummzeit.opening_triplets()"),
     )

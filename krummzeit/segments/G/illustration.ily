@@ -577,7 +577,7 @@ G_Oboe_Music_Voice = {                                                         %
 
             % [G Oboe_Music_Voice measure 264 / measure 8]                     %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 3/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 3/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"3" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -593,202 +593,202 @@ G_Oboe_Music_Voice = {                                                         %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-    \times 4/7 {                                                               %! krummzeit.polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony()
 
         % [G Oboe_Music_Voice measure 265 / measure 9]                         %! baca.SegmentMaker._comment_measure_numbers()
         \override TupletBracket.staff-padding = #3                             %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ^ \markup { leggierissimo }                                            %! baca.markup():baca.IndicatorCommand._call()
-        [                                                                      %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony()
 
-        c''8                                                                   %! krummzeit.polyphony
+        c''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        cs''!8                                                                 %! krummzeit.polyphony
+        cs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        b''8                                                                   %! krummzeit.polyphony
+        b''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        bf''!8                                                                 %! krummzeit.polyphony
+        bf''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        b'8                                                                    %! krummzeit.polyphony
+        b'8                                                                    %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    c'''16.                                                                    %! krummzeit.polyphony
+    c'''16.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    fs''!16.                                                                   %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    d'''16.                                                                    %! krummzeit.polyphony
+    fs''!16.                                                                   %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    bf''!16.                                                                   %! krummzeit.polyphony
+    d'''16.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
 
-    bf''!4                                                                     %! krummzeit.polyphony
+    bf''!16.                                                                   %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
+
+    bf''!4                                                                     %! krummzeit.polyphony()
 
     % [G Oboe_Music_Voice measure 266 / measure 10]                            %! baca.SegmentMaker._comment_measure_numbers()
-    ef''!4.                                                                    %! krummzeit.polyphony
+    ef''!4.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.polyphony
+    ~                                                                          %! krummzeit.polyphony()
 
-    \times 4/7 {                                                               %! krummzeit.polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony()
 
-        ef''!8                                                                 %! krummzeit.polyphony
-        [                                                                      %! krummzeit.polyphony
+        ef''!8                                                                 %! krummzeit.polyphony()
+        [                                                                      %! krummzeit.polyphony()
 
-        a''8                                                                   %! krummzeit.polyphony
+        a''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        cs''!8                                                                 %! krummzeit.polyphony
+        cs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        b''8                                                                   %! krummzeit.polyphony
+        b''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        b''8                                                                   %! krummzeit.polyphony
+        b''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        e'''8                                                                  %! krummzeit.polyphony
+        e'''8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
-        ~                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
+        ~                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    \times 4/5 {                                                               %! krummzeit.polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony()
 
         % [G Oboe_Music_Voice measure 267 / measure 11]                        %! baca.SegmentMaker._comment_measure_numbers()
-        e'''8                                                                  %! krummzeit.polyphony
-        [                                                                      %! krummzeit.polyphony
+        e'''8                                                                  %! krummzeit.polyphony()
+        [                                                                      %! krummzeit.polyphony()
 
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        g''8                                                                   %! krummzeit.polyphony
+        g''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        a''8                                                                   %! krummzeit.polyphony
+        a''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    bf''!8                                                                     %! krummzeit.polyphony
+    bf''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    b''8                                                                       %! krummzeit.polyphony
+    b''8                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
 
-    bf'!8                                                                      %! krummzeit.polyphony
+    bf'!8                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    b'8                                                                        %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    g'8                                                                        %! krummzeit.polyphony
+    b'8                                                                        %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    a'8                                                                        %! krummzeit.polyphony
+    g'8                                                                        %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
 
-    a'4                                                                        %! krummzeit.polyphony
+    a'8                                                                        %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
+
+    a'4                                                                        %! krummzeit.polyphony()
 
     % [G Oboe_Music_Voice measure 268 / measure 12]                            %! baca.SegmentMaker._comment_measure_numbers()
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    fs''!4                                                                     %! krummzeit.polyphony
+    fs''!4                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.polyphony
+    ~                                                                          %! krummzeit.polyphony()
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    fs''!8                                                                     %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    fs''!8                                                                     %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    fs''!8                                                                     %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    af''!8                                                                     %! krummzeit.polyphony
+    fs''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    af''!8                                                                     %! krummzeit.polyphony
+    af''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    af''!16.                                                                   %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    af''!8                                                                     %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
-    c''16.                                                                     %! krummzeit.polyphony
+    \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
+    af''!16.                                                                   %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
+
+    c''16.                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    cs''!16.                                                                   %! krummzeit.polyphony
+    cs''!16.                                                                   %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    b'16.                                                                      %! krummzeit.polyphony
+    b'16.                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony
-    \times 5/8 {                                                               %! krummzeit.polyphony
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony()
+    \times 5/8 {                                                               %! krummzeit.polyphony()
 
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        [                                                                      %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony()
 
-        a''8                                                                   %! krummzeit.polyphony
-        - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-
-        bf''!8                                                                 %! krummzeit.polyphony
+        a''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        e'''8                                                                  %! krummzeit.polyphony
+        bf''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        e'''8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        d''8                                                                   %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        fs''!8                                                                 %! krummzeit.polyphony
+        d''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
+
+        af''!8                                                                 %! krummzeit.polyphony()
+        - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
+        ]                                                                      %! krummzeit.polyphony()
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -797,7 +797,7 @@ G_Oboe_Music_Voice = {                                                         %
 
             % [G Oboe_Music_Voice measure 269 / measure 13]                    %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -831,11 +831,11 @@ G_Oboe_Music_Voice = {                                                         %
 
     % [G Oboe_Music_Voice measure 274 / measure 18]                            %! baca.SegmentMaker._comment_measure_numbers()
     \override TupletBracket.staff-padding = #3                                 %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
-    c'1.                                                                       %! krummzeit.hypermeter_tuplets
+    c'1.                                                                       %! krummzeit.hypermeter_tuplets()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
 
-    c'1                                                                        %! krummzeit.hypermeter_tuplets
+    c'1                                                                        %! krummzeit.hypermeter_tuplets()
     ^ \markup {
         \override
             #'(circle-padding . 0.25)
@@ -844,11 +844,11 @@ G_Oboe_Music_Voice = {                                                         %
                     1
         }
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets()
 
         % [G Oboe_Music_Voice measure 276 / measure 20]                        %! baca.SegmentMaker._comment_measure_numbers()
-        c'4                                                                    %! krummzeit.hypermeter_tuplets
+        c'4                                                                    %! krummzeit.hypermeter_tuplets()
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -857,7 +857,7 @@ G_Oboe_Music_Voice = {                                                         %
                         2
             }
 
-        c'1                                                                    %! krummzeit.hypermeter_tuplets
+        c'1                                                                    %! krummzeit.hypermeter_tuplets()
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -866,15 +866,15 @@ G_Oboe_Music_Voice = {                                                         %
                         1
             }
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets()
 
         % [G Oboe_Music_Voice measure 278 / measure 22]                        %! baca.SegmentMaker._comment_measure_numbers()
-        c'2.                                                                   %! krummzeit.hypermeter_tuplets
+        c'2.                                                                   %! krummzeit.hypermeter_tuplets()
 
-        c'2                                                                    %! krummzeit.hypermeter_tuplets
+        c'2                                                                    %! krummzeit.hypermeter_tuplets()
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -884,7 +884,7 @@ G_Oboe_Music_Voice = {                                                         %
             }
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -893,7 +893,7 @@ G_Oboe_Music_Voice = {                                                         %
 
             % [G Oboe_Music_Voice measure 280 / measure 24]                    %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
             \revert DynamicLineSpanner.staff-padding                           %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
 
@@ -917,7 +917,7 @@ G_Oboe_Music_Voice = {                                                         %
 
             % [G Oboe_Music_Voice measure 281 / measure 25]                    %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1024,7 +1024,7 @@ G_Clarinet_Music_Voice = {                                                     %
 
             % [G Clarinet_Music_Voice measure 262 / measure 6]                 %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            d''1 * 3/4                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
+            d''1 * 3/4                                                         %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"3" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1050,107 +1050,107 @@ G_Clarinet_Music_Voice = {                                                     %
 
     % [G Clarinet_Music_Voice measure 265 / measure 9]                         %! baca.SegmentMaker._comment_measure_numbers()
     \override DynamicLineSpanner.staff-padding = #3                            %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
-    f''4.                                                                      %! krummzeit.polyphony
+    f''4.                                                                      %! krummzeit.polyphony()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
     ^ \markup { leggierissimo }                                                %! baca.markup():baca.IndicatorCommand._call()
     ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                    %! EXPLICIT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
 
-    \times 2/3 {                                                               %! krummzeit.polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony()
 
-        fs''!4                                                                 %! krummzeit.polyphony
+        fs''!4                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        cs'!4                                                                  %! krummzeit.polyphony
+        cs'!4                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        ds''!4                                                                 %! krummzeit.polyphony
+        ds''!4                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ~                                                                      %! krummzeit.polyphony
+        ~                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    ds''!4                                                                     %! krummzeit.polyphony
+    ds''!4                                                                     %! krummzeit.polyphony()
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
 
     % [G Clarinet_Music_Voice measure 266 / measure 10]                        %! baca.SegmentMaker._comment_measure_numbers()
-    gs''!8                                                                     %! krummzeit.polyphony
+    gs''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    fs''!8                                                                     %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    cs'!8                                                                      %! krummzeit.polyphony
+    fs''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    b''8                                                                       %! krummzeit.polyphony
+    cs'!8                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
 
-    b''4.                                                                      %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
+    b''8                                                                       %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
+
+    b''4.                                                                      %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
     % [G Clarinet_Music_Voice measure 267 / measure 11]                        %! baca.SegmentMaker._comment_measure_numbers()
-    b''4                                                                       %! krummzeit.polyphony
+    b''4                                                                       %! krummzeit.polyphony()
 
-    f''4                                                                       %! krummzeit.polyphony
+    f''4                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    a''4                                                                       %! krummzeit.polyphony
+    a''4                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    ds''!16.                                                                   %! krummzeit.polyphony
+    ds''!16.                                                                   %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    fs''!16.                                                                   %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    cs'!16.                                                                    %! krummzeit.polyphony
+    fs''!16.                                                                   %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    b'16.                                                                      %! krummzeit.polyphony
+    cs'!16.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
 
-    b'4.                                                                       %! krummzeit.polyphony
+    b'16.                                                                      %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
-    \times 2/3 {                                                               %! krummzeit.polyphony
+    b'4.                                                                       %! krummzeit.polyphony()
+
+    \times 2/3 {                                                               %! krummzeit.polyphony()
 
         % [G Clarinet_Music_Voice measure 268 / measure 12]                    %! baca.SegmentMaker._comment_measure_numbers()
-        f''4                                                                   %! krummzeit.polyphony
+        f''4                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        a'4                                                                    %! krummzeit.polyphony
+        a'4                                                                    %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        cs'!4                                                                  %! krummzeit.polyphony
+        cs'!4                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ~                                                                      %! krummzeit.polyphony
+        ~                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    cs'!4.                                                                     %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
+    cs'!4.                                                                     %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
-    cs'!8                                                                      %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    cs'!8                                                                      %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
 
-    c'''8                                                                      %! krummzeit.polyphony
+    c'''8                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    f''8                                                                       %! krummzeit.polyphony
+    f''8                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    a''8                                                                       %! krummzeit.polyphony
+    a''8                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
 
-    ds''!4.                                                                    %! krummzeit.polyphony
+    ds''!4.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1160,7 +1160,7 @@ G_Clarinet_Music_Voice = {                                                     %
 
             % [G Clarinet_Music_Voice measure 269 / measure 13]                %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            a1 * 1/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container()
+            a1 * 1/4                                                           %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1192,20 +1192,20 @@ G_Clarinet_Music_Voice = {                                                     %
     R1 * 5/8                                                                   %! baca.SegmentMaker._make_measure_silences()
 %@% ^ \baca-duration-multiplier-markup #"5" #"8"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 5/4 {                                                               %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 5/4 {                                                               %! krummzeit.hypermeter_tuplets()
 
         % [G Clarinet_Music_Voice measure 274 / measure 18]                    %! baca.SegmentMaker._comment_measure_numbers()
         \override DynamicLineSpanner.staff-padding = #10                       %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
         \override TupletBracket.staff-padding = #6                             %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
-        d2                                                                     %! krummzeit.hypermeter_tuplets
+        d2                                                                     %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \f                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         ^ \baca-explicit-indicator-markup "(“BassClarinet”)"                   %! EXPLICIT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \<                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():PiecewiseCommand(1)
 
-        d1.                                                                    %! krummzeit.hypermeter_tuplets
+        d1.                                                                    %! krummzeit.hypermeter_tuplets()
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1214,13 +1214,13 @@ G_Clarinet_Music_Voice = {                                                     %
                         1
             }
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 21/16 {                                                             %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 21/16 {                                                             %! krummzeit.hypermeter_tuplets()
 
         % [G Clarinet_Music_Voice measure 276 / measure 20]                    %! baca.SegmentMaker._comment_measure_numbers()
-        d1                                                                     %! krummzeit.hypermeter_tuplets
+        d1                                                                     %! krummzeit.hypermeter_tuplets()
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1229,7 +1229,7 @@ G_Clarinet_Music_Voice = {                                                     %
                         2
             }
 
-        d1                                                                     %! krummzeit.hypermeter_tuplets
+        d1                                                                     %! krummzeit.hypermeter_tuplets()
         ^ \markup {
             \override
                 #'(circle-padding . 0.25)
@@ -1238,15 +1238,15 @@ G_Clarinet_Music_Voice = {                                                     %
                         1
             }
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 7/4 {                                                               %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 7/4 {                                                               %! krummzeit.hypermeter_tuplets()
 
         % [G Clarinet_Music_Voice measure 279 / measure 23]                    %! baca.SegmentMaker._comment_measure_numbers()
-        d8                                                                     %! krummzeit.hypermeter_tuplets
+        d8                                                                     %! krummzeit.hypermeter_tuplets()
 
-        d4.                                                                    %! krummzeit.hypermeter_tuplets
+        d4.                                                                    %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         ^ \markup {
@@ -1259,7 +1259,7 @@ G_Clarinet_Music_Voice = {                                                     %
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1268,7 +1268,7 @@ G_Clarinet_Music_Voice = {                                                     %
 
             % [G Clarinet_Music_Voice measure 280 / measure 24]                %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            d''1 * 1/4                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
+            d''1 * 1/4                                                         %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1291,7 +1291,7 @@ G_Clarinet_Music_Voice = {                                                     %
 
             % [G Clarinet_Music_Voice measure 281 / measure 25]                %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1349,7 +1349,7 @@ G_Piano_Music_Voice = {                                                        %
             \once \override Staff.Clef.color = #(x11-color 'green4)            %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
         %@% \override Staff.Clef.color = ##f                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
             \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
-            c'1 * 9/8                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 9/8                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
             - \tweak color #(x11-color 'green4)                                %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \fff                                                               %! REAPPLIED_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._reapply_persistent_indicators(3)
             ^ \baca-reapplied-indicator-markup "[“Hpschd.”]"                   %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
@@ -1389,7 +1389,7 @@ G_Piano_Music_Voice = {                                                        %
     R1 * 1                                                                     %! baca.SegmentMaker._make_measure_silences()
 %@% ^ \baca-duration-multiplier-markup #"1" #"1"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
-    \times 4/7 {                                                               %! krummzeit.polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony()
 
         % [G Piano_Music_Voice measure 261 / measure 5]                        %! baca.SegmentMaker._comment_measure_numbers()
         \override DynamicLineSpanner.staff-padding = #7                        %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
@@ -1400,245 +1400,245 @@ G_Piano_Music_Voice = {                                                        %
         \once \override Staff.Clef.color = #(x11-color 'blue)                  %! EXPLICIT_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
     %@% \override Staff.Clef.color = ##f                                       %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
         \set Staff.forceClef = ##t                                             %! EXPLICIT_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef():baca.IndicatorCommand._call()
-        bf''!8                                                                 %! krummzeit.polyphony
+        bf''!8                                                                 %! krummzeit.polyphony()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ^ \markup { leggierissimo }                                            %! baca.markup():baca.IndicatorCommand._call()
-        [                                                                      %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony()
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! EXPLICIT_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        d''8                                                                   %! krummzeit.polyphony
+        d''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        a''8                                                                   %! krummzeit.polyphony
+        a''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        c''8                                                                   %! krummzeit.polyphony
+        c''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    ef'''!16.                                                                  %! krummzeit.polyphony
+    ef'''!16.                                                                  %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    bf''!16.                                                                   %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    af''!16.                                                                   %! krummzeit.polyphony
+    bf''!16.                                                                   %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    b''16.                                                                     %! krummzeit.polyphony
+    af''!16.                                                                   %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
 
-    b''4.                                                                      %! krummzeit.polyphony
+    b''16.                                                                     %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
+
+    b''4.                                                                      %! krummzeit.polyphony()
 
     % [G Piano_Music_Voice measure 262 / measure 6]                            %! baca.SegmentMaker._comment_measure_numbers()
-    c''4.                                                                      %! krummzeit.polyphony
+    c''4.                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.polyphony
+    ~                                                                          %! krummzeit.polyphony()
 
-    c''8                                                                       %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    c''8                                                                       %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
 
-    fs''!8                                                                     %! krummzeit.polyphony
+    fs''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    af''!8                                                                     %! krummzeit.polyphony
+    af''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
-    \times 4/5 {                                                               %! krummzeit.polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony()
 
         % [G Piano_Music_Voice measure 263 / measure 7]                        %! baca.SegmentMaker._comment_measure_numbers()
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af''!8                                                                 %! krummzeit.polyphony
-        [                                                                      %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
+        [                                                                      %! krummzeit.polyphony()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af''!8                                                                 %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        bf''!8                                                                 %! krummzeit.polyphony
+        bf''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        cs''!8                                                                 %! krummzeit.polyphony
+        cs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        b''8                                                                   %! krummzeit.polyphony
+        b''8                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    bf''!8                                                                     %! krummzeit.polyphony
+    bf''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    af''!8                                                                     %! krummzeit.polyphony
+    af''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
 
     % [G Piano_Music_Voice measure 264 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
-    b''8                                                                       %! krummzeit.polyphony
+    b''8                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    bf''!8                                                                     %! krummzeit.polyphony
+    bf''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
-    \times 2/3 {                                                               %! krummzeit.polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony()
 
-        bf''!4                                                                 %! krummzeit.polyphony
+        bf''!4                                                                 %! krummzeit.polyphony()
 
-        af''!4                                                                 %! krummzeit.polyphony
+        af''!4                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        d'''4                                                                  %! krummzeit.polyphony
+        d'''4                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    \times 2/3 {                                                               %! krummzeit.polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony()
 
         % [G Piano_Music_Voice measure 265 / measure 9]                        %! baca.SegmentMaker._comment_measure_numbers()
-        a'4                                                                    %! krummzeit.polyphony
+        a'4                                                                    %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        ef''!4                                                                 %! krummzeit.polyphony
+        ef''!4                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        fs'!4                                                                  %! krummzeit.polyphony
+        fs'!4                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ~                                                                      %! krummzeit.polyphony
+        ~                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    fs'!8                                                                      %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    fs'!8                                                                      %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
 
-    g'8                                                                        %! krummzeit.polyphony
+    g'8                                                                        %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    af''!8                                                                     %! krummzeit.polyphony
+    af''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
-    af''!8                                                                     %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    af''!8                                                                     %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
 
-    c''8                                                                       %! krummzeit.polyphony
+    c''8                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
 
     % [G Piano_Music_Voice measure 266 / measure 10]                           %! baca.SegmentMaker._comment_measure_numbers()
-    bf''!8                                                                     %! krummzeit.polyphony
+    bf''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    b''8                                                                       %! krummzeit.polyphony
+    b''8                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    fs''!8                                                                     %! krummzeit.polyphony
+    fs''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
 
-    \times 4/5 {                                                               %! krummzeit.polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        [                                                                      %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony()
 
-        bf'!8                                                                  %! krummzeit.polyphony
-        - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-
-        ef'''!8                                                                %! krummzeit.polyphony
+        bf'!8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        ef'''!8                                                                %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        c'''8                                                                  %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
-        ~                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! krummzeit.polyphony
+        c'''8                                                                  %! krummzeit.polyphony()
+        - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
+        ]                                                                      %! krummzeit.polyphony()
+        ~                                                                      %! krummzeit.polyphony()
+
+    }                                                                          %! krummzeit.polyphony()
 
     % [G Piano_Music_Voice measure 267 / measure 11]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c'''4                                                                      %! krummzeit.polyphony
+    c'''4                                                                      %! krummzeit.polyphony()
 
-    d'''4                                                                      %! krummzeit.polyphony
+    d'''4                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    cs''!4                                                                     %! krummzeit.polyphony
+    cs''!4                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.polyphony
+    ~                                                                          %! krummzeit.polyphony()
 
-    \times 4/7 {                                                               %! krummzeit.polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony()
 
-        cs''!8                                                                 %! krummzeit.polyphony
-        [                                                                      %! krummzeit.polyphony
+        cs''!8                                                                 %! krummzeit.polyphony()
+        [                                                                      %! krummzeit.polyphony()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        bf''!8                                                                 %! krummzeit.polyphony
+        bf''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        af''!8                                                                 %! krummzeit.polyphony
+        af''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        bf''!8                                                                 %! krummzeit.polyphony
+        bf''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
-        ~                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
+        ~                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    \times 2/3 {                                                               %! krummzeit.polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony()
 
-        bf''!8                                                                 %! krummzeit.polyphony
-        [                                                                      %! krummzeit.polyphony
+        bf''!8                                                                 %! krummzeit.polyphony()
+        [                                                                      %! krummzeit.polyphony()
 
-        ef'''!8                                                                %! krummzeit.polyphony
+        ef'''!8                                                                %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        bf''!8                                                                 %! krummzeit.polyphony
+        bf''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -1647,7 +1647,7 @@ G_Piano_Music_Voice = {                                                        %
 
             % [G Piano_Music_Voice measure 268 / measure 12]                   %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 7/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 7/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"7" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1684,7 +1684,7 @@ G_Piano_Music_Voice = {                                                        %
 %@% \override Staff.Clef.color = ##f                                           %! EXPLICIT_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! EXPLICIT_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.clef():baca.IndicatorCommand._call()
     \once \override Staff.InstrumentName.color = #(x11-color 'blue)            %! EXPLICIT_MARGIN_MARKUP_COLOR:baca.SegmentMaker._attach_color_literal(2)
-    c'2                                                                        %! krummzeit.piano_harmonics
+    c'2                                                                        %! krummzeit.piano_harmonics()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-ff-sempre                                                            %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
@@ -1700,54 +1700,54 @@ G_Piano_Music_Voice = {                                                        %
             Pf.                                                                %! REDRAWN_EXPLICIT_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):baca.margin_markup():-PARTS:baca.IndicatorCommand._call()
         }                                                                      %! REDRAWN_EXPLICIT_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):baca.margin_markup():-PARTS:baca.IndicatorCommand._call()
 
-    c'4                                                                        %! krummzeit.piano_harmonics
+    c'4                                                                        %! krummzeit.piano_harmonics()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.piano_harmonics
+    ~                                                                          %! krummzeit.piano_harmonics()
 
     % [G Piano_Music_Voice measure 271 / measure 15]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c'1                                                                        %! krummzeit.piano_harmonics
+    c'1                                                                        %! krummzeit.piano_harmonics()
     ~
 
-    c'4                                                                        %! krummzeit.piano_harmonics
+    c'4                                                                        %! krummzeit.piano_harmonics()
 
-    c'2                                                                        %! krummzeit.piano_harmonics
+    c'2                                                                        %! krummzeit.piano_harmonics()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.piano_harmonics
+    ~                                                                          %! krummzeit.piano_harmonics()
 
     % [G Piano_Music_Voice measure 272 / measure 16]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c'2                                                                        %! krummzeit.piano_harmonics
+    c'2                                                                        %! krummzeit.piano_harmonics()
 
-    r4.                                                                        %! krummzeit.piano_harmonics
+    r4.                                                                        %! krummzeit.piano_harmonics()
 
-    r2                                                                         %! krummzeit.piano_harmonics
+    r2                                                                         %! krummzeit.piano_harmonics()
 
     % [G Piano_Music_Voice measure 273 / measure 17]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c'4.                                                                       %! krummzeit.piano_harmonics
+    c'4.                                                                       %! krummzeit.piano_harmonics()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.piano_harmonics
+    ~                                                                          %! krummzeit.piano_harmonics()
 
-    c'4                                                                        %! krummzeit.piano_harmonics
+    c'4                                                                        %! krummzeit.piano_harmonics()
 
     % [G Piano_Music_Voice measure 274 / measure 18]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c'2.                                                                       %! krummzeit.piano_harmonics
+    c'2.                                                                       %! krummzeit.piano_harmonics()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.piano_harmonics
+    ~                                                                          %! krummzeit.piano_harmonics()
 
-    c'4                                                                        %! krummzeit.piano_harmonics
+    c'4                                                                        %! krummzeit.piano_harmonics()
 
     % [G Piano_Music_Voice measure 275 / measure 19]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c'2                                                                        %! krummzeit.piano_harmonics
+    c'2                                                                        %! krummzeit.piano_harmonics()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
 
-    r2                                                                         %! krummzeit.piano_harmonics
+    r2                                                                         %! krummzeit.piano_harmonics()
 
-    r2                                                                         %! krummzeit.piano_harmonics
+    r2                                                                         %! krummzeit.piano_harmonics()
 
     % [G Piano_Music_Voice measure 276 / measure 20]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c'2                                                                        %! krummzeit.piano_harmonics
+    c'2                                                                        %! krummzeit.piano_harmonics()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
 
-    c'4                                                                        %! krummzeit.piano_harmonics
+    c'4                                                                        %! krummzeit.piano_harmonics()
     - \tenuto                                                                  %! baca.tenuto():baca.IndicatorCommand._call()
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
     \revert NoteHead.style                                                     %! baca.note_head_style_harmonic():baca.OverrideCommand._call(2)
@@ -1760,7 +1760,7 @@ G_Piano_Music_Voice = {                                                        %
 
             % [G Piano_Music_Voice measure 277 / measure 21]                   %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1                                                            %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1                                                            %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"1"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1795,7 +1795,7 @@ G_Piano_Music_Voice = {                                                        %
 
             % [G Piano_Music_Voice measure 281 / measure 25]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1903,7 +1903,7 @@ G_Percussion_Music_Voice = {                                                   %
 
             % [G Percussion_Music_Voice measure 264 / measure 8]               %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c1 * 3/4                                                           %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c1 * 3/4                                                           %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"3" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -1990,7 +1990,7 @@ G_Percussion_Music_Voice = {                                                   %
 
             % [G Percussion_Music_Voice measure 281 / measure 25]              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -2053,7 +2053,7 @@ G_Violin_Music_Voice = {                                                       %
         %@% \override Staff.Clef.color = ##f                                   %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
             \set Staff.forceClef = ##t                                         %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
             \once \override Staff.StaffSymbol.color = #(x11-color 'green4)     %! REAPPLIED_STAFF_LINES_COLOR:baca.SegmentMaker._attach_color_literal(2)
-            c'1 * 9/8                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 9/8                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
             - \tweak color #(x11-color 'green4)                                %! REAPPLIED_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
             \fff                                                               %! REAPPLIED_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._reapply_persistent_indicators(3)
             ^ \baca-reapplied-indicator-markup "[“Vn.”]"                       %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
@@ -2096,268 +2096,268 @@ G_Violin_Music_Voice = {                                                       %
     % [G Violin_Music_Voice measure 261 / measure 5]                           %! baca.SegmentMaker._comment_measure_numbers()
     \override DynamicLineSpanner.staff-padding = #5                            %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
     \override TupletBracket.staff-padding = #3                                 %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
-    e''8                                                                       %! krummzeit.polyphony
+    e''8                                                                       %! krummzeit.polyphony()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
     ^ \markup { "leggierissimo: off-string bowing on staccati" }               %! baca.markup():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    g'''8                                                                      %! krummzeit.polyphony
+    g'''8                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    fs'''!8                                                                    %! krummzeit.polyphony
+    fs'''!8                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
 
-    \times 4/5 {                                                               %! krummzeit.polyphony
+    \times 4/5 {                                                               %! krummzeit.polyphony()
 
-        bf'''!8                                                                %! krummzeit.polyphony
+        bf'''!8                                                                %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        [                                                                      %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony()
 
-        cs'''!8                                                                %! krummzeit.polyphony
-        - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-
-        b'''8                                                                  %! krummzeit.polyphony
+        cs'''!8                                                                %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        fs''!8                                                                 %! krummzeit.polyphony
+        b'''8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        a'''8                                                                  %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
-        ~                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! krummzeit.polyphony
+        a'''8                                                                  %! krummzeit.polyphony()
+        - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
+        ]                                                                      %! krummzeit.polyphony()
+        ~                                                                      %! krummzeit.polyphony()
 
-    a'''4.                                                                     %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
+
+    a'''4.                                                                     %! krummzeit.polyphony()
 
     % [G Violin_Music_Voice measure 262 / measure 6]                           %! baca.SegmentMaker._comment_measure_numbers()
-    bf'''!4                                                                    %! krummzeit.polyphony
+    bf'''!4                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    e''''4                                                                     %! krummzeit.polyphony
+    e''''4                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.polyphony
+    ~                                                                          %! krummzeit.polyphony()
 
-    \times 2/3 {                                                               %! krummzeit.polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony()
 
-        e''''8                                                                 %! krummzeit.polyphony
-        [                                                                      %! krummzeit.polyphony
+        e''''8                                                                 %! krummzeit.polyphony()
+        [                                                                      %! krummzeit.polyphony()
 
-        g'''8                                                                  %! krummzeit.polyphony
+        g'''8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        d'''8                                                                  %! krummzeit.polyphony
+        d'''8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
-        ~                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
+        ~                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    \times 2/3 {                                                               %! krummzeit.polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony()
 
         % [G Violin_Music_Voice measure 263 / measure 7]                       %! baca.SegmentMaker._comment_measure_numbers()
-        d'''8                                                                  %! krummzeit.polyphony
-        [                                                                      %! krummzeit.polyphony
+        d'''8                                                                  %! krummzeit.polyphony()
+        [                                                                      %! krummzeit.polyphony()
 
-        fs'''!8                                                                %! krummzeit.polyphony
+        fs'''!8                                                                %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        a'''8                                                                  %! krummzeit.polyphony
+        a'''8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
+        ]                                                                      %! krummzeit.polyphony()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    c'''8                                                                      %! krummzeit.polyphony
+    c'''8                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    ef'''!8                                                                    %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    fs'''!8                                                                    %! krummzeit.polyphony
+    ef'''!8                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    a'''8                                                                      %! krummzeit.polyphony
+    fs'''!8                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+
+    a'''8                                                                      %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
 
     % [G Violin_Music_Voice measure 264 / measure 8]                           %! baca.SegmentMaker._comment_measure_numbers()
-    c''''8                                                                     %! krummzeit.polyphony
+    c''''8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    e''''8                                                                     %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    fs'''!8                                                                    %! krummzeit.polyphony
+    e''''8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    g'''8                                                                      %! krummzeit.polyphony
+    fs'''!8                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
 
-    g'''4                                                                      %! krummzeit.polyphony
+    g'''8                                                                      %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
+
+    g'''4                                                                      %! krummzeit.polyphony()
 
     % [G Violin_Music_Voice measure 265 / measure 9]                           %! baca.SegmentMaker._comment_measure_numbers()
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    bf'''!4.                                                                   %! krummzeit.polyphony
+    bf'''!4.                                                                   %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.polyphony
+    ~                                                                          %! krummzeit.polyphony()
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    bf'''!8                                                                    %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    bf'''!8                                                                    %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    bf'''!8                                                                    %! krummzeit.polyphony
+    bf'''!8                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    af''!8                                                                     %! krummzeit.polyphony
+    af''!8                                                                     %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    a''8                                                                       %! krummzeit.polyphony
+    a''8                                                                       %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
-    a''8                                                                       %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    a''8                                                                       %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
 
-    cs'''!8                                                                    %! krummzeit.polyphony
+    cs'''!8                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
 
-    \times 4/7 {                                                               %! krummzeit.polyphony
+    \times 4/7 {                                                               %! krummzeit.polyphony()
 
         % [G Violin_Music_Voice measure 266 / measure 10]                      %! baca.SegmentMaker._comment_measure_numbers()
-        fs''!8                                                                 %! krummzeit.polyphony
+        fs''!8                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        [                                                                      %! krummzeit.polyphony
+        [                                                                      %! krummzeit.polyphony()
 
-        af'''!8                                                                %! krummzeit.polyphony
-        - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-
-        c'''8                                                                  %! krummzeit.polyphony
+        af'''!8                                                                %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        bf'''!8                                                                %! krummzeit.polyphony
+        c'''8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        g'''8                                                                  %! krummzeit.polyphony
+        bf'''!8                                                                %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af'''!8                                                                %! krummzeit.polyphony
+        g'''8                                                                  %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af'''!8                                                                %! krummzeit.polyphony
+        af'''!8                                                                %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
-        ]                                                                      %! krummzeit.polyphony
 
-    }                                                                          %! krummzeit.polyphony
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
+        af'''!8                                                                %! krummzeit.polyphony()
+        - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
+        ]                                                                      %! krummzeit.polyphony()
 
-    c'''16.                                                                    %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
+
+    c'''16.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    bf'''!16.                                                                  %! krummzeit.polyphony
+    bf'''!16.                                                                  %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    a'''16.                                                                    %! krummzeit.polyphony
+    a'''16.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    bf'''!16.                                                                  %! krummzeit.polyphony
+    bf'''!16.                                                                  %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
     % [G Violin_Music_Voice measure 267 / measure 11]                          %! baca.SegmentMaker._comment_measure_numbers()
-    bf'''!4                                                                    %! krummzeit.polyphony
+    bf'''!4                                                                    %! krummzeit.polyphony()
 
-    fs'''!4                                                                    %! krummzeit.polyphony
+    fs'''!4                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    ef'''!4                                                                    %! krummzeit.polyphony
+    ef'''!4                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ~                                                                          %! krummzeit.polyphony
+    ~                                                                          %! krummzeit.polyphony()
 
-    ef'''!8                                                                    %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
+    ef'''!8                                                                    %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
 
-    c'''8                                                                      %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    af'''!8                                                                    %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
-
-    af'''!16.                                                                  %! krummzeit.polyphony
-    [                                                                          %! krummzeit.polyphony
-
-    c'''16.                                                                    %! krummzeit.polyphony
+    c'''8                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    cs'''!16.                                                                  %! krummzeit.polyphony
+    af'''!8                                                                    %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
+
+    af'''!16.                                                                  %! krummzeit.polyphony()
+    [                                                                          %! krummzeit.polyphony()
+
+    c'''16.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    b'''16.                                                                    %! krummzeit.polyphony
+    cs'''!16.                                                                  %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
+
+    b'''16.                                                                    %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
 
     % [G Violin_Music_Voice measure 268 / measure 12]                          %! baca.SegmentMaker._comment_measure_numbers()
-    a'''8                                                                      %! krummzeit.polyphony
+    a'''8                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
+    [                                                                          %! krummzeit.polyphony()
 
-    b'''8                                                                      %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-
-    bf'''!8                                                                    %! krummzeit.polyphony
+    b'''8                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    g'''8                                                                      %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-
-    d''''16.                                                                   %! krummzeit.polyphony
-    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    [                                                                          %! krummzeit.polyphony
-
-    fs'''!16.                                                                  %! krummzeit.polyphony
+    bf'''!8                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
-    a'''16.                                                                    %! krummzeit.polyphony
+    g'''8                                                                      %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    ]                                                                          %! krummzeit.polyphony()
+
+    d''''16.                                                                   %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+    [                                                                          %! krummzeit.polyphony()
+
+    fs'''!16.                                                                  %! krummzeit.polyphony()
+    - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
+
+    a'''16.                                                                    %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
 
     \baca-repeat-pitch-class-coloring                                          %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-    bf''!16.                                                                   %! krummzeit.polyphony
+    bf''!16.                                                                   %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ]                                                                          %! krummzeit.polyphony
-    ~                                                                          %! krummzeit.polyphony
+    ]                                                                          %! krummzeit.polyphony()
+    ~                                                                          %! krummzeit.polyphony()
 
-    \times 2/3 {                                                               %! krummzeit.polyphony
-
-        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        bf''!4                                                                 %! krummzeit.polyphony
+    \times 2/3 {                                                               %! krummzeit.polyphony()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        bf''!4                                                                 %! krummzeit.polyphony
+        bf''!4                                                                 %! krummzeit.polyphony()
+
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
+        bf''!4                                                                 %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-        b''4                                                                   %! krummzeit.polyphony
+        b''4                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
 
-    }                                                                          %! krummzeit.polyphony
+    }                                                                          %! krummzeit.polyphony()
 
-    g''4.                                                                      %! krummzeit.polyphony
+    g''4.                                                                      %! krummzeit.polyphony()
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
     \revert TupletBracket.staff-padding                                        %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
@@ -2369,7 +2369,7 @@ G_Violin_Music_Voice = {                                                       %
 
             % [G Violin_Music_Voice measure 269 / measure 13]                  %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -2385,190 +2385,190 @@ G_Violin_Music_Voice = {                                                       %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Violin_Music_Voice measure 270 / measure 14]                      %! baca.SegmentMaker._comment_measure_numbers()
         \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic():baca.OverrideCommand._call(1)
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af'!8                                                                  %! krummzeit.glissando_rhythm
+        af'!8                                                                  %! krummzeit.glissando_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
         ^ \markup { "molto gridato" }                                          %! baca.markup():baca.IndicatorCommand._call()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af'!4                                                                  %! krummzeit.glissando_rhythm
+        af'!4                                                                  %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af'!8                                                                  %! krummzeit.glissando_rhythm
+        af'!8                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        cs'!2                                                                  %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        cs'!2                                                                  %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
-    \times 5/7 {                                                               %! krummzeit.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm()
+    \times 5/7 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Violin_Music_Voice measure 271 / measure 15]                      %! baca.SegmentMaker._comment_measure_numbers()
-        cs'!1                                                                  %! krummzeit.glissando_rhythm
+        cs'!1                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        c'2.                                                                   %! krummzeit.glissando_rhythm
+        c'2.                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
-        d'4                                                                    %! krummzeit.glissando_rhythm
+        d'4                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        f2                                                                     %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        f2                                                                     %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Violin_Music_Voice measure 272 / measure 16]                      %! baca.SegmentMaker._comment_measure_numbers()
-        f8                                                                     %! krummzeit.glissando_rhythm
+        f8                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        bf'!2                                                                  %! krummzeit.glissando_rhythm
+        bf'!2                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
-    \times 6/7 {                                                               %! krummzeit.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm()
+    \times 6/7 {                                                               %! krummzeit.glissando_rhythm()
 
-        fs'!4                                                                  %! krummzeit.glissando_rhythm
+        fs'!4                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        b'8.                                                                   %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        b'8.                                                                   %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
-        b'4                                                                    %! krummzeit.glissando_rhythm
+        b'4                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        af'!2                                                                  %! krummzeit.glissando_rhythm
+        af'!2                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Violin_Music_Voice measure 273 / measure 17]                      %! baca.SegmentMaker._comment_measure_numbers()
-        fs'!16                                                                 %! krummzeit.glissando_rhythm
+        fs'!16                                                                 %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        b'4                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        b'4                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
-    \times 6/7 {                                                               %! krummzeit.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm()
+    \times 6/7 {                                                               %! krummzeit.glissando_rhythm()
 
-        b'4                                                                    %! krummzeit.glissando_rhythm
+        b'4                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        a'8.                                                                   %! krummzeit.glissando_rhythm
+        a'8.                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
     % [G Violin_Music_Voice measure 274 / measure 18]                          %! baca.SegmentMaker._comment_measure_numbers()
-    cs'!4                                                                      %! krummzeit.glissando_rhythm
+    cs'!4                                                                      %! krummzeit.glissando_rhythm()
     \glissando                                                                 %! baca.glissando()
 
-    d'2                                                                        %! krummzeit.glissando_rhythm
-    ~                                                                          %! krummzeit.glissando_rhythm
+    d'2                                                                        %! krummzeit.glissando_rhythm()
+    ~                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        d'16                                                                   %! krummzeit.glissando_rhythm
+        d'16                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        a'4                                                                    %! krummzeit.glissando_rhythm
+        a'4                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Violin_Music_Voice measure 275 / measure 19]                      %! baca.SegmentMaker._comment_measure_numbers()
-        cs''!2                                                                 %! krummzeit.glissando_rhythm
+        cs''!2                                                                 %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        af'!4.                                                                 %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        af'!4.                                                                 %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
-        af'!4                                                                  %! krummzeit.glissando_rhythm
+        af'!4                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        fs'!2                                                                  %! krummzeit.glissando_rhythm
+        fs'!2                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        e''8                                                                   %! krummzeit.glissando_rhythm
+        e''8                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        bf'!2                                                                  %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        bf'!2                                                                  %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Violin_Music_Voice measure 276 / measure 20]                      %! baca.SegmentMaker._comment_measure_numbers()
-        bf'!4                                                                  %! krummzeit.glissando_rhythm
+        bf'!4                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        d''8.                                                                  %! krummzeit.glissando_rhythm
+        d''8.                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
-        c''4                                                                   %! krummzeit.glissando_rhythm
+        c''4                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        g2                                                                     %! krummzeit.glissando_rhythm
+        g2                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
         \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 11/10 {                                                             %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 11/10 {                                                             %! krummzeit.hypermeter_tuplets()
 
         % [G Violin_Music_Voice measure 277 / measure 21]                      %! baca.SegmentMaker._comment_measure_numbers()
-        c'1.                                                                   %! krummzeit.hypermeter_tuplets
+        c'1.                                                                   %! krummzeit.hypermeter_tuplets()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
         ^ \markup { "subito ordinario" }                                       %! baca.markup():baca.IndicatorCommand._call()
 
-        df'!1                                                                  %! krummzeit.hypermeter_tuplets
+        df'!1                                                                  %! krummzeit.hypermeter_tuplets()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -2577,7 +2577,7 @@ G_Violin_Music_Voice = {                                                       %
 
             % [G Violin_Music_Voice measure 280 / measure 24]                  %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -2600,7 +2600,7 @@ G_Violin_Music_Voice = {                                                       %
 
             % [G Violin_Music_Voice measure 281 / measure 25]                  %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -2653,7 +2653,7 @@ G_Viola_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
-    bf,!1..                                                                    %! krummzeit.fused_expanse
+    bf,!1..                                                                    %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
     ^ \baca-reapplied-indicator-markup "[“Va.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
@@ -2672,20 +2672,20 @@ G_Viola_Music_Voice = {                                                        %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
     % [G Viola_Music_Voice measure 259 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
-    cqf!4                                                                      %! krummzeit.fused_expanse
+    cqf!4                                                                      %! krummzeit.fused_expanse()
     \glissando                                                                 %! baca.glissando()
 
-    d4.                                                                        %! krummzeit.fused_expanse
+    d4.                                                                        %! krummzeit.fused_expanse()
     \glissando                                                                 %! baca.glissando()
 
     % [G Viola_Music_Voice measure 260 / measure 4]                            %! baca.SegmentMaker._comment_measure_numbers()
-    eqs!1..                                                                    %! krummzeit.fused_expanse
+    eqs!1..                                                                    %! krummzeit.fused_expanse()
     \glissando                                                                 %! baca.glissando()
 
-    fqs!1..                                                                    %! krummzeit.fused_expanse
+    fqs!1..                                                                    %! krummzeit.fused_expanse()
     \glissando                                                                 %! baca.glissando()
 
-    g4                                                                         %! krummzeit.fused_expanse
+    g4                                                                         %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
@@ -2697,7 +2697,7 @@ G_Viola_Music_Voice = {                                                        %
 
             % [G Viola_Music_Voice measure 264 / measure 8]                    %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 3/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 3/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"3" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -2721,13 +2721,13 @@ G_Viola_Music_Voice = {                                                        %
     R1 * 7/8                                                                   %! baca.SegmentMaker._make_measure_silences()
 %@% ^ \baca-duration-multiplier-markup #"7" #"8"                               %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets()
 
         % [G Viola_Music_Voice measure 267 / measure 11]                       %! baca.SegmentMaker._comment_measure_numbers()
         \override DynamicLineSpanner.staff-padding = #7                        %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
         \override TupletBracket.staff-padding = #4                             %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
-        g2                                                                     %! krummzeit.hypermeter_tuplets
+        g2                                                                     %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca.markup():baca.IndicatorCommand._call()
@@ -2735,13 +2735,13 @@ G_Viola_Music_Voice = {                                                        %
         \>                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():PiecewiseCommand(1)
         \glissando                                                             %! baca.glissando()
 
-        ftqs!\breve                                                            %! krummzeit.hypermeter_tuplets
+        ftqs!\breve                                                            %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -2750,7 +2750,7 @@ G_Viola_Music_Voice = {                                                        %
 
             % [G Viola_Music_Voice measure 269 / measure 13]                   %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -2766,178 +2766,178 @@ G_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Viola_Music_Voice measure 270 / measure 14]                       %! baca.SegmentMaker._comment_measure_numbers()
         \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic():baca.OverrideCommand._call(1)
-        b4                                                                     %! krummzeit.glissando_rhythm
+        b4                                                                     %! krummzeit.glissando_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
         ^ \markup { "molto gridato" }                                          %! baca.markup():baca.IndicatorCommand._call()
         \glissando                                                             %! baca.glissando()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        c2                                                                     %! krummzeit.glissando_rhythm
+        c2                                                                     %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        c16                                                                    %! krummzeit.glissando_rhythm
+        c16                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        e4                                                                     %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        e4                                                                     %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Viola_Music_Voice measure 271 / measure 15]                       %! baca.SegmentMaker._comment_measure_numbers()
-        e2                                                                     %! krummzeit.glissando_rhythm
+        e2                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        fs!4.                                                                  %! krummzeit.glissando_rhythm
+        fs!4.                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    f4                                                                         %! krummzeit.glissando_rhythm
+    f4                                                                         %! krummzeit.glissando_rhythm()
     \glissando                                                                 %! baca.glissando()
 
-    af!2                                                                       %! krummzeit.glissando_rhythm
-    ~                                                                          %! krummzeit.glissando_rhythm
+    af!2                                                                       %! krummzeit.glissando_rhythm()
+    ~                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        af!8                                                                   %! krummzeit.glissando_rhythm
+        af!8                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        cs!2                                                                   %! krummzeit.glissando_rhythm
+        cs!2                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Viola_Music_Voice measure 272 / measure 16]                       %! baca.SegmentMaker._comment_measure_numbers()
-        e2                                                                     %! krummzeit.glissando_rhythm
+        e2                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        g4.                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        g4.                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
-        g4..                                                                   %! krummzeit.glissando_rhythm
+        g4..                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        a2..                                                                   %! krummzeit.glissando_rhythm
+        a2..                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Viola_Music_Voice measure 273 / measure 17]                       %! baca.SegmentMaker._comment_measure_numbers()
-        f16.                                                                   %! krummzeit.glissando_rhythm
+        f16.                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        g4.                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        g4.                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
-        g4                                                                     %! krummzeit.glissando_rhythm
+        g4                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        af!8.                                                                  %! krummzeit.glissando_rhythm
+        af!8.                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Viola_Music_Voice measure 274 / measure 18]                       %! baca.SegmentMaker._comment_measure_numbers()
-        c8                                                                     %! krummzeit.glissando_rhythm
+        c8                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        f4                                                                     %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        f4                                                                     %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        f8                                                                     %! krummzeit.glissando_rhythm
+        f8                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        bf!2                                                                   %! krummzeit.glissando_rhythm
+        bf!2                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
-        b4                                                                     %! krummzeit.glissando_rhythm
+        b4                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        d8.                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        d8.                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Viola_Music_Voice measure 275 / measure 19]                       %! baca.SegmentMaker._comment_measure_numbers()
-        d4                                                                     %! krummzeit.glissando_rhythm
+        d4                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        c'2                                                                    %! krummzeit.glissando_rhythm
+        c'2                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        g4                                                                     %! krummzeit.glissando_rhythm
+        g4                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        f1                                                                     %! krummzeit.glissando_rhythm
+        f1                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
         \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets()
 
         % [G Viola_Music_Voice measure 276 / measure 20]                       %! baca.SegmentMaker._comment_measure_numbers()
-        bqs,!4                                                                 %! krummzeit.hypermeter_tuplets
+        bqs,!4                                                                 %! krummzeit.hypermeter_tuplets()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
         ^ \markup { "subito ordinario" }                                       %! baca.markup():baca.IndicatorCommand._call()
 
-        c1                                                                     %! krummzeit.hypermeter_tuplets
+        c1                                                                     %! krummzeit.hypermeter_tuplets()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets()
 
         % [G Viola_Music_Voice measure 278 / measure 22]                       %! baca.SegmentMaker._comment_measure_numbers()
-        bqs,!4                                                                 %! krummzeit.hypermeter_tuplets
+        bqs,!4                                                                 %! krummzeit.hypermeter_tuplets()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
-        c1                                                                     %! krummzeit.hypermeter_tuplets
+        c1                                                                     %! krummzeit.hypermeter_tuplets()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -2946,7 +2946,7 @@ G_Viola_Music_Voice = {                                                        %
 
             % [G Viola_Music_Voice measure 280 / measure 24]                   %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -2969,7 +2969,7 @@ G_Viola_Music_Voice = {                                                        %
 
             % [G Viola_Music_Voice measure 281 / measure 25]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
@@ -3022,7 +3022,7 @@ G_Cello_Music_Voice = {                                                        %
     \once \override Staff.Clef.color = #(x11-color 'green4)                    %! REAPPLIED_CLEF_COLOR:baca.SegmentMaker._attach_color_literal(2)
 %@% \override Staff.Clef.color = ##f                                           %! REAPPLIED_CLEF_COLOR_CANCELLATION:baca.SegmentMaker._attach_color_literal(1)
     \set Staff.forceClef = ##t                                                 %! REAPPLIED_CLEF:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(2):baca.SegmentMaker._reapply_persistent_indicators(3)
-    a,,2.                                                                      %! krummzeit.fused_expanse
+    a,,2.                                                                      %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
     ^ \baca-reapplied-indicator-markup "[“Vc.”]"                               %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
@@ -3039,25 +3039,25 @@ G_Cello_Music_Voice = {                                                        %
         }                                                                      %! REDRAWN_REAPPLIED_MARGIN_MARKUP:baca.SegmentMaker._set_status_tag():baca.SegmentMaker._treat_persistent_wrapper(3):-PARTS:baca.SegmentMaker._reapply_persistent_indicators(3)
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! REAPPLIED_CLEF_REDRAW_COLOR:baca.SegmentMaker._attach_color_literal(2)
 
-    bqf,,!1                                                                    %! krummzeit.fused_expanse
+    bqf,,!1                                                                    %! krummzeit.fused_expanse()
 
     % [G Cello_Music_Voice measure 259 / measure 3]                            %! baca.SegmentMaker._comment_measure_numbers()
-    c,4.                                                                       %! krummzeit.fused_expanse
+    c,4.                                                                       %! krummzeit.fused_expanse()
 
-    dqs,!4                                                                     %! krummzeit.fused_expanse
+    dqs,!4                                                                     %! krummzeit.fused_expanse()
 
     % [G Cello_Music_Voice measure 260 / measure 4]                            %! baca.SegmentMaker._comment_measure_numbers()
-    eqs,!\breve                                                                %! krummzeit.fused_expanse
+    eqs,!\breve                                                                %! krummzeit.fused_expanse()
 
-    f,1..                                                                      %! krummzeit.fused_expanse
+    f,1..                                                                      %! krummzeit.fused_expanse()
 
     % [G Cello_Music_Voice measure 264 / measure 8]                            %! baca.SegmentMaker._comment_measure_numbers()
-    gf,!2.                                                                     %! krummzeit.fused_expanse
+    gf,!2.                                                                     %! krummzeit.fused_expanse()
 
     % [G Cello_Music_Voice measure 265 / measure 9]                            %! baca.SegmentMaker._comment_measure_numbers()
-    aqf,!4.                                                                    %! krummzeit.fused_expanse
+    aqf,!4.                                                                    %! krummzeit.fused_expanse()
 
-    b,2.                                                                       %! krummzeit.fused_expanse
+    b,2.                                                                       %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
@@ -3069,7 +3069,7 @@ G_Cello_Music_Voice = {                                                        %
 
             % [G Cello_Music_Voice measure 266 / measure 10]                   %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 7/8                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 7/8                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"7" #"8"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -3085,13 +3085,13 @@ G_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 13/10 {                                                             %! krummzeit.hypermeter_tuplets()
 
         % [G Cello_Music_Voice measure 267 / measure 11]                       %! baca.SegmentMaker._comment_measure_numbers()
         \override DynamicLineSpanner.staff-padding = #7                        %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
         \override TupletBracket.staff-padding = #4                             %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
-        b,1.                                                                   %! krummzeit.hypermeter_tuplets
+        b,1.                                                                   %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
         ^ \markup { "molto flautando" }                                        %! baca.markup():baca.IndicatorCommand._call()
@@ -3099,13 +3099,13 @@ G_Cello_Music_Voice = {                                                        %
         \>                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():PiecewiseCommand(1)
         \glissando                                                             %! baca.glissando()
 
-        atqs,!1                                                                %! krummzeit.hypermeter_tuplets
+        atqs,!1                                                                %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -3114,7 +3114,7 @@ G_Cello_Music_Voice = {                                                        %
 
             % [G Cello_Music_Voice measure 269 / measure 13]                   %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -3130,198 +3130,198 @@ G_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Cello_Music_Voice measure 270 / measure 14]                       %! baca.SegmentMaker._comment_measure_numbers()
         \override NoteHead.style = #'harmonic                                  %! baca.note_head_style_harmonic():baca.OverrideCommand._call(1)
-        a,8                                                                    %! krummzeit.glissando_rhythm
+        a,8                                                                    %! krummzeit.glissando_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \baca-fff-poss                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.dynamic():baca.IndicatorCommand._call()
         ^ \markup { "molto gridato" }                                          %! baca.markup():baca.IndicatorCommand._call()
         \glissando                                                             %! baca.glissando()
 
-        bf,!4                                                                  %! krummzeit.glissando_rhythm
+        bf,!4                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        f,16                                                                   %! krummzeit.glissando_rhythm
+        f,16                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        d,4                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        d,4                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
-        d,4                                                                    %! krummzeit.glissando_rhythm
+        d,4                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        b,8.                                                                   %! krummzeit.glissando_rhythm
+        b,8.                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Cello_Music_Voice measure 271 / measure 15]                       %! baca.SegmentMaker._comment_measure_numbers()
-        bf,!4                                                                  %! krummzeit.glissando_rhythm
+        bf,!4                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        g,2                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        g,2                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    g,4                                                                        %! krummzeit.glissando_rhythm
+    g,4                                                                        %! krummzeit.glissando_rhythm()
     \glissando                                                                 %! baca.glissando()
 
-    f,1                                                                        %! krummzeit.glissando_rhythm
+    f,1                                                                        %! krummzeit.glissando_rhythm()
     \glissando                                                                 %! baca.glissando()
 
     % [G Cello_Music_Voice measure 272 / measure 16]                           %! baca.SegmentMaker._comment_measure_numbers()
-    b,2                                                                        %! krummzeit.glissando_rhythm
+    b,2                                                                        %! krummzeit.glissando_rhythm()
     \glissando                                                                 %! baca.glissando()
 
-    c4.                                                                        %! krummzeit.glissando_rhythm
-    ~                                                                          %! krummzeit.glissando_rhythm
+    c4.                                                                        %! krummzeit.glissando_rhythm()
+    ~                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
-        c4                                                                     %! krummzeit.glissando_rhythm
+        c4                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        bf,!2                                                                  %! krummzeit.glissando_rhythm
+        bf,!2                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Cello_Music_Voice measure 273 / measure 17]                       %! baca.SegmentMaker._comment_measure_numbers()
-        e,16                                                                   %! krummzeit.glissando_rhythm
+        e,16                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        bf,!4                                                                  %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        bf,!4                                                                  %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
-
-        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        bf,!8                                                                  %! krummzeit.glissando_rhythm
-        [                                                                      %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        bf,!16.                                                                %! krummzeit.glissando_rhythm
-        ]                                                                      %! krummzeit.glissando_rhythm
+        bf,!8                                                                  %! krummzeit.glissando_rhythm()
+        [                                                                      %! krummzeit.glissando_rhythm()
+
+        \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
+        bf,!16.                                                                %! krummzeit.glissando_rhythm()
+        ]                                                                      %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
-        c,8                                                                    %! krummzeit.glissando_rhythm
+        c,8                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        b,4                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        b,4                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Cello_Music_Voice measure 274 / measure 18]                       %! baca.SegmentMaker._comment_measure_numbers()
-        b,16                                                                   %! krummzeit.glissando_rhythm
+        b,16                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af,!4                                                                  %! krummzeit.glissando_rhythm
+        af,!4                                                                  %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm
-    \times 6/7 {                                                               %! krummzeit.glissando_rhythm
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.glissando_rhythm()
+    \times 6/7 {                                                               %! krummzeit.glissando_rhythm()
 
         \baca-repeat-pitch-class-coloring                                      %! REPEAT_PITCH_CLASS:baca.SegmentMaker._color_repeat_pitch_classes_()
-        af,!2                                                                  %! krummzeit.glissando_rhythm
+        af,!2                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        c4.                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        c4.                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Cello_Music_Voice measure 275 / measure 19]                       %! baca.SegmentMaker._comment_measure_numbers()
-        c2                                                                     %! krummzeit.glissando_rhythm
+        c2                                                                     %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        f,1                                                                    %! krummzeit.glissando_rhythm
+        f,1                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        b,8                                                                    %! krummzeit.glissando_rhythm
+        b,8                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        f,2                                                                    %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        f,2                                                                    %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/7 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         % [G Cello_Music_Voice measure 276 / measure 20]                       %! baca.SegmentMaker._comment_measure_numbers()
-        f,4                                                                    %! krummzeit.glissando_rhythm
+        f,4                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        b,,8.                                                                  %! krummzeit.glissando_rhythm
+        b,,8.                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 2/3 {                                                               %! krummzeit.glissando_rhythm
+    \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
-        c,8                                                                    %! krummzeit.glissando_rhythm
+        c,8                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        b,,4                                                                   %! krummzeit.glissando_rhythm
-        ~                                                                      %! krummzeit.glissando_rhythm
+        b,,4                                                                   %! krummzeit.glissando_rhythm()
+        ~                                                                      %! krummzeit.glissando_rhythm()
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \times 4/5 {                                                               %! krummzeit.glissando_rhythm
+    \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        b,,16                                                                  %! krummzeit.glissando_rhythm
+        b,,16                                                                  %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
 
-        c,4                                                                    %! krummzeit.glissando_rhythm
+        c,4                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando()
         \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():baca.OverrideCommand._call(2)
 
-    }                                                                          %! krummzeit.glissando_rhythm
+    }                                                                          %! krummzeit.glissando_rhythm()
 
-    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets
-    \times 11/10 {                                                             %! krummzeit.hypermeter_tuplets
+    \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
+    \times 11/10 {                                                             %! krummzeit.hypermeter_tuplets()
 
         % [G Cello_Music_Voice measure 277 / measure 21]                       %! baca.SegmentMaker._comment_measure_numbers()
-        b,,2                                                                   %! krummzeit.hypermeter_tuplets
+        b,,2                                                                   %! krummzeit.hypermeter_tuplets()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
         ^ \markup { "subito ordinario" }                                       %! baca.markup():baca.IndicatorCommand._call()
 
-        c,\breve                                                               %! krummzeit.hypermeter_tuplets
+        c,\breve                                                               %! krummzeit.hypermeter_tuplets()
         :32                                                                    %! baca.stem_tremolo():baca.IndicatorCommand._call()
 
-    }                                                                          %! krummzeit.hypermeter_tuplets
+    }                                                                          %! krummzeit.hypermeter_tuplets()
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container()
 
@@ -3330,7 +3330,7 @@ G_Cello_Music_Voice = {                                                        %
 
             % [G Cello_Music_Voice measure 280 / measure 24]                   %! baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! baca.SegmentMaker._make_multimeasure_rest_container()
-            c'1 * 1/4                                                          %! baca.SegmentMaker._make_multimeasure_rest_container()
+            c'1 * 1/4                                                          %! PHANTOM_NOTE:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container()
@@ -3353,7 +3353,7 @@ G_Cello_Music_Voice = {                                                        %
 
             % [G Cello_Music_Voice measure 281 / measure 25]                   %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._comment_measure_numbers()
             \baca-invisible-music                                              %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):baca.SegmentMaker._make_multimeasure_rest_container()
-            R1 * 1/4                                                           %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
+            R1 * 1/4                                                           %! PHANTOM_MULTIMEASURE_REST:PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()
         %@% ^ \baca-duration-multiplier-markup #"1" #"4"                       %! PHANTOM:baca.SegmentMaker._style_phantom_measures(5):DURATION_MULTIPLIER:baca.SegmentMaker._label_duration_multipliers()
 
         }                                                                      %! PHANTOM:baca.SegmentMaker._make_multimeasure_rest_container()

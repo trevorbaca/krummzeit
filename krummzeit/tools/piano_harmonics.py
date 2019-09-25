@@ -32,5 +32,5 @@ def piano_harmonics(
         *commands_,
         rmakers.beam(baca.plts()),
         preprocessor=baca.sequence().map(split),
-        tag=abjad.Tag("krummzeit.piano_harmonics"),
+        tag=abjad.Tag("krummzeit.piano_harmonics()"),
     )

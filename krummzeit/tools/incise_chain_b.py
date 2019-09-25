@@ -17,5 +17,5 @@ def incise_chain_b() -> baca.RhythmCommand:
             talea_denominator=16,
         ),
         rmakers.extract_trivial(),
-        tag=abjad.Tag("krummzeit.incise_chain_b"),
+        tag=abjad.Tag("krummzeit.incise_chain_b()"),
     )

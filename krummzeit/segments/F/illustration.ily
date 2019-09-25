@@ -538,10 +538,10 @@ F_Oboe_Music_Voice = {                                                         %
     % [F Oboe_Music_Voice measure 238 / measure 4]                             %! baca.SegmentMaker._comment_measure_numbers()
     a'''4.                                                                     %! krummzeit.polyphony()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \p                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
+    \p                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():baca.PiecewiseCommand._call(1)
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():baca.PiecewiseCommand._call(1)
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.polyphony()
     \times 5/6 {                                                               %! krummzeit.polyphony()
@@ -748,7 +748,7 @@ F_Oboe_Music_Voice = {                                                         %
 
         c'16                                                                   %! krummzeit.polyphony()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
+        \ff                                                                    %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():baca.PiecewiseCommand._call(2)
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ]                                                                      %! krummzeit.polyphony()
 
@@ -931,11 +931,11 @@ F_Clarinet_Music_Voice = {                                                     %
         % [F Clarinet_Music_Voice measure 238 / measure 4]                     %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! krummzeit.polyphony()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
+        \p                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():baca.PiecewiseCommand._call(1)
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
         ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                %! EXPLICIT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():PiecewiseCommand(1)
+        \<                                                                     %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():baca.PiecewiseCommand._call(1)
 
         as!4                                                                   %! krummzeit.polyphony()
         - \staccato                                                            %! baca.staccato():baca.IndicatorCommand._call()
@@ -1053,7 +1053,7 @@ F_Clarinet_Music_Voice = {                                                     %
 
     a''4.                                                                      %! krummzeit.polyphony()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ff                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
+    \ff                                                                        %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():baca.PiecewiseCommand._call(2)
     \revert TupletBracket.staff-padding                                        %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
 
@@ -2070,13 +2070,13 @@ F_Violin_Music_Voice = {                                                       %
 
         % [F Violin_Music_Voice measure 245 / measure 11]                      %! baca.SegmentMaker._comment_measure_numbers()
         fs!2.                                                                  %! krummzeit.hypermeter_tuplets()
-        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():PiecewiseCommand(1)
-        - \baca-text-spanner-left-text "grid. possibile"                       %! baca.text_spanner():PiecewiseCommand(1)
-        - \baca-text-spanner-right-text "flaut. possibile"                     %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak staff-padding #5                                              %! baca.text_spanner():PiecewiseCommand(1)
-        \startTextSpan                                                         %! baca.text_spanner():PiecewiseCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \baca-text-spanner-left-text "grid. possibile"                       %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \baca-text-spanner-right-text "flaut. possibile"                     %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak staff-padding #5                                              %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(1)
 
         fs!1                                                                   %! krummzeit.hypermeter_tuplets()
 
@@ -2099,7 +2099,7 @@ F_Violin_Music_Voice = {                                                       %
         fs!2.                                                                  %! krummzeit.hypermeter_tuplets()
 
         fs!1                                                                   %! krummzeit.hypermeter_tuplets()
-        \stopTextSpan                                                          %! SPANNER_STOP:baca.text_spanner():PiecewiseCommand(2)
+        \stopTextSpan                                                          %! SPANNER_STOP:baca.text_spanner():baca.PiecewiseCommand._call(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 
@@ -2241,9 +2241,9 @@ F_Viola_Music_Voice = {                                                        %
     \override DynamicLineSpanner.staff-padding = #6                            %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
     fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ppp                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
+    \ppp                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():baca.PiecewiseCommand._call(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():baca.PiecewiseCommand._call(1)
 
     r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes()
 
@@ -2312,7 +2312,7 @@ F_Viola_Music_Voice = {                                                        %
 
     fs!8..                                                                     %! krummzeit.rest_delimited_repeated_duration_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
+    \fff                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():baca.PiecewiseCommand._call(2)
 
     r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes()
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
@@ -2341,13 +2341,13 @@ F_Viola_Music_Voice = {                                                        %
 
         % [F Viola_Music_Voice measure 247 / measure 13]                       %! baca.SegmentMaker._comment_measure_numbers()
         bf,!4                                                                  %! krummzeit.hypermeter_tuplets()
-        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():PiecewiseCommand(1)
-        - \baca-text-spanner-left-text "grid. possibile"                       %! baca.text_spanner():PiecewiseCommand(1)
-        - \baca-text-spanner-right-text "flaut. possibile"                     %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak staff-padding #5                                              %! baca.text_spanner():PiecewiseCommand(1)
-        \startTextSpan                                                         %! baca.text_spanner():PiecewiseCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \baca-text-spanner-left-text "grid. possibile"                       %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \baca-text-spanner-right-text "flaut. possibile"                     %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak staff-padding #5                                              %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(1)
 
         bf,!1.                                                                 %! krummzeit.hypermeter_tuplets()
 
@@ -2360,7 +2360,7 @@ F_Viola_Music_Voice = {                                                        %
         bf,!4                                                                  %! krummzeit.hypermeter_tuplets()
 
         bf,!1.                                                                 %! krummzeit.hypermeter_tuplets()
-        \stopTextSpan                                                          %! SPANNER_STOP:baca.text_spanner():PiecewiseCommand(2)
+        \stopTextSpan                                                          %! SPANNER_STOP:baca.text_spanner():baca.PiecewiseCommand._call(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 
@@ -2502,9 +2502,9 @@ F_Cello_Music_Voice = {                                                        %
     \override DynamicLineSpanner.staff-padding = #6                            %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
     c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \ppp                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(1)
+    \ppp                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():baca.PiecewiseCommand._call(1)
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():PiecewiseCommand(1)
+    \<                                                                         %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():baca.hairpin():baca.PiecewiseCommand._call(1)
 
     r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes()
 
@@ -2573,7 +2573,7 @@ F_Cello_Music_Voice = {                                                        %
 
     c,8..                                                                      %! krummzeit.rest_delimited_repeated_duration_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \fff                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():PiecewiseCommand(2)
+    \fff                                                                       %! EXPLICIT_DYNAMIC:baca.SegmentMaker._set_status_tag():SPANNER_STOP:baca.hairpin():baca.PiecewiseCommand._call(2)
 
     r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes()
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
@@ -2602,13 +2602,13 @@ F_Cello_Music_Voice = {                                                        %
 
         % [F Cello_Music_Voice measure 247 / measure 13]                       %! baca.SegmentMaker._comment_measure_numbers()
         a,,1.                                                                  %! krummzeit.hypermeter_tuplets()
-        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():PiecewiseCommand(1)
-        - \baca-text-spanner-left-text "grid. possibile"                       %! baca.text_spanner():PiecewiseCommand(1)
-        - \baca-text-spanner-right-text "flaut. possibile"                     %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():PiecewiseCommand(1)
-        - \tweak staff-padding #5                                              %! baca.text_spanner():PiecewiseCommand(1)
-        \startTextSpan                                                         %! baca.text_spanner():PiecewiseCommand(1)
+        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \baca-text-spanner-left-text "grid. possibile"                       %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \baca-text-spanner-right-text "flaut. possibile"                     %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        - \tweak staff-padding #5                                              %! baca.text_spanner():baca.PiecewiseCommand._call(1)
+        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(1)
 
         a,,4                                                                   %! krummzeit.hypermeter_tuplets()
 
@@ -2619,7 +2619,7 @@ F_Cello_Music_Voice = {                                                        %
 
         % [F Cello_Music_Voice measure 249 / measure 15]                       %! baca.SegmentMaker._comment_measure_numbers()
         a,,1.                                                                  %! krummzeit.hypermeter_tuplets()
-        \stopTextSpan                                                          %! SPANNER_STOP:baca.text_spanner():PiecewiseCommand(2)
+        \stopTextSpan                                                          %! SPANNER_STOP:baca.text_spanner():baca.PiecewiseCommand._call(2)
 
         a,,4                                                                   %! krummzeit.hypermeter_tuplets()
 

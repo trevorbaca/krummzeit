@@ -21,5 +21,5 @@ def hypermeter_tuplets(
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         preprocessor=baca.sequence().fuse(counts, cyclic=True),
-        tag=abjad.Tag("krummzeit.hypermeter_tuplets"),
+        tag=abjad.Tag("krummzeit.hypermeter_tuplets()"),
     )

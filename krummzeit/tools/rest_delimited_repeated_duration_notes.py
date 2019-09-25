@@ -18,5 +18,5 @@ def rest_delimited_repeated_duration_notes(
         preprocessor=baca.sequence()
         .fuse()
         .split_divisions([duration], cyclic=True),
-        tag=abjad.Tag("krummzeit.rest_delimited_repeated_duration_notes"),
+        tag=abjad.Tag("krummzeit.rest_delimited_repeated_duration_notes()"),
     )

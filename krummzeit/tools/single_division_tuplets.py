@@ -15,5 +15,5 @@ def single_division_tuplets(
         rmakers.beam(),
         rmakers.rewrite_dots(),
         rmakers.force_augmentation(),
-        tag=abjad.Tag("krummzeit.single_division_tuplets"),
+        tag=abjad.Tag("krummzeit.single_division_tuplets()"),
     )

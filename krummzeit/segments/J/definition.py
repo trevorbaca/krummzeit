@@ -34,7 +34,6 @@ maker = baca.SegmentMaker(
         abjad.tags.LOCAL_MEASURE_NUMBER,
         ],
     check_all_are_pitched=True,
-    final_markup=(["Cambridge, MA."], ["May", "August 2014."]),
     ignore_repeat_pitch_classes=True,
     final_segment=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
@@ -194,4 +193,15 @@ maker(
     baca.dynamic("f"),
     baca.dls_staff_padding(7),
     baca.stem_up(),
+)
+
+maker(
+    ("vc", -1),
+    baca.chunk(
+        baca.mark(r"\krummzeit-colophon-markup"),
+        baca.rehearsal_mark_down(),
+        baca.rehearsal_mark_padding(6),
+        baca.rehearsal_mark_self_alignment_x(abjad.Right),
+        selector=baca.leaves().rleak()[-1],
+    ),
 )

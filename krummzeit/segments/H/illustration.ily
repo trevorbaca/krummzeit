@@ -295,7 +295,7 @@ H_Oboe_Music_Voice = {                                                         %
     d''1..                                                                     %! baca.make_repeat_tied_notes()
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ff                                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    \startTrillSpan                                                            %! baca.trill_spanner():SpannerIndicatorCommand(1)
+    \startTrillSpan                                                            %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     % [H Oboe_Music_Voice measure 285 / measure 5]                             %! baca.SegmentMaker._comment_measure_numbers()
     d''2.                                                                      %! baca.make_repeat_tied_notes()
@@ -325,7 +325,7 @@ H_Oboe_Music_Voice = {                                                         %
         % [H Oboe_Music_Voice measure 288 / measure 8]                         %! baca.SegmentMaker._comment_measure_numbers()
         \override TupletBracket.staff-padding = #2                             %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
         ef''!2.                                                                %! krummzeit.hypermeter_tuplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets()
         ^ \markup {

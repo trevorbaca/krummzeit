@@ -907,7 +907,7 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bf''!4.                                                                %! krummzeit.oboe_trills()
@@ -918,13 +918,13 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.oboe_trills()
 
     r4                                                                         %! krummzeit.oboe_trills()
-    \stopTrillSpan                                                             %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+    \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     % [E Oboe_Music_Voice measure 202 / measure 3]                             %! baca.SegmentMaker._comment_measure_numbers()
     r2                                                                         %! krummzeit.oboe_trills()
@@ -941,7 +941,7 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         f'''16                                                                 %! krummzeit.oboe_trills()
         ^ \markup {
@@ -951,7 +951,7 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
         [                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
@@ -1031,7 +1031,7 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         bf'!2                                                                  %! krummzeit.oboe_trills()
         ^ \markup {
@@ -1041,11 +1041,11 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         a''8                                                                   %! krummzeit.oboe_trills()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
         [                                                                      %! krummzeit.oboe_trills()
 
         fs''!8                                                                 %! krummzeit.oboe_trills()
@@ -1295,7 +1295,7 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         b'4.                                                                   %! krummzeit.oboe_trills()
         ^ \markup {
@@ -1305,13 +1305,13 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.oboe_trills()
 
     r4.                                                                        %! krummzeit.oboe_trills()
-    \stopTrillSpan                                                             %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+    \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     % [E Oboe_Music_Voice measure 207 / measure 8]                             %! baca.SegmentMaker._comment_measure_numbers()
     r2.                                                                        %! krummzeit.oboe_trills()
@@ -1329,7 +1329,7 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         1
             }
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         e'16                                                                   %! krummzeit.oboe_trills()
@@ -1340,7 +1340,7 @@ E_Oboe_Music_Voice = {                                                         %
                     \finger
                         2
             }
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
         [                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
@@ -1813,14 +1813,14 @@ E_Oboe_Music_Voice = {                                                         %
         a''8.                                                                  %! krummzeit.detached_triplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -1829,27 +1829,27 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -1858,13 +1858,13 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -1872,14 +1872,14 @@ E_Oboe_Music_Voice = {                                                         %
 
         % [E Oboe_Music_Voice measure 229 / measure 30]                        %! baca.SegmentMaker._comment_measure_numbers()
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -1888,27 +1888,27 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -1917,27 +1917,27 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -1947,27 +1947,27 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -1976,27 +1976,27 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -2006,27 +2006,27 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -2035,27 +2035,27 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -2064,27 +2064,27 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -2093,28 +2093,28 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         % [E Oboe_Music_Voice measure 233 / measure 34]                        %! baca.SegmentMaker._comment_measure_numbers()
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -2123,26 +2123,26 @@ E_Oboe_Music_Voice = {                                                         %
         a''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         a''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         a''8                                                                   %! krummzeit.detached_triplets()
-        \startTrillSpan                                                        %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
@@ -2159,7 +2159,7 @@ E_Oboe_Music_Voice = {                                                         %
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE
             b'1 * 9/8                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"9" #"8"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
-            \stopTrillSpan                                                     %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+            \stopTrillSpan                                                     %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 
@@ -3413,7 +3413,7 @@ E_Piano_Music_Voice = {                                                        %
     }                                                                          %! krummzeit.silver_points()
 
     % [E Piano_Music_Voice measure 226 / measure 27]                           %! baca.SegmentMaker._comment_measure_numbers()
-    \ottava -1                                                                 %! baca.ottava_bassa():SpannerIndicatorCommand(1)
+    \ottava -1                                                                 %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(1)
     \once \override Staff.Clef.X-extent = ##f                                  %! baca.clef_x_extent_false():baca.clef_shift():SHIFTED_CLEF:MEASURE_226:baca.OverrideCommand._call(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)                    %! baca.clef_extra_offset():baca.clef_shift():SHIFTED_CLEF:MEASURE_226:baca.OverrideCommand._call(1)
     \clef "bass"                                                               %! baca.clef():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_CLEF
@@ -3462,7 +3462,7 @@ E_Piano_Music_Voice = {                                                        %
     r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes()
 
     bf,,,!8..                                                                  %! krummzeit.rest_delimited_repeated_duration_notes()
-    \ottava 0                                                                  %! baca.ottava_bassa():SpannerIndicatorCommand(2)
+    \ottava 0                                                                  %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2)
 
     r32                                                                        %! krummzeit.rest_delimited_repeated_duration_notes()
 
@@ -3482,7 +3482,7 @@ E_Piano_Music_Voice = {                                                        %
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm()
     \times 7/8 {                                                               %! krummzeit.pizzicato_rhythm()
 
-        \ottava 1                                                              %! baca.ottava():SpannerIndicatorCommand(1)
+        \ottava 1                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(1)
         c''''8                                                                 %! krummzeit.pizzicato_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
@@ -3576,7 +3576,7 @@ E_Piano_Music_Voice = {                                                        %
 
     g''''4                                                                     %! krummzeit.pizzicato_rhythm()
     - \staccatissimo                                                           %! baca.staccatissimo():baca.IndicatorCommand._call()
-    \ottava 0                                                                  %! baca.ottava():SpannerIndicatorCommand(2)
+    \ottava 0                                                                  %! baca.ottava():baca.SpannerIndicatorCommand._call(2)
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
@@ -4826,19 +4826,19 @@ E_Violin_Music_Voice = {                                                       %
         % [E Violin_Music_Voice measure 228 / measure 29]                      %! baca.SegmentMaker._comment_measure_numbers()
         \override DynamicLineSpanner.staff-padding = #4                        %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
         \override TupletBracket.staff-padding = #2                             %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -4847,30 +4847,30 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -4879,31 +4879,31 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
         % [E Violin_Music_Voice measure 229 / measure 30]                      %! baca.SegmentMaker._comment_measure_numbers()
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -4912,30 +4912,30 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -4944,30 +4944,30 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -4977,30 +4977,30 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -5009,30 +5009,30 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -5042,30 +5042,30 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -5074,30 +5074,30 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -5106,30 +5106,30 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -5138,31 +5138,31 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         % [E Violin_Music_Voice measure 233 / measure 34]                      %! baca.SegmentMaker._comment_measure_numbers()
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
         ~                                                                      %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
     }                                                                          %! krummzeit.detached_triplets()
 
@@ -5171,29 +5171,29 @@ E_Violin_Music_Voice = {                                                       %
         g''16                                                                  %! krummzeit.detached_triplets()
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
     }                                                                          %! krummzeit.detached_triplets()
 
     \times 2/3 {                                                               %! krummzeit.detached_triplets()
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8.                                                                  %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
 
         r16                                                                    %! krummzeit.detached_triplets()
-        \stopTrillSpan                                                         %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+        \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
-        \pitchedTrill                                                          %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \pitchedTrill                                                          %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         g''8                                                                   %! krummzeit.detached_triplets()
-        \startTrillSpan a''                                                    %! baca.trill_spanner():SpannerIndicatorCommand(1)
+        \startTrillSpan a''                                                    %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(1)
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
@@ -5210,7 +5210,7 @@ E_Violin_Music_Voice = {                                                       %
             \baca-not-yet-pitched-coloring                                     %! baca.SegmentMaker._color_not_yet_pitched():NOT_YET_PITCHED_COLORING:HIDDEN:NOTE
             b'1 * 9/8                                                          %! baca.SegmentMaker._make_multimeasure_rest_container(1):HIDDEN:NOTE
         %@% ^ \baca-duration-multiplier-markup #"9" #"8"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
-            \stopTrillSpan                                                     %! baca.trill_spanner():SpannerIndicatorCommand(2):SPANNER_STOP
+            \stopTrillSpan                                                     %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_STOP
 
         }                                                                      %! baca.SegmentMaker._make_multimeasure_rest_container(4)
 

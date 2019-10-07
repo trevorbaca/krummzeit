@@ -1025,7 +1025,7 @@ C_Piano_Music_Voice = {                                                        %
                 #16                                                            %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
                 Pf.                                                            %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
             }                                                                  %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
-        \ottava 1                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(1)
+        \ottava 1                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(2):SPANNER_START
         \clef "treble"                                                         %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_CLEF
         \once \override Staff.InstrumentName.color = #(x11-color 'green4)      %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_MARGIN_MARKUP_COLOR
         \once \override Staff.Clef.color = #(x11-color 'green4)                %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_COLOR
@@ -1077,7 +1077,7 @@ C_Piano_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(3):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()
-        \ottava 0                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(2)
+        \ottava 0                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
     }                                                                          %! krummzeit.silver_points()
 
@@ -1260,7 +1260,7 @@ C_Piano_Music_Voice = {                                                        %
 %@% ^ \baca-duration-multiplier-markup #"1" #"4"                               %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER
 
     % [C Piano_Music_Voice measure 141 / measure 9]                            %! baca.SegmentMaker._comment_measure_numbers()
-    \ottava -1                                                                 %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(1)
+    \ottava -1                                                                 %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2):SPANNER_START
     \override DynamicLineSpanner.staff-padding = #10                           %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
@@ -1380,7 +1380,7 @@ C_Piano_Music_Voice = {                                                        %
                     \flat
                 }
         }
-    \ottava 0                                                                  %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2)
+    \ottava 0                                                                  %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
     <<                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
@@ -1409,7 +1409,7 @@ C_Piano_Music_Voice = {                                                        %
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7)
 
     % [C Piano_Music_Voice measure 146 / measure 14]                           %! baca.SegmentMaker._comment_measure_numbers()
-    \ottava -1                                                                 %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(1)
+    \ottava -1                                                                 %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2):SPANNER_START
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
@@ -1490,7 +1490,7 @@ C_Piano_Music_Voice = {                                                        %
                     \flat
                 }
         }
-    \ottava 0                                                                  %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(2)
+    \ottava 0                                                                  %! baca.ottava_bassa():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
     \revert DynamicLineSpanner.staff-padding                                   %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
     <> \bacaStopTextSpanRhythmAnnotation                                       %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(4):SPANNER_STOP
 
@@ -1914,7 +1914,7 @@ C_Violin_Music_Voice = {                                                       %
         \override TupletBracket.staff-padding = #4                             %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(1)
         r8                                                                     %! krummzeit.silver_points()
 
-        \ottava 1                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(1)
+        \ottava 1                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(2):SPANNER_START
         e''''8                                                                 %! krummzeit.silver_points()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
@@ -1954,7 +1954,7 @@ C_Violin_Music_Voice = {                                                       %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(3):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()
-        \ottava 0                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(2)
+        \ottava 0                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
     }                                                                          %! krummzeit.silver_points()
 
@@ -2322,7 +2322,7 @@ C_Viola_Music_Voice = {                                                        %
         r8                                                                     %! krummzeit.silver_points()
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_CLEF_REDRAW_COLOR
 
-        \ottava 1                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(1)
+        \ottava 1                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(2):SPANNER_START
         ef'''!4                                                                %! krummzeit.silver_points()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
@@ -2352,7 +2352,7 @@ C_Viola_Music_Voice = {                                                        %
         \pp                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(3):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()
         ]                                                                      %! krummzeit.silver_points()
-        \ottava 0                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(2)
+        \ottava 0                                                              %! baca.ottava():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
     }                                                                          %! krummzeit.silver_points()
 

@@ -2010,7 +2010,7 @@ B_Clarinet_Music_Voice = {                                                     %
     \f                                                                         %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_DYNAMIC
     ^ \baca-reapplied-indicator-markup "[“Cl. (Eb)”]"                          %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“ClarinetInEFlat”)"                   %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! baca.SegmentMaker._attach_color_literal(2):REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
     \set Staff.shortInstrumentName =                                           %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
     \markup {                                                                  %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
@@ -2035,29 +2035,29 @@ B_Clarinet_Music_Voice = {                                                     %
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
     btqs'!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [B Clarinet_Music_Voice measure 90 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
     d''4.                                                                      %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ctqs''!4.                                                                  %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     bqs'!4.                                                                    %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     a'4.                                                                       %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     bqs'!4.                                                                    %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     cs''!4.                                                                    %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     btqs'!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     d''4.                                                                      %! krummzeit.white_rhythm()
 
@@ -2162,38 +2162,38 @@ B_Clarinet_Music_Voice = {                                                     %
     d''4.                                                                      %! krummzeit.white_rhythm()
     - \tweak color #(x11-color 'DeepPink1)                                     %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ctqs''!4.                                                                  %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     e''4.                                                                      %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [B Clarinet_Music_Voice measure 113 / measure 25]                        %! baca.SegmentMaker._comment_measure_numbers()
     dqs''!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ctqs''!4.                                                                  %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     b'4.                                                                       %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ctqs''!4.                                                                  %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     d''4.                                                                      %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ctqs''!4.                                                                  %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     e''4.                                                                      %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     dqs''!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ctqs''!4                                                                   %! krummzeit.white_rhythm()
 
@@ -2224,7 +2224,7 @@ B_Clarinet_Music_Voice = {                                                     %
 
     % [B Clarinet_Music_Voice measure 118 / measure 30]                        %! baca.SegmentMaker._comment_measure_numbers()
     b'4.                                                                       %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ctqs''!4.                                                                  %! krummzeit.white_rhythm()
 
@@ -2255,37 +2255,37 @@ B_Clarinet_Music_Voice = {                                                     %
 
     % [B Clarinet_Music_Voice measure 120 / measure 32]                        %! baca.SegmentMaker._comment_measure_numbers()
     e''4.                                                                      %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     btqs'!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     fs''!4.                                                                    %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     eqs''!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     dqs''!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     cs''!4.                                                                    %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     dqs''!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     e''4.                                                                      %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     btqs'!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     fs''!4.                                                                    %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     eqs''!4.                                                                   %! krummzeit.white_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     dqs''!8                                                                    %! krummzeit.white_rhythm()
 
@@ -4286,16 +4286,16 @@ B_Violin_Music_Voice = {                                                       %
     ^ \markup { "allow bowing to convey accelerando" }                         %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     g1                                                                         %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ftqs!\breve                                                                %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     g1.                                                                        %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     ftqs!2                                                                     %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -4457,7 +4457,7 @@ B_Viola_Music_Voice = {                                                        %
         ^ \markup { "molto flautando" }                                        %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         dtqs!8                                                                 %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -4499,7 +4499,7 @@ B_Viola_Music_Voice = {                                                        %
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(1):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         eqs!1                                                                  %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -4541,7 +4541,7 @@ B_Viola_Music_Voice = {                                                        %
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(1):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         c4                                                                     %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -4583,7 +4583,7 @@ B_Viola_Music_Voice = {                                                        %
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(1):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         e2                                                                     %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -4625,7 +4625,7 @@ B_Viola_Music_Voice = {                                                        %
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(1):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         f4                                                                     %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -4648,7 +4648,7 @@ B_Viola_Music_Voice = {                                                        %
 
         % [B Viola_Music_Voice measure 104 / measure 16]                       %! baca.SegmentMaker._comment_measure_numbers()
         f4                                                                     %! krummzeit.single_division_tuplets()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         eqs!1                                                                  %! krummzeit.single_division_tuplets()
         ~                                                                      %! krummzeit.single_division_tuplets()
@@ -4669,7 +4669,7 @@ B_Viola_Music_Voice = {                                                        %
 
         % [B Viola_Music_Voice measure 106 / measure 18]                       %! baca.SegmentMaker._comment_measure_numbers()
         eqs!2                                                                  %! krummzeit.single_division_tuplets()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         dqs!4                                                                  %! krummzeit.single_division_tuplets()
         ~                                                                      %! krummzeit.single_division_tuplets()
@@ -4690,7 +4690,7 @@ B_Viola_Music_Voice = {                                                        %
 
         % [B Viola_Music_Voice measure 108 / measure 20]                       %! baca.SegmentMaker._comment_measure_numbers()
         dqs!8                                                                  %! krummzeit.single_division_tuplets()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         c2                                                                     %! krummzeit.single_division_tuplets()
         ~                                                                      %! krummzeit.single_division_tuplets()
@@ -4711,7 +4711,7 @@ B_Viola_Music_Voice = {                                                        %
 
         % [B Viola_Music_Voice measure 110 / measure 22]                       %! baca.SegmentMaker._comment_measure_numbers()
         c2                                                                     %! krummzeit.single_division_tuplets()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         dqs!4                                                                  %! krummzeit.single_division_tuplets()
         ~                                                                      %! krummzeit.single_division_tuplets()
@@ -4790,26 +4790,26 @@ B_Viola_Music_Voice = {                                                        %
     ^ \markup { "allow bowing to convey accelerando" }                         %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     c\breve                                                                    %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     bqs,!1.                                                                    %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     cqs!1                                                                      %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     btqs,!\breve                                                               %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     c1.                                                                        %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [B Viola_Music_Voice measure 129 / measure 41]                           %! baca.SegmentMaker._comment_measure_numbers()
     bqs,!1                                                                     %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     cqs!2.                                                                     %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -4969,7 +4969,7 @@ B_Cello_Music_Voice = {                                                        %
         ^ \markup { "molto flautando" }                                        %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         ctqs,!4                                                                %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -5011,7 +5011,7 @@ B_Cello_Music_Voice = {                                                        %
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(1):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         dqs,!2                                                                 %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -5053,7 +5053,7 @@ B_Cello_Music_Voice = {                                                        %
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(1):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         b,,2                                                                   %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -5095,7 +5095,7 @@ B_Cello_Music_Voice = {                                                        %
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(1):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         d,4                                                                    %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -5137,7 +5137,7 @@ B_Cello_Music_Voice = {                                                        %
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(1):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         e,2                                                                    %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
@@ -5160,7 +5160,7 @@ B_Cello_Music_Voice = {                                                        %
 
         % [B Cello_Music_Voice measure 104 / measure 16]                       %! baca.SegmentMaker._comment_measure_numbers()
         e,1                                                                    %! krummzeit.single_division_tuplets()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         dqs,!2                                                                 %! krummzeit.single_division_tuplets()
         ~                                                                      %! krummzeit.single_division_tuplets()
@@ -5181,7 +5181,7 @@ B_Cello_Music_Voice = {                                                        %
 
         % [B Cello_Music_Voice measure 106 / measure 18]                       %! baca.SegmentMaker._comment_measure_numbers()
         dqs,!8                                                                 %! krummzeit.single_division_tuplets()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         cqs,!2                                                                 %! krummzeit.single_division_tuplets()
         ~                                                                      %! krummzeit.single_division_tuplets()
@@ -5202,7 +5202,7 @@ B_Cello_Music_Voice = {                                                        %
 
         % [B Cello_Music_Voice measure 108 / measure 20]                       %! baca.SegmentMaker._comment_measure_numbers()
         cqs,!2                                                                 %! krummzeit.single_division_tuplets()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         b,,4                                                                   %! krummzeit.single_division_tuplets()
         ~                                                                      %! krummzeit.single_division_tuplets()
@@ -5223,7 +5223,7 @@ B_Cello_Music_Voice = {                                                        %
 
         % [B Cello_Music_Voice measure 110 / measure 22]                       %! baca.SegmentMaker._comment_measure_numbers()
         b,,8                                                                   %! krummzeit.single_division_tuplets()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         dqs,!2                                                                 %! krummzeit.single_division_tuplets()
         ~                                                                      %! krummzeit.single_division_tuplets()
@@ -5300,23 +5300,23 @@ B_Cello_Music_Voice = {                                                        %
     ^ \markup { "allow bowing to convey accelerando" }                         %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(1):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     cqs,!1.                                                                    %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     bqf,,!1                                                                    %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     c,\breve                                                                   %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [B Cello_Music_Voice measure 126 / measure 38]                           %! baca.SegmentMaker._comment_measure_numbers()
     b,,1.                                                                      %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     cqs,!1                                                                     %! krummzeit.fused_expanse()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     % [B Cello_Music_Voice measure 129 / measure 41]                           %! baca.SegmentMaker._comment_measure_numbers()
     bqf,,!1..                                                                  %! krummzeit.fused_expanse()

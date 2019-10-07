@@ -2849,7 +2849,7 @@ H_Violin_Music_Voice = {                                                       %
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     af'!4                                                                      %! krummzeit.glissando_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     cs'!1                                                                      %! krummzeit.glissando_rhythm()
     ~                                                                          %! krummzeit.glissando_rhythm()
@@ -2859,17 +2859,17 @@ H_Violin_Music_Voice = {                                                       %
 
         % [H Violin_Music_Voice measure 284 / measure 4]                       %! baca.SegmentMaker._comment_measure_numbers()
         cs'!1                                                                  %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         c'2.                                                                   %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     }                                                                          %! krummzeit.glissando_rhythm()
 
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         d'4                                                                    %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         f2                                                                     %! krummzeit.glissando_rhythm()
         ~                                                                      %! krummzeit.glissando_rhythm()
@@ -2880,17 +2880,17 @@ H_Violin_Music_Voice = {                                                       %
 
         % [H Violin_Music_Voice measure 285 / measure 5]                       %! baca.SegmentMaker._comment_measure_numbers()
         f16                                                                    %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         bf'!4                                                                  %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     }                                                                          %! krummzeit.glissando_rhythm()
 
     \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         fs'!4                                                                  %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         b'8.                                                                   %! krummzeit.glissando_rhythm()
         ~                                                                      %! krummzeit.glissando_rhythm()
@@ -2900,7 +2900,7 @@ H_Violin_Music_Voice = {                                                       %
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         b'8                                                                    %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         af'!4                                                                  %! krummzeit.glissando_rhythm()
         \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():baca.OverrideCommand._call(2)
@@ -2941,7 +2941,7 @@ H_Violin_Music_Voice = {                                                       %
         d''2.                                                                  %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets()
@@ -3057,7 +3057,7 @@ H_Viola_Music_Voice = {                                                        %
         b2.                                                                    %! krummzeit.glissando_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         c1.                                                                    %! krummzeit.glissando_rhythm()
@@ -3068,7 +3068,7 @@ H_Viola_Music_Voice = {                                                        %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         c8                                                                     %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         e2                                                                     %! krummzeit.glissando_rhythm()
         ~                                                                      %! krummzeit.glissando_rhythm()
@@ -3079,15 +3079,15 @@ H_Viola_Music_Voice = {                                                        %
 
         % [H Viola_Music_Voice measure 284 / measure 4]                        %! baca.SegmentMaker._comment_measure_numbers()
         e2                                                                     %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         fs!4.                                                                  %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     }                                                                          %! krummzeit.glissando_rhythm()
 
     f4                                                                         %! krummzeit.glissando_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     af!2                                                                       %! krummzeit.glissando_rhythm()
     ~                                                                          %! krummzeit.glissando_rhythm()
@@ -3095,10 +3095,10 @@ H_Viola_Music_Voice = {                                                        %
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         af!8                                                                   %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         cs!2                                                                   %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     }                                                                          %! krummzeit.glissando_rhythm()
 
@@ -3106,7 +3106,7 @@ H_Viola_Music_Voice = {                                                        %
 
         % [H Viola_Music_Voice measure 285 / measure 5]                        %! baca.SegmentMaker._comment_measure_numbers()
         e4                                                                     %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         g8.                                                                    %! krummzeit.glissando_rhythm()
         ~                                                                      %! krummzeit.glissando_rhythm()
@@ -3116,7 +3116,7 @@ H_Viola_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         g4                                                                     %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         a2                                                                     %! krummzeit.glissando_rhythm()
         \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():baca.OverrideCommand._call(2)
@@ -3157,7 +3157,7 @@ H_Viola_Music_Voice = {                                                        %
         d4                                                                     %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a1                                                                     %! krummzeit.hypermeter_tuplets()
@@ -3272,17 +3272,17 @@ H_Cello_Music_Voice = {                                                        %
         a,4                                                                    %! krummzeit.glissando_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ppp                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         bf,!2                                                                  %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     }                                                                          %! krummzeit.glissando_rhythm()
 
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
         f,8.                                                                   %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         d,2.                                                                   %! krummzeit.glissando_rhythm()
         ~                                                                      %! krummzeit.glissando_rhythm()
@@ -3292,10 +3292,10 @@ H_Cello_Music_Voice = {                                                        %
     \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         d,2                                                                    %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         b,4.                                                                   %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
     }                                                                          %! krummzeit.glissando_rhythm()
 
@@ -3303,7 +3303,7 @@ H_Cello_Music_Voice = {                                                        %
 
         % [H Cello_Music_Voice measure 284 / measure 4]                        %! baca.SegmentMaker._comment_measure_numbers()
         bf,!4                                                                  %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         g,2                                                                    %! krummzeit.glissando_rhythm()
         ~                                                                      %! krummzeit.glissando_rhythm()
@@ -3311,16 +3311,16 @@ H_Cello_Music_Voice = {                                                        %
     }                                                                          %! krummzeit.glissando_rhythm()
 
     g,4                                                                        %! krummzeit.glissando_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     f,1                                                                        %! krummzeit.glissando_rhythm()
-    \glissando                                                                 %! baca.glissando()
+    \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     \times 4/7 {                                                               %! krummzeit.glissando_rhythm()
 
         % [H Cello_Music_Voice measure 285 / measure 5]                        %! baca.SegmentMaker._comment_measure_numbers()
         b,2                                                                    %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         c4.                                                                    %! krummzeit.glissando_rhythm()
         ~                                                                      %! krummzeit.glissando_rhythm()
@@ -3330,7 +3330,7 @@ H_Cello_Music_Voice = {                                                        %
     \times 2/3 {                                                               %! krummzeit.glissando_rhythm()
 
         c8                                                                     %! krummzeit.glissando_rhythm()
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         bf,!4                                                                  %! krummzeit.glissando_rhythm()
         \revert NoteHead.style                                                 %! baca.note_head_style_harmonic():baca.OverrideCommand._call(2)
@@ -3371,7 +3371,7 @@ H_Cello_Music_Voice = {                                                        %
         d2                                                                     %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        \glissando                                                             %! baca.glissando()
+        \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         eqf,!2.                                                                %! krummzeit.hypermeter_tuplets()

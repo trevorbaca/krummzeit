@@ -4612,7 +4612,7 @@ I_Percussion_Music_Voice = {                                                   %
     c'16                                                                       %! krummzeit.incise_attacks()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
     ^ \markup {                                                                %! baca.markup():baca.IndicatorCommand._call()
         \override                                                              %! baca.markup():baca.IndicatorCommand._call()
             #'(box-padding . 0.5)                                              %! baca.markup():baca.IndicatorCommand._call()
@@ -4633,7 +4633,7 @@ I_Percussion_Music_Voice = {                                                   %
     r2..                                                                       %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8.                                                                        %! krummzeit.incise_attacks()
 
@@ -4641,7 +4641,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4651,7 +4651,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4666,7 +4666,7 @@ I_Percussion_Music_Voice = {                                                   %
     r2.                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8.                                                                        %! krummzeit.incise_attacks()
 
@@ -4674,7 +4674,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4684,7 +4684,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4697,7 +4697,7 @@ I_Percussion_Music_Voice = {                                                   %
     r2.                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8.                                                                        %! krummzeit.incise_attacks()
 
@@ -4705,7 +4705,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4715,7 +4715,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4728,7 +4728,7 @@ I_Percussion_Music_Voice = {                                                   %
     r2                                                                         %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8.                                                                        %! krummzeit.incise_attacks()
 
@@ -4736,7 +4736,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4746,7 +4746,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4759,7 +4759,7 @@ I_Percussion_Music_Voice = {                                                   %
     r2                                                                         %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8.                                                                        %! krummzeit.incise_attacks()
 
@@ -4767,7 +4767,7 @@ I_Percussion_Music_Voice = {                                                   %
     r16                                                                        %! krummzeit.incise_attacks()
 
     c'16                                                                       %! krummzeit.incise_attacks()
-    - \laissezVibrer                                                           %! baca.laissez_vibrer():baca.IndicatorCommand._call()
+    \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 

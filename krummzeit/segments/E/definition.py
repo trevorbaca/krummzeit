@@ -379,7 +379,7 @@ maker(
     ("vn", (29, 34)),
     baca.dynamic("ppp"),
     baca.new(
-        baca.trill_spanner("A5"),
+        baca.trill_spanner(alteration="A5"),
         map=baca.qruns(),
         ),
     )

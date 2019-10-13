@@ -3896,12 +3896,12 @@ D_Percussion_Music_Voice = {                                                   %
             \box                                                               %! baca.markup():baca.IndicatorCommand._call()
                 "suspended cymbal"                                             %! baca.markup():baca.IndicatorCommand._call()
         }                                                                      %! baca.markup():baca.IndicatorCommand._call()
-    - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2)
-    - \baca-text-spanner-left-text "make_repeat_tied_notes()"                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2)
+    - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \baca-text-spanner-left-text "make_repeat_tied_notes()"                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak bound-details.right.padding #2.75                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT
-    - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2)
-    - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2)
-    \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2)
+    - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! -PARTS:baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_BAR_EXTENT
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_CLEF_REDRAW_COLOR
 
@@ -4199,15 +4199,15 @@ D_Violin_Music_Voice = {                                                       %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
+        \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
-        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \baca-text-spanner-left-text "molto flautando"                       %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \baca-text-spanner-right-text "molto gridato"                        %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak staff-padding #6                                              %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(2)
+        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \baca-text-spanner-left-text "molto flautando"                       %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \baca-text-spanner-right-text "molto gridato"                        %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak staff-padding #6                                              %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
 
         b''2                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
@@ -5016,7 +5016,7 @@ D_Viola_Music_Voice = {                                                        %
     \pp                                                                        %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     ^ \markup { "molto flautando e pont." }                                    %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-    \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
+    \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_CLEF_REDRAW_COLOR
 
@@ -5080,15 +5080,15 @@ D_Viola_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
+        \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
-        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \baca-text-spanner-left-text "molto flautando"                       %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \baca-text-spanner-right-text "molto gridato"                        %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak staff-padding #6                                              %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(2)
+        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \baca-text-spanner-left-text "molto flautando"                       %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \baca-text-spanner-right-text "molto gridato"                        %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak staff-padding #6                                              %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
 
         f''4                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
@@ -6053,15 +6053,15 @@ D_Cello_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \pp                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
-        \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
+        \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
-        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \baca-text-spanner-left-text "molto flautando"                       %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \baca-text-spanner-right-text "molto gridato"                        %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        - \tweak staff-padding #6                                              %! baca.text_spanner():baca.PiecewiseCommand._call(2)
-        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(2)
+        - \abjad-dashed-line-with-arrow                                        %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \baca-text-spanner-left-text "molto flautando"                       %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \baca-text-spanner-right-text "molto gridato"                        %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak bound-details.right.padding #0.5                              %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak bound-details.right.stencil-align-dir-y #center               %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        - \tweak staff-padding #6                                              %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
+        \startTextSpan                                                         %! baca.text_spanner():baca.PiecewiseCommand._call(2):SPANNER_START
 
         fs''!2                                                                 %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando():abjad.glissando(7)

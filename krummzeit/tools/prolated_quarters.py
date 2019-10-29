@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def prolated_quarters(
-    extra_counts: abjad.IntegerSequence
+    extra_counts: abjad.IntegerSequence,
 ) -> baca.RhythmCommand:
     """
     Makes prolated quarters.

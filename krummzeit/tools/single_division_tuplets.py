@@ -4,7 +4,7 @@ from abjadext import rmakers
 
 
 def single_division_tuplets(
-    ratios: abjad.RatioSequenceTyping
+    ratios: abjad.RatioSequenceTyping,
 ) -> baca.RhythmCommand:
     """
     Makes single-division tuplet rhythm.

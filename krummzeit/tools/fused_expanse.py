@@ -5,7 +5,7 @@ from abjadext import rmakers
 
 
 def fused_expanse(
-    divisions: typing.List[abjad.DurationTyping]
+    divisions: typing.List[abjad.DurationTyping],
 ) -> baca.RhythmCommand:
     """
     Makes fused expanse rhythm.

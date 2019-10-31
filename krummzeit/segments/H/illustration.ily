@@ -302,24 +302,36 @@ H_Oboe_Music_Voice = {                                                         %
     - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \startTrillSpan                                                            %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [H Oboe_Music_Voice measure 285 / measure 5]                             %! baca.SegmentMaker._comment_measure_numbers()
     d''2.                                                                      %! baca.make_repeat_tied_notes()
     \repeatTie                                                                 %! baca.make_repeat_tied_notes()
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [H Oboe_Music_Voice measure 286 / measure 6]                             %! baca.SegmentMaker._comment_measure_numbers()
     d''2..
     \repeatTie
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     d''4
     \repeatTie
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     d''4
     \repeatTie
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [H Oboe_Music_Voice measure 287 / measure 7]                             %! baca.SegmentMaker._comment_measure_numbers()
     d''4.
     \repeatTie
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     d''4
     \repeatTie
@@ -487,6 +499,8 @@ H_Clarinet_Music_Voice = {                                                     %
     - \tweak color #darkcyan                                                   %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak staff-padding #8                                                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     \bacaStartTextSpanRhythmAnnotation                                         %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
+    - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
+    ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
 
     % [H Clarinet_Music_Voice measure 285 / measure 5]                         %! baca.SegmentMaker._comment_measure_numbers()
     b'2.                                                                       %! baca.make_repeat_tied_notes()
@@ -2858,7 +2872,7 @@ H_Violin_Music_Voice = {                                                       %
     \times 5/7 {                                                               %! krummzeit.glissando_rhythm()
 
         % [H Violin_Music_Voice measure 284 / measure 4]                       %! baca.SegmentMaker._comment_measure_numbers()
-        cs'!1                                                                  %! krummzeit.glissando_rhythm()
+        cs'1                                                                   %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         c'2.                                                                   %! krummzeit.glissando_rhythm()
@@ -3094,7 +3108,7 @@ H_Viola_Music_Voice = {                                                        %
 
     \times 4/5 {                                                               %! krummzeit.glissando_rhythm()
 
-        af!8                                                                   %! krummzeit.glissando_rhythm()
+        af8                                                                    %! krummzeit.glissando_rhythm()
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         cs!2                                                                   %! krummzeit.glissando_rhythm()

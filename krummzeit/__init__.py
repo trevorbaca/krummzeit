@@ -24,5 +24,4 @@ from krummzeit.materials.time_signature_inventory.definition import (
 from krummzeit.materials.violet_pitch_classes.definition import (
     violet_pitch_classes,
 )
-from krummzeit import segments
 from krummzeit.tools import MarkupLibrary as markup

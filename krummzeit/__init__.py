@@ -8,6 +8,7 @@ if not (
     raise ImportError("Requires Python 3.7.")
 del distutils
 del platform
+from .ScoreTemplate import ScoreTemplate
 from krummzeit.tools import *
 from krummzeit.materials.indigo_pitch_classes.definition import (
     indigo_pitch_classes,

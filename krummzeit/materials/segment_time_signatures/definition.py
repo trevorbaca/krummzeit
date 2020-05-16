@@ -1,9 +1,8 @@
-import baca
 import abjad
+import baca
 from krummzeit.materials.time_signature_inventory.definition import (
     time_signature_inventory,
 )
-
 
 segment_time_signatures = abjad.OrderedDict()
 

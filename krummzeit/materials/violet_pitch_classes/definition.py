@@ -1,6 +1,5 @@
 import baca
 
-
 maker = baca.ZaggedPitchClassMaker(
     pc_cells=[[8, 4, 3, 2, 11], [5, 4, 6, 8, 7], [9, 6, 5, 0, 11, 10]],
     division_ratios=[

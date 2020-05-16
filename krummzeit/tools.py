@@ -1,9 +1,9 @@
+import typing
+
 import abjad
 import baca
-import typing
 from abjadext import rmakers
-from krummzeit.materials import margin_markups
-from krummzeit.materials import instruments
+from krummzeit.materials import instruments, margin_markups
 
 
 class MarkupLibrary(object):

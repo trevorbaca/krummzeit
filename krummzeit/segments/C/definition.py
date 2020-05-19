@@ -32,7 +32,7 @@ time_signatures = maker_.run()
 maker = baca.SegmentMaker(
     activate=[
         abjad.tags.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
@@ -120,7 +120,7 @@ maker(
         ("vn", (1, 9)),
         ("va", (1, 9)),
         ("vc", (1, 9)),
-        ]),
+    ]),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=abjad.const.HIDDEN),
@@ -259,7 +259,7 @@ maker(
     [
         ("va", (11, 12)),
         (["va", "vn", "vc"], (14, 16)),
-        ],
+    ],
     baca.make_repeat_tied_notes(),
 )
 

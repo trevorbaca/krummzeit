@@ -36,7 +36,7 @@ time_signatures = maker_.run()
 maker = baca.SegmentMaker(
     activate=[
         abjad.tags.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     ignore_repeat_pitch_classes=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
@@ -206,7 +206,7 @@ maker(
         ("vn", (5, 9)),
         ("va", (5, 9)),
         ("vc", (5, 9)),
-        ]),
+    ]),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=abjad.const.HIDDEN),
@@ -279,7 +279,7 @@ maker(
         ("vn", 22),
         ("va", 22),
         ("vc", 22),
-        ]),
+    ]),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=abjad.const.HIDDEN),

@@ -13,10 +13,10 @@ breaks = baca.breaks(
     baca.page([35, top, systems]),
     baca.page([38, top, systems]),
     baca.page([43, top, systems]),
-    )
+)
 
 spacing = baca.scorewide_spacing(
     __file__,
     breaks=breaks,
     fallback_duration=(1, 40),
-    )
+)

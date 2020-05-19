@@ -29,7 +29,7 @@ time_signatures = maker_.run()
 maker = baca.SegmentMaker(
     activate=[
         abjad.tags.LOCAL_MEASURE_NUMBER,
-        ],
+    ],
     check_all_are_pitched=True,
     segment_directory=abjad.Path(os.path.realpath(__file__)).parent,
     stage_markup=stage_markup,
@@ -131,7 +131,7 @@ maker(
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(baca.tuplets().get([0, 1], 7)),
-)
+    )
 )
 
 maker(
@@ -230,7 +230,7 @@ maker(
         ("vn", (4, 8)),
         ("va", (4, 8)),
         ("vc", (4, 8)),
-        ]),
+    ]),
     baca.pitches(pcs)
 )
 

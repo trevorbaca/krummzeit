@@ -96,7 +96,6 @@ class MarkupLibrary(object):
 
     @staticmethod
     def tam_tam():
-        string = "tam-tam"
         return baca.markups.tam_tam().boxed()
 
 

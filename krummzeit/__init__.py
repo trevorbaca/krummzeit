@@ -1,8 +1,6 @@
 import distutils.version
 import platform
 
-from krummzeit.tools import MarkupLibrary as markup
-
 from .ScoreTemplate import ScoreTemplate
 from .materials import (
     indigo_pitch_classes,
@@ -13,6 +11,7 @@ from .materials import (
     time_signature_inventory,
     violet_pitch_classes,
 )
+from .tools import MarkupLibrary as markup
 from .tools import (
     RegisterTransitionCommand,
     closing_pizzicati,

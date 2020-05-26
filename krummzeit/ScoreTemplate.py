@@ -4,7 +4,7 @@ import krummzeit
 
 
 class ScoreTemplate(baca.ScoreTemplate):
-    r"""
+    """
     Score template.
 
     >>> import krummzeit
@@ -196,29 +196,3 @@ class ScoreTemplate(baca.ScoreTemplate):
         self._assert_unique_context_names(score)
         self._assert_matching_custom_context_names(score)
         return score
-
-    ### PUBLIC PROPERTIES ###
-
-    @property
-    def voice_abbreviations(self):
-        """
-        Gets voice abbreviations.
-
-        ..  container:: example
-
-            >>> score_template = krummzeit.ScoreTemplate()
-            >>> abjad.f(score_template.voice_abbreviations)
-            abjad.OrderedDict(
-                [
-                    ('ob', 'Oboe_Music_Voice'),
-                    ('cl', 'Clarinet_Music_Voice'),
-                    ('pf', 'Piano_Music_Voice'),
-                    ('perc', 'Percussion_Music_Voice'),
-                    ('vn', 'Violin_Music_Voice'),
-                    ('va', 'Viola_Music_Voice'),
-                    ('vc', 'Cello_Music_Voice'),
-                    ]
-                )
-
-        """
-        return super(ScoreTemplate, self).voice_abbreviations

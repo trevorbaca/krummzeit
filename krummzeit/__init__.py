@@ -1,17 +1,8 @@
 import distutils.version
 import platform
 
+from .MarkupLibrary import MarkupLibrary as markup
 from .ScoreTemplate import ScoreTemplate
-from .materials import (
-    indigo_pitch_classes,
-    instruments,
-    margin_markups,
-    metronome_marks,
-    segment_time_signatures,
-    time_signature_inventory,
-    violet_pitch_classes,
-)
-from .tools import MarkupLibrary as markup
 from .tools import (
     RegisterTransitionCommand,
     closing_pizzicati,
@@ -27,9 +18,13 @@ from .tools import (
     incise_attacks,
     incise_chain,
     incise_chain_b,
+    indigo_pitch_classes,
     instrument,
+    instruments,
     left_remainder_quarters,
     margin_markup,
+    margin_markups,
+    metronome_marks,
     oboe_trills,
     opening_triplets,
     piano_harmonics,
@@ -41,10 +36,13 @@ from .tools import (
     register_wide,
     rest_delimited_repeated_duration_notes,
     right_remainder_quarters,
+    segment_time_signatures,
     silver_points,
     single_cluster_piano_rhythm,
     single_division_tuplets,
     sponge_rhythm,
+    time_signature_inventory,
+    violet_pitch_classes,
     white_rhythm,
 )
 

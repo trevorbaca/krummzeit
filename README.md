@@ -2,8 +2,8 @@ Krummzeit
 =========
 
 [![Build Status](
-    https://travis-ci.org/trevorbaca/krummzeit.svg)](
-    https://travis-ci.org/trevorbaca/krummzeit)
+    https://api.travis-ci.org/trevorbaca/krummzeit.svg)](
+    https://api.travis-ci.org/trevorbaca/krummzeit)
 <!---
 [![Code style: black](
     https://img.shields.io/badge/code%20style-black-000000.svg)](

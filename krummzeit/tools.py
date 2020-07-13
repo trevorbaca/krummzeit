@@ -150,7 +150,7 @@ assert len(numerator_lists) == 12
 
 
 def numerator_to_time_signature(numerator):
-    if abjad.mathtools.is_integer_equivalent_number(numerator):
+    if abjad.mathx.is_integer_equivalent_number(numerator):
         time_signature = abjad.TimeSignature((numerator, 4))
     else:
         time_signature = abjad.TimeSignature((int(2 * numerator), 8))

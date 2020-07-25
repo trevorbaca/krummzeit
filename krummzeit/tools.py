@@ -1,5 +1,7 @@
 import typing
 
+import quicktions
+
 import abjad
 import baca
 from abjadext import rmakers
@@ -72,7 +74,7 @@ metronome_marks = abjad.OrderedDict(
             "67.5",
             abjad.MetronomeMark(
                 reference_duration=(1, 4),
-                units_per_minute=abjad.Fraction(135, 2),
+                units_per_minute=quicktions.Fraction(135, 2),
                 custom_markup=abjad.Markup.abjad_metronome_mark(2, 0, 1, 67.5),
             ),
         ),

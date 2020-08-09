@@ -1,4 +1,4 @@
-I_Global_Rests = {                                                             %! abjad.Path.extern()
+I_Global_Rests = {                                                             %! ide.Path.extern()
 
     % [I Global_Rests measure 291 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
     R1 * 1                                                                     %! baca.SegmentMaker._make_global_rests(1)
@@ -74,10 +74,10 @@ I_Global_Rests = {                                                             %
     % [I Global_Rests measure 314 / measure 24]                                %! baca.SegmentMaker._comment_measure_numbers():baca.SegmentMaker._style_phantom_measures(4):PHANTOM
     R1 * 1/4                                                                   %! baca.SegmentMaker._make_global_rests(2):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Global_Skips = {                                                             %! abjad.Path.extern()
+I_Global_Skips = {                                                             %! ide.Path.extern()
 
     % [I Global_Skips measure 291 / measure 1]                                 %! baca.SegmentMaker._comment_measure_numbers()
     \time 4/4                                                                  %! baca.SegmentMaker._make_global_skips(2):baca.SegmentMaker._set_status_tag():EXPLICIT_TIME_SIGNATURE
@@ -528,10 +528,10 @@ I_Global_Skips = {                                                             %
     \once \override Score.BarLine.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
     \once \override Score.SpanBar.transparent = ##t                            %! baca.SegmentMaker._style_phantom_measures(3):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Oboe_Music_Voice = {                                                         %! abjad.Path.extern()
+I_Oboe_Music_Voice = {                                                         %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
     \times 8/5 {                                                               %! krummzeit.hypermeter_tuplets()
@@ -717,18 +717,18 @@ I_Oboe_Music_Voice = {                                                         %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Oboe_Music_Staff = {                                                         %! abjad.Path.extern()
+I_Oboe_Music_Staff = {                                                         %! ide.Path.extern()
 
     \context Voice = "Oboe_Music_Voice"                                        %! krummzeit.ScoreTemplate.__call__()
-    \I_Oboe_Music_Voice                                                        %! abjad.Path.extern()
+    \I_Oboe_Music_Voice                                                        %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Clarinet_Music_Voice = {                                                     %! abjad.Path.extern()
+I_Clarinet_Music_Voice = {                                                     %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
     \times 8/5 {                                                               %! krummzeit.hypermeter_tuplets()
@@ -1009,18 +1009,18 @@ I_Clarinet_Music_Voice = {                                                     %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Clarinet_Music_Staff = {                                                     %! abjad.Path.extern()
+I_Clarinet_Music_Staff = {                                                     %! ide.Path.extern()
 
     \context Voice = "Clarinet_Music_Voice"                                    %! krummzeit.ScoreTemplate.__call__()
-    \I_Clarinet_Music_Voice                                                    %! abjad.Path.extern()
+    \I_Clarinet_Music_Voice                                                    %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Piano_Music_Voice = {                                                        %! abjad.Path.extern()
+I_Piano_Music_Voice = {                                                        %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
     \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets()
@@ -4544,18 +4544,18 @@ I_Piano_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Piano_Music_Staff = {                                                        %! abjad.Path.extern()
+I_Piano_Music_Staff = {                                                        %! ide.Path.extern()
 
     \context Voice = "Piano_Music_Voice"                                       %! krummzeit.ScoreTemplate.__call__()
-    \I_Piano_Music_Voice                                                       %! abjad.Path.extern()
+    \I_Piano_Music_Voice                                                       %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Percussion_Music_Voice = {                                                   %! abjad.Path.extern()
+I_Percussion_Music_Voice = {                                                   %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
     \times 8/7 {                                                               %! krummzeit.hypermeter_tuplets()
@@ -4861,18 +4861,18 @@ I_Percussion_Music_Voice = {                                                   %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Percussion_Music_Staff = {                                                   %! abjad.Path.extern()
+I_Percussion_Music_Staff = {                                                   %! ide.Path.extern()
 
     \context Voice = "Percussion_Music_Voice"                                  %! krummzeit.ScoreTemplate.__call__()
-    \I_Percussion_Music_Voice                                                  %! abjad.Path.extern()
+    \I_Percussion_Music_Voice                                                  %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Violin_Music_Voice = {                                                       %! abjad.Path.extern()
+I_Violin_Music_Voice = {                                                       %! ide.Path.extern()
 
     \times 2/3 {                                                               %! krummzeit.opening_triplets()
 
@@ -5348,18 +5348,18 @@ I_Violin_Music_Voice = {                                                       %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Violin_Music_Staff = {                                                       %! abjad.Path.extern()
+I_Violin_Music_Staff = {                                                       %! ide.Path.extern()
 
     \context Voice = "Violin_Music_Voice"                                      %! krummzeit.ScoreTemplate.__call__()
-    \I_Violin_Music_Voice                                                      %! abjad.Path.extern()
+    \I_Violin_Music_Voice                                                      %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Viola_Music_Voice = {                                                        %! abjad.Path.extern()
+I_Viola_Music_Voice = {                                                        %! ide.Path.extern()
 
     \times 2/3 {                                                               %! krummzeit.opening_triplets()
 
@@ -5833,18 +5833,18 @@ I_Viola_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Viola_Music_Staff = {                                                        %! abjad.Path.extern()
+I_Viola_Music_Staff = {                                                        %! ide.Path.extern()
 
     \context Voice = "Viola_Music_Voice"                                       %! krummzeit.ScoreTemplate.__call__()
-    \I_Viola_Music_Voice                                                       %! abjad.Path.extern()
+    \I_Viola_Music_Voice                                                       %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Cello_Music_Voice = {                                                        %! abjad.Path.extern()
+I_Cello_Music_Voice = {                                                        %! ide.Path.extern()
 
     \times 2/3 {                                                               %! krummzeit.opening_triplets()
 
@@ -6320,12 +6320,12 @@ I_Cello_Music_Voice = {                                                        %
 
     >>                                                                         %! baca.SegmentMaker._make_multimeasure_rest_container(7):PHANTOM
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()
 
 
-I_Cello_Music_Staff = {                                                        %! abjad.Path.extern()
+I_Cello_Music_Staff = {                                                        %! ide.Path.extern()
 
     \context Voice = "Cello_Music_Voice"                                       %! krummzeit.ScoreTemplate.__call__()
-    \I_Cello_Music_Voice                                                       %! abjad.Path.extern()
+    \I_Cello_Music_Voice                                                       %! ide.Path.extern()
 
-}                                                                              %! abjad.Path.extern()
+}                                                                              %! ide.Path.extern()

@@ -199,12 +199,12 @@ maker(
     baca.dynamic("p"),
     baca.new(
         baca.trill_spanner(),
-        map=baca.plts(exclude=abjad.const.HIDDEN).filter_preprolated(">=", (1, 4)),
+        map=baca.plts(exclude=baca.const.HIDDEN).filter_preprolated(">=", (1, 4)),
     ),
     baca.suite(
         baca.pitches(
             pcs_,
-            selector=baca.plts(exclude=abjad.const.HIDDEN),
+            selector=baca.plts(exclude=baca.const.HIDDEN),
         ),
         krummzeit.displacement(),
         krummzeit.register_wide(5),
@@ -250,7 +250,7 @@ maker(
     ("ob", (12, 21)),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -260,7 +260,7 @@ maker(
     ("cl", (12, 21)),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -280,7 +280,7 @@ maker(
     (strings, (12, 20)),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -318,10 +318,10 @@ maker(
     baca.dynamic("p"),
     baca.pitch(
         "F5",
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
     baca.staccatissimo(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -329,7 +329,7 @@ maker(
     ("va", (23, 35)),
     baca.pitch(
         "F#3",
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -337,7 +337,7 @@ maker(
     ("vc", (23, 35)),
     baca.pitch(
         "C2",
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -404,12 +404,12 @@ maker(
     baca.dynamic("fff"),
     baca.ottava(),
     baca.staccatissimo(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.suite(
         baca.pitches(
             pcs,
-            selector=baca.plts(exclude=abjad.const.HIDDEN),
+            selector=baca.plts(exclude=baca.const.HIDDEN),
         ),
         krummzeit.displacement(),
         krummzeit.register_narrow(7),

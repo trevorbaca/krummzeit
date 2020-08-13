@@ -217,7 +217,7 @@ maker(
     (["vn", "va", "vc"], (1, 2)),
     baca.dynamic("fff"),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=abjad.const.HIDDEN),
+        selector=baca.pleaves(exclude=baca.const.HIDDEN),
     ),
 )
 

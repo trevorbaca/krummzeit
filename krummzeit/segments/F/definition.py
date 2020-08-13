@@ -169,7 +169,7 @@ maker(
     ("perc", (2, 16)),
     baca.dynamic("ppp"),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=abjad.const.HIDDEN),
+        selector=baca.pleaves(exclude=baca.const.HIDDEN),
     ),
     baca.markup(
         krummzeit.markup.fingertips(),
@@ -238,7 +238,7 @@ maker(
     ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 

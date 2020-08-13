@@ -272,7 +272,7 @@ maker(
     ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -281,7 +281,7 @@ maker(
     baca.dynamic("pp"),
     baca.markup("leggierissimo"),
     baca.staccato(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.suite(
         krummzeit.displacement(),
@@ -310,7 +310,7 @@ maker(
     baca.dynamic("pp"),
     baca.markup("leggierissimo"),
     baca.staccato(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -319,7 +319,7 @@ maker(
     baca.dynamic("pp"),
     baca.markup("leggierissimo: off-string bowing on staccati"),
     baca.staccato(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -370,7 +370,7 @@ maker(
     ]),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 

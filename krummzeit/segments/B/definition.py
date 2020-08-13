@@ -283,7 +283,7 @@ maker(
     baca.pitches(
         pcs_,
         allow_repeats=True,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -293,7 +293,7 @@ maker(
     baca.new(
         baca.trill_spanner(),
         map=baca.plts(
-            exclude=abjad.const.HIDDEN).filter_preprolated(">=", (1, 4)),
+            exclude=baca.const.HIDDEN).filter_preprolated(">=", (1, 4)),
     ),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),
@@ -330,7 +330,7 @@ maker(
     baca.dynamic("f"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=abjad.const.HIDDEN),
+        map=baca.runs(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -338,7 +338,7 @@ maker(
     ("va", (1, 23)),
     baca.pitches(
         "e dtqs f eqs dqs c dqs",
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -347,7 +347,7 @@ maker(
     baca.clef("alto"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=abjad.const.HIDDEN),
+        map=baca.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.markup("molto flautando"),
@@ -362,7 +362,7 @@ maker(
             "ff > pp",
             selector=baca.tleaves()[:2],
         ),
-        map=baca.runs(exclude=abjad.const.HIDDEN),
+        map=baca.runs(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -370,7 +370,7 @@ maker(
     ("vc", (1, 23)),
     baca.pitches(
         "d, ctqs, e, dqs, cqs, b,, dqs,",
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -379,7 +379,7 @@ maker(
     baca.clef("bass"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=abjad.const.HIDDEN),
+        map=baca.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.markup("molto flautando"),
@@ -395,7 +395,7 @@ maker(
     ("vn", (22, 28)),
     baca.pitches(
         pcs_,
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -424,7 +424,7 @@ maker(
     ("pf", [(14, 20), (28, 35)]),
     baca.pitch(
         "C#6",
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -432,7 +432,7 @@ maker(
     ("perc", [(14, 20), (28, 33)]),
     baca.pitch(
         "C#6",
-        selector=baca.plts(exclude=abjad.const.HIDDEN),
+        selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -440,7 +440,7 @@ maker(
     (["pf", "perc"], (14, 20)),
     baca.dynamic("ff"),
     baca.staccatissimo(
-        selector=baca.pheads(exclude=abjad.const.HIDDEN),
+        selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -482,7 +482,7 @@ maker(
     (["vn", "va", "vc"], (32, 42)),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=abjad.const.HIDDEN),
+        map=baca.runs(exclude=baca.const.HIDDEN),
     ),
     baca.hairpin(
         "pp < fff",

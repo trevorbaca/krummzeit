@@ -342,7 +342,8 @@ maker(
     baca.instrument(krummzeit.instruments["Percussion"]),
     baca.make_repeat_tied_notes(),
     baca.markup(
-        krummzeit.markup.stonecircle_scrape_at_moderate_speed(),
+        r"\krummzeit-stonecircle-scrape-at-moderate-speed",
+        literal=True,
         boxed=True,
     ),
     baca.staff_position(0),

@@ -151,7 +151,8 @@ maker(
     baca.dynamic("f"),
     baca.instrument(krummzeit.instruments["Percussion"]),
     baca.markup(
-        krummzeit.markup.scraped_slate(),
+        r"\baca-slate-scrape-markup",
+        literal=True,
     ),
     baca.staff_position(0),
 )
@@ -459,7 +460,8 @@ maker(
     baca.dynamic("ppp"),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.markup(
-        krummzeit.markup.fingertips(),
+        r"\krummzeit-fingertips",
+        literal=True,
     ),
 )
 
@@ -490,7 +492,8 @@ maker(
     ),
     baca.markup("non flautando"),
     baca.markup(
-        krummzeit.markup.show_tempo(),
+        r"\krummzeit-show-tempo",
+        literal=True,
     ),
 )
 

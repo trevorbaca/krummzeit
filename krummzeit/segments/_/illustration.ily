@@ -676,7 +676,7 @@ i_Piano_Music_Voice = {                                                        %
     <a, c e g>16
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \fff                                                                       %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \markup { "catch resonance (but not attack) with pedal" }                %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-catch-resonance                                               %! baca.markup():baca.IndicatorCommand._call()
     ^ \markup {
         \center-align
             \concat
@@ -991,7 +991,7 @@ i_Percussion_Music_Voice = {                                                   %
                 \box                                                           %! baca.markup():baca.IndicatorCommand._call()
                     sponges                                                    %! baca.markup():baca.IndicatorCommand._call()
             }                                                                  %! baca.markup():baca.IndicatorCommand._call()
-        ^ \markup { "accent changes of direction noticeably at each attack" }  %! baca.markup():baca.IndicatorCommand._call()
+        ^ \krummzeit-accent-changes                                            %! baca.markup():baca.IndicatorCommand._call()
         ^ \baca-explicit-indicator-markup "(“Percussion”)"                     %! EXPLICIT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
         \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_CLEF_REDRAW_COLOR
 

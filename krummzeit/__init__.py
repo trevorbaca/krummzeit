@@ -1,7 +1,6 @@
 import distutils.version
 import platform
 
-from .MarkupLibrary import MarkupLibrary as markup
 from .ScoreTemplate import ScoreTemplate
 from .tools import (
     RegisterTransitionCommand,
@@ -55,7 +54,6 @@ __all__ = [
     "segment_time_signatures",
     "time_signature_inventory",
     "violet_pitch_classes",
-    "markup",
     "RegisterTransitionCommand",
     "closing_pizzicati",
     "clusters",

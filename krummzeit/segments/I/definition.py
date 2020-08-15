@@ -215,11 +215,14 @@ maker(
     (["vn", "va", "vc"], (5, 9)),
     baca.alternate_bow_strokes(),
     baca.dynamic('"f"'),
+    baca.markup(
+        r"\krummzeit-on-bridge-full-bow",
+        literal=True,
+    ),
     baca.new(
         baca.glissando(),
         map=baca.runs(),
     ),
-    krummzeit.markup.on_bridge_full_bow(),
 )
 
 maker(

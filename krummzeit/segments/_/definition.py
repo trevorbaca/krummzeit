@@ -150,7 +150,8 @@ maker(
     ("pf", 4),
     baca.dynamic("fff"),
     baca.markup(
-        krummzeit.markup.catch_resonance(),
+        r"\krummzeit-catch-resonance",
+        literal=True,
     ),
     krummzeit.clusters("tenor"),
     krummzeit.single_cluster_piano_rhythm(),
@@ -192,7 +193,8 @@ maker(
     baca.staff_position(0),
     krummzeit.instrument("Percussion"),
     baca.markup(
-        krummzeit.markup.accent_changes(),
+        r"\krummzeit-accent-changes",
+        literal=True,
     ),
     krummzeit.sponge_rhythm(),
 )

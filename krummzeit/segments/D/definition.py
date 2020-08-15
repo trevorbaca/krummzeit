@@ -256,7 +256,8 @@ maker(
     baca.glissando(),
     krummzeit.register_narrow(4),
     baca.markup(
-        krummzeit.markup.on_bridge_slow(),
+        r"\krummzeit-on-bridge-slow",
+        literal=True,
     ),
 )
 
@@ -266,7 +267,8 @@ maker(
     baca.glissando(),
     krummzeit.register_narrow(3),
     baca.markup(
-        krummzeit.markup.on_bridge_slow(),
+        r"\krummzeit-on-bridge-slow",
+        literal=True,
     ),
 )
 
@@ -279,7 +281,8 @@ maker(
     ),
     krummzeit.register_narrow(2),
     baca.markup(
-        krummzeit.markup.on_bridge_slow(),
+        r"\krummzeit-on-bridge-slow",
+        literal=True,
     ),
 )
 
@@ -392,7 +395,8 @@ maker(
         selector=baca.pleaves(exclude=baca.const.HIDDEN),
     ),
     baca.markup(
-        krummzeit.markup.fifth_harmonic_of_F1(),
+        r"\krummzeit-fifth-harmonic-of-F-one",
+        literal=True,
     ),
 )
 
@@ -505,7 +509,8 @@ maker(
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.markup(
-        krummzeit.markup.attackless_roll(),
+        r"\krummzeit-attackless-roll",
+        literal=True,
     ),
     baca.markup("suspended cymbal", boxed=True),
 )

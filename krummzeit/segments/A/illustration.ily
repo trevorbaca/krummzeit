@@ -8076,7 +8076,7 @@ A_Violin_Music_Voice = {                                                       %
         \override                                                              %! baca.markup():baca.IndicatorCommand._call()
             #'(box-padding . 0.5)                                              %! baca.markup():baca.IndicatorCommand._call()
             \box                                                               %! baca.markup():baca.IndicatorCommand._call()
-                "stonecircle: scrape at moderate speed"                        %! baca.markup():baca.IndicatorCommand._call()
+                \krummzeit-stonecircle-scrape-at-moderate-speed                %! baca.markup():baca.IndicatorCommand._call()
         }                                                                      %! baca.markup():baca.IndicatorCommand._call()
     ^ \baca-explicit-indicator-markup "(“Percussion”)"                         %! EXPLICIT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START

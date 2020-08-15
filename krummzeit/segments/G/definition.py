@@ -350,7 +350,8 @@ maker(
     baca.dls_staff_padding(4),
     baca.dynamic("ff-sempre"),
     baca.markup(
-        krummzeit.markup.fifth_harmonic_of_F1(),
+        r"\krummzeit-fifth-harmonic-of-F-one",
+        literal=True,
     ),
     baca.new(
         baca.tenuto(),

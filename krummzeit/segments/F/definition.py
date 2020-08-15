@@ -172,7 +172,8 @@ maker(
         selector=baca.pleaves(exclude=baca.const.HIDDEN),
     ),
     baca.markup(
-        krummzeit.markup.fingertips(),
+        r"\krummzeit-fingertips",
+        literal=True,
     ),
 )
 

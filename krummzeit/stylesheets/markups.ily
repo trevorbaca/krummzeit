@@ -10,21 +10,7 @@ krummzeit-colophon-markup = \markup {
         }
     }
 
-%%% METRONOME MARKS %%%
-
-krummzeit-seventy-two-subito-one-hundred-eight-markup = \markup
-    \concat {
-        \line
-            {
-                \abjad-metronome-mark-markup #2 #0 #1 #"72"
-                \hspace #-1
-                \upright !
-                \abjad-metronome-mark-markup #2 #0 #1 #"108"
-            }
-        \hspace #0.5
-    }
-
-%%% OTHER %%%
+%%% DIRECTIVES %%%
 
 krummzeit-accent-changes = \markup
     "accent changes of direction noticeably at each attack"
@@ -34,8 +20,6 @@ krummzeit-attackless-roll = \markup
 
 krummzeit-catch-resonance = \markup
     "catch resonance (but not attack) with pedal"
-
-%%% krummzeit-crotales
 
 krummzeit-fifth-harmonic-of-F-one = \markup
     "5th harmonic of F1"
@@ -52,21 +36,22 @@ krummzeit-on-bridge-slow = \markup
 krummzeit-scrape-moderately = \markup
     "scrape in a circle at moderate speed"
 
-%%% krummzeit-scraped-slate:
-
 krummzeit-show-tempo = \markup
     "allow bowing to convey accelerando"
-
-%%% krummzeit-snare-drum 
-
-%%% krummzeit-sponges:
 
 krummzeit-stonecircle-scrape-at-moderate-speed = \markup
     "stonecircle: scrape at moderate speed"
 
-krummzeit-subito-non-armonichi = \markup
-    "subito non armonichi e non gridato"
+%%% METRONOME MARKS %%%
 
-%%% krummzeit-suspended-cymbal:
-
-%%% krummzeit-tam-tam:
+krummzeit-seventy-two-subito-one-hundred-eight-markup = \markup
+    \concat {
+        \line
+            {
+                \abjad-metronome-mark-markup #2 #0 #1 #"72"
+                \hspace #-1
+                \upright !
+                \abjad-metronome-mark-markup #2 #0 #1 #"108"
+            }
+        \hspace #0.5
+    }

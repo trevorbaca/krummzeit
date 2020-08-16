@@ -29,9 +29,7 @@ instruments = abjad.OrderedDict(
 
 
 def _make_margin_markup(markup):
-    return abjad.MarginMarkup(
-        markup=baca.markups.instrument(markup, hcenter_in=16)
-    )
+    return abjad.MarginMarkup(markup=rf'\markup \hcenter-in #16 "{markup}"')
 
 
 clarinet_in_e_flat = abjad.Markup.center_column(

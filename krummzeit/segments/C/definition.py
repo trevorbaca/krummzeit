@@ -72,7 +72,7 @@ maker(
     ("perc", (1, 9)),
     baca.dynamic("ppp-ancora"),
     baca.make_repeat_tied_notes(),
-    baca.markup("snare drum", boxed=True),
+    baca.markup(r'\baca-boxed-markup "snare drum"', literal=True),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
 )
@@ -274,7 +274,7 @@ maker(
 maker(
     ("perc", (14, 19)),
     baca.make_repeated_duration_notes([(1, 4)]),
-    baca.markup("tam-tam", boxed=True),
+    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
     baca.staff_position(0),
 )
 

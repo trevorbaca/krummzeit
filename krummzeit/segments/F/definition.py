@@ -60,8 +60,8 @@ maker(
     ("perc", 1),
     baca.clef("percussion"),
     baca.markup(
-        "snare drum",
-        boxed=True,
+        r'\baca-boxed-markup "snare drum"',
+        literal=True,
         selector=baca.leaf(0),
     ),
 )
@@ -78,7 +78,7 @@ maker(
         [(1, 2)],
         do_not_rewrite_meter=True,
     ),
-    baca.markup("tam-tam", boxed=True),
+    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
     baca.staff_position(0),
 )
 

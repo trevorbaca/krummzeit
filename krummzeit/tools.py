@@ -643,7 +643,7 @@ def displacement() -> baca.OctaveDisplacementCommand:
     )
 
 
-def e_flat_clarinet_markup() -> baca.Markup:
+def e_flat_clarinet_markup() -> abjad.Markup:
     r"""
     Makes e-flat clarinet markup.
 
@@ -682,7 +682,7 @@ def e_flat_clarinet_markup() -> baca.Markup:
             abjad.Markup("clarinet"),
         ]
     )
-    return baca.Markup(contents=markup.contents)
+    return abjad.Markup(contents=markup.contents)
 
 
 def fused_expanse(

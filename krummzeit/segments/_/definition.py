@@ -1,3 +1,4 @@
+import abjad
 import baca
 import krummzeit
 from abjadext import rmakers
@@ -169,7 +170,7 @@ maker(
 maker(
     ("pf", 10),
     baca.markup(
-        baca.Markup("to harpsichord").boxed(),
+        abjad.Markup(r'\baca-boxed-markup "to harpsichord"', literal=True),
         selector=baca.leaf(0),
     ),
 )
@@ -178,7 +179,7 @@ maker(
     ("perc", 7),
     baca.dynamic("fff-poss"),
     baca.make_repeat_tied_notes(),
-    baca.markup("xylophone", boxed=True),
+    baca.markup(r'\baca-boxed-markup "xylophone"', literal=True),
     baca.pitch("C#5"),
     baca.stem_tremolo(selector=baca.pleaves()),
 )
@@ -189,7 +190,7 @@ maker(
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.dynamic('"ff"'),
-    baca.markup("sponges", boxed=True),
+    baca.markup(r'\baca-boxed-markup "sponges"', literal=True),
     baca.staff_position(0),
     krummzeit.instrument("Percussion"),
     baca.markup(

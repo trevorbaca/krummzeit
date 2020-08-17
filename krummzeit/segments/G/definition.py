@@ -139,7 +139,7 @@ maker(
         rmakers.force_rest(baca.lt(-1)),
         do_not_rewrite_meter=True,
     ),
-    baca.markup("tam-tam", boxed=True),
+    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
     baca.staff_position(0),
 )
 

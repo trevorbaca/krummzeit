@@ -248,7 +248,7 @@ maker(
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.make_repeat_tied_notes(),
-    baca.markup("snare drum", boxed=True),
+    baca.markup(r'\baca-boxed-markup "snare drum"', literal=True),
     baca.staff_position(0),
 )
 

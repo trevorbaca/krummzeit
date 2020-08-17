@@ -2454,24 +2454,7 @@ A_Clarinet_Music_Voice = {                                                     %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mp                                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     - \staccato                                                                %! baca.staccato():baca.IndicatorCommand._call()
-    ^ \markup {                                                                %! baca.markup():baca.IndicatorCommand._call()
-        \override                                                              %! baca.markup():baca.IndicatorCommand._call()
-            #'(box-padding . 0.5)                                              %! baca.markup():baca.IndicatorCommand._call()
-            \box                                                               %! baca.markup():baca.IndicatorCommand._call()
-                \line                                                          %! baca.markup():baca.IndicatorCommand._call()
-                    {                                                          %! baca.markup():baca.IndicatorCommand._call()
-                        \concat                                                %! baca.markup():baca.IndicatorCommand._call()
-                            {                                                  %! baca.markup():baca.IndicatorCommand._call()
-                                E                                              %! baca.markup():baca.IndicatorCommand._call()
-                                \raise                                         %! baca.markup():baca.IndicatorCommand._call()
-                                    #0.5                                       %! baca.markup():baca.IndicatorCommand._call()
-                                    \scale                                     %! baca.markup():baca.IndicatorCommand._call()
-                                        #'(0.65 . 0.65)                        %! baca.markup():baca.IndicatorCommand._call()
-                                        \flat                                  %! baca.markup():baca.IndicatorCommand._call()
-                            }                                                  %! baca.markup():baca.IndicatorCommand._call()
-                        clarinet                                               %! baca.markup():baca.IndicatorCommand._call()
-                    }                                                          %! baca.markup():baca.IndicatorCommand._call()
-        }                                                                      %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-boxed-markup \krummzeit-clarinet-in-e-flat                         %! baca.markup():baca.IndicatorCommand._call()
     ^ \baca-explicit-indicator-markup "(“ClarinetInEFlat”)"                    %! EXPLICIT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     ^ \baca-explicit-indicator-markup "[“Cl. (Eb)”]"                           %! EXPLICIT_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)          %! baca.SegmentMaker._attach_color_literal(2):REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
@@ -6038,12 +6021,7 @@ A_Percussion_Music_Voice = {                                                   %
     \baca-p-sempre                                                             %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
     \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
-    ^ \markup {                                                                %! baca.markup():baca.IndicatorCommand._call()
-        \override                                                              %! baca.markup():baca.IndicatorCommand._call()
-            #'(box-padding . 0.5)                                              %! baca.markup():baca.IndicatorCommand._call()
-            \box                                                               %! baca.markup():baca.IndicatorCommand._call()
-                tam-tam                                                        %! baca.markup():baca.IndicatorCommand._call()
-        }                                                                      %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-boxed-markup "tam-tam"                                             %! baca.markup():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -7987,12 +7965,7 @@ A_Violin_Music_Voice = {                                                       %
     c'2.                                                                       %! baca.make_repeat_tied_notes()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \mf                                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \markup {                                                                %! baca.markup():baca.IndicatorCommand._call()
-        \override                                                              %! baca.markup():baca.IndicatorCommand._call()
-            #'(box-padding . 0.5)                                              %! baca.markup():baca.IndicatorCommand._call()
-            \box                                                               %! baca.markup():baca.IndicatorCommand._call()
-                \krummzeit-stonecircle-scrape-at-moderate-speed                %! baca.markup():baca.IndicatorCommand._call()
-        }                                                                      %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed       %! baca.markup():baca.IndicatorCommand._call()
     ^ \baca-explicit-indicator-markup "(“Percussion”)"                         %! EXPLICIT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \baca-text-spanner-left-text "make_repeat_tied_notes()"                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START

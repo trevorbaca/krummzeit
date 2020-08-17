@@ -56,7 +56,7 @@ maker(
 maker(
     ("perc", (1, 3)),
     baca.staff_lines(1),
-    baca.markup("tam-tam", boxed=True),
+    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
     krummzeit.incise_attacks(),
 )
 
@@ -71,7 +71,7 @@ maker(
 
 maker(
     ("perc", (6, 16)),
-    baca.markup("sponges", boxed=True),
+    baca.markup(r'\baca-boxed-markup "sponges"', literal=True),
     krummzeit.sponge_rhythm(),
 )
 
@@ -512,7 +512,7 @@ maker(
         r"\krummzeit-attackless-roll",
         literal=True,
     ),
-    baca.markup("suspended cymbal", boxed=True),
+    baca.markup(r'\baca-boxed-markup "suspended cymbal"', literal=True),
 )
 
 ### VERTICAL ALIGNMENT ###

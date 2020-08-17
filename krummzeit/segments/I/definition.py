@@ -108,7 +108,7 @@ maker(
     ("perc", (3, 22)),
     baca.staff_lines(1),
     baca.clef("percussion"),
-    baca.markup("tam-tam", boxed=True),
+    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
     baca.staff_position(0),
     krummzeit.incise_attacks(),
 )

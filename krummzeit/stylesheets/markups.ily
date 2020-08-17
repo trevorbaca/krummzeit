@@ -21,6 +21,9 @@ krummzeit-attackless-roll = \markup
 krummzeit-catch-resonance = \markup
     "catch resonance (but not attack) with pedal"
 
+krummzeit-clarinet-in-e-flat = \markup
+  { Cl. \concat { (E \raise #0.5 \scale #'(0.65 . 0.65) \flat ) } }
+
 krummzeit-fifth-harmonic-of-F-one = \markup
     "5th harmonic of F1"
 

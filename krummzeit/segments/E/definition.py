@@ -85,7 +85,7 @@ maker(
 
 maker(
     ("perc", [(1, 14), (28, 34)]),
-    baca.markup("suspended cymbal", boxed=True),
+    baca.markup(r'\baca-boxed-markup "suspended cymbal"', literal=True),
     baca.staff_position(0),
     krummzeit.sponge_rhythm(),
 )

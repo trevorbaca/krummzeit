@@ -93,7 +93,7 @@ maker(
     ("perc", (5, 6)),
     baca.staff_lines(5),
     baca.clef("treble"),
-    baca.markup("crotale", boxed=True),
+    baca.markup(r'\baca-boxed-markup "crotale"', literal=True),
     baca.pitch("D5"),
     krummzeit.left_remainder_quarters(
         rmakers.force_rest(baca.lt(0))

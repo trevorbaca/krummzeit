@@ -32,21 +32,9 @@ def _make_margin_markup(markup):
     return abjad.MarginMarkup(markup=rf'\markup \hcenter-in #16 "{markup}"')
 
 
-clarinet_in_e_flat = abjad.Markup.center_column(
-    [
-        abjad.Markup("Cl."),
-        abjad.Markup.concat(
-            [
-                "(",
-                "E",
-                abjad.Markup.flat().scale((0.65, 0.65)).raise_(0.5),
-                ")",
-            ]
-        ),
-    ]
+clarinet_in_e_flat = abjad.MarginMarkup(
+    markup=r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat"
 )
-clarinet_in_e_flat = clarinet_in_e_flat.hcenter_in(16)
-clarinet_in_e_flat = abjad.MarginMarkup(markup=clarinet_in_e_flat)
 
 margin_markups = abjad.OrderedDict(
     [
@@ -641,48 +629,6 @@ def displacement() -> baca.OctaveDisplacementCommand:
         ],
         selector=baca.plts(exclude=baca.const.HIDDEN),
     )
-
-
-def e_flat_clarinet_markup() -> abjad.Markup:
-    r"""
-    Makes e-flat clarinet markup.
-
-    >>> import krummzeit
-
-    ..  container:: example
-
-        >>> markup = krummzeit.e_flat_clarinet_markup()
-        >>> abjad.show(markup) # doctest: +SKIP
-
-        ..  docs::
-
-            >>> abjad.f(markup)
-            \markup {
-                \line
-                    {
-                        \concat
-                            {
-                                E
-                                \raise
-                                    #0.5
-                                    \scale
-                                        #'(0.65 . 0.65)
-                                        \flat
-                            }
-                        clarinet
-                    }
-                }
-
-    """
-    markup = abjad.Markup.line(
-        [
-            abjad.Markup.concat(
-                ["E", abjad.Markup.flat().scale((0.65, 0.65)).raise_(0.5)]
-            ),
-            abjad.Markup("clarinet"),
-        ]
-    )
-    return abjad.Markup(contents=markup.contents)
 
 
 def fused_expanse(

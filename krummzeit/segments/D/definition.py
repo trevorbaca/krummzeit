@@ -56,7 +56,10 @@ maker(
 maker(
     ("perc", (1, 3)),
     baca.staff_lines(1),
-    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
+    baca.markup(
+        r"\baca-tam-tam-markup",
+        literal=True,
+    ),
     krummzeit.incise_attacks(),
 )
 
@@ -71,7 +74,10 @@ maker(
 
 maker(
     ("perc", (6, 16)),
-    baca.markup(r'\baca-boxed-markup "sponges"', literal=True),
+    baca.markup(
+        r"\baca-sponges-markup",
+        literal=True,
+    ),
     krummzeit.sponge_rhythm(),
 )
 
@@ -256,7 +262,7 @@ maker(
     baca.glissando(),
     krummzeit.register_narrow(4),
     baca.markup(
-        r"\krummzeit-on-bridge-slow",
+        r"\krummzeit-on-bridge-slow-markup",
         literal=True,
     ),
 )
@@ -267,7 +273,7 @@ maker(
     baca.glissando(),
     krummzeit.register_narrow(3),
     baca.markup(
-        r"\krummzeit-on-bridge-slow",
+        r"\krummzeit-on-bridge-slow-markup",
         literal=True,
     ),
 )
@@ -281,7 +287,7 @@ maker(
     ),
     krummzeit.register_narrow(2),
     baca.markup(
-        r"\krummzeit-on-bridge-slow",
+        r"\krummzeit-on-bridge-slow-markup",
         literal=True,
     ),
 )
@@ -290,7 +296,10 @@ maker(
     ("perc", (6, 16)),
     baca.accent(selector=baca.pheads()),
     baca.dynamic('"ff"'),
-    baca.markup("accent changes of direction noticeably on each attack"),
+    baca.markup(
+        r"\krummzeit-accent-changes-markup",
+        literal=True,
+    ),
 )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
@@ -336,7 +345,10 @@ maker(
         "pp < f",
         selector=baca.tleaves(),
     ),
-    baca.markup("molto flautando e pont."),
+    baca.markup(
+        r"\baca-molto-flautando-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -370,13 +382,19 @@ maker(
 maker(
     (["vn", "va", "vc"], 17),
     baca.dynamic("ff"),
-    baca.markup("molto gridato"),
+    baca.markup(
+        r"\baca-scratch-molto-markup",
+        literal=True,
+    ),
 )
 
 maker(
     (["vn", "va", "vc"], 27),
     baca.dynamic("ff-ancora"),
-    baca.markup("molto gridato"),
+    baca.markup(
+        r"\baca-scratch-molto-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -395,7 +413,7 @@ maker(
         selector=baca.pleaves(exclude=baca.const.HIDDEN),
     ),
     baca.markup(
-        r"\krummzeit-fifth-harmonic-of-F-one",
+        r"\krummzeit-fifth-harmonic-of-F-one-markup",
         literal=True,
     ),
 )
@@ -453,7 +471,10 @@ maker(
 maker(
     ("pf", (45, 48)),
     baca.dynamic("mp"),
-    baca.markup("senza pedale"),
+    baca.markup(
+        r"\baca-senza-pedale-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -483,7 +504,10 @@ maker(
 maker(
     (["vn", "va", "vc"], (39, 48)),
     baca.dynamic("mp"),
-    baca.markup("ordinario"),
+    baca.markup(
+        r"\baca-ordinario-markup",
+        literal=True,
+    ),
     baca.stem_tremolo(
         selector=baca.pleaves(exclude=baca.const.HIDDEN),
     ),
@@ -509,10 +533,13 @@ maker(
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.markup(
-        r"\krummzeit-attackless-roll",
+        r"\krummzeit-attackless-roll-markup",
         literal=True,
     ),
-    baca.markup(r'\baca-boxed-markup "suspended cymbal"', literal=True),
+    baca.markup(
+        r"\baca-suspended-cymbal-markup",
+        literal=True,
+    ),
 )
 
 ### VERTICAL ALIGNMENT ###

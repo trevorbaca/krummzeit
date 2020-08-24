@@ -72,7 +72,10 @@ maker(
     ("perc", (1, 9)),
     baca.dynamic("ppp-ancora"),
     baca.make_repeat_tied_notes(),
-    baca.markup(r'\baca-boxed-markup "snare drum"', literal=True),
+    baca.markup(
+        r"\baca-snare-drum-markup",
+        literal=True,
+    ),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.pleaves()),
 )
@@ -159,7 +162,10 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
-    baca.markup("pizz."),
+    baca.markup(
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
     baca.staccatissimo(selector=baca.pheads()),
 )
 
@@ -195,7 +201,10 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_narrow(6, 5),
     baca.ottava(),
-    baca.markup("pizz."),
+    baca.markup(
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
     baca.staccatissimo(selector=baca.pheads()),
 )
 
@@ -231,7 +240,10 @@ maker(
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.markup("pizz."),
+    baca.markup(
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
     baca.staccatissimo(selector=baca.pheads()),
 )
 
@@ -274,7 +286,10 @@ maker(
 maker(
     ("perc", (14, 19)),
     baca.make_repeated_duration_notes([(1, 4)]),
-    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
+    baca.markup(
+        r"\baca-tam-tam-markup",
+        literal=True,
+    ),
     baca.staff_position(0),
 )
 
@@ -294,7 +309,10 @@ maker(
     baca.dynamic("fff"),
     krummzeit.clusters("low"),
     baca.ottava_bassa(),
-    baca.markup("senza pedale"),
+    baca.markup(
+        r"\baca-senza-pedale-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -324,7 +342,10 @@ maker(
 
 maker(
     ("va", (11, 12)),
-    baca.markup("arco"),
+    baca.markup(
+        r"\baca-arco-markup",
+        literal=True,
+    ),
     baca.dynamic("fff-poss"),
 )
 
@@ -335,7 +356,10 @@ maker(
 
 maker(
     (["vn", "vc"], (14, 16)),
-    baca.markup("arco"),
+    baca.markup(
+        r"\baca-arco-markup",
+        literal=True,
+    ),
 )
 
 maker(

@@ -60,7 +60,7 @@ maker(
     ("perc", 1),
     baca.clef("percussion"),
     baca.markup(
-        r'\baca-boxed-markup "snare drum"',
+        r"\baca-snare-drum-markup",
         literal=True,
         selector=baca.leaf(0),
     ),
@@ -78,7 +78,10 @@ maker(
         [(1, 2)],
         do_not_rewrite_meter=True,
     ),
-    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
+    baca.markup(
+        r"\baca-tam-tam-markup",
+        literal=True,
+    ),
     baca.staff_position(0),
 )
 
@@ -172,7 +175,7 @@ maker(
         selector=baca.pleaves(exclude=baca.const.HIDDEN),
     ),
     baca.markup(
-        r"\krummzeit-fingertips",
+        r"\krummzeit-fingertips-markup",
         literal=True,
     ),
 )
@@ -195,7 +198,10 @@ maker(
 maker(
     (["vn", "va", "vc"], (7, 19)),
     baca.dynamic("fff"),
-    baca.markup("gridato possibile"),
+    baca.markup(
+        r"\baca-scratch-poss-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -220,7 +226,10 @@ maker(
     baca.laissez_vibrer(
         selector=baca.pheads(),
     ),
-    baca.markup("attackless"),
+    baca.markup(
+        r"\baca-attackless-markup",
+        literal=True,
+    ),
 )
 
 maker(

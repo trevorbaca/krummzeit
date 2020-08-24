@@ -1,4 +1,3 @@
-import abjad
 import baca
 import krummzeit
 from abjadext import rmakers
@@ -151,7 +150,7 @@ maker(
     ("pf", 4),
     baca.dynamic("fff"),
     baca.markup(
-        r"\krummzeit-catch-resonance",
+        r"\krummzeit-catch-resonance-markup",
         literal=True,
     ),
     krummzeit.clusters("tenor"),
@@ -170,7 +169,8 @@ maker(
 maker(
     ("pf", 10),
     baca.markup(
-        abjad.Markup(r'\baca-boxed-markup "to harpsichord"', literal=True),
+        r'\baca-boxed-markup "to harpsichord"',
+        literal=True,
         selector=baca.leaf(0),
     ),
 )
@@ -179,7 +179,10 @@ maker(
     ("perc", 7),
     baca.dynamic("fff-poss"),
     baca.make_repeat_tied_notes(),
-    baca.markup(r'\baca-boxed-markup "xylophone"', literal=True),
+    baca.markup(
+        r"\baca-xylophone-markup",
+        literal=True,
+    ),
     baca.pitch("C#5"),
     baca.stem_tremolo(selector=baca.pleaves()),
 )
@@ -190,11 +193,14 @@ maker(
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.dynamic('"ff"'),
-    baca.markup(r'\baca-boxed-markup "sponges"', literal=True),
+    baca.markup(
+        r"\baca-sponges-markup",
+        literal=True,
+    ),
     baca.staff_position(0),
     krummzeit.instrument("Percussion"),
     baca.markup(
-        r"\krummzeit-accent-changes",
+        r"\krummzeit-accent-changes-markup",
         literal=True,
     ),
     krummzeit.sponge_rhythm(),
@@ -244,7 +250,10 @@ maker(
         "pp < ff",
         selector=baca.tleaves(),
     ),
-    baca.markup("molto flautando"),
+    baca.markup(
+        r"\baca-molto-flautando-markup",
+        literal=True,
+    ),
     baca.note_head_style_harmonic(),
     baca.new(
         baca.repeat_tie(baca.pheads()[1:]),

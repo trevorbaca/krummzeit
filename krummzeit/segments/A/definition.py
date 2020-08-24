@@ -154,7 +154,7 @@ maker(
     ("cl", (5, 7)),
     baca.instrument(krummzeit.instruments["ClarinetInEFlat"]),
     baca.markup(
-        r'\baca-boxed-markup \krummzeit-clarinet-in-e-flat',
+        r'\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup',
         literal=True,
     ),
     krummzeit.margin_markup("Cl. (Eb)"),
@@ -259,7 +259,10 @@ maker(
 
 maker(
     ("perc", (45, 60)),
-    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
+    baca.markup(
+        r"\baca-tam-tam-markup",
+        literal=True,
+    ),
     krummzeit.incise_attacks(),
 )
 
@@ -342,7 +345,7 @@ maker(
     baca.instrument(krummzeit.instruments["Percussion"]),
     baca.make_repeat_tied_notes(),
     baca.markup(
-        r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed",
+        r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",
         literal=True,
     ),
     baca.staff_position(0),
@@ -438,7 +441,10 @@ maker(
 maker(
     ("vn", (8, 11)),
     baca.dynamic("mp"),
-    baca.markup("off-string bowing on staccati"),
+    baca.markup(
+        r"\krummzeit-off-string-bowing-on-staccati-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -449,7 +455,10 @@ maker(
 maker(
     ("vn", (19, 22)),
     baca.dynamic("f"),
-    baca.markup("off-string bowing on staccati"),
+    baca.markup(
+        r"\krummzeit-off-string-bowing-on-staccati-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -505,13 +514,19 @@ maker(
 maker(
     (["va", "vc"], (1, 11)),
     baca.dynamic("mf"),
-    baca.markup("molto flautando"),
+    baca.markup(
+        r"\baca-molto-flautando-markup",
+        literal=True,
+    ),
 )
 
 maker(
     (["va", "vc"], (12, 22)),
     baca.dynamic("f"),
-    baca.markup("non flautando"),
+    baca.markup(
+        r"\baca-non-flautando-markup",
+        literal=True,
+    ),
 )
 
 maker(
@@ -537,7 +552,10 @@ maker(
         baca.glissando(),
         map=baca.runs(),
     ),
-    baca.markup("OB + full bow strokes"),
+    baca.markup(
+        r"\krummzeit-ob-plus-full-bow-strokes-markup",
+        literal=True,
+    ),
     krummzeit.register_narrow(5, 3),
 )
 
@@ -552,7 +570,10 @@ maker(
     baca.clef("treble"),
     baca.dynamic("f"),
     baca.glissando(),
-    baca.markup("OB + full bow strokes"),
+    baca.markup(
+        r"\krummzeit-ob-plus-full-bow-strokes-markup",
+        literal=True,
+    ),
     krummzeit.register_narrow(5, 2),
 )
 
@@ -566,7 +587,10 @@ maker(
     baca.alternate_bow_strokes(),
     baca.dynamic("f"),
     baca.glissando(),
-    baca.markup("OB + full bow strokes"),
+    baca.markup(
+        r"\krummzeit-ob-plus-full-bow-strokes-markup",
+        literal=True,
+    ),
     krummzeit.register_narrow(5, 4),
 )
 
@@ -606,7 +630,10 @@ maker(
     ("va", (48, 71)),
     baca.clef("treble"),
     baca.dynamic("fff"),
-    baca.markup("pizz."),
+    baca.markup(
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
 )
@@ -615,7 +642,10 @@ maker(
     ("vc", (52, 71)),
     baca.clef("treble"),
     baca.dynamic("fff"),
-    baca.markup("pizz."),
+    baca.markup(
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
 )
@@ -623,7 +653,10 @@ maker(
 maker(
     ("vn", (54, 71)),
     baca.dynamic("fff"),
-    baca.markup("pizz."),
+    baca.markup(
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.register_narrow(5, 6),
 )

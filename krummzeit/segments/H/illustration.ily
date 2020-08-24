@@ -2613,7 +2613,7 @@ H_Percussion_Music_Voice = {                                                   %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-ff-sempre                                                            %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()
-    ^ \baca-boxed-markup "crotale"                                             %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-crotale-markup                                                     %! baca.markup():baca.IndicatorCommand._call()
 
     d'4                                                                        %! krummzeit.left_remainder_quarters()
     - \accent                                                                  %! baca.accent():baca.IndicatorCommand._call()

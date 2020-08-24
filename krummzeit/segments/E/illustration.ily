@@ -2202,8 +2202,8 @@ E_Oboe_Music_Staff = {                                                         %
 E_Clarinet_Music_Voice = {                                                     %! ide.Path.extern()
 
     % [E Clarinet_Music_Voice measure 200 / measure 1]                         %! baca.SegmentMaker._comment_measure_numbers()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
-    \set Staff.instrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
+    \set Staff.shortInstrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
+    \set Staff.instrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
     \override Stem.direction = #up                                             %! baca.stem_up():baca.OverrideCommand._call(1)
     \override DynamicLineSpanner.staff-padding = #6                            %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
     \clef "treble"                                                             %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_CLEF
@@ -2225,7 +2225,7 @@ E_Clarinet_Music_Voice = {                                                     %
     - \tweak stencil ##f                                                       %! baca.SegmentMaker._attach_shadow_tie_indicators()
     ~                                                                          %! baca.SegmentMaker._attach_shadow_tie_indicators()
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! baca.SegmentMaker._attach_color_literal(2):REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
+    \set Staff.shortInstrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
     % [E Clarinet_Music_Voice measure 201 / measure 2]                         %! baca.SegmentMaker._comment_measure_numbers()
@@ -3603,7 +3603,7 @@ E_Percussion_Music_Voice = {                                                   %
     \ppp                                                                       %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_DYNAMIC
     ^ \baca-reapplied-indicator-markup "[“Perc.”]"                             %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     ^ \baca-reapplied-indicator-markup "(“Xylophone”)"                         %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
-    ^ \baca-boxed-markup "suspended cymbal"                                    %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-suspended-cymbal-markup                                            %! baca.markup():baca.IndicatorCommand._call()
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! baca.SegmentMaker._attach_color_literal(2):REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."           %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
@@ -4239,7 +4239,7 @@ E_Percussion_Music_Voice = {                                                   %
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \baca-boxed-markup "suspended cymbal"                                    %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-suspended-cymbal-markup                                            %! baca.markup():baca.IndicatorCommand._call()
     \override Staff.BarLine.bar-extent = #'(0 . 2)                             %! -PARTS:baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_BAR_EXTENT
 
     c'4.                                                                       %! krummzeit.sponge_rhythm()
@@ -4539,7 +4539,7 @@ E_Violin_Music_Voice = {                                                       %
     ef''!4                                                                     %! krummzeit.glissando_rhythm()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \p                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \markup { "molto flautando" }                                            %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-molto-flautando-markup                                             %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \>                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
@@ -5342,7 +5342,7 @@ E_Viola_Music_Voice = {                                                        %
         ef'!2                                                                  %! krummzeit.glissando_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup { "molto flautando" }                                        %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-molto-flautando-markup                                         %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
@@ -5895,7 +5895,7 @@ E_Cello_Music_Voice = {                                                        %
         ef'!8                                                                  %! krummzeit.glissando_rhythm()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \p                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup { "molto flautando" }                                        %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-molto-flautando-markup                                         %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \glissando                                                             %! baca.glissando():abjad.glissando(7)

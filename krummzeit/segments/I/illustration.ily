@@ -4535,7 +4535,7 @@ I_Percussion_Music_Voice = {                                                   %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \f                                                                         %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
-    ^ \baca-boxed-markup "tam-tam"                                             %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-tam-tam-markup                                                     %! baca.markup():baca.IndicatorCommand._call()
 
     r8                                                                         %! krummzeit.incise_attacks()
 
@@ -4975,7 +4975,7 @@ I_Violin_Music_Voice = {                                                       %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-f                                                             %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     - \downbow                                                                 %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
-    ^ \krummzeit-on-bridge-full-bow                                            %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-on-bridge-full-bow-markup                                     %! baca.markup():baca.IndicatorCommand._call()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     cs''!4                                                                     %! krummzeit.right_remainder_quarters()
@@ -5135,7 +5135,7 @@ I_Violin_Music_Voice = {                                                       %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()
-        ^ \markup { pizz. }                                                    %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-pizz-markup                                                    %! baca.markup():baca.IndicatorCommand._call()
 
         cs'''!4                                                                %! krummzeit.pizzicato_rhythm()
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()
@@ -5448,7 +5448,7 @@ I_Viola_Music_Voice = {                                                        %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-f                                                             %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     - \downbow                                                                 %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
-    ^ \krummzeit-on-bridge-full-bow                                            %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-on-bridge-full-bow-markup                                     %! baca.markup():baca.IndicatorCommand._call()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_CLEF_REDRAW_COLOR
 
@@ -5608,7 +5608,7 @@ I_Viola_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()
-        ^ \markup { pizz. }                                                    %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-pizz-markup                                                    %! baca.markup():baca.IndicatorCommand._call()
 
         d'''4                                                                  %! krummzeit.pizzicato_rhythm()
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()
@@ -5918,7 +5918,7 @@ I_Cello_Music_Voice = {                                                        %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-effort-f                                                             %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     - \downbow                                                                 %! baca.alternate_bow_strokes():baca.IndicatorCommand._call()
-    ^ \krummzeit-on-bridge-full-bow                                            %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-on-bridge-full-bow-markup                                     %! baca.markup():baca.IndicatorCommand._call()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)                    %! baca.SegmentMaker._attach_color_literal(2):EXPLICIT_CLEF_REDRAW_COLOR
 
@@ -6078,7 +6078,7 @@ I_Cello_Music_Voice = {                                                        %
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()
-        ^ \markup { pizz. }                                                    %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-pizz-markup                                                    %! baca.markup():baca.IndicatorCommand._call()
 
         e'''4                                                                  %! krummzeit.pizzicato_rhythm()
         - \staccatissimo                                                       %! baca.staccatissimo():baca.IndicatorCommand._call()

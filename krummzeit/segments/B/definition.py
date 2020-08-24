@@ -248,7 +248,10 @@ maker(
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.make_repeat_tied_notes(),
-    baca.markup(r'\baca-boxed-markup "snare drum"', literal=True),
+    baca.markup(
+        r"\baca-snare-drum-markup",
+        literal=True,
+    ),
     baca.staff_position(0),
 )
 
@@ -351,7 +354,10 @@ maker(
         map=baca.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
-        baca.markup("molto flautando"),
+        baca.markup(
+            r"\baca-molto-flautando-markup",
+            literal=True,
+        ),
         measures=6,
     ),
 )
@@ -383,7 +389,10 @@ maker(
         map=baca.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
-        baca.markup("molto flautando"),
+        baca.markup(
+            r"\baca-molto-flautando-markup",
+            literal=True,
+        ),
         measures=6,
     ),
 )
@@ -460,7 +469,7 @@ maker(
     baca.dynamic("ppp"),
     baca.stem_tremolo(selector=baca.pleaves()),
     baca.markup(
-        r"\krummzeit-fingertips",
+        r"\krummzeit-fingertips-markup",
         literal=True,
     ),
 )
@@ -490,9 +499,12 @@ maker(
         "pp < fff",
         selector=baca.tleaves(),
     ),
-    baca.markup("non flautando"),
     baca.markup(
-        r"\krummzeit-show-tempo",
+        r"\baca-non-flautando-markup",
+        literal=True,
+    ),
+    baca.markup(
+        r"\krummzeit-show-tempo-markup",
         literal=True,
     ),
 )

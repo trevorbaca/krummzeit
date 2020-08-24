@@ -137,7 +137,10 @@ maker(
     (["vn", "va"], (1, 40)),
     baca.dynamic("ff"),
     baca.dls_staff_padding(5),
-    baca.markup("pizz."),
+    baca.markup(
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
     baca.staccatissimo(
         selector=baca.pheads(exclude=baca.const.HIDDEN),
     ),
@@ -160,7 +163,10 @@ maker(
     ("vc", (1, 24)),
     baca.dynamic("fff-ancora"),
     baca.dls_staff_padding(3),
-    baca.markup("gridato possibile"),
+    baca.markup(
+        r"\baca-scratch-poss-markup",
+        literal=True,
+    ),
     baca.new(
         baca.glissando(),
         map=baca.runs(),
@@ -170,7 +176,10 @@ maker(
 maker(
     ("vc", (25, 48)),
     baca.dynamic("ff"),
-    baca.markup("ordinario"),
+    baca.markup(
+        r"\baca-ordinario-markup",
+        literal=True,
+    ),
 )
 
 maker(

@@ -108,7 +108,10 @@ maker(
     ("perc", (3, 22)),
     baca.staff_lines(1),
     baca.clef("percussion"),
-    baca.markup(r'\baca-boxed-markup "tam-tam"', literal=True),
+    baca.markup(
+        r"\baca-tam-tam-markup",
+        literal=True,
+    ),
     baca.staff_position(0),
     krummzeit.incise_attacks(),
 )
@@ -216,7 +219,7 @@ maker(
     baca.alternate_bow_strokes(),
     baca.dynamic('"f"'),
     baca.markup(
-        r"\krummzeit-on-bridge-full-bow",
+        r"\krummzeit-on-bridge-full-bow-markup",
         literal=True,
     ),
     baca.new(
@@ -290,7 +293,10 @@ maker(
 maker(
     (["vn", "va", "vc"], 22),
     baca.dynamic("fff"),
-    baca.markup("pizz."),
+    baca.markup(
+        r"\baca-pizz-markup",
+        literal=True,
+    ),
     baca.staccatissimo(selector=baca.pheads()),
     krummzeit.displacement(),
     krummzeit.register_narrow(6),

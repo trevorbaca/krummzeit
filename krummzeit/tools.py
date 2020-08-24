@@ -33,7 +33,7 @@ def _make_margin_markup(markup):
 
 
 clarinet_in_e_flat = abjad.MarginMarkup(
-    markup=r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat"
+    markup=r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup"
 )
 
 margin_markups = abjad.OrderedDict(

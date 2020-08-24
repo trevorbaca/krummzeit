@@ -1651,7 +1651,7 @@ F_Percussion_Music_Voice = {                                                   %
             \pp                                                                %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_DYNAMIC
             ^ \baca-reapplied-indicator-markup "[“Perc.”]"                     %! REAPPLIED_MARGIN_MARKUP_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
             ^ \baca-reapplied-indicator-markup "(“Xylophone”)"                 %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
-            ^ \baca-boxed-markup "snare drum"                                  %! baca.markup():baca.IndicatorCommand._call()
+            ^ \baca-snare-drum-markup                                          %! baca.markup():baca.IndicatorCommand._call()
         %@% ^ \baca-duration-multiplier-markup #"9" #"8"                       %! baca.SegmentMaker._label_duration_multipliers():DURATION_MULTIPLIER:HIDDEN:NOTE
             \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)     %! baca.SegmentMaker._attach_color_literal(2):REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
             \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."   %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
@@ -1675,7 +1675,7 @@ F_Percussion_Music_Voice = {                                                   %
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \krummzeit-fingertips                                                    %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-fingertips-markup                                             %! baca.markup():baca.IndicatorCommand._call()
     - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \baca-text-spanner-left-text "make_repeat_tied_notes()"                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak bound-details.right.padding #2.75                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
@@ -1903,8 +1903,8 @@ F_Percussion_Music_Voice = {                                                   %
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \baca-p-sempre                                                             %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     \laissezVibrer                                                             %! baca.laissez_vibrer():baca.IndicatorCommand._call()
-    ^ \baca-boxed-markup "tam-tam"                                             %! baca.markup():baca.IndicatorCommand._call()
-    ^ \markup { attackless }                                                   %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-tam-tam-markup                                                     %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-attackless-markup                                                  %! baca.markup():baca.IndicatorCommand._call()
     - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \baca-text-spanner-left-text "make_repeated_duration_notes([(1, 2)], do_not_rewrite_meter=True)" %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak bound-details.right.padding #2.75                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
@@ -2046,7 +2046,7 @@ F_Violin_Music_Voice = {                                                       %
         fs!4.                                                                  %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup { "gridato possibile" }                                      %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-scratch-poss-markup                                            %! baca.markup():baca.IndicatorCommand._call()
 
         fs!2                                                                   %! krummzeit.hypermeter_tuplets()
 
@@ -2317,7 +2317,7 @@ F_Viola_Music_Voice = {                                                        %
         bf,!4                                                                  %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
-        ^ \markup { "gridato possibile" }                                      %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-scratch-poss-markup                                            %! baca.markup():baca.IndicatorCommand._call()
 
         bf,!1.                                                                 %! krummzeit.hypermeter_tuplets()
 
@@ -2568,7 +2568,7 @@ F_Cello_Music_Voice = {                                                        %
         a,,1.                                                                  %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'DeepPink1)                                 %! REDUNDANT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \fff                                                                   %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
-        ^ \markup { "gridato possibile" }                                      %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-scratch-poss-markup                                            %! baca.markup():baca.IndicatorCommand._call()
 
         a,,4                                                                   %! krummzeit.hypermeter_tuplets()
 

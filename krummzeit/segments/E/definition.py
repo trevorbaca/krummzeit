@@ -85,7 +85,10 @@ maker(
 
 maker(
     ("perc", [(1, 14), (28, 34)]),
-    baca.markup(r'\baca-boxed-markup "suspended cymbal"', literal=True),
+    baca.markup(
+        r"\baca-suspended-cymbal-markup",
+        literal=True,
+    ),
     baca.staff_position(0),
     krummzeit.sponge_rhythm(),
 )
@@ -293,7 +296,10 @@ maker(
         "p > ppp",
         selector=baca.tleaves(),
     ),
-    baca.markup("molto flautando"),
+    baca.markup(
+        r"\baca-molto-flautando-markup",
+        literal=True,
+    ),
     baca.note_head_style_harmonic(),
 )
 

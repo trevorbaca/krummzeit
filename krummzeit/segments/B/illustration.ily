@@ -1912,8 +1912,8 @@ B_Oboe_Music_Staff = {                                                         %
 B_Clarinet_Music_Voice = {                                                     %! ide.Path.extern()
 
     % [B Clarinet_Music_Voice measure 89 / measure 1]                          %! baca.SegmentMaker._comment_measure_numbers()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
-    \set Staff.instrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
+    \set Staff.shortInstrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
+    \set Staff.instrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup %! baca.SegmentMaker._clone_segment_initial_short_instrument_name()
     \override DynamicLineSpanner.staff-padding = #3                            %! baca.dls_staff_padding():baca.OverrideCommand._call(1)
     \clef "treble"                                                             %! baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_CLEF
     \once \override Staff.InstrumentName.color = #(x11-color 'green4)          %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_MARGIN_MARKUP_COLOR
@@ -1927,7 +1927,7 @@ B_Clarinet_Music_Voice = {                                                     %
     ^ \baca-reapplied-indicator-markup "(“ClarinetInEFlat”)"                   %! REAPPLIED_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
     \override Staff.InstrumentName.color = #(x11-color 'OliveDrab)             %! baca.SegmentMaker._attach_color_literal(2):REDRAWN_REAPPLIED_MARGIN_MARKUP_COLOR
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
+    \set Staff.shortInstrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._treat_persistent_wrapper(3):baca.SegmentMaker._set_status_tag():REDRAWN_REAPPLIED_MARGIN_MARKUP
     \override Staff.Clef.color = #(x11-color 'OliveDrab)                       %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
     btqs'!4.                                                                   %! krummzeit.white_rhythm()
@@ -3625,8 +3625,8 @@ B_Percussion_Music_Voice = {                                                   %
     :32                                                                        %! baca.stem_tremolo():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \ppp                                                                       %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \baca-boxed-markup "snare drum"                                          %! baca.markup():baca.IndicatorCommand._call()
-    ^ \krummzeit-fingertips                                                    %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-snare-drum-markup                                                  %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-fingertips-markup                                             %! baca.markup():baca.IndicatorCommand._call()
     - \abjad-dashed-line-with-hook                                             %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \baca-text-spanner-left-text "make_repeat_tied_notes()"                  %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):SPANNER_START
     - \tweak bound-details.right.padding #2.75                                 %! baca.rhythm_annotation_spanner():RHYTHM_ANNOTATION_SPANNER:baca.PiecewiseCommand._call(2):AUTODETECT:SPANNER_START
@@ -4213,8 +4213,8 @@ B_Violin_Music_Voice = {                                                       %
     ftqs!1.                                                                    %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \markup { "non flautando" }                                              %! baca.markup():baca.IndicatorCommand._call()
-    ^ \krummzeit-show-tempo                                                    %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-non-flautando-markup                                               %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-show-tempo-markup                                             %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
@@ -4370,7 +4370,7 @@ B_Viola_Music_Voice = {                                                        %
         e4                                                                     %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup { "molto flautando" }                                        %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-molto-flautando-markup                                         %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
@@ -4702,8 +4702,8 @@ B_Viola_Music_Voice = {                                                        %
     btqs,!1                                                                    %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \markup { "non flautando" }                                              %! baca.markup():baca.IndicatorCommand._call()
-    ^ \krummzeit-show-tempo                                                    %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-non-flautando-markup                                               %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-show-tempo-markup                                             %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
@@ -4867,7 +4867,7 @@ B_Cello_Music_Voice = {                                                        %
         d,16                                                                   %! krummzeit.single_division_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup { "molto flautando" }                                        %! baca.markup():baca.IndicatorCommand._call()
+        ^ \baca-molto-flautando-markup                                         %! baca.markup():baca.IndicatorCommand._call()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \>                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
@@ -5197,8 +5197,8 @@ B_Cello_Music_Voice = {                                                        %
     b,,\breve                                                                  %! krummzeit.fused_expanse()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \pp                                                                        %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-    ^ \markup { "non flautando" }                                              %! baca.markup():baca.IndicatorCommand._call()
-    ^ \krummzeit-show-tempo                                                    %! baca.markup():baca.IndicatorCommand._call()
+    ^ \baca-non-flautando-markup                                               %! baca.markup():baca.IndicatorCommand._call()
+    ^ \krummzeit-show-tempo-markup                                             %! baca.markup():baca.IndicatorCommand._call()
     - \tweak color #(x11-color 'blue)                                          %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
     \<                                                                         %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)

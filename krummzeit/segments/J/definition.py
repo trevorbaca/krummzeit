@@ -76,7 +76,7 @@ maker(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
         extra_counts=[2, 2, 1, 2, 4, 6],
         split=[6, 18],
-    )
+    ),
 )
 
 maker(
@@ -123,10 +123,12 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs[42:34:-1].transpose(4).invert()
 maker(
-    baca.timeline([
-        ("vn", (1, 40)),
-        ("va", (1, 40)),
-    ]),
+    baca.timeline(
+        [
+            ("vn", (1, 40)),
+            ("va", (1, 40)),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),

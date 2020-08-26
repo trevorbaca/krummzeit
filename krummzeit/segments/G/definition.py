@@ -191,9 +191,19 @@ maker(
 
 maker(
     ("vc", (1, 9)),
-    krummzeit.fused_expanse([
-        (3, 4), (4, 4), (3, 8), (2, 8), (8, 4), (7, 4), (3, 4), (3, 8), (6, 8),
-    ]),
+    krummzeit.fused_expanse(
+        [
+            (3, 4),
+            (4, 4),
+            (3, 8),
+            (2, 8),
+            (8, 4),
+            (7, 4),
+            (3, 4),
+            (3, 8),
+            (6, 8),
+        ]
+    ),
 )
 
 maker(
@@ -273,12 +283,14 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs[:20].transpose(3)
 maker(
-    baca.timeline([
-        ("pf", (5, 12)),
-        ("vn", (5, 12)),
-        ("ob", (9, 12)),
-        ("cl", (9, 12)),
-    ]),
+    baca.timeline(
+        [
+            ("pf", (5, 12)),
+            ("vn", (5, 12)),
+            ("ob", (9, 12)),
+            ("cl", (9, 12)),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),
@@ -385,11 +397,13 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 maker(
-    baca.timeline([
-        ("vn", (14, 20)),
-        ("vc", (14, 20)),
-        ("va", (14, 19)),
-    ]),
+    baca.timeline(
+        [
+            ("vn", (14, 20)),
+            ("vc", (14, 20)),
+            ("va", (14, 19)),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),

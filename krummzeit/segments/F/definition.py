@@ -147,7 +147,7 @@ maker(
 maker(
     ("cl", (16, 22)),
     baca.instrument(krummzeit.instruments["BassClarinet"]),
-    baca.make_repeat_tied_notes()
+    baca.make_repeat_tied_notes(),
 )
 
 maker(
@@ -241,11 +241,13 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.transpose(2)
 maker(
-    baca.timeline([
-        ("pf", (4, 16)),
-        ("ob", (1, 12)),
-        ("cl", (1, 12)),
-    ]),
+    baca.timeline(
+        [
+            ("pf", (4, 16)),
+            ("ob", (1, 12)),
+            ("cl", (1, 12)),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),

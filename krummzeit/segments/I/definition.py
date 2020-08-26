@@ -125,10 +125,7 @@ maker(
     ),
 )
 
-maker(
-    ("cl", (3, 14)),
-    baca.make_repeat_tied_notes()
-)
+maker(("cl", (3, 14)), baca.make_repeat_tied_notes())
 
 maker(
     ("vn", 22),
@@ -203,11 +200,13 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.transpose(11)
 maker(
-    baca.timeline([
-        ("vn", (5, 9)),
-        ("va", (5, 9)),
-        ("vc", (5, 9)),
-    ]),
+    baca.timeline(
+        [
+            ("vn", (5, 9)),
+            ("va", (5, 9)),
+            ("vc", (5, 9)),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),
@@ -271,19 +270,18 @@ maker(
     baca.dynamic("fff-poss", selector=baca.pleaf(0)),
 )
 
-maker(
-    ("cl", (11, 14)),
-    baca.hairpin("fff > ppp")
-)
+maker(("cl", (11, 14)), baca.hairpin("fff > ppp"))
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 maker(
-    baca.timeline([
-        ("vn", 22),
-        ("va", 22),
-        ("vc", 22),
-    ]),
+    baca.timeline(
+        [
+            ("vn", 22),
+            ("va", 22),
+            ("vc", 22),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),

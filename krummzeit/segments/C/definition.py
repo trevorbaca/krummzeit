@@ -115,12 +115,14 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 maker(
-    baca.timeline([
-        ("pf", (1, 7)),
-        ("vn", (1, 9)),
-        ("va", (1, 9)),
-        ("vc", (1, 9)),
-    ]),
+    baca.timeline(
+        [
+            ("pf", (1, 7)),
+            ("vn", (1, 9)),
+            ("va", (1, 9)),
+            ("vc", (1, 9)),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),

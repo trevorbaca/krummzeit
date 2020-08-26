@@ -63,24 +63,21 @@ maker(
 maker(
     ("vn", (3, 5)),
     krummzeit.glissando_rhythm(
-        [(1, 2), (2, 1), (1, 1, 1)],
-        tie_across_divisions=abjad.index([1], 2)
+        [(1, 2), (2, 1), (1, 1, 1)], tie_across_divisions=abjad.index([1], 2)
     ),
 )
 
 maker(
     ("va", (3, 5)),
     krummzeit.glissando_rhythm(
-        [(2, 1), (1, 1, 1), (1, 2)],
-        tie_across_divisions=abjad.index([1], 2)
+        [(2, 1), (1, 1, 1), (1, 2)], tie_across_divisions=abjad.index([1], 2)
     ),
 )
 
 maker(
     ("vc", (3, 5)),
     krummzeit.glissando_rhythm(
-        [(1, 1, 1), (1, 2), (2, 1)],
-        tie_across_divisions=abjad.index([1], 2)
+        [(1, 1, 1), (1, 2), (2, 1)], tie_across_divisions=abjad.index([1], 2)
     ),
 )
 
@@ -98,9 +95,7 @@ maker(
         literal=True,
     ),
     baca.pitch("D5"),
-    krummzeit.left_remainder_quarters(
-        rmakers.force_rest(baca.lt(0))
-    ),
+    krummzeit.left_remainder_quarters(rmakers.force_rest(baca.lt(0))),
 )
 
 maker(
@@ -182,11 +177,13 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 maker(
-    baca.timeline([
-        ("vn", (3, 5)),
-        ("va", (3, 5)),
-        ("vc", (3, 5)),
-    ]),
+    baca.timeline(
+        [
+            ("vn", (3, 5)),
+            ("va", (3, 5)),
+            ("vc", (3, 5)),
+        ]
+    ),
     baca.pitches(pcs),
 )
 

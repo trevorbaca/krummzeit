@@ -154,7 +154,7 @@ maker(
     ("cl", (5, 7)),
     baca.instrument(krummzeit.instruments["ClarinetInEFlat"]),
     baca.markup(
-        r'\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup',
+        r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup",
         literal=True,
     ),
     krummzeit.margin_markup("Cl. (Eb)"),
@@ -352,26 +352,30 @@ maker(
 )
 
 maker(
-    baca.timeline([
-        ("pf", (1, 11)),
-        ("vn", (1, 11)),
-        ("cl", (1, 11)),
-    ]),
+    baca.timeline(
+        [
+            ("pf", (1, 11)),
+            ("vn", (1, 11)),
+            ("cl", (1, 11)),
+        ]
+    ),
     baca.pitches(
         krummzeit.indigo_pitch_classes.get_payload(),
         allow_repeats=True,
         selector=baca.plts(exclude=baca.const.HIDDEN),
-    )
+    ),
 )
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.transpose(1)
 maker(
-    baca.timeline([
-        ("pf", (12, 22)),
-        ("vn", (12, 22)),
-        ("cl", (12, 22)),
-    ]),
+    baca.timeline(
+        [
+            ("pf", (12, 22)),
+            ("vn", (12, 22)),
+            ("cl", (12, 22)),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),
@@ -381,12 +385,14 @@ maker(
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-155).transpose(3)
 maker(
-    baca.timeline([
-        ("pf", (23, 37)),
-        ("vn", (23, 37)),
-        ("ob", (23, 37)),
-        ("cl", (23, 37)),
-    ]),
+    baca.timeline(
+        [
+            ("pf", (23, 37)),
+            ("vn", (23, 37)),
+            ("ob", (23, 37)),
+            ("cl", (23, 37)),
+        ]
+    ),
     baca.pitches(
         pcs,
         selector=baca.plts(exclude=baca.const.HIDDEN),
@@ -498,10 +504,7 @@ maker(
     baca.pitches("f, eqs, dqs, c, dqs, e, dtqs,"),
 )
 
-maker(
-    ("vc", (23, 28)),
-    baca.pitches("a, gqs, fqs, e, fqs, g, ftqs,")
-)
+maker(("vc", (23, 28)), baca.pitches("a, gqs, fqs, e, fqs, g, ftqs,"))
 
 maker(
     (["va", "vc"], (1, 28)),
@@ -535,12 +538,14 @@ maker(
 )
 
 maker(
-    baca.timeline([
-        ("va", (34, 47)),
-        ("vc", (34, 51)),
-        ("vn", (38, 53)),
-    ]),
-    baca.pitches(krummzeit.violet_pitch_classes.get_payload())
+    baca.timeline(
+        [
+            ("va", (34, 47)),
+            ("vc", (34, 51)),
+            ("vn", (38, 53)),
+        ]
+    ),
+    baca.pitches(krummzeit.violet_pitch_classes.get_payload()),
 )
 
 maker(
@@ -617,12 +622,14 @@ maker(
 pcs = krummzeit.violet_pitch_classes.get_payload()
 pcs = baca.PitchClassSegment(pcs).rotate(-60).transpose(1)
 maker(
-    baca.timeline([
-        ("va", (48, 71)),
-        ("vc", (52, 71)),
-        ("vn", (54, 71)),
-        ("pf", (57, 75)),
-    ]),
+    baca.timeline(
+        [
+            ("va", (48, 71)),
+            ("vc", (52, 71)),
+            ("vn", (54, 71)),
+            ("pf", (57, 75)),
+        ]
+    ),
     baca.pitches(pcs),
 )
 

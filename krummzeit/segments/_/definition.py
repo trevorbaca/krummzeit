@@ -128,7 +128,7 @@ maker(
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(baca.tuplets().get([0, 1], 7)),
-    )
+    ),
 )
 
 maker(
@@ -232,12 +232,14 @@ maker(
 pcs = krummzeit.violet_pitch_classes.get_payload()
 pcs = baca.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
 maker(
-    baca.timeline([
-        ("vn", (4, 8)),
-        ("va", (4, 8)),
-        ("vc", (4, 8)),
-    ]),
-    baca.pitches(pcs)
+    baca.timeline(
+        [
+            ("vn", (4, 8)),
+            ("va", (4, 8)),
+            ("vc", (4, 8)),
+        ]
+    ),
+    baca.pitches(pcs),
 )
 
 maker(

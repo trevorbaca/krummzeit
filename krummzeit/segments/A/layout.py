@@ -1,7 +1,12 @@
 import baca
 
 top = 20
-systems = (20, (20, 30), (20, 30), (20, 20, 30),)
+systems = (
+    20,
+    (20, 30),
+    (20, 30),
+    (20, 20, 30),
+)
 
 breaks = baca.breaks(
     baca.page([14, top, systems]),

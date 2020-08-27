@@ -64,9 +64,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(oboe_music_staff, "default_clef", abjad.Clef("treble"))
 
         # CLARINET
-        clarinet_music_voice = abjad.Voice(
-            name="Clarinet_Music_Voice", tag=tag
-        )
+        clarinet_music_voice = abjad.Voice(name="Clarinet_Music_Voice", tag=tag)
         clarinet_music_staff = abjad.Staff(
             [clarinet_music_voice], name="Clarinet_Music_Staff", tag=tag
         )
@@ -76,9 +74,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             "default_instrument",
             krummzeit.instruments["BassClarinet"],
         )
-        abjad.annotate(
-            clarinet_music_staff, "default_clef", abjad.Clef("treble")
-        )
+        abjad.annotate(clarinet_music_staff, "default_clef", abjad.Clef("treble"))
 
         # WIND SECTION
         wind_section_staff_group = abjad.StaffGroup(
@@ -102,9 +98,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         abjad.annotate(piano_music_staff, "default_clef", abjad.Clef("treble"))
 
         # PERCUSSION
-        percussion_music_voice = abjad.Voice(
-            name="Percussion_Music_Voice", tag=tag
-        )
+        percussion_music_voice = abjad.Voice(name="Percussion_Music_Voice", tag=tag)
         percussion_music_staff = abjad.Staff(
             [percussion_music_voice], name="Percussion_Music_Staff", tag=tag
         )
@@ -114,9 +108,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             "default_instrument",
             krummzeit.instruments["Xylophone"],
         )
-        abjad.annotate(
-            percussion_music_staff, "default_clef", abjad.Clef("treble")
-        )
+        abjad.annotate(percussion_music_staff, "default_clef", abjad.Clef("treble"))
 
         # PERCUSSION SECTION
         percussion_section_staff_group = abjad.StaffGroup(
@@ -137,9 +129,7 @@ class ScoreTemplate(baca.ScoreTemplate):
             "default_instrument",
             krummzeit.instruments["Violin"],
         )
-        abjad.annotate(
-            violin_music_staff, "default_clef", abjad.Clef("treble")
-        )
+        abjad.annotate(violin_music_staff, "default_clef", abjad.Clef("treble"))
 
         # VIOLA
         viola_music_voice = abjad.Voice(name="Viola_Music_Voice", tag=tag)
@@ -189,9 +179,7 @@ class ScoreTemplate(baca.ScoreTemplate):
         )
 
         # SCORE
-        score = abjad.Score(
-            [global_context, music_context], name="Score", tag=tag
-        )
+        score = abjad.Score([global_context, music_context], name="Score", tag=tag)
         self._assert_lilypond_identifiers(score)
         self._assert_unique_context_names(score)
         self._assert_matching_custom_context_names(score)

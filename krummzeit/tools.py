@@ -449,9 +449,7 @@ class RegisterTransitionCommand(baca.Command):
             start_pitch = start_component.target_octave_start_pitch
             start_pitch = abjad.NumberedPitch(start_pitch)
             stop_pitch = stop_component.target_octave_start_pitch
-            target_octave_start_pitch = start_pitch.interpolate(
-                stop_pitch, fraction
-            )
+            target_octave_start_pitch = start_pitch.interpolate(stop_pitch, fraction)
             component = baca.RegistrationComponent(
                 source_pitch_range=range_string,
                 target_octave_start_pitch=target_octave_start_pitch,
@@ -537,9 +535,7 @@ def color_fingerings() -> baca.ColorFingeringCommand:
     )
 
 
-def color_tuplets(
-    *commands: rmakers.Command, rotation: int = 0
-) -> baca.RhythmCommand:
+def color_tuplets(*commands: rmakers.Command, rotation: int = 0) -> baca.RhythmCommand:
     """
     Makes color tuplets.
     """
@@ -640,9 +636,7 @@ def fused_expanse(
     return baca.rhythm(
         rmakers.note(),
         rmakers.beam(baca.plts()),
-        preprocessor=baca.sequence()
-        .fuse()
-        .split_divisions(divisions, cyclic=True),
+        preprocessor=baca.sequence().fuse().split_divisions(divisions, cyclic=True),
         tag=abjad.Tag("krummzeit.fused_expanse()"),
     )
 
@@ -770,7 +764,9 @@ def instrument(key) -> baca.InstrumentChangeCommand:
     return baca.instrument(instruments[key])
 
 
-def left_remainder_quarters(*commands: rmakers.Command,) -> baca.RhythmCommand:
+def left_remainder_quarters(
+    *commands: rmakers.Command,
+) -> baca.RhythmCommand:
     """
     Makes left-remainder quarter rhythm.
     """
@@ -909,9 +905,7 @@ def pizzicato_sixteenths(
         rmakers.rewrite_rest_filled(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
-        preprocessor=baca.sequence().split_divisions(
-            [(6, 16), (18, 16)], cyclic=True
-        ),
+        preprocessor=baca.sequence().split_divisions([(6, 16), (18, 16)], cyclic=True),
         tag=abjad.Tag("krummzeit.pizzicato_sixteenths()"),
     )
 
@@ -932,9 +926,7 @@ def polyphony(
     """
 
     assert isinstance(ties, abjad.Pattern), repr(ties)
-    tie_specifier = rmakers.tie(
-        baca.tuplets()[:-1].get(ties).map(baca.pleaf(-1))
-    )
+    tie_specifier = rmakers.tie(baca.tuplets()[:-1].get(ties).map(baca.pleaf(-1)))
 
     eighths = rmakers.stack(
         rmakers.even_division([8]),
@@ -952,9 +944,7 @@ def polyphony(
     )
 
     quarters = rmakers.stack(
-        rmakers.note(
-            spelling=rmakers.Spelling(forbidden_note_duration=(1, 2))
-        ),
+        rmakers.note(spelling=rmakers.Spelling(forbidden_note_duration=(1, 2))),
         rmakers.untie(),
         rmakers.beam(baca.plts()),
     )
@@ -1009,15 +999,11 @@ def register_narrow(
     Registers narrow.
     """
     narrow_second_octave = baca.RegisterCommand(
-        registration=baca.Registration(
-            [("[A0, F#4)", -26), ("[F#4, C8]", -23)]
-        ),
+        registration=baca.Registration([("[A0, F#4)", -26), ("[F#4, C8]", -23)]),
         selector=baca.plts(exclude=baca.const.HIDDEN),
     )
     narrow_third_octave = baca.RegisterCommand(
-        registration=baca.Registration(
-            [("[A0, F#4)", -14), ("[F#4, C8]", -11)]
-        ),
+        registration=baca.Registration([("[A0, F#4)", -14), ("[F#4, C8]", -11)]),
         selector=baca.plts(exclude=baca.const.HIDDEN),
     )
     narrow_fourth_octave = baca.RegisterCommand(
@@ -1145,41 +1131,31 @@ def register_wide(start: int) -> baca.RegisterCommand:
     """
     if start == 3:
         wide_third_octave = baca.RegisterCommand(
-            registration=baca.Registration(
-                [("[A0, F#4)", -20), ("[F#4, C8]", -6)]
-            ),
+            registration=baca.Registration([("[A0, F#4)", -20), ("[F#4, C8]", -6)]),
             selector=baca.plts(exclude=baca.const.HIDDEN),
         )
         return wide_third_octave
     elif start == 4:
         wide_fourth_octave = baca.RegisterCommand(
-            registration=baca.Registration(
-                [("[A0, F#4)", -8), ("[F#4, C8]", 6)]
-            ),
+            registration=baca.Registration([("[A0, F#4)", -8), ("[F#4, C8]", 6)]),
             selector=baca.plts(exclude=baca.const.HIDDEN),
         )
         return wide_fourth_octave
     elif start == 5:
         wide_fifth_octave = baca.RegisterCommand(
-            registration=baca.Registration(
-                [("[A0, F#4)", 4), ("[F#4, C8]", 18)]
-            ),
+            registration=baca.Registration([("[A0, F#4)", 4), ("[F#4, C8]", 18)]),
             selector=baca.plts(exclude=baca.const.HIDDEN),
         )
         return wide_fifth_octave
     elif start == 6:
         wide_sixth_octave = baca.RegisterCommand(
-            registration=baca.Registration(
-                [("[A0, F#4)", 16), ("[F#4, C8]", 30)]
-            ),
+            registration=baca.Registration([("[A0, F#4)", 16), ("[F#4, C8]", 30)]),
             selector=baca.plts(exclude=baca.const.HIDDEN),
         )
         return wide_sixth_octave
     elif start == 7:
         wide_seventh_octave = baca.RegisterCommand(
-            registration=baca.Registration(
-                [("[A0, F#4)", 28), ("[F#4, C8]", 42)]
-            ),
+            registration=baca.Registration([("[A0, F#4)", 28), ("[F#4, C8]", 42)]),
             selector=baca.plts(exclude=baca.const.HIDDEN),
         )
         return wide_seventh_octave
@@ -1199,9 +1175,7 @@ def rest_delimited_repeated_duration_notes(
         ),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        preprocessor=baca.sequence()
-        .fuse()
-        .split_divisions([duration], cyclic=True),
+        preprocessor=baca.sequence().fuse().split_divisions([duration], cyclic=True),
         tag=abjad.Tag("krummzeit.rest_delimited_repeated_duration_notes()"),
     )
 

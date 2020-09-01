@@ -1,0 +1,46 @@
+import abjad
+
+
+metadata = abjad.OrderedDict(
+    [
+        (
+            "bol_measure_numbers",
+            [133, 141, 146, 150],
+        ),
+        ("duration", "1'07''"),
+        (
+            "fermata_measure_numbers",
+            [134, 136, 138, 140, 145],
+        ),
+        ("final_measure_number", 151),
+        ("first_measure_number", 133),
+        ("segment_name", "04"),
+        ("segment_number", 4),
+        ("start_clock_time", "5'07''"),
+        ("stop_clock_time", "6'14''"),
+        (
+            "time_signatures",
+            [
+                "3/4",
+                "1/4",
+                "5/8",
+                "1/4",
+                "9/8",
+                "1/4",
+                "9/8",
+                "1/4",
+                "9/8",
+                "5/8",
+                "3/4",
+                "3/4",
+                "1/4",
+                "4/4",
+                "4/4",
+                "5/4",
+                "5/4",
+                "5/4",
+                "5/4",
+            ],
+        ),
+    ]
+)

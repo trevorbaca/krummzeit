@@ -1,9 +1,8 @@
 import typing
 
-import quicktions
-
 import abjad
 import baca
+import quicktions
 from abjadext import rmakers
 
 # instruments & margin markups

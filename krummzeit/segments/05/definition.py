@@ -1,7 +1,8 @@
 import abjad
 import baca
-import krummzeit
 from abjadext import rmakers
+
+import krummzeit
 
 ###############################################################################
 ##################################### [D] #####################################

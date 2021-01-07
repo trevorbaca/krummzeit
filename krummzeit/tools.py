@@ -551,7 +551,6 @@ def color_tuplets(*commands: rmakers.Command, rotation: int = 0) -> baca.RhythmC
         ]
     )
     tuplet_ratios = tuplet_ratios.rotate(n=rotation)
-
     # TODO: complex but useful selector;
     #       externalize in baca.rhythmcommands for reuse;
     #       or, implement group_by_division()
@@ -560,7 +559,6 @@ def color_tuplets(*commands: rmakers.Command, rotation: int = 0) -> baca.RhythmC
     span_pleaves = nonlast_tuplets.map(span_pleaves)
     span_pairs = span_pleaves.filter_length("==", 2)
     selector = span_pairs.map(baca.leaf(0))
-
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
         rmakers.tie(selector),
@@ -569,6 +567,7 @@ def color_tuplets(*commands: rmakers.Command, rotation: int = 0) -> baca.RhythmC
         rmakers.rewrite_rest_filled(),
         rmakers.beam(),
         rmakers.extract_trivial(),
+        rmakers.reduce_multiplier(),
         tag=abjad.Tag("krummzeit.color_tuplets()"),
     )
 
@@ -693,6 +692,7 @@ def hypermeter_tuplets(
         rmakers.force_augmentation(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
+        rmakers.reduce_multiplier(),
         preprocessor=baca.sequence().fuse(counts, cyclic=True),
         tag=abjad.Tag("krummzeit.hypermeter_tuplets()"),
     )
@@ -806,6 +806,7 @@ def oboe_trills() -> baca.RhythmCommand:
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
+        rmakers.reduce_multiplier(),
         preprocessor=baca.sequence().map(split),
         tag=abjad.Tag("krummzeit.oboe_trills()"),
     )
@@ -1206,7 +1207,6 @@ def silver_points(
     Makes silver points rhythm.
     """
     split = baca.sequence().ratios(ratios, rounded=True)
-
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
         *commands,
@@ -1214,6 +1214,7 @@ def silver_points(
         rmakers.rewrite_dots(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
+        rmakers.reduce_multiplier(),
         preprocessor=baca.sequence().map(split),
         tag=abjad.Tag("krummzeit.silver_points()"),
     )
@@ -1250,6 +1251,7 @@ def single_division_tuplets(
         rmakers.beam(),
         rmakers.rewrite_dots(),
         rmakers.force_augmentation(),
+        rmakers.reduce_multiplier(),
         tag=abjad.Tag("krummzeit.single_division_tuplets()"),
     )
 

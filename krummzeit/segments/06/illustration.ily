@@ -765,46 +765,22 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bf''!16                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bf''!16                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bf''!16                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a''8.                                                                  %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a''8.                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -813,35 +789,17 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a'16.                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a''8                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         fs''!32                                                                %! krummzeit.oboe_trills()
 
         f'''32                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -851,58 +809,28 @@ f_Oboe_Music_Voice = {                                                         %
 
         % [06 Oboe_Music_Voice measure 201 / measure 2]                        %! baca.SegmentMaker._comment_measure_numbers()
         a''8                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.oboe_trills()
 
         b''8                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bf''!8                                                                 %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bf''!8                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bf''!4.                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bf''!4.                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -919,35 +847,17 @@ f_Oboe_Music_Voice = {                                                         %
         af''!8.                                                                %! krummzeit.oboe_trills()
 
         g''4                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         f'''16                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         [                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         e'''16                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -960,46 +870,22 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         e'''16                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         e'''16                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef'''!16                                                               %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef''!8.                                                                %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef''!8.                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1009,23 +895,11 @@ f_Oboe_Music_Voice = {                                                         %
         % [06 Oboe_Music_Voice measure 203 / measure 4]                        %! baca.SegmentMaker._comment_measure_numbers()
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef''!4.                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         bf'!2                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1034,13 +908,7 @@ f_Oboe_Music_Voice = {                                                         %
         [                                                                      %! krummzeit.oboe_trills()
 
         fs''!8                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1049,56 +917,26 @@ f_Oboe_Music_Voice = {                                                         %
     \times 3/5 {                                                               %! krummzeit.oboe_trills()
 
         g''16                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a''16                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a''16                                                                  %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a''16                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a'8.                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         b''8.                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1115,33 +953,15 @@ f_Oboe_Music_Voice = {                                                         %
         [                                                                      %! krummzeit.oboe_trills()
 
         af''!8                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         cs'''!32                                                               %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         cs''!32                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1154,46 +974,22 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         cs''!64                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         c''64                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         c''64                                                                  %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         c''32.                                                                 %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         c'''32.                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1201,34 +997,16 @@ f_Oboe_Music_Voice = {                                                         %
     \times 8/9 {                                                               %! krummzeit.oboe_trills()
 
         b''16.                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.oboe_trills()
 
         g''8                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         e'''32                                                                 %! krummzeit.oboe_trills()
 
         af''!32                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1239,57 +1017,27 @@ f_Oboe_Music_Voice = {                                                         %
         % [06 Oboe_Music_Voice measure 206 / measure 7]                        %! baca.SegmentMaker._comment_measure_numbers()
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g''8                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g''8                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'8                                                                    %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'8                                                                    %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
         a'4.                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         b'4.                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1307,36 +1055,18 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         e'4                                                                    %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         e'16                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         [                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         e'16                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1351,45 +1081,21 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         cs''!16                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         cs''!16                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         cs'''!16                                                               %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         cs'''!8.                                                               %! krummzeit.oboe_trills()
 
         c'''8.                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1397,35 +1103,17 @@ f_Oboe_Music_Voice = {                                                         %
     \times 8/9 {                                                               %! krummzeit.oboe_trills()
 
         b''16.                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.oboe_trills()
 
         g''8                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         fs''!32                                                                %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f'32                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1436,54 +1124,24 @@ f_Oboe_Music_Voice = {                                                         %
         % [06 Oboe_Music_Voice measure 209 / measure 10]                       %! baca.SegmentMaker._comment_measure_numbers()
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f'16                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.oboe_trills()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f'16                                                                   %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f'16                                                                   %! krummzeit.oboe_trills()
 
         e'''16                                                                 %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         ef'''!8.                                                               %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         bf''!8.                                                                %! krummzeit.oboe_trills()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.oboe_trills()
 
     }                                                                          %! krummzeit.oboe_trills()
@@ -1527,36 +1185,18 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         c'16                                                                   %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [                                                                      %! krummzeit.color_tuplets()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         c'16                                                                   %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         ]                                                                      %! krummzeit.color_tuplets()
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         bqs'!2.                                                                %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1578,13 +1218,7 @@ f_Oboe_Music_Voice = {                                                         %
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
 
         a'2.                                                                   %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1607,23 +1241,11 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a'4                                                                    %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a'16                                                                   %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         a'2.                                                                   %! krummzeit.color_tuplets()
@@ -1640,13 +1262,7 @@ f_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         gqs'!2                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1657,23 +1273,11 @@ f_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     gqs'!8                                                                     %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     gqs'!4.                                                                    %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     ~                                                                          %! krummzeit.color_tuplets()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.color_tuplets()
@@ -1696,35 +1300,17 @@ f_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     fqs'!32                                                                    %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     eqf'!32                                                                    %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     ]                                                                          %! krummzeit.color_tuplets()
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     eqf'!4.                                                                    %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     ~                                                                          %! krummzeit.color_tuplets()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.color_tuplets()
@@ -2349,35 +1935,17 @@ f_Clarinet_Music_Voice = {                                                     %
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     a4                                                                         %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     a16                                                                        %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     [                                                                          %! krummzeit.color_tuplets()
     \glissando                                                                 %! baca.glissando():abjad.glissando(7)
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     gtqs'!16                                                                   %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     ]                                                                          %! krummzeit.color_tuplets()
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
@@ -2394,13 +1962,7 @@ f_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs'!2                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -2414,13 +1976,7 @@ f_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs'!4.                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -2443,13 +1999,7 @@ f_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs'!2                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs'!8                                                                  %! krummzeit.color_tuplets()
@@ -2457,13 +2007,7 @@ f_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         eqs'!1.                                                                %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -2477,13 +2021,7 @@ f_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         eqs'!2                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -2497,13 +2035,7 @@ f_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         eqs'!16                                                                %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [                                                                      %! krummzeit.color_tuplets()
         \glissando                                                             %! baca.glissando():abjad.glissando(7)
 

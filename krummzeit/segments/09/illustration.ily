@@ -332,13 +332,7 @@ i_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 
@@ -347,22 +341,10 @@ i_Oboe_Music_Voice = {                                                         %
 
         % [09 Oboe_Music_Voice measure 290 / measure 10]                       %! baca.SegmentMaker._comment_measure_numbers()
         ef''!2.                                                                %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         ef''!2                                                                 %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
@@ -520,13 +502,7 @@ i_Clarinet_Music_Voice = {                                                     %
         ^ \baca-explicit-indicator-markup "(“BassClarinet”)"                   %! EXPLICIT_INSTRUMENT_ALERT:baca.SegmentMaker._attach_latent_indicator_alert()
 
         f1                                                                     %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 
@@ -535,22 +511,10 @@ i_Clarinet_Music_Voice = {                                                     %
 
         % [09 Clarinet_Music_Voice measure 290 / measure 10]                   %! baca.SegmentMaker._comment_measure_numbers()
         f4                                                                     %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         f1                                                                     %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert Stem.direction                                                 %! baca.stem_up():baca.OverrideCommand._call(2)
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)

@@ -850,35 +850,17 @@ h_Oboe_Music_Voice = {                                                         %
     \f                                                                         %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
     c'1                                                                        %! krummzeit.hypermeter_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.hypermeter_tuplets()
     \times 7/5 {                                                               %! krummzeit.hypermeter_tuplets()
 
         % [08 Oboe_Music_Voice measure 276 / measure 20]                       %! baca.SegmentMaker._comment_measure_numbers()
         c'4                                                                    %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         c'1                                                                    %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 
@@ -889,13 +871,7 @@ h_Oboe_Music_Voice = {                                                         %
         c'2.                                                                   %! krummzeit.hypermeter_tuplets()
 
         c'2                                                                    %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
@@ -1235,13 +1211,7 @@ h_Clarinet_Music_Voice = {                                                     %
         \<                                                                     %! baca.hairpin():baca.PiecewiseCommand._call(2):SPANNER_START:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
 
         d1.                                                                    %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 
@@ -1250,22 +1220,10 @@ h_Clarinet_Music_Voice = {                                                     %
 
         % [08 Clarinet_Music_Voice measure 276 / measure 20]                   %! baca.SegmentMaker._comment_measure_numbers()
         d1                                                                     %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         d1                                                                     %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 
@@ -1278,13 +1236,7 @@ h_Clarinet_Music_Voice = {                                                     %
         d4.                                                                    %! krummzeit.hypermeter_tuplets()
         - \tweak color #(x11-color 'blue)                                      %! EXPLICIT_DYNAMIC_COLOR:_treat_persistent_wrapper(1)
         \ff                                                                    %! baca.hairpin():baca.PiecewiseCommand._call(3):SPANNER_STOP:baca.SegmentMaker._set_status_tag():EXPLICIT_DYNAMIC
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \revert DynamicLineSpanner.staff-padding                               %! baca.dls_staff_padding():baca.OverrideCommand._call(2)
         \revert TupletBracket.staff-padding                                    %! baca.tuplet_bracket_staff_padding():baca.OverrideCommand._call(2)
 

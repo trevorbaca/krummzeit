@@ -986,35 +986,17 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         d''16                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [                                                                      %! krummzeit.color_tuplets()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         d''16                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         ]                                                                      %! krummzeit.color_tuplets()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         d''2.                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1041,13 +1023,7 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         d''4.                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1070,23 +1046,11 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         d''4                                                                   %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         d''16                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef''!2.                                                                %! krummzeit.color_tuplets()
@@ -1103,13 +1067,7 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef''!1                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1123,23 +1081,11 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef''!8                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         ef''!4.                                                                %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1164,34 +1110,16 @@ e_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     ef''!32                                                                    %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     ef''!32                                                                    %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     ]                                                                          %! krummzeit.color_tuplets()
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     ef''!4.                                                                    %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     ~                                                                          %! krummzeit.color_tuplets()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.color_tuplets()
@@ -1216,13 +1144,7 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         d''4.                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1238,24 +1160,12 @@ e_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     d''8                                                                       %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     [                                                                          %! krummzeit.color_tuplets()
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     d''32                                                                      %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     ]                                                                          %! krummzeit.color_tuplets()
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
@@ -1271,13 +1181,7 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         d''2                                                                   %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     }                                                                          %! krummzeit.color_tuplets()
 
@@ -1355,35 +1259,17 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f''16                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [                                                                      %! krummzeit.color_tuplets()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f''16                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         ]                                                                      %! krummzeit.color_tuplets()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f''2.                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1410,13 +1296,7 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs''!4.                                                                %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1445,23 +1325,11 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f''16                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f''2.                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1475,13 +1343,7 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         f''2                                                                   %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1498,13 +1360,7 @@ e_Oboe_Music_Voice = {                                                         %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs''!4.                                                                %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -1529,35 +1385,17 @@ e_Oboe_Music_Voice = {                                                         %
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     f''16                                                                      %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     [                                                                          %! krummzeit.color_tuplets()
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     f''16                                                                      %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     ]                                                                          %! krummzeit.color_tuplets()
 
     \baca-repeat-pitch-class-coloring                                          %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
     f''2.                                                                      %! krummzeit.color_tuplets()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     ~                                                                          %! krummzeit.color_tuplets()
 
     \times 4/5 {                                                               %! krummzeit.color_tuplets()
@@ -1753,34 +1591,16 @@ e_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs'''!4                                                                %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs'''!16                                                               %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.color_tuplets()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         fs'''!16                                                               %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.color_tuplets()
 
         gs'''!2.                                                               %! krummzeit.color_tuplets()
@@ -1917,34 +1737,16 @@ e_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'''4                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'''16                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         [                                                                      %! krummzeit.color_tuplets()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'''16                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ]                                                                      %! krummzeit.color_tuplets()
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
@@ -1962,13 +1764,7 @@ e_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         gs'''!2                                                                %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -2005,33 +1801,15 @@ e_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'''4                                                                  %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'''16                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'''2.                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()
@@ -2060,13 +1838,7 @@ e_Clarinet_Music_Voice = {                                                     %
 
         \baca-repeat-pitch-class-coloring                                      %! baca.SegmentMaker._color_repeat_pitch_classes_():REPEAT_PITCH_CLASS_COLORING
         g'''4.                                                                 %! krummzeit.color_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~                                                                      %! krummzeit.color_tuplets()
 
     }                                                                          %! krummzeit.color_tuplets()

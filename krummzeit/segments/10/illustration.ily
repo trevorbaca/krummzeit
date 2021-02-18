@@ -522,13 +522,7 @@ j_Oboe_Music_Voice = {                                                         %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
         ef''!4                                                                 %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 
@@ -704,13 +698,7 @@ j_Clarinet_Music_Voice = {                                                     %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
         f2                                                                     %! krummzeit.hypermeter_tuplets()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
     }                                                                          %! krummzeit.hypermeter_tuplets()
 

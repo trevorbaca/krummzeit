@@ -918,23 +918,11 @@ c_Oboe_Music_Voice = {                                                         %
         \override Staff.Clef.color = #(x11-color 'OliveDrab)                   %! baca.SegmentMaker._attach_color_literal(2):REAPPLIED_CLEF_REDRAW_COLOR
 
         ef''!4                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         c''8                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -947,13 +935,7 @@ c_Oboe_Music_Voice = {                                                         %
         c''8                                                                   %! krummzeit.pizzicato_rhythm()
 
         b''4.                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -968,50 +950,26 @@ c_Oboe_Music_Voice = {                                                         %
     \startTrillSpan                                                            %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
     ef''!4                                                                     %! krummzeit.pizzicato_rhythm()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
     \startTrillSpan                                                            %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
     ef''!8                                                                     %! krummzeit.pizzicato_rhythm()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm()
     \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm()
 
         ef'''!16                                                               %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [                                                                      %! krummzeit.pizzicato_rhythm()
 
         f'''16                                                                 %! krummzeit.pizzicato_rhythm()
         ]                                                                      %! krummzeit.pizzicato_rhythm()
 
         e'''4.                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1021,13 +979,7 @@ c_Oboe_Music_Voice = {                                                         %
     [                                                                          %! krummzeit.pizzicato_rhythm()
 
     d'''8                                                                      %! krummzeit.pizzicato_rhythm()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
     ~
     ]                                                                          %! krummzeit.pizzicato_rhythm()
@@ -1040,13 +992,7 @@ c_Oboe_Music_Voice = {                                                         %
         d'''4.                                                                 %! krummzeit.pizzicato_rhythm()
 
         cs''!2                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1059,23 +1005,11 @@ c_Oboe_Music_Voice = {                                                         %
 
         % [03 Oboe_Music_Voice measure 92 / measure 4]                         %! baca.SegmentMaker._comment_measure_numbers()
         cs''!4                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         cs''!8                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1088,13 +1022,7 @@ c_Oboe_Music_Voice = {                                                         %
         cs''8                                                                  %! krummzeit.pizzicato_rhythm()
 
         b''4.                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1138,32 +1066,14 @@ c_Oboe_Music_Voice = {                                                         %
 
         % [03 Oboe_Music_Voice measure 94 / measure 6]                         %! baca.SegmentMaker._comment_measure_numbers()
         b''8                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         b''4                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         bf''!8                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1271,23 +1181,11 @@ c_Oboe_Music_Voice = {                                                         %
         \ff                                                                    %! baca.dynamic():baca.IndicatorCommand._call():baca.SegmentMaker._set_status_tag():REDUNDANT_DYNAMIC
 
         e'''4                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         ef'''!8                                                                %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1300,13 +1198,7 @@ c_Oboe_Music_Voice = {                                                         %
         ef'''8                                                                 %! krummzeit.pizzicato_rhythm()
 
         c'''2                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1318,50 +1210,26 @@ c_Oboe_Music_Voice = {                                                         %
 
     % [03 Oboe_Music_Voice measure 113 / measure 25]                           %! baca.SegmentMaker._comment_measure_numbers()
     c''4                                                                       %! krummzeit.pizzicato_rhythm()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
     \startTrillSpan                                                            %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
     c''8                                                                       %! krummzeit.pizzicato_rhythm()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.pizzicato_rhythm()
     \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm()
 
         cs''!16                                                                %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [                                                                      %! krummzeit.pizzicato_rhythm()
 
         ef''!16                                                                %! krummzeit.pizzicato_rhythm()
         ]                                                                      %! krummzeit.pizzicato_rhythm()
 
         f'4.                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1372,24 +1240,12 @@ c_Oboe_Music_Voice = {                                                         %
         f'8                                                                    %! krummzeit.pizzicato_rhythm()
 
         e'2                                                                    %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         e'8                                                                    %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1405,23 +1261,11 @@ c_Oboe_Music_Voice = {                                                         %
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
         e'4                                                                    %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         d''8                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1435,13 +1279,7 @@ c_Oboe_Music_Voice = {                                                         %
     \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm()
 
         d'''2                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1456,47 +1294,23 @@ c_Oboe_Music_Voice = {                                                         %
 
         % [03 Oboe_Music_Voice measure 116 / measure 28]                       %! baca.SegmentMaker._comment_measure_numbers()
         d'''4                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         g''8                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         [                                                                      %! krummzeit.pizzicato_rhythm()
 
         fs''!16                                                                %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
 
         f'16                                                                   %! krummzeit.pizzicato_rhythm()
         ]                                                                      %! krummzeit.pizzicato_rhythm()
 
         cs''!4.                                                                %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
     }                                                                          %! krummzeit.pizzicato_rhythm()
@@ -1532,22 +1346,10 @@ c_Oboe_Music_Voice = {                                                         %
 
         % [03 Oboe_Music_Voice measure 118 / measure 30]                       %! baca.SegmentMaker._comment_measure_numbers()
         bf''!8                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         bf''!4                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         bf''!8                                                                 %! krummzeit.pizzicato_rhythm()
@@ -1563,13 +1365,7 @@ c_Oboe_Music_Voice = {                                                         %
         bf''8                                                                  %! krummzeit.pizzicato_rhythm()
 
         bf''!4.                                                                %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1606,22 +1402,10 @@ c_Oboe_Music_Voice = {                                                         %
 
         % [03 Oboe_Music_Voice measure 120 / measure 32]                       %! baca.SegmentMaker._comment_measure_numbers()
         d'''8                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
 
         cs'''!4                                                                %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         ef'''!8                                                                %! krummzeit.pizzicato_rhythm()
@@ -1637,35 +1421,17 @@ c_Oboe_Music_Voice = {                                                         %
         ef'''8                                                                 %! krummzeit.pizzicato_rhythm()
 
         f'''2                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         f'''4                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         f'''8                                                                  %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1684,33 +1450,15 @@ c_Oboe_Music_Voice = {                                                         %
     \times 3/4 {                                                               %! krummzeit.pizzicato_rhythm()
 
         e'16                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         [                                                                      %! krummzeit.pizzicato_rhythm()
 
         e'16                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         ]                                                                      %! krummzeit.pizzicato_rhythm()
 
         e'4.                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1725,37 +1473,19 @@ c_Oboe_Music_Voice = {                                                         %
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         bf''!2                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         g''8                                                                   %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        2
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
 
     }                                                                          %! krummzeit.pizzicato_rhythm()
 
     % [03 Oboe_Music_Voice measure 122 / measure 34]                           %! baca.SegmentMaker._comment_measure_numbers()
     fs''!8                                                                     %! krummzeit.pizzicato_rhythm()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     ~
     \startTrillSpan                                                            %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
@@ -1769,13 +1499,7 @@ c_Oboe_Music_Voice = {                                                         %
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
         cs''!8                                                                 %! krummzeit.pizzicato_rhythm()
-        ^ \markup {
-            \override
-                #'(circle-padding . 0.25)
-                \circle
-                    \finger
-                        1
-            }
+        ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         \stopTrillSpan                                                         %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
         ~
         \startTrillSpan                                                        %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
@@ -1786,24 +1510,12 @@ c_Oboe_Music_Voice = {                                                         %
 
     % [03 Oboe_Music_Voice measure 123 / measure 35]                           %! baca.SegmentMaker._comment_measure_numbers()
     cs''!4                                                                     %! krummzeit.pizzicato_rhythm()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    2
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
     \startTrillSpan                                                            %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 
     cs'''!4                                                                    %! krummzeit.pizzicato_rhythm()
-    ^ \markup {
-        \override
-            #'(circle-padding . 0.25)
-            \circle
-                \finger
-                    1
-        }
+    ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     \stopTrillSpan                                                             %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(4):SPANNER_STOP
     \startTrillSpan                                                            %! baca.trill_spanner():baca.SpannerIndicatorCommand._call(2):SPANNER_START
 

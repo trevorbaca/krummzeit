@@ -1,9 +1,9 @@
 import distutils.version
 import platform
 
-from .ScoreTemplate import ScoreTemplate
 from .tools import (
     RegisterTransitionCommand,
+    ScoreTemplate,
     closing_pizzicati,
     clusters,
     color_fingerings,

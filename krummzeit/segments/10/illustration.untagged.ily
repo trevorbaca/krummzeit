@@ -291,7 +291,8 @@ j_Global_Skips = {
 j_Oboe_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5 {
+    \times 8/5
+    {
 
         % [10 Oboe_Music_Voice measure 291 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
@@ -439,7 +440,8 @@ j_Oboe_Music_Staff = {
 j_Clarinet_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/5 {
+    \times 8/5
+    {
 
         % [10 Clarinet_Music_Voice measure 291 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
@@ -692,7 +694,8 @@ j_Clarinet_Music_Staff = {
 j_Piano_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/7 {
+    \times 8/7
+    {
 
         % [10 Piano_Music_Voice measure 291 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Pf."
@@ -747,7 +750,8 @@ j_Piano_Music_Voice = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Hpschd."
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -804,7 +808,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -861,7 +866,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -918,7 +924,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -975,7 +982,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1075,7 +1083,8 @@ j_Piano_Music_Voice = {
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Pf."
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \ottava -1
         \once \override Accidental.stencil = ##f
@@ -1135,7 +1144,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1192,7 +1202,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 299 / measure 9]
         \once \override Accidental.stencil = ##f
@@ -1250,7 +1261,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1307,7 +1319,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1364,7 +1377,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1421,7 +1435,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 300 / measure 10]
         \once \override Accidental.stencil = ##f
@@ -1479,7 +1494,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1536,7 +1552,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1593,7 +1610,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1650,7 +1668,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1707,7 +1726,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 301 / measure 11]
         \once \override Accidental.stencil = ##f
@@ -1765,7 +1785,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1822,7 +1843,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1879,7 +1901,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1936,7 +1959,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 302 / measure 12]
         \once \override Accidental.stencil = ##f
@@ -1994,7 +2018,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2051,7 +2076,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2108,7 +2134,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2165,7 +2192,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 303 / measure 13]
         \once \override Accidental.stencil = ##f
@@ -2223,7 +2251,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2280,7 +2309,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2337,7 +2367,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2394,7 +2425,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 304 / measure 14]
         \once \override Accidental.stencil = ##f
@@ -2452,7 +2484,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2509,7 +2542,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2566,7 +2600,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2623,7 +2658,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 305 / measure 15]
         \once \override Accidental.stencil = ##f
@@ -2681,7 +2717,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2738,7 +2775,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2795,7 +2833,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 306 / measure 16]
         \once \override Accidental.stencil = ##f
@@ -2853,7 +2892,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2910,7 +2950,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2967,7 +3008,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 307 / measure 17]
         \once \override Accidental.stencil = ##f
@@ -3025,7 +3067,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3082,7 +3125,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3139,7 +3183,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 308 / measure 18]
         \once \override Accidental.stencil = ##f
@@ -3197,7 +3242,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3254,7 +3300,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3311,7 +3358,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 309 / measure 19]
         \once \override Accidental.stencil = ##f
@@ -3369,7 +3417,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3426,7 +3475,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3483,7 +3533,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 310 / measure 20]
         \once \override Accidental.stencil = ##f
@@ -3541,7 +3592,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3598,7 +3650,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3655,7 +3708,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 311 / measure 21]
         \once \override Accidental.stencil = ##f
@@ -3713,7 +3767,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3770,7 +3825,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3827,7 +3883,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Piano_Music_Voice measure 312 / measure 22]
         \once \override Accidental.stencil = ##f
@@ -3885,7 +3942,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3942,7 +4000,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -3999,7 +4058,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4056,7 +4116,8 @@ j_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -4176,7 +4237,8 @@ j_Piano_Music_Staff = {
 j_Percussion_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 8/7 {
+    \times 8/7
+    {
 
         % [10 Percussion_Music_Voice measure 291 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."
@@ -4461,7 +4523,8 @@ j_Percussion_Music_Staff = {
 
 j_Violin_Music_Voice = {
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Violin_Music_Voice measure 291 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
@@ -4495,7 +4558,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4510,7 +4574,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4525,7 +4590,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4540,7 +4606,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Violin_Music_Voice measure 292 / measure 2]
         ef''!8
@@ -4556,7 +4623,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4571,7 +4639,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4586,7 +4655,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4601,7 +4671,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4616,7 +4687,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4631,7 +4703,8 @@ j_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -4814,7 +4887,8 @@ j_Violin_Music_Voice = {
     R1 * 3/4
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [10 Violin_Music_Voice measure 312 / measure 22]
         e'''8
@@ -4833,7 +4907,8 @@ j_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         f'''8
 
@@ -4909,7 +4984,8 @@ j_Violin_Music_Staff = {
 
 j_Viola_Music_Voice = {
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Viola_Music_Voice measure 291 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
@@ -4938,7 +5014,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -4953,7 +5030,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -4968,7 +5046,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -4983,7 +5062,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Viola_Music_Voice measure 292 / measure 2]
         a8
@@ -4999,7 +5079,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -5014,7 +5095,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -5029,7 +5111,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -5044,7 +5127,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -5059,7 +5143,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -5074,7 +5159,8 @@ j_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -5262,7 +5348,8 @@ j_Viola_Music_Voice = {
     % [10 Viola_Music_Voice measure 311 / measure 21]
     R1 * 3/4
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [10 Viola_Music_Voice measure 312 / measure 22]
         ef'''!8
@@ -5280,7 +5367,8 @@ j_Viola_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/6
+    {
 
         ef'''!2
         - \staccatissimo
@@ -5354,7 +5442,8 @@ j_Viola_Music_Staff = {
 
 j_Cello_Music_Voice = {
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Cello_Music_Voice measure 291 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
@@ -5383,7 +5472,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5398,7 +5488,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5413,7 +5504,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5428,7 +5520,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [10 Cello_Music_Voice measure 292 / measure 2]
         eqf,!8
@@ -5444,7 +5537,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5459,7 +5553,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5474,7 +5569,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5489,7 +5585,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5504,7 +5601,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5519,7 +5617,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -5707,7 +5806,8 @@ j_Cello_Music_Voice = {
     R1 * 3/4
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/6
+    {
 
         % [10 Cello_Music_Voice measure 312 / measure 22]
         f'''8
@@ -5728,7 +5828,8 @@ j_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         bf'''4.
 

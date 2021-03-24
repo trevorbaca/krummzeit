@@ -228,7 +228,8 @@ i_Oboe_Music_Voice = {
     <> \bacaStopTextSpanRhythmAnnotation
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [09 Oboe_Music_Voice measure 288 / measure 8]
         \override TupletBracket.staff-padding = 2
@@ -241,7 +242,8 @@ i_Oboe_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    \times 7/5
+    {
 
         % [09 Oboe_Music_Voice measure 290 / measure 10]
         ef''!2.
@@ -381,7 +383,8 @@ i_Clarinet_Music_Voice = {
     \revert DynamicLineSpanner.staff-padding
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [09 Clarinet_Music_Voice measure 288 / measure 8]
         \override DynamicLineSpanner.staff-padding = 9
@@ -398,7 +401,8 @@ i_Clarinet_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/5 {
+    \times 7/5
+    {
 
         % [09 Clarinet_Music_Voice measure 290 / measure 10]
         f4
@@ -452,7 +456,8 @@ i_Clarinet_Music_Staff = {
 
 i_Piano_Music_Voice = {
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 Piano_Music_Voice measure 281 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Hpschd."
@@ -525,7 +530,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -582,7 +588,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -639,7 +646,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -696,7 +704,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -753,7 +762,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -810,7 +820,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -867,7 +878,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -924,7 +936,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -981,7 +994,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1038,7 +1052,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1095,7 +1110,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1152,7 +1168,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1209,7 +1226,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1266,7 +1284,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1323,7 +1342,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1380,7 +1400,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1437,7 +1458,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1494,7 +1516,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1551,7 +1574,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1608,7 +1632,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1665,7 +1690,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1722,7 +1748,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1779,7 +1806,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1836,7 +1864,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1893,7 +1922,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -1950,7 +1980,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2007,7 +2038,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2064,7 +2096,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2121,7 +2154,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2178,7 +2212,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2235,7 +2270,8 @@ i_Piano_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
@@ -2320,7 +2356,8 @@ i_Piano_Music_Voice = {
     R1 * 1
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/7 {
+    \times 9/7
+    {
 
         % [09 Piano_Music_Voice measure 289 / measure 9]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Pf."
@@ -2500,7 +2537,8 @@ i_Percussion_Music_Voice = {
     R1 * 1
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/7 {
+    \times 9/7
+    {
 
         % [09 Percussion_Music_Voice measure 289 / measure 9]
         fs''!4
@@ -2556,7 +2594,8 @@ i_Percussion_Music_Staff = {
 i_Violin_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 19/10 {
+    \times 19/10
+    {
 
         % [09 Violin_Music_Voice measure 281 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
@@ -2585,7 +2624,8 @@ i_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 Violin_Music_Voice measure 283 / measure 3]
         \override NoteHead.style = #'harmonic
@@ -2607,7 +2647,8 @@ i_Violin_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [09 Violin_Music_Voice measure 284 / measure 4]
         cs'1
@@ -2618,7 +2659,8 @@ i_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         d'4
         \glissando
@@ -2628,7 +2670,8 @@ i_Violin_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [09 Violin_Music_Voice measure 285 / measure 5]
         f16
@@ -2639,7 +2682,8 @@ i_Violin_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         fs'!4
         \glissando
@@ -2649,7 +2693,8 @@ i_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         b'8
         \glissando
@@ -2682,7 +2727,8 @@ i_Violin_Music_Voice = {
     >>
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 13/10 {
+    \times 13/10
+    {
 
         % [09 Violin_Music_Voice measure 287 / measure 7]
         \override DynamicLineSpanner.staff-padding = 7
@@ -2699,7 +2745,8 @@ i_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5 {
+    \times 9/5
+    {
 
         % [09 Violin_Music_Voice measure 289 / measure 9]
         \baca-repeat-pitch-class-coloring
@@ -2755,7 +2802,8 @@ i_Violin_Music_Staff = {
 i_Viola_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 19/10 {
+    \times 19/10
+    {
 
         % [09 Viola_Music_Voice measure 281 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
@@ -2780,7 +2828,8 @@ i_Viola_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    \times 5/9
+    {
 
         % [09 Viola_Music_Voice measure 283 / measure 3]
         \override NoteHead.style = #'harmonic
@@ -2794,7 +2843,8 @@ i_Viola_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         \baca-repeat-pitch-class-coloring
         c8
@@ -2805,7 +2855,8 @@ i_Viola_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [09 Viola_Music_Voice measure 284 / measure 4]
         e2
@@ -2822,7 +2873,8 @@ i_Viola_Music_Voice = {
     af!2
     ~
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         af8
         \glissando
@@ -2832,7 +2884,8 @@ i_Viola_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [09 Viola_Music_Voice measure 285 / measure 5]
         e4
@@ -2843,7 +2896,8 @@ i_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g4
         \glissando
@@ -2876,7 +2930,8 @@ i_Viola_Music_Voice = {
     >>
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 13/10 {
+    \times 13/10
+    {
 
         % [09 Viola_Music_Voice measure 287 / measure 7]
         \override DynamicLineSpanner.staff-padding = 9
@@ -2893,7 +2948,8 @@ i_Viola_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5 {
+    \times 9/5
+    {
 
         % [09 Viola_Music_Voice measure 289 / measure 9]
         \baca-repeat-pitch-class-coloring
@@ -2949,7 +3005,8 @@ i_Viola_Music_Staff = {
 i_Cello_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 19/10 {
+    \times 19/10
+    {
 
         % [09 Cello_Music_Voice measure 281 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
@@ -2973,7 +3030,8 @@ i_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 Cello_Music_Voice measure 283 / measure 3]
         \override NoteHead.style = #'harmonic
@@ -2987,7 +3045,8 @@ i_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         f,8.
         \glissando
@@ -2997,7 +3056,8 @@ i_Cello_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         d,2
         \glissando
@@ -3007,7 +3067,8 @@ i_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [09 Cello_Music_Voice measure 284 / measure 4]
         bf,!4
@@ -3024,7 +3085,8 @@ i_Cello_Music_Voice = {
     f,1
     \glissando
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [09 Cello_Music_Voice measure 285 / measure 5]
         b,2
@@ -3035,7 +3097,8 @@ i_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         c8
         \glissando
@@ -3068,7 +3131,8 @@ i_Cello_Music_Voice = {
     >>
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 13/10 {
+    \times 13/10
+    {
 
         % [09 Cello_Music_Voice measure 287 / measure 7]
         \override DynamicLineSpanner.staff-padding = 9
@@ -3085,7 +3149,8 @@ i_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5 {
+    \times 9/5
+    {
 
         % [09 Cello_Music_Voice measure 289 / measure 9]
         \baca-repeat-pitch-class-coloring

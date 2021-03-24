@@ -431,7 +431,8 @@ f_Global_Skips = {
 
 f_Oboe_Music_Voice = {
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Oboe_Music_Voice measure 200 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
@@ -475,7 +476,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 8/9 {
+    \times 8/9
+    {
 
         \baca-repeat-pitch-class-coloring
         a'16.
@@ -495,7 +497,8 @@ f_Oboe_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Oboe_Music_Voice measure 201 / measure 2]
         a''8
@@ -532,7 +535,8 @@ f_Oboe_Music_Voice = {
     % [06 Oboe_Music_Voice measure 202 / measure 3]
     r2
 
-    \times 8/9 {
+    \times 8/9
+    {
 
         af''!8.
 
@@ -552,7 +556,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         \baca-repeat-pitch-class-coloring
         e'''16
@@ -580,7 +585,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Oboe_Music_Voice measure 203 / measure 4]
         \baca-repeat-pitch-class-coloring
@@ -604,7 +610,8 @@ f_Oboe_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         g''16
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -636,7 +643,8 @@ f_Oboe_Music_Voice = {
 
     r4
 
-    \times 8/9 {
+    \times 8/9
+    {
 
         % [06 Oboe_Music_Voice measure 205 / measure 6]
         bf''!16.
@@ -656,7 +664,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         \baca-repeat-pitch-class-coloring
         cs''!64
@@ -684,7 +693,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 8/9 {
+    \times 8/9
+    {
 
         b''16.
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -702,7 +712,8 @@ f_Oboe_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Oboe_Music_Voice measure 206 / measure 7]
         \baca-repeat-pitch-class-coloring
@@ -739,7 +750,8 @@ f_Oboe_Music_Voice = {
     % [06 Oboe_Music_Voice measure 207 / measure 8]
     r2.
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         bf''!8.
 
@@ -762,7 +774,8 @@ f_Oboe_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Oboe_Music_Voice measure 208 / measure 9]
         \baca-repeat-pitch-class-coloring
@@ -790,7 +803,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 8/9 {
+    \times 8/9
+    {
 
         b''16.
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
@@ -809,7 +823,8 @@ f_Oboe_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Oboe_Music_Voice measure 209 / measure 10]
         \baca-repeat-pitch-class-coloring
@@ -860,7 +875,8 @@ f_Oboe_Music_Voice = {
 
     >>
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Oboe_Music_Voice measure 211 / measure 12]
         r8
@@ -897,7 +913,8 @@ f_Oboe_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [06 Oboe_Music_Voice measure 213 / measure 14]
         \baca-repeat-pitch-class-coloring
@@ -911,7 +928,8 @@ f_Oboe_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Oboe_Music_Voice measure 214 / measure 15]
         a'2.
@@ -921,7 +939,8 @@ f_Oboe_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Oboe_Music_Voice measure 215 / measure 16]
         r8.
@@ -940,7 +959,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Oboe_Music_Voice measure 216 / measure 17]
         \baca-repeat-pitch-class-coloring
@@ -968,7 +988,8 @@ f_Oboe_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Oboe_Music_Voice measure 218 / measure 19]
         \baca-repeat-pitch-class-coloring
@@ -1001,7 +1022,8 @@ f_Oboe_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5 {
+    \times 9/5
+    {
 
         % [06 Oboe_Music_Voice measure 220 / measure 21]
         \baca-repeat-pitch-class-coloring
@@ -1054,7 +1076,8 @@ f_Oboe_Music_Voice = {
     % [06 Oboe_Music_Voice measure 227 / measure 28]
     R1 * 3/4
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Oboe_Music_Voice measure 228 / measure 29]
         \override DynamicLineSpanner.staff-padding = 4
@@ -1073,7 +1096,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1088,7 +1112,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1102,7 +1127,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1117,7 +1143,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Oboe_Music_Voice measure 229 / measure 30]
         a''8.
@@ -1132,7 +1159,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1147,7 +1175,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1161,7 +1190,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1176,7 +1206,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1190,7 +1221,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Oboe_Music_Voice measure 230 / measure 31]
         a''16
@@ -1206,7 +1238,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1220,7 +1253,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1235,7 +1269,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1249,7 +1284,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Oboe_Music_Voice measure 231 / measure 32]
         a''16
@@ -1265,7 +1301,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1279,7 +1316,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1294,7 +1332,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1308,7 +1347,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1323,7 +1363,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1337,7 +1378,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1352,7 +1394,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1367,7 +1410,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''16
 
@@ -1382,7 +1426,8 @@ f_Oboe_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a''8.
         \startTrillSpan
@@ -1621,7 +1666,8 @@ f_Clarinet_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Clarinet_Music_Voice measure 214 / measure 15]
         \baca-repeat-pitch-class-coloring
@@ -1636,7 +1682,8 @@ f_Clarinet_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [06 Clarinet_Music_Voice measure 215 / measure 16]
         \baca-repeat-pitch-class-coloring
@@ -1649,7 +1696,8 @@ f_Clarinet_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Clarinet_Music_Voice measure 216 / measure 17]
         \baca-repeat-pitch-class-coloring
@@ -1660,7 +1708,8 @@ f_Clarinet_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 11/20 {
+    \times 11/20
+    {
 
         % [06 Clarinet_Music_Voice measure 217 / measure 18]
         r4.
@@ -1681,7 +1730,8 @@ f_Clarinet_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Clarinet_Music_Voice measure 218 / measure 19]
         \baca-repeat-pitch-class-coloring
@@ -1695,7 +1745,8 @@ f_Clarinet_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 10/11 {
+    \times 10/11
+    {
 
         % [06 Clarinet_Music_Voice measure 219 / measure 20]
         \baca-repeat-pitch-class-coloring
@@ -1714,7 +1765,8 @@ f_Clarinet_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/5 {
+    \times 9/5
+    {
 
         % [06 Clarinet_Music_Voice measure 220 / measure 21]
         dqs'4.
@@ -2166,7 +2218,8 @@ f_Piano_Music_Voice = {
     % [06 Piano_Music_Voice measure 215 / measure 16]
     R1 * 3/4
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Piano_Music_Voice measure 216 / measure 17]
         \override Beam.positions = #'(-4 . -4)
@@ -2196,7 +2249,8 @@ f_Piano_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         r8
 
@@ -2240,7 +2294,8 @@ f_Piano_Music_Voice = {
     % [06 Piano_Music_Voice measure 218 / measure 19]
     R1 * 3/4
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Piano_Music_Voice measure 219 / measure 20]
         \clef "treble"
@@ -2263,7 +2318,8 @@ f_Piano_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         r16
 
@@ -2283,7 +2339,8 @@ f_Piano_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [06 Piano_Music_Voice measure 220 / measure 21]
         r8
@@ -2302,7 +2359,8 @@ f_Piano_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         r16
 
@@ -2322,7 +2380,8 @@ f_Piano_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [06 Piano_Music_Voice measure 221 / measure 22]
         r16
@@ -2341,7 +2400,8 @@ f_Piano_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         r8
 
@@ -2374,7 +2434,8 @@ f_Piano_Music_Voice = {
     f''4
     - \staccatissimo
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         r16
 
@@ -2394,7 +2455,8 @@ f_Piano_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [06 Piano_Music_Voice measure 223 / measure 24]
         r16
@@ -2413,7 +2475,8 @@ f_Piano_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         r8
 
@@ -2432,7 +2495,8 @@ f_Piano_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Piano_Music_Voice measure 224 / measure 25]
         r8
@@ -2450,7 +2514,8 @@ f_Piano_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         r16
 
@@ -2469,7 +2534,8 @@ f_Piano_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Piano_Music_Voice measure 225 / measure 26]
         r16
@@ -2487,7 +2553,8 @@ f_Piano_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         r8
 
@@ -2575,7 +2642,8 @@ f_Piano_Music_Voice = {
     \override Staff.Clef.color = #(x11-color 'DeepSkyBlue2)
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 7/8 {
+    \times 7/8
+    {
 
         \ottava 1
         c''''8
@@ -2605,7 +2673,8 @@ f_Piano_Music_Voice = {
     ]
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         \baca-repeat-pitch-class-coloring
         c''''16
@@ -2649,7 +2718,8 @@ f_Piano_Music_Voice = {
     r4.
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         ef''''!8
         - \staccatissimo
@@ -2762,7 +2832,8 @@ f_Percussion_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Percussion_Music_Voice measure 201 / measure 2]
         c'2
@@ -2793,7 +2864,8 @@ f_Percussion_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/17 {
+    \times 9/17
+    {
 
         % [06 Percussion_Music_Voice measure 203 / measure 4]
         c'2
@@ -2814,7 +2886,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Percussion_Music_Voice measure 204 / measure 5]
         c'4.
@@ -2837,7 +2910,8 @@ f_Percussion_Music_Voice = {
     :32
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/17 {
+    \times 9/17
+    {
 
         % [06 Percussion_Music_Voice measure 206 / measure 7]
         c'1
@@ -2860,7 +2934,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/13 {
+    \times 9/13
+    {
 
         % [06 Percussion_Music_Voice measure 207 / measure 8]
         c'4.
@@ -2888,7 +2963,8 @@ f_Percussion_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \times 5/8
+    {
 
         % [06 Percussion_Music_Voice measure 209 / measure 10]
         c'8
@@ -2903,7 +2979,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [06 Percussion_Music_Voice measure 210 / measure 11]
         c'8
@@ -2940,7 +3017,8 @@ f_Percussion_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    \times 5/9
+    {
 
         % [06 Percussion_Music_Voice measure 212 / measure 13]
         c'2..
@@ -2958,7 +3036,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [06 Percussion_Music_Voice measure 213 / measure 14]
         c'8
@@ -3002,7 +3081,8 @@ f_Percussion_Music_Voice = {
     R1 * 3/4
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [06 Percussion_Music_Voice measure 216 / measure 17]
         \override Staff.BarLine.bar-extent = #'(-2 . 2)
@@ -3034,7 +3114,8 @@ f_Percussion_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         r16
 
@@ -3079,7 +3160,8 @@ f_Percussion_Music_Voice = {
     R1 * 3/4
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [06 Percussion_Music_Voice measure 219 / measure 20]
         r16
@@ -3097,7 +3179,8 @@ f_Percussion_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         r16
 
@@ -3117,7 +3200,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [06 Percussion_Music_Voice measure 220 / measure 21]
         r16
@@ -3136,7 +3220,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         r8
 
@@ -3156,7 +3241,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [06 Percussion_Music_Voice measure 221 / measure 22]
         r8
@@ -3175,7 +3261,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         r16
 
@@ -3194,7 +3281,8 @@ f_Percussion_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Percussion_Music_Voice measure 222 / measure 23]
         r16
@@ -3213,7 +3301,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 10/7 {
+    \times 10/7
+    {
 
         r16
 
@@ -3233,7 +3322,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/5 {
+    \times 6/5
+    {
 
         % [06 Percussion_Music_Voice measure 223 / measure 24]
         r8
@@ -3252,7 +3342,8 @@ f_Percussion_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         r16
 
@@ -3271,7 +3362,8 @@ f_Percussion_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Percussion_Music_Voice measure 224 / measure 25]
         r16
@@ -3289,7 +3381,8 @@ f_Percussion_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         r8
 
@@ -3308,7 +3401,8 @@ f_Percussion_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Percussion_Music_Voice measure 225 / measure 26]
         r8
@@ -3326,7 +3420,8 @@ f_Percussion_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         r16
 
@@ -3384,7 +3479,8 @@ f_Percussion_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Percussion_Music_Voice measure 228 / measure 29]
         c'2
@@ -3425,7 +3521,8 @@ f_Percussion_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 9/13 {
+    \times 9/13
+    {
 
         % [06 Percussion_Music_Voice measure 231 / measure 32]
         c'4
@@ -3459,7 +3556,8 @@ f_Percussion_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \times 5/8
+    {
 
         % [06 Percussion_Music_Voice measure 233 / measure 34]
         c'4.
@@ -3664,7 +3762,8 @@ f_Violin_Music_Voice = {
     e''2
     \glissando
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         g''16
         \glissando
@@ -3675,7 +3774,8 @@ f_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [06 Violin_Music_Voice measure 212 / measure 13]
         ef''!2
@@ -3686,7 +3786,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         fs''!4
         \glissando
@@ -3696,7 +3797,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Violin_Music_Voice measure 213 / measure 14]
         d''8
@@ -3710,7 +3812,8 @@ f_Violin_Music_Voice = {
 
     r2
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Violin_Music_Voice measure 214 / measure 15]
         a'8
@@ -3721,7 +3824,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         cs''!4
         \glissando
@@ -3731,7 +3835,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Violin_Music_Voice measure 215 / measure 16]
         d''4
@@ -3742,7 +3847,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         f'16
         \glissando
@@ -3752,7 +3858,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [06 Violin_Music_Voice measure 216 / measure 17]
         cs''!4
@@ -3775,7 +3882,8 @@ f_Violin_Music_Voice = {
     a'4.
     \glissando
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         c''4
         \glissando
@@ -3785,7 +3893,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Violin_Music_Voice measure 218 / measure 19]
         af'!8
@@ -3796,7 +3905,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         bf'!4
         \glissando
@@ -3806,7 +3916,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Violin_Music_Voice measure 219 / measure 20]
         e'8
@@ -3866,7 +3977,8 @@ f_Violin_Music_Voice = {
     % [06 Violin_Music_Voice measure 227 / measure 28]
     R1 * 3/4
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Violin_Music_Voice measure 228 / measure 29]
         \override DynamicLineSpanner.staff-padding = 4
@@ -3887,7 +3999,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -3903,7 +4016,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -3919,7 +4033,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -3935,7 +4050,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Violin_Music_Voice measure 229 / measure 30]
         \pitchedTrill
@@ -3952,7 +4068,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -3968,7 +4085,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -3984,7 +4102,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -4000,7 +4119,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -4016,7 +4136,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Violin_Music_Voice measure 230 / measure 31]
         g''16
@@ -4033,7 +4154,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -4049,7 +4171,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -4065,7 +4188,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -4081,7 +4205,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Violin_Music_Voice measure 231 / measure 32]
         g''16
@@ -4098,7 +4223,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -4114,7 +4240,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -4130,7 +4257,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -4146,7 +4274,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -4162,7 +4291,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -4178,7 +4308,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -4194,7 +4325,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -4211,7 +4343,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g''16
 
@@ -4227,7 +4360,8 @@ f_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         \pitchedTrill
         g''8.
@@ -4422,7 +4556,8 @@ f_Viola_Music_Voice = {
 
     r4
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [06 Viola_Music_Voice measure 212 / measure 13]
         \override NoteHead.style = #'harmonic
@@ -4439,7 +4574,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         g'8
         \glissando
@@ -4449,7 +4585,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         ef'!8
         \glissando
@@ -4460,7 +4597,8 @@ f_Viola_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [06 Viola_Music_Voice measure 213 / measure 14]
         fs'!2
@@ -4471,7 +4609,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         d'4
         \glissando
@@ -4485,7 +4624,8 @@ f_Viola_Music_Voice = {
 
     r4
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Viola_Music_Voice measure 215 / measure 16]
         a8
@@ -4496,7 +4636,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         cs'!16
         \glissando
@@ -4506,7 +4647,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         d'4
         \glissando
@@ -4523,7 +4665,8 @@ f_Viola_Music_Voice = {
     fs!2
     \glissando
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         cs'!16
         \glissando
@@ -4539,7 +4682,8 @@ f_Viola_Music_Voice = {
 
     r2
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Viola_Music_Voice measure 218 / measure 19]
         fs!16
@@ -4550,7 +4694,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         c4
         \glissando
@@ -4560,7 +4705,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         af!8
         \glissando
@@ -4570,7 +4716,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Viola_Music_Voice measure 219 / measure 20]
         bf!16.
@@ -4581,7 +4728,8 @@ f_Viola_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         e4
         \glissando
@@ -4944,7 +5092,8 @@ f_Cello_Music_Voice = {
 
     >>
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [06 Cello_Music_Voice measure 211 / measure 12]
         \override NoteHead.style = #'harmonic
@@ -4963,7 +5112,8 @@ f_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         g'8
         \glissando
@@ -4977,7 +5127,8 @@ f_Cello_Music_Voice = {
     % [06 Cello_Music_Voice measure 212 / measure 13]
     r2.
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         ef'!8
         \glissando
@@ -4988,7 +5139,8 @@ f_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [06 Cello_Music_Voice measure 213 / measure 14]
         fs'!2
@@ -4999,7 +5151,8 @@ f_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         d4
         \glissando
@@ -5009,7 +5162,8 @@ f_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Cello_Music_Voice measure 214 / measure 15]
         a16
@@ -5020,7 +5174,8 @@ f_Cello_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         cs!4
         \glissando
@@ -5034,7 +5189,8 @@ f_Cello_Music_Voice = {
     % [06 Cello_Music_Voice measure 215 / measure 16]
     r2
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         d4
         \glissando
@@ -5051,7 +5207,8 @@ f_Cello_Music_Voice = {
     fs!2
     \glissando
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         cs!16
         \glissando
@@ -5061,7 +5218,8 @@ f_Cello_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [06 Cello_Music_Voice measure 217 / measure 18]
         fs!2
@@ -5082,7 +5240,8 @@ f_Cello_Music_Voice = {
     % [06 Cello_Music_Voice measure 218 / measure 19]
     r2
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         af,!8
         \glissando
@@ -5094,7 +5253,8 @@ f_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [06 Cello_Music_Voice measure 219 / measure 20]
         bf,!16.
@@ -5105,7 +5265,8 @@ f_Cello_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         e,4
         \glissando

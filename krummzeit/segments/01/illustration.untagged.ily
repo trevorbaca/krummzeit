@@ -709,7 +709,8 @@ a_Percussion_Music_Voice = {
     R1 * 1/4
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \times 5/8
+    {
 
         % [01 Percussion_Music_Voice measure 10]
         \override Staff.BarLine.bar-extent = #'(0 . 2)
@@ -738,7 +739,8 @@ a_Percussion_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Percussion_Music_Voice measure 11]
         c'2
@@ -767,7 +769,8 @@ a_Percussion_Music_Voice = {
     ~
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [01 Percussion_Music_Voice measure 13]
         c'2.
@@ -836,7 +839,8 @@ a_Violin_Music_Voice = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -853,7 +857,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -868,7 +873,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -883,7 +889,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -898,7 +905,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -913,7 +921,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -928,7 +937,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -943,7 +953,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         ef''!8
         :32
@@ -980,7 +991,8 @@ a_Violin_Music_Voice = {
 
     >>
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Violin_Music_Voice measure 4]
         \override NoteHead.style = #'harmonic
@@ -997,7 +1009,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         fs''!16
         \glissando
@@ -1008,7 +1021,8 @@ a_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [01 Violin_Music_Voice measure 5]
         d''4
@@ -1019,7 +1033,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         d''8
         - \tweak stencil ##f
@@ -1031,7 +1046,8 @@ a_Violin_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [01 Violin_Music_Voice measure 6]
         fs''!16.
@@ -1045,7 +1061,8 @@ a_Violin_Music_Voice = {
 
     r4.
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [01 Violin_Music_Voice measure 7]
         cs''!8.
@@ -1057,7 +1074,8 @@ a_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         af'!4
         \glissando
@@ -1074,7 +1092,8 @@ a_Violin_Music_Voice = {
     e'4
     \glissando
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         f'16
         \glissando
@@ -1177,7 +1196,8 @@ a_Viola_Music_Voice = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -1194,7 +1214,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -1209,7 +1230,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -1224,7 +1246,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -1239,7 +1262,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -1254,7 +1278,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -1269,7 +1294,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -1284,7 +1310,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         a8
         :32
@@ -1326,7 +1353,8 @@ a_Viola_Music_Voice = {
 
     r4
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [01 Viola_Music_Voice measure 5]
         \override NoteHead.style = #'harmonic
@@ -1343,7 +1371,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         cs'!16
         [
@@ -1355,7 +1384,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         ef'!16
         \glissando
@@ -1366,7 +1396,8 @@ a_Viola_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [01 Viola_Music_Voice measure 6]
         a'2
@@ -1387,7 +1418,8 @@ a_Viola_Music_Voice = {
 
     r4.
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Viola_Music_Voice measure 8]
         ef!8
@@ -1398,7 +1430,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         d32
         [
@@ -1411,7 +1444,8 @@ a_Viola_Music_Voice = {
 
     }
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         ef4
         \repeatTie
@@ -1515,7 +1549,8 @@ a_Cello_Music_Voice = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -1532,7 +1567,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -1547,7 +1583,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -1562,7 +1599,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -1577,7 +1615,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -1592,7 +1631,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -1607,7 +1647,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -1622,7 +1663,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         eqf,!8
         :32
@@ -1659,7 +1701,8 @@ a_Cello_Music_Voice = {
 
     >>
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [01 Cello_Music_Voice measure 4]
         \override NoteHead.style = #'harmonic
@@ -1676,7 +1719,8 @@ a_Cello_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         ef'!16
         \glissando
@@ -1690,7 +1734,8 @@ a_Cello_Music_Voice = {
     % [01 Cello_Music_Voice measure 5]
     r4.
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         f'16
         \glissando
@@ -1701,7 +1746,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         % [01 Cello_Music_Voice measure 6]
         c'2
@@ -1718,7 +1764,8 @@ a_Cello_Music_Voice = {
     c'4
     \glissando
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [01 Cello_Music_Voice measure 7]
         d'16.
@@ -1730,7 +1777,8 @@ a_Cello_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 6/7 {
+    \times 6/7
+    {
 
         e4
         \glissando
@@ -1744,7 +1792,8 @@ a_Cello_Music_Voice = {
     % [01 Cello_Music_Voice measure 8]
     r4.
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         e4
         \glissando

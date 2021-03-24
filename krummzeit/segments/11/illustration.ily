@@ -2866,7 +2866,8 @@ k_Percussion_Music_Staff = {                                                   %
 k_Violin_Music_Voice = {                                                       %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/7 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/7                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 314 / measure 1]                      %! baca.SegmentMaker._comment_measure_numbers()
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."         %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
@@ -2905,7 +2906,8 @@ k_Violin_Music_Voice = {                                                       %
     % [11 Violin_Music_Voice measure 315 / measure 2]                          %! baca.SegmentMaker._comment_measure_numbers()
     r4                                                                         %! krummzeit.closing_pizzicati()
 
-    \times 4/5 {                                                               %! krummzeit.closing_pizzicati()
+    \times 4/5                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         r2                                                                     %! krummzeit.closing_pizzicati()
 
@@ -2914,7 +2916,8 @@ k_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! krummzeit.closing_pizzicati()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 316 / measure 3]                      %! baca.SegmentMaker._comment_measure_numbers()
         r1                                                                     %! krummzeit.closing_pizzicati()
@@ -2930,7 +2933,8 @@ k_Violin_Music_Voice = {                                                       %
     r2                                                                         %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/6 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/6                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 318 / measure 5]                      %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! krummzeit.closing_pizzicati()
@@ -2944,7 +2948,8 @@ k_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 3/5 {                                                               %! krummzeit.closing_pizzicati()
+    \times 3/5                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 319 / measure 6]                      %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! krummzeit.closing_pizzicati()
@@ -2962,7 +2967,8 @@ k_Violin_Music_Voice = {                                                       %
 
     r2                                                                         %! krummzeit.closing_pizzicati()
 
-    \times 4/5 {                                                               %! krummzeit.closing_pizzicati()
+    \times 4/5                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 320 / measure 7]                      %! baca.SegmentMaker._comment_measure_numbers()
         r1                                                                     %! krummzeit.closing_pizzicati()
@@ -2976,7 +2982,8 @@ k_Violin_Music_Voice = {                                                       %
     r2                                                                         %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/9 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/9                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 322 / measure 9]                      %! baca.SegmentMaker._comment_measure_numbers()
         r1                                                                     %! krummzeit.closing_pizzicati()
@@ -2989,7 +2996,8 @@ k_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/6 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/6                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 323 / measure 10]                     %! baca.SegmentMaker._comment_measure_numbers()
         r1                                                                     %! krummzeit.closing_pizzicati()
@@ -2999,7 +3007,8 @@ k_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! krummzeit.closing_pizzicati()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 324 / measure 11]                     %! baca.SegmentMaker._comment_measure_numbers()
         d'''1                                                                  %! krummzeit.closing_pizzicati()
@@ -3014,7 +3023,8 @@ k_Violin_Music_Voice = {                                                       %
     r2                                                                         %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/6 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/6                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 326 / measure 13]                     %! baca.SegmentMaker._comment_measure_numbers()
         f'''1.                                                                 %! krummzeit.closing_pizzicati()
@@ -3030,7 +3040,8 @@ k_Violin_Music_Voice = {                                                       %
     g'''2.                                                                     %! krummzeit.closing_pizzicati()
     - \staccatissimo                                                           %! baca.staccatissimo():baca.IndicatorCommand._call()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 328 / measure 15]                     %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! krummzeit.closing_pizzicati()
@@ -3050,7 +3061,8 @@ k_Violin_Music_Voice = {                                                       %
     - \staccatissimo                                                           %! baca.staccatissimo():baca.IndicatorCommand._call()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/7 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/7                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 330 / measure 17]                     %! baca.SegmentMaker._comment_measure_numbers()
         cs'''!4                                                                %! krummzeit.closing_pizzicati()
@@ -3062,7 +3074,8 @@ k_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 3/4 {                                                               %! krummzeit.closing_pizzicati()
+    \times 3/4                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 331 / measure 18]                     %! baca.SegmentMaker._comment_measure_numbers()
         r2                                                                     %! krummzeit.closing_pizzicati()
@@ -3082,7 +3095,8 @@ k_Violin_Music_Voice = {                                                       %
     - \staccatissimo                                                           %! baca.staccatissimo():baca.IndicatorCommand._call()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/7 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/7                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 334 / measure 21]                     %! baca.SegmentMaker._comment_measure_numbers()
         r1.                                                                    %! krummzeit.closing_pizzicati()
@@ -3093,7 +3107,8 @@ k_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/7 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/7                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 335 / measure 22]                     %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! krummzeit.closing_pizzicati()
@@ -3106,7 +3121,8 @@ k_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! krummzeit.closing_pizzicati()
 
-    \times 4/5 {                                                               %! krummzeit.closing_pizzicati()
+    \times 4/5                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 336 / measure 23]                     %! baca.SegmentMaker._comment_measure_numbers()
         r2                                                                     %! krummzeit.closing_pizzicati()
@@ -3120,7 +3136,8 @@ k_Violin_Music_Voice = {                                                       %
     r2                                                                         %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/9 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/9                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 338 / measure 25]                     %! baca.SegmentMaker._comment_measure_numbers()
         r2.                                                                    %! krummzeit.closing_pizzicati()
@@ -3136,7 +3153,8 @@ k_Violin_Music_Voice = {                                                       %
     % [11 Violin_Music_Voice measure 339 / measure 26]                         %! baca.SegmentMaker._comment_measure_numbers()
     r4                                                                         %! krummzeit.closing_pizzicati()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         r4                                                                     %! krummzeit.closing_pizzicati()
 
@@ -3154,14 +3172,16 @@ k_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! krummzeit.closing_pizzicati()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 340 / measure 27]                     %! baca.SegmentMaker._comment_measure_numbers()
         r1.                                                                    %! krummzeit.closing_pizzicati()
 
     }                                                                          %! krummzeit.closing_pizzicati()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 341 / measure 28]                     %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! krummzeit.closing_pizzicati()
@@ -3172,7 +3192,8 @@ k_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/7 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/7                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 342 / measure 29]                     %! baca.SegmentMaker._comment_measure_numbers()
         r1.                                                                    %! krummzeit.closing_pizzicati()
@@ -3183,7 +3204,8 @@ k_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 3/4 {                                                               %! krummzeit.closing_pizzicati()
+    \times 3/4                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 343 / measure 30]                     %! baca.SegmentMaker._comment_measure_numbers()
         r1                                                                     %! krummzeit.closing_pizzicati()
@@ -3192,7 +3214,8 @@ k_Violin_Music_Voice = {                                                       %
 
     r2                                                                         %! krummzeit.closing_pizzicati()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 344 / measure 31]                     %! baca.SegmentMaker._comment_measure_numbers()
         r4                                                                     %! krummzeit.closing_pizzicati()
@@ -3212,7 +3235,8 @@ k_Violin_Music_Voice = {                                                       %
     - \staccatissimo                                                           %! baca.staccatissimo():baca.IndicatorCommand._call()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/6 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/6                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 346 / measure 33]                     %! baca.SegmentMaker._comment_measure_numbers()
         r2.                                                                    %! krummzeit.closing_pizzicati()
@@ -3223,7 +3247,8 @@ k_Violin_Music_Voice = {                                                       %
     }                                                                          %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/7 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/7                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 347 / measure 34]                     %! baca.SegmentMaker._comment_measure_numbers()
         r1                                                                     %! krummzeit.closing_pizzicati()
@@ -3245,7 +3270,8 @@ k_Violin_Music_Voice = {                                                       %
     r2                                                                         %! krummzeit.closing_pizzicati()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/7 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/7                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 350 / measure 37]                     %! baca.SegmentMaker._comment_measure_numbers()
         ef'''!2                                                                %! krummzeit.closing_pizzicati()
@@ -3265,7 +3291,8 @@ k_Violin_Music_Voice = {                                                       %
     % [11 Violin_Music_Voice measure 351 / measure 38]                         %! baca.SegmentMaker._comment_measure_numbers()
     r4                                                                         %! krummzeit.closing_pizzicati()
 
-    \times 4/5 {                                                               %! krummzeit.closing_pizzicati()
+    \times 4/5                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         r1                                                                     %! krummzeit.closing_pizzicati()
 
@@ -3274,7 +3301,8 @@ k_Violin_Music_Voice = {                                                       %
 
     }                                                                          %! krummzeit.closing_pizzicati()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Violin_Music_Voice measure 352 / measure 39]                     %! baca.SegmentMaker._comment_measure_numbers()
         r1.                                                                    %! krummzeit.closing_pizzicati()
@@ -3385,7 +3413,8 @@ k_Violin_Music_Staff = {                                                       %
 k_Viola_Music_Voice = {                                                        %! ide.Path.extern()
 
     \tweak text #tuplet-number::calc-fraction-text                             %! krummzeit.closing_pizzicati()
-    \times 5/8 {                                                               %! krummzeit.closing_pizzicati()
+    \times 5/8                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Viola_Music_Voice measure 314 / measure 1]                       %! baca.SegmentMaker._comment_measure_numbers()
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."         %! -PARTS:baca.SegmentMaker._reapply_persistent_indicators(3):baca.SegmentMaker._set_status_tag():REAPPLIED_MARGIN_MARKUP
@@ -3419,7 +3448,8 @@ k_Viola_Music_Voice = {                                                        %
     f'''4                                                                      %! krummzeit.closing_pizzicati()
     - \staccatissimo                                                           %! baca.staccatissimo():baca.IndicatorCommand._call()
 
-    \times 4/7 {                                                               %! krummzeit.closing_pizzicati()
+    \times 4/7                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Viola_Music_Voice measure 316 / measure 3]                       %! baca.SegmentMaker._comment_measure_numbers()
         r2.                                                                    %! krummzeit.closing_pizzicati()
@@ -3435,7 +3465,8 @@ k_Viola_Music_Voice = {                                                        %
 
     }                                                                          %! krummzeit.closing_pizzicati()
 
-    \times 2/3 {                                                               %! krummzeit.closing_pizzicati()
+    \times 2/3                                                                 %! krummzeit.closing_pizzicati()
+    {                                                                          %! krummzeit.closing_pizzicati()
 
         % [11 Viola_Music_Voice measure 317 / measure 4]                       %! baca.SegmentMaker._comment_measure_numbers()
         cs'''!2.                                                               %! krummzeit.closing_pizzicati()

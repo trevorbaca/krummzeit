@@ -2503,7 +2503,8 @@ k_Percussion_Music_Staff = {
 k_Violin_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [11 Violin_Music_Voice measure 314 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
@@ -2541,7 +2542,8 @@ k_Violin_Music_Voice = {
     % [11 Violin_Music_Voice measure 315 / measure 2]
     r4
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         r2
 
@@ -2550,7 +2552,8 @@ k_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [11 Violin_Music_Voice measure 316 / measure 3]
         r1
@@ -2566,7 +2569,8 @@ k_Violin_Music_Voice = {
     r2
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/6
+    {
 
         % [11 Violin_Music_Voice measure 318 / measure 5]
         r4
@@ -2580,7 +2584,8 @@ k_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/5 {
+    \times 3/5
+    {
 
         % [11 Violin_Music_Voice measure 319 / measure 6]
         r4
@@ -2598,7 +2603,8 @@ k_Violin_Music_Voice = {
 
     r2
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [11 Violin_Music_Voice measure 320 / measure 7]
         r1
@@ -2612,7 +2618,8 @@ k_Violin_Music_Voice = {
     r2
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    \times 5/9
+    {
 
         % [11 Violin_Music_Voice measure 322 / measure 9]
         r1
@@ -2625,7 +2632,8 @@ k_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/6
+    {
 
         % [11 Violin_Music_Voice measure 323 / measure 10]
         r1
@@ -2635,7 +2643,8 @@ k_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [11 Violin_Music_Voice measure 324 / measure 11]
         d'''1
@@ -2650,7 +2659,8 @@ k_Violin_Music_Voice = {
     r2
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/6
+    {
 
         % [11 Violin_Music_Voice measure 326 / measure 13]
         f'''1.
@@ -2666,7 +2676,8 @@ k_Violin_Music_Voice = {
     g'''2.
     - \staccatissimo
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [11 Violin_Music_Voice measure 328 / measure 15]
         r4
@@ -2686,7 +2697,8 @@ k_Violin_Music_Voice = {
     - \staccatissimo
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [11 Violin_Music_Voice measure 330 / measure 17]
         cs'''!4
@@ -2698,7 +2710,8 @@ k_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [11 Violin_Music_Voice measure 331 / measure 18]
         r2
@@ -2718,7 +2731,8 @@ k_Violin_Music_Voice = {
     - \staccatissimo
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [11 Violin_Music_Voice measure 334 / measure 21]
         r1.
@@ -2729,7 +2743,8 @@ k_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [11 Violin_Music_Voice measure 335 / measure 22]
         r4
@@ -2742,7 +2757,8 @@ k_Violin_Music_Voice = {
 
     }
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         % [11 Violin_Music_Voice measure 336 / measure 23]
         r2
@@ -2756,7 +2772,8 @@ k_Violin_Music_Voice = {
     r2
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/9 {
+    \times 5/9
+    {
 
         % [11 Violin_Music_Voice measure 338 / measure 25]
         r2.
@@ -2772,7 +2789,8 @@ k_Violin_Music_Voice = {
     % [11 Violin_Music_Voice measure 339 / measure 26]
     r4
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         r4
 
@@ -2790,14 +2808,16 @@ k_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [11 Violin_Music_Voice measure 340 / measure 27]
         r1.
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [11 Violin_Music_Voice measure 341 / measure 28]
         r4
@@ -2808,7 +2828,8 @@ k_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [11 Violin_Music_Voice measure 342 / measure 29]
         r1.
@@ -2819,7 +2840,8 @@ k_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 3/4 {
+    \times 3/4
+    {
 
         % [11 Violin_Music_Voice measure 343 / measure 30]
         r1
@@ -2828,7 +2850,8 @@ k_Violin_Music_Voice = {
 
     r2
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [11 Violin_Music_Voice measure 344 / measure 31]
         r4
@@ -2848,7 +2871,8 @@ k_Violin_Music_Voice = {
     - \staccatissimo
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/6 {
+    \times 5/6
+    {
 
         % [11 Violin_Music_Voice measure 346 / measure 33]
         r2.
@@ -2859,7 +2883,8 @@ k_Violin_Music_Voice = {
     }
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [11 Violin_Music_Voice measure 347 / measure 34]
         r1
@@ -2881,7 +2906,8 @@ k_Violin_Music_Voice = {
     r2
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/7 {
+    \times 5/7
+    {
 
         % [11 Violin_Music_Voice measure 350 / measure 37]
         ef'''!2
@@ -2901,7 +2927,8 @@ k_Violin_Music_Voice = {
     % [11 Violin_Music_Voice measure 351 / measure 38]
     r4
 
-    \times 4/5 {
+    \times 4/5
+    {
 
         r1
 
@@ -2910,7 +2937,8 @@ k_Violin_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [11 Violin_Music_Voice measure 352 / measure 39]
         r1.
@@ -3008,7 +3036,8 @@ k_Violin_Music_Staff = {
 k_Viola_Music_Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
-    \times 5/8 {
+    \times 5/8
+    {
 
         % [11 Viola_Music_Voice measure 314 / measure 1]
         \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
@@ -3041,7 +3070,8 @@ k_Viola_Music_Voice = {
     f'''4
     - \staccatissimo
 
-    \times 4/7 {
+    \times 4/7
+    {
 
         % [11 Viola_Music_Voice measure 316 / measure 3]
         r2.
@@ -3057,7 +3087,8 @@ k_Viola_Music_Voice = {
 
     }
 
-    \times 2/3 {
+    \times 2/3
+    {
 
         % [11 Viola_Music_Voice measure 317 / measure 4]
         cs'''!2.

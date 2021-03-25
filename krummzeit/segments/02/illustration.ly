@@ -11,76 +11,116 @@
 \score                                                                         %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 {                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 
+    %! baca.SegmentMaker._make_lilypond_file()
     <<                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
+        %! baca.SegmentMaker._make_lilypond_file()
         {                                                                      %! baca.SegmentMaker._make_lilypond_file()
             \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file()
+        %! baca.SegmentMaker._make_lilypond_file()
         }                                                                      %! baca.SegmentMaker._make_lilypond_file()
 
+        %! krummzeit.ScoreTemplate.__call__()
         \context Score = "Score"                                               %! krummzeit.ScoreTemplate.__call__()
+        %! krummzeit.ScoreTemplate.__call__()
         <<                                                                     %! krummzeit.ScoreTemplate.__call__()
 
+            %! abjad.ScoreTemplate._make_global_context()
             \context GlobalContext = "Global_Context"                          %! abjad.ScoreTemplate._make_global_context()
+            %! abjad.ScoreTemplate._make_global_context()
             <<                                                                 %! abjad.ScoreTemplate._make_global_context()
 
+                %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalRests = "Global_Rests"                          %! abjad.ScoreTemplate._make_global_context()
+                %! abjad.ScoreTemplate._make_global_context()
                 \b_Global_Rests                                                %! ide.Path.extern()
 
+                %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips"                          %! abjad.ScoreTemplate._make_global_context()
+                %! abjad.ScoreTemplate._make_global_context()
                 \b_Global_Skips                                                %! ide.Path.extern()
 
+            %! abjad.ScoreTemplate._make_global_context()
             >>                                                                 %! abjad.ScoreTemplate._make_global_context()
 
+            %! krummzeit.ScoreTemplate.__call__()
             \context MusicContext = "Music_Context"                            %! krummzeit.ScoreTemplate.__call__()
+            %! krummzeit.ScoreTemplate.__call__()
             <<                                                                 %! krummzeit.ScoreTemplate.__call__()
 
+                %! krummzeit.ScoreTemplate.__call__()
                 \context WindSectionStaffGroup = "Wind_Section_Staff_Group"    %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.ScoreTemplate.__call__()
                 <<                                                             %! krummzeit.ScoreTemplate.__call__()
 
                     \tag Oboe                                                  %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Oboe_Music_Staff"                        %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \b_Oboe_Music_Staff                                        %! ide.Path.extern()
 
                     \tag Clarinet                                              %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Clarinet_Music_Staff"                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \b_Clarinet_Music_Staff                                    %! ide.Path.extern()
 
+                %! krummzeit.ScoreTemplate.__call__()
                 >>                                                             %! krummzeit.ScoreTemplate.__call__()
 
+                %! krummzeit.ScoreTemplate.__call__()
                 \context PercussionSectionStaffGroup = "Percussion_Section_Staff_Group" %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.ScoreTemplate.__call__()
                 <<                                                             %! krummzeit.ScoreTemplate.__call__()
 
                     \tag Piano                                                 %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Piano_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \b_Piano_Music_Staff                                       %! ide.Path.extern()
 
                     \tag Percussion                                            %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Percussion_Music_Staff"                  %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \b_Percussion_Music_Staff                                  %! ide.Path.extern()
 
+                %! krummzeit.ScoreTemplate.__call__()
                 >>                                                             %! krummzeit.ScoreTemplate.__call__()
 
+                %! krummzeit.ScoreTemplate.__call__()
                 \context StringSectionStaffGroup = "String_Section_Staff_Group" %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.ScoreTemplate.__call__()
                 <<                                                             %! krummzeit.ScoreTemplate.__call__()
 
                     \tag Violin                                                %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Violin_Music_Staff"                      %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \b_Violin_Music_Staff                                      %! ide.Path.extern()
 
                     \tag Viola                                                 %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Viola_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \b_Viola_Music_Staff                                       %! ide.Path.extern()
 
                     \tag Cello                                                 %! baca.ScoreTemplate._attach_liypond_tag()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Cello_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.ScoreTemplate.__call__()
                     \b_Cello_Music_Staff                                       %! ide.Path.extern()
 
+                %! krummzeit.ScoreTemplate.__call__()
                 >>                                                             %! krummzeit.ScoreTemplate.__call__()
 
+            %! krummzeit.ScoreTemplate.__call__()
             >>                                                                 %! krummzeit.ScoreTemplate.__call__()
 
+        %! krummzeit.ScoreTemplate.__call__()
         >>                                                                     %! krummzeit.ScoreTemplate.__call__()
 
+    %! baca.SegmentMaker._make_lilypond_file()
     >>                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
 }                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()

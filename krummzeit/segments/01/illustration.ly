@@ -1,9 +1,20 @@
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_format_pieces()
 \version "2.23.1"                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_format_pieces()
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_format_pieces()
 \language "english"                                                            %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_format_pieces()
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"                                                %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_includes()
 \include "illustration.ily"                                                    %! ide.Path.extern()
 
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_formatted_blocks()
+
 \score                                                                         %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_formatted_blocks()
 {                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()
 
     %! baca.SegmentMaker._make_lilypond_file()
@@ -11,6 +22,7 @@
 
         %! baca.SegmentMaker._make_lilypond_file()
         {                                                                      %! baca.SegmentMaker._make_lilypond_file()
+            %! baca.SegmentMaker._make_lilypond_file()
             \include "layout.ly"                                               %! baca.SegmentMaker._make_lilypond_file()
         %! baca.SegmentMaker._make_lilypond_file()
         }                                                                      %! baca.SegmentMaker._make_lilypond_file()
@@ -48,12 +60,14 @@
                 %! krummzeit.ScoreTemplate.__call__()
                 <<                                                             %! krummzeit.ScoreTemplate.__call__()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Oboe                                                  %! baca.ScoreTemplate._attach_liypond_tag()
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Oboe_Music_Staff"                        %! krummzeit.ScoreTemplate.__call__()
                     %! krummzeit.ScoreTemplate.__call__()
                     \a_Oboe_Music_Staff                                        %! ide.Path.extern()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Clarinet                                              %! baca.ScoreTemplate._attach_liypond_tag()
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Clarinet_Music_Staff"                    %! krummzeit.ScoreTemplate.__call__()
@@ -68,12 +82,14 @@
                 %! krummzeit.ScoreTemplate.__call__()
                 <<                                                             %! krummzeit.ScoreTemplate.__call__()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Piano                                                 %! baca.ScoreTemplate._attach_liypond_tag()
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Piano_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__()
                     %! krummzeit.ScoreTemplate.__call__()
                     \a_Piano_Music_Staff                                       %! ide.Path.extern()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Percussion                                            %! baca.ScoreTemplate._attach_liypond_tag()
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Percussion_Music_Staff"                  %! krummzeit.ScoreTemplate.__call__()
@@ -88,18 +104,21 @@
                 %! krummzeit.ScoreTemplate.__call__()
                 <<                                                             %! krummzeit.ScoreTemplate.__call__()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Violin                                                %! baca.ScoreTemplate._attach_liypond_tag()
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Violin_Music_Staff"                      %! krummzeit.ScoreTemplate.__call__()
                     %! krummzeit.ScoreTemplate.__call__()
                     \a_Violin_Music_Staff                                      %! ide.Path.extern()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Viola                                                 %! baca.ScoreTemplate._attach_liypond_tag()
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Viola_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__()
                     %! krummzeit.ScoreTemplate.__call__()
                     \a_Viola_Music_Staff                                       %! ide.Path.extern()
 
+                    %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Cello                                                 %! baca.ScoreTemplate._attach_liypond_tag()
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Cello_Music_Staff"                       %! krummzeit.ScoreTemplate.__call__()
@@ -118,4 +137,6 @@
     %! baca.SegmentMaker._make_lilypond_file()
     >>                                                                         %! baca.SegmentMaker._make_lilypond_file()
 
+                                                                               %! baca.SegmentMaker._make_lilypond_file()
+                                                                               %! abjad.LilyPondFile._get_formatted_blocks()
 }                                                                              %! baca.SegmentMaker._make_lilypond_file():abjad.LilyPondFile._get_formatted_blocks()

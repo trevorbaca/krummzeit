@@ -106,11 +106,11 @@ metronome_marks = abjad.OrderedDict(
 
 
 def make_numerators(numerators, addenda):
-    numerators = baca.sequence(numerators)
+    numerators = baca.Sequence(numerators)
     numerators = numerators.helianthate(-1, 1)
     numerators = numerators.flatten()
     length = len(numerators)
-    addenda = baca.sequence(addenda).repeat_to_length(length)
+    addenda = baca.Sequence(addenda).repeat_to_length(length)
     pairs = zip(numerators, addenda)
     numerators = [sum(_) for _ in pairs]
     return numerators
@@ -131,7 +131,7 @@ numerators = numerators + numerators
 assert len(numerators) == 236 and sum(numerators) == 928
 
 ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
-numerator_lists = baca.sequence(numerators)
+numerator_lists = baca.Sequence(numerators)
 numerator_lists = numerator_lists.partition_by_ratio_of_weights(weights=ratio)
 assert len(numerator_lists) == 12
 
@@ -174,7 +174,7 @@ segment_time_signatures = abjad.OrderedDict()
 
 ### B ###
 lists = time_signature_inventory[:3]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 64
 # repeat first 11 time signatures
 time_signatures = list(time_signatures_)
@@ -185,7 +185,7 @@ segment_time_signatures["B"] = time_signatures
 
 ### E ###
 lists = time_signature_inventory[3:5]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 48
 time_signatures = list(time_signatures_)
 segment_time_signatures["E"] = time_signatures
@@ -193,7 +193,7 @@ segment_time_signatures["E"] = time_signatures
 
 ### K ###
 # time_signatures = time_signature_inventory[9:]
-# time_signatures = baca.sequence(time_signatures).flatten()
+# time_signatures = baca.Sequence(time_signatures).flatten()
 # assert len(time_signatures) == 47
 # first_source = time_signatures[20:32]
 # first_source *= 3
@@ -217,7 +217,7 @@ segment_time_signatures["K"] = time_signatures
 
 ### F ###
 lists = time_signature_inventory[4]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 35
 time_signatures = list(time_signatures_)
 segment_time_signatures["F"] = time_signatures
@@ -225,7 +225,7 @@ segment_time_signatures["F"] = time_signatures
 
 ### D ###
 lists = time_signature_inventory[2]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 time_signatures.insert(8, abjad.TimeSignature((1, 4)))
@@ -241,7 +241,7 @@ segment_time_signatures["D"] = time_signatures
 
 ### C ###
 lists = time_signature_inventory[1:3]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 33
 """
 12 stages:
@@ -277,7 +277,7 @@ segment_time_signatures["C"] = time_signatures
 
 ### G ###
 lists = time_signature_inventory[5]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 22
 time_signatures = list(time_signatures_)
 segment_time_signatures["G"] = time_signatures
@@ -285,7 +285,7 @@ segment_time_signatures["G"] = time_signatures
 
 ### H ###
 lists = time_signature_inventory[5]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 22
 time_signatures = list(time_signatures_)
 time_signatures.insert(12, abjad.TimeSignature((1, 4)))
@@ -296,7 +296,7 @@ segment_time_signatures["H"] = time_signatures
 
 ### I ###
 lists = time_signature_inventory[7]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 10
 time_signatures = list(time_signatures_)
 segment_time_signatures["I"] = time_signatures
@@ -304,7 +304,7 @@ segment_time_signatures["I"] = time_signatures
 
 ### J ###
 lists = time_signature_inventory[11]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 extension = time_signatures[-2:]
@@ -323,7 +323,7 @@ segment_time_signatures["J"] = time_signatures
 
 ### A ###
 lists = time_signature_inventory[11]
-time_signatures_ = baca.sequence(lists).flatten()
+time_signatures_ = baca.Sequence(lists).flatten()
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 time_signatures.insert(2, abjad.TimeSignature((1, 4)))
@@ -538,7 +538,7 @@ def color_tuplets(*commands: rmakers.Command, rotation: int = 0) -> baca.RhythmC
     """
     Makes color tuplets.
     """
-    tuplet_ratios = baca.sequence(
+    tuplet_ratios = baca.Sequence(
         [
             (-2, 4, 1, 1, 12),
             (3, 2),

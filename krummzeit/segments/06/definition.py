@@ -195,7 +195,7 @@ maker(
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
-pcs_ = baca.sequence(pcs)
+pcs_ = baca.Sequence(pcs)
 pcs_ = pcs_.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 maker(
     ("ob", (1, 10)),

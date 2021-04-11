@@ -634,9 +634,9 @@ def fused_expanse(
     return baca.rhythm(
         rmakers.note(),
         rmakers.beam(baca.plts()),
-        preprocessor=lambda _: baca.Sequence(_).fuse().split_divisions(
-            divisions, cyclic=True
-        ),
+        preprocessor=lambda _: baca.Sequence(_)
+        .fuse()
+        .split_divisions(divisions, cyclic=True),
         tag=abjad.Tag("krummzeit.fused_expanse()"),
     )
 
@@ -652,7 +652,6 @@ def glissando_rhythm(
     """
     assert isinstance(division_ratios, list), repr(division_ratios)
     assert not isinstance(tie_across_divisions, list)
-
     commands_: typing.List[rmakers.Command] = []
     if tie_across_divisions is True:
         specifier = rmakers.tie(baca.tuplets()[:-1].map(baca.pleaf(-1)))
@@ -664,7 +663,14 @@ def glissando_rhythm(
         commands_.append(specifier)
     commands_.extend(commands)
 
-    split = baca.sequence().ratios(division_ratios, rounded=True)
+    def preprocessor(divisions):
+        sequences = []
+        ratios = abjad.CyclicTuple(division_ratios)
+        for i, division in enumerate(divisions):
+            ratio = ratios[i]
+            sequence = baca.Sequence(division).ratios([ratio], rounded=True)
+            sequences.append(sequence)
+        return baca.Sequence(sequences)
 
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
@@ -672,7 +678,7 @@ def glissando_rhythm(
         rmakers.rewrite_rest_filled(),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        preprocessor=baca.sequence().map(split),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.glissando_rhythm()"),
     )
 
@@ -800,7 +806,17 @@ def oboe_trills() -> baca.RhythmCommand:
     """
     Makes oboe trill rhythm.
     """
-    split = baca.sequence().ratios([(2, 1), (2, 1), (1, 1, 1)], rounded=True)
+
+    def preprocessor(divisions):
+        ratios = abjad.CyclicTuple([(2, 1), (2, 1), (1, 1, 1)])
+        sequences = []
+        for i, division in enumerate(divisions):
+            ratio = ratios[i]
+            sequence = baca.Sequence(division)
+            sequence = sequence.ratios([ratio], rounded=True)
+            sequences.append(sequence)
+        result = baca.Sequence(sequences)
+        return result
 
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)]),
@@ -809,7 +825,7 @@ def oboe_trills() -> baca.RhythmCommand:
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
         rmakers.reduce_multiplier(),
-        preprocessor=baca.sequence().map(split),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.oboe_trills()"),
     )
 
@@ -907,7 +923,8 @@ def pizzicato_sixteenths(
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         preprocessor=lambda _: baca.Sequence(_).split_divisions(
-            [(6, 16), (18, 16)], cyclic=True,
+            [(6, 16), (18, 16)],
+            cyclic=True,
         ),
         tag=abjad.Tag("krummzeit.pizzicato_sixteenths()"),
     )
@@ -975,20 +992,20 @@ def polyphony(
     )
     divisions = baca.sequence().map(split)
 
-#    def split(argument):
-#        argument = baca.Sequence(argument)
-#        argument = argument.split_divisions(
-#            durations,
-#            cyclic=True,
-#            remainder_fuse_threshold=fuse,
-#            rotate_indexed=rotation,
-#        )
-#        return argument
-#
-#    def preprocessor(argument):
-#        argument = baca.Sequence(argument)
-#        argument = argument.map(split)
-#        return argument
+    #    def split(argument):
+    #        argument = baca.Sequence(argument)
+    #        argument = argument.split_divisions(
+    #            durations,
+    #            cyclic=True,
+    #            remainder_fuse_threshold=fuse,
+    #            rotate_indexed=rotation,
+    #        )
+    #        return argument
+    #
+    #    def preprocessor(argument):
+    #        argument = baca.Sequence(argument)
+    #        argument = argument.map(split)
+    #        return argument
 
     return baca.rhythm(
         rhythm_maker,
@@ -1193,8 +1210,11 @@ def rest_delimited_repeated_duration_notes(
         ),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.Sequence(_).fuse().split_divisions(
-            [duration], cyclic=True,
+        preprocessor=lambda _: baca.Sequence(_)
+        .fuse()
+        .split_divisions(
+            [duration],
+            cyclic=True,
         ),
         tag=abjad.Tag("krummzeit.rest_delimited_repeated_duration_notes()"),
     )
@@ -1206,6 +1226,7 @@ def right_remainder_quarters(
     """
     Makes right-remainder quarter-note-filled measures.
     """
+
     def preprocessor(argument):
         argument = baca.Sequence(argument)
         argument = argument.map(lambda _: baca.Sequence(_).quarters())

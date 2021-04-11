@@ -581,7 +581,7 @@ def detached_triplets() -> baca.RhythmCommand:
     return baca.rhythm(
         rmakers.tuplet([(3, -1, 2), (1, -1, 3, -1)]),
         rmakers.tie(tuplets.map(baca.pleaf(-1))),
-        preprocessor=baca.sequence().fuse().quarters(),
+        preprocessor=lambda _: baca.Sequence(_).fuse().quarters(),
         tag=abjad.Tag("krummzeit.detached_triplets()"),
     )
 
@@ -634,7 +634,9 @@ def fused_expanse(
     return baca.rhythm(
         rmakers.note(),
         rmakers.beam(baca.plts()),
-        preprocessor=baca.sequence().fuse().split_divisions(divisions, cyclic=True),
+        preprocessor=lambda _: baca.Sequence(_).fuse().split_divisions(
+            divisions, cyclic=True
+        ),
         tag=abjad.Tag("krummzeit.fused_expanse()"),
     )
 
@@ -693,7 +695,7 @@ def hypermeter_tuplets(
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         rmakers.reduce_multiplier(),
-        preprocessor=baca.sequence().fuse(counts, cyclic=True),
+        preprocessor=lambda _: baca.Sequence(_).fuse(counts, cyclic=True),
         tag=abjad.Tag("krummzeit.hypermeter_tuplets()"),
     )
 
@@ -773,7 +775,7 @@ def left_remainder_quarters(
         rmakers.note(),
         *commands,
         rmakers.beam(baca.plts()),
-        preprocessor=baca.sequence().fuse().quarters(remainder=abjad.Left),
+        preprocessor=lambda _: baca.Sequence(_).fuse().quarters(remainder=abjad.Left),
         tag=abjad.Tag("krummzeit.left_remainder_quarters()"),
     )
 
@@ -825,7 +827,7 @@ def opening_triplets(
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
-        preprocessor=baca.sequence().fuse().quarters(remainder=remainder),
+        preprocessor=lambda _: baca.Sequence(_).fuse().quarters(remainder=remainder),
         tag=abjad.Tag("krummzeit.opening_triplets()"),
     )
 
@@ -905,7 +907,9 @@ def pizzicato_sixteenths(
         rmakers.rewrite_rest_filled(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
-        preprocessor=baca.sequence().split_divisions([(6, 16), (18, 16)], cyclic=True),
+        preprocessor=lambda _: baca.Sequence(_).split_divisions(
+            [(6, 16), (18, 16)], cyclic=True,
+        ),
         tag=abjad.Tag("krummzeit.pizzicato_sixteenths()"),
     )
 
@@ -1175,7 +1179,9 @@ def rest_delimited_repeated_duration_notes(
         ),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        preprocessor=baca.sequence().fuse().split_divisions([duration], cyclic=True),
+        preprocessor=lambda _: baca.Sequence(_).fuse().split_divisions(
+            [duration], cyclic=True,
+        ),
         tag=abjad.Tag("krummzeit.rest_delimited_repeated_duration_notes()"),
     )
 

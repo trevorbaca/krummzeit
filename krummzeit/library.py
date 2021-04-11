@@ -871,7 +871,6 @@ def pizzicato_rhythm(
     Makes pizzicato rhythm.
     """
     durations = [(_, 16) for _ in split]
-    divisions = baca.sequence().split_divisions(durations, cyclic=True)
 
     return baca.rhythm(
         rmakers.talea(
@@ -884,7 +883,7 @@ def pizzicato_rhythm(
         rmakers.rewrite_dots(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
-        preprocessor=divisions,
+        preprocessor=lambda _: baca.Sequence(_).split_divisions(durations, cyclic=True),
         tag=abjad.Tag("krummzeit.pizzicato_rhythm()"),
     )
 
@@ -975,6 +974,21 @@ def polyphony(
         rotate_indexed=rotation,
     )
     divisions = baca.sequence().map(split)
+
+#    def split(argument):
+#        argument = baca.Sequence(argument)
+#        argument = argument.split_divisions(
+#            durations,
+#            cyclic=True,
+#            remainder_fuse_threshold=fuse,
+#            rotate_indexed=rotation,
+#        )
+#        return argument
+#
+#    def preprocessor(argument):
+#        argument = baca.Sequence(argument)
+#        argument = argument.map(split)
+#        return argument
 
     return baca.rhythm(
         rhythm_maker,
@@ -1192,11 +1206,16 @@ def right_remainder_quarters(
     """
     Makes right-remainder quarter-note-filled measures.
     """
+    def preprocessor(argument):
+        argument = baca.Sequence(argument)
+        argument = argument.map(lambda _: baca.Sequence(_).quarters())
+        return argument
+
     return baca.rhythm(
         rmakers.note(),
         *commands,
         rmakers.beam(baca.plts()),
-        preprocessor=baca.sequence().map(baca.sequence().quarters()),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.right_remainder_quarters()"),
     )
 

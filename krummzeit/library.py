@@ -499,14 +499,12 @@ def closing_pizzicati(
     Makes closing pizzicati rhythm.
     """
     durations = [(_, 4) for _ in split]
-    divisions = baca.sequence().split_divisions(durations, cyclic=True)
-
     return baca.rhythm(
         rmakers.talea(counts, 4, extra_counts=extra_counts),
         rmakers.force_rest(baca.lts().map(baca.leaves()[1:])),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        preprocessor=divisions,
+        preprocessor=lambda _: baca.Sequence(_).split_divisions(durations, cyclic=True),
         tag=abjad.Tag("krummzeit.closing_pizzicati()"),
     )
 
@@ -992,32 +990,23 @@ def polyphony(
     else:
         rhythm_maker = even_divisions
 
-    split = baca.sequence().split_divisions(
-        durations,
-        cyclic=True,
-        remainder_fuse_threshold=fuse,
-        rotate_indexed=rotation,
-    )
-    divisions = baca.sequence().map(split)
-
-    #    def split(argument):
-    #        argument = baca.Sequence(argument)
-    #        argument = argument.split_divisions(
-    #            durations,
-    #            cyclic=True,
-    #            remainder_fuse_threshold=fuse,
-    #            rotate_indexed=rotation,
-    #        )
-    #        return argument
-    #
-    #    def preprocessor(argument):
-    #        argument = baca.Sequence(argument)
-    #        argument = argument.map(split)
-    #        return argument
+    def preprocessor(divisions):
+        sequences = []
+        durations_ = baca.Sequence(durations)
+        for i, division in enumerate(divisions):
+            durations__ = durations_.rotate(n=i * rotation)
+            sequence = baca.Sequence(division)
+            sequence = sequence.split_divisions(
+                durations__,
+                cyclic=True,
+                remainder_fuse_threshold=fuse,
+            )
+            sequences.append(sequence)
+        return baca.Sequence(sequences)
 
     return baca.rhythm(
         rhythm_maker,
-        preprocessor=divisions,
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.polyphony()"),
     )
 
@@ -1346,17 +1335,21 @@ def white_rhythm(
         command = rmakers.force_rest(baca.leaf(0))
         force_rest.append(command)
 
-    divisions = (
-        baca.sequence()
-        .fuse()
-        .split_divisions(durations, cyclic=True, remainder=remainder)
-    )
+    def preprocessor(divisions):
+        divisions = baca.Sequence(divisions)
+        divisions = divisions.fuse()
+        divisions = divisions.split_divisions(
+            durations,
+            cyclic=True,
+            remainder=remainder,
+        )
+        return divisions
 
     return baca.rhythm(
         rmakers.note(),
         *force_rest,
         rmakers.beam(baca.plts()),
-        preprocessor=divisions,
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.white_rhythm()"),
     )
 

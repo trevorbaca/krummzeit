@@ -869,13 +869,21 @@ def piano_harmonics(
         selector = span_pairs.map(baca.leaf(0))
         specifier = rmakers.tie(selector)
         commands_.append(specifier)
-    split = baca.sequence().ratios(division_ratios, rounded=True)
+
+    def preprocessor(divisions):
+        sequences = []
+        ratios = abjad.CyclicTuple(division_ratios)
+        for i, division in enumerate(divisions):
+            ratio = ratios[i]
+            sequence = baca.Sequence(division).ratios([ratio], rounded=True)
+            sequences.append(sequence)
+        return baca.Sequence(sequences)
 
     return baca.rhythm(
         rmakers.note(),
         *commands_,
         rmakers.beam(baca.plts()),
-        preprocessor=baca.sequence().map(split),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.piano_harmonics()"),
     )
 
@@ -1252,7 +1260,16 @@ def silver_points(
     """
     Makes silver points rhythm.
     """
-    split = baca.sequence().ratios(ratios, rounded=True)
+
+    def preprocessor(divisions):
+        sequences = []
+        ratios_ = abjad.CyclicTuple(ratios)
+        for i, division in enumerate(divisions):
+            ratio = ratios_[i]
+            sequence = baca.Sequence(division).ratios([ratio], rounded=True)
+            sequences.append(sequence)
+        return baca.Sequence(sequences)
+
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
         *commands,
@@ -1261,7 +1278,7 @@ def silver_points(
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
         rmakers.reduce_multiplier(),
-        preprocessor=baca.sequence().map(split),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.silver_points()"),
     )
 

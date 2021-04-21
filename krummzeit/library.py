@@ -659,7 +659,7 @@ def glissando_rhythm(
     if tie_across_divisions is True:
         tie_across_divisions = ([0], 1)
 
-    def make_selector(pattern):
+    def select(pattern):
         def selector(argument):
             selection = baca.Selection(argument).tuplets()[:-1]
             selection = selection.get(pattern)
@@ -667,8 +667,7 @@ def glissando_rhythm(
 
         return selector
 
-    selector = make_selector(tie_across_divisions)
-    specifier = rmakers.tie(selector)
+    specifier = rmakers.tie(select(tie_across_divisions))
     commands_.append(specifier)
     commands_.extend(commands)
 
@@ -936,7 +935,7 @@ def pizzicato_sixteenths(
             16,
             extra_counts=extra_counts,
         ),
-        rmakers.force_rest(baca.tuplets().map(baca.leaf(0))),
+        rmakers.force_rest(baca.leaf_in_each_tuplet(0)),
         *commands,
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
@@ -964,9 +963,17 @@ def polyphony(
     """
     Makes polyphony rhythm.
     """
-
     assert isinstance(ties, abjad.Pattern), repr(ties)
-    tie_specifier = rmakers.tie(baca.tuplets()[:-1].get(ties).map(baca.pleaf(-1)))
+
+    def select(pattern):
+        def selector(argument):
+            selection = baca.Selection(argument).tuplets()[:-1]
+            selection = selection.get(pattern)
+            return baca.Selection([baca.Selection(_).pleaf(-1) for _ in selection])
+
+        return selector
+
+    tie_specifier = rmakers.tie(select(ties))
 
     eighths = rmakers.stack(
         rmakers.even_division([8]),
@@ -1238,10 +1245,8 @@ def right_remainder_quarters(
     Makes right-remainder quarter-note-filled measures.
     """
 
-    def preprocessor(argument):
-        argument = baca.Sequence(argument)
-        argument = argument.map(lambda _: baca.Sequence(_).quarters())
-        return argument
+    def preprocessor(divisions):
+        return baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
 
     return baca.rhythm(
         rmakers.note(),
@@ -1311,9 +1316,14 @@ def single_division_tuplets(
     """
     Makes single-division tuplet rhythm.
     """
+
+    def selector(argument):
+        s = baca.Selection(argument).tuplets()[:-1]
+        return baca.Selection([baca.Selection(_).pleaf(-1) for _ in s])
+
     return baca.rhythm(
         rmakers.tuplet(ratios),
-        rmakers.tie(baca.tuplets()[:-1].map(baca.pleaf(-1))),
+        rmakers.tie(selector),
         rmakers.beam(),
         rmakers.rewrite_dots(),
         rmakers.force_augmentation(),

@@ -501,7 +501,7 @@ def closing_pizzicati(
     durations = [(_, 4) for _ in split]
     return baca.rhythm(
         rmakers.talea(counts, 4, extra_counts=extra_counts),
-        rmakers.force_rest(baca.lts().map(baca.leaves()[1:])),
+        rmakers.force_rest(baca.leaves_in_each_lt(1, None)),
         rmakers.beam(),
         rmakers.extract_trivial(),
         preprocessor=lambda _: baca.Sequence(_).split_divisions(durations, cyclic=True),
@@ -549,14 +549,16 @@ def color_tuplets(*commands: rmakers.Command, rotation: int = 0) -> baca.RhythmC
         ]
     )
     tuplet_ratios = tuplet_ratios.rotate(n=rotation)
-    # TODO: complex but useful selector;
-    #       externalize in baca.rhythmcommands for reuse;
-    #       or, implement group_by_division()
-    nonlast_tuplets = baca.tuplets()[:-1]
-    span_pleaves = baca.leaves()[-1:].rleak().pleaves()
-    span_pleaves = nonlast_tuplets.map(span_pleaves)
-    span_pairs = span_pleaves.filter_length("==", 2)
-    selector = span_pairs.map(baca.leaf(0))
+
+    def selector(argument):
+        selection = baca.Selection(argument).tuplets()[:-1]
+        selection = [
+            baca.Selection(_).leaves()[-1:].rleak().pleaves() for _ in selection
+        ]
+        selection = baca.Selection(selection).filter_length("==", 2)
+        selection = [baca.Selection(_).leaf(0) for _ in selection]
+        return baca.Selection(selection)
+
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
         rmakers.tie(selector),
@@ -574,11 +576,14 @@ def detached_triplets() -> baca.RhythmCommand:
     """
     Makes detached triplets.
     """
-    tuplets = baca.tuplets()[:-1].get([0], 2)
+
+    def selector(argument):
+        selection = baca.Selection(argument).tuplets()[:-1].get([0], 2)
+        return baca.Selection([baca.Selection(_).pleaf(-1) for _ in selection])
 
     return baca.rhythm(
         rmakers.tuplet([(3, -1, 2), (1, -1, 3, -1)]),
-        rmakers.tie(tuplets.map(baca.pleaf(-1))),
+        rmakers.tie(selector),
         preprocessor=lambda _: baca.Sequence(_).fuse().quarters(),
         tag=abjad.Tag("krummzeit.detached_triplets()"),
     )
@@ -640,25 +645,31 @@ def fused_expanse(
 
 
 def glissando_rhythm(
-    division_ratios: abjad.RatioSequenceTyping,
-    *commands: rmakers.Command,
-    tuplet_ratios: abjad.RatioSequenceTyping = [(1, 2), (1, 4), (4, 3)],
-    tie_across_divisions: typing.Union[bool, abjad.Pattern] = None,
-) -> baca.RhythmCommand:
+    division_ratios,
+    *commands,
+    tuplet_ratios=[(1, 2), (1, 4), (4, 3)],
+    tie_across_divisions=None,
+):
     """
     Makes glissando rhythm.
     """
     assert isinstance(division_ratios, list), repr(division_ratios)
     assert not isinstance(tie_across_divisions, list)
-    commands_: typing.List[rmakers.Command] = []
+    commands_ = []
     if tie_across_divisions is True:
-        specifier = rmakers.tie(baca.tuplets()[:-1].map(baca.pleaf(-1)))
-        commands_.append(specifier)
-    elif isinstance(tie_across_divisions, abjad.Pattern):
-        specifier = rmakers.tie(
-            baca.tuplets()[:-1].get(tie_across_divisions).map(baca.pleaf(-1))
-        )
-        commands_.append(specifier)
+        tie_across_divisions = ([0], 1)
+
+    def make_selector(pattern):
+        def selector(argument):
+            selection = baca.Selection(argument).tuplets()[:-1]
+            selection = selection.get(pattern)
+            return baca.Selection(baca.Selection(_).pleaf(-1) for _ in selection)
+
+        return selector
+
+    selector = make_selector(tie_across_divisions)
+    specifier = rmakers.tie(selector)
+    commands_.append(specifier)
     commands_.extend(commands)
 
     def preprocessor(divisions):
@@ -857,14 +868,17 @@ def piano_harmonics(
     assert isinstance(division_ratios, list), repr(division_ratios)
     commands_ = list(commands)
     if isinstance(tie_across_divisions, abjad.Pattern):
-        # TODO: complex but useful selector;
-        #       externalize in baca.rhythmcommands for reuse;
-        #       or, allow for group_by_division()
-        lts = baca.lts()[:-1].get(tie_across_divisions)
-        span_pleaves = baca.leaves()[-1:].rleak().pleaves()
-        span_pleaves = lts.map(span_pleaves)
-        span_pairs = span_pleaves.filter_length("==", 2)
-        selector = span_pairs.map(baca.leaf(0))
+
+        def selector(argument):
+            selection = baca.Selection(argument).lts()[:-1]
+            selection = selection.get(tie_across_divisions)
+            selection = [
+                baca.Selection(_).leaves()[-1:].rleak().pleaves() for _ in selection
+            ]
+            selection = baca.Selection(selection).filter_length("==", 2)
+            selection = [baca.Selection(_).leaf(0) for _ in selection]
+            return baca.Selection(selection)
+
         specifier = rmakers.tie(selector)
         commands_.append(specifier)
 

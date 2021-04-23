@@ -299,7 +299,7 @@ maker(
 
 maker(
     (["ob", "cl"], (4, 10)),
-    baca.staccato(selector=baca.ptlts()),
+    baca.staccato(selector=lambda _: baca.Selection(_).ptlts()),
 )
 
 ### VERTICAL ALIGNMENT ###

@@ -286,7 +286,7 @@ maker(
     baca.dynamic('"mp"'),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     krummzeit.register_narrow(2),
     baca.markup(
@@ -328,7 +328,7 @@ maker(
     ],
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     krummzeit.register_narrow(5),
     baca.note_head_style_harmonic(),

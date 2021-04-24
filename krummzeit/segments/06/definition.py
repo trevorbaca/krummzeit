@@ -272,7 +272,7 @@ maker(
     baca.dynamic("ff"),
     baca.new(
         baca.glissando(),
-        map=baca.ntruns(),
+        map=baca.selectors.ntruns(),
     ),
     krummzeit.color_fingerings(),
 )
@@ -291,7 +291,7 @@ maker(
     (strings, (12, 20)),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
     baca.hairpin(
         "p > ppp",
@@ -384,7 +384,7 @@ maker(
     baca.dynamic("ppp"),
     baca.new(
         baca.trill_spanner(alteration="A5"),
-        map=baca.qruns(),
+        map=baca.selectors.qruns(),
     ),
 )
 
@@ -398,7 +398,7 @@ maker(
     baca.dynamic("ppp"),
     baca.new(
         baca.trill_spanner(),
-        map=baca.qruns(),
+        map=baca.selectors.qruns(),
     ),
 )
 

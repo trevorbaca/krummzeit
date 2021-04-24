@@ -247,7 +247,7 @@ maker(
     baca.hairpin("ff < fff"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
     baca.markup(
         r"\baca-subito-ordinario-markup",
@@ -265,7 +265,7 @@ maker(
     ("va", (1, 7)),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
     baca.dls_staff_padding(6),
     baca.hairpin("ff < fff"),
@@ -370,7 +370,7 @@ maker(
     baca.hairpin("ff > pp"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
     baca.markup(
         r"\baca-molto-flautando-markup",
@@ -435,7 +435,7 @@ maker(
     (["vn", "va", "vc"], (14, 23)),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
 )
 

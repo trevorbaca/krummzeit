@@ -193,7 +193,7 @@ maker(
     baca.dynamic("ppp"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
     baca.note_head_style_harmonic(),
 )
@@ -266,7 +266,7 @@ maker(
     baca.dynamic("fff"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
     baca.stem_tremolo(selector=baca.plts()[1:]),
 )

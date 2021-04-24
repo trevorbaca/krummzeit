@@ -247,7 +247,7 @@ maker(
     (["vn", "va", "vc"], (4, 8)),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
     baca.hairpin(
         "pp < ff",
@@ -260,7 +260,7 @@ maker(
     baca.note_head_style_harmonic(),
     baca.new(
         baca.repeat_tie(baca.pheads()[1:]),
-        map=baca.qruns(),
+        map=baca.selectors.qruns(),
     ),
 )
 

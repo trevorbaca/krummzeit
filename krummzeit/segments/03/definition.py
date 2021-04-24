@@ -334,7 +334,7 @@ maker(
     baca.dynamic("f"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -351,7 +351,7 @@ maker(
     baca.clef("alto"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.markup(
@@ -369,7 +369,7 @@ maker(
             "ff > pp",
             selector=baca.tleaves()[:2],
         ),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -386,7 +386,7 @@ maker(
     baca.clef("bass"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.markup(
@@ -419,11 +419,11 @@ maker(
     baca.suite(
         baca.new(
             baca.deviation([0, -0.5, 0, 0.5]),
-            map=baca.ltqruns().filter_length(">", 1).get([0], 2),
+            map=lambda _: baca.Selection(_).ltqruns().filter_length(">", 1).get([0], 2),
         ),
         baca.new(
             baca.deviation([0, 0.5, 0, -0.5]),
-            map=baca.ltqruns().filter_length(">", 1),
+            map=lambda _: baca.Selection(_).ltqruns().filter_length(">", 1),
         ),
         krummzeit.displacement(),
         krummzeit.register_wide(5),
@@ -493,7 +493,7 @@ maker(
     (["vn", "va", "vc"], (32, 42)),
     baca.new(
         baca.glissando(),
-        map=baca.runs(exclude=baca.const.HIDDEN),
+        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     baca.hairpin(
         "pp < fff",

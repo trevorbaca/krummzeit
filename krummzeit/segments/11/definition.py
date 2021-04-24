@@ -172,7 +172,7 @@ maker(
     ),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
 )
 

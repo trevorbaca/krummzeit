@@ -511,7 +511,7 @@ maker(
     (["va", "vc"], (1, 28)),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
 )
 
@@ -556,7 +556,7 @@ maker(
     baca.dynamic("f"),
     baca.new(
         baca.glissando(),
-        map=baca.runs(),
+        map=baca.selectors.runs(),
     ),
     baca.markup(
         r"\krummzeit-ob-plus-full-bow-strokes-markup",

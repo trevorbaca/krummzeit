@@ -450,7 +450,7 @@ maker(
     (["pf", "perc"], (14, 20)),
     baca.dynamic("ff"),
     baca.staccatissimo(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -467,7 +467,7 @@ maker(
 maker(
     ("perc", (34, 44)),
     baca.dynamic("ppp"),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
     baca.markup(
         r"\krummzeit-fingertips-markup",
         literal=True,

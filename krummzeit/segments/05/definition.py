@@ -307,7 +307,7 @@ maker(
 
 maker(
     ("perc", (6, 16)),
-    baca.accent(selector=baca.pheads()),
+    baca.accent(selector=baca.selectors.pheads()),
     baca.dynamic('"ff"'),
     baca.markup(
         r"\krummzeit-accent-changes-markup",
@@ -422,10 +422,10 @@ maker(
     baca.dynamic("mp"),
     baca.new(
         baca.tenuto(),
-        map=baca.pheads(exclude=baca.const.HIDDEN),
+        map=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.note_head_style_harmonic(
-        selector=baca.pleaves(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
     ),
     baca.markup(
         r"\krummzeit-fifth-harmonic-of-F-one-markup",
@@ -458,7 +458,7 @@ maker(
 maker(
     (["pf", "perc"], [(25, 26), (35, 38), (39, 42)]),
     baca.pitch("F#6"),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -524,7 +524,7 @@ maker(
         literal=True,
     ),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -546,7 +546,7 @@ maker(
     baca.dls_staff_padding(6),
     baca.make_repeat_tied_notes(),
     baca.staff_position(0),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
     baca.markup(
         r"\krummzeit-attackless-roll-markup",
         literal=True,

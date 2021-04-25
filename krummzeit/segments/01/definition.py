@@ -170,7 +170,7 @@ maker(
     baca.dynamic("fff-poss"),
     baca.make_repeat_tied_notes(),
     baca.pitch("C#5"),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 maker(
@@ -191,12 +191,12 @@ maker(
         literal=True,
     ),
     baca.pitch("C#5"),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 maker(
     ("perc", (10, 13)),
-    baca.accent(selector=baca.pheads()),
+    baca.accent(selector=baca.selectors.pheads()),
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.dynamic('"ff"'),
@@ -232,7 +232,7 @@ maker(
     (["vn", "va", "vc"], (1, 2)),
     baca.dynamic("fff"),
     baca.stem_tremolo(
-        selector=baca.pleaves(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -265,7 +265,7 @@ maker(
     ),
     baca.note_head_style_harmonic(),
     baca.new(
-        baca.repeat_tie(baca.pheads()[1:]),
+        baca.repeat_tie(baca.selectors.pheads((1, None))),
         map=baca.selectors.qruns(),
     ),
 )

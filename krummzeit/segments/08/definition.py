@@ -306,7 +306,7 @@ maker(
         literal=True,
     ),
     baca.staccato(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.suite(
         krummzeit.displacement(),
@@ -338,7 +338,7 @@ maker(
         literal=True,
     ),
     baca.staccato(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -350,7 +350,7 @@ maker(
         literal=True,
     ),
     baca.staccato(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -389,7 +389,7 @@ maker(
     ),
     baca.new(
         baca.tenuto(),
-        map=baca.pheads(),
+        map=baca.selectors.pheads(),
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("C4"),
@@ -501,7 +501,7 @@ maker(
         r"\baca-subito-ordinario-markup",
         literal=True,
     ),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 maker(
@@ -510,7 +510,7 @@ maker(
         r"\baca-subito-ordinario-markup",
         literal=True,
     ),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 ### VERTICAL ALIGNMENT ###

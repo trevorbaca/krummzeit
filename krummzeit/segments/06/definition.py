@@ -245,12 +245,12 @@ maker(
 maker(
     (["vn", "va", "vc"], (9, 10)),
     baca.dynamic("ff"),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 maker(
     ("perc", [(1, 14), (28, 34)]),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 pcs = baca.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
@@ -333,7 +333,7 @@ maker(
         selector=baca.plts(exclude=baca.const.HIDDEN),
     ),
     baca.staccatissimo(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -416,7 +416,7 @@ maker(
     baca.dynamic("fff"),
     baca.ottava(),
     baca.staccatissimo(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.suite(
         baca.pitches(

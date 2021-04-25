@@ -78,7 +78,7 @@ maker(
         literal=True,
     ),
     baca.staff_position(0),
-    baca.stem_tremolo(selector=baca.pleaves()),
+    baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 maker(
@@ -136,7 +136,7 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -144,7 +144,7 @@ maker(
     baca.hairpin("pp < ff"),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 3),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -153,7 +153,7 @@ maker(
     baca.hairpin("ff > pp"),
     krummzeit.displacement(),
     krummzeit.register_narrow(3, 2),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -169,7 +169,7 @@ maker(
         r"\baca-pizz-markup",
         literal=True,
     ),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -180,7 +180,7 @@ maker(
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -191,7 +191,7 @@ maker(
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -208,7 +208,7 @@ maker(
         r"\baca-pizz-markup",
         literal=True,
     ),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -219,7 +219,7 @@ maker(
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -231,7 +231,7 @@ maker(
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(4, 2),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -247,7 +247,7 @@ maker(
         r"\baca-pizz-markup",
         literal=True,
     ),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -259,7 +259,7 @@ maker(
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(4, 3),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(
@@ -304,7 +304,7 @@ maker(
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(3, 2),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 maker(

@@ -255,7 +255,7 @@ maker(
 
 maker(
     ("cl", (5, 6)),
-    baca.hairpin("ff < fff", selector=baca.rleaves()),
+    baca.hairpin("ff < fff", selector=baca.selectors.rleaves()),
 )
 
 maker(

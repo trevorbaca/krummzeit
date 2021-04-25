@@ -113,9 +113,7 @@ maker(
     ("va", (12, 20)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(
-            baca.selectors.tuplets(([0, 1], 7))
-        ),
+        rmakers.force_rest(baca.selectors.tuplets(([0, 1], 7))),
     ),
 )
 
@@ -303,7 +301,7 @@ maker(
     ),
     baca.hairpin(
         "p > ppp",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     baca.markup(
         r"\baca-molto-flautando-markup",

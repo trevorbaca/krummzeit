@@ -169,7 +169,7 @@ maker(
     (["va", "vc"], (2, 6)),
     baca.hairpin(
         "ppp < fff",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
 )
 

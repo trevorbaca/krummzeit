@@ -123,7 +123,7 @@ maker(
 maker(
     "perc",
     baca.accent(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.staff_position(0),
 )
@@ -490,7 +490,7 @@ maker(
 maker(
     (["vn", "ob", "cl"], (1, 37)),
     baca.staccato(
-        selector=baca.pheads(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -619,7 +619,7 @@ maker(
     baca.dynamic("fff-sempre"),
     baca.new(
         baca.marcato(),
-        map=baca.pheads(),
+        map=baca.selectors.pheads(),
     ),
     baca.ottava_bassa(),
     krummzeit.clusters("low"),
@@ -630,7 +630,7 @@ maker(
     baca.dynamic("p-sempre"),
     baca.new(
         baca.laissez_vibrer(),
-        map=baca.pheads(),
+        map=baca.selectors.pheads(),
     ),
 )
 
@@ -656,7 +656,7 @@ maker(
         r"\baca-pizz-markup",
         literal=True,
     ),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
     krummzeit.register_narrow(5, 6),
 )
 
@@ -668,7 +668,7 @@ maker(
         r"\baca-pizz-markup",
         literal=True,
     ),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
     krummzeit.register_narrow(5, 6),
 )
 
@@ -679,7 +679,7 @@ maker(
         r"\baca-pizz-markup",
         literal=True,
     ),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
     krummzeit.register_narrow(5, 6),
 )
 
@@ -687,7 +687,7 @@ maker(
     ("pf", (57, 75)),
     baca.clef("treble"),
     baca.dynamic("fff"),
-    baca.staccatissimo(selector=baca.pheads()),
+    baca.staccatissimo(selector=baca.selectors.pheads()),
     krummzeit.register_narrow(5, 6),
 )
 

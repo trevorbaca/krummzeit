@@ -137,7 +137,7 @@ maker(
     ("perc", (1, 7)),
     baca.make_repeated_duration_notes(
         [(1, 2)],
-        rmakers.force_rest(baca.lt(-1)),
+        rmakers.force_rest(baca.selectors.lt(-1)),
         do_not_rewrite_meter=True,
     ),
     baca.markup(

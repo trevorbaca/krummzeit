@@ -107,7 +107,9 @@ maker(
     krummzeit.hypermeter_tuplets(
         [(1, 6)],
         [2, 2, 2, 2, 2, 3],
-        rmakers.force_rest(baca.tuplets()[:2]),
+        rmakers.force_rest(
+            baca.selectors.tuplets((None, 2)),
+        ),
     ),
 )
 
@@ -116,7 +118,9 @@ maker(
     krummzeit.hypermeter_tuplets(
         [(6, 1)],
         [2, 2, 2, 2, 2, 3],
-        rmakers.force_rest(baca.tuplets()[:2]),
+        rmakers.force_rest(
+            baca.selectors.tuplets((None, 2)),
+        ),
     ),
 )
 

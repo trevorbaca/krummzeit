@@ -106,7 +106,7 @@ maker(
 
 maker(
     ("pf", (25, 48)),
-    baca.dynamic("fff-poss", selector=baca.leaf(0)),
+    baca.dynamic("fff-poss", selector=baca.selectors.leaf(0)),
 )
 
 maker(

@@ -738,7 +738,7 @@ def left_remainder_quarters(*commands):
     )
 
 
-def margin_markup(key, alert=None, context="Staff", selector=baca.leaf(0)):
+def margin_markup(key, alert=None, context="Staff", selector=baca.selectors.leaf(0)):
     margin_markup = margin_markups[key]
     command = baca.margin_markup(
         margin_markup, alert=alert, context=context, selector=selector
@@ -1208,7 +1208,7 @@ def sponge_rhythm():
 def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
     force_rest = []
     if not do_not_burnish:
-        command = rmakers.force_rest(baca.leaf(0))
+        command = rmakers.force_rest(baca.selectors.leaf(0))
         force_rest.append(command)
 
     def preprocessor(divisions):

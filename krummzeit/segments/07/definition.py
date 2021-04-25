@@ -47,8 +47,8 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(11 - 1)),
-    baca.metronome_mark("144", selector=baca.leaf(19 - 1)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(11 - 1)),
+    baca.metronome_mark("144", selector=baca.selectors.leaf(19 - 1)),
     baca.rehearsal_mark("F"),
 )
 
@@ -63,7 +63,7 @@ maker(
     baca.markup(
         r"\baca-snare-drum-markup",
         literal=True,
-        selector=baca.leaf(0),
+        selector=baca.selectors.leaf(0),
     ),
 )
 

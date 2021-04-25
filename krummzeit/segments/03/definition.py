@@ -367,7 +367,7 @@ maker(
     baca.new(
         baca.hairpin(
             "ff > pp",
-            selector=baca.tleaves()[:2],
+            selector=baca.selectors.tleaves((None, 2)),
         ),
         map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
@@ -497,7 +497,7 @@ maker(
     ),
     baca.hairpin(
         "pp < fff",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     baca.markup(
         r"\baca-non-flautando-markup",

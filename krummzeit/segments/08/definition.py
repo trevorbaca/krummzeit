@@ -236,7 +236,7 @@ maker(
     ("cl", (1, 5)),
     baca.hairpin(
         "ppp < ff",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     baca.pitch("B1"),
 )
@@ -467,7 +467,7 @@ maker(
     ("cl", (18, 23)),
     baca.hairpin(
         "f < ff",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     baca.pitch("C2"),
     krummzeit.color_fingerings(),

@@ -160,7 +160,7 @@ maker(
     ("vn", 5),
     baca.hairpin(
         "ff > pp",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(7, 5),
@@ -176,7 +176,7 @@ maker(
     ("vn", 7),
     baca.hairpin(
         "pp < ff",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
@@ -187,7 +187,7 @@ maker(
     ("vn", 9),
     baca.hairpin(
         "ff > pp",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
@@ -199,7 +199,7 @@ maker(
     baca.clef("treble"),
     baca.hairpin(
         "ff > pp",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(6, 5),
@@ -215,7 +215,7 @@ maker(
     ("va", 7),
     baca.hairpin(
         "pp < ff",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
@@ -227,7 +227,7 @@ maker(
     baca.clef("alto"),
     baca.hairpin(
         "ff > pp",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(4, 2),
@@ -239,7 +239,7 @@ maker(
     baca.clef("treble"),
     baca.hairpin(
         "ff > pp",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
@@ -255,7 +255,7 @@ maker(
     baca.clef("bass"),
     baca.hairpin(
         "pp < ff",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(4, 3),
@@ -300,7 +300,7 @@ maker(
     ("vc", 9),
     baca.hairpin(
         "ff > pp",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(3, 2),

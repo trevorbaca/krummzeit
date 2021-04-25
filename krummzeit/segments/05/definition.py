@@ -358,7 +358,7 @@ maker(
     ("va", (8, 10)),
     baca.hairpin(
         "pp < f",
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
     baca.markup(
         r"\baca-molto-flautando-markup",
@@ -376,7 +376,7 @@ maker(
             "molto flautando => molto gridato",
             abjad.tweak(6).staff_padding,
         ),
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
 )
 
@@ -390,7 +390,7 @@ maker(
             "molto flautando => molto gridato",
             abjad.tweak(6).staff_padding,
         ),
-        selector=baca.tleaves(),
+        selector=baca.selectors.tleaves(),
     ),
 )
 

@@ -52,32 +52,32 @@ maker(
     "Global_Skips",
     baca.metronome_mark(
         "108",
-        selector=baca.leaf(1 - 1),
+        selector=baca.selectors.leaf(1 - 1),
         redundant=True,
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.leaf(22 - 1),
+        selector=baca.selectors.leaf(22 - 1),
     ),
     baca.metronome_mark(
         "144",
-        selector=baca.leaf(26 - 1),
+        selector=baca.selectors.leaf(26 - 1),
     ),
     baca.metronome_mark(
         "108",
-        selector=baca.leaf(28 - 1),
+        selector=baca.selectors.leaf(28 - 1),
     ),
     baca.metronome_mark(
         "45",
-        selector=baca.leaf(36 - 1),
+        selector=baca.selectors.leaf(36 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.leaf(40 - 1),
+        selector=baca.selectors.leaf(40 - 1),
     ),
     baca.metronome_mark(
         "135",
-        selector=baca.leaf(43 - 1),
+        selector=baca.selectors.leaf(43 - 1),
     ),
 )
 
@@ -85,47 +85,47 @@ maker(
     "Global_Rests",
     baca.global_fermata(
         "short",
-        selector=baca.leaf(5 - 1),
+        selector=baca.selectors.leaf(5 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(7 - 1),
+        selector=baca.selectors.leaf(7 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(9 - 1),
+        selector=baca.selectors.leaf(9 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(11 - 1),
+        selector=baca.selectors.leaf(11 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(13 - 1),
+        selector=baca.selectors.leaf(13 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(15 - 1),
+        selector=baca.selectors.leaf(15 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(17 - 1),
+        selector=baca.selectors.leaf(17 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(19 - 1),
+        selector=baca.selectors.leaf(19 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(21 - 1),
+        selector=baca.selectors.leaf(21 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(29 - 1),
+        selector=baca.selectors.leaf(29 - 1),
     ),
     baca.global_fermata(
         "short",
-        selector=baca.leaf(31 - 1),
+        selector=baca.selectors.leaf(31 - 1),
     ),
 )
 

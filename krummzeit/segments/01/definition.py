@@ -38,18 +38,18 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("135", selector=baca.leaf(1 - 1)),
-    baca.metronome_mark("45", selector=baca.leaf(4 - 1)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.leaf(4 - 1)),
-    baca.metronome_mark("144", selector=baca.leaf(7 - 1)),
-    baca.metronome_mark("108", selector=baca.leaf(8 - 1)),
-    baca.metronome_mark("135", selector=baca.leaf(10 - 1)),
+    baca.metronome_mark("135", selector=baca.selectors.leaf(1 - 1)),
+    baca.metronome_mark("45", selector=baca.selectors.leaf(4 - 1)),
+    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(4 - 1)),
+    baca.metronome_mark("144", selector=baca.selectors.leaf(7 - 1)),
+    baca.metronome_mark("108", selector=baca.selectors.leaf(8 - 1)),
+    baca.metronome_mark("135", selector=baca.selectors.leaf(10 - 1)),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("short", selector=baca.leaf(3 - 1)),
-    baca.global_fermata("short", selector=baca.leaf(9 - 1)),
+    baca.global_fermata("short", selector=baca.selectors.leaf(3 - 1)),
+    baca.global_fermata("short", selector=baca.selectors.leaf(9 - 1)),
 )
 
 maker(
@@ -178,7 +178,7 @@ maker(
     baca.markup(
         r'\baca-boxed-markup "to harpsichord"',
         literal=True,
-        selector=baca.leaf(0),
+        selector=baca.selectors.leaf(0),
     ),
 )
 

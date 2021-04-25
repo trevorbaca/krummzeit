@@ -96,7 +96,7 @@ maker(
         literal=True,
     ),
     baca.pitch("D5"),
-    krummzeit.left_remainder_quarters(rmakers.force_rest(baca.lt(0))),
+    krummzeit.left_remainder_quarters(rmakers.force_rest(baca.selectors.lt(0))),
 )
 
 maker(

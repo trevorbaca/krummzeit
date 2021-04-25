@@ -86,7 +86,9 @@ maker(
     ("va", (8, 10)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.tuplets().get([5, 6], 7)),
+        rmakers.force_rest(
+            baca.selectors.tuplets(([5, 6], 7)),
+        ),
     ),
 )
 
@@ -94,7 +96,7 @@ maker(
     ("va", (11, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.tuplet(0)),
+        rmakers.force_rest(baca.selectors.tuplet(0)),
     ),
 )
 
@@ -102,7 +104,9 @@ maker(
     ("vn", (14, 16)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.tuplets().get([5, 6], 7)),
+        rmakers.force_rest(
+            baca.selectors.tuplets(([5, 6], 7)),
+        ),
     ),
 )
 
@@ -110,7 +114,9 @@ maker(
     ("vc", (14, 16)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(baca.tuplets()[:3]),
+        rmakers.force_rest(
+            baca.selectors.tuplets((None, 3)),
+        ),
     ),
 )
 
@@ -118,7 +124,7 @@ maker(
     ("vn", (17, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.tuplet(0)),
+        rmakers.force_rest(baca.selectors.tuplet(0)),
     ),
 )
 
@@ -126,7 +132,7 @@ maker(
     ("vc", (17, 24)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.tuplet(0)),
+        rmakers.force_rest(baca.selectors.tuplet(0)),
         tuplet_ratios=[(1, 4), (4, 3), (1, 2)],
     ),
 )
@@ -168,7 +174,9 @@ maker(
     ("pf", (35, 42)),
     krummzeit.silver_points(
         [(1, 2), (2, 1)],
-        rmakers.force_rest(baca.tuplets().get([2], 7)),
+        rmakers.force_rest(
+            baca.selectors.tuplets(([2], 7)),
+        ),
     ),
 )
 
@@ -176,7 +184,9 @@ maker(
     ("perc", (35, 42)),
     krummzeit.silver_points(
         [(2, 1), (1, 2)],
-        rmakers.force_rest(baca.tuplets().get([5], 7)),
+        rmakers.force_rest(
+            baca.selectors.tuplets(([5], 7)),
+        ),
     ),
 )
 
@@ -188,7 +198,7 @@ maker(
 maker(
     ("cl", [(11, 13), (35, 44)]),
     krummzeit.color_tuplets(
-        rmakers.force_rest(baca.tuplet(0)),
+        rmakers.force_rest(baca.selectors.tuplet(0)),
         rotation=2,
     ),
 )

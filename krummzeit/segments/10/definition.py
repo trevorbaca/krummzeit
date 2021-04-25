@@ -85,7 +85,7 @@ maker(
 maker(
     (["vn", "va", "vc"], (1, 3)),
     krummzeit.opening_triplets(
-        rmakers.force_rest(baca.tuplet(-1)),
+        rmakers.force_rest(baca.selectors.tuplet(-1)),
         remainder=abjad.Right,
     ),
 )
@@ -96,7 +96,7 @@ maker(
     krummzeit.clusters("harpsichord"),
     krummzeit.margin_markup("Hpschd."),
     krummzeit.opening_triplets(
-        rmakers.force_rest(baca.tuplet(0)),
+        rmakers.force_rest(baca.selectors.tuplet(0)),
     ),
 )
 
@@ -122,7 +122,7 @@ maker(
     baca.instrument(krummzeit.instruments["Piano"]),
     krummzeit.margin_markup("Pf."),
     krummzeit.opening_triplets(
-        rmakers.force_rest(baca.tuplet(0)),
+        rmakers.force_rest(baca.selectors.tuplet(0)),
     ),
 )
 

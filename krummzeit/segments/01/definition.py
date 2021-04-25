@@ -112,7 +112,7 @@ maker(
 maker(
     (["vn", "va", "vc"], (1, 2)),
     krummzeit.opening_triplets(
-        rmakers.force_rest(baca.tuplet(0)),
+        rmakers.force_rest(baca.selectors.tuplet(0)),
     ),
 )
 
@@ -120,7 +120,9 @@ maker(
     ("vn", (4, 8)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.tuplets().get([5, 6], 7)),
+        rmakers.force_rest(
+            baca.selectors.tuplets(([5, 6], 7)),
+        ),
     ),
 )
 
@@ -128,7 +130,9 @@ maker(
     ("va", (4, 8)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(baca.tuplets().get([0, 1], 7)),
+        rmakers.force_rest(
+            baca.selectors.tuplets(([0, 1], 7)),
+        ),
     ),
 )
 
@@ -136,7 +140,9 @@ maker(
     ("vc", (4, 8)),
     krummzeit.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
-        rmakers.force_rest(baca.tuplets().get([2, 3], 7)),
+        rmakers.force_rest(
+            baca.selectors.tuplets(([2, 3], 7)),
+        ),
     ),
 )
 

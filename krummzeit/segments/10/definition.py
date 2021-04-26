@@ -195,7 +195,7 @@ maker(
 maker(
     ("perc", (3, 22)),
     baca.dynamic("f"),
-    baca.laissez_vibrer(selector=baca.ptails()),
+    baca.laissez_vibrer(selector=baca.selectors.ptails()),
 )
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())

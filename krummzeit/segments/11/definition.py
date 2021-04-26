@@ -45,7 +45,7 @@ maker = baca.SegmentMaker(
 maker(
     "Global_Skips",
     baca.rehearsal_mark("J"),
-    baca.bar_line("|.", baca.skip(-1)),
+    baca.bar_line("|.", baca.selectors.skip(-1)),
 )
 
 maker(

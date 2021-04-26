@@ -231,7 +231,7 @@ maker(
     ("pf", (11, 13)),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.plt(0)),
+        rmakers.force_rest(baca.selectors.plt(0)),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )

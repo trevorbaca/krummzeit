@@ -47,19 +47,43 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("90", selector=baca.selectors.leaf(3 - 1)),
-    baca.metronome_mark("108", selector=baca.selectors.leaf(5 - 1)),
-    baca.metronome_mark("72", selector=baca.selectors.leaf(7 - 1)),
-    baca.metronome_mark(baca.Ritardando(), selector=baca.selectors.leaf(9 - 1)),
-    baca.metronome_mark("36", selector=baca.selectors.leaf(11 - 1)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(19 - 1)),
-    baca.metronome_mark("144", selector=baca.selectors.leaf(23 - 1)),
+    baca.metronome_mark(
+        "90",
+        selector=baca.selectors.leaf(3 - 1),
+    ),
+    baca.metronome_mark(
+        "108",
+        selector=baca.selectors.leaf(5 - 1),
+    ),
+    baca.metronome_mark(
+        "72",
+        selector=baca.selectors.leaf(7 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Ritardando(),
+        selector=baca.selectors.leaf(9 - 1),
+    ),
+    baca.metronome_mark(
+        "36",
+        selector=baca.selectors.leaf(11 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.selectors.leaf(19 - 1),
+    ),
+    baca.metronome_mark(
+        "144",
+        selector=baca.selectors.leaf(23 - 1),
+    ),
     baca.rehearsal_mark("I"),
 )
 
 maker(
     "Global_Rests",
-    baca.global_fermata("very_long", selector=baca.selectors.leaf(23 - 1)),
+    baca.global_fermata(
+        "very_long",
+        selector=baca.selectors.leaf(23 - 1),
+    ),
 )
 
 maker(
@@ -258,7 +282,10 @@ maker(
 
 maker(
     ("cl", (5, 6)),
-    baca.hairpin("ff < fff", selector=baca.selectors.rleaves()),
+    baca.hairpin(
+        "ff < fff",
+        selector=baca.selectors.rleaves(),
+    ),
 )
 
 maker(

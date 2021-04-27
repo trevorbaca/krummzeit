@@ -56,15 +56,42 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark("135", selector=baca.selectors.leaf(9 - 1)),
-    baca.metronome_mark("72", selector=baca.selectors.leaf(11 - 1)),
-    baca.metronome_mark("108", selector=baca.selectors.leaf(15 - 1)),
-    baca.metronome_mark("90", selector=baca.selectors.leaf(17 - 1)),
-    baca.metronome_mark("108", selector=baca.selectors.leaf(18 - 1)),
-    baca.metronome_mark("90", selector=baca.selectors.leaf(20 - 1)),
-    baca.metronome_mark("135", selector=baca.selectors.leaf(25 - 1)),
-    baca.metronome_mark("45", selector=baca.selectors.leaf(27 - 1)),
-    baca.metronome_mark("72", selector=baca.selectors.leaf(33 - 1)),
+    baca.metronome_mark(
+        "135",
+        selector=baca.selectors.leaf(9 - 1),
+    ),
+    baca.metronome_mark(
+        "72",
+        selector=baca.selectors.leaf(11 - 1),
+    ),
+    baca.metronome_mark(
+        "108",
+        selector=baca.selectors.leaf(15 - 1),
+    ),
+    baca.metronome_mark(
+        "90",
+        selector=baca.selectors.leaf(17 - 1),
+    ),
+    baca.metronome_mark(
+        "108",
+        selector=baca.selectors.leaf(18 - 1),
+    ),
+    baca.metronome_mark(
+        "90",
+        selector=baca.selectors.leaf(20 - 1),
+    ),
+    baca.metronome_mark(
+        "135",
+        selector=baca.selectors.leaf(25 - 1),
+    ),
+    baca.metronome_mark(
+        "45",
+        selector=baca.selectors.leaf(27 - 1),
+    ),
+    baca.metronome_mark(
+        "72",
+        selector=baca.selectors.leaf(33 - 1),
+    ),
     baca.rehearsal_mark("E"),
 )
 

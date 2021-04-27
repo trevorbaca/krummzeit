@@ -45,12 +45,30 @@ maker = baca.SegmentMaker(
 
 maker(
     "Global_Skips",
-    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(8 - 1)),
-    baca.metronome_mark("72/108", selector=baca.selectors.leaf(25 - 1)),
-    baca.metronome_mark("72", selector=baca.selectors.leaf(27 - 1)),
-    baca.metronome_mark("4.=4", selector=baca.selectors.leaf(27 - 1)),
-    baca.metronome_mark(baca.Accelerando(), selector=baca.selectors.leaf(27 - 1)),
-    baca.metronome_mark("108", selector=baca.selectors.leaf(35 - 1)),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.selectors.leaf(8 - 1),
+    ),
+    baca.metronome_mark(
+        "72/108",
+        selector=baca.selectors.leaf(25 - 1),
+    ),
+    baca.metronome_mark(
+        "72",
+        selector=baca.selectors.leaf(27 - 1),
+    ),
+    baca.metronome_mark(
+        "4.=4",
+        selector=baca.selectors.leaf(27 - 1),
+    ),
+    baca.metronome_mark(
+        baca.Accelerando(),
+        selector=baca.selectors.leaf(27 - 1),
+    ),
+    baca.metronome_mark(
+        "108",
+        selector=baca.selectors.leaf(35 - 1),
+    ),
     baca.rehearsal_mark("D"),
 )
 

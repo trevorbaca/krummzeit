@@ -235,7 +235,9 @@ maker(
     baca.dynamic("p"),
     baca.new(
         baca.trill_spanner(),
-        map=lambda _: baca.Selection(_).plts(exclude=baca.const.HIDDEN).filter_preprolated(">=", (1, 4)),
+        map=lambda _: baca.Selection(_)
+        .plts(exclude=baca.const.HIDDEN)
+        .filter_preprolated(">=", (1, 4)),
     ),
     baca.suite(
         baca.pitches(

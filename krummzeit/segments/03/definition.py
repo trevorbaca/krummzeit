@@ -297,7 +297,9 @@ maker(
     baca.dynamic("ff"),
     baca.new(
         baca.trill_spanner(),
-        map=lambda _: baca.Selection(_).plts(exclude=baca.const.HIDDEN).filter_preprolated(">=", (1, 4)),
+        map=lambda _: baca.Selection(_)
+        .plts(exclude=baca.const.HIDDEN)
+        .filter_preprolated(">=", (1, 4)),
     ),
     krummzeit.color_fingerings(),
     krummzeit.displacement(),

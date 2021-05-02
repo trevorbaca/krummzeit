@@ -135,7 +135,7 @@ maker(
     ),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -192,7 +192,7 @@ maker(
     "ob",
     baca.pitch(
         "C#4",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
     baca.dynamic("fff"),
     baca.dls_staff_padding(5),
@@ -202,7 +202,7 @@ maker(
     "cl",
     baca.pitch(
         "D2",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
     baca.dynamic("f"),
     baca.dls_staff_padding(7),

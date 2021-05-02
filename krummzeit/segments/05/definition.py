@@ -240,7 +240,7 @@ maker(
     ("pf", (8, 10)),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.plts().get([5, 6], 7)),
+        rmakers.force_rest(baca.selectors.plts(([5, 6], 7))),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )
@@ -283,7 +283,7 @@ maker(
     ),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -345,7 +345,7 @@ maker(
     ),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -455,7 +455,7 @@ maker(
     ("ob", (11, 24)),
     baca.pitches(
         "D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -463,7 +463,7 @@ maker(
     ("cl", (11, 24)),
     baca.pitches(
         "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -514,7 +514,7 @@ maker(
     ("vn", (39, 48)),
     baca.pitch(
         "A+3",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -522,7 +522,7 @@ maker(
     ("va", (39, 48)),
     baca.pitch(
         "Bb2",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -530,7 +530,7 @@ maker(
     ("vc", (39, 48)),
     baca.pitch(
         "A2",
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 

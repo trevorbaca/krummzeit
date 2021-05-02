@@ -277,7 +277,7 @@ maker(
         baca.glissando(),
         map=baca.selectors.runs(),
     ),
-    baca.stem_tremolo(selector=baca.plts()[1:]),
+    baca.stem_tremolo(selector=baca.selectors.plts((1, None))),
 )
 
 maker(

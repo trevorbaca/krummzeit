@@ -137,7 +137,7 @@ maker(
     krummzeit.margin_markup("Pf."),
     krummzeit.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.plts().get([5, 6], 7)),
+        rmakers.force_rest(baca.selectors.plts(([5, 6], 7))),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )
@@ -303,7 +303,7 @@ maker(
     ),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -416,7 +416,7 @@ maker(
     ),
     baca.pitches(
         pcs,
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 

@@ -598,14 +598,14 @@ def displacement():
             -1,
             -1,
         ],
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     )
 
 
 def fused_expanse(divisions):
     return baca.rhythm(
         rmakers.note(),
-        rmakers.beam(baca.plts()),
+        rmakers.beam(baca.selectors.plts()),
         preprocessor=lambda _: baca.Sequence(_)
         .fuse()
         .split_divisions(divisions, cyclic=True),
@@ -732,7 +732,7 @@ def left_remainder_quarters(*commands):
     return baca.rhythm(
         rmakers.note(),
         *commands,
-        rmakers.beam(baca.plts()),
+        rmakers.beam(baca.selectors.plts()),
         preprocessor=lambda _: baca.Sequence(_).fuse().quarters(remainder=abjad.Left),
         tag=abjad.Tag("krummzeit.left_remainder_quarters()"),
     )
@@ -817,7 +817,7 @@ def piano_harmonics(division_ratios, *commands, tie_across_divisions=None):
     return baca.rhythm(
         rmakers.note(),
         *commands_,
-        rmakers.beam(baca.plts()),
+        rmakers.beam(baca.selectors.plts()),
         preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.piano_harmonics()"),
     )
@@ -902,7 +902,7 @@ def polyphony(
     quarters = rmakers.stack(
         rmakers.note(spelling=rmakers.Spelling(forbidden_note_duration=(1, 2))),
         rmakers.untie(),
-        rmakers.beam(baca.plts()),
+        rmakers.beam(baca.selectors.plts()),
     )
 
     if final_quarter_notes:
@@ -952,27 +952,27 @@ def prolated_quarters(extra_counts):
 def register_narrow(start, stop=None):
     narrow_second_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", -26), ("[F#4, C8]", -23)]),
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     )
     narrow_third_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", -14), ("[F#4, C8]", -11)]),
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     )
     narrow_fourth_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", -2), ("[F#4, C8]", 1)]),
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     )
     narrow_fifth_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", 10), ("[F#4, C8]", 13)]),
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     )
     narrow_sixth_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", 22), ("[F#4, C8]", 25)]),
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     )
     narrow_seventh_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", 34), ("[F#4, C8]", 37)]),
-        selector=baca.plts(exclude=baca.const.HIDDEN),
+        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     )
     if stop is None:
         if start == 2:
@@ -1081,31 +1081,31 @@ def register_wide(start):
     if start == 3:
         wide_third_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", -20), ("[F#4, C8]", -6)]),
-            selector=baca.plts(exclude=baca.const.HIDDEN),
+            selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
         )
         return wide_third_octave
     elif start == 4:
         wide_fourth_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", -8), ("[F#4, C8]", 6)]),
-            selector=baca.plts(exclude=baca.const.HIDDEN),
+            selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
         )
         return wide_fourth_octave
     elif start == 5:
         wide_fifth_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", 4), ("[F#4, C8]", 18)]),
-            selector=baca.plts(exclude=baca.const.HIDDEN),
+            selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
         )
         return wide_fifth_octave
     elif start == 6:
         wide_sixth_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", 16), ("[F#4, C8]", 30)]),
-            selector=baca.plts(exclude=baca.const.HIDDEN),
+            selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
         )
         return wide_sixth_octave
     elif start == 7:
         wide_seventh_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", 28), ("[F#4, C8]", 42)]),
-            selector=baca.plts(exclude=baca.const.HIDDEN),
+            selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
         )
         return wide_seventh_octave
     else:
@@ -1136,7 +1136,7 @@ def right_remainder_quarters(*commands):
     return baca.rhythm(
         rmakers.note(),
         *commands,
-        rmakers.beam(baca.plts()),
+        rmakers.beam(baca.selectors.plts()),
         preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.right_remainder_quarters()"),
     )
@@ -1227,7 +1227,7 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
     return baca.rhythm(
         rmakers.note(),
         *force_rest,
-        rmakers.beam(baca.plts()),
+        rmakers.beam(baca.selectors.plts()),
         preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.white_rhythm()"),
     )

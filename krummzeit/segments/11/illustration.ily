@@ -1,4 +1,4 @@
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Global_Rests = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -250,11 +250,11 @@ k_Global_Rests = {
     R1 * 1/4
 
 %! abjad.ScoreTemplate._make_global_context()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Global_Skips = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -2224,11 +2224,11 @@ k_Global_Skips = {
     \once \override Score.SpanBar.transparent = ##t
 
 %! abjad.ScoreTemplate._make_global_context()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Oboe_Music_Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -3074,25 +3074,25 @@ k_Oboe_Music_Voice = {
     >>
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Oboe_Music_Staff = {
 
     %! krummzeit.ScoreTemplate.__call__()
     \context Voice = "Oboe_Music_Voice"
     %! krummzeit.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \k_Oboe_Music_Voice
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Clarinet_Music_Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -3944,25 +3944,25 @@ k_Clarinet_Music_Voice = {
     >>
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Clarinet_Music_Staff = {
 
     %! krummzeit.ScoreTemplate.__call__()
     \context Voice = "Clarinet_Music_Voice"
     %! krummzeit.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \k_Clarinet_Music_Voice
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Piano_Music_Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -5042,25 +5042,25 @@ k_Piano_Music_Voice = {
     >>
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Piano_Music_Staff = {
 
     %! krummzeit.ScoreTemplate.__call__()
     \context Voice = "Piano_Music_Voice"
     %! krummzeit.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \k_Piano_Music_Voice
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Percussion_Music_Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -6159,25 +6159,25 @@ k_Percussion_Music_Voice = {
     >>
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Percussion_Music_Staff = {
 
     %! krummzeit.ScoreTemplate.__call__()
     \context Voice = "Percussion_Music_Voice"
     %! krummzeit.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \k_Percussion_Music_Voice
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Violin_Music_Voice = {
 
     %! krummzeit.closing_pizzicati()
@@ -7234,25 +7234,25 @@ k_Violin_Music_Voice = {
     >>
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Violin_Music_Staff = {
 
     %! krummzeit.ScoreTemplate.__call__()
     \context Voice = "Violin_Music_Voice"
     %! krummzeit.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \k_Violin_Music_Voice
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Viola_Music_Voice = {
 
     %! krummzeit.closing_pizzicati()
@@ -7902,25 +7902,25 @@ k_Viola_Music_Voice = {
     >>
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Viola_Music_Staff = {
 
     %! krummzeit.ScoreTemplate.__call__()
     \context Voice = "Viola_Music_Voice"
     %! krummzeit.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \k_Viola_Music_Voice
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Cello_Music_Voice = {
 
     %! baca.SegmentMaker._comment_measure_numbers()
@@ -8839,19 +8839,19 @@ k_Cello_Music_Voice = {
     >>
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }
 
 
-%! ide.Path.extern()
+%! baca.Path.extern()
 k_Cello_Music_Staff = {
 
     %! krummzeit.ScoreTemplate.__call__()
     \context Voice = "Cello_Music_Voice"
     %! krummzeit.ScoreTemplate.__call__()
-    %! ide.Path.extern()
+    %! baca.Path.extern()
     \k_Cello_Music_Voice
 
 %! krummzeit.ScoreTemplate.__call__()
-%! ide.Path.extern()
+%! baca.Path.extern()
 }

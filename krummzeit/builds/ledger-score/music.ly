@@ -4,18 +4,37 @@
 \language "english"
 
 #(ly:set-option 'relative-includes #t)
-\include "../stylesheet.ily"
+\include "stylesheet.ily"
+\include "_segments/segment-01.ily"
+\include "_segments/segment-02.ily"
+\include "_segments/segment-03.ily"
+\include "_segments/segment-04.ily"
+\include "_segments/segment-05.ily"
+\include "_segments/segment-06.ily"
+\include "_segments/segment-07.ily"
+\include "_segments/segment-08.ily"
+\include "_segments/segment-09.ily"
+\include "_segments/segment-10.ily"
+\include "_segments/segment-11.ily"
 
-\context Score = "Krummzeit" {
-   \include "segment-a.ly"
-   \include "segment-b.ly"
-   \include "segment-c.ly"
-   \include "segment-d.ly"
-   \include "segment-e.ly"
-   \include "segment-f.ly"
-   \include "segment-g.ly"
-   \include "segment-h.ly"
-   \include "segment-i.ly"
-   \include "segment-j.ly"
-   \include "segment-k.ly"
+
+\score {
+    <<
+        {
+        % \include "layout.ly"
+        }
+        {
+        \include "_segments/segment-01.ly"
+        \include "_segments/segment-02.ly"
+        \include "_segments/segment-03.ly"
+        \include "_segments/segment-04.ly"
+        \include "_segments/segment-05.ly"
+        \include "_segments/segment-06.ly"
+        \include "_segments/segment-07.ly"
+        \include "_segments/segment-08.ly"
+        \include "_segments/segment-09.ly"
+        \include "_segments/segment-10.ly"
+        \include "_segments/segment-11.ly"
+        }
+    >>
 }

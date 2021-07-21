@@ -484,3 +484,6 @@ maker(
     (["vn", "va", "vc"], (11, 16)),
     baca.stem_up(),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)

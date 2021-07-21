@@ -334,3 +334,6 @@ maker(
     krummzeit.displacement(),
     krummzeit.register_narrow(6),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)

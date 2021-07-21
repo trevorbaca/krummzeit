@@ -347,3 +347,6 @@ maker(
     (["va", "vc"], (2, 6)),
     baca.dls_staff_padding(6),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)

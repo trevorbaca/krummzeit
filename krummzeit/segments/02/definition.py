@@ -750,3 +750,6 @@ maker(
     baca.dls_staff_padding(7),
     baca.tuplet_bracket_staff_padding(4),
 )
+
+if __name__ == "__main__":
+    baca.build.make_segment_pdf(maker)

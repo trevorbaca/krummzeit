@@ -2,7 +2,7 @@ import pathlib
 
 import baca
 
-import krummzeit
+from krummzeit import library as krummzeit
 
 ###############################################################################
 ##################################### [C] #####################################

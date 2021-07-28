@@ -8,7 +8,7 @@
 %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"
 %! baca.Path.extern()
-\include "illustration.ily"
+\include "music.ily"
 
 %! baca.SegmentMaker._make_lilypond_file()
 \header { composer = ##f poet = ##f title = ##f }
@@ -17,7 +17,7 @@
 %! baca.SegmentMaker._make_lilypond_file()
 \paper { print-first-page-number = ##t }
 %! __make_segment_pdf__
-\paper { first-page-number = #73 }
+\paper { first-page-number = #3 }
 
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_blocks()
@@ -50,13 +50,13 @@
                 \context GlobalRests = "Global_Rests"
                 %! abjad.ScoreTemplate._make_global_context()
                 %! baca.Path.extern()
-                \k_Global_Rests
+                \b_Global_Rests
 
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips"
                 %! abjad.ScoreTemplate._make_global_context()
                 %! baca.Path.extern()
-                \k_Global_Skips
+                \b_Global_Skips
 
             %! abjad.ScoreTemplate._make_global_context()
             >>
@@ -77,7 +77,7 @@
                     \context Staff = "Oboe_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \k_Oboe_Music_Staff
+                    \b_Oboe_Music_Staff
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Clarinet
@@ -85,7 +85,7 @@
                     \context Staff = "Clarinet_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \k_Clarinet_Music_Staff
+                    \b_Clarinet_Music_Staff
 
                 %! krummzeit.ScoreTemplate.__call__()
                 >>
@@ -101,7 +101,7 @@
                     \context Staff = "Piano_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \k_Piano_Music_Staff
+                    \b_Piano_Music_Staff
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Percussion
@@ -109,7 +109,7 @@
                     \context Staff = "Percussion_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \k_Percussion_Music_Staff
+                    \b_Percussion_Music_Staff
 
                 %! krummzeit.ScoreTemplate.__call__()
                 >>
@@ -125,7 +125,7 @@
                     \context Staff = "Violin_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \k_Violin_Music_Staff
+                    \b_Violin_Music_Staff
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Viola
@@ -133,7 +133,7 @@
                     \context Staff = "Viola_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \k_Viola_Music_Staff
+                    \b_Viola_Music_Staff
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Cello
@@ -141,7 +141,7 @@
                     \context Staff = "Cello_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
                     %! baca.Path.extern()
-                    \k_Cello_Music_Staff
+                    \b_Cello_Music_Staff
 
                 %! krummzeit.ScoreTemplate.__call__()
                 >>

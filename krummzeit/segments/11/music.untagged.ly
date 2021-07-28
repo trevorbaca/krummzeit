@@ -1,12 +1,12 @@
 \version "2.23.1"
 \language "english"
 \include "../../stylesheet.ily"
-\include "illustration.ily"
+\include "music.ily"
 
 \header { composer = ##f poet = ##f title = ##f }
 \layout { indent = 0 }
 \paper { print-first-page-number = ##t }
-\paper { first-page-number = #58 }
+\paper { first-page-number = #73 }
 
 \score
 {
@@ -24,10 +24,10 @@
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \h_Global_Rests
+                \k_Global_Rests
 
                 \context GlobalSkips = "Global_Skips"
-                \h_Global_Skips
+                \k_Global_Skips
 
             >>
 
@@ -39,11 +39,11 @@
 
                     \tag Oboe
                     \context Staff = "Oboe_Music_Staff"
-                    \h_Oboe_Music_Staff
+                    \k_Oboe_Music_Staff
 
                     \tag Clarinet
                     \context Staff = "Clarinet_Music_Staff"
-                    \h_Clarinet_Music_Staff
+                    \k_Clarinet_Music_Staff
 
                 >>
 
@@ -52,11 +52,11 @@
 
                     \tag Piano
                     \context Staff = "Piano_Music_Staff"
-                    \h_Piano_Music_Staff
+                    \k_Piano_Music_Staff
 
                     \tag Percussion
                     \context Staff = "Percussion_Music_Staff"
-                    \h_Percussion_Music_Staff
+                    \k_Percussion_Music_Staff
 
                 >>
 
@@ -65,15 +65,15 @@
 
                     \tag Violin
                     \context Staff = "Violin_Music_Staff"
-                    \h_Violin_Music_Staff
+                    \k_Violin_Music_Staff
 
                     \tag Viola
                     \context Staff = "Viola_Music_Staff"
-                    \h_Viola_Music_Staff
+                    \k_Viola_Music_Staff
 
                     \tag Cello
                     \context Staff = "Cello_Music_Staff"
-                    \h_Cello_Music_Staff
+                    \k_Cello_Music_Staff
 
                 >>
 

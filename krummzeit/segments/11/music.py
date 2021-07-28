@@ -3,7 +3,7 @@ import pathlib
 import abjad
 import baca
 
-import krummzeit
+from krummzeit import library as krummzeit
 
 ###############################################################################
 ##################################### [J] #####################################

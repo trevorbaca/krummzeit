@@ -29,6 +29,7 @@ maker = baca.SegmentMaker(
         baca.tags.LOCAL_MEASURE_NUMBER,
     ],
     check_all_are_pitched=True,
+    score_template=krummzeit.ScoreTemplate(),
     stage_markup=stage_markup,
     time_signatures=time_signatures,
     transpose_score=True,

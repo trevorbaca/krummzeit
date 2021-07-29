@@ -1,5 +1,3 @@
-import pathlib
-
 import baca
 
 from krummzeit import library as krummzeit

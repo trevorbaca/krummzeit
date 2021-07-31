@@ -23,7 +23,7 @@
         \context PageLayout = "Page_Layout"
         {   %*% c_Page_Layout
 
-            % [03 Page_Layout measure 89]
+            % [Page_Layout measure 89]
             \baca-new-spacing-section #1 #40
             \autoPageBreaksOff
             \noBreak
@@ -31,238 +31,238 @@
             \pageBreak
             s1 * 3/4
 
-            % [03 Page_Layout measure 90]
+            % [Page_Layout measure 90]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 11/8
 
-            % [03 Page_Layout measure 91]
+            % [Page_Layout measure 91]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 5/8
 
-            % [03 Page_Layout measure 92]
+            % [Page_Layout measure 92]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 1
 
-            % [03 Page_Layout measure 93]
+            % [Page_Layout measure 93]
             \baca-new-spacing-section #35 #96
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 94]
+            % [Page_Layout measure 94]
             \baca-new-spacing-section #1 #40
             \noBreak
             \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)
             \pageBreak
             s1 * 1/2
 
-            % [03 Page_Layout measure 95]
+            % [Page_Layout measure 95]
             \baca-new-spacing-section #1 #4
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 96]
+            % [Page_Layout measure 96]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 7/4
 
-            % [03 Page_Layout measure 97]
+            % [Page_Layout measure 97]
             \baca-new-spacing-section #1 #4
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 98]
+            % [Page_Layout measure 98]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 1
 
-            % [03 Page_Layout measure 99]
+            % [Page_Layout measure 99]
             \baca-new-spacing-section #35 #96
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 100]
+            % [Page_Layout measure 100]
             \baca-new-spacing-section #1 #40
             \noBreak
             \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)
             \pageBreak
             s1 * 7/8
 
-            % [03 Page_Layout measure 101]
+            % [Page_Layout measure 101]
             \baca-new-spacing-section #1 #4
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 102]
+            % [Page_Layout measure 102]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 7/8
 
-            % [03 Page_Layout measure 103]
+            % [Page_Layout measure 103]
             \baca-new-spacing-section #1 #4
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 104]
+            % [Page_Layout measure 104]
             \baca-new-spacing-section #35 #960
             \noBreak
             s1 * 2
 
-            % [03 Page_Layout measure 105]
+            % [Page_Layout measure 105]
             \baca-new-spacing-section #1 #4
             \noBreak
             \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)
             \pageBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 106]
+            % [Page_Layout measure 106]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 1
 
-            % [03 Page_Layout measure 107]
+            % [Page_Layout measure 107]
             \baca-new-spacing-section #1 #4
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 108]
+            % [Page_Layout measure 108]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 3/4
 
-            % [03 Page_Layout measure 109]
+            % [Page_Layout measure 109]
             \baca-new-spacing-section #1 #4
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 110]
+            % [Page_Layout measure 110]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 1
 
-            % [03 Page_Layout measure 111]
+            % [Page_Layout measure 111]
             \baca-new-spacing-section #35 #960
             \noBreak
             s1 * 5/8
 
-            % [03 Page_Layout measure 112]
+            % [Page_Layout measure 112]
             \baca-new-spacing-section #1 #40
             \noBreak
             \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)
             \pageBreak
             s1 * 9/8
 
-            % [03 Page_Layout measure 113]
+            % [Page_Layout measure 113]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 5/4
 
-            % [03 Page_Layout measure 114]
+            % [Page_Layout measure 114]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 1/2
 
-            % [03 Page_Layout measure 115]
+            % [Page_Layout measure 115]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 3/4
 
-            % [03 Page_Layout measure 116]
+            % [Page_Layout measure 116]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 3/4
 
-            % [03 Page_Layout measure 117]
+            % [Page_Layout measure 117]
             \baca-new-spacing-section #35 #96
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 118]
+            % [Page_Layout measure 118]
             \baca-new-spacing-section #1 #40
             \noBreak
             \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)
             \pageBreak
             s1 * 3/4
 
-            % [03 Page_Layout measure 119]
+            % [Page_Layout measure 119]
             \baca-new-spacing-section #1 #4
             \noBreak
             s1 * 1/4
 
-            % [03 Page_Layout measure 120]
+            % [Page_Layout measure 120]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 5/4
 
-            % [03 Page_Layout measure 121]
+            % [Page_Layout measure 121]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 13/8
 
-            % [03 Page_Layout measure 122]
+            % [Page_Layout measure 122]
             \baca-new-spacing-section #35 #960
             \noBreak
             s1 * 3/4
 
-            % [03 Page_Layout measure 123]
+            % [Page_Layout measure 123]
             \baca-new-spacing-section #1 #40
             \noBreak
             \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)
             \pageBreak
             s1 * 5/8
 
-            % [03 Page_Layout measure 124]
+            % [Page_Layout measure 124]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 9/8
 
-            % [03 Page_Layout measure 125]
+            % [Page_Layout measure 125]
             \baca-new-spacing-section #35 #960
             \noBreak
             s1 * 9/8
 
-            % [03 Page_Layout measure 126]
+            % [Page_Layout measure 126]
             \baca-new-spacing-section #1 #40
             \noBreak
             \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)
             \pageBreak
             s1 * 9/8
 
-            % [03 Page_Layout measure 127]
+            % [Page_Layout measure 127]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 5/8
 
-            % [03 Page_Layout measure 128]
+            % [Page_Layout measure 128]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 3/4
 
-            % [03 Page_Layout measure 129]
+            % [Page_Layout measure 129]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 3/4
 
-            % [03 Page_Layout measure 130]
+            % [Page_Layout measure 130]
             \baca-new-spacing-section #35 #960
             \noBreak
             s1 * 1
 
-            % [03 Page_Layout measure 131]
+            % [Page_Layout measure 131]
             \baca-new-spacing-section #1 #40
             \noBreak
             \baca-lbsd #20 #'(20 20 30 20 30 20 20 30)
             \pageBreak
             s1 * 1
 
-            % [03 Page_Layout measure 132]
+            % [Page_Layout measure 132]
             \baca-new-spacing-section #1 #40
             \noBreak
             s1 * 5/4
 
-            % [03 Page_Layout measure 133]
+            % [Page_Layout measure 133]
             \baca-new-spacing-section #1 #4
             \noBreak
             \baca-time-signature-transparent

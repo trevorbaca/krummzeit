@@ -1,49 +1,49 @@
 a_Global_Rests = {
 
-    % [01 Global_Rests measure 1]
+    % [Global_Rests measure 1]
     R1 * 1
 
-    % [01 Global_Rests measure 2]
+    % [Global_Rests measure 2]
     R1 * 9/8
 
-    % [01 Global_Rests measure 3]
+    % [Global_Rests measure 3]
     \baca-fermata-measure
     R1 * 1/4
     ^ \baca-short-fermata-markup
 
-    % [01 Global_Rests measure 4]
+    % [Global_Rests measure 4]
     R1 * 3/4
 
-    % [01 Global_Rests measure 5]
+    % [Global_Rests measure 5]
     R1 * 5/8
 
-    % [01 Global_Rests measure 6]
+    % [Global_Rests measure 6]
     R1 * 9/8
 
-    % [01 Global_Rests measure 7]
+    % [Global_Rests measure 7]
     R1 * 9/8
 
-    % [01 Global_Rests measure 8]
+    % [Global_Rests measure 8]
     R1 * 5/8
 
-    % [01 Global_Rests measure 9]
+    % [Global_Rests measure 9]
     \baca-fermata-measure
     R1 * 1/4
     ^ \baca-short-fermata-markup
 
-    % [01 Global_Rests measure 10]
+    % [Global_Rests measure 10]
     R1 * 5/8
 
-    % [01 Global_Rests measure 11]
+    % [Global_Rests measure 11]
     R1 * 1
 
-    % [01 Global_Rests measure 12]
+    % [Global_Rests measure 12]
     R1 * 5/4
 
-    % [01 Global_Rests measure 13]
+    % [Global_Rests measure 13]
     R1 * 3/4
 
-    % [01 Global_Rests measure 14]
+    % [Global_Rests measure 14]
     R1 * 1/4
 
 }
@@ -51,7 +51,7 @@ a_Global_Rests = {
 
 a_Global_Skips = {
 
-    % [01 Global_Skips measure 1]
+    % [Global_Skips measure 1]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -61,7 +61,7 @@ a_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue
     \bacaStartTextSpanMM
 
-    % [01 Global_Skips measure 2]
+    % [Global_Skips measure 2]
     \time 9/8
     \baca-time-signature-color #'blue
     s1 * 9/8
@@ -69,7 +69,7 @@ a_Global_Skips = {
     - \baca-start-lmn-left-only "2"
     \bacaStartTextSpanLMN
 
-    % [01 Global_Skips measure 3]
+    % [Global_Skips measure 3]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -77,7 +77,7 @@ a_Global_Skips = {
     - \baca-start-lmn-left-only "3"
     \bacaStartTextSpanLMN
 
-    % [01 Global_Skips measure 4]
+    % [Global_Skips measure 4]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -89,7 +89,7 @@ a_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "45" #'blue
     \bacaStartTextSpanMM
 
-    % [01 Global_Skips measure 5]
+    % [Global_Skips measure 5]
     \time 5/8
     \baca-time-signature-color #'blue
     s1 * 5/8
@@ -97,7 +97,7 @@ a_Global_Skips = {
     - \baca-start-lmn-left-only "5"
     \bacaStartTextSpanLMN
 
-    % [01 Global_Skips measure 6]
+    % [Global_Skips measure 6]
     \time 9/8
     \baca-time-signature-color #'blue
     s1 * 9/8
@@ -105,7 +105,7 @@ a_Global_Skips = {
     - \baca-start-lmn-left-only "6"
     \bacaStartTextSpanLMN
 
-    % [01 Global_Skips measure 7]
+    % [Global_Skips measure 7]
     s1 * 9/8
     \bacaStopTextSpanLMN
     \bacaStopTextSpanMM
@@ -115,7 +115,7 @@ a_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "144" #'blue
     \bacaStartTextSpanMM
 
-    % [01 Global_Skips measure 8]
+    % [Global_Skips measure 8]
     \time 5/8
     \baca-time-signature-color #'blue
     s1 * 5/8
@@ -127,7 +127,7 @@ a_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "108" #'blue
     \bacaStartTextSpanMM
 
-    % [01 Global_Skips measure 9]
+    % [Global_Skips measure 9]
     \time 1/4
     \baca-time-signature-color #'blue
     s1 * 1/4
@@ -135,7 +135,7 @@ a_Global_Skips = {
     - \baca-start-lmn-left-only "9"
     \bacaStartTextSpanLMN
 
-    % [01 Global_Skips measure 10]
+    % [Global_Skips measure 10]
     \time 5/8
     \baca-time-signature-color #'blue
     s1 * 5/8
@@ -147,7 +147,7 @@ a_Global_Skips = {
     - \baca-metronome-mark-spanner-colored-left-text 2 0 1 "135" #'blue
     \bacaStartTextSpanMM
 
-    % [01 Global_Skips measure 11]
+    % [Global_Skips measure 11]
     \time 4/4
     \baca-time-signature-color #'blue
     s1 * 1
@@ -155,7 +155,7 @@ a_Global_Skips = {
     - \baca-start-lmn-left-only "11"
     \bacaStartTextSpanLMN
 
-    % [01 Global_Skips measure 12]
+    % [Global_Skips measure 12]
     \time 5/4
     \baca-time-signature-color #'blue
     s1 * 5/4
@@ -163,7 +163,7 @@ a_Global_Skips = {
     - \baca-start-lmn-left-only "12"
     \bacaStartTextSpanLMN
 
-    % [01 Global_Skips measure 13]
+    % [Global_Skips measure 13]
     \time 3/4
     \baca-time-signature-color #'blue
     s1 * 3/4
@@ -171,7 +171,7 @@ a_Global_Skips = {
     - \baca-start-lmn-left-only "13"
     \bacaStartTextSpanLMN
 
-    % [01 Global_Skips measure 14]
+    % [Global_Skips measure 14]
     \time 1/4
     \baca-time-signature-transparent
     s1 * 1/4
@@ -185,7 +185,7 @@ a_Global_Skips = {
 
 a_Oboe_Music_Voice = {
 
-    % [01 Oboe_Music_Voice measure 1]
+    % [Oboe_Music_Voice measure 1]
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
     \set Staff.instrumentName = \markup \hcenter-in #16 "Oboe"
     \clef "treble"
@@ -199,40 +199,40 @@ a_Oboe_Music_Voice = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
 
-    % [01 Oboe_Music_Voice measure 2]
+    % [Oboe_Music_Voice measure 2]
     R1 * 9/8
 
-    % [01 Oboe_Music_Voice measure 3]
+    % [Oboe_Music_Voice measure 3]
     R1 * 1/4
 
-    % [01 Oboe_Music_Voice measure 4]
+    % [Oboe_Music_Voice measure 4]
     R1 * 3/4
 
-    % [01 Oboe_Music_Voice measure 5]
+    % [Oboe_Music_Voice measure 5]
     R1 * 5/8
 
-    % [01 Oboe_Music_Voice measure 6]
+    % [Oboe_Music_Voice measure 6]
     R1 * 9/8
 
-    % [01 Oboe_Music_Voice measure 7]
+    % [Oboe_Music_Voice measure 7]
     R1 * 9/8
 
-    % [01 Oboe_Music_Voice measure 8]
+    % [Oboe_Music_Voice measure 8]
     R1 * 5/8
 
-    % [01 Oboe_Music_Voice measure 9]
+    % [Oboe_Music_Voice measure 9]
     R1 * 1/4
 
-    % [01 Oboe_Music_Voice measure 10]
+    % [Oboe_Music_Voice measure 10]
     R1 * 5/8
 
-    % [01 Oboe_Music_Voice measure 11]
+    % [Oboe_Music_Voice measure 11]
     R1 * 4/4
 
-    % [01 Oboe_Music_Voice measure 12]
+    % [Oboe_Music_Voice measure 12]
     R1 * 5/4
 
-    % [01 Oboe_Music_Voice measure 13]
+    % [Oboe_Music_Voice measure 13]
     R1 * 3/4
 
     <<
@@ -240,7 +240,7 @@ a_Oboe_Music_Voice = {
         \context Voice = "Oboe_Music_Voice"
         {
 
-            % [01 Oboe_Music_Voice measure 14]
+            % [Oboe_Music_Voice measure 14]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -249,7 +249,7 @@ a_Oboe_Music_Voice = {
         \context Voice = "Oboe_Rest_Voice"
         {
 
-            % [01 Oboe_Rest_Voice measure 14]
+            % [Oboe_Rest_Voice measure 14]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -279,7 +279,7 @@ a_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Music_Voice"
         {
 
-            % [01 Clarinet_Music_Voice measure 1]
+            % [Clarinet_Music_Voice measure 1]
             \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
             \set Staff.instrumentName = \markup \hcenter-in #16 "Bass clarinet"
             \abjad-invisible-music-coloring
@@ -300,20 +300,20 @@ a_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Rest_Voice"
         {
 
-            % [01 Clarinet_Rest_Voice measure 1]
+            % [Clarinet_Rest_Voice measure 1]
             R1 * 1
 
         }
 
     >>
 
-    % [01 Clarinet_Music_Voice measure 2]
+    % [Clarinet_Music_Voice measure 2]
     R1 * 9/8
 
-    % [01 Clarinet_Music_Voice measure 3]
+    % [Clarinet_Music_Voice measure 3]
     R1 * 1/4
 
-    % [01 Clarinet_Music_Voice measure 4]
+    % [Clarinet_Music_Voice measure 4]
     cs!2.
     - \tweak color #(x11-color 'blue)
     \ppp
@@ -326,7 +326,7 @@ a_Clarinet_Music_Voice = {
     - \tweak stencil ##f
     ~
 
-    % [01 Clarinet_Music_Voice measure 5]
+    % [Clarinet_Music_Voice measure 5]
     cs4.
     \repeatTie
     - \tweak stencil ##f
@@ -341,7 +341,7 @@ a_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Music_Voice"
         {
 
-            % [01 Clarinet_Music_Voice measure 6]
+            % [Clarinet_Music_Voice measure 6]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 9/8
@@ -351,32 +351,32 @@ a_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Rest_Voice"
         {
 
-            % [01 Clarinet_Rest_Voice measure 6]
+            % [Clarinet_Rest_Voice measure 6]
             R1 * 9/8
 
         }
 
     >>
 
-    % [01 Clarinet_Music_Voice measure 7]
+    % [Clarinet_Music_Voice measure 7]
     R1 * 9/8
 
-    % [01 Clarinet_Music_Voice measure 8]
+    % [Clarinet_Music_Voice measure 8]
     R1 * 5/8
 
-    % [01 Clarinet_Music_Voice measure 9]
+    % [Clarinet_Music_Voice measure 9]
     R1 * 1/4
 
-    % [01 Clarinet_Music_Voice measure 10]
+    % [Clarinet_Music_Voice measure 10]
     R1 * 5/8
 
-    % [01 Clarinet_Music_Voice measure 11]
+    % [Clarinet_Music_Voice measure 11]
     R1 * 1
 
-    % [01 Clarinet_Music_Voice measure 12]
+    % [Clarinet_Music_Voice measure 12]
     R1 * 5/4
 
-    % [01 Clarinet_Music_Voice measure 13]
+    % [Clarinet_Music_Voice measure 13]
     R1 * 3/4
 
     <<
@@ -384,7 +384,7 @@ a_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Music_Voice"
         {
 
-            % [01 Clarinet_Music_Voice measure 14]
+            % [Clarinet_Music_Voice measure 14]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -393,7 +393,7 @@ a_Clarinet_Music_Voice = {
         \context Voice = "Clarinet_Rest_Voice"
         {
 
-            % [01 Clarinet_Rest_Voice measure 14]
+            % [Clarinet_Rest_Voice measure 14]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -423,7 +423,7 @@ a_Piano_Music_Voice = {
         \context Voice = "Piano_Music_Voice"
         {
 
-            % [01 Piano_Music_Voice measure 1]
+            % [Piano_Music_Voice measure 1]
             \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Pf."
             \set Staff.instrumentName = \markup \hcenter-in #16 "Piano"
             \abjad-invisible-music-coloring
@@ -446,20 +446,20 @@ a_Piano_Music_Voice = {
         \context Voice = "Piano_Rest_Voice"
         {
 
-            % [01 Piano_Rest_Voice measure 1]
+            % [Piano_Rest_Voice measure 1]
             R1 * 1
 
         }
 
     >>
 
-    % [01 Piano_Music_Voice measure 2]
+    % [Piano_Music_Voice measure 2]
     R1 * 9/8
 
-    % [01 Piano_Music_Voice measure 3]
+    % [Piano_Music_Voice measure 3]
     R1 * 1/4
 
-    % [01 Piano_Music_Voice measure 4]
+    % [Piano_Music_Voice measure 4]
     r16
 
     \once \override Accidental.stencil = ##f
@@ -491,7 +491,7 @@ a_Piano_Music_Voice = {
         \context Voice = "Piano_Music_Voice"
         {
 
-            % [01 Piano_Music_Voice measure 5]
+            % [Piano_Music_Voice measure 5]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             d1 * 5/8
@@ -501,17 +501,17 @@ a_Piano_Music_Voice = {
         \context Voice = "Piano_Rest_Voice"
         {
 
-            % [01 Piano_Rest_Voice measure 5]
+            % [Piano_Rest_Voice measure 5]
             R1 * 5/8
 
         }
 
     >>
 
-    % [01 Piano_Music_Voice measure 6]
+    % [Piano_Music_Voice measure 6]
     R1 * 9/8
 
-    % [01 Piano_Music_Voice measure 7]
+    % [Piano_Music_Voice measure 7]
 %%% \once \override Staff.Clef.X-extent = ##f
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
     \clef "treble"
@@ -541,7 +541,7 @@ a_Piano_Music_Voice = {
         \context Voice = "Piano_Music_Voice"
         {
 
-            % [01 Piano_Music_Voice measure 8]
+            % [Piano_Music_Voice measure 8]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 5/8
@@ -551,27 +551,27 @@ a_Piano_Music_Voice = {
         \context Voice = "Piano_Rest_Voice"
         {
 
-            % [01 Piano_Rest_Voice measure 8]
+            % [Piano_Rest_Voice measure 8]
             R1 * 5/8
 
         }
 
     >>
 
-    % [01 Piano_Music_Voice measure 9]
+    % [Piano_Music_Voice measure 9]
     R1 * 1/4
 
-    % [01 Piano_Music_Voice measure 10]
+    % [Piano_Music_Voice measure 10]
     R1 * 5/8
     ^ \baca-boxed-markup "to harpsichord"
 
-    % [01 Piano_Music_Voice measure 11]
+    % [Piano_Music_Voice measure 11]
     R1 * 1
 
-    % [01 Piano_Music_Voice measure 12]
+    % [Piano_Music_Voice measure 12]
     R1 * 5/4
 
-    % [01 Piano_Music_Voice measure 13]
+    % [Piano_Music_Voice measure 13]
     R1 * 3/4
 
     <<
@@ -579,7 +579,7 @@ a_Piano_Music_Voice = {
         \context Voice = "Piano_Music_Voice"
         {
 
-            % [01 Piano_Music_Voice measure 14]
+            % [Piano_Music_Voice measure 14]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -588,7 +588,7 @@ a_Piano_Music_Voice = {
         \context Voice = "Piano_Rest_Voice"
         {
 
-            % [01 Piano_Rest_Voice measure 14]
+            % [Piano_Rest_Voice measure 14]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -618,7 +618,7 @@ a_Percussion_Music_Voice = {
         \context Voice = "Percussion_Music_Voice"
         {
 
-            % [01 Percussion_Music_Voice measure 1]
+            % [Percussion_Music_Voice measure 1]
             \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."
             \set Staff.instrumentName = \markup \hcenter-in #16 "Percussion"
             \abjad-invisible-music-coloring
@@ -641,29 +641,29 @@ a_Percussion_Music_Voice = {
         \context Voice = "Percussion_Rest_Voice"
         {
 
-            % [01 Percussion_Rest_Voice measure 1]
+            % [Percussion_Rest_Voice measure 1]
             R1 * 1
 
         }
 
     >>
 
-    % [01 Percussion_Music_Voice measure 2]
+    % [Percussion_Music_Voice measure 2]
     R1 * 9/8
 
-    % [01 Percussion_Music_Voice measure 3]
+    % [Percussion_Music_Voice measure 3]
     R1 * 1/4
 
-    % [01 Percussion_Music_Voice measure 4]
+    % [Percussion_Music_Voice measure 4]
     R1 * 3/4
 
-    % [01 Percussion_Music_Voice measure 5]
+    % [Percussion_Music_Voice measure 5]
     R1 * 5/8
 
-    % [01 Percussion_Music_Voice measure 6]
+    % [Percussion_Music_Voice measure 6]
     R1 * 9/8
 
-    % [01 Percussion_Music_Voice measure 7]
+    % [Percussion_Music_Voice measure 7]
     cs'!2.
     :32
     - \tweak color #(x11-color 'blue)
@@ -688,7 +688,7 @@ a_Percussion_Music_Voice = {
         \context Voice = "Percussion_Music_Voice"
         {
 
-            % [01 Percussion_Music_Voice measure 8]
+            % [Percussion_Music_Voice measure 8]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 5/8
@@ -698,21 +698,21 @@ a_Percussion_Music_Voice = {
         \context Voice = "Percussion_Rest_Voice"
         {
 
-            % [01 Percussion_Rest_Voice measure 8]
+            % [Percussion_Rest_Voice measure 8]
             R1 * 5/8
 
         }
 
     >>
 
-    % [01 Percussion_Music_Voice measure 9]
+    % [Percussion_Music_Voice measure 9]
     R1 * 1/4
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 5/8
     {
 
-        % [01 Percussion_Music_Voice measure 10]
+        % [Percussion_Music_Voice measure 10]
         \override Staff.BarLine.bar-extent = #'(0 . 2)
         \stopStaff
         \once \override Staff.StaffSymbol.line-count = 1
@@ -742,7 +742,7 @@ a_Percussion_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Percussion_Music_Voice measure 11]
+        % [Percussion_Music_Voice measure 11]
         c'2
         \repeatTie
 
@@ -756,7 +756,7 @@ a_Percussion_Music_Voice = {
 
     }
 
-    % [01 Percussion_Music_Voice measure 12]
+    % [Percussion_Music_Voice measure 12]
     c'2
     \repeatTie
 
@@ -772,7 +772,7 @@ a_Percussion_Music_Voice = {
     \times 3/4
     {
 
-        % [01 Percussion_Music_Voice measure 13]
+        % [Percussion_Music_Voice measure 13]
         c'2.
         \repeatTie
 
@@ -788,7 +788,7 @@ a_Percussion_Music_Voice = {
         \context Voice = "Percussion_Music_Voice"
         {
 
-            % [01 Percussion_Music_Voice measure 14]
+            % [Percussion_Music_Voice measure 14]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             c'1 * 1/4
@@ -798,7 +798,7 @@ a_Percussion_Music_Voice = {
         \context Voice = "Percussion_Rest_Voice"
         {
 
-            % [01 Percussion_Rest_Voice measure 14]
+            % [Percussion_Rest_Voice measure 14]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -823,7 +823,7 @@ a_Percussion_Music_Staff = {
 
 a_Violin_Music_Voice = {
 
-    % [01 Violin_Music_Voice measure 1]
+    % [Violin_Music_Voice measure 1]
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
     \set Staff.instrumentName = \markup \hcenter-in #16 "Violin"
     \override DynamicLineSpanner.padding = 4
@@ -974,7 +974,7 @@ a_Violin_Music_Voice = {
         \context Voice = "Violin_Music_Voice"
         {
 
-            % [01 Violin_Music_Voice measure 3]
+            % [Violin_Music_Voice measure 3]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -984,7 +984,7 @@ a_Violin_Music_Voice = {
         \context Voice = "Violin_Rest_Voice"
         {
 
-            % [01 Violin_Rest_Voice measure 3]
+            % [Violin_Rest_Voice measure 3]
             R1 * 1/4
 
         }
@@ -994,7 +994,7 @@ a_Violin_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Violin_Music_Voice measure 4]
+        % [Violin_Music_Voice measure 4]
         \override NoteHead.style = #'harmonic
         ef''!4
         - \tweak color #(x11-color 'blue)
@@ -1024,7 +1024,7 @@ a_Violin_Music_Voice = {
     \times 6/7
     {
 
-        % [01 Violin_Music_Voice measure 5]
+        % [Violin_Music_Voice measure 5]
         d''4
         \glissando
 
@@ -1049,7 +1049,7 @@ a_Violin_Music_Voice = {
     \times 4/5
     {
 
-        % [01 Violin_Music_Voice measure 6]
+        % [Violin_Music_Voice measure 6]
         fs''!16.
         \glissando
 
@@ -1064,7 +1064,7 @@ a_Violin_Music_Voice = {
     \times 4/5
     {
 
-        % [01 Violin_Music_Voice measure 7]
+        % [Violin_Music_Voice measure 7]
         cs''!8.
         \glissando
 
@@ -1085,7 +1085,7 @@ a_Violin_Music_Voice = {
 
     }
 
-    % [01 Violin_Music_Voice measure 8]
+    % [Violin_Music_Voice measure 8]
     bf'!8
     \glissando
 
@@ -1110,7 +1110,7 @@ a_Violin_Music_Voice = {
         \context Voice = "Violin_Music_Voice"
         {
 
-            % [01 Violin_Music_Voice measure 9]
+            % [Violin_Music_Voice measure 9]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             b'1 * 1/4
@@ -1120,23 +1120,23 @@ a_Violin_Music_Voice = {
         \context Voice = "Violin_Rest_Voice"
         {
 
-            % [01 Violin_Rest_Voice measure 9]
+            % [Violin_Rest_Voice measure 9]
             R1 * 1/4
 
         }
 
     >>
 
-    % [01 Violin_Music_Voice measure 10]
+    % [Violin_Music_Voice measure 10]
     R1 * 5/8
 
-    % [01 Violin_Music_Voice measure 11]
+    % [Violin_Music_Voice measure 11]
     R1 * 1
 
-    % [01 Violin_Music_Voice measure 12]
+    % [Violin_Music_Voice measure 12]
     R1 * 5/4
 
-    % [01 Violin_Music_Voice measure 13]
+    % [Violin_Music_Voice measure 13]
     R1 * 3/4
     \revert DynamicLineSpanner.padding
     \revert TupletBracket.padding
@@ -1146,7 +1146,7 @@ a_Violin_Music_Voice = {
         \context Voice = "Violin_Music_Voice"
         {
 
-            % [01 Violin_Music_Voice measure 14]
+            % [Violin_Music_Voice measure 14]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -1155,7 +1155,7 @@ a_Violin_Music_Voice = {
         \context Voice = "Violin_Rest_Voice"
         {
 
-            % [01 Violin_Rest_Voice measure 14]
+            % [Violin_Rest_Voice measure 14]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -1180,7 +1180,7 @@ a_Violin_Music_Staff = {
 
 a_Viola_Music_Voice = {
 
-    % [01 Viola_Music_Voice measure 1]
+    % [Viola_Music_Voice measure 1]
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
     \set Staff.instrumentName = \markup \hcenter-in #16 "Viola"
     \override DynamicLineSpanner.padding = 4
@@ -1331,7 +1331,7 @@ a_Viola_Music_Voice = {
         \context Voice = "Viola_Music_Voice"
         {
 
-            % [01 Viola_Music_Voice measure 3]
+            % [Viola_Music_Voice measure 3]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             c'1 * 1/4
@@ -1341,14 +1341,14 @@ a_Viola_Music_Voice = {
         \context Voice = "Viola_Rest_Voice"
         {
 
-            % [01 Viola_Rest_Voice measure 3]
+            % [Viola_Rest_Voice measure 3]
             R1 * 1/4
 
         }
 
     >>
 
-    % [01 Viola_Music_Voice measure 4]
+    % [Viola_Music_Voice measure 4]
     r2
 
     r4
@@ -1356,7 +1356,7 @@ a_Viola_Music_Voice = {
     \times 4/7
     {
 
-        % [01 Viola_Music_Voice measure 5]
+        % [Viola_Music_Voice measure 5]
         \override NoteHead.style = #'harmonic
         fs'!4
         - \tweak color #(x11-color 'blue)
@@ -1399,7 +1399,7 @@ a_Viola_Music_Voice = {
     \times 6/7
     {
 
-        % [01 Viola_Music_Voice measure 6]
+        % [Viola_Music_Voice measure 6]
         a'2
         \glissando
 
@@ -1413,7 +1413,7 @@ a_Viola_Music_Voice = {
 
     e4
 
-    % [01 Viola_Music_Voice measure 7]
+    % [Viola_Music_Voice measure 7]
     r2.
 
     r4.
@@ -1421,7 +1421,7 @@ a_Viola_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Viola_Music_Voice measure 8]
+        % [Viola_Music_Voice measure 8]
         ef!8
         \glissando
 
@@ -1463,7 +1463,7 @@ a_Viola_Music_Voice = {
         \context Voice = "Viola_Music_Voice"
         {
 
-            % [01 Viola_Music_Voice measure 9]
+            % [Viola_Music_Voice measure 9]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             c'1 * 1/4
@@ -1473,23 +1473,23 @@ a_Viola_Music_Voice = {
         \context Voice = "Viola_Rest_Voice"
         {
 
-            % [01 Viola_Rest_Voice measure 9]
+            % [Viola_Rest_Voice measure 9]
             R1 * 1/4
 
         }
 
     >>
 
-    % [01 Viola_Music_Voice measure 10]
+    % [Viola_Music_Voice measure 10]
     R1 * 5/8
 
-    % [01 Viola_Music_Voice measure 11]
+    % [Viola_Music_Voice measure 11]
     R1 * 1
 
-    % [01 Viola_Music_Voice measure 12]
+    % [Viola_Music_Voice measure 12]
     R1 * 5/4
 
-    % [01 Viola_Music_Voice measure 13]
+    % [Viola_Music_Voice measure 13]
     R1 * 3/4
     \revert DynamicLineSpanner.padding
     \revert TupletBracket.padding
@@ -1499,7 +1499,7 @@ a_Viola_Music_Voice = {
         \context Voice = "Viola_Music_Voice"
         {
 
-            % [01 Viola_Music_Voice measure 14]
+            % [Viola_Music_Voice measure 14]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -1508,7 +1508,7 @@ a_Viola_Music_Voice = {
         \context Voice = "Viola_Rest_Voice"
         {
 
-            % [01 Viola_Rest_Voice measure 14]
+            % [Viola_Rest_Voice measure 14]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff
@@ -1533,7 +1533,7 @@ a_Viola_Music_Staff = {
 
 a_Cello_Music_Voice = {
 
-    % [01 Cello_Music_Voice measure 1]
+    % [Cello_Music_Voice measure 1]
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
     \set Staff.instrumentName = \markup \hcenter-in #16 "Cello"
     \override DynamicLineSpanner.padding = 4
@@ -1684,7 +1684,7 @@ a_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [01 Cello_Music_Voice measure 3]
+            % [Cello_Music_Voice measure 3]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             d1 * 1/4
@@ -1694,7 +1694,7 @@ a_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [01 Cello_Rest_Voice measure 3]
+            % [Cello_Rest_Voice measure 3]
             R1 * 1/4
 
         }
@@ -1704,7 +1704,7 @@ a_Cello_Music_Voice = {
     \times 2/3
     {
 
-        % [01 Cello_Music_Voice measure 4]
+        % [Cello_Music_Voice measure 4]
         \override NoteHead.style = #'harmonic
         e'8
         - \tweak color #(x11-color 'blue)
@@ -1731,7 +1731,7 @@ a_Cello_Music_Voice = {
 
     r4
 
-    % [01 Cello_Music_Voice measure 5]
+    % [Cello_Music_Voice measure 5]
     r4.
 
     \times 4/5
@@ -1749,7 +1749,7 @@ a_Cello_Music_Voice = {
     \times 6/7
     {
 
-        % [01 Cello_Music_Voice measure 6]
+        % [Cello_Music_Voice measure 6]
         c'2
         \glissando
 
@@ -1767,7 +1767,7 @@ a_Cello_Music_Voice = {
     \times 4/5
     {
 
-        % [01 Cello_Music_Voice measure 7]
+        % [Cello_Music_Voice measure 7]
         d'16.
         \glissando
 
@@ -1789,7 +1789,7 @@ a_Cello_Music_Voice = {
 
     r4.
 
-    % [01 Cello_Music_Voice measure 8]
+    % [Cello_Music_Voice measure 8]
     r4.
 
     \times 4/7
@@ -1810,7 +1810,7 @@ a_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [01 Cello_Music_Voice measure 9]
+            % [Cello_Music_Voice measure 9]
             \abjad-invisible-music-coloring
             \baca-not-yet-pitched-coloring
             d1 * 1/4
@@ -1820,23 +1820,23 @@ a_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [01 Cello_Rest_Voice measure 9]
+            % [Cello_Rest_Voice measure 9]
             R1 * 1/4
 
         }
 
     >>
 
-    % [01 Cello_Music_Voice measure 10]
+    % [Cello_Music_Voice measure 10]
     R1 * 5/8
 
-    % [01 Cello_Music_Voice measure 11]
+    % [Cello_Music_Voice measure 11]
     R1 * 1
 
-    % [01 Cello_Music_Voice measure 12]
+    % [Cello_Music_Voice measure 12]
     R1 * 5/4
 
-    % [01 Cello_Music_Voice measure 13]
+    % [Cello_Music_Voice measure 13]
     R1 * 3/4
     \revert DynamicLineSpanner.padding
     \revert TupletBracket.padding
@@ -1846,7 +1846,7 @@ a_Cello_Music_Voice = {
         \context Voice = "Cello_Music_Voice"
         {
 
-            % [01 Cello_Music_Voice measure 14]
+            % [Cello_Music_Voice measure 14]
             \abjad-invisible-music-coloring
             R1 * 1/4
 
@@ -1855,7 +1855,7 @@ a_Cello_Music_Voice = {
         \context Voice = "Cello_Rest_Voice"
         {
 
-            % [01 Cello_Rest_Voice measure 14]
+            % [Cello_Rest_Voice measure 14]
             \once \override Score.TimeSignature.X-extent = ##f
             \once \override MultiMeasureRest.transparent = ##t
             \stopStaff

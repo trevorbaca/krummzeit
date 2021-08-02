@@ -7,7 +7,7 @@
 %! baca.SegmentMaker._make_lilypond_file()
 %! abjad.LilyPondFile._get_formatted_includes()
 \include "../../stylesheet.ily"
-%! baca.Path.extern()
+%! baca.path.extern()
 \include "music.ily.tagged"
 
 %! baca.SegmentMaker._make_lilypond_file()
@@ -49,14 +49,14 @@
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalRests = "Global_Rests"
                 %! abjad.ScoreTemplate._make_global_context()
-                %! baca.Path.extern()
-                \j_Global_Rests
+                %! baca.path.extern()
+                { \segment.10.Global.Rests }
 
                 %! abjad.ScoreTemplate._make_global_context()
                 \context GlobalSkips = "Global_Skips"
                 %! abjad.ScoreTemplate._make_global_context()
-                %! baca.Path.extern()
-                \j_Global_Skips
+                %! baca.path.extern()
+                { \segment.10.Global.Skips }
 
             %! abjad.ScoreTemplate._make_global_context()
             >>
@@ -76,16 +76,16 @@
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Oboe_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
-                    %! baca.Path.extern()
-                    \j_Oboe_Music_Staff
+                    %! baca.path.extern()
+                    { \segment.10.Oboe.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Clarinet
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Clarinet_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
-                    %! baca.Path.extern()
-                    \j_Clarinet_Music_Staff
+                    %! baca.path.extern()
+                    { \segment.10.Clarinet.Music.Staff }
 
                 %! krummzeit.ScoreTemplate.__call__()
                 >>
@@ -100,16 +100,16 @@
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Piano_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
-                    %! baca.Path.extern()
-                    \j_Piano_Music_Staff
+                    %! baca.path.extern()
+                    { \segment.10.Piano.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Percussion
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Percussion_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
-                    %! baca.Path.extern()
-                    \j_Percussion_Music_Staff
+                    %! baca.path.extern()
+                    { \segment.10.Percussion.Music.Staff }
 
                 %! krummzeit.ScoreTemplate.__call__()
                 >>
@@ -124,24 +124,24 @@
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Violin_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
-                    %! baca.Path.extern()
-                    \j_Violin_Music_Staff
+                    %! baca.path.extern()
+                    { \segment.10.Violin.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Viola
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Viola_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
-                    %! baca.Path.extern()
-                    \j_Viola_Music_Staff
+                    %! baca.path.extern()
+                    { \segment.10.Viola.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Cello
                     %! krummzeit.ScoreTemplate.__call__()
                     \context Staff = "Cello_Music_Staff"
                     %! krummzeit.ScoreTemplate.__call__()
-                    %! baca.Path.extern()
-                    \j_Cello_Music_Staff
+                    %! baca.path.extern()
+                    { \segment.10.Cello.Music.Staff }
 
                 %! krummzeit.ScoreTemplate.__call__()
                 >>

@@ -1,4 +1,4 @@
-d_Global_Rests = {
+segment.04.Global.Rests = {
 
     % [Global_Rests measure 133 / measure 1]
     R1 * 3/4
@@ -73,7 +73,7 @@ d_Global_Rests = {
 }
 
 
-d_Global_Skips = {
+segment.04.Global.Skips = {
 
     % [Global_Skips measure 133 / measure 1]
     \time 3/4
@@ -291,7 +291,7 @@ d_Global_Skips = {
 }
 
 
-d_Oboe_Music_Voice = {
+segment.04.Oboe.Music.Voice = {
 
     <<
 
@@ -454,15 +454,15 @@ d_Oboe_Music_Voice = {
 }
 
 
-d_Oboe_Music_Staff = {
+segment.04.Oboe.Music.Staff = {
 
     \context Voice = "Oboe_Music_Voice"
-    \d_Oboe_Music_Voice
+    { \segment.04.Oboe.Music.Voice }
 
 }
 
 
-d_Clarinet_Music_Voice = {
+segment.04.Clarinet.Music.Voice = {
 
     <<
 
@@ -630,15 +630,15 @@ d_Clarinet_Music_Voice = {
 }
 
 
-d_Clarinet_Music_Staff = {
+segment.04.Clarinet.Music.Staff = {
 
     \context Voice = "Clarinet_Music_Voice"
-    \d_Clarinet_Music_Voice
+    { \segment.04.Clarinet.Music.Voice }
 
 }
 
 
-d_Piano_Music_Voice = {
+segment.04.Piano.Music.Voice = {
 
     \times 2/3
     {
@@ -1156,15 +1156,15 @@ d_Piano_Music_Voice = {
 }
 
 
-d_Piano_Music_Staff = {
+segment.04.Piano.Music.Staff = {
 
     \context Voice = "Piano_Music_Voice"
-    \d_Piano_Music_Voice
+    { \segment.04.Piano.Music.Voice }
 
 }
 
 
-d_Percussion_Music_Voice = {
+segment.04.Percussion.Music.Voice = {
 
     % [Percussion_Music_Voice measure 133 / measure 1]
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."
@@ -1411,15 +1411,15 @@ d_Percussion_Music_Voice = {
 }
 
 
-d_Percussion_Music_Staff = {
+segment.04.Percussion.Music.Staff = {
 
     \context Voice = "Percussion_Music_Voice"
-    \d_Percussion_Music_Voice
+    { \segment.04.Percussion.Music.Voice }
 
 }
 
 
-d_Violin_Music_Voice = {
+segment.04.Violin.Music.Voice = {
 
     <<
 
@@ -1788,15 +1788,15 @@ d_Violin_Music_Voice = {
 }
 
 
-d_Violin_Music_Staff = {
+segment.04.Violin.Music.Staff = {
 
     \context Voice = "Violin_Music_Voice"
-    \d_Violin_Music_Voice
+    { \segment.04.Violin.Music.Voice }
 
 }
 
 
-d_Viola_Music_Voice = {
+segment.04.Viola.Music.Voice = {
 
     <<
 
@@ -2170,15 +2170,15 @@ d_Viola_Music_Voice = {
 }
 
 
-d_Viola_Music_Staff = {
+segment.04.Viola.Music.Staff = {
 
     \context Voice = "Viola_Music_Voice"
-    \d_Viola_Music_Voice
+    { \segment.04.Viola.Music.Voice }
 
 }
 
 
-d_Cello_Music_Voice = {
+segment.04.Cello.Music.Voice = {
 
     <<
 
@@ -2519,9 +2519,9 @@ d_Cello_Music_Voice = {
 }
 
 
-d_Cello_Music_Staff = {
+segment.04.Cello.Music.Staff = {
 
     \context Voice = "Cello_Music_Voice"
-    \d_Cello_Music_Voice
+    { \segment.04.Cello.Music.Voice }
 
 }

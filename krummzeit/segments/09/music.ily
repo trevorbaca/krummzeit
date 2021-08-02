@@ -1,4 +1,4 @@
-i_Global_Rests = {
+segment.09.Global.Rests = {
 
     % [Global_Rests measure 281 / measure 1]
     R1 * 7/8
@@ -36,7 +36,7 @@ i_Global_Rests = {
 }
 
 
-i_Global_Skips = {
+segment.09.Global.Skips = {
 
     % [Global_Skips measure 281 / measure 1]
     \time 7/8
@@ -136,7 +136,7 @@ i_Global_Skips = {
 }
 
 
-i_Oboe_Music_Voice = {
+segment.09.Oboe.Music.Voice = {
 
     <<
 
@@ -285,15 +285,15 @@ i_Oboe_Music_Voice = {
 }
 
 
-i_Oboe_Music_Staff = {
+segment.09.Oboe.Music.Staff = {
 
     \context Voice = "Oboe_Music_Voice"
-    \i_Oboe_Music_Voice
+    { \segment.09.Oboe.Music.Voice }
 
 }
 
 
-i_Clarinet_Music_Voice = {
+segment.09.Clarinet.Music.Voice = {
 
     <<
 
@@ -446,15 +446,15 @@ i_Clarinet_Music_Voice = {
 }
 
 
-i_Clarinet_Music_Staff = {
+segment.09.Clarinet.Music.Staff = {
 
     \context Voice = "Clarinet_Music_Voice"
-    \i_Clarinet_Music_Voice
+    { \segment.09.Clarinet.Music.Voice }
 
 }
 
 
-i_Piano_Music_Voice = {
+segment.09.Piano.Music.Voice = {
 
     \times 2/3
     {
@@ -2408,15 +2408,15 @@ i_Piano_Music_Voice = {
 }
 
 
-i_Piano_Music_Staff = {
+segment.09.Piano.Music.Staff = {
 
     \context Voice = "Piano_Music_Voice"
-    \i_Piano_Music_Voice
+    { \segment.09.Piano.Music.Voice }
 
 }
 
 
-i_Percussion_Music_Voice = {
+segment.09.Percussion.Music.Voice = {
 
     <<
 
@@ -2583,15 +2583,15 @@ i_Percussion_Music_Voice = {
 }
 
 
-i_Percussion_Music_Staff = {
+segment.09.Percussion.Music.Staff = {
 
     \context Voice = "Percussion_Music_Voice"
-    \i_Percussion_Music_Voice
+    { \segment.09.Percussion.Music.Voice }
 
 }
 
 
-i_Violin_Music_Voice = {
+segment.09.Violin.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10
@@ -2791,15 +2791,15 @@ i_Violin_Music_Voice = {
 }
 
 
-i_Violin_Music_Staff = {
+segment.09.Violin.Music.Staff = {
 
     \context Voice = "Violin_Music_Voice"
-    \i_Violin_Music_Voice
+    { \segment.09.Violin.Music.Voice }
 
 }
 
 
-i_Viola_Music_Voice = {
+segment.09.Viola.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10
@@ -2994,15 +2994,15 @@ i_Viola_Music_Voice = {
 }
 
 
-i_Viola_Music_Staff = {
+segment.09.Viola.Music.Staff = {
 
     \context Voice = "Viola_Music_Voice"
-    \i_Viola_Music_Voice
+    { \segment.09.Viola.Music.Voice }
 
 }
 
 
-i_Cello_Music_Voice = {
+segment.09.Cello.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 19/10
@@ -3195,9 +3195,9 @@ i_Cello_Music_Voice = {
 }
 
 
-i_Cello_Music_Staff = {
+segment.09.Cello.Music.Staff = {
 
     \context Voice = "Cello_Music_Voice"
-    \i_Cello_Music_Voice
+    { \segment.09.Cello.Music.Voice }
 
 }

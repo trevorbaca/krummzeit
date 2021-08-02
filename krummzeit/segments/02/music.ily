@@ -1,4 +1,4 @@
-b_Global_Rests = {
+segment.02.Global.Rests = {
 
     % [Global_Rests measure 14 / measure 1]
     R1 * 3/4
@@ -231,7 +231,7 @@ b_Global_Rests = {
 }
 
 
-b_Global_Skips = {
+segment.02.Global.Skips = {
 
     % [Global_Skips measure 14 / measure 1]
     \time 3/4
@@ -859,7 +859,7 @@ b_Global_Skips = {
 }
 
 
-b_Oboe_Music_Voice = {
+segment.02.Oboe.Music.Voice = {
 
     <<
 
@@ -1685,15 +1685,15 @@ b_Oboe_Music_Voice = {
 }
 
 
-b_Oboe_Music_Staff = {
+segment.02.Oboe.Music.Staff = {
 
     \context Voice = "Oboe_Music_Voice"
-    \b_Oboe_Music_Voice
+    { \segment.02.Oboe.Music.Voice }
 
 }
 
 
-b_Clarinet_Music_Voice = {
+segment.02.Clarinet.Music.Voice = {
 
     <<
 
@@ -2728,15 +2728,15 @@ b_Clarinet_Music_Voice = {
 }
 
 
-b_Clarinet_Music_Staff = {
+segment.02.Clarinet.Music.Staff = {
 
     \context Voice = "Clarinet_Music_Voice"
-    \b_Clarinet_Music_Voice
+    { \segment.02.Clarinet.Music.Voice }
 
 }
 
 
-b_Piano_Music_Voice = {
+segment.02.Piano.Music.Voice = {
 
     \times 4/7
     {
@@ -4850,15 +4850,15 @@ b_Piano_Music_Voice = {
 }
 
 
-b_Piano_Music_Staff = {
+segment.02.Piano.Music.Staff = {
 
     \context Voice = "Piano_Music_Voice"
-    \b_Piano_Music_Voice
+    { \segment.02.Piano.Music.Voice }
 
 }
 
 
-b_Percussion_Music_Voice = {
+segment.02.Percussion.Music.Voice = {
 
     % [Percussion_Music_Voice measure 14 / measure 1]
     \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."
@@ -5511,15 +5511,15 @@ b_Percussion_Music_Voice = {
 }
 
 
-b_Percussion_Music_Staff = {
+segment.02.Percussion.Music.Staff = {
 
     \context Voice = "Percussion_Music_Voice"
-    \b_Percussion_Music_Voice
+    { \segment.02.Percussion.Music.Voice }
 
 }
 
 
-b_Violin_Music_Voice = {
+segment.02.Violin.Music.Voice = {
 
     <<
 
@@ -7290,15 +7290,15 @@ b_Violin_Music_Voice = {
 }
 
 
-b_Violin_Music_Staff = {
+segment.02.Violin.Music.Staff = {
 
     \context Voice = "Violin_Music_Voice"
-    \b_Violin_Music_Voice
+    { \segment.02.Violin.Music.Voice }
 
 }
 
 
-b_Viola_Music_Voice = {
+segment.02.Viola.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5
@@ -8373,15 +8373,15 @@ b_Viola_Music_Voice = {
 }
 
 
-b_Viola_Music_Staff = {
+segment.02.Viola.Music.Staff = {
 
     \context Voice = "Viola_Music_Voice"
-    \b_Viola_Music_Voice
+    { \segment.02.Viola.Music.Voice }
 
 }
 
 
-b_Cello_Music_Voice = {
+segment.02.Cello.Music.Voice = {
 
     \tweak text #tuplet-number::calc-fraction-text
     \times 6/5
@@ -9521,9 +9521,9 @@ b_Cello_Music_Voice = {
 }
 
 
-b_Cello_Music_Staff = {
+segment.02.Cello.Music.Staff = {
 
     \context Voice = "Cello_Music_Voice"
-    \b_Cello_Music_Voice
+    { \segment.02.Cello.Music.Voice }
 
 }

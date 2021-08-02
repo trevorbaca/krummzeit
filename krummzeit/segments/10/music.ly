@@ -24,10 +24,10 @@
             <<
 
                 \context GlobalRests = "Global_Rests"
-                \j_Global_Rests
+                { \segment.10.Global.Rests }
 
                 \context GlobalSkips = "Global_Skips"
-                \j_Global_Skips
+                { \segment.10.Global.Skips }
 
             >>
 
@@ -39,11 +39,11 @@
 
                     \tag Oboe
                     \context Staff = "Oboe_Music_Staff"
-                    \j_Oboe_Music_Staff
+                    { \segment.10.Oboe.Music.Staff }
 
                     \tag Clarinet
                     \context Staff = "Clarinet_Music_Staff"
-                    \j_Clarinet_Music_Staff
+                    { \segment.10.Clarinet.Music.Staff }
 
                 >>
 
@@ -52,11 +52,11 @@
 
                     \tag Piano
                     \context Staff = "Piano_Music_Staff"
-                    \j_Piano_Music_Staff
+                    { \segment.10.Piano.Music.Staff }
 
                     \tag Percussion
                     \context Staff = "Percussion_Music_Staff"
-                    \j_Percussion_Music_Staff
+                    { \segment.10.Percussion.Music.Staff }
 
                 >>
 
@@ -65,15 +65,15 @@
 
                     \tag Violin
                     \context Staff = "Violin_Music_Staff"
-                    \j_Violin_Music_Staff
+                    { \segment.10.Violin.Music.Staff }
 
                     \tag Viola
                     \context Staff = "Viola_Music_Staff"
-                    \j_Viola_Music_Staff
+                    { \segment.10.Viola.Music.Staff }
 
                     \tag Cello
                     \context Staff = "Cello_Music_Staff"
-                    \j_Cello_Music_Staff
+                    { \segment.10.Cello.Music.Staff }
 
                 >>
 

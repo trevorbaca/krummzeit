@@ -1,18 +1,36 @@
 import baca
 
-top = 20
-systems = (20, (20, 30), (20, 30), (20, 20, 30))
+y_offset = 20
+distances = (20, (20, 30), (20, 30), (20, 20, 30))
 
 breaks = baca.breaks(
-    baca.page([1, top, systems]),
-    baca.page([6, top, systems]),
-    baca.page([12, top, systems]),
-    baca.page([17, top, systems]),
-    baca.page([24, top, systems]),
-    baca.page([30, top, systems]),
-    baca.page([35, top, systems]),
-    baca.page([38, top, systems]),
-    baca.page([43, top, systems]),
+    baca.page(
+        baca.system(distances, measure=1, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=6, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=12, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=17, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=24, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=30, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=35, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=38, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=43, y_offset=y_offset),
+    ),
 )
 
 spacing = baca.scorewide_spacing(

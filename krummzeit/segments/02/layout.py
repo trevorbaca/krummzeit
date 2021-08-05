@@ -1,7 +1,7 @@
 import baca
 
-top = 20
-systems = (
+y_offset = 20
+distances = (
     20,
     (20, 30),
     (20, 30),
@@ -9,22 +9,54 @@ systems = (
 )
 
 breaks = baca.breaks(
-    baca.page([14, top, systems]),
-    baca.page([19, top, systems]),
-    baca.page([23, top, systems]),
-    baca.page([29, top, systems]),
-    baca.page([33, top, systems]),
-    baca.page([38, top, systems]),
-    baca.page([42, top, systems]),
-    baca.page([46, top, systems]),
-    baca.page([51, top, systems]),
-    baca.page([55, top, systems]),
-    baca.page([60, top, systems]),
-    baca.page([65, top, systems]),
-    baca.page([70, top, systems]),
-    baca.page([76, top, systems]),
-    baca.page([81, top, systems]),
-    baca.page([86, top, systems]),
+    baca.page(
+        baca.system(distances, measure=14, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=19, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=23, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=29, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=33, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=38, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=42, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=46, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=51, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=55, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=60, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=65, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=70, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=76, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=81, y_offset=y_offset),
+    ),
+    baca.page(
+        baca.system(distances, measure=86, y_offset=y_offset),
+    ),
 )
 
 spacing = baca.scorewide_spacing(

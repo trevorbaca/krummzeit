@@ -5,31 +5,40 @@ distances = (20, (20, 30), (20, 30), (20, 20, 30))
 
 breaks = baca.breaks(
     baca.page(
-        baca.system(distances, measure=1, y_offset=y_offset),
+        baca.system(measure=1, y_offset=y_offset, distances=distances),
+        number=1,
     ),
     baca.page(
-        baca.system(distances, measure=6, y_offset=y_offset),
+        baca.system(measure=6, y_offset=y_offset, distances=distances),
+        number=2,
     ),
     baca.page(
-        baca.system(distances, measure=12, y_offset=y_offset),
+        baca.system(measure=12, y_offset=y_offset, distances=distances),
+        number=3,
     ),
     baca.page(
-        baca.system(distances, measure=17, y_offset=y_offset),
+        baca.system(measure=17, y_offset=y_offset, distances=distances),
+        number=4,
     ),
     baca.page(
-        baca.system(distances, measure=24, y_offset=y_offset),
+        baca.system(measure=24, y_offset=y_offset, distances=distances),
+        number=5,
     ),
     baca.page(
-        baca.system(distances, measure=30, y_offset=y_offset),
+        baca.system(measure=30, y_offset=y_offset, distances=distances),
+        number=6,
     ),
     baca.page(
-        baca.system(distances, measure=35, y_offset=y_offset),
+        baca.system(measure=35, y_offset=y_offset, distances=distances),
+        number=7,
     ),
     baca.page(
-        baca.system(distances, measure=38, y_offset=y_offset),
+        baca.system(measure=38, y_offset=y_offset, distances=distances),
+        number=8,
     ),
     baca.page(
-        baca.system(distances, measure=43, y_offset=y_offset),
+        baca.system(measure=43, y_offset=y_offset, distances=distances),
+        number=9,
     ),
 )
 

@@ -6,48 +6,48 @@ distances = (20, (20, 30), (20, 30), (20, 20, 30))
 spacing = baca.SpacingSpecifier(
     breaks=baca.breaks(
         baca.page(
+            1,
             baca.system(measure=1, y_offset=y_offset, distances=distances),
-            number=1,
         ),
         baca.page(
+            2,
             baca.system(measure=6, y_offset=y_offset, distances=distances),
-            number=2,
         ),
         baca.page(
+            3,
             baca.system(measure=10, y_offset=y_offset, distances=distances),
-            number=3,
         ),
         baca.page(
+            4,
             baca.system(measure=15, y_offset=y_offset, distances=distances),
-            number=4,
         ),
         baca.page(
+            5,
             baca.system(measure=19, y_offset=y_offset, distances=distances),
-            number=5,
         ),
         baca.page(
+            6,
             baca.system(measure=24, y_offset=y_offset, distances=distances),
-            number=6,
         ),
         baca.page(
+            7,
             baca.system(measure=28, y_offset=y_offset, distances=distances),
-            number=7,
         ),
         baca.page(
+            8,
             baca.system(measure=32, y_offset=y_offset, distances=distances),
-            number=8,
         ),
         baca.page(
+            9,
             baca.system(measure=36, y_offset=y_offset, distances=distances),
-            number=9,
         ),
         baca.page(
+            10,
             baca.system(measure=41, y_offset=y_offset, distances=distances),
-            number=10,
         ),
         baca.page(
+            11,
             baca.system(measure=45, y_offset=y_offset, distances=distances),
-            number=11,
         ),
     ),
     fallback_duration=(1, 40),

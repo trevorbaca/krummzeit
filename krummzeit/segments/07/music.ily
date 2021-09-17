@@ -1624,7 +1624,7 @@ segment.07.Oboe.Music.Voice = {
         %! baca.IndicatorCommand._call()
         - \staccato
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
         %! krummzeit.polyphony()
@@ -1633,7 +1633,7 @@ segment.07.Oboe.Music.Voice = {
         %! baca.IndicatorCommand._call()
         - \staccato
 
-        %! baca.segmentmaker.color_repeat_pitch_classes()
+        %! baca.color_repeat_pitch_classes()
         %! REPEAT_PITCH_CLASS_COLORING
         \baca-repeat-pitch-class-coloring
         %! krummzeit.polyphony()

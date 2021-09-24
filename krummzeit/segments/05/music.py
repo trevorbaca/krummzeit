@@ -32,15 +32,11 @@ time_signatures = maker_.run()
 
 maker = baca.SegmentMaker(
     **baca.segments(),
-    error_on_not_yet_pitched=True,
-    ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
     metronome_marks=krummzeit.metronome_marks,
     score_template=krummzeit.ScoreTemplate(),
-    stage_markup=stage_markup,
     time_signatures=time_signatures,
-    transpose_score=True,
 )
 
 maker(
@@ -651,4 +647,7 @@ if __name__ == "__main__":
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
         ],
+        error_on_not_yet_pitched=True,
+        stage_markup=stage_markup,
+        transpose_score=True,
     )

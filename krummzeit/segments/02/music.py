@@ -42,7 +42,6 @@ time_signatures = maker_.run()
 
 maker = baca.CommandAccumulator(
     **baca.segments(),
-    ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
     metronome_marks=krummzeit.metronome_marks,

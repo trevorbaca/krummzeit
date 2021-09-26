@@ -40,7 +40,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.SegmentMaker(
+maker = baca.CommandAccumulator(
     **baca.segments(),
     ignore_repeat_pitch_classes=True,
     instruments=krummzeit.instruments,

@@ -28,7 +28,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
@@ -37,36 +37,36 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.rehearsal_mark("J"),
     baca.bar_line("|.", baca.selectors.skip(-1)),
 )
 
-maker(
+commands(
     ("ob", (1, 40)),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("cl", (1, 40)),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     "pf",
     baca.clef("treble"),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     "perc",
     baca.staff_lines(5),
     baca.clef("treble"),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("vn", (1, 40)),
     krummzeit.closing_pizzicati(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
@@ -75,7 +75,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (1, 4)),
     krummzeit.closing_pizzicati(
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
@@ -84,22 +84,22 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", [(1, 24), (25, 48)]),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     "pf",
     baca.pitch("C#6"),
 )
 
-maker(
+commands(
     "pf",
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("pf", (25, 48)),
     baca.dynamic(
         "fff-poss",
@@ -107,12 +107,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     "perc",
     baca.pitch("C#6"),
 )
 
-maker(
+commands(
     "perc",
     baca.dynamic("fff"),
     baca.dls_staff_padding(4),
@@ -121,7 +121,7 @@ maker(
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs[42:34:-1].transpose(4).invert()
-maker(
+commands(
     baca.timeline(
         [
             ("vn", (1, 40)),
@@ -134,7 +134,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     (["vn", "va"], (1, 40)),
     baca.dynamic("ff"),
     baca.dls_staff_padding(5),
@@ -150,17 +150,17 @@ maker(
     krummzeit.register_narrow(6),
 )
 
-maker(
+commands(
     ("vc", (1, 24)),
     baca.pitches("D4 D4 D4 D4 D4 D4 D2"),
 )
 
-maker(
+commands(
     ("vc", (25, 48)),
     baca.pitch("D2"),
 )
 
-maker(
+commands(
     ("vc", (1, 24)),
     baca.dynamic("fff-ancora"),
     baca.dls_staff_padding(3),
@@ -174,7 +174,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", (25, 48)),
     baca.dynamic("ff"),
     baca.markup(
@@ -183,7 +183,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "ob",
     baca.pitch(
         "C#4",
@@ -193,7 +193,7 @@ maker(
     baca.dls_staff_padding(5),
 )
 
-maker(
+commands(
     "cl",
     baca.pitch(
         "D2",
@@ -204,7 +204,7 @@ maker(
     baca.stem_up(),
 )
 
-maker(
+commands(
     ("vc", -1),
     baca.chunk(
         baca.mark(r"\krummzeit-colophon-markup"),
@@ -217,7 +217,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

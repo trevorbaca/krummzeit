@@ -24,7 +24,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
@@ -33,7 +33,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "135",
@@ -61,7 +61,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "short",
@@ -73,7 +73,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "ob",
     baca.suite(
         krummzeit.margin_markup("Ob."),
@@ -81,7 +81,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "cl",
     baca.suite(
         krummzeit.margin_markup("B. cl."),
@@ -89,7 +89,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "pf",
     baca.clef("bass"),
     baca.suite(
@@ -98,7 +98,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "perc",
     baca.suite(
         krummzeit.margin_markup("Perc."),
@@ -106,7 +106,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "vn",
     baca.suite(
         krummzeit.margin_markup("Vn."),
@@ -114,7 +114,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "va",
     baca.suite(
         krummzeit.margin_markup("Va."),
@@ -122,7 +122,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     "vc",
     baca.suite(
         krummzeit.margin_markup("Vc."),
@@ -130,14 +130,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (1, 2)),
     krummzeit.opening_triplets(
         rmakers.force_rest(baca.selectors.tuplet(0)),
     ),
 )
 
-maker(
+commands(
     ("vn", (4, 8)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
@@ -147,7 +147,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (4, 8)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
@@ -157,7 +157,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", (4, 8)),
     krummzeit.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
@@ -167,14 +167,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("cl", (4, 5)),
     baca.dynamic("ppp"),
     baca.make_repeat_tied_notes(),
     baca.pitch("B1"),
 )
 
-maker(
+commands(
     ("pf", 4),
     baca.dynamic("fff"),
     baca.markup(
@@ -185,7 +185,7 @@ maker(
     krummzeit.single_cluster_piano_rhythm(),
 )
 
-maker(
+commands(
     ("pf", 7),
     baca.clef("treble"),
     baca.dynamic("fff-poss"),
@@ -194,7 +194,7 @@ maker(
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("pf", 10),
     baca.markup(
         r'\baca-boxed-markup "to harpsichord"',
@@ -203,7 +203,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("perc", 7),
     baca.dynamic("fff-poss"),
     baca.make_repeat_tied_notes(),
@@ -215,7 +215,7 @@ maker(
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("perc", (10, 13)),
     baca.accent(selector=baca.selectors.pheads()),
     baca.staff_lines(1),
@@ -234,22 +234,22 @@ maker(
     krummzeit.sponge_rhythm(),
 )
 
-maker(
+commands(
     ("vn", (1, 2)),
     baca.pitch("Eb5"),
 )
 
-maker(
+commands(
     ("va", (1, 2)),
     baca.pitch("A3"),
 )
 
-maker(
+commands(
     ("vc", (1, 2)),
     baca.pitch("E~2"),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (1, 2)),
     baca.dynamic("fff"),
     baca.stem_tremolo(
@@ -259,7 +259,7 @@ maker(
 
 pcs = krummzeit.violet_pitch_classes.get_payload()
 pcs = baca.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
-maker(
+commands(
     baca.timeline(
         [
             ("vn", (4, 8)),
@@ -270,7 +270,7 @@ maker(
     baca.pitches(pcs),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (4, 8)),
     baca.new(
         baca.glissando(),
@@ -291,22 +291,22 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", (4, 8)),
     krummzeit.register_narrow(5, 4),
 )
 
-maker(
+commands(
     ("va", (4, 8)),
     krummzeit.register_narrow(4, 3),
 )
 
-maker(
+commands(
     ("vc", (4, 8)),
     krummzeit.register_narrow(4, 3),
 )
 
-maker(
+commands(
     ["perc", "vn", "va", "vc"],
     baca.dls_padding(4),
     baca.tuplet_bracket_padding(2),
@@ -314,7 +314,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

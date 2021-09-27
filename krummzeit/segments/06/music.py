@@ -41,7 +41,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
@@ -50,7 +50,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "135",
@@ -91,23 +91,23 @@ maker(
     baca.rehearsal_mark("E"),
 )
 
-maker(
+commands(
     ("ob", [(1, 8), (9, 10)]),
     krummzeit.oboe_trills(),
 )
 
-maker(
+commands(
     ("cl", (1, 10)),
     baca.instrument(krummzeit.instruments["ClarinetInEFlat"]),
     baca.make_repeated_duration_notes([(16, 4)]),
 )
 
-maker(
+commands(
     (["pf", "vn", "va", "vc"], (9, 10)),
     krummzeit.incise_chain_b(),
 )
 
-maker(
+commands(
     ("perc", [(1, 14), (28, 34)]),
     baca.markup(
         r"\baca-suspended-cymbal-markup",
@@ -117,12 +117,12 @@ maker(
     krummzeit.sponge_rhythm(),
 )
 
-maker(
+commands(
     ("perc", 28),
     baca.staff_lines(1),
 )
 
-maker(
+commands(
     ("vn", (12, 20)),
     krummzeit.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
@@ -132,7 +132,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (12, 20)),
     krummzeit.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
@@ -140,7 +140,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", (12, 20)),
     krummzeit.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
@@ -150,12 +150,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("ob", (12, 21)),
     krummzeit.color_tuplets(),
 )
 
-maker(
+commands(
     ("cl", (12, 21)),
     krummzeit.color_tuplets(
         rmakers.force_rest(baca.selectors.tuplet(0)),
@@ -163,36 +163,36 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("pf", [17, (20, 26)]),
     baca.clef("treble"),
     krummzeit.silver_points([(1, 2), (2, 1)]),
 )
 
-maker(
+commands(
     ("perc", [17, (20, 26)]),
     krummzeit.silver_points([(2, 1), (1, 2)]),
 )
 
-maker(
+commands(
     ("perc", 17),
     baca.staff_lines(5),
     baca.clef("treble"),
     baca.instrument(krummzeit.instruments["Xylophone"]),
 )
 
-maker(
+commands(
     ("cl", (23, 24)),
     baca.instrument(krummzeit.instruments["BassClarinet"]),
     krummzeit.margin_markup("B. cl."),
 )
 
-maker(
+commands(
     (["cl", "va", "vc"], (23, 24)),
     krummzeit.rest_delimited_repeated_duration_notes((1, 2), 16),
 )
 
-maker(
+commands(
     [
         ("cl", [(27, 30), (33, 35)]),
         ("pf", (27, 29)),
@@ -202,12 +202,12 @@ maker(
     krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
 )
 
-maker(
+commands(
     (["ob", "vn"], (29, 34)),
     krummzeit.detached_triplets(),
 )
 
-maker(
+commands(
     ("pf", [(30, 31), (33, 34)]),
     krummzeit.pizzicato_rhythm(
         rmakers.force_rest(
@@ -216,7 +216,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("cl", (1, 10)),
     baca.dynamic("ppp"),
     baca.pitch("B3"),
@@ -226,7 +226,7 @@ pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
 pcs_ = baca.Sequence(pcs)
 pcs_ = pcs_.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
-maker(
+commands(
     ("ob", (1, 10)),
     baca.dynamic("p"),
     baca.new(
@@ -246,41 +246,41 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("pf", (9, 10)),
     baca.dynamic("ff"),
     krummzeit.clusters("tenor"),
 )
 
-maker(
+commands(
     ("vn", (9, 10)),
     baca.pitch("A+3"),
 )
 
-maker(
+commands(
     ("va", (9, 10)),
     baca.pitch("Bb2"),
 )
 
-maker(
+commands(
     ("vc", (9, 10)),
     baca.pitch("A2"),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (9, 10)),
     baca.dynamic("ff"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("perc", [(1, 14), (28, 34)]),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 pcs = baca.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
 pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
-maker(
+commands(
     ("ob", (12, 21)),
     baca.pitches(
         pcs,
@@ -290,7 +290,7 @@ maker(
 
 pcs = baca.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
 pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
-maker(
+commands(
     ("cl", (12, 21)),
     baca.pitches(
         pcs,
@@ -298,7 +298,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     (["ob", "cl"], (12, 21)),
     baca.dynamic("ff"),
     baca.new(
@@ -310,7 +310,7 @@ maker(
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-301).retrograde().transpose(10)
-maker(
+commands(
     (strings, (12, 20)),
     baca.pitches(
         pcs,
@@ -318,7 +318,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     (strings, (12, 20)),
     baca.new(
         baca.glissando(),
@@ -335,22 +335,22 @@ maker(
     baca.note_head_style_harmonic(),
 )
 
-maker(
+commands(
     ("vn", (12, 20)),
     krummzeit.register_narrow(5, 4),
 )
 
-maker(
+commands(
     ("va", (12, 20)),
     krummzeit.register_narrow(4, 3),
 )
 
-maker(
+commands(
     ("vc", (12, 20)),
     krummzeit.register_narrow(4, 2),
 )
 
-maker(
+commands(
     (["pf", "perc"], (17, 26)),
     baca.dynamic("p"),
     baca.pitch(
@@ -362,7 +362,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", (23, 35)),
     baca.pitch(
         "F#3",
@@ -370,7 +370,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", (23, 35)),
     baca.pitch(
         "C2",
@@ -378,39 +378,39 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("cl", (23, 35)),
     baca.pitch("Bb1"),
 )
 
-maker(
+commands(
     ("pf", (27, 29)),
     baca.pitch("Bb0"),
 )
 
-maker(
+commands(
     (["cl", "va", "vc"], (23, 24)),
     baca.dynamic("ppp"),
 )
 
-maker(
+commands(
     ("pf", (27, 29)),
     baca.clef("bass"),
     baca.dynamic("ppp"),
     baca.ottava_bassa(),
 )
 
-maker(
+commands(
     ("perc", (28, 34)),
     baca.dynamic("pp"),
 )
 
-maker(
+commands(
     ("vn", (29, 34)),
     baca.pitch("G5"),
 )
 
-maker(
+commands(
     ("vn", (29, 34)),
     baca.dynamic("ppp"),
     baca.new(
@@ -419,12 +419,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("ob", (29, 34)),
     baca.pitch("A5"),
 )
 
-maker(
+commands(
     ("ob", (29, 34)),
     baca.dynamic("ppp"),
     baca.new(
@@ -435,7 +435,7 @@ maker(
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
-maker(
+commands(
     ("pf", (30, 34)),
     baca.clef("treble"),
     baca.dynamic("fff"),
@@ -455,107 +455,107 @@ maker(
 
 ### VERTICAL ALIGNMENT ###
 
-maker(
+commands(
     ("ob", (1, 21)),
     baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(4),
 )
 
-maker(
+commands(
     ("ob", (29, 34)),
     baca.dls_staff_padding(4),
     baca.tuplet_bracket_staff_padding(2),
 )
 
-maker(
+commands(
     ("cl", (1, 10)),
     baca.stem_up(),
     baca.dls_staff_padding(6),
 )
 
-maker(
+commands(
     ("cl", (13, 21)),
     baca.dls_staff_padding(5),
     baca.tuplet_bracket_staff_padding(3),
 )
 
-maker(
+commands(
     ("cl", (23, 35)),
     baca.stem_up(),
     baca.dls_staff_padding(7),
 )
 
-maker(
+commands(
     ("pf", (9, 10)),
     baca.dls_staff_padding(4),
 )
 
-maker(
+commands(
     ("pf", (17, 26)),
     baca.beam_positions(-4),
     baca.dls_staff_padding(5),
     baca.tuplet_bracket_staff_padding(3),
 )
 
-maker(
+commands(
     ("pf", (30, 35)),
     baca.beam_positions(-4),
     baca.dls_staff_padding(5),
     baca.tuplet_bracket_staff_padding(3),
 )
 
-maker(
+commands(
     ("vn", (1, 11)),
     baca.dls_staff_padding(8.5),
 )
 
-maker(
+commands(
     ("vn", (12, 17)),
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
 )
 
-maker(
+commands(
     ("vn", (29, 34)),
     baca.dls_staff_padding(4),
     baca.tuplet_bracket_staff_padding(2),
 )
 
-maker(
+commands(
     ("va", (1, 11)),
     baca.dls_staff_padding(8.5),
 )
 
-maker(
+commands(
     ("va", (12, 17)),
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
 )
 
-maker(
+commands(
     ("va", (23, 24)),
     baca.dls_staff_padding(6),
 )
 
-maker(
+commands(
     ("vc", (9, 10)),
     baca.dls_staff_padding(6),
 )
 
-maker(
+commands(
     ("vc", (12, 19)),
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
 )
 
-maker(
+commands(
     ("vc", (23, 24)),
     baca.dls_staff_padding(6),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

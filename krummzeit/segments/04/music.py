@@ -27,7 +27,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
@@ -36,7 +36,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "135",
@@ -101,7 +101,7 @@ maker(
     baca.rehearsal_mark("C"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "short",
@@ -125,7 +125,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("perc", (1, 9)),
     baca.dynamic("ppp-ancora"),
     baca.make_repeat_tied_notes(),
@@ -137,7 +137,7 @@ maker(
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("pf", [1, 3, 5]),
     krummzeit.silver_points(
         [(2, 3)],
@@ -145,7 +145,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", [5, 7, 9]),
     krummzeit.silver_points(
         [(5, 4)],
@@ -153,7 +153,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("va", [5, 7, 9]),
     krummzeit.silver_points(
         [(2, 7)],
@@ -161,7 +161,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vc", [5, 7, 9]),
     krummzeit.silver_points(
         [(7, 2)],
@@ -171,7 +171,7 @@ maker(
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
-maker(
+commands(
     baca.timeline(
         [
             ("pf", (1, 7)),
@@ -186,7 +186,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("pf", 1),
     baca.hairpin("ff > pp"),
     krummzeit.displacement(),
@@ -195,7 +195,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("pf", 3),
     baca.hairpin("pp < ff"),
     krummzeit.displacement(),
@@ -203,7 +203,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("pf", 5),
     baca.clef("bass"),
     baca.hairpin("ff > pp"),
@@ -212,7 +212,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("vn", 5),
     baca.hairpin(
         "ff > pp",
@@ -228,7 +228,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("vn", 7),
     baca.hairpin(
         "pp < ff",
@@ -239,7 +239,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("vn", 9),
     baca.hairpin(
         "ff > pp",
@@ -250,7 +250,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("va", 5),
     baca.clef("treble"),
     baca.hairpin(
@@ -267,7 +267,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("va", 7),
     baca.hairpin(
         "pp < ff",
@@ -278,7 +278,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("va", 9),
     baca.clef("alto"),
     baca.hairpin(
@@ -290,7 +290,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("vc", 5),
     baca.clef("treble"),
     baca.hairpin(
@@ -306,7 +306,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("vc", 7),
     baca.clef("bass"),
     baca.hairpin(
@@ -318,12 +318,12 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("pf", [(9, 12), (14, 16)]),
     baca.make_tied_notes(),
 )
 
-maker(
+commands(
     [
         ("va", (11, 12)),
         (["va", "vn", "vc"], (14, 16)),
@@ -331,18 +331,18 @@ maker(
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("ob", (14, 16)),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("cl", (14, 19)),
     baca.instrument(krummzeit.instruments["BassClarinet"]),
     baca.make_repeat_tied_notes(),
 )
 
-maker(
+commands(
     ("perc", (14, 19)),
     baca.make_repeated_duration_notes([(1, 4)]),
     baca.markup(
@@ -352,7 +352,7 @@ maker(
     baca.staff_position(0),
 )
 
-maker(
+commands(
     ("vc", 9),
     baca.hairpin(
         "ff > pp",
@@ -363,7 +363,7 @@ maker(
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
-maker(
+commands(
     ("pf", (9, 12)),
     baca.dynamic("fff"),
     krummzeit.clusters("low"),
@@ -374,14 +374,14 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("pf", (14, 16)),
     baca.dynamic("fff"),
     krummzeit.clusters("low"),
     baca.ottava_bassa(),
 )
 
-maker(
+commands(
     ("va", (11, 16)),
     baca.pitch(
         "bf,",
@@ -389,17 +389,17 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("vn", (14, 16)),
     baca.pitch("fs"),
 )
 
-maker(
+commands(
     ("vc", (14, 16)),
     baca.pitch("a,,"),
 )
 
-maker(
+commands(
     ("va", (11, 12)),
     baca.markup(
         r"\baca-arco-markup",
@@ -408,12 +408,12 @@ maker(
     baca.dynamic("fff-poss"),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (14, 16)),
     baca.dynamic("fff-poss"),
 )
 
-maker(
+commands(
     (["vn", "vc"], (14, 16)),
     baca.markup(
         r"\baca-arco-markup",
@@ -421,68 +421,68 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("perc", (14, 19)),
     baca.dynamic("pp-sempre"),
 )
 
-maker(
+commands(
     ("ob", (14, 16)),
     baca.pitch("B3"),
 )
 
-maker(
+commands(
     ("ob", (14, 16)),
     baca.dynamic("fff"),
 )
 
-maker(
+commands(
     ("cl", (14, 19)),
     baca.pitch("B1"),
 )
 
-maker(
+commands(
     ("cl", (14, 16)),
     baca.dynamic("ppp"),
 )
 
 ### VERTICAL ALIGNMENT ###
 
-maker(
+commands(
     ("ob", (14, 16)),
     baca.dls_staff_padding(5),
     baca.stem_up(),
 )
 
-maker(
+commands(
     ("cl", (14, 19)),
     baca.stem_up(),
 )
 
-maker(
+commands(
     ("pf", (9, 16)),
     baca.dls_staff_padding(10),
 )
 
-maker(
+commands(
     ("perc", (14, 19)),
     baca.dls_staff_padding(6),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (5, 9)),
     baca.dls_staff_padding(8),
     baca.tuplet_bracket_staff_padding(4),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (11, 16)),
     baca.stem_up(),
 )
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

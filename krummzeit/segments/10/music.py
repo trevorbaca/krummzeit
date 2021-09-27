@@ -32,7 +32,7 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
-maker = baca.CommandAccumulator(
+commands = baca.CommandAccumulator(
     **baca.segments(),
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
@@ -41,7 +41,7 @@ maker = baca.CommandAccumulator(
     time_signatures=time_signatures,
 )
 
-maker(
+commands(
     "Global_Skips",
     baca.metronome_mark(
         "90",
@@ -74,7 +74,7 @@ maker(
     baca.rehearsal_mark("I"),
 )
 
-maker(
+commands(
     "Global_Rests",
     baca.global_fermata(
         "very_long",
@@ -82,27 +82,27 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("ob", 1),
     krummzeit.hypermeter_tuplets([(3, 2)]),
 )
 
-maker(
+commands(
     ("cl", 1),
     krummzeit.hypermeter_tuplets([(1, 4)]),
 )
 
-maker(
+commands(
     ("pf", 1),
     krummzeit.hypermeter_tuplets([(3, 4)]),
 )
 
-maker(
+commands(
     ("perc", 1),
     krummzeit.hypermeter_tuplets([(1, 6)]),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (1, 3)),
     krummzeit.opening_triplets(
         rmakers.force_rest(baca.selectors.tuplet(-1)),
@@ -110,7 +110,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("pf", (3, 4)),
     baca.instrument(krummzeit.instruments["Harpsichord"]),
     krummzeit.clusters("harpsichord"),
@@ -120,12 +120,12 @@ maker(
     ),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (5, 9)),
     krummzeit.right_remainder_quarters(),
 )
 
-maker(
+commands(
     ("perc", (3, 22)),
     baca.staff_lines(1),
     baca.clef("percussion"),
@@ -137,7 +137,7 @@ maker(
     krummzeit.incise_attacks(),
 )
 
-maker(
+commands(
     ("pf", (8, 22)),
     baca.instrument(krummzeit.instruments["Piano"]),
     krummzeit.margin_markup("Pf."),
@@ -146,73 +146,73 @@ maker(
     ),
 )
 
-maker(("cl", (3, 14)), baca.make_repeat_tied_notes())
+commands(("cl", (3, 14)), baca.make_repeat_tied_notes())
 
-maker(
+commands(
     ("vn", 22),
     krummzeit.pizzicato_rhythm(split=[6, 18]),
 )
 
-maker(
+commands(
     ("va", 22),
     krummzeit.pizzicato_rhythm(split=[8, 10]),
 )
 
-maker(
+commands(
     ("vc", 22),
     krummzeit.pizzicato_rhythm(split=[10, 8]),
 )
 
-maker(
+commands(
     ("ob", 1),
     baca.pitch("Eb5"),
 )
 
-maker(
+commands(
     ("cl", 1),
     baca.pitch("Eb2"),
 )
 
-maker(
+commands(
     ("ob", 1),
     baca.dynamic("ff"),
     krummzeit.color_fingerings(),
 )
 
-maker(
+commands(
     ("cl", 1),
     baca.dynamic("ff"),
     krummzeit.color_fingerings(),
 )
 
-maker(
+commands(
     (["pf", "perc"], 1),
     baca.pitch("F#6"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("vn", (1, 3)),
     baca.dynamic("fff"),
     baca.pitch("Eb5"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("va", (1, 3)),
     baca.dynamic("fff"),
     baca.pitch("A3"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("vc", (1, 3)),
     baca.dynamic("fff"),
     baca.pitch("E~2"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-maker(
+commands(
     ("perc", (3, 22)),
     baca.dynamic("f"),
     baca.laissez_vibrer(selector=baca.selectors.ptails()),
@@ -220,7 +220,7 @@ maker(
 
 pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
 pcs = pcs.transpose(11)
-maker(
+commands(
     baca.timeline(
         [
             ("vn", (5, 9)),
@@ -234,7 +234,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], (5, 9)),
     baca.alternate_bow_strokes(),
     baca.dynamic('"f"'),
@@ -248,27 +248,27 @@ maker(
     ),
 )
 
-maker(
+commands(
     (["va", "vc"], 5),
     baca.clef("treble"),
 )
 
-maker(
+commands(
     ("vn", (5, 9)),
     krummzeit.register_narrow(5, 4),
 )
 
-maker(
+commands(
     (["va", "vc"], (5, 9)),
     krummzeit.register_narrow(5, 3),
 )
 
-maker(
+commands(
     ("cl", (3, 14)),
     baca.pitch("E2"),
 )
 
-maker(
+commands(
     ("cl", (3, 4)),
     baca.dynamic(
         "ff",
@@ -276,7 +276,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("cl", (5, 6)),
     baca.hairpin(
         "ff < fff",
@@ -284,7 +284,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     ("pf", (8, 22)),
     baca.clef("bass"),
     baca.ottava_bassa(),
@@ -292,7 +292,7 @@ maker(
     krummzeit.clusters("low"),
 )
 
-maker(
+commands(
     ("cl", 9),
     baca.dynamic(
         "fff-poss",
@@ -300,11 +300,11 @@ maker(
     ),
 )
 
-maker(("cl", (11, 14)), baca.hairpin("fff > ppp"))
+commands(("cl", (11, 14)), baca.hairpin("fff > ppp"))
 
 pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
-maker(
+commands(
     baca.timeline(
         [
             ("vn", 22),
@@ -318,7 +318,7 @@ maker(
     ),
 )
 
-maker(
+commands(
     (["vn", "va", "vc"], 22),
     baca.dynamic("fff"),
     baca.markup(
@@ -332,7 +332,7 @@ maker(
 
 if __name__ == "__main__":
     baca.build.make_segment_pdf(
-        maker,
+        commands,
         **baca.segments(runtime=True),
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,

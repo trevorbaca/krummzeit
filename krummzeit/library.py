@@ -361,8 +361,6 @@ class RegisterTransitionCommand(baca.Command):
 
     ### CLASS VARIABLES ###
 
-    __documentation_section__ = None
-
     __slots__ = ("_start_registration", "_stop_registration")
 
     ### INITIALIZER ###

@@ -1249,9 +1249,7 @@ def make_empty_score():
 
     # OBOE
     oboe_music_voice = abjad.Voice(name="Oboe_Music_Voice", tag=tag)
-    oboe_music_staff = abjad.Staff(
-        [oboe_music_voice], name="Oboe_Music_Staff", tag=tag
-    )
+    oboe_music_staff = abjad.Staff([oboe_music_voice], name="Oboe_Music_Staff", tag=tag)
     baca.templates.attach_lilypond_tag("Oboe", oboe_music_staff)
     abjad.annotate(
         oboe_music_staff,

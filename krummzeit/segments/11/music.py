@@ -33,8 +33,9 @@ commands = baca.CommandAccumulator(
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
     metronome_marks=krummzeit.metronome_marks,
-    score_template=krummzeit.ScoreTemplate(),
+    score_template=krummzeit.make_empty_score,
     time_signatures=time_signatures,
+    voice_abbreviations=krummzeit.voice_abbreviations,
 )
 
 commands(
@@ -222,6 +223,7 @@ if __name__ == "__main__":
         activate=[
             baca.tags.LOCAL_MEASURE_NUMBER,
         ],
+        always_make_global_rests=True,
         error_on_not_yet_pitched=True,
         final_segment=True,
         stage_markup=stage_markup,

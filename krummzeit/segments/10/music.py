@@ -4,9 +4,9 @@ from abjadext import rmakers
 
 from krummzeit import library as krummzeit
 
-###############################################################################
-##################################### [I] #####################################
-###############################################################################
+#########################################################################################
+######################################### 10 [I] ########################################
+#########################################################################################
 
 stage_markup = (
     ("[I.1]", 1),
@@ -32,14 +32,17 @@ maker_ = baca.TimeSignatureMaker(
 )
 time_signatures = maker_.run()
 
+score = krummzeit.make_empty_score()
+voice_names = baca.accumulator.get_voice_names(score)
+
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
     instruments=krummzeit.instruments,
     margin_markups=krummzeit.margin_markups,
     metronome_marks=krummzeit.metronome_marks,
-    score_template=krummzeit.make_empty_score,
     time_signatures=time_signatures,
     voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_names=voice_names,
 )
 
 commands(
@@ -340,6 +343,7 @@ if __name__ == "__main__":
         ],
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
+        score=score,
         stage_markup=stage_markup,
         transpose_score=True,
     )

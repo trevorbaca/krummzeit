@@ -3068,7 +3068,7 @@ segment.11.Oboe.Music.Voice = {
     %! PHANTOM
     >>
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3076,13 +3076,13 @@ segment.11.Oboe.Music.Voice = {
 %! baca.path.extern()
 segment.11.Oboe.Music.Staff = {
 
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     \context Voice = "Oboe_Music_Voice"
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     %! baca.path.extern()
     { \segment.11.Oboe.Music.Voice }
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3933,7 +3933,7 @@ segment.11.Clarinet.Music.Voice = {
     %! PHANTOM
     >>
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -3941,13 +3941,13 @@ segment.11.Clarinet.Music.Voice = {
 %! baca.path.extern()
 segment.11.Clarinet.Music.Staff = {
 
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     \context Voice = "Clarinet_Music_Voice"
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     %! baca.path.extern()
     { \segment.11.Clarinet.Music.Voice }
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -5024,7 +5024,7 @@ segment.11.Piano.Music.Voice = {
     %! PHANTOM
     >>
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -5032,13 +5032,13 @@ segment.11.Piano.Music.Voice = {
 %! baca.path.extern()
 segment.11.Piano.Music.Staff = {
 
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     \context Voice = "Piano_Music_Voice"
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     %! baca.path.extern()
     { \segment.11.Piano.Music.Voice }
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -6134,7 +6134,7 @@ segment.11.Percussion.Music.Voice = {
     %! PHANTOM
     >>
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -6142,13 +6142,13 @@ segment.11.Percussion.Music.Voice = {
 %! baca.path.extern()
 segment.11.Percussion.Music.Staff = {
 
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     \context Voice = "Percussion_Music_Voice"
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     %! baca.path.extern()
     { \segment.11.Percussion.Music.Voice }
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -7204,7 +7204,7 @@ segment.11.Violin.Music.Voice = {
     %! PHANTOM
     >>
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -7212,13 +7212,13 @@ segment.11.Violin.Music.Voice = {
 %! baca.path.extern()
 segment.11.Violin.Music.Staff = {
 
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     \context Voice = "Violin_Music_Voice"
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     %! baca.path.extern()
     { \segment.11.Violin.Music.Voice }
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -7867,7 +7867,7 @@ segment.11.Viola.Music.Voice = {
     %! PHANTOM
     >>
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -7875,13 +7875,13 @@ segment.11.Viola.Music.Voice = {
 %! baca.path.extern()
 segment.11.Viola.Music.Staff = {
 
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     \context Voice = "Viola_Music_Voice"
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     %! baca.path.extern()
     { \segment.11.Viola.Music.Voice }
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -8797,7 +8797,7 @@ segment.11.Cello.Music.Voice = {
     %! PHANTOM
     >>
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }
 
@@ -8805,12 +8805,12 @@ segment.11.Cello.Music.Voice = {
 %! baca.path.extern()
 segment.11.Cello.Music.Staff = {
 
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     \context Voice = "Cello_Music_Voice"
-    %! krummzeit.ScoreTemplate.__call__()
+    %! krummzeit.make_empty_score()
     %! baca.path.extern()
     { \segment.11.Cello.Music.Voice }
 
-%! krummzeit.ScoreTemplate.__call__()
+%! krummzeit.make_empty_score()
 %! baca.path.extern()
 }

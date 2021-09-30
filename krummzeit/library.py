@@ -1,3 +1,5 @@
+import inspect
+
 import abjad
 import baca
 import quicktions
@@ -1243,8 +1245,7 @@ voice_abbreviations = {
 
 
 def make_empty_score():
-    site = "krummzeit.ScoreTemplate.__call__()"
-    tag = abjad.Tag(site)
+    tag = baca.site(inspect.currentframe())
     global_context = baca.score.make_global_context()
 
     # OBOE

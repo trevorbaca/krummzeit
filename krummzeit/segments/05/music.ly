@@ -33,9 +33,9 @@
         %! baca._make_lilypond_file()
         }
 
-        %! krummzeit.ScoreTemplate.__call__()
+        %! krummzeit.make_empty_score()
         \context Score = "Score"
-        %! krummzeit.ScoreTemplate.__call__()
+        %! krummzeit.make_empty_score()
         <<
 
             %! abjad.ScoreTemplate._make_global_context()
@@ -58,95 +58,95 @@
             %! abjad.ScoreTemplate._make_global_context()
             >>
 
-            %! krummzeit.ScoreTemplate.__call__()
+            %! krummzeit.make_empty_score()
             \context MusicContext = "Music_Context"
-            %! krummzeit.ScoreTemplate.__call__()
+            %! krummzeit.make_empty_score()
             <<
 
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 \context WindSectionStaffGroup = "Wind_Section_Staff_Group"
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 <<
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Oboe
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     \context Staff = "Oboe_Music_Staff"
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Oboe.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Clarinet
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     \context Staff = "Clarinet_Music_Staff"
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Clarinet.Music.Staff }
 
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 >>
 
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 \context PercussionSectionStaffGroup = "Percussion_Section_Staff_Group"
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 <<
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Piano
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     \context Staff = "Piano_Music_Staff"
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Piano.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Percussion
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     \context Staff = "Percussion_Music_Staff"
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Percussion.Music.Staff }
 
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 >>
 
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 \context StringSectionStaffGroup = "String_Section_Staff_Group"
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 <<
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Violin
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     \context Staff = "Violin_Music_Staff"
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Violin.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Viola
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     \context Staff = "Viola_Music_Staff"
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Viola.Music.Staff }
 
                     %! baca.ScoreTemplate._attach_liypond_tag()
                     \tag Cello
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     \context Staff = "Cello_Music_Staff"
-                    %! krummzeit.ScoreTemplate.__call__()
+                    %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.05.Cello.Music.Staff }
 
-                %! krummzeit.ScoreTemplate.__call__()
+                %! krummzeit.make_empty_score()
                 >>
 
-            %! krummzeit.ScoreTemplate.__call__()
+            %! krummzeit.make_empty_score()
             >>
 
-        %! krummzeit.ScoreTemplate.__call__()
+        %! krummzeit.make_empty_score()
         >>
 
     %! baca._make_lilypond_file()

@@ -409,7 +409,7 @@ class RegisterTransitionCommand(baca.Command):
             argument = self.selector(argument)
         leaves = abjad.select(argument).leaves()
         leaves_timespan = abjad.get.timespan(leaves)
-        plts = baca.select(argument).plts()
+        plts = baca.Selection(argument).plts()
         for plt in plts:
             timespan = abjad.get.timespan(plt)
             registration = self._make_registration(

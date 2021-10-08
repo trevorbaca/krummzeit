@@ -2948,9 +2948,8 @@ segment.04.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2.
     %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
@@ -2967,14 +2966,7 @@ segment.04.Piano.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \baca-senza-pedale-markup
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     ~
     %! baca.rhythm_annotation_spanner()
     %! RHYTHM_ANNOTATION_SPANNER
@@ -3016,18 +3008,10 @@ segment.04.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>4.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     ~
 
     %! baca._comment_measure_numbers()
@@ -3036,36 +3020,20 @@ segment.04.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>4.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     ~
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>4
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     ~
 
     %! baca._comment_measure_numbers()
@@ -3074,18 +3042,10 @@ segment.04.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     %! baca.make_tied_notes()
     ~
 
@@ -3095,18 +3055,10 @@ segment.04.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
@@ -3181,9 +3133,8 @@ segment.04.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>1
     %! REDUNDANT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
@@ -3197,14 +3148,7 @@ segment.04.Piano.Music.Voice = {
     %! baca._set_status_tag()
     %! REDUNDANT_DYNAMIC
     \fff
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     %! baca.make_tied_notes()
     ~
     %! baca.rhythm_annotation_spanner()
@@ -3249,18 +3193,10 @@ segment.04.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>1
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     %! baca.make_tied_notes()
     ~
 
@@ -3270,36 +3206,20 @@ segment.04.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     ~
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP

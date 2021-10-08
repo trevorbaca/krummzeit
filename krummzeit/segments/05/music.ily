@@ -5993,9 +5993,8 @@ segment.05.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
     %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
@@ -6012,31 +6011,16 @@ segment.05.Piano.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \baca-senza-pedale-markup
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     %! krummzeit.incise_chain_b()
     r4..
@@ -6045,18 +6029,10 @@ segment.05.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     %! krummzeit.incise_chain_b()
     r8
@@ -6070,18 +6046,10 @@ segment.05.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     %! krummzeit.incise_chain_b()
     r8.
@@ -6090,18 +6058,10 @@ segment.05.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     %! krummzeit.incise_chain_b()
     r16
@@ -6115,18 +6075,10 @@ segment.05.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     %! krummzeit.incise_chain_b()
     r4.
@@ -6140,35 +6092,19 @@ segment.05.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8.
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     %! krummzeit.incise_chain_b()
     r4..
@@ -6177,18 +6113,10 @@ segment.05.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>8
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     %! krummzeit.incise_chain_b()
     r8

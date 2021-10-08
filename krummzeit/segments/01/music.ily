@@ -1640,9 +1640,8 @@ segment.01.Piano.Music.Voice = {
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
     \once \override NoteHead.stencil = #ly:text-interface::print
-    \once \override NoteHead.text = \markup {
-    	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-    }
+    \once \override NoteHead.text =
+    \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <a, c e g>16
     %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
@@ -1659,14 +1658,7 @@ segment.01.Piano.Music.Voice = {
     %! baca.markup()
     %! baca.IndicatorCommand._call()
     ^ \krummzeit-catch-resonance-markup
-    ^ \markup {
-        \center-align
-            \concat
-                {
-                    \natural
-                    \flat
-                }
-        }
+    ^ \markup \center-align \concat { \natural \flat }
 
     %! krummzeit.single_cluster_piano_rhythm()
     r8

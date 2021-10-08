@@ -2593,18 +2593,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -2612,35 +2604,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -2656,18 +2632,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -2675,35 +2643,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -2719,18 +2671,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -2738,35 +2682,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -2782,18 +2710,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -2801,35 +2721,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -2845,18 +2749,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -2864,35 +2760,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <d' f' a' c''>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3044,9 +2924,8 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
         %! EXPLICIT_DYNAMIC_COLOR
         %! _treat_persistent_wrapper(1)
@@ -3060,14 +2939,7 @@ segment.10.Piano.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \baca-fff-poss
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3075,35 +2947,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3119,18 +2975,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3138,35 +2986,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3184,18 +3016,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3203,35 +3027,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3247,18 +3055,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3266,35 +3066,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3310,18 +3094,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3329,35 +3105,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3373,18 +3133,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3392,35 +3144,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3438,18 +3174,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3457,35 +3185,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3501,18 +3213,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3520,35 +3224,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3564,18 +3252,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3583,35 +3263,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3627,18 +3291,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3646,35 +3302,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3690,18 +3330,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3709,35 +3341,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3755,18 +3371,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3774,35 +3382,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3818,18 +3410,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3837,35 +3421,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3881,18 +3449,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3900,35 +3460,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -3944,18 +3488,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -3963,35 +3499,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4009,18 +3529,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4028,35 +3540,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4072,18 +3568,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4091,35 +3579,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4135,18 +3607,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4154,35 +3618,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4198,18 +3646,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4217,35 +3657,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4263,18 +3687,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4282,35 +3698,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4326,18 +3726,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4345,35 +3737,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4389,18 +3765,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4408,35 +3776,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4452,18 +3804,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4471,35 +3815,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4517,18 +3845,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4536,35 +3856,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4580,18 +3884,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4599,35 +3895,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4643,18 +3923,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4662,35 +3934,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4706,18 +3962,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4725,35 +3973,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4771,18 +4003,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4790,35 +4014,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4834,18 +4042,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4853,35 +4053,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4897,18 +4081,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4916,35 +4092,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -4962,18 +4122,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -4981,35 +4133,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5025,18 +4161,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5044,35 +4172,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5088,18 +4200,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5107,35 +4211,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5153,18 +4241,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5172,35 +4252,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5216,18 +4280,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5235,35 +4291,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5279,18 +4319,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5298,35 +4330,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5344,18 +4360,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5363,35 +4371,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5407,18 +4399,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5426,35 +4410,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5470,18 +4438,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5489,35 +4449,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5535,18 +4479,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5554,35 +4490,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5598,18 +4518,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5617,35 +4529,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5661,18 +4557,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5680,35 +4568,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5726,18 +4598,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5745,35 +4609,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5789,18 +4637,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5808,35 +4648,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5852,18 +4676,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5871,35 +4687,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5917,18 +4717,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5936,35 +4728,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -5980,18 +4756,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -5999,35 +4767,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -6043,18 +4795,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -6062,35 +4806,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -6108,18 +4836,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -6127,35 +4847,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -6171,18 +4875,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -6190,35 +4886,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -6234,18 +4914,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -6253,35 +4925,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -6297,18 +4953,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -6316,35 +4964,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
 
@@ -6360,18 +4992,10 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         [
 
@@ -6379,35 +5003,19 @@ segment.10.Piano.Music.Voice = {
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
 
         \once \override Accidental.stencil = ##f
         \once \override AccidentalCautionary.stencil = ##f
         \once \override Arpeggio.X-offset = #-2
         \once \override NoteHead.stencil = #ly:text-interface::print
-        \once \override NoteHead.text = \markup {
-        	\filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
-        }
+        \once \override NoteHead.text =
+        \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
         <c,, e,, g,, b,, d, f, a,>8
-        ^ \markup {
-            \center-align
-                \concat
-                    {
-                        \natural
-                        \flat
-                    }
-            }
+        ^ \markup \center-align \concat { \natural \flat }
         %! krummzeit.opening_triplets()
         ]
         %! baca.ottava_bassa()

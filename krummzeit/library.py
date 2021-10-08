@@ -7,7 +7,7 @@ from abjadext import rmakers
 
 # instruments & margin markups
 
-instruments = abjad.OrderedDict(
+instruments = dict(
     [
         ("BassClarinet", abjad.BassClarinet()),
         ("Cello", abjad.Cello(pitch_range="[A1, +inf]")),
@@ -35,7 +35,7 @@ clarinet_in_e_flat = abjad.MarginMarkup(
     markup=r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup"
 )
 
-margin_markups = abjad.OrderedDict(
+margin_markups = dict(
     [
         ("B. cl.", _make_margin_markup("B. cl.")),
         ("Cl. (Eb)", clarinet_in_e_flat),
@@ -51,7 +51,7 @@ margin_markups = abjad.OrderedDict(
 
 # metronome marks
 
-metronome_marks = abjad.OrderedDict(
+metronome_marks = dict(
     [
         ("36", abjad.MetronomeMark((1, 4), 36)),
         ("45", abjad.MetronomeMark((1, 4), 45)),
@@ -170,7 +170,7 @@ assert pairs[9] == (24, abjad.Duration(179, 8))
 assert pairs[10] == (12, abjad.Duration(87, 8))
 assert pairs[11] == (11, abjad.Duration(40, 4))
 
-segment_time_signatures = abjad.OrderedDict()
+segment_time_signatures = dict()
 
 ### B ###
 lists = time_signature_inventory[:3]

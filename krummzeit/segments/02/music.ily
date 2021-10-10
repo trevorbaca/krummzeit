@@ -1378,15 +1378,7 @@ segment.02.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_METRONOME_MARK
     %! baca._attach_metronome_marks(2)
-    %@% - \tweak bound-details.left.text \markup \concat { \concat { {
-    %! baca._set_status_tag()
-    %! EXPLICIT_METRONOME_MARK
-    %! baca._attach_metronome_marks(2)
-    %@%     \abjad-metronome-mark-markup #2 #0 #1 #"67.5"
-    %! baca._set_status_tag()
-    %! EXPLICIT_METRONOME_MARK
-    %! baca._attach_metronome_marks(2)
-    %@%     } \hspace #2 \upright [ \line { \abjad-metric-modulation #2 #0 #3 #0 #'(1 . 1) } \hspace #0.5 \upright ] } \hspace #0.5 }
+    %@% - \tweak bound-details.left.text \markup \concat { \concat { \abjad-metronome-mark-markup #2 #0 #1 #"67.5" \hspace #2 \upright [ \line { \abjad-metric-modulation #2 #0 #3 #0 #'(1 . 1) } \hspace #0.5 \upright ] } \hspace #0.5 }
     %! baca._set_status_tag()
     %! EXPLICIT_METRONOME_MARK
     %! baca._attach_metronome_marks(2)
@@ -1400,17 +1392,7 @@ segment.02.Global.Skips = {
     %! EXPLICIT_METRONOME_MARK
     %! baca._attach_metronome_marks(2.2)
     %! METRIC_MODULATION_IS_STRIPPED
-    %@% - \baca-metronome-mark-spanner-left-markup \markup {
-    %! baca._set_status_tag()
-    %! EXPLICIT_METRONOME_MARK
-    %! baca._attach_metronome_marks(2.2)
-    %! METRIC_MODULATION_IS_STRIPPED
-    %@%     \abjad-metronome-mark-markup #2 #0 #1 #"67.5"
-    %! baca._set_status_tag()
-    %! EXPLICIT_METRONOME_MARK
-    %! baca._attach_metronome_marks(2.2)
-    %! METRIC_MODULATION_IS_STRIPPED
-    %@%     }
+    %@% - \baca-metronome-mark-spanner-left-markup \markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"
     %! baca._set_status_tag()
     %! EXPLICIT_METRONOME_MARK
     %! baca._attach_metronome_marks(2.2)
@@ -1421,13 +1403,7 @@ segment.02.Global.Skips = {
     - \abjad-invisible-line
     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     %! baca._attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \concat { {
-    %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    %! baca._attach_metronome_marks(3)
-        \abjad-metronome-mark-markup #2 #0 #1 #"67.5"
-    %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    %! baca._attach_metronome_marks(3)
-        } \hspace #2 \upright [ \line { \abjad-metric-modulation #2 #0 #3 #0 #'(1 . 1) } \hspace #0.5 \upright ] } \hspace #0.5 }
+    - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \concat { \abjad-metronome-mark-markup #2 #0 #1 #"67.5" \hspace #2 \upright [ \line { \abjad-metric-modulation #2 #0 #3 #0 #'(1 . 1) } \hspace #0.5 \upright ] } \hspace #0.5 }
     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     %! baca._attach_metronome_marks(3)
     \bacaStartTextSpanMM

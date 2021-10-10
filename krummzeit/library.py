@@ -60,7 +60,10 @@ metronome_marks = dict(
             abjad.MetronomeMark(
                 reference_duration=(1, 4),
                 units_per_minute=quicktions.Fraction(135, 2),
-                custom_markup=abjad.markups.abjad_metronome_mark(2, 0, 1, 67.5),
+                custom_markup=abjad.Markup(
+                    r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
+                    literal=True,
+                )
             ),
         ),
         ("72", abjad.MetronomeMark((1, 4), 72)),

@@ -63,7 +63,7 @@ metronome_marks = dict(
                 custom_markup=abjad.Markup(
                     r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
                     literal=True,
-                )
+                ),
             ),
         ),
         ("72", abjad.MetronomeMark((1, 4), 72)),

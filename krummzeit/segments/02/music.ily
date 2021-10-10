@@ -1652,15 +1652,7 @@ segment.02.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_METRONOME_MARK
     %! baca._attach_metronome_marks(2)
-    %@% - \tweak bound-details.left.text \markup \concat { \large
-    %! baca._set_status_tag()
-    %! EXPLICIT_METRONOME_MARK
-    %! baca._attach_metronome_marks(2)
-    %@%     \upright
-    %! baca._set_status_tag()
-    %! EXPLICIT_METRONOME_MARK
-    %! baca._attach_metronome_marks(2)
-    %@%         accel. \hspace #0.5 }
+    %@% - \tweak bound-details.left.text \markup \concat { \large \upright accel. \hspace #0.5 }
     %! baca._set_status_tag()
     %! EXPLICIT_METRONOME_MARK
     %! baca._attach_metronome_marks(2)
@@ -1670,13 +1662,7 @@ segment.02.Global.Skips = {
     - \abjad-dashed-line-with-arrow
     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     %! baca._attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \large
-    %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    %! baca._attach_metronome_marks(3)
-        \upright
-    %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    %! baca._attach_metronome_marks(3)
-            accel. \hspace #0.5 }
+    - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \large \upright accel. \hspace #0.5 }
     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     %! baca._attach_metronome_marks(3)
     \bacaStartTextSpanMM
@@ -2414,15 +2400,7 @@ segment.02.Global.Skips = {
     %! baca._set_status_tag()
     %! EXPLICIT_METRONOME_MARK
     %! baca._attach_metronome_marks(2)
-    %@% - \tweak bound-details.left.text \markup \concat { \large
-    %! baca._set_status_tag()
-    %! EXPLICIT_METRONOME_MARK
-    %! baca._attach_metronome_marks(2)
-    %@%     \upright
-    %! baca._set_status_tag()
-    %! EXPLICIT_METRONOME_MARK
-    %! baca._attach_metronome_marks(2)
-    %@%         accel. \hspace #0.5 }
+    %@% - \tweak bound-details.left.text \markup \concat { \large \upright accel. \hspace #0.5 }
     %! baca._set_status_tag()
     %! EXPLICIT_METRONOME_MARK
     %! baca._attach_metronome_marks(2)
@@ -2432,13 +2410,7 @@ segment.02.Global.Skips = {
     - \abjad-dashed-line-with-arrow
     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     %! baca._attach_metronome_marks(3)
-    - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \large
-    %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    %! baca._attach_metronome_marks(3)
-        \upright
-    %! EXPLICIT_METRONOME_MARK_WITH_COLOR
-    %! baca._attach_metronome_marks(3)
-            accel. \hspace #0.5 }
+    - \tweak bound-details.left.text \markup \concat { \with-color #(x11-color 'blue) \large \upright accel. \hspace #0.5 }
     %! EXPLICIT_METRONOME_MARK_WITH_COLOR
     %! baca._attach_metronome_marks(3)
     \bacaStartTextSpanMM

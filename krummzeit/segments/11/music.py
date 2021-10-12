@@ -142,10 +142,7 @@ commands(
     (["vn", "va"], (1, 40)),
     baca.dynamic("ff"),
     baca.dls_staff_padding(5),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
@@ -168,10 +165,7 @@ commands(
     ("vc", (1, 24)),
     baca.dynamic("fff-ancora"),
     baca.dls_staff_padding(3),
-    baca.markup(
-        r"\baca-scratch-poss-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-scratch-poss-markup"),
     baca.new(
         baca.glissando(),
         map=baca.selectors.runs(),
@@ -181,10 +175,7 @@ commands(
 commands(
     ("vc", (25, 48)),
     baca.dynamic("ff"),
-    baca.markup(
-        r"\baca-ordinario-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-ordinario-markup"),
 )
 
 commands(

@@ -149,10 +149,7 @@ commands(
         rmakers.force_rest(baca.selectors.lt(-1)),
         do_not_rewrite_meter=True,
     ),
-    baca.markup(
-        r"\baca-tam-tam-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-tam-tam-markup"),
     baca.staff_position(0),
 )
 
@@ -258,10 +255,7 @@ commands(
         baca.glissando(),
         map=baca.selectors.runs(),
     ),
-    baca.markup(
-        r"\baca-subito-ordinario-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-subito-ordinario-markup"),
     baca.pitches("A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2"),
 )
 
@@ -278,10 +272,7 @@ commands(
     ),
     baca.dls_staff_padding(6),
     baca.hairpin("ff < fff"),
-    baca.markup(
-        r"\baca-subito-ordinario-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-subito-ordinario-markup"),
 )
 
 commands(
@@ -310,10 +301,7 @@ commands(
 commands(
     ("pf", (5, 12)),
     baca.dynamic("pp"),
-    baca.markup(
-        r"\baca-leggierissimo-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-leggierissimo-markup"),
     baca.staccato(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
@@ -342,10 +330,7 @@ commands(
 commands(
     (["ob", "cl"], (9, 12)),
     baca.dynamic("pp"),
-    baca.markup(
-        r"\baca-leggierissimo-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-leggierissimo-markup"),
     baca.staccato(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
@@ -354,10 +339,7 @@ commands(
 commands(
     ("vn", (5, 12)),
     baca.dynamic("pp"),
-    baca.markup(
-        r"\krummzeit-leggierissimo-off-string-bowing-on-staccati-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-leggierissimo-off-string-bowing-on-staccati-markup"),
     baca.staccato(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
@@ -381,10 +363,7 @@ commands(
         baca.glissando(),
         map=baca.selectors.runs(),
     ),
-    baca.markup(
-        r"\baca-molto-flautando-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-molto-flautando-markup"),
     baca.tuplet_bracket_staff_padding(4),
 )
 
@@ -392,10 +371,7 @@ commands(
     ("pf", (14, 20)),
     baca.dls_staff_padding(4),
     baca.dynamic("ff-sempre"),
-    baca.markup(
-        r"\krummzeit-fifth-harmonic-of-F-one-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-fifth-harmonic-of-F-one-markup"),
     baca.new(
         baca.tenuto(),
         map=baca.selectors.pheads(),
@@ -422,20 +398,14 @@ commands(
 
 commands(
     (["vn", "vc"], (14, 20)),
-    baca.markup(
-        r"\baca-scratch-molto-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-scratch-molto-markup"),
     baca.note_head_style_harmonic(),
     baca.dynamic("fff-poss"),
 )
 
 commands(
     ("va", (14, 19)),
-    baca.markup(
-        r"\baca-scratch-molto-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-scratch-molto-markup"),
     baca.note_head_style_harmonic(),
     baca.dynamic("fff-poss"),
 )
@@ -506,19 +476,13 @@ commands(
 
 commands(
     ("va", (20, 23)),
-    baca.markup(
-        r"\baca-subito-ordinario-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-subito-ordinario-markup"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
 commands(
     (["vn", "vc"], (21, 23)),
-    baca.markup(
-        r"\baca-subito-ordinario-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-subito-ordinario-markup"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 

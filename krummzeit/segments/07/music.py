@@ -67,7 +67,6 @@ commands(
     baca.clef("percussion"),
     baca.markup(
         r"\baca-snare-drum-markup",
-        literal=True,
         selector=baca.selectors.leaf(0),
     ),
 )
@@ -84,10 +83,7 @@ commands(
         [(1, 2)],
         do_not_rewrite_meter=True,
     ),
-    baca.markup(
-        r"\baca-tam-tam-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-tam-tam-markup"),
     baca.staff_position(0),
 )
 
@@ -184,10 +180,7 @@ commands(
     baca.stem_tremolo(
         selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
     ),
-    baca.markup(
-        r"\krummzeit-fingertips-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-fingertips-markup"),
 )
 
 commands(
@@ -208,10 +201,7 @@ commands(
 commands(
     (["vn", "va", "vc"], (7, 19)),
     baca.dynamic("fff"),
-    baca.markup(
-        r"\baca-scratch-poss-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-scratch-poss-markup"),
 )
 
 commands(
@@ -236,10 +226,7 @@ commands(
     baca.laissez_vibrer(
         selector=baca.selectors.pheads(),
     ),
-    baca.markup(
-        r"\baca-attackless-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-attackless-markup"),
 )
 
 commands(

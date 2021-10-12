@@ -62,7 +62,6 @@ metronome_marks = dict(
                 units_per_minute=quicktions.Fraction(135, 2),
                 custom_markup=abjad.Markup(
                     r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
-                    literal=True,
                 ),
             ),
         ),
@@ -74,7 +73,6 @@ metronome_marks = dict(
                 units_per_minute=108,
                 custom_markup=abjad.Markup(
                     r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
-                    literal=True,
                 ),
             ),
         ),

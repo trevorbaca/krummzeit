@@ -133,10 +133,7 @@ commands(
     ("perc", (3, 22)),
     baca.staff_lines(1),
     baca.clef("percussion"),
-    baca.markup(
-        r"\baca-tam-tam-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-tam-tam-markup"),
     baca.staff_position(0),
     krummzeit.incise_attacks(),
 )
@@ -242,10 +239,7 @@ commands(
     (["vn", "va", "vc"], (5, 9)),
     baca.alternate_bow_strokes(),
     baca.dynamic('"f"'),
-    baca.markup(
-        r"\krummzeit-on-bridge-full-bow-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-on-bridge-full-bow-markup"),
     baca.new(
         baca.glissando(),
         map=baca.selectors.runs(),
@@ -325,10 +319,7 @@ commands(
 commands(
     (["vn", "va", "vc"], 22),
     baca.dynamic("fff"),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
     krummzeit.displacement(),
     krummzeit.register_narrow(6),

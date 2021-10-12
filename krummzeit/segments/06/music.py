@@ -113,10 +113,7 @@ commands(
 
 commands(
     ("perc", [(1, 14), (28, 34)]),
-    baca.markup(
-        r"\baca-suspended-cymbal-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-suspended-cymbal-markup"),
     baca.staff_position(0),
     krummzeit.sponge_rhythm(),
 )
@@ -332,10 +329,7 @@ commands(
         "p > ppp",
         selector=baca.selectors.tleaves(),
     ),
-    baca.markup(
-        r"\baca-molto-flautando-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-molto-flautando-markup"),
     baca.note_head_style_harmonic(),
 )
 

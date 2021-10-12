@@ -181,10 +181,7 @@ commands(
 commands(
     ("pf", 4),
     baca.dynamic("fff"),
-    baca.markup(
-        r"\krummzeit-catch-resonance-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-catch-resonance-markup"),
     krummzeit.clusters("tenor"),
     krummzeit.single_cluster_piano_rhythm(),
 )
@@ -202,7 +199,6 @@ commands(
     ("pf", 10),
     baca.markup(
         r'\baca-boxed-markup "to harpsichord"',
-        literal=True,
         selector=baca.selectors.leaf(0),
     ),
 )
@@ -211,10 +207,7 @@ commands(
     ("perc", 7),
     baca.dynamic("fff-poss"),
     baca.make_repeat_tied_notes(),
-    baca.markup(
-        r"\baca-xylophone-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-xylophone-markup"),
     baca.pitch("C#5"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
@@ -225,16 +218,10 @@ commands(
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.dynamic('"ff"'),
-    baca.markup(
-        r"\baca-sponges-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-sponges-markup"),
     baca.staff_position(0),
     krummzeit.instrument("Percussion"),
-    baca.markup(
-        r"\krummzeit-accent-changes-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-accent-changes-markup"),
     krummzeit.sponge_rhythm(),
 )
 
@@ -284,10 +271,7 @@ commands(
         "pp < ff",
         selector=baca.selectors.tleaves(),
     ),
-    baca.markup(
-        r"\baca-molto-flautando-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-molto-flautando-markup"),
     baca.note_head_style_harmonic(),
     baca.new(
         baca.repeat_tie(baca.selectors.pheads((1, None))),

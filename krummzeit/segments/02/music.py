@@ -184,10 +184,7 @@ commands(
 commands(
     ("cl", (5, 7)),
     baca.instrument(krummzeit.instruments["ClarinetInEFlat"]),
-    baca.markup(
-        r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"),
     krummzeit.margin_markup("Cl. (Eb)"),
 )
 
@@ -290,10 +287,7 @@ commands(
 
 commands(
     ("perc", (45, 60)),
-    baca.markup(
-        r"\baca-tam-tam-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-tam-tam-markup"),
     krummzeit.incise_attacks(),
 )
 
@@ -391,7 +385,6 @@ commands(
     baca.make_repeat_tied_notes(),
     baca.markup(
         r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",
-        literal=True,
     ),
     baca.staff_position(0),
 )
@@ -492,10 +485,7 @@ commands(
 commands(
     ("vn", (8, 11)),
     baca.dynamic("mp"),
-    baca.markup(
-        r"\krummzeit-off-string-bowing-on-staccati-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
 )
 
 commands(
@@ -506,10 +496,7 @@ commands(
 commands(
     ("vn", (19, 22)),
     baca.dynamic("f"),
-    baca.markup(
-        r"\krummzeit-off-string-bowing-on-staccati-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
 )
 
 commands(
@@ -562,19 +549,13 @@ commands(
 commands(
     (["va", "vc"], (1, 11)),
     baca.dynamic("mf"),
-    baca.markup(
-        r"\baca-molto-flautando-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-molto-flautando-markup"),
 )
 
 commands(
     (["va", "vc"], (12, 22)),
     baca.dynamic("f"),
-    baca.markup(
-        r"\baca-non-flautando-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-non-flautando-markup"),
 )
 
 commands(
@@ -602,10 +583,7 @@ commands(
         baca.glissando(),
         map=baca.selectors.runs(),
     ),
-    baca.markup(
-        r"\krummzeit-ob-plus-full-bow-strokes-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
     krummzeit.register_narrow(5, 3),
 )
 
@@ -620,10 +598,7 @@ commands(
     baca.clef("treble"),
     baca.dynamic("f"),
     baca.glissando(),
-    baca.markup(
-        r"\krummzeit-ob-plus-full-bow-strokes-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
     krummzeit.register_narrow(5, 2),
 )
 
@@ -637,10 +612,7 @@ commands(
     baca.alternate_bow_strokes(),
     baca.dynamic("f"),
     baca.glissando(),
-    baca.markup(
-        r"\krummzeit-ob-plus-full-bow-strokes-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
     krummzeit.register_narrow(5, 4),
 )
 
@@ -682,10 +654,7 @@ commands(
     ("va", (48, 71)),
     baca.clef("treble"),
     baca.dynamic("fff"),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
     krummzeit.register_narrow(5, 6),
 )
@@ -694,10 +663,7 @@ commands(
     ("vc", (52, 71)),
     baca.clef("treble"),
     baca.dynamic("fff"),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
     krummzeit.register_narrow(5, 6),
 )
@@ -705,10 +671,7 @@ commands(
 commands(
     ("vn", (54, 71)),
     baca.dynamic("fff"),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
     krummzeit.register_narrow(5, 6),
 )

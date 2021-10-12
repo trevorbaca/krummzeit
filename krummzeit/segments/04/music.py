@@ -133,10 +133,7 @@ commands(
     ("perc", (1, 9)),
     baca.dynamic("ppp-ancora"),
     baca.make_repeat_tied_notes(),
-    baca.markup(
-        r"\baca-snare-drum-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-snare-drum-markup"),
     baca.staff_position(0),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
@@ -225,10 +222,7 @@ commands(
     krummzeit.displacement(),
     krummzeit.register_narrow(7, 5),
     baca.ottava(),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -264,10 +258,7 @@ commands(
     krummzeit.displacement(),
     krummzeit.register_narrow(6, 5),
     baca.ottava(),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -303,10 +294,7 @@ commands(
     ),
     krummzeit.displacement(),
     krummzeit.register_narrow(5, 4),
-    baca.markup(
-        r"\baca-pizz-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -349,10 +337,7 @@ commands(
 commands(
     ("perc", (14, 19)),
     baca.make_repeated_duration_notes([(1, 4)]),
-    baca.markup(
-        r"\baca-tam-tam-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-tam-tam-markup"),
     baca.staff_position(0),
 )
 
@@ -372,10 +357,7 @@ commands(
     baca.dynamic("fff"),
     krummzeit.clusters("low"),
     baca.ottava_bassa(),
-    baca.markup(
-        r"\baca-senza-pedale-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-senza-pedale-markup"),
 )
 
 commands(
@@ -405,10 +387,7 @@ commands(
 
 commands(
     ("va", (11, 12)),
-    baca.markup(
-        r"\baca-arco-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-arco-markup"),
     baca.dynamic("fff-poss"),
 )
 
@@ -419,10 +398,7 @@ commands(
 
 commands(
     (["vn", "vc"], (14, 16)),
-    baca.markup(
-        r"\baca-arco-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-arco-markup"),
 )
 
 commands(

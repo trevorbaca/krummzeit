@@ -151,10 +151,7 @@ commands(
     baca.clef("percussion"),
     baca.dynamic("f"),
     baca.instrument(krummzeit.instruments["Percussion"]),
-    baca.markup(
-        r"\baca-slate-scrape-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-slate-scrape-markup"),
     baca.staff_position(0),
 )
 
@@ -249,10 +246,7 @@ commands(
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.make_repeat_tied_notes(),
-    baca.markup(
-        r"\baca-snare-drum-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-snare-drum-markup"),
     baca.staff_position(0),
 )
 
@@ -356,10 +350,7 @@ commands(
         map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
-        baca.markup(
-            r"\baca-molto-flautando-markup",
-            literal=True,
-        ),
+        baca.markup(r"\baca-molto-flautando-markup"),
         measures=6,
     ),
 )
@@ -391,10 +382,7 @@ commands(
         map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
     baca.new(
-        baca.markup(
-            r"\baca-molto-flautando-markup",
-            literal=True,
-        ),
+        baca.markup(r"\baca-molto-flautando-markup"),
         measures=6,
     ),
 )
@@ -470,10 +458,7 @@ commands(
     ("perc", (34, 44)),
     baca.dynamic("ppp"),
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
-    baca.markup(
-        r"\krummzeit-fingertips-markup",
-        literal=True,
-    ),
+    baca.markup(r"\krummzeit-fingertips-markup"),
 )
 
 commands(
@@ -501,14 +486,8 @@ commands(
         "pp < fff",
         selector=baca.selectors.tleaves(),
     ),
-    baca.markup(
-        r"\baca-non-flautando-markup",
-        literal=True,
-    ),
-    baca.markup(
-        r"\krummzeit-show-tempo-markup",
-        literal=True,
-    ),
+    baca.markup(r"\baca-non-flautando-markup"),
+    baca.markup(r"\krummzeit-show-tempo-markup"),
 )
 
 ### VERTICAL ALIGNMENT ###

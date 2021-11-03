@@ -3,7 +3,6 @@
 \version "2.19.13"
 \language "english"
 
-#(ly:set-option 'relative-includes #t)
 \include "../stylesheet.ily"
 
 #(set-global-staff-size 14)

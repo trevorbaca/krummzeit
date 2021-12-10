@@ -1,7 +1,7 @@
 import abjad
 import baca
 
-from krummzeit import library as krummzeit
+from krummzeit import library
 
 #########################################################################################
 ######################################### 12 [J] ########################################
@@ -23,21 +23,21 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    krummzeit.segment_time_signatures["K"],
+    library.segment_time_signatures["K"],
     count=48,
 )
 time_signatures = maker_.run()
 
-score = krummzeit.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
-    metronome_marks=krummzeit.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -72,7 +72,7 @@ commands(
 
 commands(
     ("vn", (1, 40)),
-    krummzeit.closing_pizzicati(
+    library.closing_pizzicati(
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
         extra_counts=[2, 2, 1, 2, 4, 6],
         split=[6, 18],
@@ -81,7 +81,7 @@ commands(
 
 commands(
     ("va", (1, 4)),
-    krummzeit.closing_pizzicati(
+    library.closing_pizzicati(
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
         extra_counts=[3, 3, 2, 3, 5, 7],
         split=[8, 10],
@@ -123,7 +123,7 @@ commands(
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
 pcs = pcs[42:34:-1].transpose(4).invert()
 commands(
     baca.timeline(
@@ -147,8 +147,8 @@ commands(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.tuplet_bracket_staff_padding(2),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(6),
+    library.displacement(),
+    library.register_narrow(6),
 )
 
 commands(

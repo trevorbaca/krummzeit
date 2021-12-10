@@ -1,7 +1,7 @@
 import baca
 from abjadext import rmakers
 
-from krummzeit import library as krummzeit
+from krummzeit import library
 
 #########################################################################################
 ######################################### 06 [E] ########################################
@@ -36,21 +36,21 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    krummzeit.segment_time_signatures["F"],
+    library.segment_time_signatures["F"],
     count=35,
 )
 time_signatures = maker_.run()
 
-score = krummzeit.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
-    metronome_marks=krummzeit.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -97,25 +97,25 @@ commands(
 
 commands(
     ("ob", [(1, 8), (9, 10)]),
-    krummzeit.oboe_trills(),
+    library.oboe_trills(),
 )
 
 commands(
     ("cl", (1, 10)),
-    baca.instrument(krummzeit.instruments["ClarinetInEFlat"]),
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
     baca.make_repeated_duration_notes([(16, 4)]),
 )
 
 commands(
     (["pf", "vn", "va", "vc"], (9, 10)),
-    krummzeit.incise_chain_b(),
+    library.incise_chain_b(),
 )
 
 commands(
     ("perc", [(1, 14), (28, 34)]),
     baca.markup(r"\baca-suspended-cymbal-markup"),
     baca.staff_position(0),
-    krummzeit.sponge_rhythm(),
+    library.sponge_rhythm(),
 )
 
 commands(
@@ -125,7 +125,7 @@ commands(
 
 commands(
     ("vn", (12, 20)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             baca.selectors.tuplets(([5, 6], 7)),
@@ -135,7 +135,7 @@ commands(
 
 commands(
     ("va", (12, 20)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(baca.selectors.tuplets(([0, 1], 7))),
     ),
@@ -143,7 +143,7 @@ commands(
 
 commands(
     ("vc", (12, 20)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
         rmakers.force_rest(
             baca.selectors.tuplets(([2, 3], 7)),
@@ -153,12 +153,12 @@ commands(
 
 commands(
     ("ob", (12, 21)),
-    krummzeit.color_tuplets(),
+    library.color_tuplets(),
 )
 
 commands(
     ("cl", (12, 21)),
-    krummzeit.color_tuplets(
+    library.color_tuplets(
         rmakers.force_rest(baca.selectors.tuplet(0)),
         rotation=2,
     ),
@@ -167,30 +167,30 @@ commands(
 commands(
     ("pf", [17, (20, 26)]),
     baca.clef("treble"),
-    krummzeit.silver_points([(1, 2), (2, 1)]),
+    library.silver_points([(1, 2), (2, 1)]),
 )
 
 commands(
     ("perc", [17, (20, 26)]),
-    krummzeit.silver_points([(2, 1), (1, 2)]),
+    library.silver_points([(2, 1), (1, 2)]),
 )
 
 commands(
     ("perc", 17),
     baca.staff_lines(5),
     baca.clef("treble"),
-    baca.instrument(krummzeit.instruments["Xylophone"]),
+    baca.instrument(library.instruments["Xylophone"]),
 )
 
 commands(
     ("cl", (23, 24)),
-    baca.instrument(krummzeit.instruments["BassClarinet"]),
-    krummzeit.margin_markup("B. cl."),
+    baca.instrument(library.instruments["BassClarinet"]),
+    library.margin_markup("B. cl."),
 )
 
 commands(
     (["cl", "va", "vc"], (23, 24)),
-    krummzeit.rest_delimited_repeated_duration_notes((1, 2), 16),
+    library.rest_delimited_repeated_duration_notes((1, 2), 16),
 )
 
 commands(
@@ -200,17 +200,17 @@ commands(
         ("va", [(27, 30), (33, 35)]),
         ("vc", [(27, 30), (33, 35)]),
     ],
-    krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
+    library.rest_delimited_repeated_duration_notes((1, 4), 32),
 )
 
 commands(
     (["ob", "vn"], (29, 34)),
-    krummzeit.detached_triplets(),
+    library.detached_triplets(),
 )
 
 commands(
     ("pf", [(30, 31), (33, 34)]),
-    krummzeit.pizzicato_rhythm(
+    library.pizzicato_rhythm(
         rmakers.force_rest(
             baca.selectors.tuplets(([0, 4, 5], 6)),
         ),
@@ -223,7 +223,7 @@ commands(
     baca.pitch("B3"),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
 pcs_ = baca.Sequence(pcs)
 pcs_ = pcs_.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
@@ -241,16 +241,16 @@ commands(
             pcs_,
             selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
         ),
-        krummzeit.displacement(),
-        krummzeit.register_wide(5),
-        krummzeit.color_fingerings(),
+        library.displacement(),
+        library.register_wide(5),
+        library.color_fingerings(),
     ),
 )
 
 commands(
     ("pf", (9, 10)),
     baca.dynamic("ff"),
-    krummzeit.clusters("tenor"),
+    library.clusters("tenor"),
 )
 
 commands(
@@ -306,10 +306,10 @@ commands(
         baca.glissando(),
         map=baca.selectors.ntruns(),
     ),
-    krummzeit.color_fingerings(),
+    library.color_fingerings(),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-301).retrograde().transpose(10)
 commands(
     (strings, (12, 20)),
@@ -335,17 +335,17 @@ commands(
 
 commands(
     ("vn", (12, 20)),
-    krummzeit.register_narrow(5, 4),
+    library.register_narrow(5, 4),
 )
 
 commands(
     ("va", (12, 20)),
-    krummzeit.register_narrow(4, 3),
+    library.register_narrow(4, 3),
 )
 
 commands(
     ("vc", (12, 20)),
-    krummzeit.register_narrow(4, 2),
+    library.register_narrow(4, 2),
 )
 
 commands(
@@ -431,7 +431,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
 commands(
     ("pf", (30, 34)),
@@ -446,8 +446,8 @@ commands(
             pcs,
             selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
         ),
-        krummzeit.displacement(),
-        krummzeit.register_narrow(7),
+        library.displacement(),
+        library.register_narrow(7),
     ),
 )
 

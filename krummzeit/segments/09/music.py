@@ -2,7 +2,7 @@ import abjad
 import baca
 from abjadext import rmakers
 
-from krummzeit import library as krummzeit
+from krummzeit import library
 
 #########################################################################################
 ######################################### 09 [H] ########################################
@@ -20,21 +20,21 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    krummzeit.segment_time_signatures["I"],
+    library.segment_time_signatures["I"],
     count=10,
 )
 time_signatures = maker_.run()
 
-score = krummzeit.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
-    metronome_marks=krummzeit.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -57,43 +57,43 @@ commands(
 
 commands(
     ("vn", [(1, 2), (7, 10)]),
-    krummzeit.hypermeter_tuplets([(3, 2)], [2]),
+    library.hypermeter_tuplets([(3, 2)], [2]),
 )
 
 commands(
     ("va", [(1, 2), (7, 10)]),
-    krummzeit.hypermeter_tuplets([(1, 4)], [2]),
+    library.hypermeter_tuplets([(1, 4)], [2]),
 )
 
 commands(
     ("vc", [(1, 2), (7, 10)]),
-    krummzeit.hypermeter_tuplets([(2, 3)], [2]),
+    library.hypermeter_tuplets([(2, 3)], [2]),
 )
 
 commands(
     ("vn", (3, 5)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(1, 2), (2, 1), (1, 1, 1)], tie_across_divisions=abjad.index([1], 2)
     ),
 )
 
 commands(
     ("va", (3, 5)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(2, 1), (1, 1, 1), (1, 2)], tie_across_divisions=abjad.index([1], 2)
     ),
 )
 
 commands(
     ("vc", (3, 5)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(1, 1, 1), (1, 2), (2, 1)], tie_across_divisions=abjad.index([1], 2)
     ),
 )
 
 commands(
     ("pf", (1, 6)),
-    krummzeit.opening_triplets(),
+    library.opening_triplets(),
 )
 
 commands(
@@ -102,7 +102,7 @@ commands(
     baca.clef("treble"),
     baca.markup(r"\baca-crotale-markup"),
     baca.pitch("D5"),
-    krummzeit.left_remainder_quarters(rmakers.force_rest(baca.selectors.lt(0))),
+    library.left_remainder_quarters(rmakers.force_rest(baca.selectors.lt(0))),
 )
 
 commands(
@@ -115,43 +115,43 @@ commands(
 
 commands(
     ("cl", 4),
-    baca.instrument(krummzeit.instruments["ClarinetInEFlat"]),
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
 )
 
 commands(
     ("ob", (8, 10)),
-    krummzeit.hypermeter_tuplets([(3, 2)], counts=[2]),
+    library.hypermeter_tuplets([(3, 2)], counts=[2]),
 )
 
 commands(
     ("cl", (8, 10)),
-    baca.instrument(krummzeit.instruments["BassClarinet"]),
-    krummzeit.hypermeter_tuplets([(1, 4)], counts=[2]),
+    baca.instrument(library.instruments["BassClarinet"]),
+    library.hypermeter_tuplets([(1, 4)], counts=[2]),
 )
 
 commands(
     ("pf", (9, 10)),
-    baca.instrument(krummzeit.instruments["Piano"]),
-    krummzeit.hypermeter_tuplets([(3, 4)], counts=[2]),
-    krummzeit.margin_markup("Pf."),
+    baca.instrument(library.instruments["Piano"]),
+    library.hypermeter_tuplets([(3, 4)], counts=[2]),
+    library.margin_markup("Pf."),
 )
 
 commands(
     ("perc", (9, 10)),
-    baca.instrument(krummzeit.instruments["Xylophone"]),
-    krummzeit.hypermeter_tuplets([(1, 6)], counts=[2]),
+    baca.instrument(library.instruments["Xylophone"]),
+    library.hypermeter_tuplets([(1, 6)], counts=[2]),
 )
 
 commands(
     ("pf", (1, 6)),
-    krummzeit.clusters("harpsichord"),
+    library.clusters("harpsichord"),
 )
 
 commands(
     ("pf", (1, 6)),
     baca.clef("treble"),
-    baca.instrument(krummzeit.instruments["Harpsichord"]),
-    krummzeit.margin_markup("Hpschd."),
+    baca.instrument(library.instruments["Harpsichord"]),
+    library.margin_markup("Hpschd."),
 )
 
 commands(
@@ -181,7 +181,7 @@ commands(
     baca.accent(selector=baca.selectors.pheads()),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 commands(
     baca.timeline(
@@ -207,24 +207,24 @@ commands(
 commands(
     ("vn", (3, 5)),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_wide(4),
+        library.displacement(),
+        library.register_wide(4),
     ),
 )
 
 commands(
     ("va", (3, 5)),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_narrow(3),
+        library.displacement(),
+        library.register_narrow(3),
     ),
 )
 
 commands(
     ("vc", (3, 5)),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_narrow(2),
+        library.displacement(),
+        library.register_narrow(2),
     ),
 )
 
@@ -242,14 +242,14 @@ commands(
 commands(
     ("ob", (8, 10)),
     baca.pitch("Eb5"),
-    krummzeit.color_fingerings(),
+    library.color_fingerings(),
 )
 
 commands(
     ("cl", (8, 10)),
     baca.dynamic("ff"),
     baca.pitch("Eb2"),
-    krummzeit.color_fingerings(),
+    library.color_fingerings(),
 )
 
 commands(

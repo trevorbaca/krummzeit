@@ -1,7 +1,7 @@
 import baca
 from abjadext import rmakers
 
-from krummzeit import library as krummzeit
+from krummzeit import library
 
 #########################################################################################
 ######################################### 01 [_] ########################################
@@ -19,21 +19,21 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    krummzeit.segment_time_signatures["A"],
+    library.segment_time_signatures["A"],
     count=13,
 )
 time_signatures = maker_.run()
 
-score = krummzeit.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
-    metronome_marks=krummzeit.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -80,7 +80,7 @@ commands(
 commands(
     "ob",
     baca.suite(
-        krummzeit.margin_markup("Ob."),
+        library.margin_markup("Ob."),
         baca.start_markup("Oboe", hcenter_in=16),
     ),
 )
@@ -88,7 +88,7 @@ commands(
 commands(
     "cl",
     baca.suite(
-        krummzeit.margin_markup("B. cl."),
+        library.margin_markup("B. cl."),
         baca.start_markup("Bass clarinet", hcenter_in=16),
     ),
 )
@@ -97,7 +97,7 @@ commands(
     "pf",
     baca.clef("bass"),
     baca.suite(
-        krummzeit.margin_markup("Pf."),
+        library.margin_markup("Pf."),
         baca.start_markup("Piano", hcenter_in=16),
     ),
 )
@@ -105,7 +105,7 @@ commands(
 commands(
     "perc",
     baca.suite(
-        krummzeit.margin_markup("Perc."),
+        library.margin_markup("Perc."),
         baca.start_markup("Percussion", hcenter_in=16),
     ),
 )
@@ -113,7 +113,7 @@ commands(
 commands(
     "vn",
     baca.suite(
-        krummzeit.margin_markup("Vn."),
+        library.margin_markup("Vn."),
         baca.start_markup("Violin", hcenter_in=16),
     ),
 )
@@ -121,7 +121,7 @@ commands(
 commands(
     "va",
     baca.suite(
-        krummzeit.margin_markup("Va."),
+        library.margin_markup("Va."),
         baca.start_markup("Viola", hcenter_in=16),
     ),
 )
@@ -129,21 +129,21 @@ commands(
 commands(
     "vc",
     baca.suite(
-        krummzeit.margin_markup("Vc."),
+        library.margin_markup("Vc."),
         baca.start_markup("Cello", hcenter_in=16),
     ),
 )
 
 commands(
     (["vn", "va", "vc"], (1, 2)),
-    krummzeit.opening_triplets(
+    library.opening_triplets(
         rmakers.force_rest(baca.selectors.tuplet(0)),
     ),
 )
 
 commands(
     ("vn", (4, 8)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             baca.selectors.tuplets(([5, 6], 7)),
@@ -153,7 +153,7 @@ commands(
 
 commands(
     ("va", (4, 8)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(
             baca.selectors.tuplets(([0, 1], 7)),
@@ -163,7 +163,7 @@ commands(
 
 commands(
     ("vc", (4, 8)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
         rmakers.force_rest(
             baca.selectors.tuplets(([2, 3], 7)),
@@ -182,8 +182,8 @@ commands(
     ("pf", 4),
     baca.dynamic("fff"),
     baca.markup(r"\krummzeit-catch-resonance-markup"),
-    krummzeit.clusters("tenor"),
-    krummzeit.single_cluster_piano_rhythm(),
+    library.clusters("tenor"),
+    library.single_cluster_piano_rhythm(),
 )
 
 commands(
@@ -220,9 +220,9 @@ commands(
     baca.dynamic('"ff"'),
     baca.markup(r"\baca-sponges-markup"),
     baca.staff_position(0),
-    krummzeit.instrument("Percussion"),
+    library.instrument("Percussion"),
     baca.markup(r"\krummzeit-accent-changes-markup"),
-    krummzeit.sponge_rhythm(),
+    library.sponge_rhythm(),
 )
 
 commands(
@@ -248,7 +248,7 @@ commands(
     ),
 )
 
-pcs = krummzeit.violet_pitch_classes.get_payload()
+pcs = library.violet_pitch_classes.get_payload()
 pcs = baca.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
 commands(
     baca.timeline(
@@ -281,17 +281,17 @@ commands(
 
 commands(
     ("vn", (4, 8)),
-    krummzeit.register_narrow(5, 4),
+    library.register_narrow(5, 4),
 )
 
 commands(
     ("va", (4, 8)),
-    krummzeit.register_narrow(4, 3),
+    library.register_narrow(4, 3),
 )
 
 commands(
     ("vc", (4, 8)),
-    krummzeit.register_narrow(4, 3),
+    library.register_narrow(4, 3),
 )
 
 commands(

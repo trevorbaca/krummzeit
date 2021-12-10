@@ -2,7 +2,7 @@ import abjad
 import baca
 from abjadext import rmakers
 
-from krummzeit import library as krummzeit
+from krummzeit import library
 
 #########################################################################################
 ######################################### 07 [F] ########################################
@@ -26,21 +26,21 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    krummzeit.segment_time_signatures["G"],
+    library.segment_time_signatures["G"],
     count=22,
 )
 time_signatures = maker_.run()
 
-score = krummzeit.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
-    metronome_marks=krummzeit.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -59,7 +59,7 @@ commands(
 
 commands(
     (["va", "vc"], (2, 6)),
-    krummzeit.rest_delimited_repeated_duration_notes((1, 4), 32),
+    library.rest_delimited_repeated_duration_notes((1, 4), 32),
 )
 
 commands(
@@ -89,23 +89,23 @@ commands(
 
 commands(
     ("pf", 4),
-    baca.instrument(krummzeit.instruments["Harpsichord"]),
-    krummzeit.margin_markup("Hpschd."),
+    baca.instrument(library.instruments["Harpsichord"]),
+    library.margin_markup("Hpschd."),
 )
 
 commands(
     ("pf", [(4, 9), 13, 16]),
-    krummzeit.silver_points([(1, 2), (2, 1)]),
+    library.silver_points([(1, 2), (2, 1)]),
 )
 
 commands(
     ("vn", (7, 19)),
-    krummzeit.hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
+    library.hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
 )
 
 commands(
     ("va", (7, 19)),
-    krummzeit.hypermeter_tuplets(
+    library.hypermeter_tuplets(
         [(1, 6)],
         [2, 2, 2, 2, 2, 3],
         rmakers.force_rest(
@@ -116,7 +116,7 @@ commands(
 
 commands(
     ("vc", (7, 19)),
-    krummzeit.hypermeter_tuplets(
+    library.hypermeter_tuplets(
         [(6, 1)],
         [2, 2, 2, 2, 2, 3],
         rmakers.force_rest(
@@ -127,7 +127,7 @@ commands(
 
 commands(
     ("ob", (4, 10)),
-    krummzeit.polyphony(
+    library.polyphony(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -139,8 +139,8 @@ commands(
 
 commands(
     ("cl", (4, 10)),
-    baca.instrument(krummzeit.instruments["ClarinetInEFlat"]),
-    krummzeit.polyphony(
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    library.polyphony(
         durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -152,7 +152,7 @@ commands(
 
 commands(
     ("cl", (16, 22)),
-    baca.instrument(krummzeit.instruments["BassClarinet"]),
+    baca.instrument(library.instruments["BassClarinet"]),
     baca.make_repeat_tied_notes(),
 )
 
@@ -235,7 +235,7 @@ commands(
     baca.pitch("B1"),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
 pcs = pcs.transpose(2)
 commands(
     baca.timeline(
@@ -253,17 +253,17 @@ commands(
 
 commands(
     ("pf", (4, 16)),
-    krummzeit.displacement(),
+    library.displacement(),
 )
 
 commands(
     (["ob", "cl"], (1, 12)),
-    krummzeit.displacement(),
+    library.displacement(),
 )
 
 commands(
     ("pf", (4, 9)),
-    krummzeit.register_narrow(5, 3),
+    library.register_narrow(5, 3),
 )
 
 commands(
@@ -273,24 +273,24 @@ commands(
 
 commands(
     ("pf", 13),
-    krummzeit.register_narrow(3),
+    library.register_narrow(3),
 )
 
 commands(
     ("pf", 16),
-    krummzeit.register_narrow(2),
+    library.register_narrow(2),
 )
 
 commands(
     ("cl", (4, 10)),
     baca.hairpin("p < ff"),
-    krummzeit.register_narrow(4, 6),
+    library.register_narrow(4, 6),
 )
 
 commands(
     ("ob", (4, 10)),
     baca.hairpin("p < ff"),
-    krummzeit.register_narrow(6, 4),
+    library.register_narrow(6, 4),
 )
 
 commands(

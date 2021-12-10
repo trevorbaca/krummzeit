@@ -1,7 +1,7 @@
 import abjad
 import baca
 
-from krummzeit import library as krummzeit
+from krummzeit import library
 
 #########################################################################################
 ######################################### 03 [B] ########################################
@@ -30,21 +30,21 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    krummzeit.segment_time_signatures["C"],
+    library.segment_time_signatures["C"],
     count=44,
 )
 time_signatures = maker_.run()
 
-score = krummzeit.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
-    metronome_marks=krummzeit.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -131,12 +131,12 @@ commands(
 
 commands(
     ("ob", [(1, 4), 6, (24, 28), 30, (32, 35)]),
-    krummzeit.pizzicato_rhythm(),
+    library.pizzicato_rhythm(),
 )
 
 commands(
     ("cl", [(1, 4), (24, 28), 30, (32, 35)]),
-    krummzeit.white_rhythm([(3, 8)], abjad.Right, do_not_burnish=True),
+    library.white_rhythm([(3, 8)], abjad.Right, do_not_burnish=True),
 )
 
 commands(
@@ -150,7 +150,7 @@ commands(
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.dynamic("f"),
-    baca.instrument(krummzeit.instruments["Percussion"]),
+    baca.instrument(library.instruments["Percussion"]),
     baca.markup(r"\baca-slate-scrape-markup"),
     baca.staff_position(0),
 )
@@ -162,62 +162,62 @@ commands(
 
 commands(
     ("va", 6),
-    krummzeit.single_division_tuplets([(2, 1)]),
+    library.single_division_tuplets([(2, 1)]),
 )
 
 commands(
     ("va", 8),
-    krummzeit.single_division_tuplets([(1, 4)]),
+    library.single_division_tuplets([(1, 4)]),
 )
 
 commands(
     ("va", 10),
-    krummzeit.single_division_tuplets([(2, 1)]),
+    library.single_division_tuplets([(2, 1)]),
 )
 
 commands(
     ("va", 12),
-    krummzeit.single_division_tuplets([(1, 4)]),
+    library.single_division_tuplets([(1, 4)]),
 )
 
 commands(
     ("va", (14, 23)),
-    krummzeit.single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
+    library.single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
 )
 
 commands(
     ("vc", 6),
-    krummzeit.single_division_tuplets([(1, 4)]),
+    library.single_division_tuplets([(1, 4)]),
 )
 
 commands(
     ("vc", 8),
-    krummzeit.single_division_tuplets([(2, 1)]),
+    library.single_division_tuplets([(2, 1)]),
 )
 
 commands(
     ("vc", 10),
-    krummzeit.single_division_tuplets([(1, 4)]),
+    library.single_division_tuplets([(1, 4)]),
 )
 
 commands(
     ("vc", 12),
-    krummzeit.single_division_tuplets([(2, 1)]),
+    library.single_division_tuplets([(2, 1)]),
 )
 
 commands(
     ("vc", (14, 23)),
-    krummzeit.single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
+    library.single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
 )
 
 commands(
     ("pf", [14, 18, 28, (32, 33)]),
-    krummzeit.silver_points([(1, 2)]),
+    library.silver_points([(1, 2)]),
 )
 
 commands(
     ("pf", [16, 20, 30, (34, 35)]),
-    krummzeit.silver_points([(2, 1)]),
+    library.silver_points([(2, 1)]),
 )
 
 commands(
@@ -227,18 +227,18 @@ commands(
 
 commands(
     ("perc", [14, 18, 28, (32, 33)]),
-    krummzeit.silver_points([(2, 1)]),
+    library.silver_points([(2, 1)]),
 )
 
 commands(
     ("perc", [14, 28]),
-    baca.instrument(krummzeit.instruments["Xylophone"]),
+    baca.instrument(library.instruments["Xylophone"]),
     baca.clef("treble"),
 )
 
 commands(
     ("perc", [16, 20, 30]),
-    krummzeit.silver_points([(1, 2)]),
+    library.silver_points([(1, 2)]),
 )
 
 commands(
@@ -254,26 +254,26 @@ commands(
     ("vn", (22, 28)),
     baca.staff_lines(5),
     baca.clef("treble"),
-    baca.instrument(krummzeit.instruments["Violin"]),
-    krummzeit.pizzicato_rhythm(),
+    baca.instrument(library.instruments["Violin"]),
+    library.pizzicato_rhythm(),
 )
 
 commands(
     ("va", (32, 42)),
-    krummzeit.fused_expanse([(1, 1), (2, 1), (3, 2)]),
+    library.fused_expanse([(1, 1), (2, 1), (3, 2)]),
 )
 
 commands(
     ("vc", (32, 42)),
-    krummzeit.fused_expanse([(2, 1), (3, 2), (1, 1)]),
+    library.fused_expanse([(2, 1), (3, 2), (1, 1)]),
 )
 
 commands(
     ("vn", (36, 42)),
-    krummzeit.fused_expanse([(3, 2), (1, 1), (2, 1)]),
+    library.fused_expanse([(3, 2), (1, 1), (2, 1)]),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
 pcs_ = baca.Sequence(pcs)
 pcs_ = pcs_.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
@@ -295,9 +295,9 @@ commands(
         .plts(exclude=baca.const.HIDDEN)
         .filter_preprolated(">=", (1, 4)),
     ),
-    krummzeit.color_fingerings(),
-    krummzeit.displacement(),
-    krummzeit.register_wide(5),
+    library.color_fingerings(),
+    library.displacement(),
+    library.register_wide(5),
 )
 
 commands(
@@ -387,7 +387,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(3)
 pcs_ = baca.Sequence(pcs)
 pcs_ = pcs_.repeat_by([1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
@@ -415,8 +415,8 @@ commands(
             baca.deviation([0, 0.5, 0, -0.5]),
             map=lambda _: baca.Selection(_).ltqruns().filter_length(">", 1),
         ),
-        krummzeit.displacement(),
-        krummzeit.register_wide(5),
+        library.displacement(),
+        library.register_wide(5),
     ),
 )
 

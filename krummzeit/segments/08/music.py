@@ -2,7 +2,7 @@ import abjad
 import baca
 from abjadext import rmakers
 
-from krummzeit import library as krummzeit
+from krummzeit import library
 
 #########################################################################################
 ######################################### 08 [G] ########################################
@@ -32,21 +32,21 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    krummzeit.segment_time_signatures["H"],
+    library.segment_time_signatures["H"],
     count=24,
 )
 time_signatures = maker_.run()
 
-score = krummzeit.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
-    metronome_marks=krummzeit.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -78,7 +78,7 @@ commands(
 
 commands(
     ("ob", (9, 12)),
-    krummzeit.polyphony(
+    library.polyphony(
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -90,7 +90,7 @@ commands(
 
 commands(
     ("ob", (18, 23)),
-    krummzeit.hypermeter_tuplets([(3, 2), (1, 4)], [2]),
+    library.hypermeter_tuplets([(3, 2), (1, 4)], [2]),
 )
 
 commands(
@@ -100,8 +100,8 @@ commands(
 
 commands(
     ("cl", (9, 12)),
-    baca.instrument(krummzeit.instruments["ClarinetInEFlat"]),
-    krummzeit.polyphony(
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    library.polyphony(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -113,14 +113,14 @@ commands(
 
 commands(
     ("cl", (18, 23)),
-    baca.instrument(krummzeit.instruments["BassClarinet"]),
-    krummzeit.hypermeter_tuplets([(1, 3), (1, 1)]),
+    baca.instrument(library.instruments["BassClarinet"]),
+    library.hypermeter_tuplets([(1, 3), (1, 1)]),
 )
 
 commands(
     ("pf", (5, 11)),
     baca.clef("treble"),
-    krummzeit.polyphony(
+    library.polyphony(
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -132,10 +132,10 @@ commands(
 
 commands(
     ("pf", (14, 20)),
-    baca.instrument(krummzeit.instruments["Piano"]),
+    baca.instrument(library.instruments["Piano"]),
     baca.clef("bass"),
-    krummzeit.margin_markup("Pf."),
-    krummzeit.piano_harmonics(
+    library.margin_markup("Pf."),
+    library.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(baca.selectors.plts(([5, 6], 7))),
         tie_across_divisions=abjad.index([1], 2),
@@ -155,7 +155,7 @@ commands(
 
 commands(
     ("vn", (5, 12)),
-    krummzeit.polyphony(
+    library.polyphony(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -167,7 +167,7 @@ commands(
 
 commands(
     ("vn", (14, 20)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(1, 2), (2, 1), (1, 1, 1)],
         tie_across_divisions=abjad.index([1], 2),
     ),
@@ -175,7 +175,7 @@ commands(
 
 commands(
     ("va", (14, 19)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(2, 1), (1, 1, 1), (1, 2)],
         tie_across_divisions=abjad.index([1], 2),
     ),
@@ -183,7 +183,7 @@ commands(
 
 commands(
     ("vc", (14, 20)),
-    krummzeit.glissando_rhythm(
+    library.glissando_rhythm(
         [(1, 1, 1), (1, 2), (2, 1)],
         tie_across_divisions=abjad.index([1], 2),
     ),
@@ -191,14 +191,14 @@ commands(
 
 commands(
     ("va", (1, 7)),
-    krummzeit.fused_expanse(
+    library.fused_expanse(
         [(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
     ),
 )
 
 commands(
     ("vc", (1, 9)),
-    krummzeit.fused_expanse(
+    library.fused_expanse(
         [
             (3, 4),
             (4, 4),
@@ -215,27 +215,27 @@ commands(
 
 commands(
     ("va", (11, 12)),
-    krummzeit.hypermeter_tuplets([(1, 4)]),
+    library.hypermeter_tuplets([(1, 4)]),
 )
 
 commands(
     ("vc", (11, 12)),
-    krummzeit.hypermeter_tuplets([(3, 2)]),
+    library.hypermeter_tuplets([(3, 2)]),
 )
 
 commands(
     ("vn", (21, 23)),
-    krummzeit.hypermeter_tuplets([(3, 2)], [3]),
+    library.hypermeter_tuplets([(3, 2)], [3]),
 )
 
 commands(
     ("va", (20, 23)),
-    krummzeit.hypermeter_tuplets([(1, 4)], [2]),
+    library.hypermeter_tuplets([(1, 4)], [2]),
 )
 
 commands(
     ("vc", (21, 23)),
-    krummzeit.hypermeter_tuplets([(1, 4)], [3]),
+    library.hypermeter_tuplets([(1, 4)], [3]),
 )
 
 commands(
@@ -281,7 +281,7 @@ commands(
     baca.pitch("B3"),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
 pcs = pcs[:20].transpose(3)
 commands(
     baca.timeline(
@@ -306,24 +306,24 @@ commands(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
     ),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_wide(5),
+        library.displacement(),
+        library.register_wide(5),
     ),
 )
 
 commands(
     ("vn", (5, 12)),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_wide(6),
+        library.displacement(),
+        library.register_wide(6),
     ),
 )
 
 commands(
     (["ob", "cl"], (5, 12)),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_wide(5),
+        library.displacement(),
+        library.register_wide(5),
     ),
 )
 
@@ -380,7 +380,7 @@ commands(
     baca.pitch("C4"),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 commands(
     baca.timeline(
@@ -421,24 +421,24 @@ commands(
 commands(
     ("vn", (14, 20)),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_wide(4),
+        library.displacement(),
+        library.register_wide(4),
     ),
 )
 
 commands(
     ("va", (14, 19)),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_narrow(3),
+        library.displacement(),
+        library.register_narrow(3),
     ),
 )
 
 commands(
     ("vc", (14, 20)),
     baca.suite(
-        krummzeit.displacement(),
-        krummzeit.register_narrow(2),
+        library.displacement(),
+        library.register_narrow(2),
     ),
 )
 
@@ -449,14 +449,14 @@ commands(
         selector=baca.selectors.tleaves(),
     ),
     baca.pitch("C2"),
-    krummzeit.color_fingerings(),
+    library.color_fingerings(),
 )
 
 commands(
     ("ob", (18, 24)),
     baca.dynamic("f"),
     baca.pitch("C4"),
-    krummzeit.color_fingerings(),
+    library.color_fingerings(),
 )
 
 commands(

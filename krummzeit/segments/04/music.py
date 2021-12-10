@@ -1,6 +1,6 @@
 import baca
 
-from krummzeit import library as krummzeit
+from krummzeit import library
 
 #########################################################################################
 ######################################### 04 [C] ########################################
@@ -22,21 +22,21 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    krummzeit.segment_time_signatures["D"],
+    library.segment_time_signatures["D"],
     count=19,
 )
 time_signatures = maker_.run()
 
-score = krummzeit.make_empty_score()
+score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.segment_accumulation_defaults(),
-    instruments=krummzeit.instruments,
-    margin_markups=krummzeit.margin_markups,
-    metronome_marks=krummzeit.metronome_marks,
+    instruments=library.instruments,
+    margin_markups=library.margin_markups,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
-    voice_abbreviations=krummzeit.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations,
     voice_names=voice_names,
 )
 
@@ -140,7 +140,7 @@ commands(
 
 commands(
     ("pf", [1, 3, 5]),
-    krummzeit.silver_points(
+    library.silver_points(
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
     ),
@@ -148,7 +148,7 @@ commands(
 
 commands(
     ("vn", [5, 7, 9]),
-    krummzeit.silver_points(
+    library.silver_points(
         [(5, 4)],
         tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
     ),
@@ -156,7 +156,7 @@ commands(
 
 commands(
     ("va", [5, 7, 9]),
-    krummzeit.silver_points(
+    library.silver_points(
         [(2, 7)],
         tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
     ),
@@ -164,13 +164,13 @@ commands(
 
 commands(
     ("vc", [5, 7, 9]),
-    krummzeit.silver_points(
+    library.silver_points(
         [(7, 2)],
         tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
     ),
 )
 
-pcs = baca.PitchClassSegment(krummzeit.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 commands(
     baca.timeline(
@@ -190,8 +190,8 @@ commands(
 commands(
     ("pf", 1),
     baca.hairpin("ff > pp"),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(7, 5),
+    library.displacement(),
+    library.register_narrow(7, 5),
     baca.ottava(),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
@@ -199,8 +199,8 @@ commands(
 commands(
     ("pf", 3),
     baca.hairpin("pp < ff"),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(5, 3),
+    library.displacement(),
+    library.register_narrow(5, 3),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -208,8 +208,8 @@ commands(
     ("pf", 5),
     baca.clef("bass"),
     baca.hairpin("ff > pp"),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(3, 2),
+    library.displacement(),
+    library.register_narrow(3, 2),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -219,8 +219,8 @@ commands(
         "ff > pp",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(7, 5),
+    library.displacement(),
+    library.register_narrow(7, 5),
     baca.ottava(),
     baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
@@ -232,8 +232,8 @@ commands(
         "pp < ff",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(5, 4),
+    library.displacement(),
+    library.register_narrow(5, 4),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -243,8 +243,8 @@ commands(
         "ff > pp",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(5, 4),
+    library.displacement(),
+    library.register_narrow(5, 4),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -255,8 +255,8 @@ commands(
         "ff > pp",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(6, 5),
+    library.displacement(),
+    library.register_narrow(6, 5),
     baca.ottava(),
     baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
@@ -268,8 +268,8 @@ commands(
         "pp < ff",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(5, 4),
+    library.displacement(),
+    library.register_narrow(5, 4),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -280,8 +280,8 @@ commands(
         "ff > pp",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(4, 2),
+    library.displacement(),
+    library.register_narrow(4, 2),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -292,8 +292,8 @@ commands(
         "ff > pp",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(5, 4),
+    library.displacement(),
+    library.register_narrow(5, 4),
     baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
@@ -305,8 +305,8 @@ commands(
         "pp < ff",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(4, 3),
+    library.displacement(),
+    library.register_narrow(4, 3),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
@@ -330,7 +330,7 @@ commands(
 
 commands(
     ("cl", (14, 19)),
-    baca.instrument(krummzeit.instruments["BassClarinet"]),
+    baca.instrument(library.instruments["BassClarinet"]),
     baca.make_repeat_tied_notes(),
 )
 
@@ -347,15 +347,15 @@ commands(
         "ff > pp",
         selector=baca.selectors.tleaves(),
     ),
-    krummzeit.displacement(),
-    krummzeit.register_narrow(3, 2),
+    library.displacement(),
+    library.register_narrow(3, 2),
     baca.staccatissimo(selector=baca.selectors.pheads()),
 )
 
 commands(
     ("pf", (9, 12)),
     baca.dynamic("fff"),
-    krummzeit.clusters("low"),
+    library.clusters("low"),
     baca.ottava_bassa(),
     baca.markup(r"\baca-senza-pedale-markup"),
 )
@@ -363,7 +363,7 @@ commands(
 commands(
     ("pf", (14, 16)),
     baca.dynamic("fff"),
-    krummzeit.clusters("low"),
+    library.clusters("low"),
     baca.ottava_bassa(),
 )
 

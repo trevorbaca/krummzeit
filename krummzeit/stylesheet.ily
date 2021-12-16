@@ -37,27 +37,6 @@
     top-margin = 10\mm
 }
 
-\header {
-    composer = \markup {
-        \override #'(font-name . "Palatino")
-        \fontsize #5 "Trevor Bača"
-    }
-    tagline = \markup { "" }
-    title = \markup \column {
-        \center-align {
-            \override #'(font-name . "Palatino")
-            \fontsize #14 {
-               \line { KRUMMZEIT }
-            }
-            " "
-            \override #'(font-name . "Palatino Italic")
-            \fontsize #3 {
-               " for Ensemble Mosaik "
-            }
-        }
-    }
-}
-
 \layout {
     \accidentalStyle neo-modern
     indent = 0

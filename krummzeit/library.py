@@ -1,4 +1,6 @@
+import dataclasses
 import inspect
+import typing
 
 import abjad
 import baca
@@ -354,55 +356,28 @@ maker = baca.ZaggedPitchClassMaker(
 )
 violet_pitch_classes = maker()
 
-# command class
 
-
+@dataclasses.dataclass
 class RegisterTransitionCommand(baca.Command):
     """
     Register transition command.
     """
 
-    ### CLASS VARIABLES ###
+    selector: typing.Any = baca.selectors.leaves()
+    start_registration: typing.Any = None
+    stop_registration: typing.Any = None
 
-    __slots__ = ("_start_registration", "_stop_registration")
-
-    ### INITIALIZER ###
-
-    def __init__(
-        self,
-        *,
-        match=None,
-        measures=None,
-        scope=None,
-        selector=baca.selectors.leaves(),
-        start_registration=None,
-        stop_registration=None,
-    ):
-        baca.Command.__init__(
-            self,
-            match=match,
-            measures=measures,
-            scope=scope,
-            selector=selector,
-        )
-        if start_registration is not None:
-            assert isinstance(start_registration, baca.Registration)
-        self._start_registration = start_registration
-        if stop_registration is not None:
-            assert isinstance(stop_registration, baca.Registration)
-        self._stop_registration = stop_registration
-        start_length = len(start_registration.components)
-        stop_length = len(stop_registration.components)
+    def __post_init__(self):
+        baca.Command.__post_init__(self)
+        if self.start_registration is not None:
+            assert isinstance(self.start_registration, baca.Registration)
+        if self.stop_registration is not None:
+            assert isinstance(self.stop_registration, baca.Registration)
+        start_length = len(self.start_registration.components)
+        stop_length = len(self.stop_registration.components)
         assert start_length == stop_length, repr(start_length, stop_length)
 
-    ### SPECIAL METHODS ###
-
     def __call__(self, argument=None, runtime=None):
-        """
-        Calls command on ``argument``.
-
-        Returns none.
-        """
         self._runtime = runtime
         if argument is None:
             return
@@ -419,8 +394,6 @@ class RegisterTransitionCommand(baca.Command):
             for pleaf in plt:
                 pitches = registration([pleaf.written_pitch])
                 self._set_pitch(pleaf, pitches[0])
-
-    ### PRIVATE METHODS ###
 
     def _make_registration(self, offset, timespan):
         assert offset in timespan
@@ -460,33 +433,6 @@ class RegisterTransitionCommand(baca.Command):
     def _set_pitch(pleaf, pitch):
         pleaf.written_pitch = pitch
         abjad.detach("not yet registered", pleaf)
-
-    ### PUBLIC PROPERTIES ###
-
-    @property
-    def start_registration(self):
-        """
-        Gets start registration.
-
-        Set to registration.
-
-        Returns registration.
-        """
-        return self._start_registration
-
-    @property
-    def stop_registration(self):
-        """
-        Gets stop registration.
-
-        Set to registration.
-
-        Returns registration.
-        """
-        return self._stop_registration
-
-
-# functions
 
 
 def closing_pizzicati(counts, extra_counts, split):

@@ -483,7 +483,7 @@ def color_tuplets(*commands, rotation=0):
         selection = [
             baca.Selection(_).leaves()[-1:].rleak().pleaves() for _ in selection
         ]
-        selection = baca.Selection(selection).filter_length("==", 2)
+        selection = baca.Selection(selection).filter(lambda _: len(_) == 2)
         selection = [baca.Selection(_).leaf(0) for _ in selection]
         return baca.Selection(selection)
 
@@ -745,7 +745,7 @@ def piano_harmonics(division_ratios, *commands, tie_across_divisions=None):
             selection = [
                 baca.Selection(_).leaves()[-1:].rleak().pleaves() for _ in selection
             ]
-            selection = baca.Selection(selection).filter_length("==", 2)
+            selection = baca.Selection(selection).filter(lambda _: len(_) == 2)
             selection = [baca.Selection(_).leaf(0) for _ in selection]
             return baca.Selection(selection)
 

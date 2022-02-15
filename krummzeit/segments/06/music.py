@@ -1,3 +1,4 @@
+import abjad
 import baca
 from abjadext import rmakers
 
@@ -234,7 +235,9 @@ commands(
         baca.trill_spanner(),
         map=lambda _: baca.Selection(_)
         .plts(exclude=baca.const.HIDDEN)
-        .filter_preprolated(">=", (1, 4)),
+        .filter(
+            lambda _: abjad.get.duration(_, preprolated=True) >= abjad.Duration(1, 4)
+        ),
     ),
     baca.suite(
         baca.pitches(

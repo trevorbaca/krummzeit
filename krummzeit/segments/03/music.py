@@ -293,7 +293,9 @@ commands(
         baca.trill_spanner(),
         map=lambda _: baca.Selection(_)
         .plts(exclude=baca.const.HIDDEN)
-        .filter_preprolated(">=", (1, 4)),
+        .filter(
+            lambda _: abjad.get.duration(_, preprolated=True) >= abjad.Duration(1, 4)
+        ),
     ),
     library.color_fingerings(),
     library.displacement(),
@@ -404,7 +406,11 @@ commands(
     baca.dynamic("ff"),
     baca.new(
         baca.trill_spanner(),
-        map=lambda _: baca.Selection(_).plts().filter_preprolated(">=", (1, 4)),
+        map=lambda _: baca.Selection(_)
+        .plts()
+        .filter(
+            lambda _: abjad.get.duration(_, preprolated=True) >= abjad.Duration(1, 4)
+        ),
     ),
     baca.suite(
         baca.new(

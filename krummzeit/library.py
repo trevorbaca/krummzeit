@@ -109,11 +109,10 @@ metronome_marks = dict(
 
 
 def make_numerators(numerators, addenda):
-    numerators = baca.Sequence(numerators)
     numerators = baca.sequence.helianthate(numerators, -1, 1)
-    numerators = numerators.flatten()
+    numerators = abjad.Sequence(numerators).flatten()
     length = len(numerators)
-    addenda = baca.Sequence(addenda).repeat_to_length(length)
+    addenda = abjad.Sequence(addenda).repeat_to_length(length)
     pairs = zip(numerators, addenda)
     numerators = [sum(_) for _ in pairs]
     return numerators
@@ -134,7 +133,7 @@ numerators = numerators + numerators
 assert len(numerators) == 236 and sum(numerators) == 928
 
 ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
-numerator_lists = baca.Sequence(numerators)
+numerator_lists = abjad.Sequence(numerators)
 numerator_lists = numerator_lists.partition_by_ratio_of_weights(weights=ratio)
 assert len(numerator_lists) == 12
 
@@ -177,7 +176,7 @@ segment_time_signatures = dict()
 
 ### B ###
 lists = time_signature_inventory[:3]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 64
 # repeat first 11 time signatures
 time_signatures = list(time_signatures_)
@@ -188,7 +187,7 @@ segment_time_signatures["B"] = time_signatures
 
 ### E ###
 lists = time_signature_inventory[3:5]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 48
 time_signatures = list(time_signatures_)
 segment_time_signatures["E"] = time_signatures
@@ -196,7 +195,7 @@ segment_time_signatures["E"] = time_signatures
 
 ### K ###
 # time_signatures = time_signature_inventory[9:]
-# time_signatures = baca.Sequence(time_signatures).flatten()
+# time_signatures = abjad.Sequence(time_signatures).flatten()
 # assert len(time_signatures) == 47
 # first_source = time_signatures[20:32]
 # first_source *= 3
@@ -220,7 +219,7 @@ segment_time_signatures["K"] = time_signatures
 
 ### F ###
 lists = time_signature_inventory[4]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 35
 time_signatures = list(time_signatures_)
 segment_time_signatures["F"] = time_signatures
@@ -228,7 +227,7 @@ segment_time_signatures["F"] = time_signatures
 
 ### D ###
 lists = time_signature_inventory[2]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 time_signatures.insert(8, abjad.TimeSignature((1, 4)))
@@ -244,7 +243,7 @@ segment_time_signatures["D"] = time_signatures
 
 ### C ###
 lists = time_signature_inventory[1:3]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 33
 """
 12 stages:
@@ -280,7 +279,7 @@ segment_time_signatures["C"] = time_signatures
 
 ### G ###
 lists = time_signature_inventory[5]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 22
 time_signatures = list(time_signatures_)
 segment_time_signatures["G"] = time_signatures
@@ -288,7 +287,7 @@ segment_time_signatures["G"] = time_signatures
 
 ### H ###
 lists = time_signature_inventory[5]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 22
 time_signatures = list(time_signatures_)
 time_signatures.insert(12, abjad.TimeSignature((1, 4)))
@@ -299,7 +298,7 @@ segment_time_signatures["H"] = time_signatures
 
 ### I ###
 lists = time_signature_inventory[7]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 10
 time_signatures = list(time_signatures_)
 segment_time_signatures["I"] = time_signatures
@@ -307,7 +306,7 @@ segment_time_signatures["I"] = time_signatures
 
 ### J ###
 lists = time_signature_inventory[11]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 extension = time_signatures[-2:]
@@ -326,7 +325,7 @@ segment_time_signatures["J"] = time_signatures
 
 ### A ###
 lists = time_signature_inventory[11]
-time_signatures_ = baca.Sequence(lists).flatten()
+time_signatures_ = abjad.Sequence(lists).flatten()
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 time_signatures.insert(2, abjad.TimeSignature((1, 4)))
@@ -442,7 +441,7 @@ def closing_pizzicati(counts, extra_counts, split):
         rmakers.force_rest(baca.selectors.leaves_in_each_lt(1, None)),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.Sequence(_).split_divisions(durations, cyclic=True),
+        preprocessor=lambda _: baca.sequence.split_divisions(_, durations, cyclic=True),
         tag=abjad.Tag("krummzeit.closing_pizzicati()"),
     )
 
@@ -464,7 +463,7 @@ def color_fingerings():
 
 
 def color_tuplets(*commands, rotation=0):
-    tuplet_ratios = baca.Sequence(
+    tuplet_ratios = abjad.Sequence(
         [
             (-2, 4, 1, 1, 12),
             (3, 2),
@@ -508,7 +507,7 @@ def detached_triplets():
     return baca.rhythm(
         rmakers.tuplet([(3, -1, 2), (1, -1, 3, -1)]),
         rmakers.tie(selector),
-        preprocessor=lambda _: baca.Sequence(_).fuse().quarters(),
+        preprocessor=lambda _: baca.sequence.quarters(baca.sequence.fuse(_)),
         tag=abjad.Tag("krummzeit.detached_triplets()"),
     )
 
@@ -550,12 +549,15 @@ def displacement():
 
 
 def fused_expanse(divisions):
+    def preprocessor(divisions_):
+        result = baca.sequence.fuse(divisions_)
+        result = baca.sequence.split_divisions(result, divisions, cyclic=True)
+        return result
+
     return baca.rhythm(
         rmakers.note(),
         rmakers.beam(baca.selectors.plts()),
-        preprocessor=lambda _: baca.Sequence(_)
-        .fuse()
-        .split_divisions(divisions, cyclic=True),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.fused_expanse()"),
     )
 
@@ -589,9 +591,9 @@ def glissando_rhythm(
         ratios = abjad.CyclicTuple(division_ratios)
         for i, division in enumerate(divisions):
             ratio = ratios[i]
-            sequence = baca.Sequence(division).ratios([ratio], rounded=True)
+            sequence = baca.sequence.ratios([division], [ratio], rounded=True)
             sequences.append(sequence)
-        return baca.Sequence(sequences)
+        return sequences
 
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
@@ -615,7 +617,7 @@ def hypermeter_tuplets(tuplet_ratios, counts=(2, 3, 1), *commands):
         rmakers.trivialize(),
         rmakers.extract_trivial(),
         rmakers.reduce_multiplier(),
-        preprocessor=lambda _: baca.Sequence(_).fuse(counts, cyclic=True),
+        preprocessor=lambda _: baca.sequence.fuse(_, counts, cyclic=True),
         tag=abjad.Tag("krummzeit.hypermeter_tuplets()"),
     )
 
@@ -676,11 +678,16 @@ def instrument(key):
 
 
 def left_remainder_quarters(*commands):
+    def preprocessor(divisions):
+        result = baca.sequence.fuse(divisions)
+        result = baca.sequence.quarters(result, remainder=abjad.Left)
+        return result
+
     return baca.rhythm(
         rmakers.note(),
         *commands,
         rmakers.beam(baca.selectors.plts()),
-        preprocessor=lambda _: baca.Sequence(_).fuse().quarters(remainder=abjad.Left),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.left_remainder_quarters()"),
     )
 
@@ -702,11 +709,10 @@ def oboe_trills():
         sequences = []
         for i, division in enumerate(divisions):
             ratio = ratios[i]
-            sequence = baca.Sequence(division)
-            sequence = sequence.ratios([ratio], rounded=True)
+            sequence = abjad.Sequence(division)
+            sequence = baca.sequence.ratios(sequence, [ratio], rounded=True)
             sequences.append(sequence)
-        result = baca.Sequence(sequences)
-        return result
+        return sequences
 
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)]),
@@ -723,13 +729,18 @@ def oboe_trills():
 
 
 def opening_triplets(*commands, remainder=abjad.Left):
+    def preprocessor(divisions):
+        result = baca.sequence.fuse(divisions)
+        result = baca.sequence.quarters(result, remainder=remainder)
+        return result
+
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1)]),
         *commands,
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.Sequence(_).fuse().quarters(remainder=remainder),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.opening_triplets()"),
     )
 
@@ -757,9 +768,9 @@ def piano_harmonics(division_ratios, *commands, tie_across_divisions=None):
         ratios = abjad.CyclicTuple(division_ratios)
         for i, division in enumerate(divisions):
             ratio = ratios[i]
-            sequence = baca.Sequence(division).ratios([ratio], rounded=True)
+            sequence = baca.sequence.ratios([division], [ratio], rounded=True)
             sequences.append(sequence)
-        return baca.Sequence(sequences)
+        return sequences
 
     return baca.rhythm(
         rmakers.note(),
@@ -783,7 +794,7 @@ def pizzicato_rhythm(*commands, split=(6, 18)):
         rmakers.rewrite_dots(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.Sequence(_).split_divisions(durations, cyclic=True),
+        preprocessor=lambda _: baca.sequence.split_divisions(_, durations, cyclic=True),
         tag=abjad.Tag("krummzeit.pizzicato_rhythm()"),
     )
 
@@ -801,9 +812,8 @@ def pizzicato_sixteenths(*commands, extra_counts=None):
         rmakers.rewrite_rest_filled(),
         rmakers.trivialize(),
         rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.Sequence(_).split_divisions(
-            [(6, 16), (18, 16)],
-            cyclic=True,
+        preprocessor=lambda _: baca.sequence.split_divisions(
+            _, [(6, 16), (18, 16)], cyclic=True
         ),
         tag=abjad.Tag("krummzeit.pizzicato_sixteenths()"),
     )
@@ -869,17 +879,18 @@ def polyphony(
 
     def preprocessor(divisions):
         sequences = []
-        durations_ = baca.Sequence(durations)
+        durations_ = abjad.Sequence(durations)
         for i, division in enumerate(divisions):
             durations__ = durations_.rotate(n=i * rotation)
-            sequence = baca.Sequence(division)
-            sequence = sequence.split_divisions(
+            sequence = abjad.Sequence(division)
+            sequence = baca.sequence.split_divisions(
+                sequence,
                 durations__,
                 cyclic=True,
                 remainder_fuse_threshold=fuse,
             )
             sequences.append(sequence)
-        return baca.Sequence(sequences)
+        return sequences
 
     return baca.rhythm(
         rhythm_maker,
@@ -1060,25 +1071,25 @@ def register_wide(start):
 
 
 def rest_delimited_repeated_duration_notes(duration, denominator):
+    def preprocessor(divisions):
+        result = baca.sequence.fuse(divisions)
+        result = baca.sequence.split_divisions(result, [duration], cyclic=True)
+        return result
+
     return baca.rhythm(
         rmakers.incised(
             suffix_talea=[-1], suffix_counts=[1], talea_denominator=denominator
         ),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.Sequence(_)
-        .fuse()
-        .split_divisions(
-            [duration],
-            cyclic=True,
-        ),
+        preprocessor=preprocessor,
         tag=abjad.Tag("krummzeit.rest_delimited_repeated_duration_notes()"),
     )
 
 
 def right_remainder_quarters(*commands):
     def preprocessor(divisions):
-        return baca.Sequence(baca.Sequence(_).quarters() for _ in divisions)
+        return [baca.sequence.quarters(_) for _ in divisions]
 
     return baca.rhythm(
         rmakers.note(),
@@ -1095,9 +1106,9 @@ def silver_points(ratios, *commands, tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2
         ratios_ = abjad.CyclicTuple(ratios)
         for i, division in enumerate(divisions):
             ratio = ratios_[i]
-            sequence = baca.Sequence(division).ratios([ratio], rounded=True)
+            sequence = baca.sequence.ratios([division], [ratio], rounded=True)
             sequences.append(sequence)
-        return baca.Sequence(sequences)
+        return sequences
 
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
@@ -1162,9 +1173,9 @@ def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
         force_rest.append(command)
 
     def preprocessor(divisions):
-        divisions = baca.Sequence(divisions)
-        divisions = divisions.fuse()
-        divisions = divisions.split_divisions(
+        divisions = baca.sequence.fuse(divisions)
+        divisions = baca.sequence.split_divisions(
+            divisions,
             durations,
             cyclic=True,
             remainder=remainder,

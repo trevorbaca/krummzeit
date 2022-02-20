@@ -227,7 +227,7 @@ commands(
 pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
 pcs_ = baca.Sequence(pcs)
-pcs_ = pcs_.repeat_by([4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
+pcs_ = baca.sequence.repeat_by(pcs_, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 commands(
     ("ob", (1, 10)),
     baca.dynamic("p"),
@@ -283,7 +283,7 @@ commands(
 )
 
 pcs = baca.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
-pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
+pcs = baca.sequence.repeat_by(pcs, [3, 2, 4], cyclic=True)
 commands(
     ("ob", (12, 21)),
     baca.pitches(
@@ -293,7 +293,7 @@ commands(
 )
 
 pcs = baca.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
-pcs = pcs.sequence().repeat_by([3, 2, 4], cyclic=True)
+pcs = baca.sequence.repeat_by(pcs, [3, 2, 4], cyclic=True)
 commands(
     ("cl", (12, 21)),
     baca.pitches(

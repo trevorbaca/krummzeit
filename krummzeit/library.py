@@ -110,7 +110,7 @@ metronome_marks = dict(
 
 def make_numerators(numerators, addenda):
     numerators = baca.Sequence(numerators)
-    numerators = numerators.helianthate(-1, 1)
+    numerators = baca.sequence.helianthate(numerators, -1, 1)
     numerators = numerators.flatten()
     length = len(numerators)
     addenda = baca.Sequence(addenda).repeat_to_length(length)

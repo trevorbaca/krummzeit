@@ -133,8 +133,10 @@ numerators = numerators + numerators
 assert len(numerators) == 236 and sum(numerators) == 928
 
 ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
-numerator_lists = abjad.Sequence(numerators)
-numerator_lists = numerator_lists.partition_by_ratio_of_weights(weights=ratio)
+numerator_lists = numerators[:]
+numerator_lists = abjad.sequence.partition_by_ratio_of_weights(
+    numerator_lists, weights=ratio
+)
 assert len(numerator_lists) == 12
 
 
@@ -463,18 +465,16 @@ def color_fingerings():
 
 
 def color_tuplets(*commands, rotation=0):
-    tuplet_ratios = abjad.Sequence(
-        [
-            (-2, 4, 1, 1, 12),
-            (3, 2),
-            (4, 3),
-            (3, -2),
-            (-3, 4, 1, 12),
-            (3, 2),
-            (7, 1, 3),
-            (3, -2),
-        ]
-    )
+    tuplet_ratios = [
+        (-2, 4, 1, 1, 12),
+        (3, 2),
+        (4, 3),
+        (3, -2),
+        (-3, 4, 1, 12),
+        (3, 2),
+        (7, 1, 3),
+        (3, -2),
+    ]
     tuplet_ratios = abjad.sequence.rotate(tuplet_ratios, n=rotation)
 
     def selector(argument):
@@ -709,7 +709,7 @@ def oboe_trills():
         sequences = []
         for i, division in enumerate(divisions):
             ratio = ratios[i]
-            sequence = abjad.Sequence(division)
+            sequence = [division]
             sequence = baca.sequence.ratios(sequence, [ratio], rounded=True)
             sequences.append(sequence)
         return sequences
@@ -879,10 +879,10 @@ def polyphony(
 
     def preprocessor(divisions):
         sequences = []
-        durations_ = abjad.Sequence(durations)
+        durations_ = durations[:]
         for i, division in enumerate(divisions):
             durations__ = abjad.sequence.rotate(durations_, n=i * rotation)
-            sequence = abjad.Sequence(division)
+            sequence = [division]
             sequence = baca.sequence.split_divisions(
                 sequence,
                 durations__,

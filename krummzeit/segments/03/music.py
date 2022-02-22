@@ -275,8 +275,7 @@ commands(
 
 pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
-pcs_ = abjad.Sequence(pcs)
-pcs_ = baca.sequence.repeat_by(pcs_, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+pcs_ = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 commands(
     ("ob", (1, 35)),
     baca.pitches(
@@ -391,8 +390,7 @@ commands(
 
 pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
 pcs = pcs.rotate(-121).retrograde().transpose(3)
-pcs_ = abjad.Sequence(pcs)
-pcs_ = baca.sequence.repeat_by(pcs_, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+pcs_ = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 commands(
     ("vn", (22, 28)),
     baca.pitches(

@@ -110,7 +110,7 @@ metronome_marks = dict(
 
 def make_numerators(numerators, addenda):
     numerators = baca.sequence.helianthate(numerators, -1, 1)
-    numerators = abjad.Sequence(numerators).flatten()
+    numerators = abjad.sequence.flatten(numerators)
     length = len(numerators)
     addenda = abjad.sequence.repeat_to_length(addenda, length)
     pairs = zip(numerators, addenda)
@@ -176,7 +176,7 @@ segment_time_signatures = dict()
 
 ### B ###
 lists = time_signature_inventory[:3]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 64
 # repeat first 11 time signatures
 time_signatures = list(time_signatures_)
@@ -187,7 +187,7 @@ segment_time_signatures["B"] = time_signatures
 
 ### E ###
 lists = time_signature_inventory[3:5]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 48
 time_signatures = list(time_signatures_)
 segment_time_signatures["E"] = time_signatures
@@ -195,7 +195,7 @@ segment_time_signatures["E"] = time_signatures
 
 ### K ###
 # time_signatures = time_signature_inventory[9:]
-# time_signatures = abjad.Sequence(time_signatures).flatten()
+# time_signatures = abjad.sequence.flatten(time_signatures)
 # assert len(time_signatures) == 47
 # first_source = time_signatures[20:32]
 # first_source *= 3
@@ -219,7 +219,7 @@ segment_time_signatures["K"] = time_signatures
 
 ### F ###
 lists = time_signature_inventory[4]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 35
 time_signatures = list(time_signatures_)
 segment_time_signatures["F"] = time_signatures
@@ -227,7 +227,7 @@ segment_time_signatures["F"] = time_signatures
 
 ### D ###
 lists = time_signature_inventory[2]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 time_signatures.insert(8, abjad.TimeSignature((1, 4)))
@@ -243,7 +243,7 @@ segment_time_signatures["D"] = time_signatures
 
 ### C ###
 lists = time_signature_inventory[1:3]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 33
 """
 12 stages:
@@ -279,7 +279,7 @@ segment_time_signatures["C"] = time_signatures
 
 ### G ###
 lists = time_signature_inventory[5]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 22
 time_signatures = list(time_signatures_)
 segment_time_signatures["G"] = time_signatures
@@ -287,7 +287,7 @@ segment_time_signatures["G"] = time_signatures
 
 ### H ###
 lists = time_signature_inventory[5]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 22
 time_signatures = list(time_signatures_)
 time_signatures.insert(12, abjad.TimeSignature((1, 4)))
@@ -298,7 +298,7 @@ segment_time_signatures["H"] = time_signatures
 
 ### I ###
 lists = time_signature_inventory[7]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 10
 time_signatures = list(time_signatures_)
 segment_time_signatures["I"] = time_signatures
@@ -306,7 +306,7 @@ segment_time_signatures["I"] = time_signatures
 
 ### J ###
 lists = time_signature_inventory[11]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 extension = time_signatures[-2:]
@@ -325,7 +325,7 @@ segment_time_signatures["J"] = time_signatures
 
 ### A ###
 lists = time_signature_inventory[11]
-time_signatures_ = abjad.Sequence(lists).flatten()
+time_signatures_ = abjad.sequence.flatten(lists)
 assert len(time_signatures_) == 11
 time_signatures = list(time_signatures_)
 time_signatures.insert(2, abjad.TimeSignature((1, 4)))
@@ -475,7 +475,7 @@ def color_tuplets(*commands, rotation=0):
             (3, -2),
         ]
     )
-    tuplet_ratios = tuplet_ratios.rotate(n=rotation)
+    tuplet_ratios = abjad.sequence.rotate(tuplet_ratios, n=rotation)
 
     def selector(argument):
         selection = baca.Selection(argument).tuplets()[:-1]
@@ -881,7 +881,7 @@ def polyphony(
         sequences = []
         durations_ = abjad.Sequence(durations)
         for i, division in enumerate(divisions):
-            durations__ = durations_.rotate(n=i * rotation)
+            durations__ = abjad.sequence.rotate(durations_, n=i * rotation)
             sequence = abjad.Sequence(division)
             sequence = baca.sequence.split_divisions(
                 sequence,
@@ -1089,7 +1089,7 @@ def rest_delimited_repeated_duration_notes(duration, denominator):
 
 def right_remainder_quarters(*commands):
     def preprocessor(divisions):
-        return [baca.sequence.quarters(_) for _ in divisions]
+        return [baca.sequence.quarters([_]) for _ in divisions]
 
     return baca.rhythm(
         rmakers.note(),

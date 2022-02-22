@@ -112,7 +112,7 @@ def make_numerators(numerators, addenda):
     numerators = baca.sequence.helianthate(numerators, -1, 1)
     numerators = abjad.Sequence(numerators).flatten()
     length = len(numerators)
-    addenda = abjad.Sequence(addenda).repeat_to_length(length)
+    addenda = abjad.sequence.repeat_to_length(addenda, length)
     pairs = zip(numerators, addenda)
     numerators = [sum(_) for _ in pairs]
     return numerators

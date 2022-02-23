@@ -398,13 +398,13 @@ commands(
         ]
     ),
     baca.pitches(
-        library.indigo_pitch_classes.get_payload(),
+        library.indigo_pitch_classes,
         allow_repeats=True,
         selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
-pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.transpose(1)
 commands(
     baca.timeline(
@@ -420,7 +420,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.rotate(-155).transpose(3)
 commands(
     baca.timeline(
@@ -571,7 +571,7 @@ commands(
             ("vn", (38, 53)),
         ]
     ),
-    baca.pitches(library.violet_pitch_classes.get_payload()),
+    baca.pitches(library.violet_pitch_classes),
 )
 
 commands(
@@ -636,7 +636,7 @@ commands(
     ),
 )
 
-pcs = library.violet_pitch_classes.get_payload()
+pcs = library.violet_pitch_classes
 pcs = baca.PitchClassSegment(pcs).rotate(-60).transpose(1)
 commands(
     baca.timeline(

@@ -265,7 +265,7 @@ commands(
     baca.dynamic("pp-ancora"),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-241).retrograde().transpose(7)
 commands(
     baca.timeline(
@@ -315,7 +315,7 @@ commands(
     baca.markup(r"\krummzeit-accent-changes-markup"),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-241).retrograde().transpose(7).invert()
 commands(
     baca.timeline(

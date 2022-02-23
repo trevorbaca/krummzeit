@@ -219,7 +219,7 @@ commands(
     baca.laissez_vibrer(selector=baca.selectors.ptails()),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.transpose(11)
 commands(
     baca.timeline(
@@ -300,7 +300,7 @@ commands(
 
 commands(("cl", (11, 14)), baca.hairpin("fff > ppp"))
 
-pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 commands(
     baca.timeline(

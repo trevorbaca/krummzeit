@@ -224,7 +224,7 @@ commands(
     baca.pitch("B3"),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
 pcs_ = baca.sequence.repeat_by(pcs, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 commands(
@@ -311,7 +311,7 @@ commands(
     library.color_fingerings(),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-301).retrograde().transpose(10)
 commands(
     (strings, (12, 20)),
@@ -433,7 +433,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
 commands(
     ("pf", (30, 34)),

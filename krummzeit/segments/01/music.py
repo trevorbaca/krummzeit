@@ -248,7 +248,7 @@ commands(
     ),
 )
 
-pcs = library.violet_pitch_classes.get_payload()
+pcs = library.violet_pitch_classes
 pcs = baca.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
 commands(
     baca.timeline(

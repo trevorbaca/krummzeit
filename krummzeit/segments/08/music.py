@@ -281,7 +281,7 @@ commands(
     baca.pitch("B3"),
 )
 
-pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs[:20].transpose(3)
 commands(
     baca.timeline(
@@ -380,7 +380,7 @@ commands(
     baca.pitch("C4"),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 commands(
     baca.timeline(

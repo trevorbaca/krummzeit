@@ -181,7 +181,7 @@ commands(
     baca.accent(selector=baca.selectors.pheads()),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 commands(
     baca.timeline(

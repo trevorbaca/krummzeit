@@ -170,7 +170,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment(library.indigo_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 commands(
     baca.timeline(

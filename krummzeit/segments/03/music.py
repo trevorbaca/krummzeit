@@ -273,7 +273,7 @@ commands(
     library.fused_expanse([(3, 2), (1, 1), (2, 1)]),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
 pcs_ = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 commands(
@@ -388,7 +388,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes.get_payload())
+pcs = baca.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-121).retrograde().transpose(3)
 pcs_ = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 commands(

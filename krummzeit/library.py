@@ -337,26 +337,22 @@ segment_time_signatures["A"] = time_signatures
 
 # pitch-classes
 
-maker = baca.ZaggedPitchClassMaker(
-    pc_cells=[[7, 1, 3, 4, 5, 11], [3, 5, 6, 7], [9, 10, 0, 8]],
-    division_ratios=[
-        [[1], [1], [1], [1, 1]],
-        [[1], [1], [1], [1, 1, 1], [1, 1, 1]],
-    ],
-    grouping_counts=[1, 1, 1, 2, 3],
-)
-indigo_pitch_classes = maker()
+ratios = [[[1], [1], [1], [1, 1]], [[1], [1], [1], [1, 1, 1], [1, 1, 1]]]
+ratios = baca.sequence.helianthate(ratios, -1, 1)
+ratios = abjad.sequence.flatten(ratios, depth=1)
+ratios = [tuple(_) for _ in ratios]
 
-maker = baca.ZaggedPitchClassMaker(
-    pc_cells=[[8, 4, 3, 2, 11], [5, 4, 6, 8, 7], [9, 6, 5, 0, 11, 10]],
-    division_ratios=[
-        [[1], [1], [1], [1, 1]],
-        [[1], [1], [1], [1, 1, 1], [1, 1, 1]],
-    ],
-    grouping_counts=[1, 1, 2, 3],
+indigo_pitch_classes = baca.accumulate_and_repartition(
+    segments=[[7, 1, 3, 4, 5, 11], [3, 5, 6, 7], [9, 10, 0, 8]],
+    ratios=ratios,
+    counts=[1, 1, 1, 2, 3],
 )
-violet_pitch_classes = maker()
 
+violet_pitch_classes = baca.accumulate_and_repartition(
+    segments=[[8, 4, 3, 2, 11], [5, 4, 6, 8, 7], [9, 6, 5, 0, 11, 10]],
+    ratios=ratios,
+    counts=[1, 1, 2, 3],
+)
 
 @dataclasses.dataclass
 class RegisterTransitionCommand(baca.Command):

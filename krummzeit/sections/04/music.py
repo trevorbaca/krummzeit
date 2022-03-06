@@ -1,3 +1,4 @@
+import abjad
 import baca
 
 from krummzeit import library
@@ -170,7 +171,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 commands(
     baca.timeline(

@@ -342,14 +342,14 @@ ratios = baca.sequence.helianthate(ratios, -1, 1)
 ratios = abjad.sequence.flatten(ratios, depth=1)
 ratios = [tuple(_) for _ in ratios]
 
-indigo_pitch_classes = baca.accumulate_and_repartition(
+indigo_pitch_classes = baca.pcollections.accumulate_and_repartition(
     segments=[[7, 1, 3, 4, 5, 11], [3, 5, 6, 7], [9, 10, 0, 8]],
     ratios=ratios,
     counts=[1, 1, 1, 2, 3],
 )
 indigo_pitch_classes = abjad.sequence.flatten(indigo_pitch_classes, depth=-1)
 
-violet_pitch_classes = baca.accumulate_and_repartition(
+violet_pitch_classes = baca.pcollections.accumulate_and_repartition(
     segments=[[8, 4, 3, 2, 11], [5, 4, 6, 8, 7], [9, 6, 5, 0, 11, 10]],
     ratios=ratios,
     counts=[1, 1, 2, 3],

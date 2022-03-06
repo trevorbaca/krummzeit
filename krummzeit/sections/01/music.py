@@ -1,3 +1,4 @@
+import abjad
 import baca
 from abjadext import rmakers
 
@@ -249,7 +250,7 @@ commands(
 )
 
 pcs = library.violet_pitch_classes
-pcs = baca.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
+pcs = abjad.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
 commands(
     baca.timeline(
         [

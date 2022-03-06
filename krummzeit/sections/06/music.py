@@ -224,7 +224,7 @@ commands(
     baca.pitch("B3"),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes)
+pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
 pcs_ = baca.sequence.repeat_by(pcs, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 commands(
@@ -281,7 +281,7 @@ commands(
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-pcs = baca.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
+pcs = abjad.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
 pcs = baca.sequence.repeat_by(pcs, [3, 2, 4], cyclic=True)
 commands(
     ("ob", (12, 21)),
@@ -291,7 +291,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
+pcs = abjad.PitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
 pcs = baca.sequence.repeat_by(pcs, [3, 2, 4], cyclic=True)
 commands(
     ("cl", (12, 21)),
@@ -311,7 +311,7 @@ commands(
     library.color_fingerings(),
 )
 
-pcs = baca.PitchClassSegment(library.violet_pitch_classes)
+pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-301).retrograde().transpose(10)
 commands(
     (strings, (12, 20)),
@@ -433,7 +433,7 @@ commands(
     ),
 )
 
-pcs = baca.PitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
 commands(
     ("pf", (30, 34)),

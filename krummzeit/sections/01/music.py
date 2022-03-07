@@ -250,7 +250,7 @@ commands(
 )
 
 pcs = library.violet_pitch_classes
-pcs = abjad.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
+pcs = abjad.NumberedPitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
 commands(
     baca.timeline(
         [

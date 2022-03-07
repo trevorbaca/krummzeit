@@ -123,7 +123,7 @@ commands(
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.NumberedPitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs[42:34:-1].transpose(4).invert()
 commands(
     baca.timeline(

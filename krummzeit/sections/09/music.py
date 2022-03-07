@@ -181,7 +181,7 @@ commands(
     baca.accent(selector=baca.selectors.pheads()),
 )
 
-pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+pcs = abjad.NumberedPitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 commands(
     baca.timeline(

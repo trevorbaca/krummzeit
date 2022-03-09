@@ -405,6 +405,7 @@ def ntltqruns(argument):
     result = [_ for _ in result if 1 < len(_)]
     return result
 
+
 commands(
     ("vn", (22, 28)),
     baca.dynamic("ff"),

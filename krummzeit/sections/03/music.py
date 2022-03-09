@@ -399,6 +399,12 @@ commands(
     ),
 )
 
+
+def ntltqruns(argument):
+    result = baca.select.ltqruns(argument)
+    result = [_ for _ in result if 1 < len(_)]
+    return result
+
 commands(
     ("vn", (22, 28)),
     baca.dynamic("ff"),
@@ -413,14 +419,11 @@ commands(
     baca.suite(
         baca.new(
             baca.deviation([0, -0.5, 0, 0.5]),
-            map=lambda _: baca.Selection(_)
-            .ltqruns()
-            .filter(lambda _: len(_) > 1)
-            .get([0], 2),
+            map=lambda _: abjad.select.get(ntltqruns(_), [0], 2),
         ),
         baca.new(
             baca.deviation([0, 0.5, 0, -0.5]),
-            map=lambda _: baca.Selection(_).ltqruns().filter(lambda _: len(_) > 1),
+            map=ntltqruns,
         ),
         library.displacement(),
         library.register_wide(5),

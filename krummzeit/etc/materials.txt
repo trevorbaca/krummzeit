@@ -117,7 +117,7 @@ MATERIALS
     14.1 "viola reiteration storm"
     14.1 "cello reiteration storm"
 
-MATERIALS BY SEGMENT
+MATERIALS BY SECTION
 ====================
 
     (1)  "piano clusters"               [A], [C], [E]

@@ -235,7 +235,7 @@ commands(
     baca.pitch("B1"),
 )
 
-pcs = abjad.NumberedPitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.transpose(2)
 commands(
     baca.timeline(

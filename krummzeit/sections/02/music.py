@@ -404,7 +404,7 @@ commands(
     ),
 )
 
-pcs = abjad.NumberedPitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.transpose(1)
 commands(
     baca.timeline(
@@ -420,7 +420,7 @@ commands(
     ),
 )
 
-pcs = abjad.NumberedPitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs.rotate(-155).transpose(3)
 commands(
     baca.timeline(
@@ -637,7 +637,7 @@ commands(
 )
 
 pcs = library.violet_pitch_classes
-pcs = abjad.NumberedPitchClassSegment(pcs).rotate(-60).transpose(1)
+pcs = abjad.PitchClassSegment(pcs).rotate(-60).transpose(1)
 commands(
     baca.timeline(
         [

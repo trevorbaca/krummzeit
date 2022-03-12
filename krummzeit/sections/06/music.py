@@ -281,22 +281,22 @@ commands(
     baca.stem_tremolo(selector=baca.selectors.pleaves()),
 )
 
-pcs = abjad.NamedPitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
-pcs = baca.sequence.repeat_by(pcs, [3, 2, 4], cyclic=True)
+pitches = "C4 Bqs4 A4 Gqs4 Fqs4 Eqf4"
+pitches = baca.sequence.repeat_by(pitches.split(), [3, 2, 4], cyclic=True)
 commands(
     ("ob", (12, 21)),
     baca.pitches(
-        pcs,
+        pitches,
         selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )
 
-pcs = abjad.NamedPitchClassSegment("C6 B+5 A5 G+5 F+5 E~5")
-pcs = baca.sequence.repeat_by(pcs, [3, 2, 4], cyclic=True)
+pitches = "C4 Bqs4 A4 Gqs4 Fqs4 Eqf4"
+pitches = baca.sequence.repeat_by(pitches.split(), [3, 2, 4], cyclic=True)
 commands(
     ("cl", (12, 21)),
     baca.pitches(
-        pcs,
+        pitches,
         selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
     ),
 )

@@ -401,7 +401,7 @@ commands(
 
 
 def ntltqruns(argument):
-    result = baca.select.ltqruns(argument)
+    result = baca.ltqruns(argument)
     result = [_ for _ in result if 1 < len(_)]
     return result
 

@@ -295,7 +295,7 @@ commands(
 
 commands(
     (["ob", "cl"], (4, 10)),
-    baca.staccato(selector=lambda _: baca.Selection(_).ptlts()),
+    baca.staccato(selector=lambda _: baca.ptlts(_)),
 )
 
 ### VERTICAL ALIGNMENT ###

@@ -232,11 +232,11 @@ commands(
     baca.dynamic("p"),
     baca.new(
         baca.trill_spanner(),
-        map=lambda _: baca.Selection(_)
-        .plts(exclude=baca.const.HIDDEN)
-        .filter(
-            lambda _: abjad.get.duration(_, preprolated=True) >= abjad.Duration(1, 4)
-        ),
+        map=lambda _: [
+            x
+            for x in baca.plts(_, exclude=baca.const.HIDDEN)
+            if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
+        ],
     ),
     baca.suite(
         baca.pitches(

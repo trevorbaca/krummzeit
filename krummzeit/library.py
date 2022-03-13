@@ -359,9 +359,6 @@ violet_pitch_classes = abjad.sequence.flatten(violet_pitch_classes, depth=-1)
 
 @dataclasses.dataclass
 class RegisterTransitionCommand(baca.Command):
-    """
-    Register transition command.
-    """
 
     selector: typing.Any = baca.selectors.leaves()
     start_registration: typing.Any = None
@@ -385,7 +382,7 @@ class RegisterTransitionCommand(baca.Command):
             argument = self.selector(argument)
         leaves = abjad.Selection(argument).leaves()
         leaves_timespan = abjad.get.timespan(leaves)
-        plts = baca.Selection(argument).plts()
+        plts = baca.plts(argument)
         for plt in plts:
             timespan = abjad.get.timespan(plt)
             registration = self._make_registration(
@@ -477,13 +474,13 @@ def color_tuplets(*commands, rotation=0):
     tuplet_ratios = abjad.sequence.rotate(tuplet_ratios, n=rotation)
 
     def selector(argument):
-        selection = baca.Selection(argument).tuplets()[:-1]
+        selection = abjad.select.tuplets(argument)[:-1]
         selection = [
-            baca.Selection(_).leaves()[-1:].rleak().pleaves() for _ in selection
+            baca.pleaves(baca.rleak(abjad.select.leaves(_)[-1:])) for _ in selection
         ]
-        selection = baca.Selection(selection).filter(lambda _: len(_) == 2)
-        selection = [baca.Selection(_).leaf(0) for _ in selection]
-        return baca.Selection(selection)
+        selection = [_ for _ in selection if len(_) == 2]
+        selection = [abjad.select.leaf(_, 0) for _ in selection]
+        return selection
 
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios),
@@ -500,8 +497,10 @@ def color_tuplets(*commands, rotation=0):
 
 def detached_triplets():
     def selector(argument):
-        selection = baca.Selection(argument).tuplets()[:-1].get([0], 2)
-        return baca.Selection([baca.Selection(_).pleaf(-1) for _ in selection])
+        result = abjad.select.tuplets(argument)[:-1]
+        result = abjad.select.get(result, [0], 2)
+        result = [baca.pleaf(_, -1) for _ in result]
+        return result
 
     return baca.rhythm(
         rmakers.tuplet([(3, -1, 2), (1, -1, 3, -1)]),
@@ -575,9 +574,10 @@ def glissando_rhythm(
 
     def select(pattern):
         def selector(argument):
-            selection = baca.Selection(argument).tuplets()[:-1]
-            selection = selection.get(pattern)
-            return baca.Selection(baca.Selection(_).pleaf(-1) for _ in selection)
+            selection = abjad.select.tuplets(argument)[:-1]
+            selection = abjad.select.get(selection, pattern)
+            selection = [baca.pleaf(_, -1) for _ in selection]
+            return selection
 
         return selector
 
@@ -750,14 +750,14 @@ def piano_harmonics(division_ratios, *commands, tie_across_divisions=None):
     if isinstance(tie_across_divisions, abjad.Pattern):
 
         def selector(argument):
-            selection = baca.Selection(argument).lts()[:-1]
-            selection = selection.get(tie_across_divisions)
+            selection = baca.lts(argument)[:-1]
+            selection = abjad.select.get(selection, tie_across_divisions)
             selection = [
-                baca.Selection(_).leaves()[-1:].rleak().pleaves() for _ in selection
+                baca.pleaves(baca.rleak(abjad.select.leaves(_)[-1:])) for _ in selection
             ]
-            selection = baca.Selection(selection).filter(lambda _: len(_) == 2)
-            selection = [baca.Selection(_).leaf(0) for _ in selection]
-            return baca.Selection(selection)
+            selection = [_ for _ in selection if len(_) == 2]
+            selection = [abjad.select.leaf(_, 0) for _ in selection]
+            return selection
 
         specifier = rmakers.tie(selector)
         commands_.append(specifier)
@@ -833,9 +833,10 @@ def polyphony(
 
     def select(pattern):
         def selector(argument):
-            selection = baca.Selection(argument).tuplets()[:-1]
-            selection = selection.get(pattern)
-            return baca.Selection([baca.Selection(_).pleaf(-1) for _ in selection])
+            selection = abjad.select.tuplets(argument)[:-1]
+            selection = abjad.select.get(selection, pattern)
+            selection = [baca.pleaf(_, -1) for _ in selection]
+            return selection
 
         return selector
 
@@ -1140,8 +1141,8 @@ def single_cluster_piano_rhythm():
 
 def single_division_tuplets(ratios):
     def selector(argument):
-        selection = baca.Selection(argument).tuplets()[:-1]
-        return baca.Selection([baca.Selection(_).pleaf(-1) for _ in selection])
+        selection = abjad.select.tuplets(argument)[:-1]
+        return [baca.pleaf(_, -1) for _ in selection]
 
     return baca.rhythm(
         rmakers.tuplet(ratios),

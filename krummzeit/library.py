@@ -380,7 +380,7 @@ class RegisterTransitionCommand(baca.Command):
             return
         if self.selector:
             argument = self.selector(argument)
-        leaves = abjad.Selection(argument).leaves()
+        leaves = abjad.select.leaves(argument)
         leaves_timespan = abjad.get.timespan(leaves)
         plts = baca.plts(argument)
         for plt in plts:

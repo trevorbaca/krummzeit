@@ -679,7 +679,7 @@ def instrument(key):
 def left_remainder_quarters(*commands):
     def preprocessor(divisions):
         result = baca.sequence.fuse(divisions)
-        result = baca.sequence.quarters(result, remainder=abjad.Left)
+        result = baca.sequence.quarters(result, remainder=abjad.LEFT)
         return result
 
     return baca.rhythm(
@@ -727,7 +727,7 @@ def oboe_trills():
     )
 
 
-def opening_triplets(*commands, remainder=abjad.Left):
+def opening_triplets(*commands, remainder=abjad.LEFT):
     def preprocessor(divisions):
         result = baca.sequence.fuse(divisions)
         result = baca.sequence.quarters(result, remainder=remainder)
@@ -1166,7 +1166,7 @@ def sponge_rhythm():
     )
 
 
-def white_rhythm(durations=None, remainder=abjad.Left, do_not_burnish=None):
+def white_rhythm(durations=None, remainder=abjad.LEFT, do_not_burnish=None):
     force_rest = []
     if not do_not_burnish:
         command = rmakers.force_rest(baca.selectors.leaf(0))

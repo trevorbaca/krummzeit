@@ -262,7 +262,7 @@ commands(
     ("vn", (39, 53)),
     library.white_rhythm(
         durations=[(2, 8)],
-        remainder=abjad.Right,
+        remainder=abjad.RIGHT,
         do_not_burnish=True,
     ),
 )

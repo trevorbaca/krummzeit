@@ -110,7 +110,7 @@ commands(
     (["vn", "va", "vc"], (1, 3)),
     library.opening_triplets(
         rmakers.force_rest(baca.selectors.tuplet(-1)),
-        remainder=abjad.Right,
+        remainder=abjad.RIGHT,
     ),
 )
 

@@ -136,7 +136,7 @@ commands(
 
 commands(
     ("cl", [(1, 4), (24, 28), 30, (32, 35)]),
-    library.white_rhythm([(3, 8)], abjad.Right, do_not_burnish=True),
+    library.white_rhythm([(3, 8)], abjad.RIGHT, do_not_burnish=True),
 )
 
 commands(

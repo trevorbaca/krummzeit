@@ -5454,13 +5454,13 @@ segment.04.Viola.Music.Voice = {
     % [Viola_Music_Voice measure 14]
     %! baca.make_repeat_tied_notes()
     bf,!1
-    %! EXPLICIT_DYNAMIC_COLOR
+    %! REDUNDANT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
     %! baca.dynamic()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
     %! REDUNDANT_DYNAMIC
-    - \tweak color #(x11-color 'blue)
+    - \tweak color #(x11-color 'DeepPink1)
     %! baca.dynamic()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()

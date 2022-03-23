@@ -208,7 +208,7 @@ commands(
     ("vn", (11, 15)),
     baca.text_spanner(
         "grid. possibile => flaut. possibile",
-        abjad.tweak(5).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 5"),
     ),
 )
 
@@ -216,7 +216,7 @@ commands(
     (["va", "vc"], (13, 15)),
     baca.text_spanner(
         "grid. possibile => flaut. possibile",
-        abjad.tweak(5).staff_padding,
+        abjad.Tweak(r"- \tweak staff-padding 5"),
     ),
 )
 

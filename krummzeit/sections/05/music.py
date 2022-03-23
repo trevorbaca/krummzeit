@@ -371,7 +371,7 @@ commands(
         ),
         baca.text_spanner(
             "molto flautando => molto gridato",
-            abjad.tweak(6).staff_padding,
+            abjad.Tweak(r"- \tweak staff-padding 6"),
         ),
         selector=baca.selectors.tleaves(),
     ),
@@ -385,7 +385,7 @@ commands(
         ),
         baca.text_spanner(
             "molto flautando => molto gridato",
-            abjad.tweak(6).staff_padding,
+            abjad.Tweak(r"- \tweak staff-padding 6"),
         ),
         selector=baca.selectors.tleaves(),
     ),

@@ -747,13 +747,13 @@ segment.09.Oboe.Music.Voice = {
     \override DynamicLineSpanner.staff-padding = 3
     %! baca.make_repeat_tied_notes()
     d''1..
-    %! REDUNDANT_DYNAMIC_COLOR
+    %! EXPLICIT_DYNAMIC_COLOR
     %! _treat_persistent_wrapper(1)
     %! baca.dynamic()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()
     %! EXPLICIT_DYNAMIC
-    - \tweak color #(x11-color 'DeepPink1)
+    - \tweak color #(x11-color 'blue)
     %! baca.dynamic()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()

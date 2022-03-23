@@ -3084,13 +3084,13 @@ segment.05.Oboe.Music.Voice = {
         \baca-repeat-pitch-class-coloring
         %! krummzeit.color_tuplets()
         f''4
-        %! REDUNDANT_DYNAMIC_COLOR
+        %! EXPLICIT_DYNAMIC_COLOR
         %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'DeepPink1)
+        - \tweak color #(x11-color 'blue)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
@@ -4097,13 +4097,13 @@ segment.05.Clarinet.Music.Voice = {
         % [Clarinet_Music_Voice measure 36]
         %! krummzeit.color_tuplets()
         g'''4.
-        %! REDUNDANT_DYNAMIC_COLOR
+        %! EXPLICIT_DYNAMIC_COLOR
         %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'DeepPink1)
+        - \tweak color #(x11-color 'blue)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
@@ -5019,13 +5019,13 @@ segment.05.Piano.Music.Voice = {
 
         %! krummzeit.silver_points()
         fs'''!16
-        %! REDUNDANT_DYNAMIC_COLOR
+        %! EXPLICIT_DYNAMIC_COLOR
         %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'DeepPink1)
+        - \tweak color #(x11-color 'blue)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
@@ -5348,13 +5348,13 @@ segment.05.Piano.Music.Voice = {
 
         %! krummzeit.silver_points()
         fs'''!16
-        %! REDUNDANT_DYNAMIC_COLOR
+        %! EXPLICIT_DYNAMIC_COLOR
         %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'DeepPink1)
+        - \tweak color #(x11-color 'blue)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
@@ -6937,13 +6937,13 @@ segment.05.Percussion.Music.Voice = {
 
         %! krummzeit.silver_points()
         fs''!8
-        %! REDUNDANT_DYNAMIC_COLOR
+        %! EXPLICIT_DYNAMIC_COLOR
         %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'DeepPink1)
+        - \tweak color #(x11-color 'blue)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()

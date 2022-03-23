@@ -4635,13 +4635,13 @@ segment.07.Violin.Music.Voice = {
         % [Violin_Music_Voice measure 7]
         %! krummzeit.hypermeter_tuplets()
         fs!4.
-        %! REDUNDANT_DYNAMIC_COLOR
+        %! EXPLICIT_DYNAMIC_COLOR
         %! _treat_persistent_wrapper(1)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
-        - \tweak color #(x11-color 'DeepPink1)
+        - \tweak color #(x11-color 'blue)
         %! baca.dynamic()
         %! baca.IndicatorCommand._call()
         %! baca._set_status_tag()

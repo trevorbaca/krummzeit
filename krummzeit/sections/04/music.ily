@@ -2787,13 +2787,13 @@ segment.04.Piano.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 9]
+    %! baca.dls_staff_padding()
+    %! baca.OverrideCommand._call(1)
+    \override DynamicLineSpanner.staff-padding = 10
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(2)
     %! SPANNER_START
     \ottava -1
-    %! baca.dls_staff_padding()
-    %! baca.OverrideCommand._call(1)
-    \override DynamicLineSpanner.staff-padding = 10
     \once \override Accidental.stencil = ##f
     \once \override AccidentalCautionary.stencil = ##f
     \once \override Arpeggio.X-offset = #-2
@@ -2995,13 +2995,13 @@ segment.04.Piano.Music.Voice = {
     \markup \filled-box #'(-0.6 . 0.6) #'(-0.7 . 0.7) #0.25
     <c,, e,, g,, b,, d, f, a,>2
     ^ \markup \center-align \concat { \natural \flat }
+    %! baca.dls_staff_padding()
+    %! baca.OverrideCommand._call(2)
+    \revert DynamicLineSpanner.staff-padding
     %! baca.ottava_bassa()
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
     \ottava 0
-    %! baca.dls_staff_padding()
-    %! baca.OverrideCommand._call(2)
-    \revert DynamicLineSpanner.staff-padding
 
     %! baca._make_multimeasure_rest_container(7)
     <<

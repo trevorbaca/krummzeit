@@ -6265,10 +6265,6 @@ segment.06.Piano.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 27]
-    %! baca.ottava_bassa()
-    %! baca.SpannerIndicatorCommand._call(2)
-    %! SPANNER_START
-    \ottava -1
     %! baca.clef_x_extent_false()
     %! baca.clef_shift()
     %! SHIFTED_CLEF
@@ -6281,6 +6277,10 @@ segment.06.Piano.Music.Voice = {
     %! MEASURE_226
     %! baca.OverrideCommand._call(1)
     \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
+    %! baca.ottava_bassa()
+    %! baca.SpannerIndicatorCommand._call(2)
+    %! SPANNER_START
+    \ottava -1
     %! baca.clef()
     %! baca.IndicatorCommand._call()
     %! baca._set_status_tag()

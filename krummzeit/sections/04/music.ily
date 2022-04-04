@@ -3921,6 +3921,8 @@ segment.04.Violin.Music.Voice = {
         %! baca.markup()
         %! baca.IndicatorCommand._call()
         ^ \baca-pizz-markup
+        %! krummzeit.silver_points()
+        [
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -3935,8 +3937,6 @@ segment.04.Violin.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! krummzeit.silver_points()
-        [
 
         %! krummzeit.silver_points()
         cs''''!8
@@ -4100,6 +4100,8 @@ segment.04.Violin.Music.Voice = {
         %! baca.staccatissimo()
         %! baca.IndicatorCommand._call()
         - \staccatissimo
+        %! krummzeit.silver_points()
+        [
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -4114,8 +4116,6 @@ segment.04.Violin.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! krummzeit.silver_points()
-        [
 
         %! krummzeit.silver_points()
         e''8
@@ -4275,6 +4275,8 @@ segment.04.Violin.Music.Voice = {
         %! baca.staccatissimo()
         %! baca.IndicatorCommand._call()
         - \staccatissimo
+        %! krummzeit.silver_points()
+        [
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -4289,8 +4291,6 @@ segment.04.Violin.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \>
-        %! krummzeit.silver_points()
-        [
 
         %! krummzeit.silver_points()
         c''8

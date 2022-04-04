@@ -13861,6 +13861,8 @@ segment.02.Violin.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \f
+        %! krummzeit.polyphony()
+        [
         %! EXPLICIT_DYNAMIC_COLOR
         %! baca.treat_persistent_wrapper()
         %! baca.hairpin()
@@ -13875,8 +13877,6 @@ segment.02.Violin.Music.Voice = {
         %! baca._set_status_tag()
         %! EXPLICIT_DYNAMIC
         \<
-        %! krummzeit.polyphony()
-        [
 
         %! krummzeit.polyphony()
         c'16

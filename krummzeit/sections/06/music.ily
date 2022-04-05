@@ -4645,9 +4645,9 @@ segment.06.Clarinet.Music.Voice = {
         %! krummzeit.color_tuplets()
         dqs'!8.
         %! krummzeit.color_tuplets()
-        ~
-        %! krummzeit.color_tuplets()
         ]
+        %! krummzeit.color_tuplets()
+        ~
 
     %! krummzeit.color_tuplets()
     }

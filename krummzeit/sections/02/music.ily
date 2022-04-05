@@ -17973,9 +17973,9 @@ segment.02.Viola.Music.Voice = {
         %! baca.staccatissimo()
         %! baca.IndicatorCommand._call()
         - \staccatissimo
-        ~
         %! krummzeit.pizzicato_rhythm()
         ]
+        ~
 
     %! krummzeit.pizzicato_rhythm()
     }

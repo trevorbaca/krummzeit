@@ -2566,9 +2566,9 @@ segment.03.Oboe.Music.Voice = {
     %! baca.SpannerIndicatorCommand._call(4)
     %! SPANNER_STOP
     \stopTrillSpan
-    ~
     %! krummzeit.pizzicato_rhythm()
     ]
+    ~
     %! baca.trill_spanner()
     %! baca.SpannerIndicatorCommand._call(2)
     %! SPANNER_START

@@ -2975,12 +2975,12 @@ segment.01.Violin.Music.Voice = {
 
         %! krummzeit.glissando_rhythm()
         d''4
-        %! baca.repeat_tie()
-        %! baca.IndicatorCommand._call()
-        \repeatTie
         %! baca.glissando()
         %! abjad.glissando(7)
         \glissando
+        %! baca.repeat_tie()
+        %! baca.IndicatorCommand._call()
+        \repeatTie
 
     %! krummzeit.glissando_rhythm()
     }
@@ -3874,12 +3874,12 @@ segment.01.Viola.Music.Voice = {
 
         %! krummzeit.glissando_rhythm()
         ef4
-        %! baca.repeat_tie()
-        %! baca.IndicatorCommand._call()
-        \repeatTie
         %! baca.glissando()
         %! abjad.glissando(7)
         \glissando
+        %! baca.repeat_tie()
+        %! baca.IndicatorCommand._call()
+        \repeatTie
 
         %! krummzeit.glissando_rhythm()
         af!8.

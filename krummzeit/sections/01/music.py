@@ -138,7 +138,9 @@ commands(
 commands(
     (["vn", "va", "vc"], (1, 2)),
     library.opening_triplets(
-        rmakers.force_rest(baca.selectors.tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
     ),
 )
 
@@ -147,7 +149,7 @@ commands(
     library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([5, 6], 7)),
+            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
         ),
     ),
 )
@@ -157,7 +159,7 @@ commands(
     library.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([0, 1], 7)),
+            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
         ),
     ),
 )
@@ -167,7 +169,7 @@ commands(
     library.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([2, 3], 7)),
+            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
         ),
     ),
 )

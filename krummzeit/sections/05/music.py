@@ -99,7 +99,7 @@ commands(
     library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([5, 6], 7)),
+            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
         ),
     ),
 )
@@ -108,7 +108,9 @@ commands(
     ("va", (11, 24)),
     library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.selectors.tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
     ),
 )
 
@@ -117,7 +119,7 @@ commands(
     library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([5, 6], 7)),
+            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
         ),
     ),
 )
@@ -127,7 +129,7 @@ commands(
     library.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets((None, 3)),
+            lambda _: baca.select.tuplets(_, (None, 3)),
         ),
     ),
 )
@@ -136,7 +138,9 @@ commands(
     ("vn", (17, 24)),
     library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.selectors.tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
     ),
 )
 
@@ -144,7 +148,9 @@ commands(
     ("vc", (17, 24)),
     library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.selectors.tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
         tuplet_ratios=[(1, 4), (4, 3), (1, 2)],
     ),
 )
@@ -187,7 +193,7 @@ commands(
     library.silver_points(
         [(1, 2), (2, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([2], 7)),
+            lambda _: baca.select.tuplets(_, ([2], 7)),
         ),
     ),
 )
@@ -197,7 +203,7 @@ commands(
     library.silver_points(
         [(2, 1), (1, 2)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([5], 7)),
+            lambda _: baca.select.tuplets(_, ([5], 7)),
         ),
     ),
 )
@@ -210,7 +216,9 @@ commands(
 commands(
     ("cl", [(11, 13), (35, 44)]),
     library.color_tuplets(
-        rmakers.force_rest(baca.selectors.tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
         rotation=2,
     ),
 )

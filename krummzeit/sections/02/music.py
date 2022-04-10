@@ -296,7 +296,7 @@ commands(
     baca.chunk(
         library.pizzicato_rhythm(
             rmakers.force_rest(
-                baca.selectors.tuplets(([1, 2, 3], 6)),
+                lambda _: baca.select.tuplets(_, ([1, 2, 3], 6)),
             ),
         ),
         baca.new(
@@ -310,7 +310,7 @@ commands(
     ("vc", (52, 56)),
     library.pizzicato_rhythm(
         rmakers.force_rest(
-            baca.selectors.tuplets(([2, 3, 4], 6)),
+            lambda _: baca.select.tuplets(_, ([2, 3, 4], 6)),
         ),
     ),
 )
@@ -319,7 +319,7 @@ commands(
     ("vn", (54, 56)),
     library.pizzicato_rhythm(
         rmakers.force_rest(
-            baca.selectors.tuplets(([3, 4, 5], 6)),
+            lambda _: baca.select.tuplets(_, ([3, 4, 5], 6)),
         ),
     ),
 )
@@ -328,7 +328,7 @@ commands(
     ("va", (57, 71)),
     library.pizzicato_sixteenths(
         rmakers.force_rest(
-            baca.selectors.tuplets(([2, 3], 6)),
+            lambda _: baca.select.tuplets(_, ([2, 3], 6)),
         ),
         extra_counts=[2, 2, 0, 2, 4, 6],
     ),
@@ -338,7 +338,7 @@ commands(
     ("vc", (57, 71)),
     library.pizzicato_sixteenths(
         rmakers.force_rest(
-            baca.selectors.tuplets(([0, 2], 7)),
+            lambda _: baca.select.tuplets(_, ([0, 2], 7)),
         ),
         extra_counts=[4, 4, 2, 0, 2, 4],
     ),
@@ -348,7 +348,7 @@ commands(
     ("vn", (57, 71)),
     library.pizzicato_sixteenths(
         rmakers.force_rest(
-            baca.selectors.tuplets(([3, 6], 8)),
+            lambda _: baca.select.tuplets(_, ([3, 6], 8)),
         ),
         extra_counts=[6, 0, 4, 4, 0, 2],
     ),
@@ -358,7 +358,7 @@ commands(
     ("pf", (57, 71)),
     library.pizzicato_sixteenths(
         rmakers.force_rest(
-            baca.selectors.tuplets(([1, 5], 7)),
+            lambda _: baca.select.tuplets(_, ([1, 5], 7)),
         ),
         extra_counts=[4, 0, 2, 4, 6],
     ),

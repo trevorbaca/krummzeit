@@ -109,7 +109,9 @@ commands(
 commands(
     (["vn", "va", "vc"], (1, 3)),
     library.opening_triplets(
-        rmakers.force_rest(baca.selectors.tuplet(-1)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, -1),
+        ),
         remainder=abjad.RIGHT,
     ),
 )
@@ -120,7 +122,9 @@ commands(
     library.clusters("harpsichord"),
     library.margin_markup("Hpschd."),
     library.opening_triplets(
-        rmakers.force_rest(baca.selectors.tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
     ),
 )
 
@@ -143,7 +147,9 @@ commands(
     baca.instrument(library.instruments["Piano"]),
     library.margin_markup("Pf."),
     library.opening_triplets(
-        rmakers.force_rest(baca.selectors.tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
     ),
 )
 

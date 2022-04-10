@@ -129,7 +129,7 @@ commands(
     library.glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([5, 6], 7)),
+            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
         ),
     ),
 )
@@ -138,7 +138,9 @@ commands(
     ("va", (12, 20)),
     library.glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(baca.selectors.tuplets(([0, 1], 7))),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
+        ),
     ),
 )
 
@@ -147,7 +149,7 @@ commands(
     library.glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
         rmakers.force_rest(
-            baca.selectors.tuplets(([2, 3], 7)),
+            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
         ),
     ),
 )
@@ -160,7 +162,9 @@ commands(
 commands(
     ("cl", (12, 21)),
     library.color_tuplets(
-        rmakers.force_rest(baca.selectors.tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
         rotation=2,
     ),
 )
@@ -213,7 +217,7 @@ commands(
     ("pf", [(30, 31), (33, 34)]),
     library.pizzicato_rhythm(
         rmakers.force_rest(
-            baca.selectors.tuplets(([0, 4, 5], 6)),
+            lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
         ),
     ),
 )

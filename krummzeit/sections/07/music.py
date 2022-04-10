@@ -109,7 +109,7 @@ commands(
         [(1, 6)],
         [2, 2, 2, 2, 2, 3],
         rmakers.force_rest(
-            baca.selectors.tuplets((None, 2)),
+            lambda _: baca.select.tuplets(_, (None, 2)),
         ),
     ),
 )
@@ -120,7 +120,7 @@ commands(
         [(6, 1)],
         [2, 2, 2, 2, 2, 3],
         rmakers.force_rest(
-            baca.selectors.tuplets((None, 2)),
+            lambda _: baca.select.tuplets(_, (None, 2)),
         ),
     ),
 )

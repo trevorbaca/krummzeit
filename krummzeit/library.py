@@ -648,7 +648,7 @@ def incise_chain():
             talea_denominator=16,
         ),
         rmakers.force_rest(
-            baca.selectors.tuplets(([2], 5)),
+            lambda _: baca.select.tuplets(_, ([2], 5)),
         ),
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
@@ -716,7 +716,7 @@ def oboe_trills():
     return baca.rhythm(
         rmakers.tuplet([(1, 1, 1, 1, 3, 3), (3, 4, 1, 1)]),
         rmakers.force_rest(
-            baca.selectors.tuplets(([3, 4], 6)),
+            lambda _: baca.select.tuplets(_, ([3, 4], 6)),
         ),
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),

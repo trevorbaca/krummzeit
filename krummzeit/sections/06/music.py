@@ -421,7 +421,7 @@ commands(
     baca.dynamic("ppp"),
     baca.new(
         baca.trill_spanner(alteration="A5"),
-        map=baca.selectors.qruns(),
+        map=lambda _: baca.select.qruns(_),
     ),
 )
 
@@ -435,7 +435,7 @@ commands(
     baca.dynamic("ppp"),
     baca.new(
         baca.trill_spanner(),
-        map=baca.selectors.qruns(),
+        map=lambda _: baca.select.qruns(_),
     ),
 )
 

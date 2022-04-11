@@ -281,7 +281,7 @@ commands(
     baca.pitches(
         pcs_,
         allow_repeats=True,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -339,7 +339,7 @@ commands(
     ("va", (1, 23)),
     baca.pitches(
         "e dtqs f eqs dqs c dqs",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -371,7 +371,7 @@ commands(
     ("vc", (1, 23)),
     baca.pitches(
         "d, ctqs, e, dqs, cqs, b,, dqs,",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -395,7 +395,7 @@ commands(
     ("vn", (22, 28)),
     baca.pitches(
         pcs_,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -435,7 +435,7 @@ commands(
     ("pf", [(14, 20), (28, 35)]),
     baca.pitch(
         "C#6",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -443,7 +443,7 @@ commands(
     ("perc", [(14, 20), (28, 33)]),
     baca.pitch(
         "C#6",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 

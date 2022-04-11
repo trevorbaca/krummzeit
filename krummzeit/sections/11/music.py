@@ -134,7 +134,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -182,7 +182,7 @@ commands(
     "ob",
     baca.pitch(
         "C#4",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.dynamic("fff"),
     baca.dls_staff_padding(5),
@@ -192,7 +192,7 @@ commands(
     "cl",
     baca.pitch(
         "D2",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.dynamic("f"),
     baca.dls_staff_padding(7),

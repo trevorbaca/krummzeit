@@ -274,7 +274,9 @@ commands(
         baca.glissando(),
         map=lambda _: baca.select.runs(_),
     ),
-    baca.stem_tremolo(selector=baca.selectors.plts((1, None))),
+    baca.stem_tremolo(
+        selector=lambda _: baca.select.plts(_)[1:],
+    ),
 )
 
 commands(

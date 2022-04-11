@@ -184,7 +184,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -390,7 +390,7 @@ commands(
     ("va", (11, 16)),
     baca.pitch(
         "bf,",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 

@@ -139,7 +139,9 @@ commands(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: abjad.select.get(
-                baca.select.plts(_), [5, 6], 7,
+                baca.select.plts(_),
+                [5, 6],
+                7,
             ),
         ),
         tie_across_divisions=abjad.index([1], 2),

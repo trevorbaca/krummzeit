@@ -310,7 +310,7 @@ commands(
     baca.dynamic('"mp"'),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
     library.register_narrow(2),
     baca.markup(r"\krummzeit-on-bridge-slow-markup"),
@@ -346,7 +346,7 @@ commands(
     ],
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
     library.register_narrow(5),
     baca.note_head_style_harmonic(),

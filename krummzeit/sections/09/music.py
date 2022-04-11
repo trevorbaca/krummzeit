@@ -199,7 +199,7 @@ commands(
     baca.dynamic("ppp"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
     baca.note_head_style_harmonic(),
 )
@@ -272,7 +272,7 @@ commands(
     baca.dynamic("fff"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
     baca.stem_tremolo(selector=baca.selectors.plts((1, None))),
 )

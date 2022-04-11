@@ -329,7 +329,7 @@ commands(
     (strings, (12, 20)),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
     baca.hairpin(
         "p > ppp",

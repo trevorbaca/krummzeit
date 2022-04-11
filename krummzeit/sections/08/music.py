@@ -255,7 +255,7 @@ commands(
     baca.hairpin("ff < fff"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
     baca.markup(r"\baca-subito-ordinario-markup"),
     baca.pitches("A1 B~1 C2 D+2 E+2 F2 Gb2 A~2 B2"),
@@ -270,7 +270,7 @@ commands(
     ("va", (1, 7)),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
     baca.dls_staff_padding(6),
     baca.hairpin("ff < fff"),
@@ -363,7 +363,7 @@ commands(
     baca.hairpin("ff > pp"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
     baca.markup(r"\baca-molto-flautando-markup"),
     baca.tuplet_bracket_staff_padding(4),
@@ -416,7 +416,7 @@ commands(
     (["vn", "va", "vc"], (14, 23)),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
 )
 

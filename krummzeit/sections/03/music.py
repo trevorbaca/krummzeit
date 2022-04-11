@@ -331,7 +331,7 @@ commands(
     baca.dynamic("f"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -348,7 +348,7 @@ commands(
     baca.clef("alto"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.markup(r"\baca-molto-flautando-markup"),
@@ -363,7 +363,7 @@ commands(
             "ff > pp",
             selector=lambda _: baca.select.tleaves(_)[:2],
         ),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -380,7 +380,7 @@ commands(
     baca.clef("bass"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
     baca.new(
         baca.markup(r"\baca-molto-flautando-markup"),
@@ -491,7 +491,7 @@ commands(
     (["vn", "va", "vc"], (32, 42)),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
     ),
     baca.hairpin(
         "pp < fff",

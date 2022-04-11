@@ -248,7 +248,7 @@ commands(
     baca.markup(r"\krummzeit-on-bridge-full-bow-markup"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
 )
 

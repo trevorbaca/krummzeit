@@ -268,7 +268,7 @@ commands(
     (["vn", "va", "vc"], (4, 8)),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.runs(),
+        map=lambda _: baca.select.runs(_),
     ),
     baca.hairpin(
         "pp < ff",

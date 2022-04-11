@@ -284,7 +284,7 @@ commands(
     ("cl", (5, 6)),
     baca.hairpin(
         "ff < fff",
-        selector=baca.selectors.rleaves(),
+        selector=lambda _: baca.select.rleaves(_),
     ),
 )
 

@@ -222,7 +222,7 @@ commands(
 commands(
     ("perc", (3, 22)),
     baca.dynamic("f"),
-    baca.laissez_vibrer(selector=baca.selectors.ptails()),
+    baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
 )
 
 pcs = abjad.PitchClassSegment(library.violet_pitch_classes)

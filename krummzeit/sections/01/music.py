@@ -280,7 +280,7 @@ commands(
     baca.note_head_style_harmonic(),
     baca.new(
         baca.repeat_tie(baca.selectors.pheads((1, None))),
-        map=baca.selectors.qruns(),
+        map=lambda _: baca.select.qruns(_),
     ),
 )
 

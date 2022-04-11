@@ -242,7 +242,9 @@ commands(
     ("cl", (1, 5)),
     baca.hairpin(
         "ppp < ff",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.pitch("B1"),
 )
@@ -446,7 +448,9 @@ commands(
     ("cl", (18, 23)),
     baca.hairpin(
         "f < ff",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.pitch("C2"),
     library.color_fingerings(),

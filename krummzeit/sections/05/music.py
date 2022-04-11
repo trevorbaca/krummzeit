@@ -366,7 +366,9 @@ commands(
     ("va", (8, 10)),
     baca.hairpin(
         "pp < f",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.markup(r"\baca-molto-flautando-markup"),
 )
@@ -381,7 +383,9 @@ commands(
             "molto flautando => molto gridato",
             abjad.Tweak(r"- \tweak staff-padding 6"),
         ),
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
 )
 
@@ -395,7 +399,9 @@ commands(
             "molto flautando => molto gridato",
             abjad.Tweak(r"- \tweak staff-padding 6"),
         ),
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
 )
 

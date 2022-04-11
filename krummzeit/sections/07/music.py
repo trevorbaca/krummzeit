@@ -170,7 +170,9 @@ commands(
     (["va", "vc"], (2, 6)),
     baca.hairpin(
         "ppp < fff",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
 )
 

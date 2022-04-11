@@ -218,7 +218,9 @@ commands(
     ("vn", 5),
     baca.hairpin(
         "ff > pp",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(7, 5),
@@ -231,7 +233,9 @@ commands(
     ("vn", 7),
     baca.hairpin(
         "pp < ff",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(5, 4),
@@ -242,7 +246,9 @@ commands(
     ("vn", 9),
     baca.hairpin(
         "ff > pp",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(5, 4),
@@ -254,7 +260,9 @@ commands(
     baca.clef("treble"),
     baca.hairpin(
         "ff > pp",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(6, 5),
@@ -267,7 +275,9 @@ commands(
     ("va", 7),
     baca.hairpin(
         "pp < ff",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(5, 4),
@@ -279,7 +289,9 @@ commands(
     baca.clef("alto"),
     baca.hairpin(
         "ff > pp",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(4, 2),
@@ -291,7 +303,9 @@ commands(
     baca.clef("treble"),
     baca.hairpin(
         "ff > pp",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(5, 4),
@@ -304,7 +318,9 @@ commands(
     baca.clef("bass"),
     baca.hairpin(
         "pp < ff",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(4, 3),
@@ -346,7 +362,9 @@ commands(
     ("vc", 9),
     baca.hairpin(
         "ff > pp",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     library.displacement(),
     library.register_narrow(3, 2),

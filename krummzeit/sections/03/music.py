@@ -361,7 +361,7 @@ commands(
     baca.new(
         baca.hairpin(
             "ff > pp",
-            selector=baca.selectors.tleaves((None, 2)),
+            selector=lambda _: baca.select.tleaves(_)[:2],
         ),
         map=baca.selectors.runs(exclude=baca.const.HIDDEN),
     ),
@@ -495,7 +495,9 @@ commands(
     ),
     baca.hairpin(
         "pp < fff",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.markup(r"\baca-non-flautando-markup"),
     baca.markup(r"\krummzeit-show-tempo-markup"),

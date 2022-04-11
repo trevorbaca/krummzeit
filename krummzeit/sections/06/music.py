@@ -333,7 +333,9 @@ commands(
     ),
     baca.hairpin(
         "p > ppp",
-        selector=baca.selectors.tleaves(),
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
     ),
     baca.markup(r"\baca-molto-flautando-markup"),
     baca.note_head_style_harmonic(),

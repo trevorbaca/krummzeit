@@ -137,7 +137,11 @@ commands(
     library.margin_markup("Pf."),
     library.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.selectors.plts(([5, 6], 7))),
+        rmakers.force_rest(
+            lambda _: abjad.select.get(
+                baca.select.plts(_), [5, 6], 7,
+            ),
+        ),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )
@@ -296,7 +300,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -394,7 +398,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 

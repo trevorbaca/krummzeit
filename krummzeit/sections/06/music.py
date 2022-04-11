@@ -245,7 +245,7 @@ commands(
     baca.suite(
         baca.pitches(
             pcs_,
-            selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
         ),
         library.displacement(),
         library.register_wide(5),
@@ -291,7 +291,7 @@ commands(
     ("ob", (12, 21)),
     baca.pitches(
         pitches,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -301,7 +301,7 @@ commands(
     ("cl", (12, 21)),
     baca.pitches(
         pitches,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -321,7 +321,7 @@ commands(
     (strings, (12, 20)),
     baca.pitches(
         pcs,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -361,7 +361,7 @@ commands(
     baca.dynamic("p"),
     baca.pitch(
         "F5",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.staccatissimo(
         selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
@@ -372,7 +372,7 @@ commands(
     ("va", (23, 35)),
     baca.pitch(
         "F#3",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -380,7 +380,7 @@ commands(
     ("vc", (23, 35)),
     baca.pitch(
         "C2",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -452,7 +452,7 @@ commands(
     baca.suite(
         baca.pitches(
             pcs,
-            selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
         ),
         library.displacement(),
         library.register_narrow(7),

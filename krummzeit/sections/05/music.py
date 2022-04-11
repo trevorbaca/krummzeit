@@ -242,7 +242,11 @@ commands(
     ("pf", (8, 10)),
     library.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.selectors.plts(([5, 6], 7))),
+        rmakers.force_rest(
+            lambda _: abjad.select.get(
+                baca.select.plts(_), [5, 6], 7,
+            ),
+        ),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )
@@ -285,7 +289,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -335,7 +339,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -439,7 +443,7 @@ commands(
     ("ob", (11, 24)),
     baca.pitches(
         "D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -447,7 +451,7 @@ commands(
     ("cl", (11, 24)),
     baca.pitches(
         "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -495,7 +499,7 @@ commands(
     ("vn", (39, 48)),
     baca.pitch(
         "A+3",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -503,7 +507,7 @@ commands(
     ("va", (39, 48)),
     baca.pitch(
         "Bb2",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -511,7 +515,7 @@ commands(
     ("vc", (39, 48)),
     baca.pitch(
         "A2",
-        selector=baca.selectors.plts(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
 )
 

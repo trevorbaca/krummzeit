@@ -152,7 +152,7 @@ commands(
     ("perc", (1, 7)),
     baca.make_repeated_duration_notes(
         [(1, 2)],
-        rmakers.force_rest(baca.selectors.lt(-1)),
+        rmakers.force_rest(lambda _: baca.select.lt(_, -1)),
         do_not_rewrite_meter=True,
     ),
     baca.markup(r"\baca-tam-tam-markup"),
@@ -311,7 +311,7 @@ commands(
     baca.dynamic("pp"),
     baca.markup(r"\baca-leggierissimo-markup"),
     baca.staccato(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
     baca.suite(
         library.displacement(),
@@ -340,7 +340,7 @@ commands(
     baca.dynamic("pp"),
     baca.markup(r"\baca-leggierissimo-markup"),
     baca.staccato(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -349,7 +349,7 @@ commands(
     baca.dynamic("pp"),
     baca.markup(r"\krummzeit-leggierissimo-off-string-bowing-on-staccati-markup"),
     baca.staccato(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -382,7 +382,7 @@ commands(
     baca.markup(r"\krummzeit-fifth-harmonic-of-F-one-markup"),
     baca.new(
         baca.tenuto(),
-        map=baca.selectors.pheads(),
+        map=lambda _: baca.select.pheads(_),
     ),
     baca.note_head_style_harmonic(),
     baca.pitch("C4"),
@@ -487,13 +487,13 @@ commands(
 commands(
     ("va", (20, 23)),
     baca.markup(r"\baca-subito-ordinario-markup"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
     (["vn", "vc"], (21, 23)),
     baca.markup(r"\baca-subito-ordinario-markup"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 ### VERTICAL ALIGNMENT ###

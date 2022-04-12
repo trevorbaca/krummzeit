@@ -136,7 +136,7 @@ commands(
     baca.make_repeat_tied_notes(),
     baca.markup(r"\baca-snare-drum-markup"),
     baca.staff_position(0),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
@@ -194,7 +194,7 @@ commands(
     library.displacement(),
     library.register_narrow(7, 5),
     baca.ottava(),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -202,7 +202,7 @@ commands(
     baca.hairpin("pp < ff"),
     library.displacement(),
     library.register_narrow(5, 3),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -211,7 +211,7 @@ commands(
     baca.hairpin("ff > pp"),
     library.displacement(),
     library.register_narrow(3, 2),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -226,7 +226,7 @@ commands(
     library.register_narrow(7, 5),
     baca.ottava(),
     baca.markup(r"\baca-pizz-markup"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -239,7 +239,7 @@ commands(
     ),
     library.displacement(),
     library.register_narrow(5, 4),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -252,7 +252,7 @@ commands(
     ),
     library.displacement(),
     library.register_narrow(5, 4),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -268,7 +268,7 @@ commands(
     library.register_narrow(6, 5),
     baca.ottava(),
     baca.markup(r"\baca-pizz-markup"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -281,7 +281,7 @@ commands(
     ),
     library.displacement(),
     library.register_narrow(5, 4),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -295,7 +295,7 @@ commands(
     ),
     library.displacement(),
     library.register_narrow(4, 2),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -310,7 +310,7 @@ commands(
     library.displacement(),
     library.register_narrow(5, 4),
     baca.markup(r"\baca-pizz-markup"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -324,7 +324,7 @@ commands(
     ),
     library.displacement(),
     library.register_narrow(4, 3),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -368,7 +368,7 @@ commands(
     ),
     library.displacement(),
     library.register_narrow(3, 2),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(

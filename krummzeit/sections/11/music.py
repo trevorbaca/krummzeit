@@ -100,7 +100,7 @@ commands(
 
 commands(
     "pf",
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
@@ -120,7 +120,7 @@ commands(
     "perc",
     baca.dynamic("fff"),
     baca.dls_staff_padding(4),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
@@ -144,7 +144,7 @@ commands(
     baca.dls_staff_padding(5),
     baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
     baca.tuplet_bracket_staff_padding(2),
     library.displacement(),

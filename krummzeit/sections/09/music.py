@@ -102,7 +102,7 @@ commands(
     baca.clef("treble"),
     baca.markup(r"\baca-crotale-markup"),
     baca.pitch("D5"),
-    library.left_remainder_quarters(rmakers.force_rest(baca.selectors.lt(0))),
+    library.left_remainder_quarters(rmakers.force_rest(lambda _: baca.select.lt(_, 0))),
 )
 
 commands(
@@ -172,13 +172,13 @@ commands(
 commands(
     (["vn", "va", "vc"], (1, 2)),
     baca.dynamic("fff-poss"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
     ("perc", (5, 6)),
     baca.dynamic("ff-sempre"),
-    baca.accent(selector=baca.selectors.pheads()),
+    baca.accent(selector=lambda _: baca.select.pheads(_)),
 )
 
 pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
@@ -283,7 +283,7 @@ commands(
     (["pf", "perc"], (9, 10)),
     baca.dynamic("fff"),
     baca.pitch("F#6"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 ### VERTICAL ALIGNMENT ###

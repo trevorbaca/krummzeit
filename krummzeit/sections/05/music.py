@@ -257,7 +257,7 @@ commands(
     ("pf", (11, 13)),
     library.piano_harmonics(
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(baca.selectors.plt(0)),
+        rmakers.force_rest(lambda _: baca.select.plt(_, 0)),
         tie_across_divisions=abjad.index([1], 2),
     ),
 )
@@ -324,7 +324,7 @@ commands(
 
 commands(
     ("perc", (6, 16)),
-    baca.accent(selector=baca.selectors.pheads()),
+    baca.accent(selector=lambda _: baca.select.pheads(_)),
     baca.dynamic('"ff"'),
     baca.markup(r"\krummzeit-accent-changes-markup"),
 )
@@ -433,10 +433,10 @@ commands(
     baca.dynamic("mp"),
     baca.new(
         baca.tenuto(),
-        map=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
     baca.note_head_style_harmonic(
-        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
     ),
     baca.markup(r"\krummzeit-fifth-harmonic-of-F-one-markup"),
 )
@@ -466,7 +466,7 @@ commands(
 commands(
     (["pf", "perc"], [(25, 26), (35, 38), (39, 42)]),
     baca.pitch("F#6"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
 )
 
 commands(
@@ -526,7 +526,7 @@ commands(
     baca.dynamic("mp"),
     baca.markup(r"\baca-ordinario-markup"),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -548,7 +548,7 @@ commands(
     baca.dls_staff_padding(6),
     baca.make_repeat_tied_notes(),
     baca.staff_position(0),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.markup(r"\krummzeit-attackless-roll-markup"),
     baca.markup(r"\baca-suspended-cymbal-markup"),
 )

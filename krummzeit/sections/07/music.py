@@ -180,7 +180,7 @@ commands(
     ("perc", (2, 16)),
     baca.dynamic("ppp"),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
     ),
     baca.markup(r"\krummzeit-fingertips-markup"),
 )
@@ -226,7 +226,7 @@ commands(
     ("perc", (19, 22)),
     baca.dynamic("p-sempre"),
     baca.laissez_vibrer(
-        selector=baca.selectors.pheads(),
+        selector=lambda _: baca.select.pheads(_),
     ),
     baca.markup(r"\baca-attackless-markup"),
 )

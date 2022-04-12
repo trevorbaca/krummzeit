@@ -279,7 +279,9 @@ commands(
     baca.markup(r"\baca-molto-flautando-markup"),
     baca.note_head_style_harmonic(),
     baca.new(
-        baca.repeat_tie(baca.selectors.pheads((1, None))),
+        baca.repeat_tie(
+            lambda _: baca.select.pheads(_)[1:],
+        ),
         map=lambda _: baca.select.qruns(_),
     ),
 )

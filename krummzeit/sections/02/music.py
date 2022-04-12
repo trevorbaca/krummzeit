@@ -57,43 +57,43 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "67.5",
-        selector=baca.selectors.leaf(23 - 1),
+        selector=lambda _: abjad.select.leaf(_, 23 - 1),
     ),
     baca.metronome_mark(
         "4=8",
-        selector=baca.selectors.leaf(23 - 1),
+        selector=lambda _: abjad.select.leaf(_, 23 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(29 - 1),
+        selector=lambda _: abjad.select.leaf(_, 29 - 1),
     ),
     baca.metronome_mark(
         "135",
-        selector=baca.selectors.leaf(34 - 1),
+        selector=lambda _: abjad.select.leaf(_, 34 - 1),
     ),
     baca.metronome_mark(
         "90",
-        selector=baca.selectors.leaf(39 - 1),
+        selector=lambda _: abjad.select.leaf(_, 39 - 1),
     ),
     baca.metronome_mark(
         "4.=4",
-        selector=baca.selectors.leaf(39 - 1),
+        selector=lambda _: abjad.select.leaf(_, 39 - 1),
     ),
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(45 - 1),
+        selector=lambda _: abjad.select.leaf(_, 45 - 1),
     ),
     baca.metronome_mark(
         "135",
-        selector=baca.selectors.leaf(48 - 1),
+        selector=lambda _: abjad.select.leaf(_, 48 - 1),
     ),
     baca.metronome_mark(
         "108",
-        selector=baca.selectors.leaf(57 - 1),
+        selector=lambda _: abjad.select.leaf(_, 57 - 1),
     ),
     baca.metronome_mark(
         "4:5(4)=4",
-        selector=baca.selectors.leaf(57 - 1),
+        selector=lambda _: abjad.select.leaf(_, 57 - 1),
     ),
     baca.rehearsal_mark("A"),
 )
@@ -300,7 +300,7 @@ commands(
             ),
         ),
         baca.new(
-            baca.untie(baca.selectors.leaf(-2)),
+            baca.untie(lambda _: abjad.select.leaf(_, -2)),
             measures=52,
         ),
     ),

@@ -360,7 +360,7 @@ violet_pitch_classes = abjad.sequence.flatten(violet_pitch_classes, depth=-1)
 @dataclasses.dataclass
 class RegisterTransitionCommand(baca.Command):
 
-    selector: typing.Any = baca.selectors.leaves()
+    selector: typing.Any = lambda _: baca.select.leaves(_)
     start_registration: typing.Any = None
     stop_registration: typing.Any = None
 
@@ -691,7 +691,9 @@ def left_remainder_quarters(*commands):
     )
 
 
-def margin_markup(key, alert=None, context="Staff", selector=baca.selectors.leaf(0)):
+def margin_markup(
+    key, alert=None, context="Staff", selector=lambda _: abjad.select.leaf(_, 0)
+):
     margin_markup = margin_markups[key]
     command = baca.margin_markup(
         margin_markup,
@@ -1169,7 +1171,7 @@ def sponge_rhythm():
 def white_rhythm(durations=None, remainder=abjad.LEFT, do_not_burnish=None):
     force_rest = []
     if not do_not_burnish:
-        command = rmakers.force_rest(baca.selectors.leaf(0))
+        command = rmakers.force_rest(lambda _: abjad.select.leaf(_, 0))
         force_rest.append(command)
 
     def preprocessor(divisions):

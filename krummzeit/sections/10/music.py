@@ -195,28 +195,28 @@ commands(
 commands(
     (["pf", "perc"], 1),
     baca.pitch("F#6"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
     ("vn", (1, 3)),
     baca.dynamic("fff"),
     baca.pitch("Eb5"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
     ("va", (1, 3)),
     baca.dynamic("fff"),
     baca.pitch("A3"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
     ("vc", (1, 3)),
     baca.dynamic("fff"),
     baca.pitch("E~2"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
@@ -276,7 +276,7 @@ commands(
     ("cl", (3, 4)),
     baca.dynamic(
         "ff",
-        selector=baca.selectors.pleaf(0),
+        selector=lambda _: baca.select.pleaf(_, 0),
     ),
 )
 
@@ -300,7 +300,7 @@ commands(
     ("cl", 9),
     baca.dynamic(
         "fff-poss",
-        selector=baca.selectors.pleaf(0),
+        selector=lambda _: baca.select.pleaf(_, 0),
     ),
 )
 
@@ -326,7 +326,7 @@ commands(
     (["vn", "va", "vc"], 22),
     baca.dynamic("fff"),
     baca.markup(r"\baca-pizz-markup"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     library.displacement(),
     library.register_narrow(6),
 )

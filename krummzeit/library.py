@@ -456,7 +456,7 @@ def clusters(flavor):
 def color_fingerings():
     return baca.color_fingerings(
         [0, 1, 2, 1],
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     )
 
 

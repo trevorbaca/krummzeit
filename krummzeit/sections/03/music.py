@@ -451,7 +451,7 @@ commands(
     (["pf", "perc"], (14, 20)),
     baca.dynamic("ff"),
     baca.staccatissimo(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -468,7 +468,7 @@ commands(
 commands(
     ("perc", (34, 44)),
     baca.dynamic("ppp"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.markup(r"\krummzeit-fingertips-markup"),
 )
 

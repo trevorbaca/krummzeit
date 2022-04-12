@@ -153,7 +153,7 @@ commands(
 commands(
     "perc",
     baca.accent(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
     baca.staff_position(0),
 )
@@ -507,7 +507,7 @@ commands(
 commands(
     (["vn", "ob", "cl"], (1, 37)),
     baca.staccato(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -621,7 +621,7 @@ commands(
     baca.dynamic("fff-sempre"),
     baca.new(
         baca.marcato(),
-        map=baca.selectors.pheads(),
+        map=lambda _: baca.select.pheads(_),
     ),
     baca.ottava_bassa(),
     library.clusters("low"),
@@ -632,7 +632,7 @@ commands(
     baca.dynamic("p-sempre"),
     baca.new(
         baca.laissez_vibrer(),
-        map=baca.selectors.pheads(),
+        map=lambda _: baca.select.pheads(_),
     ),
 )
 
@@ -655,7 +655,7 @@ commands(
     baca.clef("treble"),
     baca.dynamic("fff"),
     baca.markup(r"\baca-pizz-markup"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     library.register_narrow(5, 6),
 )
 
@@ -664,7 +664,7 @@ commands(
     baca.clef("treble"),
     baca.dynamic("fff"),
     baca.markup(r"\baca-pizz-markup"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     library.register_narrow(5, 6),
 )
 
@@ -672,7 +672,7 @@ commands(
     ("vn", (54, 71)),
     baca.dynamic("fff"),
     baca.markup(r"\baca-pizz-markup"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     library.register_narrow(5, 6),
 )
 
@@ -680,7 +680,7 @@ commands(
     ("pf", (57, 75)),
     baca.clef("treble"),
     baca.dynamic("fff"),
-    baca.staccatissimo(selector=baca.selectors.pheads()),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     library.register_narrow(5, 6),
 )
 

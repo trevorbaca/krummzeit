@@ -277,12 +277,12 @@ commands(
 commands(
     (["vn", "va", "vc"], (9, 10)),
     baca.dynamic("ff"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
     ("perc", [(1, 14), (28, 34)]),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 pitches = "C4 Bqs4 A4 Gqs4 Fqs4 Eqf4"
@@ -310,7 +310,7 @@ commands(
     baca.dynamic("ff"),
     baca.new(
         baca.glissando(),
-        map=baca.selectors.ntruns(),
+        map=lambda _: baca.select.ntruns(_),
     ),
     library.color_fingerings(),
 )
@@ -364,7 +364,7 @@ commands(
         selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
     ),
     baca.staccatissimo(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
 )
 
@@ -447,7 +447,7 @@ commands(
     baca.dynamic("fff"),
     baca.ottava(),
     baca.staccatissimo(
-        selector=baca.selectors.pheads(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
     ),
     baca.suite(
         baca.pitches(

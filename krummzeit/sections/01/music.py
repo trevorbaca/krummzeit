@@ -195,7 +195,7 @@ commands(
     baca.dynamic("fff-poss"),
     baca.make_repeat_tied_notes(),
     baca.pitch("C#5"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
@@ -212,12 +212,12 @@ commands(
     baca.make_repeat_tied_notes(),
     baca.markup(r"\baca-xylophone-markup"),
     baca.pitch("C#5"),
-    baca.stem_tremolo(selector=baca.selectors.pleaves()),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
 commands(
     ("perc", (10, 13)),
-    baca.accent(selector=baca.selectors.pheads()),
+    baca.accent(selector=lambda _: baca.select.pheads(_)),
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.dynamic('"ff"'),
@@ -247,7 +247,7 @@ commands(
     (["vn", "va", "vc"], (1, 2)),
     baca.dynamic("fff"),
     baca.stem_tremolo(
-        selector=baca.selectors.pleaves(exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
     ),
 )
 

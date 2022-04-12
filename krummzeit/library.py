@@ -436,7 +436,9 @@ def closing_pizzicati(counts, extra_counts, split):
     durations = [(_, 4) for _ in split]
     return baca.rhythm(
         rmakers.talea(counts, 4, extra_counts=extra_counts),
-        rmakers.force_rest(baca.selectors.leaves_in_each_lt(1, None)),
+        rmakers.force_rest(
+            lambda _: baca.select.leaves_in_each_lt(_, 1, None),
+        ),
         rmakers.beam(),
         rmakers.extract_trivial(),
         preprocessor=lambda _: baca.sequence.split_divisions(_, durations, cyclic=True),
@@ -807,7 +809,9 @@ def pizzicato_sixteenths(*commands, extra_counts=None):
             16,
             extra_counts=extra_counts,
         ),
-        rmakers.force_rest(baca.selectors.leaf_in_each_tuplet(0)),
+        rmakers.force_rest(
+            lambda _: baca.select.leaf_in_each_tuplet(_, 0),
+        ),
         *commands,
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),

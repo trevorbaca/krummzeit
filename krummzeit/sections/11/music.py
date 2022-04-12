@@ -107,7 +107,7 @@ commands(
     ("pf", (25, 48)),
     baca.dynamic(
         "fff-poss",
-        selector=baca.selectors.leaf(0),
+        selector=lambda _: abjad.select.leaf(_, 0),
     ),
 )
 

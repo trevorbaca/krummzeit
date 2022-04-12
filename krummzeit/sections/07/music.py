@@ -48,11 +48,11 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         baca.Accelerando(),
-        selector=baca.selectors.leaf(11 - 1),
+        selector=lambda _: abjad.select.leaf(_, 11 - 1),
     ),
     baca.metronome_mark(
         "144",
-        selector=baca.selectors.leaf(19 - 1),
+        selector=lambda _: abjad.select.leaf(_, 19 - 1),
     ),
     baca.rehearsal_mark("F"),
 )
@@ -67,7 +67,7 @@ commands(
     baca.clef("percussion"),
     baca.markup(
         r"\baca-snare-drum-markup",
-        selector=baca.selectors.leaf(0),
+        selector=lambda _: abjad.select.leaf(_, 0),
     ),
 )
 

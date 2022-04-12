@@ -59,39 +59,39 @@ commands(
     "Global_Skips",
     baca.metronome_mark(
         "135",
-        selector=baca.selectors.leaf(9 - 1),
+        selector=lambda _: abjad.select.leaf(_, 9 - 1),
     ),
     baca.metronome_mark(
         "72",
-        selector=baca.selectors.leaf(11 - 1),
+        selector=lambda _: abjad.select.leaf(_, 11 - 1),
     ),
     baca.metronome_mark(
         "108",
-        selector=baca.selectors.leaf(15 - 1),
+        selector=lambda _: abjad.select.leaf(_, 15 - 1),
     ),
     baca.metronome_mark(
         "90",
-        selector=baca.selectors.leaf(17 - 1),
+        selector=lambda _: abjad.select.leaf(_, 17 - 1),
     ),
     baca.metronome_mark(
         "108",
-        selector=baca.selectors.leaf(18 - 1),
+        selector=lambda _: abjad.select.leaf(_, 18 - 1),
     ),
     baca.metronome_mark(
         "90",
-        selector=baca.selectors.leaf(20 - 1),
+        selector=lambda _: abjad.select.leaf(_, 20 - 1),
     ),
     baca.metronome_mark(
         "135",
-        selector=baca.selectors.leaf(25 - 1),
+        selector=lambda _: abjad.select.leaf(_, 25 - 1),
     ),
     baca.metronome_mark(
         "45",
-        selector=baca.selectors.leaf(27 - 1),
+        selector=lambda _: abjad.select.leaf(_, 27 - 1),
     ),
     baca.metronome_mark(
         "72",
-        selector=baca.selectors.leaf(33 - 1),
+        selector=lambda _: abjad.select.leaf(_, 33 - 1),
     ),
     baca.rehearsal_mark("E"),
 )

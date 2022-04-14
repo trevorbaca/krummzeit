@@ -247,7 +247,7 @@ commands(
     (["vn", "va", "vc"], (1, 2)),
     baca.dynamic("fff"),
     baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
 )
 

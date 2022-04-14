@@ -134,7 +134,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -144,7 +144,7 @@ commands(
     baca.dls_staff_padding(5),
     baca.markup(r"\baca-pizz-markup"),
     baca.staccatissimo(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
     baca.tuplet_bracket_staff_padding(2),
     library.displacement(),
@@ -182,7 +182,7 @@ commands(
     "ob",
     baca.pitch(
         "C#4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
     baca.dynamic("fff"),
     baca.dls_staff_padding(5),
@@ -192,7 +192,7 @@ commands(
     "cl",
     baca.pitch(
         "D2",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
     baca.dynamic("f"),
     baca.dls_staff_padding(7),

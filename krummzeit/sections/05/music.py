@@ -291,7 +291,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -316,7 +316,7 @@ commands(
     baca.dynamic('"mp"'),
     baca.new(
         baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
     library.register_narrow(2),
     baca.markup(r"\krummzeit-on-bridge-slow-markup"),
@@ -341,7 +341,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -352,7 +352,7 @@ commands(
     ],
     baca.new(
         baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
     library.register_narrow(5),
     baca.note_head_style_harmonic(),
@@ -433,10 +433,10 @@ commands(
     baca.dynamic("mp"),
     baca.new(
         baca.tenuto(),
-        map=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
     baca.note_head_style_harmonic(
-        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
     baca.markup(r"\krummzeit-fifth-harmonic-of-F-one-markup"),
 )
@@ -445,7 +445,7 @@ commands(
     ("ob", (11, 24)),
     baca.pitches(
         "D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -453,7 +453,7 @@ commands(
     ("cl", (11, 24)),
     baca.pitches(
         "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -501,7 +501,7 @@ commands(
     ("vn", (39, 48)),
     baca.pitch(
         "A+3",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -509,7 +509,7 @@ commands(
     ("va", (39, 48)),
     baca.pitch(
         "Bb2",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -517,7 +517,7 @@ commands(
     ("vc", (39, 48)),
     baca.pitch(
         "A2",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -526,7 +526,7 @@ commands(
     baca.dynamic("mp"),
     baca.markup(r"\baca-ordinario-markup"),
     baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
 )
 

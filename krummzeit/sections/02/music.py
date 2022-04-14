@@ -153,7 +153,7 @@ commands(
 commands(
     "perc",
     baca.accent(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
     baca.staff_position(0),
 )
@@ -400,7 +400,7 @@ commands(
     baca.pitches(
         library.indigo_pitch_classes,
         allow_repeats=True,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -416,7 +416,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -433,7 +433,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -507,7 +507,7 @@ commands(
 commands(
     (["vn", "ob", "cl"], (1, 37)),
     baca.staccato(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
 )
 

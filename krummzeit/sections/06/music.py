@@ -238,14 +238,14 @@ commands(
         baca.trill_spanner(),
         map=lambda _: [
             x
-            for x in baca.plts(_, exclude=baca.const.HIDDEN)
+            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
             if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
         ],
     ),
     baca.suite(
         baca.pitches(
             pcs_,
-            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
         ),
         library.displacement(),
         library.register_wide(5),
@@ -291,7 +291,7 @@ commands(
     ("ob", (12, 21)),
     baca.pitches(
         pitches,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -301,7 +301,7 @@ commands(
     ("cl", (12, 21)),
     baca.pitches(
         pitches,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -321,7 +321,7 @@ commands(
     (strings, (12, 20)),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -361,10 +361,10 @@ commands(
     baca.dynamic("p"),
     baca.pitch(
         "F5",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
     baca.staccatissimo(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -372,7 +372,7 @@ commands(
     ("va", (23, 35)),
     baca.pitch(
         "F#3",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -380,7 +380,7 @@ commands(
     ("vc", (23, 35)),
     baca.pitch(
         "C2",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -447,12 +447,12 @@ commands(
     baca.dynamic("fff"),
     baca.ottava(),
     baca.staccatissimo(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
     baca.suite(
         baca.pitches(
             pcs,
-            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
         ),
         library.displacement(),
         library.register_narrow(7),

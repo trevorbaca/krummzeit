@@ -302,7 +302,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -311,7 +311,7 @@ commands(
     baca.dynamic("pp"),
     baca.markup(r"\baca-leggierissimo-markup"),
     baca.staccato(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
     baca.suite(
         library.displacement(),
@@ -340,7 +340,7 @@ commands(
     baca.dynamic("pp"),
     baca.markup(r"\baca-leggierissimo-markup"),
     baca.staccato(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -349,7 +349,7 @@ commands(
     baca.dynamic("pp"),
     baca.markup(r"\krummzeit-leggierissimo-off-string-bowing-on-staccati-markup"),
     baca.staccato(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -400,7 +400,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 

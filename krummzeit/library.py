@@ -458,7 +458,7 @@ def clusters(flavor):
 def color_fingerings():
     return baca.color_fingerings(
         [0, 1, 2, 1],
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     )
 
 
@@ -544,7 +544,7 @@ def displacement():
             -1,
             -1,
         ],
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
 
 
@@ -916,27 +916,27 @@ def prolated_quarters(extra_counts):
 def register_narrow(start, stop=None):
     narrow_second_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", -26), ("[F#4, C8]", -23)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
     narrow_third_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", -14), ("[F#4, C8]", -11)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
     narrow_fourth_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", -2), ("[F#4, C8]", 1)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
     narrow_fifth_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", 10), ("[F#4, C8]", 13)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
     narrow_sixth_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", 22), ("[F#4, C8]", 25)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
     narrow_seventh_octave = baca.RegisterCommand(
         registration=baca.Registration([("[A0, F#4)", 34), ("[F#4, C8]", 37)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
     if stop is None:
         if start == 2:
@@ -1045,31 +1045,31 @@ def register_wide(start):
     if start == 3:
         wide_third_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", -20), ("[F#4, C8]", -6)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
         )
         return wide_third_octave
     elif start == 4:
         wide_fourth_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", -8), ("[F#4, C8]", 6)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
         )
         return wide_fourth_octave
     elif start == 5:
         wide_fifth_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", 4), ("[F#4, C8]", 18)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
         )
         return wide_fifth_octave
     elif start == 6:
         wide_sixth_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", 16), ("[F#4, C8]", 30)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
         )
         return wide_sixth_octave
     elif start == 7:
         wide_seventh_octave = baca.RegisterCommand(
             registration=baca.Registration([("[A0, F#4)", 28), ("[F#4, C8]", 42)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
         )
         return wide_seventh_octave
     else:

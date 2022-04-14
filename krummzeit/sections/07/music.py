@@ -180,7 +180,7 @@ commands(
     ("perc", (2, 16)),
     baca.dynamic("ppp"),
     baca.stem_tremolo(
-        selector=lambda _: baca.select.pleaves(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
     baca.markup(r"\krummzeit-fingertips-markup"),
 )
@@ -249,7 +249,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 

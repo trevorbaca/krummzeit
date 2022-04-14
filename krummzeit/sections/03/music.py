@@ -281,7 +281,7 @@ commands(
     baca.pitches(
         pcs_,
         allow_repeats=True,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -292,7 +292,7 @@ commands(
         baca.trill_spanner(),
         map=lambda _: [
             x
-            for x in baca.plts(_, exclude=baca.const.HIDDEN)
+            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
             if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
         ],
     ),
@@ -331,7 +331,7 @@ commands(
     baca.dynamic("f"),
     baca.new(
         baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -339,7 +339,7 @@ commands(
     ("va", (1, 23)),
     baca.pitches(
         "e dtqs f eqs dqs c dqs",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -348,7 +348,7 @@ commands(
     baca.clef("alto"),
     baca.new(
         baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
     baca.new(
         baca.markup(r"\baca-molto-flautando-markup"),
@@ -363,7 +363,7 @@ commands(
             "ff > pp",
             selector=lambda _: baca.select.tleaves(_)[:2],
         ),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -371,7 +371,7 @@ commands(
     ("vc", (1, 23)),
     baca.pitches(
         "d, ctqs, e, dqs, cqs, b,, dqs,",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -380,7 +380,7 @@ commands(
     baca.clef("bass"),
     baca.new(
         baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
     baca.new(
         baca.markup(r"\baca-molto-flautando-markup"),
@@ -395,7 +395,7 @@ commands(
     ("vn", (22, 28)),
     baca.pitches(
         pcs_,
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -413,7 +413,7 @@ commands(
         baca.trill_spanner(),
         map=lambda _: [
             x
-            for x in baca.plts(_, exclude=baca.const.HIDDEN)
+            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
             if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
         ],
     ),
@@ -435,7 +435,7 @@ commands(
     ("pf", [(14, 20), (28, 35)]),
     baca.pitch(
         "C#6",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -443,7 +443,7 @@ commands(
     ("perc", [(14, 20), (28, 33)]),
     baca.pitch(
         "C#6",
-        selector=lambda _: baca.select.plts(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -451,7 +451,7 @@ commands(
     (["pf", "perc"], (14, 20)),
     baca.dynamic("ff"),
     baca.staccatissimo(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.const.HIDDEN),
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
@@ -491,7 +491,7 @@ commands(
     (["vn", "va", "vc"], (32, 42)),
     baca.new(
         baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.const.HIDDEN),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
     ),
     baca.hairpin(
         "pp < fff",

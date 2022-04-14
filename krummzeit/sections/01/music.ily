@@ -823,64 +823,110 @@ segment.01.Global.Skips = {
 %! baca.path.extern()
 segment.01.Oboe.Music.Voice = {
 
-    %! baca._comment_measure_numbers()
-    % [Oboe_Music_Voice measure 1]
-    %! baca.margin_markup()
-    %! -PARTS
-    %! baca.IndicatorCommand._call()
-    %! baca._set_status_tag()
-    %! EXPLICIT_MARGIN_MARKUP
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
-    %! baca.start_markup()
-    %! -PARTS
-    %! baca.IndicatorCommand._call()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Oboe"
-    %! baca._attach_default_indicators(3)
-    %! baca._set_status_tag()
-    %! DEFAULT_CLEF
-    \clef "treble"
-    %! baca._attach_color_literal(2)
-    %! DEFAULT_CLEF_COLOR
-    \once \override Staff.Clef.color = #(x11-color 'DarkViolet)
-    %! baca._attach_color_literal(1)
-    %! DEFAULT_CLEF_COLOR_CANCELLATION
-    %@% \override Staff.Clef.color = ##f
-    %! baca._attach_default_indicators(3)
-    %! baca.treat_persistent_wrapper(2)
-    %! baca._set_status_tag()
-    %! DEFAULT_CLEF
-    \set Staff.forceClef = ##t
-    %! baca._attach_color_literal(2)
-    %! EXPLICIT_MARGIN_MARKUP_COLOR
-    \once \override Staff.InstrumentName.color = #(x11-color 'blue)
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
-    %! DEFAULT_INSTRUMENT_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-default-indicator-markup "(“Oboe”)"
-    %! EXPLICIT_MARGIN_MARKUP_ALERT
-    %! baca._attach_latent_indicator_alert()
-    ^ \baca-explicit-indicator-markup "[“Ob.”]"
-    %! baca._label_duration_multipliers()
-    %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
-    %! baca._attach_color_literal(2)
-    %! DEFAULT_CLEF_REDRAW_COLOR
-    \override Staff.Clef.color = #(x11-color 'violet)
-    %! baca._attach_color_literal(2)
-    %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
-    \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
-    %! baca.margin_markup()
-    %! -PARTS
-    %! baca.IndicatorCommand._call()
-    %! baca.treat_persistent_wrapper(3)
-    %! baca._set_status_tag()
-    %! REDRAWN_EXPLICIT_MARGIN_MARKUP
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
+    %! baca._make_multimeasure_rest_container(7)
+    <<
+
+        %! baca._make_multimeasure_rest_container(4)
+        \context Voice = "Oboe_Music_Voice"
+        %! baca._make_multimeasure_rest_container(4)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Oboe_Music_Voice measure 1]
+            %! baca.margin_markup()
+            %! -PARTS
+            %! baca.IndicatorCommand._call()
+            %! baca._set_status_tag()
+            %! EXPLICIT_MARGIN_MARKUP
+            \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
+            %! baca.start_markup()
+            %! -PARTS
+            %! baca.IndicatorCommand._call()
+            \set Staff.instrumentName = \markup \hcenter-in #16 "Oboe"
+            %! baca._make_multimeasure_rest_container(2)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COLORING
+            \abjad-invisible-music-coloring
+            %! baca._make_multimeasure_rest_container(3)
+            %! NOTE
+            %! INVISIBLE_MUSIC_COMMAND
+            %@% \abjad-invisible-music
+            %! baca._attach_default_indicators(3)
+            %! baca._set_status_tag()
+            %! DEFAULT_CLEF
+            \clef "treble"
+            %! baca._attach_color_literal(2)
+            %! DEFAULT_CLEF_COLOR
+            \once \override Staff.Clef.color = #(x11-color 'DarkViolet)
+            %! baca._attach_color_literal(1)
+            %! DEFAULT_CLEF_COLOR_CANCELLATION
+            %@% \override Staff.Clef.color = ##f
+            %! baca._attach_default_indicators(3)
+            %! baca.treat_persistent_wrapper(2)
+            %! baca._set_status_tag()
+            %! DEFAULT_CLEF
+            \set Staff.forceClef = ##t
+            %! baca._attach_color_literal(2)
+            %! EXPLICIT_MARGIN_MARKUP_COLOR
+            \once \override Staff.InstrumentName.color = #(x11-color 'blue)
+            %! baca._make_multimeasure_rest_container(1)
+            %! HIDDEN
+            %! NOTE
+            b'1 * 1
+            %! DEFAULT_INSTRUMENT_ALERT
+            %! baca._attach_latent_indicator_alert()
+            ^ \baca-default-indicator-markup "(“Oboe”)"
+            %! EXPLICIT_MARGIN_MARKUP_ALERT
+            %! baca._attach_latent_indicator_alert()
+            ^ \baca-explicit-indicator-markup "[“Ob.”]"
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! HIDDEN
+            %! NOTE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+            %! baca._attach_color_literal(2)
+            %! DEFAULT_CLEF_REDRAW_COLOR
+            \override Staff.Clef.color = #(x11-color 'violet)
+            %! baca._attach_color_literal(2)
+            %! REDRAWN_EXPLICIT_MARGIN_MARKUP_COLOR
+            \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
+            %! baca.margin_markup()
+            %! -PARTS
+            %! baca.IndicatorCommand._call()
+            %! baca.treat_persistent_wrapper(3)
+            %! baca._set_status_tag()
+            %! REDRAWN_EXPLICIT_MARGIN_MARKUP
+            \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
+
+        %! baca._make_multimeasure_rest_container(4)
+        }
+
+        %! baca._make_multimeasure_rest_container(6)
+        \context Voice = "Oboe_Rest_Voice"
+        %! baca._make_multimeasure_rest_container(6)
+        {
+
+            %! baca._comment_measure_numbers()
+            % [Oboe_Rest_Voice measure 1]
+            %! baca._make_multimeasure_rest_container(5)
+            %! REST_VOICE
+            %! MULTIMEASURE_REST
+            R1 * 1
+            %! baca._label_duration_multipliers()
+            %! DURATION_MULTIPLIER
+            %! MULTIMEASURE_REST
+            %! REST_VOICE
+            %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+
+        %! baca._make_multimeasure_rest_container(6)
+        }
+
+    %! baca._make_multimeasure_rest_container(7)
+    >>
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 2]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 9/8
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -888,7 +934,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 3]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -896,7 +942,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 4]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -904,7 +950,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 5]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 5/8
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -912,7 +958,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 6]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 9/8
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -920,7 +966,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 7]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 9/8
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -928,7 +974,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 8]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 5/8
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -936,7 +982,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 9]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 1/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -944,7 +990,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 10]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 5/8
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -952,15 +998,15 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 11]
-    %! baca._call_rhythm_commands()
-    R1 * 4/4
+    %! baca._make_measure_silences()
+    R1 * 1
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
-    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
+    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 12]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 5/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER
@@ -968,7 +1014,7 @@ segment.01.Oboe.Music.Voice = {
 
     %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 13]
-    %! baca._call_rhythm_commands()
+    %! baca._make_measure_silences()
     R1 * 3/4
     %! baca._label_duration_multipliers()
     %! DURATION_MULTIPLIER

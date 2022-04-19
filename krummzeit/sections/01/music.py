@@ -80,6 +80,8 @@ commands(
 
 commands(
     "ob",
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
     baca.suite(
         library.margin_markup("Ob."),
         baca.start_markup("Oboe", hcenter_in=16),
@@ -87,7 +89,9 @@ commands(
 )
 
 commands(
-    "cl",
+    ("cl", (1, 3)),
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
     baca.suite(
         library.margin_markup("B. cl."),
         baca.start_markup("Bass clarinet", hcenter_in=16),
@@ -95,7 +99,9 @@ commands(
 )
 
 commands(
-    "pf",
+    ("pf", (1, 3)),
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
     baca.clef("bass"),
     baca.suite(
         library.margin_markup("Pf."),
@@ -104,11 +110,23 @@ commands(
 )
 
 commands(
-    "perc",
+    ("perc", (1, 6)),
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
     baca.suite(
         library.margin_markup("Perc."),
         baca.start_markup("Percussion", hcenter_in=16),
     ),
+)
+
+commands(
+    (["vn", "va", "vc"], (1, 2)),
+    library.opening_triplets(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
+    ),
+    baca.attach_first_segment_default_indicators(),
 )
 
 commands(
@@ -132,15 +150,6 @@ commands(
     baca.suite(
         library.margin_markup("Vc."),
         baca.start_markup("Cello", hcenter_in=16),
-    ),
-)
-
-commands(
-    (["vn", "va", "vc"], (1, 2)),
-    library.opening_triplets(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, 0),
-        ),
     ),
 )
 

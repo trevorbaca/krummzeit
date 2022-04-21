@@ -58,12 +58,20 @@ commands(
 )
 
 commands(
+    (["ob", "cl", "pf"], (1, 3)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     (["va", "vc"], (2, 6)),
     library.rest_delimited_repeated_duration_notes((1, 4), 32),
 )
 
 commands(
     ("perc", 1),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
     baca.clef("percussion"),
     baca.markup(
         r"\baca-snare-drum-markup",
@@ -99,8 +107,20 @@ commands(
 )
 
 commands(
+    ("vn", (1, 6)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("vn", (7, 19)),
     library.hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
+)
+
+commands(
+    (["va", "vc"], 1),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

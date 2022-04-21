@@ -99,8 +99,27 @@ commands(
 )
 
 commands(
+    ("ob", (1, 22)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("cl", (1, 4)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vn", (1, 7)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("vc", (1, 11)),
     library.hypermeter_tuplets([(3, 2)]),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -111,6 +130,7 @@ commands(
 commands(
     ("va", (1, 11)),
     library.hypermeter_tuplets([(1, 4)]),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -120,8 +140,6 @@ commands(
 
 commands(
     ("pf", (1, 11)),
-    baca.instrument(library.instruments["Harpsichord"]),
-    library.margin_markup("Hpschd."),
     library.polyphony(
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
@@ -130,6 +148,9 @@ commands(
         extra_counts=[3, 1, 0, 4],
         ties=abjad.index([1, 3, 4], 6),
     ),
+    baca.reapply_persistent_indicators(),
+    baca.instrument(library.instruments["Harpsichord"]),
+    library.margin_markup("Hpschd."),
 )
 
 commands(
@@ -148,6 +169,10 @@ commands(
 commands(
     ("perc", [(1, 3), (23, 38)]),
     library.sponge_rhythm(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(

@@ -73,10 +73,29 @@ commands(
 )
 
 commands(
+    ("ob", (1, 10)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("cl", (1, 10)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("pf", (1, 7)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("perc", (1, 3)),
+    library.incise_attacks(),
+    baca.reapply_persistent_indicators(),
     baca.staff_lines(1),
     baca.markup(r"\baca-tam-tam-markup"),
-    library.incise_attacks(),
 )
 
 commands(
@@ -86,6 +105,7 @@ commands(
         ("vc", (1, 13)),
     ],
     library.right_remainder_quarters(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

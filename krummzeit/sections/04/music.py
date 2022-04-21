@@ -131,9 +131,22 @@ commands(
 )
 
 commands(
+    ("ob", (1, 13)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("cl", (1, 13)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("perc", (1, 9)),
-    baca.dynamic("ppp-ancora"),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
+    baca.dynamic("ppp-ancora"),
     baca.markup(r"\baca-snare-drum-markup"),
     baca.staff_position(0),
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
@@ -145,6 +158,16 @@ commands(
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
     ),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    (["vn", "va", "vc"], (1, 4)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

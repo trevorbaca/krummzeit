@@ -56,18 +56,36 @@ commands(
 )
 
 commands(
+    (["ob", "cl"], (1, 3)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("vn", [(1, 2), (7, 10)]),
     library.hypermeter_tuplets([(3, 2)], [2]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
     ("va", [(1, 2), (7, 10)]),
     library.hypermeter_tuplets([(1, 4)], [2]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
     ("vc", [(1, 2), (7, 10)]),
     library.hypermeter_tuplets([(2, 3)], [2]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
@@ -94,6 +112,13 @@ commands(
 commands(
     ("pf", (1, 6)),
     library.opening_triplets(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("perc", (1, 4)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

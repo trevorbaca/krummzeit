@@ -132,16 +132,37 @@ commands(
 commands(
     ("ob", [(1, 4), 6, (24, 28), 30, (32, 35)]),
     library.pizzicato_rhythm(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
     ("cl", [(1, 4), (24, 28), 30, (32, 35)]),
     library.white_rhythm([(3, 8)], abjad.RIGHT, do_not_burnish=True),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
+commands(
+    ("pf", (1, 13)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("perc", (1, 13)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vn", (1, 20)),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
     baca.staff_position(0),
 )
 
@@ -158,6 +179,12 @@ commands(
 commands(
     ("perc", (21, 25)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("va", (1, 5)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -183,6 +210,12 @@ commands(
 commands(
     ("va", (14, 23)),
     library.single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
+)
+
+commands(
+    ("vc", (1, 5)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

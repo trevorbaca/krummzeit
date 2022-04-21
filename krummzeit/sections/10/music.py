@@ -89,21 +89,25 @@ commands(
 commands(
     ("ob", 1),
     library.hypermeter_tuplets([(3, 2)]),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("cl", 1),
     library.hypermeter_tuplets([(1, 4)]),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("pf", 1),
     library.hypermeter_tuplets([(3, 4)]),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("perc", 1),
     library.hypermeter_tuplets([(1, 6)]),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -114,6 +118,7 @@ commands(
         ),
         remainder=abjad.RIGHT,
     ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(

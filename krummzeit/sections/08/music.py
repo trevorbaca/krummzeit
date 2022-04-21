@@ -74,6 +74,7 @@ commands(
 commands(
     ("ob", (1, 7)),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -96,6 +97,7 @@ commands(
 commands(
     ("cl", (1, 5)),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -115,6 +117,12 @@ commands(
     ("cl", (18, 23)),
     baca.instrument(library.instruments["BassClarinet"]),
     library.hypermeter_tuplets([(1, 3), (1, 1)]),
+)
+
+commands(
+    ("pf", (1, 4)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -155,8 +163,15 @@ commands(
         rmakers.force_rest(lambda _: baca.select.lt(_, -1)),
         do_not_rewrite_meter=True,
     ),
+    baca.reapply_persistent_indicators(),
     baca.markup(r"\baca-tam-tam-markup"),
     baca.staff_position(0),
+)
+
+commands(
+    ("vn", (1, 4)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -180,25 +195,18 @@ commands(
 )
 
 commands(
+    ("va", (1, 7)),
+    library.fused_expanse(
+        [(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
+    ),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
     ("va", (14, 19)),
     library.glissando_rhythm(
         [(2, 1), (1, 1, 1), (1, 2)],
         tie_across_divisions=abjad.index([1], 2),
-    ),
-)
-
-commands(
-    ("vc", (14, 20)),
-    library.glissando_rhythm(
-        [(1, 1, 1), (1, 2), (2, 1)],
-        tie_across_divisions=abjad.index([1], 2),
-    ),
-)
-
-commands(
-    ("va", (1, 7)),
-    library.fused_expanse(
-        [(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
     ),
 )
 
@@ -216,6 +224,15 @@ commands(
             (3, 8),
             (6, 8),
         ]
+    ),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vc", (14, 20)),
+    library.glissando_rhythm(
+        [(1, 1, 1), (1, 2), (2, 1)],
+        tie_across_divisions=abjad.index([1], 2),
     ),
 )
 

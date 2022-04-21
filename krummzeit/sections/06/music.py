@@ -99,12 +99,25 @@ commands(
 commands(
     ("ob", [(1, 8), (9, 10)]),
     library.oboe_trills(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(
     ("cl", (1, 10)),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
     baca.make_repeated_duration_notes([(16, 4)]),
+    baca.reapply_persistent_indicators(),
+    baca.instrument(
+        library.instruments["ClarinetInEFlat"],
+    ),
+)
+
+commands(
+    (["pf", "vn", "va", "vc"], (1, 8)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -114,9 +127,10 @@ commands(
 
 commands(
     ("perc", [(1, 14), (28, 34)]),
+    library.sponge_rhythm(),
+    baca.reapply_persistent_indicators(),
     baca.markup(r"\baca-suspended-cymbal-markup"),
     baca.staff_position(0),
-    library.sponge_rhythm(),
 )
 
 commands(

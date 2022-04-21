@@ -50,24 +50,28 @@ commands(
 commands(
     ("ob", (1, 40)),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("cl", (1, 40)),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     "pf",
-    baca.clef("treble"),
     baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
+    baca.clef("treble"),
 )
 
 commands(
     "perc",
+    baca.make_repeat_tied_notes(),
+    baca.reapply_persistent_indicators(),
     baca.staff_lines(5),
     baca.clef("treble"),
-    baca.make_repeat_tied_notes(),
 )
 
 commands(
@@ -77,6 +81,7 @@ commands(
         extra_counts=[2, 2, 1, 2, 4, 6],
         split=[6, 18],
     ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -86,11 +91,16 @@ commands(
         extra_counts=[3, 3, 2, 3, 5, 7],
         split=[8, 10],
     ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vc", [(1, 24), (25, 48)]),
     baca.make_repeat_tied_notes(),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
 )
 
 commands(

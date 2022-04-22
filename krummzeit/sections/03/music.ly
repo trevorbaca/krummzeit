@@ -11,133 +11,222 @@
 %! abjad.LilyPondFile._get_format_pieces()
 %! baca._make_lilypond_file()
 {
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
 
+    % OPEN_BRACKETS:
     %! baca._make_lilypond_file()
     <<
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % OPEN_BRACKETS:
         %! baca._make_lilypond_file()
         {
+        % OPENING:
+            % COMMANDS:
             %! baca._make_lilypond_file()
             \include "layout.ly"
+        % CLOSE_BRACKETS:
         %! baca._make_lilypond_file()
         }
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
 
+        % OPEN_BRACKETS:
         %! krummzeit.make_empty_score()
         \context Score = "Score"
         %! krummzeit.make_empty_score()
         <<
+            % ABSOLUTE_BEFORE:
+            % COMMANDS:
 
+            % OPEN_BRACKETS:
             %! baca.make_global_context()
             \context GlobalContext = "Global_Context"
             %! baca.make_global_context()
             <<
+                % ABSOLUTE_BEFORE:
+                % COMMANDS:
 
+                % OPEN_BRACKETS:
                 %! baca.make_global_context()
                 \context GlobalRests = "Global_Rests"
                 %! baca.make_global_context()
                 %! baca.path.extern()
                 { \segment.03.Global.Rests }
+                % ABSOLUTE_BEFORE:
+                % COMMANDS:
 
+                % OPEN_BRACKETS:
                 %! baca.make_global_context()
                 \context GlobalSkips = "Global_Skips"
                 %! baca.make_global_context()
                 %! baca.path.extern()
                 { \segment.03.Global.Skips }
+                % CLOSING:
+                % COMMANDS:
 
+            % CLOSE_BRACKETS:
             %! baca.make_global_context()
             >>
+            % ABSOLUTE_BEFORE:
+            % COMMANDS:
 
+            % OPEN_BRACKETS:
             %! krummzeit.make_empty_score()
             \context MusicContext = "Music_Context"
             %! krummzeit.make_empty_score()
             <<
+                % ABSOLUTE_BEFORE:
+                % COMMANDS:
 
+                % OPEN_BRACKETS:
                 %! krummzeit.make_empty_score()
                 \context WindSectionStaffGroup = "Wind_Section_Staff_Group"
                 %! krummzeit.make_empty_score()
                 <<
+                    % ABSOLUTE_BEFORE:
+                    % COMMANDS:
 
+                    % BEFORE:
+                    % COMMANDS:
                     %! baca.attach_lilypond_tag()
                     \tag Oboe
+                    % OPEN_BRACKETS:
                     %! krummzeit.make_empty_score()
                     \context Staff = "Oboe_Music_Staff"
                     %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.03.Oboe.Music.Staff }
+                    % ABSOLUTE_BEFORE:
+                    % COMMANDS:
 
+                    % BEFORE:
+                    % COMMANDS:
                     %! baca.attach_lilypond_tag()
                     \tag Clarinet
+                    % OPEN_BRACKETS:
                     %! krummzeit.make_empty_score()
                     \context Staff = "Clarinet_Music_Staff"
                     %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.03.Clarinet.Music.Staff }
+                    % CLOSING:
+                    % COMMANDS:
 
+                % CLOSE_BRACKETS:
                 %! krummzeit.make_empty_score()
                 >>
+                % ABSOLUTE_BEFORE:
+                % COMMANDS:
 
+                % OPEN_BRACKETS:
                 %! krummzeit.make_empty_score()
                 \context PercussionSectionStaffGroup = "Percussion_Section_Staff_Group"
                 %! krummzeit.make_empty_score()
                 <<
+                    % ABSOLUTE_BEFORE:
+                    % COMMANDS:
 
+                    % BEFORE:
+                    % COMMANDS:
                     %! baca.attach_lilypond_tag()
                     \tag Piano
+                    % OPEN_BRACKETS:
                     %! krummzeit.make_empty_score()
                     \context Staff = "Piano_Music_Staff"
                     %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.03.Piano.Music.Staff }
+                    % ABSOLUTE_BEFORE:
+                    % COMMANDS:
 
+                    % BEFORE:
+                    % COMMANDS:
                     %! baca.attach_lilypond_tag()
                     \tag Percussion
+                    % OPEN_BRACKETS:
                     %! krummzeit.make_empty_score()
                     \context Staff = "Percussion_Music_Staff"
                     %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.03.Percussion.Music.Staff }
+                    % CLOSING:
+                    % COMMANDS:
 
+                % CLOSE_BRACKETS:
                 %! krummzeit.make_empty_score()
                 >>
+                % ABSOLUTE_BEFORE:
+                % COMMANDS:
 
+                % OPEN_BRACKETS:
                 %! krummzeit.make_empty_score()
                 \context StringSectionStaffGroup = "String_Section_Staff_Group"
                 %! krummzeit.make_empty_score()
                 <<
+                    % ABSOLUTE_BEFORE:
+                    % COMMANDS:
 
+                    % BEFORE:
+                    % COMMANDS:
                     %! baca.attach_lilypond_tag()
                     \tag Violin
+                    % OPEN_BRACKETS:
                     %! krummzeit.make_empty_score()
                     \context Staff = "Violin_Music_Staff"
                     %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.03.Violin.Music.Staff }
+                    % ABSOLUTE_BEFORE:
+                    % COMMANDS:
 
+                    % BEFORE:
+                    % COMMANDS:
                     %! baca.attach_lilypond_tag()
                     \tag Viola
+                    % OPEN_BRACKETS:
                     %! krummzeit.make_empty_score()
                     \context Staff = "Viola_Music_Staff"
                     %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.03.Viola.Music.Staff }
+                    % ABSOLUTE_BEFORE:
+                    % COMMANDS:
 
+                    % BEFORE:
+                    % COMMANDS:
                     %! baca.attach_lilypond_tag()
                     \tag Cello
+                    % OPEN_BRACKETS:
                     %! krummzeit.make_empty_score()
                     \context Staff = "Cello_Music_Staff"
                     %! krummzeit.make_empty_score()
                     %! baca.path.extern()
                     { \segment.03.Cello.Music.Staff }
+                    % CLOSING:
+                    % COMMANDS:
 
+                % CLOSE_BRACKETS:
                 %! krummzeit.make_empty_score()
                 >>
+                % CLOSING:
+                % COMMANDS:
 
+            % CLOSE_BRACKETS:
             %! krummzeit.make_empty_score()
             >>
+            % CLOSING:
+            % COMMANDS:
 
+        % CLOSE_BRACKETS:
         %! krummzeit.make_empty_score()
         >>
+        % CLOSING:
+        % COMMANDS:
 
+    % CLOSE_BRACKETS:
     %! baca._make_lilypond_file()
     >>
 

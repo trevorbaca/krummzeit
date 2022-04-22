@@ -8015,15 +8015,15 @@ segment.11.Violin.Music.Voice = {
           %! baca.dynamic()
         \ff
         % MARKUP:
+          %! baca.IndicatorCommand._call()
+          %! baca.markup()
+        ^ \baca-pizz-markup
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "(“Violin”)"
           %! REAPPLIED_MARGIN_MARKUP_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "[“Vn.”]"
-          %! baca.IndicatorCommand._call()
-          %! baca.markup()
-        ^ \baca-pizz-markup
         % ABSOLUTE_AFTER:
         % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR
@@ -9615,15 +9615,15 @@ segment.11.Viola.Music.Voice = {
           %! baca.dynamic()
         \ff
         % MARKUP:
+          %! baca.IndicatorCommand._call()
+          %! baca.markup()
+        ^ \baca-pizz-markup
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "(“Viola”)"
           %! REAPPLIED_MARGIN_MARKUP_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-indicator-markup "[“Va.”]"
-          %! baca.IndicatorCommand._call()
-          %! baca.markup()
-        ^ \baca-pizz-markup
         % ABSOLUTE_AFTER:
         % COMMANDS:
           %! REAPPLIED_CLEF_REDRAW_COLOR

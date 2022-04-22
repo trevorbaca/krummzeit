@@ -1027,14 +1027,14 @@ segment.01.Oboe.Music.Voice = {
               %! DEFAULT_INSTRUMENT_ALERT
               %! baca._attach_latent_indicator_alert()
             ^ \baca-default-indicator-markup "(“Oboe”)"
-              %! EXPLICIT_MARGIN_MARKUP_ALERT
-              %! baca._attach_latent_indicator_alert()
-            ^ \baca-explicit-indicator-markup "[“Ob.”]"
               %! DURATION_MULTIPLIER
               %! HIDDEN
               %! NOTE
               %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+              %! EXPLICIT_MARGIN_MARKUP_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-explicit-indicator-markup "[“Ob.”]"
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! DEFAULT_CLEF_REDRAW_COLOR
@@ -1456,14 +1456,14 @@ segment.01.Clarinet.Music.Voice = {
               %! DEFAULT_INSTRUMENT_ALERT
               %! baca._attach_latent_indicator_alert()
             ^ \baca-default-indicator-markup "(“BassClarinet”)"
-              %! EXPLICIT_MARGIN_MARKUP_ALERT
-              %! baca._attach_latent_indicator_alert()
-            ^ \baca-explicit-indicator-markup "[“B. cl.”]"
               %! DURATION_MULTIPLIER
               %! HIDDEN
               %! NOTE
               %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+              %! EXPLICIT_MARGIN_MARKUP_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-explicit-indicator-markup "[“B. cl.”]"
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! DEFAULT_CLEF_REDRAW_COLOR
@@ -1991,14 +1991,14 @@ segment.01.Piano.Music.Voice = {
               %! DEFAULT_INSTRUMENT_ALERT
               %! baca._attach_latent_indicator_alert()
             ^ \baca-default-indicator-markup "(“Piano”)"
-              %! EXPLICIT_MARGIN_MARKUP_ALERT
-              %! baca._attach_latent_indicator_alert()
-            ^ \baca-explicit-indicator-markup "[“Pf.”]"
               %! DURATION_MULTIPLIER
               %! HIDDEN
               %! NOTE
               %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+              %! EXPLICIT_MARGIN_MARKUP_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-explicit-indicator-markup "[“Pf.”]"
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! EXPLICIT_CLEF_REDRAW_COLOR
@@ -2671,14 +2671,14 @@ segment.01.Percussion.Music.Voice = {
               %! DEFAULT_INSTRUMENT_ALERT
               %! baca._attach_latent_indicator_alert()
             ^ \baca-default-indicator-markup "(“Xylophone”)"
-              %! EXPLICIT_MARGIN_MARKUP_ALERT
-              %! baca._attach_latent_indicator_alert()
-            ^ \baca-explicit-indicator-markup "[“Perc.”]"
               %! DURATION_MULTIPLIER
               %! HIDDEN
               %! NOTE
               %! baca._label_duration_multipliers()
             %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+              %! EXPLICIT_MARGIN_MARKUP_ALERT
+              %! baca._attach_latent_indicator_alert()
+            ^ \baca-explicit-indicator-markup "[“Perc.”]"
             % ABSOLUTE_AFTER:
             % COMMANDS:
               %! DEFAULT_CLEF_REDRAW_COLOR
@@ -3025,15 +3025,15 @@ segment.01.Percussion.Music.Voice = {
           %! baca.dynamic()
         \baca-effort-ff
         % MARKUP:
+          %! EXPLICIT_INSTRUMENT_ALERT
+          %! baca._attach_latent_indicator_alert()
+        ^ \baca-explicit-indicator-markup "(“Percussion”)"
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-sponges-markup
           %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \krummzeit-accent-changes-markup
-          %! EXPLICIT_INSTRUMENT_ALERT
-          %! baca._attach_latent_indicator_alert()
-        ^ \baca-explicit-indicator-markup "(“Percussion”)"
         % ABSOLUTE_AFTER:
         % COMMANDS:
           %! EXPLICIT_CLEF_REDRAW_COLOR

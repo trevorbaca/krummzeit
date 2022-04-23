@@ -3524,6 +3524,9 @@ segment.11.Oboe.Music.Voice = {
               %! NOTE
               %! baca._make_multimeasure_rest_container(2)
             \abjad-invisible-music-coloring
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
               %! HIDDEN
               %! NOTE
               %! baca._make_multimeasure_rest_container(1)
@@ -4690,6 +4693,9 @@ segment.11.Clarinet.Music.Voice = {
               %! NOTE
               %! baca._make_multimeasure_rest_container(2)
             \abjad-invisible-music-coloring
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
               %! HIDDEN
               %! NOTE
               %! baca._make_multimeasure_rest_container(1)
@@ -6332,6 +6338,9 @@ segment.11.Piano.Music.Voice = {
               %! baca._make_multimeasure_rest_container(2)
               %! baca._style_phantom_measures(5)
             \abjad-invisible-music-coloring
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
               %! HIDDEN
               %! NOTE
               %! PHANTOM
@@ -7810,6 +7819,9 @@ segment.11.Percussion.Music.Voice = {
               %! baca._make_multimeasure_rest_container(2)
               %! baca._style_phantom_measures(5)
             \abjad-invisible-music-coloring
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
               %! HIDDEN
               %! NOTE
               %! PHANTOM
@@ -9256,6 +9268,9 @@ segment.11.Violin.Music.Voice = {
               %! NOTE
               %! baca._make_multimeasure_rest_container(2)
             \abjad-invisible-music-coloring
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
               %! HIDDEN
               %! NOTE
               %! baca._make_multimeasure_rest_container(1)
@@ -9777,6 +9792,9 @@ segment.11.Viola.Music.Voice = {
               %! NOTE
               %! baca._make_multimeasure_rest_container(2)
             \abjad-invisible-music-coloring
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
               %! HIDDEN
               %! NOTE
               %! baca._make_multimeasure_rest_container(1)
@@ -11574,6 +11592,9 @@ segment.11.Cello.Music.Voice = {
               %! baca._style_phantom_measures(5)
               %! baca.rehearsal_mark_self_alignment_x()
             \once \override Score.RehearsalMark.self-alignment-X = #right
+            % GROB_OVERRIDES:
+            \once \override Accidental.stencil = ##f
+            \once \override NoteColumn.ignore-collision = ##t
             % OPENING:
             % COMMANDS:
               %! PHANTOM

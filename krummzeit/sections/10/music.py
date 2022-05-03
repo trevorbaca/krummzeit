@@ -88,31 +88,31 @@ commands(
 
 commands(
     ("ob", 1),
-    library.hypermeter_tuplets([(3, 2)]),
+    library.make_hypermeter_tuplets([(3, 2)]),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("cl", 1),
-    library.hypermeter_tuplets([(1, 4)]),
+    library.make_hypermeter_tuplets([(1, 4)]),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("pf", 1),
-    library.hypermeter_tuplets([(3, 4)]),
+    library.make_hypermeter_tuplets([(3, 4)]),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("perc", 1),
-    library.hypermeter_tuplets([(1, 6)]),
+    library.make_hypermeter_tuplets([(1, 6)]),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     (["vn", "va", "vc"], (1, 3)),
-    library.opening_triplets(
+    library.make_opening_triplets(
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, -1),
         ),
@@ -126,7 +126,7 @@ commands(
     baca.instrument(library.instruments["Harpsichord"]),
     library.clusters("harpsichord"),
     library.margin_markup("Hpschd."),
-    library.opening_triplets(
+    library.make_opening_triplets(
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, 0),
         ),
@@ -135,7 +135,7 @@ commands(
 
 commands(
     (["vn", "va", "vc"], (5, 9)),
-    library.right_remainder_quarters(),
+    library.make_right_remainder_quarters(),
 )
 
 commands(
@@ -144,14 +144,14 @@ commands(
     baca.clef("percussion"),
     baca.markup(r"\baca-tam-tam-markup"),
     baca.staff_position(0),
-    library.incise_attacks(),
+    library.make_incise_attacks(),
 )
 
 commands(
     ("pf", (8, 22)),
     baca.instrument(library.instruments["Piano"]),
     library.margin_markup("Pf."),
-    library.opening_triplets(
+    library.make_opening_triplets(
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, 0),
         ),
@@ -162,17 +162,17 @@ commands(("cl", (3, 14)), baca.make_repeat_tied_notes())
 
 commands(
     ("vn", 22),
-    library.pizzicato_rhythm(split=[6, 18]),
+    library.make_pizzicato_rhythm(split=[6, 18]),
 )
 
 commands(
     ("va", 22),
-    library.pizzicato_rhythm(split=[8, 10]),
+    library.make_pizzicato_rhythm(split=[8, 10]),
 )
 
 commands(
     ("vc", 22),
-    library.pizzicato_rhythm(split=[10, 8]),
+    library.make_pizzicato_rhythm(split=[10, 8]),
 )
 
 commands(

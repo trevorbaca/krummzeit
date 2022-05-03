@@ -131,7 +131,7 @@ commands(
 
 commands(
     ("ob", [(1, 4), 6, (24, 28), 30, (32, 35)]),
-    library.pizzicato_rhythm(),
+    library.make_pizzicato_rhythm(),
     baca.new(
         baca.reapply_persistent_indicators(),
         match=0,
@@ -140,7 +140,7 @@ commands(
 
 commands(
     ("cl", [(1, 4), (24, 28), 30, (32, 35)]),
-    library.white_rhythm([(3, 8)], abjad.RIGHT, do_not_burnish=True),
+    library.make_white_rhythm([(3, 8)], abjad.RIGHT, do_not_burnish=True),
     baca.new(
         baca.reapply_persistent_indicators(),
         match=0,
@@ -189,27 +189,27 @@ commands(
 
 commands(
     ("va", 6),
-    library.single_division_tuplets([(2, 1)]),
+    library.make_single_division_tuplets([(2, 1)]),
 )
 
 commands(
     ("va", 8),
-    library.single_division_tuplets([(1, 4)]),
+    library.make_single_division_tuplets([(1, 4)]),
 )
 
 commands(
     ("va", 10),
-    library.single_division_tuplets([(2, 1)]),
+    library.make_single_division_tuplets([(2, 1)]),
 )
 
 commands(
     ("va", 12),
-    library.single_division_tuplets([(1, 4)]),
+    library.make_single_division_tuplets([(1, 4)]),
 )
 
 commands(
     ("va", (14, 23)),
-    library.single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
+    library.make_single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
 )
 
 commands(
@@ -220,37 +220,37 @@ commands(
 
 commands(
     ("vc", 6),
-    library.single_division_tuplets([(1, 4)]),
+    library.make_single_division_tuplets([(1, 4)]),
 )
 
 commands(
     ("vc", 8),
-    library.single_division_tuplets([(2, 1)]),
+    library.make_single_division_tuplets([(2, 1)]),
 )
 
 commands(
     ("vc", 10),
-    library.single_division_tuplets([(1, 4)]),
+    library.make_single_division_tuplets([(1, 4)]),
 )
 
 commands(
     ("vc", 12),
-    library.single_division_tuplets([(2, 1)]),
+    library.make_single_division_tuplets([(2, 1)]),
 )
 
 commands(
     ("vc", (14, 23)),
-    library.single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
+    library.make_single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
 )
 
 commands(
     ("pf", [14, 18, 28, (32, 33)]),
-    library.silver_points([(1, 2)]),
+    library.make_silver_points_rhythm([(1, 2)]),
 )
 
 commands(
     ("pf", [16, 20, 30, (34, 35)]),
-    library.silver_points([(2, 1)]),
+    library.make_silver_points_rhythm([(2, 1)]),
 )
 
 commands(
@@ -260,7 +260,7 @@ commands(
 
 commands(
     ("perc", [14, 18, 28, (32, 33)]),
-    library.silver_points([(2, 1)]),
+    library.make_silver_points_rhythm([(2, 1)]),
 )
 
 commands(
@@ -271,7 +271,7 @@ commands(
 
 commands(
     ("perc", [16, 20, 30]),
-    library.silver_points([(1, 2)]),
+    library.make_silver_points_rhythm([(1, 2)]),
 )
 
 commands(
@@ -288,22 +288,22 @@ commands(
     baca.staff_lines(5),
     baca.clef("treble"),
     baca.instrument(library.instruments["Violin"]),
-    library.pizzicato_rhythm(),
+    library.make_pizzicato_rhythm(),
 )
 
 commands(
     ("va", (32, 42)),
-    library.fused_expanse([(1, 1), (2, 1), (3, 2)]),
+    library.make_fused_expanse([(1, 1), (2, 1), (3, 2)]),
 )
 
 commands(
     ("vc", (32, 42)),
-    library.fused_expanse([(2, 1), (3, 2), (1, 1)]),
+    library.make_fused_expanse([(2, 1), (3, 2), (1, 1)]),
 )
 
 commands(
     ("vn", (36, 42)),
-    library.fused_expanse([(3, 2), (1, 1), (2, 1)]),
+    library.make_fused_expanse([(3, 2), (1, 1), (2, 1)]),
 )
 
 pcs = abjad.PitchClassSegment(library.violet_pitch_classes)

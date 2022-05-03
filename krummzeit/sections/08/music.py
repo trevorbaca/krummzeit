@@ -79,7 +79,7 @@ commands(
 
 commands(
     ("ob", (9, 12)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -91,7 +91,7 @@ commands(
 
 commands(
     ("ob", (18, 23)),
-    library.hypermeter_tuplets([(3, 2), (1, 4)], [2]),
+    library.make_hypermeter_tuplets([(3, 2), (1, 4)], [2]),
 )
 
 commands(
@@ -103,7 +103,7 @@ commands(
 commands(
     ("cl", (9, 12)),
     baca.instrument(library.instruments["ClarinetInEFlat"]),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -116,7 +116,7 @@ commands(
 commands(
     ("cl", (18, 23)),
     baca.instrument(library.instruments["BassClarinet"]),
-    library.hypermeter_tuplets([(1, 3), (1, 1)]),
+    library.make_hypermeter_tuplets([(1, 3), (1, 1)]),
 )
 
 commands(
@@ -128,7 +128,7 @@ commands(
 commands(
     ("pf", (5, 11)),
     baca.clef("treble"),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -143,7 +143,7 @@ commands(
     baca.instrument(library.instruments["Piano"]),
     baca.clef("bass"),
     library.margin_markup("Pf."),
-    library.piano_harmonics(
+    library.make_piano_harmonics_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: abjad.select.get(
@@ -176,7 +176,7 @@ commands(
 
 commands(
     ("vn", (5, 12)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -188,7 +188,7 @@ commands(
 
 commands(
     ("vn", (14, 20)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(1, 2), (2, 1), (1, 1, 1)],
         tie_across_divisions=abjad.index([1], 2),
     ),
@@ -196,7 +196,7 @@ commands(
 
 commands(
     ("va", (1, 7)),
-    library.fused_expanse(
+    library.make_fused_expanse(
         [(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
     ),
     baca.reapply_persistent_indicators(),
@@ -204,7 +204,7 @@ commands(
 
 commands(
     ("va", (14, 19)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (1, 1, 1), (1, 2)],
         tie_across_divisions=abjad.index([1], 2),
     ),
@@ -212,7 +212,7 @@ commands(
 
 commands(
     ("vc", (1, 9)),
-    library.fused_expanse(
+    library.make_fused_expanse(
         [
             (3, 4),
             (4, 4),
@@ -230,7 +230,7 @@ commands(
 
 commands(
     ("vc", (14, 20)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(1, 1, 1), (1, 2), (2, 1)],
         tie_across_divisions=abjad.index([1], 2),
     ),
@@ -238,27 +238,27 @@ commands(
 
 commands(
     ("va", (11, 12)),
-    library.hypermeter_tuplets([(1, 4)]),
+    library.make_hypermeter_tuplets([(1, 4)]),
 )
 
 commands(
     ("vc", (11, 12)),
-    library.hypermeter_tuplets([(3, 2)]),
+    library.make_hypermeter_tuplets([(3, 2)]),
 )
 
 commands(
     ("vn", (21, 23)),
-    library.hypermeter_tuplets([(3, 2)], [3]),
+    library.make_hypermeter_tuplets([(3, 2)], [3]),
 )
 
 commands(
     ("va", (20, 23)),
-    library.hypermeter_tuplets([(1, 4)], [2]),
+    library.make_hypermeter_tuplets([(1, 4)], [2]),
 )
 
 commands(
     ("vc", (21, 23)),
-    library.hypermeter_tuplets([(1, 4)], [3]),
+    library.make_hypermeter_tuplets([(1, 4)], [3]),
 )
 
 commands(

@@ -78,133 +78,103 @@ commands(
     ),
 )
 
+# ob
+
 commands(
     "ob",
     baca.make_mmrests(),
-    baca.attach_first_segment_default_indicators(),
-    baca.suite(
-        library.margin_markup("Ob."),
-        baca.start_markup("Oboe", hcenter_in=16),
-    ),
+    baca.append_phantom_measure(),
 )
+
+# ob
+
+commands(
+    "ob",
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("Ob."),
+    baca.start_markup("Oboe", hcenter_in=16),
+)
+
+# cl
 
 commands(
     ("cl", (1, 3)),
     baca.make_mmrests(),
-    baca.attach_first_segment_default_indicators(),
-    baca.suite(
-        library.margin_markup("B. cl."),
-        baca.start_markup("Bass clarinet", hcenter_in=16),
-    ),
-)
-
-commands(
-    ("pf", (1, 3)),
-    baca.make_mmrests(),
-    baca.attach_first_segment_default_indicators(),
-    baca.clef("bass"),
-    baca.suite(
-        library.margin_markup("Pf."),
-        baca.start_markup("Piano", hcenter_in=16),
-    ),
-)
-
-commands(
-    ("perc", (1, 6)),
-    baca.make_mmrests(),
-    baca.attach_first_segment_default_indicators(),
-    baca.suite(
-        library.margin_markup("Perc."),
-        baca.start_markup("Percussion", hcenter_in=16),
-    ),
-)
-
-commands(
-    (["vn", "va", "vc"], (1, 2)),
-    library.opening_triplets(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, 0),
-        ),
-    ),
-    baca.attach_first_segment_default_indicators(),
-)
-
-commands(
-    "vn",
-    baca.suite(
-        library.margin_markup("Vn."),
-        baca.start_markup("Violin", hcenter_in=16),
-    ),
-)
-
-commands(
-    "va",
-    baca.suite(
-        library.margin_markup("Va."),
-        baca.start_markup("Viola", hcenter_in=16),
-    ),
-)
-
-commands(
-    "vc",
-    baca.suite(
-        library.margin_markup("Vc."),
-        baca.start_markup("Cello", hcenter_in=16),
-    ),
-)
-
-commands(
-    ("vn", (4, 8)),
-    library.glissando_rhythm(
-        [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("va", (4, 8)),
-    library.glissando_rhythm(
-        [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("vc", (4, 8)),
-    library.glissando_rhythm(
-        [(1, 1, 1), (2, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
-        ),
-    ),
 )
 
 commands(
     ("cl", (4, 5)),
-    baca.dynamic("ppp"),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("cl", (6, 13)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("cl", (4, 5)),
     baca.pitch("B1"),
+    baca.dynamic("ppp"),
+)
+
+commands(
+    "cl",
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("B. cl."),
+    baca.start_markup("Bass clarinet", hcenter_in=16),
+)
+
+# pf
+
+commands(
+    ("pf", (1, 3)),
+    baca.make_mmrests(),
 )
 
 commands(
     ("pf", 4),
-    baca.dynamic("fff"),
-    baca.markup(r"\krummzeit-catch-resonance-markup"),
+    library.make_single_cluster_piano_rhythm(),
+)
+
+commands(
+    ("pf", (5, 6)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("pf", 7),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("pf", (8, 13)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "pf",
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("Pf."),
+    baca.start_markup("Piano", hcenter_in=16),
+    baca.clef("bass"),
+)
+
+commands(
+    ("pf", 4),
     library.clusters("tenor"),
-    library.single_cluster_piano_rhythm(),
+    baca.markup(r"\krummzeit-catch-resonance-markup"),
+    baca.dynamic("fff"),
 )
 
 commands(
     ("pf", 7),
     baca.clef("treble"),
-    baca.dynamic("fff-poss"),
-    baca.make_repeat_tied_notes(),
     baca.pitch("C#5"),
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+    baca.dynamic("fff-poss"),
 )
 
 commands(
@@ -215,49 +185,193 @@ commands(
     ),
 )
 
+# perc
+
+commands(
+    ("perc", (1, 6)),
+    baca.make_mmrests(),
+    baca.attach_first_segment_default_indicators(),
+)
+
 commands(
     ("perc", 7),
-    baca.dynamic("fff-poss"),
     baca.make_repeat_tied_notes(),
-    baca.markup(r"\baca-xylophone-markup"),
-    baca.pitch("C#5"),
-    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+)
+
+commands(
+    ("perc", (8, 9)),
+    baca.make_mmrests(),
 )
 
 commands(
     ("perc", (10, 13)),
-    baca.accent(selector=lambda _: baca.select.pheads(_)),
-    baca.staff_lines(1),
-    baca.clef("percussion"),
-    baca.dynamic('"ff"'),
-    baca.markup(r"\baca-sponges-markup"),
-    baca.staff_position(0),
-    library.instrument("Percussion"),
-    baca.markup(r"\krummzeit-accent-changes-markup"),
-    library.sponge_rhythm(),
+    library.make_sponge_rhythm(),
+    baca.append_phantom_measure(),
 )
+
+commands(
+    "perc",
+    library.margin_markup("Perc."),
+    baca.start_markup("Percussion", hcenter_in=16),
+)
+
+commands(
+    ("perc", 7),
+    baca.markup(r"\baca-xylophone-markup"),
+    baca.pitch("C#5"),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+    baca.dynamic("fff-poss"),
+)
+
+commands(
+    ("perc", (10, 13)),
+    library.instrument("Percussion"),
+    baca.markup(r"\baca-sponges-markup"),
+    baca.clef("percussion"),
+    baca.staff_lines(1),
+    baca.staff_position(0),
+    baca.markup(r"\krummzeit-accent-changes-markup"),
+    baca.accent(selector=lambda _: baca.select.pheads(_)),
+    baca.dynamic('"ff"'),
+)
+
+# vn
 
 commands(
     ("vn", (1, 2)),
-    baca.pitch("Eb5"),
+    library.make_opening_triplets(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
+    ),
 )
+
+commands(
+    ("vn", 3),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (4, 8)),
+    library.make_glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("vn", (9, 13)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "vn",
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("Vn."),
+    baca.start_markup("Violin", hcenter_in=16),
+)
+
+# va
 
 commands(
     ("va", (1, 2)),
-    baca.pitch("A3"),
+    library.make_opening_triplets(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
+    ),
 )
+
+commands(
+    ("va", 3),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (4, 8)),
+    library.make_glissando_rhythm(
+        [(2, 1), (1, 1, 1), (2, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("va", (9, 13)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "va",
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("Va."),
+    baca.start_markup("Viola", hcenter_in=16),
+)
+
+# vc
 
 commands(
     ("vc", (1, 2)),
-    baca.pitch("E~2"),
+    library.make_opening_triplets(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
+    ),
 )
 
 commands(
+    ("vc", 3),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (4, 8)),
+    library.make_glissando_rhythm(
+        [(1, 1, 1), (2, 1), (2, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("vc", (9, 13)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "vc",
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("Vc."),
+    baca.start_markup("Cello", hcenter_in=16),
+)
+
+# vn, va, vc composites
+
+commands(
     (["vn", "va", "vc"], (1, 2)),
-    baca.dynamic("fff"),
+    baca.new(
+        baca.pitch("Eb5"),
+        match=0,
+    ),
+    baca.new(
+        baca.pitch("A3"),
+        match=1,
+    ),
+    baca.new(
+        baca.pitch("E~2"),
+        match=2,
+    ),
     baca.stem_tremolo(
         selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
     ),
+    baca.dynamic("fff"),
 )
 
 pcs = library.violet_pitch_classes
@@ -279,36 +393,35 @@ commands(
         baca.glissando(),
         map=lambda _: baca.select.runs(_),
     ),
-    baca.hairpin(
-        "pp < ff",
-        selector=lambda _: baca.select.tleaves(
-            _,
-        ),
-    ),
-    baca.markup(r"\baca-molto-flautando-markup"),
-    baca.note_head_style_harmonic(),
     baca.new(
         baca.repeat_tie(
             lambda _: baca.select.pheads(_)[1:],
         ),
         map=lambda _: baca.select.qruns(_),
     ),
+    baca.new(
+        library.register_narrow(5, 4),
+        match=0,
+    ),
+    baca.new(
+        library.register_narrow(4, 3),
+        match=1,
+    ),
+    baca.new(
+        library.register_narrow(4, 3),
+        match=2,
+    ),
+    baca.note_head_style_harmonic(),
+    baca.markup(r"\baca-molto-flautando-markup"),
+    baca.hairpin(
+        "pp < ff",
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
+    ),
 )
 
-commands(
-    ("vn", (4, 8)),
-    library.register_narrow(5, 4),
-)
-
-commands(
-    ("va", (4, 8)),
-    library.register_narrow(4, 3),
-)
-
-commands(
-    ("vc", (4, 8)),
-    library.register_narrow(4, 3),
-)
+# composites
 
 commands(
     ["perc", "vn", "va", "vc"],
@@ -323,7 +436,10 @@ if __name__ == "__main__":
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
         stage_markup=stage_markup,
         transpose_score=True,
     )

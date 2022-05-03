@@ -1000,11 +1000,11 @@ segment.09.Oboe.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 6/5
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1016,7 +1016,7 @@ segment.09.Oboe.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.tuplet_bracket_staff_padding()
         \override TupletBracket.staff-padding = 2
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         ef''!2.
         % AFTER:
         % SPANNER_STOPS:
@@ -1027,7 +1027,7 @@ segment.09.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         ef''!2
         % AFTER:
         % MARKUP:
@@ -1036,24 +1036,24 @@ segment.09.Oboe.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 7/5
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe_Music_Voice measure 10]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         ef''!2.
         % AFTER:
         % MARKUP:
@@ -1061,7 +1061,7 @@ segment.09.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         ef''!2
         % AFTER:
         % MARKUP:
@@ -1074,7 +1074,7 @@ segment.09.Oboe.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1549,11 +1549,11 @@ segment.09.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 6/5
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1571,7 +1571,7 @@ segment.09.Clarinet.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.tuplet_bracket_staff_padding()
         \override TupletBracket.staff-padding = 5
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         f4
         % AFTER:
         % ARTICULATIONS:
@@ -1594,7 +1594,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         f1
         % AFTER:
         % MARKUP:
@@ -1603,24 +1603,24 @@ segment.09.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 7/5
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 10]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         f4
         % AFTER:
         % MARKUP:
@@ -1628,7 +1628,7 @@ segment.09.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         f1
         % AFTER:
         % MARKUP:
@@ -1647,7 +1647,7 @@ segment.09.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1808,9 +1808,9 @@ segment.09.Piano.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1890,7 +1890,7 @@ segment.09.Piano.Music.Voice = {
         ^ \baca-explicit-indicator-markup "[“Hpschd.”]"
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -1938,21 +1938,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -1970,7 +1970,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2003,21 +2003,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2035,7 +2035,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2068,21 +2068,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2100,7 +2100,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2133,21 +2133,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2165,7 +2165,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2198,21 +2198,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2230,7 +2230,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2263,21 +2263,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2295,7 +2295,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2328,21 +2328,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2360,7 +2360,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2393,21 +2393,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2425,7 +2425,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2458,21 +2458,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2490,7 +2490,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2523,21 +2523,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2555,7 +2555,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2588,21 +2588,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2620,7 +2620,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2653,21 +2653,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2685,7 +2685,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2718,21 +2718,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2750,7 +2750,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2783,21 +2783,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2815,7 +2815,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2848,21 +2848,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2880,7 +2880,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2913,21 +2913,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2945,7 +2945,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2978,21 +2978,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3010,7 +3010,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3043,21 +3043,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3075,7 +3075,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3108,21 +3108,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3140,7 +3140,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3173,21 +3173,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3205,7 +3205,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3238,21 +3238,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3270,7 +3270,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3303,21 +3303,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3335,7 +3335,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3368,21 +3368,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3400,7 +3400,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3433,21 +3433,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3465,7 +3465,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3498,21 +3498,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3530,7 +3530,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3563,21 +3563,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3595,7 +3595,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3628,21 +3628,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3660,7 +3660,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3693,21 +3693,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3725,7 +3725,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3758,21 +3758,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3790,7 +3790,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3823,21 +3823,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3855,7 +3855,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3888,21 +3888,21 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     \times 2/3
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3920,7 +3920,7 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % START_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3953,13 +3953,13 @@ segment.09.Piano.Music.Voice = {
         % MARKUP:
         ^ \markup \center-align \concat { \natural \flat }
         % STOP_BEAM:
-          %! krummzeit.opening_triplets()
+          %! krummzeit.make_opening_triplets()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.opening_triplets()
+      %! krummzeit.make_opening_triplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4070,11 +4070,11 @@ segment.09.Piano.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 9/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4094,7 +4094,7 @@ segment.09.Piano.Music.Voice = {
           %! EXPLICIT_MARGIN_MARKUP_COLOR
           %! baca._attach_color_literal(2)
         \once \override Staff.InstrumentName.color = #(x11-color 'blue)
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs'''!2.
         % AFTER:
         % STEM_TREMOLOS:
@@ -4136,7 +4136,7 @@ segment.09.Piano.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs'''!1
         % AFTER:
         % STEM_TREMOLOS:
@@ -4154,7 +4154,7 @@ segment.09.Piano.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4575,7 +4575,7 @@ segment.09.Percussion.Music.Voice = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     r8
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -4585,7 +4585,7 @@ segment.09.Percussion.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -4611,7 +4611,7 @@ segment.09.Percussion.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -4621,7 +4621,7 @@ segment.09.Percussion.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -4631,7 +4631,7 @@ segment.09.Percussion.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -4641,7 +4641,7 @@ segment.09.Percussion.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -4651,7 +4651,7 @@ segment.09.Percussion.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -4661,7 +4661,7 @@ segment.09.Percussion.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -4671,7 +4671,7 @@ segment.09.Percussion.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -4788,18 +4788,18 @@ segment.09.Percussion.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 9/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion_Music_Voice measure 9]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs''!4
         % AFTER:
         % STEM_TREMOLOS:
@@ -4826,7 +4826,7 @@ segment.09.Percussion.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs''!1.
         % AFTER:
         % STEM_TREMOLOS:
@@ -4841,7 +4841,7 @@ segment.09.Percussion.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5002,11 +5002,11 @@ segment.09.Violin.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 19/10
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5063,7 +5063,7 @@ segment.09.Violin.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         df'!2.
         % AFTER:
         % STEM_TREMOLOS:
@@ -5107,7 +5107,7 @@ segment.09.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         df'!2
         % AFTER:
         % STEM_TREMOLOS:
@@ -5118,15 +5118,15 @@ segment.09.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 2/3
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5141,7 +5141,7 @@ segment.09.Violin.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.note_head_style_harmonic()
         \override NoteHead.style = #'harmonic
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         af'!4
         % AFTER:
         % ARTICULATIONS:
@@ -5165,13 +5165,13 @@ segment.09.Violin.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         af'!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5181,7 +5181,7 @@ segment.09.Violin.Music.Voice = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     af'!4
     % AFTER:
     % SPANNER_STARTS:
@@ -5191,28 +5191,28 @@ segment.09.Violin.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     cs'!1
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 5/7
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 4]
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         cs'1
         % AFTER:
         % SPANNER_STARTS:
@@ -5222,7 +5222,7 @@ segment.09.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         c'2.
         % AFTER:
         % SPANNER_STARTS:
@@ -5233,20 +5233,20 @@ segment.09.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 2/3
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         d'4
         % AFTER:
         % SPANNER_STARTS:
@@ -5256,32 +5256,32 @@ segment.09.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         f2
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/5
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 5]
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         f16
         % AFTER:
         % SPANNER_STARTS:
@@ -5291,7 +5291,7 @@ segment.09.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         bf'!4
         % AFTER:
         % SPANNER_STARTS:
@@ -5302,20 +5302,20 @@ segment.09.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/7
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         fs'!4
         % AFTER:
         % SPANNER_STARTS:
@@ -5325,30 +5325,30 @@ segment.09.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         b'8.
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 2/3
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         b'8
         % AFTER:
         % SPANNER_STARTS:
@@ -5358,7 +5358,7 @@ segment.09.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         af'!4
         % AFTER:
         % COMMANDS:
@@ -5369,7 +5369,7 @@ segment.09.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5460,11 +5460,11 @@ segment.09.Violin.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/10
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5479,7 +5479,7 @@ segment.09.Violin.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.tuplet_bracket_staff_padding()
         \override TupletBracket.staff-padding = 3
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         d''2.
         % AFTER:
         % ARTICULATIONS:
@@ -5507,7 +5507,7 @@ segment.09.Violin.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         ef''!2
         % AFTER:
         % STEM_TREMOLOS:
@@ -5518,17 +5518,17 @@ segment.09.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 9/5
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5540,7 +5540,7 @@ segment.09.Violin.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         ef''!2.
         % AFTER:
         % STEM_TREMOLOS:
@@ -5555,7 +5555,7 @@ segment.09.Violin.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         ef''!2
         % AFTER:
         % STEM_TREMOLOS:
@@ -5573,7 +5573,7 @@ segment.09.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5734,11 +5734,11 @@ segment.09.Viola.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 19/10
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5774,7 +5774,7 @@ segment.09.Viola.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         c4
         % AFTER:
         % STEM_TREMOLOS:
@@ -5818,7 +5818,7 @@ segment.09.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         c1
         % AFTER:
         % STEM_TREMOLOS:
@@ -5829,17 +5829,17 @@ segment.09.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 5/9
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5851,7 +5851,7 @@ segment.09.Viola.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.note_head_style_harmonic()
         \override NoteHead.style = #'harmonic
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         b2.
         % AFTER:
         % ARTICULATIONS:
@@ -5879,21 +5879,21 @@ segment.09.Viola.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         c1.
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/5
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5903,7 +5903,7 @@ segment.09.Viola.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         c8
         % AFTER:
         % SPANNER_STARTS:
@@ -5913,32 +5913,32 @@ segment.09.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         e2
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/7
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 4]
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         e2
         % AFTER:
         % SPANNER_STARTS:
@@ -5948,7 +5948,7 @@ segment.09.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         fs!4.
         % AFTER:
         % SPANNER_STARTS:
@@ -5959,12 +5959,12 @@ segment.09.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     f4
     % AFTER:
     % SPANNER_STARTS:
@@ -5974,24 +5974,24 @@ segment.09.Viola.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     af!2
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/5
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         af8
         % AFTER:
         % SPANNER_STARTS:
@@ -6001,7 +6001,7 @@ segment.09.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         cs!2
         % AFTER:
         % SPANNER_STARTS:
@@ -6012,22 +6012,22 @@ segment.09.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/7
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 5]
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         e4
         % AFTER:
         % SPANNER_STARTS:
@@ -6037,30 +6037,30 @@ segment.09.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         g8.
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 2/3
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         g4
         % AFTER:
         % SPANNER_STARTS:
@@ -6070,7 +6070,7 @@ segment.09.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         a2
         % AFTER:
         % COMMANDS:
@@ -6081,7 +6081,7 @@ segment.09.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6172,11 +6172,11 @@ segment.09.Viola.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/10
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6191,7 +6191,7 @@ segment.09.Viola.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.tuplet_bracket_staff_padding()
         \override TupletBracket.staff-padding = 5
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         d4
         % AFTER:
         % ARTICULATIONS:
@@ -6219,7 +6219,7 @@ segment.09.Viola.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a1
         % AFTER:
         % STEM_TREMOLOS:
@@ -6230,17 +6230,17 @@ segment.09.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 9/5
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6252,7 +6252,7 @@ segment.09.Viola.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a4
         % AFTER:
         % STEM_TREMOLOS:
@@ -6267,7 +6267,7 @@ segment.09.Viola.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a1
         % AFTER:
         % STEM_TREMOLOS:
@@ -6285,7 +6285,7 @@ segment.09.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6446,11 +6446,11 @@ segment.09.Cello.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 19/10
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6486,7 +6486,7 @@ segment.09.Cello.Music.Voice = {
           %! baca._set_status_tag()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         c,2
         % AFTER:
         % STEM_TREMOLOS:
@@ -6530,7 +6530,7 @@ segment.09.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         c,2.
         % AFTER:
         % STEM_TREMOLOS:
@@ -6541,15 +6541,15 @@ segment.09.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 2/3
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6561,7 +6561,7 @@ segment.09.Cello.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.note_head_style_harmonic()
         \override NoteHead.style = #'harmonic
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         a,4
         % AFTER:
         % ARTICULATIONS:
@@ -6584,7 +6584,7 @@ segment.09.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         bf,!2
         % AFTER:
         % SPANNER_STARTS:
@@ -6595,20 +6595,20 @@ segment.09.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/5
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         f,8.
         % AFTER:
         % SPANNER_STARTS:
@@ -6618,30 +6618,30 @@ segment.09.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         d,2.
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/7
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         d,2
         % AFTER:
         % SPANNER_STARTS:
@@ -6651,7 +6651,7 @@ segment.09.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         b,4.
         % AFTER:
         % SPANNER_STARTS:
@@ -6662,22 +6662,22 @@ segment.09.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 2/3
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 4]
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         bf,!4
         % AFTER:
         % SPANNER_STARTS:
@@ -6687,22 +6687,22 @@ segment.09.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         g,2
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     g,4
     % AFTER:
     % SPANNER_STARTS:
@@ -6712,7 +6712,7 @@ segment.09.Cello.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     f,1
     % AFTER:
     % SPANNER_STARTS:
@@ -6723,16 +6723,16 @@ segment.09.Cello.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 4/7
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 5]
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         b,2
         % AFTER:
         % SPANNER_STARTS:
@@ -6742,30 +6742,30 @@ segment.09.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         c4.
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     \times 2/3
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         c8
         % AFTER:
         % SPANNER_STARTS:
@@ -6775,7 +6775,7 @@ segment.09.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.glissando_rhythm()
+          %! krummzeit.make_glissando_rhythm()
         bf,!4
         % AFTER:
         % COMMANDS:
@@ -6786,7 +6786,7 @@ segment.09.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.glissando_rhythm()
+      %! krummzeit.make_glissando_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6877,11 +6877,11 @@ segment.09.Cello.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/10
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6896,7 +6896,7 @@ segment.09.Cello.Music.Voice = {
           %! baca.OverrideCommand._call(1)
           %! baca.tuplet_bracket_staff_padding()
         \override TupletBracket.staff-padding = 5
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         d2
         % AFTER:
         % ARTICULATIONS:
@@ -6924,7 +6924,7 @@ segment.09.Cello.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         eqf,!2.
         % AFTER:
         % STEM_TREMOLOS:
@@ -6935,17 +6935,17 @@ segment.09.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 9/5
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6957,7 +6957,7 @@ segment.09.Cello.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         eqf,!2
         % AFTER:
         % STEM_TREMOLOS:
@@ -6972,7 +6972,7 @@ segment.09.Cello.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         eqf,!2.
         % AFTER:
         % STEM_TREMOLOS:
@@ -6990,7 +6990,7 @@ segment.09.Cello.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

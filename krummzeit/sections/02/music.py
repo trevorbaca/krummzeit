@@ -118,29 +118,29 @@ commands(
 
 commands(
     ("vc", (1, 11)),
-    library.hypermeter_tuplets([(3, 2)]),
+    library.make_hypermeter_tuplets([(3, 2)]),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vc", (12, 22)),
-    library.hypermeter_tuplets([(3, 2)]),
+    library.make_hypermeter_tuplets([(3, 2)]),
 )
 
 commands(
     ("va", (1, 11)),
-    library.hypermeter_tuplets([(1, 4)]),
+    library.make_hypermeter_tuplets([(1, 4)]),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("va", (12, 22)),
-    library.hypermeter_tuplets([(1, 4)]),
+    library.make_hypermeter_tuplets([(1, 4)]),
 )
 
 commands(
     ("pf", (1, 11)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -155,7 +155,7 @@ commands(
 
 commands(
     ("pf", (12, 22)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -168,7 +168,7 @@ commands(
 
 commands(
     ("perc", [(1, 3), (23, 38)]),
-    library.sponge_rhythm(),
+    library.make_sponge_rhythm(),
     baca.new(
         baca.reapply_persistent_indicators(),
         match=0,
@@ -185,17 +185,17 @@ commands(
 
 commands(
     ("vc", (23, 28)),
-    library.hypermeter_tuplets([(4, 1, 2)]),
+    library.make_hypermeter_tuplets([(4, 1, 2)]),
 )
 
 commands(
     ("va", (23, 28)),
-    library.hypermeter_tuplets([(1, 3, 1)]),
+    library.make_hypermeter_tuplets([(1, 3, 1)]),
 )
 
 commands(
     ("pf", (23, 31)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
         rotation=-1,
         fuse=(1, 8),
@@ -215,7 +215,7 @@ commands(
 
 commands(
     ("cl", [(5, 11), (16, 36)]),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -227,7 +227,7 @@ commands(
 
 commands(
     ("vn", (8, 11)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -239,7 +239,7 @@ commands(
 
 commands(
     ("vn", (19, 37)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -251,7 +251,7 @@ commands(
 
 commands(
     ("ob", (23, 37)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -263,21 +263,21 @@ commands(
 
 commands(
     ("vc", (34, 38)),
-    library.white_rhythm(
+    library.make_white_rhythm(
         durations=[(3, 8)],
     ),
 )
 
 commands(
     ("va", (34, 38)),
-    library.white_rhythm(
+    library.make_white_rhythm(
         durations=[(3, 8)],
     ),
 )
 
 commands(
     ("vn", 38),
-    library.white_rhythm(
+    library.make_white_rhythm(
         durations=[(3, 8)],
         do_not_burnish=True,
     ),
@@ -285,7 +285,7 @@ commands(
 
 commands(
     ("vn", (39, 53)),
-    library.white_rhythm(
+    library.make_white_rhythm(
         durations=[(2, 8)],
         remainder=abjad.RIGHT,
         do_not_burnish=True,
@@ -294,32 +294,32 @@ commands(
 
 commands(
     ("va", (39, 47)),
-    library.prolated_quarters([1, -1, 2, -2]),
+    library.make_prolated_quarters([1, -1, 2, -2]),
 )
 
 commands(
     ("vc", (39, 51)),
-    library.prolated_quarters([-1, 2, -2, 1]),
+    library.make_prolated_quarters([-1, 2, -2, 1]),
 )
 
 commands(
     ("pf", (45, 56)),
     baca.clef("bass"),
     baca.instrument(library.instruments["Piano"]),
-    library.incise_attacks(),
+    library.make_incise_attacks(),
     library.margin_markup("Pf."),
 )
 
 commands(
     ("perc", (45, 60)),
     baca.markup(r"\baca-tam-tam-markup"),
-    library.incise_attacks(),
+    library.make_incise_attacks(),
 )
 
 commands(
     ("va", (48, 56)),
     baca.chunk(
-        library.pizzicato_rhythm(
+        library.make_pizzicato_rhythm(
             rmakers.force_rest(
                 lambda _: baca.select.tuplets(_, ([1, 2, 3], 6)),
             ),
@@ -333,7 +333,7 @@ commands(
 
 commands(
     ("vc", (52, 56)),
-    library.pizzicato_rhythm(
+    library.make_pizzicato_rhythm(
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([2, 3, 4], 6)),
         ),
@@ -342,7 +342,7 @@ commands(
 
 commands(
     ("vn", (54, 56)),
-    library.pizzicato_rhythm(
+    library.make_pizzicato_rhythm(
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([3, 4, 5], 6)),
         ),
@@ -351,7 +351,7 @@ commands(
 
 commands(
     ("va", (57, 71)),
-    library.pizzicato_sixteenths(
+    library.make_pizzicato_sixteenths(
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([2, 3], 6)),
         ),
@@ -361,7 +361,7 @@ commands(
 
 commands(
     ("vc", (57, 71)),
-    library.pizzicato_sixteenths(
+    library.make_pizzicato_sixteenths(
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([0, 2], 7)),
         ),
@@ -371,7 +371,7 @@ commands(
 
 commands(
     ("vn", (57, 71)),
-    library.pizzicato_sixteenths(
+    library.make_pizzicato_sixteenths(
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([3, 6], 8)),
         ),
@@ -381,7 +381,7 @@ commands(
 
 commands(
     ("pf", (57, 71)),
-    library.pizzicato_sixteenths(
+    library.make_pizzicato_sixteenths(
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([1, 5], 7)),
         ),
@@ -391,14 +391,14 @@ commands(
 
 commands(
     ("pf", (72, 75)),
-    library.pizzicato_sixteenths(
+    library.make_pizzicato_sixteenths(
         extra_counts=[4, 0, 2, 4, 6],
     ),
 )
 
 commands(
     ("cl", (69, 75)),
-    library.white_rhythm([(3, 8)]),
+    library.make_white_rhythm([(3, 8)]),
 )
 
 commands(

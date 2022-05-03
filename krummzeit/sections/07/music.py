@@ -65,7 +65,7 @@ commands(
 
 commands(
     (["va", "vc"], (2, 6)),
-    library.rest_delimited_repeated_duration_notes((1, 4), 32),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
 )
 
 commands(
@@ -103,7 +103,7 @@ commands(
 
 commands(
     ("pf", [(4, 9), 13, 16]),
-    library.silver_points([(1, 2), (2, 1)]),
+    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
 )
 
 commands(
@@ -114,7 +114,7 @@ commands(
 
 commands(
     ("vn", (7, 19)),
-    library.hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
+    library.make_hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
 )
 
 commands(
@@ -125,7 +125,7 @@ commands(
 
 commands(
     ("va", (7, 19)),
-    library.hypermeter_tuplets(
+    library.make_hypermeter_tuplets(
         [(1, 6)],
         [2, 2, 2, 2, 2, 3],
         rmakers.force_rest(
@@ -136,7 +136,7 @@ commands(
 
 commands(
     ("vc", (7, 19)),
-    library.hypermeter_tuplets(
+    library.make_hypermeter_tuplets(
         [(6, 1)],
         [2, 2, 2, 2, 2, 3],
         rmakers.force_rest(
@@ -147,7 +147,7 @@ commands(
 
 commands(
     ("ob", (4, 10)),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
         rotation=-1,
         fuse=(1, 8),
@@ -160,7 +160,7 @@ commands(
 commands(
     ("cl", (4, 10)),
     baca.instrument(library.instruments["ClarinetInEFlat"]),
-    library.polyphony(
+    library.make_polyphony_rhythm(
         durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
         rotation=-1,
         fuse=(1, 8),

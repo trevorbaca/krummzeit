@@ -7,8 +7,6 @@ import baca
 import quicktions
 from abjadext import rmakers
 
-# instruments & margin markups
-
 instruments = dict(
     [
         ("BassClarinet", abjad.BassClarinet()),
@@ -50,8 +48,6 @@ margin_markups = dict(
         ("Vn.", _make_margin_markup("Vn.")),
     ]
 )
-
-# metronome marks
 
 metronome_marks = dict(
     [
@@ -105,10 +101,8 @@ metronome_marks = dict(
     ]
 )
 
-# time signatures
 
-
-def make_numerators(numerators, addenda):
+def _make_colored_numerators(numerators, addenda):
     numerators = baca.sequence.helianthate(numerators, -1, 1)
     numerators = abjad.sequence.flatten(numerators)
     length = len(numerators)
@@ -118,29 +112,22 @@ def make_numerators(numerators, addenda):
     return numerators
 
 
-numerators = [[3, 3, 4], [3, 5, 6], [3, 7]]
-addenda = [0, 0, 0.5, 0.5, 1, 1, 0, 0, -0.5, -0.5, -1, -1]
-red_numerators = make_numerators(numerators, addenda)
-assert len(red_numerators) == 48 and sum(red_numerators) == 204
-
-numerators = [[3, 3, 3, 4, 5], [4, 4]]
-addenda = [0, 0, 0, 1, 1.5, -1, -1.5] + [0.5, 0.5, -0.5, -0.5, 0, 0, 0]
-blue_numerators = make_numerators(numerators, addenda)
-assert len(blue_numerators) == 70 and sum(blue_numerators) == 260
-
-numerators = red_numerators + blue_numerators
-numerators = numerators + numerators
-assert len(numerators) == 236 and sum(numerators) == 928
-
-ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
-numerator_lists = numerators[:]
-numerator_lists = abjad.sequence.partition_by_ratio_of_weights(
-    numerator_lists, weights=ratio
-)
-assert len(numerator_lists) == 12
+def _make_numerators():
+    numerators = [[3, 3, 4], [3, 5, 6], [3, 7]]
+    addenda = [0, 0, 0.5, 0.5, 1, 1, 0, 0, -0.5, -0.5, -1, -1]
+    red_numerators = _make_colored_numerators(numerators, addenda)
+    assert len(red_numerators) == 48 and sum(red_numerators) == 204
+    numerators = [[3, 3, 3, 4, 5], [4, 4]]
+    addenda = [0, 0, 0, 1, 1.5, -1, -1.5] + [0.5, 0.5, -0.5, -0.5, 0, 0, 0]
+    blue_numerators = _make_colored_numerators(numerators, addenda)
+    assert len(blue_numerators) == 70 and sum(blue_numerators) == 260
+    numerators = red_numerators + blue_numerators
+    numerators = numerators + numerators
+    assert len(numerators) == 236 and sum(numerators) == 928
+    return numerators
 
 
-def numerator_to_time_signature(numerator):
+def _numerator_to_time_signature(numerator):
     if abjad.math.is_integer_equivalent_number(numerator):
         time_signature = abjad.TimeSignature((numerator, 4))
     else:
@@ -148,213 +135,202 @@ def numerator_to_time_signature(numerator):
     return time_signature
 
 
-time_signature_inventory = []
-for numerator_list in numerator_lists:
-    time_signatures = [numerator_to_time_signature(_) for _ in numerator_list]
-    time_signature_inventory.append(time_signatures)
-
-assert len(time_signature_inventory) == 12
-pairs = []
-for time_signature_list in time_signature_inventory:
-    length = len(time_signature_list)
-    duration = sum([_.duration for _ in time_signature_list])
-    pair = (length, duration)
-    pairs.append(pair)
-
-assert pairs[0] == (31, abjad.Duration(136, 4))
-assert pairs[1] == (22, abjad.Duration(177, 8))
-assert pairs[2] == (11, abjad.Duration(81, 8))
-assert pairs[3] == (13, abjad.Duration(46, 4))
-assert pairs[4] == (35, abjad.Duration(263, 8))
-assert pairs[5] == (22, abjad.Duration(181, 8))
-assert pairs[6] == (11, abjad.Duration(87, 8))
-assert pairs[7] == (10, abjad.Duration(95, 8))
-assert pairs[8] == (34, abjad.Duration(131, 4))
-assert pairs[9] == (24, abjad.Duration(179, 8))
-assert pairs[10] == (12, abjad.Duration(87, 8))
-assert pairs[11] == (11, abjad.Duration(40, 4))
-
-segment_time_signatures = dict()
-
-### B ###
-lists = time_signature_inventory[:3]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 64
-# repeat first 11 time signatures
-time_signatures = list(time_signatures_)
-time_signatures[0:0] = time_signatures[:11]
-assert len(time_signatures) == 75
-segment_time_signatures["B"] = time_signatures
-
-
-### E ###
-lists = time_signature_inventory[3:5]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 48
-time_signatures = list(time_signatures_)
-segment_time_signatures["E"] = time_signatures
-
-
-### K ###
-# time_signatures = time_signature_inventory[9:]
-# time_signatures = abjad.sequence.flatten(time_signatures)
-# assert len(time_signatures) == 47
-# first_source = time_signatures[20:32]
-# first_source *= 3
-# assert len(first_source) == 36
-# second_source = time_signatures[-15:-3]
-# second_source *= 2
-# time_signatures[20:32] = first_source
-# assert len(time_signatures) == 71
-# time_signatures[-15:-3] = second_source
-# assert len(time_signatures) == 83
-# time_signatures.insert(20, abjad.TimeSignature((1, 4)))
-# time_signatures.insert(-27, abjad.TimeSignature((1, 4)))
-# assert len(time_signatures) == 85
-# segment_time_signatures['K'] = time_signatures
-time_signatures = [(5, 4), (5, 4), (4, 4), (2, 4)]
-time_signatures *= 12
-time_signatures = [abjad.TimeSignature(_) for _ in time_signatures]
-assert len(time_signatures) == 48
-segment_time_signatures["K"] = time_signatures
-
-
-### F ###
-lists = time_signature_inventory[4]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 35
-time_signatures = list(time_signatures_)
-segment_time_signatures["F"] = time_signatures
-
-
-### D ###
-lists = time_signature_inventory[2]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 11
-time_signatures = list(time_signatures_)
-time_signatures.insert(8, abjad.TimeSignature((1, 4)))
-time_signatures.insert(4, abjad.TimeSignature((1, 4)))
-time_signatures.insert(3, abjad.TimeSignature((1, 4)))
-time_signatures.insert(2, abjad.TimeSignature((1, 4)))
-time_signatures.insert(1, abjad.TimeSignature((1, 4)))
-assert len(time_signatures) == 16
-time_signatures[-1:-1] = 3 * time_signatures[-1:]
-assert len(time_signatures) == 19
-segment_time_signatures["D"] = time_signatures
-
-
-### C ###
-lists = time_signature_inventory[1:3]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 33
-"""
-12 stages:
-1: 4 (1/4)
-2: 1 (1/4) 1 (1/4) 1 (1/4) 1 (1/4)
-3: 1 (1/4) 1 (1/4) 1 (1/4) 1 (1/4)
-4: 2
-5: 2
-6: 2
-7: 1 (1/4) 1 (1/4)
-8: 2
-9: 2
-10: 4
-11: 3
-12: 2
-total: 33 semantic measures
-"""
-time_signatures = list(time_signatures_)
-time_signatures.insert(-14, abjad.TimeSignature((1, 4)))
-time_signatures.insert(-13, abjad.TimeSignature((1, 4)))
-time_signatures.insert(12, abjad.TimeSignature((1, 4)))
-time_signatures.insert(11, abjad.TimeSignature((1, 4)))
-time_signatures.insert(10, abjad.TimeSignature((1, 4)))
-time_signatures.insert(9, abjad.TimeSignature((1, 4)))
-time_signatures.insert(8, abjad.TimeSignature((1, 4)))
-time_signatures.insert(7, abjad.TimeSignature((1, 4)))
-time_signatures.insert(6, abjad.TimeSignature((1, 4)))
-time_signatures.insert(5, abjad.TimeSignature((1, 4)))
-time_signatures.insert(4, abjad.TimeSignature((1, 4)))
-assert len(time_signatures) == 44
-segment_time_signatures["C"] = time_signatures
-
-
-### G ###
-lists = time_signature_inventory[5]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 22
-time_signatures = list(time_signatures_)
-segment_time_signatures["G"] = time_signatures
-
-
-### H ###
-lists = time_signature_inventory[5]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 22
-time_signatures = list(time_signatures_)
-time_signatures.insert(12, abjad.TimeSignature((1, 4)))
-time_signatures.append(abjad.TimeSignature((1, 4)))
-assert len(time_signatures) == 24
-segment_time_signatures["H"] = time_signatures
-
-
-### I ###
-lists = time_signature_inventory[7]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 10
-time_signatures = list(time_signatures_)
-segment_time_signatures["I"] = time_signatures
-
-
-### J ###
-lists = time_signature_inventory[11]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 11
-time_signatures = list(time_signatures_)
-extension = time_signatures[-2:]
-time_signatures = list(time_signatures)
-time_signatures.extend(extension)
-assert len(time_signatures) == 13
-time_signatures[10:10] = 4 * [abjad.TimeSignature((3, 4))]
-time_signatures[10:10] = 4 * [abjad.TimeSignature((4, 4))]
-assert len(time_signatures) == 21
-time_signatures.insert(-2, abjad.TimeSignature((3, 4)))
-time_signatures.insert(-2, abjad.TimeSignature((3, 4)))
-time_signatures[-1] = abjad.TimeSignature((1, 4))
-assert len(time_signatures) == 23
-segment_time_signatures["J"] = time_signatures
+def _make_time_signatures_by_segment():
+    ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
+    numerator_lists = _make_numerators()
+    numerator_lists = abjad.sequence.partition_by_ratio_of_weights(
+        numerator_lists, weights=ratio
+    )
+    assert len(numerator_lists) == 12
+    time_signature_inventory = []
+    for numerator_list in numerator_lists:
+        time_signatures = [_numerator_to_time_signature(_) for _ in numerator_list]
+        time_signature_inventory.append(time_signatures)
+    assert len(time_signature_inventory) == 12
+    pairs = []
+    for time_signature_list in time_signature_inventory:
+        length = len(time_signature_list)
+        duration = sum([_.duration for _ in time_signature_list])
+        pair = (length, duration)
+        pairs.append(pair)
+    assert pairs[0] == (31, abjad.Duration(136, 4))
+    assert pairs[1] == (22, abjad.Duration(177, 8))
+    assert pairs[2] == (11, abjad.Duration(81, 8))
+    assert pairs[3] == (13, abjad.Duration(46, 4))
+    assert pairs[4] == (35, abjad.Duration(263, 8))
+    assert pairs[5] == (22, abjad.Duration(181, 8))
+    assert pairs[6] == (11, abjad.Duration(87, 8))
+    assert pairs[7] == (10, abjad.Duration(95, 8))
+    assert pairs[8] == (34, abjad.Duration(131, 4))
+    assert pairs[9] == (24, abjad.Duration(179, 8))
+    assert pairs[10] == (12, abjad.Duration(87, 8))
+    assert pairs[11] == (11, abjad.Duration(40, 4))
+    segment_time_signatures = dict()
+    # B
+    lists = time_signature_inventory[:3]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 64
+    # repeat first 11 time signatures
+    time_signatures = list(time_signatures_)
+    time_signatures[0:0] = time_signatures[:11]
+    assert len(time_signatures) == 75
+    segment_time_signatures["B"] = time_signatures
+    # E
+    lists = time_signature_inventory[3:5]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 48
+    time_signatures = list(time_signatures_)
+    segment_time_signatures["E"] = time_signatures
+    # K
+    # time_signatures = time_signature_inventory[9:]
+    # time_signatures = abjad.sequence.flatten(time_signatures)
+    # assert len(time_signatures) == 47
+    # first_source = time_signatures[20:32]
+    # first_source *= 3
+    # assert len(first_source) == 36
+    # second_source = time_signatures[-15:-3]
+    # second_source *= 2
+    # time_signatures[20:32] = first_source
+    # assert len(time_signatures) == 71
+    # time_signatures[-15:-3] = second_source
+    # assert len(time_signatures) == 83
+    # time_signatures.insert(20, abjad.TimeSignature((1, 4)))
+    # time_signatures.insert(-27, abjad.TimeSignature((1, 4)))
+    # assert len(time_signatures) == 85
+    # segment_time_signatures['K'] = time_signatures
+    time_signatures = [(5, 4), (5, 4), (4, 4), (2, 4)]
+    time_signatures *= 12
+    time_signatures = [abjad.TimeSignature(_) for _ in time_signatures]
+    assert len(time_signatures) == 48
+    segment_time_signatures["K"] = time_signatures
+    # F
+    lists = time_signature_inventory[4]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 35
+    time_signatures = list(time_signatures_)
+    segment_time_signatures["F"] = time_signatures
+    # D
+    lists = time_signature_inventory[2]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 11
+    time_signatures = list(time_signatures_)
+    time_signatures.insert(8, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(4, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(3, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(2, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(1, abjad.TimeSignature((1, 4)))
+    assert len(time_signatures) == 16
+    time_signatures[-1:-1] = 3 * time_signatures[-1:]
+    assert len(time_signatures) == 19
+    segment_time_signatures["D"] = time_signatures
+    # C
+    lists = time_signature_inventory[1:3]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 33
+    """
+    12 stages:
+    1: 4 (1/4)
+    2: 1 (1/4) 1 (1/4) 1 (1/4) 1 (1/4)
+    3: 1 (1/4) 1 (1/4) 1 (1/4) 1 (1/4)
+    4: 2
+    5: 2
+    6: 2
+    7: 1 (1/4) 1 (1/4)
+    8: 2
+    9: 2
+    10: 4
+    11: 3
+    12: 2
+    total: 33 semantic measures
+    """
+    time_signatures = list(time_signatures_)
+    time_signatures.insert(-14, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(-13, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(12, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(11, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(10, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(9, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(8, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(7, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(6, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(5, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(4, abjad.TimeSignature((1, 4)))
+    assert len(time_signatures) == 44
+    segment_time_signatures["C"] = time_signatures
+    # G
+    lists = time_signature_inventory[5]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 22
+    time_signatures = list(time_signatures_)
+    segment_time_signatures["G"] = time_signatures
+    # H
+    lists = time_signature_inventory[5]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 22
+    time_signatures = list(time_signatures_)
+    time_signatures.insert(12, abjad.TimeSignature((1, 4)))
+    time_signatures.append(abjad.TimeSignature((1, 4)))
+    assert len(time_signatures) == 24
+    segment_time_signatures["H"] = time_signatures
+    # I
+    lists = time_signature_inventory[7]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 10
+    time_signatures = list(time_signatures_)
+    segment_time_signatures["I"] = time_signatures
+    # J
+    lists = time_signature_inventory[11]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 11
+    time_signatures = list(time_signatures_)
+    extension = time_signatures[-2:]
+    time_signatures = list(time_signatures)
+    time_signatures.extend(extension)
+    assert len(time_signatures) == 13
+    time_signatures[10:10] = 4 * [abjad.TimeSignature((3, 4))]
+    time_signatures[10:10] = 4 * [abjad.TimeSignature((4, 4))]
+    assert len(time_signatures) == 21
+    time_signatures.insert(-2, abjad.TimeSignature((3, 4)))
+    time_signatures.insert(-2, abjad.TimeSignature((3, 4)))
+    time_signatures[-1] = abjad.TimeSignature((1, 4))
+    assert len(time_signatures) == 23
+    segment_time_signatures["J"] = time_signatures
+    # A
+    lists = time_signature_inventory[11]
+    time_signatures_ = abjad.sequence.flatten(lists)
+    assert len(time_signatures_) == 11
+    time_signatures = list(time_signatures_)
+    time_signatures.insert(2, abjad.TimeSignature((1, 4)))
+    time_signatures.insert(-4, abjad.TimeSignature((1, 4)))
+    assert len(time_signatures) == 13
+    segment_time_signatures["A"] = time_signatures
+    return segment_time_signatures
 
 
-### A ###
-lists = time_signature_inventory[11]
-time_signatures_ = abjad.sequence.flatten(lists)
-assert len(time_signatures_) == 11
-time_signatures = list(time_signatures_)
-time_signatures.insert(2, abjad.TimeSignature((1, 4)))
-time_signatures.insert(-4, abjad.TimeSignature((1, 4)))
-assert len(time_signatures) == 13
-segment_time_signatures["A"] = time_signatures
+segment_time_signatures = _make_time_signatures_by_segment()
 
-# pitch-classes
 
-ratios = [[[1], [1], [1], [1, 1]], [[1], [1], [1], [1, 1, 1], [1, 1, 1]]]
-ratios = baca.sequence.helianthate(ratios, -1, 1)
-ratios = abjad.sequence.flatten(ratios, depth=1)
-ratios = [tuple(_) for _ in ratios]
+def _make_pitch_classes():
+    ratios = [[[1], [1], [1], [1, 1]], [[1], [1], [1], [1, 1, 1], [1, 1, 1]]]
+    ratios = baca.sequence.helianthate(ratios, -1, 1)
+    ratios = abjad.sequence.flatten(ratios, depth=1)
+    ratios = [tuple(_) for _ in ratios]
+    indigo_pitch_classes = baca.pcollections.accumulate_and_repartition(
+        segments=[[7, 1, 3, 4, 5, 11], [3, 5, 6, 7], [9, 10, 0, 8]],
+        ratios=ratios,
+        counts=[1, 1, 1, 2, 3],
+    )
+    indigo_pitch_classes = abjad.sequence.flatten(indigo_pitch_classes, depth=-1)
+    violet_pitch_classes = baca.pcollections.accumulate_and_repartition(
+        segments=[[8, 4, 3, 2, 11], [5, 4, 6, 8, 7], [9, 6, 5, 0, 11, 10]],
+        ratios=ratios,
+        counts=[1, 1, 2, 3],
+    )
+    violet_pitch_classes = abjad.sequence.flatten(violet_pitch_classes, depth=-1)
+    return indigo_pitch_classes, violet_pitch_classes
 
-indigo_pitch_classes = baca.pcollections.accumulate_and_repartition(
-    segments=[[7, 1, 3, 4, 5, 11], [3, 5, 6, 7], [9, 10, 0, 8]],
-    ratios=ratios,
-    counts=[1, 1, 1, 2, 3],
-)
-indigo_pitch_classes = abjad.sequence.flatten(indigo_pitch_classes, depth=-1)
 
-violet_pitch_classes = baca.pcollections.accumulate_and_repartition(
-    segments=[[8, 4, 3, 2, 11], [5, 4, 6, 8, 7], [9, 6, 5, 0, 11, 10]],
-    ratios=ratios,
-    counts=[1, 1, 2, 3],
-)
-violet_pitch_classes = abjad.sequence.flatten(violet_pitch_classes, depth=-1)
+indigo_pitch_classes, violet_pitch_classes = _make_pitch_classes()
 
 
 @dataclasses.dataclass
@@ -432,20 +408,6 @@ class RegisterTransitionCommand(baca.Command):
         abjad.detach("not yet registered", pleaf)
 
 
-def closing_pizzicati(counts, extra_counts, split):
-    durations = [(_, 4) for _ in split]
-    return baca.rhythm(
-        rmakers.talea(counts, 4, extra_counts=extra_counts),
-        rmakers.force_rest(
-            lambda _: baca.select.leaves_in_each_lt(_, 1, None),
-        ),
-        rmakers.beam(),
-        rmakers.extract_trivial(),
-        preprocessor=lambda _: baca.sequence.split_divisions(_, durations, cyclic=True),
-        tag=abjad.Tag("krummzeit.closing_pizzicati()"),
-    )
-
-
 def clusters(flavor):
     clusters = {
         "harpsichord": baca.clusters([4], start_pitch="D4"),
@@ -459,56 +421,6 @@ def color_fingerings():
     return baca.color_fingerings(
         [0, 1, 2, 1],
         selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-    )
-
-
-def color_tuplets(*commands, rotation=0):
-    tuplet_ratios = [
-        (-2, 4, 1, 1, 12),
-        (3, 2),
-        (4, 3),
-        (3, -2),
-        (-3, 4, 1, 12),
-        (3, 2),
-        (7, 1, 3),
-        (3, -2),
-    ]
-    tuplet_ratios = abjad.sequence.rotate(tuplet_ratios, n=rotation)
-
-    def selector(argument):
-        selection = abjad.select.tuplets(argument)[:-1]
-        selection = [
-            baca.pleaves(baca.rleak(abjad.select.leaves(_)[-1:])) for _ in selection
-        ]
-        selection = [_ for _ in selection if len(_) == 2]
-        selection = [abjad.select.leaf(_, 0) for _ in selection]
-        return selection
-
-    return baca.rhythm(
-        rmakers.tuplet(tuplet_ratios),
-        rmakers.tie(selector),
-        *commands,
-        rmakers.rewrite_dots(),
-        rmakers.rewrite_rest_filled(),
-        rmakers.beam(),
-        rmakers.extract_trivial(),
-        rmakers.reduce_multiplier(),
-        tag=abjad.Tag("krummzeit.color_tuplets()"),
-    )
-
-
-def detached_triplets():
-    def selector(argument):
-        result = abjad.select.tuplets(argument)[:-1]
-        result = abjad.select.get(result, [0], 2)
-        result = [baca.pleaf(_, -1) for _ in result]
-        return result
-
-    return baca.rhythm(
-        rmakers.tuplet([(3, -1, 2), (1, -1, 3, -1)]),
-        rmakers.tie(selector),
-        preprocessor=lambda _: baca.sequence.quarters(baca.sequence.fuse(_)),
-        tag=abjad.Tag("krummzeit.detached_triplets()"),
     )
 
 
@@ -548,7 +460,201 @@ def displacement():
     )
 
 
-def fused_expanse(divisions):
+def instrument(key):
+    return baca.instrument(instruments[key])
+
+
+def make_closing_pizzicato_rhythm(counts, extra_counts, split):
+    durations = [(_, 4) for _ in split]
+    return baca.rhythm(
+        rmakers.talea(counts, 4, extra_counts=extra_counts),
+        rmakers.force_rest(
+            lambda _: baca.select.leaves_in_each_lt(_, 1, None),
+        ),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        preprocessor=lambda _: baca.sequence.split_divisions(_, durations, cyclic=True),
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_color_tuplets(*commands, rotation=0):
+    tuplet_ratios = [
+        (-2, 4, 1, 1, 12),
+        (3, 2),
+        (4, 3),
+        (3, -2),
+        (-3, 4, 1, 12),
+        (3, 2),
+        (7, 1, 3),
+        (3, -2),
+    ]
+    tuplet_ratios = abjad.sequence.rotate(tuplet_ratios, n=rotation)
+
+    def selector(argument):
+        selection = abjad.select.tuplets(argument)[:-1]
+        selection = [
+            baca.pleaves(baca.rleak(abjad.select.leaves(_)[-1:])) for _ in selection
+        ]
+        selection = [_ for _ in selection if len(_) == 2]
+        selection = [abjad.select.leaf(_, 0) for _ in selection]
+        return selection
+
+    return baca.rhythm(
+        rmakers.tuplet(tuplet_ratios),
+        rmakers.tie(selector),
+        *commands,
+        rmakers.rewrite_dots(),
+        rmakers.rewrite_rest_filled(),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        rmakers.reduce_multiplier(),
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_detached_triplets():
+    def selector(argument):
+        result = abjad.select.tuplets(argument)[:-1]
+        result = abjad.select.get(result, [0], 2)
+        result = [baca.pleaf(_, -1) for _ in result]
+        return result
+
+    return baca.rhythm(
+        rmakers.tuplet([(3, -1, 2), (1, -1, 3, -1)]),
+        rmakers.tie(selector),
+        preprocessor=lambda _: baca.sequence.quarters(baca.sequence.fuse(_)),
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_empty_score():
+    tag = baca.tags.function_name(inspect.currentframe())
+    global_context = baca.score.make_global_context()
+    # OBOE
+    oboe_music_voice = abjad.Voice(name="Oboe_Music_Voice", tag=tag)
+    oboe_music_staff = abjad.Staff([oboe_music_voice], name="Oboe_Music_Staff", tag=tag)
+    baca.score.attach_lilypond_tag("Oboe", oboe_music_staff)
+    abjad.annotate(
+        oboe_music_staff,
+        "default_instrument",
+        instruments["Oboe"],
+    )
+    abjad.annotate(oboe_music_staff, "default_clef", abjad.Clef("treble"))
+    # CLARINET
+    clarinet_music_voice = abjad.Voice(name="Clarinet_Music_Voice", tag=tag)
+    clarinet_music_staff = abjad.Staff(
+        [clarinet_music_voice], name="Clarinet_Music_Staff", tag=tag
+    )
+    baca.score.attach_lilypond_tag("Clarinet", clarinet_music_staff)
+    abjad.annotate(
+        clarinet_music_staff,
+        "default_instrument",
+        instruments["BassClarinet"],
+    )
+    abjad.annotate(clarinet_music_staff, "default_clef", abjad.Clef("treble"))
+    # WIND SECTION
+    wind_section_staff_group = abjad.StaffGroup(
+        [oboe_music_staff, clarinet_music_staff],
+        lilypond_type="WindSectionStaffGroup",
+        name="Wind_Section_Staff_Group",
+        tag=tag,
+    )
+    # PIANO
+    piano_music_voice = abjad.Voice(name="Piano_Music_Voice", tag=tag)
+    piano_music_staff = abjad.Staff(
+        [piano_music_voice], name="Piano_Music_Staff", tag=tag
+    )
+    baca.score.attach_lilypond_tag("Piano", piano_music_staff)
+    abjad.annotate(
+        piano_music_staff,
+        "default_instrument",
+        instruments["Piano"],
+    )
+    abjad.annotate(piano_music_staff, "default_clef", abjad.Clef("treble"))
+    # PERCUSSION
+    percussion_music_voice = abjad.Voice(name="Percussion_Music_Voice", tag=tag)
+    percussion_music_staff = abjad.Staff(
+        [percussion_music_voice], name="Percussion_Music_Staff", tag=tag
+    )
+    baca.score.attach_lilypond_tag("Percussion", percussion_music_staff)
+    abjad.annotate(
+        percussion_music_staff,
+        "default_instrument",
+        instruments["Xylophone"],
+    )
+    abjad.annotate(percussion_music_staff, "default_clef", abjad.Clef("treble"))
+    # PERCUSSION SECTION
+    percussion_section_staff_group = abjad.StaffGroup(
+        [piano_music_staff, percussion_music_staff],
+        lilypond_type="PercussionSectionStaffGroup",
+        name="Percussion_Section_Staff_Group",
+        tag=tag,
+    )
+    # VIOLIN
+    violin_music_voice = abjad.Voice(name="Violin_Music_Voice", tag=tag)
+    violin_music_staff = abjad.Staff(
+        [violin_music_voice], name="Violin_Music_Staff", tag=tag
+    )
+    baca.score.attach_lilypond_tag("Violin", violin_music_staff)
+    abjad.annotate(
+        violin_music_staff,
+        "default_instrument",
+        instruments["Violin"],
+    )
+    abjad.annotate(violin_music_staff, "default_clef", abjad.Clef("treble"))
+    # VIOLA
+    viola_music_voice = abjad.Voice(name="Viola_Music_Voice", tag=tag)
+    viola_music_staff = abjad.Staff(
+        [viola_music_voice], name="Viola_Music_Staff", tag=tag
+    )
+    baca.score.attach_lilypond_tag("Viola", viola_music_staff)
+    abjad.annotate(
+        viola_music_staff,
+        "default_instrument",
+        instruments["Viola"],
+    )
+    abjad.annotate(viola_music_staff, "default_clef", abjad.Clef("alto"))
+    # CELLO
+    cello_music_voice = abjad.Voice(name="Cello_Music_Voice", tag=tag)
+    cello_music_staff = abjad.Staff(
+        [cello_music_voice], name="Cello_Music_Staff", tag=tag
+    )
+    baca.score.attach_lilypond_tag("Cello", cello_music_staff)
+    abjad.annotate(
+        cello_music_staff,
+        "default_instrument",
+        instruments["Cello"],
+    )
+    abjad.annotate(cello_music_staff, "default_clef", abjad.Clef("bass"))
+    # STRING SECTION
+    string_section_staff_group = abjad.StaffGroup(
+        [violin_music_staff, viola_music_staff, cello_music_staff],
+        lilypond_type="StringSectionStaffGroup",
+        name="String_Section_Staff_Group",
+        tag=tag,
+    )
+    # MUSIC CONTEXT
+    music_context = abjad.Context(
+        [
+            wind_section_staff_group,
+            percussion_section_staff_group,
+            string_section_staff_group,
+        ],
+        lilypond_type="MusicContext",
+        simultaneous=True,
+        name="Music_Context",
+        tag=tag,
+    )
+    # SCORE
+    score = abjad.Score([global_context, music_context], name="Score", tag=tag)
+    baca.score.assert_lilypond_identifiers(score)
+    baca.score.assert_unique_context_names(score)
+    baca.score.assert_matching_custom_context_names(score)
+    return score
+
+
+def make_fused_expanse(divisions):
     def preprocessor(divisions_):
         result = baca.sequence.fuse(divisions_)
         result = baca.sequence.split_divisions(result, divisions, cyclic=True)
@@ -558,11 +664,11 @@ def fused_expanse(divisions):
         rmakers.note(),
         rmakers.beam(lambda _: baca.select.plts(_)),
         preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.fused_expanse()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def glissando_rhythm(
+def make_glissando_rhythm(
     division_ratios,
     *commands,
     tuplet_ratios=[(1, 2), (1, 4), (4, 3)],
@@ -603,11 +709,11 @@ def glissando_rhythm(
         rmakers.beam(),
         rmakers.extract_trivial(),
         preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.glissando_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def hypermeter_tuplets(tuplet_ratios, counts=(2, 3, 1), *commands):
+def make_hypermeter_tuplets(tuplet_ratios, counts=(2, 3, 1), *commands):
     return baca.rhythm(
         rmakers.tuplet(tuplet_ratios, denominator=(1, 4)),
         *commands,
@@ -619,11 +725,11 @@ def hypermeter_tuplets(tuplet_ratios, counts=(2, 3, 1), *commands):
         rmakers.extract_trivial(),
         rmakers.reduce_multiplier(),
         preprocessor=lambda _: baca.sequence.fuse(_, counts, cyclic=True),
-        tag=abjad.Tag("krummzeit.hypermeter_tuplets()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def incise_attacks():
+def make_incise_attacks():
     return baca.rhythm(
         rmakers.incised(
             fill_with_rests=True,
@@ -635,11 +741,11 @@ def incise_attacks():
         ),
         rmakers.beam(),
         rmakers.extract_trivial(),
-        tag=abjad.Tag("krummzeit.incise_attacks()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def incise_chain():
+def make_incise_chain_rhythm():
     return baca.rhythm(
         rmakers.incised(
             fill_with_rests=True,
@@ -655,11 +761,11 @@ def incise_chain():
         rmakers.beam(),
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
-        tag=abjad.Tag("krummzeit.incise_chain()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def incise_chain_b():
+def make_incise_chain_b_rhythm():
     return baca.rhythm(
         rmakers.incised(
             fill_with_rests=True,
@@ -670,15 +776,11 @@ def incise_chain_b():
             talea_denominator=16,
         ),
         rmakers.extract_trivial(),
-        tag=abjad.Tag("krummzeit.incise_chain_b()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def instrument(key):
-    return baca.instrument(instruments[key])
-
-
-def left_remainder_quarters(*commands):
+def make_left_remainder_quarters(*commands):
     def preprocessor(divisions):
         result = baca.sequence.fuse(divisions)
         result = baca.sequence.quarters(result, remainder=abjad.LEFT)
@@ -689,24 +791,11 @@ def left_remainder_quarters(*commands):
         *commands,
         rmakers.beam(lambda _: baca.select.plts(_)),
         preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.left_remainder_quarters()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def margin_markup(
-    key, alert=None, context="Staff", selector=lambda _: abjad.select.leaf(_, 0)
-):
-    margin_markup = margin_markups[key]
-    command = baca.margin_markup(
-        margin_markup,
-        alert=alert,
-        context=context,
-        selector=selector,
-    )
-    return baca.not_parts(command)
-
-
-def oboe_trills():
+def make_oboe_trill_rhythm():
     def preprocessor(divisions):
         ratios = abjad.CyclicTuple([(2, 1), (2, 1), (1, 1, 1)])
         sequences = []
@@ -727,11 +816,11 @@ def oboe_trills():
         rmakers.extract_trivial(),
         rmakers.reduce_multiplier(),
         preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.oboe_trills()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def opening_triplets(*commands, remainder=abjad.LEFT):
+def make_opening_triplets(*commands, remainder=abjad.LEFT):
     def preprocessor(divisions):
         result = baca.sequence.fuse(divisions)
         result = baca.sequence.quarters(result, remainder=remainder)
@@ -744,11 +833,11 @@ def opening_triplets(*commands, remainder=abjad.LEFT):
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
         preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.opening_triplets()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def piano_harmonics(division_ratios, *commands, tie_across_divisions=None):
+def make_piano_harmonics_rhythm(division_ratios, *commands, tie_across_divisions=None):
     assert isinstance(division_ratios, list), repr(division_ratios)
     commands_ = list(commands)
     if isinstance(tie_across_divisions, abjad.Pattern):
@@ -780,11 +869,11 @@ def piano_harmonics(division_ratios, *commands, tie_across_divisions=None):
         *commands_,
         rmakers.beam(lambda _: baca.select.plts(_)),
         preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.piano_harmonics()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def pizzicato_rhythm(*commands, split=(6, 18)):
+def make_pizzicato_rhythm(*commands, split=(6, 18)):
     durations = [(_, 16) for _ in split]
     return baca.rhythm(
         rmakers.talea(
@@ -798,11 +887,11 @@ def pizzicato_rhythm(*commands, split=(6, 18)):
         rmakers.rewrite_rest_filled(),
         rmakers.extract_trivial(),
         preprocessor=lambda _: baca.sequence.split_divisions(_, durations, cyclic=True),
-        tag=abjad.Tag("krummzeit.pizzicato_rhythm()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def pizzicato_sixteenths(*commands, extra_counts=None):
+def make_pizzicato_sixteenths(*commands, extra_counts=None):
     return baca.rhythm(
         rmakers.talea(
             [1, 1, 1, 1, 4, 4, 1, 1, 2, 2, 8, 4, 4, 1, 1, 2, 2],
@@ -820,11 +909,11 @@ def pizzicato_sixteenths(*commands, extra_counts=None):
         preprocessor=lambda _: baca.sequence.split_divisions(
             _, [(6, 16), (18, 16)], cyclic=True
         ),
-        tag=abjad.Tag("krummzeit.pizzicato_sixteenths()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def polyphony(
+def make_polyphony_rhythm(
     *,
     durations=None,
     rotation=None,
@@ -901,16 +990,152 @@ def polyphony(
     return baca.rhythm(
         rhythm_maker,
         preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.polyphony()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
 
 
-def prolated_quarters(extra_counts):
+def make_prolated_quarters(extra_counts):
     return baca.rhythm(
         rmakers.even_division([4], extra_counts=extra_counts),
         rmakers.beam(),
-        tag=abjad.Tag("krummzeit.prolated_quarters()"),
+        tag=baca.tags.function_name(inspect.currentframe()),
     )
+
+
+def make_rest_delimited_repeated_duration_notes(duration, denominator):
+    def preprocessor(divisions):
+        result = baca.sequence.fuse(divisions)
+        result = baca.sequence.split_divisions(result, [duration], cyclic=True)
+        return result
+
+    return baca.rhythm(
+        rmakers.incised(
+            suffix_talea=[-1], suffix_counts=[1], talea_denominator=denominator
+        ),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        preprocessor=preprocessor,
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_right_remainder_quarters(*commands):
+    def preprocessor(divisions):
+        return [baca.sequence.quarters([_]) for _ in divisions]
+
+    return baca.rhythm(
+        rmakers.note(),
+        *commands,
+        rmakers.beam(lambda _: baca.select.plts(_)),
+        preprocessor=preprocessor,
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_silver_points_rhythm(
+    ratios, *commands, tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2, 2)]
+):
+    def preprocessor(divisions):
+        sequences = []
+        ratios_ = abjad.CyclicTuple(ratios)
+        for i, division in enumerate(divisions):
+            ratio = ratios_[i]
+            sequence = baca.sequence.ratios([division], [ratio], rounded=True)
+            sequences.append(sequence)
+        return sequences
+
+    return baca.rhythm(
+        rmakers.tuplet(tuplet_ratios),
+        *commands,
+        rmakers.beam(),
+        rmakers.rewrite_dots(),
+        rmakers.rewrite_rest_filled(),
+        rmakers.extract_trivial(),
+        rmakers.reduce_multiplier(),
+        preprocessor=preprocessor,
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_single_cluster_piano_rhythm():
+    return baca.rhythm(
+        rmakers.incised(
+            fill_with_rests=True,
+            prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
+            prefix_counts=[3, 1, 1, 3],
+            suffix_talea=[0, 0, 1, -3, 0],
+            suffix_counts=[1, 1, 2, 1],
+            talea_denominator=16,
+        ),
+        rmakers.beam(),
+        rmakers.extract_trivial(),
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_single_division_tuplets(ratios):
+    def selector(argument):
+        selection = abjad.select.tuplets(argument)[:-1]
+        return [baca.pleaf(_, -1) for _ in selection]
+
+    return baca.rhythm(
+        rmakers.tuplet(ratios),
+        rmakers.tie(selector),
+        rmakers.beam(),
+        rmakers.rewrite_dots(),
+        rmakers.force_augmentation(),
+        rmakers.reduce_multiplier(),
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_sponge_rhythm():
+    return baca.rhythm(
+        rmakers.talea([1, 2], 2, extra_counts=[2, 1, 0]),
+        rmakers.beam(),
+        rmakers.trivialize(),
+        rmakers.extract_trivial(),
+        rmakers.force_repeat_tie(),
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def make_white_rhythm(durations=None, remainder=abjad.LEFT, do_not_burnish=None):
+    force_rest = []
+    if not do_not_burnish:
+        command = rmakers.force_rest(lambda _: abjad.select.leaf(_, 0))
+        force_rest.append(command)
+
+    def preprocessor(divisions):
+        divisions = baca.sequence.fuse(divisions)
+        divisions = baca.sequence.split_divisions(
+            divisions,
+            durations,
+            cyclic=True,
+            remainder=remainder,
+        )
+        return divisions
+
+    return baca.rhythm(
+        rmakers.note(),
+        *force_rest,
+        rmakers.beam(lambda _: baca.select.plts(_)),
+        preprocessor=preprocessor,
+        tag=baca.tags.function_name(inspect.currentframe()),
+    )
+
+
+def margin_markup(
+    key, alert=None, context="Staff", selector=lambda _: abjad.select.leaf(_, 0)
+):
+    margin_markup = margin_markups[key]
+    command = baca.margin_markup(
+        margin_markup,
+        alert=alert,
+        context=context,
+        selector=selector,
+    )
+    return baca.not_parts(command)
 
 
 def register_narrow(start, stop=None):
@@ -1076,127 +1301,6 @@ def register_wide(start):
         raise ValueError(start)
 
 
-def rest_delimited_repeated_duration_notes(duration, denominator):
-    def preprocessor(divisions):
-        result = baca.sequence.fuse(divisions)
-        result = baca.sequence.split_divisions(result, [duration], cyclic=True)
-        return result
-
-    return baca.rhythm(
-        rmakers.incised(
-            suffix_talea=[-1], suffix_counts=[1], talea_denominator=denominator
-        ),
-        rmakers.beam(),
-        rmakers.extract_trivial(),
-        preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.rest_delimited_repeated_duration_notes()"),
-    )
-
-
-def right_remainder_quarters(*commands):
-    def preprocessor(divisions):
-        return [baca.sequence.quarters([_]) for _ in divisions]
-
-    return baca.rhythm(
-        rmakers.note(),
-        *commands,
-        rmakers.beam(lambda _: baca.select.plts(_)),
-        preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.right_remainder_quarters()"),
-    )
-
-
-def silver_points(ratios, *commands, tuplet_ratios=[(-1, 1, 1, 2), (-1, 1, 1, -2, 2)]):
-    def preprocessor(divisions):
-        sequences = []
-        ratios_ = abjad.CyclicTuple(ratios)
-        for i, division in enumerate(divisions):
-            ratio = ratios_[i]
-            sequence = baca.sequence.ratios([division], [ratio], rounded=True)
-            sequences.append(sequence)
-        return sequences
-
-    return baca.rhythm(
-        rmakers.tuplet(tuplet_ratios),
-        *commands,
-        rmakers.beam(),
-        rmakers.rewrite_dots(),
-        rmakers.rewrite_rest_filled(),
-        rmakers.extract_trivial(),
-        rmakers.reduce_multiplier(),
-        preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.silver_points()"),
-    )
-
-
-def single_cluster_piano_rhythm():
-    return baca.rhythm(
-        rmakers.incised(
-            fill_with_rests=True,
-            prefix_talea=[-1, 1, -2, 0, 0, -1, 1, -2],
-            prefix_counts=[3, 1, 1, 3],
-            suffix_talea=[0, 0, 1, -3, 0],
-            suffix_counts=[1, 1, 2, 1],
-            talea_denominator=16,
-        ),
-        rmakers.beam(),
-        rmakers.extract_trivial(),
-        tag=abjad.Tag("krummzeit.single_cluster_piano_rhythm()"),
-    )
-
-
-def single_division_tuplets(ratios):
-    def selector(argument):
-        selection = abjad.select.tuplets(argument)[:-1]
-        return [baca.pleaf(_, -1) for _ in selection]
-
-    return baca.rhythm(
-        rmakers.tuplet(ratios),
-        rmakers.tie(selector),
-        rmakers.beam(),
-        rmakers.rewrite_dots(),
-        rmakers.force_augmentation(),
-        rmakers.reduce_multiplier(),
-        tag=abjad.Tag("krummzeit.single_division_tuplets()"),
-    )
-
-
-def sponge_rhythm():
-    return baca.rhythm(
-        rmakers.talea([1, 2], 2, extra_counts=[2, 1, 0]),
-        rmakers.beam(),
-        rmakers.trivialize(),
-        rmakers.extract_trivial(),
-        rmakers.force_repeat_tie(),
-        tag=abjad.Tag("krummzeit.sponge_rhythm()"),
-    )
-
-
-def white_rhythm(durations=None, remainder=abjad.LEFT, do_not_burnish=None):
-    force_rest = []
-    if not do_not_burnish:
-        command = rmakers.force_rest(lambda _: abjad.select.leaf(_, 0))
-        force_rest.append(command)
-
-    def preprocessor(divisions):
-        divisions = baca.sequence.fuse(divisions)
-        divisions = baca.sequence.split_divisions(
-            divisions,
-            durations,
-            cyclic=True,
-            remainder=remainder,
-        )
-        return divisions
-
-    return baca.rhythm(
-        rmakers.note(),
-        *force_rest,
-        rmakers.beam(lambda _: baca.select.plts(_)),
-        preprocessor=preprocessor,
-        tag=abjad.Tag("krummzeit.white_rhythm()"),
-    )
-
-
 voice_abbreviations = {
     "ob": "Oboe_Music_Voice",
     "cl": "Clarinet_Music_Voice",
@@ -1206,141 +1310,3 @@ voice_abbreviations = {
     "va": "Viola_Music_Voice",
     "vc": "Cello_Music_Voice",
 }
-
-
-def make_empty_score():
-    tag = baca.tags.function_name(inspect.currentframe())
-    global_context = baca.score.make_global_context()
-
-    # OBOE
-    oboe_music_voice = abjad.Voice(name="Oboe_Music_Voice", tag=tag)
-    oboe_music_staff = abjad.Staff([oboe_music_voice], name="Oboe_Music_Staff", tag=tag)
-    baca.score.attach_lilypond_tag("Oboe", oboe_music_staff)
-    abjad.annotate(
-        oboe_music_staff,
-        "default_instrument",
-        instruments["Oboe"],
-    )
-    abjad.annotate(oboe_music_staff, "default_clef", abjad.Clef("treble"))
-
-    # CLARINET
-    clarinet_music_voice = abjad.Voice(name="Clarinet_Music_Voice", tag=tag)
-    clarinet_music_staff = abjad.Staff(
-        [clarinet_music_voice], name="Clarinet_Music_Staff", tag=tag
-    )
-    baca.score.attach_lilypond_tag("Clarinet", clarinet_music_staff)
-    abjad.annotate(
-        clarinet_music_staff,
-        "default_instrument",
-        instruments["BassClarinet"],
-    )
-    abjad.annotate(clarinet_music_staff, "default_clef", abjad.Clef("treble"))
-
-    # WIND SECTION
-    wind_section_staff_group = abjad.StaffGroup(
-        [oboe_music_staff, clarinet_music_staff],
-        lilypond_type="WindSectionStaffGroup",
-        name="Wind_Section_Staff_Group",
-        tag=tag,
-    )
-
-    # PIANO
-    piano_music_voice = abjad.Voice(name="Piano_Music_Voice", tag=tag)
-    piano_music_staff = abjad.Staff(
-        [piano_music_voice], name="Piano_Music_Staff", tag=tag
-    )
-    baca.score.attach_lilypond_tag("Piano", piano_music_staff)
-    abjad.annotate(
-        piano_music_staff,
-        "default_instrument",
-        instruments["Piano"],
-    )
-    abjad.annotate(piano_music_staff, "default_clef", abjad.Clef("treble"))
-
-    # PERCUSSION
-    percussion_music_voice = abjad.Voice(name="Percussion_Music_Voice", tag=tag)
-    percussion_music_staff = abjad.Staff(
-        [percussion_music_voice], name="Percussion_Music_Staff", tag=tag
-    )
-    baca.score.attach_lilypond_tag("Percussion", percussion_music_staff)
-    abjad.annotate(
-        percussion_music_staff,
-        "default_instrument",
-        instruments["Xylophone"],
-    )
-    abjad.annotate(percussion_music_staff, "default_clef", abjad.Clef("treble"))
-
-    # PERCUSSION SECTION
-    percussion_section_staff_group = abjad.StaffGroup(
-        [piano_music_staff, percussion_music_staff],
-        lilypond_type="PercussionSectionStaffGroup",
-        name="Percussion_Section_Staff_Group",
-        tag=tag,
-    )
-
-    # VIOLIN
-    violin_music_voice = abjad.Voice(name="Violin_Music_Voice", tag=tag)
-    violin_music_staff = abjad.Staff(
-        [violin_music_voice], name="Violin_Music_Staff", tag=tag
-    )
-    baca.score.attach_lilypond_tag("Violin", violin_music_staff)
-    abjad.annotate(
-        violin_music_staff,
-        "default_instrument",
-        instruments["Violin"],
-    )
-    abjad.annotate(violin_music_staff, "default_clef", abjad.Clef("treble"))
-
-    # VIOLA
-    viola_music_voice = abjad.Voice(name="Viola_Music_Voice", tag=tag)
-    viola_music_staff = abjad.Staff(
-        [viola_music_voice], name="Viola_Music_Staff", tag=tag
-    )
-    baca.score.attach_lilypond_tag("Viola", viola_music_staff)
-    abjad.annotate(
-        viola_music_staff,
-        "default_instrument",
-        instruments["Viola"],
-    )
-    abjad.annotate(viola_music_staff, "default_clef", abjad.Clef("alto"))
-
-    # CELLO
-    cello_music_voice = abjad.Voice(name="Cello_Music_Voice", tag=tag)
-    cello_music_staff = abjad.Staff(
-        [cello_music_voice], name="Cello_Music_Staff", tag=tag
-    )
-    baca.score.attach_lilypond_tag("Cello", cello_music_staff)
-    abjad.annotate(
-        cello_music_staff,
-        "default_instrument",
-        instruments["Cello"],
-    )
-    abjad.annotate(cello_music_staff, "default_clef", abjad.Clef("bass"))
-
-    # STRING SECTION
-    string_section_staff_group = abjad.StaffGroup(
-        [violin_music_staff, viola_music_staff, cello_music_staff],
-        lilypond_type="StringSectionStaffGroup",
-        name="String_Section_Staff_Group",
-        tag=tag,
-    )
-
-    # MUSIC CONTEXT
-    music_context = abjad.Context(
-        [
-            wind_section_staff_group,
-            percussion_section_staff_group,
-            string_section_staff_group,
-        ],
-        lilypond_type="MusicContext",
-        simultaneous=True,
-        name="Music_Context",
-        tag=tag,
-    )
-
-    # SCORE
-    score = abjad.Score([global_context, music_context], name="Score", tag=tag)
-    baca.score.assert_lilypond_identifiers(score)
-    baca.score.assert_unique_context_names(score)
-    baca.score.assert_matching_custom_context_names(score)
-    return score

@@ -92,7 +92,7 @@ commands(
 
 commands(
     ("perc", (1, 3)),
-    library.incise_attacks(),
+    library.make_incise_attacks(),
     baca.reapply_persistent_indicators(),
     baca.staff_lines(1),
     baca.markup(r"\baca-tam-tam-markup"),
@@ -104,19 +104,19 @@ commands(
         ("va", (1, 7)),
         ("vc", (1, 13)),
     ],
-    library.right_remainder_quarters(),
+    library.make_right_remainder_quarters(),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("perc", (6, 16)),
     baca.markup(r"\baca-sponges-markup"),
-    library.sponge_rhythm(),
+    library.make_sponge_rhythm(),
 )
 
 commands(
     ("va", (8, 10)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([5, 6], 7)),
@@ -126,7 +126,7 @@ commands(
 
 commands(
     ("va", (11, 24)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, 0),
@@ -136,7 +136,7 @@ commands(
 
 commands(
     ("vn", (14, 16)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([5, 6], 7)),
@@ -146,7 +146,7 @@ commands(
 
 commands(
     ("vc", (14, 16)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, (None, 3)),
@@ -156,7 +156,7 @@ commands(
 
 commands(
     ("vn", (17, 24)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, 0),
@@ -166,7 +166,7 @@ commands(
 
 commands(
     ("vc", (17, 24)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, 0),
@@ -177,40 +177,40 @@ commands(
 
 commands(
     ("va", (27, 34)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
     ),
 )
 
 commands(
     ("vn", (27, 34)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(1, 1, 1), (1, 2), (3, 1)],
     ),
 )
 
 commands(
     ("vc", (27, 34)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(1, 2), (3, 1), (1, 1, 1)],
     ),
 )
 
 commands(
     ("pf", (25, 26)),
-    library.silver_points([(1, 2), (2, 1)]),
+    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
 )
 
 commands(
     ("perc", (25, 26)),
     baca.staff_lines(5),
     baca.clef("treble"),
-    library.silver_points([(2, 1), (1, 2)]),
+    library.make_silver_points_rhythm([(2, 1), (1, 2)]),
 )
 
 commands(
     ("pf", (35, 42)),
-    library.silver_points(
+    library.make_silver_points_rhythm(
         [(1, 2), (2, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([2], 7)),
@@ -220,7 +220,7 @@ commands(
 
 commands(
     ("perc", (35, 42)),
-    library.silver_points(
+    library.make_silver_points_rhythm(
         [(2, 1), (1, 2)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([5], 7)),
@@ -230,12 +230,12 @@ commands(
 
 commands(
     ("ob", [(11, 24), (35, 44)]),
-    library.color_tuplets(),
+    library.make_color_tuplets(),
 )
 
 commands(
     ("cl", [(11, 13), (35, 44)]),
-    library.color_tuplets(
+    library.make_color_tuplets(
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, 0),
         ),
@@ -245,12 +245,12 @@ commands(
 
 commands(
     (["vn", "va", "vc"], (39, 42)),
-    library.incise_chain(),
+    library.make_incise_chain_rhythm(),
 )
 
 commands(
     (["pf", "vn", "va", "vc"], (45, 48)),
-    library.incise_chain_b(),
+    library.make_incise_chain_b_rhythm(),
 )
 
 commands(
@@ -260,7 +260,7 @@ commands(
 
 commands(
     ("pf", (8, 10)),
-    library.piano_harmonics(
+    library.make_piano_harmonics_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: abjad.select.get(
@@ -275,7 +275,7 @@ commands(
 
 commands(
     ("pf", (11, 13)),
-    library.piano_harmonics(
+    library.make_piano_harmonics_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(lambda _: baca.select.plt(_, 0)),
         tie_across_divisions=abjad.index([1], 2),
@@ -284,7 +284,7 @@ commands(
 
 commands(
     ("pf", (27, 34)),
-    library.piano_harmonics(
+    library.make_piano_harmonics_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
     ),
 )

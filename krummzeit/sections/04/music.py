@@ -154,7 +154,7 @@ commands(
 
 commands(
     ("pf", [1, 3, 5]),
-    library.silver_points(
+    library.make_silver_points_rhythm(
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
     ),
@@ -172,7 +172,7 @@ commands(
 
 commands(
     ("vn", [5, 7, 9]),
-    library.silver_points(
+    library.make_silver_points_rhythm(
         [(5, 4)],
         tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
     ),
@@ -180,7 +180,7 @@ commands(
 
 commands(
     ("va", [5, 7, 9]),
-    library.silver_points(
+    library.make_silver_points_rhythm(
         [(2, 7)],
         tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
     ),
@@ -188,7 +188,7 @@ commands(
 
 commands(
     ("vc", [5, 7, 9]),
-    library.silver_points(
+    library.make_silver_points_rhythm(
         [(7, 2)],
         tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
     ),

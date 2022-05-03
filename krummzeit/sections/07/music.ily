@@ -1587,7 +1587,7 @@ segment.07.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 4]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     a'''4.
     % AFTER:
     % ARTICULATIONS:
@@ -1627,16 +1627,16 @@ segment.07.Oboe.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 5/6
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         af'''!4
         % AFTER:
         % ARTICULATIONS:
@@ -1646,7 +1646,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         c'''4
         % AFTER:
         % ARTICULATIONS:
@@ -1656,29 +1656,29 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         bf'''!4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 5]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     bf'''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     af'''!4
     % AFTER:
     % ARTICULATIONS:
@@ -1688,7 +1688,7 @@ segment.07.Oboe.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     d'''16
     % AFTER:
     % ARTICULATIONS:
@@ -1696,12 +1696,12 @@ segment.07.Oboe.Music.Voice = {
       %! baca.staccato()
     - \staccato
     % START_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     cs'''!16
     % AFTER:
     % ARTICULATIONS:
@@ -1711,7 +1711,7 @@ segment.07.Oboe.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ef'''!16
     % AFTER:
     % ARTICULATIONS:
@@ -1721,32 +1721,32 @@ segment.07.Oboe.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f'''16
     % AFTER:
     % STOP_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ]
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 2/3
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         f'''4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         d'''4
         % AFTER:
         % ARTICULATIONS:
@@ -1756,29 +1756,29 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         b''4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 6]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     b''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     fs''!4
     % AFTER:
     % ARTICULATIONS:
@@ -1788,7 +1788,7 @@ segment.07.Oboe.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     g''4
     % AFTER:
     % ARTICULATIONS:
@@ -1799,16 +1799,16 @@ segment.07.Oboe.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 8/12
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe_Music_Voice measure 7]
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a''16
         % AFTER:
         % ARTICULATIONS:
@@ -1816,12 +1816,12 @@ segment.07.Oboe.Music.Voice = {
           %! baca.staccato()
         - \staccato
         % START_BEAM:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ef''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1831,7 +1831,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         f''16
         % AFTER:
         % ARTICULATIONS:
@@ -1841,7 +1841,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         af''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1851,7 +1851,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a''16
         % AFTER:
         % ARTICULATIONS:
@@ -1861,7 +1861,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         c'''16
         % AFTER:
         % ARTICULATIONS:
@@ -1871,7 +1871,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         d''16
         % AFTER:
         % ARTICULATIONS:
@@ -1881,7 +1881,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         bf''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1891,7 +1891,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         f''16
         % AFTER:
         % ARTICULATIONS:
@@ -1901,7 +1901,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         g''16
         % AFTER:
         % ARTICULATIONS:
@@ -1911,7 +1911,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a''16
         % AFTER:
         % ARTICULATIONS:
@@ -1921,69 +1921,69 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         b'16
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ]
         % SPANNER_STARTS:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     b'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 8]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 8/12
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Oboe_Music_Voice measure 9]
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         f''16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ef''!16
         % AFTER:
         % ARTICULATIONS:
@@ -1993,7 +1993,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         f''16
         % AFTER:
         % ARTICULATIONS:
@@ -2003,7 +2003,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         fs''!16
         % AFTER:
         % ARTICULATIONS:
@@ -2013,7 +2013,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         cs''!16
         % AFTER:
         % ARTICULATIONS:
@@ -2028,7 +2028,7 @@ segment.07.Oboe.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -2043,7 +2043,7 @@ segment.07.Oboe.Music.Voice = {
           %! REPEAT_PITCH_CLASS_COLORING
           %! baca.color_repeat_pitch_classes()
         \baca-repeat-pitch-class-coloring
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -2053,7 +2053,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         g''16
         % AFTER:
         % ARTICULATIONS:
@@ -2063,7 +2063,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -2073,7 +2073,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ef''!16
         % AFTER:
         % ARTICULATIONS:
@@ -2083,7 +2083,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         f''16
         % AFTER:
         % ARTICULATIONS:
@@ -2093,7 +2093,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         cs''!16
         % AFTER:
         % ARTICULATIONS:
@@ -2101,18 +2101,18 @@ segment.07.Oboe.Music.Voice = {
           %! baca.staccato()
         - \staccato
         % STOP_BEAM:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     af'!4
     % AFTER:
     % ARTICULATIONS:
@@ -2122,33 +2122,33 @@ segment.07.Oboe.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 10]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 10/14
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         g'16
         % AFTER:
         % ARTICULATIONS:
@@ -2156,12 +2156,12 @@ segment.07.Oboe.Music.Voice = {
           %! baca.staccato()
         - \staccato
         % START_BEAM:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -2171,7 +2171,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         f'16
         % AFTER:
         % ARTICULATIONS:
@@ -2181,7 +2181,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         d'16
         % AFTER:
         % ARTICULATIONS:
@@ -2191,7 +2191,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         bf'!16
         % AFTER:
         % ARTICULATIONS:
@@ -2201,7 +2201,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         b'16
         % AFTER:
         % ARTICULATIONS:
@@ -2211,7 +2211,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         cs''!16
         % AFTER:
         % ARTICULATIONS:
@@ -2221,7 +2221,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a'16
         % AFTER:
         % ARTICULATIONS:
@@ -2231,7 +2231,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ef'!16
         % AFTER:
         % ARTICULATIONS:
@@ -2241,7 +2241,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         f'16
         % AFTER:
         % ARTICULATIONS:
@@ -2251,7 +2251,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         fs'!16
         % AFTER:
         % ARTICULATIONS:
@@ -2261,7 +2261,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         g'16
         % AFTER:
         % ARTICULATIONS:
@@ -2271,7 +2271,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         b'16
         % AFTER:
         % ARTICULATIONS:
@@ -2281,7 +2281,7 @@ segment.07.Oboe.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         c'16
         % AFTER:
         % ARTICULATIONS:
@@ -2303,13 +2303,13 @@ segment.07.Oboe.Music.Voice = {
           %! baca.hairpin()
         \ff
         % STOP_BEAM:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2864,16 +2864,16 @@ segment.07.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 2/3
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Clarinet_Music_Voice measure 4]
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2916,7 +2916,7 @@ segment.07.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         as!4
         % AFTER:
         % ARTICULATIONS:
@@ -2926,7 +2926,7 @@ segment.07.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         d'4
         % AFTER:
         % ARTICULATIONS:
@@ -2937,28 +2937,28 @@ segment.07.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     gs'!4
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     gs'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 5]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     fs'!8
     % AFTER:
     % ARTICULATIONS:
@@ -2966,37 +2966,37 @@ segment.07.Clarinet.Music.Voice = {
       %! baca.staccato()
     - \staccato
     % START_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     d'8
     % AFTER:
     % STOP_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ]
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 2/3
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         d'4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         gs'!4
         % AFTER:
         % ARTICULATIONS:
@@ -3006,35 +3006,35 @@ segment.07.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         fs'!4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 2/3
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         fs'4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         g'4
         % AFTER:
         % ARTICULATIONS:
@@ -3044,7 +3044,7 @@ segment.07.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         a'4
         % AFTER:
         % ARTICULATIONS:
@@ -3055,14 +3055,14 @@ segment.07.Clarinet.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 6]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     as'!4
     % AFTER:
     % ARTICULATIONS:
@@ -3072,7 +3072,7 @@ segment.07.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f''4
     % AFTER:
     % ARTICULATIONS:
@@ -3082,7 +3082,7 @@ segment.07.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ds''!8
     % AFTER:
     % ARTICULATIONS:
@@ -3090,65 +3090,65 @@ segment.07.Clarinet.Music.Voice = {
       %! baca.staccato()
     - \staccato
     % START_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     as'!8
     % AFTER:
     % STOP_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ]
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 7]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     as'4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f''4.
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 8]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f''4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     fs''!4
     % AFTER:
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     fs''8
     % AFTER:
     % START_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     a''8
     % AFTER:
     % ARTICULATIONS:
@@ -3156,14 +3156,14 @@ segment.07.Clarinet.Music.Voice = {
       %! baca.staccato()
     - \staccato
     % STOP_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ]
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 9]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     b''4
     % AFTER:
     % ARTICULATIONS:
@@ -3174,14 +3174,14 @@ segment.07.Clarinet.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     \times 2/3
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         d'''4
         % AFTER:
         % ARTICULATIONS:
@@ -3191,7 +3191,7 @@ segment.07.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ds'''!4
         % AFTER:
         % ARTICULATIONS:
@@ -3201,29 +3201,29 @@ segment.07.Clarinet.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         fs''!4
         % AFTER:
         % SPANNER_STARTS:
-          %! krummzeit.polyphony()
+          %! krummzeit.make_polyphony_rhythm()
         ~
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     fs''4.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 10]
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     gs''!8
     % AFTER:
     % ARTICULATIONS:
@@ -3231,12 +3231,12 @@ segment.07.Clarinet.Music.Voice = {
       %! baca.staccato()
     - \staccato
     % START_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     [
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     a''8
     % AFTER:
     % ARTICULATIONS:
@@ -3246,7 +3246,7 @@ segment.07.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     f'''8
     % AFTER:
     % ARTICULATIONS:
@@ -3256,19 +3256,19 @@ segment.07.Clarinet.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     a''8
     % AFTER:
     % STOP_BEAM:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ]
     % SPANNER_STARTS:
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.polyphony()
+      %! krummzeit.make_polyphony_rhythm()
     a''4.
     % AFTER:
     % ARTICULATIONS:
@@ -3894,9 +3894,9 @@ segment.07.Piano.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/5
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -3916,7 +3916,7 @@ segment.07.Piano.Music.Voice = {
           %! EXPLICIT_MARGIN_MARKUP_COLOR
           %! baca._attach_color_literal(2)
         \once \override Staff.InstrumentName.color = #(x11-color 'blue)
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r16
         % AFTER:
         % MARKUP:
@@ -3941,272 +3941,272 @@ segment.07.Piano.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         f''16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         fs''!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g''8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 6/7
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g''8
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         a''8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         d''4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 6/5
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano_Music_Voice measure 5]
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g'8
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         bf'!8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         c''4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/7
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         fs'!8
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g'8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g'4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/5
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano_Music_Voice measure 6]
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         a'16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ef'!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         f'8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/7
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         a'8
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         f'8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g'4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/5
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4246,7 +4246,7 @@ segment.07.Piano.Music.Voice = {
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -4256,264 +4256,264 @@ segment.07.Piano.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g'8
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         f'8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         b4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/7
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         c'16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         d'16
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         bf!8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/5
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano_Music_Voice measure 8]
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         fs!16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         cs'!8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/7
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ef'!8
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         bf!8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         b4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 6/5
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano_Music_Voice measure 9]
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g8
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         af!8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 6/7
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         d16
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         bf!8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4632,92 +4632,92 @@ segment.07.Piano.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/5
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano_Music_Voice measure 13]
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         d16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         bf!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/7
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         cs!8
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         a8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ef!4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4820,94 +4820,94 @@ segment.07.Piano.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 4/5
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Piano_Music_Voice measure 16]
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         f,16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         fs,!16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         f,8
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     \times 6/7
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         g,16
         % AFTER:
         % START_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         af,!16
         % AFTER:
         % STOP_BEAM:
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         ]
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.silver_points()
+          %! krummzeit.make_silver_points_rhythm()
         a,8
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.silver_points()
+      %! krummzeit.make_silver_points_rhythm()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6487,18 +6487,18 @@ segment.07.Violin.Music.Voice = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 12/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 7]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!4.
         % AFTER:
         % ARTICULATIONS:
@@ -6521,58 +6521,58 @@ segment.07.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!2
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 8/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 9]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!1
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 11]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!2.
         % AFTER:
         % SPANNER_STARTS:
@@ -6607,63 +6607,63 @@ segment.07.Violin.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!1
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 10/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 13]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!1
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 8/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 15]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!1
         % AFTER:
         % SPANNER_STOPS:
@@ -6675,35 +6675,35 @@ segment.07.Violin.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Violin_Music_Voice measure 17]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!2.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         fs!1
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7119,7 +7119,7 @@ segment.07.Viola.Music.Voice = {
       %! baca.OverrideCommand._call(1)
       %! baca.dls_staff_padding()
     \override DynamicLineSpanner.staff-padding = 6
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % AFTER:
     % ARTICULATIONS:
@@ -7155,168 +7155,168 @@ segment.07.Viola.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 4]
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 5]
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 6]
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     fs!8..
     % AFTER:
     % ARTICULATIONS:
@@ -7337,7 +7337,7 @@ segment.07.Viola.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % AFTER:
     % COMMANDS:
@@ -7349,31 +7349,31 @@ segment.07.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 7]
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     r1.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 9]
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     r\breve
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 11]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         bf,!4
         % AFTER:
         % ARTICULATIONS:
@@ -7396,30 +7396,30 @@ segment.07.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         bf,!1.
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 10/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 13]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         bf,!4
         % AFTER:
         % SPANNER_STARTS:
@@ -7454,35 +7454,35 @@ segment.07.Viola.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         bf,!1.
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 8/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 15]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         bf,!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         bf,!1.
         % AFTER:
         % SPANNER_STOPS:
@@ -7494,35 +7494,35 @@ segment.07.Viola.Music.Voice = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Viola_Music_Voice measure 17]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         bf,!4
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         bf,!1.
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7938,7 +7938,7 @@ segment.07.Cello.Music.Voice = {
       %! baca.OverrideCommand._call(1)
       %! baca.dls_staff_padding()
     \override DynamicLineSpanner.staff-padding = 6
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % AFTER:
     % ARTICULATIONS:
@@ -7974,168 +7974,168 @@ segment.07.Cello.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 4]
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 5]
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 6]
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     c,8..
     % AFTER:
     % ARTICULATIONS:
@@ -8156,7 +8156,7 @@ segment.07.Cello.Music.Voice = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.rest_delimited_repeated_duration_notes()
+      %! krummzeit.make_rest_delimited_repeated_duration_notes()
     r32
     % AFTER:
     % COMMANDS:
@@ -8168,31 +8168,31 @@ segment.07.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 7]
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     r1.
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 9]
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     r\breve
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 11]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a,,1.
         % AFTER:
         % ARTICULATIONS:
@@ -8215,30 +8215,30 @@ segment.07.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a,,4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 10/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 13]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a,,1.
         % AFTER:
         % SPANNER_STARTS:
@@ -8273,30 +8273,30 @@ segment.07.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a,,4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 8/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 15]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a,,1.
         % AFTER:
         % SPANNER_STOPS:
@@ -8307,41 +8307,41 @@ segment.07.Cello.Music.Voice = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a,,4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     \times 13/7
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Cello_Music_Voice measure 17]
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a,,1.
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.hypermeter_tuplets()
+          %! krummzeit.make_hypermeter_tuplets()
         a,,4
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.hypermeter_tuplets()
+      %! krummzeit.make_hypermeter_tuplets()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

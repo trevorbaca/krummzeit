@@ -98,7 +98,7 @@ commands(
 
 commands(
     ("ob", [(1, 8), (9, 10)]),
-    library.oboe_trills(),
+    library.make_oboe_trill_rhythm(),
     baca.new(
         baca.reapply_persistent_indicators(),
         match=0,
@@ -122,12 +122,12 @@ commands(
 
 commands(
     (["pf", "vn", "va", "vc"], (9, 10)),
-    library.incise_chain_b(),
+    library.make_incise_chain_b_rhythm(),
 )
 
 commands(
     ("perc", [(1, 14), (28, 34)]),
-    library.sponge_rhythm(),
+    library.make_sponge_rhythm(),
     baca.reapply_persistent_indicators(),
     baca.markup(r"\baca-suspended-cymbal-markup"),
     baca.staff_position(0),
@@ -140,7 +140,7 @@ commands(
 
 commands(
     ("vn", (12, 20)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([5, 6], 7)),
@@ -150,7 +150,7 @@ commands(
 
 commands(
     ("va", (12, 20)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([0, 1], 7)),
@@ -160,7 +160,7 @@ commands(
 
 commands(
     ("vc", (12, 20)),
-    library.glissando_rhythm(
+    library.make_glissando_rhythm(
         [(1, 1, 1), (2, 1), (2, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([2, 3], 7)),
@@ -170,12 +170,12 @@ commands(
 
 commands(
     ("ob", (12, 21)),
-    library.color_tuplets(),
+    library.make_color_tuplets(),
 )
 
 commands(
     ("cl", (12, 21)),
-    library.color_tuplets(
+    library.make_color_tuplets(
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, 0),
         ),
@@ -186,12 +186,12 @@ commands(
 commands(
     ("pf", [17, (20, 26)]),
     baca.clef("treble"),
-    library.silver_points([(1, 2), (2, 1)]),
+    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
 )
 
 commands(
     ("perc", [17, (20, 26)]),
-    library.silver_points([(2, 1), (1, 2)]),
+    library.make_silver_points_rhythm([(2, 1), (1, 2)]),
 )
 
 commands(
@@ -209,7 +209,7 @@ commands(
 
 commands(
     (["cl", "va", "vc"], (23, 24)),
-    library.rest_delimited_repeated_duration_notes((1, 2), 16),
+    library.make_rest_delimited_repeated_duration_notes((1, 2), 16),
 )
 
 commands(
@@ -219,17 +219,17 @@ commands(
         ("va", [(27, 30), (33, 35)]),
         ("vc", [(27, 30), (33, 35)]),
     ],
-    library.rest_delimited_repeated_duration_notes((1, 4), 32),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
 )
 
 commands(
     (["ob", "vn"], (29, 34)),
-    library.detached_triplets(),
+    library.make_detached_triplets(),
 )
 
 commands(
     ("pf", [(30, 31), (33, 34)]),
-    library.pizzicato_rhythm(
+    library.make_pizzicato_rhythm(
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
         ),

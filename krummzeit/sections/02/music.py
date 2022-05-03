@@ -98,11 +98,33 @@ commands(
     baca.rehearsal_mark("A"),
 )
 
+# obr
+
 commands(
     ("ob", (1, 22)),
     baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
+
+commands(
+    ("ob", (23, 37)),
+    library.make_polyphony_rhythm(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 16],
+        extra_counts=[3, 1, 0, 4],
+        ties=abjad.index([1, 3, 4], 6),
+    ),
+)
+
+commands(
+    ("ob", (38, 75)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# clr
 
 commands(
     ("cl", (1, 4)),
@@ -111,32 +133,66 @@ commands(
 )
 
 commands(
-    ("vn", (1, 7)),
+    ("cl", (5, 11)),
+    library.make_polyphony_rhythm(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=abjad.index([1, 3, 4], 6),
+    ),
+)
+
+commands(
+    ("cl", (12, 15)),
     baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
-    ("vc", (1, 11)),
-    library.make_hypermeter_tuplets([(3, 2)]),
-    baca.reapply_persistent_indicators(),
+    ("cl", (16, 36)),
+    library.make_polyphony_rhythm(
+        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+        rotation=-1,
+        fuse=(1, 8),
+        denominators=[4, 4, 4, 8],
+        extra_counts=[3, 1, 0, 4],
+        ties=abjad.index([1, 3, 4], 6),
+    ),
 )
 
 commands(
-    ("vc", (12, 22)),
-    library.make_hypermeter_tuplets([(3, 2)]),
+    ("cl", (37, 68)),
+    baca.make_mmrests(),
 )
 
 commands(
-    ("va", (1, 11)),
-    library.make_hypermeter_tuplets([(1, 4)]),
-    baca.reapply_persistent_indicators(),
+    ("cl", (69, 75)),
+    library.make_white_rhythm([(3, 8)]),
+    baca.append_phantom_measure(),
 )
 
 commands(
-    ("va", (12, 22)),
-    library.make_hypermeter_tuplets([(1, 4)]),
+    ("cl", 5),
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    baca.markup(r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"),
+    library.margin_markup("Cl. (Eb)"),
+    baca.dynamic("mp"),
 )
+
+commands(
+    ("cl", (16, 22)),
+    baca.dynamic("f"),
+)
+
+commands(
+    ("cl", (69, 75)),
+    baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
+    baca.glissando(),
+    baca.dynamic("f"),
+)
+
+# pfr
 
 commands(
     ("pf", (1, 11)),
@@ -149,8 +205,6 @@ commands(
         ties=abjad.index([1, 3, 4], 6),
     ),
     baca.reapply_persistent_indicators(),
-    baca.instrument(library.instruments["Harpsichord"]),
-    library.margin_markup("Hpschd."),
 )
 
 commands(
@@ -167,33 +221,6 @@ commands(
 )
 
 commands(
-    ("perc", [(1, 3), (23, 38)]),
-    library.make_sponge_rhythm(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
-)
-
-commands(
-    "perc",
-    baca.accent(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.staff_position(0),
-)
-
-commands(
-    ("vc", (23, 28)),
-    library.make_hypermeter_tuplets([(4, 1, 2)]),
-)
-
-commands(
-    ("va", (23, 28)),
-    library.make_hypermeter_tuplets([(1, 3, 1)]),
-)
-
-commands(
     ("pf", (23, 31)),
     library.make_polyphony_rhythm(
         durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
@@ -207,22 +234,122 @@ commands(
 )
 
 commands(
-    ("cl", (5, 7)),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
-    baca.markup(r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"),
-    library.margin_markup("Cl. (Eb)"),
+    ("pf", (32, 44)),
+    baca.make_mmrests(),
 )
 
 commands(
-    ("cl", [(5, 11), (16, 36)]),
-    library.make_polyphony_rhythm(
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-        rotation=-1,
-        fuse=(1, 8),
-        denominators=[4, 4, 4, 8],
-        extra_counts=[3, 1, 0, 4],
-        ties=abjad.index([1, 3, 4], 6),
+    ("pf", (45, 56)),
+    library.make_incise_attacks(),
+)
+
+commands(
+    ("pf", (57, 71)),
+    library.make_pizzicato_sixteenths(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([1, 5], 7)),
+        ),
+        extra_counts=[4, 0, 2, 4, 6],
     ),
+)
+
+commands(
+    ("pf", (72, 75)),
+    library.make_pizzicato_sixteenths(
+        extra_counts=[4, 0, 2, 4, 6],
+    ),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "pf",
+    baca.instrument(library.instruments["Harpsichord"]),
+    library.margin_markup("Hpschd."),
+)
+
+commands(
+    ("pf", (1, 22)),
+    baca.dls_staff_padding(6),
+    baca.tuplet_bracket_staff_padding(3),
+)
+
+commands(
+    ("pf", (23, 31)),
+    baca.dls_staff_padding(7),
+    baca.tuplet_bracket_staff_padding(4),
+)
+
+commands(
+    ("pf", (45, 46)),
+    baca.clef("bass"),
+    baca.instrument(library.instruments["Piano"]),
+    library.margin_markup("Pf."),
+)
+
+commands(
+    ("pf", (57, 75)),
+    baca.dls_staff_padding(7),
+    baca.tuplet_bracket_staff_padding(4),
+)
+
+# percr
+
+commands(
+    ("perc", (1, 3)),
+    library.make_sponge_rhythm(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("perc", (4, 22)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("perc", (23, 38)),
+    library.make_sponge_rhythm(),
+)
+
+commands(
+    ("perc", (39, 44)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("perc", (45, 60)),
+    library.make_incise_attacks(),
+)
+
+commands(
+    ("perc", (61, 75)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "perc",
+    baca.staff_position(0),
+    baca.accent(
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
+    ),
+)
+
+commands(
+    ("perc", (45, 60)),
+    baca.markup(r"\baca-tam-tam-markup"),
+    baca.dynamic("p-sempre"),
+    baca.new(
+        baca.laissez_vibrer(),
+        map=lambda _: baca.select.pheads(_),
+    ),
+)
+
+# vnr
+
+commands(
+    ("vn", (1, 7)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -238,6 +365,11 @@ commands(
 )
 
 commands(
+    ("vn", (12, 18)),
+    baca.make_mmrests(),
+)
+
+commands(
     ("vn", (19, 37)),
     library.make_polyphony_rhythm(
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
@@ -246,32 +378,6 @@ commands(
         denominators=[4, 4, 4, 16],
         extra_counts=[3, 1, 0, 4],
         ties=abjad.index([1, 3, 4], 6),
-    ),
-)
-
-commands(
-    ("ob", (23, 37)),
-    library.make_polyphony_rhythm(
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-        rotation=-1,
-        fuse=(1, 8),
-        denominators=[4, 4, 4, 16],
-        extra_counts=[3, 1, 0, 4],
-        ties=abjad.index([1, 3, 4], 6),
-    ),
-)
-
-commands(
-    ("vc", (34, 38)),
-    library.make_white_rhythm(
-        durations=[(3, 8)],
-    ),
-)
-
-commands(
-    ("va", (34, 38)),
-    library.make_white_rhythm(
-        durations=[(3, 8)],
     ),
 )
 
@@ -293,27 +399,87 @@ commands(
 )
 
 commands(
+    ("vn", (54, 56)),
+    library.make_pizzicato_rhythm(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([3, 4, 5], 6)),
+        ),
+    ),
+)
+
+commands(
+    ("vn", (57, 71)),
+    library.make_pizzicato_sixteenths(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([3, 6], 8)),
+        ),
+        extra_counts=[6, 0, 4, 4, 0, 2],
+    ),
+)
+
+commands(
+    ("vn", (72, 75)),
+    baca.make_repeat_tied_notes(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("vn", (72, 75)),
+    baca.staff_lines(1),
+    baca.clef("percussion"),
+    baca.dynamic("mf"),
+    baca.instrument(library.instruments["Percussion"]),
+    baca.markup(
+        r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",
+    ),
+    baca.staff_position(0),
+)
+
+commands(
+    ("vn", (8, 11)),
+    baca.dynamic("mp"),
+    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
+)
+
+commands(
+    ("vn", (19, 22)),
+    baca.dynamic("f"),
+    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
+)
+
+# var
+
+commands(
+    ("va", (1, 11)),
+    library.make_hypermeter_tuplets([(1, 4)]),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("va", (12, 22)),
+    library.make_hypermeter_tuplets([(1, 4)]),
+)
+
+commands(
+    ("va", (23, 28)),
+    library.make_hypermeter_tuplets([(1, 3, 1)]),
+)
+
+commands(
+    ("va", (29, 33)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (34, 38)),
+    library.make_white_rhythm(
+        durations=[(3, 8)],
+    ),
+)
+
+commands(
     ("va", (39, 47)),
     library.make_prolated_quarters([1, -1, 2, -2]),
-)
-
-commands(
-    ("vc", (39, 51)),
-    library.make_prolated_quarters([-1, 2, -2, 1]),
-)
-
-commands(
-    ("pf", (45, 56)),
-    baca.clef("bass"),
-    baca.instrument(library.instruments["Piano"]),
-    library.make_incise_attacks(),
-    library.margin_markup("Pf."),
-)
-
-commands(
-    ("perc", (45, 60)),
-    baca.markup(r"\baca-tam-tam-markup"),
-    library.make_incise_attacks(),
 )
 
 commands(
@@ -332,30 +498,82 @@ commands(
 )
 
 commands(
-    ("vc", (52, 56)),
-    library.make_pizzicato_rhythm(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([2, 3, 4], 6)),
-        ),
-    ),
-)
-
-commands(
-    ("vn", (54, 56)),
-    library.make_pizzicato_rhythm(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([3, 4, 5], 6)),
-        ),
-    ),
-)
-
-commands(
     ("va", (57, 71)),
     library.make_pizzicato_sixteenths(
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([2, 3], 6)),
         ),
         extra_counts=[2, 2, 0, 2, 4, 6],
+    ),
+)
+
+commands(
+    ("va", (72, 75)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("va", (1, 11)),
+    baca.pitches("d ctqs e dqs cqs b, cqs"),
+)
+
+commands(
+    ("va", (12, 22)),
+    baca.pitches("e dtqs f eqs dqs c dqs"),
+)
+
+commands(
+    ("va", (23, 28)),
+    baca.pitches("g ftqs a gqs fqs e fqs"),
+)
+
+commands(
+    ("va", 39),
+    baca.clef("alto"),
+)
+
+# vcr
+
+commands(
+    ("vc", (1, 11)),
+    library.make_hypermeter_tuplets([(3, 2)]),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vc", (12, 22)),
+    library.make_hypermeter_tuplets([(3, 2)]),
+)
+
+commands(
+    ("vc", (23, 28)),
+    library.make_hypermeter_tuplets([(4, 1, 2)]),
+)
+
+commands(
+    ("vc", (29, 33)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (34, 38)),
+    library.make_white_rhythm(
+        durations=[(3, 8)],
+    ),
+)
+
+commands(
+    ("vc", (39, 51)),
+    library.make_prolated_quarters([-1, 2, -2, 1]),
+)
+
+commands(
+    ("vc", (52, 56)),
+    library.make_pizzicato_rhythm(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([2, 3, 4], 6)),
+        ),
     ),
 )
 
@@ -370,49 +588,32 @@ commands(
 )
 
 commands(
-    ("vn", (57, 71)),
-    library.make_pizzicato_sixteenths(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([3, 6], 8)),
-        ),
-        extra_counts=[6, 0, 4, 4, 0, 2],
-    ),
+    ("vc", (72, 75)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
 )
 
 commands(
-    ("pf", (57, 71)),
-    library.make_pizzicato_sixteenths(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([1, 5], 7)),
-        ),
-        extra_counts=[4, 0, 2, 4, 6],
-    ),
+    ("vc", (1, 11)),
+    baca.pitches("e, dqs, cqs, b,, cqs, d, ctqs,"),
 )
 
 commands(
-    ("pf", (72, 75)),
-    library.make_pizzicato_sixteenths(
-        extra_counts=[4, 0, 2, 4, 6],
-    ),
+    ("vc", (12, 22)),
+    baca.pitches("f, eqs, dqs, c, dqs, e, dtqs,"),
 )
 
 commands(
-    ("cl", (69, 75)),
-    library.make_white_rhythm([(3, 8)]),
+    ("vc", (23, 28)),
+    baca.pitches("a, gqs, fqs, e, fqs, g, ftqs,"),
 )
 
 commands(
-    ("vn", (72, 75)),
-    baca.staff_lines(1),
-    baca.clef("percussion"),
-    baca.dynamic("mf"),
-    baca.instrument(library.instruments["Percussion"]),
-    baca.make_repeat_tied_notes(),
-    baca.markup(
-        r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",
-    ),
-    baca.staff_position(0),
+    ("vc", 45),
+    baca.clef("bass"),
 )
+
+# ob, cl, pf, vn composites
 
 commands(
     baca.timeline(
@@ -468,13 +669,13 @@ commands(
 )
 
 commands(
-    ("pf", (1, 22)),
-    library.register_wide(5),
+    (["vn", "ob", "cl"], (1, 22)),
+    library.register_narrow(5),
 )
 
 commands(
-    (["vn", "ob", "cl"], (1, 22)),
-    library.register_narrow(5),
+    ("pf", (1, 22)),
+    library.register_wide(5),
 )
 
 commands(
@@ -502,27 +703,6 @@ commands(
     library.register_narrow(5),
 )
 
-commands(
-    ("cl", (5, 11)),
-    baca.dynamic("mp"),
-)
-
-commands(
-    ("vn", (8, 11)),
-    baca.dynamic("mp"),
-    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
-)
-
-commands(
-    ("cl", (16, 22)),
-    baca.dynamic("f"),
-)
-
-commands(
-    ("vn", (19, 22)),
-    baca.dynamic("f"),
-    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
-)
 
 commands(
     (["vn", "ob", "cl"], (23, 28)),
@@ -536,32 +716,7 @@ commands(
     ),
 )
 
-commands(
-    ("va", (1, 11)),
-    baca.pitches("d ctqs e dqs cqs b, cqs"),
-)
-
-commands(
-    ("va", (12, 22)),
-    baca.pitches("e dtqs f eqs dqs c dqs"),
-)
-
-commands(
-    ("va", (23, 28)),
-    baca.pitches("g ftqs a gqs fqs e fqs"),
-)
-
-commands(
-    ("vc", (1, 11)),
-    baca.pitches("e, dqs, cqs, b,, cqs, d, ctqs,"),
-)
-
-commands(
-    ("vc", (12, 22)),
-    baca.pitches("f, eqs, dqs, c, dqs, e, dtqs,"),
-)
-
-commands(("vc", (23, 28)), baca.pitches("a, gqs, fqs, e, fqs, g, ftqs,"))
+# va, vc composites (1, 28)
 
 commands(
     (["va", "vc"], (1, 28)),
@@ -588,6 +743,8 @@ commands(
     baca.dynamic("ff"),
 )
 
+# vn, va, vc composites (34, 53)
+
 commands(
     baca.timeline(
         [
@@ -613,11 +770,6 @@ commands(
 )
 
 commands(
-    ("va", (39, 44)),
-    baca.clef("alto"),
-)
-
-commands(
     ("vc", (34, 51)),
     baca.alternate_bow_strokes(),
     baca.clef("treble"),
@@ -625,20 +777,6 @@ commands(
     baca.glissando(),
     baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
     library.register_narrow(5, 2),
-)
-
-commands(
-    ("vc", (45, 47)),
-    baca.clef("bass"),
-)
-
-commands(
-    ("vn", (38, 53)),
-    baca.alternate_bow_strokes(),
-    baca.dynamic("f"),
-    baca.glissando(),
-    baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
-    library.register_narrow(5, 4),
 )
 
 commands(
@@ -652,14 +790,7 @@ commands(
     library.clusters("low"),
 )
 
-commands(
-    ("perc", (45, 60)),
-    baca.dynamic("p-sempre"),
-    baca.new(
-        baca.laissez_vibrer(),
-        map=lambda _: baca.select.pheads(_),
-    ),
-)
+# pf, vn, va, vc composites
 
 pcs = library.violet_pitch_classes
 pcs = abjad.PitchClassSegment(pcs).rotate(-60).transpose(1)
@@ -694,6 +825,15 @@ commands(
 )
 
 commands(
+    ("vn", (38, 53)),
+    baca.alternate_bow_strokes(),
+    baca.dynamic("f"),
+    baca.glissando(),
+    baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
+    library.register_narrow(5, 4),
+)
+
+commands(
     ("vn", (54, 71)),
     baca.dynamic("fff"),
     baca.markup(r"\baca-pizz-markup"),
@@ -709,35 +849,6 @@ commands(
     library.register_narrow(5, 6),
 )
 
-commands(
-    ("cl", (69, 75)),
-    baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
-)
-
-commands(
-    ("cl", (69, 75)),
-    baca.dynamic("f"),
-    baca.glissando(),
-)
-
-commands(
-    ("pf", (1, 22)),
-    baca.dls_staff_padding(6),
-    baca.tuplet_bracket_staff_padding(3),
-)
-
-commands(
-    ("pf", (23, 31)),
-    baca.dls_staff_padding(7),
-    baca.tuplet_bracket_staff_padding(4),
-)
-
-commands(
-    ("pf", (57, 75)),
-    baca.dls_staff_padding(7),
-    baca.tuplet_bracket_staff_padding(4),
-)
-
 if __name__ == "__main__":
     metadata, persist, score, timing = baca.build.interpret_segment(
         score,
@@ -745,7 +856,10 @@ if __name__ == "__main__":
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
         stage_markup=stage_markup,
         transpose_score=True,
     )

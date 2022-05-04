@@ -96,81 +96,30 @@ commands(
     baca.rehearsal_mark("E"),
 )
 
+# obr
+
 commands(
-    ("ob", [(1, 8), (9, 10)]),
+    ("ob", (1, 8)),
     library.make_oboe_trill_rhythm(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
-)
-
-commands(
-    ("cl", (1, 10)),
-    baca.make_repeated_duration_notes([(16, 4)]),
-    baca.reapply_persistent_indicators(),
-    baca.instrument(
-        library.instruments["ClarinetInEFlat"],
-    ),
-)
-
-commands(
-    (["pf", "vn", "va", "vc"], (1, 8)),
-    baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
-    (["pf", "vn", "va", "vc"], (9, 10)),
-    library.make_incise_chain_b_rhythm(),
-)
-
-commands(
-    ("perc", [(1, 14), (28, 34)]),
-    library.make_sponge_rhythm(),
-    baca.reapply_persistent_indicators(),
-    baca.markup(r"\baca-suspended-cymbal-markup"),
-    baca.staff_position(0),
-)
-
-commands(
-    ("perc", 28),
-    baca.staff_lines(1),
-)
-
-commands(
-    ("vn", (12, 20)),
-    library.make_glissando_rhythm(
-        [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("va", (12, 20)),
-    library.make_glissando_rhythm(
-        [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("vc", (12, 20)),
-    library.make_glissando_rhythm(
-        [(1, 1, 1), (2, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
-        ),
-    ),
+    ("ob", (9, 10)),
+    library.make_oboe_trill_rhythm(),
 )
 
 commands(
     ("ob", (12, 21)),
     library.make_color_tuplets(),
+)
+
+# clr
+
+commands(
+    ("cl", (1, 10)),
+    baca.make_repeated_duration_notes([(16, 4)]),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -183,15 +132,63 @@ commands(
     ),
 )
 
+# cl
+
+commands(
+    "cl",
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
+)
+
+commands(
+    ("cl", (23, 24)),
+    baca.instrument(library.instruments["BassClarinet"]),
+    library.margin_markup("B. cl."),
+)
+
+# pfr
+
+commands(
+    ("pf", (1, 8)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("pf", (9, 10)),
+    library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("pf", [17, (20, 26)]),
+    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
+)
+
+# pf
+
 commands(
     ("pf", [17, (20, 26)]),
     baca.clef("treble"),
-    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
+)
+
+# percr
+
+commands(
+    ("perc", [(1, 14), (28, 34)]),
+    library.make_sponge_rhythm(),
 )
 
 commands(
     ("perc", [17, (20, 26)]),
     library.make_silver_points_rhythm([(2, 1), (1, 2)]),
+)
+
+# perc
+
+commands(
+    ("perc", [(1, 14), (28, 34)]),
+    baca.reapply_persistent_indicators(),
+    baca.markup(r"\baca-suspended-cymbal-markup"),
+    baca.staff_position(0),
 )
 
 commands(
@@ -202,10 +199,80 @@ commands(
 )
 
 commands(
-    ("cl", (23, 24)),
-    baca.instrument(library.instruments["BassClarinet"]),
-    library.margin_markup("B. cl."),
+    ("perc", 28),
+    baca.staff_lines(1),
 )
+
+# vnr
+
+commands(
+    ("vn", (1, 8)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vn", (9, 10)),
+    library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("vn", (12, 20)),
+    library.make_glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
+        ),
+    ),
+)
+
+# var
+
+commands(
+    ("va", (1, 8)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("va", (9, 10)),
+    library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("va", (12, 20)),
+    library.make_glissando_rhythm(
+        [(2, 1), (1, 1, 1), (2, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
+        ),
+    ),
+)
+
+# vcr
+
+commands(
+    ("vc", (1, 8)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vc", (9, 10)),
+    library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("vc", (12, 20)),
+    library.make_glissando_rhythm(
+        [(1, 1, 1), (2, 1), (2, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
+        ),
+    ),
+)
+
+# move
 
 commands(
     (["cl", "va", "vc"], (23, 24)),

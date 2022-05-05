@@ -291,7 +291,7 @@ commands(
     ("pf", (45, 48)),
     baca.clef("bass"),
     baca.markup(r"\baca-senza-pedale-markup"),
-    library.clusters("tenor"),
+    library.replace_with_clusters("tenor"),
     baca.dynamic("mp"),
     baca.dls_staff_padding(6),
 )

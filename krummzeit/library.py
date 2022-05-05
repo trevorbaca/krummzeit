@@ -408,11 +408,11 @@ class RegisterTransitionCommand(baca.Command):
         abjad.detach("not yet registered", pleaf)
 
 
-def clusters(flavor):
+def replace_with_clusters(flavor):
     clusters = {
-        "harpsichord": baca.clusters([4], start_pitch="D4"),
-        "low": baca.clusters([7], start_pitch="C1"),
-        "tenor": baca.clusters([4], start_pitch="A2"),
+        "harpsichord": baca.replace_with_clusters([4], start_pitch="D4"),
+        "low": baca.replace_with_clusters([7], start_pitch="C1"),
+        "tenor": baca.replace_with_clusters([4], start_pitch="A2"),
     }
     return clusters[flavor]
 

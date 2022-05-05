@@ -55,33 +55,76 @@ commands(
     baca.rehearsal_mark("H"),
 )
 
+# obr
+
 commands(
-    (["ob", "cl"], (1, 3)),
+    ("ob", (1, 3)),
     baca.make_mmrests(),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
+    ("ob", (4, 7)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("ob", (8, 10)),
+    library.make_hypermeter_tuplets([(3, 2)], counts=[2]),
+)
+
+
+# clr
+
+commands(
+    ("cl", (1, 3)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("cl", (4, 5)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("cl", (8, 10)),
+    library.make_hypermeter_tuplets([(1, 4)], counts=[2]),
+)
+
+# pfr
+
+commands(
+    ("pf", (1, 6)),
+    library.make_opening_triplets(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("pf", (9, 10)),
+    library.make_hypermeter_tuplets([(3, 4)], counts=[2]),
+)
+
+# percr
+
+commands(
+    ("perc", (1, 4)),
+    baca.make_mmrests(),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("perc", (5, 6)),
+    library.make_left_remainder_quarters(
+        rmakers.force_rest(lambda _: baca.select.lt(_, 0))
+    ),
+)
+
+# vnr
+
+commands(
     ("vn", [(1, 2), (7, 10)]),
     library.make_hypermeter_tuplets([(3, 2)], [2]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
-)
-
-commands(
-    ("va", [(1, 2), (7, 10)]),
-    library.make_hypermeter_tuplets([(1, 4)], [2]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
-)
-
-commands(
-    ("vc", [(1, 2), (7, 10)]),
-    library.make_hypermeter_tuplets([(2, 3)], [2]),
     baca.new(
         baca.reapply_persistent_indicators(),
         match=0,
@@ -95,10 +138,32 @@ commands(
     ),
 )
 
+# var
+
+commands(
+    ("va", [(1, 2), (7, 10)]),
+    library.make_hypermeter_tuplets([(1, 4)], [2]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
+    ),
+)
+
 commands(
     ("va", (3, 5)),
     library.make_glissando_rhythm(
         [(2, 1), (1, 1, 1), (1, 2)], tie_across_divisions=abjad.index([1], 2)
+    ),
+)
+
+# vcr
+
+commands(
+    ("vc", [(1, 2), (7, 10)]),
+    library.make_hypermeter_tuplets([(2, 3)], [2]),
+    baca.new(
+        baca.reapply_persistent_indicators(),
+        match=0,
     ),
 )
 
@@ -109,17 +174,14 @@ commands(
     ),
 )
 
-commands(
-    ("pf", (1, 6)),
-    library.make_opening_triplets(),
-    baca.reapply_persistent_indicators(),
-)
+# cl
 
 commands(
-    ("perc", (1, 4)),
-    baca.make_mmrests(),
-    baca.reapply_persistent_indicators(),
+    ("cl", 4),
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
 )
+
+# perc
 
 commands(
     ("perc", (5, 6)),
@@ -127,51 +189,34 @@ commands(
     baca.clef("treble"),
     baca.markup(r"\baca-crotale-markup"),
     baca.pitch("D5"),
-    library.make_left_remainder_quarters(
-        rmakers.force_rest(lambda _: baca.select.lt(_, 0))
-    ),
 )
 
-commands(
-    [
-        ("ob", (4, 7)),
-        ("cl", (4, 5)),
-    ],
-    baca.make_repeat_tied_notes(),
-)
-
-commands(
-    ("cl", 4),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
-)
-
-commands(
-    ("ob", (8, 10)),
-    library.make_hypermeter_tuplets([(3, 2)], counts=[2]),
-)
+# move
 
 commands(
     ("cl", (8, 10)),
     baca.instrument(library.instruments["BassClarinet"]),
-    library.make_hypermeter_tuplets([(1, 4)], counts=[2]),
 )
 
 commands(
     ("pf", (9, 10)),
     baca.instrument(library.instruments["Piano"]),
-    library.make_hypermeter_tuplets([(3, 4)], counts=[2]),
     library.margin_markup("Pf."),
 )
 
 commands(
     ("perc", (9, 10)),
     baca.instrument(library.instruments["Xylophone"]),
+)
+
+commands(
+    ("perc", (9, 10)),
     library.make_hypermeter_tuplets([(1, 6)], counts=[2]),
 )
 
 commands(
     ("pf", (1, 6)),
-    library.clusters("harpsichord"),
+    library.replace_with_clusters("harpsichord"),
 )
 
 commands(

@@ -285,15 +285,13 @@ commands(
 )
 
 commands(
-    # TODO: change to (9, 10)
-    ("pf", (8, 10)),
+    ("pf", (9, 10)),
     baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(2),
 )
 
 commands(
-    # TODO: change to (9, 10)
-    ("perc", (8, 10)),
+    ("perc", (9, 10)),
     baca.tuplet_bracket_staff_padding(3),
 )
 

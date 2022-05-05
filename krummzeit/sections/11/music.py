@@ -47,11 +47,21 @@ commands(
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
 
+# OBR
+
 commands(
     ("ob", (1, 40)),
     baca.make_repeat_tied_notes(),
     baca.reapply_persistent_indicators(),
 )
+
+commands(
+    ("ob", (41, 48)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# CLR
 
 commands(
     ("cl", (1, 40)),
@@ -60,19 +70,30 @@ commands(
 )
 
 commands(
+    ("cl", (41, 48)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# PFR
+
+commands(
     "pf",
     baca.make_repeat_tied_notes(),
     baca.reapply_persistent_indicators(),
-    baca.clef("treble"),
+    baca.append_phantom_measure(),
 )
+
+# PERCR
 
 commands(
     "perc",
     baca.make_repeat_tied_notes(),
     baca.reapply_persistent_indicators(),
-    baca.staff_lines(5),
-    baca.clef("treble"),
+    baca.append_phantom_measure(),
 )
+
+# VNR
 
 commands(
     ("vn", (1, 40)),
@@ -85,6 +106,14 @@ commands(
 )
 
 commands(
+    ("vn", (41, 48)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VAR
+
+commands(
     ("va", (1, 4)),
     library.make_closing_pizzicato_rhythm(
         counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
@@ -95,43 +124,77 @@ commands(
 )
 
 commands(
-    ("vc", [(1, 24), (25, 48)]),
+    ("va", (5, 48)),
+    baca.make_mmrests(),
+    baca.append_phantom_measure(),
+)
+
+# VCR
+
+commands(
+    ("vc", (1, 24)),
     baca.make_repeat_tied_notes(),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vc", (25, 48)),
+    baca.make_repeat_tied_notes(),
+    baca.append_phantom_measure(),
+)
+
+# ob (1, 40)
+
+commands(
+    "ob",
+    baca.pitch(
+        "C#4",
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
+    baca.dynamic("fff"),
+    baca.dls_staff_padding(5),
 )
+
+# cl (1, 40)
+
+commands(
+    "cl",
+    baca.pitch(
+        "D2",
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+    ),
+    baca.stem_up(),
+    baca.dynamic("f"),
+    baca.dls_staff_padding(7),
+)
+
+# pf (1, 48)
 
 commands(
     "pf",
+    baca.clef("treble"),
     baca.pitch("C#6"),
-)
-
-commands(
-    "pf",
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-)
-
-commands(
-    ("pf", (25, 48)),
     baca.dynamic(
         "fff-poss",
         selector=lambda _: abjad.select.leaf(_, 0),
+        measures=25,
     ),
 )
 
-commands(
-    "perc",
-    baca.pitch("C#6"),
-)
+# perc (1, 48)
 
 commands(
     "perc",
+    baca.clef("treble"),
+    baca.staff_lines(5),
+    baca.pitch("C#6"),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     baca.dynamic("fff"),
     baca.dls_staff_padding(4),
-    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
+
+# vn, va (1, 40)
 
 pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
 pcs = pcs[42:34:-1].transpose(4).invert()
@@ -150,64 +213,39 @@ commands(
 
 commands(
     (["vn", "va"], (1, 40)),
-    baca.dynamic("ff"),
-    baca.dls_staff_padding(5),
     baca.markup(r"\baca-pizz-markup"),
+    library.displacement(),
+    library.register_narrow(6),
     baca.staccatissimo(
         selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
     ),
     baca.tuplet_bracket_staff_padding(2),
-    library.displacement(),
-    library.register_narrow(6),
+    baca.dynamic("ff"),
+    baca.dls_staff_padding(5),
 )
+
+# vc (1, 48)
 
 commands(
     ("vc", (1, 24)),
-    baca.pitches("D4 D4 D4 D4 D4 D4 D2"),
-)
-
-commands(
-    ("vc", (25, 48)),
-    baca.pitch("D2"),
-)
-
-commands(
-    ("vc", (1, 24)),
-    baca.dynamic("fff-ancora"),
-    baca.dls_staff_padding(3),
     baca.markup(r"\baca-scratch-poss-markup"),
+    baca.pitches("D4 D4 D4 D4 D4 D4 D2"),
     baca.new(
         baca.glissando(),
         map=lambda _: baca.select.runs(_),
     ),
+    baca.dynamic("fff-ancora"),
+    baca.dls_staff_padding(3),
 )
 
 commands(
     ("vc", (25, 48)),
-    baca.dynamic("ff"),
     baca.markup(r"\baca-ordinario-markup"),
+    baca.pitch("D2"),
+    baca.dynamic("ff"),
 )
 
-commands(
-    "ob",
-    baca.pitch(
-        "C#4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.dynamic("fff"),
-    baca.dls_staff_padding(5),
-)
-
-commands(
-    "cl",
-    baca.pitch(
-        "D2",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.dynamic("f"),
-    baca.dls_staff_padding(7),
-    baca.stem_up(),
-)
+# vc (last)
 
 commands(
     ("vc", -1),
@@ -227,8 +265,11 @@ if __name__ == "__main__":
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
         final_segment=True,
+        intercalate_mmrests_by_hand=True,
         stage_markup=stage_markup,
         transpose_score=True,
     )

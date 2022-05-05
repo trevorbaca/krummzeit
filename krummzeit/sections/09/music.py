@@ -71,6 +71,7 @@ commands(
 commands(
     ("ob", (8, 10)),
     library.make_hypermeter_tuplets([(3, 2)], counts=[2]),
+    baca.append_phantom_measure(),
 )
 
 # CLR
@@ -94,6 +95,7 @@ commands(
 commands(
     ("cl", (8, 10)),
     library.make_hypermeter_tuplets([(1, 4)], counts=[2]),
+    baca.append_phantom_measure(),
 )
 
 # PFR
@@ -112,6 +114,7 @@ commands(
 commands(
     ("pf", (9, 10)),
     library.make_hypermeter_tuplets([(3, 4)], counts=[2]),
+    baca.append_phantom_measure(),
 )
 
 # PERCR
@@ -137,6 +140,7 @@ commands(
 commands(
     ("perc", (9, 10)),
     library.make_hypermeter_tuplets([(1, 6)], counts=[2]),
+    baca.append_phantom_measure(),
 )
 
 # VNR
@@ -162,6 +166,7 @@ commands(
 commands(
     ("vn", (7, 10)),
     library.make_hypermeter_tuplets([(3, 2)], [2]),
+    baca.append_phantom_measure(),
 )
 
 # VAR
@@ -175,7 +180,8 @@ commands(
 commands(
     ("va", (3, 5)),
     library.make_glissando_rhythm(
-        [(2, 1), (1, 1, 1), (1, 2)], tie_across_divisions=abjad.index([1], 2)
+        [(2, 1), (1, 1, 1), (1, 2)],
+        tie_across_divisions=abjad.index([1], 2),
     ),
 )
 
@@ -187,6 +193,7 @@ commands(
 commands(
     ("va", (7, 10)),
     library.make_hypermeter_tuplets([(1, 4)], [2]),
+    baca.append_phantom_measure(),
 )
 
 # VCR
@@ -200,7 +207,8 @@ commands(
 commands(
     ("vc", (3, 5)),
     library.make_glissando_rhythm(
-        [(1, 1, 1), (1, 2), (2, 1)], tie_across_divisions=abjad.index([1], 2)
+        [(1, 1, 1), (1, 2), (2, 1)],
+        tie_across_divisions=abjad.index([1], 2),
     ),
 )
 
@@ -212,6 +220,7 @@ commands(
 commands(
     ("vc", (7, 10)),
     library.make_hypermeter_tuplets([(2, 3)], [2]),
+    baca.append_phantom_measure(),
 )
 
 # ob, cl (4, 10)
@@ -274,55 +283,42 @@ commands(
 # pf, perc (9, 10)
 
 commands(
-    ("pf", (9, 10)),
-    baca.instrument(library.instruments["Piano"]),
-    library.margin_markup("Pf."),
-)
-
-commands(
-    ("perc", (9, 10)),
-    baca.instrument(library.instruments["Xylophone"]),
-)
-
-commands(
-    ("pf", (9, 10)),
-    baca.dls_staff_padding(6),
-    baca.tuplet_bracket_staff_padding(2),
-)
-
-commands(
-    ("perc", (9, 10)),
-    baca.tuplet_bracket_staff_padding(3),
-)
-
-commands(
     (["pf", "perc"], (9, 10)),
-    baca.dynamic("fff"),
+    baca.new(
+        baca.instrument(library.instruments["Piano"]),
+        library.margin_markup("Pf."),
+        baca.tuplet_bracket_staff_padding(2),
+        baca.dls_staff_padding(6),
+        match=0,
+    ),
+    baca.new(
+        baca.instrument(library.instruments["Xylophone"]),
+        baca.tuplet_bracket_staff_padding(3),
+        match=1,
+    ),
     baca.pitch("F#6"),
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+    baca.dynamic("fff"),
 )
 
 # vn, va, vc (1, 2)
 
 commands(
-    ("vn", (1, 2)),
-    baca.pitch("Db4"),
-)
-
-commands(
-    ("va", (1, 2)),
-    baca.pitch("C3"),
-)
-
-commands(
-    ("vc", (1, 2)),
-    baca.pitch("C2"),
-)
-
-commands(
     (["vn", "va", "vc"], (1, 2)),
-    baca.dynamic("fff-poss"),
+    baca.new(
+        baca.pitch("Db4"),
+        match=0,
+    ),
+    baca.new(
+        baca.pitch("C3"),
+        match=1,
+    ),
+    baca.new(
+        baca.pitch("C2"),
+        match=2,
+    ),
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+    baca.dynamic("fff-poss"),
 )
 
 # vn, va, vc (3, 5)
@@ -342,83 +338,57 @@ commands(
 
 commands(
     (["vn", "va", "vc"], (3, 5)),
-    baca.dynamic("ppp"),
+    library.displacement(),
+    baca.new(
+        library.register_wide(4),
+        match=0,
+    ),
+    baca.new(
+        library.register_narrow(3),
+        match=1,
+    ),
+    baca.new(
+        library.register_narrow(2),
+        match=2,
+    ),
+    baca.note_head_style_harmonic(),
     baca.new(
         baca.glissando(),
         map=lambda _: baca.select.runs(_),
     ),
-    baca.note_head_style_harmonic(),
-)
-
-commands(
-    ("vn", (3, 5)),
-    baca.suite(
-        library.displacement(),
-        library.register_wide(4),
-    ),
-)
-
-commands(
-    ("va", (3, 5)),
-    baca.suite(
-        library.displacement(),
-        library.register_narrow(3),
-    ),
-)
-
-commands(
-    ("vc", (3, 5)),
-    baca.suite(
-        library.displacement(),
-        library.register_narrow(2),
-    ),
+    baca.dynamic("ppp"),
 )
 
 # vn, va, vc (7, 10)
 
 commands(
-    ("vn", (7, 10)),
-    baca.pitches("D5 Eb5 Eb5 Eb5"),
-)
-
-commands(
-    ("va", (7, 10)),
-    baca.pitches("D3 A3 A3 A3"),
-)
-
-commands(
-    ("vc", (7, 10)),
-    baca.pitches("D3 E~2 E~2 E~2"),
-)
-
-commands(
     (["vn", "va", "vc"], (7, 10)),
-    baca.dynamic("fff"),
     baca.new(
-        baca.glissando(),
-        map=lambda _: baca.select.runs(_),
+        baca.pitches("D5 Eb5 Eb5 Eb5"),
+        baca.dls_staff_padding(7),
+        baca.tuplet_bracket_staff_padding(3),
+        match=0,
+    ),
+    baca.new(
+        baca.pitches("D3 A3 A3 A3"),
+        baca.dls_staff_padding(9),
+        baca.tuplet_bracket_staff_padding(5),
+        match=1,
+    ),
+    baca.new(
+        baca.pitches("D3 E~2 E~2 E~2"),
+        baca.dls_staff_padding(9),
+        baca.tuplet_bracket_staff_padding(5),
+        match=2,
     ),
     baca.stem_tremolo(
         selector=lambda _: baca.select.plts(_)[1:],
     ),
-)
-
-commands(
-    ("vn", (7, 10)),
-    baca.dls_staff_padding(7),
-    baca.tuplet_bracket_staff_padding(3),
-)
-
-commands(
-    ("va", (7, 10)),
-    baca.dls_staff_padding(9),
-    baca.tuplet_bracket_staff_padding(5),
-)
-
-commands(
-    ("vc", (7, 10)),
-    baca.dls_staff_padding(9),
-    baca.tuplet_bracket_staff_padding(5),
+    baca.new(
+        baca.glissando(),
+        map=lambda _: baca.select.runs(_),
+    ),
+    baca.dynamic("fff"),
 )
 
 if __name__ == "__main__":
@@ -428,7 +398,10 @@ if __name__ == "__main__":
         **baca.score_interpretation_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
+        append_phantom_measures_by_hand=True,
+        do_not_sort_commands=True,
         error_on_not_yet_pitched=True,
+        intercalate_mmrests_by_hand=True,
         stage_markup=stage_markup,
         transpose_score=True,
     )

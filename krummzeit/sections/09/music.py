@@ -55,7 +55,7 @@ commands(
     baca.rehearsal_mark("H"),
 )
 
-# obr
+# OBR
 
 commands(
     ("ob", (1, 3)),
@@ -73,8 +73,7 @@ commands(
     library.make_hypermeter_tuplets([(3, 2)], counts=[2]),
 )
 
-
-# clr
+# CLR
 
 commands(
     ("cl", (1, 3)),
@@ -88,11 +87,16 @@ commands(
 )
 
 commands(
+    ("cl", (6, 7)),
+    baca.make_mmrests(),
+)
+
+commands(
     ("cl", (8, 10)),
     library.make_hypermeter_tuplets([(1, 4)], counts=[2]),
 )
 
-# pfr
+# PFR
 
 commands(
     ("pf", (1, 6)),
@@ -101,11 +105,16 @@ commands(
 )
 
 commands(
+    ("pf", (7, 8)),
+    baca.make_mmrests(),
+)
+
+commands(
     ("pf", (9, 10)),
     library.make_hypermeter_tuplets([(3, 4)], counts=[2]),
 )
 
-# percr
+# PERCR
 
 commands(
     ("perc", (1, 4)),
@@ -120,15 +129,22 @@ commands(
     ),
 )
 
-# vnr
+commands(
+    ("perc", (7, 8)),
+    baca.make_mmrests(),
+)
 
 commands(
-    ("vn", [(1, 2), (7, 10)]),
+    ("perc", (9, 10)),
+    library.make_hypermeter_tuplets([(1, 6)], counts=[2]),
+)
+
+# VNR
+
+commands(
+    ("vn", (1, 2)),
     library.make_hypermeter_tuplets([(3, 2)], [2]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -138,15 +154,22 @@ commands(
     ),
 )
 
-# var
+commands(
+    ("vn", 6),
+    baca.make_mmrests(),
+)
 
 commands(
-    ("va", [(1, 2), (7, 10)]),
+    ("vn", (7, 10)),
+    library.make_hypermeter_tuplets([(3, 2)], [2]),
+)
+
+# VAR
+
+commands(
+    ("va", (1, 2)),
     library.make_hypermeter_tuplets([(1, 4)], [2]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -156,15 +179,22 @@ commands(
     ),
 )
 
-# vcr
+commands(
+    ("va", 6),
+    baca.make_mmrests(),
+)
 
 commands(
-    ("vc", [(1, 2), (7, 10)]),
+    ("va", (7, 10)),
+    library.make_hypermeter_tuplets([(1, 4)], [2]),
+)
+
+# VCR
+
+commands(
+    ("vc", (1, 2)),
     library.make_hypermeter_tuplets([(2, 3)], [2]),
-    baca.new(
-        baca.reapply_persistent_indicators(),
-        match=0,
-    ),
+    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -174,29 +204,74 @@ commands(
     ),
 )
 
-# cl
-
 commands(
-    ("cl", 4),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    ("vc", 6),
+    baca.make_mmrests(),
 )
 
-# perc
+commands(
+    ("vc", (7, 10)),
+    library.make_hypermeter_tuplets([(2, 3)], [2]),
+)
+
+# ob, cl (4, 10)
+
+commands(
+    (["ob", "cl"], (4, 7)),
+    baca.new(
+        baca.instrument(library.instruments["ClarinetInEFlat"]),
+        match=1,
+    ),
+    baca.pitch("D5"),
+    baca.new(
+        baca.trill_spanner(),
+        match=0,
+    ),
+    baca.dynamic("ff"),
+    baca.dls_staff_padding(3),
+)
+
+commands(
+    (["ob", "cl"], (8, 10)),
+    baca.new(
+        baca.pitch("Eb5"),
+        baca.tuplet_bracket_staff_padding(2),
+        match=0,
+    ),
+    baca.new(
+        baca.instrument(library.instruments["BassClarinet"]),
+        baca.pitch("Eb2"),
+        baca.dynamic("ff"),
+        baca.dls_staff_padding(9),
+        baca.stem_up(),
+        baca.tuplet_bracket_staff_padding(5),
+        match=1,
+    ),
+    library.color_fingerings(),
+)
+
+# pf, perc (1, 6)
+
+commands(
+    ("pf", (1, 6)),
+    baca.instrument(library.instruments["Harpsichord"]),
+    library.margin_markup("Hpschd."),
+    baca.clef("treble"),
+    library.replace_with_clusters("harpsichord"),
+)
 
 commands(
     ("perc", (5, 6)),
-    baca.staff_lines(5),
-    baca.clef("treble"),
     baca.markup(r"\baca-crotale-markup"),
+    baca.clef("treble"),
+    baca.staff_lines(5),
     baca.pitch("D5"),
+    baca.accent(selector=lambda _: baca.select.pheads(_)),
+    baca.dynamic("ff-sempre"),
+    baca.dls_staff_padding(6),
 )
 
-# move
-
-commands(
-    ("cl", (8, 10)),
-    baca.instrument(library.instruments["BassClarinet"]),
-)
+# pf, perc (9, 10)
 
 commands(
     ("pf", (9, 10)),
@@ -210,21 +285,26 @@ commands(
 )
 
 commands(
-    ("perc", (9, 10)),
-    library.make_hypermeter_tuplets([(1, 6)], counts=[2]),
+    # TODO: change to (9, 10)
+    ("pf", (8, 10)),
+    baca.dls_staff_padding(6),
+    baca.tuplet_bracket_staff_padding(2),
 )
 
 commands(
-    ("pf", (1, 6)),
-    library.replace_with_clusters("harpsichord"),
+    # TODO: change to (9, 10)
+    ("perc", (8, 10)),
+    baca.tuplet_bracket_staff_padding(3),
 )
 
 commands(
-    ("pf", (1, 6)),
-    baca.clef("treble"),
-    baca.instrument(library.instruments["Harpsichord"]),
-    library.margin_markup("Hpschd."),
+    (["pf", "perc"], (9, 10)),
+    baca.dynamic("fff"),
+    baca.pitch("F#6"),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
+
+# vn, va, vc (1, 2)
 
 commands(
     ("vn", (1, 2)),
@@ -247,11 +327,7 @@ commands(
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
 )
 
-commands(
-    ("perc", (5, 6)),
-    baca.dynamic("ff-sempre"),
-    baca.accent(selector=lambda _: baca.select.pheads(_)),
-)
+# vn, va, vc (3, 5)
 
 pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
@@ -300,29 +376,7 @@ commands(
     ),
 )
 
-commands(
-    (["ob", "cl"], (4, 7)),
-    baca.dynamic("ff"),
-    baca.pitch("D5"),
-)
-
-commands(
-    ("ob", (4, 7)),
-    baca.trill_spanner(),
-)
-
-commands(
-    ("ob", (8, 10)),
-    baca.pitch("Eb5"),
-    library.color_fingerings(),
-)
-
-commands(
-    ("cl", (8, 10)),
-    baca.dynamic("ff"),
-    baca.pitch("Eb2"),
-    library.color_fingerings(),
-)
+# vn, va, vc (7, 10)
 
 commands(
     ("vn", (7, 10)),
@@ -349,53 +403,6 @@ commands(
     baca.stem_tremolo(
         selector=lambda _: baca.select.plts(_)[1:],
     ),
-)
-
-commands(
-    (["pf", "perc"], (9, 10)),
-    baca.dynamic("fff"),
-    baca.pitch("F#6"),
-    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-)
-
-### VERTICAL ALIGNMENT ###
-
-commands(
-    ("ob", (4, 7)),
-    baca.dls_staff_padding(3),
-)
-
-commands(
-    ("ob", (8, 10)),
-    baca.tuplet_bracket_staff_padding(2),
-)
-
-commands(
-    ("cl", (4, 7)),
-    baca.dls_staff_padding(3),
-)
-
-commands(
-    ("cl", (8, 10)),
-    baca.dls_staff_padding(9),
-    baca.stem_up(),
-    baca.tuplet_bracket_staff_padding(5),
-)
-
-commands(
-    ("pf", (8, 10)),
-    baca.dls_staff_padding(6),
-    baca.tuplet_bracket_staff_padding(2),
-)
-
-commands(
-    ("perc", (5, 6)),
-    baca.dls_staff_padding(6),
-)
-
-commands(
-    ("perc", (8, 10)),
-    baca.tuplet_bracket_staff_padding(3),
 )
 
 commands(

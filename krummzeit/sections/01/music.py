@@ -164,7 +164,7 @@ commands(
 
 commands(
     ("pf", 4),
-    library.clusters("tenor"),
+    library.replace_with_clusters("tenor"),
     baca.markup(r"\krummzeit-catch-resonance-markup"),
     baca.dynamic("fff"),
 )

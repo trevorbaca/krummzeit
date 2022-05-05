@@ -360,7 +360,7 @@ commands(
 
 commands(
     ("pf", (9, 10)),
-    library.clusters("tenor"),
+    library.replace_with_clusters("tenor"),
     baca.dynamic("ff"),
     baca.dls_staff_padding(4),
 )

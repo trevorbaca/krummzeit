@@ -787,7 +787,7 @@ commands(
         map=lambda _: baca.select.pheads(_),
     ),
     baca.ottava_bassa(),
-    library.clusters("low"),
+    library.replace_with_clusters("low"),
 )
 
 # pf, vn, va, vc composites

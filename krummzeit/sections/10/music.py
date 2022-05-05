@@ -124,7 +124,7 @@ commands(
 commands(
     ("pf", (3, 4)),
     baca.instrument(library.instruments["Harpsichord"]),
-    library.clusters("harpsichord"),
+    library.replace_with_clusters("harpsichord"),
     library.margin_markup("Hpschd."),
     library.make_opening_triplets(
         rmakers.force_rest(
@@ -298,7 +298,7 @@ commands(
     baca.clef("bass"),
     baca.ottava_bassa(),
     baca.dynamic("fff-poss"),
-    library.clusters("low"),
+    library.replace_with_clusters("low"),
 )
 
 commands(

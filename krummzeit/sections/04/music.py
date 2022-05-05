@@ -275,14 +275,14 @@ commands(
 commands(
     ("pf", (9, 12)),
     baca.markup(r"\baca-senza-pedale-markup"),
-    library.clusters("low"),
+    library.replace_with_clusters("low"),
     baca.ottava_bassa(),
     baca.dynamic("fff"),
 )
 
 commands(
     ("pf", (14, 16)),
-    library.clusters("low"),
+    library.replace_with_clusters("low"),
     baca.ottava_bassa(),
     baca.dynamic("fff"),
 )

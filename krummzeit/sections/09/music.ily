@@ -4051,14 +4051,6 @@ segment.09.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 8]
-    % BEFORE:
-    % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
-    \override DynamicLineSpanner.staff-padding = 6
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_staff_padding()
-    \override TupletBracket.staff-padding = 2
       %! baca._make_measure_silences()
     R1 * 1
     % AFTER:
@@ -4083,6 +4075,12 @@ segment.09.Piano.Music.Voice = {
         % [Piano_Music_Voice measure 9]
         % BEFORE:
         % COMMANDS:
+          %! baca.OverrideCommand._call(1)
+          %! baca.dls_staff_padding()
+        \override DynamicLineSpanner.staff-padding = 6
+          %! baca.OverrideCommand._call(1)
+          %! baca.tuplet_bracket_staff_padding()
+        \override TupletBracket.staff-padding = 2
           %! -PARTS
           %! EXPLICIT_MARGIN_MARKUP
           %! baca.IndicatorCommand._call()
@@ -4772,11 +4770,6 @@ segment.09.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 8]
-    % BEFORE:
-    % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_staff_padding()
-    \override TupletBracket.staff-padding = 3
       %! baca._make_measure_silences()
     R1 * 1
     % AFTER:
@@ -4799,6 +4792,11 @@ segment.09.Percussion.Music.Voice = {
 
           %! baca._comment_measure_numbers()
         % [Percussion_Music_Voice measure 9]
+        % BEFORE:
+        % COMMANDS:
+          %! baca.OverrideCommand._call(1)
+          %! baca.tuplet_bracket_staff_padding()
+        \override TupletBracket.staff-padding = 3
           %! krummzeit.make_hypermeter_tuplets()
         fs''!4
         % AFTER:

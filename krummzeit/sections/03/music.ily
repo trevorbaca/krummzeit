@@ -3524,7 +3524,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 8]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/4
     % AFTER:
     % MARKUP:
@@ -3536,7 +3536,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 9]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -3548,7 +3548,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 10]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -3560,7 +3560,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 11]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -3572,7 +3572,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 12]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/8
     % AFTER:
     % MARKUP:
@@ -3584,7 +3584,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 13]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -3596,7 +3596,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 14]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/8
     % AFTER:
     % MARKUP:
@@ -3608,7 +3608,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 15]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -3620,7 +3620,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 16]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 2
     % AFTER:
     % MARKUP:
@@ -3632,7 +3632,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 17]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -3644,7 +3644,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 18]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -3656,7 +3656,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 19]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -3668,7 +3668,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 20]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -3680,7 +3680,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 21]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -3692,7 +3692,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 22]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -3704,7 +3704,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 23]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -4953,7 +4953,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 37]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 9/8
     % AFTER:
     % MARKUP:
@@ -4965,7 +4965,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 38]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 9/8
     % AFTER:
     % MARKUP:
@@ -4977,7 +4977,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 39]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -4989,7 +4989,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 40]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -5001,7 +5001,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 41]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -5013,7 +5013,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 42]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -5025,7 +5025,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 43]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -5037,7 +5037,7 @@ segment.03.Oboe.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Oboe_Music_Voice measure 44]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -5456,7 +5456,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 6]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -5468,7 +5468,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -5480,7 +5480,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 8]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/4
     % AFTER:
     % MARKUP:
@@ -5492,7 +5492,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 9]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -5504,7 +5504,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 10]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -5516,7 +5516,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 11]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -5528,7 +5528,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 12]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/8
     % AFTER:
     % MARKUP:
@@ -5540,7 +5540,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 13]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -5552,7 +5552,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 14]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/8
     % AFTER:
     % MARKUP:
@@ -5564,7 +5564,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 15]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -5576,7 +5576,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 16]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 2
     % AFTER:
     % MARKUP:
@@ -5588,7 +5588,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 17]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -5600,7 +5600,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 18]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -5612,7 +5612,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 19]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -5624,7 +5624,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 20]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -5636,7 +5636,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 21]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -5648,7 +5648,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 22]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -5660,7 +5660,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 23]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -6193,7 +6193,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 37]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 9/8
     % AFTER:
     % MARKUP:
@@ -6205,7 +6205,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 38]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 9/8
     % AFTER:
     % MARKUP:
@@ -6217,7 +6217,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 39]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -6229,7 +6229,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 40]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -6241,7 +6241,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 41]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -6253,7 +6253,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 42]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -6265,7 +6265,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 43]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -6277,7 +6277,7 @@ segment.03.Clarinet.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet_Music_Voice measure 44]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -6588,7 +6588,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 2]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 11/8
     % AFTER:
     % MARKUP:
@@ -6600,7 +6600,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 3]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -6612,7 +6612,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 4]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -6624,7 +6624,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 5]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -6636,7 +6636,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 6]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -6648,7 +6648,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -6660,7 +6660,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 8]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/4
     % AFTER:
     % MARKUP:
@@ -6672,7 +6672,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 9]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -6684,7 +6684,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 10]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -6696,7 +6696,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 11]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -6708,7 +6708,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 12]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/8
     % AFTER:
     % MARKUP:
@@ -6720,7 +6720,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 13]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -7546,7 +7546,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 22]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -7558,7 +7558,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 23]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -7570,7 +7570,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 24]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 9/8
     % AFTER:
     % MARKUP:
@@ -7582,7 +7582,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 25]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -7594,7 +7594,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 26]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -7606,7 +7606,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 27]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -8446,7 +8446,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 37]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 9/8
     % AFTER:
     % MARKUP:
@@ -8458,7 +8458,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 38]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 9/8
     % AFTER:
     % MARKUP:
@@ -8470,7 +8470,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 39]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -8482,7 +8482,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 40]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -8494,7 +8494,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 41]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -8506,7 +8506,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 42]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -8518,7 +8518,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 43]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -8530,7 +8530,7 @@ segment.03.Piano.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Piano_Music_Voice measure 44]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -8858,7 +8858,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 2]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 11/8
     % AFTER:
     % MARKUP:
@@ -8870,7 +8870,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 3]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -8882,7 +8882,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 4]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -8894,7 +8894,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 5]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -8906,7 +8906,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 6]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -8918,7 +8918,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 7]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -8930,7 +8930,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 8]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/4
     % AFTER:
     % MARKUP:
@@ -8942,7 +8942,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 9]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -8954,7 +8954,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 10]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -8966,7 +8966,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 11]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -8978,7 +8978,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 12]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 7/8
     % AFTER:
     % MARKUP:
@@ -8990,7 +8990,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 13]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -10076,7 +10076,7 @@ segment.03.Percussion.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Percussion_Music_Voice measure 27]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -12464,7 +12464,7 @@ segment.03.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 30]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -12476,7 +12476,7 @@ segment.03.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 31]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -12488,7 +12488,7 @@ segment.03.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 32]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -12500,7 +12500,7 @@ segment.03.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 33]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 13/8
     % AFTER:
     % MARKUP:
@@ -12512,7 +12512,7 @@ segment.03.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 34]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -12524,7 +12524,7 @@ segment.03.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 35]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -12729,7 +12729,7 @@ segment.03.Violin.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Violin_Music_Voice measure 44]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -13050,7 +13050,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 2]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 11/8
     % AFTER:
     % MARKUP:
@@ -13062,7 +13062,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 3]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -13074,7 +13074,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 4]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -13086,7 +13086,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 5]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -14215,7 +14215,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 25]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -14227,7 +14227,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 26]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -14239,7 +14239,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 27]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -14251,7 +14251,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 28]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -14263,7 +14263,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 29]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -14275,7 +14275,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 30]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -14287,7 +14287,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 31]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -14524,7 +14524,7 @@ segment.03.Viola.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Viola_Music_Voice measure 44]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -14845,7 +14845,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 2]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 11/8
     % AFTER:
     % MARKUP:
@@ -14857,7 +14857,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 3]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/8
     % AFTER:
     % MARKUP:
@@ -14869,7 +14869,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 4]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1
     % AFTER:
     % MARKUP:
@@ -14881,7 +14881,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 5]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -15994,7 +15994,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 25]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:
@@ -16006,7 +16006,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 26]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/2
     % AFTER:
     % MARKUP:
@@ -16018,7 +16018,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 27]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -16030,7 +16030,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 28]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -16042,7 +16042,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 29]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -16054,7 +16054,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 30]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 3/4
     % AFTER:
     % MARKUP:
@@ -16066,7 +16066,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 31]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 1/4
     % AFTER:
     % MARKUP:
@@ -16295,7 +16295,7 @@ segment.03.Cello.Music.Voice = {
 
       %! baca._comment_measure_numbers()
     % [Cello_Music_Voice measure 44]
-      %! baca._make_measure_silences()
+      %! baca._make_mmrests()
     R1 * 5/4
     % AFTER:
     % MARKUP:

@@ -83,6 +83,10 @@ commands(
 commands(
     "ob",
     baca.make_mmrests(),
+)
+
+commands(
+    "ob",
     baca.append_phantom_measure(),
 )
 
@@ -110,6 +114,10 @@ commands(
 commands(
     ("cl", (6, 13)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("cl", (6, 13)),
     baca.append_phantom_measure(),
 )
 
@@ -151,6 +159,10 @@ commands(
 commands(
     ("pf", (8, 13)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("pf", (8, 13)),
     baca.append_phantom_measure(),
 )
 
@@ -190,6 +202,10 @@ commands(
 commands(
     ("perc", (1, 6)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("perc", (1, 6)),
     baca.attach_first_segment_default_indicators(),
 )
 
@@ -206,6 +222,10 @@ commands(
 commands(
     ("perc", (10, 13)),
     library.make_sponge_rhythm(),
+)
+
+commands(
+    ("perc", (10, 13)),
     baca.append_phantom_measure(),
 )
 
@@ -264,6 +284,10 @@ commands(
 commands(
     ("vn", (9, 13)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (9, 13)),
     baca.append_phantom_measure(),
 )
 
@@ -303,6 +327,10 @@ commands(
 commands(
     ("va", (9, 13)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("va", (9, 13)),
     baca.append_phantom_measure(),
 )
 
@@ -342,6 +370,10 @@ commands(
 commands(
     ("vc", (9, 13)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (9, 13)),
     baca.append_phantom_measure(),
 )
 

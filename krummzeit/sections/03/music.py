@@ -134,6 +134,10 @@ commands(
 commands(
     ("ob", (1, 4)),
     library.make_pizzicato_rhythm(),
+)
+
+commands(
+    ("ob", (1, 4)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -226,6 +230,10 @@ commands(
 commands(
     ("cl", (1, 4)),
     library.make_white_rhythm([(3, 8)], abjad.RIGHT, do_not_burnish=True),
+)
+
+commands(
+    ("cl", (1, 4)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -262,6 +270,10 @@ commands(
 commands(
     ("cl", (36, 44)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("cl", (36, 44)),
     baca.append_phantom_measure(),
 )
 
@@ -298,6 +310,10 @@ commands(
 commands(
     ("pf", (1, 13)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("pf", (1, 13)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -374,6 +390,10 @@ commands(
 commands(
     ("pf", (36, 44)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("pf", (36, 44)),
     baca.append_phantom_measure(),
 )
 
@@ -390,6 +410,10 @@ commands(
 commands(
     ("perc", (1, 13)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("perc", (1, 13)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -466,6 +490,10 @@ commands(
 commands(
     ("perc", (34, 44)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("perc", (34, 44)),
     baca.append_phantom_measure(),
 )
 
@@ -522,6 +550,10 @@ commands(
 commands(
     ("vn", (1, 20)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vn", (1, 20)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -548,6 +580,10 @@ commands(
 commands(
     ("vn", (43, 44)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (43, 44)),
     baca.append_phantom_measure(),
 )
 
@@ -613,6 +649,10 @@ commands(
 commands(
     ("va", (1, 5)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("va", (1, 5)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -674,6 +714,10 @@ commands(
 commands(
     ("va", (43, 44)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("va", (43, 44)),
     baca.append_phantom_measure(),
 )
 
@@ -712,6 +756,10 @@ commands(
 commands(
     ("vc", (1, 5)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (1, 5)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -773,6 +821,10 @@ commands(
 commands(
     ("vc", (43, 44)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (43, 44)),
     baca.append_phantom_measure(),
 )
 

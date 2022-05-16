@@ -55,11 +55,15 @@ commands(
     baca.rehearsal_mark("H"),
 )
 
-# OBR
+# OB
 
 commands(
     ("ob", (1, 3)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("ob", (1, 3)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -71,14 +75,22 @@ commands(
 commands(
     ("ob", (8, 10)),
     library.make_hypermeter_tuplets([(3, 2)], counts=[2]),
+)
+
+commands(
+    ("ob", (8, 10)),
     baca.append_phantom_measure(),
 )
 
-# CLR
+# CL
 
 commands(
     ("cl", (1, 3)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("cl", (1, 3)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -95,14 +107,22 @@ commands(
 commands(
     ("cl", (8, 10)),
     library.make_hypermeter_tuplets([(1, 4)], counts=[2]),
+)
+
+commands(
+    ("cl", (8, 10)),
     baca.append_phantom_measure(),
 )
 
-# PFR
+# PF
 
 commands(
     ("pf", (1, 6)),
     library.make_opening_triplets(),
+)
+
+commands(
+    ("pf", (1, 6)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -114,14 +134,22 @@ commands(
 commands(
     ("pf", (9, 10)),
     library.make_hypermeter_tuplets([(3, 4)], counts=[2]),
+)
+
+commands(
+    ("pf", (9, 10)),
     baca.append_phantom_measure(),
 )
 
-# PERCR
+# PERC
 
 commands(
     ("perc", (1, 4)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("perc", (1, 4)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -140,14 +168,22 @@ commands(
 commands(
     ("perc", (9, 10)),
     library.make_hypermeter_tuplets([(1, 6)], counts=[2]),
+)
+
+commands(
+    ("perc", (9, 10)),
     baca.append_phantom_measure(),
 )
 
-# VNR
+# VN
 
 commands(
     ("vn", (1, 2)),
     library.make_hypermeter_tuplets([(3, 2)], [2]),
+)
+
+commands(
+    ("vn", (1, 2)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -166,14 +202,22 @@ commands(
 commands(
     ("vn", (7, 10)),
     library.make_hypermeter_tuplets([(3, 2)], [2]),
+)
+
+commands(
+    ("vn", (7, 10)),
     baca.append_phantom_measure(),
 )
 
-# VAR
+# VA
 
 commands(
     ("va", (1, 2)),
     library.make_hypermeter_tuplets([(1, 4)], [2]),
+)
+
+commands(
+    ("va", (1, 2)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -193,14 +237,22 @@ commands(
 commands(
     ("va", (7, 10)),
     library.make_hypermeter_tuplets([(1, 4)], [2]),
+)
+
+commands(
+    ("va", (7, 10)),
     baca.append_phantom_measure(),
 )
 
-# VCR
+# VC
 
 commands(
     ("vc", (1, 2)),
     library.make_hypermeter_tuplets([(2, 3)], [2]),
+)
+
+commands(
+    ("vc", (1, 2)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -220,6 +272,10 @@ commands(
 commands(
     ("vc", (7, 10)),
     library.make_hypermeter_tuplets([(2, 3)], [2]),
+)
+
+commands(
+    ("vc", (7, 10)),
     baca.append_phantom_measure(),
 )
 

@@ -47,53 +47,77 @@ commands(
     baca.bar_line("|.", lambda _: baca.select.skip(_, -1)),
 )
 
-# OBR
+# OB
 
 commands(
     ("ob", (1, 40)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("ob", (1, 40)),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("ob", (41, 48)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("ob", (41, 48)),
     baca.append_phantom_measure(),
 )
 
-# CLR
+# CL
 
 commands(
     ("cl", (1, 40)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("cl", (1, 40)),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("cl", (41, 48)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("cl", (41, 48)),
     baca.append_phantom_measure(),
 )
 
-# PFR
+# PF
 
 commands(
     "pf",
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    "pf",
     baca.reapply_persistent_indicators(),
     baca.append_phantom_measure(),
 )
 
-# PERCR
+# PERC
 
 commands(
     "perc",
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    "perc",
     baca.reapply_persistent_indicators(),
     baca.append_phantom_measure(),
 )
 
-# VNR
+# VN
 
 commands(
     ("vn", (1, 40)),
@@ -102,16 +126,24 @@ commands(
         extra_counts=[2, 2, 1, 2, 4, 6],
         split=[6, 18],
     ),
+)
+
+commands(
+    ("vn", (1, 40)),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vn", (41, 48)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (41, 48)),
     baca.append_phantom_measure(),
 )
 
-# VAR
+# VA
 
 commands(
     ("va", (1, 4)),
@@ -120,26 +152,41 @@ commands(
         extra_counts=[3, 3, 2, 3, 5, 7],
         split=[8, 10],
     ),
+)
+
+commands(
+    ("va", (1, 4)),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("va", (5, 48)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("va", (5, 48)),
     baca.append_phantom_measure(),
 )
 
-# VCR
+# VC
 
 commands(
     ("vc", (1, 24)),
     baca.make_repeat_tied_notes(),
+)
+commands(
+    ("vc", (1, 24)),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("vc", (25, 48)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", (25, 48)),
     baca.append_phantom_measure(),
 )
 

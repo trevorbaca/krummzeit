@@ -98,16 +98,11 @@ commands(
     baca.rehearsal_mark("A"),
 )
 
-# obr
+# OB
 
 commands(
     ("ob", (1, 22)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("ob", (1, 22)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -127,21 +122,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("ob", (38, 75)),
-    baca.append_phantom_measure(),
-)
-
-# clr
+# CL
 
 commands(
     ("cl", (1, 4)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("cl", (1, 4)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -183,32 +168,7 @@ commands(
     library.make_white_rhythm([(3, 8)]),
 )
 
-commands(
-    ("cl", (69, 75)),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    ("cl", 5),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
-    baca.markup(r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"),
-    library.margin_markup("Cl. (Eb)"),
-    baca.dynamic("mp"),
-)
-
-commands(
-    ("cl", (16, 22)),
-    baca.dynamic("f"),
-)
-
-commands(
-    ("cl", (69, 75)),
-    baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
-    baca.glissando(),
-    baca.dynamic("f"),
-)
-
-# pfr
+# PF
 
 commands(
     ("pf", (1, 11)),
@@ -220,7 +180,6 @@ commands(
         extra_counts=[3, 1, 0, 4],
         ties=abjad.index([1, 3, 4], 6),
     ),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -276,52 +235,11 @@ commands(
     ),
 )
 
-commands(
-    ("pf", (72, 75)),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    "pf",
-    baca.instrument(library.instruments["Harpsichord"]),
-    library.margin_markup("Hpschd."),
-)
-
-commands(
-    ("pf", (1, 22)),
-    baca.dls_staff_padding(6),
-    baca.tuplet_bracket_staff_padding(3),
-)
-
-commands(
-    ("pf", (23, 31)),
-    baca.dls_staff_padding(7),
-    baca.tuplet_bracket_staff_padding(4),
-)
-
-commands(
-    ("pf", (45, 46)),
-    baca.clef("bass"),
-    baca.instrument(library.instruments["Piano"]),
-    library.margin_markup("Pf."),
-)
-
-commands(
-    ("pf", (57, 75)),
-    baca.dls_staff_padding(7),
-    baca.tuplet_bracket_staff_padding(4),
-)
-
-# percr
+# PERC
 
 commands(
     ("perc", (1, 3)),
     library.make_sponge_rhythm(),
-)
-
-commands(
-    ("perc", (1, 3)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -349,39 +267,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("perc", (61, 75)),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    "perc",
-    baca.staff_position(0),
-    baca.accent(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-    ),
-)
-
-commands(
-    ("perc", (45, 60)),
-    baca.markup(r"\baca-tam-tam-markup"),
-    baca.dynamic("p-sempre"),
-    baca.new(
-        baca.laissez_vibrer(),
-        map=lambda _: baca.select.pheads(_),
-    ),
-)
-
-# vnr
+# VN
 
 commands(
     ("vn", (1, 7)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (1, 7)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -454,45 +344,11 @@ commands(
     baca.make_repeat_tied_notes(),
 )
 
-commands(
-    ("vn", (72, 75)),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    ("vn", (72, 75)),
-    baca.staff_lines(1),
-    baca.clef("percussion"),
-    baca.dynamic("mf"),
-    baca.instrument(library.instruments["Percussion"]),
-    baca.markup(
-        r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",
-    ),
-    baca.staff_position(0),
-)
-
-commands(
-    ("vn", (8, 11)),
-    baca.dynamic("mp"),
-    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
-)
-
-commands(
-    ("vn", (19, 22)),
-    baca.dynamic("f"),
-    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
-)
-
-# var
+# VA
 
 commands(
     ("va", (1, 11)),
     library.make_hypermeter_tuplets([(1, 4)]),
-)
-
-commands(
-    ("va", (1, 11)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -552,32 +408,7 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("va", (72, 75)),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    ("va", (1, 11)),
-    baca.pitches("d ctqs e dqs cqs b, cqs"),
-)
-
-commands(
-    ("va", (12, 22)),
-    baca.pitches("e dtqs f eqs dqs c dqs"),
-)
-
-commands(
-    ("va", (23, 28)),
-    baca.pitches("g ftqs a gqs fqs e fqs"),
-)
-
-commands(
-    ("va", 39),
-    baca.clef("alto"),
-)
-
-# vcr
+# VC
 
 commands(
     ("vc", (1, 11)),
@@ -639,6 +470,195 @@ commands(
     ("vc", (72, 75)),
     baca.make_mmrests(),
 )
+
+# phantom & reapply
+
+# ob
+
+commands(
+    ("ob", (1, 22)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("ob", (38, 75)),
+    baca.append_phantom_measure(),
+)
+
+# cl
+
+commands(
+    ("cl", (1, 4)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("cl", (69, 75)),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("cl", 5),
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    baca.markup(r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"),
+    library.margin_markup("Cl. (Eb)"),
+    baca.dynamic("mp"),
+)
+
+commands(
+    ("cl", (16, 22)),
+    baca.dynamic("f"),
+)
+
+commands(
+    ("cl", (69, 75)),
+    baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
+    baca.glissando(),
+    baca.dynamic("f"),
+)
+
+# pf
+
+commands(
+    ("pf", (1, 11)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("pf", (72, 75)),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "pf",
+    baca.instrument(library.instruments["Harpsichord"]),
+    library.margin_markup("Hpschd."),
+)
+
+commands(
+    ("pf", (1, 22)),
+    baca.dls_staff_padding(6),
+    baca.tuplet_bracket_staff_padding(3),
+)
+
+commands(
+    ("pf", (23, 31)),
+    baca.dls_staff_padding(7),
+    baca.tuplet_bracket_staff_padding(4),
+)
+
+commands(
+    ("pf", (45, 46)),
+    baca.clef("bass"),
+    baca.instrument(library.instruments["Piano"]),
+    library.margin_markup("Pf."),
+)
+
+commands(
+    ("pf", (57, 75)),
+    baca.dls_staff_padding(7),
+    baca.tuplet_bracket_staff_padding(4),
+)
+
+# perc
+
+commands(
+    ("perc", (1, 3)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("perc", (61, 75)),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    "perc",
+    baca.staff_position(0),
+    baca.accent(
+        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
+    ),
+)
+
+commands(
+    ("perc", (45, 60)),
+    baca.markup(r"\baca-tam-tam-markup"),
+    baca.dynamic("p-sempre"),
+    baca.new(
+        baca.laissez_vibrer(),
+        map=lambda _: baca.select.pheads(_),
+    ),
+)
+
+# vn
+
+commands(
+    ("vn", (1, 7)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vn", (72, 75)),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("vn", (72, 75)),
+    baca.staff_lines(1),
+    baca.clef("percussion"),
+    baca.dynamic("mf"),
+    baca.instrument(library.instruments["Percussion"]),
+    baca.markup(
+        r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",
+    ),
+    baca.staff_position(0),
+)
+
+commands(
+    ("vn", (8, 11)),
+    baca.dynamic("mp"),
+    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
+)
+
+commands(
+    ("vn", (19, 22)),
+    baca.dynamic("f"),
+    baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
+)
+
+# va
+
+commands(
+    ("va", (1, 11)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("va", (72, 75)),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("va", (1, 11)),
+    baca.pitches("d ctqs e dqs cqs b, cqs"),
+)
+
+commands(
+    ("va", (12, 22)),
+    baca.pitches("e dtqs f eqs dqs c dqs"),
+)
+
+commands(
+    ("va", (23, 28)),
+    baca.pitches("g ftqs a gqs fqs e fqs"),
+)
+
+commands(
+    ("va", 39),
+    baca.clef("alto"),
+)
+
+# vc
 
 commands(
     ("vc", (72, 75)),

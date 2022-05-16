@@ -129,16 +129,11 @@ commands(
     ),
 )
 
-# obr
+# OB
 
 commands(
     ("ob", (1, 4)),
     library.make_pizzicato_rhythm(),
-)
-
-commands(
-    ("ob", (1, 4)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -184,57 +179,13 @@ commands(
 commands(
     ("ob", (36, 44)),
     baca.make_mmrests(),
-    baca.append_phantom_measure(),
 )
 
-# ob
-
-commands(
-    "ob",
-    baca.dls_staff_padding(8),
-    baca.tuplet_bracket_staff_padding(4),
-)
-
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
-_pcs = _pcs.rotate(-121).retrograde().transpose(3).invert()
-_pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
-
-commands(
-    ("ob", (1, 35)),
-    baca.pitches(
-        _pcs,
-        allow_repeats=True,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    ),
-    library.displacement(),
-    library.register_wide(5),
-    library.color_fingerings(),
-    baca.new(
-        baca.trill_spanner(),
-        map=lambda _: [
-            x
-            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
-            if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
-        ],
-    ),
-    baca.dynamic("ff"),
-)
-
-commands(
-    ("ob", 24),
-    baca.dynamic("ff"),
-)
-
-# clr
+# CL
 
 commands(
     ("cl", (1, 4)),
     library.make_white_rhythm([(3, 8)], abjad.RIGHT, do_not_burnish=True),
-)
-
-commands(
-    ("cl", (1, 4)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -272,49 +223,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("cl", (36, 44)),
-    baca.append_phantom_measure(),
-)
-
-# cl
-
-commands(
-    "cl",
-    baca.dls_staff_padding(3),
-)
-
-commands(
-    ("cl", [(1, 4), (24, 30), (32, 35)]),
-    baca.new(
-        baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
-        match=0,
-    ),
-    baca.new(
-        baca.pitches("f'' eqs'' g'' fqs'' eqs'' d'' eqs''"),
-        baca.dynamic("f"),
-        match=1,
-    ),
-    baca.new(
-        baca.pitches("g'' dtqs'' a'' gqs'' fqs'' e'' fqs''"),
-        match=2,
-    ),
-    baca.new(
-        baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-    ),
-)
-
-# pfr
+# PF
 
 commands(
     ("pf", (1, 13)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("pf", (1, 13)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -392,29 +305,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("pf", (36, 44)),
-    baca.append_phantom_measure(),
-)
-
-# pf
-
-commands(
-    ("pf", (14, 35)),
-    baca.dls_staff_padding(6),
-    baca.tuplet_bracket_staff_padding(3),
-)
-
-# percr
+# PERC
 
 commands(
     ("perc", (1, 13)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("perc", (1, 13)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -492,6 +387,291 @@ commands(
     baca.make_repeat_tied_notes(),
 )
 
+# VN
+
+commands(
+    ("vn", (1, 20)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vn", 21),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (22, 28)),
+    library.make_pizzicato_rhythm(),
+)
+
+commands(
+    ("vn", (29, 35)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (36, 42)),
+    library.make_fused_expanse([(3, 2), (1, 1), (2, 1)]),
+)
+
+commands(
+    ("vn", (43, 44)),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 5)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", 6),
+    library.make_single_division_tuplets([(2, 1)]),
+)
+
+commands(
+    ("va", 7),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", 8),
+    library.make_single_division_tuplets([(1, 4)]),
+)
+
+commands(
+    ("va", 9),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", 10),
+    library.make_single_division_tuplets([(2, 1)]),
+)
+
+commands(
+    ("va", 11),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", 12),
+    library.make_single_division_tuplets([(1, 4)]),
+)
+
+commands(
+    ("va", 13),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (14, 23)),
+    library.make_single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
+)
+
+commands(
+    ("va", (24, 31)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (32, 42)),
+    library.make_fused_expanse([(1, 1), (2, 1), (3, 2)]),
+)
+
+commands(
+    ("va", (43, 44)),
+    baca.make_mmrests(),
+)
+
+# VC
+
+commands(
+    ("vc", (1, 5)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 6),
+    library.make_single_division_tuplets([(1, 4)]),
+)
+
+commands(
+    ("vc", 7),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 8),
+    library.make_single_division_tuplets([(2, 1)]),
+)
+
+commands(
+    ("vc", 9),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 10),
+    library.make_single_division_tuplets([(1, 4)]),
+)
+
+commands(
+    ("vc", 11),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 12),
+    library.make_single_division_tuplets([(2, 1)]),
+)
+
+commands(
+    ("vc", 13),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (14, 23)),
+    library.make_single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
+)
+
+commands(
+    ("vc", (24, 31)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (32, 42)),
+    library.make_fused_expanse([(2, 1), (3, 2), (1, 1)]),
+)
+
+commands(
+    ("vc", (43, 44)),
+    baca.make_mmrests(),
+)
+
+# phantom & reapply
+
+# ob
+
+commands(
+    ("ob", (1, 4)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("ob", (36, 44)),
+    baca.append_phantom_measure(),
+)
+
+# ob
+
+commands(
+    "ob",
+    baca.dls_staff_padding(8),
+    baca.tuplet_bracket_staff_padding(4),
+)
+
+_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+_pcs = _pcs.rotate(-121).retrograde().transpose(3).invert()
+_pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+
+commands(
+    ("ob", (1, 35)),
+    baca.pitches(
+        _pcs,
+        allow_repeats=True,
+        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+    ),
+    library.displacement(),
+    library.register_wide(5),
+    library.color_fingerings(),
+    baca.new(
+        baca.trill_spanner(),
+        map=lambda _: [
+            x
+            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
+            if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
+        ],
+    ),
+    baca.dynamic("ff"),
+)
+
+commands(
+    ("ob", 24),
+    baca.dynamic("ff"),
+)
+
+# cl
+
+commands(
+    ("cl", (1, 4)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("cl", (36, 44)),
+    baca.append_phantom_measure(),
+)
+
+# cl
+
+commands(
+    "cl",
+    baca.dls_staff_padding(3),
+)
+
+commands(
+    ("cl", [(1, 4), (24, 30), (32, 35)]),
+    baca.new(
+        baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
+        match=0,
+    ),
+    baca.new(
+        baca.pitches("f'' eqs'' g'' fqs'' eqs'' d'' eqs''"),
+        baca.dynamic("f"),
+        match=1,
+    ),
+    baca.new(
+        baca.pitches("g'' dtqs'' a'' gqs'' fqs'' e'' fqs''"),
+        match=2,
+    ),
+    baca.new(
+        baca.glissando(),
+        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
+    ),
+)
+
+# pf
+
+commands(
+    ("pf", (1, 13)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("pf", (36, 44)),
+    baca.append_phantom_measure(),
+)
+
+# pf
+
+commands(
+    ("pf", (14, 35)),
+    baca.dls_staff_padding(6),
+    baca.tuplet_bracket_staff_padding(3),
+)
+
+# perc
+
+commands(
+    ("perc", (1, 13)),
+    baca.reapply_persistent_indicators(),
+)
+
 commands(
     ("perc", (34, 44)),
     baca.append_phantom_measure(),
@@ -545,41 +725,11 @@ commands(
     baca.dls_staff_padding(5),
 )
 
-# vnr
-
-commands(
-    ("vn", (1, 20)),
-    baca.make_repeat_tied_notes(),
-)
+# vn
 
 commands(
     ("vn", (1, 20)),
     baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vn", 21),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (22, 28)),
-    library.make_pizzicato_rhythm(),
-)
-
-commands(
-    ("vn", (29, 35)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (36, 42)),
-    library.make_fused_expanse([(3, 2), (1, 1), (2, 1)]),
-)
-
-commands(
-    ("vn", (43, 44)),
-    baca.make_mmrests(),
 )
 
 commands(
@@ -644,76 +794,11 @@ commands(
     baca.dls_staff_padding(6),
 )
 
-# var
-
-commands(
-    ("va", (1, 5)),
-    baca.make_mmrests(),
-)
+# va
 
 commands(
     ("va", (1, 5)),
     baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("va", 6),
-    library.make_single_division_tuplets([(2, 1)]),
-)
-
-commands(
-    ("va", 7),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", 8),
-    library.make_single_division_tuplets([(1, 4)]),
-)
-
-commands(
-    ("va", 9),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", 10),
-    library.make_single_division_tuplets([(2, 1)]),
-)
-
-commands(
-    ("va", 11),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", 12),
-    library.make_single_division_tuplets([(1, 4)]),
-)
-
-commands(
-    ("va", 13),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (14, 23)),
-    library.make_single_division_tuplets([(2, 1), (1,), (1, 4), (1,)]),
-)
-
-commands(
-    ("va", (24, 31)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (32, 42)),
-    library.make_fused_expanse([(1, 1), (2, 1), (3, 2)]),
-)
-
-commands(
-    ("va", (43, 44)),
-    baca.make_mmrests(),
 )
 
 commands(
@@ -751,76 +836,11 @@ commands(
     baca.dls_staff_padding(5),
 )
 
-# vcr
-
-commands(
-    ("vc", (1, 5)),
-    baca.make_mmrests(),
-)
+# vc
 
 commands(
     ("vc", (1, 5)),
     baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vc", 6),
-    library.make_single_division_tuplets([(1, 4)]),
-)
-
-commands(
-    ("vc", 7),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", 8),
-    library.make_single_division_tuplets([(2, 1)]),
-)
-
-commands(
-    ("vc", 9),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", 10),
-    library.make_single_division_tuplets([(1, 4)]),
-)
-
-commands(
-    ("vc", 11),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", 12),
-    library.make_single_division_tuplets([(2, 1)]),
-)
-
-commands(
-    ("vc", 13),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (14, 23)),
-    library.make_single_division_tuplets([(1, 4), (1,), (2, 1), (1,)]),
-)
-
-commands(
-    ("vc", (24, 31)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (32, 42)),
-    library.make_fused_expanse([(2, 1), (3, 2), (1, 1)]),
-)
-
-commands(
-    ("vc", (43, 44)),
-    baca.make_mmrests(),
 )
 
 commands(

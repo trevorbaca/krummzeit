@@ -78,28 +78,14 @@ commands(
     ),
 )
 
-# ob
+# OB
 
 commands(
     "ob",
     baca.make_mmrests(),
 )
 
-commands(
-    "ob",
-    baca.append_phantom_measure(),
-)
-
-# ob
-
-commands(
-    "ob",
-    baca.attach_first_segment_default_indicators(),
-    library.margin_markup("Ob."),
-    baca.start_markup("Oboe", hcenter_in=16),
-)
-
-# cl
+# CL
 
 commands(
     ("cl", (1, 3)),
@@ -116,25 +102,7 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("cl", (6, 13)),
-    baca.append_phantom_measure(),
-)
-
-commands(
-    ("cl", (4, 5)),
-    baca.pitch("B1"),
-    baca.dynamic("ppp"),
-)
-
-commands(
-    "cl",
-    baca.attach_first_segment_default_indicators(),
-    library.margin_markup("B. cl."),
-    baca.start_markup("Bass clarinet", hcenter_in=16),
-)
-
-# pf
+# PF
 
 commands(
     ("pf", (1, 3)),
@@ -160,6 +128,161 @@ commands(
     ("pf", (8, 13)),
     baca.make_mmrests(),
 )
+
+# PERC
+
+commands(
+    ("perc", (1, 6)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("perc", 7),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("perc", (8, 9)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("perc", (10, 13)),
+    library.make_sponge_rhythm(),
+)
+
+# VN
+
+commands(
+    ("vn", (1, 2)),
+    library.make_opening_triplets(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
+    ),
+)
+
+commands(
+    ("vn", 3),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (4, 8)),
+    library.make_glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("vn", (9, 13)),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 2)),
+    library.make_opening_triplets(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
+    ),
+)
+
+commands(
+    ("va", 3),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (4, 8)),
+    library.make_glissando_rhythm(
+        [(2, 1), (1, 1, 1), (2, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("va", (9, 13)),
+    baca.make_mmrests(),
+)
+
+# VC
+
+commands(
+    ("vc", (1, 2)),
+    library.make_opening_triplets(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplet(_, 0),
+        ),
+    ),
+)
+
+commands(
+    ("vc", 3),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (4, 8)),
+    library.make_glissando_rhythm(
+        [(1, 1, 1), (2, 1), (2, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("vc", (9, 13)),
+    baca.make_mmrests(),
+)
+
+# phantom & reapply
+
+# ob
+
+commands(
+    "ob",
+    baca.append_phantom_measure(),
+)
+
+# ob
+
+commands(
+    "ob",
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("Ob."),
+    baca.start_markup("Oboe", hcenter_in=16),
+)
+
+# cl
+
+commands(
+    ("cl", (6, 13)),
+    baca.append_phantom_measure(),
+)
+
+commands(
+    ("cl", (4, 5)),
+    baca.pitch("B1"),
+    baca.dynamic("ppp"),
+)
+
+commands(
+    "cl",
+    baca.attach_first_segment_default_indicators(),
+    library.margin_markup("B. cl."),
+    baca.start_markup("Bass clarinet", hcenter_in=16),
+)
+
+# pf
 
 commands(
     ("pf", (8, 13)),
@@ -201,27 +324,7 @@ commands(
 
 commands(
     ("perc", (1, 6)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("perc", (1, 6)),
     baca.attach_first_segment_default_indicators(),
-)
-
-commands(
-    ("perc", 7),
-    baca.make_repeat_tied_notes(),
-)
-
-commands(
-    ("perc", (8, 9)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("perc", (10, 13)),
-    library.make_sponge_rhythm(),
 )
 
 commands(
@@ -258,35 +361,6 @@ commands(
 # vn
 
 commands(
-    ("vn", (1, 2)),
-    library.make_opening_triplets(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, 0),
-        ),
-    ),
-)
-
-commands(
-    ("vn", 3),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (4, 8)),
-    library.make_glissando_rhythm(
-        [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("vn", (9, 13)),
-    baca.make_mmrests(),
-)
-
-commands(
     ("vn", (9, 13)),
     baca.append_phantom_measure(),
 )
@@ -301,35 +375,6 @@ commands(
 # va
 
 commands(
-    ("va", (1, 2)),
-    library.make_opening_triplets(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, 0),
-        ),
-    ),
-)
-
-commands(
-    ("va", 3),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (4, 8)),
-    library.make_glissando_rhythm(
-        [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("va", (9, 13)),
-    baca.make_mmrests(),
-)
-
-commands(
     ("va", (9, 13)),
     baca.append_phantom_measure(),
 )
@@ -342,35 +387,6 @@ commands(
 )
 
 # vc
-
-commands(
-    ("vc", (1, 2)),
-    library.make_opening_triplets(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, 0),
-        ),
-    ),
-)
-
-commands(
-    ("vc", 3),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (4, 8)),
-    library.make_glissando_rhythm(
-        [(1, 1, 1), (2, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("vc", (9, 13)),
-    baca.make_mmrests(),
-)
 
 commands(
     ("vc", (9, 13)),

@@ -130,16 +130,11 @@ commands(
     ),
 )
 
-# obr
+# OB
 
 commands(
     ("ob", (1, 13)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("ob", (1, 13)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -152,26 +147,7 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("ob", (17, 19)),
-    baca.append_phantom_measure(),
-)
-
-# ob
-
-commands(
-    ("ob", (14, 16)),
-    baca.pitch("B3"),
-)
-
-commands(
-    ("ob", (14, 16)),
-    baca.stem_up(),
-    baca.dynamic("fff"),
-    baca.dls_staff_padding(5),
-)
-
-# clr
+# CL
 
 commands(
     ("cl", (1, 13)),
@@ -179,31 +155,11 @@ commands(
 )
 
 commands(
-    ("cl", (1, 13)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
     ("cl", (14, 19)),
     baca.make_repeat_tied_notes(),
 )
 
-commands(
-    ("cl", (14, 19)),
-    baca.append_phantom_measure(),
-)
-
-# cl
-
-commands(
-    ("cl", (14, 19)),
-    baca.instrument(library.instruments["BassClarinet"]),
-    baca.pitch("B1"),
-    baca.stem_up(),
-    baca.dynamic("ppp"),
-)
-
-# pfr
+# PF
 
 commands(
     ("pf", 1),
@@ -211,11 +167,6 @@ commands(
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
     ),
-)
-
-commands(
-    ("pf", 1),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -269,54 +220,7 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("pf", (17, 19)),
-    baca.append_phantom_measure(),
-)
-
-# pf
-
-commands(
-    ("pf", 1),
-    baca.hairpin("ff > pp"),
-    baca.ottava(),
-    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-)
-
-commands(
-    ("pf", 3),
-    baca.hairpin("pp < ff"),
-    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-)
-
-commands(
-    ("pf", 5),
-    baca.clef("bass"),
-    baca.hairpin("ff > pp"),
-    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-)
-
-commands(
-    ("pf", (9, 12)),
-    baca.markup(r"\baca-senza-pedale-markup"),
-    library.replace_with_clusters("low"),
-    baca.ottava_bassa(),
-    baca.dynamic("fff"),
-)
-
-commands(
-    ("pf", (14, 16)),
-    library.replace_with_clusters("low"),
-    baca.ottava_bassa(),
-    baca.dynamic("fff"),
-)
-
-commands(
-    ("pf", (9, 16)),
-    baca.dls_staff_padding(10),
-)
-
-# percr
+# PERC
 
 commands(
     ("perc", (1, 9)),
@@ -333,40 +237,11 @@ commands(
     baca.make_repeated_duration_notes([(1, 4)]),
 )
 
-commands(
-    ("perc", (14, 19)),
-    baca.append_phantom_measure(),
-)
-
-# perc
-
-commands(
-    ("perc", (1, 9)),
-    baca.reapply_persistent_indicators(),
-    baca.dynamic("ppp-ancora"),
-    baca.markup(r"\baca-snare-drum-markup"),
-    baca.staff_position(0),
-    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-)
-
-commands(
-    ("perc", (14, 19)),
-    baca.markup(r"\baca-tam-tam-markup"),
-    baca.staff_position(0),
-    baca.dynamic("pp-sempre"),
-    baca.dls_staff_padding(6),
-)
-
-# vnr
+# VN
 
 commands(
     ("vn", (1, 4)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (1, 4)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -418,63 +293,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("vn", (17, 19)),
-    baca.append_phantom_measure(),
-)
-
-# vn
-
-commands(
-    ("vn", 5),
-    baca.hairpin(
-        "ff > pp",
-        selector=lambda _: baca.select.tleaves(
-            _,
-        ),
-    ),
-    baca.ottava(),
-    baca.markup(r"\baca-pizz-markup"),
-    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-)
-
-commands(
-    ("vn", 7),
-    baca.hairpin(
-        "pp < ff",
-        selector=lambda _: baca.select.tleaves(
-            _,
-        ),
-    ),
-    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-)
-
-commands(
-    ("vn", 9),
-    baca.hairpin(
-        "ff > pp",
-        selector=lambda _: baca.select.tleaves(
-            _,
-        ),
-    ),
-    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-)
-
-commands(
-    ("vn", (14, 16)),
-    baca.pitch("fs"),
-)
-
-# var
+# VA
 
 commands(
     ("va", (1, 4)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("va", (1, 4)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -536,6 +359,253 @@ commands(
     baca.make_mmrests(),
 )
 
+# VC
+
+commands(
+    ("vc", (1, 4)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 5),
+    library.make_silver_points_rhythm(
+        [(7, 2)],
+        tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
+    ),
+)
+
+commands(
+    ("vc", 6),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 7),
+    library.make_silver_points_rhythm(
+        [(7, 2)],
+        tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
+    ),
+)
+
+commands(
+    ("vc", 8),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 9),
+    library.make_silver_points_rhythm(
+        [(7, 2)],
+        tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
+    ),
+)
+
+commands(
+    ("vc", (10, 13)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (14, 16)),
+    baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("vc", (17, 19)),
+    baca.make_mmrests(),
+)
+
+# phantom & reapply
+
+# ob
+
+commands(
+    ("ob", (1, 13)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("ob", (17, 19)),
+    baca.append_phantom_measure(),
+)
+
+# ob
+
+commands(
+    ("ob", (14, 16)),
+    baca.pitch("B3"),
+)
+
+commands(
+    ("ob", (14, 16)),
+    baca.stem_up(),
+    baca.dynamic("fff"),
+    baca.dls_staff_padding(5),
+)
+
+# cl
+
+commands(
+    ("cl", (1, 13)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("cl", (14, 19)),
+    baca.append_phantom_measure(),
+)
+
+# cl
+
+commands(
+    ("cl", (14, 19)),
+    baca.instrument(library.instruments["BassClarinet"]),
+    baca.pitch("B1"),
+    baca.stem_up(),
+    baca.dynamic("ppp"),
+)
+
+# pf
+
+commands(
+    ("pf", 1),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("pf", (17, 19)),
+    baca.append_phantom_measure(),
+)
+
+# pf
+
+commands(
+    ("pf", 1),
+    baca.hairpin("ff > pp"),
+    baca.ottava(),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
+)
+
+commands(
+    ("pf", 3),
+    baca.hairpin("pp < ff"),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
+)
+
+commands(
+    ("pf", 5),
+    baca.clef("bass"),
+    baca.hairpin("ff > pp"),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
+)
+
+commands(
+    ("pf", (9, 12)),
+    baca.markup(r"\baca-senza-pedale-markup"),
+    library.replace_with_clusters("low"),
+    baca.ottava_bassa(),
+    baca.dynamic("fff"),
+)
+
+commands(
+    ("pf", (14, 16)),
+    library.replace_with_clusters("low"),
+    baca.ottava_bassa(),
+    baca.dynamic("fff"),
+)
+
+commands(
+    ("pf", (9, 16)),
+    baca.dls_staff_padding(10),
+)
+
+# perc
+
+commands(
+    ("perc", (14, 19)),
+    baca.append_phantom_measure(),
+)
+
+# perc
+
+commands(
+    ("perc", (1, 9)),
+    baca.reapply_persistent_indicators(),
+    baca.dynamic("ppp-ancora"),
+    baca.markup(r"\baca-snare-drum-markup"),
+    baca.staff_position(0),
+    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+)
+
+commands(
+    ("perc", (14, 19)),
+    baca.markup(r"\baca-tam-tam-markup"),
+    baca.staff_position(0),
+    baca.dynamic("pp-sempre"),
+    baca.dls_staff_padding(6),
+)
+
+# vn
+
+commands(
+    ("vn", (1, 4)),
+    baca.reapply_persistent_indicators(),
+)
+
+commands(
+    ("vn", (17, 19)),
+    baca.append_phantom_measure(),
+)
+
+# vn
+
+commands(
+    ("vn", 5),
+    baca.hairpin(
+        "ff > pp",
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
+    ),
+    baca.ottava(),
+    baca.markup(r"\baca-pizz-markup"),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
+)
+
+commands(
+    ("vn", 7),
+    baca.hairpin(
+        "pp < ff",
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
+    ),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
+)
+
+commands(
+    ("vn", 9),
+    baca.hairpin(
+        "ff > pp",
+        selector=lambda _: baca.select.tleaves(
+            _,
+        ),
+    ),
+    baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
+)
+
+commands(
+    ("vn", (14, 16)),
+    baca.pitch("fs"),
+)
+
+# va
+
+commands(
+    ("va", (1, 4)),
+    baca.reapply_persistent_indicators(),
+)
+
 commands(
     ("va", (17, 19)),
     baca.append_phantom_measure(),
@@ -594,65 +664,11 @@ commands(
     ),
 )
 
-# vcr
-
-commands(
-    ("vc", (1, 4)),
-    baca.make_mmrests(),
-)
+# vc
 
 commands(
     ("vc", (1, 4)),
     baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vc", 5),
-    library.make_silver_points_rhythm(
-        [(7, 2)],
-        tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
-    ),
-)
-
-commands(
-    ("vc", 6),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", 7),
-    library.make_silver_points_rhythm(
-        [(7, 2)],
-        tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
-    ),
-)
-
-commands(
-    ("vc", 8),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", 9),
-    library.make_silver_points_rhythm(
-        [(7, 2)],
-        tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
-    ),
-)
-
-commands(
-    ("vc", (10, 13)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (14, 16)),
-    baca.make_repeat_tied_notes(),
-)
-
-commands(
-    ("vc", (17, 19)),
-    baca.make_mmrests(),
 )
 
 commands(

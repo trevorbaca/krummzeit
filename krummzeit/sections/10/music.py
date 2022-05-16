@@ -86,25 +86,37 @@ commands(
     ),
 )
 
-# OBR
+# OB
 
 commands(
     ("ob", 1),
     library.make_hypermeter_tuplets([(3, 2)]),
+)
+
+commands(
+    ("ob", 1),
     baca.reapply_persistent_indicators(),
 )
 
 commands(
     ("ob", (2, 23)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("ob", (2, 23)),
     baca.append_phantom_measure(),
 )
 
-# CLR
+# CL
 
 commands(
     ("cl", 1),
     library.make_hypermeter_tuplets([(1, 4)]),
+)
+
+commands(
+    ("cl", 1),
     baca.reapply_persistent_indicators(),
 )
 
@@ -121,14 +133,22 @@ commands(
 commands(
     ("cl", (15, 23)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("cl", (15, 23)),
     baca.append_phantom_measure(),
 )
 
-# PFR
+# PF
 
 commands(
     ("pf", 1),
     library.make_hypermeter_tuplets([(3, 4)]),
+)
+
+commands(
+    ("pf", 1),
     baca.reapply_persistent_indicators(),
 )
 
@@ -163,14 +183,22 @@ commands(
 commands(
     ("pf", 23),
     baca.make_mmrests(),
+)
+
+commands(
+    ("pf", 23),
     baca.append_phantom_measure(),
 )
 
-# PERCR
+# PERC
 
 commands(
     ("perc", 1),
     library.make_hypermeter_tuplets([(1, 6)]),
+)
+
+commands(
+    ("perc", 1),
     baca.reapply_persistent_indicators(),
 )
 
@@ -187,10 +215,14 @@ commands(
 commands(
     ("perc", 23),
     baca.make_mmrests(),
+)
+
+commands(
+    ("perc", 23),
     baca.append_phantom_measure(),
 )
 
-# VNR
+# VN
 
 commands(
     ("vn", (1, 3)),
@@ -200,6 +232,10 @@ commands(
         ),
         remainder=abjad.RIGHT,
     ),
+)
+
+commands(
+    ("vn", (1, 3)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -226,10 +262,14 @@ commands(
 commands(
     ("vn", 23),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vn", 23),
     baca.append_phantom_measure(),
 )
 
-# VAR
+# VA
 
 commands(
     ("va", (1, 3)),
@@ -239,6 +279,10 @@ commands(
         ),
         remainder=abjad.RIGHT,
     ),
+)
+
+commands(
+    ("va", (1, 3)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -265,10 +309,14 @@ commands(
 commands(
     ("va", 23),
     baca.make_mmrests(),
+)
+
+commands(
+    ("va", 23),
     baca.append_phantom_measure(),
 )
 
-# VCR
+# VC
 
 commands(
     ("vc", (1, 3)),
@@ -278,6 +326,10 @@ commands(
         ),
         remainder=abjad.RIGHT,
     ),
+)
+
+commands(
+    ("vc", (1, 3)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -304,6 +356,10 @@ commands(
 commands(
     ("vc", 23),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc", 23),
     baca.append_phantom_measure(),
 )
 

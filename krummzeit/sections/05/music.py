@@ -77,6 +77,10 @@ commands(
 commands(
     ("ob", (1, 10)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("ob", (1, 10)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -98,6 +102,10 @@ commands(
 commands(
     ("ob", (45, 48)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("ob", (45, 48)),
     baca.append_phantom_measure(),
 )
 
@@ -123,6 +131,10 @@ commands(
 commands(
     ("cl", (1, 10)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("cl", (1, 10)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -154,6 +166,10 @@ commands(
 commands(
     ("cl", (45, 48)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("cl", (45, 48)),
     baca.append_phantom_measure(),
 )
 
@@ -194,6 +210,10 @@ commands(
 commands(
     ("pf", (1, 7)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("pf", (1, 7)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -256,6 +276,10 @@ commands(
 commands(
     ("pf", (45, 48)),
     library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("pf", (45, 48)),
     baca.append_phantom_measure(),
 )
 
@@ -301,6 +325,10 @@ commands(
 commands(
     ("perc", (1, 3)),
     library.make_incise_attacks(),
+)
+
+commands(
+    ("perc", (1, 3)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -342,6 +370,10 @@ commands(
 commands(
     ("perc", (43, 48)),
     baca.make_repeat_tied_notes(),
+)
+
+commands(
+    ("perc", (43, 48)),
     baca.append_phantom_measure(),
 )
 
@@ -418,6 +450,10 @@ commands(
 commands(
     ("vn", (1, 13)),
     library.make_right_remainder_quarters(),
+)
+
+commands(
+    ("vn", (1, 13)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -471,6 +507,10 @@ commands(
 commands(
     ("vn", (45, 48)),
     library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("vn", (45, 48)),
     baca.append_phantom_measure(),
 )
 
@@ -479,6 +519,10 @@ commands(
 commands(
     ("va", (1, 7)),
     library.make_right_remainder_quarters(),
+)
+
+commands(
+    ("va", (1, 7)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -532,6 +576,10 @@ commands(
 commands(
     ("va", (45, 48)),
     library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("va", (45, 48)),
     baca.append_phantom_measure(),
 )
 
@@ -549,6 +597,10 @@ commands(
 commands(
     ("vc", (1, 13)),
     library.make_right_remainder_quarters(),
+)
+
+commands(
+    ("vc", (1, 13)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -603,6 +655,10 @@ commands(
 commands(
     ("vc", (45, 48)),
     library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("vc", (45, 48)),
     baca.append_phantom_measure(),
 )
 

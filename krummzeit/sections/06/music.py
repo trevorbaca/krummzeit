@@ -99,6 +99,10 @@ commands(
 commands(
     ("ob", (1, 8)),
     library.make_oboe_trill_rhythm(),
+)
+
+commands(
+    ("ob", (1, 8)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -130,6 +134,10 @@ commands(
 commands(
     ("ob", 35),
     baca.make_mmrests(),
+)
+
+commands(
+    ("ob", 35),
     baca.append_phantom_measure(),
 )
 
@@ -177,6 +185,10 @@ commands(
 commands(
     ("cl", (1, 10)),
     baca.make_repeated_duration_notes([(16, 4)]),
+)
+
+commands(
+    ("cl", (1, 10)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -223,6 +235,10 @@ commands(
 commands(
     ("cl", (33, 35)),
     library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+commands(
+    ("cl", (33, 35)),
     baca.append_phantom_measure(),
 )
 
@@ -294,6 +310,10 @@ commands(
 commands(
     ("pf", (1, 8)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("pf", (1, 8)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -353,6 +373,10 @@ commands(
 commands(
     ("pf", 35),
     baca.make_mmrests(),
+)
+
+commands(
+    ("pf", 35),
     baca.append_phantom_measure(),
 )
 
@@ -452,6 +476,10 @@ commands(
 commands(
     ("perc", 35),
     baca.make_mmrests(),
+)
+
+commands(
+    ("perc", 35),
     baca.append_phantom_measure(),
 )
 
@@ -497,6 +525,10 @@ commands(
 commands(
     ("vn", (1, 8)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (1, 8)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -533,6 +565,10 @@ commands(
 commands(
     ("vn", 35),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vn", 35),
     baca.append_phantom_measure(),
 )
 
@@ -583,6 +619,10 @@ commands(
 commands(
     ("va", (1, 8)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("va", (1, 8)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -634,6 +674,10 @@ commands(
 commands(
     ("va", (33, 35)),
     library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+commands(
+    ("va", (33, 35)),
     baca.append_phantom_measure(),
 )
 
@@ -660,6 +704,10 @@ commands(
 commands(
     ("vc", (1, 8)),
     baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (1, 8)),
     baca.reapply_persistent_indicators(),
 )
 
@@ -711,6 +759,10 @@ commands(
 commands(
     ("vc", (33, 35)),
     library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+commands(
+    ("vc", (33, 35)),
     baca.append_phantom_measure(),
 )
 

@@ -246,28 +246,23 @@ commands(
 
 # phantom & reapply
 
-# ob
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
 
 commands(
-    "ob",
+    music_voice_names,
     baca.append_phantom_measure(),
+    baca.attach_first_segment_default_indicators(),
 )
 
 # ob
 
 commands(
     "ob",
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("Ob."),
     baca.start_markup("Oboe", hcenter_in=16),
 )
 
 # cl
-
-commands(
-    ("cl", (6, 13)),
-    baca.append_phantom_measure(),
-)
 
 commands(
     ("cl", (4, 5)),
@@ -277,7 +272,6 @@ commands(
 
 commands(
     "cl",
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("B. cl."),
     baca.start_markup("Bass clarinet", hcenter_in=16),
 )
@@ -285,13 +279,7 @@ commands(
 # pf
 
 commands(
-    ("pf", (8, 13)),
-    baca.append_phantom_measure(),
-)
-
-commands(
     "pf",
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("Pf."),
     baca.start_markup("Piano", hcenter_in=16),
     baca.clef("bass"),
@@ -323,16 +311,6 @@ commands(
 # perc
 
 commands(
-    ("perc", (1, 6)),
-    baca.attach_first_segment_default_indicators(),
-)
-
-commands(
-    ("perc", (10, 13)),
-    baca.append_phantom_measure(),
-)
-
-commands(
     "perc",
     library.margin_markup("Perc."),
     baca.start_markup("Percussion", hcenter_in=16),
@@ -361,13 +339,7 @@ commands(
 # vn
 
 commands(
-    ("vn", (9, 13)),
-    baca.append_phantom_measure(),
-)
-
-commands(
     "vn",
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("Vn."),
     baca.start_markup("Violin", hcenter_in=16),
 )
@@ -375,13 +347,7 @@ commands(
 # va
 
 commands(
-    ("va", (9, 13)),
-    baca.append_phantom_measure(),
-)
-
-commands(
     "va",
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("Va."),
     baca.start_markup("Viola", hcenter_in=16),
 )
@@ -389,13 +355,7 @@ commands(
 # vc
 
 commands(
-    ("vc", (9, 13)),
-    baca.append_phantom_measure(),
-)
-
-commands(
     "vc",
-    baca.attach_first_segment_default_indicators(),
     library.margin_markup("Vc."),
     baca.start_markup("Cello", hcenter_in=16),
 )

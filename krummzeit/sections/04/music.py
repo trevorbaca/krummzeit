@@ -417,16 +417,12 @@ commands(
 
 # phantom & reapply
 
-# ob
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
 
 commands(
-    ("ob", (1, 13)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("ob", (17, 19)),
+    music_voice_names,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
 
 # ob
@@ -446,35 +442,11 @@ commands(
 # cl
 
 commands(
-    ("cl", (1, 13)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("cl", (14, 19)),
-    baca.append_phantom_measure(),
-)
-
-# cl
-
-commands(
     ("cl", (14, 19)),
     baca.instrument(library.instruments["BassClarinet"]),
     baca.pitch("B1"),
     baca.stem_up(),
     baca.dynamic("ppp"),
-)
-
-# pf
-
-commands(
-    ("pf", 1),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("pf", (17, 19)),
-    baca.append_phantom_measure(),
 )
 
 # pf
@@ -522,15 +494,7 @@ commands(
 # perc
 
 commands(
-    ("perc", (14, 19)),
-    baca.append_phantom_measure(),
-)
-
-# perc
-
-commands(
     ("perc", (1, 9)),
-    baca.reapply_persistent_indicators(),
     baca.dynamic("ppp-ancora"),
     baca.markup(r"\baca-snare-drum-markup"),
     baca.staff_position(0),
@@ -543,18 +507,6 @@ commands(
     baca.staff_position(0),
     baca.dynamic("pp-sempre"),
     baca.dls_staff_padding(6),
-)
-
-# vn
-
-commands(
-    ("vn", (1, 4)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vn", (17, 19)),
-    baca.append_phantom_measure(),
 )
 
 # vn
@@ -597,18 +549,6 @@ commands(
 commands(
     ("vn", (14, 16)),
     baca.pitch("fs"),
-)
-
-# va
-
-commands(
-    ("va", (1, 4)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("va", (17, 19)),
-    baca.append_phantom_measure(),
 )
 
 # va
@@ -662,18 +602,6 @@ commands(
         "bf,",
         selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
-)
-
-# vc
-
-commands(
-    ("vc", (1, 4)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vc", (17, 19)),
-    baca.append_phantom_measure(),
 )
 
 # vc

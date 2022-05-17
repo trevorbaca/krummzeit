@@ -431,16 +431,12 @@ commands(
 
 # phantom & reapply
 
-# ob
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
 
 commands(
-    ("ob", (1, 10)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("ob", (45, 48)),
+    music_voice_names,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
 
 # ob
@@ -458,18 +454,6 @@ commands(
         "D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5",
         selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
-)
-
-# clr
-
-commands(
-    ("cl", (1, 10)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("cl", (45, 48)),
-    baca.append_phantom_measure(),
 )
 
 # cl
@@ -502,18 +486,6 @@ commands(
     baca.pitches("F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5"),
     baca.dynamic("mf"),
     library.color_fingerings(),
-)
-
-# pfr
-
-commands(
-    ("pf", (1, 7)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("pf", (45, 48)),
-    baca.append_phantom_measure(),
 )
 
 # pf
@@ -551,18 +523,6 @@ commands(
     library.replace_with_clusters("tenor"),
     baca.dynamic("mp"),
     baca.dls_staff_padding(6),
-)
-
-# percr
-
-commands(
-    ("perc", (1, 3)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("perc", (43, 48)),
-    baca.append_phantom_measure(),
 )
 
 # perc
@@ -633,30 +593,6 @@ commands(
     ),
 )
 
-# vnr
-
-commands(
-    ("vn", (1, 13)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vn", (45, 48)),
-    baca.append_phantom_measure(),
-)
-
-# var
-
-commands(
-    ("va", (1, 7)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("va", (45, 48)),
-    baca.append_phantom_measure(),
-)
-
 # va
 
 commands(
@@ -664,18 +600,6 @@ commands(
     baca.beam_positions(-4),
     baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
-)
-
-# vcr
-
-commands(
-    ("vc", (1, 13)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vc", (45, 48)),
-    baca.append_phantom_measure(),
 )
 
 # vn, va, vc (1, 13)

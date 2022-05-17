@@ -63,11 +63,6 @@ commands(
 )
 
 commands(
-    ("ob", (1, 3)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
     ("ob", (4, 7)),
     baca.make_repeat_tied_notes(),
 )
@@ -77,21 +72,11 @@ commands(
     library.make_hypermeter_tuplets([(3, 2)], counts=[2]),
 )
 
-commands(
-    ("ob", (8, 10)),
-    baca.append_phantom_measure(),
-)
-
 # CL
 
 commands(
     ("cl", (1, 3)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("cl", (1, 3)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -109,21 +94,11 @@ commands(
     library.make_hypermeter_tuplets([(1, 4)], counts=[2]),
 )
 
-commands(
-    ("cl", (8, 10)),
-    baca.append_phantom_measure(),
-)
-
 # PF
 
 commands(
     ("pf", (1, 6)),
     library.make_opening_triplets(),
-)
-
-commands(
-    ("pf", (1, 6)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -136,21 +111,11 @@ commands(
     library.make_hypermeter_tuplets([(3, 4)], counts=[2]),
 )
 
-commands(
-    ("pf", (9, 10)),
-    baca.append_phantom_measure(),
-)
-
 # PERC
 
 commands(
     ("perc", (1, 4)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("perc", (1, 4)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -170,21 +135,11 @@ commands(
     library.make_hypermeter_tuplets([(1, 6)], counts=[2]),
 )
 
-commands(
-    ("perc", (9, 10)),
-    baca.append_phantom_measure(),
-)
-
 # VN
 
 commands(
     ("vn", (1, 2)),
     library.make_hypermeter_tuplets([(3, 2)], [2]),
-)
-
-commands(
-    ("vn", (1, 2)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -204,21 +159,11 @@ commands(
     library.make_hypermeter_tuplets([(3, 2)], [2]),
 )
 
-commands(
-    ("vn", (7, 10)),
-    baca.append_phantom_measure(),
-)
-
 # VA
 
 commands(
     ("va", (1, 2)),
     library.make_hypermeter_tuplets([(1, 4)], [2]),
-)
-
-commands(
-    ("va", (1, 2)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -239,21 +184,11 @@ commands(
     library.make_hypermeter_tuplets([(1, 4)], [2]),
 )
 
-commands(
-    ("va", (7, 10)),
-    baca.append_phantom_measure(),
-)
-
 # VC
 
 commands(
     ("vc", (1, 2)),
     library.make_hypermeter_tuplets([(2, 3)], [2]),
-)
-
-commands(
-    ("vc", (1, 2)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -274,9 +209,14 @@ commands(
     library.make_hypermeter_tuplets([(2, 3)], [2]),
 )
 
+# phantom & reapply
+
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
+
 commands(
-    ("vc", (7, 10)),
+    music_voice_names,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
 
 # ob, cl (4, 10)

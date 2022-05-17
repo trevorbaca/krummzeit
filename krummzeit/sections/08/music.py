@@ -71,16 +71,11 @@ commands(
     ),
 )
 
-# obr
+# OB
 
 commands(
     ("ob", (1, 7)),
     baca.make_repeat_tied_notes(),
-)
-
-commands(
-    ("ob", (1, 7)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -115,21 +110,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("ob", 24),
-    baca.append_phantom_measure(),
-)
-
-# clr
+# CL
 
 commands(
     ("cl", (1, 5)),
     baca.make_repeat_tied_notes(),
-)
-
-commands(
-    ("cl", (1, 5)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -164,21 +149,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("cl", 24),
-    baca.append_phantom_measure(),
-)
-
-# pfr
+# PF
 
 commands(
     ("pf", (1, 4)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("pf", (1, 4)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -219,13 +194,6 @@ commands(
 )
 
 commands(
-    ("pf", (21, 24)),
-    baca.append_phantom_measure(),
-)
-
-# percr
-
-commands(
     ("perc", (1, 7)),
     baca.make_repeated_duration_notes(
         [(1, 2)],
@@ -235,30 +203,15 @@ commands(
 )
 
 commands(
-    ("perc", (1, 7)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
     ("perc", (8, 24)),
     baca.make_mmrests(),
 )
 
-commands(
-    ("perc", (8, 24)),
-    baca.append_phantom_measure(),
-)
-
-# vnr
+# VN
 
 commands(
     ("vn", (1, 4)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (1, 4)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -296,23 +249,13 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("vn", 24),
-    baca.append_phantom_measure(),
-)
-
-# var
+# VA
 
 commands(
     ("va", (1, 7)),
     library.make_fused_expanse(
         [(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
     ),
-)
-
-commands(
-    ("va", (1, 7)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -348,12 +291,7 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("va", 24),
-    baca.append_phantom_measure(),
-)
-
-# vcr
+# VC
 
 commands(
     ("vc", (1, 9)),
@@ -370,11 +308,6 @@ commands(
             (6, 8),
         ]
     ),
-)
-
-commands(
-    ("vc", (1, 9)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -410,11 +343,15 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("vc", 24),
-    baca.append_phantom_measure(),
-)
+# phantom & reapply
 
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
+
+commands(
+    music_voice_names,
+    baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
 
 # ob
 

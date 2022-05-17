@@ -555,16 +555,12 @@ commands(
 
 # phantom & reapply
 
-# ob
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
 
 commands(
-    ("ob", (1, 4)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("ob", (36, 44)),
+    music_voice_names,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
 
 # ob
@@ -608,18 +604,6 @@ commands(
 # cl
 
 commands(
-    ("cl", (1, 4)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("cl", (36, 44)),
-    baca.append_phantom_measure(),
-)
-
-# cl
-
-commands(
     "cl",
     baca.dls_staff_padding(3),
 )
@@ -648,33 +632,9 @@ commands(
 # pf
 
 commands(
-    ("pf", (1, 13)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("pf", (36, 44)),
-    baca.append_phantom_measure(),
-)
-
-# pf
-
-commands(
     ("pf", (14, 35)),
     baca.dls_staff_padding(6),
     baca.tuplet_bracket_staff_padding(3),
-)
-
-# perc
-
-commands(
-    ("perc", (1, 13)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("perc", (34, 44)),
-    baca.append_phantom_measure(),
 )
 
 # perc
@@ -723,18 +683,6 @@ commands(
     baca.staff_lines(1),
     baca.staff_position(0),
     baca.dls_staff_padding(5),
-)
-
-# vn
-
-commands(
-    ("vn", (1, 20)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vn", (43, 44)),
-    baca.append_phantom_measure(),
 )
 
 # vn
@@ -797,18 +745,6 @@ commands(
 # va
 
 commands(
-    ("va", (1, 5)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("va", (43, 44)),
-    baca.append_phantom_measure(),
-)
-
-# va
-
-commands(
     ("va", (1, 23)),
     baca.clef("alto"),
     baca.pitches(
@@ -834,18 +770,6 @@ commands(
 commands(
     ("va", (32, 42)),
     baca.dls_staff_padding(5),
-)
-
-# vc
-
-commands(
-    ("vc", (1, 5)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vc", (43, 44)),
-    baca.append_phantom_measure(),
 )
 
 # vc

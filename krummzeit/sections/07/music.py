@@ -57,16 +57,11 @@ commands(
     baca.rehearsal_mark("F"),
 )
 
-# obr
+# OB
 
 commands(
     ("ob", (1, 3)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("ob", (1, 3)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -86,29 +81,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("ob", (11, 22)),
-    baca.append_phantom_measure(),
-)
-
-# ob
-
-commands(
-    "ob",
-    baca.tuplet_bracket_staff_padding(4),
-    baca.dls_staff_padding(8),
-)
-
-# clr
+# CL
 
 commands(
     ("cl", (1, 3)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("cl", (1, 3)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -133,47 +110,11 @@ commands(
     baca.make_repeat_tied_notes(),
 )
 
-commands(
-    ("cl", (16, 22)),
-    baca.append_phantom_measure(),
-)
-
-# cl
-
-commands(
-    ("cl", (1, 10)),
-    baca.tuplet_bracket_staff_padding(4),
-    baca.dls_staff_padding(8),
-)
-
-commands(
-    ("cl", (4, 10)),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
-)
-
-commands(
-    ("cl", (11, 22)),
-    baca.dls_staff_padding(8),
-    baca.stem_up(),
-)
-
-commands(
-    ("cl", (16, 19)),
-    baca.instrument(library.instruments["BassClarinet"]),
-    baca.pitch("B1"),
-    baca.dynamic("ppp"),
-)
-
-# pfr
+# PF
 
 commands(
     ("pf", (1, 3)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("pf", (1, 3)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -206,25 +147,7 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("pf", (17, 22)),
-    baca.append_phantom_measure(),
-)
-
-# pf
-
-commands(
-    ("pf", 4),
-    baca.instrument(library.instruments["Harpsichord"]),
-    library.margin_markup("Hpschd."),
-)
-
-commands(
-    ("pf", (1, 10)),
-    baca.tuplet_bracket_staff_padding(4),
-)
-
-# percr
+# PERC
 
 commands(
     ("perc", 1),
@@ -279,16 +202,140 @@ commands(
     ),
 )
 
+# VN
+
 commands(
-    ("perc", (19, 22)),
+    ("vn", (1, 6)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (7, 19)),
+    library.make_hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
+)
+
+commands(
+    ("vn", (20, 22)),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", 1),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (2, 6)),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+commands(
+    ("va", (7, 19)),
+    library.make_hypermeter_tuplets(
+        [(1, 6)],
+        [2, 2, 2, 2, 2, 3],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, (None, 2)),
+        ),
+    ),
+)
+
+commands(
+    ("va", (20, 22)),
+    baca.make_mmrests(),
+)
+
+# VC
+
+commands(
+    ("vc", 1),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (2, 6)),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+commands(
+    ("vc", (7, 19)),
+    library.make_hypermeter_tuplets(
+        [(6, 1)],
+        [2, 2, 2, 2, 2, 3],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, (None, 2)),
+        ),
+    ),
+)
+
+commands(
+    ("vc", (20, 22)),
+    baca.make_mmrests(),
+)
+
+# phantom & reapply
+
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
+
+commands(
+    music_voice_names,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# ob
+
+commands(
+    "ob",
+    baca.tuplet_bracket_staff_padding(4),
+    baca.dls_staff_padding(8),
+)
+
+# cl
+
+commands(
+    ("cl", (1, 10)),
+    baca.tuplet_bracket_staff_padding(4),
+    baca.dls_staff_padding(8),
+)
+
+commands(
+    ("cl", (4, 10)),
+    baca.instrument(library.instruments["ClarinetInEFlat"]),
+)
+
+commands(
+    ("cl", (11, 22)),
+    baca.dls_staff_padding(8),
+    baca.stem_up(),
+)
+
+commands(
+    ("cl", (16, 19)),
+    baca.instrument(library.instruments["BassClarinet"]),
+    baca.pitch("B1"),
+    baca.dynamic("ppp"),
+)
+
+# pf
+
+commands(
+    ("pf", 4),
+    baca.instrument(library.instruments["Harpsichord"]),
+    library.margin_markup("Hpschd."),
+)
+
+commands(
+    ("pf", (1, 10)),
+    baca.tuplet_bracket_staff_padding(4),
 )
 
 # perc
 
 commands(
     "perc",
-    baca.reapply_persistent_indicators(),
     baca.markup(
         r"\baca-snare-drum-markup",
         selector=lambda _: abjad.select.leaf(_, 0),
@@ -317,108 +364,11 @@ commands(
     baca.dynamic("p-sempre"),
 )
 
-# vnr
+# vn
 
-commands(
-    ("vn", (1, 6)),
-    baca.make_mmrests(),
-)
+# va
 
-commands(
-    ("vn", (1, 6)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vn", (7, 19)),
-    library.make_hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
-)
-
-commands(
-    ("vn", (20, 22)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (20, 22)),
-    baca.append_phantom_measure(),
-)
-
-# var
-
-commands(
-    ("va", 1),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", 1),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("va", (2, 6)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
-)
-
-commands(
-    ("va", (7, 19)),
-    library.make_hypermeter_tuplets(
-        [(1, 6)],
-        [2, 2, 2, 2, 2, 3],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, (None, 2)),
-        ),
-    ),
-)
-
-commands(
-    ("va", (20, 22)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (20, 22)),
-    baca.append_phantom_measure(),
-)
-
-# vcr
-
-commands(
-    ("vc", 1),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", 1),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vc", (2, 6)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
-)
-
-commands(
-    ("vc", (7, 19)),
-    library.make_hypermeter_tuplets(
-        [(6, 1)],
-        [2, 2, 2, 2, 2, 3],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, (None, 2)),
-        ),
-    ),
-)
-
-commands(
-    ("vc", (20, 22)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (20, 22)),
-    baca.append_phantom_measure(),
-)
+# vc
 
 # va, vc (1, 6)
 

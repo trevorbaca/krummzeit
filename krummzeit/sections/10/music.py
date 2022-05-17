@@ -94,18 +94,8 @@ commands(
 )
 
 commands(
-    ("ob", 1),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
     ("ob", (2, 23)),
     baca.make_mmrests(),
-)
-
-commands(
-    ("ob", (2, 23)),
-    baca.append_phantom_measure(),
 )
 
 # CL
@@ -113,11 +103,6 @@ commands(
 commands(
     ("cl", 1),
     library.make_hypermeter_tuplets([(1, 4)]),
-)
-
-commands(
-    ("cl", 1),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -135,21 +120,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("cl", (15, 23)),
-    baca.append_phantom_measure(),
-)
-
 # PF
 
 commands(
     ("pf", 1),
     library.make_hypermeter_tuplets([(3, 4)]),
-)
-
-commands(
-    ("pf", 1),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -185,21 +160,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("pf", 23),
-    baca.append_phantom_measure(),
-)
-
 # PERC
 
 commands(
     ("perc", 1),
     library.make_hypermeter_tuplets([(1, 6)]),
-)
-
-commands(
-    ("perc", 1),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -217,11 +182,6 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("perc", 23),
-    baca.append_phantom_measure(),
-)
-
 # VN
 
 commands(
@@ -232,11 +192,6 @@ commands(
         ),
         remainder=abjad.RIGHT,
     ),
-)
-
-commands(
-    ("vn", (1, 3)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -264,11 +219,6 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("vn", 23),
-    baca.append_phantom_measure(),
-)
-
 # VA
 
 commands(
@@ -279,11 +229,6 @@ commands(
         ),
         remainder=abjad.RIGHT,
     ),
-)
-
-commands(
-    ("va", (1, 3)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -311,11 +256,6 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("va", 23),
-    baca.append_phantom_measure(),
-)
-
 # VC
 
 commands(
@@ -326,11 +266,6 @@ commands(
         ),
         remainder=abjad.RIGHT,
     ),
-)
-
-commands(
-    ("vc", (1, 3)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -358,9 +293,14 @@ commands(
     baca.make_mmrests(),
 )
 
+# phantom & reapply
+
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
+
 commands(
-    ("vc", 23),
+    music_voice_names,
     baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
 )
 
 # ob

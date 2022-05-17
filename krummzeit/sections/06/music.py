@@ -94,16 +94,11 @@ commands(
     baca.rehearsal_mark("E"),
 )
 
-# obr
+# OB
 
 commands(
     ("ob", (1, 8)),
     library.make_oboe_trill_rhythm(),
-)
-
-commands(
-    ("ob", (1, 8)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -136,60 +131,11 @@ commands(
     baca.make_mmrests(),
 )
 
-commands(
-    ("ob", 35),
-    baca.append_phantom_measure(),
-)
-
-# ob
-
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
-_pcs = _pcs.rotate(-121).retrograde().transpose(9).invert()
-_pcs = baca.sequence.repeat_by(_pcs, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
-commands(
-    ("ob", (1, 10)),
-    baca.suite(
-        baca.pitches(
-            _pcs,
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-        ),
-        library.displacement(),
-        library.register_wide(5),
-        library.color_fingerings(),
-    ),
-    baca.new(
-        baca.trill_spanner(),
-        map=lambda _: [
-            x
-            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
-            if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
-        ],
-    ),
-    baca.dynamic("p"),
-)
-
-commands(
-    ("ob", (1, 21)),
-    baca.tuplet_bracket_staff_padding(4),
-    baca.dls_staff_padding(6),
-)
-
-commands(
-    ("ob", (29, 34)),
-    baca.tuplet_bracket_staff_padding(2),
-    baca.dls_staff_padding(4),
-)
-
-# clr
+# CL
 
 commands(
     ("cl", (1, 10)),
     baca.make_repeated_duration_notes([(16, 4)]),
-)
-
-commands(
-    ("cl", (1, 10)),
-    baca.reapply_persistent_indicators(),
 )
 
 commands(
@@ -237,10 +183,319 @@ commands(
     library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
 )
 
+# PF
+
 commands(
-    ("cl", (33, 35)),
-    baca.append_phantom_measure(),
+    ("pf", (1, 8)),
+    baca.make_mmrests(),
 )
+
+commands(
+    ("pf", (9, 10)),
+    library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("pf", (11, 16)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("pf", 17),
+    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
+)
+
+commands(
+    ("pf", (18, 19)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("pf", (20, 26)),
+    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
+)
+
+commands(
+    ("pf", (27, 29)),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+commands(
+    ("pf", (30, 31)),
+    library.make_pizzicato_rhythm(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
+        ),
+    ),
+)
+
+commands(
+    ("pf", 32),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("pf", (33, 34)),
+    library.make_pizzicato_rhythm(
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
+        ),
+    ),
+)
+
+commands(
+    ("pf", 35),
+    baca.make_mmrests(),
+)
+
+# PERC
+
+commands(
+    ("perc", (1, 14)),
+    library.make_sponge_rhythm(),
+)
+
+commands(
+    ("perc", (15, 16)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("perc", 17),
+    library.make_silver_points_rhythm([(2, 1), (1, 2)]),
+)
+
+commands(
+    ("perc", (18, 19)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("perc", (20, 26)),
+    library.make_silver_points_rhythm([(2, 1), (1, 2)]),
+)
+
+commands(
+    ("perc", 27),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("perc", (28, 34)),
+    library.make_sponge_rhythm(),
+)
+
+commands(
+    ("perc", 35),
+    baca.make_mmrests(),
+)
+
+# VN
+
+commands(
+    ("vn", (1, 8)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (9, 10)),
+    library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("vn", 11),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (12, 20)),
+    library.make_glissando_rhythm(
+        [(2, 1), (2, 1), (1, 1, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("vn", (21, 28)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vn", (29, 34)),
+    library.make_detached_triplets(),
+)
+
+commands(
+    ("vn", 35),
+    baca.make_mmrests(),
+)
+
+# VA
+
+commands(
+    ("va", (1, 8)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (9, 10)),
+    library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("va", 11),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (12, 20)),
+    library.make_glissando_rhythm(
+        [(2, 1), (1, 1, 1), (2, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("va", (21, 22)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (23, 24)),
+    library.make_rest_delimited_repeated_duration_notes((1, 2), 16),
+)
+
+commands(
+    ("va", (25, 26)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (27, 30)),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+commands(
+    ("va", (31, 32)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("va", (33, 35)),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+# VC
+
+commands(
+    ("vc", (1, 8)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (9, 10)),
+    library.make_incise_chain_b_rhythm(),
+)
+
+commands(
+    ("vc", 11),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (12, 20)),
+    library.make_glissando_rhythm(
+        [(1, 1, 1), (2, 1), (2, 1)],
+        rmakers.force_rest(
+            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
+        ),
+    ),
+)
+
+commands(
+    ("vc", (21, 22)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (23, 24)),
+    library.make_rest_delimited_repeated_duration_notes((1, 2), 16),
+)
+
+commands(
+    ("vc", (25, 26)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (27, 30)),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+commands(
+    ("vc", (31, 32)),
+    baca.make_mmrests(),
+)
+
+commands(
+    ("vc", (33, 35)),
+    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+)
+
+# phantom & reapply
+
+music_voice_names = [_ for _ in voice_names if "Music_Voice" in _]
+
+commands(
+    music_voice_names,
+    baca.append_phantom_measure(),
+    baca.reapply_persistent_indicators(),
+)
+
+# ob
+
+_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+_pcs = _pcs.rotate(-121).retrograde().transpose(9).invert()
+_pcs = baca.sequence.repeat_by(_pcs, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
+commands(
+    ("ob", (1, 10)),
+    baca.suite(
+        baca.pitches(
+            _pcs,
+            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        ),
+        library.displacement(),
+        library.register_wide(5),
+        library.color_fingerings(),
+    ),
+    baca.new(
+        baca.trill_spanner(),
+        map=lambda _: [
+            x
+            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
+            if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
+        ],
+    ),
+    baca.dynamic("p"),
+)
+
+commands(
+    ("ob", (1, 21)),
+    baca.tuplet_bracket_staff_padding(4),
+    baca.dls_staff_padding(6),
+)
+
+commands(
+    ("ob", (29, 34)),
+    baca.tuplet_bracket_staff_padding(2),
+    baca.dls_staff_padding(4),
+)
+
+# cl
 
 # cl
 
@@ -305,80 +560,7 @@ commands(
     baca.dynamic("ff"),
 )
 
-# pfr
-
-commands(
-    ("pf", (1, 8)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("pf", (1, 8)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("pf", (9, 10)),
-    library.make_incise_chain_b_rhythm(),
-)
-
-commands(
-    ("pf", (11, 16)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("pf", 17),
-    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
-)
-
-commands(
-    ("pf", (18, 19)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("pf", (20, 26)),
-    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
-)
-
-commands(
-    ("pf", (27, 29)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
-)
-
-commands(
-    ("pf", (30, 31)),
-    library.make_pizzicato_rhythm(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
-        ),
-    ),
-)
-
-commands(
-    ("pf", 32),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("pf", (33, 34)),
-    library.make_pizzicato_rhythm(
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
-        ),
-    ),
-)
-
-commands(
-    ("pf", 35),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("pf", 35),
-    baca.append_phantom_measure(),
-)
+# pf
 
 # pf
 
@@ -436,58 +618,12 @@ commands(
     baca.tuplet_bracket_staff_padding(3),
 )
 
-# percr
-
-commands(
-    ("perc", (1, 14)),
-    library.make_sponge_rhythm(),
-)
-
-commands(
-    ("perc", (15, 16)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("perc", 17),
-    library.make_silver_points_rhythm([(2, 1), (1, 2)]),
-)
-
-commands(
-    ("perc", (18, 19)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("perc", (20, 26)),
-    library.make_silver_points_rhythm([(2, 1), (1, 2)]),
-)
-
-commands(
-    ("perc", 27),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("perc", (28, 34)),
-    library.make_sponge_rhythm(),
-)
-
-commands(
-    ("perc", 35),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("perc", 35),
-    baca.append_phantom_measure(),
-)
+# perc
 
 # perc
 
 commands(
     ("perc", [(1, 14), (28, 34)]),
-    baca.reapply_persistent_indicators(),
     baca.markup(r"\baca-suspended-cymbal-markup"),
     baca.staff_position(0),
     baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
@@ -520,57 +656,7 @@ commands(
     baca.dynamic("p"),
 )
 
-# vnr
-
-commands(
-    ("vn", (1, 8)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (1, 8)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vn", (9, 10)),
-    library.make_incise_chain_b_rhythm(),
-)
-
-commands(
-    ("vn", 11),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (12, 20)),
-    library.make_glissando_rhythm(
-        [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("vn", (21, 28)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vn", (29, 34)),
-    library.make_detached_triplets(),
-)
-
-commands(
-    ("vn", 35),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vn", 35),
-    baca.append_phantom_measure(),
-)
+# vn
 
 # vn
 
@@ -614,72 +700,7 @@ commands(
     baca.dynamic("ppp"),
 )
 
-# var
-
-commands(
-    ("va", (1, 8)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (1, 8)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("va", (9, 10)),
-    library.make_incise_chain_b_rhythm(),
-)
-
-commands(
-    ("va", 11),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (12, 20)),
-    library.make_glissando_rhythm(
-        [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("va", (21, 22)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (23, 24)),
-    library.make_rest_delimited_repeated_duration_notes((1, 2), 16),
-)
-
-commands(
-    ("va", (25, 26)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (27, 30)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
-)
-
-commands(
-    ("va", (31, 32)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("va", (33, 35)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
-)
-
-commands(
-    ("va", (33, 35)),
-    baca.append_phantom_measure(),
-)
+# va
 
 # va
 
@@ -699,72 +720,7 @@ commands(
     baca.dls_staff_padding(6),
 )
 
-# vcr
-
-commands(
-    ("vc", (1, 8)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (1, 8)),
-    baca.reapply_persistent_indicators(),
-)
-
-commands(
-    ("vc", (9, 10)),
-    library.make_incise_chain_b_rhythm(),
-)
-
-commands(
-    ("vc", 11),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (12, 20)),
-    library.make_glissando_rhythm(
-        [(1, 1, 1), (2, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
-        ),
-    ),
-)
-
-commands(
-    ("vc", (21, 22)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (23, 24)),
-    library.make_rest_delimited_repeated_duration_notes((1, 2), 16),
-)
-
-commands(
-    ("vc", (25, 26)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (27, 30)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
-)
-
-commands(
-    ("vc", (31, 32)),
-    baca.make_mmrests(),
-)
-
-commands(
-    ("vc", (33, 35)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
-)
-
-commands(
-    ("vc", (33, 35)),
-    baca.append_phantom_measure(),
-)
+# vc
 
 # vc
 

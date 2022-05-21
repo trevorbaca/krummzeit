@@ -225,10 +225,6 @@ segment.04.Global.Skips = {
       %! baca._make_global_skips(1)
     s1 * 3/4
     % AFTER:
-    % MARKUP:
-      %! baca.IndicatorCommand._call()
-      %! baca.rehearsal_mark()
-    - \baca-rehearsal-mark-markup "C" #10
     % SPANNER_STARTS:
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca._attach_metronome_marks(3)

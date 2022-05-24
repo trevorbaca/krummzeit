@@ -1517,7 +1517,7 @@ section_number.04.Oboe.Music_Voice = {
     % [Oboe.Music_Voice measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca._clone_segment_initial_short_instrument_name()
+      %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \markup \hcenter-in #16 "Ob."
       %! -PARTS
       %! REAPPLIED_MARGIN_MARKUP
@@ -1997,7 +1997,7 @@ section_number.04.Clarinet.Music_Voice = {
     % [Clarinet.Music_Voice measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca._clone_segment_initial_short_instrument_name()
+      %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup
       %! -PARTS
       %! REAPPLIED_MARGIN_MARKUP
@@ -2526,7 +2526,7 @@ section_number.04.Piano.Music_Voice = {
           %! baca.SpannerIndicatorCommand._call(2)
           %! baca.ottava()
         \ottava 1
-          %! baca._clone_segment_initial_short_instrument_name()
+          %! baca._clone_section_initial_short_instrument_name()
         \set Staff.instrumentName = \markup \hcenter-in #16 "Pf."
           %! -PARTS
           %! REAPPLIED_MARGIN_MARKUP
@@ -3604,7 +3604,7 @@ section_number.04.Percussion.Music_Voice = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(0 . 2)
-      %! baca._clone_segment_initial_short_instrument_name()
+      %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \markup \hcenter-in #16 "Perc."
       %! -PARTS
       %! REAPPLIED_MARGIN_MARKUP
@@ -4291,7 +4291,7 @@ section_number.04.Violin.Music_Voice = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
-      %! baca._clone_segment_initial_short_instrument_name()
+      %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \markup \hcenter-in #16 "Vn."
       %! -PARTS
       %! REAPPLIED_MARGIN_MARKUP
@@ -5294,7 +5294,7 @@ section_number.04.Viola.Music_Voice = {
     % [Viola.Music_Voice measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca._clone_segment_initial_short_instrument_name()
+      %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \markup \hcenter-in #16 "Va."
       %! -PARTS
       %! REAPPLIED_MARGIN_MARKUP
@@ -6261,7 +6261,7 @@ section_number.04.Cello.Music_Voice = {
     % [Cello.Music_Voice measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca._clone_segment_initial_short_instrument_name()
+      %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \markup \hcenter-in #16 "Vc."
       %! -PARTS
       %! REAPPLIED_MARGIN_MARKUP

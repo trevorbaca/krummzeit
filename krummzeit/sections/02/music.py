@@ -35,7 +35,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures["B"],
+    library.section_time_signatures("B"),
     count=75,
 )
 time_signatures = maker_.run()
@@ -45,11 +45,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -481,7 +481,7 @@ commands(
 
 commands(
     ("cl", 5),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    baca.instrument(library.instruments()["ClarinetInEFlat"]),
     baca.markup(r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"),
     library.margin_markup("Cl. (Eb)"),
     baca.dynamic("mp"),
@@ -503,7 +503,7 @@ commands(
 
 commands(
     "pf",
-    baca.instrument(library.instruments["Harpsichord"]),
+    baca.instrument(library.instruments()["Harpsichord"]),
     library.margin_markup("Hpschd."),
 )
 
@@ -522,7 +522,7 @@ commands(
 commands(
     ("pf", (45, 46)),
     baca.clef("bass"),
-    baca.instrument(library.instruments["Piano"]),
+    baca.instrument(library.instruments()["Piano"]),
     library.margin_markup("Pf."),
 )
 
@@ -559,7 +559,7 @@ commands(
     baca.staff_lines(1),
     baca.clef("percussion"),
     baca.dynamic("mf"),
-    baca.instrument(library.instruments["Percussion"]),
+    baca.instrument(library.instruments()["Percussion"]),
     baca.markup(
         r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",
     ),
@@ -633,13 +633,13 @@ commands(
         ]
     ),
     baca.pitches(
-        library.indigo_pitch_classes,
+        library.indigo_pitch_classes(),
         allow_repeats=True,
         selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     ),
 )
 
-pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
 pcs = pcs.transpose(1)
 commands(
     baca.timeline(
@@ -655,7 +655,7 @@ commands(
     ),
 )
 
-pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
 pcs = pcs.rotate(-155).transpose(3)
 commands(
     baca.timeline(
@@ -762,7 +762,7 @@ commands(
             ("vn", (38, 53)),
         ]
     ),
-    baca.pitches(library.violet_pitch_classes),
+    baca.pitches(library.violet_pitch_classes()),
 )
 
 commands(
@@ -801,7 +801,7 @@ commands(
 
 # pf, vn, va, vc composites
 
-pcs = library.violet_pitch_classes
+pcs = library.violet_pitch_classes()
 pcs = abjad.PitchClassSegment(pcs).rotate(-60).transpose(1)
 commands(
     baca.timeline(

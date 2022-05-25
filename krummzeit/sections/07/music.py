@@ -26,7 +26,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures["G"],
+    library.section_time_signatures("G"),
     count=22,
 )
 time_signatures = maker_.run()
@@ -36,11 +36,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -302,7 +302,7 @@ commands(
 
 commands(
     ("cl", (4, 10)),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    baca.instrument(library.instruments()["ClarinetInEFlat"]),
 )
 
 commands(
@@ -313,7 +313,7 @@ commands(
 
 commands(
     ("cl", (16, 19)),
-    baca.instrument(library.instruments["BassClarinet"]),
+    baca.instrument(library.instruments()["BassClarinet"]),
     baca.pitch("B1"),
     baca.dynamic("ppp"),
 )
@@ -322,7 +322,7 @@ commands(
 
 commands(
     ("pf", 4),
-    baca.instrument(library.instruments["Harpsichord"]),
+    baca.instrument(library.instruments()["Harpsichord"]),
     library.margin_markup("Hpschd."),
 )
 
@@ -427,7 +427,7 @@ commands(
 
 # ob, cl, pf (1, 16)
 
-pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
 pcs = pcs.transpose(2)
 commands(
     baca.timeline(

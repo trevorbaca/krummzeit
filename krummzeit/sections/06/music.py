@@ -35,7 +35,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures["F"],
+    library.section_time_signatures("F"),
     count=35,
 )
 time_signatures = maker_.run()
@@ -45,11 +45,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -457,7 +457,7 @@ commands(
 
 # ob
 
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+_pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
 _pcs = _pcs.rotate(-121).retrograde().transpose(9).invert()
 _pcs = baca.sequence.repeat_by(_pcs, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
 commands(
@@ -500,7 +500,7 @@ commands(
 
 commands(
     "cl",
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    baca.instrument(library.instruments()["ClarinetInEFlat"]),
 )
 
 commands(
@@ -519,7 +519,7 @@ commands(
 
 commands(
     ("cl", (23, 35)),
-    baca.instrument(library.instruments["BassClarinet"]),
+    baca.instrument(library.instruments()["BassClarinet"]),
     library.margin_markup("B. cl."),
     baca.pitch("Bb1"),
     baca.stem_up(),
@@ -590,7 +590,7 @@ commands(
     baca.dynamic("ppp"),
 )
 
-_pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
+_pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
 _pcs = _pcs.rotate(-85).retrograde().transpose(5).invert()
 commands(
     ("pf", (30, 34)),
@@ -632,7 +632,7 @@ commands(
     ("perc", 17),
     baca.staff_lines(5),
     baca.clef("treble"),
-    baca.instrument(library.instruments["Xylophone"]),
+    baca.instrument(library.instruments()["Xylophone"]),
 )
 
 commands(
@@ -761,7 +761,7 @@ commands(
 
 # vn, va, vc (12, 20)
 
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+_pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
 _pcs = _pcs.rotate(-301).retrograde().transpose(10)
 
 commands(

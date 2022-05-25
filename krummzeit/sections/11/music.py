@@ -23,7 +23,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures["K"],
+    library.section_time_signatures("K"),
     count=48,
 )
 time_signatures = maker_.run()
@@ -33,11 +33,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -190,7 +190,7 @@ commands(
 
 # vn, va (1, 40)
 
-pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
 pcs = pcs[42:34:-1].transpose(4).invert()
 commands(
     baca.timeline(

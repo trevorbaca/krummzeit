@@ -7,100 +7,6 @@ import baca
 import quicktions
 from abjadext import rmakers
 
-instruments = dict(
-    [
-        ("BassClarinet", abjad.BassClarinet()),
-        ("Cello", abjad.Cello(pitch_range="[A1, +inf]")),
-        ("ClarinetInEFlat", abjad.ClarinetInEFlat()),
-        ("Harpsichord", abjad.Harpsichord(context="Staff")),
-        ("Oboe", abjad.Oboe(pitch_range="[Bb3, Bb6]")),
-        ("Percussion", abjad.Percussion()),
-        ("Piano", abjad.Piano(context="Staff")),
-        ("Viola", abjad.Viola(pitch_range="[Bb2, +inf]")),
-        (
-            "Violin",
-            # TODO: F#3 instead of F3
-            abjad.Violin(pitch_range="[F3, +inf]"),
-        ),
-        ("Xylophone", abjad.Xylophone()),
-    ]
-)
-
-
-def _make_margin_markup(markup):
-    return abjad.MarginMarkup(markup=rf'\markup \hcenter-in #16 "{markup}"')
-
-
-clarinet_in_e_flat = abjad.MarginMarkup(
-    markup=r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup"
-)
-
-margin_markups = dict(
-    [
-        ("B. cl.", _make_margin_markup("B. cl.")),
-        ("Cl. (Eb)", clarinet_in_e_flat),
-        ("Hpschd.", _make_margin_markup("Hpschd.")),
-        ("Ob.", _make_margin_markup("Ob.")),
-        ("Perc.", _make_margin_markup("Perc.")),
-        ("Pf.", _make_margin_markup("Pf.")),
-        ("Va.", _make_margin_markup("Va.")),
-        ("Vc.", _make_margin_markup("Vc.")),
-        ("Vn.", _make_margin_markup("Vn.")),
-    ]
-)
-
-metronome_marks = dict(
-    [
-        ("36", abjad.MetronomeMark((1, 4), 36)),
-        ("45", abjad.MetronomeMark((1, 4), 45)),
-        (
-            "67.5",
-            abjad.MetronomeMark(
-                reference_duration=(1, 4),
-                units_per_minute=quicktions.Fraction(135, 2),
-                custom_markup=abjad.Markup(
-                    r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
-                ),
-            ),
-        ),
-        ("72", abjad.MetronomeMark((1, 4), 72)),
-        (
-            "72/108",
-            abjad.MetronomeMark(
-                reference_duration=(1, 4),
-                units_per_minute=108,
-                custom_markup=abjad.Markup(
-                    r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
-                ),
-            ),
-        ),
-        ("90", abjad.MetronomeMark((1, 4), 90)),
-        ("108", abjad.MetronomeMark((1, 4), 108)),
-        ("135", abjad.MetronomeMark((1, 4), 135)),
-        ("144", abjad.MetronomeMark((1, 4), 144)),
-        # slower
-        (
-            "4:5(4)=4",
-            abjad.MetricModulation(
-                left_rhythm=abjad.Tuplet("4:5", "c4"),
-                right_rhythm=abjad.Note("c4"),
-            ),
-        ),
-        (
-            "4=8",
-            abjad.MetricModulation(
-                left_rhythm=abjad.Note("c4"), right_rhythm=abjad.Note("c8")
-            ),
-        ),
-        (
-            "4.=4",
-            abjad.MetricModulation(
-                left_rhythm=abjad.Note("c4."), right_rhythm=abjad.Note("c4")
-            ),
-        ),
-    ]
-)
-
 
 def _make_colored_numerators(numerators, addenda):
     numerators = baca.sequence.helianthate(numerators, -1, 1)
@@ -110,6 +16,26 @@ def _make_colored_numerators(numerators, addenda):
     pairs = zip(numerators, addenda)
     numerators = [sum(_) for _ in pairs]
     return numerators
+
+
+def _make_pitch_classes():
+    ratios = [[[1], [1], [1], [1, 1]], [[1], [1], [1], [1, 1, 1], [1, 1, 1]]]
+    ratios = baca.sequence.helianthate(ratios, -1, 1)
+    ratios = abjad.sequence.flatten(ratios, depth=1)
+    ratios = [tuple(_) for _ in ratios]
+    indigo_pitch_classes = baca.pcollections.accumulate_and_repartition(
+        segments=[[7, 1, 3, 4, 5, 11], [3, 5, 6, 7], [9, 10, 0, 8]],
+        ratios=ratios,
+        counts=[1, 1, 1, 2, 3],
+    )
+    indigo_pitch_classes = abjad.sequence.flatten(indigo_pitch_classes, depth=-1)
+    violet_pitch_classes = baca.pcollections.accumulate_and_repartition(
+        segments=[[8, 4, 3, 2, 11], [5, 4, 6, 8, 7], [9, 6, 5, 0, 11, 10]],
+        ratios=ratios,
+        counts=[1, 1, 2, 3],
+    )
+    violet_pitch_classes = abjad.sequence.flatten(violet_pitch_classes, depth=-1)
+    return indigo_pitch_classes, violet_pitch_classes
 
 
 def _make_numerators():
@@ -125,14 +51,6 @@ def _make_numerators():
     numerators = numerators + numerators
     assert len(numerators) == 236 and sum(numerators) == 928
     return numerators
-
-
-def _numerator_to_time_signature(numerator):
-    if abjad.math.is_integer_equivalent_number(numerator):
-        time_signature = abjad.TimeSignature((numerator, 4))
-    else:
-        time_signature = abjad.TimeSignature((int(2 * numerator), 8))
-    return time_signature
 
 
 def _make_time_signatures_by_section():
@@ -307,34 +225,19 @@ def _make_time_signatures_by_section():
     return section_time_signatures
 
 
-section_time_signatures = _make_time_signatures_by_section()
-
-
-def _make_pitch_classes():
-    ratios = [[[1], [1], [1], [1, 1]], [[1], [1], [1], [1, 1, 1], [1, 1, 1]]]
-    ratios = baca.sequence.helianthate(ratios, -1, 1)
-    ratios = abjad.sequence.flatten(ratios, depth=1)
-    ratios = [tuple(_) for _ in ratios]
-    indigo_pitch_classes = baca.pcollections.accumulate_and_repartition(
-        segments=[[7, 1, 3, 4, 5, 11], [3, 5, 6, 7], [9, 10, 0, 8]],
-        ratios=ratios,
-        counts=[1, 1, 1, 2, 3],
-    )
-    indigo_pitch_classes = abjad.sequence.flatten(indigo_pitch_classes, depth=-1)
-    violet_pitch_classes = baca.pcollections.accumulate_and_repartition(
-        segments=[[8, 4, 3, 2, 11], [5, 4, 6, 8, 7], [9, 6, 5, 0, 11, 10]],
-        ratios=ratios,
-        counts=[1, 1, 2, 3],
-    )
-    violet_pitch_classes = abjad.sequence.flatten(violet_pitch_classes, depth=-1)
-    return indigo_pitch_classes, violet_pitch_classes
-
-
-indigo_pitch_classes, violet_pitch_classes = _make_pitch_classes()
+def _numerator_to_time_signature(numerator):
+    if abjad.math.is_integer_equivalent_number(numerator):
+        time_signature = abjad.TimeSignature((numerator, 4))
+    else:
+        time_signature = abjad.TimeSignature((int(2 * numerator), 8))
+    return time_signature
 
 
 @dataclasses.dataclass
 class RegisterTransitionCommand(baca.Command):
+    """
+    Register transition command.
+    """
 
     selector: typing.Any = lambda _: baca.select.leaves(_)
     start_registration: typing.Any = None
@@ -408,15 +311,6 @@ class RegisterTransitionCommand(baca.Command):
         abjad.detach("not yet registered", pleaf)
 
 
-def replace_with_clusters(flavor):
-    clusters = {
-        "harpsichord": baca.replace_with_clusters([4], start_pitch="D4"),
-        "low": baca.replace_with_clusters([7], start_pitch="C1"),
-        "tenor": baca.replace_with_clusters([4], start_pitch="A2"),
-    }
-    return clusters[flavor]
-
-
 def color_fingerings():
     return baca.color_fingerings(
         [0, 1, 2, 1],
@@ -426,42 +320,40 @@ def color_fingerings():
 
 def displacement():
     return baca.displacement(
-        [
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            -1,
-            1,
-            1,
-            1,
-            1,
-            0,
-            0,
-            0,
-            0,
-            0,
-            0,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            -1,
-            -1,
-            -1,
-            -1,
-        ],
+        [0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+        + [-1, -1, -1, -1],
         selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
     )
 
 
+def indigo_pitch_classes():
+    indigo_pitch_classes, violet_pitch_classes = _make_pitch_classes()
+    return indigo_pitch_classes
+
+
 def instrument(key):
-    return baca.instrument(instruments[key])
+    return baca.instrument(instruments()[key])
+
+
+def instruments():
+    return dict(
+        [
+            ("BassClarinet", abjad.BassClarinet()),
+            ("Cello", abjad.Cello(pitch_range="[A1, +inf]")),
+            ("ClarinetInEFlat", abjad.ClarinetInEFlat()),
+            ("Harpsichord", abjad.Harpsichord(context="Staff")),
+            ("Oboe", abjad.Oboe(pitch_range="[Bb3, Bb6]")),
+            ("Percussion", abjad.Percussion()),
+            ("Piano", abjad.Piano(context="Staff")),
+            ("Viola", abjad.Viola(pitch_range="[Bb2, +inf]")),
+            (
+                "Violin",
+                # TODO: F#3 instead of F3
+                abjad.Violin(pitch_range="[F3, +inf]"),
+            ),
+            ("Xylophone", abjad.Xylophone()),
+        ]
+    )
 
 
 def make_closing_pizzicato_rhythm(counts, extra_counts, split):
@@ -530,6 +422,7 @@ def make_detached_triplets():
 
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
+    _instruments = instruments()
     global_context = baca.score.make_global_context()
     # OBOE
     oboe_music_voice = abjad.Voice(name="Oboe.Music_Voice", tag=tag)
@@ -538,7 +431,7 @@ def make_empty_score():
     abjad.annotate(
         oboe_music_staff,
         "default_instrument",
-        instruments["Oboe"],
+        _instruments["Oboe"],
     )
     abjad.annotate(oboe_music_staff, "default_clef", abjad.Clef("treble"))
     # CLARINET
@@ -550,7 +443,7 @@ def make_empty_score():
     abjad.annotate(
         clarinet_music_staff,
         "default_instrument",
-        instruments["BassClarinet"],
+        _instruments["BassClarinet"],
     )
     abjad.annotate(clarinet_music_staff, "default_clef", abjad.Clef("treble"))
     # WIND SECTION
@@ -569,7 +462,7 @@ def make_empty_score():
     abjad.annotate(
         piano_music_staff,
         "default_instrument",
-        instruments["Piano"],
+        _instruments["Piano"],
     )
     abjad.annotate(piano_music_staff, "default_clef", abjad.Clef("treble"))
     # PERCUSSION
@@ -581,7 +474,7 @@ def make_empty_score():
     abjad.annotate(
         percussion_music_staff,
         "default_instrument",
-        instruments["Xylophone"],
+        _instruments["Xylophone"],
     )
     abjad.annotate(percussion_music_staff, "default_clef", abjad.Clef("treble"))
     # PERCUSSION SECTION
@@ -600,7 +493,7 @@ def make_empty_score():
     abjad.annotate(
         violin_music_staff,
         "default_instrument",
-        instruments["Violin"],
+        _instruments["Violin"],
     )
     abjad.annotate(violin_music_staff, "default_clef", abjad.Clef("treble"))
     # VIOLA
@@ -612,7 +505,7 @@ def make_empty_score():
     abjad.annotate(
         viola_music_staff,
         "default_instrument",
-        instruments["Viola"],
+        _instruments["Viola"],
     )
     abjad.annotate(viola_music_staff, "default_clef", abjad.Clef("alto"))
     # CELLO
@@ -624,7 +517,7 @@ def make_empty_score():
     abjad.annotate(
         cello_music_staff,
         "default_instrument",
-        instruments["Cello"],
+        _instruments["Cello"],
     )
     abjad.annotate(cello_music_staff, "default_clef", abjad.Clef("bass"))
     # STRING SECTION
@@ -1128,7 +1021,7 @@ def make_white_rhythm(durations=None, remainder=abjad.LEFT, do_not_burnish=None)
 def margin_markup(
     key, alert=None, context="Staff", selector=lambda _: abjad.select.leaf(_, 0)
 ):
-    margin_markup = margin_markups[key]
+    margin_markup = margin_markups()[key]
     command = baca.margin_markup(
         margin_markup,
         alert=alert,
@@ -1136,6 +1029,82 @@ def margin_markup(
         selector=selector,
     )
     return baca.not_parts(command)
+
+
+def margin_markups():
+    def _make_margin_markup(markup):
+        return abjad.MarginMarkup(markup=rf'\markup \hcenter-in #16 "{markup}"')
+
+    clarinet_in_e_flat = abjad.MarginMarkup(
+        markup=r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup"
+    )
+    return dict(
+        [
+            ("B. cl.", _make_margin_markup("B. cl.")),
+            ("Cl. (Eb)", clarinet_in_e_flat),
+            ("Hpschd.", _make_margin_markup("Hpschd.")),
+            ("Ob.", _make_margin_markup("Ob.")),
+            ("Perc.", _make_margin_markup("Perc.")),
+            ("Pf.", _make_margin_markup("Pf.")),
+            ("Va.", _make_margin_markup("Va.")),
+            ("Vc.", _make_margin_markup("Vc.")),
+            ("Vn.", _make_margin_markup("Vn.")),
+        ]
+    )
+
+
+def metronome_marks():
+    return dict(
+        [
+            ("36", abjad.MetronomeMark((1, 4), 36)),
+            ("45", abjad.MetronomeMark((1, 4), 45)),
+            (
+                "67.5",
+                abjad.MetronomeMark(
+                    reference_duration=(1, 4),
+                    units_per_minute=quicktions.Fraction(135, 2),
+                    custom_markup=abjad.Markup(
+                        r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
+                    ),
+                ),
+            ),
+            ("72", abjad.MetronomeMark((1, 4), 72)),
+            (
+                "72/108",
+                abjad.MetronomeMark(
+                    reference_duration=(1, 4),
+                    units_per_minute=108,
+                    custom_markup=abjad.Markup(
+                        r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
+                    ),
+                ),
+            ),
+            ("90", abjad.MetronomeMark((1, 4), 90)),
+            ("108", abjad.MetronomeMark((1, 4), 108)),
+            ("135", abjad.MetronomeMark((1, 4), 135)),
+            ("144", abjad.MetronomeMark((1, 4), 144)),
+            # slower
+            (
+                "4:5(4)=4",
+                abjad.MetricModulation(
+                    left_rhythm=abjad.Tuplet("4:5", "c4"),
+                    right_rhythm=abjad.Note("c4"),
+                ),
+            ),
+            (
+                "4=8",
+                abjad.MetricModulation(
+                    left_rhythm=abjad.Note("c4"), right_rhythm=abjad.Note("c8")
+                ),
+            ),
+            (
+                "4.=4",
+                abjad.MetricModulation(
+                    left_rhythm=abjad.Note("c4."), right_rhythm=abjad.Note("c4")
+                ),
+            ),
+        ]
+    )
 
 
 def register_narrow(start, stop=None):
@@ -1301,12 +1270,31 @@ def register_wide(start):
         raise ValueError(start)
 
 
-voice_abbreviations = {
-    "ob": "Oboe.Music_Voice",
-    "cl": "Clarinet.Music_Voice",
-    "pf": "Piano.Music_Voice",
-    "perc": "Percussion.Music_Voice",
-    "vn": "Violin.Music_Voice",
-    "va": "Viola.Music_Voice",
-    "vc": "Cello.Music_Voice",
-}
+def replace_with_clusters(flavor):
+    clusters = {
+        "harpsichord": baca.replace_with_clusters([4], start_pitch="D4"),
+        "low": baca.replace_with_clusters([7], start_pitch="C1"),
+        "tenor": baca.replace_with_clusters([4], start_pitch="A2"),
+    }
+    return clusters[flavor]
+
+
+def section_time_signatures(section_name):
+    return _make_time_signatures_by_section()[section_name]
+
+
+def violet_pitch_classes():
+    indigo_pitch_classes, violet_pitch_classes = _make_pitch_classes()
+    return violet_pitch_classes
+
+
+def voice_abbreviations():
+    return {
+        "ob": "Oboe.Music_Voice",
+        "cl": "Clarinet.Music_Voice",
+        "pf": "Piano.Music_Voice",
+        "perc": "Percussion.Music_Voice",
+        "vn": "Violin.Music_Voice",
+        "va": "Viola.Music_Voice",
+        "vc": "Cello.Music_Voice",
+    }

@@ -20,7 +20,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures["I"],
+    library.section_time_signatures("I"),
     count=10,
 )
 time_signatures = maker_.run()
@@ -30,11 +30,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -223,7 +223,7 @@ commands(
 commands(
     (["ob", "cl"], (4, 7)),
     baca.new(
-        baca.instrument(library.instruments["ClarinetInEFlat"]),
+        baca.instrument(library.instruments()["ClarinetInEFlat"]),
         match=1,
     ),
     baca.pitch("D5"),
@@ -243,7 +243,7 @@ commands(
         match=0,
     ),
     baca.new(
-        baca.instrument(library.instruments["BassClarinet"]),
+        baca.instrument(library.instruments()["BassClarinet"]),
         baca.pitch("Eb2"),
         baca.dynamic("ff"),
         baca.dls_staff_padding(9),
@@ -258,7 +258,7 @@ commands(
 
 commands(
     ("pf", (1, 6)),
-    baca.instrument(library.instruments["Harpsichord"]),
+    baca.instrument(library.instruments()["Harpsichord"]),
     library.margin_markup("Hpschd."),
     baca.clef("treble"),
     library.replace_with_clusters("harpsichord"),
@@ -280,14 +280,14 @@ commands(
 commands(
     (["pf", "perc"], (9, 10)),
     baca.new(
-        baca.instrument(library.instruments["Piano"]),
+        baca.instrument(library.instruments()["Piano"]),
         library.margin_markup("Pf."),
         baca.tuplet_bracket_staff_padding(2),
         baca.dls_staff_padding(6),
         match=0,
     ),
     baca.new(
-        baca.instrument(library.instruments["Xylophone"]),
+        baca.instrument(library.instruments()["Xylophone"]),
         baca.tuplet_bracket_staff_padding(3),
         match=1,
     ),
@@ -318,7 +318,7 @@ commands(
 
 # vn, va, vc (3, 5)
 
-pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
 pcs = pcs.rotate(-241).retrograde().transpose(8).invert()
 commands(
     baca.timeline(

@@ -27,7 +27,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures["J"],
+    library.section_time_signatures("J"),
     count=23,
 )
 time_signatures = maker_.run()
@@ -37,11 +37,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -366,14 +366,14 @@ commands(
 
 commands(
     ("pf", (3, 4)),
-    baca.instrument(library.instruments["Harpsichord"]),
+    baca.instrument(library.instruments()["Harpsichord"]),
     library.margin_markup("Hpschd."),
     library.replace_with_clusters("harpsichord"),
 )
 
 commands(
     ("pf", (8, 22)),
-    baca.instrument(library.instruments["Piano"]),
+    baca.instrument(library.instruments()["Piano"]),
     library.margin_markup("Pf."),
     baca.clef("bass"),
     library.replace_with_clusters("low"),
@@ -415,7 +415,7 @@ commands(
 
 # vn, va, vc (5, 9)
 
-pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
 pcs = pcs.transpose(11)
 commands(
     baca.timeline(
@@ -453,7 +453,7 @@ commands(
 
 # vn, va, vc (22)
 
-pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
+pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
 pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
 commands(
     baca.timeline(

@@ -32,7 +32,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures["H"],
+    library.section_time_signatures("H"),
     count=24,
 )
 time_signatures = maker_.run()
@@ -42,11 +42,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -393,13 +393,13 @@ commands(
 
 commands(
     ("cl", 9),
-    baca.instrument(library.instruments["ClarinetInEFlat"]),
+    baca.instrument(library.instruments()["ClarinetInEFlat"]),
     baca.dls_staff_padding(3),
 )
 
 commands(
     ("cl", (18, 23)),
-    baca.instrument(library.instruments["BassClarinet"]),
+    baca.instrument(library.instruments()["BassClarinet"]),
     baca.pitch("C2"),
     library.color_fingerings(),
     baca.tuplet_bracket_staff_padding(6),
@@ -423,7 +423,7 @@ commands(
 
 commands(
     ("pf", (14, 20)),
-    baca.instrument(library.instruments["Piano"]),
+    baca.instrument(library.instruments()["Piano"]),
     library.margin_markup("Pf."),
     baca.clef("bass"),
     baca.dls_staff_padding(3),
@@ -480,7 +480,7 @@ commands(
 
 # ob, cl, pf vn (5, 12)
 
-_pcs = abjad.PitchClassSegment(library.indigo_pitch_classes)
+_pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
 _pcs = _pcs[:20].transpose(3)
 commands(
     baca.timeline(
@@ -556,7 +556,7 @@ commands(
     baca.pitch("C4"),
 )
 
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+_pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
 _pcs = _pcs.rotate(-241).retrograde().transpose(8).invert()
 commands(
     baca.timeline(

@@ -30,7 +30,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures["C"],
+    library.section_time_signatures("C"),
     count=44,
 )
 time_signatures = maker_.run()
@@ -40,11 +40,11 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     **baca.section_accumulation_defaults(),
-    instruments=library.instruments,
-    margin_markups=library.margin_markups,
-    metronome_marks=library.metronome_marks,
+    instruments=library.instruments(),
+    margin_markups=library.margin_markups(),
+    metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
-    voice_abbreviations=library.voice_abbreviations,
+    voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
 )
 
@@ -571,7 +571,7 @@ commands(
     baca.tuplet_bracket_staff_padding(4),
 )
 
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+_pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
 _pcs = _pcs.rotate(-121).retrograde().transpose(3).invert()
 _pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 
@@ -641,7 +641,7 @@ commands(
 
 commands(
     ("perc", [14, 28]),
-    baca.instrument(library.instruments["Xylophone"]),
+    baca.instrument(library.instruments()["Xylophone"]),
     baca.clef("treble"),
     baca.new(
         baca.staff_lines(5),
@@ -657,7 +657,7 @@ commands(
 
 commands(
     ("perc", (21, 27)),
-    baca.instrument(library.instruments["Percussion"]),
+    baca.instrument(library.instruments()["Percussion"]),
     baca.markup(r"\baca-slate-scrape-markup"),
     baca.clef("percussion"),
     baca.staff_lines(1),
@@ -699,13 +699,13 @@ def ntltqruns(argument):
     return result
 
 
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes)
+_pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
 _pcs = _pcs.rotate(-121).retrograde().transpose(3)
 _pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
 
 commands(
     ("vn", (22, 28)),
-    baca.instrument(library.instruments["Violin"]),
+    baca.instrument(library.instruments()["Violin"]),
     baca.clef("treble"),
     baca.staff_lines(5),
     baca.pitches(

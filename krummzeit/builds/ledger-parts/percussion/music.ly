@@ -26,16 +26,16 @@
 
 \score {
     \keepWithTag percussion {
-        \include "segment-a.ly"
-        \include "segment-b.ly"
-        \include "segment-c.ly"
-        \include "segment-d.ly"
-        \include "segment-e.ly"
-        \include "segment-f.ly"
-        \include "segment-g.ly"
-        \include "segment-h.ly"
-        \include "segment-i.ly"
-        \include "segment-j.ly"
-        \include "segment-k.ly"
+        \include "section-a.ly"
+        \include "section-b.ly"
+        \include "section-c.ly"
+        \include "section-d.ly"
+        \include "section-e.ly"
+        \include "section-f.ly"
+        \include "section-g.ly"
+        \include "section-h.ly"
+        \include "section-i.ly"
+        \include "section-j.ly"
+        \include "section-k.ly"
     }
 }

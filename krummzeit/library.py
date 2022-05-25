@@ -135,7 +135,7 @@ def _numerator_to_time_signature(numerator):
     return time_signature
 
 
-def _make_time_signatures_by_segment():
+def _make_time_signatures_by_section():
     ratio = [3, 2, 1, 1, 3, 2, 1, 1, 3, 2, 1, 1]
     numerator_lists = _make_numerators()
     numerator_lists = abjad.sequence.partition_by_ratio_of_weights(
@@ -165,7 +165,7 @@ def _make_time_signatures_by_segment():
     assert pairs[9] == (24, abjad.Duration(179, 8))
     assert pairs[10] == (12, abjad.Duration(87, 8))
     assert pairs[11] == (11, abjad.Duration(40, 4))
-    segment_time_signatures = dict()
+    section_time_signatures = dict()
     # B
     lists = time_signature_inventory[:3]
     time_signatures_ = abjad.sequence.flatten(lists)
@@ -174,13 +174,13 @@ def _make_time_signatures_by_segment():
     time_signatures = list(time_signatures_)
     time_signatures[0:0] = time_signatures[:11]
     assert len(time_signatures) == 75
-    segment_time_signatures["B"] = time_signatures
+    section_time_signatures["B"] = time_signatures
     # E
     lists = time_signature_inventory[3:5]
     time_signatures_ = abjad.sequence.flatten(lists)
     assert len(time_signatures_) == 48
     time_signatures = list(time_signatures_)
-    segment_time_signatures["E"] = time_signatures
+    section_time_signatures["E"] = time_signatures
     # K
     # time_signatures = time_signature_inventory[9:]
     # time_signatures = abjad.sequence.flatten(time_signatures)
@@ -197,18 +197,18 @@ def _make_time_signatures_by_segment():
     # time_signatures.insert(20, abjad.TimeSignature((1, 4)))
     # time_signatures.insert(-27, abjad.TimeSignature((1, 4)))
     # assert len(time_signatures) == 85
-    # segment_time_signatures['K'] = time_signatures
+    # section_time_signatures['K'] = time_signatures
     time_signatures = [(5, 4), (5, 4), (4, 4), (2, 4)]
     time_signatures *= 12
     time_signatures = [abjad.TimeSignature(_) for _ in time_signatures]
     assert len(time_signatures) == 48
-    segment_time_signatures["K"] = time_signatures
+    section_time_signatures["K"] = time_signatures
     # F
     lists = time_signature_inventory[4]
     time_signatures_ = abjad.sequence.flatten(lists)
     assert len(time_signatures_) == 35
     time_signatures = list(time_signatures_)
-    segment_time_signatures["F"] = time_signatures
+    section_time_signatures["F"] = time_signatures
     # D
     lists = time_signature_inventory[2]
     time_signatures_ = abjad.sequence.flatten(lists)
@@ -222,7 +222,7 @@ def _make_time_signatures_by_segment():
     assert len(time_signatures) == 16
     time_signatures[-1:-1] = 3 * time_signatures[-1:]
     assert len(time_signatures) == 19
-    segment_time_signatures["D"] = time_signatures
+    section_time_signatures["D"] = time_signatures
     # C
     lists = time_signature_inventory[1:3]
     time_signatures_ = abjad.sequence.flatten(lists)
@@ -256,13 +256,13 @@ def _make_time_signatures_by_segment():
     time_signatures.insert(5, abjad.TimeSignature((1, 4)))
     time_signatures.insert(4, abjad.TimeSignature((1, 4)))
     assert len(time_signatures) == 44
-    segment_time_signatures["C"] = time_signatures
+    section_time_signatures["C"] = time_signatures
     # G
     lists = time_signature_inventory[5]
     time_signatures_ = abjad.sequence.flatten(lists)
     assert len(time_signatures_) == 22
     time_signatures = list(time_signatures_)
-    segment_time_signatures["G"] = time_signatures
+    section_time_signatures["G"] = time_signatures
     # H
     lists = time_signature_inventory[5]
     time_signatures_ = abjad.sequence.flatten(lists)
@@ -271,13 +271,13 @@ def _make_time_signatures_by_segment():
     time_signatures.insert(12, abjad.TimeSignature((1, 4)))
     time_signatures.append(abjad.TimeSignature((1, 4)))
     assert len(time_signatures) == 24
-    segment_time_signatures["H"] = time_signatures
+    section_time_signatures["H"] = time_signatures
     # I
     lists = time_signature_inventory[7]
     time_signatures_ = abjad.sequence.flatten(lists)
     assert len(time_signatures_) == 10
     time_signatures = list(time_signatures_)
-    segment_time_signatures["I"] = time_signatures
+    section_time_signatures["I"] = time_signatures
     # J
     lists = time_signature_inventory[11]
     time_signatures_ = abjad.sequence.flatten(lists)
@@ -294,7 +294,7 @@ def _make_time_signatures_by_segment():
     time_signatures.insert(-2, abjad.TimeSignature((3, 4)))
     time_signatures[-1] = abjad.TimeSignature((1, 4))
     assert len(time_signatures) == 23
-    segment_time_signatures["J"] = time_signatures
+    section_time_signatures["J"] = time_signatures
     # A
     lists = time_signature_inventory[11]
     time_signatures_ = abjad.sequence.flatten(lists)
@@ -303,11 +303,11 @@ def _make_time_signatures_by_segment():
     time_signatures.insert(2, abjad.TimeSignature((1, 4)))
     time_signatures.insert(-4, abjad.TimeSignature((1, 4)))
     assert len(time_signatures) == 13
-    segment_time_signatures["A"] = time_signatures
-    return segment_time_signatures
+    section_time_signatures["A"] = time_signatures
+    return section_time_signatures
 
 
-segment_time_signatures = _make_time_signatures_by_segment()
+section_time_signatures = _make_time_signatures_by_section()
 
 
 def _make_pitch_classes():

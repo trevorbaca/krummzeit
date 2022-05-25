@@ -35,7 +35,7 @@ stage_markup = (
 )
 
 maker_ = baca.TimeSignatureMaker(
-    library.segment_time_signatures["B"],
+    library.section_time_signatures["B"],
     count=75,
 )
 time_signatures = maker_.run()

@@ -54,7 +54,7 @@
                 \context GlobalRests = "Global_Rests"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \section_number.04.Global_Rests }
+                { \section_number.4.Global_Rests }
                 % ABSOLUTE_BEFORE:
                 % COMMANDS:
 
@@ -63,7 +63,7 @@
                 \context GlobalSkips = "Global_Skips"
                   %! baca.make_global_context()
                   %! baca.path.extern()
-                { \section_number.04.Global_Skips }
+                { \section_number.4.Global_Skips }
                 % CLOSING:
                 % COMMANDS:
 
@@ -98,7 +98,7 @@
                     \context Staff = "Oboe.Music_Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.04.Oboe.Music_Staff }
+                    { \section_number.4.Oboe.Music_Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -111,7 +111,7 @@
                     \context Staff = "Clarinet.Music_Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.04.Clarinet.Music_Staff }
+                    { \section_number.4.Clarinet.Music_Staff }
                     % CLOSING:
                     % COMMANDS:
 
@@ -138,7 +138,7 @@
                     \context Staff = "Piano.Music_Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.04.Piano.Music_Staff }
+                    { \section_number.4.Piano.Music_Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -151,7 +151,7 @@
                     \context Staff = "Percussion.Music_Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.04.Percussion.Music_Staff }
+                    { \section_number.4.Percussion.Music_Staff }
                     % CLOSING:
                     % COMMANDS:
 
@@ -178,7 +178,7 @@
                     \context Staff = "Violin.Music_Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.04.Violin.Music_Staff }
+                    { \section_number.4.Violin.Music_Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -191,7 +191,7 @@
                     \context Staff = "Viola.Music_Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.04.Viola.Music_Staff }
+                    { \section_number.4.Viola.Music_Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -204,7 +204,7 @@
                     \context Staff = "Cello.Music_Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \section_number.04.Cello.Music_Staff }
+                    { \section_number.4.Cello.Music_Staff }
                     % CLOSING:
                     % COMMANDS:
 

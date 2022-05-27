@@ -251,13 +251,16 @@ music_voice_names = [_ for _ in voice_names if "MusicVoice" in _]
 commands(
     music_voice_names,
     baca.append_phantom_measure(),
-    baca.attach_first_section_default_indicators(),
+    baca.attach_first_section_default_indicators(
+        attach_instruments_by_hand=True,
+    ),
 )
 
 # ob
 
 commands(
     "ob",
+    baca.instrument(commands.instruments["Oboe"]),
     library.margin_markup("Ob."),
     baca.start_markup("Oboe", hcenter_in=16),
 )
@@ -265,21 +268,23 @@ commands(
 # cl
 
 commands(
-    ("cl", (4, 5)),
-    baca.pitch("B1"),
-    baca.dynamic("ppp"),
+    "cl",
+    baca.instrument(commands.instruments["BassClarinet"]),
+    library.margin_markup("B. cl."),
+    baca.start_markup("Bass clarinet", hcenter_in=16),
 )
 
 commands(
-    "cl",
-    library.margin_markup("B. cl."),
-    baca.start_markup("Bass clarinet", hcenter_in=16),
+    ("cl", (4, 5)),
+    baca.pitch("B1"),
+    baca.dynamic("ppp"),
 )
 
 # pf
 
 commands(
     "pf",
+    baca.instrument(commands.instruments["Piano"]),
     library.margin_markup("Pf."),
     baca.start_markup("Piano", hcenter_in=16),
     baca.clef("bass"),
@@ -312,6 +317,7 @@ commands(
 
 commands(
     "perc",
+    baca.instrument(commands.instruments["Xylophone"]),
     library.margin_markup("Perc."),
     baca.start_markup("Percussion", hcenter_in=16),
 )
@@ -340,6 +346,7 @@ commands(
 
 commands(
     "vn",
+    baca.instrument(commands.instruments["Violin"]),
     library.margin_markup("Vn."),
     baca.start_markup("Violin", hcenter_in=16),
 )
@@ -348,6 +355,7 @@ commands(
 
 commands(
     "va",
+    baca.instrument(commands.instruments["Viola"]),
     library.margin_markup("Va."),
     baca.start_markup("Viola", hcenter_in=16),
 )
@@ -356,6 +364,7 @@ commands(
 
 commands(
     "vc",
+    baca.instrument(commands.instruments["Cello"]),
     library.margin_markup("Vc."),
     baca.start_markup("Cello", hcenter_in=16),
 )

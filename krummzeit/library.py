@@ -422,7 +422,6 @@ def make_detached_triplets():
 
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
-    _instruments = instruments()
     global_context = baca.score.make_global_context()
     # OBOE
     oboe_music_voice = abjad.Voice(name="Oboe.MusicVoice", tag=tag)

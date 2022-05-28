@@ -261,6 +261,7 @@ commands(
 commands(
     "ob",
     baca.instrument(commands.instruments["Oboe"]),
+    baca.clef("treble"),
     library.margin_markup("Ob."),
     baca.start_markup("Oboe", hcenter_in=16),
 )
@@ -270,6 +271,7 @@ commands(
 commands(
     "cl",
     baca.instrument(commands.instruments["BassClarinet"]),
+    baca.clef("treble"),
     library.margin_markup("B. cl."),
     baca.start_markup("Bass clarinet", hcenter_in=16),
 )
@@ -285,6 +287,7 @@ commands(
 commands(
     "pf",
     baca.instrument(commands.instruments["Piano"]),
+    baca.clef("bass"),
     library.margin_markup("Pf."),
     baca.start_markup("Piano", hcenter_in=16),
     baca.clef("bass"),
@@ -318,6 +321,7 @@ commands(
 commands(
     "perc",
     baca.instrument(commands.instruments["Xylophone"]),
+    baca.clef("treble"),
     library.margin_markup("Perc."),
     baca.start_markup("Percussion", hcenter_in=16),
 )
@@ -347,6 +351,7 @@ commands(
 commands(
     "vn",
     baca.instrument(commands.instruments["Violin"]),
+    baca.clef("treble"),
     library.margin_markup("Vn."),
     baca.start_markup("Violin", hcenter_in=16),
 )
@@ -356,6 +361,7 @@ commands(
 commands(
     "va",
     baca.instrument(commands.instruments["Viola"]),
+    baca.clef("alto"),
     library.margin_markup("Va."),
     baca.start_markup("Viola", hcenter_in=16),
 )
@@ -365,6 +371,7 @@ commands(
 commands(
     "vc",
     baca.instrument(commands.instruments["Cello"]),
+    baca.clef("bass"),
     library.margin_markup("Vc."),
     baca.start_markup("Cello", hcenter_in=16),
 )

@@ -32,7 +32,6 @@ score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
-    **baca.section_accumulation_defaults(),
     instruments=library.instruments(),
     margin_markups=library.margin_markups(),
     metronome_marks=library.metronome_marks(),
@@ -127,13 +126,12 @@ commands(
     ("vc", (25, 48)),
     baca.make_repeat_tied_notes(),
 )
-# phantom & reapply
+# reapply
 
 music_voice_names = [_ for _ in voice_names if "MusicVoice" in _]
 
 commands(
     music_voice_names,
-    baca.append_phantom_measure(),
     baca.reapply_persistent_indicators(),
 )
 

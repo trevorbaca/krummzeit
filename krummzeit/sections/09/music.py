@@ -208,13 +208,10 @@ commands(
     library.make_hypermeter_tuplets([(2, 3)], [2]),
 )
 
-# phantom & reapply
-
 music_voice_names = [_ for _ in voice_names if "MusicVoice" in _]
 
 commands(
     music_voice_names,
-    baca.append_phantom_measure(),
     baca.reapply_persistent_indicators(),
 )
 

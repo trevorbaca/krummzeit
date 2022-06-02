@@ -45,7 +45,7 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     instruments=library.instruments(),
-    margin_markups=library.margin_markups(),
+    short_instrument_names=library.short_instrument_names(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
@@ -479,7 +479,7 @@ commands(
     ("cl", 5),
     baca.instrument(library.instruments()["ClarinetInEFlat"]),
     baca.markup(r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"),
-    library.margin_markup("Cl. (Eb)"),
+    library.short_instrument_name("Cl. (Eb)"),
     baca.dynamic("mp"),
 )
 
@@ -500,7 +500,7 @@ commands(
 commands(
     "pf",
     baca.instrument(library.instruments()["Harpsichord"]),
-    library.margin_markup("Hpschd."),
+    library.short_instrument_name("Hpschd."),
 )
 
 commands(
@@ -519,7 +519,7 @@ commands(
     ("pf", (45, 46)),
     baca.clef("bass"),
     baca.instrument(library.instruments()["Piano"]),
-    library.margin_markup("Pf."),
+    library.short_instrument_name("Pf."),
 )
 
 commands(

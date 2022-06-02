@@ -30,7 +30,7 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     instruments=library.instruments(),
-    margin_markups=library.margin_markups(),
+    short_instrument_names=library.short_instrument_names(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
@@ -255,7 +255,7 @@ commands(
 commands(
     ("pf", (1, 6)),
     baca.instrument(library.instruments()["Harpsichord"]),
-    library.margin_markup("Hpschd."),
+    library.short_instrument_name("Hpschd."),
     baca.clef("treble"),
     library.replace_with_clusters("harpsichord"),
 )
@@ -277,7 +277,7 @@ commands(
     (["pf", "perc"], (9, 10)),
     baca.new(
         baca.instrument(library.instruments()["Piano"]),
-        library.margin_markup("Pf."),
+        library.short_instrument_name("Pf."),
         baca.tuplet_bracket_staff_padding(2),
         baca.dls_staff_padding(6),
         match=0,

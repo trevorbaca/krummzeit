@@ -975,12 +975,12 @@ def make_white_rhythm(durations=None, remainder=abjad.LEFT, do_not_burnish=None)
     )
 
 
-def margin_markup(
+def short_instrument_name(
     key, alert=None, context="Staff", selector=lambda _: abjad.select.leaf(_, 0)
 ):
-    margin_markup = margin_markups()[key]
-    command = baca.margin_markup(
-        margin_markup,
+    short_instrument_name = short_instrument_names()[key]
+    command = baca.short_instrument_name(
+        short_instrument_name,
         alert=alert,
         context=context,
         selector=selector,
@@ -988,24 +988,24 @@ def margin_markup(
     return baca.not_parts(command)
 
 
-def margin_markups():
-    def _make_margin_markup(markup):
-        return abjad.MarginMarkup(markup=rf'\markup \hcenter-in #16 "{markup}"')
+def short_instrument_names():
+    def _make_short_instrument_name(markup):
+        return abjad.ShortInstrumentName(rf'\markup \hcenter-in #16 "{markup}"')
 
-    clarinet_in_e_flat = abjad.MarginMarkup(
-        markup=r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup"
+    clarinet_in_e_flat = abjad.ShortInstrumentName(
+        r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup"
     )
     return dict(
         [
-            ("B. cl.", _make_margin_markup("B. cl.")),
+            ("B. cl.", _make_short_instrument_name("B. cl.")),
             ("Cl. (Eb)", clarinet_in_e_flat),
-            ("Hpschd.", _make_margin_markup("Hpschd.")),
-            ("Ob.", _make_margin_markup("Ob.")),
-            ("Perc.", _make_margin_markup("Perc.")),
-            ("Pf.", _make_margin_markup("Pf.")),
-            ("Va.", _make_margin_markup("Va.")),
-            ("Vc.", _make_margin_markup("Vc.")),
-            ("Vn.", _make_margin_markup("Vn.")),
+            ("Hpschd.", _make_short_instrument_name("Hpschd.")),
+            ("Ob.", _make_short_instrument_name("Ob.")),
+            ("Perc.", _make_short_instrument_name("Perc.")),
+            ("Pf.", _make_short_instrument_name("Pf.")),
+            ("Va.", _make_short_instrument_name("Va.")),
+            ("Vc.", _make_short_instrument_name("Vc.")),
+            ("Vn.", _make_short_instrument_name("Vn.")),
         ]
     )
 

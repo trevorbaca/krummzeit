@@ -30,7 +30,7 @@ voice_names = baca.accumulator.get_voice_names(score)
 
 commands = baca.CommandAccumulator(
     instruments=library.instruments(),
-    margin_markups=library.margin_markups(),
+    short_instrument_names=library.short_instrument_names(),
     metronome_marks=library.metronome_marks(),
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
@@ -249,8 +249,8 @@ commands(
     "ob",
     baca.instrument(commands.instruments["Oboe"]),
     baca.clef("treble"),
-    library.margin_markup("Ob."),
-    baca.start_markup("Oboe", hcenter_in=16),
+    library.short_instrument_name("Ob."),
+    baca.instrument_name("Oboe", hcenter_in=16),
 )
 
 # cl
@@ -259,8 +259,8 @@ commands(
     "cl",
     baca.instrument(commands.instruments["BassClarinet"]),
     baca.clef("treble"),
-    library.margin_markup("B. cl."),
-    baca.start_markup("Bass clarinet", hcenter_in=16),
+    library.short_instrument_name("B. cl."),
+    baca.instrument_name("Bass clarinet", hcenter_in=16),
 )
 
 commands(
@@ -275,8 +275,8 @@ commands(
     "pf",
     baca.instrument(commands.instruments["Piano"]),
     baca.clef("bass"),
-    library.margin_markup("Pf."),
-    baca.start_markup("Piano", hcenter_in=16),
+    library.short_instrument_name("Pf."),
+    baca.instrument_name("Piano", hcenter_in=16),
     baca.clef("bass"),
 )
 
@@ -309,8 +309,8 @@ commands(
     "perc",
     baca.instrument(commands.instruments["Xylophone"]),
     baca.clef("treble"),
-    library.margin_markup("Perc."),
-    baca.start_markup("Percussion", hcenter_in=16),
+    library.short_instrument_name("Perc."),
+    baca.instrument_name("Percussion", hcenter_in=16),
 )
 
 commands(
@@ -339,8 +339,8 @@ commands(
     "vn",
     baca.instrument(commands.instruments["Violin"]),
     baca.clef("treble"),
-    library.margin_markup("Vn."),
-    baca.start_markup("Violin", hcenter_in=16),
+    library.short_instrument_name("Vn."),
+    baca.instrument_name("Violin", hcenter_in=16),
 )
 
 # va
@@ -349,8 +349,8 @@ commands(
     "va",
     baca.instrument(commands.instruments["Viola"]),
     baca.clef("alto"),
-    library.margin_markup("Va."),
-    baca.start_markup("Viola", hcenter_in=16),
+    library.short_instrument_name("Va."),
+    baca.instrument_name("Viola", hcenter_in=16),
 )
 
 # vc
@@ -359,8 +359,8 @@ commands(
     "vc",
     baca.instrument(commands.instruments["Cello"]),
     baca.clef("bass"),
-    library.margin_markup("Vc."),
-    baca.start_markup("Cello", hcenter_in=16),
+    library.short_instrument_name("Vc."),
+    baca.instrument_name("Cello", hcenter_in=16),
 )
 
 # vn, va, vc composites

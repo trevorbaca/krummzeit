@@ -703,12 +703,12 @@ number.9.GlobalSkips = {
 
 
   %! baca.path.extern()
-number.9.Oboe.MusicVoice = {
+number.9.Oboe.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 1]
+    % [Oboe.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! baca._clone_section_initial_short_instrument_name()
@@ -780,7 +780,7 @@ number.9.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 2]
+    % [Oboe.Music measure 2]
       %! baca._make_mmrests_flat()
     R1 * 3/2
     % AFTER:
@@ -792,7 +792,7 @@ number.9.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 3]
+    % [Oboe.Music measure 3]
       %! baca._make_mmrests_flat()
     R1 * 7/4
     % AFTER:
@@ -804,7 +804,7 @@ number.9.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 4]
+    % [Oboe.Music measure 4]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -840,7 +840,7 @@ number.9.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 5]
+    % [Oboe.Music measure 5]
       %! baca.make_repeat_tied_notes()
     d''2.
     % AFTER:
@@ -855,7 +855,7 @@ number.9.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 6]
+    % [Oboe.Music measure 6]
     d''2..
     % AFTER:
     % SPANNER_STARTS:
@@ -890,7 +890,7 @@ number.9.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 7]
+    % [Oboe.Music measure 7]
     d''4.
     % AFTER:
     % SPANNER_STARTS:
@@ -924,7 +924,7 @@ number.9.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 8]
+        % [Oboe.Music measure 8]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -966,7 +966,7 @@ number.9.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 10]
+        % [Oboe.Music measure 10]
           %! krummzeit.make_hypermeter_tuplets()
         ef''!2.
         % AFTER:
@@ -1006,10 +1006,10 @@ number.9.Oboe.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Oboe.MusicVoice"
+    \context Voice = "Oboe.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.9.Oboe.MusicVoice }
+    { \number.9.Oboe.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -1020,12 +1020,12 @@ number.9.Oboe.Music_Staff = {
 
 
   %! baca.path.extern()
-number.9.Clarinet.MusicVoice = {
+number.9.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 1]
+    % [Clarinet.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! baca._clone_section_initial_short_instrument_name()
@@ -1097,7 +1097,7 @@ number.9.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 2]
+    % [Clarinet.Music measure 2]
       %! baca._make_mmrests_flat()
     R1 * 3/2
     % AFTER:
@@ -1109,7 +1109,7 @@ number.9.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 3]
+    % [Clarinet.Music measure 3]
       %! baca._make_mmrests_flat()
     R1 * 7/4
     % AFTER:
@@ -1121,7 +1121,7 @@ number.9.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 4]
+    % [Clarinet.Music measure 4]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -1156,7 +1156,7 @@ number.9.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 5]
+    % [Clarinet.Music measure 5]
       %! baca.make_repeat_tied_notes()
     b'2.
     % AFTER:
@@ -1167,7 +1167,7 @@ number.9.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 6]
+    % [Clarinet.Music measure 6]
       %! baca._make_mmrests_flat()
     R1 * 11/8
     % AFTER:
@@ -1179,7 +1179,7 @@ number.9.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 7]
+    % [Clarinet.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -1205,7 +1205,7 @@ number.9.Clarinet.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.MusicVoice measure 8]
+        % [Clarinet.Music measure 8]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -1265,7 +1265,7 @@ number.9.Clarinet.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Clarinet.MusicVoice measure 10]
+        % [Clarinet.Music measure 10]
           %! krummzeit.make_hypermeter_tuplets()
         f4
         % AFTER:
@@ -1311,10 +1311,10 @@ number.9.Clarinet.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Clarinet.MusicVoice"
+    \context Voice = "Clarinet.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.9.Clarinet.MusicVoice }
+    { \number.9.Clarinet.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -1325,7 +1325,7 @@ number.9.Clarinet.Music_Staff = {
 
 
   %! baca.path.extern()
-number.9.Piano.MusicVoice = {
+number.9.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1338,7 +1338,7 @@ number.9.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 1]
+        % [Piano.Music measure 1]
         % BEFORE:
         % COMMANDS:
           %! MEASURE_281
@@ -3487,7 +3487,7 @@ number.9.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 7]
+    % [Piano.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -3499,7 +3499,7 @@ number.9.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 8]
+    % [Piano.Music measure 8]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3521,7 +3521,7 @@ number.9.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 9]
+        % [Piano.Music measure 9]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -3619,10 +3619,10 @@ number.9.Piano.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Piano.MusicVoice"
+    \context Voice = "Piano.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.9.Piano.MusicVoice }
+    { \number.9.Piano.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -3633,12 +3633,12 @@ number.9.Piano.Music_Staff = {
 
 
   %! baca.path.extern()
-number.9.Percussion.MusicVoice = {
+number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 1]
+    % [Percussion.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! -PARTS
@@ -3731,7 +3731,7 @@ number.9.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 2]
+    % [Percussion.Music measure 2]
       %! baca._make_mmrests_flat()
     R1 * 3/2
     % AFTER:
@@ -3743,7 +3743,7 @@ number.9.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 3]
+    % [Percussion.Music measure 3]
       %! baca._make_mmrests_flat()
     R1 * 7/4
     % AFTER:
@@ -3755,7 +3755,7 @@ number.9.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 4]
+    % [Percussion.Music measure 4]
       %! baca._make_mmrests_flat()
     R1 * 7/4
     % AFTER:
@@ -3767,7 +3767,7 @@ number.9.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 5]
+    % [Percussion.Music measure 5]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_285
@@ -3938,7 +3938,7 @@ number.9.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 7]
+    % [Percussion.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -3950,7 +3950,7 @@ number.9.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 8]
+    % [Percussion.Music measure 8]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3972,7 +3972,7 @@ number.9.Percussion.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Percussion.MusicVoice measure 9]
+        % [Percussion.Music measure 9]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -4038,10 +4038,10 @@ number.9.Percussion.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Percussion.MusicVoice"
+    \context Voice = "Percussion.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.9.Percussion.MusicVoice }
+    { \number.9.Percussion.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -4052,7 +4052,7 @@ number.9.Percussion.Music_Staff = {
 
 
   %! baca.path.extern()
-number.9.Violin.MusicVoice = {
+number.9.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4067,7 +4067,7 @@ number.9.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 1]
+        % [Violin.Music measure 1]
         % BEFORE:
         % COMMANDS:
           %! -PARTS
@@ -4187,7 +4187,7 @@ number.9.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 3]
+        % [Violin.Music measure 3]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -4266,7 +4266,7 @@ number.9.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 4]
+        % [Violin.Music measure 4]
           %! krummzeit.make_glissando_rhythm()
         cs'1
         % AFTER:
@@ -4335,7 +4335,7 @@ number.9.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 5]
+        % [Violin.Music measure 5]
           %! krummzeit.make_glissando_rhythm()
         f16
         % AFTER:
@@ -4430,7 +4430,7 @@ number.9.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 6]
+    % [Violin.Music measure 6]
       %! baca._make_mmrests_flat()
     R1 * 11/8
     % AFTER:
@@ -4452,7 +4452,7 @@ number.9.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 7]
+        % [Violin.Music measure 7]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -4516,7 +4516,7 @@ number.9.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 9]
+        % [Violin.Music measure 9]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -4573,10 +4573,10 @@ number.9.Violin.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Violin.MusicVoice"
+    \context Voice = "Violin.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.9.Violin.MusicVoice }
+    { \number.9.Violin.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -4587,7 +4587,7 @@ number.9.Violin.Music_Staff = {
 
 
   %! baca.path.extern()
-number.9.Viola.MusicVoice = {
+number.9.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4602,7 +4602,7 @@ number.9.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 1]
+        % [Viola.Music measure 1]
         % BEFORE:
         % COMMANDS:
           %! baca._clone_section_initial_short_instrument_name()
@@ -4703,7 +4703,7 @@ number.9.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 3]
+        % [Viola.Music measure 3]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -4795,7 +4795,7 @@ number.9.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 4]
+        % [Viola.Music measure 4]
           %! krummzeit.make_glissando_rhythm()
         e2
         % AFTER:
@@ -4884,7 +4884,7 @@ number.9.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 5]
+        % [Viola.Music measure 5]
           %! krummzeit.make_glissando_rhythm()
         e4
         % AFTER:
@@ -4945,7 +4945,7 @@ number.9.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 6]
+    % [Viola.Music measure 6]
       %! baca._make_mmrests_flat()
     R1 * 11/8
     % AFTER:
@@ -4967,7 +4967,7 @@ number.9.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 7]
+        % [Viola.Music measure 7]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -5031,7 +5031,7 @@ number.9.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 9]
+        % [Viola.Music measure 9]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -5088,10 +5088,10 @@ number.9.Viola.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Viola.MusicVoice"
+    \context Voice = "Viola.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.9.Viola.MusicVoice }
+    { \number.9.Viola.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -5102,7 +5102,7 @@ number.9.Viola.Music_Staff = {
 
 
   %! baca.path.extern()
-number.9.Cello.MusicVoice = {
+number.9.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5117,7 +5117,7 @@ number.9.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 1]
+        % [Cello.Music measure 1]
         % BEFORE:
         % COMMANDS:
           %! baca._clone_section_initial_short_instrument_name()
@@ -5216,7 +5216,7 @@ number.9.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 3]
+        % [Cello.Music measure 3]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -5337,7 +5337,7 @@ number.9.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 4]
+        % [Cello.Music measure 4]
           %! krummzeit.make_glissando_rhythm()
         bf,!4
         % AFTER:
@@ -5392,7 +5392,7 @@ number.9.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 5]
+        % [Cello.Music measure 5]
           %! krummzeit.make_glissando_rhythm()
         b,2
         % AFTER:
@@ -5453,7 +5453,7 @@ number.9.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 6]
+    % [Cello.Music measure 6]
       %! baca._make_mmrests_flat()
     R1 * 11/8
     % AFTER:
@@ -5475,7 +5475,7 @@ number.9.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 7]
+        % [Cello.Music measure 7]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -5539,7 +5539,7 @@ number.9.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 9]
+        % [Cello.Music measure 9]
         % BEFORE:
         % COMMANDS:
           %! REPEAT_PITCH_CLASS_COLORING
@@ -5596,10 +5596,10 @@ number.9.Cello.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Cello.MusicVoice"
+    \context Voice = "Cello.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.9.Cello.MusicVoice }
+    { \number.9.Cello.Music }
     % CLOSING:
     % COMMANDS:
 

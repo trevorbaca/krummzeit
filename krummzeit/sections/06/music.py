@@ -444,7 +444,7 @@ commands(
     library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
 )
 
-music_voice_names = [_ for _ in voice_names if "MusicVoice" in _]
+music_voice_names = [_ for _ in voice_names if "Music" in _]
 
 commands(
     music_voice_names,

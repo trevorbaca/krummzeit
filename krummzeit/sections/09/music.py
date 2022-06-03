@@ -207,7 +207,7 @@ commands(
     library.make_hypermeter_tuplets([(2, 3)], [2]),
 )
 
-music_voice_names = [_ for _ in voice_names if "MusicVoice" in _]
+music_voice_names = [_ for _ in voice_names if "Music" in _]
 
 commands(
     music_voice_names,

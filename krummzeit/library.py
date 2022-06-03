@@ -424,11 +424,11 @@ def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
     # OBOE
-    oboe_music_voice = abjad.Voice(name="Oboe.MusicVoice", tag=tag)
+    oboe_music_voice = abjad.Voice(name="Oboe.Music", tag=tag)
     oboe_music_staff = abjad.Staff([oboe_music_voice], name="Oboe.Music_Staff", tag=tag)
     baca.score.attach_lilypond_tag("Oboe", oboe_music_staff)
     # CLARINET
-    clarinet_music_voice = abjad.Voice(name="Clarinet.MusicVoice", tag=tag)
+    clarinet_music_voice = abjad.Voice(name="Clarinet.Music", tag=tag)
     clarinet_music_staff = abjad.Staff(
         [clarinet_music_voice], name="Clarinet.Music_Staff", tag=tag
     )
@@ -441,13 +441,13 @@ def make_empty_score():
         tag=tag,
     )
     # PIANO
-    piano_music_voice = abjad.Voice(name="Piano.MusicVoice", tag=tag)
+    piano_music_voice = abjad.Voice(name="Piano.Music", tag=tag)
     piano_music_staff = abjad.Staff(
         [piano_music_voice], name="Piano.Music_Staff", tag=tag
     )
     baca.score.attach_lilypond_tag("Piano", piano_music_staff)
     # PERCUSSION
-    percussion_music_voice = abjad.Voice(name="Percussion.MusicVoice", tag=tag)
+    percussion_music_voice = abjad.Voice(name="Percussion.Music", tag=tag)
     percussion_music_staff = abjad.Staff(
         [percussion_music_voice], name="Percussion.Music_Staff", tag=tag
     )
@@ -460,19 +460,19 @@ def make_empty_score():
         tag=tag,
     )
     # VIOLIN
-    violin_music_voice = abjad.Voice(name="Violin.MusicVoice", tag=tag)
+    violin_music_voice = abjad.Voice(name="Violin.Music", tag=tag)
     violin_music_staff = abjad.Staff(
         [violin_music_voice], name="Violin.Music_Staff", tag=tag
     )
     baca.score.attach_lilypond_tag("Violin", violin_music_staff)
     # VIOLA
-    viola_music_voice = abjad.Voice(name="Viola.MusicVoice", tag=tag)
+    viola_music_voice = abjad.Voice(name="Viola.Music", tag=tag)
     viola_music_staff = abjad.Staff(
         [viola_music_voice], name="Viola.Music_Staff", tag=tag
     )
     baca.score.attach_lilypond_tag("Viola", viola_music_staff)
     # CELLO
-    cello_music_voice = abjad.Voice(name="Cello.MusicVoice", tag=tag)
+    cello_music_voice = abjad.Voice(name="Cello.Music", tag=tag)
     cello_music_staff = abjad.Staff(
         [cello_music_voice], name="Cello.Music_Staff", tag=tag
     )
@@ -1247,11 +1247,11 @@ def violet_pitch_classes():
 
 def voice_abbreviations():
     return {
-        "ob": "Oboe.MusicVoice",
-        "cl": "Clarinet.MusicVoice",
-        "pf": "Piano.MusicVoice",
-        "perc": "Percussion.MusicVoice",
-        "vn": "Violin.MusicVoice",
-        "va": "Viola.MusicVoice",
-        "vc": "Cello.MusicVoice",
+        "ob": "Oboe.Music",
+        "cl": "Clarinet.Music",
+        "pf": "Piano.Music",
+        "perc": "Percussion.Music",
+        "vn": "Violin.Music",
+        "va": "Viola.Music",
+        "vc": "Cello.Music",
     }

@@ -2796,7 +2796,7 @@ number.3.GlobalSkips = {
 
 
   %! baca.path.extern()
-number.3.Oboe.MusicVoice = {
+number.3.Oboe.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2811,7 +2811,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 1]
+        % [Oboe.Music measure 1]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -2968,7 +2968,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 2]
+    % [Oboe.Music measure 2]
       %! krummzeit.make_pizzicato_rhythm()
     b''8
     % ABSOLUTE_BEFORE:
@@ -3115,7 +3115,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 3]
+        % [Oboe.Music measure 3]
           %! krummzeit.make_pizzicato_rhythm()
         d'''4.
         % ABSOLUTE_BEFORE:
@@ -3165,7 +3165,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 4]
+        % [Oboe.Music measure 4]
           %! krummzeit.make_pizzicato_rhythm()
         cs''!4
         % AFTER:
@@ -3268,7 +3268,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 5]
+    % [Oboe.Music measure 5]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3295,7 +3295,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 6]
+        % [Oboe.Music measure 6]
           %! krummzeit.make_pizzicato_rhythm()
         b''8
         % AFTER:
@@ -3349,7 +3349,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 7]
+    % [Oboe.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3366,7 +3366,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 8]
+    % [Oboe.Music measure 8]
       %! baca._make_mmrests_flat()
     R1 * 7/4
     % AFTER:
@@ -3378,7 +3378,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 9]
+    % [Oboe.Music measure 9]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3390,7 +3390,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 10]
+    % [Oboe.Music measure 10]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3402,7 +3402,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 11]
+    % [Oboe.Music measure 11]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3414,7 +3414,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 12]
+    % [Oboe.Music measure 12]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -3426,7 +3426,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 13]
+    % [Oboe.Music measure 13]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3438,7 +3438,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 14]
+    % [Oboe.Music measure 14]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -3450,7 +3450,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 15]
+    % [Oboe.Music measure 15]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3462,7 +3462,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 16]
+    % [Oboe.Music measure 16]
       %! baca._make_mmrests_flat()
     R1 * 2
     % AFTER:
@@ -3474,7 +3474,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 17]
+    % [Oboe.Music measure 17]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3486,7 +3486,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 18]
+    % [Oboe.Music measure 18]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3498,7 +3498,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 19]
+    % [Oboe.Music measure 19]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3510,7 +3510,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 20]
+    % [Oboe.Music measure 20]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -3522,7 +3522,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 21]
+    % [Oboe.Music measure 21]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -3534,7 +3534,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 22]
+    % [Oboe.Music measure 22]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -3546,7 +3546,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 23]
+    % [Oboe.Music measure 23]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -3568,7 +3568,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 24]
+        % [Oboe.Music measure 24]
           %! krummzeit.make_pizzicato_rhythm()
         a''8
         % AFTER:
@@ -3683,7 +3683,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 25]
+    % [Oboe.Music measure 25]
       %! krummzeit.make_pizzicato_rhythm()
     c''4
     % AFTER:
@@ -3832,7 +3832,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 26]
+        % [Oboe.Music measure 26]
           %! krummzeit.make_pizzicato_rhythm()
         e'4.
         % ABSOLUTE_BEFORE:
@@ -3889,7 +3889,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 27]
+    % [Oboe.Music measure 27]
       %! krummzeit.make_pizzicato_rhythm()
     d''8
     % ABSOLUTE_BEFORE:
@@ -3956,7 +3956,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 28]
+        % [Oboe.Music measure 28]
           %! krummzeit.make_pizzicato_rhythm()
         d'''4
         % AFTER:
@@ -4028,7 +4028,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 29]
+    % [Oboe.Music measure 29]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -4055,7 +4055,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 30]
+        % [Oboe.Music measure 30]
           %! krummzeit.make_pizzicato_rhythm()
         bf''!8
         % AFTER:
@@ -4141,7 +4141,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 31]
+    % [Oboe.Music measure 31]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -4168,7 +4168,7 @@ number.3.Oboe.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Oboe.MusicVoice measure 32]
+        % [Oboe.Music measure 32]
           %! krummzeit.make_pizzicato_rhythm()
         d'''8
         % AFTER:
@@ -4292,7 +4292,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 33]
+    % [Oboe.Music measure 33]
       %! krummzeit.make_pizzicato_rhythm()
     f'''8
     % AFTER:
@@ -4436,7 +4436,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 34]
+    % [Oboe.Music measure 34]
       %! krummzeit.make_pizzicato_rhythm()
     fs''!8
     % AFTER:
@@ -4515,7 +4515,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 35]
+    % [Oboe.Music measure 35]
       %! krummzeit.make_pizzicato_rhythm()
     cs''!4
     % AFTER:
@@ -4564,7 +4564,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 36]
+    % [Oboe.Music measure 36]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -4576,7 +4576,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 37]
+    % [Oboe.Music measure 37]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -4588,7 +4588,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 38]
+    % [Oboe.Music measure 38]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -4600,7 +4600,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 39]
+    % [Oboe.Music measure 39]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -4612,7 +4612,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 40]
+    % [Oboe.Music measure 40]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -4624,7 +4624,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 41]
+    % [Oboe.Music measure 41]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -4636,7 +4636,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 42]
+    % [Oboe.Music measure 42]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -4648,7 +4648,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 43]
+    % [Oboe.Music measure 43]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -4660,7 +4660,7 @@ number.3.Oboe.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Oboe.MusicVoice measure 44]
+    % [Oboe.Music measure 44]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -4691,10 +4691,10 @@ number.3.Oboe.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Oboe.MusicVoice"
+    \context Voice = "Oboe.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.3.Oboe.MusicVoice }
+    { \number.3.Oboe.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -4705,12 +4705,12 @@ number.3.Oboe.Music_Staff = {
 
 
   %! baca.path.extern()
-number.3.Clarinet.MusicVoice = {
+number.3.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 1]
+    % [Clarinet.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -4796,7 +4796,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 2]
+    % [Clarinet.Music measure 2]
       %! krummzeit.make_white_rhythm()
     d''4.
     % AFTER:
@@ -4873,7 +4873,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 5]
+    % [Clarinet.Music measure 5]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -4885,7 +4885,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 6]
+    % [Clarinet.Music measure 6]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -4897,7 +4897,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 7]
+    % [Clarinet.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -4909,7 +4909,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 8]
+    % [Clarinet.Music measure 8]
       %! baca._make_mmrests_flat()
     R1 * 7/4
     % AFTER:
@@ -4921,7 +4921,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 9]
+    % [Clarinet.Music measure 9]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -4933,7 +4933,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 10]
+    % [Clarinet.Music measure 10]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -4945,7 +4945,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 11]
+    % [Clarinet.Music measure 11]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -4957,7 +4957,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 12]
+    % [Clarinet.Music measure 12]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -4969,7 +4969,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 13]
+    % [Clarinet.Music measure 13]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -4981,7 +4981,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 14]
+    % [Clarinet.Music measure 14]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -4993,7 +4993,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 15]
+    % [Clarinet.Music measure 15]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5005,7 +5005,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 16]
+    % [Clarinet.Music measure 16]
       %! baca._make_mmrests_flat()
     R1 * 2
     % AFTER:
@@ -5017,7 +5017,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 17]
+    % [Clarinet.Music measure 17]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5029,7 +5029,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 18]
+    % [Clarinet.Music measure 18]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -5041,7 +5041,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 19]
+    % [Clarinet.Music measure 19]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5053,7 +5053,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 20]
+    % [Clarinet.Music measure 20]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -5065,7 +5065,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 21]
+    % [Clarinet.Music measure 21]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5077,7 +5077,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 22]
+    % [Clarinet.Music measure 22]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -5089,7 +5089,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 23]
+    % [Clarinet.Music measure 23]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -5101,7 +5101,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 24]
+    % [Clarinet.Music measure 24]
       %! krummzeit.make_white_rhythm()
     d''4.
     % AFTER:
@@ -5146,7 +5146,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 25]
+    % [Clarinet.Music measure 25]
       %! krummzeit.make_white_rhythm()
     dqs''!4.
     % AFTER:
@@ -5233,7 +5233,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 29]
+    % [Clarinet.Music measure 29]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5245,7 +5245,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 30]
+    % [Clarinet.Music measure 30]
       %! krummzeit.make_white_rhythm()
     b'4.
     % AFTER:
@@ -5262,7 +5262,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 31]
+    % [Clarinet.Music measure 31]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5274,7 +5274,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 32]
+    % [Clarinet.Music measure 32]
       %! krummzeit.make_white_rhythm()
     e''4.
     % AFTER:
@@ -5391,7 +5391,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 36]
+    % [Clarinet.Music measure 36]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -5403,7 +5403,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 37]
+    % [Clarinet.Music measure 37]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -5415,7 +5415,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 38]
+    % [Clarinet.Music measure 38]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -5427,7 +5427,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 39]
+    % [Clarinet.Music measure 39]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -5439,7 +5439,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 40]
+    % [Clarinet.Music measure 40]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -5451,7 +5451,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 41]
+    % [Clarinet.Music measure 41]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -5463,7 +5463,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 42]
+    % [Clarinet.Music measure 42]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -5475,7 +5475,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 43]
+    % [Clarinet.Music measure 43]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -5487,7 +5487,7 @@ number.3.Clarinet.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Clarinet.MusicVoice measure 44]
+    % [Clarinet.Music measure 44]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -5515,10 +5515,10 @@ number.3.Clarinet.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Clarinet.MusicVoice"
+    \context Voice = "Clarinet.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.3.Clarinet.MusicVoice }
+    { \number.3.Clarinet.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -5529,12 +5529,12 @@ number.3.Clarinet.Music_Staff = {
 
 
   %! baca.path.extern()
-number.3.Piano.MusicVoice = {
+number.3.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 1]
+    % [Piano.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! baca._clone_section_initial_short_instrument_name()
@@ -5606,7 +5606,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 2]
+    % [Piano.Music measure 2]
       %! baca._make_mmrests_flat()
     R1 * 11/8
     % AFTER:
@@ -5618,7 +5618,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 3]
+    % [Piano.Music measure 3]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -5630,7 +5630,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 4]
+    % [Piano.Music measure 4]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -5642,7 +5642,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 5]
+    % [Piano.Music measure 5]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5654,7 +5654,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 6]
+    % [Piano.Music measure 6]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -5666,7 +5666,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 7]
+    % [Piano.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5678,7 +5678,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 8]
+    % [Piano.Music measure 8]
       %! baca._make_mmrests_flat()
     R1 * 7/4
     % AFTER:
@@ -5690,7 +5690,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 9]
+    % [Piano.Music measure 9]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5702,7 +5702,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 10]
+    % [Piano.Music measure 10]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -5714,7 +5714,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 11]
+    % [Piano.Music measure 11]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5726,7 +5726,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 12]
+    % [Piano.Music measure 12]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -5738,7 +5738,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 13]
+    % [Piano.Music measure 13]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5758,7 +5758,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 14]
+        % [Piano.Music measure 14]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -5889,7 +5889,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 15]
+    % [Piano.Music measure 15]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -5901,7 +5901,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 16]
+    % [Piano.Music measure 16]
       %! krummzeit.make_silver_points_rhythm()
     r4
     % ABSOLUTE_BEFORE:
@@ -6000,7 +6000,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 17]
+    % [Piano.Music measure 17]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -6020,7 +6020,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 18]
+        % [Piano.Music measure 18]
           %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
@@ -6131,7 +6131,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 19]
+    % [Piano.Music measure 19]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -6151,7 +6151,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 20]
+        % [Piano.Music measure 20]
           %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
@@ -6260,7 +6260,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 21]
+    % [Piano.Music measure 21]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -6272,7 +6272,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 22]
+    % [Piano.Music measure 22]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -6284,7 +6284,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 23]
+    % [Piano.Music measure 23]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -6296,7 +6296,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 24]
+    % [Piano.Music measure 24]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -6308,7 +6308,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 25]
+    % [Piano.Music measure 25]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -6320,7 +6320,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 26]
+    % [Piano.Music measure 26]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -6332,7 +6332,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 27]
+    % [Piano.Music measure 27]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -6352,7 +6352,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 28]
+        % [Piano.Music measure 28]
           %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
@@ -6448,7 +6448,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 29]
+    % [Piano.Music measure 29]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -6468,7 +6468,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 30]
+        % [Piano.Music measure 30]
           %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
@@ -6551,7 +6551,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 31]
+    % [Piano.Music measure 31]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -6571,7 +6571,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 32]
+        % [Piano.Music measure 32]
           %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
@@ -6664,7 +6664,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 33]
+        % [Piano.Music measure 33]
           %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
@@ -6757,7 +6757,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 34]
+        % [Piano.Music measure 34]
           %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
@@ -6850,7 +6850,7 @@ number.3.Piano.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Piano.MusicVoice measure 35]
+        % [Piano.Music measure 35]
           %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
@@ -6941,7 +6941,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 36]
+    % [Piano.Music measure 36]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -6953,7 +6953,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 37]
+    % [Piano.Music measure 37]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -6965,7 +6965,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 38]
+    % [Piano.Music measure 38]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -6977,7 +6977,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 39]
+    % [Piano.Music measure 39]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -6989,7 +6989,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 40]
+    % [Piano.Music measure 40]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -7001,7 +7001,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 41]
+    % [Piano.Music measure 41]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -7013,7 +7013,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 42]
+    % [Piano.Music measure 42]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -7025,7 +7025,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 43]
+    % [Piano.Music measure 43]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -7037,7 +7037,7 @@ number.3.Piano.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Piano.MusicVoice measure 44]
+    % [Piano.Music measure 44]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -7061,10 +7061,10 @@ number.3.Piano.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Piano.MusicVoice"
+    \context Voice = "Piano.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.3.Piano.MusicVoice }
+    { \number.3.Piano.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -7075,12 +7075,12 @@ number.3.Piano.Music_Staff = {
 
 
   %! baca.path.extern()
-number.3.Percussion.MusicVoice = {
+number.3.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 1]
+    % [Percussion.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! -PARTS
@@ -7173,7 +7173,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 2]
+    % [Percussion.Music measure 2]
       %! baca._make_mmrests_flat()
     R1 * 11/8
     % AFTER:
@@ -7185,7 +7185,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 3]
+    % [Percussion.Music measure 3]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -7197,7 +7197,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 4]
+    % [Percussion.Music measure 4]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -7209,7 +7209,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 5]
+    % [Percussion.Music measure 5]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -7221,7 +7221,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 6]
+    % [Percussion.Music measure 6]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -7233,7 +7233,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 7]
+    % [Percussion.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -7245,7 +7245,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 8]
+    % [Percussion.Music measure 8]
       %! baca._make_mmrests_flat()
     R1 * 7/4
     % AFTER:
@@ -7257,7 +7257,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 9]
+    % [Percussion.Music measure 9]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -7269,7 +7269,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 10]
+    % [Percussion.Music measure 10]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -7281,7 +7281,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 11]
+    % [Percussion.Music measure 11]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -7293,7 +7293,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 12]
+    % [Percussion.Music measure 12]
       %! baca._make_mmrests_flat()
     R1 * 7/8
     % AFTER:
@@ -7305,7 +7305,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 13]
+    % [Percussion.Music measure 13]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -7317,7 +7317,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 14]
+    % [Percussion.Music measure 14]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_102
@@ -7504,7 +7504,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 15]
+    % [Percussion.Music measure 15]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -7526,7 +7526,7 @@ number.3.Percussion.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Percussion.MusicVoice measure 16]
+        % [Percussion.Music measure 16]
           %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
@@ -7637,7 +7637,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 17]
+    % [Percussion.Music measure 17]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -7659,7 +7659,7 @@ number.3.Percussion.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Percussion.MusicVoice measure 18]
+        % [Percussion.Music measure 18]
           %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
@@ -7768,7 +7768,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 19]
+    % [Percussion.Music measure 19]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -7788,7 +7788,7 @@ number.3.Percussion.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Percussion.MusicVoice measure 20]
+        % [Percussion.Music measure 20]
           %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
@@ -7904,7 +7904,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 21]
+    % [Percussion.Music measure 21]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -8002,7 +8002,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 22]
+    % [Percussion.Music measure 22]
       %! baca.make_repeat_tied_notes()
     c'1
     % AFTER:
@@ -8019,7 +8019,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 23]
+    % [Percussion.Music measure 23]
     c'4.
     % AFTER:
     % SPANNER_STARTS:
@@ -8043,7 +8043,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 24]
+    % [Percussion.Music measure 24]
     c'2.
     % AFTER:
     % SPANNER_STARTS:
@@ -8067,7 +8067,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 25]
+    % [Percussion.Music measure 25]
     c'2.
     % AFTER:
     % SPANNER_STARTS:
@@ -8087,7 +8087,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 26]
+    % [Percussion.Music measure 26]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -8099,7 +8099,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 27]
+    % [Percussion.Music measure 27]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -8119,7 +8119,7 @@ number.3.Percussion.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Percussion.MusicVoice measure 28]
+        % [Percussion.Music measure 28]
         % BEFORE:
         % COMMANDS:
           %! MEASURE_116
@@ -8287,7 +8287,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 29]
+    % [Percussion.Music measure 29]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -8307,7 +8307,7 @@ number.3.Percussion.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Percussion.MusicVoice measure 30]
+        % [Percussion.Music measure 30]
           %! krummzeit.make_silver_points_rhythm()
         r16
         % ABSOLUTE_BEFORE:
@@ -8390,7 +8390,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 31]
+    % [Percussion.Music measure 31]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -8412,7 +8412,7 @@ number.3.Percussion.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Percussion.MusicVoice measure 32]
+        % [Percussion.Music measure 32]
           %! krummzeit.make_silver_points_rhythm()
         r8
         % ABSOLUTE_BEFORE:
@@ -8505,7 +8505,7 @@ number.3.Percussion.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Percussion.MusicVoice measure 33]
+        % [Percussion.Music measure 33]
           %! krummzeit.make_silver_points_rhythm()
         r4
         % ABSOLUTE_BEFORE:
@@ -8588,7 +8588,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 34]
+    % [Percussion.Music measure 34]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_122
@@ -8690,7 +8690,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 35]
+    % [Percussion.Music measure 35]
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
@@ -8722,7 +8722,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 36]
+    % [Percussion.Music measure 36]
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -8754,7 +8754,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 37]
+    % [Percussion.Music measure 37]
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -8786,7 +8786,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 38]
+    % [Percussion.Music measure 38]
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -8818,7 +8818,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 39]
+    % [Percussion.Music measure 39]
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
@@ -8850,7 +8850,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 40]
+    % [Percussion.Music measure 40]
       %! baca.make_repeat_tied_notes()
     c'2.
     % AFTER:
@@ -8869,7 +8869,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 41]
+    % [Percussion.Music measure 41]
       %! baca.make_repeat_tied_notes()
     c'2.
     % AFTER:
@@ -8888,7 +8888,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 42]
+    % [Percussion.Music measure 42]
       %! baca.make_repeat_tied_notes()
     c'1
     % AFTER:
@@ -8909,7 +8909,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 43]
+    % [Percussion.Music measure 43]
       %! baca.make_repeat_tied_notes()
     c'1
     % AFTER:
@@ -8930,7 +8930,7 @@ number.3.Percussion.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Percussion.MusicVoice measure 44]
+    % [Percussion.Music measure 44]
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
@@ -8974,10 +8974,10 @@ number.3.Percussion.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Percussion.MusicVoice"
+    \context Voice = "Percussion.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.3.Percussion.MusicVoice }
+    { \number.3.Percussion.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -8988,12 +8988,12 @@ number.3.Percussion.Music_Staff = {
 
 
   %! baca.path.extern()
-number.3.Violin.MusicVoice = {
+number.3.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 1]
+    % [Violin.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! -PARTS
@@ -9088,7 +9088,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 2]
+    % [Violin.Music measure 2]
     c'2..
     % AFTER:
     % SPANNER_STARTS:
@@ -9123,7 +9123,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 3]
+    % [Violin.Music measure 3]
     c'4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9147,7 +9147,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 4]
+    % [Violin.Music measure 4]
       %! baca.make_repeat_tied_notes()
     c'1
     % AFTER:
@@ -9164,7 +9164,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 5]
+    % [Violin.Music measure 5]
       %! baca.make_repeat_tied_notes()
     c'4
     % AFTER:
@@ -9179,7 +9179,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 6]
+    % [Violin.Music measure 6]
       %! baca.make_repeat_tied_notes()
     c'2
     % AFTER:
@@ -9194,7 +9194,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 7]
+    % [Violin.Music measure 7]
       %! baca.make_repeat_tied_notes()
     c'4
     % AFTER:
@@ -9209,7 +9209,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 8]
+    % [Violin.Music measure 8]
       %! baca.make_repeat_tied_notes()
     c'1..
     % AFTER:
@@ -9226,7 +9226,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 9]
+    % [Violin.Music measure 9]
       %! baca.make_repeat_tied_notes()
     c'4
     % AFTER:
@@ -9241,7 +9241,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 10]
+    % [Violin.Music measure 10]
       %! baca.make_repeat_tied_notes()
     c'1
     % AFTER:
@@ -9258,7 +9258,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 11]
+    % [Violin.Music measure 11]
       %! baca.make_repeat_tied_notes()
     c'4
     % AFTER:
@@ -9273,7 +9273,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 12]
+    % [Violin.Music measure 12]
       %! baca.make_repeat_tied_notes()
     c'2..
     % AFTER:
@@ -9288,7 +9288,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 13]
+    % [Violin.Music measure 13]
       %! baca.make_repeat_tied_notes()
     c'4
     % AFTER:
@@ -9303,7 +9303,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 14]
+    % [Violin.Music measure 14]
       %! baca.make_repeat_tied_notes()
     c'2..
     % AFTER:
@@ -9318,7 +9318,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 15]
+    % [Violin.Music measure 15]
       %! baca.make_repeat_tied_notes()
     c'4
     % AFTER:
@@ -9333,7 +9333,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 16]
+    % [Violin.Music measure 16]
       %! baca.make_repeat_tied_notes()
     c'\breve
     % AFTER:
@@ -9350,7 +9350,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 17]
+    % [Violin.Music measure 17]
       %! baca.make_repeat_tied_notes()
     c'4
     % AFTER:
@@ -9365,7 +9365,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 18]
+    % [Violin.Music measure 18]
       %! baca.make_repeat_tied_notes()
     c'1
     % AFTER:
@@ -9382,7 +9382,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 19]
+    % [Violin.Music measure 19]
       %! baca.make_repeat_tied_notes()
     c'4
     % AFTER:
@@ -9397,7 +9397,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 20]
+    % [Violin.Music measure 20]
       %! baca.make_repeat_tied_notes()
     c'2.
     % AFTER:
@@ -9408,7 +9408,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 21]
+    % [Violin.Music measure 21]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -9430,7 +9430,7 @@ number.3.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 22]
+        % [Violin.Music measure 22]
         % BEFORE:
         % COMMANDS:
           %! MEASURE_110
@@ -9612,7 +9612,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 23]
+    % [Violin.Music measure 23]
       %! krummzeit.make_pizzicato_rhythm()
     a''8
     % ABSOLUTE_BEFORE:
@@ -9664,7 +9664,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 24]
+    % [Violin.Music measure 24]
       %! krummzeit.make_pizzicato_rhythm()
     af''!4
     % AFTER:
@@ -9740,7 +9740,7 @@ number.3.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 25]
+        % [Violin.Music measure 25]
           %! krummzeit.make_pizzicato_rhythm()
         bqs''!8
         % AFTER:
@@ -9867,7 +9867,7 @@ number.3.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 26]
+        % [Violin.Music measure 26]
           %! krummzeit.make_pizzicato_rhythm()
         cs'''8
         % AFTER:
@@ -9932,7 +9932,7 @@ number.3.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 27]
+        % [Violin.Music measure 27]
           %! krummzeit.make_pizzicato_rhythm()
         af''4
         % ABSOLUTE_BEFORE:
@@ -9996,7 +9996,7 @@ number.3.Violin.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Violin.MusicVoice measure 28]
+        % [Violin.Music measure 28]
           %! krummzeit.make_pizzicato_rhythm()
         c'''4
         % ABSOLUTE_BEFORE:
@@ -10054,7 +10054,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 29]
+    % [Violin.Music measure 29]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -10071,7 +10071,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 30]
+    % [Violin.Music measure 30]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -10083,7 +10083,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 31]
+    % [Violin.Music measure 31]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -10095,7 +10095,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 32]
+    % [Violin.Music measure 32]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -10107,7 +10107,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 33]
+    % [Violin.Music measure 33]
       %! baca._make_mmrests_flat()
     R1 * 13/8
     % AFTER:
@@ -10119,7 +10119,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 34]
+    % [Violin.Music measure 34]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -10131,7 +10131,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 35]
+    % [Violin.Music measure 35]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -10143,7 +10143,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 36]
+    % [Violin.Music measure 36]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -10251,7 +10251,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 43]
+    % [Violin.Music measure 43]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -10263,7 +10263,7 @@ number.3.Violin.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Violin.MusicVoice measure 44]
+    % [Violin.Music measure 44]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -10287,10 +10287,10 @@ number.3.Violin.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Violin.MusicVoice"
+    \context Voice = "Violin.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.3.Violin.MusicVoice }
+    { \number.3.Violin.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -10301,12 +10301,12 @@ number.3.Violin.Music_Staff = {
 
 
   %! baca.path.extern()
-number.3.Viola.MusicVoice = {
+number.3.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 1]
+    % [Viola.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_89
@@ -10392,7 +10392,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 2]
+    % [Viola.Music measure 2]
       %! baca._make_mmrests_flat()
     R1 * 11/8
     % AFTER:
@@ -10404,7 +10404,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 3]
+    % [Viola.Music measure 3]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -10416,7 +10416,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 4]
+    % [Viola.Music measure 4]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -10428,7 +10428,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 5]
+    % [Viola.Music measure 5]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -10450,7 +10450,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 6]
+        % [Viola.Music measure 6]
         % BEFORE:
         % COMMANDS:
           %! baca.OverrideCommand._call(1)
@@ -10530,7 +10530,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 7]
+    % [Viola.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -10552,7 +10552,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 8]
+        % [Viola.Music measure 8]
           %! krummzeit.make_single_division_tuplets()
         f4
         % AFTER:
@@ -10620,7 +10620,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 9]
+    % [Viola.Music measure 9]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -10642,7 +10642,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 10]
+        % [Viola.Music measure 10]
           %! krummzeit.make_single_division_tuplets()
         dqs!2
         % AFTER:
@@ -10710,7 +10710,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 11]
+    % [Viola.Music measure 11]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -10732,7 +10732,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 12]
+        % [Viola.Music measure 12]
           %! krummzeit.make_single_division_tuplets()
         dqs!8
         % AFTER:
@@ -10800,7 +10800,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 13]
+    % [Viola.Music measure 13]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -10822,7 +10822,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 14]
+        % [Viola.Music measure 14]
           %! krummzeit.make_single_division_tuplets()
         dtqs!2
         % AFTER:
@@ -10903,7 +10903,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 15]
+        % [Viola.Music measure 15]
           %! krummzeit.make_single_division_tuplets()
         f4
         % AFTER:
@@ -10930,7 +10930,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 16]
+        % [Viola.Music measure 16]
           %! krummzeit.make_single_division_tuplets()
         f4
         % AFTER:
@@ -10967,7 +10967,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 17]
+        % [Viola.Music measure 17]
           %! krummzeit.make_single_division_tuplets()
         eqs4
         % AFTER:
@@ -10994,7 +10994,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 18]
+        % [Viola.Music measure 18]
           %! krummzeit.make_single_division_tuplets()
         eqs2
         % AFTER:
@@ -11031,7 +11031,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 19]
+        % [Viola.Music measure 19]
           %! krummzeit.make_single_division_tuplets()
         dqs4
         % AFTER:
@@ -11058,7 +11058,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 20]
+        % [Viola.Music measure 20]
           %! krummzeit.make_single_division_tuplets()
         dqs8
         % AFTER:
@@ -11095,7 +11095,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 21]
+        % [Viola.Music measure 21]
           %! krummzeit.make_single_division_tuplets()
         c4
         % AFTER:
@@ -11122,7 +11122,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 22]
+        % [Viola.Music measure 22]
           %! krummzeit.make_single_division_tuplets()
         c2
         % AFTER:
@@ -11159,7 +11159,7 @@ number.3.Viola.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Viola.MusicVoice measure 23]
+        % [Viola.Music measure 23]
           %! krummzeit.make_single_division_tuplets()
         dqs2
         % AFTER:
@@ -11180,7 +11180,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 24]
+    % [Viola.Music measure 24]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -11192,7 +11192,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 25]
+    % [Viola.Music measure 25]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -11204,7 +11204,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 26]
+    % [Viola.Music measure 26]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -11216,7 +11216,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 27]
+    % [Viola.Music measure 27]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -11228,7 +11228,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 28]
+    % [Viola.Music measure 28]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -11240,7 +11240,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 29]
+    % [Viola.Music measure 29]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -11252,7 +11252,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 30]
+    % [Viola.Music measure 30]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -11264,7 +11264,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 31]
+    % [Viola.Music measure 31]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -11276,7 +11276,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 32]
+    % [Viola.Music measure 32]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -11379,7 +11379,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 41]
+    % [Viola.Music measure 41]
       %! krummzeit.make_fused_expanse()
     bqs,!1
     % AFTER:
@@ -11416,7 +11416,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 43]
+    % [Viola.Music measure 43]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -11428,7 +11428,7 @@ number.3.Viola.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Viola.MusicVoice measure 44]
+    % [Viola.Music measure 44]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -11452,10 +11452,10 @@ number.3.Viola.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Viola.MusicVoice"
+    \context Voice = "Viola.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.3.Viola.MusicVoice }
+    { \number.3.Viola.Music }
     % CLOSING:
     % COMMANDS:
 
@@ -11466,12 +11466,12 @@ number.3.Viola.Music_Staff = {
 
 
   %! baca.path.extern()
-number.3.Cello.MusicVoice = {
+number.3.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 1]
+    % [Cello.Music measure 1]
     % BEFORE:
     % COMMANDS:
       %! MEASURE_89
@@ -11557,7 +11557,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 2]
+    % [Cello.Music measure 2]
       %! baca._make_mmrests_flat()
     R1 * 11/8
     % AFTER:
@@ -11569,7 +11569,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 3]
+    % [Cello.Music measure 3]
       %! baca._make_mmrests_flat()
     R1 * 5/8
     % AFTER:
@@ -11581,7 +11581,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 4]
+    % [Cello.Music measure 4]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -11593,7 +11593,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 5]
+    % [Cello.Music measure 5]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -11615,7 +11615,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 6]
+        % [Cello.Music measure 6]
           %! krummzeit.make_single_division_tuplets()
         d,16
         % AFTER:
@@ -11687,7 +11687,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 7]
+    % [Cello.Music measure 7]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -11709,7 +11709,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 8]
+        % [Cello.Music measure 8]
           %! krummzeit.make_single_division_tuplets()
         e,1
         % AFTER:
@@ -11777,7 +11777,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 9]
+    % [Cello.Music measure 9]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -11799,7 +11799,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 10]
+        % [Cello.Music measure 10]
           %! krummzeit.make_single_division_tuplets()
         cqs,!8
         % AFTER:
@@ -11867,7 +11867,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 11]
+    % [Cello.Music measure 11]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -11889,7 +11889,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 12]
+        % [Cello.Music measure 12]
           %! krummzeit.make_single_division_tuplets()
         dqs,!2
         % AFTER:
@@ -11957,7 +11957,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 13]
+    % [Cello.Music measure 13]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -11979,7 +11979,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 14]
+        % [Cello.Music measure 14]
           %! krummzeit.make_single_division_tuplets()
         ctqs,!8
         % AFTER:
@@ -12060,7 +12060,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 15]
+        % [Cello.Music measure 15]
           %! krummzeit.make_single_division_tuplets()
         e,4
         % AFTER:
@@ -12087,7 +12087,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 16]
+        % [Cello.Music measure 16]
           %! krummzeit.make_single_division_tuplets()
         e,1
         % AFTER:
@@ -12124,7 +12124,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 17]
+        % [Cello.Music measure 17]
           %! krummzeit.make_single_division_tuplets()
         dqs,4
         % AFTER:
@@ -12151,7 +12151,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 18]
+        % [Cello.Music measure 18]
           %! krummzeit.make_single_division_tuplets()
         dqs,8
         % AFTER:
@@ -12188,7 +12188,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 19]
+        % [Cello.Music measure 19]
           %! krummzeit.make_single_division_tuplets()
         cqs,4
         % AFTER:
@@ -12215,7 +12215,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 20]
+        % [Cello.Music measure 20]
           %! krummzeit.make_single_division_tuplets()
         cqs,2
         % AFTER:
@@ -12252,7 +12252,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 21]
+        % [Cello.Music measure 21]
           %! krummzeit.make_single_division_tuplets()
         b,,4
         % AFTER:
@@ -12279,7 +12279,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 22]
+        % [Cello.Music measure 22]
           %! krummzeit.make_single_division_tuplets()
         b,,8
         % AFTER:
@@ -12316,7 +12316,7 @@ number.3.Cello.MusicVoice = {
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
-        % [Cello.MusicVoice measure 23]
+        % [Cello.Music measure 23]
           %! krummzeit.make_single_division_tuplets()
         dqs,2
         % CLOSING:
@@ -12329,7 +12329,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 24]
+    % [Cello.Music measure 24]
       %! baca._make_mmrests_flat()
     R1 * 9/8
     % AFTER:
@@ -12341,7 +12341,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 25]
+    % [Cello.Music measure 25]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -12353,7 +12353,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 26]
+    % [Cello.Music measure 26]
       %! baca._make_mmrests_flat()
     R1 * 1/2
     % AFTER:
@@ -12365,7 +12365,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 27]
+    % [Cello.Music measure 27]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -12377,7 +12377,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 28]
+    % [Cello.Music measure 28]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -12389,7 +12389,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 29]
+    % [Cello.Music measure 29]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -12401,7 +12401,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 30]
+    % [Cello.Music measure 30]
       %! baca._make_mmrests_flat()
     R1 * 3/4
     % AFTER:
@@ -12413,7 +12413,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 31]
+    % [Cello.Music measure 31]
       %! baca._make_mmrests_flat()
     R1 * 1/4
     % AFTER:
@@ -12425,7 +12425,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 32]
+    % [Cello.Music measure 32]
     % BEFORE:
     % COMMANDS:
       %! baca.OverrideCommand._call(1)
@@ -12508,7 +12508,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 38]
+    % [Cello.Music measure 38]
       %! krummzeit.make_fused_expanse()
     b,,1.
     % AFTER:
@@ -12530,7 +12530,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 41]
+    % [Cello.Music measure 41]
       %! krummzeit.make_fused_expanse()
     bqf,,!1..
     % AFTER:
@@ -12557,7 +12557,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 43]
+    % [Cello.Music measure 43]
       %! baca._make_mmrests_flat()
     R1 * 1
     % AFTER:
@@ -12569,7 +12569,7 @@ number.3.Cello.MusicVoice = {
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
-    % [Cello.MusicVoice measure 44]
+    % [Cello.Music measure 44]
       %! baca._make_mmrests_flat()
     R1 * 5/4
     % AFTER:
@@ -12593,10 +12593,10 @@ number.3.Cello.Music_Staff = {
 
     % OPEN_BRACKETS:
       %! krummzeit.make_empty_score()
-    \context Voice = "Cello.MusicVoice"
+    \context Voice = "Cello.Music"
       %! krummzeit.make_empty_score()
       %! baca.path.extern()
-    { \number.3.Cello.MusicVoice }
+    { \number.3.Cello.Music }
     % CLOSING:
     % COMMANDS:
 

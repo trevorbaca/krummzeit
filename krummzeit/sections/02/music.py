@@ -53,7 +53,7 @@ commands = baca.CommandAccumulator(
 )
 
 commands(
-    "GlobalSkips",
+    "Skips",
     baca.metronome_mark(
         "67.5",
         selector=lambda _: abjad.select.leaf(_, 23 - 1),

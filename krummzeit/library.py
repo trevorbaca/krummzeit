@@ -989,25 +989,17 @@ def short_instrument_name(
 
 
 def short_instrument_names():
-    def _make_short_instrument_name(markup):
-        return abjad.ShortInstrumentName(rf'\markup \hcenter-in #16 "{markup}"')
-
-    clarinet_in_e_flat = abjad.ShortInstrumentName(
-        r"\markup \hcenter-in #16 \krummzeit-clarinet-in-e-flat-markup"
-    )
-    return dict(
-        [
-            ("B. cl.", _make_short_instrument_name("B. cl.")),
-            ("Cl. (Eb)", clarinet_in_e_flat),
-            ("Hpschd.", _make_short_instrument_name("Hpschd.")),
-            ("Ob.", _make_short_instrument_name("Ob.")),
-            ("Perc.", _make_short_instrument_name("Perc.")),
-            ("Pf.", _make_short_instrument_name("Pf.")),
-            ("Va.", _make_short_instrument_name("Va.")),
-            ("Vc.", _make_short_instrument_name("Vc.")),
-            ("Vn.", _make_short_instrument_name("Vn.")),
-        ]
-    )
+    return {
+        "B. cl.": abjad.ShortInstrumentName(r"\krummzeit-bcl-markup"),
+        "Cl. (Eb)": abjad.ShortInstrumentName(r"\krummzeit-clarinet-in-e-flat-markup"),
+        "Hpschd.": abjad.ShortInstrumentName(r"\krummzeit-hpschd-markup"),
+        "Ob.": abjad.ShortInstrumentName(r"\krummzeit-ob-markup"),
+        "Perc.": abjad.ShortInstrumentName(r"\krummzeit-perc-markup"),
+        "Pf.": abjad.ShortInstrumentName(r"\krummzeit-pf-markup"),
+        "Va.": abjad.ShortInstrumentName(r"\krummzeit-va-markup"),
+        "Vc.": abjad.ShortInstrumentName(r"\krummzeit-vc-markup"),
+        "Vn.": abjad.ShortInstrumentName(r"\krummzeit-vn-markup"),
+    }
 
 
 def metronome_marks():

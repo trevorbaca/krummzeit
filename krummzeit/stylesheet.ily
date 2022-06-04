@@ -223,7 +223,38 @@
     }
 }
 
-%%% MARKUP
+% INSTRUMENT NAME MARKUP
+
+krummzeit-oboe-markup = \markup \hcenter-in #16 Oboe
+krummzeit-ob-markup = \markup \hcenter-in #16 Ob.
+
+krummzeit-bass-clarinet-markup = \markup
+  \column {
+  \hcenter-in #16 Bass
+  \hcenter-in #16 clarinet
+  }
+krummzeit-bcl-markup = \markup \hcenter-in #16 "B. cl."
+
+krummzeit-clarinet-in-e-flat-markup = \markup \hcenter-in #16
+  { Cl. \concat { (E \raise #0.5 \scale #'(0.65 . 0.65) \flat ) } }
+
+krummzeit-piano-markup = \markup \hcenter-in #16 Piano
+krummzeit-pf-markup = \markup \hcenter-in #16 Pf.
+krummzeit-hpschd-markup = \markup \hcenter-in #16 Hpschd.
+
+krummzeit-percussion-markup = \markup \hcenter-in #16 Percussion
+krummzeit-perc-markup = \markup \hcenter-in #16 Perc.
+
+krummzeit-violin-markup = \markup \hcenter-in #16 Violin
+krummzeit-vn-markup = \markup \hcenter-in #16 Vn.
+
+krummzeit-viola-markup = \markup \hcenter-in #16 Viola
+krummzeit-va-markup = \markup \hcenter-in #16 Va.
+
+krummzeit-cello-markup = \markup \hcenter-in #16 Cello
+krummzeit-vc-markup = \markup \hcenter-in #16 Vc.
+
+% MARKUP
 
 krummzeit-accent-changes-markup = \markup
   "accent changes of direction noticeably at each attack"
@@ -233,9 +264,6 @@ krummzeit-attackless-roll-markup = \markup
 
 krummzeit-catch-resonance-markup = \markup
   "catch resonance (but not attack) with pedal"
-
-krummzeit-clarinet-in-e-flat-markup = \markup
-  { Cl. \concat { (E \raise #0.5 \scale #'(0.65 . 0.65) \flat ) } }
 
 krummzeit-colophon-markup = \markup
   \override #'(font-name . "Palatino")
@@ -275,7 +303,7 @@ krummzeit-show-tempo-markup = \markup
 krummzeit-stonecircle-scrape-at-moderate-speed-markup = \markup
   "stonecircle: scrape at moderate speed"
 
-%%% METRONOME MARKS %%%
+% METRONOME MARKS
 
 krummzeit-seventy-two-subito-one-hundred-eight-markup = \markup
   \concat {

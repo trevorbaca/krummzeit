@@ -970,13 +970,13 @@ number.1.Oboe.Music = {
       %! -PARTS
       %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Oboe"
+    \set Staff.instrumentName = \krummzeit-oboe-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
+    \set Staff.shortInstrumentName = \krummzeit-ob-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
@@ -1023,7 +1023,7 @@ number.1.Oboe.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
+    \set Staff.shortInstrumentName = \krummzeit-ob-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1221,13 +1221,13 @@ number.1.Clarinet.Music = {
       %! -PARTS
       %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Bass clarinet"
+    \set Staff.instrumentName = \krummzeit-bass-clarinet-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
+    \set Staff.shortInstrumentName = \krummzeit-bcl-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
@@ -1274,7 +1274,7 @@ number.1.Clarinet.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
+    \set Staff.shortInstrumentName = \krummzeit-bcl-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1494,13 +1494,13 @@ number.1.Piano.Music = {
       %! -PARTS
       %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Piano"
+    \set Staff.instrumentName = \krummzeit-piano-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Pf."
+    \set Staff.shortInstrumentName = \krummzeit-pf-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
@@ -1547,7 +1547,7 @@ number.1.Piano.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Pf."
+    \set Staff.shortInstrumentName = \krummzeit-pf-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -1856,13 +1856,13 @@ number.1.Percussion.Music = {
       %! -PARTS
       %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Percussion"
+    \set Staff.instrumentName = \krummzeit-percussion-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."
+    \set Staff.shortInstrumentName = \krummzeit-perc-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
@@ -1909,7 +1909,7 @@ number.1.Percussion.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."
+    \set Staff.shortInstrumentName = \krummzeit-perc-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2350,13 +2350,13 @@ number.1.Violin.Music = {
       %! -PARTS
       %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Violin"
+    \set Staff.instrumentName = \krummzeit-violin-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
+    \set Staff.shortInstrumentName = \krummzeit-vn-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
@@ -2400,7 +2400,7 @@ number.1.Violin.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
+    \set Staff.shortInstrumentName = \krummzeit-vn-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3320,13 +3320,13 @@ number.1.Viola.Music = {
       %! -PARTS
       %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Viola"
+    \set Staff.instrumentName = \krummzeit-viola-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
+    \set Staff.shortInstrumentName = \krummzeit-va-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
@@ -3370,7 +3370,7 @@ number.1.Viola.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
+    \set Staff.shortInstrumentName = \krummzeit-va-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4276,13 +4276,13 @@ number.1.Cello.Music = {
       %! -PARTS
       %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Cello"
+    \set Staff.instrumentName = \krummzeit-cello-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
+    \set Staff.shortInstrumentName = \krummzeit-vc-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
@@ -4326,7 +4326,7 @@ number.1.Cello.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
+    \set Staff.shortInstrumentName = \krummzeit-vc-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

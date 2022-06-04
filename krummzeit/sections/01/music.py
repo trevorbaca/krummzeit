@@ -248,9 +248,9 @@ commands(
 commands(
     "ob",
     baca.instrument(commands.instruments["Oboe"]),
-    baca.clef("treble"),
+    baca.instrument_name(r"\krummzeit-oboe-markup"),
     library.short_instrument_name("Ob."),
-    baca.instrument_name("Oboe", hcenter_in=16),
+    baca.clef("treble"),
 )
 
 # cl
@@ -258,9 +258,9 @@ commands(
 commands(
     "cl",
     baca.instrument(commands.instruments["BassClarinet"]),
-    baca.clef("treble"),
+    baca.instrument_name(r"\krummzeit-bass-clarinet-markup"),
     library.short_instrument_name("B. cl."),
-    baca.instrument_name("Bass clarinet", hcenter_in=16),
+    baca.clef("treble"),
 )
 
 commands(
@@ -274,9 +274,9 @@ commands(
 commands(
     "pf",
     baca.instrument(commands.instruments["Piano"]),
-    baca.clef("bass"),
+    baca.instrument_name(r"\krummzeit-piano-markup"),
     library.short_instrument_name("Pf."),
-    baca.instrument_name("Piano", hcenter_in=16),
+    baca.clef("bass"),
     baca.clef("bass"),
 )
 
@@ -308,9 +308,9 @@ commands(
 commands(
     "perc",
     baca.instrument(commands.instruments["Xylophone"]),
-    baca.clef("treble"),
+    baca.instrument_name(r"\krummzeit-percussion-markup"),
     library.short_instrument_name("Perc."),
-    baca.instrument_name("Percussion", hcenter_in=16),
+    baca.clef("treble"),
 )
 
 commands(
@@ -338,9 +338,9 @@ commands(
 commands(
     "vn",
     baca.instrument(commands.instruments["Violin"]),
-    baca.clef("treble"),
+    baca.instrument_name(r"\krummzeit-violin-markup"),
     library.short_instrument_name("Vn."),
-    baca.instrument_name("Violin", hcenter_in=16),
+    baca.clef("treble"),
 )
 
 # va
@@ -348,9 +348,9 @@ commands(
 commands(
     "va",
     baca.instrument(commands.instruments["Viola"]),
-    baca.clef("alto"),
+    baca.instrument_name(r"\krummzeit-viola-markup"),
     library.short_instrument_name("Va."),
-    baca.instrument_name("Viola", hcenter_in=16),
+    baca.clef("alto"),
 )
 
 # vc
@@ -358,9 +358,9 @@ commands(
 commands(
     "vc",
     baca.instrument(commands.instruments["Cello"]),
-    baca.clef("bass"),
+    baca.instrument_name(r"\krummzeit-cello-markup"),
     library.short_instrument_name("Vc."),
-    baca.instrument_name("Cello", hcenter_in=16),
+    baca.clef("bass"),
 )
 
 # vn, va, vc composites

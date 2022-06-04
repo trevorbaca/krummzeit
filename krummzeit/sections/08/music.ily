@@ -1551,12 +1551,12 @@ number.8.Oboe.Music = {
       %! baca.dls_staff_padding()
     \override DynamicLineSpanner.staff-padding = 5
       %! baca._clone_section_initial_short_instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Ob."
+    \set Staff.instrumentName = \krummzeit-ob-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
+    \set Staff.shortInstrumentName = \krummzeit-ob-markup
     % OPENING:
     % COMMANDS:
       %! REAPPLIED_CLEF
@@ -1614,7 +1614,7 @@ number.8.Oboe.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Ob."
+    \set Staff.shortInstrumentName = \krummzeit-ob-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -2629,12 +2629,12 @@ number.8.Clarinet.Music = {
       %! baca.dls_staff_padding()
     \override DynamicLineSpanner.staff-padding = 8
       %! baca._clone_section_initial_short_instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "B. cl."
+    \set Staff.instrumentName = \krummzeit-bcl-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
+    \set Staff.shortInstrumentName = \krummzeit-bcl-markup
     % OPENING:
     % COMMANDS:
       %! REAPPLIED_CLEF
@@ -2710,7 +2710,7 @@ number.8.Clarinet.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "B. cl."
+    \set Staff.shortInstrumentName = \krummzeit-bcl-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -3476,12 +3476,12 @@ number.8.Piano.Music = {
     % BEFORE:
     % COMMANDS:
       %! baca._clone_section_initial_short_instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Hpschd."
+    \set Staff.instrumentName = \krummzeit-hpschd-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Hpschd."
+    \set Staff.shortInstrumentName = \krummzeit-hpschd-markup
     % OPENING:
     % COMMANDS:
       %! REAPPLIED_CLEF
@@ -3536,7 +3536,7 @@ number.8.Piano.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Hpschd."
+    \set Staff.shortInstrumentName = \krummzeit-hpschd-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4474,7 +4474,7 @@ number.8.Piano.Music = {
       %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Pf."
+    \set Staff.shortInstrumentName = \krummzeit-pf-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
@@ -4537,7 +4537,7 @@ number.8.Piano.Music = {
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Pf."
+    \set Staff.shortInstrumentName = \krummzeit-pf-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4783,12 +4783,12 @@ number.8.Percussion.Music = {
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(0 . 2)
       %! baca._clone_section_initial_short_instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Perc."
+    \set Staff.instrumentName = \krummzeit-perc-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."
+    \set Staff.shortInstrumentName = \krummzeit-perc-markup
       %! REAPPLIED_STAFF_LINES
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -4858,7 +4858,7 @@ number.8.Percussion.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Perc."
+    \set Staff.shortInstrumentName = \krummzeit-perc-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5168,12 +5168,12 @@ number.8.Violin.Music = {
       %! baca._set_status_tag()
     \override Staff.BarLine.bar-extent = #'(-2 . 2)
       %! baca._clone_section_initial_short_instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Vn."
+    \set Staff.instrumentName = \krummzeit-vn-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
+    \set Staff.shortInstrumentName = \krummzeit-vn-markup
       %! REAPPLIED_STAFF_LINES
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
@@ -5243,7 +5243,7 @@ number.8.Violin.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vn."
+    \set Staff.shortInstrumentName = \krummzeit-vn-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6848,12 +6848,12 @@ number.8.Viola.Music = {
       %! baca.dls_staff_padding()
     \override DynamicLineSpanner.staff-padding = 6
       %! baca._clone_section_initial_short_instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Va."
+    \set Staff.instrumentName = \krummzeit-va-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
+    \set Staff.shortInstrumentName = \krummzeit-va-markup
     % OPENING:
     % COMMANDS:
       %! REAPPLIED_CLEF
@@ -6930,7 +6930,7 @@ number.8.Viola.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Va."
+    \set Staff.shortInstrumentName = \krummzeit-va-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -7778,12 +7778,12 @@ number.8.Cello.Music = {
       %! baca.dls_staff_padding()
     \override DynamicLineSpanner.staff-padding = 6
       %! baca._clone_section_initial_short_instrument_name()
-    \set Staff.instrumentName = \markup \hcenter-in #16 "Vc."
+    \set Staff.instrumentName = \krummzeit-vc-markup
       %! -PARTS
       %! REAPPLIED_SHORT_INSTRUMENT_NAME
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
+    \set Staff.shortInstrumentName = \krummzeit-vc-markup
     % OPENING:
     % COMMANDS:
       %! REAPPLIED_CLEF
@@ -7857,7 +7857,7 @@ number.8.Cello.Music = {
       %! baca._reapply_persistent_indicators(3)
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(3)
-    \set Staff.shortInstrumentName = \markup \hcenter-in #16 "Vc."
+    \set Staff.shortInstrumentName = \krummzeit-vc-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

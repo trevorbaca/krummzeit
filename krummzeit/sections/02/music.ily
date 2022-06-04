@@ -34,7 +34,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 5]
       %! baca._make_global_rests(1)
-    R1 * 3/2
+    R1 * 6/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -76,7 +76,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 11]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -111,7 +111,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 16]
       %! baca._make_global_rests(1)
-    R1 * 3/2
+    R1 * 6/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -153,14 +153,14 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 22]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 23]
       %! baca._make_global_rests(1)
-    R1 * 3/2
+    R1 * 6/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -174,7 +174,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 25]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -195,14 +195,14 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 28]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 29]
       %! baca._make_global_rests(1)
-    R1 * 2
+    R1 * 8/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -216,7 +216,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 31]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -244,7 +244,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 35]
       %! baca._make_global_rests(1)
-    R1 * 1/2
+    R1 * 2/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -279,7 +279,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 40]
       %! baca._make_global_rests(1)
-    R1 * 3/2
+    R1 * 6/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -321,14 +321,14 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 46]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 47]
       %! baca._make_global_rests(1)
-    R1 * 1/2
+    R1 * 2/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -342,7 +342,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 49]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -363,14 +363,14 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 52]
       %! baca._make_global_rests(1)
-    R1 * 2
+    R1 * 8/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 53]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -384,7 +384,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 55]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -412,7 +412,7 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 59]
       %! baca._make_global_rests(1)
-    R1 * 1/2
+    R1 * 2/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -510,14 +510,14 @@ number.2.Rests = {
       %! baca._comment_measure_numbers()
     % [Rests measure 73]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Rests measure 74]
       %! baca._make_global_rests(1)
-    R1 * 1
+    R1 * 4/4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -760,7 +760,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 6/4
       %! baca._make_global_skips(1)
-    s1 * 3/2
+    s1 * 6/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1054,7 +1054,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1293,7 +1293,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 6/4
       %! baca._make_global_skips(1)
-    s1 * 3/2
+    s1 * 6/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1587,7 +1587,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1633,7 +1633,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 6/4
       %! baca._make_global_skips(1)
-    s1 * 3/2
+    s1 * 6/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1772,7 +1772,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1901,7 +1901,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -1947,7 +1947,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 8/4
       %! baca._make_global_skips(1)
-    s1 * 2
+    s1 * 8/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -2071,7 +2071,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -2296,7 +2296,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 2/4
       %! baca._make_global_skips(1)
-    s1 * 1/2
+    s1 * 2/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -2582,7 +2582,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 6/4
       %! baca._make_global_skips(1)
-    s1 * 3/2
+    s1 * 6/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -2881,7 +2881,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -2927,7 +2927,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 2/4
       %! baca._make_global_skips(1)
-    s1 * 1/2
+    s1 * 2/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -3051,7 +3051,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -3180,7 +3180,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 8/4
       %! baca._make_global_skips(1)
-    s1 * 2
+    s1 * 8/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -3235,7 +3235,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -3336,7 +3336,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -3567,7 +3567,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 2/4
       %! baca._make_global_skips(1)
-    s1 * 1/2
+    s1 * 2/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -4193,7 +4193,7 @@ number.2.Skips = {
       %! baca._set_status_tag()
     \time 4/4
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -4230,7 +4230,7 @@ number.2.Skips = {
       %! baca._comment_measure_numbers()
     % [Skips measure 74]
       %! baca._make_global_skips(1)
-    s1 * 1
+    s1 * 4/4
     % AFTER:
     % SPANNER_STOPS:
       %! CLOCK_TIME
@@ -4313,7 +4313,7 @@ number.2.Skips = {
       %! ANCHOR_SKIP
       %! baca._comment_measure_numbers()
       %! baca._style_anchor_skip(1)
-    % [Skips measure 76]
+    % [anchor skip]
     % OPENING:
     % COMMANDS:
       %! ANCHOR_SKIP
@@ -4475,12 +4475,12 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 5]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4547,12 +4547,12 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 11]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4607,12 +4607,12 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 16]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -4679,12 +4679,12 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 22]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6521,12 +6521,12 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 40]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6593,24 +6593,24 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 46]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 47]
       %! baca._make_mmrests_flat()
-    R1 * 1/2
+    R1 * 2/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6629,12 +6629,12 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 49]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6665,24 +6665,24 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 52]
       %! baca._make_mmrests_flat()
-    R1 * 2
+    R1 * 8/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"2" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"8" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 53]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6701,12 +6701,12 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 55]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6749,12 +6749,12 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 59]
       %! baca._make_mmrests_flat()
-    R1 * 1/2
+    R1 * 2/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -6917,24 +6917,24 @@ number.2.Oboe.Music = {
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 73]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 74]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -9612,12 +9612,12 @@ number.2.Clarinet.Music = {
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 40]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -9684,24 +9684,24 @@ number.2.Clarinet.Music = {
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 46]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 47]
       %! baca._make_mmrests_flat()
-    R1 * 1/2
+    R1 * 2/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -9720,12 +9720,12 @@ number.2.Clarinet.Music = {
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 49]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -9756,24 +9756,24 @@ number.2.Clarinet.Music = {
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 52]
       %! baca._make_mmrests_flat()
-    R1 * 2
+    R1 * 8/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"2" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"8" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 53]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -9792,12 +9792,12 @@ number.2.Clarinet.Music = {
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 55]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -9840,12 +9840,12 @@ number.2.Clarinet.Music = {
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 59]
       %! baca._make_mmrests_flat()
-    R1 * 1/2
+    R1 * 2/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -13655,12 +13655,12 @@ number.2.Piano.Music = {
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 35]
       %! baca._make_mmrests_flat()
-    R1 * 1/2
+    R1 * 2/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"2" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -13715,12 +13715,12 @@ number.2.Piano.Music = {
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 40]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -16211,12 +16211,12 @@ number.2.Percussion.Music = {
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 5]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -16283,12 +16283,12 @@ number.2.Percussion.Music = {
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 11]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -16343,12 +16343,12 @@ number.2.Percussion.Music = {
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 16]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -16415,12 +16415,12 @@ number.2.Percussion.Music = {
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 22]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -17147,12 +17147,12 @@ number.2.Percussion.Music = {
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 40]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -17745,24 +17745,24 @@ number.2.Percussion.Music = {
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 73]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 74]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -17920,12 +17920,12 @@ number.2.Violin.Music = {
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 5]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -18454,12 +18454,12 @@ number.2.Violin.Music = {
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 16]
       %! baca._make_mmrests_flat()
-    R1 * 3/2
+    R1 * 6/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"3" #"2"
+    %@% ^ \baca-duration-multiplier-markup #"6" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -23952,12 +23952,12 @@ number.2.Viola.Music = {
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 29]
       %! baca._make_mmrests_flat()
-    R1 * 2
+    R1 * 8/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"2" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"8" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -23976,12 +23976,12 @@ number.2.Viola.Music = {
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 31]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -26555,24 +26555,24 @@ number.2.Viola.Music = {
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 73]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 74]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -27205,12 +27205,12 @@ number.2.Cello.Music = {
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 29]
       %! baca._make_mmrests_flat()
-    R1 * 2
+    R1 * 8/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"2" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"8" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -27229,12 +27229,12 @@ number.2.Cello.Music = {
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 31]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -30033,24 +30033,24 @@ number.2.Cello.Music = {
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 73]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 74]
       %! baca._make_mmrests_flat()
-    R1 * 1
+    R1 * 4/4
     % AFTER:
     % MARKUP:
       %! DURATION_MULTIPLIER
       %! baca._label_duration_multipliers()
-    %@% ^ \baca-duration-multiplier-markup #"1" #"1"
+    %@% ^ \baca-duration-multiplier-markup #"4" #"4"
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

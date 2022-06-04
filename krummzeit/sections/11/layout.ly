@@ -80,7 +80,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -100,7 +100,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -166,7 +166,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -186,7 +186,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -252,7 +252,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -272,7 +272,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -338,7 +338,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -358,7 +358,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -424,7 +424,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -444,7 +444,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -510,7 +510,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -530,7 +530,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -596,7 +596,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -616,7 +616,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -682,7 +682,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -702,7 +702,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -768,7 +768,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -788,7 +788,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -854,7 +854,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -874,7 +874,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -940,7 +940,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -960,7 +960,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -1026,7 +1026,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1
+            s1 * 4/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM
@@ -1046,7 +1046,7 @@
               %! baca._apply_breaks(2)
             \noBreak
               %! baca._make_global_skips(1)
-            s1 * 1/2
+            s1 * 2/4
               %! SPACING
               %! baca.SpacingSpecifier.__call__(3)
             %@% \bacaStopTextSpanSPM

@@ -60,11 +60,6 @@ baca.interpret.set_up_score(
 commands(
     "Skips",
     baca.metronome_mark(
-        "108",
-        selector=lambda _: abjad.select.leaf(_, 1 - 1),
-        redundant=True,
-    ),
-    baca.metronome_mark(
         baca.Accelerando(),
         selector=lambda _: abjad.select.leaf(_, 22 - 1),
     ),

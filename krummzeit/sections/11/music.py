@@ -50,7 +50,7 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-baca.commands._bar_line(score["Skips"][48 - 1], "|.")
+baca.bar_line(score["Skips"][48 - 1], "|.")
 
 # OB
 

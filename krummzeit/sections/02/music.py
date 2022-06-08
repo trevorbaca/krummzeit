@@ -86,7 +86,7 @@ for index, item in (
 
 commands(
     ("ob", (1, 22)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -103,14 +103,14 @@ commands(
 
 commands(
     ("ob", (38, 75)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # CL
 
 commands(
     ("cl", (1, 4)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -127,7 +127,7 @@ commands(
 
 commands(
     ("cl", (12, 15)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -144,7 +144,7 @@ commands(
 
 commands(
     ("cl", (37, 68)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -194,7 +194,7 @@ commands(
 
 commands(
     ("pf", (32, 44)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -228,7 +228,7 @@ commands(
 
 commands(
     ("perc", (4, 22)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -238,7 +238,7 @@ commands(
 
 commands(
     ("perc", (39, 44)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -248,14 +248,14 @@ commands(
 
 commands(
     ("perc", (61, 75)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VN
 
 commands(
     ("vn", (1, 7)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -272,7 +272,7 @@ commands(
 
 commands(
     ("vn", (12, 18)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -347,7 +347,7 @@ commands(
 
 commands(
     ("va", (29, 33)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -389,7 +389,7 @@ commands(
 
 commands(
     ("va", (72, 75)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VC
@@ -411,7 +411,7 @@ commands(
 
 commands(
     ("vc", (29, 33)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -447,7 +447,7 @@ commands(
 
 commands(
     ("vc", (72, 75)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 music_voice_names = [_ for _ in voice_names if "Music" in _]

@@ -84,7 +84,7 @@ commands(
 
 commands(
     ("ob", (2, 23)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # CL
@@ -96,7 +96,7 @@ commands(
 
 commands(
     ("cl", 2),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -106,7 +106,7 @@ commands(
 
 commands(
     ("cl", (15, 23)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # PF
@@ -118,7 +118,7 @@ commands(
 
 commands(
     ("pf", 2),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -132,7 +132,7 @@ commands(
 
 commands(
     ("pf", (5, 7)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -146,7 +146,7 @@ commands(
 
 commands(
     ("pf", 23),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # PERC
@@ -158,7 +158,7 @@ commands(
 
 commands(
     ("perc", 2),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -168,7 +168,7 @@ commands(
 
 commands(
     ("perc", 23),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VN
@@ -185,7 +185,7 @@ commands(
 
 commands(
     ("vn", 4),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -195,7 +195,7 @@ commands(
 
 commands(
     ("vn", (10, 21)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -205,7 +205,7 @@ commands(
 
 commands(
     ("vn", 23),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VA
@@ -222,7 +222,7 @@ commands(
 
 commands(
     ("va", 4),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -232,7 +232,7 @@ commands(
 
 commands(
     ("va", (10, 21)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -242,7 +242,7 @@ commands(
 
 commands(
     ("va", 23),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VC
@@ -259,7 +259,7 @@ commands(
 
 commands(
     ("vc", 4),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -269,7 +269,7 @@ commands(
 
 commands(
     ("vc", (10, 21)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -279,7 +279,7 @@ commands(
 
 commands(
     ("vc", 23),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 music_voice_names = [_ for _ in voice_names if "Music" in _]

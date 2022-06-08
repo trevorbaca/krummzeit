@@ -64,7 +64,7 @@ for index, item in (
 
 commands(
     ("ob", (1, 3)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -81,7 +81,7 @@ commands(
 
 commands(
     ("cl", (1, 3)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -91,7 +91,7 @@ commands(
 
 commands(
     ("cl", (6, 7)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -108,7 +108,7 @@ commands(
 
 commands(
     ("pf", (7, 8)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -120,7 +120,7 @@ commands(
 
 commands(
     ("perc", (1, 4)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -132,7 +132,7 @@ commands(
 
 commands(
     ("perc", (7, 8)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -156,7 +156,7 @@ commands(
 
 commands(
     ("vn", 6),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -181,7 +181,7 @@ commands(
 
 commands(
     ("va", 6),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(
@@ -206,7 +206,7 @@ commands(
 
 commands(
     ("vc", 6),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 commands(

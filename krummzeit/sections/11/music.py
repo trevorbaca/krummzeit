@@ -61,7 +61,7 @@ commands(
 
 commands(
     ("ob", (41, 48)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # CL
@@ -73,7 +73,7 @@ commands(
 
 commands(
     ("cl", (41, 48)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # PF
@@ -103,7 +103,7 @@ commands(
 
 commands(
     ("vn", (41, 48)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VA
@@ -119,7 +119,7 @@ commands(
 
 commands(
     ("va", (5, 48)),
-    baca.make_mmrests_flat(),
+    baca.make_mmrests(),
 )
 
 # VC

@@ -73,53 +73,21 @@ for index, item in (
     indicator = commands.metronome_marks.get(item, item)
     baca.commands._metronome_mark(skip, indicator, manifests)
 
-commands(
-    "Rests",
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 5 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 7 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 9 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 11 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 13 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 15 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 17 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 19 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 21 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 29 - 1),
-    ),
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 31 - 1),
-    ),
-)
+rests = score["Rests"]
+for index, string in (
+    (5 - 1, "short"),
+    (7 - 1, "short"),
+    (9 - 1, "short"),
+    (11 - 1, "short"),
+    (13 - 1, "short"),
+    (15 - 1, "short"),
+    (17 - 1, "short"),
+    (19 - 1, "short"),
+    (21 - 1, "short"),
+    (29 - 1, "short"),
+    (31 - 1, "short"),
+):
+    baca.global_fermata(rests[index], string)
 
 # OB
 

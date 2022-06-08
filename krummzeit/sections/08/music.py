@@ -68,17 +68,12 @@ for index, item in ((14 - 1, "90"),):
     indicator = commands.metronome_marks.get(item, item)
     baca.commands._metronome_mark(skip, indicator, manifests)
 
-commands(
-    "Rests",
-    baca.global_fermata(
-        "short",
-        selector=lambda _: abjad.select.leaf(_, 13 - 1),
-    ),
-    baca.global_fermata(
-        "very_long",
-        selector=lambda _: abjad.select.leaf(_, 24 - 1),
-    ),
-)
+rests = score["Rests"]
+for index, string in (
+    (13 - 1, "short"),
+    (24 - 1, "very_long"),
+):
+    baca.global_fermata(rests[index], string)
 
 # OB
 

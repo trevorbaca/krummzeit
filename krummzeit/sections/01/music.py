@@ -72,12 +72,16 @@ for index, string in (
 
 # OB
 
+voice = score["Oboe.Music"]
+
 commands(
     "ob",
     baca.make_mmrests(),
 )
 
 # CL
+
+voice = score["Clarinet.Music"]
 
 commands(
     ("cl", (1, 3)),
@@ -95,6 +99,8 @@ commands(
 )
 
 # PF
+
+voice = score["Piano.Music"]
 
 commands(
     ("pf", (1, 3)),
@@ -123,6 +129,8 @@ commands(
 
 # PERC
 
+voice = score["Piano.Music"]
+
 commands(
     ("perc", (1, 6)),
     baca.make_mmrests(),
@@ -144,6 +152,8 @@ commands(
 )
 
 # VN
+
+voice = score["Violin.Music"]
 
 commands(
     ("vn", (1, 2)),
@@ -176,6 +186,8 @@ commands(
 
 # VA
 
+voice = score["Viola.Music"]
+
 commands(
     ("va", (1, 2)),
     library.make_opening_triplets(
@@ -206,6 +218,8 @@ commands(
 )
 
 # VC
+
+voice = score["Cello.Music"]
 
 commands(
     ("vc", (1, 2)),

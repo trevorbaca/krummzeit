@@ -77,6 +77,8 @@ for index, string in (
 
 # OB
 
+voice = score["Oboe.Music"]
+
 commands(
     ("ob", (1, 7)),
     baca.make_repeat_tied_notes(),
@@ -116,6 +118,8 @@ commands(
 
 # CL
 
+voice = score["Clarinet.Music"]
+
 commands(
     ("cl", (1, 5)),
     baca.make_repeat_tied_notes(),
@@ -154,6 +158,8 @@ commands(
 )
 
 # PF
+
+voice = score["Piano.Music"]
 
 commands(
     ("pf", (1, 4)),
@@ -213,6 +219,8 @@ commands(
 
 # VN
 
+voice = score["Violin.Music"]
+
 commands(
     ("vn", (1, 4)),
     baca.make_mmrests(),
@@ -255,6 +263,8 @@ commands(
 
 # VA
 
+voice = score["Viola.Music"]
+
 commands(
     ("va", (1, 7)),
     library.make_fused_expanse(
@@ -296,6 +306,8 @@ commands(
 )
 
 # VC
+
+voice = score["Cello.Music"]
 
 commands(
     ("vc", (1, 9)),

@@ -54,6 +54,8 @@ baca.bar_line(score["Skips"][48 - 1], "|.")
 
 # OB
 
+voice = score["Oboe.Music"]
+
 commands(
     ("ob", (1, 40)),
     baca.make_repeat_tied_notes(),
@@ -65,6 +67,8 @@ commands(
 )
 
 # CL
+
+voice = score["Clarinet.Music"]
 
 commands(
     ("cl", (1, 40)),
@@ -78,6 +82,8 @@ commands(
 
 # PF
 
+voice = score["Piano.Music"]
+
 commands(
     "pf",
     baca.make_repeat_tied_notes(),
@@ -85,12 +91,16 @@ commands(
 
 # PERC
 
+voice = score["Piano.Music"]
+
 commands(
     "perc",
     baca.make_repeat_tied_notes(),
 )
 
 # VN
+
+voice = score["Violin.Music"]
 
 commands(
     ("vn", (1, 40)),
@@ -108,6 +118,8 @@ commands(
 
 # VA
 
+voice = score["Viola.Music"]
+
 commands(
     ("va", (1, 4)),
     library.make_closing_pizzicato_rhythm(
@@ -123,6 +135,8 @@ commands(
 )
 
 # VC
+
+voice = score["Cello.Music"]
 
 commands(
     ("vc", (1, 24)),

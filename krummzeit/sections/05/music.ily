@@ -4326,7 +4326,7 @@ number.5.Oboe.Music = {
 
 
   %! baca.path.extern()
-number.5.Oboe.Music_Staff = {
+number.5.Oboe.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5427,7 +5427,7 @@ number.5.Clarinet.Music = {
 
 
   %! baca.path.extern()
-number.5.Clarinet.Music_Staff = {
+number.5.Clarinet.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -7596,7 +7596,7 @@ number.5.Piano.Music = {
 
 
   %! baca.path.extern()
-number.5.Piano.Music_Staff = {
+number.5.Piano.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -9974,7 +9974,7 @@ number.5.Percussion.Music = {
 
 
   %! baca.path.extern()
-number.5.Percussion.Music_Staff = {
+number.5.Percussion.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -12544,7 +12544,7 @@ number.5.Violin.Music = {
 
 
   %! baca.path.extern()
-number.5.Violin.Music_Staff = {
+number.5.Violin.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -15426,7 +15426,7 @@ number.5.Viola.Music = {
 
 
   %! baca.path.extern()
-number.5.Viola.Music_Staff = {
+number.5.Viola.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -17967,7 +17967,7 @@ number.5.Cello.Music = {
 
 
   %! baca.path.extern()
-number.5.Cello.Music_Staff = {
+number.5.Cello.Staff = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 

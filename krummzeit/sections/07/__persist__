@@ -6,21 +6,21 @@
         "Skips",
         "MusicContext",
         "Wind_Section.Staff_Group",
-        "Oboe.Music_Staff",
+        "Oboe.Staff",
         "Oboe.Music",
-        "Clarinet.Music_Staff",
+        "Clarinet.Staff",
         "Clarinet.Music",
         "Percussion_Section.Staff_Group",
-        "Piano.Music_Staff",
+        "Piano.Staff",
         "Piano.Music",
-        "Percussion.Music_Staff",
+        "Percussion.Staff",
         "Percussion.Music",
         "String_Section.Staff_Group",
-        "Violin.Music_Staff",
+        "Violin.Staff",
         "Violin.Music",
-        "Viola.Music_Staff",
+        "Viola.Staff",
         "Viola.Music",
-        "Cello.Music_Staff",
+        "Cello.Staff",
         "Cello.Music",
     ],
     "persistent_indicators": {
@@ -34,7 +34,7 @@
                 value="fff",
             )
         ],
-        "Cello.Music_Staff": [
+        "Cello.Staff": [
             baca.Memento(
                 context="Cello.Music",
                 edition=None,
@@ -70,7 +70,7 @@
                 value="ppp",
             )
         ],
-        "Clarinet.Music_Staff": [
+        "Clarinet.Staff": [
             baca.Memento(
                 context="Clarinet.Music",
                 edition=None,
@@ -106,7 +106,7 @@
                 value="ff",
             )
         ],
-        "Oboe.Music_Staff": [
+        "Oboe.Staff": [
             baca.Memento(
                 context="Oboe.Music",
                 edition=None,
@@ -142,7 +142,7 @@
                 value="\\baca-p-sempre",
             )
         ],
-        "Percussion.Music_Staff": [
+        "Percussion.Staff": [
             baca.Memento(
                 context="Percussion.Music",
                 edition=None,
@@ -194,7 +194,7 @@
                 value="fff",
             )
         ],
-        "Piano.Music_Staff": [
+        "Piano.Staff": [
             baca.Memento(
                 context="Piano.Music",
                 edition=None,
@@ -248,7 +248,7 @@
                 value="fff",
             )
         ],
-        "Viola.Music_Staff": [
+        "Viola.Staff": [
             baca.Memento(
                 context="Viola.Music",
                 edition=None,
@@ -284,7 +284,7 @@
                 value="fff",
             )
         ],
-        "Violin.Music_Staff": [
+        "Violin.Staff": [
             baca.Memento(
                 context="Violin.Music",
                 edition=None,

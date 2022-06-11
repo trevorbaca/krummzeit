@@ -95,10 +95,10 @@
                     \tag #'Oboe
                     % OPEN_BRACKETS:
                       %! krummzeit.make_empty_score()
-                    \context Staff = "Oboe.Music_Staff"
+                    \context Staff = "Oboe.Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \number.8.Oboe.Music_Staff }
+                    { \number.8.Oboe.Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -108,10 +108,10 @@
                     \tag #'Clarinet
                     % OPEN_BRACKETS:
                       %! krummzeit.make_empty_score()
-                    \context Staff = "Clarinet.Music_Staff"
+                    \context Staff = "Clarinet.Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \number.8.Clarinet.Music_Staff }
+                    { \number.8.Clarinet.Staff }
                     % CLOSING:
                     % COMMANDS:
 
@@ -135,10 +135,10 @@
                     \tag #'Piano
                     % OPEN_BRACKETS:
                       %! krummzeit.make_empty_score()
-                    \context Staff = "Piano.Music_Staff"
+                    \context Staff = "Piano.Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \number.8.Piano.Music_Staff }
+                    { \number.8.Piano.Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -148,10 +148,10 @@
                     \tag #'Percussion
                     % OPEN_BRACKETS:
                       %! krummzeit.make_empty_score()
-                    \context Staff = "Percussion.Music_Staff"
+                    \context Staff = "Percussion.Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \number.8.Percussion.Music_Staff }
+                    { \number.8.Percussion.Staff }
                     % CLOSING:
                     % COMMANDS:
 
@@ -175,10 +175,10 @@
                     \tag #'Violin
                     % OPEN_BRACKETS:
                       %! krummzeit.make_empty_score()
-                    \context Staff = "Violin.Music_Staff"
+                    \context Staff = "Violin.Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \number.8.Violin.Music_Staff }
+                    { \number.8.Violin.Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -188,10 +188,10 @@
                     \tag #'Viola
                     % OPEN_BRACKETS:
                       %! krummzeit.make_empty_score()
-                    \context Staff = "Viola.Music_Staff"
+                    \context Staff = "Viola.Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \number.8.Viola.Music_Staff }
+                    { \number.8.Viola.Staff }
                     % ABSOLUTE_BEFORE:
                     % COMMANDS:
 
@@ -201,10 +201,10 @@
                     \tag #'Cello
                     % OPEN_BRACKETS:
                       %! krummzeit.make_empty_score()
-                    \context Staff = "Cello.Music_Staff"
+                    \context Staff = "Cello.Staff"
                       %! krummzeit.make_empty_score()
                       %! baca.path.extern()
-                    { \number.8.Cello.Music_Staff }
+                    { \number.8.Cello.Staff }
                     % CLOSING:
                     % COMMANDS:
 

@@ -67,6 +67,8 @@ for index, item in (
 
 # OB
 
+voice = score["Oboe.Music"]
+
 commands(
     ("ob", (1, 3)),
     baca.make_mmrests(),
@@ -90,6 +92,8 @@ commands(
 )
 
 # CL
+
+voice = score["Clarinet.Music"]
 
 commands(
     ("cl", (1, 3)),
@@ -119,6 +123,8 @@ commands(
 )
 
 # PF
+
+voice = score["Piano.Music"]
 
 commands(
     ("pf", (1, 3)),
@@ -156,6 +162,8 @@ commands(
 )
 
 # PERC
+
+voice = score["Piano.Music"]
 
 commands(
     ("perc", 1),
@@ -212,6 +220,8 @@ commands(
 
 # VN
 
+voice = score["Violin.Music"]
+
 commands(
     ("vn", (1, 6)),
     baca.make_mmrests(),
@@ -228,6 +238,8 @@ commands(
 )
 
 # VA
+
+voice = score["Viola.Music"]
 
 commands(
     ("va", 1),
@@ -256,6 +268,8 @@ commands(
 )
 
 # VC
+
+voice = score["Cello.Music"]
 
 commands(
     ("vc", 1),

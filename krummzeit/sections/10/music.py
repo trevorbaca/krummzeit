@@ -77,6 +77,8 @@ for index, string in ((23 - 1, "very_long"),):
 
 # OB
 
+voice = score["Oboe.Music"]
+
 commands(
     ("ob", 1),
     library.make_hypermeter_tuplets([(3, 2)]),
@@ -88,6 +90,8 @@ commands(
 )
 
 # CL
+
+voice = score["Clarinet.Music"]
 
 commands(
     ("cl", 1),
@@ -110,6 +114,8 @@ commands(
 )
 
 # PF
+
+voice = score["Piano.Music"]
 
 commands(
     ("pf", 1),
@@ -151,6 +157,8 @@ commands(
 
 # PERC
 
+voice = score["Piano.Music"]
+
 commands(
     ("perc", 1),
     library.make_hypermeter_tuplets([(1, 6)]),
@@ -172,6 +180,8 @@ commands(
 )
 
 # VN
+
+voice = score["Violin.Music"]
 
 commands(
     ("vn", (1, 3)),
@@ -210,6 +220,8 @@ commands(
 
 # VA
 
+voice = score["Viola.Music"]
+
 commands(
     ("va", (1, 3)),
     library.make_opening_triplets(
@@ -246,6 +258,8 @@ commands(
 )
 
 # VC
+
+voice = score["Cello.Music"]
 
 commands(
     ("vc", (1, 3)),

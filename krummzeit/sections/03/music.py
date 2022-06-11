@@ -91,6 +91,8 @@ for index, string in (
 
 # OB
 
+voice = score["Oboe.Music"]
+
 commands(
     ("ob", (1, 4)),
     library.make_pizzicato_rhythm(),
@@ -143,6 +145,8 @@ commands(
 
 # CL
 
+voice = score["Clarinet.Music"]
+
 commands(
     ("cl", (1, 4)),
     library.make_white_rhythm([(3, 8)], abjad.RIGHT, do_not_burnish=True),
@@ -184,6 +188,8 @@ commands(
 )
 
 # PF
+
+voice = score["Piano.Music"]
 
 commands(
     ("pf", (1, 13)),
@@ -267,6 +273,8 @@ commands(
 
 # PERC
 
+voice = score["Percussion.Music"]
+
 commands(
     ("perc", (1, 13)),
     baca.make_mmrests(),
@@ -349,6 +357,8 @@ commands(
 
 # VN
 
+voice = score["Violin.Music"]
+
 commands(
     ("vn", (1, 20)),
     baca.make_repeat_tied_notes(),
@@ -380,6 +390,8 @@ commands(
 )
 
 # VA
+
+voice = score["Viola.Music"]
 
 commands(
     ("va", (1, 5)),
@@ -447,6 +459,8 @@ commands(
 )
 
 # VC
+
+voice = score["Cello.Music"]
 
 commands(
     ("vc", (1, 5)),

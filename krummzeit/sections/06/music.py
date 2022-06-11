@@ -83,6 +83,8 @@ for index, item in (
 
 # OB
 
+voice = score["Oboe.Music"]
+
 commands(
     ("ob", (1, 8)),
     library.make_oboe_trill_rhythm(),
@@ -119,6 +121,8 @@ commands(
 )
 
 # CL
+
+voice = score["Clarinet.Music"]
 
 commands(
     ("cl", (1, 10)),
@@ -171,6 +175,8 @@ commands(
 )
 
 # PF
+
+voice = score["Piano.Music"]
 
 commands(
     ("pf", (1, 8)),
@@ -237,6 +243,8 @@ commands(
 
 # PERC
 
+voice = score["Piano.Music"]
+
 commands(
     ("perc", (1, 14)),
     library.make_sponge_rhythm(),
@@ -279,6 +287,8 @@ commands(
 
 # VN
 
+voice = score["Violin.Music"]
+
 commands(
     ("vn", (1, 8)),
     baca.make_mmrests(),
@@ -320,6 +330,8 @@ commands(
 )
 
 # VA
+
+voice = score["Viola.Music"]
 
 commands(
     ("va", (1, 8)),
@@ -377,6 +389,8 @@ commands(
 )
 
 # VC
+
+voice = score["Cello.Music"]
 
 commands(
     ("vc", (1, 8)),

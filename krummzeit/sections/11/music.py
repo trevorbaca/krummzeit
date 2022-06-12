@@ -56,97 +56,76 @@ baca.bar_line(score["Skips"][48 - 1], "|.")
 
 voice = score["Oboe.Music"]
 
-commands(
-    ("ob", (1, 40)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(1, 40))
+voice.extend(music)
 
-commands(
-    ("ob", (41, 48)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(41, 48))
+voice.extend(music)
 
 # CL
 
 voice = score["Clarinet.Music"]
 
-commands(
-    ("cl", (1, 40)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(1, 40))
+voice.extend(music)
 
-commands(
-    ("cl", (41, 48)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(41, 48))
+voice.extend(music)
 
 # PF
 
 voice = score["Piano.Music"]
 
-commands(
-    "pf",
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get())
+voice.extend(music)
 
 # PERC
 
-voice = score["Piano.Music"]
+voice = score["Percussion.Music"]
 
-commands(
-    "perc",
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get())
+voice.extend(music)
 
 # VN
 
 voice = score["Violin.Music"]
 
-commands(
-    ("vn", (1, 40)),
-    library.make_closing_pizzicato_rhythm(
-        counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
-        extra_counts=[2, 2, 1, 2, 4, 6],
-        split=[6, 18],
-    ),
+music = library.make_closing_pizzicato_rhythm(
+    counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
+    extra_counts=[2, 2, 1, 2, 4, 6],
+    split=[6, 18],
+    function=commands.get(1, 40),
 )
+voice.extend(music)
 
-commands(
-    ("vn", (41, 48)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(41, 48))
+voice.extend(music)
 
 # VA
 
 voice = score["Viola.Music"]
 
-commands(
-    ("va", (1, 4)),
-    library.make_closing_pizzicato_rhythm(
-        counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
-        extra_counts=[3, 3, 2, 3, 5, 7],
-        split=[8, 10],
-    ),
+music = library.make_closing_pizzicato_rhythm(
+    counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
+    extra_counts=[3, 3, 2, 3, 5, 7],
+    split=[8, 10],
+    function=commands.get(1, 4),
 )
+voice.extend(music)
 
-commands(
-    ("va", (5, 48)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(5, 48))
+voice.extend(music)
 
 # VC
 
 voice = score["Cello.Music"]
 
-commands(
-    ("vc", (1, 24)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(1, 24))
+voice.extend(music)
 
-commands(
-    ("vc", (25, 48)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(25, 48))
+voice.extend(music)
+
 # reapply
 
 music_voice_names = [_ for _ in voice_names if "Music" in _]

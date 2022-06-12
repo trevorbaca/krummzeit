@@ -69,233 +69,176 @@ for index, item in (
 
 voice = score["Oboe.Music"]
 
-commands(
-    ("ob", (1, 3)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(1, 3))
+voice.extend(music)
 
-commands(
-    ("ob", (4, 10)),
-    library.make_polyphony_rhythm(
-        durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
-        rotation=-1,
-        fuse=(1, 8),
-        denominators=[4, 4, 4, 16],
-        extra_counts=[3, 1, 0, 4],
-        ties=abjad.index([1, 3, 4], 6),
-    ),
+music = library.make_polyphony_rhythm(
+    durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
+    rotation=-1,
+    fuse=(1, 8),
+    denominators=[4, 4, 4, 16],
+    extra_counts=[3, 1, 0, 4],
+    ties=abjad.index([1, 3, 4], 6),
+    function=commands.get(4, 10),
 )
+voice.extend(music)
 
-commands(
-    ("ob", (11, 22)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(11, 22))
+voice.extend(music)
 
 # CL
 
 voice = score["Clarinet.Music"]
 
-commands(
-    ("cl", (1, 3)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(1, 3))
+voice.extend(music)
 
-commands(
-    ("cl", (4, 10)),
-    library.make_polyphony_rhythm(
-        durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
-        rotation=-1,
-        fuse=(1, 8),
-        denominators=[4, 4, 4, 8],
-        extra_counts=[3, 1, 0, 4],
-        ties=abjad.index([1, 3, 4], 6),
-    ),
+music = library.make_polyphony_rhythm(
+    durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
+    rotation=-1,
+    fuse=(1, 8),
+    denominators=[4, 4, 4, 8],
+    extra_counts=[3, 1, 0, 4],
+    ties=abjad.index([1, 3, 4], 6),
+    function=commands.get(4, 10),
 )
+voice.extend(music)
 
-commands(
-    ("cl", (11, 15)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(11, 15))
+voice.extend(music)
 
-commands(
-    ("cl", (16, 22)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(16, 22))
+voice.extend(music)
 
 # PF
 
 voice = score["Piano.Music"]
 
-commands(
-    ("pf", (1, 3)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(1, 3))
+voice.extend(music)
 
-commands(
-    ("pf", (4, 9)),
-    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
-)
+music = library.make_silver_points_rhythm([(1, 2), (2, 1)], function=commands.get(4, 9))
+voice.extend(music)
 
-commands(
-    ("pf", (10, 12)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(10, 12))
+voice.extend(music)
 
-commands(
-    ("pf", 13),
-    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
-)
+music = library.make_silver_points_rhythm([(1, 2), (2, 1)], function=commands.get(13))
+voice.extend(music)
 
-commands(
-    ("pf", (14, 15)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(14, 15))
+voice.extend(music)
 
-commands(
-    ("pf", 16),
-    library.make_silver_points_rhythm([(1, 2), (2, 1)]),
-)
+music = library.make_silver_points_rhythm([(1, 2), (2, 1)], function=commands.get(16))
+voice.extend(music)
 
-commands(
-    ("pf", (17, 22)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(17, 22))
+voice.extend(music)
 
 # PERC
 
-voice = score["Piano.Music"]
+voice = score["Percussion.Music"]
 
-commands(
-    ("perc", 1),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(1))
+voice.extend(music)
 
-commands(
-    ("perc", (2, 3)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(2, 3))
+voice.extend(music)
 
-commands(
-    ("perc", 4),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(4))
+voice.extend(music)
 
-commands(
-    ("perc", (5, 9)),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(5, 9))
+voice.extend(music)
 
-commands(
-    ("perc", (10, 12)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(10, 12))
+voice.extend(music)
 
-commands(
-    ("perc", 13),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(13))
+voice.extend(music)
 
-commands(
-    ("perc", (14, 15)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(14, 15))
+voice.extend(music)
 
-commands(
-    ("perc", 16),
-    baca.make_repeat_tied_notes(),
-)
+music = baca.make_repeat_tied_notes_function(commands.get(16))
+voice.extend(music)
 
-commands(
-    ("perc", (17, 18)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(17, 18))
+voice.extend(music)
 
-commands(
-    ("perc", (19, 22)),
-    baca.make_repeated_duration_notes(
-        [(1, 2)],
-        do_not_rewrite_meter=True,
-    ),
+music = baca.make_repeated_duration_notes_function(
+    commands.get(19, 22),
+    [(1, 2)],
+    do_not_rewrite_meter=True,
 )
+voice.extend(music)
 
 # VN
 
 voice = score["Violin.Music"]
 
-commands(
-    ("vn", (1, 6)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(1, 6))
+voice.extend(music)
 
-commands(
-    ("vn", (7, 19)),
-    library.make_hypermeter_tuplets([(3, 4)], [2, 2, 2, 2, 2, 3]),
+music = library.make_hypermeter_tuplets(
+    [(3, 4)], [2, 2, 2, 2, 2, 3], function=commands.get(7, 19)
 )
+voice.extend(music)
 
-commands(
-    ("vn", (20, 22)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(20, 22))
+voice.extend(music)
 
 # VA
 
 voice = score["Viola.Music"]
 
-commands(
-    ("va", 1),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(1))
+voice.extend(music)
 
-commands(
-    ("va", (2, 6)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+music = library.make_rest_delimited_repeated_duration_notes(
+    (1, 4), 32, function=commands.get(2, 6)
 )
+voice.extend(music)
 
-commands(
-    ("va", (7, 19)),
-    library.make_hypermeter_tuplets(
-        [(1, 6)],
-        [2, 2, 2, 2, 2, 3],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, (None, 2)),
-        ),
+music = library.make_hypermeter_tuplets(
+    [(1, 6)],
+    [2, 2, 2, 2, 2, 3],
+    rmakers.force_rest(
+        lambda _: baca.select.tuplets(_, (None, 2)),
     ),
+    function=commands.get(7, 19),
 )
+voice.extend(music)
 
-commands(
-    ("va", (20, 22)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(20, 22))
+voice.extend(music)
 
 # VC
 
 voice = score["Cello.Music"]
 
-commands(
-    ("vc", 1),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(1))
+voice.extend(music)
 
-commands(
-    ("vc", (2, 6)),
-    library.make_rest_delimited_repeated_duration_notes((1, 4), 32),
+music = library.make_rest_delimited_repeated_duration_notes(
+    (1, 4), 32, function=commands.get(2, 6)
 )
+voice.extend(music)
 
-commands(
-    ("vc", (7, 19)),
-    library.make_hypermeter_tuplets(
-        [(6, 1)],
-        [2, 2, 2, 2, 2, 3],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, (None, 2)),
-        ),
+music = library.make_hypermeter_tuplets(
+    [(6, 1)],
+    [2, 2, 2, 2, 2, 3],
+    rmakers.force_rest(
+        lambda _: baca.select.tuplets(_, (None, 2)),
     ),
+    function=commands.get(7, 19),
 )
+voice.extend(music)
 
-commands(
-    ("vc", (20, 22)),
-    baca.make_mmrests(),
-)
+music = baca.make_mmrests_function(commands.get(20, 22))
+voice.extend(music)
+
+# reapply
 
 music_voice_names = [_ for _ in voice_names if "Music" in _]
 

@@ -59,7 +59,7 @@ voice = score["Oboe.Music"]
 music = baca.make_repeat_tied_notes_function(commands.get(1, 40))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(41, 48))
+music = baca.make_mmrests(commands.get(41, 48))
 voice.extend(music)
 
 # CL
@@ -69,7 +69,7 @@ voice = score["Clarinet.Music"]
 music = baca.make_repeat_tied_notes_function(commands.get(1, 40))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(41, 48))
+music = baca.make_mmrests(commands.get(41, 48))
 voice.extend(music)
 
 # PF
@@ -98,7 +98,7 @@ music = library.make_closing_pizzicato_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(41, 48))
+music = baca.make_mmrests(commands.get(41, 48))
 voice.extend(music)
 
 # VA
@@ -113,7 +113,7 @@ music = library.make_closing_pizzicato_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(5, 48))
+music = baca.make_mmrests(commands.get(5, 48))
 voice.extend(music)
 
 # VC

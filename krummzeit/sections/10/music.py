@@ -82,7 +82,7 @@ voice = score["Oboe.Music"]
 music = library.make_hypermeter_tuplets([(3, 2)], function=commands.get(1))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(2, 23))
+music = baca.make_mmrests(commands.get(2, 23))
 voice.extend(music)
 
 # CL
@@ -92,13 +92,13 @@ voice = score["Clarinet.Music"]
 music = library.make_hypermeter_tuplets([(1, 4)], function=commands.get(1))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(2))
+music = baca.make_mmrests(commands.get(2))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(3, 14))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(15, 23))
+music = baca.make_mmrests(commands.get(15, 23))
 voice.extend(music)
 
 # PF
@@ -108,7 +108,7 @@ voice = score["Piano.Music"]
 music = library.make_hypermeter_tuplets([(3, 4)], function=commands.get(1))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(2))
+music = baca.make_mmrests(commands.get(2))
 voice.extend(music)
 
 music = library.make_opening_triplets(
@@ -119,7 +119,7 @@ music = library.make_opening_triplets(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(5, 7))
+music = baca.make_mmrests(commands.get(5, 7))
 voice.extend(music)
 
 music = library.make_opening_triplets(
@@ -130,7 +130,7 @@ music = library.make_opening_triplets(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(23))
+music = baca.make_mmrests(commands.get(23))
 voice.extend(music)
 
 # PERC
@@ -140,13 +140,13 @@ voice = score["Percussion.Music"]
 music = library.make_hypermeter_tuplets([(1, 6)], function=commands.get(1))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(2))
+music = baca.make_mmrests(commands.get(2))
 voice.extend(music)
 
 music = library.make_incise_attacks(function=commands.get(3, 22))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(23))
+music = baca.make_mmrests(commands.get(23))
 voice.extend(music)
 
 # VN
@@ -162,19 +162,19 @@ music = library.make_opening_triplets(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(4))
+music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
 music = library.make_right_remainder_quarters(function=commands.get(5, 9))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(10, 21))
+music = baca.make_mmrests(commands.get(10, 21))
 voice.extend(music)
 
 music = library.make_pizzicato_rhythm(split=[6, 18], function=commands.get(22))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(23))
+music = baca.make_mmrests(commands.get(23))
 voice.extend(music)
 
 # VA
@@ -190,19 +190,19 @@ music = library.make_opening_triplets(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(4))
+music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
 music = library.make_right_remainder_quarters(function=commands.get(5, 9))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(10, 21))
+music = baca.make_mmrests(commands.get(10, 21))
 voice.extend(music)
 
 music = library.make_pizzicato_rhythm(split=[8, 10], function=commands.get(22))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(23))
+music = baca.make_mmrests(commands.get(23))
 voice.extend(music)
 
 # VC
@@ -218,19 +218,19 @@ music = library.make_opening_triplets(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(4))
+music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
 music = library.make_right_remainder_quarters(function=commands.get(5, 9))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(10, 21))
+music = baca.make_mmrests(commands.get(10, 21))
 voice.extend(music)
 
 music = library.make_pizzicato_rhythm(split=[10, 8], function=commands.get(22))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(23))
+music = baca.make_mmrests(commands.get(23))
 voice.extend(music)
 
 # reapply

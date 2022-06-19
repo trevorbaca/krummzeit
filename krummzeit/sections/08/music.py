@@ -79,7 +79,7 @@ for index, string in (
 
 voice = score["Oboe.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get(1, 7))
+music = baca.make_repeat_tied_notes(commands.get(1, 7))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(8))
@@ -111,7 +111,7 @@ voice.extend(music)
 
 voice = score["Clarinet.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get(1, 5))
+music = baca.make_repeat_tied_notes(commands.get(1, 5))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(6, 8))
@@ -177,7 +177,7 @@ voice.extend(music)
 
 voice = score["Percussion.Music"]
 
-music = baca.make_repeated_duration_notes_function(
+music = baca.make_repeated_duration_notes(
     commands.get(1, 7),
     [(1, 2)],
     rmakers.force_rest(lambda _: baca.select.lt(_, -1)),

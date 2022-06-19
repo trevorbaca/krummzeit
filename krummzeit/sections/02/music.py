@@ -287,7 +287,7 @@ music = library.make_pizzicato_sixteenths(
 )
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(72, 75))
+music = baca.make_repeat_tied_notes(commands.get(72, 75))
 voice.extend(music)
 
 # VA

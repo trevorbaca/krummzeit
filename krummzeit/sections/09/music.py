@@ -67,7 +67,7 @@ voice = score["Oboe.Music"]
 music = baca.make_mmrests(commands.get(1, 3))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(4, 7))
+music = baca.make_repeat_tied_notes(commands.get(4, 7))
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets(
@@ -82,7 +82,7 @@ voice = score["Clarinet.Music"]
 music = baca.make_mmrests(commands.get(1, 3))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(4, 5))
+music = baca.make_repeat_tied_notes(commands.get(4, 5))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(6, 7))

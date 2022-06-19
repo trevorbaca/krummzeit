@@ -56,7 +56,7 @@ baca.bar_line(score["Skips"][48 - 1], "|.")
 
 voice = score["Oboe.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get(1, 40))
+music = baca.make_repeat_tied_notes(commands.get(1, 40))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(41, 48))
@@ -66,7 +66,7 @@ voice.extend(music)
 
 voice = score["Clarinet.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get(1, 40))
+music = baca.make_repeat_tied_notes(commands.get(1, 40))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(41, 48))
@@ -76,14 +76,14 @@ voice.extend(music)
 
 voice = score["Piano.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get())
+music = baca.make_repeat_tied_notes(commands.get())
 voice.extend(music)
 
 # PERC
 
 voice = score["Percussion.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get())
+music = baca.make_repeat_tied_notes(commands.get())
 voice.extend(music)
 
 # VN
@@ -120,10 +120,10 @@ voice.extend(music)
 
 voice = score["Cello.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get(1, 24))
+music = baca.make_repeat_tied_notes(commands.get(1, 24))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(25, 48))
+music = baca.make_repeat_tied_notes(commands.get(25, 48))
 voice.extend(music)
 
 # reapply

@@ -113,9 +113,9 @@ voice.extend(music)
 voice = score["Piano.Music"]
 
 music = library.make_silver_points_rhythm(
+    commands.get(1),
     [(2, 3)],
     tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
-    function=commands.get(1),
 )
 voice.extend(music)
 
@@ -123,9 +123,9 @@ music = baca.make_mmrests(commands.get(2))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(3),
     [(2, 3)],
     tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
-    function=commands.get(3),
 )
 voice.extend(music)
 
@@ -133,9 +133,9 @@ music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(5),
     [(2, 3)],
     tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
-    function=commands.get(5),
 )
 voice.extend(music)
 
@@ -175,9 +175,9 @@ music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(5),
     [(5, 4)],
     tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
-    function=commands.get(5),
 )
 voice.extend(music)
 
@@ -185,9 +185,9 @@ music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(7),
     [(5, 4)],
     tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
-    function=commands.get(7),
 )
 voice.extend(music)
 
@@ -195,9 +195,9 @@ music = baca.make_mmrests(commands.get(8))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(9),
     [(5, 4)],
     tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
-    function=commands.get(9),
 )
 voice.extend(music)
 
@@ -218,9 +218,9 @@ music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(5),
     [(2, 7)],
     tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
-    function=commands.get(5),
 )
 voice.extend(music)
 
@@ -228,9 +228,9 @@ music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(7),
     [(2, 7)],
     tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
-    function=commands.get(7),
 )
 voice.extend(music)
 
@@ -238,9 +238,9 @@ music = baca.make_mmrests(commands.get(8))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(9),
     [(2, 7)],
     tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
-    function=commands.get(9),
 )
 voice.extend(music)
 
@@ -267,9 +267,9 @@ music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(5),
     [(7, 2)],
     tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
-    function=commands.get(5),
 )
 voice.extend(music)
 
@@ -277,9 +277,9 @@ music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(7),
     [(7, 2)],
     tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
-    function=commands.get(7),
 )
 voice.extend(music)
 
@@ -287,9 +287,9 @@ music = baca.make_mmrests(commands.get(8))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
+    commands.get(9),
     [(7, 2)],
     tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
-    function=commands.get(9),
 )
 voice.extend(music)
 

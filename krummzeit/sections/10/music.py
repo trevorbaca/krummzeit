@@ -79,7 +79,10 @@ for index, string in ((23 - 1, "very_long"),):
 
 voice = score["Oboe.Music"]
 
-music = library.make_hypermeter_tuplets([(3, 2)], function=commands.get(1))
+music = library.make_hypermeter_tuplets(
+    commands.get(1),
+    [(3, 2)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(2, 23))
@@ -89,7 +92,10 @@ voice.extend(music)
 
 voice = score["Clarinet.Music"]
 
-music = library.make_hypermeter_tuplets([(1, 4)], function=commands.get(1))
+music = library.make_hypermeter_tuplets(
+    commands.get(1),
+    [(1, 4)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(2))
@@ -105,17 +111,20 @@ voice.extend(music)
 
 voice = score["Piano.Music"]
 
-music = library.make_hypermeter_tuplets([(3, 4)], function=commands.get(1))
+music = library.make_hypermeter_tuplets(
+    commands.get(1),
+    [(3, 4)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(2))
 voice.extend(music)
 
 music = library.make_opening_triplets(
+    commands.get(3, 4),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, 0),
     ),
-    function=commands.get(3, 4),
 )
 voice.extend(music)
 
@@ -123,10 +132,10 @@ music = baca.make_mmrests(commands.get(5, 7))
 voice.extend(music)
 
 music = library.make_opening_triplets(
+    commands.get(8, 22),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, 0),
     ),
-    function=commands.get(8, 22),
 )
 voice.extend(music)
 
@@ -137,13 +146,16 @@ voice.extend(music)
 
 voice = score["Percussion.Music"]
 
-music = library.make_hypermeter_tuplets([(1, 6)], function=commands.get(1))
+music = library.make_hypermeter_tuplets(
+    commands.get(1),
+    [(1, 6)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(2))
 voice.extend(music)
 
-music = library.make_incise_attacks(function=commands.get(3, 22))
+music = library.make_incise_attacks(commands.get(3, 22))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(23))
@@ -154,24 +166,27 @@ voice.extend(music)
 voice = score["Violin.Music"]
 
 music = library.make_opening_triplets(
+    commands.get(1, 3),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, -1),
     ),
     remainder=abjad.RIGHT,
-    function=commands.get(1, 3),
 )
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
-music = library.make_right_remainder_quarters(function=commands.get(5, 9))
+music = library.make_right_remainder_quarters(commands.get(5, 9))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(10, 21))
 voice.extend(music)
 
-music = library.make_pizzicato_rhythm(split=[6, 18], function=commands.get(22))
+music = library.make_pizzicato_rhythm(
+    commands.get(22),
+    split=[6, 18],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(23))
@@ -182,24 +197,27 @@ voice.extend(music)
 voice = score["Viola.Music"]
 
 music = library.make_opening_triplets(
+    commands.get(1, 3),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, -1),
     ),
     remainder=abjad.RIGHT,
-    function=commands.get(1, 3),
 )
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
-music = library.make_right_remainder_quarters(function=commands.get(5, 9))
+music = library.make_right_remainder_quarters(commands.get(5, 9))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(10, 21))
 voice.extend(music)
 
-music = library.make_pizzicato_rhythm(split=[8, 10], function=commands.get(22))
+music = library.make_pizzicato_rhythm(
+    commands.get(22),
+    split=[8, 10],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(23))
@@ -210,24 +228,27 @@ voice.extend(music)
 voice = score["Cello.Music"]
 
 music = library.make_opening_triplets(
+    commands.get(1, 3),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, -1),
     ),
     remainder=abjad.RIGHT,
-    function=commands.get(1, 3),
 )
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
-music = library.make_right_remainder_quarters(function=commands.get(5, 9))
+music = library.make_right_remainder_quarters(commands.get(5, 9))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(10, 21))
 voice.extend(music)
 
-music = library.make_pizzicato_rhythm(split=[10, 8], function=commands.get(22))
+music = library.make_pizzicato_rhythm(
+    commands.get(22),
+    split=[10, 8],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(23))

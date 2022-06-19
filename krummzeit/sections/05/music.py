@@ -209,7 +209,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(43, 48))
+music = baca.make_repeat_tied_notes(commands.get(43, 48))
 voice.extend(music)
 
 # VN

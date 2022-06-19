@@ -95,7 +95,7 @@ voice.extend(music)
 music = baca.make_mmrests(commands.get(2))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(3, 14))
+music = baca.make_repeat_tied_notes(commands.get(3, 14))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(15, 23))

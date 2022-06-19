@@ -239,7 +239,7 @@ voice.extend(music)
 music = library.make_silver_points_rhythm([(1, 2)], function=commands.get(20))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(21, 25))
+music = baca.make_repeat_tied_notes(commands.get(21, 25))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(26, 27))
@@ -260,14 +260,14 @@ voice.extend(music)
 music = library.make_silver_points_rhythm([(2, 1)], function=commands.get(32, 33))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(34, 44))
+music = baca.make_repeat_tied_notes(commands.get(34, 44))
 voice.extend(music)
 
 # VN
 
 voice = score["Violin.Music"]
 
-music = baca.make_repeat_tied_notes_function(commands.get(1, 20))
+music = baca.make_repeat_tied_notes(commands.get(1, 20))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(21))

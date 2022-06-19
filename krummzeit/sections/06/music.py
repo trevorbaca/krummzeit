@@ -110,7 +110,7 @@ voice.extend(music)
 
 voice = score["Clarinet.Music"]
 
-music = baca.make_repeated_duration_notes_function(commands.get(1, 10), [(16, 4)])
+music = baca.make_repeated_duration_notes(commands.get(1, 10), [(16, 4)])
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(11))

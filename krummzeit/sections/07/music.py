@@ -107,7 +107,7 @@ voice.extend(music)
 music = baca.make_mmrests(commands.get(11, 15))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(16, 22))
+music = baca.make_repeat_tied_notes(commands.get(16, 22))
 voice.extend(music)
 
 # PF
@@ -142,31 +142,31 @@ voice = score["Percussion.Music"]
 music = baca.make_mmrests(commands.get(1))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(2, 3))
+music = baca.make_repeat_tied_notes(commands.get(2, 3))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(5, 9))
+music = baca.make_repeat_tied_notes(commands.get(5, 9))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(10, 12))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(13))
+music = baca.make_repeat_tied_notes(commands.get(13))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(14, 15))
 voice.extend(music)
 
-music = baca.make_repeat_tied_notes_function(commands.get(16))
+music = baca.make_repeat_tied_notes(commands.get(16))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(17, 18))
 voice.extend(music)
 
-music = baca.make_repeated_duration_notes_function(
+music = baca.make_repeated_duration_notes(
     commands.get(19, 22),
     [(1, 2)],
     do_not_rewrite_meter=True,

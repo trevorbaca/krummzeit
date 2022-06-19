@@ -73,13 +73,13 @@ music = baca.make_mmrests(commands.get(1, 3))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(4, 10),
     durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rotation=-1,
     fuse=(1, 8),
     denominators=[4, 4, 4, 16],
     extra_counts=[3, 1, 0, 4],
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(4, 10),
 )
 voice.extend(music)
 
@@ -94,13 +94,13 @@ music = baca.make_mmrests(commands.get(1, 3))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(4, 10),
     durations=[(4, 8), (2, 8), (4, 8), (3, 8)],
     rotation=-1,
     fuse=(1, 8),
     denominators=[4, 4, 4, 8],
     extra_counts=[3, 1, 0, 4],
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(4, 10),
 )
 voice.extend(music)
 
@@ -117,19 +117,28 @@ voice = score["Piano.Music"]
 music = baca.make_mmrests(commands.get(1, 3))
 voice.extend(music)
 
-music = library.make_silver_points_rhythm([(1, 2), (2, 1)], function=commands.get(4, 9))
+music = library.make_silver_points_rhythm(
+    commands.get(4, 9),
+    [(1, 2), (2, 1)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(10, 12))
 voice.extend(music)
 
-music = library.make_silver_points_rhythm([(1, 2), (2, 1)], function=commands.get(13))
+music = library.make_silver_points_rhythm(
+    commands.get(13),
+    [(1, 2), (2, 1)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(14, 15))
 voice.extend(music)
 
-music = library.make_silver_points_rhythm([(1, 2), (2, 1)], function=commands.get(16))
+music = library.make_silver_points_rhythm(
+    commands.get(16),
+    [(1, 2), (2, 1)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(17, 22))
@@ -181,7 +190,9 @@ music = baca.make_mmrests(commands.get(1, 6))
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets(
-    [(3, 4)], [2, 2, 2, 2, 2, 3], function=commands.get(7, 19)
+    commands.get(7, 19),
+    [(3, 4)],
+    [2, 2, 2, 2, 2, 3],
 )
 voice.extend(music)
 
@@ -196,17 +207,19 @@ music = baca.make_mmrests(commands.get(1))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(2, 6)
+    commands.get(2, 6),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets(
+    commands.get(7, 19),
     [(1, 6)],
     [2, 2, 2, 2, 2, 3],
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, (None, 2)),
     ),
-    function=commands.get(7, 19),
 )
 voice.extend(music)
 
@@ -221,17 +234,19 @@ music = baca.make_mmrests(commands.get(1))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(2, 6)
+    commands.get(2, 6),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets(
+    commands.get(7, 19),
     [(6, 1)],
     [2, 2, 2, 2, 2, 3],
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, (None, 2)),
     ),
-    function=commands.get(7, 19),
 )
 voice.extend(music)
 

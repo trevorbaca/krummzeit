@@ -91,10 +91,10 @@ voice.extend(music)
 voice = score["Violin.Music"]
 
 music = library.make_closing_pizzicato_rhythm(
+    commands.get(1, 40),
     counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
     extra_counts=[2, 2, 1, 2, 4, 6],
     split=[6, 18],
-    function=commands.get(1, 40),
 )
 voice.extend(music)
 
@@ -106,10 +106,10 @@ voice.extend(music)
 voice = score["Viola.Music"]
 
 music = library.make_closing_pizzicato_rhythm(
+    commands.get(1, 4),
     counts=[8, 4, 4, 2, 1, 1, 8, 8, 8, 2, 4, 4],
     extra_counts=[3, 3, 2, 3, 5, 7],
     split=[8, 10],
-    function=commands.get(1, 4),
 )
 voice.extend(music)
 

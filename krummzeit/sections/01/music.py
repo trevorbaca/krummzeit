@@ -97,7 +97,7 @@ voice = score["Piano.Music"]
 music = baca.make_mmrests(commands.get(1, 3))
 voice.extend(music)
 
-music = library.make_single_cluster_piano_rhythm(function=commands.get(4))
+music = library.make_single_cluster_piano_rhythm(commands.get(4))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(5, 6))
@@ -122,7 +122,7 @@ voice.extend(music)
 music = baca.make_mmrests(commands.get(8, 9))
 voice.extend(music)
 
-music = library.make_sponge_rhythm(function=commands.get(10, 13))
+music = library.make_sponge_rhythm(commands.get(10, 13))
 voice.extend(music)
 
 # VN
@@ -130,10 +130,10 @@ voice.extend(music)
 voice = score["Violin.Music"]
 
 music = library.make_opening_triplets(
+    commands.get(1, 2),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, 0),
     ),
-    function=commands.get(1, 2),
 )
 voice.extend(music)
 
@@ -141,11 +141,11 @@ music = baca.make_mmrests(commands.get(3))
 voice.extend(music)
 
 music = library.make_glissando_rhythm(
+    commands.get(4, 8),
     [(2, 1), (2, 1), (1, 1, 1)],
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([5, 6], 7)),
     ),
-    function=commands.get(4, 8),
 )
 voice.extend(music)
 
@@ -157,10 +157,10 @@ voice.extend(music)
 voice = score["Viola.Music"]
 
 music = library.make_opening_triplets(
+    commands.get(1, 2),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, 0),
     ),
-    function=commands.get(1, 2),
 )
 voice.extend(music)
 
@@ -168,11 +168,11 @@ music = baca.make_mmrests(commands.get(3))
 voice.extend(music)
 
 music = library.make_glissando_rhythm(
+    commands.get(4, 8),
     [(2, 1), (1, 1, 1), (2, 1)],
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([0, 1], 7)),
     ),
-    function=commands.get(4, 8),
 )
 voice.extend(music)
 
@@ -184,10 +184,10 @@ voice.extend(music)
 voice = score["Cello.Music"]
 
 music = library.make_opening_triplets(
+    commands.get(1, 2),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, 0),
     ),
-    function=commands.get(1, 2),
 )
 voice.extend(music)
 
@@ -195,11 +195,11 @@ music = baca.make_mmrests(commands.get(3))
 voice.extend(music)
 
 music = library.make_glissando_rhythm(
+    commands.get(4, 8),
     [(1, 1, 1), (2, 1), (2, 1)],
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([2, 3], 7)),
     ),
-    function=commands.get(4, 8),
 )
 voice.extend(music)
 

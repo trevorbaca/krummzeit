@@ -85,22 +85,22 @@ for index, item in (
 
 voice = score["Oboe.Music"]
 
-music = library.make_oboe_trill_rhythm(function=commands.get(1, 8))
+music = library.make_oboe_trill_rhythm(commands.get(1, 8))
 voice.extend(music)
 
-music = library.make_oboe_trill_rhythm(function=commands.get(9, 10))
+music = library.make_oboe_trill_rhythm(commands.get(9, 10))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(11))
 voice.extend(music)
 
-music = library.make_color_tuplets(function=commands.get(12, 21))
+music = library.make_color_tuplets(commands.get(12, 21))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(22, 28))
 voice.extend(music)
 
-music = library.make_detached_triplets(function=commands.get(29, 34))
+music = library.make_detached_triplets(commands.get(29, 34))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(35))
@@ -117,11 +117,11 @@ music = baca.make_mmrests(commands.get(11))
 voice.extend(music)
 
 music = library.make_color_tuplets(
+    commands.get(12, 21),
     rmakers.force_rest(
         lambda _: baca.select.tuplet(_, 0),
     ),
     rotation=2,
-    function=commands.get(12, 21),
 )
 voice.extend(music)
 
@@ -129,7 +129,9 @@ music = baca.make_mmrests(commands.get(22))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 2), 16, function=commands.get(23, 24)
+    commands.get(23, 24),
+    (1, 2),
+    16,
 )
 voice.extend(music)
 
@@ -137,7 +139,9 @@ music = baca.make_mmrests(commands.get(25, 26))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(27, 30)
+    commands.get(27, 30),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 
@@ -145,7 +149,9 @@ music = baca.make_mmrests(commands.get(31, 32))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(33, 35)
+    commands.get(33, 35),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 
@@ -156,33 +162,39 @@ voice = score["Piano.Music"]
 music = baca.make_mmrests(commands.get(1, 8))
 voice.extend(music)
 
-music = library.make_incise_chain_b_rhythm(function=commands.get(9, 10))
+music = library.make_incise_chain_b_rhythm(commands.get(9, 10))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(11, 16))
 voice.extend(music)
 
-music = library.make_silver_points_rhythm([(1, 2), (2, 1)], function=commands.get(17))
+music = library.make_silver_points_rhythm(
+    commands.get(17),
+    [(1, 2), (2, 1)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(18, 19))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
-    [(1, 2), (2, 1)], function=commands.get(20, 26)
+    commands.get(20, 26),
+    [(1, 2), (2, 1)],
 )
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(27, 29)
+    commands.get(27, 29),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 
 music = library.make_pizzicato_rhythm(
+    commands.get(30, 31),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
     ),
-    function=commands.get(30, 31),
 )
 voice.extend(music)
 
@@ -190,10 +202,10 @@ music = baca.make_mmrests(commands.get(32))
 voice.extend(music)
 
 music = library.make_pizzicato_rhythm(
+    commands.get(33, 34),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
     ),
-    function=commands.get(33, 34),
 )
 voice.extend(music)
 
@@ -204,27 +216,31 @@ voice.extend(music)
 
 voice = score["Percussion.Music"]
 
-music = library.make_sponge_rhythm(function=commands.get(1, 14))
+music = library.make_sponge_rhythm(commands.get(1, 14))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(15, 16))
 voice.extend(music)
 
-music = library.make_silver_points_rhythm([(2, 1), (1, 2)], function=commands.get(17))
+music = library.make_silver_points_rhythm(
+    commands.get(17),
+    [(2, 1), (1, 2)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(18, 19))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
-    [(2, 1), (1, 2)], function=commands.get(20, 26)
+    commands.get(20, 26),
+    [(2, 1), (1, 2)],
 )
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(27))
 voice.extend(music)
 
-music = library.make_sponge_rhythm(function=commands.get(28, 34))
+music = library.make_sponge_rhythm(commands.get(28, 34))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(35))
@@ -237,25 +253,25 @@ voice = score["Violin.Music"]
 music = baca.make_mmrests(commands.get(1, 8))
 voice.extend(music)
 
-music = library.make_incise_chain_b_rhythm(function=commands.get(9, 10))
+music = library.make_incise_chain_b_rhythm(commands.get(9, 10))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(11))
 voice.extend(music)
 
 music = library.make_glissando_rhythm(
+    commands.get(12, 20),
     [(2, 1), (2, 1), (1, 1, 1)],
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([5, 6], 7)),
     ),
-    function=commands.get(12, 20),
 )
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(21, 28))
 voice.extend(music)
 
-music = library.make_detached_triplets(function=commands.get(29, 34))
+music = library.make_detached_triplets(commands.get(29, 34))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(35))
@@ -268,18 +284,18 @@ voice = score["Viola.Music"]
 music = baca.make_mmrests(commands.get(1, 8))
 voice.extend(music)
 
-music = library.make_incise_chain_b_rhythm(function=commands.get(9, 10))
+music = library.make_incise_chain_b_rhythm(commands.get(9, 10))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(11))
 voice.extend(music)
 
 music = library.make_glissando_rhythm(
+    commands.get(12, 20),
     [(2, 1), (1, 1, 1), (2, 1)],
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([0, 1], 7)),
     ),
-    function=commands.get(12, 20),
 )
 voice.extend(music)
 
@@ -287,7 +303,9 @@ music = baca.make_mmrests(commands.get(21, 22))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 2), 16, function=commands.get(23, 24)
+    commands.get(23, 24),
+    (1, 2),
+    16,
 )
 voice.extend(music)
 
@@ -295,7 +313,9 @@ music = baca.make_mmrests(commands.get(25, 26))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(27, 30)
+    commands.get(27, 30),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 
@@ -303,7 +323,9 @@ music = baca.make_mmrests(commands.get(31, 32))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(33, 35)
+    commands.get(33, 35),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 
@@ -314,18 +336,18 @@ voice = score["Cello.Music"]
 music = baca.make_mmrests(commands.get(1, 8))
 voice.extend(music)
 
-music = library.make_incise_chain_b_rhythm(function=commands.get(9, 10))
+music = library.make_incise_chain_b_rhythm(commands.get(9, 10))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(11))
 voice.extend(music)
 
 music = library.make_glissando_rhythm(
+    commands.get(12, 20),
     [(1, 1, 1), (2, 1), (2, 1)],
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([2, 3], 7)),
     ),
-    function=commands.get(12, 20),
 )
 voice.extend(music)
 
@@ -333,7 +355,9 @@ music = baca.make_mmrests(commands.get(21, 22))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 2), 16, function=commands.get(23, 24)
+    commands.get(23, 24),
+    (1, 2),
+    16,
 )
 voice.extend(music)
 
@@ -341,7 +365,9 @@ music = baca.make_mmrests(commands.get(25, 26))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(27, 30)
+    commands.get(27, 30),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 
@@ -349,7 +375,9 @@ music = baca.make_mmrests(commands.get(31, 32))
 voice.extend(music)
 
 music = library.make_rest_delimited_repeated_duration_notes(
-    (1, 4), 32, function=commands.get(33, 35)
+    commands.get(33, 35),
+    (1, 4),
+    32,
 )
 voice.extend(music)
 

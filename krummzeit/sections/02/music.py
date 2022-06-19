@@ -90,13 +90,13 @@ music = baca.make_mmrests(commands.get(1, 22))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(23, 37),
     durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rotation=-1,
     fuse=(1, 8),
     denominators=[4, 4, 4, 16],
     extra_counts=[3, 1, 0, 4],
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(23, 37),
 )
 voice.extend(music)
 
@@ -111,13 +111,13 @@ music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(5, 11),
     durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rotation=-1,
     fuse=(1, 8),
     denominators=[4, 4, 4, 8],
     extra_counts=[3, 1, 0, 4],
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(5, 11),
 )
 voice.extend(music)
 
@@ -125,20 +125,23 @@ music = baca.make_mmrests(commands.get(12, 15))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(16, 36),
     durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rotation=-1,
     fuse=(1, 8),
     denominators=[4, 4, 4, 8],
     extra_counts=[3, 1, 0, 4],
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(16, 36),
 )
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(37, 68))
 voice.extend(music)
 
-music = library.make_white_rhythm([(3, 8)], function=commands.get(69, 75))
+music = library.make_white_rhythm(
+    commands.get(69, 75),
+    [(3, 8)],
+)
 voice.extend(music)
 
 # PF
@@ -146,17 +149,18 @@ voice.extend(music)
 voice = score["Piano.Music"]
 
 music = library.make_polyphony_rhythm(
+    commands.get(1, 11),
     durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
     rotation=-1,
     fuse=(1, 8),
     denominators=[8, 8, 4, 4, 8, 8],
     extra_counts=[3, 1, 0, 4],
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(1, 11),
 )
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(12, 22),
     durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
     rotation=-1,
     fuse=(1, 8),
@@ -164,11 +168,11 @@ music = library.make_polyphony_rhythm(
     extra_counts=[3, 1, 0, 4],
     final_quarter_notes=True,
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(12, 22),
 )
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(23, 31),
     durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
     rotation=-1,
     fuse=(1, 8),
@@ -176,28 +180,27 @@ music = library.make_polyphony_rhythm(
     extra_counts=[0, 4, 3, 1],
     initial_eighth_notes=True,
     ties=abjad.index([1, 2, 5], 6),
-    function=commands.get(23, 31),
 )
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(32, 44))
 voice.extend(music)
 
-music = library.make_incise_attacks(function=commands.get(45, 56))
+music = library.make_incise_attacks(commands.get(45, 56))
 voice.extend(music)
 
 music = library.make_pizzicato_sixteenths(
+    commands.get(57, 71),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([1, 5], 7)),
     ),
     extra_counts=[4, 0, 2, 4, 6],
-    function=commands.get(57, 71),
 )
 voice.extend(music)
 
 music = library.make_pizzicato_sixteenths(
+    commands.get(72, 75),
     extra_counts=[4, 0, 2, 4, 6],
-    function=commands.get(72, 75),
 )
 voice.extend(music)
 
@@ -205,19 +208,19 @@ voice.extend(music)
 
 voice = score["Percussion.Music"]
 
-music = library.make_sponge_rhythm(function=commands.get(1, 3))
+music = library.make_sponge_rhythm(commands.get(1, 3))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(4, 22))
 voice.extend(music)
 
-music = library.make_sponge_rhythm(function=commands.get(23, 38))
+music = library.make_sponge_rhythm(commands.get(23, 38))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(39, 44))
 voice.extend(music)
 
-music = library.make_incise_attacks(function=commands.get(45, 60))
+music = library.make_incise_attacks(commands.get(45, 60))
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(61, 75))
@@ -231,13 +234,13 @@ music = baca.make_mmrests(commands.get(1, 7))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(8, 11),
     durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rotation=-1,
     fuse=(1, 8),
     denominators=[4, 4, 4, 16],
     extra_counts=[3, 1, 0, 4],
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(8, 11),
 )
 voice.extend(music)
 
@@ -245,45 +248,45 @@ music = baca.make_mmrests(commands.get(12, 18))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
+    commands.get(19, 37),
     durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
     rotation=-1,
     fuse=(1, 8),
     denominators=[4, 4, 4, 16],
     extra_counts=[3, 1, 0, 4],
     ties=abjad.index([1, 3, 4], 6),
-    function=commands.get(19, 37),
 )
 voice.extend(music)
 
 music = library.make_white_rhythm(
+    commands.get(38),
     durations=[(3, 8)],
     do_not_burnish=True,
-    function=commands.get(38),
 )
 voice.extend(music)
 
 music = library.make_white_rhythm(
+    commands.get(39, 53),
     durations=[(2, 8)],
     remainder=abjad.RIGHT,
     do_not_burnish=True,
-    function=commands.get(39, 53),
 )
 voice.extend(music)
 
 music = library.make_pizzicato_rhythm(
+    commands.get(54, 56),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([3, 4, 5], 6)),
     ),
-    function=commands.get(54, 56),
 )
 voice.extend(music)
 
 music = library.make_pizzicato_sixteenths(
+    commands.get(57, 71),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([3, 6], 8)),
     ),
     extra_counts=[6, 0, 4, 4, 0, 2],
-    function=commands.get(57, 71),
 )
 voice.extend(music)
 
@@ -294,32 +297,44 @@ voice.extend(music)
 
 voice = score["Viola.Music"]
 
-music = library.make_hypermeter_tuplets([(1, 4)], function=commands.get(1, 11))
+music = library.make_hypermeter_tuplets(
+    commands.get(1, 11),
+    [(1, 4)],
+)
 voice.extend(music)
 
-music = library.make_hypermeter_tuplets([(1, 4)], function=commands.get(12, 22))
+music = library.make_hypermeter_tuplets(
+    commands.get(12, 22),
+    [(1, 4)],
+)
 voice.extend(music)
 
-music = library.make_hypermeter_tuplets([(1, 3, 1)], function=commands.get(23, 28))
+music = library.make_hypermeter_tuplets(
+    commands.get(23, 28),
+    [(1, 3, 1)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(29, 33))
 voice.extend(music)
 
 music = library.make_white_rhythm(
+    commands.get(34, 38),
     durations=[(3, 8)],
-    function=commands.get(34, 38),
 )
 voice.extend(music)
 
-music = library.make_prolated_quarters([1, -1, 2, -2], function=commands.get(39, 47))
+music = library.make_prolated_quarters(
+    commands.get(39, 47),
+    [1, -1, 2, -2],
+)
 voice.extend(music)
 
 music = library.make_pizzicato_rhythm(
+    commands.get(48, 56),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([1, 2, 3], 6)),
     ),
-    function=commands.get(48, 56),
 )
 voice.extend(music)
 
@@ -331,11 +346,11 @@ commands(
 )
 
 music = library.make_pizzicato_sixteenths(
+    commands.get(57, 71),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([2, 3], 6)),
     ),
     extra_counts=[2, 2, 0, 2, 4, 6],
-    function=commands.get(57, 71),
 )
 voice.extend(music)
 
@@ -346,41 +361,53 @@ voice.extend(music)
 
 voice = score["Cello.Music"]
 
-music = library.make_hypermeter_tuplets([(3, 2)], function=commands.get(1, 11))
+music = library.make_hypermeter_tuplets(
+    commands.get(1, 11),
+    [(3, 2)],
+)
 voice.extend(music)
 
-music = library.make_hypermeter_tuplets([(3, 2)], function=commands.get(12, 22))
+music = library.make_hypermeter_tuplets(
+    commands.get(12, 22),
+    [(3, 2)],
+)
 voice.extend(music)
 
-music = library.make_hypermeter_tuplets([(4, 1, 2)], function=commands.get(23, 28))
+music = library.make_hypermeter_tuplets(
+    commands.get(23, 28),
+    [(4, 1, 2)],
+)
 voice.extend(music)
 
 music = baca.make_mmrests(commands.get(29, 33))
 voice.extend(music)
 
 music = library.make_white_rhythm(
+    commands.get(34, 38),
     durations=[(3, 8)],
-    function=commands.get(34, 38),
 )
 voice.extend(music)
 
-music = library.make_prolated_quarters([-1, 2, -2, 1], function=commands.get(39, 51))
+music = library.make_prolated_quarters(
+    commands.get(39, 51),
+    [-1, 2, -2, 1],
+)
 voice.extend(music)
 
 music = library.make_pizzicato_rhythm(
+    commands.get(52, 56),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([2, 3, 4], 6)),
     ),
-    function=commands.get(52, 56),
 )
 voice.extend(music)
 
 music = library.make_pizzicato_sixteenths(
+    commands.get(57, 71),
     rmakers.force_rest(
         lambda _: baca.select.tuplets(_, ([0, 2], 7)),
     ),
     extra_counts=[4, 4, 2, 0, 2, 4],
-    function=commands.get(57, 71),
 )
 voice.extend(music)
 

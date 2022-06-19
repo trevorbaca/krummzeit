@@ -89,20 +89,20 @@ for index, string in (
 
 voice = score["Oboe.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 13))
+music = baca.make_mmrests(commands.get(1, 13))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(14, 16))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(17, 19))
+music = baca.make_mmrests(commands.get(17, 19))
 voice.extend(music)
 
 # CL
 
 voice = score["Clarinet.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 13))
+music = baca.make_mmrests(commands.get(1, 13))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(14, 19))
@@ -119,7 +119,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(2))
+music = baca.make_mmrests(commands.get(2))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -129,7 +129,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(4))
+music = baca.make_mmrests(commands.get(4))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -139,19 +139,19 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6, 8))
+music = baca.make_mmrests(commands.get(6, 8))
 voice.extend(music)
 
 music = baca.make_tied_notes_function(commands.get(9, 12))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(13))
+music = baca.make_mmrests(commands.get(13))
 voice.extend(music)
 
 music = baca.make_tied_notes_function(commands.get(14, 16))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(17, 19))
+music = baca.make_mmrests(commands.get(17, 19))
 voice.extend(music)
 
 # PERC
@@ -161,7 +161,7 @@ voice = score["Percussion.Music"]
 music = baca.make_repeat_tied_notes_function(commands.get(1, 9))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(10, 13))
+music = baca.make_mmrests(commands.get(10, 13))
 voice.extend(music)
 
 music = baca.make_repeated_duration_notes_function(commands.get(14, 19), [(1, 4)])
@@ -171,7 +171,7 @@ voice.extend(music)
 
 voice = score["Violin.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 4))
+music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -181,7 +181,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6))
+music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -191,7 +191,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(8))
+music = baca.make_mmrests(commands.get(8))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -201,20 +201,20 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(10, 13))
+music = baca.make_mmrests(commands.get(10, 13))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(14, 16))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(17, 19))
+music = baca.make_mmrests(commands.get(17, 19))
 voice.extend(music)
 
 # VA
 
 voice = score["Viola.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 4))
+music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -224,7 +224,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6))
+music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -234,7 +234,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(8))
+music = baca.make_mmrests(commands.get(8))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -244,26 +244,26 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(10))
+music = baca.make_mmrests(commands.get(10))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(11, 12))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(13))
+music = baca.make_mmrests(commands.get(13))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(14, 16))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(17, 19))
+music = baca.make_mmrests(commands.get(17, 19))
 voice.extend(music)
 
 # VC
 
 voice = score["Cello.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 4))
+music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -273,7 +273,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6))
+music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -283,7 +283,7 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(8))
+music = baca.make_mmrests(commands.get(8))
 voice.extend(music)
 
 music = library.make_silver_points_rhythm(
@@ -293,13 +293,13 @@ music = library.make_silver_points_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(10, 13))
+music = baca.make_mmrests(commands.get(10, 13))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(14, 16))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(17, 19))
+music = baca.make_mmrests(commands.get(17, 19))
 voice.extend(music)
 
 # reapply

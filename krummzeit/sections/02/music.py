@@ -86,7 +86,7 @@ for index, item in (
 
 voice = score["Oboe.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 22))
+music = baca.make_mmrests(commands.get(1, 22))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
@@ -100,14 +100,14 @@ music = library.make_polyphony_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(38, 75))
+music = baca.make_mmrests(commands.get(38, 75))
 voice.extend(music)
 
 # CL
 
 voice = score["Clarinet.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 4))
+music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
@@ -121,7 +121,7 @@ music = library.make_polyphony_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(12, 15))
+music = baca.make_mmrests(commands.get(12, 15))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
@@ -135,7 +135,7 @@ music = library.make_polyphony_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(37, 68))
+music = baca.make_mmrests(commands.get(37, 68))
 voice.extend(music)
 
 music = library.make_white_rhythm([(3, 8)], function=commands.get(69, 75))
@@ -180,7 +180,7 @@ music = library.make_polyphony_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(32, 44))
+music = baca.make_mmrests(commands.get(32, 44))
 voice.extend(music)
 
 music = library.make_incise_attacks(function=commands.get(45, 56))
@@ -208,26 +208,26 @@ voice = score["Percussion.Music"]
 music = library.make_sponge_rhythm(function=commands.get(1, 3))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(4, 22))
+music = baca.make_mmrests(commands.get(4, 22))
 voice.extend(music)
 
 music = library.make_sponge_rhythm(function=commands.get(23, 38))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(39, 44))
+music = baca.make_mmrests(commands.get(39, 44))
 voice.extend(music)
 
 music = library.make_incise_attacks(function=commands.get(45, 60))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(61, 75))
+music = baca.make_mmrests(commands.get(61, 75))
 voice.extend(music)
 
 # VN
 
 voice = score["Violin.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 7))
+music = baca.make_mmrests(commands.get(1, 7))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
@@ -241,7 +241,7 @@ music = library.make_polyphony_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(12, 18))
+music = baca.make_mmrests(commands.get(12, 18))
 voice.extend(music)
 
 music = library.make_polyphony_rhythm(
@@ -303,7 +303,7 @@ voice.extend(music)
 music = library.make_hypermeter_tuplets([(1, 3, 1)], function=commands.get(23, 28))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(29, 33))
+music = baca.make_mmrests(commands.get(29, 33))
 voice.extend(music)
 
 music = library.make_white_rhythm(
@@ -339,7 +339,7 @@ music = library.make_pizzicato_sixteenths(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(72, 75))
+music = baca.make_mmrests(commands.get(72, 75))
 voice.extend(music)
 
 # VC
@@ -355,7 +355,7 @@ voice.extend(music)
 music = library.make_hypermeter_tuplets([(4, 1, 2)], function=commands.get(23, 28))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(29, 33))
+music = baca.make_mmrests(commands.get(29, 33))
 voice.extend(music)
 
 music = library.make_white_rhythm(
@@ -384,7 +384,7 @@ music = library.make_pizzicato_sixteenths(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(72, 75))
+music = baca.make_mmrests(commands.get(72, 75))
 voice.extend(music)
 
 # reapply

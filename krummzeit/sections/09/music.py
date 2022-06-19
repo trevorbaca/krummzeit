@@ -64,7 +64,7 @@ for index, item in (
 
 voice = score["Oboe.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 3))
+music = baca.make_mmrests(commands.get(1, 3))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(4, 7))
@@ -79,13 +79,13 @@ voice.extend(music)
 
 voice = score["Clarinet.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 3))
+music = baca.make_mmrests(commands.get(1, 3))
 voice.extend(music)
 
 music = baca.make_repeat_tied_notes_function(commands.get(4, 5))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6, 7))
+music = baca.make_mmrests(commands.get(6, 7))
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets(
@@ -100,7 +100,7 @@ voice = score["Piano.Music"]
 music = library.make_opening_triplets(function=commands.get(1, 6))
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(7, 8))
+music = baca.make_mmrests(commands.get(7, 8))
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets(
@@ -112,7 +112,7 @@ voice.extend(music)
 
 voice = score["Percussion.Music"]
 
-music = baca.make_mmrests_function(commands.get(1, 4))
+music = baca.make_mmrests(commands.get(1, 4))
 voice.extend(music)
 
 music = library.make_left_remainder_quarters(
@@ -121,7 +121,7 @@ music = library.make_left_remainder_quarters(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(7, 8))
+music = baca.make_mmrests(commands.get(7, 8))
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets(
@@ -143,7 +143,7 @@ music = library.make_glissando_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6))
+music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets([(3, 2)], [2], function=commands.get(7, 10))
@@ -163,7 +163,7 @@ music = library.make_glissando_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6))
+music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets([(1, 4)], [2], function=commands.get(7, 10))
@@ -183,7 +183,7 @@ music = library.make_glissando_rhythm(
 )
 voice.extend(music)
 
-music = baca.make_mmrests_function(commands.get(6))
+music = baca.make_mmrests(commands.get(6))
 voice.extend(music)
 
 music = library.make_hypermeter_tuplets([(2, 3)], [2], function=commands.get(7, 10))

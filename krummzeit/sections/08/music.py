@@ -469,7 +469,7 @@ commands(
     ),
     baca.pitches(
         _pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
 )
 
@@ -544,7 +544,7 @@ commands(
     ),
     baca.pitches(
         _pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
 )
 

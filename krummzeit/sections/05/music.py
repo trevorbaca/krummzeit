@@ -375,7 +375,7 @@ commands(
     ("ob", (11, 24)),
     baca.pitches(
         "D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
 )
 
@@ -392,7 +392,7 @@ commands(
     ("cl", (11, 24)),
     baca.pitches(
         "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
 )
 
@@ -539,7 +539,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
 )
 
@@ -584,7 +584,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
 )
 
@@ -676,7 +676,7 @@ commands(
     baca.new(
         baca.pitch(
             "A+3",
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         match=0,
     ),
@@ -684,7 +684,7 @@ commands(
         baca.clef("alto"),
         baca.pitch(
             "Bb2",
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         match=1,
     ),
@@ -692,7 +692,7 @@ commands(
         baca.clef("bass"),
         baca.pitch(
             "A2",
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         match=2,
     ),

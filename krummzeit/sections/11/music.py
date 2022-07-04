@@ -141,7 +141,7 @@ commands(
     "ob",
     baca.pitch(
         "C#4",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.dynamic("fff"),
     baca.dls_staff_padding(5),
@@ -153,7 +153,7 @@ commands(
     "cl",
     baca.pitch(
         "D2",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.stem_up(),
     baca.dynamic("f"),
@@ -199,7 +199,7 @@ commands(
     ),
     baca.pitches(
         pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
 )
 

@@ -400,7 +400,7 @@ commands(
     baca.suite(
         baca.pitches(
             _pcs,
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         library.displacement(),
         library.register_wide(5),
@@ -475,14 +475,14 @@ commands(
     baca.new(
         baca.pitches(
             _ob_pitches,
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         match=0,
     ),
     baca.new(
         baca.pitches(
             _cl_pitches,
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         match=1,
     ),
@@ -533,7 +533,7 @@ commands(
     baca.suite(
         baca.pitches(
             _pcs,
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         library.displacement(),
         library.register_narrow(7),
@@ -582,7 +582,7 @@ commands(
     (["pf", "perc"], (17, 26)),
     baca.pitch(
         "f5",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.staccatissimo(
         selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
@@ -703,7 +703,7 @@ commands(
     (["vn", "va", "vc"], (12, 20)),
     baca.pitches(
         _pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.new(
         baca.glissando(),
@@ -738,14 +738,14 @@ commands(
     baca.new(
         baca.pitch(
             "F#3",
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         match=0,
     ),
     baca.new(
         baca.pitch(
             "C2",
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+            selector=lambda _: baca.select.plts(_),
         ),
         match=1,
     ),

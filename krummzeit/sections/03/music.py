@@ -491,7 +491,7 @@ commands(
     baca.pitches(
         _pcs,
         allow_repeats=True,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     library.displacement(),
     library.register_wide(5),
@@ -621,7 +621,7 @@ commands(
     baca.staff_lines(5),
     baca.pitches(
         _pcs,
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.suite(
         baca.new(
@@ -660,7 +660,7 @@ commands(
     baca.clef("alto"),
     baca.pitches(
         "e dtqs f eqs dqs c dqs",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.new(
         baca.glissando(),
@@ -690,7 +690,7 @@ commands(
     baca.clef("bass"),
     baca.pitches(
         "d, ctqs, e, dqs, cqs, b,, dqs,",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.new(
         baca.glissando(),
@@ -713,7 +713,7 @@ commands(
     (["pf", "perc"], (14, 20)),
     baca.pitch(
         "C#6",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.staccatissimo(
         selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
@@ -725,7 +725,7 @@ commands(
     ("pf", (28, 35)),
     baca.pitch(
         "C#6",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.dynamic("ff"),
 )
@@ -735,7 +735,7 @@ commands(
     baca.staff_lines(5),
     baca.pitch(
         "C#6",
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
+        selector=lambda _: baca.select.plts(_),
     ),
     baca.dynamic("ff"),
 )

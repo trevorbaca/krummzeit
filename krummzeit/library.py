@@ -233,11 +233,8 @@ def _numerator_to_time_signature(numerator):
     return time_signature
 
 
-@dataclasses.dataclass
+@dataclasses.dataclass(frozen=True, order=True, slots=True, unsafe_hash=True)
 class RegisterTransitionCommand(baca.Command):
-    """
-    Register transition command.
-    """
 
     selector: typing.Any = lambda _: baca.select.leaves(_)
     start_registration: typing.Any = None
@@ -254,7 +251,6 @@ class RegisterTransitionCommand(baca.Command):
         assert start_length == stop_length, repr(start_length, stop_length)
 
     def __call__(self, argument=None, runtime=None):
-        self._runtime = runtime
         if argument is None:
             return
         if self.selector:

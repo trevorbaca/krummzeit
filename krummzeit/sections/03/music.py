@@ -89,706 +89,733 @@ for index, string in (
 ):
     baca.global_fermata(rests[index], string)
 
-# OB
 
-voice = score["Oboe.Music"]
+def OB():
+    voice = score["Oboe.Music"]
 
-music = library.make_pizzicato_rhythm(commands.get(1, 4))
-voice.extend(music)
+    music = library.make_pizzicato_rhythm(commands.get(1, 4))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(5))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(5))
+    voice.extend(music)
 
-music = library.make_pizzicato_rhythm(commands.get(6))
-voice.extend(music)
+    music = library.make_pizzicato_rhythm(commands.get(6))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(7, 23))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(7, 23))
+    voice.extend(music)
 
-music = library.make_pizzicato_rhythm(commands.get(24, 28))
-voice.extend(music)
+    music = library.make_pizzicato_rhythm(commands.get(24, 28))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(29))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(29))
+    voice.extend(music)
 
-music = library.make_pizzicato_rhythm(commands.get(30))
-voice.extend(music)
+    music = library.make_pizzicato_rhythm(commands.get(30))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(31))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(31))
+    voice.extend(music)
 
-music = library.make_pizzicato_rhythm(commands.get(32, 35))
-voice.extend(music)
+    music = library.make_pizzicato_rhythm(commands.get(32, 35))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(36, 44))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(36, 44))
+    voice.extend(music)
 
-# CL
 
-voice = score["Clarinet.Music"]
+def CL():
+    voice = score["Clarinet.Music"]
 
-music = library.make_white_rhythm(
-    commands.get(1, 4),
-    [(3, 8)],
-    abjad.RIGHT,
-    do_not_burnish=True,
-)
-voice.extend(music)
+    music = library.make_white_rhythm(
+        commands.get(1, 4),
+        [(3, 8)],
+        abjad.RIGHT,
+        do_not_burnish=True,
+    )
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(5, 23))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(5, 23))
+    voice.extend(music)
 
-music = library.make_white_rhythm(
-    commands.get(24, 28),
-    [(3, 8)],
-    abjad.RIGHT,
-    do_not_burnish=True,
-)
-voice.extend(music)
+    music = library.make_white_rhythm(
+        commands.get(24, 28),
+        [(3, 8)],
+        abjad.RIGHT,
+        do_not_burnish=True,
+    )
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(29))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(29))
+    voice.extend(music)
 
-music = library.make_white_rhythm(
-    commands.get(30),
-    [(3, 8)],
-    abjad.RIGHT,
-    do_not_burnish=True,
-)
-voice.extend(music)
+    music = library.make_white_rhythm(
+        commands.get(30),
+        [(3, 8)],
+        abjad.RIGHT,
+        do_not_burnish=True,
+    )
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(31))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(31))
+    voice.extend(music)
 
-music = library.make_white_rhythm(
-    commands.get(32, 35),
-    [(3, 8)],
-    abjad.RIGHT,
-    do_not_burnish=True,
-)
-voice.extend(music)
+    music = library.make_white_rhythm(
+        commands.get(32, 35),
+        [(3, 8)],
+        abjad.RIGHT,
+        do_not_burnish=True,
+    )
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(36, 44))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(36, 44))
+    voice.extend(music)
 
-# PF
 
-voice = score["Piano.Music"]
+def PF():
+    voice = score["Piano.Music"]
 
-music = baca.make_mmrests(commands.get(1, 13))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(1, 13))
+    voice.extend(music)
 
-music = library.make_silver_points_rhythm(
-    commands.get(14),
-    [(1, 2)],
-)
-voice.extend(music)
+    music = library.make_silver_points_rhythm(
+        commands.get(14),
+        [(1, 2)],
+    )
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(15))
-voice.extend(music)
-
-music = library.make_silver_points_rhythm(
-    commands.get(16),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(17))
-voice.extend(music)
-
-music = library.make_silver_points_rhythm(
-    commands.get(18),
-    [(1, 2)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(19))
-voice.extend(music)
-
-music = library.make_silver_points_rhythm(
-    commands.get(20),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(21, 27))
-voice.extend(music)
-
-music = library.make_silver_points_rhythm(
-    commands.get(28),
-    [(1, 2)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(29))
-voice.extend(music)
-
-music = library.make_silver_points_rhythm(
-    commands.get(30),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(31))
-voice.extend(music)
-
-music = library.make_silver_points_rhythm(
-    commands.get(32, 33),
-    [(1, 2)],
-)
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(15))
+    voice.extend(music)
+
+    music = library.make_silver_points_rhythm(
+        commands.get(16),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(17))
+    voice.extend(music)
+
+    music = library.make_silver_points_rhythm(
+        commands.get(18),
+        [(1, 2)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(19))
+    voice.extend(music)
+
+    music = library.make_silver_points_rhythm(
+        commands.get(20),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(21, 27))
+    voice.extend(music)
+
+    music = library.make_silver_points_rhythm(
+        commands.get(28),
+        [(1, 2)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(29))
+    voice.extend(music)
+
+    music = library.make_silver_points_rhythm(
+        commands.get(30),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(31))
+    voice.extend(music)
+
+    music = library.make_silver_points_rhythm(
+        commands.get(32, 33),
+        [(1, 2)],
+    )
+    voice.extend(music)
 
-music = library.make_silver_points_rhythm(
-    commands.get(34, 35),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(36, 44))
-voice.extend(music)
-
-# PERC
+    music = library.make_silver_points_rhythm(
+        commands.get(34, 35),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(36, 44))
+    voice.extend(music)
 
-voice = score["Percussion.Music"]
 
-music = baca.make_mmrests(commands.get(1, 13))
-voice.extend(music)
+def PERC():
+    voice = score["Percussion.Music"]
 
-music = library.make_silver_points_rhythm(
-    commands.get(14),
-    [(2, 1)],
-)
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(1, 13))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(15))
-voice.extend(music)
+    music = library.make_silver_points_rhythm(
+        commands.get(14),
+        [(2, 1)],
+    )
+    voice.extend(music)
 
-music = library.make_silver_points_rhythm(
-    commands.get(16),
-    [(1, 2)],
-)
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(15))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(17))
-voice.extend(music)
+    music = library.make_silver_points_rhythm(
+        commands.get(16),
+        [(1, 2)],
+    )
+    voice.extend(music)
 
-music = library.make_silver_points_rhythm(
-    commands.get(18),
-    [(2, 1)],
-)
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(17))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(19))
-voice.extend(music)
+    music = library.make_silver_points_rhythm(
+        commands.get(18),
+        [(2, 1)],
+    )
+    voice.extend(music)
 
-music = library.make_silver_points_rhythm(
-    commands.get(20),
-    [(1, 2)],
-)
-voice.extend(music)
-
-music = baca.make_repeat_tied_notes(commands.get(21, 25))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(19))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(26, 27))
-voice.extend(music)
-
-music = library.make_silver_points_rhythm(
-    commands.get(28),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(29))
-voice.extend(music)
-
-music = library.make_silver_points_rhythm(
-    commands.get(30),
-    [(1, 2)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(31))
-voice.extend(music)
+    music = library.make_silver_points_rhythm(
+        commands.get(20),
+        [(1, 2)],
+    )
+    voice.extend(music)
+
+    music = baca.make_repeat_tied_notes(commands.get(21, 25))
+    voice.extend(music)
 
-music = library.make_silver_points_rhythm(
-    commands.get(32, 33),
-    [(2, 1)],
-)
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(26, 27))
+    voice.extend(music)
+
+    music = library.make_silver_points_rhythm(
+        commands.get(28),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(29))
+    voice.extend(music)
+
+    music = library.make_silver_points_rhythm(
+        commands.get(30),
+        [(1, 2)],
+    )
+    voice.extend(music)
 
-music = baca.make_repeat_tied_notes(commands.get(34, 44))
-voice.extend(music)
+    music = baca.make_mmrests(commands.get(31))
+    voice.extend(music)
 
-# VN
+    music = library.make_silver_points_rhythm(
+        commands.get(32, 33),
+        [(2, 1)],
+    )
+    voice.extend(music)
 
-voice = score["Violin.Music"]
+    music = baca.make_repeat_tied_notes(commands.get(34, 44))
+    voice.extend(music)
 
-music = baca.make_repeat_tied_notes(commands.get(1, 20))
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(21))
-voice.extend(music)
 
-music = library.make_pizzicato_rhythm(commands.get(22, 28))
-voice.extend(music)
+def VN():
+    voice = score["Violin.Music"]
 
-music = baca.make_mmrests(commands.get(29, 35))
-voice.extend(music)
-
-music = library.make_fused_expanse(
-    commands.get(36, 42),
-    [(3, 2), (1, 1), (2, 1)],
-)
-voice.extend(music)
+    music = baca.make_repeat_tied_notes(commands.get(1, 20))
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(21))
+    voice.extend(music)
 
-music = baca.make_mmrests(commands.get(43, 44))
-voice.extend(music)
-
-# VA
-
-voice = score["Viola.Music"]
-
-music = baca.make_mmrests(commands.get(1, 5))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(6),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(7))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(8),
-    [(1, 4)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(9))
-voice.extend(music)
+    music = library.make_pizzicato_rhythm(commands.get(22, 28))
+    voice.extend(music)
 
-music = library.make_single_division_tuplets(
-    commands.get(10),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(11))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(12),
-    [(1, 4)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(13))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(14, 23),
-    [(2, 1), (1,), (1, 4), (1,)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(24, 31))
-voice.extend(music)
-
-music = library.make_fused_expanse(
-    commands.get(32, 42),
-    [(1, 1), (2, 1), (3, 2)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(43, 44))
-voice.extend(music)
-
-# VC
-
-voice = score["Cello.Music"]
-
-music = baca.make_mmrests(commands.get(1, 5))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(6),
-    [(1, 4)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(7))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(8),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(9))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(10),
-    [(1, 4)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(11))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(12),
-    [(2, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(13))
-voice.extend(music)
-
-music = library.make_single_division_tuplets(
-    commands.get(14, 23),
-    [(1, 4), (1,), (2, 1), (1,)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(24, 31))
-voice.extend(music)
-
-music = library.make_fused_expanse(
-    commands.get(32, 42),
-    [(2, 1), (3, 2), (1, 1)],
-)
-voice.extend(music)
-
-music = baca.make_mmrests(commands.get(43, 44))
-voice.extend(music)
-
-music_voice_names = [_ for _ in voice_names if "Music" in _]
-
-commands(
-    music_voice_names,
-    baca.reapply_persistent_indicators(),
-)
-
-# ob
-
-commands(
-    "ob",
-    baca.dls_staff_padding(8),
-    baca.tuplet_bracket_staff_padding(4),
-)
-
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
-_pcs = _pcs.rotate(-121).retrograde().transpose(3).invert()
-_pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
-
-commands(
-    ("ob", (1, 35)),
-    baca.pitches(
-        _pcs,
-        allow_repeats=True,
-        selector=lambda _: baca.select.plts(_),
-    ),
-    library.displacement(),
-    library.register_wide(5),
-    library.color_fingerings(),
-    baca.new(
-        baca.trill_spanner(),
-        map=lambda _: [
-            x
-            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
-            if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
-        ],
-    ),
-    baca.dynamic("ff"),
-)
-
-commands(
-    ("ob", 24),
-    baca.dynamic("ff"),
-)
-
-# cl
-
-commands(
-    "cl",
-    baca.dls_staff_padding(3),
-)
-
-commands(
-    ("cl", [(1, 4), (24, 30), (32, 35)]),
-    baca.new(
-        baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
-        match=0,
-    ),
-    baca.new(
-        baca.pitches("f'' eqs'' g'' fqs'' eqs'' d'' eqs''"),
-        baca.dynamic("f"),
-        match=1,
-    ),
-    baca.new(
-        baca.pitches("g'' dtqs'' a'' gqs'' fqs'' e'' fqs''"),
-        match=2,
-    ),
-    baca.new(
-        baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-    ),
-)
-
-# pf
-
-commands(
-    ("pf", (14, 35)),
-    baca.dls_staff_padding(6),
-    baca.tuplet_bracket_staff_padding(3),
-)
-
-# perc
-
-commands(
-    ("perc", [14, 28]),
-    baca.instrument(library.instruments()["Xylophone"]),
-    baca.clef("treble"),
-    baca.new(
-        baca.staff_lines(5),
-        match=0,
-    ),
-)
-
-commands(
-    ("perc", (14, 20)),
-    baca.tuplet_bracket_staff_padding(3),
-    baca.dls_staff_padding(6),
-)
-
-commands(
-    ("perc", (21, 27)),
-    baca.instrument(library.instruments()["Percussion"]),
-    baca.markup(r"\baca-slate-scrape-markup"),
-    baca.clef("percussion"),
-    baca.staff_lines(1),
-    baca.staff_position(0),
-    baca.dynamic("f"),
-)
-
-commands(
-    ("perc", 21),
-    baca.dls_staff_padding(3),
-)
-
-commands(
-    ("perc", (28, 33)),
-    baca.tuplet_bracket_staff_padding(3),
-    baca.dls_staff_padding(6),
-)
-
-commands(
-    ("perc", (34, 44)),
-    baca.markup(r"\baca-snare-drum-markup"),
-    baca.clef("percussion"),
-    baca.staff_lines(1),
-    baca.staff_position(0),
-    baca.dls_staff_padding(5),
-)
-
-# vn
-
-commands(
-    ("vn", (1, 20)),
-    baca.staff_position(0),
-)
-
-
-def ntltqruns(argument):
-    result = baca.ltqruns(argument)
-    result = [_ for _ in result if 1 < len(_)]
-    return result
-
-
-_pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
-_pcs = _pcs.rotate(-121).retrograde().transpose(3)
-_pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
-
-commands(
-    ("vn", (22, 28)),
-    baca.instrument(library.instruments()["Violin"]),
-    baca.clef("treble"),
-    baca.staff_lines(5),
-    baca.pitches(
-        _pcs,
-        selector=lambda _: baca.select.plts(_),
-    ),
-    baca.suite(
-        baca.new(
-            baca.deviation([0, -0.5, 0, 0.5]),
-            map=lambda _: abjad.select.get(ntltqruns(_), [0], 2),
-        ),
-        baca.new(
-            baca.deviation([0, 0.5, 0, -0.5]),
-            map=ntltqruns,
+    music = baca.make_mmrests(commands.get(29, 35))
+    voice.extend(music)
+
+    music = library.make_fused_expanse(
+        commands.get(36, 42),
+        [(3, 2), (1, 1), (2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(43, 44))
+    voice.extend(music)
+
+
+def VA():
+    voice = score["Viola.Music"]
+
+    music = baca.make_mmrests(commands.get(1, 5))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(6),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(7))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(8),
+        [(1, 4)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(9))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(10),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(11))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(12),
+        [(1, 4)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(13))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(14, 23),
+        [(2, 1), (1,), (1, 4), (1,)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(24, 31))
+    voice.extend(music)
+
+    music = library.make_fused_expanse(
+        commands.get(32, 42),
+        [(1, 1), (2, 1), (3, 2)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(43, 44))
+    voice.extend(music)
+
+
+def VC():
+    voice = score["Cello.Music"]
+
+    music = baca.make_mmrests(commands.get(1, 5))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(6),
+        [(1, 4)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(7))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(8),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(9))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(10),
+        [(1, 4)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(11))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(12),
+        [(2, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(13))
+    voice.extend(music)
+
+    music = library.make_single_division_tuplets(
+        commands.get(14, 23),
+        [(1, 4), (1,), (2, 1), (1,)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(24, 31))
+    voice.extend(music)
+
+    music = library.make_fused_expanse(
+        commands.get(32, 42),
+        [(2, 1), (3, 2), (1, 1)],
+    )
+    voice.extend(music)
+
+    music = baca.make_mmrests(commands.get(43, 44))
+    voice.extend(music)
+
+
+def ob(m):
+
+    commands(
+        "ob",
+        baca.dls_staff_padding(8),
+        baca.tuplet_bracket_staff_padding(4),
+    )
+
+    _pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
+    _pcs = _pcs.rotate(-121).retrograde().transpose(3).invert()
+    _pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+
+    commands(
+        ("ob", (1, 35)),
+        baca.pitches(
+            _pcs,
+            allow_repeats=True,
+            selector=lambda _: baca.select.plts(_),
         ),
         library.displacement(),
         library.register_wide(5),
-    ),
-    baca.new(
-        baca.trill_spanner(),
-        map=lambda _: [
-            x
-            for x in baca.plts(_, exclude=baca.enums.HIDDEN)
-            if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
-        ],
-    ),
-    baca.dynamic("ff"),
-    baca.dls_staff_padding(7),
-    baca.tuplet_bracket_staff_padding(4),
-)
+        library.color_fingerings(),
+        baca.new(
+            baca.trill_spanner(),
+            map=lambda _: [
+                x
+                for x in baca.plts(_, exclude=baca.enums.HIDDEN)
+                if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
+            ],
+        ),
+        baca.dynamic("ff"),
+    )
 
-commands(
-    ("vn", (36, 42)),
-    baca.dls_staff_padding(6),
-)
+    commands(
+        ("ob", 24),
+        baca.dynamic("ff"),
+    )
 
-# va
 
-commands(
-    ("va", (1, 23)),
-    baca.clef("alto"),
-    baca.pitches(
-        "e dtqs f eqs dqs c dqs",
-        selector=lambda _: baca.select.plts(_),
-    ),
-    baca.new(
-        baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.new(
-        baca.markup(r"\baca-molto-flautando-markup"),
-        measures=6,
-    ),
-)
+def cl():
 
-commands(
-    ("va", (6, 23)),
-    baca.tuplet_bracket_staff_padding(4),
-    baca.dls_staff_padding(7),
-)
+    commands(
+        "cl",
+        baca.dls_staff_padding(3),
+    )
 
-commands(
-    ("va", (32, 42)),
-    baca.dls_staff_padding(5),
-)
+    commands(
+        ("cl", [(1, 4), (24, 30), (32, 35)]),
+        baca.new(
+            baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
+            match=0,
+        ),
+        baca.new(
+            baca.pitches("f'' eqs'' g'' fqs'' eqs'' d'' eqs''"),
+            baca.dynamic("f"),
+            match=1,
+        ),
+        baca.new(
+            baca.pitches("g'' dtqs'' a'' gqs'' fqs'' e'' fqs''"),
+            match=2,
+        ),
+        baca.new(
+            baca.glissando(),
+            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
+        ),
+    )
 
-# vc
 
-commands(
-    ("vc", (1, 23)),
-    baca.clef("bass"),
-    baca.pitches(
-        "d, ctqs, e, dqs, cqs, b,, dqs,",
-        selector=lambda _: baca.select.plts(_),
-    ),
-    baca.new(
-        baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.new(
-        baca.markup(r"\baca-molto-flautando-markup"),
-        measures=6,
-    ),
-)
+def pf():
 
-commands(
-    ("vc", (32, 42)),
-    baca.dls_staff_padding(5),
-)
+    commands(
+        ("pf", (14, 35)),
+        baca.dls_staff_padding(6),
+        baca.tuplet_bracket_staff_padding(3),
+    )
 
-# pf, perc
 
-commands(
-    (["pf", "perc"], (14, 20)),
-    baca.pitch(
-        "C#6",
-        selector=lambda _: baca.select.plts(_),
-    ),
-    baca.staccatissimo(
-        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.dynamic("ff"),
-)
+def perc():
 
-commands(
-    ("pf", (28, 35)),
-    baca.pitch(
-        "C#6",
-        selector=lambda _: baca.select.plts(_),
-    ),
-    baca.dynamic("ff"),
-)
+    commands(
+        ("perc", [14, 28]),
+        baca.instrument(library.instruments()["Xylophone"]),
+        baca.clef("treble"),
+        baca.new(
+            baca.staff_lines(5),
+            match=0,
+        ),
+    )
 
-commands(
-    ("perc", (28, 33)),
-    baca.staff_lines(5),
-    baca.pitch(
-        "C#6",
-        selector=lambda _: baca.select.plts(_),
-    ),
-    baca.dynamic("ff"),
-)
+    commands(
+        ("perc", (14, 20)),
+        baca.tuplet_bracket_staff_padding(3),
+        baca.dls_staff_padding(6),
+    )
 
-commands(
-    ("perc", (34, 44)),
-    baca.markup(r"\krummzeit-fingertips-markup"),
-    baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-    baca.dynamic("ppp"),
-)
+    commands(
+        ("perc", (21, 27)),
+        baca.instrument(library.instruments()["Percussion"]),
+        baca.markup(r"\baca-slate-scrape-markup"),
+        baca.clef("percussion"),
+        baca.staff_lines(1),
+        baca.staff_position(0),
+        baca.dynamic("f"),
+    )
 
-# vn, va, vc
+    commands(
+        ("perc", 21),
+        baca.dls_staff_padding(3),
+    )
 
-commands(
-    (["va", "vc"], (1, 23)),
-    baca.new(
+    commands(
+        ("perc", (28, 33)),
+        baca.tuplet_bracket_staff_padding(3),
+        baca.dls_staff_padding(6),
+    )
+
+    commands(
+        ("perc", (34, 44)),
+        baca.markup(r"\baca-snare-drum-markup"),
+        baca.clef("percussion"),
+        baca.staff_lines(1),
+        baca.staff_position(0),
+        baca.dls_staff_padding(5),
+    )
+
+
+def vn():
+
+    commands(
+        ("vn", (1, 20)),
+        baca.staff_position(0),
+    )
+
+    def ntltqruns(argument):
+        result = baca.ltqruns(argument)
+        result = [_ for _ in result if 1 < len(_)]
+        return result
+
+    _pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
+    _pcs = _pcs.rotate(-121).retrograde().transpose(3)
+    _pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+
+    commands(
+        ("vn", (22, 28)),
+        baca.instrument(library.instruments()["Violin"]),
+        baca.clef("treble"),
+        baca.staff_lines(5),
+        baca.pitches(
+            _pcs,
+            selector=lambda _: baca.select.plts(_),
+        ),
+        baca.suite(
+            baca.new(
+                baca.deviation([0, -0.5, 0, 0.5]),
+                map=lambda _: abjad.select.get(ntltqruns(_), [0], 2),
+            ),
+            baca.new(
+                baca.deviation([0, 0.5, 0, -0.5]),
+                map=ntltqruns,
+            ),
+            library.displacement(),
+            library.register_wide(5),
+        ),
+        baca.new(
+            baca.trill_spanner(),
+            map=lambda _: [
+                x
+                for x in baca.plts(_, exclude=baca.enums.HIDDEN)
+                if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
+            ],
+        ),
+        baca.dynamic("ff"),
+        baca.dls_staff_padding(7),
+        baca.tuplet_bracket_staff_padding(4),
+    )
+
+    commands(
+        ("vn", (36, 42)),
+        baca.dls_staff_padding(6),
+    )
+
+
+def va():
+
+    commands(
+        ("va", (1, 23)),
+        baca.clef("alto"),
+        baca.pitches(
+            "e dtqs f eqs dqs c dqs",
+            selector=lambda _: baca.select.plts(_),
+        ),
+        baca.new(
+            baca.glissando(),
+            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
+        ),
+        baca.new(
+            baca.markup(r"\baca-molto-flautando-markup"),
+            measures=6,
+        ),
+    )
+
+    commands(
+        ("va", (6, 23)),
+        baca.tuplet_bracket_staff_padding(4),
+        baca.dls_staff_padding(7),
+    )
+
+    commands(
+        ("va", (32, 42)),
+        baca.dls_staff_padding(5),
+    )
+
+
+def vc():
+
+    commands(
+        ("vc", (1, 23)),
+        baca.clef("bass"),
+        baca.pitches(
+            "d, ctqs, e, dqs, cqs, b,, dqs,",
+            selector=lambda _: baca.select.plts(_),
+        ),
+        baca.new(
+            baca.glissando(),
+            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
+        ),
+        baca.new(
+            baca.markup(r"\baca-molto-flautando-markup"),
+            measures=6,
+        ),
+    )
+
+    commands(
+        ("vc", (32, 42)),
+        baca.dls_staff_padding(5),
+    )
+
+
+def composites():
+    # pf, perc
+
+    commands(
+        (["pf", "perc"], (14, 20)),
+        baca.pitch(
+            "C#6",
+            selector=lambda _: baca.select.plts(_),
+        ),
+        baca.staccatissimo(
+            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
+        ),
+        baca.dynamic("ff"),
+    )
+
+    commands(
+        ("pf", (28, 35)),
+        baca.pitch(
+            "C#6",
+            selector=lambda _: baca.select.plts(_),
+        ),
+        baca.dynamic("ff"),
+    )
+
+    commands(
+        ("perc", (28, 33)),
+        baca.staff_lines(5),
+        baca.pitch(
+            "C#6",
+            selector=lambda _: baca.select.plts(_),
+        ),
+        baca.dynamic("ff"),
+    )
+
+    commands(
+        ("perc", (34, 44)),
+        baca.markup(r"\krummzeit-fingertips-markup"),
+        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
+        baca.dynamic("ppp"),
+    )
+
+    # vn, va, vc
+
+    commands(
+        (["va", "vc"], (1, 23)),
+        baca.new(
+            baca.hairpin(
+                "ff > pp",
+                selector=lambda _: baca.select.tleaves(_)[:2],
+            ),
+            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
+        ),
+    )
+
+    commands(
+        (["vn", "va", "vc"], (32, 42)),
+        baca.markup(r"\baca-non-flautando-markup"),
+        baca.markup(r"\krummzeit-show-tempo-markup"),
+        baca.new(
+            baca.pitches("ftqs g"),
+            match=0,
+        ),
+        baca.new(
+            baca.pitches("btqs, c bqs, cqs"),
+            match=1,
+        ),
+        baca.new(
+            baca.pitches("b,, cqs, bqf,, c,"),
+            match=2,
+        ),
+        baca.new(
+            baca.glissando(),
+            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
+        ),
         baca.hairpin(
-            "ff > pp",
-            selector=lambda _: baca.select.tleaves(_)[:2],
+            "pp < fff",
+            selector=lambda _: baca.select.tleaves(
+                _,
+            ),
         ),
-        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-    ),
-)
+    )
 
-commands(
-    (["vn", "va", "vc"], (32, 42)),
-    baca.markup(r"\baca-non-flautando-markup"),
-    baca.markup(r"\krummzeit-show-tempo-markup"),
-    baca.new(
-        baca.pitches("ftqs g"),
-        match=0,
-    ),
-    baca.new(
-        baca.pitches("btqs, c bqs, cqs"),
-        match=1,
-    ),
-    baca.new(
-        baca.pitches("b,, cqs, bqf,, c,"),
-        match=2,
-    ),
-    baca.new(
-        baca.glissando(),
-        map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-    ),
-    baca.hairpin(
-        "pp < fff",
-        selector=lambda _: baca.select.tleaves(
-            _,
-        ),
-    ),
-)
+
+def main():
+    OB()
+    CL()
+    PF()
+    PERC()
+    VN()
+    VA()
+    VC()
+    previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
+    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(commands.time_signatures),
+        commands.voice_abbreviations,
+    )
+    ob(cache["ob"])
+    cl()
+    pf()
+    perc()
+    vn()
+    va()
+    vc()
+    composites()
+
 
 if __name__ == "__main__":
+    main()
     metadata, persist, score, timing = baca.build.interpret_section(
         score,
         commands,

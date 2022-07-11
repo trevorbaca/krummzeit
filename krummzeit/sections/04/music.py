@@ -86,228 +86,170 @@ for index, string in (
     baca.global_fermata(rests[index], string)
 
 
-def OB():
-
-    voice = score["Oboe.Music"]
-
+def OB(voice):
     music = baca.make_mmrests(commands.get(1, 13))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(14, 16))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(17, 19))
     voice.extend(music)
 
 
-def CL():
-
-    voice = score["Clarinet.Music"]
-
+def CL(voice):
     music = baca.make_mmrests(commands.get(1, 13))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(14, 19))
     voice.extend(music)
 
 
-def PF():
-
-    voice = score["Piano.Music"]
-
+def PF(voice):
     music = library.make_silver_points_rhythm(
         commands.get(1),
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(2))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(3),
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(4))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(5),
         [(2, 3)],
         tuplet_ratios=[(1, -1, 1, 3), (1, -1, 1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6, 8))
     voice.extend(music)
-
     music = baca.make_tied_notes(commands.get(9, 12))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(13))
     voice.extend(music)
-
     music = baca.make_tied_notes(commands.get(14, 16))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(17, 19))
     voice.extend(music)
 
 
-def PERC():
-    voice = score["Percussion.Music"]
-
+def PERC(voice):
     music = baca.make_repeat_tied_notes(commands.get(1, 9))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(10, 13))
     voice.extend(music)
-
     music = baca.make_repeated_duration_notes(commands.get(14, 19), [(1, 4)])
     voice.extend(music)
 
 
-def VN():
-    voice = score["Violin.Music"]
-
+def VN(voice):
     music = baca.make_mmrests(commands.get(1, 4))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(5),
         [(5, 4)],
         tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(7),
         [(5, 4)],
         tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(9),
         [(5, 4)],
         tuplet_ratios=[(-1, 1, 1, -1, 2), (-1, 1, 1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(10, 13))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(14, 16))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(17, 19))
     voice.extend(music)
 
 
-def VA():
-    voice = score["Viola.Music"]
-
+def VA(voice):
     music = baca.make_mmrests(commands.get(1, 4))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(5),
         [(2, 7)],
         tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(7),
         [(2, 7)],
         tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(9),
         [(2, 7)],
         tuplet_ratios=[(-1, 2), (-1, 2, -1, 2, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(10))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(11, 12))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(13))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(14, 16))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(17, 19))
     voice.extend(music)
 
 
-def VC():
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = baca.make_mmrests(commands.get(1, 4))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(5),
         [(7, 2)],
         tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(7),
         [(7, 2)],
         tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8))
     voice.extend(music)
-
     music = library.make_silver_points_rhythm(
         commands.get(9),
         [(7, 2)],
         tuplet_ratios=[(-1, 2, -1, 2, 2), (-1, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(10, 13))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(14, 16))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(17, 19))
     voice.extend(music)
 
 
 def ob(m):
-
     commands(
         ("ob", (14, 16)),
         baca.pitch("B3"),
@@ -322,7 +264,6 @@ def ob(m):
 
 
 def cl():
-
     commands(
         ("cl", (14, 19)),
         baca.instrument(library.instruments()["BassClarinet"]),
@@ -333,27 +274,23 @@ def cl():
 
 
 def pf():
-
     commands(
         ("pf", 1),
         baca.hairpin("ff > pp"),
         baca.ottava(),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("pf", 3),
         baca.hairpin("pp < ff"),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("pf", 5),
         baca.clef("bass"),
         baca.hairpin("ff > pp"),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("pf", (9, 12)),
         baca.markup(r"\baca-senza-pedale-markup"),
@@ -361,14 +298,12 @@ def pf():
         baca.ottava_bassa(),
         baca.dynamic("fff"),
     )
-
     commands(
         ("pf", (14, 16)),
         library.replace_with_clusters("low"),
         baca.ottava_bassa(),
         baca.dynamic("fff"),
     )
-
     commands(
         ("pf", (9, 16)),
         baca.dls_staff_padding(10),
@@ -376,7 +311,6 @@ def pf():
 
 
 def perc():
-
     commands(
         ("perc", (1, 9)),
         baca.dynamic("ppp-ancora"),
@@ -384,7 +318,6 @@ def perc():
         baca.staff_position(0),
         baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     )
-
     commands(
         ("perc", (14, 19)),
         baca.markup(r"\baca-tam-tam-markup"),
@@ -395,7 +328,6 @@ def perc():
 
 
 def vn():
-
     commands(
         ("vn", 5),
         baca.hairpin(
@@ -408,7 +340,6 @@ def vn():
         baca.markup(r"\baca-pizz-markup"),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("vn", 7),
         baca.hairpin(
@@ -419,7 +350,6 @@ def vn():
         ),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("vn", 9),
         baca.hairpin(
@@ -430,7 +360,6 @@ def vn():
         ),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("vn", (14, 16)),
         baca.pitch("fs"),
@@ -438,7 +367,6 @@ def vn():
 
 
 def va():
-
     commands(
         ("va", 5),
         baca.clef("treble"),
@@ -452,7 +380,6 @@ def va():
         baca.markup(r"\baca-pizz-markup"),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("va", 7),
         baca.hairpin(
@@ -463,7 +390,6 @@ def va():
         ),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("va", 9),
         baca.clef("alto"),
@@ -475,13 +401,11 @@ def va():
         ),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("va", (11, 12)),
         baca.markup(r"\baca-arco-markup"),
         baca.dynamic("fff-poss"),
     )
-
     commands(
         ("va", (11, 16)),
         baca.pitch(
@@ -492,7 +416,6 @@ def va():
 
 
 def vc():
-
     commands(
         ("vc", 5),
         baca.clef("treble"),
@@ -505,7 +428,6 @@ def vc():
         baca.markup(r"\baca-pizz-markup"),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("vc", 7),
         baca.clef("bass"),
@@ -517,7 +439,6 @@ def vc():
         ),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("vc", 9),
         baca.hairpin(
@@ -528,7 +449,6 @@ def vc():
         ),
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
     )
-
     commands(
         ("vc", (14, 16)),
         baca.pitch("a,,"),
@@ -537,7 +457,6 @@ def vc():
 
 def composites():
     # pf, vn, va, vc (1, 9)
-
     pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
     commands(
@@ -554,7 +473,6 @@ def composites():
             selector=lambda _: baca.select.plts(_),
         ),
     )
-
     commands(
         ("pf", [1, 3, 5]),
         library.displacement(),
@@ -571,7 +489,6 @@ def composites():
             match=2,
         ),
     )
-
     commands(
         ("vn", [5, 7, 9]),
         library.displacement(),
@@ -588,7 +505,6 @@ def composites():
             match=2,
         ),
     )
-
     commands(
         ("va", [5, 7, 9]),
         library.displacement(),
@@ -605,7 +521,6 @@ def composites():
             match=2,
         ),
     )
-
     commands(
         ("vc", [5, 7, 9]),
         library.displacement(),
@@ -622,20 +537,16 @@ def composites():
             match=2,
         ),
     )
-
     # vn, va, vc
-
     commands(
         (["vn", "va", "vc"], (5, 9)),
         baca.dls_staff_padding(8),
         baca.tuplet_bracket_staff_padding(4),
     )
-
     commands(
         (["vn", "va", "vc"], (11, 16)),
         baca.stem_up(),
     )
-
     commands(
         (["vn", "va", "vc"], (14, 16)),
         baca.new(
@@ -647,13 +558,13 @@ def composites():
 
 
 def main():
-    OB()
-    CL()
-    PF()
-    PERC()
-    VN()
-    VA()
-    VC()
+    OB(commands.voice("ob"))
+    CL(commands.voice("cl"))
+    PF(commands.voice("pf"))
+    PERC(commands.voice("perc"))
+    VN(commands.voice("vn"))
+    VA(commands.voice("va"))
+    VC(commands.voice("vc"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(

@@ -83,12 +83,9 @@ for index, item in (
     baca.metronome_mark(skip, indicator, manifests)
 
 
-def OB():
-    voice = score["Oboe.Music"]
-
+def OB(voice):
     music = baca.make_mmrests(commands.get(1, 22))
     voice.extend(music)
-
     music = library.make_polyphony_rhythm(
         commands.get(23, 37),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
@@ -99,17 +96,13 @@ def OB():
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(38, 75))
     voice.extend(music)
 
 
-def CL():
-    voice = score["Clarinet.Music"]
-
+def CL(voice):
     music = baca.make_mmrests(commands.get(1, 4))
     voice.extend(music)
-
     music = library.make_polyphony_rhythm(
         commands.get(5, 11),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
@@ -120,10 +113,8 @@ def CL():
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(12, 15))
     voice.extend(music)
-
     music = library.make_polyphony_rhythm(
         commands.get(16, 36),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
@@ -134,10 +125,8 @@ def CL():
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(37, 68))
     voice.extend(music)
-
     music = library.make_white_rhythm(
         commands.get(69, 75),
         [(3, 8)],
@@ -145,9 +134,7 @@ def CL():
     voice.extend(music)
 
 
-def PF():
-    voice = score["Piano.Music"]
-
+def PF(voice):
     music = library.make_polyphony_rhythm(
         commands.get(1, 11),
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
@@ -158,7 +145,6 @@ def PF():
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-
     music = library.make_polyphony_rhythm(
         commands.get(12, 22),
         durations=[(4, 8), (3, 8), (4, 8), (2, 8)],
@@ -170,7 +156,6 @@ def PF():
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-
     music = library.make_polyphony_rhythm(
         commands.get(23, 31),
         durations=[(4, 16), (3, 16), (4, 16), (2, 16)],
@@ -182,13 +167,10 @@ def PF():
         ties=abjad.index([1, 2, 5], 6),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(32, 44))
     voice.extend(music)
-
     music = library.make_incise_attacks(commands.get(45, 56))
     voice.extend(music)
-
     music = library.make_pizzicato_sixteenths(
         commands.get(57, 71),
         rmakers.force_rest(
@@ -197,7 +179,6 @@ def PF():
         extra_counts=[4, 0, 2, 4, 6],
     )
     voice.extend(music)
-
     music = library.make_pizzicato_sixteenths(
         commands.get(72, 75),
         extra_counts=[4, 0, 2, 4, 6],
@@ -205,35 +186,24 @@ def PF():
     voice.extend(music)
 
 
-def PERC():
-    voice = score["Percussion.Music"]
-
+def PERC(voice):
     music = library.make_sponge_rhythm(commands.get(1, 3))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(4, 22))
     voice.extend(music)
-
     music = library.make_sponge_rhythm(commands.get(23, 38))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(39, 44))
     voice.extend(music)
-
     music = library.make_incise_attacks(commands.get(45, 60))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(61, 75))
     voice.extend(music)
 
 
-def VN():
-
-    voice = score["Violin.Music"]
-
+def VN(voice):
     music = baca.make_mmrests(commands.get(1, 7))
     voice.extend(music)
-
     music = library.make_polyphony_rhythm(
         commands.get(8, 11),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
@@ -244,10 +214,8 @@ def VN():
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(12, 18))
     voice.extend(music)
-
     music = library.make_polyphony_rhythm(
         commands.get(19, 37),
         durations=[(3, 8), (4, 8), (2, 8), (4, 8)],
@@ -258,14 +226,12 @@ def VN():
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-
     music = library.make_white_rhythm(
         commands.get(38),
         durations=[(3, 8)],
         do_not_burnish=True,
     )
     voice.extend(music)
-
     music = library.make_white_rhythm(
         commands.get(39, 53),
         durations=[(2, 8)],
@@ -273,7 +239,6 @@ def VN():
         do_not_burnish=True,
     )
     voice.extend(music)
-
     music = library.make_pizzicato_rhythm(
         commands.get(54, 56),
         rmakers.force_rest(
@@ -281,7 +246,6 @@ def VN():
         ),
     )
     voice.extend(music)
-
     music = library.make_pizzicato_sixteenths(
         commands.get(57, 71),
         rmakers.force_rest(
@@ -290,32 +254,26 @@ def VN():
         extra_counts=[6, 0, 4, 4, 0, 2],
     )
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(72, 75))
     voice.extend(music)
 
 
-def VA():
-    voice = score["Viola.Music"]
-
+def VA(voice):
     music = library.make_hypermeter_tuplets(
         commands.get(1, 11),
         [(1, 4)],
     )
     voice.extend(music)
-
     music = library.make_hypermeter_tuplets(
         commands.get(12, 22),
         [(1, 4)],
     )
     voice.extend(music)
-
     music = library.make_hypermeter_tuplets(
         commands.get(23, 28),
         [(1, 3, 1)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(29, 33))
     voice.extend(music)
 
@@ -324,13 +282,11 @@ def VA():
         durations=[(3, 8)],
     )
     voice.extend(music)
-
     music = library.make_prolated_quarters(
         commands.get(39, 47),
         [1, -1, 2, -2],
     )
     voice.extend(music)
-
     music = library.make_pizzicato_rhythm(
         commands.get(48, 56),
         rmakers.force_rest(
@@ -339,7 +295,6 @@ def VA():
     )
     rmakers.untie(lambda _: abjad.select.leaf(_, -12))(music)
     voice.extend(music)
-
     music = library.make_pizzicato_sixteenths(
         commands.get(57, 71),
         rmakers.force_rest(
@@ -348,48 +303,38 @@ def VA():
         extra_counts=[2, 2, 0, 2, 4, 6],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(72, 75))
     voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = library.make_hypermeter_tuplets(
         commands.get(1, 11),
         [(3, 2)],
     )
     voice.extend(music)
-
     music = library.make_hypermeter_tuplets(
         commands.get(12, 22),
         [(3, 2)],
     )
     voice.extend(music)
-
     music = library.make_hypermeter_tuplets(
         commands.get(23, 28),
         [(4, 1, 2)],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(29, 33))
     voice.extend(music)
-
     music = library.make_white_rhythm(
         commands.get(34, 38),
         durations=[(3, 8)],
     )
     voice.extend(music)
-
     music = library.make_prolated_quarters(
         commands.get(39, 51),
         [-1, 2, -2, 1],
     )
     voice.extend(music)
-
     music = library.make_pizzicato_rhythm(
         commands.get(52, 56),
         rmakers.force_rest(
@@ -397,7 +342,6 @@ def VC():
         ),
     )
     voice.extend(music)
-
     music = library.make_pizzicato_sixteenths(
         commands.get(57, 71),
         rmakers.force_rest(
@@ -406,7 +350,6 @@ def VC():
         extra_counts=[4, 4, 2, 0, 2, 4],
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(72, 75))
     voice.extend(music)
 
@@ -419,12 +362,10 @@ def cl(m):
         library.short_instrument_name("Cl. (Eb)"),
         baca.dynamic("mp"),
     )
-
     commands(
         ("cl", (16, 22)),
         baca.dynamic("f"),
     )
-
     commands(
         ("cl", (69, 75)),
         baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
@@ -439,26 +380,22 @@ def pf():
         baca.instrument(library.instruments()["Harpsichord"]),
         library.short_instrument_name("Hpschd."),
     )
-
     commands(
         ("pf", (1, 22)),
         baca.dls_staff_padding(6),
         baca.tuplet_bracket_staff_padding(3),
     )
-
     commands(
         ("pf", (23, 31)),
         baca.dls_staff_padding(7),
         baca.tuplet_bracket_staff_padding(4),
     )
-
     commands(
         ("pf", (45, 46)),
         baca.clef("bass"),
         baca.instrument(library.instruments()["Piano"]),
         library.short_instrument_name("Pf."),
     )
-
     commands(
         ("pf", (57, 75)),
         baca.dls_staff_padding(7),
@@ -474,7 +411,6 @@ def perc():
             selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
         ),
     )
-
     commands(
         ("perc", (45, 60)),
         baca.markup(r"\baca-tam-tam-markup"),
@@ -498,13 +434,11 @@ def vn():
         ),
         baca.staff_position(0),
     )
-
     commands(
         ("vn", (8, 11)),
         baca.dynamic("mp"),
         baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
     )
-
     commands(
         ("vn", (19, 22)),
         baca.dynamic("f"),
@@ -517,17 +451,14 @@ def va():
         ("va", (1, 11)),
         baca.pitches("d ctqs e dqs cqs b, cqs"),
     )
-
     commands(
         ("va", (12, 22)),
         baca.pitches("e dtqs f eqs dqs c dqs"),
     )
-
     commands(
         ("va", (23, 28)),
         baca.pitches("g ftqs a gqs fqs e fqs"),
     )
-
     commands(
         ("va", 39),
         baca.clef("alto"),
@@ -539,17 +470,14 @@ def vc():
         ("vc", (1, 11)),
         baca.pitches("e, dqs, cqs, b,, cqs, d, ctqs,"),
     )
-
     commands(
         ("vc", (12, 22)),
         baca.pitches("f, eqs, dqs, c, dqs, e, dtqs,"),
     )
-
     commands(
         ("vc", (23, 28)),
         baca.pitches("a, gqs, fqs, e, fqs, g, ftqs,"),
     )
-
     commands(
         ("vc", 45),
         baca.clef("bass"),
@@ -571,7 +499,6 @@ def _1_37_quartet():
             selector=lambda _: baca.select.plts(_),
         ),
     )
-
     pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     pcs = pcs.transpose(1)
     commands(
@@ -587,7 +514,6 @@ def _1_37_quartet():
             selector=lambda _: baca.select.plts(_),
         ),
     )
-
     pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     pcs = pcs.rotate(-155).transpose(3)
     commands(
@@ -604,52 +530,42 @@ def _1_37_quartet():
             selector=lambda _: baca.select.plts(_),
         ),
     )
-
     commands(
         (["pf", "vn", "ob", "cl"], (1, 37)),
         library.displacement(),
     )
-
     commands(
         (["vn", "ob", "cl"], (1, 22)),
         library.register_narrow(5),
     )
-
     commands(
         ("pf", (1, 22)),
         library.register_wide(5),
     )
-
     commands(
         ("pf", (23, 31)),
         library.register_narrow(3, 5),
     )
-
     commands(
         ("pf", (23, 28)),
         baca.clef("bass"),
     )
-
     commands(
         ("pf", (29, 31)),
         baca.clef("treble"),
     )
-
     commands(
         (["vn", "ob", "cl"], (23, 31)),
         library.register_narrow(4, 5),
     )
-
     commands(
         (["pf", "vn", "ob", "cl"], (32, 37)),
         library.register_narrow(5),
     )
-
     commands(
         (["vn", "ob", "cl"], (23, 28)),
         baca.hairpin("f < ff"),
     )
-
     commands(
         (["vn", "ob", "cl"], (1, 37)),
         baca.staccato(
@@ -666,19 +582,16 @@ def _1_28_strings():
             map=lambda _: baca.select.runs(_),
         ),
     )
-
     commands(
         (["va", "vc"], (1, 11)),
         baca.dynamic("mf"),
         baca.markup(r"\baca-molto-flautando-markup"),
     )
-
     commands(
         (["va", "vc"], (12, 22)),
         baca.dynamic("f"),
         baca.markup(r"\baca-non-flautando-markup"),
     )
-
     commands(
         (["va", "vc"], (23, 28)),
         baca.dynamic("ff"),
@@ -696,7 +609,6 @@ def _34_53_strings():
         ),
         baca.pitches(library.violet_pitch_classes()),
     )
-
     commands(
         ("va", (34, 47)),
         baca.alternate_bow_strokes(),
@@ -709,7 +621,6 @@ def _34_53_strings():
         baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
         library.register_narrow(5, 3),
     )
-
     commands(
         ("vc", (34, 51)),
         baca.alternate_bow_strokes(),
@@ -719,7 +630,6 @@ def _34_53_strings():
         baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
         library.register_narrow(5, 2),
     )
-
     commands(
         ("pf", (45, 56)),
         baca.dynamic("fff-sempre"),
@@ -746,7 +656,6 @@ def _48_75_quartet():
         ),
         baca.pitches(pcs),
     )
-
     commands(
         ("va", (48, 71)),
         baca.clef("treble"),
@@ -755,7 +664,6 @@ def _48_75_quartet():
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
         library.register_narrow(5, 6),
     )
-
     commands(
         ("vc", (52, 71)),
         baca.clef("treble"),
@@ -764,7 +672,6 @@ def _48_75_quartet():
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
         library.register_narrow(5, 6),
     )
-
     commands(
         ("vn", (38, 53)),
         baca.alternate_bow_strokes(),
@@ -773,7 +680,6 @@ def _48_75_quartet():
         baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
         library.register_narrow(5, 4),
     )
-
     commands(
         ("vn", (54, 71)),
         baca.dynamic("fff"),
@@ -781,7 +687,6 @@ def _48_75_quartet():
         baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
         library.register_narrow(5, 6),
     )
-
     commands(
         ("pf", (57, 75)),
         baca.clef("treble"),
@@ -792,13 +697,13 @@ def _48_75_quartet():
 
 
 def main():
-    OB()
-    CL()
-    PF()
-    PERC()
-    VN()
-    VA()
-    VC()
+    OB(commands.voice("ob"))
+    CL(commands.voice("cl"))
+    PF(commands.voice("pf"))
+    PERC(commands.voice("perc"))
+    VN(commands.voice("vn"))
+    VA(commands.voice("va"))
+    VC(commands.voice("vc"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
     baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(

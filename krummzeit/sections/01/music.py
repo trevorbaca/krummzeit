@@ -71,67 +71,45 @@ for index, string in (
     baca.global_fermata(rests[index], string)
 
 
-def OB():
-    voice = score["Oboe.Music"]
+def OB(voice):
     music = baca.make_mmrests(commands.get())
     voice.extend(music)
 
 
-def CL():
-
-    voice = score["Clarinet.Music"]
-
+def CL(voice):
     music = baca.make_mmrests(commands.get(1, 3))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(4, 5))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(6, 13))
     voice.extend(music)
 
 
-def PF():
-
-    voice = score["Piano.Music"]
-
+def PF(voice):
     music = baca.make_mmrests(commands.get(1, 3))
     voice.extend(music)
-
     music = library.make_single_cluster_piano_rhythm(commands.get(4))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(5, 6))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(7))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8, 13))
     voice.extend(music)
 
 
-def PERC():
-
-    voice = score["Percussion.Music"]
-
+def PERC(voice):
     music = baca.make_mmrests(commands.get(1, 6))
     voice.extend(music)
-
     music = baca.make_repeat_tied_notes(commands.get(7))
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(8, 9))
     voice.extend(music)
-
     music = library.make_sponge_rhythm(commands.get(10, 13))
     voice.extend(music)
 
 
-def VN():
-
-    voice = score["Violin.Music"]
-
+def VN(voice):
     music = library.make_opening_triplets(
         commands.get(1, 2),
         rmakers.force_rest(
@@ -139,10 +117,8 @@ def VN():
         ),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(3))
     voice.extend(music)
-
     music = library.make_glissando_rhythm(
         commands.get(4, 8),
         [(2, 1), (2, 1), (1, 1, 1)],
@@ -151,15 +127,11 @@ def VN():
         ),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(9, 13))
     voice.extend(music)
 
 
-def VA():
-
-    voice = score["Viola.Music"]
-
+def VA(voice):
     music = library.make_opening_triplets(
         commands.get(1, 2),
         rmakers.force_rest(
@@ -167,10 +139,8 @@ def VA():
         ),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(3))
     voice.extend(music)
-
     music = library.make_glissando_rhythm(
         commands.get(4, 8),
         [(2, 1), (1, 1, 1), (2, 1)],
@@ -179,15 +149,11 @@ def VA():
         ),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(9, 13))
     voice.extend(music)
 
 
-def VC():
-
-    voice = score["Cello.Music"]
-
+def VC(voice):
     music = library.make_opening_triplets(
         commands.get(1, 2),
         rmakers.force_rest(
@@ -195,10 +161,8 @@ def VC():
         ),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(3))
     voice.extend(music)
-
     music = library.make_glissando_rhythm(
         commands.get(4, 8),
         [(1, 1, 1), (2, 1), (2, 1)],
@@ -207,7 +171,6 @@ def VC():
         ),
     )
     voice.extend(music)
-
     music = baca.make_mmrests(commands.get(9, 13))
     voice.extend(music)
 
@@ -230,7 +193,6 @@ def cl():
         library.short_instrument_name("B. cl."),
         baca.clef("treble"),
     )
-
     commands(
         ("cl", (4, 5)),
         baca.pitch("B1"),
@@ -247,14 +209,12 @@ def pf():
         baca.clef("bass"),
         baca.clef("bass"),
     )
-
     commands(
         ("pf", 4),
         library.replace_with_clusters("tenor"),
         baca.markup(r"\krummzeit-catch-resonance-markup"),
         baca.dynamic("fff"),
     )
-
     commands(
         ("pf", 7),
         baca.clef("treble"),
@@ -262,7 +222,6 @@ def pf():
         baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
         baca.dynamic("fff-poss"),
     )
-
     commands(
         ("pf", 10),
         baca.markup(
@@ -280,7 +239,6 @@ def perc():
         library.short_instrument_name("Perc."),
         baca.clef("treble"),
     )
-
     commands(
         ("perc", 7),
         baca.markup(r"\baca-xylophone-markup"),
@@ -288,7 +246,6 @@ def perc():
         baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
         baca.dynamic("fff-poss"),
     )
-
     commands(
         ("perc", (10, 13)),
         library.instrument("Percussion"),
@@ -352,7 +309,6 @@ def composites():
         ),
         baca.dynamic("fff"),
     )
-
     pcs = library.violet_pitch_classes()
     pcs = abjad.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
     commands(
@@ -365,7 +321,6 @@ def composites():
         ),
         baca.pitches(pcs),
     )
-
     commands(
         (["vn", "va", "vc"], (4, 8)),
         baca.new(
@@ -399,7 +354,6 @@ def composites():
             ),
         ),
     )
-
     commands(
         ["perc", "vn", "va", "vc"],
         baca.dls_padding(4),
@@ -408,13 +362,13 @@ def composites():
 
 
 def main():
-    OB()
-    CL()
-    PF()
-    PERC()
-    VN()
-    VA()
-    VC()
+    OB(commands.voice("ob"))
+    CL(commands.voice("cl"))
+    PF(commands.voice("pf"))
+    PERC(commands.voice("perc"))
+    VN(commands.voice("vn"))
+    VA(commands.voice("va"))
+    VC(commands.voice("vc"))
     ob()
     cl()
     pf()

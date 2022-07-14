@@ -439,7 +439,7 @@ def make_empty_score():
     wind_section_staff_group = abjad.StaffGroup(
         [oboe_music_staff, clarinet_music_staff],
         lilypond_type="WindSectionStaffGroup",
-        name="Wind_Section.Staff_Group",
+        name="WindSection.StaffGroup",
         tag=tag,
     )
     # PIANO
@@ -456,7 +456,7 @@ def make_empty_score():
     percussion_section_staff_group = abjad.StaffGroup(
         [piano_music_staff, percussion_music_staff],
         lilypond_type="PercussionSectionStaffGroup",
-        name="Percussion_Section.Staff_Group",
+        name="PercussionSection.StaffGroup",
         tag=tag,
     )
     # VIOLIN
@@ -475,7 +475,7 @@ def make_empty_score():
     string_section_staff_group = abjad.StaffGroup(
         [violin_music_staff, viola_music_staff, cello_music_staff],
         lilypond_type="StringSectionStaffGroup",
-        name="String_Section.Staff_Group",
+        name="StringSection.StaffGroup",
         tag=tag,
     )
     # MUSIC CONTEXT

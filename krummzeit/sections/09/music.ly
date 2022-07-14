@@ -83,7 +83,7 @@
 
                 % OPEN_BRACKETS:
                   %! krummzeit.make_empty_score()
-                \context WindSectionStaffGroup = "Wind_Section.Staff_Group"
+                \context WindSectionStaffGroup = "WindSection.StaffGroup"
                   %! krummzeit.make_empty_score()
                 <<
                     % ABSOLUTE_BEFORE:
@@ -123,7 +123,7 @@
 
                 % OPEN_BRACKETS:
                   %! krummzeit.make_empty_score()
-                \context PercussionSectionStaffGroup = "Percussion_Section.Staff_Group"
+                \context PercussionSectionStaffGroup = "PercussionSection.StaffGroup"
                   %! krummzeit.make_empty_score()
                 <<
                     % ABSOLUTE_BEFORE:
@@ -163,7 +163,7 @@
 
                 % OPEN_BRACKETS:
                   %! krummzeit.make_empty_score()
-                \context StringSectionStaffGroup = "String_Section.Staff_Group"
+                \context StringSectionStaffGroup = "StringSection.StaffGroup"
                   %! krummzeit.make_empty_score()
                 <<
                     % ABSOLUTE_BEFORE:

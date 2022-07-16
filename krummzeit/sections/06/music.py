@@ -43,7 +43,7 @@ time_signatures = maker_.run()
 score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
-commands = baca.CommandAccumulator(
+accumulator = baca.CommandAccumulator(
     instruments=library.instruments(),
     short_instrument_names=library.short_instrument_names(),
     metronome_marks=library.metronome_marks(),
@@ -54,9 +54,9 @@ commands = baca.CommandAccumulator(
 
 baca.interpret.set_up_score(
     score,
-    commands,
-    commands.manifests(),
-    commands.time_signatures,
+    accumulator,
+    accumulator.manifests(),
+    accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
@@ -64,7 +64,7 @@ baca.interpret.set_up_score(
 )
 
 skips = score["Skips"]
-manifests = commands.manifests()
+manifests = accumulator.manifests()
 
 for index, item in (
     (9 - 1, "135"),
@@ -78,60 +78,60 @@ for index, item in (
     (33 - 1, "72"),
 ):
     skip = skips[index]
-    indicator = commands.metronome_marks.get(item, item)
+    indicator = accumulator.metronome_marks.get(item, item)
     baca.metronome_mark(skip, indicator, manifests)
 
 
 def OB(voice):
-    music = library.make_oboe_trill_rhythm(commands.get(1, 8))
+    music = library.make_oboe_trill_rhythm(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_oboe_trill_rhythm(commands.get(9, 10))
+    music = library.make_oboe_trill_rhythm(accumulator.get(9, 10))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(11))
+    music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
-    music = library.make_color_tuplets(commands.get(12, 21))
+    music = library.make_color_tuplets(accumulator.get(12, 21))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(22, 28))
+    music = baca.make_mmrests(accumulator.get(22, 28))
     voice.extend(music)
-    music = library.make_detached_triplets(commands.get(29, 34))
+    music = library.make_detached_triplets(accumulator.get(29, 34))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(35))
+    music = baca.make_mmrests(accumulator.get(35))
     voice.extend(music)
 
 
 def CL(voice):
-    music = baca.make_repeated_duration_notes(commands.get(1, 10), [(16, 4)])
+    music = baca.make_repeated_duration_notes(accumulator.get(1, 10), [(16, 4)])
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(11))
+    music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
     music = library.make_color_tuplets(
-        commands.get(12, 21),
+        accumulator.get(12, 21),
         rmakers.force_rest(
             lambda _: baca.select.tuplet(_, 0),
         ),
         rotation=2,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(22))
+    music = baca.make_mmrests(accumulator.get(22))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(23, 24),
+        accumulator.get(23, 24),
         (1, 2),
         16,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(25, 26))
+    music = baca.make_mmrests(accumulator.get(25, 26))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(27, 30),
+        accumulator.get(27, 30),
         (1, 4),
         32,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(31, 32))
+    music = baca.make_mmrests(accumulator.get(31, 32))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(33, 35),
+        accumulator.get(33, 35),
         (1, 4),
         32,
     )
@@ -139,133 +139,133 @@ def CL(voice):
 
 
 def PF(voice):
-    music = baca.make_mmrests(commands.get(1, 8))
+    music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(commands.get(9, 10))
+    music = library.make_incise_chain_b_rhythm(accumulator.get(9, 10))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(11, 16))
+    music = baca.make_mmrests(accumulator.get(11, 16))
     voice.extend(music)
     music = library.make_silver_points_rhythm(
-        commands.get(17),
+        accumulator.get(17),
         [(1, 2), (2, 1)],
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(18, 19))
+    music = baca.make_mmrests(accumulator.get(18, 19))
     voice.extend(music)
     music = library.make_silver_points_rhythm(
-        commands.get(20, 26),
+        accumulator.get(20, 26),
         [(1, 2), (2, 1)],
     )
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(27, 29),
+        accumulator.get(27, 29),
         (1, 4),
         32,
     )
     voice.extend(music)
     music = library.make_pizzicato_rhythm(
-        commands.get(30, 31),
+        accumulator.get(30, 31),
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
         ),
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(32))
+    music = baca.make_mmrests(accumulator.get(32))
     voice.extend(music)
     music = library.make_pizzicato_rhythm(
-        commands.get(33, 34),
+        accumulator.get(33, 34),
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
         ),
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(35))
+    music = baca.make_mmrests(accumulator.get(35))
     voice.extend(music)
 
 
 def PERC(voice):
-    music = library.make_sponge_rhythm(commands.get(1, 14))
+    music = library.make_sponge_rhythm(accumulator.get(1, 14))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(15, 16))
+    music = baca.make_mmrests(accumulator.get(15, 16))
     voice.extend(music)
     music = library.make_silver_points_rhythm(
-        commands.get(17),
+        accumulator.get(17),
         [(2, 1), (1, 2)],
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(18, 19))
+    music = baca.make_mmrests(accumulator.get(18, 19))
     voice.extend(music)
     music = library.make_silver_points_rhythm(
-        commands.get(20, 26),
+        accumulator.get(20, 26),
         [(2, 1), (1, 2)],
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(27))
+    music = baca.make_mmrests(accumulator.get(27))
     voice.extend(music)
-    music = library.make_sponge_rhythm(commands.get(28, 34))
+    music = library.make_sponge_rhythm(accumulator.get(28, 34))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(35))
+    music = baca.make_mmrests(accumulator.get(35))
     voice.extend(music)
 
 
 def VN(voice):
-    music = baca.make_mmrests(commands.get(1, 8))
+    music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(commands.get(9, 10))
+    music = library.make_incise_chain_b_rhythm(accumulator.get(9, 10))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(11))
+    music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
     music = library.make_glissando_rhythm(
-        commands.get(12, 20),
+        accumulator.get(12, 20),
         [(2, 1), (2, 1), (1, 1, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([5, 6], 7)),
         ),
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(21, 28))
+    music = baca.make_mmrests(accumulator.get(21, 28))
     voice.extend(music)
-    music = library.make_detached_triplets(commands.get(29, 34))
+    music = library.make_detached_triplets(accumulator.get(29, 34))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(35))
+    music = baca.make_mmrests(accumulator.get(35))
     voice.extend(music)
 
 
 def VA(voice):
-    music = baca.make_mmrests(commands.get(1, 8))
+    music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(commands.get(9, 10))
+    music = library.make_incise_chain_b_rhythm(accumulator.get(9, 10))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(11))
+    music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
     music = library.make_glissando_rhythm(
-        commands.get(12, 20),
+        accumulator.get(12, 20),
         [(2, 1), (1, 1, 1), (2, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([0, 1], 7)),
         ),
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(21, 22))
+    music = baca.make_mmrests(accumulator.get(21, 22))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(23, 24),
+        accumulator.get(23, 24),
         (1, 2),
         16,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(25, 26))
+    music = baca.make_mmrests(accumulator.get(25, 26))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(27, 30),
+        accumulator.get(27, 30),
         (1, 4),
         32,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(31, 32))
+    music = baca.make_mmrests(accumulator.get(31, 32))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(33, 35),
+        accumulator.get(33, 35),
         (1, 4),
         32,
     )
@@ -273,40 +273,40 @@ def VA(voice):
 
 
 def VC(voice):
-    music = baca.make_mmrests(commands.get(1, 8))
+    music = baca.make_mmrests(accumulator.get(1, 8))
     voice.extend(music)
-    music = library.make_incise_chain_b_rhythm(commands.get(9, 10))
+    music = library.make_incise_chain_b_rhythm(accumulator.get(9, 10))
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(11))
+    music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
     music = library.make_glissando_rhythm(
-        commands.get(12, 20),
+        accumulator.get(12, 20),
         [(1, 1, 1), (2, 1), (2, 1)],
         rmakers.force_rest(
             lambda _: baca.select.tuplets(_, ([2, 3], 7)),
         ),
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(21, 22))
+    music = baca.make_mmrests(accumulator.get(21, 22))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(23, 24),
+        accumulator.get(23, 24),
         (1, 2),
         16,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(25, 26))
+    music = baca.make_mmrests(accumulator.get(25, 26))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(27, 30),
+        accumulator.get(27, 30),
         (1, 4),
         32,
     )
     voice.extend(music)
-    music = baca.make_mmrests(commands.get(31, 32))
+    music = baca.make_mmrests(accumulator.get(31, 32))
     voice.extend(music)
     music = library.make_rest_delimited_repeated_duration_notes(
-        commands.get(33, 35),
+        accumulator.get(33, 35),
         (1, 4),
         32,
     )
@@ -317,7 +317,7 @@ def ob(m):
     _pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     _pcs = _pcs.rotate(-121).retrograde().transpose(9).invert()
     _pcs = baca.sequence.repeat_by(_pcs, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
-    commands(
+    accumulator(
         ("ob", (1, 10)),
         baca.suite(
             baca.pitches(
@@ -338,12 +338,12 @@ def ob(m):
         ),
         baca.dynamic("p"),
     )
-    commands(
+    accumulator(
         ("ob", (1, 21)),
         baca.tuplet_bracket_staff_padding(4),
         baca.dls_staff_padding(6),
     )
-    commands(
+    accumulator(
         ("ob", (29, 34)),
         baca.tuplet_bracket_staff_padding(2),
         baca.dls_staff_padding(4),
@@ -351,23 +351,23 @@ def ob(m):
 
 
 def cl():
-    commands(
+    accumulator(
         "cl",
         baca.instrument(library.instruments()["ClarinetInEFlat"]),
     )
-    commands(
+    accumulator(
         ("cl", (1, 10)),
         baca.pitch("B3"),
         baca.stem_up(),
         baca.dynamic("ppp"),
         baca.dls_staff_padding(6),
     )
-    commands(
+    accumulator(
         ("cl", (13, 21)),
         baca.dls_staff_padding(5),
         baca.tuplet_bracket_staff_padding(3),
     )
-    commands(
+    accumulator(
         ("cl", (23, 35)),
         baca.instrument(library.instruments()["BassClarinet"]),
         library.short_instrument_name("B. cl."),
@@ -383,7 +383,7 @@ def ob_cl_12_24():
     _ob_pitches = baca.sequence.repeat_by(_ob_pitches.split(), [3, 2, 4], cyclic=True)
     _cl_pitches = "C4 Bqs4 A4 Gqs4 Fqs4 Eqf4"
     _cl_pitches = baca.sequence.repeat_by(_cl_pitches.split(), [3, 2, 4], cyclic=True)
-    commands(
+    accumulator(
         (["ob", "cl"], (12, 21)),
         baca.new(
             baca.pitches(
@@ -409,23 +409,23 @@ def ob_cl_12_24():
 
 
 def pf():
-    commands(
+    accumulator(
         ("pf", (9, 10)),
         library.replace_with_clusters("tenor"),
         baca.dynamic("ff"),
         baca.dls_staff_padding(4),
     )
-    commands(
+    accumulator(
         ("pf", (17, 26)),
         baca.beam_positions(-4),
         baca.dls_staff_padding(5),
         baca.tuplet_bracket_staff_padding(3),
     )
-    commands(
+    accumulator(
         ("pf", [17, 20]),
         baca.clef("treble"),
     )
-    commands(
+    accumulator(
         ("pf", (27, 29)),
         baca.clef("bass"),
         baca.pitch("Bb0"),
@@ -434,7 +434,7 @@ def pf():
     )
     _pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     _pcs = _pcs.rotate(-85).retrograde().transpose(5).invert()
-    commands(
+    accumulator(
         ("pf", (30, 34)),
         baca.clef("treble"),
         baca.suite(
@@ -451,7 +451,7 @@ def pf():
         ),
         baca.dynamic("fff"),
     )
-    commands(
+    accumulator(
         ("pf", (30, 35)),
         baca.beam_positions(-4),
         baca.dls_staff_padding(5),
@@ -460,19 +460,19 @@ def pf():
 
 
 def perc():
-    commands(
+    accumulator(
         ("perc", [(1, 14), (28, 34)]),
         baca.markup(r"\baca-suspended-cymbal-markup"),
         baca.staff_position(0),
         baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
     )
-    commands(
+    accumulator(
         ("perc", 17),
         baca.staff_lines(5),
         baca.clef("treble"),
         baca.instrument(library.instruments()["Xylophone"]),
     )
-    commands(
+    accumulator(
         ("perc", 28),
         baca.staff_lines(1),
         baca.dynamic("pp"),
@@ -480,7 +480,7 @@ def perc():
 
 
 def pf_perc():
-    commands(
+    accumulator(
         (["pf", "perc"], (17, 26)),
         baca.pitch(
             "f5",
@@ -494,16 +494,16 @@ def pf_perc():
 
 
 def vn():
-    commands(
+    accumulator(
         ("vn", (1, 11)),
         baca.dls_staff_padding(8.5),
     )
-    commands(
+    accumulator(
         ("vn", (12, 17)),
         baca.dls_staff_padding(8),
         baca.tuplet_bracket_staff_padding(4),
     )
-    commands(
+    accumulator(
         ("vn", (29, 34)),
         baca.dls_staff_padding(4),
         baca.tuplet_bracket_staff_padding(2),
@@ -511,7 +511,7 @@ def vn():
 
 
 def ob_vn_29_34():
-    commands(
+    accumulator(
         (["ob", "vn"], (29, 34)),
         baca.new(
             baca.pitch("A5"),
@@ -534,39 +534,39 @@ def ob_vn_29_34():
 
 
 def va():
-    commands(
+    accumulator(
         ("va", (1, 11)),
         baca.dls_staff_padding(8.5),
     )
-    commands(
+    accumulator(
         ("va", (12, 17)),
         baca.dls_staff_padding(8),
         baca.tuplet_bracket_staff_padding(4),
     )
-    commands(
+    accumulator(
         ("va", (23, 24)),
         baca.dls_staff_padding(6),
     )
 
 
 def vc():
-    commands(
+    accumulator(
         ("vc", (9, 10)),
         baca.dls_staff_padding(6),
     )
-    commands(
+    accumulator(
         ("vc", (12, 19)),
         baca.dls_staff_padding(8),
         baca.tuplet_bracket_staff_padding(4),
     )
-    commands(
+    accumulator(
         ("vc", (23, 24)),
         baca.dls_staff_padding(6),
     )
 
 
 def strings_9_10():
-    commands(
+    accumulator(
         (["vn", "va", "vc"], (9, 10)),
         baca.new(
             baca.pitch("A+3"),
@@ -588,7 +588,7 @@ def strings_9_10():
 def strings_12_20():
     _pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     _pcs = _pcs.rotate(-301).retrograde().transpose(10)
-    commands(
+    accumulator(
         (["vn", "va", "vc"], (12, 20)),
         baca.pitches(
             _pcs,
@@ -622,7 +622,7 @@ def strings_12_20():
 
 
 def va_vc_23_35():
-    commands(
+    accumulator(
         (["va", "vc"], (23, 35)),
         baca.new(
             baca.pitch(
@@ -643,19 +643,19 @@ def va_vc_23_35():
 
 
 def main():
-    OB(commands.voice("ob"))
-    CL(commands.voice("cl"))
-    PF(commands.voice("pf"))
-    PERC(commands.voice("perc"))
-    VN(commands.voice("vn"))
-    VA(commands.voice("va"))
-    VC(commands.voice("vc"))
+    OB(accumulator.voice("ob"))
+    CL(accumulator.voice("cl"))
+    PF(accumulator.voice("pf"))
+    PERC(accumulator.voice("perc"))
+    VN(accumulator.voice("vn"))
+    VA(accumulator.voice("va"))
+    VC(accumulator.voice("vc"))
     previous_persist = baca.previous_metadata(__file__, file_name="__persist__")
-    baca.reapply(commands, commands.manifests(), previous_persist, voice_names)
+    baca.reapply(accumulator, accumulator.manifests(), previous_persist, voice_names)
     cache = baca.interpret.cache_leaves(
         score,
-        len(commands.time_signatures),
-        commands.voice_abbreviations,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
     )
     ob(cache["ob"])
     cl()
@@ -674,18 +674,18 @@ def main():
 
 if __name__ == "__main__":
     main()
-    metadata, persist, score, timing = baca.build.interpret_section(
+    metadata, persist, score, timing = baca.build.section(
         score,
-        commands.manifests(),
-        commands.time_signatures,
-        **baca.score_interpretation_defaults(),
+        accumulator.manifests(),
+        accumulator.time_signatures,
+        **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=commands,
+        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         transpose_score=True,
     )
-    lilypond_file = baca.make_lilypond_file(
+    lilypond_file = baca.lilypond.file(
         score,
         include_layout_ly=True,
         includes=["../stylesheet.ily"],

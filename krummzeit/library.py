@@ -233,6 +233,63 @@ def _numerator_to_time_signature(numerator):
     return time_signature
 
 
+def _do_register_transition_command(argument, start_registration, stop_registration):
+    leaves = abjad.select.leaves(argument)
+    leaves_timespan = abjad.get.timespan(leaves)
+    plts = baca.plts(argument)
+    for plt in plts:
+        timespan = abjad.get.timespan(plt)
+        registration = _make_registration(
+            start_registration,
+            stop_registration,
+            timespan.start_offset,
+            leaves_timespan,
+        )
+        for pleaf in plt:
+            pitches = registration([pleaf.written_pitch])
+            _set_pitch(pleaf, pitches[0])
+
+
+def _make_registration(start_registration, stop_registration, offset, timespan):
+    assert offset in timespan
+    fraction = (offset - timespan.start_offset) / timespan.duration
+    components = []
+    start_components = start_registration.components
+    stop_components = stop_registration.components
+    assert len(start_components) == len(stop_components)
+    pairs = zip(start_components, stop_components)
+    for start_component, stop_component in pairs:
+        start_pitch = start_component.source_pitch_range.start_pitch
+        start_pitch = abjad.NumberedPitch(start_pitch)
+        stop_pitch = stop_component.source_pitch_range.start_pitch
+        lower_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
+        start_pitch = start_component.source_pitch_range.stop_pitch
+        start_pitch = abjad.NumberedPitch(start_pitch)
+        stop_pitch = stop_component.source_pitch_range.stop_pitch
+        upper_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
+        range_string = "[{}, {})"
+        range_string = range_string.format(
+            lower_range_pitch.get_name(locale="us"),
+            upper_range_pitch.get_name(locale="us"),
+        )
+        start_pitch = start_component.target_octave_start_pitch
+        start_pitch = abjad.NumberedPitch(start_pitch)
+        stop_pitch = stop_component.target_octave_start_pitch
+        target_octave_start_pitch = start_pitch.interpolate(stop_pitch, fraction)
+        component = baca.RegistrationComponent(
+            source_pitch_range=range_string,
+            target_octave_start_pitch=target_octave_start_pitch,
+        )
+        components.append(component)
+    registration = baca.Registration(components)
+    return registration
+
+
+def _set_pitch(pleaf, pitch):
+    pleaf.written_pitch = pitch
+    abjad.detach("not yet registered", pleaf)
+
+
 @dataclasses.dataclass(frozen=True, order=True, slots=True, unsafe_hash=True)
 class RegisterTransitionCommand(baca.Command):
 
@@ -255,56 +312,11 @@ class RegisterTransitionCommand(baca.Command):
             return
         if self.selector:
             argument = self.selector(argument)
-        leaves = abjad.select.leaves(argument)
-        leaves_timespan = abjad.get.timespan(leaves)
-        plts = baca.plts(argument)
-        for plt in plts:
-            timespan = abjad.get.timespan(plt)
-            registration = self._make_registration(
-                timespan.start_offset, leaves_timespan
-            )
-            for pleaf in plt:
-                pitches = registration([pleaf.written_pitch])
-                self._set_pitch(pleaf, pitches[0])
-
-    def _make_registration(self, offset, timespan):
-        assert offset in timespan
-        fraction = (offset - timespan.start_offset) / timespan.duration
-        components = []
-        start_components = self.start_registration.components
-        stop_components = self.stop_registration.components
-        assert len(start_components) == len(stop_components)
-        pairs = zip(start_components, stop_components)
-        for start_component, stop_component in pairs:
-            start_pitch = start_component.source_pitch_range.start_pitch
-            start_pitch = abjad.NumberedPitch(start_pitch)
-            stop_pitch = stop_component.source_pitch_range.start_pitch
-            lower_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
-            start_pitch = start_component.source_pitch_range.stop_pitch
-            start_pitch = abjad.NumberedPitch(start_pitch)
-            stop_pitch = stop_component.source_pitch_range.stop_pitch
-            upper_range_pitch = start_pitch.interpolate(stop_pitch, fraction)
-            range_string = "[{}, {})"
-            range_string = range_string.format(
-                lower_range_pitch.get_name(locale="us"),
-                upper_range_pitch.get_name(locale="us"),
-            )
-            start_pitch = start_component.target_octave_start_pitch
-            start_pitch = abjad.NumberedPitch(start_pitch)
-            stop_pitch = stop_component.target_octave_start_pitch
-            target_octave_start_pitch = start_pitch.interpolate(stop_pitch, fraction)
-            component = baca.RegistrationComponent(
-                source_pitch_range=range_string,
-                target_octave_start_pitch=target_octave_start_pitch,
-            )
-            components.append(component)
-        registration = baca.Registration(components)
-        return registration
-
-    @staticmethod
-    def _set_pitch(pleaf, pitch):
-        pleaf.written_pitch = pitch
-        abjad.detach("not yet registered", pleaf)
+        _do_register_transition_command(
+            argument,
+            self.start_registration,
+            self.stop_registration,
+        )
 
 
 def color_fingerings():
@@ -1240,6 +1252,25 @@ def register_narrow(start, stop=None):
         return narrow_third_to_second_octave
     else:
         raise ValueError(start, stop)
+
+
+def register_narrow_function(argument, start, stop=None):
+    octave_number_to_registration = {
+        2: baca.Registration([("[A0, F#4)", -26), ("[F#4, C8]", -23)]),
+        3: baca.Registration([("[A0, F#4)", -14), ("[F#4, C8]", -11)]),
+        4: baca.Registration([("[A0, F#4)", -2), ("[F#4, C8]", 1)]),
+        5: baca.Registration([("[A0, F#4)", 10), ("[F#4, C8]", 13)]),
+        6: baca.Registration([("[A0, F#4)", 22), ("[F#4, C8]", 25)]),
+        7: baca.Registration([("[A0, F#4)", 34), ("[F#4, C8]", 37)]),
+    }
+    if stop is None:
+        raise Exception("implement me")
+        registration = octave_number_to_registration[start]
+        baca.register_function(argument, registration)
+    else:
+        start_registration = octave_number_to_registration[start]
+        stop_registration = octave_number_to_registration[stop]
+        _do_register_transition_command(argument, start_registration, stop_registration)
 
 
 def register_wide(start):

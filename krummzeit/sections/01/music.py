@@ -175,46 +175,41 @@ def VC(voice):
     voice.extend(music)
 
 
-def ob():
-    accumulator(
-        "ob",
-        baca.instrument(accumulator.instruments["Oboe"]),
-        baca.instrument_name(r"\krummzeit-oboe-markup"),
-        library.short_instrument_name("Ob."),
-        baca.clef("treble"),
-    )
+def ob(m):
+    with baca.scope(m.leaves()) as o:
+        baca.instrument_function(o, accumulator.instruments["Oboe"])
+        baca.instrument_name_function(o, r"\krummzeit-oboe-markup")
+        library.short_instrument_name_function(o, "Ob.")
+        baca.clef_function(o, "treble")
 
 
-def cl():
-    accumulator(
-        "cl",
-        baca.instrument(accumulator.instruments["BassClarinet"]),
-        baca.instrument_name(r"\krummzeit-bass-clarinet-markup"),
-        library.short_instrument_name("B. cl."),
-        baca.clef("treble"),
-    )
-    accumulator(
-        ("cl", (4, 5)),
-        baca.pitch("B1"),
-        baca.dynamic("ppp"),
-    )
+def cl(m):
+    with baca.scope(m.leaves()) as o:
+        baca.instrument_function(o, accumulator.instruments["BassClarinet"])
+        baca.instrument_name_function(o, r"\krummzeit-bass-clarinet-markup")
+        library.short_instrument_name_function(o, "B. cl.")
+        baca.clef_function(o, "treble")
+    with baca.scope(m[4, 5]) as o:
+        baca.pitch_function(o, "B1")
+        baca.dynamic_function(o, "ppp")
 
 
-def pf():
-    accumulator(
-        "pf",
-        baca.instrument(accumulator.instruments["Piano"]),
-        baca.instrument_name(r"\krummzeit-piano-markup"),
-        library.short_instrument_name("Pf."),
-        baca.clef("bass"),
-        baca.clef("bass"),
-    )
+def pf(m):
+    with baca.scope(m.leaves()) as o:
+        baca.instrument_function(o, accumulator.instruments["Piano"])
+        baca.instrument_name_function(o, r"\krummzeit-piano-markup")
+        library.short_instrument_name_function(o, "Pf.")
+        baca.clef_function(o, "bass")
     accumulator(
         ("pf", 4),
         library.replace_with_clusters("tenor"),
         baca.markup(r"\krummzeit-catch-resonance-markup"),
         baca.dynamic("fff"),
     )
+#    with baca.scope(m[4]) as o:
+#        library.replace_with_clusters_function(o.plts(), "tenor")
+#        baca.markup_function(o, r"\krummzeit-catch-resonance-markup")
+#        baca.dynamic_function(o, "fff")
     accumulator(
         ("pf", 7),
         baca.clef("treble"),
@@ -231,7 +226,7 @@ def pf():
     )
 
 
-def perc():
+def perc(m):
     accumulator(
         "perc",
         baca.instrument(accumulator.instruments["Xylophone"]),
@@ -259,7 +254,7 @@ def perc():
     )
 
 
-def vn():
+def vn(m):
     accumulator(
         "vn",
         baca.instrument(accumulator.instruments["Violin"]),
@@ -269,7 +264,7 @@ def vn():
     )
 
 
-def va():
+def va(m):
     accumulator(
         "va",
         baca.instrument(accumulator.instruments["Viola"]),
@@ -279,7 +274,7 @@ def va():
     )
 
 
-def vc():
+def vc(m):
     accumulator(
         "vc",
         baca.instrument(accumulator.instruments["Cello"]),
@@ -289,7 +284,7 @@ def vc():
     )
 
 
-def composites():
+def composites(cache):
     accumulator(
         (["vn", "va", "vc"], (1, 2)),
         baca.new(
@@ -369,14 +364,19 @@ def main():
     VN(accumulator.voice("vn"))
     VA(accumulator.voice("va"))
     VC(accumulator.voice("vc"))
-    ob()
-    cl()
-    pf()
-    perc()
-    vn()
-    va()
-    vc()
-    composites()
+    cache = baca.interpret.cache_leaves(
+        score,
+        len(accumulator.time_signatures),
+        accumulator.voice_abbreviations,
+    )
+    ob(cache["ob"])
+    cl(cache["cl"])
+    pf(cache["pf"])
+    perc(cache["perc"])
+    vn(cache["vn"])
+    va(cache["va"])
+    vc(cache["vc"])
+    composites(cache)
 
 
 if __name__ == "__main__":

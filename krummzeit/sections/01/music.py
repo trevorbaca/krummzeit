@@ -200,16 +200,12 @@ def pf(m):
         baca.instrument_name_function(o, r"\krummzeit-piano-markup")
         library.short_instrument_name_function(o, "Pf.")
         baca.clef_function(o, "bass")
-    accumulator(
-        ("pf", 4),
-        library.replace_with_clusters("tenor"),
-        baca.markup(r"\krummzeit-catch-resonance-markup"),
-        baca.dynamic("fff"),
-    )
-#    with baca.scope(m[4]) as o:
-#        library.replace_with_clusters_function(o.plts(), "tenor")
-#        baca.markup_function(o, r"\krummzeit-catch-resonance-markup")
-#        baca.dynamic_function(o, "fff")
+    with baca.scope(m[4]) as o:
+        chords = library.replace_with_clusters_function(o.plts(), "tenor")
+        # baca.markup_function(o.pleaf(0), r"\krummzeit-catch-resonance-markup")
+        # baca.dynamic_function(o.pleaf(0), "fff")
+        baca.markup_function(chords[0], r"\krummzeit-catch-resonance-markup")
+        baca.dynamic_function(chords[0], "fff")
     accumulator(
         ("pf", 7),
         baca.clef("treble"),

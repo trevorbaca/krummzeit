@@ -1581,7 +1581,6 @@ number.1.Piano.Music = {
       %! baca.dynamic()
     \fff
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \krummzeit-catch-resonance-markup
     ^ \markup \center-align \concat { \natural \flat }

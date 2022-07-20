@@ -1032,9 +1032,7 @@ def short_instrument_name(
     return baca.not_parts(command)
 
 
-def short_instrument_name_function(
-    leaf, key, context="Staff"
-):
+def short_instrument_name_function(leaf, key, context="Staff"):
     short_instrument_name = short_instrument_names()[key]
     baca.short_instrument_name_function(
         leaf,
@@ -1284,12 +1282,14 @@ def replace_with_clusters(flavor):
 
 
 def replace_with_clusters_function(argument, flavor):
-    clusters = {
-        "harpsichord": baca.replace_with_clusters_function(argument, [4], start_pitch="D4"),
-        "low": baca.replace_with_clusters_function(argument, [7], start_pitch="C1"),
-        "tenor": baca.replace_with_clusters_function(argument, [4], start_pitch="A2"),
-    }
-    return clusters[flavor]
+    if flavor == "harpsichord":
+        result = baca.replace_with_clusters_function(argument, [4], start_pitch="D4")
+    elif flavor == "low":
+        result = baca.replace_with_clusters_function(argument, [7], start_pitch="C1")
+    else:
+        assert flavor == "tenor"
+        result = baca.replace_with_clusters_function(argument, [4], start_pitch="A2")
+    return result
 
 
 def section_time_signatures(section_name):

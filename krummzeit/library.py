@@ -331,6 +331,11 @@ def instrument(key):
     return baca.instrument(instruments()[key])
 
 
+def instrument_function(argument, key):
+    instrument = instruments()[key]
+    return baca.instrument_function(argument, instrument)
+
+
 def instruments():
     return dict(
         [

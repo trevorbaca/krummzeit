@@ -1655,7 +1655,6 @@ number.1.Piano.Music = {
     cs''!2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1687,7 +1686,6 @@ number.1.Piano.Music = {
     cs''4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -1725,7 +1723,6 @@ number.1.Piano.Music = {
     R1 * 5/8
     % AFTER:
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-boxed-markup "to harpsichord"
       %! DURATION_MULTIPLIER
@@ -1820,12 +1817,10 @@ number.1.Percussion.Music = {
       %! baca.tuplet_bracket_padding()
     \override TupletBracket.padding = 2
       %! -PARTS
-      %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
     \set Staff.instrumentName = \krummzeit-percussion-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
-      %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
     \set Staff.shortInstrumentName = \krummzeit-perc-markup
@@ -1871,7 +1866,6 @@ number.1.Percussion.Music = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
       %! -PARTS
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
-      %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
@@ -1944,7 +1938,6 @@ number.1.Percussion.Music = {
     cs'!2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -1961,7 +1954,6 @@ number.1.Percussion.Music = {
       %! baca.dynamic()
     \baca-fff-poss
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-xylophone-markup
     % SPANNER_STARTS:
@@ -1975,7 +1967,6 @@ number.1.Percussion.Music = {
     cs'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -2076,7 +2067,6 @@ number.1.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2095,10 +2085,8 @@ number.1.Percussion.Music = {
           %! EXPLICIT_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-explicit-instrument-markup "(“Percussion”)"
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-sponges-markup
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \krummzeit-accent-changes-markup
         % ABSOLUTE_AFTER:
@@ -2113,7 +2101,6 @@ number.1.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % SPANNER_STARTS:
@@ -2152,7 +2139,6 @@ number.1.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -2162,7 +2148,6 @@ number.1.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % SPANNER_STARTS:
@@ -2193,7 +2178,6 @@ number.1.Percussion.Music = {
     c'2
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.accent()
     - \accent
     % ABSOLUTE_BEFORE:
@@ -2203,7 +2187,6 @@ number.1.Percussion.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.accent()
     - \accent
     % SPANNER_STARTS:
@@ -2238,7 +2221,6 @@ number.1.Percussion.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % COMMANDS:
@@ -2307,12 +2289,10 @@ number.1.Violin.Music = {
       %! baca.tuplet_bracket_padding()
     \override TupletBracket.padding = 2
       %! -PARTS
-      %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
     \set Staff.instrumentName = \krummzeit-violin-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
-      %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
     \set Staff.shortInstrumentName = \krummzeit-vn-markup
@@ -2355,7 +2335,6 @@ number.1.Violin.Music = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
       %! -PARTS
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
-      %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
@@ -2375,7 +2354,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -2401,7 +2379,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -2411,57 +2388,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
-        ]
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
-    }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-    % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
-    \times 2/3
-      %! krummzeit.make_opening_triplets()
-    {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % START_BEAM:
-          %! krummzeit.make_opening_triplets()
-        [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        ef''!8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -2488,7 +2414,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -2501,7 +2426,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -2511,7 +2435,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -2538,7 +2461,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -2551,7 +2473,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -2561,7 +2482,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -2588,7 +2508,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -2601,7 +2520,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -2611,7 +2529,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -2638,7 +2555,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -2651,7 +2567,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -2661,7 +2576,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -2688,7 +2602,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -2701,7 +2614,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -2711,7 +2623,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -2738,7 +2649,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -2751,7 +2661,6 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -2761,7 +2670,53 @@ number.1.Violin.Music = {
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
+          %! baca.stem_tremolo()
+        :32
+        % STOP_BEAM:
+          %! krummzeit.make_opening_triplets()
+        ]
+        % CLOSING:
+        % COMMANDS:
+
+    % CLOSE_BRACKETS:
+      %! krummzeit.make_opening_triplets()
+    }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
+
+    % OPEN_BRACKETS:
+      %! krummzeit.make_opening_triplets()
+    \times 2/3
+      %! krummzeit.make_opening_triplets()
+    {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        ef''!8
+        % AFTER:
+        % STEM_TREMOLOS:
+          %! baca.stem_tremolo()
+        :32
+        % START_BEAM:
+          %! krummzeit.make_opening_triplets()
+        [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        ef''!8
+        % AFTER:
+        % STEM_TREMOLOS:
+          %! baca.stem_tremolo()
+        :32
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        ef''!8
+        % AFTER:
+        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -3273,12 +3228,10 @@ number.1.Viola.Music = {
       %! baca.tuplet_bracket_padding()
     \override TupletBracket.padding = 2
       %! -PARTS
-      %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
     \set Staff.instrumentName = \krummzeit-viola-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
-      %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
     \set Staff.shortInstrumentName = \krummzeit-va-markup
@@ -3321,7 +3274,6 @@ number.1.Viola.Music = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
       %! -PARTS
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
-      %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
@@ -3341,7 +3293,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -3367,7 +3318,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -3377,57 +3327,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
-        ]
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
-    }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-    % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
-    \times 2/3
-      %! krummzeit.make_opening_triplets()
-    {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        a8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % START_BEAM:
-          %! krummzeit.make_opening_triplets()
-        [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        a8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        a8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -3454,7 +3353,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -3467,7 +3365,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -3477,7 +3374,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -3504,7 +3400,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -3517,7 +3412,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -3527,7 +3421,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -3554,7 +3447,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -3567,7 +3459,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -3577,7 +3468,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -3604,7 +3494,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -3617,7 +3506,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -3627,7 +3515,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -3654,7 +3541,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -3667,7 +3553,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -3677,7 +3562,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -3704,7 +3588,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -3717,7 +3600,6 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -3727,7 +3609,53 @@ number.1.Viola.Music = {
         a8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
+          %! baca.stem_tremolo()
+        :32
+        % STOP_BEAM:
+          %! krummzeit.make_opening_triplets()
+        ]
+        % CLOSING:
+        % COMMANDS:
+
+    % CLOSE_BRACKETS:
+      %! krummzeit.make_opening_triplets()
+    }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
+
+    % OPEN_BRACKETS:
+      %! krummzeit.make_opening_triplets()
+    \times 2/3
+      %! krummzeit.make_opening_triplets()
+    {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        a8
+        % AFTER:
+        % STEM_TREMOLOS:
+          %! baca.stem_tremolo()
+        :32
+        % START_BEAM:
+          %! krummzeit.make_opening_triplets()
+        [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        a8
+        % AFTER:
+        % STEM_TREMOLOS:
+          %! baca.stem_tremolo()
+        :32
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        a8
+        % AFTER:
+        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -4225,12 +4153,10 @@ number.1.Cello.Music = {
       %! baca.tuplet_bracket_padding()
     \override TupletBracket.padding = 2
       %! -PARTS
-      %! baca.IndicatorCommand._call()
       %! baca.instrument_name()
     \set Staff.instrumentName = \krummzeit-cello-markup
       %! -PARTS
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
-      %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
     \set Staff.shortInstrumentName = \krummzeit-vc-markup
@@ -4273,7 +4199,6 @@ number.1.Cello.Music = {
     \override Staff.InstrumentName.color = #(x11-color 'DeepSkyBlue2)
       %! -PARTS
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
-      %! baca.IndicatorCommand._call()
       %! baca._set_status_tag()
       %! baca.short_instrument_name()
       %! baca.treat_persistent_wrapper(3)
@@ -4293,7 +4218,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ARTICULATIONS:
@@ -4319,7 +4243,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -4329,57 +4252,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
-        ]
-        % CLOSING:
-        % COMMANDS:
-
-    % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
-    }
-    % ABSOLUTE_BEFORE:
-    % COMMANDS:
-
-    % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
-    \times 2/3
-      %! krummzeit.make_opening_triplets()
-    {
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % START_BEAM:
-          %! krummzeit.make_opening_triplets()
-        [
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
-          %! baca.stem_tremolo()
-        :32
-        % ABSOLUTE_BEFORE:
-        % COMMANDS:
-
-          %! krummzeit.make_opening_triplets()
-        eqf,!8
-        % AFTER:
-        % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -4406,7 +4278,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -4419,7 +4290,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -4429,7 +4299,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -4456,7 +4325,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -4469,7 +4337,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -4479,7 +4346,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -4506,7 +4372,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -4519,7 +4384,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -4529,7 +4393,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -4556,7 +4419,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -4569,7 +4431,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -4579,7 +4440,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -4606,7 +4466,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -4619,7 +4478,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -4629,7 +4487,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
@@ -4656,7 +4513,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
@@ -4669,7 +4525,6 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
           %! baca.stem_tremolo()
         :32
         % ABSOLUTE_BEFORE:
@@ -4679,7 +4534,53 @@ number.1.Cello.Music = {
         eqf,!8
         % AFTER:
         % STEM_TREMOLOS:
-          %! baca.IndicatorCommand._call()
+          %! baca.stem_tremolo()
+        :32
+        % STOP_BEAM:
+          %! krummzeit.make_opening_triplets()
+        ]
+        % CLOSING:
+        % COMMANDS:
+
+    % CLOSE_BRACKETS:
+      %! krummzeit.make_opening_triplets()
+    }
+    % ABSOLUTE_BEFORE:
+    % COMMANDS:
+
+    % OPEN_BRACKETS:
+      %! krummzeit.make_opening_triplets()
+    \times 2/3
+      %! krummzeit.make_opening_triplets()
+    {
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        eqf,!8
+        % AFTER:
+        % STEM_TREMOLOS:
+          %! baca.stem_tremolo()
+        :32
+        % START_BEAM:
+          %! krummzeit.make_opening_triplets()
+        [
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        eqf,!8
+        % AFTER:
+        % STEM_TREMOLOS:
+          %! baca.stem_tremolo()
+        :32
+        % ABSOLUTE_BEFORE:
+        % COMMANDS:
+
+          %! krummzeit.make_opening_triplets()
+        eqf,!8
+        % AFTER:
+        % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:

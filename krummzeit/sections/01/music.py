@@ -194,112 +194,86 @@ def cl(m):
         baca.dynamic_function(o, "ppp")
 
 
-def pf(m):
+def pf(cache):
+    m = cache["pf"]
     with baca.scope(m.leaves()) as o:
         baca.instrument_function(o, accumulator.instruments["Piano"])
         baca.instrument_name_function(o, r"\krummzeit-piano-markup")
         library.short_instrument_name_function(o, "Pf.")
         baca.clef_function(o, "bass")
     with baca.scope(m[4]) as o:
-        chords = library.replace_with_clusters_function(o.plts(), "tenor")
-        # baca.markup_function(o.pleaf(0), r"\krummzeit-catch-resonance-markup")
-        # baca.dynamic_function(o.pleaf(0), "fff")
-        baca.markup_function(chords[0], r"\krummzeit-catch-resonance-markup")
-        baca.dynamic_function(chords[0], "fff")
-    accumulator(
-        ("pf", 7),
-        baca.clef("treble"),
-        baca.pitch("C#5"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.dynamic("fff-poss"),
-    )
-    accumulator(
-        ("pf", 10),
-        baca.markup(
-            r'\baca-boxed-markup "to harpsichord"',
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-    )
+        library.replace_with_clusters_function(o.plts(), "tenor")
+        cache = cache.rebuild()
+        m = cache["pf"]
+    with baca.scope(m[4]) as o:
+        baca.markup_function(o.pleaf(0), r"\krummzeit-catch-resonance-markup")
+        baca.dynamic_function(o.pleaf(0), "fff")
+    with baca.scope(m[7]) as o:
+        baca.clef_function(o, "treble")
+        baca.pitch_function(o, "C#5")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.dynamic_function(o, "fff-poss")
+    with baca.scope(m[10]) as o:
+        baca.markup_function(o, r'\baca-boxed-markup "to harpsichord"')
 
 
 def perc(m):
-    accumulator(
-        "perc",
-        baca.instrument(accumulator.instruments["Xylophone"]),
-        baca.instrument_name(r"\krummzeit-percussion-markup"),
-        library.short_instrument_name("Perc."),
-        baca.clef("treble"),
-    )
-    accumulator(
-        ("perc", 7),
-        baca.markup(r"\baca-xylophone-markup"),
-        baca.pitch("C#5"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.dynamic("fff-poss"),
-    )
-    accumulator(
-        ("perc", (10, 13)),
-        library.instrument("Percussion"),
-        baca.markup(r"\baca-sponges-markup"),
-        baca.clef("percussion"),
-        baca.staff_lines(1),
-        baca.staff_position(0),
-        baca.markup(r"\krummzeit-accent-changes-markup"),
-        baca.accent(selector=lambda _: baca.select.pheads(_)),
-        baca.dynamic('"ff"'),
-    )
+    with baca.scope(m[1]) as o:
+        baca.instrument_function(o, accumulator.instruments["Xylophone"])
+        baca.instrument_name_function(o, r"\krummzeit-percussion-markup")
+        library.short_instrument_name_function(o, "Perc.")
+        baca.clef_function(o, "treble")
+    with baca.scope(m[7]) as o:
+        baca.markup_function(o, r"\baca-xylophone-markup")
+        baca.pitch_function(o, "C#5")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.dynamic_function(o, "fff-poss")
+    with baca.scope(m[10, 13]) as o:
+        library.instrument_function(o, "Percussion")
+        baca.markup_function(o, r"\baca-sponges-markup")
+        baca.clef_function(o, "percussion")
+        baca.staff_lines_function(o, 1)
+        baca.staff_position_function(o, 0)
+        baca.markup_function(o, r"\krummzeit-accent-changes-markup")
+        baca.accent_function(o.pheads())
+        baca.dynamic_function(o, '"ff"')
 
 
 def vn(m):
-    accumulator(
-        "vn",
-        baca.instrument(accumulator.instruments["Violin"]),
-        baca.instrument_name(r"\krummzeit-violin-markup"),
-        library.short_instrument_name("Vn."),
-        baca.clef("treble"),
-    )
+    with baca.scope(m[1]) as o:
+        baca.instrument_function(o, accumulator.instruments["Violin"])
+        baca.instrument_name_function(o, r"\krummzeit-violin-markup")
+        library.short_instrument_name_function(o, "Vn.")
+        baca.clef_function(o, "treble")
 
 
 def va(m):
-    accumulator(
-        "va",
-        baca.instrument(accumulator.instruments["Viola"]),
-        baca.instrument_name(r"\krummzeit-viola-markup"),
-        library.short_instrument_name("Va."),
-        baca.clef("alto"),
-    )
+    with baca.scope(m[1]) as o:
+        baca.instrument_function(o, accumulator.instruments["Viola"])
+        baca.instrument_name_function(o, r"\krummzeit-viola-markup")
+        library.short_instrument_name_function(o, "Va.")
+        baca.clef_function(o, "alto")
 
 
 def vc(m):
-    accumulator(
-        "vc",
-        baca.instrument(accumulator.instruments["Cello"]),
-        baca.instrument_name(r"\krummzeit-cello-markup"),
-        library.short_instrument_name("Vc."),
-        baca.clef("bass"),
-    )
+    with baca.scope(m[1]) as o:
+        baca.instrument_function(o, accumulator.instruments["Cello"])
+        baca.instrument_name_function(o, r"\krummzeit-cello-markup")
+        library.short_instrument_name_function(o, "Vc.")
+        baca.clef_function(o, "bass")
 
 
 def composites(cache):
-    accumulator(
-        (["vn", "va", "vc"], (1, 2)),
-        baca.new(
-            baca.pitch("Eb5"),
-            match=0,
-        ),
-        baca.new(
-            baca.pitch("A3"),
-            match=1,
-        ),
-        baca.new(
-            baca.pitch("E~2"),
-            match=2,
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.dynamic("fff"),
-    )
+    for abbreviation, pitch in (
+        ("vn", "Eb5"),
+        ("va", "A3"),
+        ("vc", "E~2"),
+    ):
+        with baca.scope(cache[abbreviation][1, 2]) as o:
+            baca.pitch_function(o, pitch)
+            baca.stem_tremolo_function(o.pleaves())
+            baca.dynamic_function(o.pleaf(0), "fff")
+
     pcs = library.violet_pitch_classes()
     pcs = abjad.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
     accumulator(
@@ -367,7 +341,7 @@ def main():
     )
     ob(cache["ob"])
     cl(cache["cl"])
-    pf(cache["pf"])
+    pf(cache)
     perc(cache["perc"])
     vn(cache["vn"])
     va(cache["va"])

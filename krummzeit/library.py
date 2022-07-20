@@ -1032,6 +1032,17 @@ def short_instrument_name(
     return baca.not_parts(command)
 
 
+def short_instrument_name_function(
+    leaf, key, context="Staff"
+):
+    short_instrument_name = short_instrument_names()[key]
+    baca.short_instrument_name_function(
+        leaf,
+        short_instrument_name,
+        context=context,
+    )
+
+
 def short_instrument_names():
     return {
         "B. cl.": abjad.ShortInstrumentName(r"\krummzeit-bcl-markup"),
@@ -1268,6 +1279,15 @@ def replace_with_clusters(flavor):
         "harpsichord": baca.replace_with_clusters([4], start_pitch="D4"),
         "low": baca.replace_with_clusters([7], start_pitch="C1"),
         "tenor": baca.replace_with_clusters([4], start_pitch="A2"),
+    }
+    return clusters[flavor]
+
+
+def replace_with_clusters_function(argument, flavor):
+    clusters = {
+        "harpsichord": baca.replace_with_clusters_function(argument, [4], start_pitch="D4"),
+        "low": baca.replace_with_clusters_function(argument, [7], start_pitch="C1"),
+        "tenor": baca.replace_with_clusters_function(argument, [4], start_pitch="A2"),
     }
     return clusters[flavor]
 

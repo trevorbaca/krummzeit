@@ -273,57 +273,30 @@ def composites(cache):
             baca.pitch_function(o, pitch)
             baca.stem_tremolo_function(o.pleaves())
             baca.dynamic_function(o.pleaf(0), "fff")
-
-    pcs = library.violet_pitch_classes()
-    pcs = abjad.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
-    accumulator(
-        baca.timeline(
-            [
-                ("vn", (4, 8)),
-                ("va", (4, 8)),
-                ("vc", (4, 8)),
-            ]
-        ),
-        baca.pitches(pcs),
-    )
-    accumulator(
-        (["vn", "va", "vc"], (4, 8)),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_),
-        ),
-        baca.new(
-            baca.repeat_tie(
-                lambda _: baca.select.pheads(_)[1:],
-            ),
-            map=lambda _: baca.select.qruns(_),
-        ),
-        baca.new(
-            library.register_narrow(5, 4),
-            match=0,
-        ),
-        baca.new(
-            library.register_narrow(4, 3),
-            match=1,
-        ),
-        baca.new(
-            library.register_narrow(4, 3),
-            match=2,
-        ),
-        baca.note_head_style_harmonic(),
-        baca.markup(r"\baca-molto-flautando-markup"),
-        baca.hairpin(
-            "pp < ff",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-    )
-    accumulator(
-        ["perc", "vn", "va", "vc"],
-        baca.dls_padding(4),
-        baca.tuplet_bracket_padding(2),
-    )
+    with baca.scope(cache["vn"][4, 8] + cache["va"][4, 8] + cache["vc"][4, 8]) as o:
+        pcs = library.violet_pitch_classes()
+        pcs = abjad.PitchClassSegment(pcs).rotate(-301).retrograde().transpose(10)
+        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        baca.pitches_function(leaves, pcs)
+    for abbreviation, register in (
+        ("vn", (5, 4)),
+        ("va", (4, 3)),
+        ("vc", (4, 3)),
+    ):
+        with baca.scope(cache[abbreviation][4, 8]) as o:
+            for run in baca.select.runs(o):
+                baca.glissando_function(run)
+            for qrun in baca.select.qruns(o):
+                pheads = baca.select.pheads(qrun)[1:]
+                baca.repeat_tie_function(pheads)
+            library.register_narrow_function(o, *register)
+            baca.note_head_style_harmonic_function(o.tleaves())
+            baca.markup_function(o.pleaf(0), r"\baca-molto-flautando-markup")
+            baca.hairpin_function(o.tleaves(), "pp < ff")
+    for abbreviation in ["perc", "vn", "va", "vc"]:
+        with baca.scope(cache[abbreviation].leaves()) as o:
+            baca.dls_padding_function(o, 4)
+            baca.tuplet_bracket_padding_function(o, 2)
 
 
 def main():
@@ -358,7 +331,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         transpose_score=True,
     )

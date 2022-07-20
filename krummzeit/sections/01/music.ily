@@ -1810,11 +1810,9 @@ number.1.Percussion.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_padding()
+      %! baca.dls_padding_function(1)
     \override DynamicLineSpanner.padding = 4
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_padding()
+      %! baca.tuplet_bracket_padding_function(1)
     \override TupletBracket.padding = 2
       %! -PARTS
       %! baca.instrument_name()
@@ -2224,11 +2222,9 @@ number.1.Percussion.Music = {
           %! baca.accent()
         - \accent
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_padding()
+          %! baca.dls_padding_function(2)
         \revert DynamicLineSpanner.padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_padding()
+          %! baca.tuplet_bracket_padding_function(2)
         \revert TupletBracket.padding
         % CLOSING:
         % COMMANDS:
@@ -2282,11 +2278,9 @@ number.1.Violin.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_padding()
+      %! baca.dls_padding_function(1)
     \override DynamicLineSpanner.padding = 4
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_padding()
+      %! baca.tuplet_bracket_padding_function(1)
     \override TupletBracket.padding = 2
       %! -PARTS
       %! baca.instrument_name()
@@ -2755,8 +2749,7 @@ number.1.Violin.Music = {
         % [Violin.Music measure 4]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_style_harmonic()
+          %! baca.note_head_style_harmonic_function(1)
         \override NoteHead.style = #'harmonic
           %! krummzeit.make_glissando_rhythm()
         ef''!4
@@ -2777,7 +2770,6 @@ number.1.Violin.Music = {
           %! baca.hairpin()
         \pp
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-molto-flautando-markup
         % SPANNER_STARTS:
@@ -2915,7 +2907,6 @@ number.1.Violin.Music = {
           %! abjad.glissando(7)
           %! baca.glissando()
         \glissando
-          %! baca.IndicatorCommand._call()
           %! baca.repeat_tie()
         \repeatTie
         % CLOSING:
@@ -3099,8 +3090,7 @@ number.1.Violin.Music = {
           %! baca.hairpin()
         \ff
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.note_head_style_harmonic()
+          %! baca.note_head_style_harmonic_function(2)
         \revert NoteHead.style
         % CLOSING:
         % COMMANDS:
@@ -3169,11 +3159,9 @@ number.1.Violin.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_padding()
+      %! baca.dls_padding_function(2)
     \revert DynamicLineSpanner.padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_padding()
+      %! baca.tuplet_bracket_padding_function(2)
     \revert TupletBracket.padding
     % CLOSING:
     % COMMANDS:
@@ -3221,11 +3209,9 @@ number.1.Viola.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_padding()
+      %! baca.dls_padding_function(1)
     \override DynamicLineSpanner.padding = 4
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_padding()
+      %! baca.tuplet_bracket_padding_function(1)
     \override TupletBracket.padding = 2
       %! -PARTS
       %! baca.instrument_name()
@@ -3706,8 +3692,7 @@ number.1.Viola.Music = {
         % [Viola.Music measure 5]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_style_harmonic()
+          %! baca.note_head_style_harmonic_function(1)
         \override NoteHead.style = #'harmonic
           %! krummzeit.make_glissando_rhythm()
         fs'!4
@@ -3728,7 +3713,6 @@ number.1.Viola.Music = {
           %! baca.hairpin()
         \pp
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-molto-flautando-markup
         % SPANNER_STARTS:
@@ -3999,7 +3983,6 @@ number.1.Viola.Music = {
           %! abjad.glissando(7)
           %! baca.glissando()
         \glissando
-          %! baca.IndicatorCommand._call()
           %! baca.repeat_tie()
         \repeatTie
         % ABSOLUTE_BEFORE:
@@ -4024,8 +4007,7 @@ number.1.Viola.Music = {
           %! baca.hairpin()
         \ff
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.note_head_style_harmonic()
+          %! baca.note_head_style_harmonic_function(2)
         \revert NoteHead.style
         % CLOSING:
         % COMMANDS:
@@ -4094,11 +4076,9 @@ number.1.Viola.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_padding()
+      %! baca.dls_padding_function(2)
     \revert DynamicLineSpanner.padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_padding()
+      %! baca.tuplet_bracket_padding_function(2)
     \revert TupletBracket.padding
     % CLOSING:
     % COMMANDS:
@@ -4146,11 +4126,9 @@ number.1.Cello.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_padding()
+      %! baca.dls_padding_function(1)
     \override DynamicLineSpanner.padding = 4
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_padding()
+      %! baca.tuplet_bracket_padding_function(1)
     \override TupletBracket.padding = 2
       %! -PARTS
       %! baca.instrument_name()
@@ -4619,8 +4597,7 @@ number.1.Cello.Music = {
         % [Cello.Music measure 4]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.note_head_style_harmonic()
+          %! baca.note_head_style_harmonic_function(1)
         \override NoteHead.style = #'harmonic
           %! krummzeit.make_glissando_rhythm()
         e'8
@@ -4641,7 +4618,6 @@ number.1.Cello.Music = {
           %! baca.hairpin()
         \pp
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-molto-flautando-markup
         % SPANNER_STARTS:
@@ -4930,8 +4906,7 @@ number.1.Cello.Music = {
           %! baca.hairpin()
         \ff
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.note_head_style_harmonic()
+          %! baca.note_head_style_harmonic_function(2)
         \revert NoteHead.style
         % CLOSING:
         % COMMANDS:
@@ -5000,11 +4975,9 @@ number.1.Cello.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_padding()
+      %! baca.dls_padding_function(2)
     \revert DynamicLineSpanner.padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_padding()
+      %! baca.tuplet_bracket_padding_function(2)
     \revert TupletBracket.padding
     % CLOSING:
     % COMMANDS:

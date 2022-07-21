@@ -497,130 +497,64 @@ def vn(m):
 
 
 def va(m):
-    accumulator(
-        ("va", (1, 23)),
-        baca.clef("alto"),
-        baca.pitches(
-            "e dtqs f eqs dqs c dqs",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.new(
-            baca.markup(r"\baca-molto-flautando-markup"),
-            measures=6,
-        ),
-    )
-    accumulator(
-        ("va", (6, 23)),
-        baca.tuplet_bracket_staff_padding(4),
-        baca.dls_staff_padding(7),
-    )
-    accumulator(
-        ("va", (32, 42)),
-        baca.dls_staff_padding(5),
-    )
+    with baca.scope(m[1, 23]) as o:
+        baca.clef_function(o, "alto"),
+        baca.pitches_function(o, "e dtqs f eqs dqs c dqs")
+        for run in baca.select.runs(o):
+            baca.glissando_function(run)
+    with baca.scope(m[6, 23]) as o:
+        baca.markup_function(m[6], r"\baca-molto-flautando-markup")
+        baca.tuplet_bracket_staff_padding_function(o, 4)
+        baca.dls_staff_padding_function(o, 7)
+    with baca.scope(m[32, 42]) as o:
+        baca.dls_staff_padding_function(o, 5)
 
 
 def vc(m):
-    accumulator(
-        ("vc", (1, 23)),
-        baca.clef("bass"),
-        baca.pitches(
-            "d, ctqs, e, dqs, cqs, b,, dqs,",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.new(
-            baca.markup(r"\baca-molto-flautando-markup"),
-            measures=6,
-        ),
-    )
-    accumulator(
-        ("vc", (32, 42)),
-        baca.dls_staff_padding(5),
-    )
+    with baca.scope(m[1, 23]) as o:
+        baca.clef_function(o, "bass"),
+        baca.pitches_function(o, "d, ctqs, e, dqs, cqs, b,, dqs,")
+        for run in baca.select.runs(o):
+            baca.glissando_function(run)
+    baca.markup_function(m[6], r"\baca-molto-flautando-markup")
+    with baca.scope(m[32, 42]) as o:
+        baca.dls_staff_padding_function(o, 5)
 
 
 def composites(cache):
-    # pf, perc
-    accumulator(
-        (["pf", "perc"], (14, 20)),
-        baca.pitch(
-            "C#6",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.staccatissimo(
-            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.dynamic("ff"),
-    )
-    accumulator(
-        ("pf", (28, 35)),
-        baca.pitch(
-            "C#6",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.dynamic("ff"),
-    )
-    accumulator(
-        ("perc", (28, 33)),
-        baca.staff_lines(5),
-        baca.pitch(
-            "C#6",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.dynamic("ff"),
-    )
-    accumulator(
-        ("perc", (34, 44)),
-        baca.markup(r"\krummzeit-fingertips-markup"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.dynamic("ppp"),
-    )
-    # vn, va, vc
-    accumulator(
-        (["va", "vc"], (1, 23)),
-        baca.new(
-            baca.hairpin(
-                "ff > pp",
-                selector=lambda _: baca.select.tleaves(_)[:2],
-            ),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-    )
-    accumulator(
-        (["vn", "va", "vc"], (32, 42)),
-        baca.markup(r"\baca-non-flautando-markup"),
-        baca.markup(r"\krummzeit-show-tempo-markup"),
-        baca.new(
-            baca.pitches("ftqs g"),
-            match=0,
-        ),
-        baca.new(
-            baca.pitches("btqs, c bqs, cqs"),
-            match=1,
-        ),
-        baca.new(
-            baca.pitches("b,, cqs, bqf,, c,"),
-            match=2,
-        ),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.hairpin(
-            "pp < fff",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-    )
+    for name in ["pf", "perc"]:
+        with baca.scope(cache[name][14, 20]) as o:
+            baca.pitch_function(o, "C#6")
+            baca.staccatissimo_function(o.pheads())
+            baca.dynamic_function(o, "ff")
+    with baca.scope(cache["pf"][28, 35]) as o:
+        baca.pitch_function(o, "C#6")
+        baca.dynamic_function(o, "ff")
+    with baca.scope(cache["perc"][28, 33]) as o:
+        baca.staff_lines_function(o, 5)
+        baca.pitch_function(o, "C#6")
+        baca.dynamic_function(o, "ff")
+    with baca.scope(cache["perc"][34, 44]) as o:
+        baca.markup_function(o, r"\krummzeit-fingertips-markup")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.dynamic_function(o, "ppp")
+    for name in ["va", "vc"]:
+        with baca.scope(cache[name][1, 23]) as o:
+            for run in baca.select.runs(o):
+                run = baca.select.tleaves(run)[:2]
+                baca.hairpin_function(run, "ff > pp")
+    for name, string in (
+        ("vn", "ftqs g"),
+        ("va", "btqs, c bqs, cqs"),
+        ("vc", "b,, cqs, bqf,, c,"),
+    ):
+        with baca.scope(cache[name][32, 42]) as o:
+            baca.markup_function(o, r"\baca-non-flautando-markup"),
+            baca.markup_function(o, r"\krummzeit-show-tempo-markup"),
+            baca.pitches_function(o, string)
+            for run in baca.select.runs(o):
+                baca.glissando_function(run)
+            baca.hairpin_function(o.tleaves(), "pp < fff")
 
 
 def main():
@@ -657,7 +591,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         transpose_score=True,
     )

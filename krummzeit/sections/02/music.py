@@ -491,101 +491,74 @@ def _1_28_strings(cache):
 
 
 def _34_53_strings(cache):
-    accumulator(
-        baca.timeline(
-            [
-                ("va", (34, 47)),
-                ("vc", (34, 51)),
-                ("vn", (38, 53)),
-            ]
-        ),
-        baca.pitches(library.violet_pitch_classes()),
-    )
-    accumulator(
-        ("va", (34, 47)),
-        baca.alternate_bow_strokes(),
-        baca.clef("treble"),
-        baca.dynamic("f"),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_),
-        ),
-        baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
-        library.register_narrow(5, 3),
-    )
-    accumulator(
-        ("vc", (34, 51)),
-        baca.alternate_bow_strokes(),
-        baca.clef("treble"),
-        baca.dynamic("f"),
-        baca.glissando(),
-        baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
-        library.register_narrow(5, 2),
-    )
-    accumulator(
-        ("pf", (45, 56)),
-        baca.dynamic("fff-sempre"),
-        baca.new(
-            baca.marcato(),
-            map=lambda _: baca.select.pheads(_),
-        ),
-        baca.ottava_bassa(),
-        library.replace_with_clusters("low"),
-    )
+    with baca.scope(
+        cache["vn"][38, 53] + cache["va"][34, 47] + cache["vc"][34, 51]
+    ) as o:
+        pcs = library.violet_pitch_classes()
+        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        baca.pitches_function(leaves, pcs)
+    with baca.scope(cache["va"][34, 47]) as o:
+        baca.alternate_bow_strokes_function(o.pheads())
+        baca.clef_function(o, "treble")
+        baca.dynamic_function(o, "f")
+        for run in baca.select.runs(o):
+            baca.glissando_function(run)
+        baca.markup_function(o, r"\krummzeit-ob-plus-full-bow-strokes-markup")
+        library.register_narrow_function(o, 5, 3)
+    with baca.scope(cache["vc"][34, 51]) as o:
+        baca.alternate_bow_strokes_function(o.pheads()),
+        baca.clef_function(o, "treble"),
+        baca.dynamic_function(o, "f"),
+        baca.glissando_function(o),
+        baca.markup_function(o, r"\krummzeit-ob-plus-full-bow-strokes-markup"),
+        library.register_narrow_function(o, 5, 2),
+    with baca.scope(cache["pf"][45, 56]) as o:
+        baca.dynamic_function(o, "fff-sempre"),
+        baca.marcato_function(o.pheads())
+        baca.ottava_bassa_function(o.tleaves()),
+        library.replace_with_clusters_function(o, "low"),
+        cache.rebuild()
 
 
 def _48_75_quartet(cache):
-    pcs = library.violet_pitch_classes()
-    pcs = abjad.PitchClassSegment(pcs).rotate(-60).transpose(1)
-    accumulator(
-        baca.timeline(
-            [
-                ("va", (48, 71)),
-                ("vc", (52, 71)),
-                ("vn", (54, 71)),
-                ("pf", (57, 75)),
-            ]
-        ),
-        baca.pitches(pcs),
-    )
-    accumulator(
-        ("va", (48, 71)),
-        baca.clef("treble"),
-        baca.dynamic("fff"),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-        library.register_narrow(5, 6),
-    )
-    accumulator(
-        ("vc", (52, 71)),
-        baca.clef("treble"),
-        baca.dynamic("fff"),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-        library.register_narrow(5, 6),
-    )
-    accumulator(
-        ("vn", (38, 53)),
-        baca.alternate_bow_strokes(),
-        baca.dynamic("f"),
-        baca.glissando(),
-        baca.markup(r"\krummzeit-ob-plus-full-bow-strokes-markup"),
-        library.register_narrow(5, 4),
-    )
-    accumulator(
-        ("vn", (54, 71)),
-        baca.dynamic("fff"),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-        library.register_narrow(5, 6),
-    )
-    accumulator(
-        ("pf", (57, 75)),
-        baca.clef("treble"),
-        baca.dynamic("fff"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-        library.register_narrow(5, 6),
-    )
+    with baca.scope(
+        cache["vn"][54, 71]
+        + cache["va"][48, 71]
+        + cache["vc"][52, 71]
+        + cache["pf"][57, 75]
+    ) as o:
+        pcs = library.violet_pitch_classes()
+        pcs = abjad.PitchClassSegment(pcs).rotate(-60).transpose(1)
+        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        baca.pitches_function(leaves, pcs)
+    with baca.scope(cache["va"][48, 71]) as o:
+        baca.clef_function(o, "treble"),
+        baca.dynamic_function(o, "fff"),
+        baca.markup_function(o, r"\baca-pizz-markup"),
+        baca.staccatissimo_function(o.pheads())
+        library.register_narrow_function(o, 5, 6),
+    with baca.scope(cache["vc"][52, 71]) as o:
+        baca.clef_function(o, "treble"),
+        baca.dynamic_function(o, "fff"),
+        baca.markup_function(o, r"\baca-pizz-markup"),
+        baca.staccatissimo_function(o.pheads())
+        library.register_narrow_function(o, 5, 6),
+    with baca.scope(cache["vn"][38, 53]) as o:
+        baca.alternate_bow_strokes_function(o.pheads()),
+        baca.dynamic_function(o, "f"),
+        baca.glissando_function(o),
+        baca.markup_function(o, r"\krummzeit-ob-plus-full-bow-strokes-markup"),
+        library.register_narrow_function(o, 5, 4),
+    with baca.scope(cache["vn"][54, 71]) as o:
+        baca.dynamic_function(o, "fff"),
+        baca.markup_function(o, r"\baca-pizz-markup"),
+        baca.staccatissimo_function(o.pheads())
+        library.register_narrow_function(o, 5, 6),
+    with baca.scope(cache["pf"][57, 75]) as o:
+        baca.clef_function(o, "treble"),
+        baca.dynamic_function(o, "fff"),
+        baca.staccatissimo_function(o.pheads())
+        library.register_narrow_function(o, 5, 6),
 
 
 def main():
@@ -624,7 +597,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         transpose_score=True,
     )

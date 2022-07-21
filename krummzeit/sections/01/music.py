@@ -203,7 +203,8 @@ def pf(cache):
         baca.clef_function(o, "bass")
     with baca.scope(m[4]) as o:
         library.replace_with_clusters_function(o.plts(), "tenor")
-        cache = cache.rebuild()
+        cache.rebuild()
+        # TODO: eliminate the need for reassignment after rebuild:
         m = cache["pf"]
     with baca.scope(m[4]) as o:
         baca.markup_function(o.pleaf(0), r"\krummzeit-catch-resonance-markup")

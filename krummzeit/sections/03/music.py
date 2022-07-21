@@ -383,11 +383,11 @@ def ob(m):
     with baca.scope(m.leaves()) as o:
         baca.dls_staff_padding_function(o, 8)
         baca.tuplet_bracket_staff_padding_function(o, 4)
-    _pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
-    _pcs = _pcs.rotate(-121).retrograde().transpose(3).invert()
-    _pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+    pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
+    pcs = pcs.rotate(-121).retrograde().transpose(3).invert()
+    pcs = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
     with baca.scope(m[1, 35]) as o:
-        baca.pitches_function(o, _pcs, allow_repeats=True)
+        baca.pitches_function(o, pcs, allow_repeats=True)
         library.displacement_function(o)
         library.register_wide_function(o, 5)
         library.color_fingerings_function(o.pheads())
@@ -422,99 +422,78 @@ def pf(m):
 
 
 def perc(m):
-    accumulator(
-        ("perc", [14, 28]),
-        baca.instrument(library.instruments()["Xylophone"]),
-        baca.clef("treble"),
-        baca.new(
-            baca.staff_lines(5),
-            match=0,
-        ),
-    )
-    accumulator(
-        ("perc", (14, 20)),
-        baca.tuplet_bracket_staff_padding(3),
-        baca.dls_staff_padding(6),
-    )
-    accumulator(
-        ("perc", (21, 27)),
-        baca.instrument(library.instruments()["Percussion"]),
-        baca.markup(r"\baca-slate-scrape-markup"),
-        baca.clef("percussion"),
-        baca.staff_lines(1),
-        baca.staff_position(0),
-        baca.dynamic("f"),
-    )
-    accumulator(
-        ("perc", 21),
-        baca.dls_staff_padding(3),
-    )
-    accumulator(
-        ("perc", (28, 33)),
-        baca.tuplet_bracket_staff_padding(3),
-        baca.dls_staff_padding(6),
-    )
-    accumulator(
-        ("perc", (34, 44)),
-        baca.markup(r"\baca-snare-drum-markup"),
-        baca.clef("percussion"),
-        baca.staff_lines(1),
-        baca.staff_position(0),
-        baca.dls_staff_padding(5),
-    )
+    with baca.scope(m[14]) as o:
+        baca.instrument_function(
+            o, library.instruments()["Xylophone"], accumulator.manifests()
+        )
+        baca.clef_function(o, "treble")
+        baca.staff_lines_function(o, 5)
+        ("perc", (14, 20))
+    with baca.scope(m[14, 20]) as o:
+        baca.tuplet_bracket_staff_padding_function(o, 3)
+        baca.dls_staff_padding_function(o, 6)
+    with baca.scope(m[21, 27]) as o:
+        baca.instrument_function(
+            o, library.instruments()["Percussion"], accumulator.manifests()
+        )
+        baca.markup_function(o, r"\baca-slate-scrape-markup")
+        baca.clef_function(o, "percussion")
+        baca.staff_lines_function(o, 1)
+        baca.staff_position_function(o, 0)
+        baca.dynamic_function(o, "f")
+    with baca.scope(m[21]) as o:
+        baca.dls_staff_padding_function(o, 3)
+    with baca.scope(m[28]) as o:
+        baca.instrument_function(
+            o, library.instruments()["Xylophone"], accumulator.manifests()
+        )
+        baca.clef_function(o, "treble")
+        baca.staff_lines_function(o, 5)
+    with baca.scope(m[28, 33]) as o:
+        baca.tuplet_bracket_staff_padding_function(o, 3)
+        baca.dls_staff_padding_function(o, 6)
+    with baca.scope(m[34, 44]) as o:
+        baca.markup_function(o, r"\baca-snare-drum-markup")
+        baca.clef_function(o, "percussion")
+        baca.staff_lines_function(o, 1)
+        baca.staff_position_function(o, 0)
+        baca.dls_staff_padding_function(o, 5)
 
 
 def vn(m):
-    accumulator(
-        ("vn", (1, 20)),
-        baca.staff_position(0),
-    )
-
     def ntltqruns(argument):
         result = baca.ltqruns(argument)
         result = [_ for _ in result if 1 < len(_)]
         return result
 
-    _pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
-    _pcs = _pcs.rotate(-121).retrograde().transpose(3)
-    _pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
-    accumulator(
-        ("vn", (22, 28)),
-        baca.instrument(library.instruments()["Violin"]),
-        baca.clef("treble"),
-        baca.staff_lines(5),
-        baca.pitches(
-            _pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.suite(
-            baca.new(
-                baca.deviation([0, -0.5, 0, 0.5]),
-                map=lambda _: abjad.select.get(ntltqruns(_), [0], 2),
-            ),
-            baca.new(
-                baca.deviation([0, 0.5, 0, -0.5]),
-                map=ntltqruns,
-            ),
-            library.displacement(),
-            library.register_wide(5),
-        ),
-        baca.new(
-            baca.trill_spanner(),
-            map=lambda _: [
-                x
-                for x in baca.plts(_, exclude=baca.enums.HIDDEN)
-                if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
-            ],
-        ),
-        baca.dynamic("ff"),
-        baca.dls_staff_padding(7),
-        baca.tuplet_bracket_staff_padding(4),
-    )
-    accumulator(
-        ("vn", (36, 42)),
-        baca.dls_staff_padding(6),
-    )
+    with baca.scope(m[1, 20]) as o:
+        baca.staff_position_function(o, 0)
+    with baca.scope(m[22, 28]) as o:
+        baca.instrument_function(
+            o, library.instruments()["Violin"], accumulator.manifests()
+        )
+        baca.clef_function(o, "treble"),
+        baca.staff_lines_function(o, 5),
+        pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
+        pcs = pcs.rotate(-121).retrograde().transpose(3)
+        pcs = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
+        baca.pitches_function(o, pcs),
+        for i, run in enumerate(ntltqruns(o)):
+            if i % 2 == 0:
+                baca.deviation_function(run, [0, -0.5, 0, 0.5])
+            else:
+                baca.deviation_function(run, [0, 0.5, 0, -0.5])
+        library.displacement_function(o)
+        library.register_wide_function(o, 5)
+        for plt in baca.plts(o, exclude=baca.enums.HIDDEN):
+            if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
+                plt = baca.select.rleak(plt)
+                baca.trill_spanner_function(plt)
+        baca.dynamic_function(o, "ff")
+        baca.dls_staff_padding_function(o, 7)
+        baca.tuplet_bracket_staff_padding_function(o, 4)
+    with baca.scope(m[36, 42]) as o:
+        baca.dls_staff_padding_function(o, 6)
 
 
 def va(m):

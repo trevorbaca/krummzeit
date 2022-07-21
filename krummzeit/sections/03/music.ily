@@ -2792,11 +2792,9 @@ number.3.Oboe.Music = {
         % [Oboe.Music measure 1]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 8
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 4
           %! baca._clone_section_initial_short_instrument_name()
         \set Staff.instrumentName = \krummzeit-ob-markup
@@ -2869,7 +2867,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -2882,14 +2880,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -2923,14 +2921,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -2954,12 +2952,12 @@ number.3.Oboe.Music = {
     % AFTER:
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -2972,12 +2970,12 @@ number.3.Oboe.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -2990,7 +2988,7 @@ number.3.Oboe.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % ABSOLUTE_BEFORE:
@@ -3035,7 +3033,7 @@ number.3.Oboe.Music = {
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3063,7 +3061,7 @@ number.3.Oboe.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % STOP_BEAM:
@@ -3073,7 +3071,7 @@ number.3.Oboe.Music = {
     ~
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -3103,12 +3101,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3119,7 +3117,7 @@ number.3.Oboe.Music = {
         % AFTER:
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % CLOSING:
@@ -3148,7 +3146,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3161,14 +3159,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3202,14 +3200,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3231,12 +3229,12 @@ number.3.Oboe.Music = {
     % AFTER:
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -3253,7 +3251,7 @@ number.3.Oboe.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % ABSOLUTE_BEFORE:
@@ -3286,7 +3284,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3299,14 +3297,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3334,7 +3332,7 @@ number.3.Oboe.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % ABSOLUTE_BEFORE:
@@ -3570,7 +3568,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3583,14 +3581,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3624,12 +3622,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3640,12 +3638,12 @@ number.3.Oboe.Music = {
         % AFTER:
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3666,12 +3664,12 @@ number.3.Oboe.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -3684,7 +3682,7 @@ number.3.Oboe.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % ABSOLUTE_BEFORE:
@@ -3729,7 +3727,7 @@ number.3.Oboe.Music = {
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3761,12 +3759,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3779,14 +3777,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3818,7 +3816,7 @@ number.3.Oboe.Music = {
         % AFTER:
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3831,7 +3829,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3844,14 +3842,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3887,12 +3885,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -3909,12 +3907,12 @@ number.3.Oboe.Music = {
     % AFTER:
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -3939,12 +3937,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -3957,7 +3955,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % START_BEAM:
@@ -3990,7 +3988,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -4013,7 +4011,7 @@ number.3.Oboe.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % ABSOLUTE_BEFORE:
@@ -4046,7 +4044,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -4057,14 +4055,14 @@ number.3.Oboe.Music = {
         % AFTER:
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -4098,12 +4096,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -4126,7 +4124,7 @@ number.3.Oboe.Music = {
     %@% ^ \baca-duration-multiplier-markup #"1" #"4"
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % ABSOLUTE_BEFORE:
@@ -4159,7 +4157,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -4170,14 +4168,14 @@ number.3.Oboe.Music = {
         % AFTER:
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -4211,12 +4209,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -4229,12 +4227,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -4247,14 +4245,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -4282,7 +4280,7 @@ number.3.Oboe.Music = {
     % AFTER:
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % STOP_BEAM:
@@ -4332,7 +4330,7 @@ number.3.Oboe.Music = {
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -4362,12 +4360,12 @@ number.3.Oboe.Music = {
         % AFTER:
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -4380,12 +4378,12 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -4398,7 +4396,7 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % CLOSING:
@@ -4421,7 +4419,7 @@ number.3.Oboe.Music = {
     ~
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -4447,12 +4445,12 @@ number.3.Oboe.Music = {
         % AFTER:
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % ABSOLUTE_BEFORE:
@@ -4465,14 +4463,14 @@ number.3.Oboe.Music = {
         ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.trill_spanner()
         \stopTrillSpan
         % SPANNER_STARTS:
         ~
         % TRILL_SPANNER_STARTS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.trill_spanner()
         \startTrillSpan
         % CLOSING:
@@ -4498,12 +4496,12 @@ number.3.Oboe.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 2 }
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -4516,12 +4514,12 @@ number.3.Oboe.Music = {
     ^ \markup { \override #'(circle-padding . 0.25) \circle \finger 1 }
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.trill_spanner()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -4532,7 +4530,7 @@ number.3.Oboe.Music = {
     % AFTER:
     % SPANNER_STOPS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.trill_spanner()
     \stopTrillSpan
     % ABSOLUTE_BEFORE:
@@ -4644,11 +4642,9 @@ number.3.Oboe.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_staff_padding()
+      %! baca.tuplet_bracket_staff_padding_function(2)
     \revert TupletBracket.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -4688,8 +4684,7 @@ number.3.Clarinet.Music = {
     % [Clarinet.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 3
       %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \krummzeit-clarinet-in-e-flat-markup
@@ -5468,8 +5463,7 @@ number.3.Clarinet.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"5" #"4"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -5730,11 +5724,9 @@ number.3.Piano.Music = {
         % [Piano.Music measure 14]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 6
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 3
           %! krummzeit.make_silver_points_rhythm()
         r16
@@ -6894,11 +6886,9 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
         % CLOSING:
         % COMMANDS:

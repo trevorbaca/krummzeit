@@ -309,7 +309,7 @@ def ob(m):
     )
 
 
-def cl():
+def cl(m):
     accumulator(
         "cl",
         baca.beam_positions(-4),
@@ -325,7 +325,7 @@ def cl():
     )
 
 
-def ob_cl():
+def ob_cl(cache):
     # ob, cl
     accumulator(
         (["ob", "cl"], (11, 24)),
@@ -340,7 +340,7 @@ def ob_cl():
     )
 
 
-def pf():
+def pf(m):
     accumulator(
         ("pf", [(1, 24), (27, 34)]),
         baca.dls_staff_padding(3),
@@ -374,7 +374,7 @@ def pf():
     )
 
 
-def perc():
+def perc(m):
     accumulator(
         "perc",
         baca.staff_lines(1),
@@ -420,7 +420,7 @@ def perc():
     )
 
 
-def pf_perc():
+def pf_perc(cache):
     accumulator(
         (["pf", "perc"], [(25, 26), (35, 38), (39, 42)]),
         baca.new(
@@ -436,7 +436,7 @@ def pf_perc():
     )
 
 
-def strings():
+def strings(cache):
     # va
     accumulator(
         ("va", (8, 13)),
@@ -631,12 +631,12 @@ def main():
         accumulator.voice_abbreviations,
     )
     ob(cache["ob"])
-    cl()
-    ob_cl()
-    pf()
-    perc()
-    pf_perc()
-    strings()
+    cl(cache["cl"])
+    ob_cl(cache)
+    pf(cache["pf"])
+    perc(cache["perc"])
+    pf_perc(cache)
+    strings(cache)
 
 
 if __name__ == "__main__":

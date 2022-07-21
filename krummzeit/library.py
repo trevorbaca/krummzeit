@@ -326,6 +326,10 @@ def color_fingerings():
     )
 
 
+def color_fingerings_function(argument):
+    return baca.color_fingerings_function(argument, [0, 1, 2, 1])
+
+
 def displacement():
     return baca.displacement(
         [0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]

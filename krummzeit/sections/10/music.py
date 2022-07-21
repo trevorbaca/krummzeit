@@ -223,7 +223,7 @@ def ob(m):
     )
 
 
-def cl():
+def cl(m):
     accumulator(
         ("cl", 1),
         baca.pitch("Eb2"),
@@ -261,7 +261,7 @@ def cl():
     )
 
 
-def pf_perc_1():
+def pf_perc_1(cache):
     accumulator(
         (["pf", "perc"], 1),
         baca.pitch("F#6"),
@@ -269,7 +269,7 @@ def pf_perc_1():
     )
 
 
-def pf_3_22():
+def pf_3_22(cache):
     accumulator(
         ("pf", (3, 4)),
         baca.instrument(library.instruments()["Harpsichord"]),
@@ -287,7 +287,7 @@ def pf_3_22():
     )
 
 
-def perc_3_22():
+def perc_3_22(cache):
     accumulator(
         ("perc", (3, 22)),
         baca.markup(r"\baca-tam-tam-markup"),
@@ -299,7 +299,7 @@ def perc_3_22():
     )
 
 
-def strings_1_3():
+def strings_1_3(cache):
     accumulator(
         (["vn", "va", "vc"], (1, 3)),
         baca.new(
@@ -319,7 +319,7 @@ def strings_1_3():
     )
 
 
-def strings_5_9():
+def strings_5_9(cache):
     pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     pcs = pcs.transpose(11)
     accumulator(
@@ -356,7 +356,7 @@ def strings_5_9():
     )
 
 
-def strings_22():
+def strings_22(cache):
     pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
     accumulator(
@@ -398,13 +398,13 @@ def main():
         accumulator.voice_abbreviations,
     )
     ob(cache["ob"])
-    cl()
-    pf_perc_1()
-    pf_3_22()
-    perc_3_22()
-    strings_1_3()
-    strings_5_9()
-    strings_22()
+    cl(cache["cl"])
+    pf_perc_1(cache)
+    pf_3_22(cache)
+    perc_3_22(cache)
+    strings_1_3(cache)
+    strings_5_9(cache)
+    strings_22(cache)
 
 
 if __name__ == "__main__":

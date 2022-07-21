@@ -350,7 +350,7 @@ def ob(m):
     )
 
 
-def cl():
+def cl(m):
     accumulator(
         "cl",
         baca.instrument(library.instruments()["ClarinetInEFlat"]),
@@ -378,7 +378,7 @@ def cl():
     )
 
 
-def ob_cl_12_24():
+def ob_cl_12_24(cache):
     _ob_pitches = "C4 Bqs4 A4 Gqs4 Fqs4 Eqf4"
     _ob_pitches = baca.sequence.repeat_by(_ob_pitches.split(), [3, 2, 4], cyclic=True)
     _cl_pitches = "C4 Bqs4 A4 Gqs4 Fqs4 Eqf4"
@@ -408,7 +408,7 @@ def ob_cl_12_24():
     )
 
 
-def pf():
+def pf(m):
     accumulator(
         ("pf", (9, 10)),
         library.replace_with_clusters("tenor"),
@@ -459,7 +459,7 @@ def pf():
     )
 
 
-def perc():
+def perc(m):
     accumulator(
         ("perc", [(1, 14), (28, 34)]),
         baca.markup(r"\baca-suspended-cymbal-markup"),
@@ -479,7 +479,7 @@ def perc():
     )
 
 
-def pf_perc():
+def pf_perc(cache):
     accumulator(
         (["pf", "perc"], (17, 26)),
         baca.pitch(
@@ -493,7 +493,7 @@ def pf_perc():
     )
 
 
-def vn():
+def vn(m):
     accumulator(
         ("vn", (1, 11)),
         baca.dls_staff_padding(8.5),
@@ -510,7 +510,7 @@ def vn():
     )
 
 
-def ob_vn_29_34():
+def ob_vn_29_34(cache):
     accumulator(
         (["ob", "vn"], (29, 34)),
         baca.new(
@@ -533,7 +533,7 @@ def ob_vn_29_34():
     )
 
 
-def va():
+def va(m):
     accumulator(
         ("va", (1, 11)),
         baca.dls_staff_padding(8.5),
@@ -549,7 +549,7 @@ def va():
     )
 
 
-def vc():
+def vc(m):
     accumulator(
         ("vc", (9, 10)),
         baca.dls_staff_padding(6),
@@ -565,7 +565,7 @@ def vc():
     )
 
 
-def strings_9_10():
+def strings_9_10(cache):
     accumulator(
         (["vn", "va", "vc"], (9, 10)),
         baca.new(
@@ -585,7 +585,7 @@ def strings_9_10():
     )
 
 
-def strings_12_20():
+def strings_12_20(cache):
     _pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     _pcs = _pcs.rotate(-301).retrograde().transpose(10)
     accumulator(
@@ -621,7 +621,7 @@ def strings_12_20():
     )
 
 
-def va_vc_23_35():
+def va_vc_23_35(cache):
     accumulator(
         (["va", "vc"], (23, 35)),
         baca.new(
@@ -658,18 +658,18 @@ def main():
         accumulator.voice_abbreviations,
     )
     ob(cache["ob"])
-    cl()
-    ob_cl_12_24()
-    pf()
-    perc()
-    pf_perc()
-    vn()
-    ob_vn_29_34()
-    va()
-    vc()
-    strings_9_10()
-    strings_12_20()
-    va_vc_23_35()
+    cl(cache["cl"])
+    ob_cl_12_24(cache)
+    pf(cache["pf"])
+    perc(cache["perc"])
+    pf_perc(cache)
+    vn(cache["vn"])
+    ob_vn_29_34(cache)
+    va(cache["va"])
+    vc(cache["vc"])
+    strings_9_10(cache)
+    strings_12_20(cache)
+    va_vc_23_35(cache)
 
 
 if __name__ == "__main__":

@@ -263,7 +263,7 @@ def ob(m):
     )
 
 
-def cl():
+def cl(m):
     accumulator(
         ("cl", (14, 19)),
         baca.instrument(library.instruments()["BassClarinet"]),
@@ -273,7 +273,7 @@ def cl():
     )
 
 
-def pf():
+def pf(m):
     accumulator(
         ("pf", 1),
         baca.hairpin("ff > pp"),
@@ -310,7 +310,7 @@ def pf():
     )
 
 
-def perc():
+def perc(m):
     accumulator(
         ("perc", (1, 9)),
         baca.dynamic("ppp-ancora"),
@@ -327,7 +327,7 @@ def perc():
     )
 
 
-def vn():
+def vn(m):
     accumulator(
         ("vn", 5),
         baca.hairpin(
@@ -366,7 +366,7 @@ def vn():
     )
 
 
-def va():
+def va(m):
     accumulator(
         ("va", 5),
         baca.clef("treble"),
@@ -415,7 +415,7 @@ def va():
     )
 
 
-def vc():
+def vc(m):
     accumulator(
         ("vc", 5),
         baca.clef("treble"),
@@ -455,7 +455,7 @@ def vc():
     )
 
 
-def composites():
+def composites(cache):
     # pf, vn, va, vc (1, 9)
     pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
@@ -573,13 +573,13 @@ def main():
         accumulator.voice_abbreviations,
     )
     ob(cache["ob"])
-    cl()
-    pf()
-    perc()
-    vn()
-    va()
-    vc()
-    composites()
+    cl(cache["cl"])
+    pf(cache["pf"])
+    perc(cache["perc"])
+    vn(cache["vn"])
+    va(cache["va"])
+    vc(cache["vc"])
+    composites(cache)
 
 
 if __name__ == "__main__":

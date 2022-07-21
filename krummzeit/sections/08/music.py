@@ -296,7 +296,7 @@ def ob(m):
     )
 
 
-def cl():
+def cl(m):
     accumulator(
         ("cl", (1, 5)),
         baca.pitch("B1"),
@@ -329,7 +329,7 @@ def cl():
     )
 
 
-def pf():
+def pf(m):
     accumulator(
         ("pf", (5, 11)),
         baca.clef("treble"),
@@ -345,7 +345,7 @@ def pf():
     )
 
 
-def perc():
+def perc(m):
     accumulator(
         ("perc", (1, 7)),
         baca.markup(r"\baca-tam-tam-markup"),
@@ -353,7 +353,7 @@ def perc():
     )
 
 
-def vn():
+def vn(m):
     accumulator(
         ("vn", (5, 12)),
         baca.tuplet_bracket_staff_padding(3),
@@ -361,7 +361,7 @@ def vn():
     )
 
 
-def va():
+def va(m):
     accumulator(
         ("va", (1, 9)),
         baca.pitches("Bb2 C~3 D3 E+3 F+3 G3"),
@@ -378,7 +378,7 @@ def va():
     )
 
 
-def vc():
+def vc(m):
     accumulator(
         ("vc", (1, 9)),
         baca.markup(r"\baca-subito-ordinario-markup"),
@@ -393,7 +393,7 @@ def vc():
     )
 
 
-def ob_cl_pf_vn_5_12():
+def ob_cl_pf_vn_5_12(cache):
     _pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     _pcs = _pcs[:20].transpose(3)
     accumulator(
@@ -435,7 +435,7 @@ def ob_cl_pf_vn_5_12():
     )
 
 
-def va_vc_11_12():
+def va_vc_11_12(cache):
     accumulator(
         (["va", "vc"], (11, 12)),
         baca.markup(r"\baca-molto-flautando-markup"),
@@ -457,7 +457,7 @@ def va_vc_11_12():
     )
 
 
-def pf_vn_vc_va_14_23():
+def pf_vn_vc_va_14_23(cache):
     accumulator(
         ("pf", (14, 20)),
         baca.dls_staff_padding(4),
@@ -557,15 +557,15 @@ def main():
         accumulator.voice_abbreviations,
     )
     ob(cache["ob"])
-    cl()
-    pf()
-    perc()
-    vn()
-    va()
-    vc()
-    ob_cl_pf_vn_5_12()
-    va_vc_11_12()
-    pf_vn_vc_va_14_23()
+    cl(cache["cl"])
+    pf(cache["pf"])
+    perc(cache["perc"])
+    vn(cache["vn"])
+    va(cache["va"])
+    vc(cache["vc"])
+    ob_cl_pf_vn_5_12(cache)
+    va_vc_11_12(cache)
+    pf_vn_vc_va_14_23(cache)
 
 
 if __name__ == "__main__":

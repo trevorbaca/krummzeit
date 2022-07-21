@@ -220,7 +220,7 @@ def ob(m):
     )
 
 
-def cl():
+def cl(m):
     accumulator(
         ("cl", (1, 10)),
         baca.tuplet_bracket_staff_padding(4),
@@ -243,7 +243,7 @@ def cl():
     )
 
 
-def pf():
+def pf(m):
     accumulator(
         ("pf", 4),
         baca.instrument(library.instruments()["Harpsichord"]),
@@ -255,7 +255,7 @@ def pf():
     )
 
 
-def perc():
+def perc(m):
     accumulator(
         "perc",
         baca.markup(
@@ -285,7 +285,7 @@ def perc():
     )
 
 
-def va_vc_1_6():
+def va_vc_1_6(cache):
     accumulator(
         (["va", "vc"], (1, 6)),
         baca.new(
@@ -310,7 +310,7 @@ def va_vc_1_6():
     )
 
 
-def strings_7_19():
+def strings_7_19(cache):
     accumulator(
         (["vn", "va", "vc"], (7, 19)),
         baca.new(
@@ -340,7 +340,7 @@ def strings_7_19():
     )
 
 
-def ob_cl_pf_1_16():
+def ob_cl_pf_1_16(cache):
     pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     pcs = pcs.transpose(2)
     accumulator(
@@ -381,7 +381,7 @@ def ob_cl_pf_1_16():
     )
 
 
-def ob_cl_4_10():
+def ob_cl_4_10(cache):
     accumulator(
         (["ob", "cl"], (4, 10)),
         baca.new(
@@ -413,13 +413,13 @@ def main():
         accumulator.voice_abbreviations,
     )
     ob(cache["ob"])
-    cl()
-    pf()
-    perc()
-    va_vc_1_6()
-    strings_7_19()
-    ob_cl_pf_1_16()
-    ob_cl_4_10()
+    cl(cache["cl"])
+    pf(cache["pf"])
+    perc(cache["perc"])
+    va_vc_1_6(cache)
+    strings_7_19(cache)
+    ob_cl_pf_1_16(cache)
+    ob_cl_4_10(cache)
 
 
 if __name__ == "__main__":

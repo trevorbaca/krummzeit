@@ -380,78 +380,48 @@ def VC(voice):
 
 
 def ob(m):
-
-    accumulator(
-        "ob",
-        baca.dls_staff_padding(8),
-        baca.tuplet_bracket_staff_padding(4),
-    )
-
+    with baca.scope(m.leaves()) as o:
+        baca.dls_staff_padding_function(o, 8)
+        baca.tuplet_bracket_staff_padding_function(o, 4)
     _pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
     _pcs = _pcs.rotate(-121).retrograde().transpose(3).invert()
     _pcs = baca.sequence.repeat_by(_pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
-    accumulator(
-        ("ob", (1, 35)),
-        baca.pitches(
-            _pcs,
-            allow_repeats=True,
-            selector=lambda _: baca.select.plts(_),
-        ),
-        library.displacement(),
-        library.register_wide(5),
-        library.color_fingerings(),
-        baca.new(
-            baca.trill_spanner(),
-            map=lambda _: [
-                x
-                for x in baca.plts(_, exclude=baca.enums.HIDDEN)
-                if abjad.get.duration(x, preprolated=True) >= abjad.Duration((1, 4))
-            ],
-        ),
-        baca.dynamic("ff"),
-    )
-    accumulator(
-        ("ob", 24),
-        baca.dynamic("ff"),
-    )
+    with baca.scope(m[1, 35]) as o:
+        baca.pitches_function(o, _pcs, allow_repeats=True)
+        library.displacement_function(o)
+        library.register_wide_function(o, 5)
+        library.color_fingerings_function(o.pheads())
+        for plt in baca.plts(o, exclude=baca.enums.HIDDEN):
+            if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
+                plt = baca.select.rleak(plt)
+                baca.trill_spanner_function(plt)
+        baca.dynamic_function(o, "ff")
+    with baca.scope(m[24]) as o:
+        baca.dynamic_function(o, "ff")
 
 
-def cl():
-    accumulator(
-        "cl",
-        baca.dls_staff_padding(3),
-    )
-    accumulator(
-        ("cl", [(1, 4), (24, 30), (32, 35)]),
-        baca.new(
-            baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
-            match=0,
-        ),
-        baca.new(
-            baca.pitches("f'' eqs'' g'' fqs'' eqs'' d'' eqs''"),
-            baca.dynamic("f"),
-            match=1,
-        ),
-        baca.new(
-            baca.pitches("g'' dtqs'' a'' gqs'' fqs'' e'' fqs''"),
-            match=2,
-        ),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-    )
+def cl(m):
+    with baca.scope(m.leaves()) as o:
+        baca.dls_staff_padding_function(o, 3),
+    with baca.scope(m[1, 4]) as o:
+        baca.pitches_function(o, "e'' dtqs'' f'' eqs'' dqs'' c'' dqs''")
+    with baca.scope(m[24, 30]) as o:
+        baca.pitches_function(o, "f'' eqs'' g'' fqs'' eqs'' d'' eqs''")
+        baca.dynamic_function(o, "f")
+    with baca.scope(m[32, 35]) as o:
+        baca.pitches_function(o, "g'' dtqs'' a'' gqs'' fqs'' e'' fqs''")
+    with baca.scope(m[1, 35]) as o:
+        for run in baca.select.runs(o):
+            baca.glissando_function(run)
 
 
-def pf():
-    accumulator(
-        ("pf", (14, 35)),
-        baca.dls_staff_padding(6),
-        baca.tuplet_bracket_staff_padding(3),
-    )
+def pf(m):
+    with baca.scope(m[14, 35]) as o:
+        baca.dls_staff_padding_function(o, 6),
+        baca.tuplet_bracket_staff_padding_function(o, 3),
 
 
-def perc():
+def perc(m):
     accumulator(
         ("perc", [14, 28]),
         baca.instrument(library.instruments()["Xylophone"]),
@@ -494,7 +464,7 @@ def perc():
     )
 
 
-def vn():
+def vn(m):
     accumulator(
         ("vn", (1, 20)),
         baca.staff_position(0),
@@ -547,7 +517,7 @@ def vn():
     )
 
 
-def va():
+def va(m):
     accumulator(
         ("va", (1, 23)),
         baca.clef("alto"),
@@ -575,7 +545,7 @@ def va():
     )
 
 
-def vc():
+def vc(m):
     accumulator(
         ("vc", (1, 23)),
         baca.clef("bass"),
@@ -598,7 +568,7 @@ def vc():
     )
 
 
-def composites():
+def composites(cache):
     # pf, perc
     accumulator(
         (["pf", "perc"], (14, 20)),
@@ -690,13 +660,13 @@ def main():
         accumulator.voice_abbreviations,
     )
     ob(cache["ob"])
-    cl()
-    pf()
-    perc()
-    vn()
-    va()
-    vc()
-    composites()
+    cl(cache["cl"])
+    pf(cache["pf"])
+    perc(cache["perc"])
+    vn(cache["vn"])
+    va(cache["va"])
+    vc(cache["vc"])
+    composites(cache)
 
 
 if __name__ == "__main__":

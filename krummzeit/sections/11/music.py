@@ -120,7 +120,7 @@ def ob_1_40(m):
     )
 
 
-def cl_1_40():
+def cl_1_40(m):
     accumulator(
         "cl",
         baca.pitch(
@@ -133,7 +133,7 @@ def cl_1_40():
     )
 
 
-def pf_1_48():
+def pf_1_48(m):
     accumulator(
         "pf",
         baca.clef("treble"),
@@ -147,7 +147,7 @@ def pf_1_48():
     )
 
 
-def perc_1_48():
+def perc_1_48(m):
     accumulator(
         "perc",
         baca.clef("treble"),
@@ -159,7 +159,7 @@ def perc_1_48():
     )
 
 
-def vn_va_1_40():
+def vn_va_1_40(cache):
     pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
     pcs = pcs[42:34:-1].transpose(4).invert()
     accumulator(
@@ -188,7 +188,7 @@ def vn_va_1_40():
     )
 
 
-def vc_1_48():
+def vc_1_48(m):
     accumulator(
         ("vc", (1, 24)),
         baca.markup(r"\baca-scratch-poss-markup"),
@@ -208,7 +208,7 @@ def vc_1_48():
     )
 
 
-def vc_48():
+def vc_48(m):
     accumulator(
         ("vc", 48),
         baca.chunk(
@@ -237,12 +237,12 @@ def main():
         accumulator.voice_abbreviations,
     )
     ob_1_40(cache["ob"])
-    cl_1_40()
-    pf_1_48()
-    perc_1_48()
-    vn_va_1_40()
-    vc_1_48()
-    vc_48()
+    cl_1_40(cache["cl"])
+    pf_1_48(cache["pf"])
+    perc_1_48(cache["perc"])
+    vn_va_1_40(cache)
+    vc_1_48(cache["vc"])
+    vc_48(cache["vc"])
 
 
 if __name__ == "__main__":

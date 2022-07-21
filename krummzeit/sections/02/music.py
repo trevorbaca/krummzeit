@@ -355,250 +355,142 @@ def VC(voice):
 
 
 def cl(m):
-    accumulator(
-        ("cl", 5),
-        baca.instrument(library.instruments()["ClarinetInEFlat"]),
-        baca.markup(r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"),
-        library.short_instrument_name("Cl. (Eb)"),
-        baca.dynamic("mp"),
-    )
-    accumulator(
-        ("cl", (16, 22)),
-        baca.dynamic("f"),
-    )
-    accumulator(
-        ("cl", (69, 75)),
-        baca.pitches("e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
-        baca.glissando(),
-        baca.dynamic("f"),
-    )
-
-
-def pf():
-    accumulator(
-        "pf",
-        baca.instrument(library.instruments()["Harpsichord"]),
-        library.short_instrument_name("Hpschd."),
-    )
-    accumulator(
-        ("pf", (1, 22)),
-        baca.dls_staff_padding(6),
-        baca.tuplet_bracket_staff_padding(3),
-    )
-    accumulator(
-        ("pf", (23, 31)),
-        baca.dls_staff_padding(7),
-        baca.tuplet_bracket_staff_padding(4),
-    )
-    accumulator(
-        ("pf", (45, 46)),
-        baca.clef("bass"),
-        baca.instrument(library.instruments()["Piano"]),
-        library.short_instrument_name("Pf."),
-    )
-    accumulator(
-        ("pf", (57, 75)),
-        baca.dls_staff_padding(7),
-        baca.tuplet_bracket_staff_padding(4),
-    )
-
-
-def perc():
-    accumulator(
-        "perc",
-        baca.staff_position(0),
-        baca.accent(
-            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
+    with baca.scope(m[5]) as o:
+        baca.instrument_function(o, library.instruments()["ClarinetInEFlat"]),
+        baca.markup_function(
+            o, r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"
         ),
-    )
-    accumulator(
-        ("perc", (45, 60)),
-        baca.markup(r"\baca-tam-tam-markup"),
-        baca.dynamic("p-sempre"),
-        baca.new(
-            baca.laissez_vibrer(),
-            map=lambda _: baca.select.pheads(_),
-        ),
-    )
+        library.short_instrument_name_function(o, "Cl. (Eb)"),
+        baca.dynamic_function(o, "mp"),
+    with baca.scope(m[16, 22]) as o:
+        baca.dynamic_function(o, "f")
+    with baca.scope(m[69, 75]) as o:
+        baca.pitches_function(o, "e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
+        baca.glissando_function(o),
+        baca.dynamic_function(o, "f"),
 
 
-def vn():
-    accumulator(
-        ("vn", (72, 75)),
-        baca.staff_lines(1),
-        baca.clef("percussion"),
-        baca.dynamic("mf"),
-        baca.instrument(library.instruments()["Percussion"]),
-        baca.markup(
+def pf(m):
+    with baca.scope(m[1]) as o:
+        baca.instrument_function(
+            o, library.instruments()["Harpsichord"], accumulator.manifests()
+        )
+        library.short_instrument_name_function(o, "Hpschd.")
+    with baca.scope(m[1, 22]) as o:
+        baca.dls_staff_padding_function(o, 6)
+        baca.tuplet_bracket_staff_padding_function(o, 3)
+    with baca.scope(m[23, 31]) as o:
+        baca.dls_staff_padding_function(o, 7)
+        baca.tuplet_bracket_staff_padding_function(o, 4)
+    with baca.scope(m[45, 46]) as o:
+        baca.clef_function(o, "bass")
+        baca.instrument_function(o, library.instruments()["Piano"])
+        library.short_instrument_name_function(o, "Pf.")
+    with baca.scope(m[57, 75]) as o:
+        baca.dls_staff_padding_function(o, 7)
+        baca.tuplet_bracket_staff_padding_function(o, 4)
+
+
+def perc(m):
+    with baca.scope(m.leaves()) as o:
+        baca.staff_position_function(o, 0)
+        baca.accent_function(o.pheads())
+    with baca.scope(m[45, 60]) as o:
+        baca.markup_function(o, r"\baca-tam-tam-markup")
+        baca.dynamic_function(o, "p-sempre")
+        baca.laissez_vibrer_function(o.pheads())
+
+
+def vn(m):
+    with baca.scope(m[72, 75]) as o:
+        baca.staff_lines_function(o, 1)
+        baca.clef_function(o, "percussion")
+        baca.dynamic_function(o, "mf")
+        baca.instrument_function(
+            o, library.instruments()["Percussion"], accumulator.manifests()
+        )
+        baca.markup_function(
+            o,
             r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",
-        ),
-        baca.staff_position(0),
-    )
-    accumulator(
-        ("vn", (8, 11)),
-        baca.dynamic("mp"),
-        baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
-    )
-    accumulator(
-        ("vn", (19, 22)),
-        baca.dynamic("f"),
-        baca.markup(r"\krummzeit-off-string-bowing-on-staccati-markup"),
-    )
+        )
+        baca.staff_position_function(o, 0)
+    with baca.scope(m[8, 11]) as o:
+        baca.dynamic_function(o, "mp")
+        baca.markup_function(o, r"\krummzeit-off-string-bowing-on-staccati-markup")
+    with baca.scope(m[19, 22]) as o:
+        baca.dynamic_function(o, "f")
+        baca.markup_function(o, r"\krummzeit-off-string-bowing-on-staccati-markup")
 
 
-def va():
-    accumulator(
-        ("va", (1, 11)),
-        baca.pitches("d ctqs e dqs cqs b, cqs"),
-    )
-    accumulator(
-        ("va", (12, 22)),
-        baca.pitches("e dtqs f eqs dqs c dqs"),
-    )
-    accumulator(
-        ("va", (23, 28)),
-        baca.pitches("g ftqs a gqs fqs e fqs"),
-    )
-    accumulator(
-        ("va", 39),
-        baca.clef("alto"),
-    )
+def va(m):
+    baca.pitches_function(m[1, 11], "d ctqs e dqs cqs b, cqs")
+    baca.pitches_function(m[12, 22], "e dtqs f eqs dqs c dqs")
+    baca.pitches_function(m[23, 28], "g ftqs a gqs fqs e fqs")
+    baca.clef_function(m[39], "alto")
 
 
-def vc():
-    accumulator(
-        ("vc", (1, 11)),
-        baca.pitches("e, dqs, cqs, b,, cqs, d, ctqs,"),
-    )
-    accumulator(
-        ("vc", (12, 22)),
-        baca.pitches("f, eqs, dqs, c, dqs, e, dtqs,"),
-    )
-    accumulator(
-        ("vc", (23, 28)),
-        baca.pitches("a, gqs, fqs, e, fqs, g, ftqs,"),
-    )
-    accumulator(
-        ("vc", 45),
-        baca.clef("bass"),
-    )
+def vc(m):
+    baca.pitches_function(m[1, 11], "e, dqs, cqs, b,, cqs, d, ctqs,")
+    baca.pitches_function(m[12, 22], "f, eqs, dqs, c, dqs, e, dtqs,")
+    baca.pitches_function(m[23, 28], "a, gqs, fqs, e, fqs, g, ftqs,")
+    baca.clef_function(m[45], "bass")
 
 
-def _1_37_quartet():
-    accumulator(
-        baca.timeline(
-            [
-                ("pf", (1, 11)),
-                ("vn", (1, 11)),
-                ("cl", (1, 11)),
-            ]
-        ),
-        baca.pitches(
-            library.indigo_pitch_classes(),
-            allow_repeats=True,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
-    pcs = pcs.transpose(1)
-    accumulator(
-        baca.timeline(
-            [
-                ("pf", (12, 22)),
-                ("vn", (12, 22)),
-                ("cl", (12, 22)),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
-    pcs = pcs.rotate(-155).transpose(3)
-    accumulator(
-        baca.timeline(
-            [
-                ("pf", (23, 37)),
-                ("vn", (23, 37)),
-                ("ob", (23, 37)),
-                ("cl", (23, 37)),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    accumulator(
-        (["pf", "vn", "ob", "cl"], (1, 37)),
-        library.displacement(),
-    )
-    accumulator(
-        (["vn", "ob", "cl"], (1, 22)),
-        library.register_narrow(5),
-    )
-    accumulator(
-        ("pf", (1, 22)),
-        library.register_wide(5),
-    )
-    accumulator(
-        ("pf", (23, 31)),
-        library.register_narrow(3, 5),
-    )
-    accumulator(
-        ("pf", (23, 28)),
-        baca.clef("bass"),
-    )
-    accumulator(
-        ("pf", (29, 31)),
-        baca.clef("treble"),
-    )
-    accumulator(
-        (["vn", "ob", "cl"], (23, 31)),
-        library.register_narrow(4, 5),
-    )
-    accumulator(
-        (["pf", "vn", "ob", "cl"], (32, 37)),
-        library.register_narrow(5),
-    )
-    accumulator(
-        (["vn", "ob", "cl"], (23, 28)),
-        baca.hairpin("f < ff"),
-    )
-    accumulator(
-        (["vn", "ob", "cl"], (1, 37)),
-        baca.staccato(
-            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-        ),
-    )
+def _1_37_quartet(cache):
+    with baca.scope(cache["pf"][1, 11] + cache["vn"][1, 11] + cache["cl"][1, 11]) as o:
+        pcs = library.indigo_pitch_classes()
+        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        baca.pitches_function(leaves, pcs, allow_repeats=True)
+    with baca.scope(
+        cache["pf"][12, 22] + cache["vn"][12, 22] + cache["cl"][12, 22]
+    ) as o:
+        pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
+        pcs = pcs.transpose(1)
+        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        baca.pitches_function(leaves, pcs)
+    with baca.scope(
+        cache["pf"][23, 37]
+        + cache["vn"][23, 37]
+        + cache["ob"][23, 37]
+        + cache["cl"][23, 37]
+    ) as o:
+        pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
+        pcs = pcs.rotate(-155).transpose(3)
+        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        baca.pitches_function(leaves, pcs)
+    for name in ["pf", "vn", "ob", "cl"]:
+        library.displacement_function(cache[name][1, 37])
+    for name in ["vn", "ob", "cl"]:
+        library.register_narrow_function(cache[name][1, 22], 5)
+    library.register_wide_function(cache["pf"][1, 22], 5)
+    library.register_narrow_function(cache["pf"][23, 31], 3, 5),
+    baca.clef_function(cache["pf"][23], "bass"),
+    baca.clef_function(cache["pf"][29], "treble"),
+    for name in ["vn", "ob", "cl"]:
+        library.register_narrow_function(cache[name][23, 31], 4, 5)
+    for name in ["vn", "ob", "cl"]:
+        library.register_narrow_function(cache[name][32, 37], 5)
+    for name in ["vn", "ob", "cl"]:
+        baca.hairpin_function(cache[name][23, 28], "f < ff")
+        with baca.scope(cache[name][1, 37]) as o:
+            baca.staccato_function(o.pheads())
 
 
-def _1_28_strings():
-    accumulator(
-        (["va", "vc"], (1, 28)),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_),
-        ),
-    )
-    accumulator(
-        (["va", "vc"], (1, 11)),
-        baca.dynamic("mf"),
-        baca.markup(r"\baca-molto-flautando-markup"),
-    )
-    accumulator(
-        (["va", "vc"], (12, 22)),
-        baca.dynamic("f"),
-        baca.markup(r"\baca-non-flautando-markup"),
-    )
-    accumulator(
-        (["va", "vc"], (23, 28)),
-        baca.dynamic("ff"),
-    )
+def _1_28_strings(cache):
+    for name in ["va", "vc"]:
+        m = cache[name]
+        for run in baca.select.runs(m[1, 28]):
+            baca.glissando_function(run)
+        with baca.scope(m[1, 11]) as o:
+            baca.dynamic_function(o, "mf"),
+            baca.markup_function(o, r"\baca-molto-flautando-markup"),
+        with baca.scope(m[12, 22]) as o:
+            baca.dynamic_function(o, "f"),
+            baca.markup_function(o, r"\baca-non-flautando-markup"),
+        baca.dynamic_function(m[23], "ff")
 
 
-def _34_53_strings():
+def _34_53_strings(cache):
     accumulator(
         baca.timeline(
             [
@@ -642,7 +534,7 @@ def _34_53_strings():
     )
 
 
-def _48_75_quartet():
+def _48_75_quartet(cache):
     pcs = library.violet_pitch_classes()
     pcs = abjad.PitchClassSegment(pcs).rotate(-60).transpose(1)
     accumulator(
@@ -712,15 +604,15 @@ def main():
         accumulator.voice_abbreviations,
     )
     cl(cache["cl"])
-    pf()
-    perc()
-    vn()
-    va()
-    vc()
-    _1_37_quartet()
-    _1_28_strings()
-    _34_53_strings()
-    _48_75_quartet()
+    pf(cache["pf"])
+    perc(cache["perc"])
+    vn(cache["vn"])
+    va(cache["va"])
+    vc(cache["vc"])
+    _1_37_quartet(cache)
+    _1_28_strings(cache)
+    _34_53_strings(cache)
+    _48_75_quartet(cache)
 
 
 if __name__ == "__main__":

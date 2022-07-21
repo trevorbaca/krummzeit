@@ -334,6 +334,14 @@ def displacement():
     )
 
 
+def displacement_function(argument):
+    baca.displacement_function(
+        argument,
+        [0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
+        + [-1, -1, -1, -1],
+    )
+
+
 def indigo_pitch_classes():
     indigo_pitch_classes, violet_pitch_classes = _make_pitch_classes()
     return indigo_pitch_classes
@@ -1264,9 +1272,8 @@ def register_narrow_function(argument, start, stop=None):
         7: baca.Registration([("[A0, F#4)", 34), ("[F#4, C8]", 37)]),
     }
     if stop is None:
-        raise Exception("implement me")
         registration = octave_number_to_registration[start]
-        baca.register_function(argument, registration)
+        baca.commands._do_register_command(argument, registration)
     else:
         start_registration = octave_number_to_registration[start]
         stop_registration = octave_number_to_registration[stop]
@@ -1306,6 +1313,18 @@ def register_wide(start):
         return wide_seventh_octave
     else:
         raise ValueError(start)
+
+
+def register_wide_function(argument, start):
+    start_to_registration = {
+        3: baca.Registration([("[A0, F#4)", -20), ("[F#4, C8]", -6)]),
+        4: baca.Registration([("[A0, F#4)", -8), ("[F#4, C8]", 6)]),
+        5: baca.Registration([("[A0, F#4)", 4), ("[F#4, C8]", 18)]),
+        6: baca.Registration([("[A0, F#4)", 16), ("[F#4, C8]", 30)]),
+        7: baca.Registration([("[A0, F#4)", 28), ("[F#4, C8]", 42)]),
+    }
+    registration = start_to_registration[start]
+    baca.commands._do_register_command(argument, registration)
 
 
 def replace_with_clusters(flavor):

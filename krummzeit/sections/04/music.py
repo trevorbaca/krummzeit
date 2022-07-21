@@ -299,250 +299,110 @@ def pf(cache):
 
 
 def perc(m):
-    accumulator(
-        ("perc", (1, 9)),
-        baca.dynamic("ppp-ancora"),
-        baca.markup(r"\baca-snare-drum-markup"),
-        baca.staff_position(0),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-    )
-    accumulator(
-        ("perc", (14, 19)),
-        baca.markup(r"\baca-tam-tam-markup"),
-        baca.staff_position(0),
-        baca.dynamic("pp-sempre"),
-        baca.dls_staff_padding(6),
-    )
+    with baca.scope(m[1, 9]) as o:
+        baca.dynamic_function(o, "ppp-ancora")
+        baca.markup_function(o, r"\baca-snare-drum-markup")
+        baca.staff_position_function(o, 0)
+        baca.stem_tremolo_function(o.pleaves())
+    with baca.scope(m[14, 19]) as o:
+        baca.markup_function(o, r"\baca-tam-tam-markup")
+        baca.staff_position_function(o, 0)
+        baca.dynamic_function(o, "pp-sempre")
+        baca.dls_staff_padding_function(o, 6)
 
 
 def vn(m):
-    accumulator(
-        ("vn", 5),
-        baca.hairpin(
-            "ff > pp",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.ottava(),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("vn", 7),
-        baca.hairpin(
-            "pp < ff",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("vn", 9),
-        baca.hairpin(
-            "ff > pp",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("vn", (14, 16)),
-        baca.pitch("fs"),
-    )
+    with baca.scope(m[5]) as o:
+        baca.hairpin_function(o.tleaves(), "ff > pp")
+        baca.ottava_function(o.tleaves()),
+        baca.markup_function(o, r"\baca-pizz-markup"),
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[7]) as o:
+        baca.hairpin_function(o.tleaves(), "pp < ff")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[9]) as o:
+        baca.hairpin_function(o.tleaves(), "ff > pp")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[14, 16]) as o:
+        baca.pitch_function(o, "fs")
 
 
 def va(m):
-    accumulator(
-        ("va", 5),
-        baca.clef("treble"),
-        baca.hairpin(
-            "ff > pp",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.ottava(),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("va", 7),
-        baca.hairpin(
-            "pp < ff",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("va", 9),
-        baca.clef("alto"),
-        baca.hairpin(
-            "ff > pp",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("va", (11, 12)),
-        baca.markup(r"\baca-arco-markup"),
-        baca.dynamic("fff-poss"),
-    )
-    accumulator(
-        ("va", (11, 16)),
-        baca.pitch(
-            "bf,",
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
+    with baca.scope(m[5]) as o:
+        baca.clef_function(o, "treble"),
+        baca.hairpin_function(o.tleaves(), "ff > pp")
+        baca.ottava_function(o.tleaves()),
+        baca.markup_function(o, r"\baca-pizz-markup"),
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[7]) as o:
+        baca.hairpin_function(o.tleaves(), "pp < ff")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[9]) as o:
+        baca.clef_function(o, "alto"),
+        baca.hairpin_function(o.tleaves(), "ff > pp")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[11, 12]) as o:
+        baca.markup_function(o, r"\baca-arco-markup"),
+        baca.dynamic_function(o, "fff-poss"),
+    with baca.scope(m[11, 16]) as o:
+        baca.pitch_function(o, "bf,")
 
 
 def vc(m):
-    accumulator(
-        ("vc", 5),
-        baca.clef("treble"),
-        baca.hairpin(
-            "ff > pp",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.markup(r"\baca-pizz-markup"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("vc", 7),
-        baca.clef("bass"),
-        baca.hairpin(
-            "pp < ff",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("vc", 9),
-        baca.hairpin(
-            "ff > pp",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("vc", (14, 16)),
-        baca.pitch("a,,"),
-    )
+    with baca.scope(m[5]) as o:
+        baca.clef_function(o, "treble"),
+        baca.hairpin_function(o.tleaves(), "ff > pp")
+        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[7]) as o:
+        baca.clef_function(o, "bass"),
+        baca.hairpin_function(o.tleaves(), "pp < ff")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[9]) as o:
+        baca.hairpin_function(o.tleaves(), "ff > pp")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[14, 16]) as o:
+        baca.pitch_function(o, "a,,")
 
 
 def composites(cache):
-    # pf, vn, va, vc (1, 9)
-    pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
-    pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
-    accumulator(
-        baca.timeline(
-            [
-                ("pf", (1, 7)),
-                ("vn", (1, 9)),
-                ("va", (1, 9)),
-                ("vc", (1, 9)),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    accumulator(
-        ("pf", [1, 3, 5]),
-        library.displacement(),
-        baca.new(
-            library.register_narrow(7, 5),
-            match=0,
-        ),
-        baca.new(
-            library.register_narrow(5, 3),
-            match=1,
-        ),
-        baca.new(
-            library.register_narrow(3, 2),
-            match=2,
-        ),
-    )
-    accumulator(
-        ("vn", [5, 7, 9]),
-        library.displacement(),
-        baca.new(
-            library.register_narrow(7, 5),
-            match=0,
-        ),
-        baca.new(
-            library.register_narrow(5, 4),
-            match=1,
-        ),
-        baca.new(
-            library.register_narrow(5, 4),
-            match=2,
-        ),
-    )
-    accumulator(
-        ("va", [5, 7, 9]),
-        library.displacement(),
-        baca.new(
-            library.register_narrow(6, 5),
-            match=0,
-        ),
-        baca.new(
-            library.register_narrow(5, 4),
-            match=1,
-        ),
-        baca.new(
-            library.register_narrow(4, 2),
-            match=2,
-        ),
-    )
-    accumulator(
-        ("vc", [5, 7, 9]),
-        library.displacement(),
-        baca.new(
-            library.register_narrow(5, 4),
-            match=0,
-        ),
-        baca.new(
-            library.register_narrow(4, 3),
-            match=1,
-        ),
-        baca.new(
-            library.register_narrow(3, 2),
-            match=2,
-        ),
-    )
-    # vn, va, vc
-    accumulator(
-        (["vn", "va", "vc"], (5, 9)),
-        baca.dls_staff_padding(8),
-        baca.tuplet_bracket_staff_padding(4),
-    )
-    accumulator(
-        (["vn", "va", "vc"], (11, 16)),
-        baca.stem_up(),
-    )
-    accumulator(
-        (["vn", "va", "vc"], (14, 16)),
-        baca.new(
-            baca.markup(r"\baca-arco-markup"),
-            match=[0, 2],
-        ),
-        baca.dynamic("fff-poss"),
-    )
+    with baca.scope(
+        cache["pf"][1, 7] + cache["vn"][1, 9] + cache["va"][1, 9] + cache["vc"][1, 9]
+    ) as o:
+        pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
+        pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
+        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        baca.pitches_function(leaves, pcs)
+    for number in [1, 3, 5]:
+        library.displacement_function(cache["pf"][number])
+    library.register_narrow_function(cache["pf"][1], 7, 5)
+    library.register_narrow_function(cache["pf"][3], 5, 3)
+    library.register_narrow_function(cache["pf"][5], 3, 2)
+    for number in [5, 7, 9]:
+        library.displacement_function(cache["vn"][number])
+    library.register_narrow_function(cache["vn"][5], 7, 5)
+    library.register_narrow_function(cache["vn"][7], 5, 4)
+    library.register_narrow_function(cache["vn"][9], 5, 4)
+    for number in [5, 7, 9]:
+        library.displacement_function(cache["va"][number])
+    library.register_narrow_function(cache["va"][5], 6, 5)
+    library.register_narrow_function(cache["va"][7], 5, 4)
+    library.register_narrow_function(cache["va"][9], 4, 2)
+    for number in [5, 7, 9]:
+        library.displacement_function(cache["vc"][number])
+    library.register_narrow_function(cache["vc"][5], 5, 4)
+    library.register_narrow_function(cache["vc"][7], 4, 3)
+    library.register_narrow_function(cache["vc"][9], 3, 2)
+    for name in ["vn", "va", "vc"]:
+        m = cache[name]
+        with baca.scope(m[5, 9]) as o:
+            baca.dls_staff_padding_function(o, 8)
+            baca.tuplet_bracket_staff_padding_function(o, 4)
+        with baca.scope(m[11, 16]) as o:
+            baca.stem_up_function(o.tleaves())
+        baca.dynamic_function(m[14], "fff-poss")
+    baca.markup_function(cache["vn"][14], r"\baca-arco-markup")
+    baca.markup_function(cache["vc"][14], r"\baca-arco-markup")
 
 
 def main():
@@ -579,7 +439,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         transpose_score=True,
     )

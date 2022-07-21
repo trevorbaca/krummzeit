@@ -5737,7 +5737,6 @@ number.3.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -5762,7 +5761,6 @@ number.3.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -5772,7 +5770,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -5806,7 +5803,6 @@ number.3.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -5819,7 +5815,6 @@ number.3.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -5837,7 +5832,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -5872,7 +5866,6 @@ number.3.Piano.Music = {
     cs'''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.staccatissimo()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
@@ -5882,7 +5875,6 @@ number.3.Piano.Music = {
     cs'''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.staccatissimo()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
@@ -5892,7 +5884,6 @@ number.3.Piano.Music = {
     cs'''!2
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.staccatissimo()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
@@ -5917,7 +5908,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -5930,7 +5920,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -5948,7 +5937,6 @@ number.3.Piano.Music = {
         cs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -5991,7 +5979,6 @@ number.3.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6004,7 +5991,6 @@ number.3.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -6014,7 +6000,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6048,7 +6033,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6061,7 +6045,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6079,7 +6062,6 @@ number.3.Piano.Music = {
         cs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6122,7 +6104,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6135,7 +6116,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6148,7 +6128,6 @@ number.3.Piano.Music = {
         cs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6177,7 +6156,6 @@ number.3.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6190,7 +6168,6 @@ number.3.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6208,7 +6185,6 @@ number.3.Piano.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -7350,7 +7326,6 @@ number.3.Percussion.Music = {
     cs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.staccatissimo()
     - \staccatissimo
       %! EXPLICIT_DYNAMIC_COLOR
@@ -7375,7 +7350,6 @@ number.3.Percussion.Music = {
     cs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.staccatissimo()
     - \staccatissimo
     % STOP_BEAM:
@@ -7388,7 +7362,6 @@ number.3.Percussion.Music = {
     cs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.staccatissimo()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
@@ -7411,7 +7384,6 @@ number.3.Percussion.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7424,7 +7396,6 @@ number.3.Percussion.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7442,7 +7413,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -7487,7 +7457,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7500,7 +7469,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7513,7 +7481,6 @@ number.3.Percussion.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -7544,7 +7511,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7557,7 +7523,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7575,7 +7540,6 @@ number.3.Percussion.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -7620,7 +7584,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7633,7 +7596,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7646,7 +7608,6 @@ number.3.Percussion.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -7675,7 +7636,6 @@ number.3.Percussion.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7688,7 +7648,6 @@ number.3.Percussion.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7706,7 +7665,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -7749,7 +7707,6 @@ number.3.Percussion.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7762,7 +7719,6 @@ number.3.Percussion.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -7772,7 +7728,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7804,7 +7759,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7817,7 +7771,6 @@ number.3.Percussion.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7835,7 +7788,6 @@ number.3.Percussion.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:
@@ -8579,7 +8531,6 @@ number.3.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -8598,7 +8549,6 @@ number.3.Percussion.Music = {
     % MARKUP:
       %! baca.markup()
     ^ \baca-snare-drum-markup
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \krummzeit-fingertips-markup
     % SPANNER_STARTS:
@@ -8626,7 +8576,6 @@ number.3.Percussion.Music = {
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8641,7 +8590,6 @@ number.3.Percussion.Music = {
     c'4
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8658,7 +8606,6 @@ number.3.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8673,7 +8620,6 @@ number.3.Percussion.Music = {
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8690,7 +8636,6 @@ number.3.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8705,7 +8650,6 @@ number.3.Percussion.Music = {
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8722,7 +8666,6 @@ number.3.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8737,7 +8680,6 @@ number.3.Percussion.Music = {
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8754,7 +8696,6 @@ number.3.Percussion.Music = {
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8769,7 +8710,6 @@ number.3.Percussion.Music = {
     c'4
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8787,7 +8727,6 @@ number.3.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8806,7 +8745,6 @@ number.3.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8825,7 +8763,6 @@ number.3.Percussion.Music = {
     c'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8846,7 +8783,6 @@ number.3.Percussion.Music = {
     c'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8866,7 +8802,6 @@ number.3.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -8881,7 +8816,6 @@ number.3.Percussion.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -10088,10 +10022,8 @@ number.3.Violin.Music = {
       %! baca.hairpin()
     \pp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-non-flautando-markup
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \krummzeit-show-tempo-markup
     % SPANNER_STARTS:
@@ -10365,11 +10297,9 @@ number.3.Viola.Music = {
         % [Viola.Music measure 6]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 7
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 4
           %! krummzeit.make_single_division_tuplets()
         e4
@@ -10390,7 +10320,6 @@ number.3.Viola.Music = {
           %! baca.hairpin()
         \ff
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-molto-flautando-markup
         % SPANNER_STARTS:
@@ -11076,11 +11005,9 @@ number.3.Viola.Music = {
         dqs2
         % AFTER:
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
         % CLOSING:
         % COMMANDS:
@@ -11191,8 +11118,7 @@ number.3.Viola.Music = {
     % [Viola.Music measure 32]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 5
       %! krummzeit.make_fused_expanse()
     btqs,!1
@@ -11213,10 +11139,8 @@ number.3.Viola.Music = {
       %! baca.hairpin()
     \pp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-non-flautando-markup
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \krummzeit-show-tempo-markup
     % SPANNER_STARTS:
@@ -11321,8 +11245,7 @@ number.3.Viola.Music = {
       %! baca.hairpin()
     \fff
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -11540,7 +11463,6 @@ number.3.Cello.Music = {
           %! baca.hairpin()
         \ff
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-molto-flautando-markup
         % SPANNER_STARTS:
@@ -12333,8 +12255,7 @@ number.3.Cello.Music = {
     % [Cello.Music measure 32]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 5
       %! krummzeit.make_fused_expanse()
     b,,\breve
@@ -12355,10 +12276,8 @@ number.3.Cello.Music = {
       %! baca.hairpin()
     \pp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-non-flautando-markup
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \krummzeit-show-tempo-markup
     % SPANNER_STARTS:
@@ -12455,8 +12374,7 @@ number.3.Cello.Music = {
       %! baca.hairpin()
     \fff
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:

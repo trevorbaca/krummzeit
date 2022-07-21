@@ -214,7 +214,9 @@ def pf(cache):
         baca.stem_tremolo_function(o.pleaves())
         baca.dynamic_function(o, "fff-poss")
     with baca.scope(m[10]) as o:
-        baca.markup_function(o, r'\baca-boxed-markup "to harpsichord"')
+        baca.markup_function(
+            o, r'\baca-boxed-markup "to harpsichord"', allow_rests=True
+        )
 
 
 def perc(m):

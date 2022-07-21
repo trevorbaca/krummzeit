@@ -250,64 +250,52 @@ def VC(voice):
 
 
 def ob(m):
-    accumulator(
-        ("ob", (14, 16)),
-        baca.pitch("B3"),
-    )
-
-    accumulator(
-        ("ob", (14, 16)),
-        baca.stem_up(),
-        baca.dynamic("fff"),
-        baca.dls_staff_padding(5),
-    )
+    with baca.scope(m[14, 16]) as o:
+        baca.pitch_function(o, "B3")
+        baca.stem_up_function(o),
+        baca.dynamic_function(o, "fff")
+        baca.dls_staff_padding_function(o, 5)
 
 
 def cl(m):
-    accumulator(
-        ("cl", (14, 19)),
-        baca.instrument(library.instruments()["BassClarinet"]),
-        baca.pitch("B1"),
-        baca.stem_up(),
-        baca.dynamic("ppp"),
-    )
+    with baca.scope(m[14, 19]) as o:
+        baca.instrument_function(
+            o, library.instruments()["BassClarinet"], accumulator.manifests()
+        )
+        baca.pitch_function(o, "B1")
+        baca.stem_up_function(o)
+        baca.dynamic_function(o, "ppp")
 
 
-def pf(m):
-    accumulator(
-        ("pf", 1),
-        baca.hairpin("ff > pp"),
-        baca.ottava(),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("pf", 3),
-        baca.hairpin("pp < ff"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("pf", 5),
-        baca.clef("bass"),
-        baca.hairpin("ff > pp"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-    )
-    accumulator(
-        ("pf", (9, 12)),
-        baca.markup(r"\baca-senza-pedale-markup"),
-        library.replace_with_clusters("low"),
-        baca.ottava_bassa(),
-        baca.dynamic("fff"),
-    )
-    accumulator(
-        ("pf", (14, 16)),
-        library.replace_with_clusters("low"),
-        baca.ottava_bassa(),
-        baca.dynamic("fff"),
-    )
-    accumulator(
-        ("pf", (9, 16)),
-        baca.dls_staff_padding(10),
-    )
+def pf(cache):
+    m = cache["pf"]
+    with baca.scope(m[1]) as o:
+        baca.hairpin_function(o, "ff > pp")
+        baca.ottava_function(o)
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[3]) as o:
+        baca.hairpin_function(o, "pp < ff")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[5]) as o:
+        baca.clef_function(o, "bass")
+        baca.hairpin_function(o, "ff > pp")
+        baca.staccatissimo_function(o.pheads())
+    with baca.scope(m[9, 12]) as o:
+        baca.markup_function(o, r"\baca-senza-pedale-markup")
+        library.replace_with_clusters_function(o, "low")
+        cache.rebuild()
+        m = cache["pf"]
+    with baca.scope(m[9, 12]) as o:
+        baca.ottava_bassa_function(o.tleaves())
+        baca.dynamic_function(o, "fff")
+    library.replace_with_clusters_function(m[14, 16], "low")
+    cache.rebuild()
+    m = cache["pf"]
+    with baca.scope(m[14, 16]) as o:
+        baca.ottava_bassa_function(o.tleaves())
+        baca.dynamic_function(o, "fff")
+    with baca.scope(m[9, 16]) as o:
+        baca.dls_staff_padding_function(o, 10)
 
 
 def perc(m):
@@ -574,7 +562,7 @@ def main():
     )
     ob(cache["ob"])
     cl(cache["cl"])
-    pf(cache["pf"])
+    pf(cache)
     perc(cache["perc"])
     vn(cache["vn"])
     va(cache["va"])

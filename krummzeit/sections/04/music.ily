@@ -1709,11 +1709,9 @@ number.4.Oboe.Music = {
     % [Oboe.Music measure 14]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 5
-      %! baca.OverrideCommand._call(1)
-      %! baca.stem_up()
+      %! baca.stem_up_function(1)
     \override Stem.direction = #up
       %! baca.make_repeat_tied_notes()
     b1
@@ -1772,11 +1770,9 @@ number.4.Oboe.Music = {
     % SPANNER_STARTS:
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.stem_up()
+      %! baca.stem_up_function(2)
     \revert Stem.direction
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2065,8 +2061,7 @@ number.4.Clarinet.Music = {
     % [Clarinet.Music measure 14]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.stem_up()
+      %! baca.stem_up_function(1)
     \override Stem.direction = #up
       %! baca.make_repeat_tied_notes()
     cs!1
@@ -2201,8 +2196,7 @@ number.4.Clarinet.Music = {
     % SPANNER_STARTS:
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.stem_up()
+      %! baca.stem_up_function(2)
     \revert Stem.direction
     % CLOSING:
     % COMMANDS:
@@ -2251,7 +2245,7 @@ number.4.Piano.Music = {
         % BEFORE:
         % COMMANDS:
           %! SPANNER_START
-          %! baca.SpannerIndicatorCommand._call(2)
+          %! baca._attach_start_stop_indicators(2)
           %! baca.ottava()
         \ottava 1
           %! baca._clone_section_initial_short_instrument_name()
@@ -2285,7 +2279,6 @@ number.4.Piano.Music = {
         e''''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2349,7 +2342,6 @@ number.4.Piano.Music = {
         ef''''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -2362,7 +2354,6 @@ number.4.Piano.Music = {
         f''''8.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -2389,7 +2380,6 @@ number.4.Piano.Music = {
         cs''''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -2404,7 +2394,6 @@ number.4.Piano.Music = {
         d'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -2414,7 +2403,6 @@ number.4.Piano.Music = {
         e'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -2424,7 +2412,6 @@ number.4.Piano.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2443,7 +2430,7 @@ number.4.Piano.Music = {
         \pp
         % COMMANDS:
           %! SPANNER_STOP
-          %! baca.SpannerIndicatorCommand._call(4)
+          %! baca._attach_start_stop_indicators(4)
           %! baca.ottava()
         \ottava 0
         % CLOSING:
@@ -2481,7 +2468,6 @@ number.4.Piano.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2525,7 +2511,6 @@ number.4.Piano.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -2538,7 +2523,6 @@ number.4.Piano.Music = {
         a'8.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -2567,7 +2551,6 @@ number.4.Piano.Music = {
         ef'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -2582,7 +2565,6 @@ number.4.Piano.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -2595,7 +2577,6 @@ number.4.Piano.Music = {
         b8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -2605,7 +2586,6 @@ number.4.Piano.Music = {
         c'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2689,7 +2669,6 @@ number.4.Piano.Music = {
         af!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2738,7 +2717,6 @@ number.4.Piano.Music = {
         g8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -2748,7 +2726,6 @@ number.4.Piano.Music = {
         a4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -2774,7 +2751,6 @@ number.4.Piano.Music = {
         c16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -2789,7 +2765,6 @@ number.4.Piano.Music = {
         ef,!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -2802,7 +2777,6 @@ number.4.Piano.Music = {
         c8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -2812,7 +2786,6 @@ number.4.Piano.Music = {
         cs,!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -2882,11 +2855,10 @@ number.4.Piano.Music = {
     % BEFORE:
     % COMMANDS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.ottava_bassa()
     \ottava -1
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 10
     % GROB_OVERRIDES:
     \once \override Accidental.stencil = ##f
@@ -2911,7 +2883,6 @@ number.4.Piano.Music = {
       %! baca.dynamic()
     \fff
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-senza-pedale-markup
     ^ \markup \center-align \concat { \natural \flat }
@@ -3009,7 +2980,7 @@ number.4.Piano.Music = {
     ^ \markup \center-align \concat { \natural \flat }
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.ottava_bassa()
     \ottava 0
     % ABSOLUTE_BEFORE:
@@ -3032,7 +3003,7 @@ number.4.Piano.Music = {
     % BEFORE:
     % COMMANDS:
       %! SPANNER_START
-      %! baca.SpannerIndicatorCommand._call(2)
+      %! baca._attach_start_stop_indicators(2)
       %! baca.ottava_bassa()
     \ottava -1
     % GROB_OVERRIDES:
@@ -3118,11 +3089,10 @@ number.4.Piano.Music = {
     ^ \markup \center-align \concat { \natural \flat }
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca.SpannerIndicatorCommand._call(4)
+      %! baca._attach_start_stop_indicators(4)
       %! baca.ottava_bassa()
     \ottava 0
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:

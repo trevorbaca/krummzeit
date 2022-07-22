@@ -5873,7 +5873,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -5898,7 +5897,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -5908,7 +5906,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -5942,7 +5939,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -5955,7 +5951,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -5973,7 +5968,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6006,7 +6000,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6019,7 +6012,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6032,7 +6024,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6061,7 +6052,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6074,7 +6064,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6092,7 +6081,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:
@@ -6344,7 +6332,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -6369,7 +6356,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -6379,7 +6365,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6413,7 +6398,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6426,7 +6410,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6444,7 +6427,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6485,7 +6467,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6498,7 +6479,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6516,7 +6496,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6549,7 +6528,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6562,7 +6540,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -6572,7 +6549,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6606,7 +6582,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6619,7 +6594,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6637,7 +6611,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6668,7 +6641,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6681,7 +6653,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6694,7 +6665,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6723,7 +6693,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6736,7 +6705,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6754,7 +6722,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6785,7 +6752,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6798,7 +6764,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -6808,7 +6773,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6847,7 +6811,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6860,7 +6823,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6873,7 +6835,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6902,7 +6863,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6915,7 +6875,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -6933,7 +6892,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -6964,7 +6922,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -6977,7 +6934,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -6987,7 +6943,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7019,7 +6974,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7032,7 +6986,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7050,7 +7003,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -7083,7 +7035,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7096,7 +7047,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7109,7 +7059,6 @@ number.5.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -7138,7 +7087,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -7151,7 +7099,6 @@ number.5.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -7169,7 +7116,6 @@ number.5.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:
@@ -8353,7 +8299,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
@@ -8378,7 +8323,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8391,7 +8335,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -8420,7 +8363,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -8433,7 +8375,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8451,7 +8392,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -8482,7 +8422,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -8495,7 +8434,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8508,7 +8446,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -8539,7 +8476,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -8552,7 +8488,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8570,7 +8505,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:
@@ -8714,7 +8648,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
           %! REDUNDANT_DYNAMIC_COLOR
@@ -8739,7 +8672,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8752,7 +8684,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -8783,7 +8714,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -8796,7 +8726,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8814,7 +8743,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -8845,7 +8773,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -8858,7 +8785,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -8868,7 +8794,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8902,7 +8827,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -8915,7 +8839,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8933,7 +8856,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -8966,7 +8888,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -8979,7 +8900,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -8992,7 +8912,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -9028,7 +8947,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9041,7 +8959,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -9051,7 +8968,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9083,7 +8999,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9096,7 +9011,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9114,7 +9028,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -9145,7 +9058,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9158,7 +9070,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9171,7 +9082,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -9200,7 +9110,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9213,7 +9122,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9231,7 +9139,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -9262,7 +9169,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9275,7 +9181,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -9285,7 +9190,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9317,7 +9221,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9330,7 +9233,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9348,7 +9250,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -9384,7 +9285,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9397,7 +9297,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9415,7 +9314,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % CLOSING:
@@ -9446,7 +9344,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9459,7 +9356,6 @@ number.5.Percussion.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
@@ -9469,7 +9365,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9503,7 +9398,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % START_BEAM:
@@ -9516,7 +9410,6 @@ number.5.Percussion.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % STOP_BEAM:
@@ -9534,7 +9427,6 @@ number.5.Percussion.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:

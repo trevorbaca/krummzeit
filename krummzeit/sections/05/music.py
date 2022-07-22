@@ -354,49 +354,36 @@ def pf(cache):
 
 
 def perc(m):
-    accumulator(
-        "perc",
-        baca.staff_lines(1),
-        baca.markup(r"\baca-tam-tam-markup"),
-        baca.dynamic("pp-ancora"),
-    )
-    accumulator(
-        ("perc", (1, 3)),
-        baca.dls_staff_padding(6),
-    )
-    accumulator(
-        ("perc", (1, 24)),
-        baca.staff_position(0),
-    )
-    accumulator(
-        ("perc", (6, 16)),
-        baca.markup(r"\baca-sponges-markup"),
-        baca.accent(selector=lambda _: baca.select.pheads(_)),
-        baca.dynamic('"ff"'),
-        baca.markup(r"\krummzeit-accent-changes-markup"),
-    )
-    accumulator(
-        ("perc", (25, 26)),
-        baca.staff_lines(5),
-        baca.clef("treble"),
-    )
-    accumulator(
-        ("perc", [(25, 26), (35, 42)]),
-        baca.beam_positions(-4),
-        baca.dls_staff_padding(6),
-        baca.tuplet_bracket_staff_padding(3),
-    )
-    accumulator(
-        ("perc", (43, 48)),
-        baca.staff_lines(1),
-        baca.clef("percussion"),
-        baca.dynamic("ppp"),
-        baca.dls_staff_padding(6),
-        baca.staff_position(0),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.markup(r"\krummzeit-attackless-roll-markup"),
-        baca.markup(r"\baca-suspended-cymbal-markup"),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.staff_lines_function(o, 1)
+        baca.markup_function(o, r"\baca-tam-tam-markup")
+        baca.dynamic_function(o, "pp-ancora")
+    with baca.scope(m[1, 3]) as o:
+        baca.dls_staff_padding_function(o, 6)
+    with baca.scope(m[1, 24]) as o:
+        baca.staff_position_function(o, 0)
+    with baca.scope(m[6, 16]) as o:
+        baca.markup_function(o, r"\baca-sponges-markup")
+        baca.accent_function(o.pheads())
+        baca.dynamic_function(o, '"ff"')
+        baca.markup_function(o, r"\krummzeit-accent-changes-markup")
+    with baca.scope(m[25, 26]) as o:
+        baca.staff_lines_function(o, 5)
+        baca.clef_function(o, "treble")
+    for pair in [(25, 26), (35, 42)]:
+        with baca.scope(m[pair]) as o:
+            baca.beam_positions_function(o, -4)
+            baca.dls_staff_padding_function(o, 6)
+            baca.tuplet_bracket_staff_padding_function(o, 3)
+    with baca.scope(m[43, 48]) as o:
+        baca.staff_lines_function(o, 1)
+        baca.clef_function(o, "percussion")
+        baca.dynamic_function(o, "ppp")
+        baca.dls_staff_padding_function(o, 6)
+        baca.staff_position_function(o, 0)
+        baca.stem_tremolo_function(o.pleaves())
+        baca.markup_function(o, r"\krummzeit-attackless-roll-markup")
+        baca.markup_function(o, r"\baca-suspended-cymbal-markup")
 
 
 def pf_perc(cache):

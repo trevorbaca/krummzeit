@@ -399,182 +399,96 @@ def pf_perc(cache):
 
 
 def strings(cache):
-    # va
-    accumulator(
-        ("va", (8, 13)),
-        baca.beam_positions(-4),
-        baca.dls_staff_padding(6),
-        baca.tuplet_bracket_staff_padding(3),
-    )
-    # vn, va, vc (1, 13)
-    pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
-    pcs = pcs.rotate(-241).retrograde().transpose(7)
-    accumulator(
-        baca.timeline(
-            [
-                ("vn", (1, 13)),
-                ("va", (1, 7)),
-                ("vc", (1, 13)),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    accumulator(
-        ("vn", (1, 13)),
-        baca.dynamic('"mp"'),
-        baca.glissando(),
-        library.register_narrow(4),
-        baca.markup(r"\krummzeit-on-bridge-slow-markup"),
-    )
-    accumulator(
-        ("va", (1, 7)),
-        baca.dynamic('"mp"'),
-        baca.glissando(),
-        library.register_narrow(3),
-        baca.markup(r"\krummzeit-on-bridge-slow-markup"),
-    )
-    accumulator(
-        ("vc", (1, 13)),
-        baca.dynamic('"mp"'),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-        library.register_narrow(2),
-        baca.markup(r"\krummzeit-on-bridge-slow-markup"),
-    )
-    # vn, va, vc (8, 34)
-    pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
-    pcs = pcs.rotate(-241).retrograde().transpose(7).invert()
-    accumulator(
-        baca.timeline(
-            [
-                ("va", (8, 34)),
-                ("vn", (14, 34)),
-                ("vc", (14, 34)),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    accumulator(
-        [
-            ("va", (8, 34)),
-            (["vn", "vc"], (14, 34)),
-        ],
-        baca.new(
-            baca.clef("treble"),
-            match=2,
-        ),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_, exclude=baca.enums.HIDDEN),
-        ),
-        library.register_narrow(5),
-        baca.note_head_style_harmonic(),
-    )
-    accumulator(
-        ("va", (8, 10)),
-        baca.clef("treble"),
-        baca.hairpin(
-            "pp < f",
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-        baca.markup(r"\baca-molto-flautando-markup"),
-    )
-    accumulator(
-        ("va", (11, 16)),
-        baca.new(
-            baca.hairpin(
-                "pp < f",
-            ),
-            baca.text_spanner(
+    with baca.scope(cache["va"].get(8, 13)) as o:
+        baca.beam_positions_function(o, -4)
+        baca.dls_staff_padding_function(o, 6)
+        baca.tuplet_bracket_staff_padding_function(o, 3)
+    with baca.scope(
+        cache["vn"].get(1, 13) + cache["va"].get(1, 7) + cache["vc"].get(1, 13)
+    ) as o:
+        pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
+        pcs = pcs.rotate(-241).retrograde().transpose(7)
+        leaves = baca.select.sort_by_timeline(o.leaves())
+        baca.pitches_function(leaves, pcs)
+    with baca.scope(cache["vn"].get(1, 13)) as o:
+        baca.dynamic_function(o, '"mp"')
+        baca.glissando_function(
+            o,
+        )
+        library.register_narrow_function(o, 4)
+        baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
+    with baca.scope(cache["va"].get(1, 7)) as o:
+        baca.dynamic_function(o, '"mp"')
+        baca.glissando_function(o)
+        library.register_narrow_function(o, 3)
+        baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
+    with baca.scope(cache["vc"].get(1, 13)) as o:
+        baca.dynamic_function(o, '"mp"')
+        library.register_narrow_function(o, 2)
+        baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
+        for run in baca.select.runs(o):
+            baca.glissando_function(run)
+    with baca.scope(
+        cache["va"].get(8, 34) + cache["vn"].get(14, 34) + cache["vc"].get(14, 34)
+    ) as o:
+        leaves = baca.select.sort_by_timeline(o.leaves())
+        pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
+        pcs = pcs.rotate(-241).retrograde().transpose(7).invert()
+        baca.pitches_function(leaves, pcs)
+    baca.clef_function(cache["vc"].get(14), "treble")
+    for item in (
+        cache["va"].get(8, 34),
+        cache["vn"].get(14, 34),
+        cache["vc"].get(14, 34),
+    ):
+        with baca.scope(item) as o:
+            for run in baca.select.runs(o):
+                baca.glissando_function(run)
+            library.register_narrow_function(o, 5)
+            baca.note_head_style_harmonic_function(o)
+    with baca.scope(cache.va.get(8, 10)) as o:
+        baca.clef_function(o, "treble")
+        baca.hairpin_function(o.tleaves(), "pp < f")
+        baca.markup_function(o, r"\baca-molto-flautando-markup")
+    with baca.scope(cache.va.get(11, 16)) as o:
+        baca.hairpin_function(o.tleaves(), "pp < f")
+        baca.text_spanner_function(
+            o.tleaves(),
+            "molto flautando => molto gridato",
+            abjad.Tweak(r"- \tweak staff-padding 6"),
+        )
+    for name in ["vn", "vc"]:
+        with baca.scope(cache[name].get(14, 16)) as o:
+            baca.hairpin_function(o.tleaves(), "pp < f")
+            baca.text_spanner_function(
+                o.tleaves(),
                 "molto flautando => molto gridato",
                 abjad.Tweak(r"- \tweak staff-padding 6"),
-            ),
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-    )
-    accumulator(
-        (["vn", "vc"], (14, 16)),
-        baca.new(
-            baca.hairpin(
-                "pp < f",
-            ),
-            baca.text_spanner(
-                "molto flautando => molto gridato",
-                abjad.Tweak(r"- \tweak staff-padding 6"),
-            ),
-            selector=lambda _: baca.select.tleaves(
-                _,
-            ),
-        ),
-    )
-    accumulator(
-        (["vn", "va", "vc"], 17),
-        baca.dynamic("ff"),
-        baca.markup(r"\baca-scratch-molto-markup"),
-    )
-    accumulator(
-        (["vn", "va", "vc"], 27),
-        baca.dynamic("ff-ancora"),
-        baca.markup(r"\baca-scratch-molto-markup"),
-    )
-    accumulator(
-        (["vn", "va", "vc"], (14, 34)),
-        baca.beam_positions(-4),
-        baca.dls_staff_padding(6),
-        baca.tuplet_bracket_staff_padding(3),
-    )
-    # vn, va, vc (39, 48)
-    accumulator(
-        (["vn", "va", "vc"], (39, 48)),
-        baca.markup(r"\baca-ordinario-markup"),
-        baca.new(
-            baca.pitch(
-                "A+3",
-                selector=lambda _: baca.select.plts(_),
-            ),
-            match=0,
-        ),
-        baca.new(
-            baca.clef("alto"),
-            baca.pitch(
-                "Bb2",
-                selector=lambda _: baca.select.plts(_),
-            ),
-            match=1,
-        ),
-        baca.new(
-            baca.clef("bass"),
-            baca.pitch(
-                "A2",
-                selector=lambda _: baca.select.plts(_),
-            ),
-            match=2,
-        ),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.dynamic("mp"),
-        baca.new(
-            baca.dls_staff_padding(8),
-            match=[0, 1],
-        ),
-        baca.new(
-            baca.dls_staff_padding(6),
-            match=2,
-        ),
-    )
+            )
+    for name, pitch in zip(["vn", "va", "vc"], ["A+3", "Bb2", "A2"]):
+        m = cache[name]
+        with baca.scope(m[17]) as o:
+            baca.dynamic_function(o, "ff")
+            baca.markup_function(o, r"\baca-scratch-molto-markup")
+        with baca.scope(m[27]) as o:
+            baca.dynamic_function(o, "ff-ancora")
+            baca.markup_function(o, r"\baca-scratch-molto-markup")
+        with baca.scope(m.get(14, 34)) as o:
+            baca.beam_positions_function(o, -4)
+            baca.dls_staff_padding_function(o, 6)
+            baca.tuplet_bracket_staff_padding_function(o, 3)
+        with baca.scope(m.get(39, 48)) as o:
+            baca.pitch_function(o, pitch)
+            baca.stem_tremolo_function(o.pleaves())
+            baca.dynamic_function(o, "mp")
+            baca.markup_function(o, r"\baca-ordinario-markup")
+    baca.dls_staff_padding_function(cache.vn.get(39, 48), 8)
+    with baca.scope(cache.va.get(39, 48)) as o:
+        baca.clef_function(o, "alto")
+        baca.dls_staff_padding_function(o, 8)
+    with baca.scope(cache.vc.get(39, 48)) as o:
+        baca.clef_function(o, "bass")
+        baca.dls_staff_padding_function(o, 6)
 
 
 def main():
@@ -610,7 +524,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         transpose_score=True,
     )

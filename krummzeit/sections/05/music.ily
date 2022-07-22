@@ -3967,20 +3967,6 @@ number.5.Oboe.Music = {
         \baca-repeat-pitch-class-coloring
           %! krummzeit.make_color_tuplets()
         f''4
-        % AFTER:
-        % ARTICULATIONS:
-          %! REDUNDANT_DYNAMIC_COLOR
-          %! baca.treat_persistent_wrapper()
-          %! REDUNDANT_DYNAMIC
-          %! baca.IndicatorCommand._call()
-          %! baca._set_status_tag()
-          %! baca.dynamic()
-        - \tweak color #(x11-color 'DeepPink1)
-          %! REDUNDANT_DYNAMIC
-          %! baca.IndicatorCommand._call()
-          %! baca._set_status_tag()
-          %! baca.dynamic()
-        \mf
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
@@ -4162,20 +4148,6 @@ number.5.Oboe.Music = {
     \baca-repeat-pitch-class-coloring
       %! krummzeit.make_color_tuplets()
     f''4
-    % AFTER:
-    % ARTICULATIONS:
-      %! REDUNDANT_DYNAMIC_COLOR
-      %! baca.treat_persistent_wrapper()
-      %! REDUNDANT_DYNAMIC
-      %! baca.IndicatorCommand._call()
-      %! baca._set_status_tag()
-      %! baca.dynamic()
-    - \tweak color #(x11-color 'DeepPink1)
-      %! REDUNDANT_DYNAMIC
-      %! baca.IndicatorCommand._call()
-      %! baca._set_status_tag()
-      %! baca.dynamic()
-    \mf
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
@@ -5106,19 +5078,6 @@ number.5.Clarinet.Music = {
           %! krummzeit.make_color_tuplets()
         g'''4.
         % AFTER:
-        % ARTICULATIONS:
-          %! REDUNDANT_DYNAMIC_COLOR
-          %! baca.treat_persistent_wrapper()
-          %! REDUNDANT_DYNAMIC
-          %! baca.IndicatorCommand._call()
-          %! baca._set_status_tag()
-          %! baca.dynamic()
-        - \tweak color #(x11-color 'DeepPink1)
-          %! REDUNDANT_DYNAMIC
-          %! baca.IndicatorCommand._call()
-          %! baca._set_status_tag()
-          %! baca.dynamic()
-        \mf
         % SPANNER_STARTS:
           %! krummzeit.make_color_tuplets()
         ~
@@ -5283,20 +5242,6 @@ number.5.Clarinet.Music = {
         \baca-repeat-pitch-class-coloring
           %! krummzeit.make_color_tuplets()
         g'''8
-        % AFTER:
-        % ARTICULATIONS:
-          %! REDUNDANT_DYNAMIC_COLOR
-          %! baca.treat_persistent_wrapper()
-          %! REDUNDANT_DYNAMIC
-          %! baca.IndicatorCommand._call()
-          %! baca._set_status_tag()
-          %! baca.dynamic()
-        - \tweak color #(x11-color 'DeepPink1)
-          %! REDUNDANT_DYNAMIC
-          %! baca.IndicatorCommand._call()
-          %! baca._set_status_tag()
-          %! baca.dynamic()
-        \mf
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 

@@ -439,14 +439,14 @@ def vc(m):
 def _1_37_quartet(cache):
     with baca.scope(cache["pf"][1, 11] + cache["vn"][1, 11] + cache["cl"][1, 11]) as o:
         pcs = library.indigo_pitch_classes()
-        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches_function(leaves, pcs, allow_repeats=True)
     with baca.scope(
         cache["pf"][12, 22] + cache["vn"][12, 22] + cache["cl"][12, 22]
     ) as o:
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.transpose(1)
-        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches_function(leaves, pcs)
     with baca.scope(
         cache["pf"][23, 37]
@@ -456,7 +456,7 @@ def _1_37_quartet(cache):
     ) as o:
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.rotate(-155).transpose(3)
-        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches_function(leaves, pcs)
     for name in ["pf", "vn", "ob", "cl"]:
         library.displacement_function(cache[name][1, 37])
@@ -495,7 +495,7 @@ def _34_53_strings(cache):
         cache["vn"][38, 53] + cache["va"][34, 47] + cache["vc"][34, 51]
     ) as o:
         pcs = library.violet_pitch_classes()
-        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches_function(leaves, pcs)
     with baca.scope(cache["va"][34, 47]) as o:
         baca.alternate_bow_strokes_function(o.pheads())
@@ -529,7 +529,7 @@ def _48_75_quartet(cache):
     ) as o:
         pcs = library.violet_pitch_classes()
         pcs = abjad.PitchClassSegment(pcs).rotate(-60).transpose(1)
-        leaves = baca.interpret._sort_by_timeline(o.leaves())
+        leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches_function(leaves, pcs)
     with baca.scope(cache["va"][48, 71]) as o:
         baca.clef_function(o, "treble"),

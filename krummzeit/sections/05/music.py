@@ -387,19 +387,15 @@ def perc(m):
 
 
 def pf_perc(cache):
-    accumulator(
-        (["pf", "perc"], [(25, 26), (35, 38), (39, 42)]),
-        baca.new(
-            baca.clef("treble"),
-            match=0,
-        ),
-        baca.pitch("F#6"),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-        baca.new(
-            baca.dynamic("ff"),
-            match=[0, 1, 3, 4],
-        ),
-    )
+    for name in ["pf", "perc"]:
+        for i, pair in enumerate([(25, 26), (35, 38), (39, 42)]):
+            with baca.scope(cache[name][pair]) as o:
+                if i == 0:
+                    baca.clef_function(o, "treble")
+                baca.pitch_function(o, "F#6")
+                baca.staccatissimo_function(o.pheads())
+                if i != 2:
+                    baca.dynamic_function(o, "ff")
 
 
 def strings(cache):

@@ -7500,8 +7500,7 @@ number.5.Percussion.Music = {
     % [Percussion.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 6
       %! -PARTS
       %! EXPLICIT_BAR_EXTENT
@@ -7607,7 +7606,6 @@ number.5.Percussion.Music = {
       %! baca.dynamic()
     \baca-pp-ancora
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-tam-tam-markup
     % ABSOLUTE_BEFORE:
@@ -7646,8 +7644,7 @@ number.5.Percussion.Music = {
     r8.
     % AFTER:
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7692,7 +7689,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
           %! EXPLICIT_DYNAMIC_COLOR
@@ -7708,10 +7704,8 @@ number.5.Percussion.Music = {
           %! baca.dynamic()
         \baca-effort-ff
         % MARKUP:
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \baca-sponges-markup
-          %! baca.IndicatorCommand._call()
           %! baca.markup()
         ^ \krummzeit-accent-changes-markup
         % ABSOLUTE_BEFORE:
@@ -7721,7 +7715,6 @@ number.5.Percussion.Music = {
         c'1
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -7731,7 +7724,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -7741,7 +7733,6 @@ number.5.Percussion.Music = {
         c'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % SPANNER_STARTS:
@@ -7782,7 +7773,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -7792,7 +7782,6 @@ number.5.Percussion.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % SPANNER_STARTS:
@@ -7859,7 +7848,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -7869,7 +7857,6 @@ number.5.Percussion.Music = {
         c'4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % SPANNER_STARTS:
@@ -7922,7 +7909,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -7932,7 +7918,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % SPANNER_STARTS:
@@ -7975,7 +7960,6 @@ number.5.Percussion.Music = {
     c'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.accent()
     - \accent
     % SPANNER_STARTS:
@@ -8010,7 +7994,6 @@ number.5.Percussion.Music = {
         c'2..
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % SPANNER_STARTS:
@@ -8051,7 +8034,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -8061,7 +8043,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % SPANNER_STARTS:
@@ -8104,7 +8085,6 @@ number.5.Percussion.Music = {
     c'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.accent()
     - \accent
     % SPANNER_STARTS:
@@ -8129,7 +8109,6 @@ number.5.Percussion.Music = {
     c'2..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.accent()
     - \accent
     % SPANNER_STARTS:
@@ -8164,7 +8143,6 @@ number.5.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -8174,7 +8152,6 @@ number.5.Percussion.Music = {
         c'1
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % ABSOLUTE_BEFORE:
@@ -8184,7 +8161,6 @@ number.5.Percussion.Music = {
         c'4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.IndicatorCommand._call()
           %! baca.accent()
         - \accent
         % CLOSING:
@@ -8314,11 +8290,9 @@ number.5.Percussion.Music = {
           %! SHIFTED_CLEF
           %! baca.clef_extra_offset_function(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-          %! baca.OverrideCommand._call(1)
-          %! baca.beam_positions()
+          %! baca.beam_positions_function(1)
         \override Beam.positions = #'(-4 . -4)
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 6
           %! -PARTS
           %! EXPLICIT_BAR_EXTENT
@@ -8326,8 +8300,7 @@ number.5.Percussion.Music = {
           %! baca._set_status_tag()
           %! baca.staff_lines(1)
         \override Staff.BarLine.bar-extent = #'(-2 . 2)
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 3
           %! EXPLICIT_STAFF_LINES
           %! baca.IndicatorCommand._call()
@@ -8601,14 +8574,11 @@ number.5.Percussion.Music = {
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.beam_positions()
+          %! baca.beam_positions_function(2)
         \revert Beam.positions
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
         % CLOSING:
         % COMMANDS:
@@ -8729,14 +8699,11 @@ number.5.Percussion.Music = {
         % [Percussion.Music measure 35]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.beam_positions()
+          %! baca.beam_positions_function(1)
         \override Beam.positions = #'(-4 . -4)
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 6
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 3
           %! krummzeit.make_silver_points_rhythm()
         r8
@@ -9571,14 +9538,11 @@ number.5.Percussion.Music = {
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.beam_positions()
+          %! baca.beam_positions_function(2)
         \revert Beam.positions
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
         % CLOSING:
         % COMMANDS:
@@ -9601,8 +9565,7 @@ number.5.Percussion.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
     \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 6
       %! EXPLICIT_STAFF_LINES
       %! baca.IndicatorCommand._call()
@@ -9644,7 +9607,6 @@ number.5.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % ARTICULATIONS:
@@ -9661,10 +9623,8 @@ number.5.Percussion.Music = {
       %! baca.dynamic()
     \ppp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-suspended-cymbal-markup
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \krummzeit-attackless-roll-markup
     % SPANNER_STARTS:
@@ -9690,7 +9650,6 @@ number.5.Percussion.Music = {
     c'2
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -9708,7 +9667,6 @@ number.5.Percussion.Music = {
     c'1
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -9728,7 +9686,6 @@ number.5.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -9743,7 +9700,6 @@ number.5.Percussion.Music = {
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -9761,7 +9717,6 @@ number.5.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -9779,7 +9734,6 @@ number.5.Percussion.Music = {
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -9794,7 +9748,6 @@ number.5.Percussion.Music = {
     c'4
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -9811,7 +9764,6 @@ number.5.Percussion.Music = {
     c'2.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
@@ -9826,14 +9778,12 @@ number.5.Percussion.Music = {
     c'4.
     % AFTER:
     % STEM_TREMOLOS:
-      %! baca.IndicatorCommand._call()
       %! baca.stem_tremolo()
     :32
     % SPANNER_STARTS:
     \repeatTie
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % CLOSING:
     % COMMANDS:

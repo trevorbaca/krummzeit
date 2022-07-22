@@ -5388,8 +5388,7 @@ number.5.Piano.Music = {
     % [Piano.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 3
       %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \krummzeit-pf-markup
@@ -5532,14 +5531,12 @@ number.5.Piano.Music = {
     % [Piano.Music measure 8]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(1)
     \override NoteHead.style = #'harmonic
       %! krummzeit.make_piano_harmonics_rhythm()
     c'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
       %! EXPLICIT_DYNAMIC_COLOR
@@ -5555,7 +5552,6 @@ number.5.Piano.Music = {
       %! baca.dynamic()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \krummzeit-fifth-harmonic-of-F-one-markup
     % ABSOLUTE_BEFORE:
@@ -5565,7 +5561,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
@@ -5593,7 +5588,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
@@ -5630,7 +5624,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
@@ -5650,7 +5643,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
@@ -5670,7 +5662,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % SPANNER_STARTS:
@@ -5683,8 +5674,7 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(2)
     \revert NoteHead.style
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5819,8 +5809,7 @@ number.5.Piano.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"3" #"4"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5845,14 +5834,11 @@ number.5.Piano.Music = {
           %! SHIFTED_CLEF
           %! baca.clef_extra_offset_function(1)
         \once \override Staff.Clef.extra-offset = #'(-2.5 . 0)
-          %! baca.OverrideCommand._call(1)
-          %! baca.beam_positions()
+          %! baca.beam_positions_function(1)
         \override Beam.positions = #'(-4 . -4)
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 6
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 3
         % OPENING:
         % COMMANDS:
@@ -6110,14 +6096,11 @@ number.5.Piano.Music = {
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.beam_positions()
+          %! baca.beam_positions_function(2)
         \revert Beam.positions
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
         % CLOSING:
         % COMMANDS:
@@ -6132,17 +6115,14 @@ number.5.Piano.Music = {
     % [Piano.Music measure 27]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 3
-      %! baca.OverrideCommand._call(1)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(1)
     \override NoteHead.style = #'harmonic
       %! krummzeit.make_piano_harmonics_rhythm()
     c'2.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
       %! EXPLICIT_DYNAMIC_COLOR
@@ -6158,7 +6138,6 @@ number.5.Piano.Music = {
       %! baca.dynamic()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \krummzeit-fifth-harmonic-of-F-one-markup
     % ABSOLUTE_BEFORE:
@@ -6168,7 +6147,6 @@ number.5.Piano.Music = {
     c'2
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6180,7 +6158,6 @@ number.5.Piano.Music = {
     c'2
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6190,7 +6167,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6202,7 +6178,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6212,7 +6187,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6222,7 +6196,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6234,7 +6207,6 @@ number.5.Piano.Music = {
     c'2.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6244,7 +6216,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6256,7 +6227,6 @@ number.5.Piano.Music = {
     c'2..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6266,7 +6236,6 @@ number.5.Piano.Music = {
     c'2
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6278,7 +6247,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6288,7 +6256,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6298,7 +6265,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6310,7 +6276,6 @@ number.5.Piano.Music = {
     c'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6320,7 +6285,6 @@ number.5.Piano.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6332,7 +6296,6 @@ number.5.Piano.Music = {
     c'2.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % ABSOLUTE_BEFORE:
@@ -6342,15 +6305,12 @@ number.5.Piano.Music = {
     c'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.IndicatorCommand._call()
       %! baca.tenuto()
     - \tenuto
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.note_head_style_harmonic()
+      %! baca.note_head_style_harmonic_function(2)
     \revert NoteHead.style
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6369,14 +6329,11 @@ number.5.Piano.Music = {
         % [Piano.Music measure 35]
         % BEFORE:
         % COMMANDS:
-          %! baca.OverrideCommand._call(1)
-          %! baca.beam_positions()
+          %! baca.beam_positions_function(1)
         \override Beam.positions = #'(-4 . -4)
-          %! baca.OverrideCommand._call(1)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(1)
         \override DynamicLineSpanner.staff-padding = 6
-          %! baca.OverrideCommand._call(1)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(1)
         \override TupletBracket.staff-padding = 3
           %! krummzeit.make_silver_points_rhythm()
         r16
@@ -7216,14 +7173,11 @@ number.5.Piano.Music = {
           %! baca.staccatissimo()
         - \staccatissimo
         % COMMANDS:
-          %! baca.OverrideCommand._call(2)
-          %! baca.beam_positions()
+          %! baca.beam_positions_function(2)
         \revert Beam.positions
-          %! baca.OverrideCommand._call(2)
-          %! baca.dls_staff_padding()
+          %! baca.dls_staff_padding_function(2)
         \revert DynamicLineSpanner.staff-padding
-          %! baca.OverrideCommand._call(2)
-          %! baca.tuplet_bracket_staff_padding()
+          %! baca.tuplet_bracket_staff_padding_function(2)
         \revert TupletBracket.staff-padding
         % CLOSING:
         % COMMANDS:
@@ -7270,8 +7224,7 @@ number.5.Piano.Music = {
       %! SHIFTED_CLEF
       %! baca.clef_extra_offset_function(1)
 %%% \once \override Staff.Clef.extra-offset = #'(-2.75 . 0)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 6
     % OPENING:
     % COMMANDS:
@@ -7326,7 +7279,6 @@ number.5.Piano.Music = {
       %! baca.dynamic()
     \mp
     % MARKUP:
-      %! baca.IndicatorCommand._call()
       %! baca.markup()
     ^ \baca-senza-pedale-markup
     ^ \markup \center-align \concat { \natural \flat }
@@ -7508,8 +7460,7 @@ number.5.Piano.Music = {
     r8
     % AFTER:
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
     % CLOSING:
     % COMMANDS:

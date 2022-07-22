@@ -326,38 +326,31 @@ def ob_cl(cache):
                 library.color_fingerings_function(u),
 
 
-def pf(m):
-    accumulator(
-        ("pf", [(1, 24), (27, 34)]),
-        baca.dls_staff_padding(3),
-    )
-    accumulator(
-        ("pf", [(8, 24), (27, 34)]),
-        baca.markup(r"\krummzeit-fifth-harmonic-of-F-one-markup"),
-        baca.pitch("C4"),
-        baca.new(
-            baca.tenuto(),
-            map=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.note_head_style_harmonic(
-            selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.dynamic("mp"),
-    )
-    accumulator(
-        ("pf", [(25, 26), (35, 42)]),
-        baca.beam_positions(-4),
-        baca.dls_staff_padding(6),
-        baca.tuplet_bracket_staff_padding(3),
-    )
-    accumulator(
-        ("pf", (45, 48)),
-        baca.clef("bass"),
-        baca.markup(r"\baca-senza-pedale-markup"),
-        library.replace_with_clusters("tenor"),
-        baca.dynamic("mp"),
-        baca.dls_staff_padding(6),
-    )
+def pf(cache):
+    m = cache["pf"]
+    for pair in [(1, 24), (27, 34)]:
+        baca.dls_staff_padding_function(m[pair], 3)
+    for pair in [(8, 24), (27, 34)]:
+        with baca.scope(m[pair]) as o:
+            baca.markup_function(o, r"\krummzeit-fifth-harmonic-of-F-one-markup")
+            baca.pitch_function(o, "C4")
+            baca.tenuto_function(o.pheads())
+            baca.note_head_style_harmonic_function(o.pleaves())
+            baca.dynamic_function(o, "mp")
+    for pair in [(25, 26), (35, 42)]:
+        with baca.scope(m[pair]) as o:
+            baca.beam_positions_function(o, -4)
+            baca.dls_staff_padding_function(o, 6)
+            baca.tuplet_bracket_staff_padding_function(o, 3)
+    with baca.scope(m[45, 48]) as o:
+        library.replace_with_clusters_function(o, "tenor")
+        cache.rebuild()
+        m = cache["pf"]
+    with baca.scope(m[45, 48]) as o:
+        baca.clef_function(o, "bass")
+        baca.markup_function(o, r"\baca-senza-pedale-markup")
+        baca.dynamic_function(o, "mp")
+        baca.dls_staff_padding_function(o, 6)
 
 
 def perc(m):
@@ -619,7 +612,7 @@ def main():
     ob(cache["ob"])
     cl(cache["cl"])
     ob_cl(cache)
-    pf(cache["pf"])
+    pf(cache)
     perc(cache["perc"])
     pf_perc(cache)
     strings(cache)

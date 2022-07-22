@@ -2758,14 +2758,11 @@ number.5.Oboe.Music = {
     % [Oboe.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.beam_positions()
+      %! baca.beam_positions_function(1)
     \override Beam.positions = #'(-4 . -4)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 6
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_staff_padding()
+      %! baca.tuplet_bracket_staff_padding_function(1)
     \override TupletBracket.staff-padding = 3
       %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \krummzeit-ob-markup
@@ -4307,14 +4304,11 @@ number.5.Oboe.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.beam_positions()
+      %! baca.beam_positions_function(2)
     \revert Beam.positions
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_staff_padding()
+      %! baca.tuplet_bracket_staff_padding_function(2)
     \revert TupletBracket.staff-padding
     % CLOSING:
     % COMMANDS:
@@ -4354,14 +4348,11 @@ number.5.Clarinet.Music = {
     % [Clarinet.Music measure 1]
     % BEFORE:
     % COMMANDS:
-      %! baca.OverrideCommand._call(1)
-      %! baca.beam_positions()
+      %! baca.beam_positions_function(1)
     \override Beam.positions = #'(-4 . -4)
-      %! baca.OverrideCommand._call(1)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(1)
     \override DynamicLineSpanner.staff-padding = 6
-      %! baca.OverrideCommand._call(1)
-      %! baca.tuplet_bracket_staff_padding()
+      %! baca.tuplet_bracket_staff_padding_function(1)
     \override TupletBracket.staff-padding = 3
       %! baca._clone_section_initial_short_instrument_name()
     \set Staff.instrumentName = \krummzeit-clarinet-in-e-flat-markup
@@ -5408,14 +5399,11 @@ number.5.Clarinet.Music = {
       %! baca._label_duration_multipliers()
     %@% ^ \baca-duration-multiplier-markup #"9" #"8"
     % COMMANDS:
-      %! baca.OverrideCommand._call(2)
-      %! baca.beam_positions()
+      %! baca.beam_positions_function(2)
     \revert Beam.positions
-      %! baca.OverrideCommand._call(2)
-      %! baca.dls_staff_padding()
+      %! baca.dls_staff_padding_function(2)
     \revert DynamicLineSpanner.staff-padding
-      %! baca.OverrideCommand._call(2)
-      %! baca.tuplet_bracket_staff_padding()
+      %! baca.tuplet_bracket_staff_padding_function(2)
     \revert TupletBracket.staff-padding
     % CLOSING:
     % COMMANDS:

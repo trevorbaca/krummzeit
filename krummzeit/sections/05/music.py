@@ -294,50 +294,35 @@ def VC(voice):
 
 
 def ob(m):
-    accumulator(
-        "ob",
-        baca.beam_positions(-4),
-        baca.dls_staff_padding(6),
-        baca.tuplet_bracket_staff_padding(3),
-    )
-    accumulator(
-        ("ob", (11, 24)),
-        baca.pitches(
-            "D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5",
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.beam_positions_function(o, -4)
+        baca.dls_staff_padding_function(o, 6)
+        baca.tuplet_bracket_staff_padding_function(o, 3)
 
 
 def cl(m):
-    accumulator(
-        "cl",
-        baca.beam_positions(-4),
-        baca.dls_staff_padding(6),
-        baca.tuplet_bracket_staff_padding(3),
-    )
-    accumulator(
-        ("cl", (11, 24)),
-        baca.pitches(
-            "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5",
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.beam_positions_function(o, -4)
+        baca.dls_staff_padding_function(o, 6)
+        baca.tuplet_bracket_staff_padding_function(o, 3)
 
 
 def ob_cl(cache):
-    # ob, cl
-    accumulator(
-        (["ob", "cl"], (11, 24)),
-        baca.dynamic("p"),
-        library.color_fingerings(),
-    )
-    accumulator(
-        (["ob", "cl"], [(35, 38), (39, 42), (43, 44)]),
-        baca.pitches("F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5"),
-        baca.dynamic("mf"),
-        library.color_fingerings(),
-    )
+    for name in ["ob", "cl"]:
+        with baca.scope(cache[name][11, 24]) as o:
+            if name == "ob":
+                pitches = "D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5"
+            else:
+                pitches = "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5"
+            baca.pitches_function(o, pitches)
+            library.color_fingerings_function(o)
+            baca.dynamic_function(o, "p")
+        for pair in [(35, 38), (39, 42), (43, 44)]:
+            with baca.scope(cache[name][pair]) as u:
+                pitches = "F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5"
+                baca.pitches_function(u, pitches)
+                library.color_fingerings_function(u),
+                baca.dynamic_function(u.phead(0), "mf")
 
 
 def pf(m):

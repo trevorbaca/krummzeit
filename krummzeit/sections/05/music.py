@@ -309,7 +309,8 @@ def cl(m):
 
 def ob_cl(cache):
     for name in ["ob", "cl"]:
-        with baca.scope(cache[name][11, 24]) as o:
+        m = cache[name]
+        with baca.scope(m[11, 24]) as o:
             if name == "ob":
                 pitches = "D5 D5 D5 D5 D5 D5 D5 D5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5 Eb5"
             else:
@@ -317,12 +318,12 @@ def ob_cl(cache):
             baca.pitches_function(o, pitches)
             library.color_fingerings_function(o)
             baca.dynamic_function(o, "p")
+        baca.dynamic_function(m[35, 38], "mf")
         for pair in [(35, 38), (39, 42), (43, 44)]:
-            with baca.scope(cache[name][pair]) as u:
+            with baca.scope(m[pair]) as u:
                 pitches = "F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5"
                 baca.pitches_function(u, pitches)
                 library.color_fingerings_function(u),
-                baca.dynamic_function(u.phead(0), "mf")
 
 
 def pf(m):

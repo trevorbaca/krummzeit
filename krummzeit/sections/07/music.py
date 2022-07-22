@@ -213,188 +213,123 @@ def VC(voice):
 
 
 def ob(m):
-    accumulator(
-        "ob",
-        baca.tuplet_bracket_staff_padding(4),
-        baca.dls_staff_padding(8),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.tuplet_bracket_staff_padding_function(o, 4)
+        baca.dls_staff_padding_function(o, 8)
 
 
 def cl(m):
-    accumulator(
-        ("cl", (1, 10)),
-        baca.tuplet_bracket_staff_padding(4),
-        baca.dls_staff_padding(8),
-    )
-    accumulator(
-        ("cl", (4, 10)),
-        baca.instrument(library.instruments()["ClarinetInEFlat"]),
-    )
-    accumulator(
-        ("cl", (11, 22)),
-        baca.dls_staff_padding(8),
-        baca.stem_up(),
-    )
-    accumulator(
-        ("cl", (16, 19)),
-        baca.instrument(library.instruments()["BassClarinet"]),
-        baca.pitch("B1"),
-        baca.dynamic("ppp"),
-    )
+    with baca.scope(m.get(1, 10)) as o:
+        baca.tuplet_bracket_staff_padding_function(o, 4)
+        baca.dls_staff_padding_function(o, 8)
+    with baca.scope(m.get(4, 10)) as o:
+        baca.instrument_function(
+            o, library.instruments()["ClarinetInEFlat"], accumulator.manifests()
+        )
+    with baca.scope(m.get(11, 22)) as o:
+        baca.dls_staff_padding_function(o, 8)
+        baca.stem_up_function(
+            o,
+        )
+    with baca.scope(m.get(16, 19)) as o:
+        baca.instrument_function(
+            o, library.instruments()["BassClarinet"], accumulator.manifests()
+        )
+        baca.pitch_function(o, "B1")
+        baca.dynamic_function(o, "ppp")
 
 
 def pf(m):
-    accumulator(
-        ("pf", 4),
-        baca.instrument(library.instruments()["Harpsichord"]),
-        library.short_instrument_name("Hpschd."),
-    )
-    accumulator(
-        ("pf", (1, 10)),
-        baca.tuplet_bracket_staff_padding(4),
-    )
+    with baca.scope(m[4]) as o:
+        baca.instrument_function(
+            o, library.instruments()["Harpsichord"], accumulator.manifests()
+        )
+        library.short_instrument_name_function(o, "Hpschd.", accumulator.manifests())
+    with baca.scope(m.get(1, 10)) as o:
+        baca.tuplet_bracket_staff_padding_function(o, 4)
 
 
 def perc(m):
-    accumulator(
-        "perc",
-        baca.markup(
-            r"\baca-snare-drum-markup",
-            selector=lambda _: abjad.select.leaf(_, 0),
-        ),
-        baca.clef("percussion"),
-        baca.staff_position(0),
-        baca.dls_staff_padding(6),
-    )
-    accumulator(
-        ("perc", (2, 16)),
-        baca.dynamic("ppp"),
-        baca.stem_tremolo(
-            selector=lambda _: baca.select.pleaves(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.markup(r"\krummzeit-fingertips-markup"),
-    )
-    accumulator(
-        ("perc", (19, 22)),
-        baca.markup(r"\baca-tam-tam-markup"),
-        baca.markup(r"\baca-attackless-markup"),
-        baca.laissez_vibrer(
-            selector=lambda _: baca.select.pheads(_),
-        ),
-        baca.dynamic("p-sempre"),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.markup_function(o, r"\baca-snare-drum-markup", allow_rests=True)
+        baca.clef_function(o, "percussion")
+        baca.staff_position_function(o, 0)
+        baca.dls_staff_padding_function(o, 6)
+    with baca.scope(m.get(2, 16)) as o:
+        baca.dynamic_function(o, "ppp")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.markup_function(o, r"\krummzeit-fingertips-markup")
+    with baca.scope(m.get(19, 22)) as o:
+        baca.markup_function(o, r"\baca-tam-tam-markup")
+        baca.markup_function(o, r"\baca-attackless-markup")
+        baca.laissez_vibrer_function(o.pheads())
+        baca.dynamic_function(o, "p-sempre")
 
 
 def va_vc_1_6(cache):
-    accumulator(
-        (["va", "vc"], (1, 6)),
-        baca.new(
-            baca.pitch("F#3"),
-            match=0,
-        ),
-        baca.new(
-            baca.pitch("C2"),
-            match=1,
-        ),
-        baca.hairpin(
-            "ppp < fff",
-            selector=lambda _: baca.select.tleaves(
-                _,
-                exclude=baca.enums.HIDDEN,
-            ),
-        ),
-        baca.new(
-            baca.dls_staff_padding(6),
-            measures=(2, 6),
-        ),
-    )
+    for name, pitch in (
+        ("va", "F#3"),
+        ("vc", "C2"),
+    ):
+        with baca.scope(cache[name].get(1, 6)) as o:
+            baca.pitch_function(o, pitch)
+            baca.hairpin_function(o.tleaves(), "ppp < fff")
+        with baca.scope(cache[name].get(2, 6)) as o:
+            baca.dls_staff_padding_function(o, 6)
 
 
 def strings_7_19(cache):
-    accumulator(
-        (["vn", "va", "vc"], (7, 19)),
-        baca.new(
-            baca.pitch("F#3"),
-            match=0,
-        ),
-        baca.new(
-            baca.pitch("Bb2"),
-            match=1,
-        ),
-        baca.new(
-            baca.pitch("A1"),
-            match=2,
-        ),
-        baca.dynamic("fff"),
-        baca.markup(r"\baca-scratch-poss-markup"),
-    )
-    accumulator(
-        [
-            ("vn", (11, 15)),
-            (["va", "vc"], (13, 15)),
-        ],
-        baca.text_spanner(
+    for name, pitch in (
+        ("vn", "F#3"),
+        ("va", "Bb2"),
+        ("vc", "A1"),
+    ):
+        with baca.scope(cache[name].get(7, 19)) as o:
+            baca.pitch_function(o, pitch)
+            baca.dynamic_function(o, "fff")
+            baca.markup_function(o, r"\baca-scratch-poss-markup")
+    for name, pair in (
+        ("vn", (11, 15)),
+        ("va", (13, 15)),
+        ("vc", (13, 15)),
+    ):
+        baca.text_spanner_function(
+            cache[name].get(pair),
             "grid. possibile => flaut. possibile",
             abjad.Tweak(r"- \tweak staff-padding 5"),
-        ),
-    )
+        )
 
 
 def ob_cl_pf_1_16(cache):
-    pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
-    pcs = pcs.transpose(2)
-    accumulator(
-        baca.timeline(
-            [
-                ("pf", (4, 16)),
-                ("ob", (1, 12)),
-                ("cl", (1, 12)),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    accumulator(
-        [
-            ("pf", (4, 16)),
-            (["ob", "cl"], (1, 12)),
-        ],
-        library.displacement(),
-    )
-    accumulator(
-        ("pf", (4, 9)),
-        library.register_narrow(5, 3),
-    )
-    accumulator(
-        ("pf", 7),
-        baca.clef("bass"),
-    )
-    accumulator(
-        ("pf", 13),
-        library.register_narrow(3),
-    )
-    accumulator(
-        ("pf", 16),
-        library.register_narrow(2),
-    )
+    with baca.scope(
+        cache["pf"].get(4, 16) + cache["ob"].get(1, 12) + cache["cl"].get(1, 12)
+    ) as o:
+        pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
+        pcs = pcs.transpose(2)
+        leaves = baca.select.sort_by_timeline(o)
+        baca.pitches_function(leaves, pcs)
+    for name, pair in (
+        ("pf", (4, 16)),
+        ("ob", (1, 12)),
+        ("cl", (1, 12)),
+    ):
+        library.displacement_function(cache[name].get(pair))
+    library.register_narrow_function(cache["pf"].get(4, 9), 5, 3)
+    baca.clef_function(cache["pf"][7], "bass")
+    library.register_narrow_function(cache["pf"][13], 3)
+    library.register_narrow_function(cache["pf"][16], 2)
 
 
 def ob_cl_4_10(cache):
-    accumulator(
-        (["ob", "cl"], (4, 10)),
-        baca.new(
-            library.register_narrow(6, 4),
-            match=0,
-        ),
-        baca.new(
-            library.register_narrow(4, 6),
-            match=1,
-        ),
-        baca.staccato(selector=lambda _: baca.ptlts(_)),
-        baca.hairpin("p < ff"),
-    )
+    for name, register in (
+        ("ob", (6, 4)),
+        ("cl", (4, 6)),
+    ):
+        with baca.scope(cache[name].get(4, 10)) as o:
+            library.register_narrow_function(o, *register)
+            for ptlt in baca.select.ptlts(o):
+                baca.staccato_function(ptlt)
+            baca.hairpin_function(o, "p < ff")
 
 
 def main():
@@ -431,7 +366,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         transpose_score=True,
     )

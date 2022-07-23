@@ -109,116 +109,79 @@ def VC(voice):
 
 
 def ob_1_40(m):
-    accumulator(
-        "ob",
-        baca.pitch(
-            "C#4",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.dynamic("fff"),
-        baca.dls_staff_padding(5),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.pitch_function(o, "C#4")
+        baca.dynamic_function(o, "fff")
+        baca.dls_staff_padding_function(o, 5)
 
 
 def cl_1_40(m):
-    accumulator(
-        "cl",
-        baca.pitch(
-            "D2",
-            selector=lambda _: baca.select.plts(_),
-        ),
-        baca.stem_up(),
-        baca.dynamic("f"),
-        baca.dls_staff_padding(7),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.pitch_function(o, "D2")
+        baca.stem_up_function(o)
+        baca.dynamic_function(o, "f")
+        baca.dls_staff_padding_function(o, 7)
 
 
 def pf_1_48(m):
-    accumulator(
-        "pf",
-        baca.clef("treble"),
-        baca.pitch("C#6"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.dynamic(
-            "fff-poss",
-            selector=lambda _: abjad.select.leaf(_, 0),
-            measures=25,
-        ),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.clef_function(o, "treble")
+        baca.pitch_function(o, "C#6")
+        baca.stem_tremolo_function(o.pleaves())
+    with baca.scope(m[25]) as o:
+        baca.dynamic_function(o, "fff-poss")
 
 
 def perc_1_48(m):
-    accumulator(
-        "perc",
-        baca.clef("treble"),
-        baca.staff_lines(5),
-        baca.pitch("C#6"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.dynamic("fff"),
-        baca.dls_staff_padding(4),
-    )
+    with baca.scope(m.leaves()) as o:
+        baca.clef_function(o, "treble")
+        baca.staff_lines_function(o, 5)
+        baca.pitch_function(o, "C#6")
+        baca.stem_tremolo_function(o.pleaves())
+        baca.dynamic_function(o, "fff")
+        baca.dls_staff_padding_function(o, 4)
 
 
 def vn_va_1_40(cache):
-    pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
-    pcs = pcs[42:34:-1].transpose(4).invert()
-    accumulator(
-        baca.timeline(
-            [
-                ("vn", (1, 40)),
-                ("va", (1, 40)),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    accumulator(
-        (["vn", "va"], (1, 40)),
-        baca.markup(r"\baca-pizz-markup"),
-        library.displacement(),
-        library.register_narrow(6),
-        baca.staccatissimo(
-            selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-        ),
-        baca.tuplet_bracket_staff_padding(2),
-        baca.dynamic("ff"),
-        baca.dls_staff_padding(5),
-    )
+    names = ["vn", "va"]
+    leaves = [cache[_].get(1, 40) for _ in names]
+    leaves = abjad.sequence.flatten(leaves)
+    with baca.scope(leaves) as o:
+        pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
+        pcs = pcs[42:34:-1].transpose(4).invert()
+        leaves = baca.select.sort_by_timeline(leaves)
+        baca.pitches_function(leaves, pcs)
+    for name in names:
+        with baca.scope(cache[name].get(1, 40)) as o:
+            baca.markup_function(o, r"\baca-pizz-markup")
+            library.displacement_function(o)
+            library.register_narrow_function(o, 6)
+            baca.staccatissimo_function(o.pheads())
+            baca.tuplet_bracket_staff_padding_function(o, 2)
+            baca.dynamic_function(o, "ff")
+            baca.dls_staff_padding_function(o, 5)
 
 
 def vc_1_48(m):
-    accumulator(
-        ("vc", (1, 24)),
-        baca.markup(r"\baca-scratch-poss-markup"),
-        baca.pitches("D4 D4 D4 D4 D4 D4 D2"),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_),
-        ),
-        baca.dynamic("fff-ancora"),
-        baca.dls_staff_padding(3),
-    )
-    accumulator(
-        ("vc", (25, 48)),
-        baca.markup(r"\baca-ordinario-markup"),
-        baca.pitch("D2"),
-        baca.dynamic("ff"),
-    )
+    with baca.scope(m.get(1, 24)) as o:
+        baca.markup_function(o, r"\baca-scratch-poss-markup")
+        baca.pitches_function(o, "D4 D4 D4 D4 D4 D4 D2")
+        for run in baca.select.runs(o):
+            baca.glissando_function(run)
+        baca.dynamic_function(o, "fff-ancora")
+        baca.dls_staff_padding_function(o, 3)
+    with baca.scope(m.get(25, 48)) as o:
+        baca.markup_function(o, r"\baca-ordinario-markup")
+        baca.pitch_function(o, "D2")
+        baca.dynamic_function(o, "ff")
 
 
 def vc_48(m):
-    accumulator(
-        ("vc", 48),
-        baca.chunk(
-            baca.mark(r"\krummzeit-colophon-markup"),
-            baca.rehearsal_mark_down(),
-            baca.rehearsal_mark_padding(6),
-            baca.rehearsal_mark_self_alignment_x(abjad.RIGHT),
-            selector=lambda _: baca.select.rleaf(_, -1),
-        ),
-    )
+    with baca.scope(baca.select.rleaves(m[48])[-1:]) as o:
+        baca.mark_function(o, r"\krummzeit-colophon-markup")
+        baca.rehearsal_mark_down_function(o)
+        baca.rehearsal_mark_padding_function(o, 6)
+        baca.rehearsal_mark_self_alignment_x_function(o, abjad.RIGHT)
 
 
 def main():
@@ -256,7 +219,6 @@ if __name__ == "__main__":
         **defaults,
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         final_section=True,
         transpose_score=True,

@@ -319,9 +319,9 @@ def ob(m):
         pcs = pcs.rotate(-121).retrograde().transpose(9).invert()
         pcs = baca.sequence.repeat_by(pcs, [4, 4, 1, 1, 1, 1, 4, 1, 1, 1], cyclic=True)
         baca.pitches_function(o, pcs)
-        library.displacement_function(o)
-        library.register_wide_function(o, 5)
-        library.color_fingerings_function(o)
+        library.displacement(o)
+        library.register_wide(o, 5)
+        library.color_fingerings(o)
         for plt in baca.plts(o):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
@@ -350,7 +350,7 @@ def cl(m):
         baca.tuplet_bracket_staff_padding_function(o, 3)
     with baca.scope(m.get(23, 35)) as o:
         baca.instrument_function(o, library.instruments()["BassClarinet"])
-        library.short_instrument_name_function(o, "B. cl.")
+        library.short_instrument_name(o, "B. cl.")
         baca.pitch_function(o, "Bb1")
         baca.stem_up_function(o)
         baca.dynamic_function(o, "ppp")
@@ -365,7 +365,7 @@ def ob_cl_12_24(cache):
     for name, pitches in zip(["ob", "cl"], [ob_pitches, cl_pitches]):
         with baca.scope(cache[name].get(12, 21)) as o:
             baca.pitches_function(o, pitches)
-            library.color_fingerings_function(o)
+            library.color_fingerings(o)
             for run in baca.select.ntruns(o):
                 baca.glissando_function(run)
             baca.dynamic_function(o, "ff")
@@ -374,7 +374,7 @@ def ob_cl_12_24(cache):
 def pf(cache):
     m = cache["pf"]
     with baca.scope(m.get(9, 10)) as o:
-        library.replace_with_clusters_function(o, "tenor")
+        library.replace_with_clusters(o, "tenor")
         cache.rebuild()
         m = cache["pf"]
     with baca.scope(m.get(9, 10)) as o:
@@ -396,8 +396,8 @@ def pf(cache):
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
         baca.pitches_function(o, pcs)
-        library.displacement_function(o)
-        library.register_narrow_function(o, 7)
+        library.displacement(o)
+        library.register_narrow(o, 7)
         baca.ottava_function(o)
         baca.staccatissimo_function(o.pheads())
         baca.dynamic_function(o, "fff")
@@ -505,7 +505,7 @@ def strings_12_20(cache):
             baca.note_head_style_harmonic_function(
                 o,
             )
-            library.register_narrow_function(o, *pair),
+            library.register_narrow(o, *pair),
 
 
 def va_vc_23_35(cache):

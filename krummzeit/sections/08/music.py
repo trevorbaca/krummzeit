@@ -284,7 +284,7 @@ def ob(m):
         baca.tuplet_bracket_staff_padding_function(m.get(pair), 3)
     with baca.scope(m.get(18, 24)) as o:
         baca.pitch_function(o, "C4")
-        library.color_fingerings_function(o)
+        library.color_fingerings(o)
         baca.dynamic_function(o, "f")
 
 
@@ -303,7 +303,7 @@ def cl(m):
             o, library.instruments()["BassClarinet"], accumulator.manifests()
         )
         baca.pitch_function(o, "C2")
-        library.color_fingerings_function(o)
+        library.color_fingerings(o)
         baca.tuplet_bracket_staff_padding_function(o, 6)
         baca.hairpin_function(o.tleaves(), "f < ff")
         baca.dls_staff_padding_function(o, 10)
@@ -316,7 +316,7 @@ def pf(m):
         baca.dls_staff_padding_function(o, 7)
     with baca.scope(m.get(14, 20)) as o:
         baca.instrument_function(o, library.instruments()["Piano"])
-        library.short_instrument_name_function(o, "Pf.")
+        library.short_instrument_name(o, "Pf.")
         baca.clef_function(o, "bass")
         baca.dls_staff_padding_function(o, 3)
 
@@ -373,14 +373,14 @@ def ob_cl_pf_vn_5_12(cache):
         ("cl", (9, 12)),
     ):
         with baca.scope(cache[name].get(pair)) as o:
-            library.displacement_function(o)
+            library.displacement(o)
             if name == "vn":
-                library.register_wide_function(o, 6)
+                library.register_wide(o, 6)
                 baca.markup_function(
                     o, r"\krummzeit-leggierissimo-off-string-bowing-on-staccati-markup"
                 )
             else:
-                library.register_wide_function(o, 5)
+                library.register_wide(o, 5)
                 baca.markup_function(o, r"\baca-leggierissimo-markup")
             baca.staccato_function(o.pheads())
             baca.dynamic_function(o, "pp")
@@ -426,12 +426,12 @@ def pf_vn_vc_va_14_23(cache):
             baca.markup_function(o, r"\baca-scratch-molto-markup")
             baca.note_head_style_harmonic_function(o)
             baca.dynamic_function(o, "fff-poss")
-            library.displacement_function(o)
+            library.displacement(o)
             if name == "vn":
-                library.register_wide_function(o, register)
+                library.register_wide(o, register)
             else:
                 assert name in ("va", "vc")
-                library.register_narrow_function(o, register)
+                library.register_narrow(o, register)
             for run in baca.select.runs(o):
                 run = baca.select.rleak(run)
                 baca.glissando_function(run)

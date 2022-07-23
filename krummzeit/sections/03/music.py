@@ -388,9 +388,9 @@ def ob(m):
     pcs = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
     with baca.scope(m[1, 35]) as o:
         baca.pitches_function(o, pcs, allow_repeats=True)
-        library.displacement_function(o)
-        library.register_wide_function(o, 5)
-        library.color_fingerings_function(o.pheads())
+        library.displacement(o)
+        library.register_wide(o, 5)
+        library.color_fingerings(o.pheads())
         for plt in baca.plts(o, exclude=baca.enums.HIDDEN):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
@@ -483,8 +483,8 @@ def vn(m):
                 baca.deviation_function(run, [0, -0.5, 0, 0.5])
             else:
                 baca.deviation_function(run, [0, 0.5, 0, -0.5])
-        library.displacement_function(o)
-        library.register_wide_function(o, 5)
+        library.displacement(o)
+        library.register_wide(o, 5)
         for plt in baca.plts(o, exclude=baca.enums.HIDDEN):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)

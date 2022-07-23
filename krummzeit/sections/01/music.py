@@ -179,7 +179,7 @@ def ob(m):
     with baca.scope(m.leaves()) as o:
         baca.instrument_function(o, accumulator.instruments["Oboe"])
         baca.instrument_name_function(o, r"\krummzeit-oboe-markup")
-        library.short_instrument_name_function(o, "Ob.")
+        library.short_instrument_name(o, "Ob.")
         baca.clef_function(o, "treble")
 
 
@@ -187,7 +187,7 @@ def cl(m):
     with baca.scope(m.leaves()) as o:
         baca.instrument_function(o, accumulator.instruments["BassClarinet"])
         baca.instrument_name_function(o, r"\krummzeit-bass-clarinet-markup")
-        library.short_instrument_name_function(o, "B. cl.")
+        library.short_instrument_name(o, "B. cl.")
         baca.clef_function(o, "treble")
     with baca.scope(m[4, 5]) as o:
         baca.pitch_function(o, "B1")
@@ -199,10 +199,10 @@ def pf(cache):
     with baca.scope(m.leaves()) as o:
         baca.instrument_function(o, accumulator.instruments["Piano"])
         baca.instrument_name_function(o, r"\krummzeit-piano-markup")
-        library.short_instrument_name_function(o, "Pf.")
+        library.short_instrument_name(o, "Pf.")
         baca.clef_function(o, "bass")
     with baca.scope(m[4]) as o:
-        library.replace_with_clusters_function(o.plts(), "tenor")
+        library.replace_with_clusters(o.plts(), "tenor")
         cache.rebuild()
         # TODO: eliminate the need for reassignment after rebuild:
         m = cache["pf"]
@@ -224,7 +224,7 @@ def perc(m):
     with baca.scope(m[1]) as o:
         baca.instrument_function(o, accumulator.instruments["Xylophone"])
         baca.instrument_name_function(o, r"\krummzeit-percussion-markup")
-        library.short_instrument_name_function(o, "Perc.")
+        library.short_instrument_name(o, "Perc.")
         baca.clef_function(o, "treble")
     with baca.scope(m[7]) as o:
         baca.markup_function(o, r"\baca-xylophone-markup")
@@ -232,7 +232,7 @@ def perc(m):
         baca.stem_tremolo_function(o.pleaves())
         baca.dynamic_function(o, "fff-poss")
     with baca.scope(m[10, 13]) as o:
-        library.instrument_function(o, "Percussion")
+        library.instrument(o, "Percussion")
         baca.markup_function(o, r"\baca-sponges-markup")
         baca.clef_function(o, "percussion")
         baca.staff_lines_function(o, 1)
@@ -246,7 +246,7 @@ def vn(m):
     with baca.scope(m[1]) as o:
         baca.instrument_function(o, accumulator.instruments["Violin"])
         baca.instrument_name_function(o, r"\krummzeit-violin-markup")
-        library.short_instrument_name_function(o, "Vn.")
+        library.short_instrument_name(o, "Vn.")
         baca.clef_function(o, "treble")
 
 
@@ -254,7 +254,7 @@ def va(m):
     with baca.scope(m[1]) as o:
         baca.instrument_function(o, accumulator.instruments["Viola"])
         baca.instrument_name_function(o, r"\krummzeit-viola-markup")
-        library.short_instrument_name_function(o, "Va.")
+        library.short_instrument_name(o, "Va.")
         baca.clef_function(o, "alto")
 
 
@@ -262,7 +262,7 @@ def vc(m):
     with baca.scope(m[1]) as o:
         baca.instrument_function(o, accumulator.instruments["Cello"])
         baca.instrument_name_function(o, r"\krummzeit-cello-markup")
-        library.short_instrument_name_function(o, "Vc.")
+        library.short_instrument_name(o, "Vc.")
         baca.clef_function(o, "bass")
 
 
@@ -292,7 +292,7 @@ def composites(cache):
             for qrun in baca.select.qruns(o):
                 pheads = baca.select.pheads(qrun)[1:]
                 baca.repeat_tie_function(pheads)
-            library.register_narrow_function(o, *register)
+            library.register_narrow(o, *register)
             baca.note_head_style_harmonic_function(o.tleaves())
             baca.markup_function(o.pleaf(0), r"\baca-molto-flautando-markup")
             baca.hairpin_function(o.tleaves(), "pp < ff")

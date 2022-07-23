@@ -217,14 +217,14 @@ def VC(voice):
 def ob(m):
     with baca.scope(m[1]) as o:
         baca.pitch_function(o, "Eb5")
-        library.color_fingerings_function(o)
+        library.color_fingerings(o)
         baca.dynamic_function(o, "ff")
 
 
 def cl(m):
     with baca.scope(m[1]) as o:
         baca.pitch_function(o, "Eb2")
-        library.color_fingerings_function(o)
+        library.color_fingerings(o)
         baca.dynamic_function(o, "ff")
     with baca.scope(m.get(3, 14)) as o:
         baca.pitch_function(o, "E2")
@@ -250,17 +250,17 @@ def pf_3_22(cache):
         baca.instrument_function(
             o, library.instruments()["Harpsichord"], accumulator.manifests()
         )
-        library.short_instrument_name_function(o, "Hpschd.", accumulator.manifests)
-        library.replace_with_clusters_function(o, "harpsichord")
+        library.short_instrument_name(o, "Hpschd.", accumulator.manifests)
+        library.replace_with_clusters(o, "harpsichord")
         cache.rebuild()
     with baca.scope(cache["pf"].get(8, 22)) as o:
-        library.replace_with_clusters_function(o, "low")
+        library.replace_with_clusters(o, "low")
         cache.rebuild()
     with baca.scope(cache["pf"].get(8, 22)) as o:
         baca.instrument_function(
             o, library.instruments()["Piano"], accumulator.manifests()
         )
-        library.short_instrument_name_function(o, "Pf.", accumulator.manifests())
+        library.short_instrument_name(o, "Pf.", accumulator.manifests())
         baca.clef_function(o, "bass")
         baca.ottava_bassa_function(o)
         baca.dynamic_function(o, "fff-poss")
@@ -304,7 +304,7 @@ def strings_5_9(cache):
     for name, register in pairs:
         with baca.scope(cache[name].get(5, 9)) as o:
             baca.markup_function(o, r"\krummzeit-on-bridge-full-bow-markup")
-            library.register_narrow_function(o, *register)
+            library.register_narrow(o, *register)
             if name in ("va", "vc"):
                 baca.clef_function(o, "treble")
             for ruyn in baca.select.runs(o):
@@ -325,8 +325,8 @@ def strings_22(cache):
     for name in names:
         with baca.scope(cache[name][22]) as o:
             baca.markup_function(o, r"\baca-pizz-markup")
-            library.displacement_function(o)
-            library.register_narrow_function(o, 6)
+            library.displacement(o)
+            library.register_narrow(o, 6)
             baca.staccatissimo_function(o.pheads())
             baca.dynamic_function(o, "fff")
 

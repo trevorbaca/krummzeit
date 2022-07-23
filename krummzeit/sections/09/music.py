@@ -213,15 +213,15 @@ def ob_cl_4_10(cache):
                 baca.dls_staff_padding_function(o, 9)
                 baca.stem_up_function(o)
                 baca.tuplet_bracket_staff_padding_function(o, 5)
-            library.color_fingerings_function(o)
+            library.color_fingerings(o)
 
 
 def pf_perc_1_6(cache):
     with baca.scope(cache["pf"].get(1, 6)) as o:
         baca.instrument_function(o, library.instruments()["Harpsichord"])
-        library.short_instrument_name_function(o, "Hpschd.")
+        library.short_instrument_name(o, "Hpschd.")
         baca.clef_function(o, "treble")
-        library.replace_with_clusters_function(o, "harpsichord")
+        library.replace_with_clusters(o, "harpsichord")
     with baca.scope(cache["perc"].get(5, 6)) as o:
         baca.markup_function(o, r"\baca-crotale-markup")
         baca.clef_function(o, "treble")
@@ -237,7 +237,7 @@ def pf_perc_9_10(cache):
         with baca.scope(cache[name].get(9, 10)) as o:
             if name == "pf":
                 baca.instrument_function(o, library.instruments()["Piano"])
-                library.short_instrument_name_function(o, "Pf.")
+                library.short_instrument_name(o, "Pf.")
                 baca.tuplet_bracket_staff_padding_function(o, 2)
                 baca.dls_staff_padding_function(o, 6)
             if name == "perc":
@@ -275,11 +275,11 @@ def strings_3_5(cache):
         baca.pitches_function(leaves, pcs)
     for name, register in pairs:
         with baca.scope(cache[name].get(3, 5)) as o:
-            library.displacement_function(o)
+            library.displacement(o)
             if name == "vn":
-                library.register_wide_function(o, register)
+                library.register_wide(o, register)
             elif name in ("va", "vc"):
-                library.register_narrow_function(o, register)
+                library.register_narrow(o, register)
             baca.note_head_style_harmonic_function(o)
             for run in baca.select.runs(o):
                 baca.glissando_function(run)

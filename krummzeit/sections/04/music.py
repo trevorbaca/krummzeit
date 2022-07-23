@@ -282,13 +282,13 @@ def pf(cache):
         baca.staccatissimo_function(o.pheads())
     with baca.scope(m[9, 12]) as o:
         baca.markup_function(o, r"\baca-senza-pedale-markup")
-        library.replace_with_clusters_function(o, "low")
+        library.replace_with_clusters(o, "low")
         cache.rebuild()
         m = cache["pf"]
     with baca.scope(m[9, 12]) as o:
         baca.ottava_bassa_function(o.tleaves())
         baca.dynamic_function(o, "fff")
-    library.replace_with_clusters_function(m[14, 16], "low")
+    library.replace_with_clusters(m[14, 16], "low")
     cache.rebuild()
     m = cache["pf"]
     with baca.scope(m[14, 16]) as o:
@@ -374,25 +374,25 @@ def composites(cache):
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches_function(leaves, pcs)
     for number in [1, 3, 5]:
-        library.displacement_function(cache["pf"][number])
-    library.register_narrow_function(cache["pf"][1], 7, 5)
-    library.register_narrow_function(cache["pf"][3], 5, 3)
-    library.register_narrow_function(cache["pf"][5], 3, 2)
+        library.displacement(cache["pf"][number])
+    library.register_narrow(cache["pf"][1], 7, 5)
+    library.register_narrow(cache["pf"][3], 5, 3)
+    library.register_narrow(cache["pf"][5], 3, 2)
     for number in [5, 7, 9]:
-        library.displacement_function(cache["vn"][number])
-    library.register_narrow_function(cache["vn"][5], 7, 5)
-    library.register_narrow_function(cache["vn"][7], 5, 4)
-    library.register_narrow_function(cache["vn"][9], 5, 4)
+        library.displacement(cache["vn"][number])
+    library.register_narrow(cache["vn"][5], 7, 5)
+    library.register_narrow(cache["vn"][7], 5, 4)
+    library.register_narrow(cache["vn"][9], 5, 4)
     for number in [5, 7, 9]:
-        library.displacement_function(cache["va"][number])
-    library.register_narrow_function(cache["va"][5], 6, 5)
-    library.register_narrow_function(cache["va"][7], 5, 4)
-    library.register_narrow_function(cache["va"][9], 4, 2)
+        library.displacement(cache["va"][number])
+    library.register_narrow(cache["va"][5], 6, 5)
+    library.register_narrow(cache["va"][7], 5, 4)
+    library.register_narrow(cache["va"][9], 4, 2)
     for number in [5, 7, 9]:
-        library.displacement_function(cache["vc"][number])
-    library.register_narrow_function(cache["vc"][5], 5, 4)
-    library.register_narrow_function(cache["vc"][7], 4, 3)
-    library.register_narrow_function(cache["vc"][9], 3, 2)
+        library.displacement(cache["vc"][number])
+    library.register_narrow(cache["vc"][5], 5, 4)
+    library.register_narrow(cache["vc"][7], 4, 3)
+    library.register_narrow(cache["vc"][9], 3, 2)
     for name in ["vn", "va", "vc"]:
         m = cache[name]
         with baca.scope(m[5, 9]) as o:

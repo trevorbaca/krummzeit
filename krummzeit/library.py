@@ -288,11 +288,11 @@ def _set_pitch(pleaf, pitch):
     abjad.detach("not yet registered", pleaf)
 
 
-def color_fingerings_function(argument):
+def color_fingerings(argument):
     return baca.color_fingerings_function(argument, [0, 1, 2, 1])
 
 
-def displacement_function(argument):
+def displacement(argument):
     baca.displacement_function(
         argument,
         [0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
@@ -305,7 +305,7 @@ def indigo_pitch_classes():
     return indigo_pitch_classes
 
 
-def instrument_function(argument, key):
+def instrument(argument, key):
     instrument = instruments()[key]
     return baca.instrument_function(argument, instrument)
 
@@ -998,7 +998,7 @@ def make_white_rhythm(
     return music
 
 
-def short_instrument_name_function(leaf, key, context="Staff"):
+def short_instrument_name(leaf, key, context="Staff"):
     short_instrument_name = short_instrument_names()[key]
     baca.short_instrument_name_function(
         leaf,
@@ -1075,7 +1075,7 @@ def metronome_marks():
     )
 
 
-def register_narrow_function(argument, start, stop=None):
+def register_narrow(argument, start, stop=None):
     octave_number_to_registration = {
         2: baca.Registration([("[A0, F#4)", -26), ("[F#4, C8]", -23)]),
         3: baca.Registration([("[A0, F#4)", -14), ("[F#4, C8]", -11)]),
@@ -1093,7 +1093,7 @@ def register_narrow_function(argument, start, stop=None):
         _do_register_transition_command(argument, start_registration, stop_registration)
 
 
-def register_wide_function(argument, start):
+def register_wide(argument, start):
     start_to_registration = {
         3: baca.Registration([("[A0, F#4)", -20), ("[F#4, C8]", -6)]),
         4: baca.Registration([("[A0, F#4)", -8), ("[F#4, C8]", 6)]),
@@ -1105,7 +1105,7 @@ def register_wide_function(argument, start):
     baca.commands._do_register_command(argument, registration)
 
 
-def replace_with_clusters_function(argument, flavor):
+def replace_with_clusters(argument, flavor):
     if flavor == "harpsichord":
         result = baca.replace_with_clusters_function(argument, [4], start_pitch="D4")
     elif flavor == "low":

@@ -154,8 +154,8 @@ def vn_va_1_40(cache):
     for name in names:
         with baca.scope(cache[name].get(1, 40)) as o:
             baca.markup_function(o, r"\baca-pizz-markup")
-            library.displacement_function(o)
-            library.register_narrow_function(o, 6)
+            library.displacement(o)
+            library.register_narrow(o, 6)
             baca.staccatissimo_function(o.pheads())
             baca.tuplet_bracket_staff_padding_function(o, 2)
             baca.dynamic_function(o, "ff")

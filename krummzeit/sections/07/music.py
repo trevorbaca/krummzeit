@@ -244,7 +244,7 @@ def pf(m):
         baca.instrument_function(
             o, library.instruments()["Harpsichord"], accumulator.manifests()
         )
-        library.short_instrument_name_function(o, "Hpschd.", accumulator.manifests())
+        library.short_instrument_name(o, "Hpschd.", accumulator.manifests())
     with baca.scope(m.get(1, 10)) as o:
         baca.tuplet_bracket_staff_padding_function(o, 4)
 
@@ -313,11 +313,11 @@ def ob_cl_pf_1_16(cache):
         ("ob", (1, 12)),
         ("cl", (1, 12)),
     ):
-        library.displacement_function(cache[name].get(pair))
-    library.register_narrow_function(cache["pf"].get(4, 9), 5, 3)
+        library.displacement(cache[name].get(pair))
+    library.register_narrow(cache["pf"].get(4, 9), 5, 3)
     baca.clef_function(cache["pf"][7], "bass")
-    library.register_narrow_function(cache["pf"][13], 3)
-    library.register_narrow_function(cache["pf"][16], 2)
+    library.register_narrow(cache["pf"][13], 3)
+    library.register_narrow(cache["pf"][16], 2)
 
 
 def ob_cl_4_10(cache):
@@ -326,7 +326,7 @@ def ob_cl_4_10(cache):
         ("cl", (4, 6)),
     ):
         with baca.scope(cache[name].get(4, 10)) as o:
-            library.register_narrow_function(o, *register)
+            library.register_narrow(o, *register)
             for ptlt in baca.select.ptlts(o):
                 baca.staccato_function(ptlt)
             baca.hairpin_function(o, "p < ff")

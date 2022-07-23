@@ -316,14 +316,14 @@ def ob_cl(cache):
             else:
                 pitches = "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5"
             baca.pitches_function(o, pitches)
-            library.color_fingerings_function(o)
+            library.color_fingerings(o)
             baca.dynamic_function(o, "p")
         baca.dynamic_function(m[35, 38], "mf")
         for pair in [(35, 38), (39, 42), (43, 44)]:
             with baca.scope(m[pair]) as u:
                 pitches = "F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5"
                 baca.pitches_function(u, pitches)
-                library.color_fingerings_function(u),
+                library.color_fingerings(u),
 
 
 def pf(cache):
@@ -343,7 +343,7 @@ def pf(cache):
             baca.dls_staff_padding_function(o, 6)
             baca.tuplet_bracket_staff_padding_function(o, 3)
     with baca.scope(m[45, 48]) as o:
-        library.replace_with_clusters_function(o, "tenor")
+        library.replace_with_clusters(o, "tenor")
         cache.rebuild()
         m = cache["pf"]
     with baca.scope(m[45, 48]) as o:
@@ -415,16 +415,16 @@ def strings(cache):
         baca.glissando_function(
             o,
         )
-        library.register_narrow_function(o, 4)
+        library.register_narrow(o, 4)
         baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
     with baca.scope(cache["va"].get(1, 7)) as o:
         baca.dynamic_function(o, '"mp"')
         baca.glissando_function(o)
-        library.register_narrow_function(o, 3)
+        library.register_narrow(o, 3)
         baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
     with baca.scope(cache["vc"].get(1, 13)) as o:
         baca.dynamic_function(o, '"mp"')
-        library.register_narrow_function(o, 2)
+        library.register_narrow(o, 2)
         baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
         for run in baca.select.runs(o):
             baca.glissando_function(run)
@@ -444,7 +444,7 @@ def strings(cache):
         with baca.scope(item) as o:
             for run in baca.select.runs(o):
                 baca.glissando_function(run)
-            library.register_narrow_function(o, 5)
+            library.register_narrow(o, 5)
             baca.note_head_style_harmonic_function(o)
     with baca.scope(cache.va.get(8, 10)) as o:
         baca.clef_function(o, "treble")

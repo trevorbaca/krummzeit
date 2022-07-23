@@ -215,171 +215,120 @@ def VC(voice):
 
 
 def ob(m):
-    accumulator(
-        ("ob", 1),
-        baca.pitch("Eb5"),
-        library.color_fingerings(),
-        baca.dynamic("ff"),
-    )
+    with baca.scope(m[1]) as o:
+        baca.pitch_function(o, "Eb5")
+        library.color_fingerings_function(o)
+        baca.dynamic_function(o, "ff")
 
 
 def cl(m):
-    accumulator(
-        ("cl", 1),
-        baca.pitch("Eb2"),
-        library.color_fingerings(),
-        baca.dynamic("ff"),
-    )
-    accumulator(
-        ("cl", (3, 14)),
-        baca.pitch("E2"),
-    )
-    accumulator(
-        ("cl", (3, 4)),
-        baca.dynamic(
-            "ff",
-            selector=lambda _: baca.select.pleaf(_, 0),
-        ),
-    )
-    accumulator(
-        ("cl", (5, 6)),
-        baca.hairpin(
-            "ff < fff",
-            selector=lambda _: baca.select.rleaves(_),
-        ),
-    )
-    accumulator(
-        ("cl", 9),
-        baca.dynamic(
-            "fff-poss",
-            selector=lambda _: baca.select.pleaf(_, 0),
-        ),
-    )
-    accumulator(
-        ("cl", (11, 14)),
-        baca.hairpin("fff > ppp"),
-    )
+    with baca.scope(m[1]) as o:
+        baca.pitch_function(o, "Eb2")
+        library.color_fingerings_function(o)
+        baca.dynamic_function(o, "ff")
+    with baca.scope(m.get(3, 14)) as o:
+        baca.pitch_function(o, "E2")
+    with baca.scope(m.get(3, 4)) as o:
+        baca.dynamic_function(o, "ff")
+    with baca.scope(m.get(5, 6)) as o:
+        baca.hairpin_function(baca.select.rleak(o), "ff < fff")
+    with baca.scope(m[9]) as o:
+        baca.dynamic_function(o, "fff-poss")
+    with baca.scope(m.get(11, 14)) as o:
+        baca.hairpin_function(o, "fff > ppp")
 
 
 def pf_perc_1(cache):
-    accumulator(
-        (["pf", "perc"], 1),
-        baca.pitch("F#6"),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-    )
+    for name in ["pf", "perc"]:
+        with baca.scope(cache[name][1]) as o:
+            baca.pitch_function(o, "F#6")
+            baca.stem_tremolo_function(o.pleaves())
 
 
 def pf_3_22(cache):
-    accumulator(
-        ("pf", (3, 4)),
-        baca.instrument(library.instruments()["Harpsichord"]),
-        library.short_instrument_name("Hpschd."),
-        library.replace_with_clusters("harpsichord"),
-    )
-    accumulator(
-        ("pf", (8, 22)),
-        baca.instrument(library.instruments()["Piano"]),
-        library.short_instrument_name("Pf."),
-        baca.clef("bass"),
-        library.replace_with_clusters("low"),
-        baca.ottava_bassa(),
-        baca.dynamic("fff-poss"),
-    )
+    with baca.scope(cache["pf"].get(3, 4)) as o:
+        baca.instrument_function(
+            o, library.instruments()["Harpsichord"], accumulator.manifests()
+        )
+        library.short_instrument_name_function(o, "Hpschd.", accumulator.manifests)
+        library.replace_with_clusters_function(o, "harpsichord")
+        cache.rebuild()
+    with baca.scope(cache["pf"].get(8, 22)) as o:
+        library.replace_with_clusters_function(o, "low")
+        cache.rebuild()
+    with baca.scope(cache["pf"].get(8, 22)) as o:
+        baca.instrument_function(
+            o, library.instruments()["Piano"], accumulator.manifests()
+        )
+        library.short_instrument_name_function(o, "Pf.", accumulator.manifests())
+        baca.clef_function(o, "bass")
+        baca.ottava_bassa_function(o)
+        baca.dynamic_function(o, "fff-poss")
 
 
 def perc_3_22(cache):
-    accumulator(
-        ("perc", (3, 22)),
-        baca.markup(r"\baca-tam-tam-markup"),
-        baca.clef("percussion"),
-        baca.staff_lines(1),
-        baca.staff_position(0),
-        baca.laissez_vibrer(selector=lambda _: baca.select.ptails(_)),
-        baca.dynamic("f"),
-    )
+    with baca.scope(cache["perc"].get(3, 22)) as o:
+        baca.markup_function(o, r"\baca-tam-tam-markup")
+        baca.clef_function(o, "percussion")
+        baca.staff_lines_function(o, 1)
+        baca.staff_position_function(o, 0)
+        baca.laissez_vibrer_function(o.ptails())
+        baca.dynamic_function(o, "f")
 
 
 def strings_1_3(cache):
-    accumulator(
-        (["vn", "va", "vc"], (1, 3)),
-        baca.new(
-            baca.pitch("Eb5"),
-            match=0,
-        ),
-        baca.new(
-            baca.pitch("A3"),
-            match=1,
-        ),
-        baca.new(
-            baca.pitch("E~2"),
-            match=2,
-        ),
-        baca.stem_tremolo(selector=lambda _: baca.select.pleaves(_)),
-        baca.dynamic("fff"),
-    )
+    for name, pitch in (
+        ("vn", "Eb5"),
+        ("va", "A3"),
+        ("vc", "E~2"),
+    ):
+        with baca.scope(cache[name].get(1, 3)) as o:
+            baca.pitch_function(o, pitch)
+            baca.stem_tremolo_function(o.pleaves())
+            baca.dynamic_function(o, "fff")
 
 
 def strings_5_9(cache):
-    pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
-    pcs = pcs.transpose(11)
-    accumulator(
-        baca.timeline(
-            [
-                ("vn", (5, 9)),
-                ("va", (5, 9)),
-                ("vc", (5, 9)),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
+    pairs = (
+        ("vn", (5, 4)),
+        ("va", (5, 3)),
+        ("vc", (5, 3)),
     )
-    accumulator(
-        (["vn", "va", "vc"], (5, 9)),
-        baca.markup(r"\krummzeit-on-bridge-full-bow-markup"),
-        baca.new(
-            library.register_narrow(5, 4),
-            match=0,
-        ),
-        baca.new(
-            baca.clef("treble"),
-            library.register_narrow(5, 3),
-            match=[1, 2],
-        ),
-        baca.new(
-            baca.glissando(),
-            map=lambda _: baca.select.runs(_),
-        ),
-        baca.alternate_bow_strokes(),
-        baca.dynamic('"f"'),
-    )
+    leaves = [cache[_[0]].get(5, 9) for _ in pairs]
+    leaves = abjad.sequence.flatten(leaves)
+    with baca.scope(leaves) as o:
+        pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
+        pcs = pcs.transpose(11)
+        leaves = baca.select.sort_by_timeline(leaves)
+        baca.pitches_function(leaves, pcs)
+    for name, register in pairs:
+        with baca.scope(cache[name].get(5, 9)) as o:
+            baca.markup_function(o, r"\krummzeit-on-bridge-full-bow-markup")
+            library.register_narrow_function(o, *register)
+            if name in ("va", "vc"):
+                baca.clef_function(o, "treble")
+            for ruyn in baca.select.runs(o):
+                baca.glissando_function(o)
+            baca.alternate_bow_strokes_function(o)
+            baca.dynamic_function(o, '"f"')
 
 
 def strings_22(cache):
-    pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
-    pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
-    accumulator(
-        baca.timeline(
-            [
-                ("vn", 22),
-                ("va", 22),
-                ("vc", 22),
-            ]
-        ),
-        baca.pitches(
-            pcs,
-            selector=lambda _: baca.select.plts(_),
-        ),
-    )
-    accumulator(
-        (["vn", "va", "vc"], 22),
-        baca.markup(r"\baca-pizz-markup"),
-        library.displacement(),
-        library.register_narrow(6),
-        baca.staccatissimo(selector=lambda _: baca.select.pheads(_)),
-        baca.dynamic("fff"),
-    )
+    names = ["vn", "va", "vc"]
+    leaves = [cache[_][22] for _ in names]
+    leaves = abjad.sequence.flatten(leaves)
+    with baca.scope(leaves) as o:
+        pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
+        pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
+        leaves = baca.select.sort_by_timeline(leaves)
+        baca.pitches_function(leaves, pcs)
+    for name in names:
+        with baca.scope(cache[name][22]) as o:
+            baca.markup_function(o, r"\baca-pizz-markup")
+            library.displacement_function(o)
+            library.register_narrow_function(o, 6)
+            baca.staccatissimo_function(o.pheads())
+            baca.dynamic_function(o, "fff")
 
 
 def main():
@@ -416,7 +365,6 @@ if __name__ == "__main__":
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
         always_make_global_rests=True,
-        commands=accumulator.commands,
         error_on_not_yet_pitched=True,
         transpose_score=True,
     )

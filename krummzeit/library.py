@@ -1,11 +1,26 @@
-import dataclasses
 import inspect
-import typing
 
 import abjad
 import baca
 import quicktions
 from abjadext import rmakers
+
+
+def _do_register_transition_command(argument, start_registration, stop_registration):
+    leaves = abjad.select.leaves(argument)
+    leaves_timespan = abjad.get.timespan(leaves)
+    plts = baca.plts(argument)
+    for plt in plts:
+        timespan = abjad.get.timespan(plt)
+        registration = _make_registration(
+            start_registration,
+            stop_registration,
+            timespan.start_offset,
+            leaves_timespan,
+        )
+        for pleaf in plt:
+            pitches = registration([pleaf.written_pitch])
+            _set_pitch(pleaf, pitches[0])
 
 
 def _make_colored_numerators(numerators, addenda):
@@ -225,31 +240,6 @@ def _make_time_signatures_by_section():
     return section_time_signatures
 
 
-def _numerator_to_time_signature(numerator):
-    if abjad.math.is_integer_equivalent_number(numerator):
-        time_signature = abjad.TimeSignature((numerator, 4))
-    else:
-        time_signature = abjad.TimeSignature((int(2 * numerator), 8))
-    return time_signature
-
-
-def _do_register_transition_command(argument, start_registration, stop_registration):
-    leaves = abjad.select.leaves(argument)
-    leaves_timespan = abjad.get.timespan(leaves)
-    plts = baca.plts(argument)
-    for plt in plts:
-        timespan = abjad.get.timespan(plt)
-        registration = _make_registration(
-            start_registration,
-            stop_registration,
-            timespan.start_offset,
-            leaves_timespan,
-        )
-        for pleaf in plt:
-            pitches = registration([pleaf.written_pitch])
-            _set_pitch(pleaf, pitches[0])
-
-
 def _make_registration(start_registration, stop_registration, offset, timespan):
     assert offset in timespan
     fraction = (offset - timespan.start_offset) / timespan.duration
@@ -285,57 +275,21 @@ def _make_registration(start_registration, stop_registration, offset, timespan):
     return registration
 
 
+def _numerator_to_time_signature(numerator):
+    if abjad.math.is_integer_equivalent_number(numerator):
+        time_signature = abjad.TimeSignature((numerator, 4))
+    else:
+        time_signature = abjad.TimeSignature((int(2 * numerator), 8))
+    return time_signature
+
+
 def _set_pitch(pleaf, pitch):
     pleaf.written_pitch = pitch
     abjad.detach("not yet registered", pleaf)
 
 
-@dataclasses.dataclass(frozen=True, order=True, slots=True, unsafe_hash=True)
-class RegisterTransitionCommand(baca.Command):
-
-    selector: typing.Any = lambda _: baca.select.leaves(_)
-    start_registration: typing.Any = None
-    stop_registration: typing.Any = None
-
-    def __post_init__(self):
-        baca.Command.__post_init__(self)
-        if self.start_registration is not None:
-            assert isinstance(self.start_registration, baca.Registration)
-        if self.stop_registration is not None:
-            assert isinstance(self.stop_registration, baca.Registration)
-        start_length = len(self.start_registration.components)
-        stop_length = len(self.stop_registration.components)
-        assert start_length == stop_length, repr(start_length, stop_length)
-
-    def __call__(self, argument=None, runtime=None):
-        if argument is None:
-            return
-        if self.selector:
-            argument = self.selector(argument)
-        _do_register_transition_command(
-            argument,
-            self.start_registration,
-            self.stop_registration,
-        )
-
-
-def color_fingerings():
-    return baca.color_fingerings(
-        [0, 1, 2, 1],
-        selector=lambda _: baca.select.pheads(_, exclude=baca.enums.HIDDEN),
-    )
-
-
 def color_fingerings_function(argument):
     return baca.color_fingerings_function(argument, [0, 1, 2, 1])
-
-
-def displacement():
-    return baca.displacement(
-        [0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
-        + [-1, -1, -1, -1],
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    )
 
 
 def displacement_function(argument):
@@ -349,10 +303,6 @@ def displacement_function(argument):
 def indigo_pitch_classes():
     indigo_pitch_classes, violet_pitch_classes = _make_pitch_classes()
     return indigo_pitch_classes
-
-
-def instrument(key):
-    return baca.instrument(instruments()[key])
 
 
 def instrument_function(argument, key):
@@ -1048,19 +998,6 @@ def make_white_rhythm(
     return music
 
 
-def short_instrument_name(
-    key, alert=None, context="Staff", selector=lambda _: abjad.select.leaf(_, 0)
-):
-    short_instrument_name = short_instrument_names()[key]
-    command = baca.short_instrument_name(
-        short_instrument_name,
-        alert=alert,
-        context=context,
-        selector=selector,
-    )
-    return baca.not_parts(command)
-
-
 def short_instrument_name_function(leaf, key, context="Staff"):
     short_instrument_name = short_instrument_names()[key]
     baca.short_instrument_name_function(
@@ -1138,134 +1075,6 @@ def metronome_marks():
     )
 
 
-def register_narrow(start, stop=None):
-    narrow_second_octave = baca.RegisterCommand(
-        registration=baca.Registration([("[A0, F#4)", -26), ("[F#4, C8]", -23)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    )
-    narrow_third_octave = baca.RegisterCommand(
-        registration=baca.Registration([("[A0, F#4)", -14), ("[F#4, C8]", -11)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    )
-    narrow_fourth_octave = baca.RegisterCommand(
-        registration=baca.Registration([("[A0, F#4)", -2), ("[F#4, C8]", 1)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    )
-    narrow_fifth_octave = baca.RegisterCommand(
-        registration=baca.Registration([("[A0, F#4)", 10), ("[F#4, C8]", 13)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    )
-    narrow_sixth_octave = baca.RegisterCommand(
-        registration=baca.Registration([("[A0, F#4)", 22), ("[F#4, C8]", 25)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    )
-    narrow_seventh_octave = baca.RegisterCommand(
-        registration=baca.Registration([("[A0, F#4)", 34), ("[F#4, C8]", 37)]),
-        selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-    )
-    if stop is None:
-        if start == 2:
-            return narrow_second_octave
-        elif start == 3:
-            return narrow_third_octave
-        elif start == 4:
-            return narrow_fourth_octave
-        elif start == 5:
-            return narrow_fifth_octave
-        elif start == 6:
-            return narrow_sixth_octave
-        elif start == 7:
-            return narrow_seventh_octave
-        else:
-            raise Exception
-    elif start == 2 and stop == 5:
-        narrow_second_to_fifth_octave = RegisterTransitionCommand(
-            start_registration=narrow_second_octave.registration,
-            stop_registration=narrow_fifth_octave.registration,
-        )
-        return narrow_second_to_fifth_octave
-    elif start == 3 and stop == 5:
-        narrow_third_to_fifth_octave = RegisterTransitionCommand(
-            start_registration=narrow_third_octave.registration,
-            stop_registration=narrow_fifth_octave.registration,
-        )
-        return narrow_third_to_fifth_octave
-    elif start == 4 and stop == 5:
-        narrow_fourth_to_fifth_octave = RegisterTransitionCommand(
-            start_registration=narrow_fourth_octave.registration,
-            stop_registration=narrow_fifth_octave.registration,
-        )
-        return narrow_fourth_to_fifth_octave
-    elif start == 4 and stop == 6:
-        narrow_fourth_to_sixth_octave = RegisterTransitionCommand(
-            start_registration=narrow_fourth_octave.registration,
-            stop_registration=narrow_sixth_octave.registration,
-        )
-        return narrow_fourth_to_sixth_octave
-    elif start == 5 and stop == 6:
-        narrow_fifth_to_sixth_octave = RegisterTransitionCommand(
-            start_registration=narrow_fifth_octave.registration,
-            stop_registration=narrow_sixth_octave.registration,
-        )
-        return narrow_fifth_to_sixth_octave
-    elif start == 7 and stop == 5:
-        narrow_seventh_to_fifth_octave = RegisterTransitionCommand(
-            start_registration=narrow_seventh_octave.registration,
-            stop_registration=narrow_fifth_octave.registration,
-        )
-        return narrow_seventh_to_fifth_octave
-    elif start == 6 and stop == 5:
-        narrow_sixth_to_fifth_octave = RegisterTransitionCommand(
-            start_registration=narrow_sixth_octave.registration,
-            stop_registration=narrow_fifth_octave.registration,
-        )
-        return narrow_sixth_to_fifth_octave
-    elif start == 6 and stop == 4:
-        narrow_sixth_to_fourth_octave = RegisterTransitionCommand(
-            start_registration=narrow_sixth_octave.registration,
-            stop_registration=narrow_fourth_octave.registration,
-        )
-        return narrow_sixth_to_fourth_octave
-    elif start == 5 and stop == 4:
-        narrow_fifth_to_fourth_octave = RegisterTransitionCommand(
-            start_registration=narrow_fifth_octave.registration,
-            stop_registration=narrow_fourth_octave.registration,
-        )
-        return narrow_fifth_to_fourth_octave
-    elif start == 5 and stop == 3:
-        narrow_fifth_to_third_octave = RegisterTransitionCommand(
-            start_registration=narrow_fifth_octave.registration,
-            stop_registration=narrow_third_octave.registration,
-        )
-        return narrow_fifth_to_third_octave
-    elif start == 5 and stop == 2:
-        narrow_fifth_to_second_octave = RegisterTransitionCommand(
-            start_registration=narrow_fifth_octave.registration,
-            stop_registration=narrow_second_octave.registration,
-        )
-        return narrow_fifth_to_second_octave
-    elif start == 4 and stop == 3:
-        narrow_fourth_to_third_octave = RegisterTransitionCommand(
-            start_registration=narrow_fourth_octave.registration,
-            stop_registration=narrow_third_octave.registration,
-        )
-        return narrow_fourth_to_third_octave
-    elif start == 4 and stop == 2:
-        narrow_fourth_to_second_octave = RegisterTransitionCommand(
-            start_registration=narrow_fourth_octave.registration,
-            stop_registration=narrow_second_octave.registration,
-        )
-        return narrow_fourth_to_second_octave
-    elif start == 3 and stop == 2:
-        narrow_third_to_second_octave = RegisterTransitionCommand(
-            start_registration=narrow_third_octave.registration,
-            stop_registration=narrow_second_octave.registration,
-        )
-        return narrow_third_to_second_octave
-    else:
-        raise ValueError(start, stop)
-
-
 def register_narrow_function(argument, start, stop=None):
     octave_number_to_registration = {
         2: baca.Registration([("[A0, F#4)", -26), ("[F#4, C8]", -23)]),
@@ -1284,41 +1093,6 @@ def register_narrow_function(argument, start, stop=None):
         _do_register_transition_command(argument, start_registration, stop_registration)
 
 
-def register_wide(start):
-    if start == 3:
-        wide_third_octave = baca.RegisterCommand(
-            registration=baca.Registration([("[A0, F#4)", -20), ("[F#4, C8]", -6)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-        )
-        return wide_third_octave
-    elif start == 4:
-        wide_fourth_octave = baca.RegisterCommand(
-            registration=baca.Registration([("[A0, F#4)", -8), ("[F#4, C8]", 6)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-        )
-        return wide_fourth_octave
-    elif start == 5:
-        wide_fifth_octave = baca.RegisterCommand(
-            registration=baca.Registration([("[A0, F#4)", 4), ("[F#4, C8]", 18)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-        )
-        return wide_fifth_octave
-    elif start == 6:
-        wide_sixth_octave = baca.RegisterCommand(
-            registration=baca.Registration([("[A0, F#4)", 16), ("[F#4, C8]", 30)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-        )
-        return wide_sixth_octave
-    elif start == 7:
-        wide_seventh_octave = baca.RegisterCommand(
-            registration=baca.Registration([("[A0, F#4)", 28), ("[F#4, C8]", 42)]),
-            selector=lambda _: baca.select.plts(_, exclude=baca.enums.HIDDEN),
-        )
-        return wide_seventh_octave
-    else:
-        raise ValueError(start)
-
-
 def register_wide_function(argument, start):
     start_to_registration = {
         3: baca.Registration([("[A0, F#4)", -20), ("[F#4, C8]", -6)]),
@@ -1329,15 +1103,6 @@ def register_wide_function(argument, start):
     }
     registration = start_to_registration[start]
     baca.commands._do_register_command(argument, registration)
-
-
-def replace_with_clusters(flavor):
-    clusters = {
-        "harpsichord": baca.replace_with_clusters([4], start_pitch="D4"),
-        "low": baca.replace_with_clusters([7], start_pitch="C1"),
-        "tenor": baca.replace_with_clusters([4], start_pitch="A2"),
-    }
-    return clusters[flavor]
 
 
 def replace_with_clusters_function(argument, flavor):

@@ -342,7 +342,7 @@ def cl(m):
         )
     with baca.scope(m.get(1, 10)) as o:
         baca.pitch_function(o, "B3")
-        baca.stem_up_function(o)
+        baca.stem_up_function(o.pleaves())
         baca.dynamic_function(o, "ppp")
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m.get(13, 21)) as o:
@@ -352,7 +352,7 @@ def cl(m):
         baca.instrument_function(o, library.instruments()["BassClarinet"])
         library.short_instrument_name(o, "B. cl.")
         baca.pitch_function(o, "Bb1")
-        baca.stem_up_function(o)
+        baca.stem_up_function(o.pleaves())
         baca.dynamic_function(o, "ppp")
         baca.dls_staff_padding_function(o, 7)
 
@@ -502,9 +502,7 @@ def strings_12_20(cache):
                 baca.glissando_function(run)
             baca.hairpin_function(o.tleaves(), "p > ppp")
             baca.markup_function(o, r"\baca-molto-flautando-markup")
-            baca.note_head_style_harmonic_function(
-                o,
-            )
+            baca.note_head_style_harmonic_function(o.pleaves())
             library.register_narrow(o, *pair),
 
 

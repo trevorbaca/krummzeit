@@ -280,7 +280,7 @@ def strings_3_5(cache):
                 library.register_wide(o, register)
             elif name in ("va", "vc"):
                 library.register_narrow(o, register)
-            baca.note_head_style_harmonic_function(o)
+            baca.note_head_style_harmonic_function(o.pleaves())
             for run in baca.select.runs(o):
                 baca.glissando_function(run)
             baca.dynamic_function(o, "ppp")

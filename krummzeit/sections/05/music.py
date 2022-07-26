@@ -445,7 +445,7 @@ def strings(cache):
             for run in baca.select.runs(o):
                 baca.glissando_function(run)
             library.register_narrow(o, 5)
-            baca.note_head_style_harmonic_function(o)
+            baca.note_head_style_harmonic_function(o.pleaves())
     with baca.scope(cache.va.get(8, 10)) as o:
         baca.clef_function(o, "treble")
         baca.hairpin_function(o.tleaves(), "pp < f")

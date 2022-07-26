@@ -118,7 +118,7 @@ def ob_1_40(m):
 def cl_1_40(m):
     with baca.scope(m.leaves()) as o:
         baca.pitch_function(o, "D2")
-        baca.stem_up_function(o)
+        baca.stem_up_function(o.pleaves())
         baca.dynamic_function(o, "f")
         baca.dls_staff_padding_function(o, 7)
 

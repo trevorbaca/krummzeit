@@ -404,7 +404,7 @@ def va_vc_11_12(cache):
 def pf_vn_vc_va_14_23(cache):
     with baca.scope(cache["pf"].get(14, 20)) as o:
         baca.pitch_function(o, "C4")
-        baca.note_head_style_harmonic_function(o)
+        baca.note_head_style_harmonic_function(o.pleaves())
         baca.tenuto_function(o.pheads())
         baca.dynamic_function(o, "ff-sempre")
         baca.dls_staff_padding_function(o, 4)
@@ -424,7 +424,7 @@ def pf_vn_vc_va_14_23(cache):
     for name, pair, register in triples:
         with baca.scope(cache[name].get(pair)) as o:
             baca.markup_function(o, r"\baca-scratch-molto-markup")
-            baca.note_head_style_harmonic_function(o)
+            baca.note_head_style_harmonic_function(o.pleaves())
             baca.dynamic_function(o, "fff-poss")
             library.displacement(o)
             if name == "vn":

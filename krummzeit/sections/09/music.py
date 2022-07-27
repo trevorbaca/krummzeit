@@ -223,7 +223,7 @@ def ob_cl_4_10(cache):
 def pf_perc_1_6(cache):
     with baca.scope(cache["pf"].get(1, 6)) as o:
         baca.instrument_function(o.leaf(0), library.instruments()["Harpsichord"])
-        library.short_instrument_name(o, "Hpschd.")
+        library.short_instrument_name(o.leaf(0), "Hpschd.")
         baca.clef_function(o, "treble")
         library.replace_with_clusters(o, "harpsichord")
     with baca.scope(cache["perc"].get(5, 6)) as o:
@@ -241,7 +241,7 @@ def pf_perc_9_10(cache):
         with baca.scope(cache[name].get(9, 10)) as o:
             if name == "pf":
                 baca.instrument_function(o.leaf(0), library.instruments()["Piano"])
-                library.short_instrument_name(o, "Pf.")
+                library.short_instrument_name(o.leaf(0), "Pf.")
                 baca.tuplet_bracket_staff_padding_function(o, 2)
                 baca.dls_staff_padding_function(o, 6)
             if name == "perc":

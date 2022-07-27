@@ -242,7 +242,7 @@ def pf(m):
         baca.instrument_function(
             o.leaf(0), library.instruments()["Harpsichord"], accumulator.manifests()
         )
-        library.short_instrument_name(o, "Hpschd.", accumulator.manifests())
+        library.short_instrument_name(o.leaf(0), "Hpschd.", accumulator.manifests())
     with baca.scope(m.get(1, 10)) as o:
         baca.tuplet_bracket_staff_padding_function(o, 4)
 

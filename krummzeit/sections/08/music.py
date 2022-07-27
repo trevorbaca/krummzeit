@@ -316,7 +316,7 @@ def pf(m):
         baca.dls_staff_padding_function(o, 7)
     with baca.scope(m.get(14, 20)) as o:
         baca.instrument_function(o.leaf(0), library.instruments()["Piano"])
-        library.short_instrument_name(o, "Pf.")
+        library.short_instrument_name(o.leaf(0), "Pf.")
         baca.clef_function(o, "bass")
         baca.dls_staff_padding_function(o, 3)
 

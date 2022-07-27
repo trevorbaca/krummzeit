@@ -424,7 +424,7 @@ def pf(m):
 def perc(m):
     with baca.scope(m[14]) as o:
         baca.instrument_function(
-            o, library.instruments()["Xylophone"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )
         baca.clef_function(o, "treble")
         baca.staff_lines_function(o, 5)
@@ -434,7 +434,7 @@ def perc(m):
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m[21, 27]) as o:
         baca.instrument_function(
-            o, library.instruments()["Percussion"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Percussion"], accumulator.manifests()
         )
         baca.markup_function(o, r"\baca-slate-scrape-markup")
         baca.clef_function(o, "percussion")
@@ -445,7 +445,7 @@ def perc(m):
         baca.dls_staff_padding_function(o, 3)
     with baca.scope(m[28]) as o:
         baca.instrument_function(
-            o, library.instruments()["Xylophone"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )
         baca.clef_function(o, "treble")
         baca.staff_lines_function(o, 5)
@@ -470,7 +470,7 @@ def vn(m):
         baca.staff_position_function(o, 0)
     with baca.scope(m[22, 28]) as o:
         baca.instrument_function(
-            o, library.instruments()["Violin"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Violin"], accumulator.manifests()
         )
         baca.clef_function(o, "treble"),
         baca.staff_lines_function(o, 5),

@@ -338,7 +338,7 @@ def ob(m):
 def cl(m):
     with baca.scope(m.leaves()) as o:
         baca.instrument_function(
-            o, library.instruments()["ClarinetInEFlat"], accumulator.manifests()
+            o.leaf(0), library.instruments()["ClarinetInEFlat"], accumulator.manifests()
         )
     with baca.scope(m.get(1, 10)) as o:
         baca.pitch_function(o, "B3")
@@ -349,7 +349,7 @@ def cl(m):
         baca.dls_staff_padding_function(o, 5)
         baca.tuplet_bracket_staff_padding_function(o, 3)
     with baca.scope(m.get(23, 35)) as o:
-        baca.instrument_function(o, library.instruments()["BassClarinet"])
+        baca.instrument_function(o.leaf(0), library.instruments()["BassClarinet"])
         library.short_instrument_name(o, "B. cl.")
         baca.pitch_function(o, "Bb1")
         baca.stem_up_function(o.pleaves())
@@ -417,7 +417,7 @@ def perc(m):
         baca.staff_lines_function(o, 5)
         baca.clef_function(o, "treble")
         baca.instrument_function(
-            o, library.instruments()["Xylophone"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )
     with baca.scope(m[28]) as o:
         baca.staff_lines_function(o, 1)

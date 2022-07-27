@@ -177,7 +177,7 @@ def VC(voice):
 
 def ob(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o, accumulator.instruments["Oboe"])
+        baca.instrument_function(o.leaf(0), accumulator.instruments["Oboe"])
         baca.instrument_name_function(o, r"\krummzeit-oboe-markup")
         library.short_instrument_name(o, "Ob.")
         baca.clef_function(o, "treble")
@@ -185,7 +185,7 @@ def ob(m):
 
 def cl(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o, accumulator.instruments["BassClarinet"])
+        baca.instrument_function(o.leaf(0), accumulator.instruments["BassClarinet"])
         baca.instrument_name_function(o, r"\krummzeit-bass-clarinet-markup")
         library.short_instrument_name(o, "B. cl.")
         baca.clef_function(o, "treble")
@@ -197,7 +197,7 @@ def cl(m):
 def pf(cache):
     m = cache["pf"]
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o, accumulator.instruments["Piano"])
+        baca.instrument_function(o.leaf(0), accumulator.instruments["Piano"])
         baca.instrument_name_function(o, r"\krummzeit-piano-markup")
         library.short_instrument_name(o, "Pf.")
         baca.clef_function(o, "bass")
@@ -222,7 +222,7 @@ def pf(cache):
 
 def perc(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(o, accumulator.instruments["Xylophone"])
+        baca.instrument_function(o.leaf(0), accumulator.instruments["Xylophone"])
         baca.instrument_name_function(o, r"\krummzeit-percussion-markup")
         library.short_instrument_name(o, "Perc.")
         baca.clef_function(o, "treble")
@@ -232,7 +232,7 @@ def perc(m):
         baca.stem_tremolo_function(o.pleaves())
         baca.dynamic_function(o, "fff-poss")
     with baca.scope(m[10, 13]) as o:
-        library.instrument(o, "Percussion")
+        library.instrument(o.leaf(0), "Percussion")
         baca.markup_function(o, r"\baca-sponges-markup")
         baca.clef_function(o, "percussion")
         baca.staff_lines_function(o, 1)
@@ -244,7 +244,7 @@ def perc(m):
 
 def vn(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(o, accumulator.instruments["Violin"])
+        baca.instrument_function(o.leaf(0), accumulator.instruments["Violin"])
         baca.instrument_name_function(o, r"\krummzeit-violin-markup")
         library.short_instrument_name(o, "Vn.")
         baca.clef_function(o, "treble")
@@ -252,7 +252,7 @@ def vn(m):
 
 def va(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(o, accumulator.instruments["Viola"])
+        baca.instrument_function(o.leaf(0), accumulator.instruments["Viola"])
         baca.instrument_name_function(o, r"\krummzeit-viola-markup")
         library.short_instrument_name(o, "Va.")
         baca.clef_function(o, "alto")
@@ -260,7 +260,7 @@ def va(m):
 
 def vc(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(o, accumulator.instruments["Cello"])
+        baca.instrument_function(o.leaf(0), accumulator.instruments["Cello"])
         baca.instrument_name_function(o, r"\krummzeit-cello-markup")
         library.short_instrument_name(o, "Vc.")
         baca.clef_function(o, "bass")

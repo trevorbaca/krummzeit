@@ -356,7 +356,7 @@ def VC(voice):
 
 def cl(m):
     with baca.scope(m[5]) as o:
-        baca.instrument_function(o, library.instruments()["ClarinetInEFlat"]),
+        baca.instrument_function(o.leaf(0), library.instruments()["ClarinetInEFlat"]),
         baca.markup_function(
             o, r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"
         ),
@@ -373,7 +373,7 @@ def cl(m):
 def pf(m):
     with baca.scope(m[1]) as o:
         baca.instrument_function(
-            o, library.instruments()["Harpsichord"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Harpsichord"], accumulator.manifests()
         )
         library.short_instrument_name(o, "Hpschd.")
     with baca.scope(m[1, 22]) as o:
@@ -384,7 +384,7 @@ def pf(m):
         baca.tuplet_bracket_staff_padding_function(o, 4)
     with baca.scope(m[45, 46]) as o:
         baca.clef_function(o, "bass")
-        baca.instrument_function(o, library.instruments()["Piano"])
+        baca.instrument_function(o.leaf(0), library.instruments()["Piano"])
         library.short_instrument_name(o, "Pf.")
     with baca.scope(m[57, 75]) as o:
         baca.dls_staff_padding_function(o, 7)
@@ -407,7 +407,7 @@ def vn(m):
         baca.clef_function(o, "percussion")
         baca.dynamic_function(o, "mf")
         baca.instrument_function(
-            o, library.instruments()["Percussion"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Percussion"], accumulator.manifests()
         )
         baca.markup_function(
             o,

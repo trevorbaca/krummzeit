@@ -224,14 +224,14 @@ def cl(m):
         baca.dls_staff_padding_function(o, 8)
     with baca.scope(m.get(4, 10)) as o:
         baca.instrument_function(
-            o, library.instruments()["ClarinetInEFlat"], accumulator.manifests()
+            o.leaf(0), library.instruments()["ClarinetInEFlat"], accumulator.manifests()
         )
     with baca.scope(m.get(11, 22)) as o:
         baca.dls_staff_padding_function(o, 8)
         baca.stem_up_function(o.pleaves())
     with baca.scope(m.get(16, 19)) as o:
         baca.instrument_function(
-            o, library.instruments()["BassClarinet"], accumulator.manifests()
+            o.leaf(0), library.instruments()["BassClarinet"], accumulator.manifests()
         )
         baca.pitch_function(o, "B1")
         baca.dynamic_function(o, "ppp")
@@ -240,7 +240,7 @@ def cl(m):
 def pf(m):
     with baca.scope(m[4]) as o:
         baca.instrument_function(
-            o, library.instruments()["Harpsichord"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Harpsichord"], accumulator.manifests()
         )
         library.short_instrument_name(o, "Hpschd.", accumulator.manifests())
     with baca.scope(m.get(1, 10)) as o:

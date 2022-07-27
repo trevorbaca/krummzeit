@@ -194,7 +194,9 @@ def ob_cl_4_10(cache):
         with baca.scope(cache[name].get(4, 7)) as o:
             if name == "cl":
                 baca.instrument_function(
-                    o, library.instruments()["ClarinetInEFlat"], accumulator.manifests()
+                    o.leaf(0),
+                    library.instruments()["ClarinetInEFlat"],
+                    accumulator.manifests(),
                 )
             baca.pitch_function(o, "D5")
             if name == "ob":
@@ -207,7 +209,9 @@ def ob_cl_4_10(cache):
                 baca.pitch_function(o, "Eb5")
                 baca.tuplet_bracket_staff_padding_function(o, 2)
             if name == "cl":
-                baca.instrument_function(o, library.instruments()["BassClarinet"])
+                baca.instrument_function(
+                    o.leaf(0), library.instruments()["BassClarinet"]
+                )
                 baca.pitch_function(o, "Eb2")
                 baca.dynamic_function(o, "ff")
                 baca.dls_staff_padding_function(o, 9)
@@ -218,7 +222,7 @@ def ob_cl_4_10(cache):
 
 def pf_perc_1_6(cache):
     with baca.scope(cache["pf"].get(1, 6)) as o:
-        baca.instrument_function(o, library.instruments()["Harpsichord"])
+        baca.instrument_function(o.leaf(0), library.instruments()["Harpsichord"])
         library.short_instrument_name(o, "Hpschd.")
         baca.clef_function(o, "treble")
         library.replace_with_clusters(o, "harpsichord")
@@ -236,12 +240,12 @@ def pf_perc_9_10(cache):
     for name in ["pf", "perc"]:
         with baca.scope(cache[name].get(9, 10)) as o:
             if name == "pf":
-                baca.instrument_function(o, library.instruments()["Piano"])
+                baca.instrument_function(o.leaf(0), library.instruments()["Piano"])
                 library.short_instrument_name(o, "Pf.")
                 baca.tuplet_bracket_staff_padding_function(o, 2)
                 baca.dls_staff_padding_function(o, 6)
             if name == "perc":
-                baca.instrument_function(o, library.instruments()["Xylophone"])
+                baca.instrument_function(o.leaf(0), library.instruments()["Xylophone"])
                 baca.tuplet_bracket_staff_padding_function(o, 3)
             baca.pitch_function(o, "F#6")
             baca.stem_tremolo_function(o.pleaves())

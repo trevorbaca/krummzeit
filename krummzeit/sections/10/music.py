@@ -248,7 +248,7 @@ def pf_perc_1(cache):
 def pf_3_22(cache):
     with baca.scope(cache["pf"].get(3, 4)) as o:
         baca.instrument_function(
-            o, library.instruments()["Harpsichord"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Harpsichord"], accumulator.manifests()
         )
         library.short_instrument_name(o, "Hpschd.", accumulator.manifests)
         library.replace_with_clusters(o, "harpsichord")
@@ -258,7 +258,7 @@ def pf_3_22(cache):
         cache.rebuild()
     with baca.scope(cache["pf"].get(8, 22)) as o:
         baca.instrument_function(
-            o, library.instruments()["Piano"], accumulator.manifests()
+            o.leaf(0), library.instruments()["Piano"], accumulator.manifests()
         )
         library.short_instrument_name(o, "Pf.", accumulator.manifests())
         baca.clef_function(o, "bass")

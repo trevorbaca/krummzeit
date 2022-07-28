@@ -361,13 +361,13 @@ def cl(m):
             o, r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"
         ),
         library.short_instrument_name(o.leaf(0), "Cl. (Eb)"),
-        baca.dynamic_function(o, "mp"),
+        baca.dynamic_function(o.pleaf(0), "mp"),
     with baca.scope(m[16, 22]) as o:
-        baca.dynamic_function(o, "f")
+        baca.dynamic_function(o.pleaf(0), "f")
     with baca.scope(m[69, 75]) as o:
         baca.pitches_function(o, "e'' dtqs'' f'' eqs'' dqs'' c'' dqs''"),
         baca.glissando_function(o),
-        baca.dynamic_function(o, "f"),
+        baca.dynamic_function(o.pleaf(0), "f"),
 
 
 def pf(m):
@@ -397,7 +397,7 @@ def perc(m):
         baca.accent_function(o.pheads())
     with baca.scope(m[45, 60]) as o:
         baca.markup_function(o, r"\baca-tam-tam-markup")
-        baca.dynamic_function(o, "p-sempre")
+        baca.dynamic_function(o.pleaf(0), "p-sempre")
         baca.laissez_vibrer_function(o.pheads())
 
 
@@ -405,7 +405,7 @@ def vn(m):
     with baca.scope(m[72, 75]) as o:
         baca.staff_lines_function(o, 1)
         baca.clef_function(o, "percussion")
-        baca.dynamic_function(o, "mf")
+        baca.dynamic_function(o.pleaf(0), "mf")
         baca.instrument_function(
             o.leaf(0), library.instruments()["Percussion"], accumulator.manifests()
         )
@@ -415,10 +415,10 @@ def vn(m):
         )
         baca.staff_position_function(o, 0)
     with baca.scope(m[8, 11]) as o:
-        baca.dynamic_function(o, "mp")
+        baca.dynamic_function(o.pleaf(0), "mp")
         baca.markup_function(o, r"\krummzeit-off-string-bowing-on-staccati-markup")
     with baca.scope(m[19, 22]) as o:
-        baca.dynamic_function(o, "f")
+        baca.dynamic_function(o.pleaf(0), "f")
         baca.markup_function(o, r"\krummzeit-off-string-bowing-on-staccati-markup")
 
 
@@ -482,12 +482,12 @@ def _1_28_strings(cache):
         for run in baca.select.runs(m[1, 28]):
             baca.glissando_function(run)
         with baca.scope(m[1, 11]) as o:
-            baca.dynamic_function(o, "mf"),
+            baca.dynamic_function(o.pleaf(0), "mf"),
             baca.markup_function(o, r"\baca-molto-flautando-markup"),
         with baca.scope(m[12, 22]) as o:
-            baca.dynamic_function(o, "f"),
+            baca.dynamic_function(o.pleaf(0), "f"),
             baca.markup_function(o, r"\baca-non-flautando-markup"),
-        baca.dynamic_function(m[23], "ff")
+        baca.dynamic_function(baca.select.pleaf(m[23], 0), "ff")
 
 
 def _34_53_strings(cache):
@@ -500,7 +500,7 @@ def _34_53_strings(cache):
     with baca.scope(cache["va"][34, 47]) as o:
         baca.alternate_bow_strokes_function(o.pheads())
         baca.clef_function(o, "treble")
-        baca.dynamic_function(o, "f")
+        baca.dynamic_function(o.pleaf(0), "f")
         for run in baca.select.runs(o):
             baca.glissando_function(run)
         baca.markup_function(o, r"\krummzeit-ob-plus-full-bow-strokes-markup")
@@ -508,12 +508,12 @@ def _34_53_strings(cache):
     with baca.scope(cache["vc"][34, 51]) as o:
         baca.alternate_bow_strokes_function(o.pheads()),
         baca.clef_function(o, "treble"),
-        baca.dynamic_function(o, "f"),
+        baca.dynamic_function(o.pleaf(0), "f"),
         baca.glissando_function(o),
         baca.markup_function(o, r"\krummzeit-ob-plus-full-bow-strokes-markup"),
         library.register_narrow(o, 5, 2),
     with baca.scope(cache["pf"][45, 56]) as o:
-        baca.dynamic_function(o, "fff-sempre"),
+        baca.dynamic_function(o.pleaf(0), "fff-sempre"),
         baca.marcato_function(o.pheads())
         baca.ottava_bassa_function(o.tleaves()),
         library.replace_with_clusters(o, "low"),
@@ -533,30 +533,30 @@ def _48_75_quartet(cache):
         baca.pitches_function(leaves, pcs)
     with baca.scope(cache["va"][48, 71]) as o:
         baca.clef_function(o, "treble"),
-        baca.dynamic_function(o, "fff"),
+        baca.dynamic_function(o.pleaf(0), "fff"),
         baca.markup_function(o, r"\baca-pizz-markup"),
         baca.staccatissimo_function(o.pheads())
         library.register_narrow(o, 5, 6),
     with baca.scope(cache["vc"][52, 71]) as o:
         baca.clef_function(o, "treble"),
-        baca.dynamic_function(o, "fff"),
+        baca.dynamic_function(o.pleaf(0), "fff"),
         baca.markup_function(o, r"\baca-pizz-markup"),
         baca.staccatissimo_function(o.pheads())
         library.register_narrow(o, 5, 6),
     with baca.scope(cache["vn"][38, 53]) as o:
         baca.alternate_bow_strokes_function(o.pheads()),
-        baca.dynamic_function(o, "f"),
+        baca.dynamic_function(o.pleaf(0), "f"),
         baca.glissando_function(o),
         baca.markup_function(o, r"\krummzeit-ob-plus-full-bow-strokes-markup"),
         library.register_narrow(o, 5, 4),
     with baca.scope(cache["vn"][54, 71]) as o:
-        baca.dynamic_function(o, "fff"),
+        baca.dynamic_function(o.pleaf(0), "fff"),
         baca.markup_function(o, r"\baca-pizz-markup"),
         baca.staccatissimo_function(o.pheads())
         library.register_narrow(o, 5, 6),
     with baca.scope(cache["pf"][57, 75]) as o:
         baca.clef_function(o, "treble"),
-        baca.dynamic_function(o, "fff"),
+        baca.dynamic_function(o.pleaf(0), "fff"),
         baca.staccatissimo_function(o.pheads())
         library.register_narrow(o, 5, 6),
 

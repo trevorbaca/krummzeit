@@ -234,7 +234,7 @@ def cl(m):
             o.leaf(0), library.instruments()["BassClarinet"], accumulator.manifests()
         )
         baca.pitch_function(o, "B1")
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
 
 
 def pf(m):
@@ -254,14 +254,14 @@ def perc(m):
         baca.staff_position_function(o, 0)
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m.get(2, 16)) as o:
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
         baca.stem_tremolo_function(o.pleaves())
         baca.markup_function(o, r"\krummzeit-fingertips-markup")
     with baca.scope(m.get(19, 22)) as o:
         baca.markup_function(o, r"\baca-tam-tam-markup")
         baca.markup_function(o, r"\baca-attackless-markup")
         baca.laissez_vibrer_function(o.pheads())
-        baca.dynamic_function(o, "p-sempre")
+        baca.dynamic_function(o.pleaf(0), "p-sempre")
 
 
 def va_vc_1_6(cache):
@@ -284,7 +284,7 @@ def strings_7_19(cache):
     ):
         with baca.scope(cache[name].get(7, 19)) as o:
             baca.pitch_function(o, pitch)
-            baca.dynamic_function(o, "fff")
+            baca.dynamic_function(o.pleaf(0), "fff")
             baca.markup_function(o, r"\baca-scratch-poss-markup")
     for name, pair in (
         ("vn", (11, 15)),

@@ -201,7 +201,7 @@ def ob_cl_4_10(cache):
             baca.pitch_function(o, "D5")
             if name == "ob":
                 baca.trill_spanner_function(baca.select.rleak(o))
-            baca.dynamic_function(o, "ff")
+            baca.dynamic_function(o.pleaf(0), "ff")
             baca.dls_staff_padding_function(o, 3)
     for name in ["ob", "cl"]:
         with baca.scope(cache[name].get(8, 10)) as o:
@@ -213,7 +213,7 @@ def ob_cl_4_10(cache):
                     o.leaf(0), library.instruments()["BassClarinet"]
                 )
                 baca.pitch_function(o, "Eb2")
-                baca.dynamic_function(o, "ff")
+                baca.dynamic_function(o.pleaf(0), "ff")
                 baca.dls_staff_padding_function(o, 9)
                 baca.stem_up_function(o)
                 baca.tuplet_bracket_staff_padding_function(o, 5)
@@ -232,7 +232,7 @@ def pf_perc_1_6(cache):
         baca.staff_lines_function(o, 5)
         baca.pitch_function(o, "D5")
         baca.accent_function(o.pheads())
-        baca.dynamic_function(o, "ff-sempre")
+        baca.dynamic_function(o.pleaf(0), "ff-sempre")
         baca.dls_staff_padding_function(o, 6)
 
 
@@ -249,7 +249,7 @@ def pf_perc_9_10(cache):
                 baca.tuplet_bracket_staff_padding_function(o, 3)
             baca.pitch_function(o, "F#6")
             baca.stem_tremolo_function(o.pleaves())
-            baca.dynamic_function(o, "fff")
+            baca.dynamic_function(o.pleaf(0), "fff")
 
 
 def strings_1_2(cache):
@@ -261,7 +261,7 @@ def strings_1_2(cache):
         with baca.scope(cache[name].get(1, 2)) as o:
             baca.pitch_function(o, pitch)
             baca.stem_tremolo_function(o.pleaves())
-            baca.dynamic_function(o, "fff-poss")
+            baca.dynamic_function(o.pleaf(0), "fff-poss")
 
 
 def strings_3_5(cache):
@@ -287,7 +287,7 @@ def strings_3_5(cache):
             baca.note_head_style_harmonic_function(o.pleaves())
             for run in baca.select.runs(o):
                 baca.glissando_function(run)
-            baca.dynamic_function(o, "ppp")
+            baca.dynamic_function(o.pleaf(0), "ppp")
 
 
 def strings_7_10(cache):
@@ -310,7 +310,7 @@ def strings_7_10(cache):
             baca.stem_tremolo_function(baca.select.plts(o)[1:])
             for run in baca.select.runs(o):
                 baca.glissando_function(run)
-            baca.dynamic_function(o, "fff")
+            baca.dynamic_function(o.pleaf(0), "fff")
 
 
 def main():

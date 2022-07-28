@@ -279,13 +279,13 @@ def ob(m):
         baca.dls_staff_padding_function(o, 5)
     with baca.scope(m.get(1, 7)) as o:
         baca.pitch_function(o, "B3")
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
     for pair in [(9, 12), (18, 23)]:
         baca.tuplet_bracket_staff_padding_function(m.get(pair), 3)
     with baca.scope(m.get(18, 24)) as o:
         baca.pitch_function(o, "C4")
         library.color_fingerings(o)
-        baca.dynamic_function(o, "f")
+        baca.dynamic_function(o.pleaf(0), "f")
 
 
 def cl(m):
@@ -383,7 +383,7 @@ def ob_cl_pf_vn_5_12(cache):
                 library.register_wide(o, 5)
                 baca.markup_function(o, r"\baca-leggierissimo-markup")
             baca.staccato_function(o.pheads())
-            baca.dynamic_function(o, "pp")
+            baca.dynamic_function(o.pleaf(0), "pp")
 
 
 def va_vc_11_12(cache):
@@ -406,7 +406,7 @@ def pf_vn_vc_va_14_23(cache):
         baca.pitch_function(o, "C4")
         baca.note_head_style_harmonic_function(o.pleaves())
         baca.tenuto_function(o.pheads())
-        baca.dynamic_function(o, "ff-sempre")
+        baca.dynamic_function(o.pleaf(0), "ff-sempre")
         baca.dls_staff_padding_function(o, 4)
         baca.markup_function(o, r"\krummzeit-fifth-harmonic-of-F-one-markup")
     triples = (
@@ -425,7 +425,7 @@ def pf_vn_vc_va_14_23(cache):
         with baca.scope(cache[name].get(pair)) as o:
             baca.markup_function(o, r"\baca-scratch-molto-markup")
             baca.note_head_style_harmonic_function(o.pleaves())
-            baca.dynamic_function(o, "fff-poss")
+            baca.dynamic_function(o.pleaf(0), "fff-poss")
             library.displacement(o)
             if name == "vn":
                 library.register_wide(o, register)

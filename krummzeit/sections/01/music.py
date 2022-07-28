@@ -191,7 +191,7 @@ def cl(m):
         baca.clef_function(o, "treble")
     with baca.scope(m[4, 5]) as o:
         baca.pitch_function(o, "B1")
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
 
 
 def pf(cache):
@@ -213,7 +213,7 @@ def pf(cache):
         baca.clef_function(o, "treble")
         baca.pitch_function(o, "C#5")
         baca.stem_tremolo_function(o.pleaves())
-        baca.dynamic_function(o, "fff-poss")
+        baca.dynamic_function(o.pleaf(0), "fff-poss")
     with baca.scope(m[10]) as o:
         baca.markup_function(
             o, r'\baca-boxed-markup "to harpsichord"', allow_rests=True
@@ -230,7 +230,7 @@ def perc(m):
         baca.markup_function(o, r"\baca-xylophone-markup")
         baca.pitch_function(o, "C#5")
         baca.stem_tremolo_function(o.pleaves())
-        baca.dynamic_function(o, "fff-poss")
+        baca.dynamic_function(o.pleaf(0), "fff-poss")
     with baca.scope(m[10, 13]) as o:
         library.instrument(o.leaf(0), "Percussion")
         baca.markup_function(o, r"\baca-sponges-markup")
@@ -239,7 +239,7 @@ def perc(m):
         baca.staff_position_function(o, 0)
         baca.markup_function(o, r"\krummzeit-accent-changes-markup")
         baca.accent_function(o.pheads())
-        baca.dynamic_function(o, '"ff"')
+        baca.dynamic_function(o.pleaf(0), '"ff"')
 
 
 def vn(m):

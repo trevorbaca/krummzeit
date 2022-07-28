@@ -253,7 +253,7 @@ def ob(m):
     with baca.scope(m[14, 16]) as o:
         baca.pitch_function(o, "B3")
         baca.stem_up_function(o),
-        baca.dynamic_function(o, "fff")
+        baca.dynamic_function(o.pleaf(0), "fff")
         baca.dls_staff_padding_function(o, 5)
 
 
@@ -264,7 +264,7 @@ def cl(m):
         )
         baca.pitch_function(o, "B1")
         baca.stem_up_function(o)
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
 
 
 def pf(cache):
@@ -287,27 +287,27 @@ def pf(cache):
         m = cache["pf"]
     with baca.scope(m[9, 12]) as o:
         baca.ottava_bassa_function(o.tleaves())
-        baca.dynamic_function(o, "fff")
+        baca.dynamic_function(o.pleaf(0), "fff")
     library.replace_with_clusters(m[14, 16], "low")
     cache.rebuild()
     m = cache["pf"]
     with baca.scope(m[14, 16]) as o:
         baca.ottava_bassa_function(o.tleaves())
-        baca.dynamic_function(o, "fff")
+        baca.dynamic_function(o.pleaf(0), "fff")
     with baca.scope(m[9, 16]) as o:
         baca.dls_staff_padding_function(o, 10)
 
 
 def perc(m):
     with baca.scope(m[1, 9]) as o:
-        baca.dynamic_function(o, "ppp-ancora")
+        baca.dynamic_function(o.pleaf(0), "ppp-ancora")
         baca.markup_function(o, r"\baca-snare-drum-markup")
         baca.staff_position_function(o, 0)
         baca.stem_tremolo_function(o.pleaves())
     with baca.scope(m[14, 19]) as o:
         baca.markup_function(o, r"\baca-tam-tam-markup")
         baca.staff_position_function(o, 0)
-        baca.dynamic_function(o, "pp-sempre")
+        baca.dynamic_function(o.pleaf(0), "pp-sempre")
         baca.dls_staff_padding_function(o, 6)
 
 
@@ -343,7 +343,7 @@ def va(m):
         baca.staccatissimo_function(o.pheads())
     with baca.scope(m[11, 12]) as o:
         baca.markup_function(o, r"\baca-arco-markup"),
-        baca.dynamic_function(o, "fff-poss"),
+        baca.dynamic_function(o.pleaf(0), "fff-poss"),
     with baca.scope(m[11, 16]) as o:
         baca.pitch_function(o, "bf,")
 
@@ -400,7 +400,7 @@ def composites(cache):
             baca.tuplet_bracket_staff_padding_function(o, 4)
         with baca.scope(m[11, 16]) as o:
             baca.stem_up_function(o.tleaves())
-        baca.dynamic_function(m[14], "fff-poss")
+        baca.dynamic_function(baca.select.pleaf(m[14], 0), "fff-poss")
     baca.markup_function(cache["vn"][14], r"\baca-arco-markup")
     baca.markup_function(cache["vc"][14], r"\baca-arco-markup")
 

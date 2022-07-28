@@ -395,9 +395,9 @@ def ob(m):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
                 baca.trill_spanner_function(plt)
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(m[24]) as o:
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
 
 
 def cl(m):
@@ -407,7 +407,7 @@ def cl(m):
         baca.pitches_function(o, "e'' dtqs'' f'' eqs'' dqs'' c'' dqs''")
     with baca.scope(m[24, 30]) as o:
         baca.pitches_function(o, "f'' eqs'' g'' fqs'' eqs'' d'' eqs''")
-        baca.dynamic_function(o, "f")
+        baca.dynamic_function(o.pleaf(0), "f")
     with baca.scope(m[32, 35]) as o:
         baca.pitches_function(o, "g'' dtqs'' a'' gqs'' fqs'' e'' fqs''")
     with baca.scope(m[1, 35]) as o:
@@ -440,7 +440,7 @@ def perc(m):
         baca.clef_function(o, "percussion")
         baca.staff_lines_function(o, 1)
         baca.staff_position_function(o, 0)
-        baca.dynamic_function(o, "f")
+        baca.dynamic_function(o.pleaf(0), "f")
     with baca.scope(m[21]) as o:
         baca.dls_staff_padding_function(o, 3)
     with baca.scope(m[28]) as o:
@@ -489,7 +489,7 @@ def vn(m):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
                 baca.trill_spanner_function(plt)
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
         baca.dls_staff_padding_function(o, 7)
         baca.tuplet_bracket_staff_padding_function(o, 4)
     with baca.scope(m[36, 42]) as o:
@@ -526,18 +526,18 @@ def composites(cache):
         with baca.scope(cache[name][14, 20]) as o:
             baca.pitch_function(o, "C#6")
             baca.staccatissimo_function(o.pheads())
-            baca.dynamic_function(o, "ff")
+            baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(cache["pf"][28, 35]) as o:
         baca.pitch_function(o, "C#6")
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(cache["perc"][28, 33]) as o:
         baca.staff_lines_function(o, 5)
         baca.pitch_function(o, "C#6")
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(cache["perc"][34, 44]) as o:
         baca.markup_function(o, r"\krummzeit-fingertips-markup")
         baca.stem_tremolo_function(o.pleaves())
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
     for name in ["va", "vc"]:
         with baca.scope(cache[name][1, 23]) as o:
             for run in baca.select.runs(o):

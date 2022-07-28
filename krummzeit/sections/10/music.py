@@ -218,22 +218,22 @@ def ob(m):
     with baca.scope(m[1]) as o:
         baca.pitch_function(o, "Eb5")
         library.color_fingerings(o)
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
 
 
 def cl(m):
     with baca.scope(m[1]) as o:
         baca.pitch_function(o, "Eb2")
         library.color_fingerings(o)
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(m.get(3, 14)) as o:
         baca.pitch_function(o, "E2")
     with baca.scope(m.get(3, 4)) as o:
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(m.get(5, 6)) as o:
         baca.hairpin_function(baca.select.rleak(o), "ff < fff")
     with baca.scope(m[9]) as o:
-        baca.dynamic_function(o, "fff-poss")
+        baca.dynamic_function(o.pleaf(0), "fff-poss")
     with baca.scope(m.get(11, 14)) as o:
         baca.hairpin_function(o, "fff > ppp")
 
@@ -263,7 +263,7 @@ def pf_3_22(cache):
         library.short_instrument_name(o.leaf(0), "Pf.", accumulator.manifests())
         baca.clef_function(o, "bass")
         baca.ottava_bassa_function(o)
-        baca.dynamic_function(o, "fff-poss")
+        baca.dynamic_function(o.pleaf(0), "fff-poss")
 
 
 def perc_3_22(cache):
@@ -273,7 +273,7 @@ def perc_3_22(cache):
         baca.staff_lines_function(o, 1)
         baca.staff_position_function(o, 0)
         baca.laissez_vibrer_function(o.ptails())
-        baca.dynamic_function(o, "f")
+        baca.dynamic_function(o.pleaf(0), "f")
 
 
 def strings_1_3(cache):
@@ -285,7 +285,7 @@ def strings_1_3(cache):
         with baca.scope(cache[name].get(1, 3)) as o:
             baca.pitch_function(o, pitch)
             baca.stem_tremolo_function(o.pleaves())
-            baca.dynamic_function(o, "fff")
+            baca.dynamic_function(o.pleaf(0), "fff")
 
 
 def strings_5_9(cache):
@@ -310,7 +310,7 @@ def strings_5_9(cache):
             for ruyn in baca.select.runs(o):
                 baca.glissando_function(o)
             baca.alternate_bow_strokes_function(o)
-            baca.dynamic_function(o, '"f"')
+            baca.dynamic_function(o.pleaf(0), '"f"')
 
 
 def strings_22(cache):
@@ -328,7 +328,7 @@ def strings_22(cache):
             library.displacement(o)
             library.register_narrow(o, 6)
             baca.staccatissimo_function(o.pheads())
-            baca.dynamic_function(o, "fff")
+            baca.dynamic_function(o.pleaf(0), "fff")
 
 
 def main():

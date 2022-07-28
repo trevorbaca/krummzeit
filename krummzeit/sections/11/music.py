@@ -111,7 +111,7 @@ def VC(voice):
 def ob_1_40(m):
     with baca.scope(m.leaves()) as o:
         baca.pitch_function(o, "C#4")
-        baca.dynamic_function(o, "fff")
+        baca.dynamic_function(o.pleaf(0), "fff")
         baca.dls_staff_padding_function(o, 5)
 
 
@@ -119,7 +119,7 @@ def cl_1_40(m):
     with baca.scope(m.leaves()) as o:
         baca.pitch_function(o, "D2")
         baca.stem_up_function(o.pleaves())
-        baca.dynamic_function(o, "f")
+        baca.dynamic_function(o.pleaf(0), "f")
         baca.dls_staff_padding_function(o, 7)
 
 
@@ -129,7 +129,7 @@ def pf_1_48(m):
         baca.pitch_function(o, "C#6")
         baca.stem_tremolo_function(o.pleaves())
     with baca.scope(m[25]) as o:
-        baca.dynamic_function(o, "fff-poss")
+        baca.dynamic_function(o.pleaf(0), "fff-poss")
 
 
 def perc_1_48(m):
@@ -138,7 +138,7 @@ def perc_1_48(m):
         baca.staff_lines_function(o, 5)
         baca.pitch_function(o, "C#6")
         baca.stem_tremolo_function(o.pleaves())
-        baca.dynamic_function(o, "fff")
+        baca.dynamic_function(o.pleaf(0), "fff")
         baca.dls_staff_padding_function(o, 4)
 
 
@@ -158,7 +158,7 @@ def vn_va_1_40(cache):
             library.register_narrow(o, 6)
             baca.staccatissimo_function(o.pheads())
             baca.tuplet_bracket_staff_padding_function(o, 2)
-            baca.dynamic_function(o, "ff")
+            baca.dynamic_function(o.pleaf(0), "ff")
             baca.dls_staff_padding_function(o, 5)
 
 
@@ -168,12 +168,12 @@ def vc_1_48(m):
         baca.pitches_function(o, "D4 D4 D4 D4 D4 D4 D2")
         for run in baca.select.runs(o):
             baca.glissando_function(run)
-        baca.dynamic_function(o, "fff-ancora")
+        baca.dynamic_function(o.pleaf(0), "fff-ancora")
         baca.dls_staff_padding_function(o, 3)
     with baca.scope(m.get(25, 48)) as o:
         baca.markup_function(o, r"\baca-ordinario-markup")
         baca.pitch_function(o, "D2")
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
 
 
 def vc_48(m):

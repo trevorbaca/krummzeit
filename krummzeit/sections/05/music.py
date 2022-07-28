@@ -317,8 +317,8 @@ def ob_cl(cache):
                 pitches = "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5"
             baca.pitches_function(o, pitches)
             library.color_fingerings(o)
-            baca.dynamic_function(o, "p")
-        baca.dynamic_function(m[35, 38], "mf")
+            baca.dynamic_function(o.pleaf(0), "p")
+        baca.dynamic_function(baca.select.pleaf(m[35, 38], 0), "mf")
         for pair in [(35, 38), (39, 42), (43, 44)]:
             with baca.scope(m[pair]) as u:
                 pitches = "F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5"
@@ -336,7 +336,7 @@ def pf(cache):
             baca.pitch_function(o, "C4")
             baca.tenuto_function(o.pheads())
             baca.note_head_style_harmonic_function(o.pleaves())
-            baca.dynamic_function(o, "mp")
+            baca.dynamic_function(o.pleaf(0), "mp")
     for pair in [(25, 26), (35, 42)]:
         with baca.scope(m[pair]) as o:
             baca.beam_positions_function(o, -4)
@@ -349,7 +349,7 @@ def pf(cache):
     with baca.scope(m[45, 48]) as o:
         baca.clef_function(o, "bass")
         baca.markup_function(o, r"\baca-senza-pedale-markup")
-        baca.dynamic_function(o, "mp")
+        baca.dynamic_function(o.pleaf(0), "mp")
         baca.dls_staff_padding_function(o, 6)
 
 
@@ -357,7 +357,7 @@ def perc(m):
     with baca.scope(m.leaves()) as o:
         baca.staff_lines_function(o, 1)
         baca.markup_function(o, r"\baca-tam-tam-markup")
-        baca.dynamic_function(o, "pp-ancora")
+        baca.dynamic_function(o.pleaf(0), "pp-ancora")
     with baca.scope(m[1, 3]) as o:
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m[1, 24]) as o:
@@ -365,7 +365,7 @@ def perc(m):
     with baca.scope(m[6, 16]) as o:
         baca.markup_function(o, r"\baca-sponges-markup")
         baca.accent_function(o.pheads())
-        baca.dynamic_function(o, '"ff"')
+        baca.dynamic_function(o.pleaf(0), '"ff"')
         baca.markup_function(o, r"\krummzeit-accent-changes-markup")
     with baca.scope(m[25, 26]) as o:
         baca.staff_lines_function(o, 5)
@@ -378,7 +378,7 @@ def perc(m):
     with baca.scope(m[43, 48]) as o:
         baca.staff_lines_function(o, 1)
         baca.clef_function(o, "percussion")
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
         baca.dls_staff_padding_function(o, 6)
         baca.staff_position_function(o, 0)
         baca.stem_tremolo_function(o.pleaves())
@@ -395,7 +395,7 @@ def pf_perc(cache):
                 baca.pitch_function(o, "F#6")
                 baca.staccatissimo_function(o.pheads())
                 if i != 2:
-                    baca.dynamic_function(o, "ff")
+                    baca.dynamic_function(o.pleaf(0), "ff")
 
 
 def strings(cache):
@@ -411,19 +411,19 @@ def strings(cache):
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches_function(leaves, pcs)
     with baca.scope(cache["vn"].get(1, 13)) as o:
-        baca.dynamic_function(o, '"mp"')
+        baca.dynamic_function(o.pleaf(0), '"mp"')
         baca.glissando_function(
             o,
         )
         library.register_narrow(o, 4)
         baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
     with baca.scope(cache["va"].get(1, 7)) as o:
-        baca.dynamic_function(o, '"mp"')
+        baca.dynamic_function(o.pleaf(0), '"mp"')
         baca.glissando_function(o)
         library.register_narrow(o, 3)
         baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
     with baca.scope(cache["vc"].get(1, 13)) as o:
-        baca.dynamic_function(o, '"mp"')
+        baca.dynamic_function(o.pleaf(0), '"mp"')
         library.register_narrow(o, 2)
         baca.markup_function(o, r"\krummzeit-on-bridge-slow-markup")
         for run in baca.select.runs(o):
@@ -468,10 +468,10 @@ def strings(cache):
     for name, pitch in zip(["vn", "va", "vc"], ["A+3", "Bb2", "A2"]):
         m = cache[name]
         with baca.scope(m[17]) as o:
-            baca.dynamic_function(o, "ff")
+            baca.dynamic_function(o.pleaf(0), "ff")
             baca.markup_function(o, r"\baca-scratch-molto-markup")
         with baca.scope(m[27]) as o:
-            baca.dynamic_function(o, "ff-ancora")
+            baca.dynamic_function(o.pleaf(0), "ff-ancora")
             baca.markup_function(o, r"\baca-scratch-molto-markup")
         with baca.scope(m.get(14, 34)) as o:
             baca.beam_positions_function(o, -4)
@@ -480,7 +480,7 @@ def strings(cache):
         with baca.scope(m.get(39, 48)) as o:
             baca.pitch_function(o, pitch)
             baca.stem_tremolo_function(o.pleaves())
-            baca.dynamic_function(o, "mp")
+            baca.dynamic_function(o.pleaf(0), "mp")
             baca.markup_function(o, r"\baca-ordinario-markup")
     baca.dls_staff_padding_function(cache.vn.get(39, 48), 8)
     with baca.scope(cache.va.get(39, 48)) as o:

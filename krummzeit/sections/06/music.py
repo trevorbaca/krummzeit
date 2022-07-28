@@ -326,7 +326,7 @@ def ob(m):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
                 baca.trill_spanner_function(plt)
-        baca.dynamic_function(o, "p")
+        baca.dynamic_function(o.pleaf(0), "p")
     with baca.scope(m.get(1, 21)) as o:
         baca.tuplet_bracket_staff_padding_function(o, 4)
         baca.dls_staff_padding_function(o, 6)
@@ -343,7 +343,7 @@ def cl(m):
     with baca.scope(m.get(1, 10)) as o:
         baca.pitch_function(o, "B3")
         baca.stem_up_function(o.pleaves())
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m.get(13, 21)) as o:
         baca.dls_staff_padding_function(o, 5)
@@ -353,7 +353,7 @@ def cl(m):
         library.short_instrument_name(o.leaf(0), "B. cl.")
         baca.pitch_function(o, "Bb1")
         baca.stem_up_function(o.pleaves())
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
         baca.dls_staff_padding_function(o, 7)
 
 
@@ -368,7 +368,7 @@ def ob_cl_12_24(cache):
             library.color_fingerings(o)
             for run in baca.select.ntruns(o):
                 baca.glissando_function(run)
-            baca.dynamic_function(o, "ff")
+            baca.dynamic_function(o.pleaf(0), "ff")
 
 
 def pf(cache):
@@ -378,7 +378,7 @@ def pf(cache):
         cache.rebuild()
         m = cache["pf"]
     with baca.scope(m.get(9, 10)) as o:
-        baca.dynamic_function(o, "ff")
+        baca.dynamic_function(o.pleaf(0), "ff")
         baca.dls_staff_padding_function(o, 4)
     with baca.scope(m.get(17, 26)) as o:
         baca.clef_function(o, "treble")
@@ -390,7 +390,7 @@ def pf(cache):
         baca.clef_function(o, "bass")
         baca.pitch_function(o, "Bb0")
         baca.ottava_bassa_function(o)
-        baca.dynamic_function(o, "ppp")
+        baca.dynamic_function(o.pleaf(0), "ppp")
     with baca.scope(m.get(30, 34)) as o:
         baca.clef_function(o, "treble")
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
@@ -400,7 +400,7 @@ def pf(cache):
         library.register_narrow(o, 7)
         baca.ottava_function(o)
         baca.staccatissimo_function(o.pheads())
-        baca.dynamic_function(o, "fff")
+        baca.dynamic_function(o.pleaf(0), "fff")
     with baca.scope(m.get(30, 35)) as o:
         baca.beam_positions_function(o, -4)
         baca.dls_staff_padding_function(o, 5)
@@ -421,7 +421,7 @@ def perc(m):
         )
     with baca.scope(m[28]) as o:
         baca.staff_lines_function(o, 1)
-        baca.dynamic_function(o, "pp")
+        baca.dynamic_function(o.pleaf(0), "pp")
 
 
 def pf_perc(cache):
@@ -429,7 +429,7 @@ def pf_perc(cache):
         with baca.scope(cache[name].get(17, 26)) as o:
             baca.pitch_function(o, "F5")
             baca.staccatissimo_function(o.pheads())
-            baca.dynamic_function(o, "p")
+            baca.dynamic_function(o.pleaf(0), "p")
 
 
 def vn(m):
@@ -450,7 +450,7 @@ def ob_vn_29_34(cache):
     ):
         with baca.scope(cache[name].get(29, 34)) as o:
             baca.pitch_function(o, pitch)
-            baca.dynamic_function(o, "ppp")
+            baca.dynamic_function(o.pleaf(0), "ppp")
             for run in baca.select.qruns(o):
                 run = baca.select.rleak(run)
                 baca.trill_spanner_function(run, alteration=alteration)
@@ -485,7 +485,7 @@ def strings_9_10(cache):
         with baca.scope(cache[name].get(9, 10)) as o:
             baca.pitch_function(o, pitch)
             baca.stem_tremolo_function(o.pleaves())
-            baca.dynamic_function(o, "ff")
+            baca.dynamic_function(o.pleaf(0), "ff")
 
 
 def strings_12_20(cache):
@@ -513,7 +513,7 @@ def va_vc_23_35(cache):
     ):
         with baca.scope(cache[name].get(23, 35)) as o:
             baca.pitch_function(o, pitch)
-            baca.dynamic_function(o, "ppp")
+            baca.dynamic_function(o.pleaf(0), "ppp")
 
 
 def main():

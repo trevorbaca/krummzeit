@@ -311,13 +311,13 @@ def cl(m):
 
 def pf(m):
     with baca.scope(m.get(5, 11)) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.tuplet_bracket_staff_padding_function(o, 3)
         baca.dls_staff_padding_function(o, 7)
     with baca.scope(m.get(14, 20)) as o:
         baca.instrument_function(o.leaf(0), library.instruments()["Piano"])
         library.short_instrument_name(o.leaf(0), "Pf.")
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.dls_staff_padding_function(o, 3)
 
 

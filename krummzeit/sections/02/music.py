@@ -383,7 +383,7 @@ def pf(m):
         baca.dls_staff_padding_function(o, 7)
         baca.tuplet_bracket_staff_padding_function(o, 4)
     with baca.scope(m[45, 46]) as o:
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.instrument_function(o.leaf(0), library.instruments()["Piano"])
         library.short_instrument_name(o.leaf(0), "Pf.")
     with baca.scope(m[57, 75]) as o:
@@ -404,7 +404,7 @@ def perc(m):
 def vn(m):
     with baca.scope(m[72, 75]) as o:
         baca.staff_lines_function(o, 1)
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
         baca.dynamic_function(o.pleaf(0), "mf")
         baca.instrument_function(
             o.leaf(0), library.instruments()["Percussion"], accumulator.manifests()
@@ -426,14 +426,14 @@ def va(m):
     baca.pitches_function(m[1, 11], "d ctqs e dqs cqs b, cqs")
     baca.pitches_function(m[12, 22], "e dtqs f eqs dqs c dqs")
     baca.pitches_function(m[23, 28], "g ftqs a gqs fqs e fqs")
-    baca.clef_function(m[39], "alto")
+    baca.clef_function(abjad.select.leaf(m[39], 0), "alto")
 
 
 def vc(m):
     baca.pitches_function(m[1, 11], "e, dqs, cqs, b,, cqs, d, ctqs,")
     baca.pitches_function(m[12, 22], "f, eqs, dqs, c, dqs, e, dtqs,")
     baca.pitches_function(m[23, 28], "a, gqs, fqs, e, fqs, g, ftqs,")
-    baca.clef_function(m[45], "bass")
+    baca.clef_function(abjad.select.leaf(m[45], 0), "bass")
 
 
 def _1_37_quartet(cache):
@@ -464,8 +464,8 @@ def _1_37_quartet(cache):
         library.register_narrow(cache[name][1, 22], 5)
     library.register_wide(cache["pf"][1, 22], 5)
     library.register_narrow(cache["pf"][23, 31], 3, 5),
-    baca.clef_function(cache["pf"][23], "bass"),
-    baca.clef_function(cache["pf"][29], "treble"),
+    baca.clef_function(abjad.select.leaf(cache["pf"][23], 0), "bass"),
+    baca.clef_function(abjad.select.leaf(cache["pf"][29], 0), "treble"),
     for name in ["vn", "ob", "cl"]:
         library.register_narrow(cache[name][23, 31], 4, 5)
     for name in ["vn", "ob", "cl"]:
@@ -499,7 +499,7 @@ def _34_53_strings(cache):
         baca.pitches_function(leaves, pcs)
     with baca.scope(cache["va"][34, 47]) as o:
         baca.alternate_bow_strokes_function(o.pheads())
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.dynamic_function(o.pleaf(0), "f")
         for run in baca.select.runs(o):
             baca.glissando_function(run)
@@ -507,7 +507,7 @@ def _34_53_strings(cache):
         library.register_narrow(o, 5, 3)
     with baca.scope(cache["vc"][34, 51]) as o:
         baca.alternate_bow_strokes_function(o.pheads()),
-        baca.clef_function(o, "treble"),
+        baca.clef_function(o.leaf(0), "treble"),
         baca.dynamic_function(o.pleaf(0), "f"),
         baca.glissando_function(o),
         baca.markup_function(o, r"\krummzeit-ob-plus-full-bow-strokes-markup"),
@@ -532,13 +532,13 @@ def _48_75_quartet(cache):
         leaves = baca.select.sort_by_timeline(o.leaves())
         baca.pitches_function(leaves, pcs)
     with baca.scope(cache["va"][48, 71]) as o:
-        baca.clef_function(o, "treble"),
+        baca.clef_function(o.leaf(0), "treble"),
         baca.dynamic_function(o.pleaf(0), "fff"),
         baca.markup_function(o, r"\baca-pizz-markup"),
         baca.staccatissimo_function(o.pheads())
         library.register_narrow(o, 5, 6),
     with baca.scope(cache["vc"][52, 71]) as o:
-        baca.clef_function(o, "treble"),
+        baca.clef_function(o.leaf(0), "treble"),
         baca.dynamic_function(o.pleaf(0), "fff"),
         baca.markup_function(o, r"\baca-pizz-markup"),
         baca.staccatissimo_function(o.pheads())
@@ -555,7 +555,7 @@ def _48_75_quartet(cache):
         baca.staccatissimo_function(o.pheads())
         library.register_narrow(o, 5, 6),
     with baca.scope(cache["pf"][57, 75]) as o:
-        baca.clef_function(o, "treble"),
+        baca.clef_function(o.leaf(0), "treble"),
         baca.dynamic_function(o.pleaf(0), "fff"),
         baca.staccatissimo_function(o.pheads())
         library.register_narrow(o, 5, 6),

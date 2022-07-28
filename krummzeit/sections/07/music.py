@@ -250,7 +250,7 @@ def pf(m):
 def perc(m):
     with baca.scope(m.leaves()) as o:
         baca.markup_function(o, r"\baca-snare-drum-markup", allow_rests=True)
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
         baca.staff_position_function(o, 0)
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m.get(2, 16)) as o:
@@ -313,7 +313,7 @@ def ob_cl_pf_1_16(cache):
     ):
         library.displacement(cache[name].get(pair))
     library.register_narrow(cache["pf"].get(4, 9), 5, 3)
-    baca.clef_function(cache["pf"][7], "bass")
+    baca.clef_function(abjad.select.leaf(cache["pf"][7], 0), "bass")
     library.register_narrow(cache["pf"][13], 3)
     library.register_narrow(cache["pf"][16], 2)
 

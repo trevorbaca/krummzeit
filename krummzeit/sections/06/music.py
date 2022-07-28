@@ -381,18 +381,18 @@ def pf(cache):
         baca.dynamic_function(o.pleaf(0), "ff")
         baca.dls_staff_padding_function(o, 4)
     with baca.scope(m.get(17, 26)) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.beam_positions_function(o, -4)
         baca.dls_staff_padding_function(o, 5)
         baca.tuplet_bracket_staff_padding_function(o, 3)
-    baca.clef_function(m[20], "treble")
+    baca.clef_function(abjad.select.leaf(m[20], 0), "treble")
     with baca.scope(m.get(27, 29)) as o:
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.pitch_function(o, "Bb0")
         baca.ottava_bassa_function(o)
         baca.dynamic_function(o.pleaf(0), "ppp")
     with baca.scope(m.get(30, 34)) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.rotate(-85).retrograde().transpose(5).invert()
         baca.pitches_function(o, pcs)
@@ -415,7 +415,7 @@ def perc(m):
             baca.stem_tremolo_function(o.pleaves())
     with baca.scope(m[17]) as o:
         baca.staff_lines_function(o, 5)
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.instrument_function(
             o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )

@@ -426,7 +426,7 @@ def perc(m):
         baca.instrument_function(
             o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o, 5)
         ("perc", (14, 20))
     with baca.scope(m[14, 20]) as o:
@@ -437,7 +437,7 @@ def perc(m):
             o.leaf(0), library.instruments()["Percussion"], accumulator.manifests()
         )
         baca.markup_function(o, r"\baca-slate-scrape-markup")
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o, 1)
         baca.staff_position_function(o, 0)
         baca.dynamic_function(o.pleaf(0), "f")
@@ -447,14 +447,14 @@ def perc(m):
         baca.instrument_function(
             o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o, 5)
     with baca.scope(m[28, 33]) as o:
         baca.tuplet_bracket_staff_padding_function(o, 3)
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m[34, 44]) as o:
         baca.markup_function(o, r"\baca-snare-drum-markup")
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o, 1)
         baca.staff_position_function(o, 0)
         baca.dls_staff_padding_function(o, 5)
@@ -472,7 +472,7 @@ def vn(m):
         baca.instrument_function(
             o.leaf(0), library.instruments()["Violin"], accumulator.manifests()
         )
-        baca.clef_function(o, "treble"),
+        baca.clef_function(o.leaf(0), "treble"),
         baca.staff_lines_function(o, 5),
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-121).retrograde().transpose(3)
@@ -498,7 +498,7 @@ def vn(m):
 
 def va(m):
     with baca.scope(m[1, 23]) as o:
-        baca.clef_function(o, "alto"),
+        baca.clef_function(o.leaf(0), "alto"),
         baca.pitches_function(o, "e dtqs f eqs dqs c dqs")
         for run in baca.select.runs(o):
             baca.glissando_function(run)
@@ -512,7 +512,7 @@ def va(m):
 
 def vc(m):
     with baca.scope(m[1, 23]) as o:
-        baca.clef_function(o, "bass"),
+        baca.clef_function(o.leaf(0), "bass"),
         baca.pitches_function(o, "d, ctqs, e, dqs, cqs, b,, dqs,")
         for run in baca.select.runs(o):
             baca.glissando_function(run)

@@ -224,11 +224,11 @@ def pf_perc_1_6(cache):
     with baca.scope(cache["pf"].get(1, 6)) as o:
         baca.instrument_function(o.leaf(0), library.instruments()["Harpsichord"])
         library.short_instrument_name(o.leaf(0), "Hpschd.")
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         library.replace_with_clusters(o, "harpsichord")
     with baca.scope(cache["perc"].get(5, 6)) as o:
         baca.markup_function(o, r"\baca-crotale-markup")
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o, 5)
         baca.pitch_function(o, "D5")
         baca.accent_function(o.pheads())

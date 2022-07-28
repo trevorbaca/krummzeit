@@ -227,7 +227,7 @@ def pf_perc_1_6(cache):
         baca.clef_function(o.leaf(0), "treble")
         library.replace_with_clusters(o, "harpsichord")
     with baca.scope(cache["perc"].get(5, 6)) as o:
-        baca.markup_function(o, r"\baca-crotale-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-crotale-markup")
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
         baca.pitch_function(o, "D5")

@@ -153,7 +153,7 @@ def vn_va_1_40(cache):
         baca.pitches_function(leaves, pcs)
     for name in names:
         with baca.scope(cache[name].get(1, 40)) as o:
-            baca.markup_function(o, r"\baca-pizz-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
             library.displacement(o)
             library.register_narrow(o, 6)
             baca.staccatissimo_function(o.pheads())
@@ -164,14 +164,14 @@ def vn_va_1_40(cache):
 
 def vc_1_48(m):
     with baca.scope(m.get(1, 24)) as o:
-        baca.markup_function(o, r"\baca-scratch-poss-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-scratch-poss-markup")
         baca.pitches_function(o, "D4 D4 D4 D4 D4 D4 D2")
         for run in baca.select.runs(o):
             baca.glissando_function(run)
         baca.dynamic_function(o.pleaf(0), "fff-ancora")
         baca.dls_staff_padding_function(o, 3)
     with baca.scope(m.get(25, 48)) as o:
-        baca.markup_function(o, r"\baca-ordinario-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-ordinario-markup")
         baca.pitch_function(o, "D2")
         baca.dynamic_function(o.pleaf(0), "ff")
 

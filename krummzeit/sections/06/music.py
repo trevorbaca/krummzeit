@@ -410,7 +410,7 @@ def pf(cache):
 def perc(m):
     for pair in [(1, 14), (28, 34)]:
         with baca.scope(m.get(pair)) as o:
-            baca.markup_function(o, r"\baca-suspended-cymbal-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-suspended-cymbal-markup")
             baca.staff_position_function(o, 0)
             baca.stem_tremolo_function(o.pleaves())
     with baca.scope(m[17]) as o:
@@ -501,7 +501,7 @@ def strings_12_20(cache):
             for run in baca.select.runs(o):
                 baca.glissando_function(run)
             baca.hairpin_function(o.tleaves(), "p > ppp")
-            baca.markup_function(o, r"\baca-molto-flautando-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-molto-flautando-markup")
             baca.note_head_style_harmonic_function(o.pleaves())
             library.register_narrow(o, *pair),
 

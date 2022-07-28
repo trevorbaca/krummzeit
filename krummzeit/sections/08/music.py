@@ -323,7 +323,7 @@ def pf(m):
 
 def perc(m):
     with baca.scope(m.get(1, 7)) as o:
-        baca.markup_function(o, r"\baca-tam-tam-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-tam-tam-markup")
         baca.staff_position_function(o, 0)
 
 
@@ -337,7 +337,7 @@ def va(m):
     with baca.scope(m.get(1, 9)) as o:
         baca.pitches_function(o, "Bb2 C~3 D3 E+3 F+3 G3")
     with baca.scope(m.get(1, 7)) as o:
-        baca.markup_function(o, r"\baca-subito-ordinario-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-subito-ordinario-markup")
         for run in baca.select.runs(o):
             baca.glissando_function(run)
         baca.hairpin_function(o, "ff < fff")
@@ -346,7 +346,7 @@ def va(m):
 
 def vc(m):
     with baca.scope(m.get(1, 9)) as o:
-        baca.markup_function(o, r"\baca-subito-ordinario-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-subito-ordinario-markup")
         # TODO: maybe pitches and then glissando
         for run in baca.select.runs(o):
             baca.glissando_function(run)
@@ -377,11 +377,12 @@ def ob_cl_pf_vn_5_12(cache):
             if name == "vn":
                 library.register_wide(o, 6)
                 baca.markup_function(
-                    o, r"\krummzeit-leggierissimo-off-string-bowing-on-staccati-markup"
+                    o.pleaf(0),
+                    r"\krummzeit-leggierissimo-off-string-bowing-on-staccati-markup",
                 )
             else:
                 library.register_wide(o, 5)
-                baca.markup_function(o, r"\baca-leggierissimo-markup")
+                baca.markup_function(o.pleaf(0), r"\baca-leggierissimo-markup")
             baca.staccato_function(o.pheads())
             baca.dynamic_function(o.pleaf(0), "pp")
 
@@ -393,7 +394,7 @@ def va_vc_11_12(cache):
     ):
         with baca.scope(cache[name].get(11, 12)) as o:
             baca.pitches_function(o, pitches)
-            baca.markup_function(o, r"\baca-molto-flautando-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-molto-flautando-markup")
             for run in baca.select.runs(o):
                 baca.glissando_function(o)
             baca.tuplet_bracket_staff_padding_function(o, 4)
@@ -408,7 +409,7 @@ def pf_vn_vc_va_14_23(cache):
         baca.tenuto_function(o.pheads())
         baca.dynamic_function(o.pleaf(0), "ff-sempre")
         baca.dls_staff_padding_function(o, 4)
-        baca.markup_function(o, r"\krummzeit-fifth-harmonic-of-F-one-markup")
+        baca.markup_function(o.pleaf(0), r"\krummzeit-fifth-harmonic-of-F-one-markup")
     triples = (
         ("vn", (14, 20), 4),
         ("va", (14, 19), 3),
@@ -423,7 +424,7 @@ def pf_vn_vc_va_14_23(cache):
         baca.pitches_function(leaves, pcs)
     for name, pair, register in triples:
         with baca.scope(cache[name].get(pair)) as o:
-            baca.markup_function(o, r"\baca-scratch-molto-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-scratch-molto-markup")
             baca.note_head_style_harmonic_function(o.pleaves())
             baca.dynamic_function(o.pleaf(0), "fff-poss")
             library.displacement(o)
@@ -449,7 +450,7 @@ def pf_vn_vc_va_14_23(cache):
         ("vc", (21, 23)),
     ):
         with baca.scope(cache[name].get(pair)) as o:
-            baca.markup_function(o, r"\baca-subito-ordinario-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-subito-ordinario-markup")
             baca.stem_tremolo_function(o.pleaves())
 
 

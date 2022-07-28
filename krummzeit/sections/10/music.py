@@ -268,7 +268,7 @@ def pf_3_22(cache):
 
 def perc_3_22(cache):
     with baca.scope(cache["perc"].get(3, 22)) as o:
-        baca.markup_function(o, r"\baca-tam-tam-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-tam-tam-markup")
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
@@ -303,7 +303,7 @@ def strings_5_9(cache):
         baca.pitches_function(leaves, pcs)
     for name, register in pairs:
         with baca.scope(cache[name].get(5, 9)) as o:
-            baca.markup_function(o, r"\krummzeit-on-bridge-full-bow-markup")
+            baca.markup_function(o.pleaf(0), r"\krummzeit-on-bridge-full-bow-markup")
             library.register_narrow(o, *register)
             if name in ("va", "vc"):
                 baca.clef_function(o.leaf(0), "treble")
@@ -324,7 +324,7 @@ def strings_22(cache):
         baca.pitches_function(leaves, pcs)
     for name in names:
         with baca.scope(cache[name][22]) as o:
-            baca.markup_function(o, r"\baca-pizz-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
             library.displacement(o)
             library.register_narrow(o, 6)
             baca.staccatissimo_function(o.pheads())

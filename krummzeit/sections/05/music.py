@@ -347,7 +347,7 @@ def pf(cache):
         cache.rebuild()
         m = cache["pf"]
     with baca.scope(m[45, 48]) as o:
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.markup_function(o, r"\baca-senza-pedale-markup")
         baca.dynamic_function(o.pleaf(0), "mp")
         baca.dls_staff_padding_function(o, 6)
@@ -369,7 +369,7 @@ def perc(m):
         baca.markup_function(o, r"\krummzeit-accent-changes-markup")
     with baca.scope(m[25, 26]) as o:
         baca.staff_lines_function(o, 5)
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
     for pair in [(25, 26), (35, 42)]:
         with baca.scope(m[pair]) as o:
             baca.beam_positions_function(o, -4)
@@ -377,7 +377,7 @@ def perc(m):
             baca.tuplet_bracket_staff_padding_function(o, 3)
     with baca.scope(m[43, 48]) as o:
         baca.staff_lines_function(o, 1)
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
         baca.dynamic_function(o.pleaf(0), "ppp")
         baca.dls_staff_padding_function(o, 6)
         baca.staff_position_function(o, 0)
@@ -391,7 +391,7 @@ def pf_perc(cache):
         for i, pair in enumerate([(25, 26), (35, 38), (39, 42)]):
             with baca.scope(cache[name][pair]) as o:
                 if i == 0:
-                    baca.clef_function(o, "treble")
+                    baca.clef_function(o.leaf(0), "treble")
                 baca.pitch_function(o, "F#6")
                 baca.staccatissimo_function(o.pheads())
                 if i != 2:
@@ -435,7 +435,7 @@ def strings(cache):
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-241).retrograde().transpose(7).invert()
         baca.pitches_function(leaves, pcs)
-    baca.clef_function(cache["vc"].get(14), "treble")
+    baca.clef_function(abjad.select.leaf(cache["vc"].get(14), 0), "treble")
     for item in (
         cache["va"].get(8, 34),
         cache["vn"].get(14, 34),
@@ -447,7 +447,7 @@ def strings(cache):
             library.register_narrow(o, 5)
             baca.note_head_style_harmonic_function(o.pleaves())
     with baca.scope(cache.va.get(8, 10)) as o:
-        baca.clef_function(o, "treble")
+        baca.clef_function(o.leaf(0), "treble")
         baca.hairpin_function(o.tleaves(), "pp < f")
         baca.markup_function(o, r"\baca-molto-flautando-markup")
     with baca.scope(cache.va.get(11, 16)) as o:
@@ -484,10 +484,10 @@ def strings(cache):
             baca.markup_function(o, r"\baca-ordinario-markup")
     baca.dls_staff_padding_function(cache.vn.get(39, 48), 8)
     with baca.scope(cache.va.get(39, 48)) as o:
-        baca.clef_function(o, "alto")
+        baca.clef_function(o.leaf(0), "alto")
         baca.dls_staff_padding_function(o, 8)
     with baca.scope(cache.vc.get(39, 48)) as o:
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.dls_staff_padding_function(o, 6)
 
 

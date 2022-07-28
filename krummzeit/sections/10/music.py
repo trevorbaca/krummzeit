@@ -261,7 +261,7 @@ def pf_3_22(cache):
             o.leaf(0), library.instruments()["Piano"], accumulator.manifests()
         )
         library.short_instrument_name(o.leaf(0), "Pf.", accumulator.manifests())
-        baca.clef_function(o, "bass")
+        baca.clef_function(o.leaf(0), "bass")
         baca.ottava_bassa_function(o)
         baca.dynamic_function(o.pleaf(0), "fff-poss")
 
@@ -269,7 +269,7 @@ def pf_3_22(cache):
 def perc_3_22(cache):
     with baca.scope(cache["perc"].get(3, 22)) as o:
         baca.markup_function(o, r"\baca-tam-tam-markup")
-        baca.clef_function(o, "percussion")
+        baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o, 1)
         baca.staff_position_function(o, 0)
         baca.laissez_vibrer_function(o.ptails())
@@ -306,7 +306,7 @@ def strings_5_9(cache):
             baca.markup_function(o, r"\krummzeit-on-bridge-full-bow-markup")
             library.register_narrow(o, *register)
             if name in ("va", "vc"):
-                baca.clef_function(o, "treble")
+                baca.clef_function(o.leaf(0), "treble")
             for ruyn in baca.select.runs(o):
                 baca.glissando_function(o)
             baca.alternate_bow_strokes_function(o)

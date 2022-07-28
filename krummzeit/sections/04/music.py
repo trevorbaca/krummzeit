@@ -281,7 +281,7 @@ def pf(cache):
         baca.hairpin_function(o, "ff > pp")
         baca.staccatissimo_function(o.pheads())
     with baca.scope(m[9, 12]) as o:
-        baca.markup_function(o, r"\baca-senza-pedale-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-senza-pedale-markup")
         library.replace_with_clusters(o, "low")
         cache.rebuild()
         m = cache["pf"]
@@ -301,11 +301,11 @@ def pf(cache):
 def perc(m):
     with baca.scope(m[1, 9]) as o:
         baca.dynamic_function(o.pleaf(0), "ppp-ancora")
-        baca.markup_function(o, r"\baca-snare-drum-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-snare-drum-markup")
         baca.staff_position_function(o, 0)
         baca.stem_tremolo_function(o.pleaves())
     with baca.scope(m[14, 19]) as o:
-        baca.markup_function(o, r"\baca-tam-tam-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-tam-tam-markup")
         baca.staff_position_function(o, 0)
         baca.dynamic_function(o.pleaf(0), "pp-sempre")
         baca.dls_staff_padding_function(o, 6)
@@ -315,7 +315,7 @@ def vn(m):
     with baca.scope(m[5]) as o:
         baca.hairpin_function(o.tleaves(), "ff > pp")
         baca.ottava_function(o.tleaves()),
-        baca.markup_function(o, r"\baca-pizz-markup"),
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup"),
         baca.staccatissimo_function(o.pheads())
     with baca.scope(m[7]) as o:
         baca.hairpin_function(o.tleaves(), "pp < ff")
@@ -332,7 +332,7 @@ def va(m):
         baca.clef_function(o.leaf(0), "treble"),
         baca.hairpin_function(o.tleaves(), "ff > pp")
         baca.ottava_function(o.tleaves()),
-        baca.markup_function(o, r"\baca-pizz-markup"),
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup"),
         baca.staccatissimo_function(o.pheads())
     with baca.scope(m[7]) as o:
         baca.hairpin_function(o.tleaves(), "pp < ff")
@@ -342,7 +342,7 @@ def va(m):
         baca.hairpin_function(o.tleaves(), "ff > pp")
         baca.staccatissimo_function(o.pheads())
     with baca.scope(m[11, 12]) as o:
-        baca.markup_function(o, r"\baca-arco-markup"),
+        baca.markup_function(o.pleaf(0), r"\baca-arco-markup"),
         baca.dynamic_function(o.pleaf(0), "fff-poss"),
     with baca.scope(m[11, 16]) as o:
         baca.pitch_function(o, "bf,")
@@ -352,7 +352,7 @@ def vc(m):
     with baca.scope(m[5]) as o:
         baca.clef_function(o.leaf(0), "treble"),
         baca.hairpin_function(o.tleaves(), "ff > pp")
-        baca.markup_function(o, r"\baca-pizz-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
         baca.staccatissimo_function(o.pheads())
     with baca.scope(m[7]) as o:
         baca.clef_function(o.leaf(0), "bass"),
@@ -401,8 +401,8 @@ def composites(cache):
         with baca.scope(m[11, 16]) as o:
             baca.stem_up_function(o.tleaves())
         baca.dynamic_function(baca.select.pleaf(m[14], 0), "fff-poss")
-    baca.markup_function(cache["vn"][14], r"\baca-arco-markup")
-    baca.markup_function(cache["vc"][14], r"\baca-arco-markup")
+    baca.markup_function(baca.select.pleaf(cache["vn"][14], 0), r"\baca-arco-markup")
+    baca.markup_function(baca.select.pleaf(cache["vc"][14], 0), r"\baca-arco-markup")
 
 
 def main():

@@ -249,17 +249,17 @@ def pf(m):
 
 def perc(m):
     with baca.scope(m.leaves()) as o:
-        baca.markup_function(o, r"\baca-snare-drum-markup", allow_rests=True)
+        baca.markup_function(o.leaf(0), r"\baca-snare-drum-markup")
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_position_function(o, 0)
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m.get(2, 16)) as o:
         baca.dynamic_function(o.pleaf(0), "ppp")
         baca.stem_tremolo_function(o.pleaves())
-        baca.markup_function(o, r"\krummzeit-fingertips-markup")
+        baca.markup_function(o.pleaf(0), r"\krummzeit-fingertips-markup")
     with baca.scope(m.get(19, 22)) as o:
-        baca.markup_function(o, r"\baca-tam-tam-markup")
-        baca.markup_function(o, r"\baca-attackless-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-attackless-markup")
         baca.laissez_vibrer_function(o.pheads())
         baca.dynamic_function(o.pleaf(0), "p-sempre")
 
@@ -285,7 +285,7 @@ def strings_7_19(cache):
         with baca.scope(cache[name].get(7, 19)) as o:
             baca.pitch_function(o, pitch)
             baca.dynamic_function(o.pleaf(0), "fff")
-            baca.markup_function(o, r"\baca-scratch-poss-markup")
+            baca.markup_function(o.pleaf(0), r"\baca-scratch-poss-markup")
     for name, pair in (
         ("vn", (11, 15)),
         ("va", (13, 15)),

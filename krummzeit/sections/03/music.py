@@ -436,7 +436,7 @@ def perc(m):
         baca.instrument_function(
             o.leaf(0), library.instruments()["Percussion"], accumulator.manifests()
         )
-        baca.markup_function(o, r"\baca-slate-scrape-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-slate-scrape-markup")
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
@@ -453,7 +453,7 @@ def perc(m):
         baca.tuplet_bracket_staff_padding_function(o, 3)
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m[34, 44]) as o:
-        baca.markup_function(o, r"\baca-snare-drum-markup")
+        baca.markup_function(o.pleaf(0), r"\baca-snare-drum-markup")
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
@@ -503,7 +503,9 @@ def va(m):
         for run in baca.select.runs(o):
             baca.glissando_function(run)
     with baca.scope(m[6, 23]) as o:
-        baca.markup_function(m[6], r"\baca-molto-flautando-markup")
+        baca.markup_function(
+            baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup"
+        )
         baca.tuplet_bracket_staff_padding_function(o, 4)
         baca.dls_staff_padding_function(o, 7)
     with baca.scope(m[32, 42]) as o:
@@ -516,7 +518,7 @@ def vc(m):
         baca.pitches_function(o, "d, ctqs, e, dqs, cqs, b,, dqs,")
         for run in baca.select.runs(o):
             baca.glissando_function(run)
-    baca.markup_function(m[6], r"\baca-molto-flautando-markup")
+    baca.markup_function(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
     with baca.scope(m[32, 42]) as o:
         baca.dls_staff_padding_function(o, 5)
 
@@ -535,7 +537,7 @@ def composites(cache):
         baca.pitch_function(o, "C#6")
         baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(cache["perc"][34, 44]) as o:
-        baca.markup_function(o, r"\krummzeit-fingertips-markup")
+        baca.markup_function(o.pleaf(0), r"\krummzeit-fingertips-markup")
         baca.stem_tremolo_function(o.pleaves())
         baca.dynamic_function(o.pleaf(0), "ppp")
     for name in ["va", "vc"]:
@@ -549,8 +551,8 @@ def composites(cache):
         ("vc", "b,, cqs, bqf,, c,"),
     ):
         with baca.scope(cache[name][32, 42]) as o:
-            baca.markup_function(o, r"\baca-non-flautando-markup"),
-            baca.markup_function(o, r"\krummzeit-show-tempo-markup"),
+            baca.markup_function(o.pleaf(0), r"\baca-non-flautando-markup"),
+            baca.markup_function(o.pleaf(0), r"\krummzeit-show-tempo-markup"),
             baca.pitches_function(o, string)
             for run in baca.select.runs(o):
                 baca.glissando_function(run)

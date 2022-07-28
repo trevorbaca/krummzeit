@@ -355,7 +355,7 @@ def pf(cache):
 
 def perc(m):
     with baca.scope(m.leaves()) as o:
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.markup_function(o, r"\baca-tam-tam-markup")
         baca.dynamic_function(o.pleaf(0), "pp-ancora")
     with baca.scope(m[1, 3]) as o:
@@ -368,7 +368,7 @@ def perc(m):
         baca.dynamic_function(o.pleaf(0), '"ff"')
         baca.markup_function(o, r"\krummzeit-accent-changes-markup")
     with baca.scope(m[25, 26]) as o:
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
         baca.clef_function(o.leaf(0), "treble")
     for pair in [(25, 26), (35, 42)]:
         with baca.scope(m[pair]) as o:
@@ -376,7 +376,7 @@ def perc(m):
             baca.dls_staff_padding_function(o, 6)
             baca.tuplet_bracket_staff_padding_function(o, 3)
     with baca.scope(m[43, 48]) as o:
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.clef_function(o.leaf(0), "percussion")
         baca.dynamic_function(o.pleaf(0), "ppp")
         baca.dls_staff_padding_function(o, 6)

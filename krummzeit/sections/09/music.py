@@ -229,7 +229,7 @@ def pf_perc_1_6(cache):
     with baca.scope(cache["perc"].get(5, 6)) as o:
         baca.markup_function(o, r"\baca-crotale-markup")
         baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
         baca.pitch_function(o, "D5")
         baca.accent_function(o.pheads())
         baca.dynamic_function(o.pleaf(0), "ff-sempre")

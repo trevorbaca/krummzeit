@@ -403,7 +403,7 @@ def perc(m):
 
 def vn(m):
     with baca.scope(m[72, 75]) as o:
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.clef_function(o.leaf(0), "percussion")
         baca.dynamic_function(o.pleaf(0), "mf")
         baca.instrument_function(

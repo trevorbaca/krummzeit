@@ -235,7 +235,7 @@ def perc(m):
         library.instrument(o.leaf(0), "Percussion")
         baca.markup_function(o, r"\baca-sponges-markup")
         baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
         baca.markup_function(o, r"\krummzeit-accent-changes-markup")
         baca.accent_function(o.pheads())

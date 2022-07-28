@@ -427,7 +427,7 @@ def perc(m):
             o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )
         baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
         ("perc", (14, 20))
     with baca.scope(m[14, 20]) as o:
         baca.tuplet_bracket_staff_padding_function(o, 3)
@@ -438,7 +438,7 @@ def perc(m):
         )
         baca.markup_function(o, r"\baca-slate-scrape-markup")
         baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
         baca.dynamic_function(o.pleaf(0), "f")
     with baca.scope(m[21]) as o:
@@ -448,14 +448,14 @@ def perc(m):
             o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )
         baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
     with baca.scope(m[28, 33]) as o:
         baca.tuplet_bracket_staff_padding_function(o, 3)
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m[34, 44]) as o:
         baca.markup_function(o, r"\baca-snare-drum-markup")
         baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
         baca.dls_staff_padding_function(o, 5)
 
@@ -473,7 +473,7 @@ def vn(m):
             o.leaf(0), library.instruments()["Violin"], accumulator.manifests()
         )
         baca.clef_function(o.leaf(0), "treble"),
-        baca.staff_lines_function(o, 5),
+        baca.staff_lines_function(o.leaf(0), 5),
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.rotate(-121).retrograde().transpose(3)
         pcs = baca.sequence.repeat_by(pcs, [1, 1, 1, 1, 4, 1, 1, 1, 4, 4], cyclic=True)
@@ -531,7 +531,7 @@ def composites(cache):
         baca.pitch_function(o, "C#6")
         baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(cache["perc"][28, 33]) as o:
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
         baca.pitch_function(o, "C#6")
         baca.dynamic_function(o.pleaf(0), "ff")
     with baca.scope(cache["perc"][34, 44]) as o:

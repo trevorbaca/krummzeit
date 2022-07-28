@@ -414,13 +414,13 @@ def perc(m):
             baca.staff_position_function(o, 0)
             baca.stem_tremolo_function(o.pleaves())
     with baca.scope(m[17]) as o:
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
         baca.clef_function(o.leaf(0), "treble")
         baca.instrument_function(
             o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
         )
     with baca.scope(m[28]) as o:
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.dynamic_function(o.pleaf(0), "pp")
 
 

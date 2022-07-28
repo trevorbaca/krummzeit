@@ -270,7 +270,7 @@ def perc_3_22(cache):
     with baca.scope(cache["perc"].get(3, 22)) as o:
         baca.markup_function(o, r"\baca-tam-tam-markup")
         baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o, 1)
+        baca.staff_lines_function(o.leaf(0), 1)
         baca.staff_position_function(o, 0)
         baca.laissez_vibrer_function(o.ptails())
         baca.dynamic_function(o.pleaf(0), "f")

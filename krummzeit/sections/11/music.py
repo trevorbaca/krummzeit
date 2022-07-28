@@ -135,7 +135,7 @@ def pf_1_48(m):
 def perc_1_48(m):
     with baca.scope(m.leaves()) as o:
         baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o, 5)
+        baca.staff_lines_function(o.leaf(0), 5)
         baca.pitch_function(o, "C#6")
         baca.stem_tremolo_function(o.pleaves())
         baca.dynamic_function(o.pleaf(0), "fff")

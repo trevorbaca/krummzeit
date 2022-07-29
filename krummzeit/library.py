@@ -267,8 +267,8 @@ def _make_registration(start_registration, stop_registration, offset, timespan):
         stop_pitch = stop_component.target_octave_start_pitch
         target_octave_start_pitch = start_pitch.interpolate(stop_pitch, fraction)
         component = baca.RegistrationComponent(
-            source_pitch_range=range_string,
-            target_octave_start_pitch=target_octave_start_pitch,
+            source_pitch_range=abjad.PitchRange(range_string),
+            target_octave_start_pitch=abjad.NumberedPitch(target_octave_start_pitch),
         )
         components.append(component)
     registration = baca.Registration(components)
@@ -1076,16 +1076,70 @@ def metronome_marks():
 
 def register_narrow(argument, start, stop=None):
     octave_number_to_registration = {
-        2: baca.Registration([("[A0, F#4)", -26), ("[F#4, C8]", -23)]),
-        3: baca.Registration([("[A0, F#4)", -14), ("[F#4, C8]", -11)]),
-        4: baca.Registration([("[A0, F#4)", -2), ("[F#4, C8]", 1)]),
-        5: baca.Registration([("[A0, F#4)", 10), ("[F#4, C8]", 13)]),
-        6: baca.Registration([("[A0, F#4)", 22), ("[F#4, C8]", 25)]),
-        7: baca.Registration([("[A0, F#4)", 34), ("[F#4, C8]", 37)]),
+        2: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(-26)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(-23)
+                ),
+            ]
+        ),
+        3: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(-14)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(-11)
+                ),
+            ]
+        ),
+        4: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(-2)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(1)
+                ),
+            ]
+        ),
+        5: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(10)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(13)
+                ),
+            ]
+        ),
+        6: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(22)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(25)
+                ),
+            ]
+        ),
+        7: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(34)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(37)
+                ),
+            ]
+        ),
     }
     if stop is None:
         registration = octave_number_to_registration[start]
-        baca.commands._do_register_command(argument, registration)
+        baca.pitchfunctions._do_register_command(argument, registration)
     else:
         start_registration = octave_number_to_registration[start]
         stop_registration = octave_number_to_registration[stop]
@@ -1094,14 +1148,59 @@ def register_narrow(argument, start, stop=None):
 
 def register_wide(argument, start):
     start_to_registration = {
-        3: baca.Registration([("[A0, F#4)", -20), ("[F#4, C8]", -6)]),
-        4: baca.Registration([("[A0, F#4)", -8), ("[F#4, C8]", 6)]),
-        5: baca.Registration([("[A0, F#4)", 4), ("[F#4, C8]", 18)]),
-        6: baca.Registration([("[A0, F#4)", 16), ("[F#4, C8]", 30)]),
-        7: baca.Registration([("[A0, F#4)", 28), ("[F#4, C8]", 42)]),
+        3: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(-20)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(-6)
+                ),
+            ]
+        ),
+        4: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(-8)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(6)
+                ),
+            ]
+        ),
+        5: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(4)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(18)
+                ),
+            ]
+        ),
+        6: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(16)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(30)
+                ),
+            ]
+        ),
+        7: baca.Registration(
+            [
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[A0, F#4)"), abjad.NumberedPitch(28)
+                ),
+                baca.RegistrationComponent(
+                    abjad.PitchRange("[F#4, C8]"), abjad.NumberedPitch(42)
+                ),
+            ]
+        ),
     }
     registration = start_to_registration[start]
-    baca.commands._do_register_command(argument, registration)
+    baca.pitchfunctions._do_register_command(argument, registration)
 
 
 def replace_with_clusters(argument, flavor):

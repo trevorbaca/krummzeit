@@ -50,7 +50,7 @@ baca.interpret.set_up_score(
     stage_markup=stage_markup,
 )
 
-baca.bar_line(score["Skips"][48 - 1], "|.")
+baca.bar_line_function(score["Skips"][48 - 1], "|.")
 
 
 def OB(voice):

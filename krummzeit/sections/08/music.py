@@ -66,14 +66,14 @@ manifests = accumulator.manifests()
 for index, item in ((14 - 1, "90"),):
     skip = skips[index]
     indicator = accumulator.metronome_marks.get(item, item)
-    baca.metronome_mark(skip, indicator, manifests)
+    baca.metronome_mark_function(skip, indicator, manifests)
 
 rests = score["Rests"]
 for index, string in (
     (13 - 1, "short"),
     (24 - 1, "very_long"),
 ):
-    baca.global_fermata(rests[index], string)
+    baca.global_fermata_function(rests[index], string)
 
 
 def OB(voice):

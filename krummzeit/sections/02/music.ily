@@ -1656,39 +1656,39 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-metronome-mark-spanner-left-markup \markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \tweak bound-details.left.text \markup \concat { \concat { \abjad-metronome-mark-markup #2 #0 #1 #"67.5" \hspace #2 \upright [ \line { \abjad-metric-modulation #2 #0 #3 #0 #'(1 . 1) } \hspace #0.5 \upright ] } \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca._attach_metronome_marks(3)
@@ -1981,19 +1981,19 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \tweak bound-details.left.text \markup \concat { \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca._attach_metronome_marks(3)
@@ -2267,19 +2267,19 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2535,19 +2535,19 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-bracketed-metric-modulation #2 #0 #1 #"90" #2 #1 #2 #0 #'(1 . 1)
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca._attach_metronome_marks(3)
@@ -2563,21 +2563,21 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "90"
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -2861,19 +2861,19 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-dashed-line-with-arrow
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \tweak bound-details.left.text \markup \concat { \large \upright accel. \hspace #0.5 }
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca._attach_metronome_marks(3)
@@ -3046,19 +3046,19 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "135"
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -3498,19 +3498,19 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-bracketed-metric-modulation-tuplet-lhs #2 #0 #1 #"108" #2 #0 #5 #4 #2 #0 #'(1 . 1)
       %! EXPLICIT_METRONOME_MARK
       %! baca._attach_metronome_marks(2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! EXPLICIT_METRONOME_MARK_WITH_COLOR
       %! baca._attach_metronome_marks(3)
@@ -3526,21 +3526,21 @@ number.2.Skips = {
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \abjad-invisible-line
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% - \baca-metronome-mark-spanner-left-text 2 0 1 "108"
       %! EXPLICIT_METRONOME_MARK
       %! METRIC_MODULATION_IS_STRIPPED
       %! baca._attach_metronome_marks(2.2)
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.metronome_mark()
+      %! baca.metronome_mark_function()
     %@% \bacaStartTextSpanMM
       %! CLOCK_TIME
       %! baca._label_clock_time()
@@ -4751,7 +4751,7 @@ number.2.Oboe.Music = {
     ef'!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -4759,13 +4759,13 @@ number.2.Oboe.Music = {
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     \f
     % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
@@ -4774,13 +4774,13 @@ number.2.Oboe.Music = {
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     \<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -4797,7 +4797,7 @@ number.2.Oboe.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4806,7 +4806,7 @@ number.2.Oboe.Music = {
         af'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4815,7 +4815,7 @@ number.2.Oboe.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -4848,7 +4848,7 @@ number.2.Oboe.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -4860,7 +4860,7 @@ number.2.Oboe.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4869,7 +4869,7 @@ number.2.Oboe.Music = {
         g'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4878,7 +4878,7 @@ number.2.Oboe.Music = {
         ef'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4887,7 +4887,7 @@ number.2.Oboe.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4896,7 +4896,7 @@ number.2.Oboe.Music = {
         af'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4905,7 +4905,7 @@ number.2.Oboe.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4914,7 +4914,7 @@ number.2.Oboe.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4923,7 +4923,7 @@ number.2.Oboe.Music = {
         g'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4932,7 +4932,7 @@ number.2.Oboe.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -4968,7 +4968,7 @@ number.2.Oboe.Music = {
         a'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -4977,7 +4977,7 @@ number.2.Oboe.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -5002,7 +5002,7 @@ number.2.Oboe.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5019,7 +5019,7 @@ number.2.Oboe.Music = {
         b'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -5031,7 +5031,7 @@ number.2.Oboe.Music = {
         e'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5040,7 +5040,7 @@ number.2.Oboe.Music = {
         g'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5049,7 +5049,7 @@ number.2.Oboe.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5058,7 +5058,7 @@ number.2.Oboe.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5067,7 +5067,7 @@ number.2.Oboe.Music = {
         a'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5076,7 +5076,7 @@ number.2.Oboe.Music = {
         e'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5085,7 +5085,7 @@ number.2.Oboe.Music = {
         af'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5094,7 +5094,7 @@ number.2.Oboe.Music = {
         a'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5103,7 +5103,7 @@ number.2.Oboe.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5112,7 +5112,7 @@ number.2.Oboe.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5121,7 +5121,7 @@ number.2.Oboe.Music = {
         af'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -5157,7 +5157,7 @@ number.2.Oboe.Music = {
         a'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5166,7 +5166,7 @@ number.2.Oboe.Music = {
         ef'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5175,7 +5175,7 @@ number.2.Oboe.Music = {
         af'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -5223,7 +5223,7 @@ number.2.Oboe.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5232,7 +5232,7 @@ number.2.Oboe.Music = {
         af'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5241,7 +5241,7 @@ number.2.Oboe.Music = {
         b'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5250,7 +5250,7 @@ number.2.Oboe.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5259,7 +5259,7 @@ number.2.Oboe.Music = {
         a'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5268,7 +5268,7 @@ number.2.Oboe.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5277,7 +5277,7 @@ number.2.Oboe.Music = {
         af'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5286,7 +5286,7 @@ number.2.Oboe.Music = {
         ef'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5295,7 +5295,7 @@ number.2.Oboe.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -5321,7 +5321,7 @@ number.2.Oboe.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5330,7 +5330,7 @@ number.2.Oboe.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5339,7 +5339,7 @@ number.2.Oboe.Music = {
         g'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -5364,7 +5364,7 @@ number.2.Oboe.Music = {
         bf'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5373,7 +5373,7 @@ number.2.Oboe.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5382,7 +5382,7 @@ number.2.Oboe.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -5405,7 +5405,7 @@ number.2.Oboe.Music = {
     d''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -5417,7 +5417,7 @@ number.2.Oboe.Music = {
     e''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5426,7 +5426,7 @@ number.2.Oboe.Music = {
     g''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5435,7 +5435,7 @@ number.2.Oboe.Music = {
     b'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -5443,13 +5443,13 @@ number.2.Oboe.Music = {
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     \ff
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -5488,7 +5488,7 @@ number.2.Oboe.Music = {
         bf'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5497,7 +5497,7 @@ number.2.Oboe.Music = {
         fs'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -5512,7 +5512,7 @@ number.2.Oboe.Music = {
     ef''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -5529,7 +5529,7 @@ number.2.Oboe.Music = {
         a'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -5541,7 +5541,7 @@ number.2.Oboe.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5550,7 +5550,7 @@ number.2.Oboe.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5559,7 +5559,7 @@ number.2.Oboe.Music = {
         b'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5568,7 +5568,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5577,7 +5577,7 @@ number.2.Oboe.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5586,7 +5586,7 @@ number.2.Oboe.Music = {
         b'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5595,7 +5595,7 @@ number.2.Oboe.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5604,7 +5604,7 @@ number.2.Oboe.Music = {
         g'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5613,7 +5613,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5622,7 +5622,7 @@ number.2.Oboe.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5636,7 +5636,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -5682,7 +5682,7 @@ number.2.Oboe.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5691,7 +5691,7 @@ number.2.Oboe.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5700,7 +5700,7 @@ number.2.Oboe.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -5748,7 +5748,7 @@ number.2.Oboe.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5757,7 +5757,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5766,7 +5766,7 @@ number.2.Oboe.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5775,7 +5775,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5784,7 +5784,7 @@ number.2.Oboe.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5793,7 +5793,7 @@ number.2.Oboe.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5802,7 +5802,7 @@ number.2.Oboe.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5811,7 +5811,7 @@ number.2.Oboe.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5820,7 +5820,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -5848,7 +5848,7 @@ number.2.Oboe.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5857,7 +5857,7 @@ number.2.Oboe.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5866,7 +5866,7 @@ number.2.Oboe.Music = {
         bf'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -5898,7 +5898,7 @@ number.2.Oboe.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5912,7 +5912,7 @@ number.2.Oboe.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5921,7 +5921,7 @@ number.2.Oboe.Music = {
         bf'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -5954,7 +5954,7 @@ number.2.Oboe.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -5966,7 +5966,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5975,7 +5975,7 @@ number.2.Oboe.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5984,7 +5984,7 @@ number.2.Oboe.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -5993,7 +5993,7 @@ number.2.Oboe.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6002,7 +6002,7 @@ number.2.Oboe.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6011,7 +6011,7 @@ number.2.Oboe.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6020,7 +6020,7 @@ number.2.Oboe.Music = {
         b''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6029,7 +6029,7 @@ number.2.Oboe.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6038,7 +6038,7 @@ number.2.Oboe.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6047,7 +6047,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6056,7 +6056,7 @@ number.2.Oboe.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -6101,7 +6101,7 @@ number.2.Oboe.Music = {
         b''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6110,7 +6110,7 @@ number.2.Oboe.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -6125,7 +6125,7 @@ number.2.Oboe.Music = {
     e''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6144,7 +6144,7 @@ number.2.Oboe.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -6156,7 +6156,7 @@ number.2.Oboe.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6165,7 +6165,7 @@ number.2.Oboe.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6174,7 +6174,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6183,7 +6183,7 @@ number.2.Oboe.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6192,7 +6192,7 @@ number.2.Oboe.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6201,7 +6201,7 @@ number.2.Oboe.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6210,7 +6210,7 @@ number.2.Oboe.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6219,7 +6219,7 @@ number.2.Oboe.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6228,7 +6228,7 @@ number.2.Oboe.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -6264,7 +6264,7 @@ number.2.Oboe.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6273,7 +6273,7 @@ number.2.Oboe.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -6298,7 +6298,7 @@ number.2.Oboe.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6307,7 +6307,7 @@ number.2.Oboe.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6316,7 +6316,7 @@ number.2.Oboe.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -6354,7 +6354,7 @@ number.2.Oboe.Music = {
     d''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6368,7 +6368,7 @@ number.2.Oboe.Music = {
     bf''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -6382,7 +6382,7 @@ number.2.Oboe.Music = {
     bf''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -6402,7 +6402,7 @@ number.2.Oboe.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6411,7 +6411,7 @@ number.2.Oboe.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -6420,7 +6420,7 @@ number.2.Oboe.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -7031,7 +7031,7 @@ number.2.Clarinet.Music = {
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.short_instrument_name()
+      %! baca.short_instrument_name_function()
     \set Staff.shortInstrumentName = \krummzeit-clarinet-in-e-flat-markup
     % OPENING:
     % COMMANDS:
@@ -7042,22 +7042,22 @@ number.2.Clarinet.Music = {
     cs''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \mp
     % MARKUP:
-      %! baca.markup()
+      %! baca.markup_function()
     ^ \baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
@@ -7071,7 +7071,7 @@ number.2.Clarinet.Music = {
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.short_instrument_name()
+      %! baca.short_instrument_name_function()
       %! baca.treat_persistent_wrapper(3)
     \set Staff.shortInstrumentName = \krummzeit-clarinet-in-e-flat-markup
     % ABSOLUTE_BEFORE:
@@ -7089,7 +7089,7 @@ number.2.Clarinet.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7098,7 +7098,7 @@ number.2.Clarinet.Music = {
         g''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7107,7 +7107,7 @@ number.2.Clarinet.Music = {
         gs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -7130,7 +7130,7 @@ number.2.Clarinet.Music = {
     ds''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7142,7 +7142,7 @@ number.2.Clarinet.Music = {
     c''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7151,7 +7151,7 @@ number.2.Clarinet.Music = {
     d''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7160,7 +7160,7 @@ number.2.Clarinet.Music = {
     e''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7190,7 +7190,7 @@ number.2.Clarinet.Music = {
         ds''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7199,7 +7199,7 @@ number.2.Clarinet.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -7222,7 +7222,7 @@ number.2.Clarinet.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7231,7 +7231,7 @@ number.2.Clarinet.Music = {
     ds''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7240,7 +7240,7 @@ number.2.Clarinet.Music = {
     fs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7252,7 +7252,7 @@ number.2.Clarinet.Music = {
     g''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7261,7 +7261,7 @@ number.2.Clarinet.Music = {
     f''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7270,7 +7270,7 @@ number.2.Clarinet.Music = {
     c''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7300,7 +7300,7 @@ number.2.Clarinet.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7309,7 +7309,7 @@ number.2.Clarinet.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7318,7 +7318,7 @@ number.2.Clarinet.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -7343,7 +7343,7 @@ number.2.Clarinet.Music = {
     e''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -7364,7 +7364,7 @@ number.2.Clarinet.Music = {
     as'!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7373,7 +7373,7 @@ number.2.Clarinet.Music = {
     cs''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7382,7 +7382,7 @@ number.2.Clarinet.Music = {
     gs''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7402,7 +7402,7 @@ number.2.Clarinet.Music = {
         ds''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7411,7 +7411,7 @@ number.2.Clarinet.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7420,7 +7420,7 @@ number.2.Clarinet.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -7435,7 +7435,7 @@ number.2.Clarinet.Music = {
     c''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -7454,7 +7454,7 @@ number.2.Clarinet.Music = {
     f''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7466,7 +7466,7 @@ number.2.Clarinet.Music = {
     gs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7475,7 +7475,7 @@ number.2.Clarinet.Music = {
     as'!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7484,7 +7484,7 @@ number.2.Clarinet.Music = {
     cs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7525,7 +7525,7 @@ number.2.Clarinet.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7534,7 +7534,7 @@ number.2.Clarinet.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -7551,7 +7551,7 @@ number.2.Clarinet.Music = {
     c''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7563,7 +7563,7 @@ number.2.Clarinet.Music = {
     f''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7591,7 +7591,7 @@ number.2.Clarinet.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7600,7 +7600,7 @@ number.2.Clarinet.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -7615,7 +7615,7 @@ number.2.Clarinet.Music = {
     as'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7674,19 +7674,19 @@ number.2.Clarinet.Music = {
     d''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \f
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7703,7 +7703,7 @@ number.2.Clarinet.Music = {
         g''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7712,7 +7712,7 @@ number.2.Clarinet.Music = {
         gs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7721,7 +7721,7 @@ number.2.Clarinet.Music = {
         a'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -7744,7 +7744,7 @@ number.2.Clarinet.Music = {
     e''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7756,7 +7756,7 @@ number.2.Clarinet.Music = {
     cs''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7765,7 +7765,7 @@ number.2.Clarinet.Music = {
     ds''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7774,7 +7774,7 @@ number.2.Clarinet.Music = {
     f''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7804,7 +7804,7 @@ number.2.Clarinet.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7818,7 +7818,7 @@ number.2.Clarinet.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -7851,7 +7851,7 @@ number.2.Clarinet.Music = {
     cs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7860,7 +7860,7 @@ number.2.Clarinet.Music = {
     e''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7869,7 +7869,7 @@ number.2.Clarinet.Music = {
     g''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7881,7 +7881,7 @@ number.2.Clarinet.Music = {
     gs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7890,7 +7890,7 @@ number.2.Clarinet.Music = {
     fs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -7899,7 +7899,7 @@ number.2.Clarinet.Music = {
     cs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -7929,7 +7929,7 @@ number.2.Clarinet.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7938,7 +7938,7 @@ number.2.Clarinet.Music = {
         g'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -7947,7 +7947,7 @@ number.2.Clarinet.Music = {
         as'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -7972,7 +7972,7 @@ number.2.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -7993,7 +7993,7 @@ number.2.Clarinet.Music = {
     b'16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8002,7 +8002,7 @@ number.2.Clarinet.Music = {
     d''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8011,7 +8011,7 @@ number.2.Clarinet.Music = {
     a'16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8031,7 +8031,7 @@ number.2.Clarinet.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8040,7 +8040,7 @@ number.2.Clarinet.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8049,7 +8049,7 @@ number.2.Clarinet.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -8064,7 +8064,7 @@ number.2.Clarinet.Music = {
     cs''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -8083,7 +8083,7 @@ number.2.Clarinet.Music = {
     fs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8095,7 +8095,7 @@ number.2.Clarinet.Music = {
     a''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8104,7 +8104,7 @@ number.2.Clarinet.Music = {
     b'8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8113,7 +8113,7 @@ number.2.Clarinet.Music = {
     d''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8159,7 +8159,7 @@ number.2.Clarinet.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8173,7 +8173,7 @@ number.2.Clarinet.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -8190,7 +8190,7 @@ number.2.Clarinet.Music = {
     cs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8202,7 +8202,7 @@ number.2.Clarinet.Music = {
     fs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8230,7 +8230,7 @@ number.2.Clarinet.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8239,7 +8239,7 @@ number.2.Clarinet.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -8259,7 +8259,7 @@ number.2.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -8284,13 +8284,13 @@ number.2.Clarinet.Music = {
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     \f
     % SPANNER_STARTS:
       %! EXPLICIT_DYNAMIC_COLOR
@@ -8299,13 +8299,13 @@ number.2.Clarinet.Music = {
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_START
       %! baca.PiecewiseCommand._call(2)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     \<
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8319,7 +8319,7 @@ number.2.Clarinet.Music = {
     f'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -8350,7 +8350,7 @@ number.2.Clarinet.Music = {
     f'16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8359,7 +8359,7 @@ number.2.Clarinet.Music = {
     fs'!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8368,7 +8368,7 @@ number.2.Clarinet.Music = {
     c'16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8390,7 +8390,7 @@ number.2.Clarinet.Music = {
         g'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8399,7 +8399,7 @@ number.2.Clarinet.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8408,7 +8408,7 @@ number.2.Clarinet.Music = {
         as!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -8425,7 +8425,7 @@ number.2.Clarinet.Music = {
     ds'!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -8444,7 +8444,7 @@ number.2.Clarinet.Music = {
     e'8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8456,7 +8456,7 @@ number.2.Clarinet.Music = {
     b8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8465,7 +8465,7 @@ number.2.Clarinet.Music = {
     a'8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8479,7 +8479,7 @@ number.2.Clarinet.Music = {
     g'8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8525,7 +8525,7 @@ number.2.Clarinet.Music = {
     g'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8549,7 +8549,7 @@ number.2.Clarinet.Music = {
         g'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -8561,7 +8561,7 @@ number.2.Clarinet.Music = {
         ds'!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8570,7 +8570,7 @@ number.2.Clarinet.Music = {
         c''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8579,7 +8579,7 @@ number.2.Clarinet.Music = {
         f'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8588,7 +8588,7 @@ number.2.Clarinet.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8597,7 +8597,7 @@ number.2.Clarinet.Music = {
         e'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8606,7 +8606,7 @@ number.2.Clarinet.Music = {
         fs'!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8615,7 +8615,7 @@ number.2.Clarinet.Music = {
         f'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8624,7 +8624,7 @@ number.2.Clarinet.Music = {
         cs'!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -8660,7 +8660,7 @@ number.2.Clarinet.Music = {
         as'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8669,7 +8669,7 @@ number.2.Clarinet.Music = {
         gs'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -8684,7 +8684,7 @@ number.2.Clarinet.Music = {
     f'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -8726,7 +8726,7 @@ number.2.Clarinet.Music = {
         g'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8735,7 +8735,7 @@ number.2.Clarinet.Music = {
         f'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8744,7 +8744,7 @@ number.2.Clarinet.Music = {
         gs'!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8753,7 +8753,7 @@ number.2.Clarinet.Music = {
         a'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8762,7 +8762,7 @@ number.2.Clarinet.Music = {
         c''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8771,7 +8771,7 @@ number.2.Clarinet.Music = {
         g'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8780,7 +8780,7 @@ number.2.Clarinet.Music = {
         ds''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8789,7 +8789,7 @@ number.2.Clarinet.Music = {
         c''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
@@ -8797,13 +8797,13 @@ number.2.Clarinet.Music = {
           %! SPANNER_STOP
           %! baca.PiecewiseCommand._call(3)
           %! baca._set_status_tag()
-          %! baca.hairpin()
+          %! baca.hairpin_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
           %! baca.PiecewiseCommand._call(3)
           %! baca._set_status_tag()
-          %! baca.hairpin()
+          %! baca.hairpin_function()
         \ff
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -8831,7 +8831,7 @@ number.2.Clarinet.Music = {
         as'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8840,7 +8840,7 @@ number.2.Clarinet.Music = {
         fs'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -8854,7 +8854,7 @@ number.2.Clarinet.Music = {
         f'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -8874,7 +8874,7 @@ number.2.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -8901,7 +8901,7 @@ number.2.Clarinet.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8910,7 +8910,7 @@ number.2.Clarinet.Music = {
     ds''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8927,7 +8927,7 @@ number.2.Clarinet.Music = {
     cs''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8941,7 +8941,7 @@ number.2.Clarinet.Music = {
     cs''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8950,7 +8950,7 @@ number.2.Clarinet.Music = {
     g'16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -8981,7 +8981,7 @@ number.2.Clarinet.Music = {
     a'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -8990,7 +8990,7 @@ number.2.Clarinet.Music = {
     as'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9001,7 +9001,7 @@ number.2.Clarinet.Music = {
     cs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -9013,7 +9013,7 @@ number.2.Clarinet.Music = {
     g''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9022,7 +9022,7 @@ number.2.Clarinet.Music = {
     ds''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9031,7 +9031,7 @@ number.2.Clarinet.Music = {
     gs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -9064,7 +9064,7 @@ number.2.Clarinet.Music = {
         as'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -9078,7 +9078,7 @@ number.2.Clarinet.Music = {
         as'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -9095,7 +9095,7 @@ number.2.Clarinet.Music = {
     b'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -9127,7 +9127,7 @@ number.2.Clarinet.Music = {
     cs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9136,7 +9136,7 @@ number.2.Clarinet.Music = {
     e''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9145,7 +9145,7 @@ number.2.Clarinet.Music = {
     f''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -9157,7 +9157,7 @@ number.2.Clarinet.Music = {
     as'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9166,7 +9166,7 @@ number.2.Clarinet.Music = {
     gs''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -9185,7 +9185,7 @@ number.2.Clarinet.Music = {
     as'!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -9197,7 +9197,7 @@ number.2.Clarinet.Music = {
     g''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9206,7 +9206,7 @@ number.2.Clarinet.Music = {
     ds''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9215,7 +9215,7 @@ number.2.Clarinet.Music = {
     e''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -9243,7 +9243,7 @@ number.2.Clarinet.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -9252,7 +9252,7 @@ number.2.Clarinet.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -9285,7 +9285,7 @@ number.2.Clarinet.Music = {
         ds''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -9294,7 +9294,7 @@ number.2.Clarinet.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -9311,7 +9311,7 @@ number.2.Clarinet.Music = {
     g''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9320,7 +9320,7 @@ number.2.Clarinet.Music = {
     c''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -9332,7 +9332,7 @@ number.2.Clarinet.Music = {
     cs''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9341,7 +9341,7 @@ number.2.Clarinet.Music = {
     e''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9350,7 +9350,7 @@ number.2.Clarinet.Music = {
     f''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -9758,16 +9758,16 @@ number.2.Clarinet.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \f
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9777,7 +9777,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9787,7 +9787,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9797,7 +9797,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9807,7 +9807,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9817,7 +9817,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9827,7 +9827,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9837,7 +9837,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9847,7 +9847,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9857,7 +9857,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9867,7 +9867,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9879,7 +9879,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9889,7 +9889,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9899,7 +9899,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9909,7 +9909,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9919,7 +9919,7 @@ number.2.Clarinet.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -9982,7 +9982,7 @@ number.2.Piano.Music = {
           %! EXPLICIT_SHORT_INSTRUMENT_NAME
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.short_instrument_name()
+          %! baca.short_instrument_name_function()
         \set Staff.shortInstrumentName = \krummzeit-hpschd-markup
         % OPENING:
         % COMMANDS:
@@ -10037,7 +10037,7 @@ number.2.Piano.Music = {
           %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.short_instrument_name()
+          %! baca.short_instrument_name_function()
           %! baca.treat_persistent_wrapper(3)
         \set Staff.shortInstrumentName = \krummzeit-hpschd-markup
         % ABSOLUTE_BEFORE:
@@ -11955,7 +11955,7 @@ number.2.Piano.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
     \clef "bass"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -11966,7 +11966,7 @@ number.2.Piano.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! krummzeit.make_polyphony_rhythm()
@@ -12839,7 +12839,7 @@ number.2.Piano.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
         \clef "treble"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
@@ -12850,7 +12850,7 @@ number.2.Piano.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
           %! krummzeit.make_polyphony_rhythm()
@@ -13554,14 +13554,14 @@ number.2.Piano.Music = {
       %! EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.short_instrument_name()
+      %! baca.short_instrument_name_function()
     \set Staff.shortInstrumentName = \krummzeit-pf-markup
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
     \clef "bass"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -13575,7 +13575,7 @@ number.2.Piano.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! krummzeit.make_incise_attacks()
@@ -13597,7 +13597,7 @@ number.2.Piano.Music = {
       %! REDRAWN_EXPLICIT_SHORT_INSTRUMENT_NAME
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.short_instrument_name()
+      %! baca.short_instrument_name_function()
       %! baca.treat_persistent_wrapper(3)
     \set Staff.shortInstrumentName = \krummzeit-pf-markup
     % ABSOLUTE_BEFORE:
@@ -13607,7 +13607,7 @@ number.2.Piano.Music = {
     % COMMANDS:
       %! SPANNER_START
       %! baca._attach_start_stop_indicators(2)
-      %! baca.ottava_bassa()
+      %! baca.ottava_bassa_function()
     \ottava -1
     % GROB_OVERRIDES:
     \once \override Accidental.stencil = ##f
@@ -13619,19 +13619,19 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \baca-fff-sempre
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
@@ -13673,7 +13673,7 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
@@ -13703,7 +13703,7 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
@@ -13738,7 +13738,7 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
@@ -13785,7 +13785,7 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
@@ -13815,7 +13815,7 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
@@ -13850,7 +13850,7 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
@@ -13892,7 +13892,7 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
@@ -13922,14 +13922,14 @@ number.2.Piano.Music = {
     <c,, e,, g,, b,, d, f, a,>16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.marcato()
+      %! baca.marcato_function()
     - \marcato
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
     % COMMANDS:
       %! SPANNER_STOP
       %! baca._attach_start_stop_indicators(4)
-      %! baca.ottava_bassa()
+      %! baca.ottava_bassa_function()
     \ottava 0
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -13975,7 +13975,7 @@ number.2.Piano.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
         \clef "treble"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
@@ -13986,7 +13986,7 @@ number.2.Piano.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14008,19 +14008,19 @@ number.2.Piano.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \fff
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14037,7 +14037,7 @@ number.2.Piano.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14046,7 +14046,7 @@ number.2.Piano.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14058,7 +14058,7 @@ number.2.Piano.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14067,7 +14067,7 @@ number.2.Piano.Music = {
         g''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -14094,7 +14094,7 @@ number.2.Piano.Music = {
     fs''!8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14118,7 +14118,7 @@ number.2.Piano.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14130,7 +14130,7 @@ number.2.Piano.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14139,7 +14139,7 @@ number.2.Piano.Music = {
         f''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14148,7 +14148,7 @@ number.2.Piano.Music = {
         a''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14179,7 +14179,7 @@ number.2.Piano.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14191,7 +14191,7 @@ number.2.Piano.Music = {
         f''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14200,7 +14200,7 @@ number.2.Piano.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14212,7 +14212,7 @@ number.2.Piano.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14221,7 +14221,7 @@ number.2.Piano.Music = {
         b''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14230,7 +14230,7 @@ number.2.Piano.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14242,7 +14242,7 @@ number.2.Piano.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14279,7 +14279,7 @@ number.2.Piano.Music = {
     cs''!8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14288,7 +14288,7 @@ number.2.Piano.Music = {
     b''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14300,7 +14300,7 @@ number.2.Piano.Music = {
     c''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14332,7 +14332,7 @@ number.2.Piano.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14344,7 +14344,7 @@ number.2.Piano.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14353,7 +14353,7 @@ number.2.Piano.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14370,7 +14370,7 @@ number.2.Piano.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14384,7 +14384,7 @@ number.2.Piano.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14398,7 +14398,7 @@ number.2.Piano.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14410,7 +14410,7 @@ number.2.Piano.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14419,7 +14419,7 @@ number.2.Piano.Music = {
         f''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14428,7 +14428,7 @@ number.2.Piano.Music = {
         g''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14480,7 +14480,7 @@ number.2.Piano.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14492,7 +14492,7 @@ number.2.Piano.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14501,7 +14501,7 @@ number.2.Piano.Music = {
         c'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14510,7 +14510,7 @@ number.2.Piano.Music = {
         e''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14519,7 +14519,7 @@ number.2.Piano.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14528,7 +14528,7 @@ number.2.Piano.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14537,7 +14537,7 @@ number.2.Piano.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14546,7 +14546,7 @@ number.2.Piano.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14558,7 +14558,7 @@ number.2.Piano.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14567,7 +14567,7 @@ number.2.Piano.Music = {
         a''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -14587,7 +14587,7 @@ number.2.Piano.Music = {
     e''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14599,7 +14599,7 @@ number.2.Piano.Music = {
     ef''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14608,7 +14608,7 @@ number.2.Piano.Music = {
     c'''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14642,7 +14642,7 @@ number.2.Piano.Music = {
     fs''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14659,7 +14659,7 @@ number.2.Piano.Music = {
     fs''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14668,7 +14668,7 @@ number.2.Piano.Music = {
     f''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14677,7 +14677,7 @@ number.2.Piano.Music = {
     fs''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14706,7 +14706,7 @@ number.2.Piano.Music = {
     c'''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14720,7 +14720,7 @@ number.2.Piano.Music = {
     c'''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14737,7 +14737,7 @@ number.2.Piano.Music = {
     c'''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14746,7 +14746,7 @@ number.2.Piano.Music = {
     f''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14755,7 +14755,7 @@ number.2.Piano.Music = {
     af''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14767,7 +14767,7 @@ number.2.Piano.Music = {
     e''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14798,7 +14798,7 @@ number.2.Piano.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14807,7 +14807,7 @@ number.2.Piano.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14819,7 +14819,7 @@ number.2.Piano.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -14828,7 +14828,7 @@ number.2.Piano.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -14853,7 +14853,7 @@ number.2.Piano.Music = {
     cs'''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14865,7 +14865,7 @@ number.2.Piano.Music = {
     c'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14874,7 +14874,7 @@ number.2.Piano.Music = {
     f''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14883,7 +14883,7 @@ number.2.Piano.Music = {
     g''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14895,7 +14895,7 @@ number.2.Piano.Music = {
     a''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14904,7 +14904,7 @@ number.2.Piano.Music = {
     g''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14913,7 +14913,7 @@ number.2.Piano.Music = {
     e''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14925,7 +14925,7 @@ number.2.Piano.Music = {
     c'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14934,7 +14934,7 @@ number.2.Piano.Music = {
     a''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14958,7 +14958,7 @@ number.2.Piano.Music = {
     f''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14967,7 +14967,7 @@ number.2.Piano.Music = {
     fs'''!8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14976,7 +14976,7 @@ number.2.Piano.Music = {
     f''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -14988,7 +14988,7 @@ number.2.Piano.Music = {
     a''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -14997,7 +14997,7 @@ number.2.Piano.Music = {
     af''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -15006,7 +15006,7 @@ number.2.Piano.Music = {
     a''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -15025,7 +15025,7 @@ number.2.Piano.Music = {
     e'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -15037,7 +15037,7 @@ number.2.Piano.Music = {
     f''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -15046,7 +15046,7 @@ number.2.Piano.Music = {
     c'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -15055,7 +15055,7 @@ number.2.Piano.Music = {
     g'''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -15082,7 +15082,7 @@ number.2.Piano.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15091,7 +15091,7 @@ number.2.Piano.Music = {
         ef'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15103,7 +15103,7 @@ number.2.Piano.Music = {
         f'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15112,7 +15112,7 @@ number.2.Piano.Music = {
         e'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15152,7 +15152,7 @@ number.2.Piano.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15161,7 +15161,7 @@ number.2.Piano.Music = {
         g'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -15183,7 +15183,7 @@ number.2.Piano.Music = {
     a''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -15202,7 +15202,7 @@ number.2.Piano.Music = {
     g'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -15214,7 +15214,7 @@ number.2.Piano.Music = {
     af'''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -15243,7 +15243,7 @@ number.2.Piano.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15255,7 +15255,7 @@ number.2.Piano.Music = {
         g'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15264,7 +15264,7 @@ number.2.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15276,7 +15276,7 @@ number.2.Piano.Music = {
         cs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15285,7 +15285,7 @@ number.2.Piano.Music = {
         c'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -15305,7 +15305,7 @@ number.2.Piano.Music = {
     b''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -15317,7 +15317,7 @@ number.2.Piano.Music = {
     fs'''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -15326,7 +15326,7 @@ number.2.Piano.Music = {
     f'''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -15355,7 +15355,7 @@ number.2.Piano.Music = {
         g'''2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15364,7 +15364,7 @@ number.2.Piano.Music = {
         a'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -15391,7 +15391,7 @@ number.2.Piano.Music = {
     af'''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -15415,7 +15415,7 @@ number.2.Piano.Music = {
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15427,7 +15427,7 @@ number.2.Piano.Music = {
         bf'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15436,7 +15436,7 @@ number.2.Piano.Music = {
         g'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15445,7 +15445,7 @@ number.2.Piano.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15454,7 +15454,7 @@ number.2.Piano.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15466,7 +15466,7 @@ number.2.Piano.Music = {
         c'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15475,7 +15475,7 @@ number.2.Piano.Music = {
         a'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15484,7 +15484,7 @@ number.2.Piano.Music = {
         f'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15496,7 +15496,7 @@ number.2.Piano.Music = {
         e'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15521,7 +15521,7 @@ number.2.Piano.Music = {
     ef'''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -15555,7 +15555,7 @@ number.2.Piano.Music = {
         c'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15569,7 +15569,7 @@ number.2.Piano.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15581,7 +15581,7 @@ number.2.Piano.Music = {
         b'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15590,7 +15590,7 @@ number.2.Piano.Music = {
         bf'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15599,7 +15599,7 @@ number.2.Piano.Music = {
         g'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -15705,7 +15705,7 @@ number.2.Percussion.Music = {
     c'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
       %! REAPPLIED_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
@@ -15742,7 +15742,7 @@ number.2.Percussion.Music = {
     c'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -15776,7 +15776,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -15785,7 +15785,7 @@ number.2.Percussion.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -15815,7 +15815,7 @@ number.2.Percussion.Music = {
     c'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16064,7 +16064,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16073,7 +16073,7 @@ number.2.Percussion.Music = {
         c'1
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16082,7 +16082,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16091,7 +16091,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16131,7 +16131,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16140,7 +16140,7 @@ number.2.Percussion.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16170,7 +16170,7 @@ number.2.Percussion.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -16204,7 +16204,7 @@ number.2.Percussion.Music = {
         c'2.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16244,7 +16244,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16253,7 +16253,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16295,7 +16295,7 @@ number.2.Percussion.Music = {
     c'2
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16304,7 +16304,7 @@ number.2.Percussion.Music = {
     c'8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -16336,7 +16336,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16345,7 +16345,7 @@ number.2.Percussion.Music = {
         c'1
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16354,7 +16354,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16363,7 +16363,7 @@ number.2.Percussion.Music = {
         c'8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16403,7 +16403,7 @@ number.2.Percussion.Music = {
         c'4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16433,7 +16433,7 @@ number.2.Percussion.Music = {
     c'2..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -16467,7 +16467,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16476,7 +16476,7 @@ number.2.Percussion.Music = {
         c'4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16528,7 +16528,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16537,7 +16537,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16567,7 +16567,7 @@ number.2.Percussion.Music = {
     c'2
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16576,7 +16576,7 @@ number.2.Percussion.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -16624,7 +16624,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16633,7 +16633,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % SPANNER_STARTS:
           %! baca._attach_shadow_tie_indicators()
@@ -16663,7 +16663,7 @@ number.2.Percussion.Music = {
     c'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
     % SPANNER_STARTS:
       %! baca._attach_shadow_tie_indicators()
@@ -16697,7 +16697,7 @@ number.2.Percussion.Music = {
         c'1
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16706,7 +16706,7 @@ number.2.Percussion.Music = {
         c'2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -16715,7 +16715,7 @@ number.2.Percussion.Music = {
         c'4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.accent()
+          %! baca.accent_function()
         - \accent
         % CLOSING:
         % COMMANDS:
@@ -16809,24 +16809,24 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \baca-p-sempre
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % MARKUP:
-      %! baca.markup()
+      %! baca.markup_function()
     ^ \baca-tam-tam-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16859,9 +16859,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16882,9 +16882,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16910,9 +16910,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16950,9 +16950,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -16973,9 +16973,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17001,9 +17001,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17036,9 +17036,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17059,9 +17059,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17087,9 +17087,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17127,9 +17127,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17150,9 +17150,9 @@ number.2.Percussion.Music = {
     c'16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.accent()
+      %! baca.accent_function()
     - \accent
-      %! baca.laissez_vibrer()
+      %! baca.laissez_vibrer_function()
     \laissezVibrer
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17525,22 +17525,22 @@ number.2.Violin.Music = {
     f''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \mp
     % MARKUP:
-      %! baca.markup()
+      %! baca.markup_function()
     ^ \krummzeit-off-string-bowing-on-staccati-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17557,7 +17557,7 @@ number.2.Violin.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17566,7 +17566,7 @@ number.2.Violin.Music = {
         g''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17575,7 +17575,7 @@ number.2.Violin.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -17608,7 +17608,7 @@ number.2.Violin.Music = {
         f''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -17620,7 +17620,7 @@ number.2.Violin.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17629,7 +17629,7 @@ number.2.Violin.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17638,7 +17638,7 @@ number.2.Violin.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17647,7 +17647,7 @@ number.2.Violin.Music = {
         f''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17656,7 +17656,7 @@ number.2.Violin.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17665,7 +17665,7 @@ number.2.Violin.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17674,7 +17674,7 @@ number.2.Violin.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17683,7 +17683,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17692,7 +17692,7 @@ number.2.Violin.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17701,7 +17701,7 @@ number.2.Violin.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17710,7 +17710,7 @@ number.2.Violin.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17719,7 +17719,7 @@ number.2.Violin.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17728,7 +17728,7 @@ number.2.Violin.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -17764,7 +17764,7 @@ number.2.Violin.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17773,7 +17773,7 @@ number.2.Violin.Music = {
         c'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -17806,7 +17806,7 @@ number.2.Violin.Music = {
         ef''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17815,7 +17815,7 @@ number.2.Violin.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -17832,7 +17832,7 @@ number.2.Violin.Music = {
     f''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -17844,7 +17844,7 @@ number.2.Violin.Music = {
     fs''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17853,7 +17853,7 @@ number.2.Violin.Music = {
     a''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -17862,7 +17862,7 @@ number.2.Violin.Music = {
     c''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -17892,7 +17892,7 @@ number.2.Violin.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17901,7 +17901,7 @@ number.2.Violin.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -17910,7 +17910,7 @@ number.2.Violin.Music = {
         ef''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -17933,7 +17933,7 @@ number.2.Violin.Music = {
     bf''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -18033,22 +18033,22 @@ number.2.Violin.Music = {
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \f
     % MARKUP:
-      %! baca.markup()
+      %! baca.markup_function()
     ^ \krummzeit-off-string-bowing-on-staccati-markup
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -18070,7 +18070,7 @@ number.2.Violin.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18079,7 +18079,7 @@ number.2.Violin.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18093,7 +18093,7 @@ number.2.Violin.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -18136,7 +18136,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -18148,7 +18148,7 @@ number.2.Violin.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18157,7 +18157,7 @@ number.2.Violin.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18166,7 +18166,7 @@ number.2.Violin.Music = {
         b''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18175,7 +18175,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18184,7 +18184,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18193,7 +18193,7 @@ number.2.Violin.Music = {
         b''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18202,7 +18202,7 @@ number.2.Violin.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18211,7 +18211,7 @@ number.2.Violin.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18220,7 +18220,7 @@ number.2.Violin.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18229,7 +18229,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18238,7 +18238,7 @@ number.2.Violin.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18247,7 +18247,7 @@ number.2.Violin.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18256,7 +18256,7 @@ number.2.Violin.Music = {
         f''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -18292,7 +18292,7 @@ number.2.Violin.Music = {
         bf''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18301,7 +18301,7 @@ number.2.Violin.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -18334,7 +18334,7 @@ number.2.Violin.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18348,7 +18348,7 @@ number.2.Violin.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -18370,7 +18370,7 @@ number.2.Violin.Music = {
     fs''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -18382,7 +18382,7 @@ number.2.Violin.Music = {
     g''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -18391,7 +18391,7 @@ number.2.Violin.Music = {
     bf'!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -18405,7 +18405,7 @@ number.2.Violin.Music = {
     cs''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -18445,7 +18445,7 @@ number.2.Violin.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18454,7 +18454,7 @@ number.2.Violin.Music = {
         bf''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18463,7 +18463,7 @@ number.2.Violin.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -18486,7 +18486,7 @@ number.2.Violin.Music = {
     b''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -18516,13 +18516,13 @@ number.2.Violin.Music = {
           %! SPANNER_STOP
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin()
+          %! baca.hairpin_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! SPANNER_STOP
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin()
+          %! baca.hairpin_function()
         \f
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -18534,13 +18534,13 @@ number.2.Violin.Music = {
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin()
+          %! baca.hairpin_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! SPANNER_START
           %! baca.PiecewiseCommand._call(2)
           %! baca._set_status_tag()
-          %! baca.hairpin()
+          %! baca.hairpin_function()
         \<
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18549,7 +18549,7 @@ number.2.Violin.Music = {
         c'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18558,7 +18558,7 @@ number.2.Violin.Music = {
         e'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18567,7 +18567,7 @@ number.2.Violin.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18576,7 +18576,7 @@ number.2.Violin.Music = {
         af'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18585,7 +18585,7 @@ number.2.Violin.Music = {
         d'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18599,7 +18599,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18613,7 +18613,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18622,7 +18622,7 @@ number.2.Violin.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18631,7 +18631,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -18657,7 +18657,7 @@ number.2.Violin.Music = {
         fs'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18666,7 +18666,7 @@ number.2.Violin.Music = {
         d'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18675,7 +18675,7 @@ number.2.Violin.Music = {
         cs'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -18690,7 +18690,7 @@ number.2.Violin.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -18717,7 +18717,7 @@ number.2.Violin.Music = {
         g'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -18729,7 +18729,7 @@ number.2.Violin.Music = {
         af'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18738,7 +18738,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18747,7 +18747,7 @@ number.2.Violin.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18756,7 +18756,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18765,7 +18765,7 @@ number.2.Violin.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18774,7 +18774,7 @@ number.2.Violin.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18783,7 +18783,7 @@ number.2.Violin.Music = {
         b'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18792,7 +18792,7 @@ number.2.Violin.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18801,7 +18801,7 @@ number.2.Violin.Music = {
         a'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18810,7 +18810,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18819,7 +18819,7 @@ number.2.Violin.Music = {
         cs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -18856,7 +18856,7 @@ number.2.Violin.Music = {
     ef'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -18865,7 +18865,7 @@ number.2.Violin.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -18874,7 +18874,7 @@ number.2.Violin.Music = {
     ef'!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -18886,7 +18886,7 @@ number.2.Violin.Music = {
     c''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -18895,7 +18895,7 @@ number.2.Violin.Music = {
     cs'!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -18904,7 +18904,7 @@ number.2.Violin.Music = {
     af'!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -18934,7 +18934,7 @@ number.2.Violin.Music = {
         b'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -18943,7 +18943,7 @@ number.2.Violin.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -18958,7 +18958,7 @@ number.2.Violin.Music = {
     bf'!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -18998,7 +18998,7 @@ number.2.Violin.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19007,7 +19007,7 @@ number.2.Violin.Music = {
         g'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19016,7 +19016,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19025,7 +19025,7 @@ number.2.Violin.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19034,7 +19034,7 @@ number.2.Violin.Music = {
         b'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19043,7 +19043,7 @@ number.2.Violin.Music = {
         e'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19052,7 +19052,7 @@ number.2.Violin.Music = {
         fs'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19061,7 +19061,7 @@ number.2.Violin.Music = {
         af'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19070,7 +19070,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19079,7 +19079,7 @@ number.2.Violin.Music = {
         a'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19093,7 +19093,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -19126,7 +19126,7 @@ number.2.Violin.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19140,7 +19140,7 @@ number.2.Violin.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19149,7 +19149,7 @@ number.2.Violin.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -19164,7 +19164,7 @@ number.2.Violin.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -19182,13 +19182,13 @@ number.2.Violin.Music = {
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! SPANNER_STOP
       %! baca.PiecewiseCommand._call(3)
       %! baca._set_status_tag()
-      %! baca.hairpin()
+      %! baca.hairpin_function()
     \ff
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -19199,7 +19199,7 @@ number.2.Violin.Music = {
     af'!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % START_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -19211,7 +19211,7 @@ number.2.Violin.Music = {
     bf'!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -19220,7 +19220,7 @@ number.2.Violin.Music = {
     fs'!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -19229,7 +19229,7 @@ number.2.Violin.Music = {
     bf'!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % STOP_BEAM:
       %! krummzeit.make_polyphony_rhythm()
@@ -19257,7 +19257,7 @@ number.2.Violin.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19266,7 +19266,7 @@ number.2.Violin.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -19289,7 +19289,7 @@ number.2.Violin.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -19298,7 +19298,7 @@ number.2.Violin.Music = {
     cs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -19317,7 +19317,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -19329,7 +19329,7 @@ number.2.Violin.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19338,7 +19338,7 @@ number.2.Violin.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19347,7 +19347,7 @@ number.2.Violin.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19356,7 +19356,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19365,7 +19365,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19374,7 +19374,7 @@ number.2.Violin.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19383,7 +19383,7 @@ number.2.Violin.Music = {
         b'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19392,7 +19392,7 @@ number.2.Violin.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19406,7 +19406,7 @@ number.2.Violin.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -19452,7 +19452,7 @@ number.2.Violin.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19461,7 +19461,7 @@ number.2.Violin.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -19476,7 +19476,7 @@ number.2.Violin.Music = {
     ef''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -19518,7 +19518,7 @@ number.2.Violin.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19527,7 +19527,7 @@ number.2.Violin.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19536,7 +19536,7 @@ number.2.Violin.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19545,7 +19545,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19554,7 +19554,7 @@ number.2.Violin.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19563,7 +19563,7 @@ number.2.Violin.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19572,7 +19572,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19581,7 +19581,7 @@ number.2.Violin.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19590,7 +19590,7 @@ number.2.Violin.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19599,7 +19599,7 @@ number.2.Violin.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19608,7 +19608,7 @@ number.2.Violin.Music = {
         b''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19617,7 +19617,7 @@ number.2.Violin.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19626,7 +19626,7 @@ number.2.Violin.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -19656,7 +19656,7 @@ number.2.Violin.Music = {
         bf''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19665,7 +19665,7 @@ number.2.Violin.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19674,7 +19674,7 @@ number.2.Violin.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -19691,7 +19691,7 @@ number.2.Violin.Music = {
     bf'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -19708,7 +19708,7 @@ number.2.Violin.Music = {
     ef''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -19727,7 +19727,7 @@ number.2.Violin.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -19739,7 +19739,7 @@ number.2.Violin.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19748,7 +19748,7 @@ number.2.Violin.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19757,7 +19757,7 @@ number.2.Violin.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19766,7 +19766,7 @@ number.2.Violin.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19775,7 +19775,7 @@ number.2.Violin.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19784,7 +19784,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19793,7 +19793,7 @@ number.2.Violin.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19802,7 +19802,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19811,7 +19811,7 @@ number.2.Violin.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -19847,7 +19847,7 @@ number.2.Violin.Music = {
         c'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19856,7 +19856,7 @@ number.2.Violin.Music = {
         d''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % SPANNER_STARTS:
           %! krummzeit.make_polyphony_rhythm()
@@ -19879,7 +19879,7 @@ number.2.Violin.Music = {
     bf''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -19898,7 +19898,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % START_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -19910,7 +19910,7 @@ number.2.Violin.Music = {
         cs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19919,7 +19919,7 @@ number.2.Violin.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19928,7 +19928,7 @@ number.2.Violin.Music = {
         b'16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19937,7 +19937,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19946,7 +19946,7 @@ number.2.Violin.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19955,7 +19955,7 @@ number.2.Violin.Music = {
         bf'!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19964,7 +19964,7 @@ number.2.Violin.Music = {
         c''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19973,7 +19973,7 @@ number.2.Violin.Music = {
         b''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19982,7 +19982,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -19991,7 +19991,7 @@ number.2.Violin.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20000,7 +20000,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -20036,7 +20036,7 @@ number.2.Violin.Music = {
         b''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20045,7 +20045,7 @@ number.2.Violin.Music = {
         cs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % CLOSING:
         % COMMANDS:
@@ -20060,7 +20060,7 @@ number.2.Violin.Music = {
     fs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccato()
+      %! baca.staccato_function()
     - \staccato
     % SPANNER_STARTS:
       %! krummzeit.make_polyphony_rhythm()
@@ -20100,7 +20100,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20109,7 +20109,7 @@ number.2.Violin.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20118,7 +20118,7 @@ number.2.Violin.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20127,7 +20127,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20136,7 +20136,7 @@ number.2.Violin.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20145,7 +20145,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20154,7 +20154,7 @@ number.2.Violin.Music = {
         d''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20163,7 +20163,7 @@ number.2.Violin.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20172,7 +20172,7 @@ number.2.Violin.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20181,7 +20181,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -20190,7 +20190,7 @@ number.2.Violin.Music = {
         ef''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccato()
+          %! baca.staccato_function()
         - \staccato
         % STOP_BEAM:
           %! krummzeit.make_polyphony_rhythm()
@@ -20210,26 +20210,26 @@ number.2.Violin.Music = {
     g''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \f
     % MARKUP:
-      %! baca.markup()
+      %! baca.markup_function()
     ^ \krummzeit-ob-plus-full-bow-strokes-markup
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20238,11 +20238,11 @@ number.2.Violin.Music = {
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20251,11 +20251,11 @@ number.2.Violin.Music = {
     a''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20266,11 +20266,11 @@ number.2.Violin.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20279,11 +20279,11 @@ number.2.Violin.Music = {
     e''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20292,11 +20292,11 @@ number.2.Violin.Music = {
     b''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20305,11 +20305,11 @@ number.2.Violin.Music = {
     a''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20318,11 +20318,11 @@ number.2.Violin.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20331,11 +20331,11 @@ number.2.Violin.Music = {
     af''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20344,11 +20344,11 @@ number.2.Violin.Music = {
     g''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20357,11 +20357,11 @@ number.2.Violin.Music = {
     e''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20370,11 +20370,11 @@ number.2.Violin.Music = {
     d''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20383,11 +20383,11 @@ number.2.Violin.Music = {
     fs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20396,11 +20396,11 @@ number.2.Violin.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20409,11 +20409,11 @@ number.2.Violin.Music = {
     b'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20427,7 +20427,7 @@ number.2.Violin.Music = {
     fs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20441,11 +20441,11 @@ number.2.Violin.Music = {
     fs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20454,11 +20454,11 @@ number.2.Violin.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20467,11 +20467,11 @@ number.2.Violin.Music = {
     b'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20480,11 +20480,11 @@ number.2.Violin.Music = {
     fs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20493,11 +20493,11 @@ number.2.Violin.Music = {
     d''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20506,11 +20506,11 @@ number.2.Violin.Music = {
     fs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20519,11 +20519,11 @@ number.2.Violin.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20532,11 +20532,11 @@ number.2.Violin.Music = {
     a''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20545,11 +20545,11 @@ number.2.Violin.Music = {
     d''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20558,11 +20558,11 @@ number.2.Violin.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20576,7 +20576,7 @@ number.2.Violin.Music = {
     af''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20590,11 +20590,11 @@ number.2.Violin.Music = {
     af''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20603,11 +20603,11 @@ number.2.Violin.Music = {
     ef''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20616,11 +20616,11 @@ number.2.Violin.Music = {
     e''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20629,11 +20629,11 @@ number.2.Violin.Music = {
     a'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20642,11 +20642,11 @@ number.2.Violin.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20655,11 +20655,11 @@ number.2.Violin.Music = {
     af'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20668,11 +20668,11 @@ number.2.Violin.Music = {
     e''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20681,11 +20681,11 @@ number.2.Violin.Music = {
     a'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20696,11 +20696,11 @@ number.2.Violin.Music = {
     f'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20709,11 +20709,11 @@ number.2.Violin.Music = {
     d''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20722,11 +20722,11 @@ number.2.Violin.Music = {
     e'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20735,11 +20735,11 @@ number.2.Violin.Music = {
     bf'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20748,11 +20748,11 @@ number.2.Violin.Music = {
     f'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20761,11 +20761,11 @@ number.2.Violin.Music = {
     b'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20774,11 +20774,11 @@ number.2.Violin.Music = {
     fs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20787,11 +20787,11 @@ number.2.Violin.Music = {
     f'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20800,11 +20800,11 @@ number.2.Violin.Music = {
     d''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20813,11 +20813,11 @@ number.2.Violin.Music = {
     af'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20826,11 +20826,11 @@ number.2.Violin.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20839,11 +20839,11 @@ number.2.Violin.Music = {
     f'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20852,11 +20852,11 @@ number.2.Violin.Music = {
     b'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20865,11 +20865,11 @@ number.2.Violin.Music = {
     a'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20878,11 +20878,11 @@ number.2.Violin.Music = {
     f'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20891,11 +20891,11 @@ number.2.Violin.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20904,11 +20904,11 @@ number.2.Violin.Music = {
     g'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20917,11 +20917,11 @@ number.2.Violin.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20930,11 +20930,11 @@ number.2.Violin.Music = {
     bf'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20943,11 +20943,11 @@ number.2.Violin.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20956,11 +20956,11 @@ number.2.Violin.Music = {
     e'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20969,11 +20969,11 @@ number.2.Violin.Music = {
     d'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20982,11 +20982,11 @@ number.2.Violin.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -20997,11 +20997,11 @@ number.2.Violin.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21010,11 +21010,11 @@ number.2.Violin.Music = {
     bf'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21023,11 +21023,11 @@ number.2.Violin.Music = {
     b'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21036,11 +21036,11 @@ number.2.Violin.Music = {
     af'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21049,11 +21049,11 @@ number.2.Violin.Music = {
     e'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21062,11 +21062,11 @@ number.2.Violin.Music = {
     ef'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21075,11 +21075,11 @@ number.2.Violin.Music = {
     d'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21088,11 +21088,11 @@ number.2.Violin.Music = {
     g'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21101,11 +21101,11 @@ number.2.Violin.Music = {
     f'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21114,11 +21114,11 @@ number.2.Violin.Music = {
     e'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21127,11 +21127,11 @@ number.2.Violin.Music = {
     fs'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21140,11 +21140,11 @@ number.2.Violin.Music = {
     af'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21153,11 +21153,11 @@ number.2.Violin.Music = {
     d'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21166,11 +21166,11 @@ number.2.Violin.Music = {
     b'4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21179,11 +21179,11 @@ number.2.Violin.Music = {
     af'!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21192,7 +21192,7 @@ number.2.Violin.Music = {
     e'8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21213,22 +21213,22 @@ number.2.Violin.Music = {
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \fff
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         ^ \baca-pizz-markup
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21237,7 +21237,7 @@ number.2.Violin.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21246,7 +21246,7 @@ number.2.Violin.Music = {
         e''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % SPANNER_STARTS:
         ~
@@ -21278,7 +21278,7 @@ number.2.Violin.Music = {
         ef''!4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % SPANNER_STARTS:
         ~
@@ -21302,7 +21302,7 @@ number.2.Violin.Music = {
     g''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21311,7 +21311,7 @@ number.2.Violin.Music = {
     c''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21320,7 +21320,7 @@ number.2.Violin.Music = {
     ef''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21353,7 +21353,7 @@ number.2.Violin.Music = {
     bf''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -21365,7 +21365,7 @@ number.2.Violin.Music = {
     c''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21374,7 +21374,7 @@ number.2.Violin.Music = {
     af''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21383,7 +21383,7 @@ number.2.Violin.Music = {
     f''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -21400,7 +21400,7 @@ number.2.Violin.Music = {
     bf''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21409,7 +21409,7 @@ number.2.Violin.Music = {
     a''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -21421,7 +21421,7 @@ number.2.Violin.Music = {
     c''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21430,7 +21430,7 @@ number.2.Violin.Music = {
     b''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21439,7 +21439,7 @@ number.2.Violin.Music = {
     g''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -21468,7 +21468,7 @@ number.2.Violin.Music = {
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -21493,7 +21493,7 @@ number.2.Violin.Music = {
     c'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -21505,7 +21505,7 @@ number.2.Violin.Music = {
     a''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21514,7 +21514,7 @@ number.2.Violin.Music = {
     cs''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21523,7 +21523,7 @@ number.2.Violin.Music = {
     g''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21532,7 +21532,7 @@ number.2.Violin.Music = {
     fs''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -21559,7 +21559,7 @@ number.2.Violin.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21568,7 +21568,7 @@ number.2.Violin.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -21580,7 +21580,7 @@ number.2.Violin.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21589,7 +21589,7 @@ number.2.Violin.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -21624,7 +21624,7 @@ number.2.Violin.Music = {
     e''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21640,7 +21640,7 @@ number.2.Violin.Music = {
     f''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21649,7 +21649,7 @@ number.2.Violin.Music = {
     ef''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -21661,7 +21661,7 @@ number.2.Violin.Music = {
     c'''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21670,7 +21670,7 @@ number.2.Violin.Music = {
     f''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21679,7 +21679,7 @@ number.2.Violin.Music = {
     e''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21688,7 +21688,7 @@ number.2.Violin.Music = {
     fs''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21697,7 +21697,7 @@ number.2.Violin.Music = {
     g''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21706,7 +21706,7 @@ number.2.Violin.Music = {
     bf''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21715,7 +21715,7 @@ number.2.Violin.Music = {
     fs''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -21752,7 +21752,7 @@ number.2.Violin.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -21764,7 +21764,7 @@ number.2.Violin.Music = {
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -21789,7 +21789,7 @@ number.2.Violin.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21798,7 +21798,7 @@ number.2.Violin.Music = {
     a''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21829,7 +21829,7 @@ number.2.Violin.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21838,7 +21838,7 @@ number.2.Violin.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -21850,7 +21850,7 @@ number.2.Violin.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21859,7 +21859,7 @@ number.2.Violin.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21868,7 +21868,7 @@ number.2.Violin.Music = {
         c'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -21880,7 +21880,7 @@ number.2.Violin.Music = {
         b''2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -21900,7 +21900,7 @@ number.2.Violin.Music = {
     g'''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -21929,7 +21929,7 @@ number.2.Violin.Music = {
         b''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -21941,7 +21941,7 @@ number.2.Violin.Music = {
         g'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21950,7 +21950,7 @@ number.2.Violin.Music = {
         ef'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21959,7 +21959,7 @@ number.2.Violin.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21968,7 +21968,7 @@ number.2.Violin.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21977,7 +21977,7 @@ number.2.Violin.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -21986,7 +21986,7 @@ number.2.Violin.Music = {
         e'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -21998,7 +21998,7 @@ number.2.Violin.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22007,7 +22007,7 @@ number.2.Violin.Music = {
         c'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -22044,7 +22044,7 @@ number.2.Violin.Music = {
         fs'''!2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -22076,7 +22076,7 @@ number.2.Violin.Music = {
         b''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22085,7 +22085,7 @@ number.2.Violin.Music = {
         af'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -22097,7 +22097,7 @@ number.2.Violin.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22106,7 +22106,7 @@ number.2.Violin.Music = {
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22115,7 +22115,7 @@ number.2.Violin.Music = {
         bf''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22124,7 +22124,7 @@ number.2.Violin.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22133,7 +22133,7 @@ number.2.Violin.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22142,7 +22142,7 @@ number.2.Violin.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22151,7 +22151,7 @@ number.2.Violin.Music = {
         f'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -22163,7 +22163,7 @@ number.2.Violin.Music = {
         ef'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -22200,7 +22200,7 @@ number.2.Violin.Music = {
         e'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22214,7 +22214,7 @@ number.2.Violin.Music = {
         c'''2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22228,7 +22228,7 @@ number.2.Violin.Music = {
         c'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -22250,7 +22250,7 @@ number.2.Violin.Music = {
     g'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -22264,7 +22264,7 @@ number.2.Violin.Music = {
     g'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -22276,7 +22276,7 @@ number.2.Violin.Music = {
     b''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -22285,7 +22285,7 @@ number.2.Violin.Music = {
     a'''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -22312,7 +22312,7 @@ number.2.Violin.Music = {
         g'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -22324,7 +22324,7 @@ number.2.Violin.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22333,7 +22333,7 @@ number.2.Violin.Music = {
         b''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -22345,7 +22345,7 @@ number.2.Violin.Music = {
         bf'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22354,7 +22354,7 @@ number.2.Violin.Music = {
         c'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -22393,7 +22393,7 @@ number.2.Violin.Music = {
     e'''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -22419,29 +22419,29 @@ number.2.Violin.Music = {
       %! EXPLICIT_BAR_EXTENT
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines(1)
+      %! baca.staff_lines_function(1)
     \override Staff.BarLine.bar-extent = #'(-2 . 0)
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines(2)
+      %! baca.staff_lines_function(2)
     \stopStaff
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines(2)
+      %! baca.staff_lines_function(2)
     \once \override Staff.StaffSymbol.line-count = 1
       %! EXPLICIT_STAFF_LINES
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.staff_lines(2)
+      %! baca.staff_lines_function(2)
     \startStaff
     % OPENING:
     % COMMANDS:
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
     \clef "percussion"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -22455,7 +22455,7 @@ number.2.Violin.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! baca.make_repeat_tied_notes()
@@ -22467,15 +22467,15 @@ number.2.Violin.Music = {
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \mf
     % MARKUP:
-      %! baca.markup()
+      %! baca.markup_function()
     ^ \baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup
       %! EXPLICIT_INSTRUMENT_ALERT
       %! baca._attach_latent_indicator_alert()
@@ -22628,22 +22628,22 @@ number.2.Viola.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \mf
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         ^ \baca-molto-flautando-markup
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Viola”)"
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -22667,7 +22667,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -22695,7 +22695,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22705,7 +22705,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -22733,7 +22733,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22743,7 +22743,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -22761,7 +22761,7 @@ number.2.Viola.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -22771,7 +22771,7 @@ number.2.Viola.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -22793,7 +22793,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22840,19 +22840,19 @@ number.2.Viola.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \f
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         ^ \baca-non-flautando-markup
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22862,7 +22862,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -22890,7 +22890,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22900,7 +22900,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -22928,7 +22928,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22938,7 +22938,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -22956,7 +22956,7 @@ number.2.Viola.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -22966,7 +22966,7 @@ number.2.Viola.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -22988,7 +22988,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -22998,7 +22998,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -23030,16 +23030,16 @@ number.2.Viola.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \ff
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23049,7 +23049,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23059,7 +23059,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -23087,7 +23087,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23097,7 +23097,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23107,7 +23107,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -23135,7 +23135,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23145,7 +23145,7 @@ number.2.Viola.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23238,7 +23238,7 @@ number.2.Viola.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
     \clef "treble"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -23249,7 +23249,7 @@ number.2.Viola.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! krummzeit.make_white_rhythm()
@@ -23266,26 +23266,26 @@ number.2.Viola.Music = {
     af''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \f
     % MARKUP:
-      %! baca.markup()
+      %! baca.markup_function()
     ^ \krummzeit-ob-plus-full-bow-strokes-markup
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23294,11 +23294,11 @@ number.2.Viola.Music = {
     ef''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23307,11 +23307,11 @@ number.2.Viola.Music = {
     b''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23320,11 +23320,11 @@ number.2.Viola.Music = {
     e''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23335,11 +23335,11 @@ number.2.Viola.Music = {
     af''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23348,11 +23348,11 @@ number.2.Viola.Music = {
     a''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23363,11 +23363,11 @@ number.2.Viola.Music = {
     f''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23376,11 +23376,11 @@ number.2.Viola.Music = {
     b'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23391,11 +23391,11 @@ number.2.Viola.Music = {
     f'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23404,11 +23404,11 @@ number.2.Viola.Music = {
     af'!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23417,11 +23417,11 @@ number.2.Viola.Music = {
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -23453,7 +23453,7 @@ number.2.Viola.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
         \clef "alto"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
@@ -23464,18 +23464,18 @@ number.2.Viola.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
           %! krummzeit.make_prolated_quarters()
         b'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -23489,11 +23489,11 @@ number.2.Viola.Music = {
         af'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23502,11 +23502,11 @@ number.2.Viola.Music = {
         ef'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23515,11 +23515,11 @@ number.2.Viola.Music = {
         bf'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -23546,11 +23546,11 @@ number.2.Viola.Music = {
         fs'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23559,11 +23559,11 @@ number.2.Viola.Music = {
         b'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23572,11 +23572,11 @@ number.2.Viola.Music = {
         af'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23585,11 +23585,11 @@ number.2.Viola.Music = {
         fs'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23603,7 +23603,7 @@ number.2.Viola.Music = {
         af'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % CLOSING:
         % COMMANDS:
@@ -23635,11 +23635,11 @@ number.2.Viola.Music = {
         af'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23648,11 +23648,11 @@ number.2.Viola.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23661,11 +23661,11 @@ number.2.Viola.Music = {
         bf'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23674,11 +23674,11 @@ number.2.Viola.Music = {
         a'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23687,11 +23687,11 @@ number.2.Viola.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23700,11 +23700,11 @@ number.2.Viola.Music = {
         af'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23713,11 +23713,11 @@ number.2.Viola.Music = {
         f'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23726,11 +23726,11 @@ number.2.Viola.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23739,11 +23739,11 @@ number.2.Viola.Music = {
         a'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -23770,11 +23770,11 @@ number.2.Viola.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23783,11 +23783,11 @@ number.2.Viola.Music = {
         af'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23796,11 +23796,11 @@ number.2.Viola.Music = {
         bf!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23814,7 +23814,7 @@ number.2.Viola.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23828,11 +23828,11 @@ number.2.Viola.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -23859,11 +23859,11 @@ number.2.Viola.Music = {
         g'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23872,11 +23872,11 @@ number.2.Viola.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23885,11 +23885,11 @@ number.2.Viola.Music = {
         d'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23898,11 +23898,11 @@ number.2.Viola.Music = {
         f4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -23929,11 +23929,11 @@ number.2.Viola.Music = {
         fs'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23942,11 +23942,11 @@ number.2.Viola.Music = {
         f4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23955,11 +23955,11 @@ number.2.Viola.Music = {
         g4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -23968,11 +23968,11 @@ number.2.Viola.Music = {
         bf!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -23999,11 +23999,11 @@ number.2.Viola.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24012,11 +24012,11 @@ number.2.Viola.Music = {
         b4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -24043,11 +24043,11 @@ number.2.Viola.Music = {
         ef!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24056,11 +24056,11 @@ number.2.Viola.Music = {
         fs!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24069,11 +24069,11 @@ number.2.Viola.Music = {
         ef!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24087,7 +24087,7 @@ number.2.Viola.Music = {
         af!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % CLOSING:
         % COMMANDS:
@@ -24117,11 +24117,11 @@ number.2.Viola.Music = {
         af!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24130,11 +24130,11 @@ number.2.Viola.Music = {
         e4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24143,7 +24143,7 @@ number.2.Viola.Music = {
         ef!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % CLOSING:
         % COMMANDS:
@@ -24181,7 +24181,7 @@ number.2.Viola.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
         \clef "treble"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
@@ -24192,29 +24192,29 @@ number.2.Viola.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
           %! krummzeit.make_pizzicato_rhythm()
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \fff
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         ^ \baca-pizz-markup
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -24228,7 +24228,7 @@ number.2.Viola.Music = {
         bf''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24237,7 +24237,7 @@ number.2.Viola.Music = {
         g''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -24284,7 +24284,7 @@ number.2.Viola.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24293,7 +24293,7 @@ number.2.Viola.Music = {
         f''2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24302,7 +24302,7 @@ number.2.Viola.Music = {
         g''4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % SPANNER_STARTS:
         ~
@@ -24338,7 +24338,7 @@ number.2.Viola.Music = {
         a''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24347,7 +24347,7 @@ number.2.Viola.Music = {
         af''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_rhythm()
@@ -24387,7 +24387,7 @@ number.2.Viola.Music = {
         fs''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24401,7 +24401,7 @@ number.2.Viola.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -24445,7 +24445,7 @@ number.2.Viola.Music = {
         bf''!4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24454,7 +24454,7 @@ number.2.Viola.Music = {
         f''2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24463,7 +24463,7 @@ number.2.Viola.Music = {
         ef''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24472,7 +24472,7 @@ number.2.Viola.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24481,7 +24481,7 @@ number.2.Viola.Music = {
         fs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % SPANNER_STARTS:
         ~
@@ -24503,7 +24503,7 @@ number.2.Viola.Music = {
     cs''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -24512,7 +24512,7 @@ number.2.Viola.Music = {
     c'''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -24552,7 +24552,7 @@ number.2.Viola.Music = {
         fs''!4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24566,7 +24566,7 @@ number.2.Viola.Music = {
         a''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24580,7 +24580,7 @@ number.2.Viola.Music = {
         a''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24589,7 +24589,7 @@ number.2.Viola.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -24604,7 +24604,7 @@ number.2.Viola.Music = {
     f''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % SPANNER_STARTS:
     ~
@@ -24634,7 +24634,7 @@ number.2.Viola.Music = {
     a''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -24646,7 +24646,7 @@ number.2.Viola.Music = {
     fs''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -24655,7 +24655,7 @@ number.2.Viola.Music = {
     b''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -24667,7 +24667,7 @@ number.2.Viola.Music = {
     fs''!8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -24691,7 +24691,7 @@ number.2.Viola.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -24708,7 +24708,7 @@ number.2.Viola.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24722,7 +24722,7 @@ number.2.Viola.Music = {
         c'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24731,7 +24731,7 @@ number.2.Viola.Music = {
         e''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -24743,7 +24743,7 @@ number.2.Viola.Music = {
         bf''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -24783,7 +24783,7 @@ number.2.Viola.Music = {
         f''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -24795,7 +24795,7 @@ number.2.Viola.Music = {
         g''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24804,7 +24804,7 @@ number.2.Viola.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24813,7 +24813,7 @@ number.2.Viola.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24822,7 +24822,7 @@ number.2.Viola.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -24834,7 +24834,7 @@ number.2.Viola.Music = {
         fs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -24864,7 +24864,7 @@ number.2.Viola.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -24876,7 +24876,7 @@ number.2.Viola.Music = {
         bf''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24885,7 +24885,7 @@ number.2.Viola.Music = {
         g''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -24894,7 +24894,7 @@ number.2.Viola.Music = {
         f''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -24906,7 +24906,7 @@ number.2.Viola.Music = {
         g''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -24933,7 +24933,7 @@ number.2.Viola.Music = {
     c'''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -24942,7 +24942,7 @@ number.2.Viola.Music = {
     bf''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -24975,7 +24975,7 @@ number.2.Viola.Music = {
     c'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -24987,7 +24987,7 @@ number.2.Viola.Music = {
     g'''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -24996,7 +24996,7 @@ number.2.Viola.Music = {
     af''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -25020,7 +25020,7 @@ number.2.Viola.Music = {
     fs'''!8..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25029,7 +25029,7 @@ number.2.Viola.Music = {
     c'''8..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25038,7 +25038,7 @@ number.2.Viola.Music = {
     f''32..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -25050,7 +25050,7 @@ number.2.Viola.Music = {
     c'''32..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25059,7 +25059,7 @@ number.2.Viola.Music = {
     g'''16..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25068,7 +25068,7 @@ number.2.Viola.Music = {
     fs'''!16..
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -25112,7 +25112,7 @@ number.2.Viola.Music = {
         af'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25121,7 +25121,7 @@ number.2.Viola.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25133,7 +25133,7 @@ number.2.Viola.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25173,7 +25173,7 @@ number.2.Viola.Music = {
         f'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25185,7 +25185,7 @@ number.2.Viola.Music = {
         e'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25194,7 +25194,7 @@ number.2.Viola.Music = {
         g'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25203,7 +25203,7 @@ number.2.Viola.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25215,7 +25215,7 @@ number.2.Viola.Music = {
         ef'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25224,7 +25224,7 @@ number.2.Viola.Music = {
         g'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -25254,7 +25254,7 @@ number.2.Viola.Music = {
         f'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25266,7 +25266,7 @@ number.2.Viola.Music = {
         g'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25275,7 +25275,7 @@ number.2.Viola.Music = {
         a'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25327,7 +25327,7 @@ number.2.Viola.Music = {
         c'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25336,7 +25336,7 @@ number.2.Viola.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25348,7 +25348,7 @@ number.2.Viola.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25379,7 +25379,7 @@ number.2.Viola.Music = {
         a'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25388,7 +25388,7 @@ number.2.Viola.Music = {
         ef'''!2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25397,7 +25397,7 @@ number.2.Viola.Music = {
         g'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25406,7 +25406,7 @@ number.2.Viola.Music = {
         f'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -25428,7 +25428,7 @@ number.2.Viola.Music = {
     af'''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -25440,7 +25440,7 @@ number.2.Viola.Music = {
     a'''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25449,7 +25449,7 @@ number.2.Viola.Music = {
     b''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25458,7 +25458,7 @@ number.2.Viola.Music = {
     fs'''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -25475,7 +25475,7 @@ number.2.Viola.Music = {
     f'''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -25487,7 +25487,7 @@ number.2.Viola.Music = {
     c'''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25496,7 +25496,7 @@ number.2.Viola.Music = {
     bf'''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -25508,7 +25508,7 @@ number.2.Viola.Music = {
     g'''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25546,7 +25546,7 @@ number.2.Viola.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25568,7 +25568,7 @@ number.2.Viola.Music = {
         f'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25580,7 +25580,7 @@ number.2.Viola.Music = {
         a'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25589,7 +25589,7 @@ number.2.Viola.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -25732,22 +25732,22 @@ number.2.Cello.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \mf
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         ^ \baca-molto-flautando-markup
           %! REAPPLIED_INSTRUMENT_ALERT
           %! baca._attach_latent_indicator_alert()
         ^ \baca-reapplied-instrument-markup "(“Cello”)"
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -25771,7 +25771,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -25799,7 +25799,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25809,7 +25809,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -25837,7 +25837,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25847,7 +25847,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -25865,7 +25865,7 @@ number.2.Cello.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25875,7 +25875,7 @@ number.2.Cello.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -25897,7 +25897,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25907,7 +25907,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -25939,19 +25939,19 @@ number.2.Cello.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \f
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         ^ \baca-non-flautando-markup
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25961,7 +25961,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -25989,7 +25989,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -25999,7 +25999,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26027,7 +26027,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26037,7 +26037,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26055,7 +26055,7 @@ number.2.Cello.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26065,7 +26065,7 @@ number.2.Cello.Music = {
     % AFTER:
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26087,7 +26087,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26097,7 +26097,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26129,16 +26129,16 @@ number.2.Cello.Music = {
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \ff
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26148,7 +26148,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26158,7 +26158,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26186,7 +26186,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26196,7 +26196,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26206,7 +26206,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26234,7 +26234,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26244,7 +26244,7 @@ number.2.Cello.Music = {
         % AFTER:
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26337,7 +26337,7 @@ number.2.Cello.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
     \clef "treble"
       %! EXPLICIT_CLEF_COLOR
       %! baca._attach_color_literal(2)
@@ -26348,7 +26348,7 @@ number.2.Cello.Music = {
       %! EXPLICIT_CLEF
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.clef()
+      %! baca.clef_function()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
       %! krummzeit.make_white_rhythm()
@@ -26365,26 +26365,26 @@ number.2.Cello.Music = {
     e''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
       %! EXPLICIT_DYNAMIC_COLOR
       %! baca.treat_persistent_wrapper()
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     - \tweak color #(x11-color 'blue)
       %! EXPLICIT_DYNAMIC
       %! baca._attach_persistent_indicator()
       %! baca._set_status_tag()
-      %! baca.dynamic()
+      %! baca.dynamic_function()
     \f
     % MARKUP:
-      %! baca.markup()
+      %! baca.markup_function()
     ^ \krummzeit-ob-plus-full-bow-strokes-markup
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26393,11 +26393,11 @@ number.2.Cello.Music = {
     d''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26406,11 +26406,11 @@ number.2.Cello.Music = {
     f''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26419,11 +26419,11 @@ number.2.Cello.Music = {
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26434,11 +26434,11 @@ number.2.Cello.Music = {
     g''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26447,11 +26447,11 @@ number.2.Cello.Music = {
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26462,11 +26462,11 @@ number.2.Cello.Music = {
     c''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26475,11 +26475,11 @@ number.2.Cello.Music = {
     bf'!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26490,11 +26490,11 @@ number.2.Cello.Music = {
     e'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26503,11 +26503,11 @@ number.2.Cello.Music = {
     bf'!4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \upbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26516,11 +26516,11 @@ number.2.Cello.Music = {
     f'4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.alternate_bow_strokes()
+      %! baca.alternate_bow_strokes_function()
     - \downbow
     % SPANNER_STARTS:
       %! abjad.glissando(7)
-      %! baca.glissando()
+      %! baca.glissando_function()
     \glissando
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -26541,11 +26541,11 @@ number.2.Cello.Music = {
         b'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26554,11 +26554,11 @@ number.2.Cello.Music = {
         d'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26585,11 +26585,11 @@ number.2.Cello.Music = {
         f'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26598,11 +26598,11 @@ number.2.Cello.Music = {
         d'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26611,11 +26611,11 @@ number.2.Cello.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26624,11 +26624,11 @@ number.2.Cello.Music = {
         ef'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26637,11 +26637,11 @@ number.2.Cello.Music = {
         f'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26650,11 +26650,11 @@ number.2.Cello.Music = {
         ef'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26663,11 +26663,11 @@ number.2.Cello.Music = {
         b'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26676,11 +26676,11 @@ number.2.Cello.Music = {
         e'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26707,11 +26707,11 @@ number.2.Cello.Music = {
         g'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26720,11 +26720,11 @@ number.2.Cello.Music = {
         c'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26733,11 +26733,11 @@ number.2.Cello.Music = {
         f'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26746,11 +26746,11 @@ number.2.Cello.Music = {
         g'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26759,11 +26759,11 @@ number.2.Cello.Music = {
         bf!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26790,11 +26790,11 @@ number.2.Cello.Music = {
         ef'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26803,11 +26803,11 @@ number.2.Cello.Music = {
         b4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26816,11 +26816,11 @@ number.2.Cello.Music = {
         f'4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26829,11 +26829,11 @@ number.2.Cello.Music = {
         b4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26842,11 +26842,11 @@ number.2.Cello.Music = {
         af!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26855,11 +26855,11 @@ number.2.Cello.Music = {
         ef'!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26868,11 +26868,11 @@ number.2.Cello.Music = {
         b4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26881,11 +26881,11 @@ number.2.Cello.Music = {
         fs!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26912,11 +26912,11 @@ number.2.Cello.Music = {
         b4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26925,11 +26925,11 @@ number.2.Cello.Music = {
         g4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -26956,11 +26956,11 @@ number.2.Cello.Music = {
         af!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26969,11 +26969,11 @@ number.2.Cello.Music = {
         fs!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26982,11 +26982,11 @@ number.2.Cello.Music = {
         b4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -26995,11 +26995,11 @@ number.2.Cello.Music = {
         bf!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27008,11 +27008,11 @@ number.2.Cello.Music = {
         f4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27026,7 +27026,7 @@ number.2.Cello.Music = {
         fs!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27040,11 +27040,11 @@ number.2.Cello.Music = {
         fs!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -27082,7 +27082,7 @@ number.2.Cello.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
         \clef "bass"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
@@ -27093,18 +27093,18 @@ number.2.Cello.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
           %! krummzeit.make_prolated_quarters()
         b4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -27118,11 +27118,11 @@ number.2.Cello.Music = {
         af!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -27147,11 +27147,11 @@ number.2.Cello.Music = {
         b4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27160,11 +27160,11 @@ number.2.Cello.Music = {
         a4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27173,11 +27173,11 @@ number.2.Cello.Music = {
         c4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27186,11 +27186,11 @@ number.2.Cello.Music = {
         d4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27199,11 +27199,11 @@ number.2.Cello.Music = {
         e4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -27230,11 +27230,11 @@ number.2.Cello.Music = {
         g4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27243,11 +27243,11 @@ number.2.Cello.Music = {
         e4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -27274,11 +27274,11 @@ number.2.Cello.Music = {
         b,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27287,11 +27287,11 @@ number.2.Cello.Music = {
         e4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27300,11 +27300,11 @@ number.2.Cello.Music = {
         af!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27313,11 +27313,11 @@ number.2.Cello.Music = {
         g4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27326,11 +27326,11 @@ number.2.Cello.Music = {
         c4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27339,11 +27339,11 @@ number.2.Cello.Music = {
         bf,!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27352,11 +27352,11 @@ number.2.Cello.Music = {
         fs!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27365,11 +27365,11 @@ number.2.Cello.Music = {
         f,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27378,11 +27378,11 @@ number.2.Cello.Music = {
         e,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -27409,11 +27409,11 @@ number.2.Cello.Music = {
         af,!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27422,11 +27422,11 @@ number.2.Cello.Music = {
         f,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27435,11 +27435,11 @@ number.2.Cello.Music = {
         b,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27448,11 +27448,11 @@ number.2.Cello.Music = {
         a,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -27479,11 +27479,11 @@ number.2.Cello.Music = {
         af,!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27492,11 +27492,11 @@ number.2.Cello.Music = {
         ef,!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27505,11 +27505,11 @@ number.2.Cello.Music = {
         b,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27518,11 +27518,11 @@ number.2.Cello.Music = {
         f,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % CLOSING:
         % COMMANDS:
@@ -27549,11 +27549,11 @@ number.2.Cello.Music = {
         b,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \upbow
         % SPANNER_STARTS:
           %! abjad.glissando(7)
-          %! baca.glissando()
+          %! baca.glissando_function()
         \glissando
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27562,7 +27562,7 @@ number.2.Cello.Music = {
         a,4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.alternate_bow_strokes()
+          %! baca.alternate_bow_strokes_function()
         - \downbow
         % CLOSING:
         % COMMANDS:
@@ -27600,7 +27600,7 @@ number.2.Cello.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
         \clef "treble"
           %! EXPLICIT_CLEF_COLOR
           %! baca._attach_color_literal(2)
@@ -27611,29 +27611,29 @@ number.2.Cello.Music = {
           %! EXPLICIT_CLEF
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.clef()
+          %! baca.clef_function()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
           %! krummzeit.make_pizzicato_rhythm()
         cs''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
           %! EXPLICIT_DYNAMIC_COLOR
           %! baca.treat_persistent_wrapper()
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         - \tweak color #(x11-color 'blue)
           %! EXPLICIT_DYNAMIC
           %! baca._attach_persistent_indicator()
           %! baca._set_status_tag()
-          %! baca.dynamic()
+          %! baca.dynamic_function()
         \fff
         % MARKUP:
-          %! baca.markup()
+          %! baca.markup_function()
         ^ \baca-pizz-markup
         % ABSOLUTE_AFTER:
         % COMMANDS:
@@ -27647,7 +27647,7 @@ number.2.Cello.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27656,7 +27656,7 @@ number.2.Cello.Music = {
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % SPANNER_STARTS:
         ~
@@ -27688,7 +27688,7 @@ number.2.Cello.Music = {
         g''2
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27697,7 +27697,7 @@ number.2.Cello.Music = {
         e''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27706,7 +27706,7 @@ number.2.Cello.Music = {
         c''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27715,7 +27715,7 @@ number.2.Cello.Music = {
         g''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -27749,7 +27749,7 @@ number.2.Cello.Music = {
     bf''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -27758,7 +27758,7 @@ number.2.Cello.Music = {
     f''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % SPANNER_STARTS:
     ~
@@ -27784,7 +27784,7 @@ number.2.Cello.Music = {
         c''4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % SPANNER_STARTS:
         ~
@@ -27818,7 +27818,7 @@ number.2.Cello.Music = {
         f''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27827,7 +27827,7 @@ number.2.Cello.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27836,7 +27836,7 @@ number.2.Cello.Music = {
         f''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_rhythm()
@@ -27848,7 +27848,7 @@ number.2.Cello.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -27857,7 +27857,7 @@ number.2.Cello.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_rhythm()
@@ -27904,7 +27904,7 @@ number.2.Cello.Music = {
     b''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -27916,7 +27916,7 @@ number.2.Cello.Music = {
     g''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -27925,7 +27925,7 @@ number.2.Cello.Music = {
     fs''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -27934,7 +27934,7 @@ number.2.Cello.Music = {
     ef''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -27946,7 +27946,7 @@ number.2.Cello.Music = {
     f''4.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -27967,7 +27967,7 @@ number.2.Cello.Music = {
     e''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -27979,7 +27979,7 @@ number.2.Cello.Music = {
     ef''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -27988,7 +27988,7 @@ number.2.Cello.Music = {
     g''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -28013,7 +28013,7 @@ number.2.Cello.Music = {
         fs''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28025,7 +28025,7 @@ number.2.Cello.Music = {
         e''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28034,7 +28034,7 @@ number.2.Cello.Music = {
         f''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28046,7 +28046,7 @@ number.2.Cello.Music = {
         af''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28055,7 +28055,7 @@ number.2.Cello.Music = {
         f''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -28085,7 +28085,7 @@ number.2.Cello.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28097,7 +28097,7 @@ number.2.Cello.Music = {
         cs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28106,7 +28106,7 @@ number.2.Cello.Music = {
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28115,7 +28115,7 @@ number.2.Cello.Music = {
         a''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28127,7 +28127,7 @@ number.2.Cello.Music = {
         ef''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -28167,7 +28167,7 @@ number.2.Cello.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28179,7 +28179,7 @@ number.2.Cello.Music = {
         f''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28188,7 +28188,7 @@ number.2.Cello.Music = {
         ef''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28220,7 +28220,7 @@ number.2.Cello.Music = {
     cs'''!16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28244,7 +28244,7 @@ number.2.Cello.Music = {
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28253,7 +28253,7 @@ number.2.Cello.Music = {
         a''4.
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -28273,7 +28273,7 @@ number.2.Cello.Music = {
     f''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28299,7 +28299,7 @@ number.2.Cello.Music = {
         g''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28308,7 +28308,7 @@ number.2.Cello.Music = {
         ef'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28320,7 +28320,7 @@ number.2.Cello.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28329,7 +28329,7 @@ number.2.Cello.Music = {
         b''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28338,7 +28338,7 @@ number.2.Cello.Music = {
         fs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28347,7 +28347,7 @@ number.2.Cello.Music = {
         ef'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28356,7 +28356,7 @@ number.2.Cello.Music = {
         f''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28365,7 +28365,7 @@ number.2.Cello.Music = {
         a''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28374,7 +28374,7 @@ number.2.Cello.Music = {
         af''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28383,7 +28383,7 @@ number.2.Cello.Music = {
         f''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28413,7 +28413,7 @@ number.2.Cello.Music = {
     fs'''!8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28422,7 +28422,7 @@ number.2.Cello.Music = {
     g'''2
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28431,7 +28431,7 @@ number.2.Cello.Music = {
     bf''!4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28440,7 +28440,7 @@ number.2.Cello.Music = {
     g'''8
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28459,7 +28459,7 @@ number.2.Cello.Music = {
     c'''16
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28475,7 +28475,7 @@ number.2.Cello.Music = {
     bf''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28484,7 +28484,7 @@ number.2.Cello.Music = {
     a''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28493,7 +28493,7 @@ number.2.Cello.Music = {
     b''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28502,7 +28502,7 @@ number.2.Cello.Music = {
     fs'''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -28514,7 +28514,7 @@ number.2.Cello.Music = {
     f'''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28523,7 +28523,7 @@ number.2.Cello.Music = {
     ef'''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28532,7 +28532,7 @@ number.2.Cello.Music = {
     a''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -28556,7 +28556,7 @@ number.2.Cello.Music = {
     f'''8.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28584,7 +28584,7 @@ number.2.Cello.Music = {
     b''32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -28596,7 +28596,7 @@ number.2.Cello.Music = {
     bf''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28605,7 +28605,7 @@ number.2.Cello.Music = {
     g'''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -28639,7 +28639,7 @@ number.2.Cello.Music = {
         ef'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28651,7 +28651,7 @@ number.2.Cello.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28660,7 +28660,7 @@ number.2.Cello.Music = {
         cs'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28669,7 +28669,7 @@ number.2.Cello.Music = {
         bf'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28678,7 +28678,7 @@ number.2.Cello.Music = {
         a'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28687,7 +28687,7 @@ number.2.Cello.Music = {
         af'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28720,7 +28720,7 @@ number.2.Cello.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28729,7 +28729,7 @@ number.2.Cello.Music = {
         cs'''!4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28738,7 +28738,7 @@ number.2.Cello.Music = {
         c'''4
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % CLOSING:
         % COMMANDS:
@@ -28758,7 +28758,7 @@ number.2.Cello.Music = {
     fs'''!32.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % START_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -28770,7 +28770,7 @@ number.2.Cello.Music = {
     c'''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28779,7 +28779,7 @@ number.2.Cello.Music = {
     e'''16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28788,7 +28788,7 @@ number.2.Cello.Music = {
     ef'''!16.
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % STOP_BEAM:
       %! krummzeit.make_pizzicato_sixteenths()
@@ -28807,7 +28807,7 @@ number.2.Cello.Music = {
     f'''4
     % AFTER:
     % ARTICULATIONS:
-      %! baca.staccatissimo()
+      %! baca.staccatissimo_function()
     - \staccatissimo
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -28838,7 +28838,7 @@ number.2.Cello.Music = {
         af'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % START_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()
@@ -28850,7 +28850,7 @@ number.2.Cello.Music = {
         fs'''!16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28859,7 +28859,7 @@ number.2.Cello.Music = {
         f'''8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28868,7 +28868,7 @@ number.2.Cello.Music = {
         ef'''!8
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28877,7 +28877,7 @@ number.2.Cello.Music = {
         c'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -28886,7 +28886,7 @@ number.2.Cello.Music = {
         a'''16
         % AFTER:
         % ARTICULATIONS:
-          %! baca.staccatissimo()
+          %! baca.staccatissimo_function()
         - \staccatissimo
         % STOP_BEAM:
           %! krummzeit.make_pizzicato_sixteenths()

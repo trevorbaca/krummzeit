@@ -391,7 +391,7 @@ def ob(m):
         library.displacement(o)
         library.register_wide(o, 5)
         library.color_fingerings(o.pheads())
-        for plt in baca.plts(o, exclude=baca.enums.HIDDEN):
+        for plt in baca.select.plts(o, exclude=baca.enums.HIDDEN):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
                 baca.trill_spanner_function(plt)
@@ -462,7 +462,7 @@ def perc(m):
 
 def vn(m):
     def ntltqruns(argument):
-        result = baca.ltqruns(argument)
+        result = baca.select.ltqruns(argument)
         result = [_ for _ in result if 1 < len(_)]
         return result
 
@@ -485,7 +485,7 @@ def vn(m):
                 baca.deviation_function(run, [0, 0.5, 0, -0.5])
         library.displacement(o)
         library.register_wide(o, 5)
-        for plt in baca.plts(o, exclude=baca.enums.HIDDEN):
+        for plt in baca.select.plts(o, exclude=baca.enums.HIDDEN):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
                 baca.trill_spanner_function(plt)

@@ -9,7 +9,7 @@ from abjadext import rmakers
 def _do_register_transition_command(argument, start_registration, stop_registration):
     leaves = abjad.select.leaves(argument)
     leaves_timespan = abjad.get.timespan(leaves)
-    plts = baca.plts(argument)
+    plts = baca.select.plts(argument)
     for plt in plts:
         timespan = abjad.get.timespan(plt)
         registration = _make_registration(
@@ -363,7 +363,8 @@ def make_color_tuplets(time_signatures, *commands, rotation=0):
     def selector(argument):
         selection = abjad.select.tuplets(argument)[:-1]
         selection = [
-            baca.pleaves(baca.rleak(abjad.select.leaves(_)[-1:])) for _ in selection
+            baca.select.pleaves(baca.select.rleak(abjad.select.leaves(_)[-1:]))
+            for _ in selection
         ]
         selection = [_ for _ in selection if len(_) == 2]
         selection = [abjad.select.leaf(_, 0) for _ in selection]
@@ -388,7 +389,7 @@ def make_detached_triplets(time_signatures):
     def selector(argument):
         result = abjad.select.tuplets(argument)[:-1]
         result = abjad.select.get(result, [0], 2)
-        result = [baca.pleaf(_, -1) for _ in result]
+        result = [baca.select.pleaf(_, -1) for _ in result]
         return result
 
     rhythm_maker = rmakers.stack(
@@ -509,7 +510,7 @@ def make_glissando_rhythm(
         def selector(argument):
             selection = abjad.select.tuplets(argument)[:-1]
             selection = abjad.select.get(selection, pattern)
-            selection = [baca.pleaf(_, -1) for _ in selection]
+            selection = [baca.select.pleaf(_, -1) for _ in selection]
             return selection
 
         return selector
@@ -688,10 +689,11 @@ def make_piano_harmonics_rhythm(
     if isinstance(tie_across_divisions, abjad.Pattern):
 
         def selector(argument):
-            selection = baca.lts(argument)[:-1]
+            selection = baca.select.lts(argument)[:-1]
             selection = abjad.select.get(selection, tie_across_divisions)
             selection = [
-                baca.pleaves(baca.rleak(abjad.select.leaves(_)[-1:])) for _ in selection
+                baca.select.pleaves(baca.select.rleak(abjad.select.leaves(_)[-1:]))
+                for _ in selection
             ]
             selection = [_ for _ in selection if len(_) == 2]
             selection = [abjad.select.leaf(_, 0) for _ in selection]
@@ -782,7 +784,7 @@ def make_polyphony_rhythm(
         def selector(argument):
             selection = abjad.select.tuplets(argument)[:-1]
             selection = abjad.select.get(selection, pattern)
-            selection = [baca.pleaf(_, -1) for _ in selection]
+            selection = [baca.select.pleaf(_, -1) for _ in selection]
             return selection
 
         return selector
@@ -940,7 +942,7 @@ def make_single_cluster_piano_rhythm(time_signatures):
 def make_single_division_tuplets(time_signatures, ratios):
     def selector(argument):
         selection = abjad.select.tuplets(argument)[:-1]
-        return [baca.pleaf(_, -1) for _ in selection]
+        return [baca.select.pleaf(_, -1) for _ in selection]
 
     rhythm_maker = rmakers.stack(
         rmakers.tuplet(ratios),

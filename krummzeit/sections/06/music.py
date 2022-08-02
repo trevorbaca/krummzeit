@@ -322,7 +322,7 @@ def ob(m):
         library.displacement(o)
         library.register_wide(o, 5)
         library.color_fingerings(o)
-        for plt in baca.plts(o):
+        for plt in baca.select.plts(o):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
                 baca.trill_spanner_function(plt)

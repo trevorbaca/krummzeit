@@ -2937,7 +2937,7 @@ number.4.Piano.Music = {
     % BEFORE:
     % COMMANDS:
       %! SPANNER_START
-      %! baca._attach_start_stop_indicators(2)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava -1
       %! baca.dls_staff_padding_function(1)
@@ -3062,7 +3062,7 @@ number.4.Piano.Music = {
     ^ \markup \center-align \concat { \natural \flat }
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._attach_start_stop_indicators(4)
+      %! baca._do_spanner_indicator_command(4)
       %! baca.ottava_bassa_function()
     \ottava 0
     % ABSOLUTE_BEFORE:
@@ -3085,7 +3085,7 @@ number.4.Piano.Music = {
     % BEFORE:
     % COMMANDS:
       %! SPANNER_START
-      %! baca._attach_start_stop_indicators(2)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.ottava_bassa_function()
     \ottava -1
     % GROB_OVERRIDES:
@@ -3171,7 +3171,7 @@ number.4.Piano.Music = {
     ^ \markup \center-align \concat { \natural \flat }
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._attach_start_stop_indicators(4)
+      %! baca._do_spanner_indicator_command(4)
       %! baca.ottava_bassa_function()
     \ottava 0
       %! baca.dls_staff_padding_function(2)

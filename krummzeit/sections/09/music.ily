@@ -841,7 +841,7 @@ number.9.Oboe.Music = {
     ~
     % TRILL_SPANNER_STARTS:
       %! SPANNER_START
-      %! baca._attach_start_stop_indicators(2)
+      %! baca._do_spanner_indicator_command(2)
       %! baca.trill_spanner_function()
     \startTrillSpan
     % ABSOLUTE_BEFORE:
@@ -941,7 +941,7 @@ number.9.Oboe.Music = {
         % AFTER:
         % SPANNER_STOPS:
           %! SPANNER_STOP
-          %! baca._attach_start_stop_indicators(4)
+          %! baca._do_spanner_indicator_command(4)
           %! baca.trill_spanner_function()
         \stopTrillSpan
         % ABSOLUTE_BEFORE:

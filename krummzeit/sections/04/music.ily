@@ -2329,8 +2329,7 @@ number.4.Piano.Music = {
         % BEFORE:
         % COMMANDS:
           %! SPANNER_START
-          %! baca._attach_start_stop_indicators(2)
-          %! baca.ottava_function()
+          %! baca._do_spanner_indicator_command(2)
         \ottava 1
           %! baca._clone_section_initial_short_instrument_name()
         \set Staff.instrumentName = \krummzeit-pf-markup
@@ -2514,8 +2513,7 @@ number.4.Piano.Music = {
         \pp
         % COMMANDS:
           %! SPANNER_STOP
-          %! baca._attach_start_stop_indicators(4)
-          %! baca.ottava_function()
+          %! baca._do_spanner_indicator_command(4)
         \ottava 0
         % CLOSING:
         % COMMANDS:
@@ -3943,8 +3941,7 @@ number.4.Violin.Music = {
         % BEFORE:
         % COMMANDS:
           %! SPANNER_START
-          %! baca._attach_start_stop_indicators(2)
-          %! baca.ottava_function()
+          %! baca._do_spanner_indicator_command(2)
         \ottava 1
           %! krummzeit.make_silver_points_rhythm()
         e''''8
@@ -4090,8 +4087,7 @@ number.4.Violin.Music = {
         \pp
         % COMMANDS:
           %! SPANNER_STOP
-          %! baca._attach_start_stop_indicators(4)
-          %! baca.ottava_function()
+          %! baca._do_spanner_indicator_command(4)
         \ottava 0
         % CLOSING:
         % COMMANDS:
@@ -4808,8 +4804,7 @@ number.4.Viola.Music = {
         % BEFORE:
         % COMMANDS:
           %! SPANNER_START
-          %! baca._attach_start_stop_indicators(2)
-          %! baca.ottava_function()
+          %! baca._do_spanner_indicator_command(2)
         \ottava 1
           %! krummzeit.make_silver_points_rhythm()
         ef'''!4
@@ -4924,8 +4919,7 @@ number.4.Viola.Music = {
         ]
         % COMMANDS:
           %! SPANNER_STOP
-          %! baca._attach_start_stop_indicators(4)
-          %! baca.ottava_function()
+          %! baca._do_spanner_indicator_command(4)
         \ottava 0
         % CLOSING:
         % COMMANDS:

@@ -8213,8 +8213,7 @@ number.6.Piano.Music = {
         % BEFORE:
         % COMMANDS:
           %! SPANNER_START
-          %! baca._attach_start_stop_indicators(2)
-          %! baca.ottava_function()
+          %! baca._do_spanner_indicator_command(2)
         \ottava 1
           %! krummzeit.make_pizzicato_rhythm()
         c''''8
@@ -8438,8 +8437,7 @@ number.6.Piano.Music = {
     - \staccatissimo
     % COMMANDS:
       %! SPANNER_STOP
-      %! baca._attach_start_stop_indicators(4)
-      %! baca.ottava_function()
+      %! baca._do_spanner_indicator_command(4)
     \ottava 0
     % ABSOLUTE_BEFORE:
     % COMMANDS:

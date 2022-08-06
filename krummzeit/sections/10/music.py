@@ -262,7 +262,7 @@ def pf_3_22(cache):
         )
         library.short_instrument_name(o.leaf(0), "Pf.", accumulator.manifests())
         baca.clef_function(o.leaf(0), "bass")
-        baca.ottava_bassa_function(o)
+        baca.ottava_bassa_function(o.tleaves())
         baca.dynamic_function(o.pleaf(0), "fff-poss")
 
 

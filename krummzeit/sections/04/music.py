@@ -271,7 +271,7 @@ def pf(cache):
     m = cache["pf"]
     with baca.scope(m[1]) as o:
         baca.hairpin_function(o, "ff > pp")
-        baca.ottava_function(o)
+        baca.ottava_function(o.tleaves())
         baca.staccatissimo_function(o.pheads())
     with baca.scope(m[3]) as o:
         baca.hairpin_function(o, "pp < ff")

@@ -315,8 +315,10 @@ def pf(m):
         baca.tuplet_bracket_staff_padding_function(o, 3)
         baca.dls_staff_padding_function(o, 7)
     with baca.scope(m.get(14, 20)) as o:
-        baca.instrument_function(o.leaf(0), library.instruments()["Piano"])
-        library.short_instrument_name(o.leaf(0), "Pf.")
+        baca.instrument_function(
+            o.leaf(0), library.instruments()["Piano"], accumulator.manifests()
+        )
+        library.short_instrument_name(o.leaf(0), "Pf.", accumulator.manifests())
         baca.clef_function(o.leaf(0), "bass")
         baca.dls_staff_padding_function(o, 3)
 

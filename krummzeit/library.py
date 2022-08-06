@@ -305,9 +305,9 @@ def indigo_pitch_classes():
     return indigo_pitch_classes
 
 
-def instrument(argument, key):
+def instrument(argument, key, manifests):
     instrument = instruments()[key]
-    return baca.instrument_function(argument, instrument)
+    return baca.instrument_function(argument, instrument, manifests)
 
 
 def instruments():
@@ -999,11 +999,12 @@ def make_white_rhythm(
     return music
 
 
-def short_instrument_name(leaf, key, context="Staff"):
+def short_instrument_name(leaf, key, manifests, context="Staff"):
     short_instrument_name = short_instrument_names()[key]
     baca.short_instrument_name_function(
         leaf,
         short_instrument_name,
+        manifests,
         context=context,
     )
 

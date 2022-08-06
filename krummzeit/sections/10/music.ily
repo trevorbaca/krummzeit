@@ -3102,7 +3102,7 @@ number.10.Piano.Music = {
         % BEFORE:
         % COMMANDS:
           %! SPANNER_START
-          %! baca._do_spanner_indicator_command(2)
+          %! baca._do_spanner_indicator_command(1)
           %! baca.ottava_bassa_function()
         \ottava -1
         % GROB_OVERRIDES:
@@ -6575,7 +6575,7 @@ number.10.Piano.Music = {
         ]
         % COMMANDS:
           %! SPANNER_STOP
-          %! baca._do_spanner_indicator_command(4)
+          %! baca._do_spanner_indicator_command(2)
           %! baca.ottava_bassa_function()
         \ottava 0
         % CLOSING:

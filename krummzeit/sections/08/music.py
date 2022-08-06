@@ -284,7 +284,7 @@ def ob(m):
         baca.tuplet_bracket_staff_padding_function(m.get(pair), 3)
     with baca.scope(m.get(18, 24)) as o:
         baca.pitch_function(o, "C4")
-        library.color_fingerings(o)
+        library.color_fingerings(o.pheads())
         baca.dynamic_function(o.pleaf(0), "f")
 
 
@@ -303,7 +303,7 @@ def cl(m):
             o.leaf(0), library.instruments()["BassClarinet"], accumulator.manifests()
         )
         baca.pitch_function(o, "C2")
-        library.color_fingerings(o)
+        library.color_fingerings(o.pheads())
         baca.tuplet_bracket_staff_padding_function(o, 6)
         baca.hairpin_function(o.tleaves(), "f < ff")
         baca.dls_staff_padding_function(o, 10)

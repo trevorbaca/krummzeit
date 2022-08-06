@@ -316,14 +316,14 @@ def ob_cl(cache):
             else:
                 pitches = "E5 E5 E5 E5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 E5 E5 E5 E5"
             baca.pitches_function(o, pitches)
-            library.color_fingerings(o)
+            library.color_fingerings(o.pheads())
             baca.dynamic_function(o.pleaf(0), "p")
         baca.dynamic_function(baca.select.pleaf(m[35, 38], 0), "mf")
         for pair in [(35, 38), (39, 42), (43, 44)]:
             with baca.scope(m[pair]) as u:
                 pitches = "F5 F5 F5 F5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F#5 F5 F5 F5 F5"
                 baca.pitches_function(u, pitches)
-                library.color_fingerings(u),
+                library.color_fingerings(u.pheads()),
 
 
 def pf(cache):

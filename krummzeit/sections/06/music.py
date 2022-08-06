@@ -321,7 +321,7 @@ def ob(m):
         baca.pitches_function(o, pcs)
         library.displacement(o)
         library.register_wide(o, 5)
-        library.color_fingerings(o)
+        library.color_fingerings(o.pheads())
         for plt in baca.select.plts(o):
             if abjad.get.duration(plt, preprolated=True) >= abjad.Duration((1, 4)):
                 plt = baca.select.rleak(plt)
@@ -367,7 +367,7 @@ def ob_cl_12_24(cache):
     for name, pitches in zip(["ob", "cl"], [ob_pitches, cl_pitches]):
         with baca.scope(cache[name].get(12, 21)) as o:
             baca.pitches_function(o, pitches)
-            library.color_fingerings(o)
+            library.color_fingerings(o.pheads())
             for run in baca.select.ntruns(o):
                 baca.glissando_function(run)
             baca.dynamic_function(o.pleaf(0), "ff")

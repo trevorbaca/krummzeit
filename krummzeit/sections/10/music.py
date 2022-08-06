@@ -250,7 +250,7 @@ def pf_3_22(cache):
         baca.instrument_function(
             o.leaf(0), library.instruments()["Harpsichord"], accumulator.manifests()
         )
-        library.short_instrument_name(o.leaf(0), "Hpschd.", accumulator.manifests)
+        library.short_instrument_name(o.leaf(0), "Hpschd.", accumulator.manifests())
         library.replace_with_clusters(o, "harpsichord")
         cache.rebuild()
     with baca.scope(cache["pf"].get(8, 22)) as o:

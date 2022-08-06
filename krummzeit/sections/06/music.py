@@ -349,8 +349,10 @@ def cl(m):
         baca.dls_staff_padding_function(o, 5)
         baca.tuplet_bracket_staff_padding_function(o, 3)
     with baca.scope(m.get(23, 35)) as o:
-        baca.instrument_function(o.leaf(0), library.instruments()["BassClarinet"])
-        library.short_instrument_name(o.leaf(0), "B. cl.")
+        baca.instrument_function(
+            o.leaf(0), library.instruments()["BassClarinet"], accumulator.manifests()
+        )
+        library.short_instrument_name(o.leaf(0), "B. cl.", accumulator.manifests())
         baca.pitch_function(o, "Bb1")
         baca.stem_up_function(o.pleaves())
         baca.dynamic_function(o.pleaf(0), "ppp")

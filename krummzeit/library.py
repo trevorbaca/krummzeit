@@ -311,24 +311,20 @@ def instrument(argument, key, manifests):
 
 
 def instruments():
-    return dict(
-        [
-            ("BassClarinet", abjad.BassClarinet()),
-            ("Cello", abjad.Cello(pitch_range=abjad.PitchRange("[A1, +inf]"))),
-            ("ClarinetInEFlat", abjad.ClarinetInEFlat()),
-            ("Harpsichord", abjad.Harpsichord(context="Staff")),
-            ("Oboe", abjad.Oboe(pitch_range=abjad.PitchRange("[Bb3, Bb6]"))),
-            ("Percussion", abjad.Percussion()),
-            ("Piano", abjad.Piano(context="Staff")),
-            ("Viola", abjad.Viola(pitch_range=abjad.PitchRange("[Bb2, +inf]"))),
-            (
-                "Violin",
-                # TODO: F#3 instead of F3
-                abjad.Violin(pitch_range=abjad.PitchRange("[F3, +inf]")),
-            ),
-            ("Xylophone", abjad.Xylophone()),
-        ]
-    )
+    return {
+        "BassClarinet": abjad.BassClarinet(),
+        "Cello": abjad.Cello(pitch_range=abjad.PitchRange("[A1, +inf]")),
+        "ClarinetInEFlat": abjad.ClarinetInEFlat(),
+        "Harpsichord": abjad.Harpsichord(context="Staff"),
+        "Oboe": abjad.Oboe(pitch_range=abjad.PitchRange("[Bb3, Bb6]")),
+        "Percussion": abjad.Percussion(),
+        "Piano": abjad.Piano(context="Staff"),
+        "Viola": abjad.Viola(pitch_range=abjad.PitchRange("[Bb2, +inf]")),
+        "Violin":
+        # TODO: F#3 instead of F3
+        abjad.Violin(pitch_range=abjad.PitchRange("[F3, +inf]")),
+        "Xylophone": abjad.Xylophone(),
+    }
 
 
 def make_closing_pizzicato_rhythm(time_signatures, counts, extra_counts, split):
@@ -405,60 +401,49 @@ def make_detached_triplets(time_signatures):
 def make_empty_score():
     tag = baca.tags.function_name(inspect.currentframe())
     global_context = baca.score.make_global_context()
-    # OBOE
     oboe_music_voice = abjad.Voice(name="Oboe.Music", tag=tag)
     oboe_music_staff = abjad.Staff([oboe_music_voice], name="Oboe.Staff", tag=tag)
     baca.score.attach_lilypond_tag("Oboe", oboe_music_staff)
-    # CLARINET
     clarinet_music_voice = abjad.Voice(name="Clarinet.Music", tag=tag)
     clarinet_music_staff = abjad.Staff(
         [clarinet_music_voice], name="Clarinet.Staff", tag=tag
     )
     baca.score.attach_lilypond_tag("Clarinet", clarinet_music_staff)
-    # WIND SECTION
     wind_section_staff_group = abjad.StaffGroup(
         [oboe_music_staff, clarinet_music_staff],
         lilypond_type="WindSectionStaffGroup",
         name="WindSectionStaffGroup",
         tag=tag,
     )
-    # PIANO
     piano_music_voice = abjad.Voice(name="Piano.Music", tag=tag)
     piano_music_staff = abjad.Staff([piano_music_voice], name="Piano.Staff", tag=tag)
     baca.score.attach_lilypond_tag("Piano", piano_music_staff)
-    # PERCUSSION
     percussion_music_voice = abjad.Voice(name="Percussion.Music", tag=tag)
     percussion_music_staff = abjad.Staff(
         [percussion_music_voice], name="Percussion.Staff", tag=tag
     )
     baca.score.attach_lilypond_tag("Percussion", percussion_music_staff)
-    # PERCUSSION SECTION
     percussion_section_staff_group = abjad.StaffGroup(
         [piano_music_staff, percussion_music_staff],
         lilypond_type="PercussionSectionStaffGroup",
         name="PercussionSectionStaffGroup",
         tag=tag,
     )
-    # VIOLIN
     violin_music_voice = abjad.Voice(name="Violin.Music", tag=tag)
     violin_music_staff = abjad.Staff([violin_music_voice], name="Violin.Staff", tag=tag)
     baca.score.attach_lilypond_tag("Violin", violin_music_staff)
-    # VIOLA
     viola_music_voice = abjad.Voice(name="Viola.Music", tag=tag)
     viola_music_staff = abjad.Staff([viola_music_voice], name="Viola.Staff", tag=tag)
     baca.score.attach_lilypond_tag("Viola", viola_music_staff)
-    # CELLO
     cello_music_voice = abjad.Voice(name="Cello.Music", tag=tag)
     cello_music_staff = abjad.Staff([cello_music_voice], name="Cello.Staff", tag=tag)
     baca.score.attach_lilypond_tag("Cello", cello_music_staff)
-    # STRING SECTION
     string_section_staff_group = abjad.StaffGroup(
         [violin_music_staff, viola_music_staff, cello_music_staff],
         lilypond_type="StringSectionStaffGroup",
         name="StringSectionStaffGroup",
         tag=tag,
     )
-    # MUSIC CONTEXT
     music_context = abjad.Context(
         [
             wind_section_staff_group,
@@ -470,7 +455,6 @@ def make_empty_score():
         name="MusicContext",
         tag=tag,
     )
-    # SCORE
     score = abjad.Score([global_context, music_context], name="Score", tag=tag)
     baca.score.assert_lilypond_identifiers(score)
     baca.score.assert_unique_context_names(score)
@@ -1024,57 +1008,40 @@ def short_instrument_names():
 
 
 def metronome_marks():
-    return dict(
-        [
-            ("36", abjad.MetronomeMark((1, 4), 36)),
-            ("45", abjad.MetronomeMark((1, 4), 45)),
-            (
-                "67.5",
-                abjad.MetronomeMark(
-                    reference_duration=(1, 4),
-                    units_per_minute=quicktions.Fraction(135, 2),
-                    custom_markup=abjad.Markup(
-                        r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
-                    ),
-                ),
+    return {
+        "36": abjad.MetronomeMark((1, 4), 36),
+        "45": abjad.MetronomeMark((1, 4), 45),
+        "67.5": abjad.MetronomeMark(
+            reference_duration=(1, 4),
+            units_per_minute=quicktions.Fraction(135, 2),
+            custom_markup=abjad.Markup(
+                r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
             ),
-            ("72", abjad.MetronomeMark((1, 4), 72)),
-            (
-                "72/108",
-                abjad.MetronomeMark(
-                    reference_duration=(1, 4),
-                    units_per_minute=108,
-                    custom_markup=abjad.Markup(
-                        r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
-                    ),
-                ),
+        ),
+        "72": abjad.MetronomeMark((1, 4), 72),
+        "72/108": abjad.MetronomeMark(
+            reference_duration=(1, 4),
+            units_per_minute=108,
+            custom_markup=abjad.Markup(
+                r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
             ),
-            ("90", abjad.MetronomeMark((1, 4), 90)),
-            ("108", abjad.MetronomeMark((1, 4), 108)),
-            ("135", abjad.MetronomeMark((1, 4), 135)),
-            ("144", abjad.MetronomeMark((1, 4), 144)),
-            # slower
-            (
-                "4:5(4)=4",
-                abjad.MetricModulation(
-                    left_rhythm=abjad.Tuplet("4:5", "c4"),
-                    right_rhythm=abjad.Note("c4"),
-                ),
-            ),
-            (
-                "4=8",
-                abjad.MetricModulation(
-                    left_rhythm=abjad.Note("c4"), right_rhythm=abjad.Note("c8")
-                ),
-            ),
-            (
-                "4.=4",
-                abjad.MetricModulation(
-                    left_rhythm=abjad.Note("c4."), right_rhythm=abjad.Note("c4")
-                ),
-            ),
-        ]
-    )
+        ),
+        "90": abjad.MetronomeMark((1, 4), 90),
+        "108": abjad.MetronomeMark((1, 4), 108),
+        "135": abjad.MetronomeMark((1, 4), 135),
+        "144": abjad.MetronomeMark((1, 4), 144),
+        # slower
+        "4:5(4)=4": abjad.MetricModulation(
+            left_rhythm=abjad.Tuplet("4:5", "c4"),
+            right_rhythm=abjad.Note("c4"),
+        ),
+        "4=8": abjad.MetricModulation(
+            left_rhythm=abjad.Note("c4"), right_rhythm=abjad.Note("c8")
+        ),
+        "4.=4": abjad.MetricModulation(
+            left_rhythm=abjad.Note("c4."), right_rhythm=abjad.Note("c4")
+        ),
+    }
 
 
 def register_narrow(argument, start, stop=None):

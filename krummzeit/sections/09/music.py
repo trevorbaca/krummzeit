@@ -194,9 +194,7 @@ def ob_cl_4_10(cache):
         with baca.scope(cache[name].get(4, 7)) as o:
             if name == "cl":
                 baca.instrument_function(
-                    o.leaf(0),
-                    library.instruments()["ClarinetInEFlat"],
-                    accumulator.manifests(),
+                    o.leaf(0), "ClarinetInEFlat", accumulator.manifests()
                 )
             baca.pitch_function(o, "D5")
             if name == "ob":
@@ -210,9 +208,7 @@ def ob_cl_4_10(cache):
                 baca.tuplet_bracket_staff_padding_function(o, 2)
             if name == "cl":
                 baca.instrument_function(
-                    o.leaf(0),
-                    library.instruments()["BassClarinet"],
-                    accumulator.manifests(),
+                    o.leaf(0), "BassClarinet", accumulator.manifests()
                 )
                 baca.pitch_function(o, "Eb2")
                 baca.dynamic_function(o.pleaf(0), "ff")
@@ -224,10 +220,10 @@ def ob_cl_4_10(cache):
 
 def pf_perc_1_6(cache):
     with baca.scope(cache["pf"].get(1, 6)) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Harpsichord"], accumulator.manifests()
+        baca.instrument_function(o.leaf(0), "Harpsichord", accumulator.manifests())
+        baca.short_instrument_name_function(
+            o.leaf(0), "Hpschd.", accumulator.manifests()
         )
-        library.short_instrument_name(o.leaf(0), "Hpschd.", accumulator.manifests())
         baca.clef_function(o.leaf(0), "treble")
         library.replace_with_clusters(o, "harpsichord")
     with baca.scope(cache["perc"].get(5, 6)) as o:
@@ -244,16 +240,16 @@ def pf_perc_9_10(cache):
     for name in ["pf", "perc"]:
         with baca.scope(cache[name].get(9, 10)) as o:
             if name == "pf":
-                baca.instrument_function(
-                    o.leaf(0), library.instruments()["Piano"], accumulator.manifests()
+                baca.instrument_function(o.leaf(0), "Piano", accumulator.manifests())
+                baca.short_instrument_name_function(
+                    o.leaf(0), "Pf.", accumulator.manifests()
                 )
-                library.short_instrument_name(o.leaf(0), "Pf.", accumulator.manifests())
                 baca.tuplet_bracket_staff_padding_function(o, 2)
                 baca.dls_staff_padding_function(o, 6)
             if name == "perc":
                 baca.instrument_function(
                     o.leaf(0),
-                    library.instruments()["Xylophone"],
+                    "Xylophone",
                     accumulator.manifests(),
                 )
                 baca.tuplet_bracket_staff_padding_function(o, 3)

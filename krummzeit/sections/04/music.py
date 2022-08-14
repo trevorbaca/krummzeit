@@ -259,9 +259,7 @@ def ob(m):
 
 def cl(m):
     with baca.scope(m[14, 19]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["BassClarinet"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "BassClarinet", accumulator.manifests())
         baca.pitch_function(o, "B1")
         baca.stem_up_function(o)
         baca.dynamic_function(o.pleaf(0), "ppp")

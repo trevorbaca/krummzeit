@@ -356,13 +356,13 @@ def VC(voice):
 
 def cl(m):
     with baca.scope(m[5]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["ClarinetInEFlat"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "ClarinetInEFlat", accumulator.manifests())
         baca.markup_function(
             o.pleaf(0), r"\baca-boxed-markup \krummzeit-clarinet-in-e-flat-markup"
         )
-        library.short_instrument_name(o.leaf(0), "Cl. (Eb)", accumulator.manifests())
+        baca.short_instrument_name_function(
+            o.leaf(0), "Cl. (Eb)", accumulator.manifests()
+        )
         baca.dynamic_function(o.pleaf(0), "mp")
     with baca.scope(m[16, 22]) as o:
         baca.dynamic_function(o.pleaf(0), "f")
@@ -374,10 +374,10 @@ def cl(m):
 
 def pf(m):
     with baca.scope(m[1]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Harpsichord"], accumulator.manifests()
+        baca.instrument_function(o.leaf(0), "Harpsichord", accumulator.manifests())
+        baca.short_instrument_name_function(
+            o.leaf(0), "Hpschd.", accumulator.manifests()
         )
-        library.short_instrument_name(o.leaf(0), "Hpschd.", accumulator.manifests())
     with baca.scope(m[1, 22]) as o:
         baca.dls_staff_padding_function(o, 6)
         baca.tuplet_bracket_staff_padding_function(o, 3)
@@ -386,10 +386,8 @@ def pf(m):
         baca.tuplet_bracket_staff_padding_function(o, 4)
     with baca.scope(m[45, 46]) as o:
         baca.clef_function(o.leaf(0), "bass")
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Piano"], accumulator.manifests()
-        )
-        library.short_instrument_name(o.leaf(0), "Pf.", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "Piano", accumulator.manifests())
+        baca.short_instrument_name_function(o.leaf(0), "Pf.", accumulator.manifests())
     with baca.scope(m[57, 75]) as o:
         baca.dls_staff_padding_function(o, 7)
         baca.tuplet_bracket_staff_padding_function(o, 4)
@@ -410,9 +408,7 @@ def vn(m):
         baca.staff_lines_function(o.leaf(0), 1)
         baca.clef_function(o.leaf(0), "percussion")
         baca.dynamic_function(o.pleaf(0), "mf")
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Percussion"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Percussion", accumulator.manifests())
         baca.markup_function(
             o.pleaf(0),
             r"\baca-boxed-markup \krummzeit-stonecircle-scrape-at-moderate-speed-markup",

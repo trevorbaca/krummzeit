@@ -223,26 +223,22 @@ def cl(m):
         baca.tuplet_bracket_staff_padding_function(o, 4)
         baca.dls_staff_padding_function(o, 8)
     with baca.scope(m.get(4, 10)) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["ClarinetInEFlat"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "ClarinetInEFlat", accumulator.manifests())
     with baca.scope(m.get(11, 22)) as o:
         baca.dls_staff_padding_function(o, 8)
         baca.stem_up_function(o.pleaves())
     with baca.scope(m.get(16, 19)) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["BassClarinet"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "BassClarinet", accumulator.manifests())
         baca.pitch_function(o, "B1")
         baca.dynamic_function(o.pleaf(0), "ppp")
 
 
 def pf(m):
     with baca.scope(m[4]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Harpsichord"], accumulator.manifests()
+        baca.instrument_function(o.leaf(0), "Harpsichord", accumulator.manifests())
+        baca.short_instrument_name_function(
+            o.leaf(0), "Hpschd.", accumulator.manifests()
         )
-        library.short_instrument_name(o.leaf(0), "Hpschd.", accumulator.manifests())
     with baca.scope(m.get(1, 10)) as o:
         baca.tuplet_bracket_staff_padding_function(o, 4)
 

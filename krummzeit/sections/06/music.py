@@ -337,9 +337,7 @@ def ob(m):
 
 def cl(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["ClarinetInEFlat"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "ClarinetInEFlat", accumulator.manifests())
     with baca.scope(m.get(1, 10)) as o:
         baca.pitch_function(o, "B3")
         baca.stem_up_function(o.pleaves())
@@ -349,10 +347,10 @@ def cl(m):
         baca.dls_staff_padding_function(o, 5)
         baca.tuplet_bracket_staff_padding_function(o, 3)
     with baca.scope(m.get(23, 35)) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["BassClarinet"], accumulator.manifests()
+        baca.instrument_function(o.leaf(0), "BassClarinet", accumulator.manifests())
+        baca.short_instrument_name_function(
+            o.leaf(0), "B. cl.", accumulator.manifests()
         )
-        library.short_instrument_name(o.leaf(0), "B. cl.", accumulator.manifests())
         baca.pitch_function(o, "Bb1")
         baca.stem_up_function(o.pleaves())
         baca.dynamic_function(o.pleaf(0), "ppp")
@@ -418,9 +416,7 @@ def perc(m):
     with baca.scope(m[17]) as o:
         baca.staff_lines_function(o.leaf(0), 5)
         baca.clef_function(o.leaf(0), "treble")
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Xylophone", accumulator.manifests())
     with baca.scope(m[28]) as o:
         baca.staff_lines_function(o.leaf(0), 1)
         baca.dynamic_function(o.pleaf(0), "pp")

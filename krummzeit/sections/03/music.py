@@ -423,9 +423,7 @@ def pf(m):
 
 def perc(m):
     with baca.scope(m[14]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Xylophone", accumulator.manifests())
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
         ("perc", (14, 20))
@@ -433,9 +431,7 @@ def perc(m):
         baca.tuplet_bracket_staff_padding_function(o, 3)
         baca.dls_staff_padding_function(o, 6)
     with baca.scope(m[21, 27]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Percussion"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Percussion", accumulator.manifests())
         baca.markup_function(o.pleaf(0), r"\baca-slate-scrape-markup")
         baca.clef_function(o.leaf(0), "percussion")
         baca.staff_lines_function(o.leaf(0), 1)
@@ -444,9 +440,7 @@ def perc(m):
     with baca.scope(m[21]) as o:
         baca.dls_staff_padding_function(o, 3)
     with baca.scope(m[28]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Xylophone"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Xylophone", accumulator.manifests())
         baca.clef_function(o.leaf(0), "treble")
         baca.staff_lines_function(o.leaf(0), 5)
     with baca.scope(m[28, 33]) as o:
@@ -469,9 +463,7 @@ def vn(m):
     with baca.scope(m[1, 20]) as o:
         baca.staff_position_function(o, 0)
     with baca.scope(m[22, 28]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Violin"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Violin", accumulator.manifests())
         baca.clef_function(o.leaf(0), "treble"),
         baca.staff_lines_function(o.leaf(0), 5),
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())

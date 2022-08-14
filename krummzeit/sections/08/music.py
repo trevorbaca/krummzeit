@@ -294,14 +294,10 @@ def cl(m):
         baca.hairpin_function(o.tleaves(), "ppp < ff")
         baca.dls_staff_padding_function(o, 8)
     with baca.scope(m[9]) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["ClarinetInEFlat"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "ClarinetInEFlat", accumulator.manifests())
         baca.dls_staff_padding_function(o, 3)
     with baca.scope(m.get(18, 23)) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["BassClarinet"], accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "BassClarinet", accumulator.manifests())
         baca.pitch_function(o, "C2")
         library.color_fingerings(o.pheads())
         baca.tuplet_bracket_staff_padding_function(o, 6)
@@ -315,10 +311,8 @@ def pf(m):
         baca.tuplet_bracket_staff_padding_function(o, 3)
         baca.dls_staff_padding_function(o, 7)
     with baca.scope(m.get(14, 20)) as o:
-        baca.instrument_function(
-            o.leaf(0), library.instruments()["Piano"], accumulator.manifests()
-        )
-        library.short_instrument_name(o.leaf(0), "Pf.", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "Piano", accumulator.manifests())
+        baca.short_instrument_name_function(o.leaf(0), "Pf.", accumulator.manifests())
         baca.clef_function(o.leaf(0), "bass")
         baca.dls_staff_padding_function(o, 3)
 

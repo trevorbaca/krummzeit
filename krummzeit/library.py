@@ -1115,18 +1115,6 @@ def violet_pitch_classes():
     return violet_pitch_classes
 
 
-def voice_abbreviations():
-    return {
-        "ob": "Oboe.Music",
-        "cl": "Clarinet.Music",
-        "pf": "Piano.Music",
-        "perc": "Percussion.Music",
-        "vn": "Violin.Music",
-        "va": "Viola.Music",
-        "vc": "Cello.Music",
-    }
-
-
 instruments = {
     "BassClarinet": abjad.BassClarinet(),
     "Cello": abjad.Cello(pitch_range=abjad.PitchRange("[A1, +inf]")),
@@ -1196,4 +1184,15 @@ manifests = {
     "abjad.Instrument": instruments,
     "abjad.MetronomeMark": metronome_marks,
     "abjad.ShortInstrumentName": short_instrument_names,
+}
+
+
+voice_abbreviations = {
+    "ob": "Oboe.Music",
+    "cl": "Clarinet.Music",
+    "pf": "Piano.Music",
+    "perc": "Percussion.Music",
+    "vn": "Violin.Music",
+    "va": "Viola.Music",
+    "vc": "Cello.Music",
 }

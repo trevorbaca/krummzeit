@@ -29,9 +29,9 @@ score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 accumulator = baca.CommandAccumulator(
-    instruments=library.instruments(),
-    short_instrument_names=library.short_instrument_names(),
-    metronome_marks=library.metronome_marks(),
+    instruments=library.instruments,
+    short_instrument_names=library.short_instrument_names,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
@@ -40,7 +40,7 @@ accumulator = baca.CommandAccumulator(
 baca.interpret.set_up_score(
     score,
     accumulator,
-    accumulator.manifests(),
+    library.manifests,
     accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
@@ -49,7 +49,7 @@ baca.interpret.set_up_score(
 )
 
 skips = score["Skips"]
-manifests = accumulator.manifests()
+manifests = library.manifests
 
 for index, item in (
     (1 - 1, "90"),
@@ -193,7 +193,7 @@ def ob_cl_4_10(cache):
         with baca.scope(cache[name].get(4, 7)) as o:
             if name == "cl":
                 baca.instrument_function(
-                    o.leaf(0), "ClarinetInEFlat", accumulator.manifests()
+                    o.leaf(0), "ClarinetInEFlat", library.manifests
                 )
             baca.pitch_function(o, "D5")
             if name == "ob":
@@ -206,9 +206,7 @@ def ob_cl_4_10(cache):
                 baca.pitch_function(o, "Eb5")
                 baca.tuplet_bracket_staff_padding_function(o, 2)
             if name == "cl":
-                baca.instrument_function(
-                    o.leaf(0), "BassClarinet", accumulator.manifests()
-                )
+                baca.instrument_function(o.leaf(0), "BassClarinet", library.manifests)
                 baca.pitch_function(o, "Eb2")
                 baca.dynamic_function(o.pleaf(0), "ff")
                 baca.dls_staff_padding_function(o, 9)
@@ -219,10 +217,8 @@ def ob_cl_4_10(cache):
 
 def pf_perc_1_6(cache):
     with baca.scope(cache["pf"].get(1, 6)) as o:
-        baca.instrument_function(o.leaf(0), "Harpsichord", accumulator.manifests())
-        baca.short_instrument_name_function(
-            o.leaf(0), "Hpschd.", accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "Harpsichord", library.manifests)
+        baca.short_instrument_name_function(o.leaf(0), "Hpschd.", library.manifests)
         baca.clef_function(o.leaf(0), "treble")
         library.replace_with_clusters(o, "harpsichord")
     with baca.scope(cache["perc"].get(5, 6)) as o:
@@ -239,17 +235,15 @@ def pf_perc_9_10(cache):
     for name in ["pf", "perc"]:
         with baca.scope(cache[name].get(9, 10)) as o:
             if name == "pf":
-                baca.instrument_function(o.leaf(0), "Piano", accumulator.manifests())
-                baca.short_instrument_name_function(
-                    o.leaf(0), "Pf.", accumulator.manifests()
-                )
+                baca.instrument_function(o.leaf(0), "Piano", library.manifests)
+                baca.short_instrument_name_function(o.leaf(0), "Pf.", library.manifests)
                 baca.tuplet_bracket_staff_padding_function(o, 2)
                 baca.dls_staff_padding_function(o, 6)
             if name == "perc":
                 baca.instrument_function(
                     o.leaf(0),
                     "Xylophone",
-                    accumulator.manifests(),
+                    library.manifests,
                 )
                 baca.tuplet_bracket_staff_padding_function(o, 3)
             baca.pitch_function(o, "F#6")
@@ -330,7 +324,7 @@ def main():
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(
         accumulator.voices(),
-        accumulator.manifests(),
+        library.manifests,
         previous_persistent_indicators,
     )
     cache = baca.interpret.cache_leaves(
@@ -350,7 +344,7 @@ if __name__ == "__main__":
     main()
     metadata, persist, score, timing = baca.build.section(
         score,
-        accumulator.manifests(),
+        library.manifests,
         accumulator.time_signatures,
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),

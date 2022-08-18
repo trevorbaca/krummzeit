@@ -44,9 +44,9 @@ score = library.make_empty_score()
 voice_names = baca.accumulator.get_voice_names(score)
 
 accumulator = baca.CommandAccumulator(
-    instruments=library.instruments(),
-    short_instrument_names=library.short_instrument_names(),
-    metronome_marks=library.metronome_marks(),
+    instruments=library.instruments,
+    short_instrument_names=library.short_instrument_names,
+    metronome_marks=library.metronome_marks,
     time_signatures=time_signatures,
     voice_abbreviations=library.voice_abbreviations(),
     voice_names=voice_names,
@@ -55,7 +55,7 @@ accumulator = baca.CommandAccumulator(
 baca.interpret.set_up_score(
     score,
     accumulator,
-    accumulator.manifests(),
+    library.manifests,
     accumulator.time_signatures,
     append_anchor_skip=True,
     always_make_global_rests=True,
@@ -64,7 +64,7 @@ baca.interpret.set_up_score(
 )
 
 skips = score["Skips"]
-manifests = accumulator.manifests()
+manifests = library.manifests
 
 for index, item in (
     (9 - 1, "135"),
@@ -336,7 +336,7 @@ def ob(m):
 
 def cl(m):
     with baca.scope(m.leaves()) as o:
-        baca.instrument_function(o.leaf(0), "ClarinetInEFlat", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "ClarinetInEFlat", library.manifests)
     with baca.scope(m.get(1, 10)) as o:
         baca.pitch_function(o, "B3")
         baca.stem_up_function(o.pleaves())
@@ -346,10 +346,8 @@ def cl(m):
         baca.dls_staff_padding_function(o, 5)
         baca.tuplet_bracket_staff_padding_function(o, 3)
     with baca.scope(m.get(23, 35)) as o:
-        baca.instrument_function(o.leaf(0), "BassClarinet", accumulator.manifests())
-        baca.short_instrument_name_function(
-            o.leaf(0), "B. cl.", accumulator.manifests()
-        )
+        baca.instrument_function(o.leaf(0), "BassClarinet", library.manifests)
+        baca.short_instrument_name_function(o.leaf(0), "B. cl.", library.manifests)
         baca.pitch_function(o, "Bb1")
         baca.stem_up_function(o.pleaves())
         baca.dynamic_function(o.pleaf(0), "ppp")
@@ -415,7 +413,7 @@ def perc(m):
     with baca.scope(m[17]) as o:
         baca.staff_lines_function(o.leaf(0), 5)
         baca.clef_function(o.leaf(0), "treble")
-        baca.instrument_function(o.leaf(0), "Xylophone", accumulator.manifests())
+        baca.instrument_function(o.leaf(0), "Xylophone", library.manifests)
     with baca.scope(m[28]) as o:
         baca.staff_lines_function(o.leaf(0), 1)
         baca.dynamic_function(o.pleaf(0), "pp")
@@ -525,7 +523,7 @@ def main():
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(
         accumulator.voices(),
-        accumulator.manifests(),
+        library.manifests,
         previous_persistent_indicators,
     )
     cache = baca.interpret.cache_leaves(
@@ -552,7 +550,7 @@ if __name__ == "__main__":
     main()
     metadata, persist, score, timing = baca.build.section(
         score,
-        accumulator.manifests(),
+        library.manifests,
         accumulator.time_signatures,
         **baca.interpret.section_defaults(),
         activate=(baca.tags.LOCAL_MEASURE_NUMBER,),

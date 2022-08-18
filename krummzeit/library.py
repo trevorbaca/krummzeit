@@ -310,23 +310,6 @@ def instrument(argument, key, manifests):
     return baca.instrument_function(argument, instrument, manifests)
 
 
-def instruments():
-    return {
-        "BassClarinet": abjad.BassClarinet(),
-        "Cello": abjad.Cello(pitch_range=abjad.PitchRange("[A1, +inf]")),
-        "ClarinetInEFlat": abjad.ClarinetInEFlat(),
-        "Harpsichord": abjad.Harpsichord(context="Staff"),
-        "Oboe": abjad.Oboe(pitch_range=abjad.PitchRange("[Bb3, Bb6]")),
-        "Percussion": abjad.Percussion(),
-        "Piano": abjad.Piano(context="Staff"),
-        "Viola": abjad.Viola(pitch_range=abjad.PitchRange("[Bb2, +inf]")),
-        "Violin":
-        # TODO: F#3 instead of F3
-        abjad.Violin(pitch_range=abjad.PitchRange("[F3, +inf]")),
-        "Xylophone": abjad.Xylophone(),
-    }
-
-
 def make_closing_pizzicato_rhythm(time_signatures, counts, extra_counts, split):
     durations = [(_, 4) for _ in split]
     rhythm_maker = rmakers.stack(
@@ -983,57 +966,6 @@ def make_white_rhythm(
     return music
 
 
-def short_instrument_names():
-    return {
-        "B. cl.": abjad.ShortInstrumentName(r"\krummzeit-bcl-markup"),
-        "Cl. (Eb)": abjad.ShortInstrumentName(r"\krummzeit-clarinet-in-e-flat-markup"),
-        "Hpschd.": abjad.ShortInstrumentName(r"\krummzeit-hpschd-markup"),
-        "Ob.": abjad.ShortInstrumentName(r"\krummzeit-ob-markup"),
-        "Perc.": abjad.ShortInstrumentName(r"\krummzeit-perc-markup"),
-        "Pf.": abjad.ShortInstrumentName(r"\krummzeit-pf-markup"),
-        "Va.": abjad.ShortInstrumentName(r"\krummzeit-va-markup"),
-        "Vc.": abjad.ShortInstrumentName(r"\krummzeit-vc-markup"),
-        "Vn.": abjad.ShortInstrumentName(r"\krummzeit-vn-markup"),
-    }
-
-
-def metronome_marks():
-    return {
-        "36": abjad.MetronomeMark((1, 4), 36),
-        "45": abjad.MetronomeMark((1, 4), 45),
-        "67.5": abjad.MetronomeMark(
-            reference_duration=(1, 4),
-            units_per_minute=quicktions.Fraction(135, 2),
-            custom_markup=abjad.Markup(
-                r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
-            ),
-        ),
-        "72": abjad.MetronomeMark((1, 4), 72),
-        "72/108": abjad.MetronomeMark(
-            reference_duration=(1, 4),
-            units_per_minute=108,
-            custom_markup=abjad.Markup(
-                r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
-            ),
-        ),
-        "90": abjad.MetronomeMark((1, 4), 90),
-        "108": abjad.MetronomeMark((1, 4), 108),
-        "135": abjad.MetronomeMark((1, 4), 135),
-        "144": abjad.MetronomeMark((1, 4), 144),
-        # slower
-        "4:5(4)=4": abjad.MetricModulation(
-            left_rhythm=abjad.Tuplet("4:5", "c4"),
-            right_rhythm=abjad.Note("c4"),
-        ),
-        "4=8": abjad.MetricModulation(
-            left_rhythm=abjad.Note("c4"), right_rhythm=abjad.Note("c8")
-        ),
-        "4.=4": abjad.MetricModulation(
-            left_rhythm=abjad.Note("c4."), right_rhythm=abjad.Note("c4")
-        ),
-    }
-
-
 def register_narrow(argument, start, stop=None):
     octave_number_to_registration = {
         2: baca.Registration(
@@ -1193,3 +1125,75 @@ def voice_abbreviations():
         "va": "Viola.Music",
         "vc": "Cello.Music",
     }
+
+
+instruments = {
+    "BassClarinet": abjad.BassClarinet(),
+    "Cello": abjad.Cello(pitch_range=abjad.PitchRange("[A1, +inf]")),
+    "ClarinetInEFlat": abjad.ClarinetInEFlat(),
+    "Harpsichord": abjad.Harpsichord(context="Staff"),
+    "Oboe": abjad.Oboe(pitch_range=abjad.PitchRange("[Bb3, Bb6]")),
+    "Percussion": abjad.Percussion(),
+    "Piano": abjad.Piano(context="Staff"),
+    "Viola": abjad.Viola(pitch_range=abjad.PitchRange("[Bb2, +inf]")),
+    "Violin":
+    # TODO: F#3 instead of F3
+    abjad.Violin(pitch_range=abjad.PitchRange("[F3, +inf]")),
+    "Xylophone": abjad.Xylophone(),
+}
+
+
+metronome_marks = {
+    "36": abjad.MetronomeMark((1, 4), 36),
+    "45": abjad.MetronomeMark((1, 4), 45),
+    "67.5": abjad.MetronomeMark(
+        reference_duration=(1, 4),
+        units_per_minute=quicktions.Fraction(135, 2),
+        custom_markup=abjad.Markup(
+            r'\markup \abjad-metronome-mark-markup #2 #0 #1 #"67.5"',
+        ),
+    ),
+    "72": abjad.MetronomeMark((1, 4), 72),
+    "72/108": abjad.MetronomeMark(
+        reference_duration=(1, 4),
+        units_per_minute=108,
+        custom_markup=abjad.Markup(
+            r"\krummzeit-seventy-two-subito-one-hundred-eight-markup",
+        ),
+    ),
+    "90": abjad.MetronomeMark((1, 4), 90),
+    "108": abjad.MetronomeMark((1, 4), 108),
+    "135": abjad.MetronomeMark((1, 4), 135),
+    "144": abjad.MetronomeMark((1, 4), 144),
+    # slower
+    "4:5(4)=4": abjad.MetricModulation(
+        left_rhythm=abjad.Tuplet("4:5", "c4"),
+        right_rhythm=abjad.Note("c4"),
+    ),
+    "4=8": abjad.MetricModulation(
+        left_rhythm=abjad.Note("c4"), right_rhythm=abjad.Note("c8")
+    ),
+    "4.=4": abjad.MetricModulation(
+        left_rhythm=abjad.Note("c4."), right_rhythm=abjad.Note("c4")
+    ),
+}
+
+
+short_instrument_names = {
+    "B. cl.": abjad.ShortInstrumentName(r"\krummzeit-bcl-markup"),
+    "Cl. (Eb)": abjad.ShortInstrumentName(r"\krummzeit-clarinet-in-e-flat-markup"),
+    "Hpschd.": abjad.ShortInstrumentName(r"\krummzeit-hpschd-markup"),
+    "Ob.": abjad.ShortInstrumentName(r"\krummzeit-ob-markup"),
+    "Perc.": abjad.ShortInstrumentName(r"\krummzeit-perc-markup"),
+    "Pf.": abjad.ShortInstrumentName(r"\krummzeit-pf-markup"),
+    "Va.": abjad.ShortInstrumentName(r"\krummzeit-va-markup"),
+    "Vc.": abjad.ShortInstrumentName(r"\krummzeit-vc-markup"),
+    "Vn.": abjad.ShortInstrumentName(r"\krummzeit-vn-markup"),
+}
+
+
+manifests = {
+    "abjad.Instrument": instruments,
+    "abjad.MetronomeMark": metronome_marks,
+    "abjad.ShortInstrumentName": short_instrument_names,
+}

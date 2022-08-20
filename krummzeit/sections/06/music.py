@@ -8,6 +8,33 @@ from krummzeit import library
 ########################################### 06 ##########################################
 #########################################################################################
 
+maker_ = baca.TimeSignatureMaker(
+    library.section_time_signatures("F"),
+    count=35,
+)
+time_signatures = maker_.run()
+
+score = library.make_empty_score()
+voice_names = baca.accumulator.get_voice_names(score)
+
+accumulator = baca.CommandAccumulator(
+    time_signatures=time_signatures,
+    _voice_abbreviations=library.voice_abbreviations,
+    _voice_names=voice_names,
+)
+
+baca.interpret.set_up_score(
+    score,
+    library.manifests,
+    accumulator.time_signatures,
+    accumulator,
+    append_anchor_skip=True,
+    always_make_global_rests=True,
+    attach_nonfirst_empty_start_bar=True,
+)
+
+skips = score["Skips"]
+
 stage_markup = (
     ("[E.1]", 1),
     ("[E.2]", 9),
@@ -33,35 +60,7 @@ stage_markup = (
     ("[E.22]", 33),
     ("[E.23]", 35),
 )
-
-maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures("F"),
-    count=35,
-)
-time_signatures = maker_.run()
-
-score = library.make_empty_score()
-voice_names = baca.accumulator.get_voice_names(score)
-
-accumulator = baca.CommandAccumulator(
-    time_signatures=time_signatures,
-    _voice_abbreviations=library.voice_abbreviations,
-    _voice_names=voice_names,
-)
-
-baca.interpret.set_up_score(
-    score,
-    library.manifests,
-    accumulator.time_signatures,
-    accumulator,
-    append_anchor_skip=True,
-    always_make_global_rests=True,
-    attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
-)
-
-skips = score["Skips"]
-manifests = library.manifests
+baca.label_stage_numbers(skips, stage_markup)
 
 for index, item in (
     (9 - 1, "135"),
@@ -75,7 +74,7 @@ for index, item in (
     (33 - 1, "72"),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 
 def OB(voice):

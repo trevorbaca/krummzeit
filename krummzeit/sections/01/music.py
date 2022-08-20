@@ -8,17 +8,6 @@ from krummzeit import library
 ########################################### 01 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[_.1]", 1),
-    ("[_.3]", 4),
-    ("[_.4]", 5),
-    ("[_.5]", 6),
-    ("[_.6]", 7),
-    ("[_.7]", 8),
-    ("[_.9]", 10),
-    ("[_.10]", 11),
-)
-
 maker_ = baca.TimeSignatureMaker(
     library.section_time_signatures("A"),
     count=13,
@@ -42,11 +31,21 @@ baca.interpret.set_up_score(
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
 
 skips = score["Skips"]
-manifests = library.manifests
+
+stage_markup = (
+    ("[_.1]", 1),
+    ("[_.3]", 4),
+    ("[_.4]", 5),
+    ("[_.5]", 6),
+    ("[_.6]", 7),
+    ("[_.7]", 8),
+    ("[_.9]", 10),
+    ("[_.10]", 11),
+)
+baca.label_stage_numbers(skips, stage_markup)
 
 for index, item in (
     (1 - 1, "135"),
@@ -57,7 +56,7 @@ for index, item in (
     (10 - 1, "135"),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 rests = score["Rests"]
 for index, string in (

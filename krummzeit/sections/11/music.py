@@ -7,21 +7,6 @@ from krummzeit import library
 ########################################### 11 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[J.1]", 1),
-    ("[J.2]", 5),
-    ("[J.3]", 9),
-    ("[J.4]", 13),
-    ("[J.5]", 17),
-    ("[J.6]", 21),
-    ("[J.7]", 25),
-    ("[J.8]", 29),
-    ("[J.9]", 33),
-    ("[J.10]", 37),
-    ("[J.11]", 41),
-    ("[J.12]", 45),
-)
-
 maker_ = baca.TimeSignatureMaker(
     library.section_time_signatures("K"),
     count=48,
@@ -44,10 +29,27 @@ baca.interpret.set_up_score(
     accumulator,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
 
-baca.bar_line_function(score["Skips"][48 - 1], "|.")
+skips = score["Skips"]
+
+stage_markup = (
+    ("[J.1]", 1),
+    ("[J.2]", 5),
+    ("[J.3]", 9),
+    ("[J.4]", 13),
+    ("[J.5]", 17),
+    ("[J.6]", 21),
+    ("[J.7]", 25),
+    ("[J.8]", 29),
+    ("[J.9]", 33),
+    ("[J.10]", 37),
+    ("[J.11]", 41),
+    ("[J.12]", 45),
+)
+baca.label_stage_numbers(skips, stage_markup)
+
+baca.bar_line_function(skips[48 - 1], "|.")
 
 
 def OB(voice):

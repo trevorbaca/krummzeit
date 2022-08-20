@@ -8,22 +8,6 @@ from krummzeit import library
 ########################################### 05 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[D.1]", 1),
-    ("[D.2]", 4),
-    ("[D.3]", 6),
-    ("[D.4]", 8),
-    ("[D.5]", 11),
-    ("[D.6]", 14),
-    ("[D.7]", 17),
-    ("[D.8]", 25),
-    ("[D.9]", 27),
-    ("[D.10]", 35),
-    ("[D.11]", 39),
-    ("[D.12]", 43),
-    ("[D.13]", 45),
-)
-
 maker_ = baca.TimeSignatureMaker(
     library.section_time_signatures("E"),
     count=48,
@@ -47,11 +31,26 @@ baca.interpret.set_up_score(
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
 
 skips = score["Skips"]
-manifests = library.manifests
+
+stage_markup = (
+    ("[D.1]", 1),
+    ("[D.2]", 4),
+    ("[D.3]", 6),
+    ("[D.4]", 8),
+    ("[D.5]", 11),
+    ("[D.6]", 14),
+    ("[D.7]", 17),
+    ("[D.8]", 25),
+    ("[D.9]", 27),
+    ("[D.10]", 35),
+    ("[D.11]", 39),
+    ("[D.12]", 43),
+    ("[D.13]", 45),
+)
+baca.label_stage_numbers(skips, stage_markup)
 
 for index, item in (
     (8 - 1, baca.Accelerando()),
@@ -62,7 +61,7 @@ for index, item in (
     (35 - 1, "108"),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 
 def OB(voice):

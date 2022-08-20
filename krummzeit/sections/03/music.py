@@ -7,28 +7,6 @@ from krummzeit import library
 ########################################### 03 ##########################################
 #########################################################################################
 
-stage_markup = (
-    ("[B.1]", 1),
-    ("[B.3]", 6),
-    ("[B.5]", 8),
-    ("[B.7]", 10),
-    ("[B.9]", 12),
-    ("[B.11]", 14),
-    ("[B.13]", 16),
-    ("[B.15]", 18),
-    ("[B.17]", 20),
-    ("[B.19]", 22),
-    ("[B.20]", 24),
-    ("[B.21]", 26),
-    ("[B.22]", 28),
-    ("[B.24]", 30),
-    ("[B.26]", 32),
-    ("[B.27]", 34),
-    ("[B.28]", 36),
-    ("[B.29]", 40),
-    ("[B.30]", 43),
-)
-
 maker_ = baca.TimeSignatureMaker(
     library.section_time_signatures("C"),
     count=44,
@@ -52,11 +30,32 @@ baca.interpret.set_up_score(
     append_anchor_skip=True,
     always_make_global_rests=True,
     attach_nonfirst_empty_start_bar=True,
-    stage_markup=stage_markup,
 )
 
 skips = score["Skips"]
-manifests = library.manifests
+
+stage_markup = (
+    ("[B.1]", 1),
+    ("[B.3]", 6),
+    ("[B.5]", 8),
+    ("[B.7]", 10),
+    ("[B.9]", 12),
+    ("[B.11]", 14),
+    ("[B.13]", 16),
+    ("[B.15]", 18),
+    ("[B.17]", 20),
+    ("[B.19]", 22),
+    ("[B.20]", 24),
+    ("[B.21]", 26),
+    ("[B.22]", 28),
+    ("[B.24]", 30),
+    ("[B.26]", 32),
+    ("[B.27]", 34),
+    ("[B.28]", 36),
+    ("[B.29]", 40),
+    ("[B.30]", 43),
+)
+baca.label_stage_numbers(skips, stage_markup)
 
 for index, item in (
     (22 - 1, baca.Accelerando()),
@@ -67,7 +66,7 @@ for index, item in (
     (43 - 1, "135"),
 ):
     skip = skips[index]
-    baca.metronome_mark_function(skip, item, manifests)
+    baca.metronome_mark_function(skip, item, library.manifests)
 
 rests = score["Rests"]
 for index, string in (

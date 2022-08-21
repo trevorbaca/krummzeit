@@ -70,7 +70,7 @@ for index, string in (
     baca.global_fermata_function(rests[index], string)
 
 
-def OB(voice):
+def OB(voice, accumulator):
     music = baca.make_repeat_tied_notes(accumulator.get(1, 7))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8))
@@ -97,7 +97,7 @@ def OB(voice):
     voice.extend(music)
 
 
-def CL(voice):
+def CL(voice, accumulator):
     music = baca.make_repeat_tied_notes(accumulator.get(1, 5))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 8))
@@ -123,7 +123,7 @@ def CL(voice):
     voice.extend(music)
 
 
-def PF(voice):
+def PF(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
     music = library.make_polyphony_rhythm(
@@ -165,7 +165,7 @@ def PF(voice):
     voice.extend(music)
 
 
-def VN(voice):
+def VN(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
     music = library.make_polyphony_rhythm(
@@ -196,7 +196,7 @@ def VN(voice):
     voice.extend(music)
 
 
-def VA(voice):
+def VA(voice, accumulator):
     music = library.make_fused_expanse(
         accumulator.get(1, 7),
         [(7, 4), (2, 8), (3, 8), (7, 4), (7, 4), (1, 4)],
@@ -227,7 +227,7 @@ def VA(voice):
     voice.extend(music)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     music = library.make_fused_expanse(
         accumulator.get(1, 9),
         [
@@ -445,12 +445,12 @@ def pf_vn_vc_va_14_23(cache):
 
 
 def main():
-    OB(accumulator.voice("ob"))
-    CL(accumulator.voice("cl"))
-    PF(accumulator.voice("pf"))
-    VN(accumulator.voice("vn"))
-    VA(accumulator.voice("va"))
-    VC(accumulator.voice("vc"))
+    OB(accumulator.voice("ob"), accumulator)
+    CL(accumulator.voice("cl"), accumulator)
+    PF(accumulator.voice("pf"), accumulator)
+    VN(accumulator.voice("vn"), accumulator)
+    VA(accumulator.voice("va"), accumulator)
+    VC(accumulator.voice("vc"), accumulator)
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(

@@ -70,7 +70,7 @@ for index, string in ((23 - 1, "very_long"),):
     baca.global_fermata_function(rests[index], string)
 
 
-def OB(voice):
+def OB(voice, accumulator):
     music = library.make_hypermeter_tuplets(
         accumulator.get(1),
         [(3, 2)],
@@ -80,7 +80,7 @@ def OB(voice):
     voice.extend(music)
 
 
-def CL(voice):
+def CL(voice, accumulator):
     music = library.make_hypermeter_tuplets(
         accumulator.get(1),
         [(1, 4)],
@@ -94,7 +94,7 @@ def CL(voice):
     voice.extend(music)
 
 
-def PF(voice):
+def PF(voice, accumulator):
     music = library.make_hypermeter_tuplets(
         accumulator.get(1),
         [(3, 4)],
@@ -122,7 +122,7 @@ def PF(voice):
     voice.extend(music)
 
 
-def PERC(voice):
+def PERC(voice, accumulator):
     music = library.make_hypermeter_tuplets(
         accumulator.get(1),
         [(1, 6)],
@@ -136,7 +136,7 @@ def PERC(voice):
     voice.extend(music)
 
 
-def VN(voice):
+def VN(voice, accumulator):
     music = library.make_opening_triplets(
         accumulator.get(1, 3),
         rmakers.force_rest(
@@ -160,7 +160,7 @@ def VN(voice):
     voice.extend(music)
 
 
-def VA(voice):
+def VA(voice, accumulator):
     music = library.make_opening_triplets(
         accumulator.get(1, 3),
         rmakers.force_rest(
@@ -184,7 +184,7 @@ def VA(voice):
     voice.extend(music)
 
 
-def VC(voice):
+def VC(voice, accumulator):
     music = library.make_opening_triplets(
         accumulator.get(1, 3),
         rmakers.force_rest(
@@ -322,13 +322,13 @@ def strings_22(cache):
 
 
 def main():
-    OB(accumulator.voice("ob"))
-    CL(accumulator.voice("cl"))
-    PF(accumulator.voice("pf"))
-    PERC(accumulator.voice("perc"))
-    VN(accumulator.voice("vn"))
-    VA(accumulator.voice("va"))
-    VC(accumulator.voice("vc"))
+    OB(accumulator.voice("ob"), accumulator)
+    CL(accumulator.voice("cl"), accumulator)
+    PF(accumulator.voice("pf"), accumulator)
+    PERC(accumulator.voice("perc"), accumulator)
+    VN(accumulator.voice("vn"), accumulator)
+    VA(accumulator.voice("va"), accumulator)
+    VC(accumulator.voice("vc"), accumulator)
     previous_persist = baca.previous_persist(__file__)
     previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(

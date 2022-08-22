@@ -318,7 +318,7 @@ def ob_cl_4_10(cache):
             baca.hairpin_function(o, "p < ff")
 
 
-def main():
+def make_score():
     OB(accumulator.voice("ob"), accumulator)
     CL(accumulator.voice("cl"), accumulator)
     PF(accumulator.voice("pf"), accumulator)
@@ -348,8 +348,8 @@ def main():
     ob_cl_4_10(cache)
 
 
-if __name__ == "__main__":
-    main()
+def main():
+    make_score()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
@@ -366,3 +366,7 @@ if __name__ == "__main__":
         includes=["../stylesheet.ily"],
     )
     baca.build.persist(lilypond_file, metadata, persist, timing)
+
+
+if __name__ == "__main__":
+    main()

@@ -182,7 +182,7 @@ def vc_48(m):
         baca.rehearsal_mark_self_alignment_x_function(o, abjad.RIGHT)
 
 
-def main():
+def make_score():
     OB(accumulator.voice("ob"), accumulator)
     CL(accumulator.voice("cl"), accumulator)
     PF(accumulator.voice("pf"), accumulator)
@@ -211,8 +211,8 @@ def main():
     vc_48(cache["vc"])
 
 
-if __name__ == "__main__":
-    main()
+def main():
+    make_score()
     defaults = baca.interpret.section_defaults()
     del defaults["append_anchor_skip"]
     metadata, persist, timing = baca.build.section(
@@ -232,3 +232,7 @@ if __name__ == "__main__":
         includes=["../stylesheet.ily"],
     )
     baca.build.persist(lilypond_file, metadata, persist, timing)
+
+
+if __name__ == "__main__":
+    main()

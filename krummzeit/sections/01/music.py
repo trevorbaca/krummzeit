@@ -295,7 +295,7 @@ def composites(cache):
             baca.tuplet_bracket_padding_function(o, 2)
 
 
-def main():
+def make_score():
     OB(accumulator.voice("ob"), accumulator)
     CL(accumulator.voice("cl"), accumulator)
     PF(accumulator.voice("pf"), accumulator)
@@ -318,8 +318,8 @@ def main():
     composites(cache)
 
 
-if __name__ == "__main__":
-    main()
+def main():
+    make_score()
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
@@ -336,3 +336,7 @@ if __name__ == "__main__":
         includes=["../stylesheet.ily", "header.ily"],
     )
     baca.build.persist(lilypond_file, metadata, persist, timing)
+
+
+if __name__ == "__main__":
+    main()

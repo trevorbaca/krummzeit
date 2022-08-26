@@ -8,59 +8,50 @@ from krummzeit import library
 ########################################### 05 ##########################################
 #########################################################################################
 
-maker_ = baca.TimeSignatureMaker(
-    library.section_time_signatures("E"),
-    count=48,
-)
-time_signatures = maker_.run()
 
-score = library.make_empty_score()
-voice_names = baca.accumulator.get_voice_names(score)
+def make_empty_score():
+    maker_ = baca.TimeSignatureMaker(
+        library.section_time_signatures("E"),
+        count=48,
+    )
+    time_signatures = maker_.run()
+    score = library.make_empty_score()
+    voice_names = baca.accumulator.get_voice_names(score)
+    accumulator = baca.CommandAccumulator(
+        time_signatures=time_signatures,
+        _voice_abbreviations=library.voice_abbreviations,
+        _voice_names=voice_names,
+    )
+    return score, accumulator
 
-accumulator = baca.CommandAccumulator(
-    time_signatures=time_signatures,
-    _voice_abbreviations=library.voice_abbreviations,
-    _voice_names=voice_names,
-)
 
-baca.interpret.set_up_score(
-    score,
-    accumulator.time_signatures,
-    accumulator,
-    library.manifests,
-    append_anchor_skip=True,
-    always_make_global_rests=True,
-)
-
-skips = score["Skips"]
-
-stage_markup = (
-    ("[D.1]", 1),
-    ("[D.2]", 4),
-    ("[D.3]", 6),
-    ("[D.4]", 8),
-    ("[D.5]", 11),
-    ("[D.6]", 14),
-    ("[D.7]", 17),
-    ("[D.8]", 25),
-    ("[D.9]", 27),
-    ("[D.10]", 35),
-    ("[D.11]", 39),
-    ("[D.12]", 43),
-    ("[D.13]", 45),
-)
-baca.label_stage_numbers(skips, stage_markup)
-
-for index, item in (
-    (8 - 1, baca.Accelerando()),
-    (25 - 1, "72/108"),
-    (27 - 1, "72"),
-    (27 - 1, "4.=4"),
-    (27 - 1, baca.Accelerando()),
-    (35 - 1, "108"),
-):
-    skip = skips[index]
-    baca.metronome_mark_function(skip, item, library.manifests)
+def GLOBALS(skips):
+    stage_markup = (
+        ("[D.1]", 1),
+        ("[D.2]", 4),
+        ("[D.3]", 6),
+        ("[D.4]", 8),
+        ("[D.5]", 11),
+        ("[D.6]", 14),
+        ("[D.7]", 17),
+        ("[D.8]", 25),
+        ("[D.9]", 27),
+        ("[D.10]", 35),
+        ("[D.11]", 39),
+        ("[D.12]", 43),
+        ("[D.13]", 45),
+    )
+    baca.label_stage_numbers(skips, stage_markup)
+    for index, item in (
+        (8 - 1, baca.Accelerando()),
+        (25 - 1, "72/108"),
+        (27 - 1, "72"),
+        (27 - 1, "4.=4"),
+        (27 - 1, baca.Accelerando()),
+        (35 - 1, "108"),
+    ):
+        skip = skips[index]
+        baca.metronome_mark_function(skip, item, library.manifests)
 
 
 def OB(voice, accumulator):
@@ -487,7 +478,19 @@ def strings(cache):
         baca.dls_staff_padding_function(o, 6)
 
 
-def make_score():
+def make_score(first_measure_number, previous_persistent_indicators):
+    score, accumulator = make_empty_score()
+    baca.interpret.set_up_score(
+        score,
+        accumulator.time_signatures,
+        accumulator,
+        library.manifests,
+        append_anchor_skip=True,
+        always_make_global_rests=True,
+        first_measure_number=first_measure_number,
+        previous_persistent_indicators=previous_persistent_indicators,
+    )
+    GLOBALS(score["Skips"])
     OB(accumulator.voice("ob"), accumulator)
     CL(accumulator.voice("cl"), accumulator)
     PF(accumulator.voice("pf"), accumulator)
@@ -495,8 +498,6 @@ def make_score():
     VN(accumulator.voice("vn"), accumulator)
     VA(accumulator.voice("va"), accumulator)
     VC(accumulator.voice("vc"), accumulator)
-    previous_persist = baca.previous_persist(__file__)
-    previous_persistent_indicators = previous_persist["persistent_indicators"]
     baca.reapply(
         accumulator.voices(),
         library.manifests,
@@ -514,18 +515,25 @@ def make_score():
     perc(cache["perc"])
     pf_perc(cache)
     strings(cache)
+    return score, accumulator
 
 
 def main():
-    make_score()
+    previous_metadata = baca.previous_metadata(__file__)
+    first_measure_number = previous_metadata["final_measure_number"] + 1
+    previous_persist = baca.previous_persist(__file__)
+    score, accumulator = make_score(
+        first_measure_number, previous_persist["persistent_indicators"]
+    )
     metadata, persist, timing = baca.build.section(
         score,
         library.manifests,
         accumulator.time_signatures,
         **baca.interpret.section_defaults(),
-        activate=(baca.tags.LOCAL_MEASURE_NUMBER,),
+        activate=[baca.tags.LOCAL_MEASURE_NUMBER],
         always_make_global_rests=True,
         error_on_not_yet_pitched=True,
+        first_measure_number=first_measure_number,
         transpose_score=True,
     )
     lilypond_file = baca.lilypond.file(

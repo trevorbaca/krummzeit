@@ -478,9 +478,7 @@ def va(m):
         for run in baca.select.runs(o):
             baca.glissando(run)
     with baca.scope(m[6, 23]) as o:
-        baca.markup(
-            baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup"
-        )
+        baca.markup(baca.select.pleaf(m[6], 0), r"\baca-molto-flautando-markup")
         baca.tuplet_bracket_staff_padding(o, 4)
         baca.dls_staff_padding(o, 7)
     with baca.scope(m[32, 42]) as o:

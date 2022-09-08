@@ -397,14 +397,10 @@ def vn(m):
         baca.staff_position(o, 0)
     with baca.scope(m[8, 11]) as o:
         baca.dynamic(o.pleaf(0), "mp")
-        baca.markup(
-            o.pleaf(0), r"\krummzeit-off-string-bowing-on-staccati-markup"
-        )
+        baca.markup(o.pleaf(0), r"\krummzeit-off-string-bowing-on-staccati-markup")
     with baca.scope(m[19, 22]) as o:
         baca.dynamic(o.pleaf(0), "f")
-        baca.markup(
-            o.pleaf(0), r"\krummzeit-off-string-bowing-on-staccati-markup"
-        )
+        baca.markup(o.pleaf(0), r"\krummzeit-off-string-bowing-on-staccati-markup")
 
 
 def va(m):

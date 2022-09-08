@@ -317,9 +317,7 @@ def pf(cache):
         baca.dls_staff_padding(m[pair], 3)
     for pair in [(8, 24), (27, 34)]:
         with baca.scope(m[pair]) as o:
-            baca.markup(
-                o.pleaf(0), r"\krummzeit-fifth-harmonic-of-F-one-markup"
-            )
+            baca.markup(o.pleaf(0), r"\krummzeit-fifth-harmonic-of-F-one-markup")
             baca.pitch(o, "C4")
             baca.tenuto(o.pheads())
             baca.note_head_style_harmonic(o.pleaves())

@@ -289,11 +289,11 @@ def _set_pitch(pleaf, pitch):
 
 
 def color_fingerings(argument):
-    return baca.color_fingerings_function(argument, [0, 1, 2, 1])
+    return baca.color_fingerings(argument, [0, 1, 2, 1])
 
 
 def displacement(argument):
-    baca.displacement_function(
+    baca.displacement(
         argument,
         [0, 0, 0, 0, 0, 0, -1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1]
         + [-1, -1, -1, -1],
@@ -307,7 +307,7 @@ def indigo_pitch_classes():
 
 def instrument(argument, key, manifests):
     instrument = instruments()[key]
-    return baca.instrument_function(argument, instrument, manifests)
+    return baca.instrument(argument, instrument, manifests)
 
 
 def make_closing_pizzicato_rhythm(time_signatures, counts, extra_counts, split):
@@ -1097,12 +1097,12 @@ def register_wide(argument, start):
 
 def replace_with_clusters(argument, flavor):
     if flavor == "harpsichord":
-        result = baca.replace_with_clusters_function(argument, [4], start_pitch="D4")
+        result = baca.replace_with_clusters(argument, [4], start_pitch="D4")
     elif flavor == "low":
-        result = baca.replace_with_clusters_function(argument, [7], start_pitch="C1")
+        result = baca.replace_with_clusters(argument, [7], start_pitch="C1")
     else:
         assert flavor == "tenor"
-        result = baca.replace_with_clusters_function(argument, [4], start_pitch="A2")
+        result = baca.replace_with_clusters(argument, [4], start_pitch="A2")
     return result
 
 

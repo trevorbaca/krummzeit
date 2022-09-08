@@ -40,7 +40,7 @@ def GLOBALS(skips):
         ("[J.12]", 45),
     )
     baca.label_stage_numbers(skips, stage_markup)
-    baca.bar_line_function(skips[48 - 1], "|.")
+    baca.bar_line(skips[48 - 1], "|.")
 
 
 def OB(voice, accumulator):
@@ -100,36 +100,36 @@ def VC(voice, accumulator):
 
 def ob_1_40(m):
     with baca.scope(m.leaves()) as o:
-        baca.pitch_function(o, "C#4")
-        baca.dynamic_function(o.pleaf(0), "fff")
-        baca.dls_staff_padding_function(o, 5)
+        baca.pitch(o, "C#4")
+        baca.dynamic(o.pleaf(0), "fff")
+        baca.dls_staff_padding(o, 5)
 
 
 def cl_1_40(m):
     with baca.scope(m.leaves()) as o:
-        baca.pitch_function(o, "D2")
-        baca.stem_up_function(o.pleaves())
-        baca.dynamic_function(o.pleaf(0), "f")
-        baca.dls_staff_padding_function(o, 7)
+        baca.pitch(o, "D2")
+        baca.stem_up(o.pleaves())
+        baca.dynamic(o.pleaf(0), "f")
+        baca.dls_staff_padding(o, 7)
 
 
 def pf_1_48(m):
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.pitch_function(o, "C#6")
-        baca.stem_tremolo_function(o.pleaves())
+        baca.clef(o.leaf(0), "treble")
+        baca.pitch(o, "C#6")
+        baca.stem_tremolo(o.pleaves())
     with baca.scope(m[25]) as o:
-        baca.dynamic_function(o.pleaf(0), "fff-poss")
+        baca.dynamic(o.pleaf(0), "fff-poss")
 
 
 def perc_1_48(m):
     with baca.scope(m.leaves()) as o:
-        baca.clef_function(o.leaf(0), "treble")
-        baca.staff_lines_function(o.leaf(0), 5)
-        baca.pitch_function(o, "C#6")
-        baca.stem_tremolo_function(o.pleaves())
-        baca.dynamic_function(o.pleaf(0), "fff")
-        baca.dls_staff_padding_function(o, 4)
+        baca.clef(o.leaf(0), "treble")
+        baca.staff_lines(o.leaf(0), 5)
+        baca.pitch(o, "C#6")
+        baca.stem_tremolo(o.pleaves())
+        baca.dynamic(o.pleaf(0), "fff")
+        baca.dls_staff_padding(o, 4)
 
 
 def vn_va_1_40(cache):
@@ -140,38 +140,38 @@ def vn_va_1_40(cache):
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs[42:34:-1].transpose(4).invert()
         leaves = baca.select.sort_by_timeline(leaves)
-        baca.pitches_function(leaves, pcs)
+        baca.pitches(leaves, pcs)
     for name in names:
         with baca.scope(cache[name].get(1, 40)) as o:
-            baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
+            baca.markup(o.pleaf(0), r"\baca-pizz-markup")
             library.displacement(o)
             library.register_narrow(o, 6)
-            baca.staccatissimo_function(o.pheads())
-            baca.tuplet_bracket_staff_padding_function(o, 2)
-            baca.dynamic_function(o.pleaf(0), "ff")
-            baca.dls_staff_padding_function(o, 5)
+            baca.staccatissimo(o.pheads())
+            baca.tuplet_bracket_staff_padding(o, 2)
+            baca.dynamic(o.pleaf(0), "ff")
+            baca.dls_staff_padding(o, 5)
 
 
 def vc_1_48(m):
     with baca.scope(m.get(1, 24)) as o:
-        baca.markup_function(o.pleaf(0), r"\baca-scratch-poss-markup")
-        baca.pitches_function(o, "D4 D4 D4 D4 D4 D4 D2")
+        baca.markup(o.pleaf(0), r"\baca-scratch-poss-markup")
+        baca.pitches(o, "D4 D4 D4 D4 D4 D4 D2")
         for run in baca.select.runs(o):
-            baca.glissando_function(run)
-        baca.dynamic_function(o.pleaf(0), "fff-ancora")
-        baca.dls_staff_padding_function(o, 3)
+            baca.glissando(run)
+        baca.dynamic(o.pleaf(0), "fff-ancora")
+        baca.dls_staff_padding(o, 3)
     with baca.scope(m.get(25, 48)) as o:
-        baca.markup_function(o.pleaf(0), r"\baca-ordinario-markup")
-        baca.pitch_function(o, "D2")
-        baca.dynamic_function(o.pleaf(0), "ff")
+        baca.markup(o.pleaf(0), r"\baca-ordinario-markup")
+        baca.pitch(o, "D2")
+        baca.dynamic(o.pleaf(0), "ff")
 
 
 def vc_48(m):
     with baca.scope(baca.select.rleaves(m[48])[-1:]) as o:
-        baca.mark_function(o.leaf(0), r"\krummzeit-colophon-markup")
-        baca.rehearsal_mark_down_function(o)
-        baca.rehearsal_mark_padding_function(o, 6)
-        baca.rehearsal_mark_self_alignment_x_function(o, abjad.RIGHT)
+        baca.mark(o.leaf(0), r"\krummzeit-colophon-markup")
+        baca.rehearsal_mark_down(o)
+        baca.rehearsal_mark_padding(o, 6)
+        baca.rehearsal_mark_self_alignment_x(o, abjad.RIGHT)
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

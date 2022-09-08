@@ -178,9 +178,7 @@ def ob_cl_4_10(cache):
     for name in ["ob", "cl"]:
         with baca.scope(cache[name].get(4, 7)) as o:
             if name == "cl":
-                baca.instrument(
-                    o.leaf(0), "ClarinetInEFlat", library.manifests
-                )
+                baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
             baca.pitch(o, "D5")
             if name == "ob":
                 baca.trill_spanner(baca.select.rleak(o))

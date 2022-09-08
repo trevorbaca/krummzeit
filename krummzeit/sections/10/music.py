@@ -77,7 +77,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(2))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(3, 14))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(3, 14))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(15, 23))
     voice.extend(music)

@@ -818,7 +818,7 @@ number.9.Oboe.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 3
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     d''1..
     % AFTER:
     % ARTICULATIONS:
@@ -849,7 +849,7 @@ number.9.Oboe.Music = {
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 5]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     d''2.
     % AFTER:
     % SPANNER_STARTS:
@@ -857,7 +857,7 @@ number.9.Oboe.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1128,7 +1128,7 @@ number.9.Clarinet.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 3
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     b'1..
     % AFTER:
     % ARTICULATIONS:
@@ -1158,11 +1158,11 @@ number.9.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 5]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     b'2.
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:

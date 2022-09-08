@@ -49,7 +49,7 @@ def GLOBALS(skips):
 def OB(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(4, 7))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(4, 7))
     voice.extend(music)
     music = library.make_hypermeter_tuplets(
         accumulator.get(8, 10),
@@ -62,7 +62,7 @@ def OB(voice, accumulator):
 def CL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(4, 5))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(4, 5))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 7))
     voice.extend(music)

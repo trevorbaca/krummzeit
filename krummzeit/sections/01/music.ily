@@ -1320,7 +1320,7 @@ number.1.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 4]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     cs!2.
     % AFTER:
     % ARTICULATIONS:

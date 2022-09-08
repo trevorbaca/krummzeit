@@ -223,7 +223,7 @@ def PERC(voice, accumulator):
         [(1, 2)],
     )
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(21, 25))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(21, 25))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(26, 27))
     voice.extend(music)
@@ -246,12 +246,12 @@ def PERC(voice, accumulator):
         [(2, 1)],
     )
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(34, 44))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(34, 44))
     voice.extend(music)
 
 
 def VN(voice, accumulator):
-    music = baca.make_repeat_tied_notes(accumulator.get(1, 20))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 20))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21))
     voice.extend(music)

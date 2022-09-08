@@ -2043,7 +2043,7 @@ number.10.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 3]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     fs!2.
     % AFTER:
     % ARTICULATIONS:
@@ -2233,7 +2233,7 @@ number.10.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 9]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     fs1
     % AFTER:
     % ARTICULATIONS:
@@ -2254,7 +2254,7 @@ number.10.Clarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2285,7 +2285,7 @@ number.10.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 11]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     fs1
     % AFTER:
     % ARTICULATIONS:
@@ -2322,14 +2322,14 @@ number.10.Clarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 12]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     fs1
     % AFTER:
     % SPANNER_STARTS:
@@ -2337,14 +2337,14 @@ number.10.Clarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 13]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     fs1
     % AFTER:
     % SPANNER_STARTS:
@@ -2352,14 +2352,14 @@ number.10.Clarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 14]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     fs1
     % AFTER:
     % ARTICULATIONS:
@@ -2378,7 +2378,7 @@ number.10.Clarinet.Music = {
       %! baca.hairpin()
     \ppp
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:

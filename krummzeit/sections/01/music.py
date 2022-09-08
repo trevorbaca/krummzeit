@@ -62,7 +62,7 @@ def OB(voice, accumulator):
 def CL(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 3))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(4, 5))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(4, 5))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(6, 13))
     voice.extend(music)
@@ -75,7 +75,7 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(5, 6))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(7))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(7))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 13))
     voice.extend(music)
@@ -84,7 +84,7 @@ def PF(voice, accumulator):
 def PERC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 6))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(7))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(7))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(8, 9))
     voice.extend(music)

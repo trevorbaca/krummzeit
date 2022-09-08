@@ -44,26 +44,26 @@ def GLOBALS(skips):
 
 
 def OB(voice, accumulator):
-    music = baca.make_repeat_tied_notes(accumulator.get(1, 40))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 40))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(41, 48))
     voice.extend(music)
 
 
 def CL(voice, accumulator):
-    music = baca.make_repeat_tied_notes(accumulator.get(1, 40))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 40))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(41, 48))
     voice.extend(music)
 
 
 def PF(voice, accumulator):
-    music = baca.make_repeat_tied_notes(accumulator.get())
+    music = baca.make_repeat_tied_notes_function(accumulator.get())
     voice.extend(music)
 
 
 def PERC(voice, accumulator):
-    music = baca.make_repeat_tied_notes(accumulator.get())
+    music = baca.make_repeat_tied_notes_function(accumulator.get())
     voice.extend(music)
 
 
@@ -92,9 +92,9 @@ def VA(voice, accumulator):
 
 
 def VC(voice, accumulator):
-    music = baca.make_repeat_tied_notes(accumulator.get(1, 24))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(1, 24))
     voice.extend(music)
-    music = baca.make_repeat_tied_notes(accumulator.get(25, 48))
+    music = baca.make_repeat_tied_notes_function(accumulator.get(25, 48))
     voice.extend(music)
 
 

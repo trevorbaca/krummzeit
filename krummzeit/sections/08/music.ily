@@ -1680,7 +1680,7 @@ number.8.Oboe.Music = {
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 4]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     b1
     % AFTER:
     % SPANNER_STARTS:
@@ -1688,7 +1688,7 @@ number.8.Oboe.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1719,7 +1719,7 @@ number.8.Oboe.Music = {
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 6]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     b2.
     % AFTER:
     % SPANNER_STARTS:
@@ -1727,18 +1727,18 @@ number.8.Oboe.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Oboe.Music measure 7]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     b2.
     % AFTER:
     % SPANNER_STARTS:
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2726,7 +2726,7 @@ number.8.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 4]
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     cs1
     % AFTER:
     % SPANNER_STARTS:
@@ -2734,7 +2734,7 @@ number.8.Clarinet.Music = {
     - \tweak stencil ##f
       %! baca._attach_shadow_tie_indicators()
     ~
-      %! baca.make_repeat_tied_notes()
+      %! baca.make_repeat_tied_notes_function()
     \repeatTie
     % ABSOLUTE_BEFORE:
     % COMMANDS:

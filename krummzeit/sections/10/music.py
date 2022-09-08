@@ -54,9 +54,9 @@ def GLOBALS(skips, rests):
         (23 - 1, "144"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
     for index, string in ((23 - 1, "very_long"),):
-        baca.global_fermata_function(rests[index], string)
+        baca.global_fermata(rests[index], string)
 
 
 def OB(voice, accumulator):
@@ -199,60 +199,60 @@ def VC(voice, accumulator):
 
 def ob(m):
     with baca.scope(m[1]) as o:
-        baca.pitch_function(o, "Eb5")
+        baca.pitch(o, "Eb5")
         library.color_fingerings(o)
-        baca.dynamic_function(o.pleaf(0), "ff")
+        baca.dynamic(o.pleaf(0), "ff")
 
 
 def cl(m):
     with baca.scope(m[1]) as o:
-        baca.pitch_function(o, "Eb2")
+        baca.pitch(o, "Eb2")
         library.color_fingerings(o)
-        baca.dynamic_function(o.pleaf(0), "ff")
+        baca.dynamic(o.pleaf(0), "ff")
     with baca.scope(m.get(3, 14)) as o:
-        baca.pitch_function(o, "E2")
+        baca.pitch(o, "E2")
     with baca.scope(m.get(3, 4)) as o:
-        baca.dynamic_function(o.pleaf(0), "ff")
+        baca.dynamic(o.pleaf(0), "ff")
     with baca.scope(m.get(5, 6)) as o:
-        baca.hairpin_function(baca.select.rleak(o), "ff < fff")
+        baca.hairpin(baca.select.rleak(o), "ff < fff")
     with baca.scope(m[9]) as o:
-        baca.dynamic_function(o.pleaf(0), "fff-poss")
+        baca.dynamic(o.pleaf(0), "fff-poss")
     with baca.scope(m.get(11, 14)) as o:
-        baca.hairpin_function(o, "fff > ppp")
+        baca.hairpin(o, "fff > ppp")
 
 
 def pf_perc_1(cache):
     for name in ["pf", "perc"]:
         with baca.scope(cache[name][1]) as o:
-            baca.pitch_function(o, "F#6")
-            baca.stem_tremolo_function(o.pleaves())
+            baca.pitch(o, "F#6")
+            baca.stem_tremolo(o.pleaves())
 
 
 def pf_3_22(cache):
     with baca.scope(cache["pf"].get(3, 4)) as o:
-        baca.instrument_function(o.leaf(0), "Harpsichord", library.manifests)
-        baca.short_instrument_name_function(o.leaf(0), "Hpschd.", library.manifests)
+        baca.instrument(o.leaf(0), "Harpsichord", library.manifests)
+        baca.short_instrument_name(o.leaf(0), "Hpschd.", library.manifests)
         library.replace_with_clusters(o, "harpsichord")
         cache.rebuild()
     with baca.scope(cache["pf"].get(8, 22)) as o:
         library.replace_with_clusters(o, "low")
         cache.rebuild()
     with baca.scope(cache["pf"].get(8, 22)) as o:
-        baca.instrument_function(o.leaf(0), "Piano", library.manifests)
-        baca.short_instrument_name_function(o.leaf(0), "Pf.", library.manifests)
-        baca.clef_function(o.leaf(0), "bass")
-        baca.ottava_bassa_function(o.tleaves())
-        baca.dynamic_function(o.pleaf(0), "fff-poss")
+        baca.instrument(o.leaf(0), "Piano", library.manifests)
+        baca.short_instrument_name(o.leaf(0), "Pf.", library.manifests)
+        baca.clef(o.leaf(0), "bass")
+        baca.ottava_bassa(o.tleaves())
+        baca.dynamic(o.pleaf(0), "fff-poss")
 
 
 def perc_3_22(cache):
     with baca.scope(cache["perc"].get(3, 22)) as o:
-        baca.markup_function(o.pleaf(0), r"\baca-tam-tam-markup")
-        baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_lines_function(o.leaf(0), 1)
-        baca.staff_position_function(o, 0)
-        baca.laissez_vibrer_function(o.ptails())
-        baca.dynamic_function(o.pleaf(0), "f")
+        baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.clef(o.leaf(0), "percussion")
+        baca.staff_lines(o.leaf(0), 1)
+        baca.staff_position(o, 0)
+        baca.laissez_vibrer(o.ptails())
+        baca.dynamic(o.pleaf(0), "f")
 
 
 def strings_1_3(cache):
@@ -262,9 +262,9 @@ def strings_1_3(cache):
         ("vc", "E~2"),
     ):
         with baca.scope(cache[name].get(1, 3)) as o:
-            baca.pitch_function(o, pitch)
-            baca.stem_tremolo_function(o.pleaves())
-            baca.dynamic_function(o.pleaf(0), "fff")
+            baca.pitch(o, pitch)
+            baca.stem_tremolo(o.pleaves())
+            baca.dynamic(o.pleaf(0), "fff")
 
 
 def strings_5_9(cache):
@@ -279,17 +279,17 @@ def strings_5_9(cache):
         pcs = abjad.PitchClassSegment(library.violet_pitch_classes())
         pcs = pcs.transpose(11)
         leaves = baca.select.sort_by_timeline(leaves)
-        baca.pitches_function(leaves, pcs)
+        baca.pitches(leaves, pcs)
     for name, register in pairs:
         with baca.scope(cache[name].get(5, 9)) as o:
-            baca.markup_function(o.pleaf(0), r"\krummzeit-on-bridge-full-bow-markup")
+            baca.markup(o.pleaf(0), r"\krummzeit-on-bridge-full-bow-markup")
             library.register_narrow(o, *register)
             if name in ("va", "vc"):
-                baca.clef_function(o.leaf(0), "treble")
+                baca.clef(o.leaf(0), "treble")
             for ruyn in baca.select.runs(o):
-                baca.glissando_function(o)
-            baca.alternate_bow_strokes_function(o)
-            baca.dynamic_function(o.pleaf(0), '"f"')
+                baca.glissando(o)
+            baca.alternate_bow_strokes(o)
+            baca.dynamic(o.pleaf(0), '"f"')
 
 
 def strings_22(cache):
@@ -300,14 +300,14 @@ def strings_22(cache):
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.rotate(-43).retrograde().transpose(4).invert()
         leaves = baca.select.sort_by_timeline(leaves)
-        baca.pitches_function(leaves, pcs)
+        baca.pitches(leaves, pcs)
     for name in names:
         with baca.scope(cache[name][22]) as o:
-            baca.markup_function(o.pleaf(0), r"\baca-pizz-markup")
+            baca.markup(o.pleaf(0), r"\baca-pizz-markup")
             library.displacement(o)
             library.register_narrow(o, 6)
-            baca.staccatissimo_function(o.pheads())
-            baca.dynamic_function(o.pleaf(0), "fff")
+            baca.staccatissimo(o.pheads())
+            baca.dynamic(o.pleaf(0), "fff")
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

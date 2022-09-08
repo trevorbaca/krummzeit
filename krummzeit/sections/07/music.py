@@ -48,7 +48,7 @@ def GLOBALS(skips):
         (19 - 1, "144"),
     ):
         skip = skips[index]
-        baca.metronome_mark_function(skip, item, library.manifests)
+        baca.metronome_mark(skip, item, library.manifests)
 
 
 def OB(voice, accumulator):
@@ -199,48 +199,48 @@ def VC(voice, accumulator):
 
 def ob(m):
     with baca.scope(m.leaves()) as o:
-        baca.tuplet_bracket_staff_padding_function(o, 4)
-        baca.dls_staff_padding_function(o, 8)
+        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.dls_staff_padding(o, 8)
 
 
 def cl(m):
     with baca.scope(m.get(1, 10)) as o:
-        baca.tuplet_bracket_staff_padding_function(o, 4)
-        baca.dls_staff_padding_function(o, 8)
+        baca.tuplet_bracket_staff_padding(o, 4)
+        baca.dls_staff_padding(o, 8)
     with baca.scope(m.get(4, 10)) as o:
-        baca.instrument_function(o.leaf(0), "ClarinetInEFlat", library.manifests)
+        baca.instrument(o.leaf(0), "ClarinetInEFlat", library.manifests)
     with baca.scope(m.get(11, 22)) as o:
-        baca.dls_staff_padding_function(o, 8)
-        baca.stem_up_function(o.pleaves())
+        baca.dls_staff_padding(o, 8)
+        baca.stem_up(o.pleaves())
     with baca.scope(m.get(16, 19)) as o:
-        baca.instrument_function(o.leaf(0), "BassClarinet", library.manifests)
-        baca.pitch_function(o, "B1")
-        baca.dynamic_function(o.pleaf(0), "ppp")
+        baca.instrument(o.leaf(0), "BassClarinet", library.manifests)
+        baca.pitch(o, "B1")
+        baca.dynamic(o.pleaf(0), "ppp")
 
 
 def pf(m):
     with baca.scope(m[4]) as o:
-        baca.instrument_function(o.leaf(0), "Harpsichord", library.manifests)
-        baca.short_instrument_name_function(o.leaf(0), "Hpschd.", library.manifests)
+        baca.instrument(o.leaf(0), "Harpsichord", library.manifests)
+        baca.short_instrument_name(o.leaf(0), "Hpschd.", library.manifests)
     with baca.scope(m.get(1, 10)) as o:
-        baca.tuplet_bracket_staff_padding_function(o, 4)
+        baca.tuplet_bracket_staff_padding(o, 4)
 
 
 def perc(m):
     with baca.scope(m.leaves()) as o:
-        baca.markup_function(o.leaf(0), r"\baca-snare-drum-markup")
-        baca.clef_function(o.leaf(0), "percussion")
-        baca.staff_position_function(o, 0)
-        baca.dls_staff_padding_function(o, 6)
+        baca.markup(o.leaf(0), r"\baca-snare-drum-markup")
+        baca.clef(o.leaf(0), "percussion")
+        baca.staff_position(o, 0)
+        baca.dls_staff_padding(o, 6)
     with baca.scope(m.get(2, 16)) as o:
-        baca.dynamic_function(o.pleaf(0), "ppp")
-        baca.stem_tremolo_function(o.pleaves())
-        baca.markup_function(o.pleaf(0), r"\krummzeit-fingertips-markup")
+        baca.dynamic(o.pleaf(0), "ppp")
+        baca.stem_tremolo(o.pleaves())
+        baca.markup(o.pleaf(0), r"\krummzeit-fingertips-markup")
     with baca.scope(m.get(19, 22)) as o:
-        baca.markup_function(o.pleaf(0), r"\baca-tam-tam-markup")
-        baca.markup_function(o.pleaf(0), r"\baca-attackless-markup")
-        baca.laissez_vibrer_function(o.pheads())
-        baca.dynamic_function(o.pleaf(0), "p-sempre")
+        baca.markup(o.pleaf(0), r"\baca-tam-tam-markup")
+        baca.markup(o.pleaf(0), r"\baca-attackless-markup")
+        baca.laissez_vibrer(o.pheads())
+        baca.dynamic(o.pleaf(0), "p-sempre")
 
 
 def va_vc_1_6(cache):
@@ -249,10 +249,10 @@ def va_vc_1_6(cache):
         ("vc", "C2"),
     ):
         with baca.scope(cache[name].get(1, 6)) as o:
-            baca.pitch_function(o, pitch)
-            baca.hairpin_function(o.tleaves(), "ppp < fff")
+            baca.pitch(o, pitch)
+            baca.hairpin(o.tleaves(), "ppp < fff")
         with baca.scope(cache[name].get(2, 6)) as o:
-            baca.dls_staff_padding_function(o, 6)
+            baca.dls_staff_padding(o, 6)
 
 
 def strings_7_19(cache):
@@ -262,15 +262,15 @@ def strings_7_19(cache):
         ("vc", "A1"),
     ):
         with baca.scope(cache[name].get(7, 19)) as o:
-            baca.pitch_function(o, pitch)
-            baca.dynamic_function(o.pleaf(0), "fff")
-            baca.markup_function(o.pleaf(0), r"\baca-scratch-poss-markup")
+            baca.pitch(o, pitch)
+            baca.dynamic(o.pleaf(0), "fff")
+            baca.markup(o.pleaf(0), r"\baca-scratch-poss-markup")
     for name, pair in (
         ("vn", (11, 15)),
         ("va", (13, 15)),
         ("vc", (13, 15)),
     ):
-        baca.text_spanner_function(
+        baca.text_spanner(
             cache[name].get(pair),
             "grid. possibile => flaut. possibile",
             abjad.Tweak(r"- \tweak staff-padding 5"),
@@ -284,7 +284,7 @@ def ob_cl_pf_1_16(cache):
         pcs = abjad.PitchClassSegment(library.indigo_pitch_classes())
         pcs = pcs.transpose(2)
         leaves = baca.select.sort_by_timeline(o)
-        baca.pitches_function(leaves, pcs)
+        baca.pitches(leaves, pcs)
     for name, pair in (
         ("pf", (4, 16)),
         ("ob", (1, 12)),
@@ -292,7 +292,7 @@ def ob_cl_pf_1_16(cache):
     ):
         library.displacement(cache[name].get(pair))
     library.register_narrow(cache["pf"].get(4, 9), 5, 3)
-    baca.clef_function(abjad.select.leaf(cache["pf"][7], 0), "bass")
+    baca.clef(abjad.select.leaf(cache["pf"][7], 0), "bass")
     library.register_narrow(cache["pf"][13], 3)
     library.register_narrow(cache["pf"][16], 2)
 
@@ -305,8 +305,8 @@ def ob_cl_4_10(cache):
         with baca.scope(cache[name].get(4, 10)) as o:
             library.register_narrow(o, *register)
             for ptlt in baca.select.ptlts(o):
-                baca.staccato_function(ptlt)
-            baca.hairpin_function(o, "p < ff")
+                baca.staccato(ptlt)
+            baca.hairpin(o, "p < ff")
 
 
 def make_score(first_measure_number, previous_persistent_indicators):

@@ -512,7 +512,7 @@ def make_hypermeter_tuplets(
     time_signatures, tuplet_ratios, counts=(2, 3, 1), *commands
 ):
     rhythm_maker = rmakers.stack(
-        rmakers.tuplet(tuplet_ratios, denominator=(1, 4)),
+        rmakers.tuplet(tuplet_ratios, denominator=abjad.Duration(1, 4)),
         *commands,
         rmakers.beam(),
         rmakers.rewrite_dots(),
@@ -773,7 +773,9 @@ def make_polyphony_rhythm(
     )
 
     quarters = rmakers.stack(
-        rmakers.note(spelling=rmakers.Spelling(forbidden_note_duration=(1, 2))),
+        rmakers.note(
+            spelling=rmakers.Spelling(forbidden_note_duration=abjad.Duration(1, 2))
+        ),
         rmakers.untie(),
         rmakers.beam(lambda _: baca.select.plts(_)),
     )

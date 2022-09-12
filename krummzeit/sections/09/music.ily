@@ -3798,7 +3798,7 @@ number.9.Percussion.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     r8
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -3808,7 +3808,7 @@ number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -3832,7 +3832,7 @@ number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -3841,7 +3841,7 @@ number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -3850,7 +3850,7 @@ number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -3859,7 +3859,7 @@ number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -3868,7 +3868,7 @@ number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -3877,7 +3877,7 @@ number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -3886,7 +3886,7 @@ number.9.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_left_remainder_quarters()
+      %! krummzeit.make_left_remainder_quarters_function()
     d'4
     % AFTER:
     % ARTICULATIONS:

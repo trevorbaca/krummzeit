@@ -89,7 +89,7 @@ def PF(voice, accumulator):
 def PERC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 4))
     voice.extend(music)
-    music = library.make_left_remainder_quarters(
+    music = library.make_left_remainder_quarters_function(
         accumulator.get(5, 6),
         force_rest_lts=[0],
     )

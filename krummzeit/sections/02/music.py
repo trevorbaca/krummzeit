@@ -154,7 +154,7 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(32, 44))
     voice.extend(music)
-    music = library.make_incise_attacks(accumulator.get(45, 56))
+    music = library.make_incise_attacks_function(accumulator.get(45, 56))
     voice.extend(music)
     music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
@@ -178,7 +178,7 @@ def PERC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(39, 44))
     voice.extend(music)
-    music = library.make_incise_attacks(accumulator.get(45, 60))
+    music = library.make_incise_attacks_function(accumulator.get(45, 60))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(61, 75))
     voice.extend(music)

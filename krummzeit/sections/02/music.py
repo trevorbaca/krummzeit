@@ -261,7 +261,7 @@ def VA(voice, accumulator):
         durations=[(3, 8)],
     )
     voice.extend(music)
-    music = library.make_prolated_quarters(
+    music = library.make_prolated_quarters_function(
         accumulator.get(39, 47),
         [1, -1, 2, -2],
     )
@@ -305,7 +305,7 @@ def VC(voice, accumulator):
         durations=[(3, 8)],
     )
     voice.extend(music)
-    music = library.make_prolated_quarters(
+    music = library.make_prolated_quarters_function(
         accumulator.get(39, 51),
         [-1, 2, -2, 1],
     )

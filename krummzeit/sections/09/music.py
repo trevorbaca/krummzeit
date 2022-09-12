@@ -1,6 +1,5 @@
 import abjad
 import baca
-from abjadext import rmakers
 
 from krummzeit import library
 
@@ -92,7 +91,7 @@ def PERC(voice, accumulator):
     voice.extend(music)
     music = library.make_left_remainder_quarters(
         accumulator.get(5, 6),
-        rmakers.force_rest(lambda _: baca.select.lt(_, 0)),
+        force_rest_lts=[0],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7, 8))

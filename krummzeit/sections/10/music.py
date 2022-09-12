@@ -1,6 +1,5 @@
 import abjad
 import baca
-from abjadext import rmakers
 
 from krummzeit import library
 
@@ -93,18 +92,14 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = library.make_opening_triplets(
         accumulator.get(3, 4),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, 0),
-        ),
+        force_rest_tuplets=[0],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(5, 7))
     voice.extend(music)
     music = library.make_opening_triplets(
         accumulator.get(8, 22),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, 0),
-        ),
+        force_rest_tuplets=[0],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(23))
@@ -128,9 +123,7 @@ def PERC(voice, accumulator):
 def VN(voice, accumulator):
     music = library.make_opening_triplets(
         accumulator.get(1, 3),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, -1),
-        ),
+        force_rest_tuplets=[-1],
         remainder=abjad.RIGHT,
     )
     voice.extend(music)
@@ -152,9 +145,7 @@ def VN(voice, accumulator):
 def VA(voice, accumulator):
     music = library.make_opening_triplets(
         accumulator.get(1, 3),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, -1),
-        ),
+        force_rest_tuplets=[-1],
         remainder=abjad.RIGHT,
     )
     voice.extend(music)
@@ -176,9 +167,7 @@ def VA(voice, accumulator):
 def VC(voice, accumulator):
     music = library.make_opening_triplets(
         accumulator.get(1, 3),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, -1),
-        ),
+        force_rest_tuplets=[-1],
         remainder=abjad.RIGHT,
     )
     voice.extend(music)

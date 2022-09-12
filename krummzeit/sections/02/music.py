@@ -158,9 +158,7 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([1, 5], 7)),
-        ),
+        force_rest_tuplets=([1, 5], 7),
         extra_counts=[4, 0, 2, 4, 6],
     )
     voice.extend(music)
@@ -226,16 +224,12 @@ def VN(voice, accumulator):
     voice.extend(music)
     music = library.make_pizzicato_rhythm(
         accumulator.get(54, 56),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([3, 4, 5], 6)),
-        ),
+        force_rest_tuplets=([3, 4, 5], 6),
     )
     voice.extend(music)
     music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([3, 6], 8)),
-        ),
+        force_rest_tuplets=([3, 6], 8),
         extra_counts=[6, 0, 4, 4, 0, 2],
     )
     voice.extend(music)
@@ -274,17 +268,13 @@ def VA(voice, accumulator):
     voice.extend(music)
     music = library.make_pizzicato_rhythm(
         accumulator.get(48, 56),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([1, 2, 3], 6)),
-        ),
+        force_rest_tuplets=([1, 2, 3], 6),
     )
     rmakers.untie(lambda _: abjad.select.leaf(_, -12))(music)
     voice.extend(music)
     music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([2, 3], 6)),
-        ),
+        force_rest_tuplets=([2, 3], 6),
         extra_counts=[2, 2, 0, 2, 4, 6],
     )
     voice.extend(music)
@@ -322,16 +312,12 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = library.make_pizzicato_rhythm(
         accumulator.get(52, 56),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([2, 3, 4], 6)),
-        ),
+        force_rest_tuplets=([2, 3, 4], 6),
     )
     voice.extend(music)
     music = library.make_pizzicato_sixteenths(
         accumulator.get(57, 71),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 2], 7)),
-        ),
+        force_rest_tuplets=([0, 2], 7),
         extra_counts=[4, 4, 2, 0, 2, 4],
     )
     voice.extend(music)

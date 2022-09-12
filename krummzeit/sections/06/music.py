@@ -1,6 +1,5 @@
 import abjad
 import baca
-from abjadext import rmakers
 
 from krummzeit import library
 
@@ -91,9 +90,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = library.make_color_tuplets(
         accumulator.get(12, 21),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplet(_, 0),
-        ),
+        force_rest_tuplets=[0],
         rotation=2,
     )
     voice.extend(music)
@@ -150,18 +147,14 @@ def PF(voice, accumulator):
     voice.extend(music)
     music = library.make_pizzicato_rhythm(
         accumulator.get(30, 31),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
-        ),
+        force_rest_tuplets=([0, 4, 5], 6),
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(32))
     voice.extend(music)
     music = library.make_pizzicato_rhythm(
         accumulator.get(33, 34),
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 4, 5], 6)),
-        ),
+        force_rest_tuplets=([0, 4, 5], 6),
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(35))
@@ -203,9 +196,7 @@ def VN(voice, accumulator):
     music = library.make_glissando_rhythm(
         accumulator.get(12, 20),
         [(2, 1), (2, 1), (1, 1, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([5, 6], 7)),
-        ),
+        force_rest_tuplets=([5, 6], 7),
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21, 28))
@@ -226,9 +217,7 @@ def VA(voice, accumulator):
     music = library.make_glissando_rhythm(
         accumulator.get(12, 20),
         [(2, 1), (1, 1, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([0, 1], 7)),
-        ),
+        force_rest_tuplets=([0, 1], 7),
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21, 22))
@@ -267,9 +256,7 @@ def VC(voice, accumulator):
     music = library.make_glissando_rhythm(
         accumulator.get(12, 20),
         [(1, 1, 1), (2, 1), (2, 1)],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, ([2, 3], 7)),
-        ),
+        force_rest_tuplets=([2, 3], 7),
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(21, 22))

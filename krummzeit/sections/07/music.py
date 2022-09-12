@@ -1,6 +1,5 @@
 import abjad
 import baca
-from abjadext import rmakers
 
 from krummzeit import library
 
@@ -166,9 +165,7 @@ def VA(voice, accumulator):
         accumulator.get(7, 19),
         [(1, 6)],
         [2, 2, 2, 2, 2, 3],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, (None, 2)),
-        ),
+        force_rest_tuplets=[0, 1],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(20, 22))
@@ -188,9 +185,7 @@ def VC(voice, accumulator):
         accumulator.get(7, 19),
         [(6, 1)],
         [2, 2, 2, 2, 2, 3],
-        rmakers.force_rest(
-            lambda _: baca.select.tuplets(_, (None, 2)),
-        ),
+        force_rest_tuplets=[0, 1],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(20, 22))

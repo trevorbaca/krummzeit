@@ -68,7 +68,7 @@ def PERC(voice, accumulator):
 
 
 def VN(voice, accumulator):
-    music = library.make_closing_pizzicato_rhythm(
+    music = library.make_closing_pizzicato_rhythm_function(
         accumulator.get(1, 40),
         counts=[2, 4, 4, 8, 4, 4, 2, 1, 1, 8, 8, 8],
         extra_counts=[2, 2, 1, 2, 4, 6],

@@ -1588,7 +1588,7 @@ number.1.Piano.Music = {
 
       %! baca._comment_measure_numbers()
     % [Piano.Music measure 4]
-      %! krummzeit.make_single_cluster_piano_rhythm()
+      %! krummzeit.make_single_cluster_piano_rhythm_function()
     r16
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -1623,12 +1623,12 @@ number.1.Piano.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_single_cluster_piano_rhythm()
+      %! krummzeit.make_single_cluster_piano_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_single_cluster_piano_rhythm()
+      %! krummzeit.make_single_cluster_piano_rhythm_function()
     r2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -2035,11 +2035,11 @@ number.1.Percussion.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 5/8
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
@@ -2099,7 +2099,7 @@ number.1.Percussion.Music = {
           %! baca.clef()
           %! baca.treat_persistent_wrapper(2)
         \set Staff.forceClef = ##t
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -2133,7 +2133,7 @@ number.1.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -2148,22 +2148,22 @@ number.1.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 2/3
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 11]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % SPANNER_STARTS:
@@ -2171,7 +2171,7 @@ number.1.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -2180,7 +2180,7 @@ number.1.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2
         % AFTER:
         % ARTICULATIONS:
@@ -2195,14 +2195,14 @@ number.1.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 12]
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'2
     % AFTER:
     % SPANNER_STARTS:
@@ -2210,7 +2210,7 @@ number.1.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -2219,7 +2219,7 @@ number.1.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -2234,18 +2234,18 @@ number.1.Percussion.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \tweak text #tuplet-number::calc-fraction-text
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     \times 3/4
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
           %! baca._comment_measure_numbers()
         % [Percussion.Music measure 13]
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'2.
         % AFTER:
         % SPANNER_STARTS:
@@ -2253,7 +2253,7 @@ number.1.Percussion.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_sponge_rhythm()
+          %! krummzeit.make_sponge_rhythm_function()
         c'4
         % AFTER:
         % ARTICULATIONS:
@@ -2268,7 +2268,7 @@ number.1.Percussion.Music = {
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_sponge_rhythm()
+      %! krummzeit.make_sponge_rhythm_function()
     }
     % CLOSING:
     % COMMANDS:
@@ -2351,7 +2351,7 @@ number.1.Violin.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     r8
     % AFTER:
     % MARKUP:
@@ -2377,14 +2377,14 @@ number.1.Violin.Music = {
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     \times 2/3
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2404,12 +2404,12 @@ number.1.Violin.Music = {
           %! baca.dynamic()
         \fff
         % START_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2418,45 +2418,45 @@ number.1.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     \times 2/3
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2465,45 +2465,45 @@ number.1.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     \times 2/3
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2512,45 +2512,45 @@ number.1.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     \times 2/3
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2559,45 +2559,45 @@ number.1.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     \times 2/3
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2606,45 +2606,45 @@ number.1.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     \times 2/3
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2653,45 +2653,45 @@ number.1.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     \times 2/3
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2700,45 +2700,45 @@ number.1.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
     % OPEN_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     \times 2/3
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % START_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         [
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
@@ -2747,20 +2747,20 @@ number.1.Violin.Music = {
         % ABSOLUTE_BEFORE:
         % COMMANDS:
 
-          %! krummzeit.make_opening_triplets()
+          %! krummzeit.make_opening_triplets_function()
         ef''!8
         % AFTER:
         % STEM_TREMOLOS:
           %! baca.stem_tremolo()
         :32
         % STOP_BEAM:
-          %! krummzeit.make_opening_triplets()
+          %! rmakers.beam()
         ]
         % CLOSING:
         % COMMANDS:
 
     % CLOSE_BRACKETS:
-      %! krummzeit.make_opening_triplets()
+      %! krummzeit.make_opening_triplets_function()
     }
     % ABSOLUTE_BEFORE:
     % COMMANDS:

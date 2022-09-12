@@ -270,8 +270,8 @@ def VA(voice, accumulator):
         accumulator.get(48, 56),
         force_rest_tuplets=([1, 2, 3], 6),
     )
-    rmakers.untie(lambda _: abjad.select.leaf(_, -12))(music)
     voice.extend(music)
+    rmakers.untie_function(abjad.select.leaf(music, -12))
     music = library.make_pizzicato_sixteenths_function(
         accumulator.get(57, 71),
         force_rest_tuplets=([2, 3], 6),

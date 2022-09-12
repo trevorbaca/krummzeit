@@ -3041,7 +3041,7 @@ number.4.Piano.Music = {
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
     % SPANNER_STARTS:
-      %! baca.make_tied_notes()
+      %! baca.make_tied_notes_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3113,7 +3113,7 @@ number.4.Piano.Music = {
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
     % SPANNER_STARTS:
-      %! baca.make_tied_notes()
+      %! baca.make_tied_notes_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3133,7 +3133,7 @@ number.4.Piano.Music = {
     % MARKUP:
     ^ \markup \center-align \concat { \natural \flat }
     % SPANNER_STARTS:
-      %! baca.make_tied_notes()
+      %! baca.make_tied_notes_function()
     ~
     % ABSOLUTE_BEFORE:
     % COMMANDS:
@@ -3587,7 +3587,7 @@ number.4.Percussion.Music = {
     % COMMANDS:
       %! baca.dls_staff_padding(1)
     \override DynamicLineSpanner.staff-padding = 6
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % AFTER:
     % ARTICULATIONS:
@@ -3609,147 +3609,147 @@ number.4.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 15]
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 16]
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 17]
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 18]
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
       %! baca._comment_measure_numbers()
     % [Percussion.Music measure 19]
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'4
     % AFTER:
     % COMMANDS:

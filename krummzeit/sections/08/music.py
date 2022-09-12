@@ -140,13 +140,13 @@ def PF(voice, accumulator):
 
 
 def PERC(voice, accumulator):
-    music = baca.make_repeated_duration_notes(
+    music = baca.make_repeated_duration_notes_function(
         accumulator.get(1, 7),
         [(1, 2)],
-        rmakers.force_rest(lambda _: baca.select.lt(_, -1)),
         do_not_rewrite_meter=True,
     )
     voice.extend(music)
+    rmakers.force_rest_function(baca.select.lt(music, -1), tag=abjad.Tag("PERC()"))
     music = baca.make_mmrests(accumulator.get(8, 24))
     voice.extend(music)
 

@@ -5729,7 +5729,7 @@ number.6.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     gs4
     % AFTER:
     % SPANNER_STARTS:

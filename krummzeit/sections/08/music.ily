@@ -4670,7 +4670,7 @@ number.8.Percussion.Music = {
       %! baca._set_status_tag()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % AFTER:
     % ARTICULATIONS:
@@ -4707,62 +4707,62 @@ number.8.Percussion.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! baca.make_repeated_duration_notes_function()
     c'2
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! baca.make_repeated_duration_notes()
+      %! PERC()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:

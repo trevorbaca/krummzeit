@@ -97,7 +97,7 @@ def OB(voice, accumulator):
 
 
 def CL(voice, accumulator):
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(1, 4),
         [(3, 8)],
         abjad.RIGHT,
@@ -106,7 +106,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(5, 23))
     voice.extend(music)
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(24, 28),
         [(3, 8)],
         abjad.RIGHT,
@@ -115,7 +115,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(29))
     voice.extend(music)
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(30),
         [(3, 8)],
         abjad.RIGHT,
@@ -124,7 +124,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(31))
     voice.extend(music)
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(32, 35),
         [(3, 8)],
         abjad.RIGHT,
@@ -271,35 +271,35 @@ def VN(voice, accumulator):
 def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 5))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(6),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(8),
         [(1, 4)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(9))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(10),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(12),
         [(1, 4)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(14, 23),
         [(2, 1), (1,), (1, 4), (1,)],
     )
@@ -318,35 +318,35 @@ def VA(voice, accumulator):
 def VC(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(1, 5))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(6),
         [(1, 4)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(7))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(8),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(9))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(10),
         [(1, 4)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(11))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(12),
         [(2, 1)],
     )
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(13))
     voice.extend(music)
-    music = library.make_single_division_tuplets(
+    music = library.make_single_division_tuplets_function(
         accumulator.get(14, 23),
         [(1, 4), (1,), (2, 1), (1,)],
     )

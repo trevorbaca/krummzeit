@@ -112,7 +112,7 @@ def CL(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(37, 68))
     voice.extend(music)
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(69, 75),
         [(3, 8)],
     )
@@ -209,13 +209,13 @@ def VN(voice, accumulator):
         ties=abjad.index([1, 3, 4], 6),
     )
     voice.extend(music)
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(38),
         durations=[(3, 8)],
         do_not_burnish=True,
     )
     voice.extend(music)
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(39, 53),
         durations=[(2, 8)],
         remainder=abjad.RIGHT,
@@ -256,7 +256,7 @@ def VA(voice, accumulator):
     music = baca.make_mmrests(accumulator.get(29, 33))
     voice.extend(music)
 
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(34, 38),
         durations=[(3, 8)],
     )
@@ -300,7 +300,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(29, 33))
     voice.extend(music)
-    music = library.make_white_rhythm(
+    music = library.make_white_rhythm_function(
         accumulator.get(34, 38),
         durations=[(3, 8)],
     )

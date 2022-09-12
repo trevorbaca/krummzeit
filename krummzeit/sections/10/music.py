@@ -173,7 +173,7 @@ def VC(voice, accumulator):
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(4))
     voice.extend(music)
-    music = library.make_right_remainder_quarters(accumulator.get(5, 9))
+    music = library.make_right_remainder_quarters_function(accumulator.get(5, 9))
     voice.extend(music)
     music = baca.make_mmrests(accumulator.get(10, 21))
     voice.extend(music)

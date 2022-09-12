@@ -9744,12 +9744,12 @@ number.2.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 69]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     r8
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     cs''!4.
     % AFTER:
     % ARTICULATIONS:
@@ -9772,7 +9772,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     btqs'!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9782,7 +9782,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9792,7 +9792,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     ctqs''!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9802,7 +9802,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bqs'!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9812,7 +9812,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a'4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9822,7 +9822,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bqs'!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9832,7 +9832,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     cs''!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9842,7 +9842,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     btqs'!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9852,7 +9852,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9862,7 +9862,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     ctqs''!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9874,7 +9874,7 @@ number.2.Clarinet.Music = {
 
       %! baca._comment_measure_numbers()
     % [Clarinet.Music measure 74]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bqs'!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9884,7 +9884,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a'4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9894,7 +9894,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bqs'!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9904,7 +9904,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     cs''!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9914,7 +9914,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     btqs'!4.
     % AFTER:
     % SPANNER_STARTS:
@@ -9924,7 +9924,7 @@ number.2.Clarinet.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4.
     % CLOSING:
     % COMMANDS:
@@ -20206,7 +20206,7 @@ number.2.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 38]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     g''4.
     % AFTER:
     % ARTICULATIONS:
@@ -20234,7 +20234,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
@@ -20247,7 +20247,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a''4.
     % AFTER:
     % ARTICULATIONS:
@@ -20262,7 +20262,7 @@ number.2.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 39]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -20275,7 +20275,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e''4
     % AFTER:
     % ARTICULATIONS:
@@ -20288,7 +20288,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b''4
     % AFTER:
     % ARTICULATIONS:
@@ -20301,7 +20301,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a''4
     % AFTER:
     % ARTICULATIONS:
@@ -20314,7 +20314,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -20327,7 +20327,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20340,7 +20340,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     g''4
     % AFTER:
     % ARTICULATIONS:
@@ -20353,7 +20353,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e''4
     % AFTER:
     % ARTICULATIONS:
@@ -20366,7 +20366,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4
     % AFTER:
     % ARTICULATIONS:
@@ -20379,7 +20379,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20392,7 +20392,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f''4
     % AFTER:
     % ARTICULATIONS:
@@ -20405,7 +20405,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -20423,7 +20423,7 @@ number.2.Violin.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20437,7 +20437,7 @@ number.2.Violin.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20450,7 +20450,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f''4
     % AFTER:
     % ARTICULATIONS:
@@ -20463,7 +20463,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -20476,7 +20476,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20489,7 +20489,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4
     % AFTER:
     % ARTICULATIONS:
@@ -20502,7 +20502,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20515,7 +20515,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -20528,7 +20528,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a''4
     % AFTER:
     % ARTICULATIONS:
@@ -20541,7 +20541,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4
     % AFTER:
     % ARTICULATIONS:
@@ -20554,7 +20554,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f''4
     % AFTER:
     % ARTICULATIONS:
@@ -20572,7 +20572,7 @@ number.2.Violin.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20586,7 +20586,7 @@ number.2.Violin.Music = {
       %! REPEAT_PITCH_CLASS_COLORING
       %! baca.color_repeat_pitch_classes()
     \baca-repeat-pitch-class-coloring
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20599,7 +20599,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     ef''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20612,7 +20612,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e''4
     % AFTER:
     % ARTICULATIONS:
@@ -20625,7 +20625,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -20638,7 +20638,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -20651,7 +20651,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af'!4
     % AFTER:
     % ARTICULATIONS:
@@ -20664,7 +20664,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e''4
     % AFTER:
     % ARTICULATIONS:
@@ -20677,7 +20677,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -20692,7 +20692,7 @@ number.2.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 45]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f'4
     % AFTER:
     % ARTICULATIONS:
@@ -20705,7 +20705,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4
     % AFTER:
     % ARTICULATIONS:
@@ -20718,7 +20718,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e'4
     % AFTER:
     % ARTICULATIONS:
@@ -20731,7 +20731,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bf'!4
     % AFTER:
     % ARTICULATIONS:
@@ -20744,7 +20744,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f'4
     % AFTER:
     % ARTICULATIONS:
@@ -20757,7 +20757,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -20770,7 +20770,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4
     % AFTER:
     % ARTICULATIONS:
@@ -20783,7 +20783,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f'4
     % AFTER:
     % ARTICULATIONS:
@@ -20796,7 +20796,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4
     % AFTER:
     % ARTICULATIONS:
@@ -20809,7 +20809,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af'!4
     % AFTER:
     % ARTICULATIONS:
@@ -20822,7 +20822,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs'!4
     % AFTER:
     % ARTICULATIONS:
@@ -20835,7 +20835,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f'4
     % AFTER:
     % ARTICULATIONS:
@@ -20848,7 +20848,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -20861,7 +20861,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a'4
     % AFTER:
     % ARTICULATIONS:
@@ -20874,7 +20874,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f'4
     % AFTER:
     % ARTICULATIONS:
@@ -20887,7 +20887,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs'!4
     % AFTER:
     % ARTICULATIONS:
@@ -20900,7 +20900,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     g'4
     % AFTER:
     % ARTICULATIONS:
@@ -20913,7 +20913,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -20926,7 +20926,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bf'!4
     % AFTER:
     % ARTICULATIONS:
@@ -20939,7 +20939,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs'!4
     % AFTER:
     % ARTICULATIONS:
@@ -20952,7 +20952,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e'4
     % AFTER:
     % ARTICULATIONS:
@@ -20965,7 +20965,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -20978,7 +20978,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs'!4
     % AFTER:
     % ARTICULATIONS:
@@ -20993,7 +20993,7 @@ number.2.Violin.Music = {
 
       %! baca._comment_measure_numbers()
     % [Violin.Music measure 51]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     c''4
     % AFTER:
     % ARTICULATIONS:
@@ -21006,7 +21006,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bf'!4
     % AFTER:
     % ARTICULATIONS:
@@ -21019,7 +21019,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -21032,7 +21032,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af'!4
     % AFTER:
     % ARTICULATIONS:
@@ -21045,7 +21045,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e'4
     % AFTER:
     % ARTICULATIONS:
@@ -21058,7 +21058,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     ef'!4
     % AFTER:
     % ARTICULATIONS:
@@ -21071,7 +21071,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -21084,7 +21084,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     g'4
     % AFTER:
     % ARTICULATIONS:
@@ -21097,7 +21097,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f'4
     % AFTER:
     % ARTICULATIONS:
@@ -21110,7 +21110,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e'4
     % AFTER:
     % ARTICULATIONS:
@@ -21123,7 +21123,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs'!4
     % AFTER:
     % ARTICULATIONS:
@@ -21136,7 +21136,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af'!4
     % AFTER:
     % ARTICULATIONS:
@@ -21149,7 +21149,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d'4
     % AFTER:
     % ARTICULATIONS:
@@ -21162,7 +21162,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b'4
     % AFTER:
     % ARTICULATIONS:
@@ -21175,7 +21175,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af'!4
     % AFTER:
     % ARTICULATIONS:
@@ -21188,7 +21188,7 @@ number.2.Violin.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e'8
     % AFTER:
     % ARTICULATIONS:
@@ -23252,7 +23252,7 @@ number.2.Viola.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     r4
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -23262,7 +23262,7 @@ number.2.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af''!4.
     % AFTER:
     % ARTICULATIONS:
@@ -23290,7 +23290,7 @@ number.2.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     ef''!4.
     % AFTER:
     % ARTICULATIONS:
@@ -23303,7 +23303,7 @@ number.2.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b''4.
     % AFTER:
     % ARTICULATIONS:
@@ -23316,7 +23316,7 @@ number.2.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e''4.
     % AFTER:
     % ARTICULATIONS:
@@ -23331,7 +23331,7 @@ number.2.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 36]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af''!4.
     % AFTER:
     % ARTICULATIONS:
@@ -23344,7 +23344,7 @@ number.2.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     a''4.
     % AFTER:
     % ARTICULATIONS:
@@ -23359,7 +23359,7 @@ number.2.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 37]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f''4.
     % AFTER:
     % ARTICULATIONS:
@@ -23372,7 +23372,7 @@ number.2.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     b'4.
     % AFTER:
     % ARTICULATIONS:
@@ -23387,7 +23387,7 @@ number.2.Viola.Music = {
 
       %! baca._comment_measure_numbers()
     % [Viola.Music measure 38]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f'4.
     % AFTER:
     % ARTICULATIONS:
@@ -23400,7 +23400,7 @@ number.2.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     af'!4.
     % AFTER:
     % ARTICULATIONS:
@@ -23413,7 +23413,7 @@ number.2.Viola.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
@@ -26351,7 +26351,7 @@ number.2.Cello.Music = {
       %! baca.clef()
       %! baca.treat_persistent_wrapper(2)
     \set Staff.forceClef = ##t
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     r4
     % ABSOLUTE_AFTER:
     % COMMANDS:
@@ -26361,7 +26361,7 @@ number.2.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e''4.
     % AFTER:
     % ARTICULATIONS:
@@ -26389,7 +26389,7 @@ number.2.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     d''4.
     % AFTER:
     % ARTICULATIONS:
@@ -26402,7 +26402,7 @@ number.2.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f''4.
     % AFTER:
     % ARTICULATIONS:
@@ -26415,7 +26415,7 @@ number.2.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
@@ -26430,7 +26430,7 @@ number.2.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 36]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     g''4.
     % AFTER:
     % ARTICULATIONS:
@@ -26443,7 +26443,7 @@ number.2.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     fs''!4.
     % AFTER:
     % ARTICULATIONS:
@@ -26458,7 +26458,7 @@ number.2.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 37]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     c''4.
     % AFTER:
     % ARTICULATIONS:
@@ -26471,7 +26471,7 @@ number.2.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bf'!4.
     % AFTER:
     % ARTICULATIONS:
@@ -26486,7 +26486,7 @@ number.2.Cello.Music = {
 
       %! baca._comment_measure_numbers()
     % [Cello.Music measure 38]
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     e'4.
     % AFTER:
     % ARTICULATIONS:
@@ -26499,7 +26499,7 @@ number.2.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     bf'!4.
     % AFTER:
     % ARTICULATIONS:
@@ -26512,7 +26512,7 @@ number.2.Cello.Music = {
     % ABSOLUTE_BEFORE:
     % COMMANDS:
 
-      %! krummzeit.make_white_rhythm()
+      %! krummzeit.make_white_rhythm_function()
     f'4.
     % AFTER:
     % ARTICULATIONS:
